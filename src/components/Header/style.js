@@ -44,10 +44,10 @@ const HeaderWrapper = styled.div`
               content: "";
               position: absolute;
               left: 24px;
-              bottom: 0;
-              height: 1px;
-              width: 20px;
-              border-bottom: 1px solid
+              bottom: -2px;
+              height: 2px;
+              width: 18px;
+              border-bottom: 2px solid
                 ${({ theme }) => theme.colors.dangerColor};
               transition: all 0.5s ease-in-out;
             }

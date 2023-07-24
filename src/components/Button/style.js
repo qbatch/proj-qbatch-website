@@ -1,14 +1,13 @@
 import styled from "styled-components";
+import Button from 'react-bootstrap/Button';
 
-const ButtonWrapper = styled.div`
+const ButtonWrapper = styled(Button)`
   display: flex;
   align-items: center;
   gap: 11px;
   color: ${({ theme }) => theme.colors.primaryColor};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+  padding: 0;
   position: relative;
 
   .button-icon {
@@ -35,6 +34,7 @@ const ButtonWrapper = styled.div`
     }
   }
   &:hover {
+    color: ${({ theme }) => theme.colors.primaryColor};
     .button-icon {
       border: 1px solid ${({ theme }) => theme.colors.primaryColor};
 
@@ -55,9 +55,9 @@ const ButtonWrapper = styled.div`
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 1px;
-    width: 20px;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.dangerColor};
+    height: 2px;
+    width: 18px;
+    border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
     transition: all 0.5s ease-in-out;
   }
 `;
