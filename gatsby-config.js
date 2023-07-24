@@ -16,5 +16,13 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
+    }
   ],
 };

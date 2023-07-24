@@ -6,6 +6,10 @@ const GlobalStyles = createGlobalStyle`
         font-weight:400;
         line-height:normal;
         font-family: 'Inter Tight', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: ${({ theme }) => theme.colors.backgroundColor};  
+        box-sizing: border-box;
     }
     h1,h2,h3,h4,h5,h6{
         font-weight:700;
