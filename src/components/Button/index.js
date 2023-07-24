@@ -3,6 +3,7 @@ import ButtonWrapper from "./style";
 import ArrowDown from "../../images/icons/arrow-right.svg";
 
 const index = (props) => {
+    
   const { text } = props;
 
   return (
