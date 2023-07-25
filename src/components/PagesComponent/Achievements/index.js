@@ -30,8 +30,8 @@ const Index = () => {
     <AchievementsWrapper>
       <div className="achievements-main d-flex flex-column align-items-center">
         <h1 className="heading">Achievements Through The Years...</h1>
-        <Container>
-          <Row>
+        <Container className="achievements-container">
+          <Row className="achievements-row">
             {counterData.map((data, ind) => (
               <Col md={4} sm={12} className="achievements-col">
                 <div className="achievements">

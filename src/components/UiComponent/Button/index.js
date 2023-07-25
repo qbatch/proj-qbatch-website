@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonWrapper from "./style";
 
-import ArrowDown from "../../../images/icons/arrow-right.svg";
+import ArrowRight from "../../../assets/images/icons/arrow-right.svg";
 
 const index = (props) => {
     
@@ -11,7 +11,7 @@ const index = (props) => {
     <ButtonWrapper variant="text">
       {text}
       <div className="button-icon">
-        <div><ArrowDown /></div>
+        <div><ArrowRight /></div>
       </div>
     </ButtonWrapper>
   );

@@ -1,13 +1,12 @@
 import * as React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "../../theme/global-style";
 import Theme from '../../theme/theme-variable'
+import GlobalStyle from "../../theme/global-style";
 
 import Header from '../PagesComponent/Header'
 import Footer from '../PagesComponent/Footer'
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({children }) => {
 

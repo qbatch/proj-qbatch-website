@@ -31,9 +31,6 @@ const GlobalStyles = createGlobalStyle`
     }
     h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
-            @media (max-width: 483px) {
-                font-size: ${({ theme }) => theme.colors.baseFontSizeH3};
-    }
     }
     h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3}
@@ -57,59 +54,43 @@ const GlobalStyles = createGlobalStyle`
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 0;
     }
+    img,svg{
+        max-width:100%;
+    }
+    
+    .container-fluid {
+        max-width: 1920px;
+    }
 
-    @media (max-width: 1099px) {
+    @media (max-width: 1200px) {
       h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
+      }
+      h2{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
       }
     }
     @media (max-width: 768px) {
       h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
       }
+      h2{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
+      }
+      h4{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeSm};     
+      }
     }
-    @media (max-width: 499px) {
+    @media (max-width: 480px) {
       h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
       }
+      h2{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+      }
+      h4{
+        font-size:${({ theme }) => theme.fonts.baseFontSize};     
+      }
     }
-    img,svg{
-        max-width:100%;
-    }
-    
-    .container {
-        padding-right: 24px;
-        padding-left: 24px;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-@media (max-width: 1600px) {
-    .container {
-        max-width: 1600px;
-    }
-}
-@media (min-width: 1900px) {
-    .container {
-        max-width: 1900px;
-    }
-}
-@media (min-width: 768px) {
-  .container {
-      width: 945px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1454px;
-  }
-}
-
-
 `;
 export default GlobalStyles;

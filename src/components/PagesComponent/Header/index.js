@@ -6,8 +6,8 @@ import Button from "../../UiComponent/Button";
 import Divider from "../../UiComponent/Divider";
 
 // images
-import Logo from "../../../images/qbatch-logo.svg";
-import ArrowDown from "../../../images/icons/arrow-down.svg";
+import Logo from "../../../assets/images/qbatch-logo.svg";
+import ArrowDown from "../../../assets/images/icons/arrow-down.svg";
 
 // bootsrap
 import { Container, Navbar, Nav } from "react-bootstrap";
@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <HeaderWrapper>
       <Navbar expand="lg" sticky="top" bg="#fff">
-        <Container>
+        <Container fluid className="p-0">
           <Navbar.Brand href="#">
             <Logo />
           </Navbar.Brand>

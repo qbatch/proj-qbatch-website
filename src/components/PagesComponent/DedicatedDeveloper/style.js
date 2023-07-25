@@ -2,17 +2,24 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const DedicatedDeveloperWrapper = styled.section`
+  padding: 96px 96px 52px;
+  ${media.sm`
+    padding: 72px 72px 52px;
+  `}
+  ${media.sm`
+    padding: 52px 52px 30px;
+  `}
   .image-portion {
-    padding: 93px 0px;
     padding-left: 120px;
     ${media.sm`
      padding: 30px 0px;
      text-align: center;
+     display: none;
   `}
   }
 
   .title-portion {
-    padding: 156px 0px;
+    padding: 62px 0px;
     ${media.sm`
      padding: 32px 0px;
   `}
@@ -43,10 +50,11 @@ const DedicatedDeveloperWrapper = styled.section`
   }
   .you-deserve {
     position: relative;
+    white-space: nowrap;
     color: ${({ theme }) => theme.colors.primaryColor};
-    margin-left: 5px;
+    margin-left: -4px;
     ${media.sm`
-           margin-left: 0;
+        margin-left: 0;
     `}
     cursor: pointer;
     &::before {
@@ -55,7 +63,7 @@ const DedicatedDeveloperWrapper = styled.section`
       height: 1px;
       width: 0;
       bottom: 1px;
-      left: 17px;
+      left: 0px;
       background-color: ${({ theme }) => theme.colors.dangerColor};
       animation: animate 1s linear 1s 1 normal forwards;
     }
@@ -64,20 +72,24 @@ const DedicatedDeveloperWrapper = styled.section`
         width: 0px;
       }
       to {
-        width: 232px;
+        width: 100%;
       }
     }
+  }
+  .dedicated-row {
+    margin-bottom: 118px;
+    ${media.sm`
+        margin-bottom: 50px;
+    `}
   }
   .paragraph {
     color: ${({ theme }) => theme.colors.bodyLight};
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
-    margin-top: 28px;
+    margin-top: 36px;
     line-height: 24px;
     margin-bottom: 48px;
   }
   .add-space {
-    padding-top: 28px;
-    padding-bottom: 48px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -85,8 +97,7 @@ const DedicatedDeveloperWrapper = styled.section`
       position: relative;
       color: ${({ theme }) => theme.colors.bodyLight};
       font-weight: 400;
-      margin: 0 33px;
-      margin-bottom: 24px;
+      margin: 0 33px 24px;
       &::after {
         content: "";
         position: absolute;
@@ -95,7 +106,7 @@ const DedicatedDeveloperWrapper = styled.section`
         bottom: 1px;
         right: -35px;
         background-color: ${({ theme }) => theme.colors.dividerColor};
-        ${media.sm`
+        ${media.xs`
         display:none ;
          `}
       }

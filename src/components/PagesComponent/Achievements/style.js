@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const AchievementsWrapper = styled.div`
   .achievements-main {
@@ -11,10 +12,19 @@ const AchievementsWrapper = styled.div`
     background-size: cover;
 
     .achievements {
+      ${media.sm`
+        margin-bottom: 40px;
+      `}
       h1 {
         font-size: ${({ theme }) => theme.fonts.baseFontXl};
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         margin-bottom: 14px;
+        ${media.lg`
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};
+        `}
+        ${media.sm`
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
+        `}
       }
       p {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
@@ -22,9 +32,15 @@ const AchievementsWrapper = styled.div`
         color: ${({ theme }) => theme.colors.textMedium};
         line-height: 32px;
         white-space: pre-line;
+        ${media.lg`
+          font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        `}
       }
     }
-    .row {
+    .achievements-container {
+      max-width: 1432px;
+    }
+    .achievements-row {
       margin-top: 72px;
     }
     .achievements-col {
@@ -37,32 +53,12 @@ const AchievementsWrapper = styled.div`
         background-color: ${({ theme }) => theme.colors.dividerColor};
         right: 0;
         top: 0;
+        ${media.sm`
+          width: 0px;
+        `}
       }
       &:last-child::after {
         width: 0px;
-      }
-    }
-    @media (max-width: 1099px) {
-      .achievements {
-        h1 {
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};
-        }
-      }
-    }
-    @media (max-width: 768px) {
-      .achievements {
-        margin-bottom: 40px;
-        h1 {
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
-        }
-        p {
-          font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        }
-      }
-      .achievements-col {
-        &::after {
-          width: 0px;
-        }
       }
     }
   }

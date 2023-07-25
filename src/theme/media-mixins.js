@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from "styled-components";
+
  const breakpoints = {
   xs: "480px",
   sm: "768px",
