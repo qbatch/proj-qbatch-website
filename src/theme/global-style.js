@@ -1,7 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+<<<<<<< HEAD
+    @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&display=swap');
+
+=======
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700&display=swap');
+>>>>>>> 77f241f243a9224626ee1e5dbdd0aec835c1caa9
     body{
         font-size:${({ theme }) => theme.fonts.baseFontSize};    
         font-weight:400;
@@ -14,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
     }
     h1,h2,h3,h4,h5,h6{
         font-weight:700;
-         color:${({ theme }) => theme.colors.bodyTextVariant}
+        color:${({ theme }) => theme.colors.bodyTextVariant}
     }
     a{
         color:${({ theme }) => theme.colors.primaryColor};
@@ -42,6 +47,32 @@ const GlobalStyles = createGlobalStyle`
     }
     label,caption{
         font-size:${({ theme }) => theme.fonts.baseFontSize};      
+    }
+    .color-danger {
+      color: ${({ theme }) => theme.colors.dangerColor};
+    }
+    .fw-light {
+      font-weight: ${({ theme }) => theme.fontWeight.light};
+    }
+    .heading {
+      color: ${({ theme }) => theme.colors.primaryColor};
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 1099px) {
+      h1{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
+      }
+    }
+    @media (max-width: 768px) {
+      h1{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
+      }
+    }
+    @media (max-width: 499px) {
+      h1{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
+      }
     }
     img,svg{
         max-width:100%;
