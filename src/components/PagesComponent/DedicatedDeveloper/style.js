@@ -1,17 +1,23 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const DedicatedDeveloperWrapper = styled.section`
   .image-portion {
-    padding: 95px 0px;
-    padding-left: 116px;
-    @media(max-width:767px){
-        padding-left:0px;
-        text-align: center;
-    }
+    padding: 93px 0px;
+    padding-left: 120px;
+    ${media.sm`
+     padding: 30px 0px;
+     text-align: center;
+  `}
   }
-  .title-portion{
-      padding:156px 0px;
-  } .hire {
+
+  .title-portion {
+    padding: 156px 0px;
+    ${media.sm`
+     padding: 32px 0px;
+  `}
+  }
+  .hire {
     color: ${({ theme }) => theme.colors.textMedium};
     position: relative;
     margin-bottom: 6px;
@@ -62,20 +68,20 @@ const DedicatedDeveloperWrapper = styled.section`
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     margin-top: 36px;
     line-height: 23px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
   }
   .add-space {
-    padding-top: 25px;
-    padding-bottom: 74px;
-    display:flex ;
+    padding-top: 28px;
+    padding-bottom: 48px;
+    display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     .divider-heading {
       position: relative;
       color: ${({ theme }) => theme.colors.bodyLight};
       font-weight: 400;
       margin: 0 33px;
-      margin-bottom:24px;
+      margin-bottom: 24px;
       &::after {
         content: "";
         position: absolute;

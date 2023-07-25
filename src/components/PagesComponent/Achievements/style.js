@@ -24,9 +24,6 @@ const AchievementsWrapper = styled.div`
         white-space: pre-line;
       }
     }
-    .container {
-      max-width: 1430px;
-    }
     .row {
       margin-top: 72px;
     }

@@ -1,12 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-<<<<<<< HEAD
     @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&display=swap');
 
-=======
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700&display=swap');
->>>>>>> 77f241f243a9224626ee1e5dbdd0aec835c1caa9
     body{
         font-size:${({ theme }) => theme.fonts.baseFontSize};    
         font-weight:400;
@@ -35,6 +31,9 @@ const GlobalStyles = createGlobalStyle`
     }
     h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
+            @media (max-width: 483px) {
+                font-size: ${({ theme }) => theme.colors.baseFontSizeH3};
+    }
     }
     h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3}
@@ -85,7 +84,6 @@ const GlobalStyles = createGlobalStyle`
         margin-right: auto;
         margin-left: auto;
     }
-
 @media (max-width: 1600px) {
     .container {
         max-width: 1600px;
@@ -108,7 +106,7 @@ const GlobalStyles = createGlobalStyle`
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1428px;
+    width: 1454px;
   }
 }
 
