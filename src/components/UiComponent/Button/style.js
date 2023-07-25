@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
 const ButtonWrapper = styled(Button)`
   display: flex;
@@ -17,7 +17,7 @@ const ButtonWrapper = styled(Button)`
     padding: 4px;
     box-sizing: border-box;
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     div {
       width: 22px;
@@ -26,12 +26,26 @@ const ButtonWrapper = styled(Button)`
       display: flex;
       align-items: center;
       background-color: ${({ theme }) => theme.colors.whiteColor};
-      transition: all 0.5s ease-in-out;
+      transition: left 0.3s ease-in-out;
+      position: relative;
 
       svg {
         fill: ${({ theme }) => theme.colors.textMedium};
+        position: absolute;
+        transition: left 0.3s ease-in-out;
+        left: 0px;
       }
     }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0px;
+    background-color: ${({ theme }) => theme.colors.dangerColor};
+    transition: all 0.3s ease-in-out;
   }
   &:hover {
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -43,22 +57,15 @@ const ButtonWrapper = styled(Button)`
         display: flex;
         align-items: center;
         justify-content: center;
-
         svg {
           fill: ${({ theme }) => theme.colors.whiteColor};
+          left: 7px;
         }
       }
     }
-  }
-  &:hover:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 18px;
-    border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
-    transition: all 0.5s ease-in-out;
+    &::after {
+      width: 22px;
+    }
   }
 `;
 

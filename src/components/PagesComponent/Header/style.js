@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
-  .header {
-    height: 81px;
-    .header-main {
+.navbar {
+      padding: 18px 0;
+}
+  .header-main {
       width: 100%;
-      padding: 24px 96px;
       border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
       background-color: ${({ theme }) => theme.colors.backgroundColor};
       display: flex;
@@ -111,7 +111,6 @@ const HeaderWrapper = styled.div`
         }
       }
     }
-  }
 `;
 
 export default HeaderWrapper;
