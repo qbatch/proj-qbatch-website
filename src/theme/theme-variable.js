@@ -1,3 +1,4 @@
+const fsxl = "96px";
 const fsh1 = "68px";
 const fsh2 = "40px";
 const fsh3 = "32px";
@@ -33,8 +34,10 @@ const theme = {
     baseFontSize: fsxs,
     baseFontSizeMediumSmal: fsx,
     baseFontSizeXs: fsXxs,
+    baseFontXl: fsxl
   },
   fontWeight: {
+    light: 300,
     normal: 400,
     medium: 500,
     semiBold: 600,
