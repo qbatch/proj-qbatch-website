@@ -1,19 +1,17 @@
-import * as React from 'react'
-
-import Layout from '../components/Layout/layout'
-import { SEO } from "../components/Seo"
+import * as React from "react";
+// components
+import Layout from "../components/Layout/layout";
+import { SEO } from "../components/Seo";
+import DedicatedDevelopment from "../components/PagesComponent/DedicatedDeveloper";
 
 const IndexPage = () => {
-
   return (
     <Layout>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+      <DedicatedDevelopment />
     </Layout>
-  )
-}
+  );
+};
 
-export const Head = () => (
-  <SEO title="Home Page"  />
-)
+export const Head = () => <SEO title="Home Page" />;
 
 export default IndexPage;

@@ -23,6 +23,7 @@ const theme = {
     dividerColor: "#D2D9DC",
     textMedium: "#5F737C",
     whiteColor: "#FFF",
+    bodyLight: "#7C8EA1",
   },
   fonts: {
     baseFontSizeH1: fsh1,
