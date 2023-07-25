@@ -4,8 +4,8 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../../theme/global-style";
 import Theme from '../../theme/theme-variable'
 
-import Header from '../Header/index'
-import Footer from '../Footer/index'
+import Header from '../PagesComponent/Header'
+import Footer from '../PagesComponent/Footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,7 +17,6 @@ const Layout = ({children }) => {
         <Header />
         <GlobalStyle />
         {children}
-        <Footer />
       </ThemeProvider>
     </>
   )

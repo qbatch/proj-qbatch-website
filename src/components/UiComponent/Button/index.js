@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonWrapper from "./style";
 
-import ArrowDown from "../../images/icons/arrow-right.svg";
+import ArrowDown from "../../../images/icons/arrow-right.svg";
 
 const index = (props) => {
     
