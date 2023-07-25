@@ -35,14 +35,19 @@ const DedicatedDeveloperWrapper = styled.section`
     color: ${({ theme }) => theme.colors.bodyTextVariant};
   }
   .for-furture {
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
-    display: inline-block;
     margin-right: -4px;
     color: ${({ theme }) => theme.colors.textMedium};
+    ${media.sm`
+        flex-direction: column;
+    `}
   }
   .you-deserve {
     position: relative;
     color: ${({ theme }) => theme.colors.primaryColor};
+    margin-left: 5px;
+    ${media.sm`
+           margin-left: 0;
+    `}
     cursor: pointer;
     &::before {
       content: "";
@@ -66,9 +71,9 @@ const DedicatedDeveloperWrapper = styled.section`
   .paragraph {
     color: ${({ theme }) => theme.colors.bodyLight};
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
-    margin-top: 36px;
-    line-height: 23px;
-    margin-bottom: 50px;
+    margin-top: 28px;
+    line-height: 24px;
+    margin-bottom: 48px;
   }
   .add-space {
     padding-top: 28px;
@@ -90,6 +95,9 @@ const DedicatedDeveloperWrapper = styled.section`
         bottom: 1px;
         right: -35px;
         background-color: ${({ theme }) => theme.colors.dividerColor};
+        ${media.sm`
+        display:none ;
+         `}
       }
       &:last-child {
         &::after {

@@ -17,8 +17,9 @@ const Index = () => {
             <div className="title-portion">
               <h4 className="hire">Hire</h4>
               <h1 className="add-bottom-space">Dedicated Developers </h1>
-              <span className="for-furture">for a future </span>
-              <h2 className="d-inline you-deserve"> You Deserve!</h2>
+              <h2 className="for-furture fw-normal d-flex">
+                for a future <h2 className="you-deserve"> You Deserve!</h2>{" "}
+              </h2>
               <p className="paragraph">
                 200+ enterprises have already garnered great financial results and market <br />
                 outreach with our time-tested development flow, error-free code quality, and on-
