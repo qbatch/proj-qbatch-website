@@ -48,15 +48,15 @@ const DedicatedDeveloperWrapper = styled.section`
       content: "";
       position: absolute;
       height: 1px;
-      width: 232px;
+      width: 0;
       bottom: 1px;
       left: 17px;
       background-color: ${({ theme }) => theme.colors.dangerColor};
-      animation: animate 2s linear normal;
+      animation: animate 1s linear 1s 1 normal forwards;
     }
     @keyframes animate {
       from {
-        width: 24px;
+        width: 0px;
       }
       to {
         width: 232px;
