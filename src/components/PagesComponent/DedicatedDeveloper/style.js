@@ -7,7 +7,7 @@ const DedicatedDeveloperWrapper = styled.section`
     padding: 72px 72px 52px;
   `}
   ${media.sm`
-    padding: 52px 52px 30px;
+    padding: 52px 16px 30px;
   `}
   .image-portion {
     padding-left: 120px;
