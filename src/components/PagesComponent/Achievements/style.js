@@ -7,11 +7,12 @@ const AchievementsWrapper = styled.div`
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
-    text-align: center;
     background-image: url("/achievements-bg.svg");
     background-size: cover;
-
-    .achievements {
+    padding-bottom:117px;
+     .achievements {
+      padding-left: 90px;
+      padding-top: 71px;
       ${media.sm`
         margin-bottom: 40px;
       `}
@@ -61,6 +62,10 @@ const AchievementsWrapper = styled.div`
         width: 0px;
       }
     }
+  }
+  .skill-caption {
+    padding-left: 113px;
+    padding-top: 4px;
   }
 `;
 

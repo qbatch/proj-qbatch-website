@@ -2,15 +2,9 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const DedicatedDeveloperWrapper = styled.section`
-  padding: 96px 96px 52px;
-  ${media.sm`
-    padding: 72px 72px 52px;
-  `}
-  ${media.sm`
-    padding: 52px 52px 30px;
-  `}
   .image-portion {
-    padding-left: 120px;
+    padding-top: 94px;
+    padding-right: 12px;
     ${media.sm`
      padding: 30px 0px;
      text-align: center;
@@ -19,7 +13,7 @@ const DedicatedDeveloperWrapper = styled.section`
   }
 
   .title-portion {
-    padding: 62px 0px;
+    padding: 155px 0px;
     ${media.sm`
      padding: 32px 0px;
   `}
@@ -93,6 +87,8 @@ const DedicatedDeveloperWrapper = styled.section`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 50px;
     .divider-heading {
       position: relative;
       color: ${({ theme }) => theme.colors.bodyLight};

@@ -1,7 +1,8 @@
 import React from "react";
+import styled from "styled-components";
 import WhatWeDoWrapper from "./style";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 import LounchIcon from "../../../assets/images/icons/lounch-icon.svg";
 import ExpandIcon from "../../../assets/images/icons/expand-icon.svg";
@@ -10,6 +11,8 @@ import CreateDesignIcon from "../../../assets/images/icons/create-design-icon.sv
 import TransformIcon from "../../../assets/images/icons/transform-icon.svg";
 
 import Button from "../../../components/UiComponent/Button"
+import Divider from '../../../components/UiComponent/Divider'
+import Container from '../../../components/UiComponent/Container'
 
 const weDoData = [
   {
@@ -51,37 +54,41 @@ const Index = () => {
   
   return (
     <WhatWeDoWrapper>
-      <div className="base-padding">
-        <div className="d-flex flex-column align-items-center text-center do-heading">
-          <h1 className="heading">What can we do for you?</h1>
-          <p>
-            Gain an unfair advantage over your competitors with our
-            goal-oriented approach, mandatory quality audits, and
-            transparent processes from start to end. 
-          </p>
+      <Container>
+        <div className="base-space">
+          <div className="d-flex flex-column align-items-center text-center do-heading">
+            <h1 className="heading">What can we do for you?</h1>
+            <p>
+              Gain an unfair advantage over your competitors with our goal-oriented approach, mandatory quality audits,
+              and transparent processes from start to end. 
+            </p>
+          </div>
+          <div className="services-provided">
+            <Row>
+              {weDoData.map((data, i) => (
+                <Col xl={4} md={6} sm={12} key={i}>
+                  <div className={i !== 5 ? "service" : ""}>
+                    {i === 5 ? (
+                      <div className="services-btn">
+                        <Button text="View All Services" />
+                      </div>
+                    ) : (
+                      <div className="d-flex align-items-start">
+                        <div className="mt-2">{data.icon}</div>
+                        <div className="do-title">
+                          <h4>{data.title}</h4>
+                          <span>{data.desc}</span>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </div>
         </div>
-        <Container fluid>
-          <Row className="do-row">
-            {weDoData.map((data, ind) => (
-              <Col xl={4} md={6} sm={12} key={ind} className="do-column p-0">
-                {ind === 5 ? (
-                  <div className="services-btn">
-                    <Button text="View All Services" />
-                  </div>
-                ) : (
-                  <div className="d-flex align-items-start">
-                    <div className="mt-2">{data.icon}</div>
-                    <div className="do-title">
-                      <h4>{data.title}</h4>
-                      <span>{data.desc}</span>
-                    </div>
-                  </div>
-                )}
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </div>
+      </Container>
+      <Divider />
     </WhatWeDoWrapper>
   );
 };

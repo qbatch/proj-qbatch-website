@@ -47,6 +47,9 @@ const GlobalStyles = createGlobalStyle`
     .color-danger {
       color: ${({ theme }) => theme.colors.dangerColor};
     }
+    .color-primary {
+      color: ${({ theme }) => theme.colors.primaryColor};
+    }
     .fw-light {
       font-weight: ${({ theme }) => theme.fontWeight.light};
     }
@@ -58,9 +61,11 @@ const GlobalStyles = createGlobalStyle`
         max-width:100%;
     }
     
-    .container-fluid {
-        max-width: 1920px;
+    .container {
+      padding-right: 96px;
+      padding-left: 96px;
     }
+
     .base-padding {
       padding: 96px;
     }

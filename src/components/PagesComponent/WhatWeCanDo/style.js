@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const WhatWeDoWrapper = styled.div`
+  .base-space {
+    padding: 96px 0;
+    padding-bottom: 24px;
+  }
   .do-heading {
     h1 {
       margin-bottom: 16px;
@@ -12,22 +16,24 @@ const WhatWeDoWrapper = styled.div`
       max-width: 820px;
     }
   }
-  .do-row {
-    margin-top: 74px;
-    .do-column {
-      margin-bottom: 72px;
-      position: relative;
+  .services-btn {
+    margin-top: 48px;
+    padding-left: 4px;
+  }
+  .services-provided {
+    margin-top: 57px;
+    .service {
+      margin-bottom: 71px;
       .do-title {
         margin-left: 40px;
         span {
           color: ${({ theme }) => theme.colors.textMedium};
           white-space: pre-line;
           line-height: 24px;
+          ${media.sm`
+             white-space: inherit;
+            `}
         }
-      }
-      .services-btn {
-        position: absolute;
-        bottom: 0;
       }
     }
   }
