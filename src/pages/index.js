@@ -5,7 +5,8 @@ import Layout from "../components/Layout/layout";
 import { SEO } from "../components/Seo";
 
 import DedicatedDevelopment from "../components/PagesComponent/DedicatedDeveloper";
-import Achievements from "../components/PagesComponent/Achievements";
+import Achievements from "../components/PagesComponent/Achievements/index";
+import WhatWeCanDo from "../components/PagesComponent/WhatWeCanDo";
 import Expertise from "../components/PagesComponent/Expertise";
 
 const IndexPage = () => {
@@ -13,6 +14,7 @@ const IndexPage = () => {
     <Layout>
       <DedicatedDevelopment />
       <Achievements />
+      <WhatWeCanDo />
       <Expertise />
     </Layout>
   );

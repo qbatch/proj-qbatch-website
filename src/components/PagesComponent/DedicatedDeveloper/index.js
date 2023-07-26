@@ -1,8 +1,9 @@
 import React from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 import Button from "../../UiComponent/Button";
+import Container from "../../UiComponent/Container";
 
 import BannerImage from "../../../assets/images/banner-img.svg";
 
@@ -11,9 +12,9 @@ import DedicatedDeveloperWrapper from "./style";
 const Index = () => {
   return (
     <DedicatedDeveloperWrapper>
-      <Container fluid>
-        <Row className="dedicated-row">
-          <Col lg={6} md={6} sm={12} xs={12} className="p-0">
+      <Container  as="div">
+        <Row>
+          <Col lg={6} md={6} sm={12} xs={12}>
             <div className="title-portion">
               <h4 className="hire">Hire</h4>
               <h1 className="add-bottom-space">Dedicated Developers </h1>
@@ -21,10 +22,8 @@ const Index = () => {
                 for a future <span className="you-deserve fw-bold"> You Deserve!</span>
               </h2>
               <p className="paragraph">
-                200+ enterprises have already garnered great financial results
-                and market <br />
-                outreach with our time-tested development flow, error-free code
-                quality, and on-
+                200+ enterprises have already garnered great financial results and market <br />
+                outreach with our time-tested development flow, error-free code quality, and on-
                 <br />
                 time project delivery.
               </p>
@@ -41,14 +40,7 @@ const Index = () => {
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="text-center add-space">
-              {[
-                "Transparent",
-                "Trustworthy",
-                "Reliable",
-                "Progressive",
-                "Real",
-                "Creative",
-              ].map((value) => (
+              {["Transparent", "Trustworthy", "Reliable", "Progressive", "Real", "Creative"].map((value) => (
                 <h4 className="divider-heading">{value}</h4>
               ))}
             </div>

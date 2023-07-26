@@ -2,13 +2,9 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const ExpertiseWrapper = styled.section`
-  padding: 96px 96px 52px;
-  ${media.sm`
-    padding: 72px 72px 52px;
-  `}
-  ${media.sm`
-    padding: 52px 16px 30px;
-  `}
+  .base-space {
+    padding: 95px 0;
+  }
   .padding-0 {
     ${media.sm`
     padding: 0px;
@@ -24,7 +20,6 @@ const ExpertiseWrapper = styled.section`
     position: relative;
     padding-top: 16px;
     margin-bottom: 33px;
-    padding-left: 8px;
     .skill-badge {
       border: 1px solid ${({ theme }) => theme.colors.bodyLight};
       padding: 3px 8px;
@@ -44,8 +39,8 @@ const ExpertiseWrapper = styled.section`
     .add-gap {
       gap: 34px;
     }
-    .mb-10 {
-      margin-bottom: 10px;
+    .title {
+      margin-bottom: 9px;
     }
     .badges-gap {
       gap: 7px;
@@ -59,8 +54,10 @@ const ExpertiseWrapper = styled.section`
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.5s ease-out 100ms;
     svg {
-      font-size: 60px;
+      font-size: 54px;
+      transition: font-size 0.5s ease-out 100ms;
       color: ${({ theme }) => theme.colors.dangerColor};
       ${media.md`
              font-size: 32px;

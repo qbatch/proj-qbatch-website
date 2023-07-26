@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {Row, Col } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
 import FullStack from '../../../assets/images/full-stack-development.svg'
 import MobileApp from "../../../assets/images/mobile-development.svg";
@@ -8,6 +8,7 @@ import SupplyChain from "../../../assets/images/supply-chain.svg";
 import Cloud from "../../../assets/images/cloud-devop.svg";
 import PRAService from '../../../assets/images/rpa-service.svg';
 import Button from '../../UiComponent/Button'
+import Container from "../../UiComponent/Container";
 import ExpertiseWrapper from "./style";
 
 const Index = () => {
@@ -43,17 +44,19 @@ const Index = () => {
         badge: ["Pupeeteer", "Selenium", "Scraping"],
       },
     ];
+    
   return (
     <ExpertiseWrapper>
-      <Container fluid>
+      <Container>
+        <div className="base-space">
         <Row>
-          <Col lg={5} md={4} sm={12} xs={12} className="padding-0">
+          <Col lg={5} md={4} sm={12} xs={12}>
             <h1 className="color-primary mb-5 heading">Expertise to ace your next project</h1>
             <div className="pt-4">
               <Button text="Explore More" />
             </div>
           </Col>
-          <Col lg={7} md={8} sm={12} xs={12} className="padding-0">
+          <Col lg={7} md={8} sm={12} xs={12} >
             {experties.map((list, index) => {
               return (
                 <div className="d-flex skill-section align-items-center justify-content-between skill ">
@@ -62,7 +65,7 @@ const Index = () => {
                       <list.img />
                     </div>
                     <div className="">
-                      <h4 className="title mb-10">{list.title}</h4>
+                      <h4 className="title">{list.title}</h4>
                       <div className="badges-gap d-flex flex-wrap">
                         {list.badge.map((badge) => (
                           <span className="skill-badge">{badge}</span>
@@ -78,6 +81,7 @@ const Index = () => {
             })}
           </Col>
         </Row>
+        </div>
       </Container>
     </ExpertiseWrapper>
   );

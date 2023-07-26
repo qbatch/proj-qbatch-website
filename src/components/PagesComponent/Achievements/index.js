@@ -1,8 +1,9 @@
 import React from "react";
 
 import AchievementsWrapper from "./style";
+import Container from "../../UiComponent/Container";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 import CountUp from "react-countup";
 
@@ -25,24 +26,22 @@ const counterData = [
 ];
 
 const Index = () => {
-
   return (
     <AchievementsWrapper>
-      <div className="achievements-main d-flex flex-column align-items-center">
-        <h1 className="heading">Achievements Through The Years...</h1>
-        <Container className="achievements-container">
-          <Row className="achievements-row">
+      <div className="achievements-main d-flex flex-column">
+        <Container>
+          <h1 className="heading text-center">Achievements Through The Years...</h1>
+
+          <Row>
             {counterData.map((data, ind) => (
-              <Col md={4} sm={12} className="achievements-col">
+              <Col md={4} sm={12}>
                 <div className="achievements">
                   <h1>
                     <CountUp end={data.count} duration={3} />
-                    <span className="color-danger fw-light ms-2">
-                      {ind === 2 ? "%" : "+"}
-                    </span>
+                    <span className="color-danger fw-light ms-2">{ind === 2 ? "%" : "+"}</span>
                   </h1>
-                  <p>{data.desc}</p>
                 </div>
+                <p className="skill-caption">{data.desc}</p>
               </Col>
             ))}
           </Row>
