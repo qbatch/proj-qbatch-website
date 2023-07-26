@@ -61,6 +61,9 @@ const GlobalStyles = createGlobalStyle`
     .container-fluid {
         max-width: 1920px;
     }
+    .base-padding {
+      padding: 96px;
+    }
 
     @media (max-width: 1200px) {
       h1{
@@ -80,6 +83,12 @@ const GlobalStyles = createGlobalStyle`
       h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};     
       }
+      .base-padding {
+       padding: 72px;
+      }
+      p{
+       font-size:${({ theme }) => theme.fonts.baseFontSize};       
+      }
     }
     @media (max-width: 480px) {
       h1{
@@ -90,6 +99,12 @@ const GlobalStyles = createGlobalStyle`
       }
       h4{
         font-size:${({ theme }) => theme.fonts.baseFontSize};     
+      }
+      .base-padding {
+       padding: 52px;
+      }
+      p{
+       font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};       
       }
     }
 `;
