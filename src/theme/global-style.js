@@ -47,6 +47,9 @@ const GlobalStyles = createGlobalStyle`
     .color-danger {
       color: ${({ theme }) => theme.colors.dangerColor};
     }
+    .color-primary {
+      color: ${({ theme }) => theme.colors.primaryColor};
+    }
     .fw-light {
       font-weight: ${({ theme }) => theme.fontWeight.light};
     }
