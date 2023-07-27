@@ -39,7 +39,8 @@ const GlobalStyles = createGlobalStyle`
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg};     
     }
     p{
-       font-size:${({ theme }) => theme.fonts.baseFontSizeSm};       
+       font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+       color: ${({ theme }) => theme.colors.textMedium};    
     }
     label,caption{
         font-size:${({ theme }) => theme.fonts.baseFontSize};      
@@ -63,21 +64,11 @@ const GlobalStyles = createGlobalStyle`
         margin-bottom: 16px;
       }
       p {
-        color: ${({ theme }) => theme.colors.textMedium};
         line-height: 32px;
       }
     }
     img,svg{
         max-width:100%;
-    }
-    
-    .container {
-      padding-right: 96px;
-      padding-left: 96px;
-    }
-
-    .base-padding {
-      padding: 96px;
     }
 
     @media (max-width: 1200px) {
@@ -98,11 +89,11 @@ const GlobalStyles = createGlobalStyle`
       h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};     
       }
-      .base-padding {
-       padding: 72px;
-      }
       p{
        font-size:${({ theme }) => theme.fonts.baseFontSize};       
+      }
+      h3{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeLg}
       }
     }
     @media (max-width: 480px) {
@@ -115,11 +106,11 @@ const GlobalStyles = createGlobalStyle`
       h4{
         font-size:${({ theme }) => theme.fonts.baseFontSize};     
       }
-      .base-padding {
-       padding: 52px;
-      }
       p{
        font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};       
+      }
+      h3{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeSm}
       }
     }
 `;

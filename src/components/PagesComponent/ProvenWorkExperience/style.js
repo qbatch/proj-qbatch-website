@@ -64,12 +64,12 @@ const ProvenExperienceWrapper = styled.div`
     padding-left: 108px;
     ${media.md`
       padding-left: 12px;
-      padding-top: 70px;
+      padding-top: 32px;
     `}
     div {
       padding-right: 144px;
       ${media.md`
-        padding-right: 96px;
+        padding-right: 40px;
       `}
       img {
         object-fit: cover;
@@ -88,11 +88,8 @@ const ProvenExperienceWrapper = styled.div`
   .carousel-button-group {
     margin-top: 72px;
     gap: 12px;
-    ${media.lg`
-     
-    `}
     ${media.md`
-      
+      margin-top: 32px;
     `}
     svg {
       cursor: pointer;
