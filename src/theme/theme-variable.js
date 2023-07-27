@@ -26,6 +26,7 @@ const theme = {
     whiteColor: "#FFF",
     bodyLight: "#7C8EA1",
     dividingColor: "#D2D9DC",
+    disableColor: "#889095",
   },
   fonts: {
     baseFontSizeH1: fsh1,

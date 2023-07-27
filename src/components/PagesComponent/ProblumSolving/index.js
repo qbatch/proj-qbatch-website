@@ -12,7 +12,7 @@ const Index =()=>{
             <Col md={8}>
               <h2>
                 We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries
-                like you to transform on a massive scale<br></br>  — <b>with logic, innovation and emotion.</b>
+                like you to transform on a massive scale<br></br> — <b>with logic, innovation and emotion.</b>
               </h2>
             </Col>
             <Col md={4}>

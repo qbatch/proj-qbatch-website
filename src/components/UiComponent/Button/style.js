@@ -9,6 +9,7 @@ const ButtonWrapper = styled(Button)`
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   padding: 0;
   position: relative;
+  white-space: nowrap;
 
   .button-icon {
     width: 32px;

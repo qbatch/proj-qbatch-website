@@ -9,6 +9,7 @@ import Achievements from "../components/PagesComponent/Achievements/index";
 import WhatWeCanDo from "../components/PagesComponent/WhatWeCanDo";
 import Expertise from "../components/PagesComponent/Expertise";
 import ProblumSolving from '../components/PagesComponent/ProblumSolving';
+import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
 
 const IndexPage = () => {
   return (
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <WhatWeCanDo />
       <Expertise />
       <ProblumSolving />
+      <ProvenWorkExperience />
     </Layout>
   );
 };
