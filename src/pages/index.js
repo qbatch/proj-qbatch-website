@@ -8,6 +8,7 @@ import DedicatedDevelopment from "../components/PagesComponent/DedicatedDevelope
 import Achievements from "../components/PagesComponent/Achievements/index";
 import WhatWeCanDo from "../components/PagesComponent/WhatWeCanDo";
 import Expertise from "../components/PagesComponent/Expertise";
+import ProblumSolving from '../components/PagesComponent/ProblumSolving';
 
 const IndexPage = () => {
   return (
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <Achievements />
       <WhatWeCanDo />
       <Expertise />
+      <ProblumSolving />
     </Layout>
   );
 };

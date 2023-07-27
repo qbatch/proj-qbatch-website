@@ -4,6 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const ExpertiseWrapper = styled.section`
   .base-space {
     padding: 95px 0;
+    padding-bottom: 88px;
   }
   .padding-0 {
     ${media.sm`
