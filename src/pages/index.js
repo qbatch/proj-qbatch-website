@@ -10,6 +10,7 @@ import WhatWeCanDo from "../components/PagesComponent/WhatWeCanDo";
 import Expertise from "../components/PagesComponent/Expertise";
 import ProblumSolving from '../components/PagesComponent/ProblumSolving';
 import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
+import HappilyMaking from '../components/PagesComponent/MakingIndustries'
 
 const IndexPage = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage = () => {
       <Expertise />
       <ProblumSolving />
       <ProvenWorkExperience />
+      <HappilyMaking />
     </Layout>
   );
 };

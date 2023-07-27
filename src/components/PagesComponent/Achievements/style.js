@@ -3,15 +3,15 @@ import { media } from "../../../theme/media-mixins";
 
 const AchievementsWrapper = styled.div`
   .achievements-main {
-    padding: 96px 30px;
+    padding: 96px 0;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
     background-image: url("/achievements-bg.svg");
     background-size: cover;
-    padding-bottom:117px;
-     .achievements {
-      padding-left: 90px;
+    padding-bottom: 81px;
+    .achievements {
+      text-align: center;
       padding-top: 71px;
       ${media.sm`
         margin-bottom: 40px;
@@ -64,8 +64,9 @@ const AchievementsWrapper = styled.div`
     }
   }
   .skill-caption {
-    padding-left: 113px;
-    padding-top: 4px;
+    padding-left: 0px;
+    padding-top: 16px;
+    font-weight: 400; 
   }
 `;
 

@@ -39,9 +39,9 @@ const Index = () => {
                   <h1>
                     <CountUp end={data.count} duration={3} />
                     <span className="color-danger fw-light ms-2">{ind === 2 ? "%" : "+"}</span>
+                    <p className="skill-caption">{data.desc}</p>
                   </h1>
                 </div>
-                <p className="skill-caption">{data.desc}</p>
               </Col>
             ))}
           </Row>

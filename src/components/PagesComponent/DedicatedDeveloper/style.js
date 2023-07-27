@@ -82,18 +82,28 @@ const DedicatedDeveloperWrapper = styled.section`
     margin-top: 36px;
     line-height: 24px;
     margin-bottom: 48px;
+    max-width: 557px;
+    ${media.sm`
+          max-width: 100%;
+    `}
   }
   .add-space {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     margin-top: 40px;
     margin-bottom: 50px;
+    ${media.sm`
+          flex-direction: column;
+  `}
     .divider-heading {
       position: relative;
       color: ${({ theme }) => theme.colors.bodyLight};
       font-weight: 400;
       margin: 0 33px 24px;
+      ${media.md`
+        margin: 0 16px 24px;
+  `}
+
       &::after {
         content: "";
         position: absolute;
@@ -102,7 +112,10 @@ const DedicatedDeveloperWrapper = styled.section`
         bottom: 1px;
         right: -35px;
         background-color: ${({ theme }) => theme.colors.dividerColor};
-        ${media.xs`
+        ${media.md`
+          right: -15px;
+  `}
+        ${media.sm`
         display:none ;
          `}
       }
