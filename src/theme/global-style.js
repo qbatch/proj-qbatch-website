@@ -57,6 +57,16 @@ const GlobalStyles = createGlobalStyle`
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 0;
     }
+    .section-heading {
+      h1 {
+        color: ${({ theme }) => theme.colors.primaryColor};
+        margin-bottom: 16px;
+      }
+      p {
+        color: ${({ theme }) => theme.colors.textMedium};
+        line-height: 32px;
+      }
+    }
     img,svg{
         max-width:100%;
     }
