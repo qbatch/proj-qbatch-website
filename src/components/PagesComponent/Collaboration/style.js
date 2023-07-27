@@ -75,7 +75,6 @@ const CollaborationWrapper = styled.div`
         }
         .title {
           margin-bottom: 12px;
-          font-size: 32px;
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
           line-height: 40px;
           letter-spacing: 0.4px;
