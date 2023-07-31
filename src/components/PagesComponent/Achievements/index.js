@@ -28,27 +28,23 @@ const counterData = [
 const Index = () => {
   return (
     <AchievementsWrapper>
-      <div className="achievements-main d-flex flex-column align-items-center">
-        <h1 className="heading">Achievements Through The Years...</h1>
-        <div className="counter-box w-100">
-          <Container>
-            <Row>
-              {counterData.map((data, ind) => (
-                <Col md={4} sm={12} className="achievements-col">
-                  <div className="achievements">
-                    <h1>
-                      <CountUp end={data.count} duration={3} />
-                      <span className="color-danger fw-light ms-2">
-                        {ind === 2 ? "%" : "+"}
-                      </span>
-                    </h1>
-                    <p>{data.desc}</p>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </div>
+      <div className="achievements-main">
+        <Container>
+          <h1 className="heading">Achievements Through The Years...</h1>
+          <Row>
+            {counterData.map((data, ind) => (
+              <Col md={4} sm={12} className="achievements-col">
+                <h1>
+                  <CountUp end={data.count} duration={3} />
+                  <span className="color-danger fw-light ms-2">
+                    {ind === 2 ? "%" : "+"}
+                  </span>
+                </h1>
+                <p>{data.desc}</p>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
     </AchievementsWrapper>
   );

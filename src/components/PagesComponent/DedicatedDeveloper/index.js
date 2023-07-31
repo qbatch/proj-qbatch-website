@@ -22,9 +22,8 @@ const Index = () => {
                 for a future <span className="you-deserve fw-bold"> You Deserve!</span>
               </h2>
               <p className="paragraph">
-                200+ enterprises have already garnered great financial results and market <br />
+                200+ enterprises have already garnered great financial results and market 
                 outreach with our time-tested development flow, error-free code quality, and on-
-                <br />
                 time project delivery.
               </p>
               <Button text="Let’s Start a Project" />

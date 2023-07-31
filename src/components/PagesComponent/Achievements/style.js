@@ -14,18 +14,28 @@ const AchievementsWrapper = styled.div`
       padding: 40px 0 0;
     `}
     .heading {
-      padding: 0 40px;
-      ${media.xs`
-      padding: 0 20px;
-    `}
+      margin-bottom: 71px;
     }
-    .counter-box {
-      padding-top: 71px;
-    }
-     .achievements {
+    .achievements-col {
+      position: relative;
       ${media.sm`
         margin-bottom: 40px;
       `}
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 190px;
+        background-color: ${({ theme }) => theme.colors.dividerColor};
+        right: 0;
+        top: 0;
+        ${media.sm`
+          width: 0px;
+        `}
+      }
+      &:last-child::after {
+        width: 0px;
+      }
       h1 {
         font-size: ${({ theme }) => theme.fonts.baseFontXl};
         color: ${({ theme }) => theme.colors.bodyTextVariant};
@@ -44,24 +54,6 @@ const AchievementsWrapper = styled.div`
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
         `}
-      }
-    }
-    .achievements-col {
-      position: relative;
-      &::after {
-        position: absolute;
-        content: "";
-        width: 1px;
-        height: 190px;
-        background-color: ${({ theme }) => theme.colors.dividerColor};
-        right: 0;
-        top: 0;
-        ${media.sm`
-          width: 0px;
-        `}
-      }
-      &:last-child::after {
-        width: 0px;
       }
     }
   }
