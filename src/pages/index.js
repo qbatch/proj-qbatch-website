@@ -8,9 +8,11 @@ import DedicatedDevelopment from "../components/PagesComponent/DedicatedDevelope
 import Achievements from "../components/PagesComponent/Achievements/index";
 import WhatWeCanDo from "../components/PagesComponent/WhatWeCanDo";
 import Expertise from "../components/PagesComponent/Expertise";
-import ProblumSolving from '../components/PagesComponent/ProblumSolving';
+import ProblumSolving from "../components/PagesComponent/ProblumSolving";
 import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
 import HappilyMaking from '../components/PagesComponent/MakingIndustries'
+import WhatDifferenceQbatchMaking from "../components/PagesComponent/WhatDifferenceQbatchMaking";
+import Collaboration from "../components/PagesComponent/Collaboration";
 
 const IndexPage = () => {
   return (
@@ -22,6 +24,8 @@ const IndexPage = () => {
       <ProblumSolving />
       <ProvenWorkExperience />
       <HappilyMaking />
+      <WhatDifferenceQbatchMaking />
+      <Collaboration />
     </Layout>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import WhatWeDoWrapper from "./style";
 
 import { Row, Col } from "react-bootstrap";
@@ -56,8 +55,8 @@ const Index = () => {
     <WhatWeDoWrapper>
       <Container>
         <div className="base-space">
-          <div className="d-flex flex-column align-items-center text-center do-heading">
-            <h1 className="heading">What can we do for you?</h1>
+          <div className="d-flex flex-column align-items-center text-center section-heading">
+            <h1>What can we do for you?</h1>
             <p>
               Gain an unfair advantage over your competitors with our goal-oriented approach, mandatory quality audits,
               and transparent processes from start to end. 

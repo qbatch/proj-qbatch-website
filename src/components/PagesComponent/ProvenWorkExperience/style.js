@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const ProvenExperienceWrapper = styled.div`
   .section-heading {
     padding: 96px 0 43px;
+    ${media.sm`
+      padding: 40px 0 40px;
+    `}
   }
   .carousel-padding {
     padding-top: 30px;
@@ -38,10 +41,10 @@ const ProvenExperienceWrapper = styled.div`
       padding: 0 0 96px 60px;
     `}
       ${media.sm`
-      padding: 0 0 96px 40px;
+      padding: 0 0 40px 40px;
     `}
      ${media.xs`
-      padding: 0 0 96px 20px;
+      padding: 0 0 40px 20px;
     `}
   }
   .section-slider {
@@ -64,12 +67,12 @@ const ProvenExperienceWrapper = styled.div`
     padding-left: 108px;
     ${media.md`
       padding-left: 12px;
-      padding-top: 70px;
+      padding-top: 32px;
     `}
     div {
       padding-right: 144px;
       ${media.md`
-        padding-right: 96px;
+        padding-right: 40px;
       `}
       img {
         object-fit: cover;
@@ -88,11 +91,8 @@ const ProvenExperienceWrapper = styled.div`
   .carousel-button-group {
     margin-top: 72px;
     gap: 12px;
-    ${media.lg`
-     
-    `}
     ${media.md`
-      
+      margin-top: 32px;
     `}
     svg {
       cursor: pointer;
