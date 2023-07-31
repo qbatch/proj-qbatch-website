@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const ProvenExperienceWrapper = styled.div`
   .section-heading {
     padding: 96px 0 43px;
+    ${media.sm`
+      padding: 40px 0 40px;
+    `}
   }
   .carousel-padding {
     padding-top: 30px;
@@ -38,10 +41,10 @@ const ProvenExperienceWrapper = styled.div`
       padding: 0 0 96px 60px;
     `}
       ${media.sm`
-      padding: 0 0 96px 40px;
+      padding: 0 0 40px 40px;
     `}
      ${media.xs`
-      padding: 0 0 96px 20px;
+      padding: 0 0 40px 20px;
     `}
   }
   .section-slider {

@@ -90,11 +90,9 @@ const Index = () => {
                   </div>
                 </Col>
                 <Col xs={2}>
-                  <div className="d-flex align-items-center justify-content-center gap-md-3 gap-sm-1">
+                  <div className="d-flex align-items-center justify-content-center gap-md-3 gap-1 challenges-icons">
                     <img src={item.icon1} alt="icon" />
-                    <div className="gradient-arrow">
-                      <GradientArrow />
-                    </div>
+                    <GradientArrow />
                     <img src={item.icon2} alt="icon" />
                   </div>
                 </Col>
