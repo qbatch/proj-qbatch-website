@@ -94,7 +94,7 @@ const Index = () => {
               high-impact products.
             </p>
           </div>
-          <div className="mt-4">
+          <div className="mt-md-4 mt-0">
             <Button text="Explore More" />
           </div>
         </div>

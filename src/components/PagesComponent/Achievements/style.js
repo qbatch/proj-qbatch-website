@@ -3,16 +3,26 @@ import { media } from "../../../theme/media-mixins";
 
 const AchievementsWrapper = styled.div`
   .achievements-main {
-    padding: 96px 30px;
+    padding: 96px 0;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
     background-image: url("/achievements-bg.svg");
     background-size: cover;
-    padding-bottom:117px;
-     .achievements {
-      padding-left: 90px;
+    text-align: center;
+    ${media.sm`
+      padding: 40px 0 0;
+    `}
+    .heading {
+      padding: 0 40px;
+      ${media.xs`
+      padding: 0 20px;
+    `}
+    }
+    .counter-box {
       padding-top: 71px;
+    }
+     .achievements {
       ${media.sm`
         margin-bottom: 40px;
       `}
@@ -28,21 +38,13 @@ const AchievementsWrapper = styled.div`
         `}
       }
       p {
-        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         margin-bottom: 0;
-        color: ${({ theme }) => theme.colors.textMedium};
         line-height: 32px;
         white-space: pre-line;
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
         `}
       }
-    }
-    .achievements-container {
-      max-width: 1432px;
-    }
-    .achievements-row {
-      margin-top: 72px;
     }
     .achievements-col {
       position: relative;
@@ -62,10 +64,6 @@ const AchievementsWrapper = styled.div`
         width: 0px;
       }
     }
-  }
-  .skill-caption {
-    padding-left: 113px;
-    padding-top: 4px;
   }
 `;
 
