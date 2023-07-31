@@ -14,15 +14,10 @@ const AchievementsWrapper = styled.div`
       padding: 40px 0 0;
     `}
     .heading {
-      padding: 0 40px;
-      ${media.xs`
-      padding: 0 20px;
-    `}
+      margin-bottom: 71px;
     }
-    .counter-box {
-      padding-top: 71px;
-    }
-     .achievements {
+    .achievements-col {
+      position: relative;
       ${media.sm`
         margin-bottom: 40px;
       `}
@@ -45,9 +40,6 @@ const AchievementsWrapper = styled.div`
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
         `}
       }
-    }
-    .achievements-col {
-      position: relative;
       &::after {
         position: absolute;
         content: "";
