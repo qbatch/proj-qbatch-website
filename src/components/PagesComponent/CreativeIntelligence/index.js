@@ -1,10 +1,10 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
-import { BsArrowRight } from "react-icons/bs";
-import CreativeIntelligenceWrapper from "./style";
+
 import Container from "../../UiComponent/Container";
 import AlbertSignatures from "../../../assets/images/albert-signatures.svg";
 import QuoteIcon from "../../../assets/images/quotes.svg";
+
+import CreativeIntelligenceWrapper from "./style";
 
 const Index = () => {
   return (
