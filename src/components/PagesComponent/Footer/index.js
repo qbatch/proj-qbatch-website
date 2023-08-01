@@ -1,9 +1,9 @@
 import React from "react";
-import FooterWrapper from "./style";
-
 import { Col, Row } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
+
+import FooterWrapper from "./style";
 
 const contactData = [
   {
