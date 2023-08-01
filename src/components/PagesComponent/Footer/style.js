@@ -17,12 +17,15 @@ const FooterWrapper = styled.div`
      padding: 40px 0;
     `}
     .footer-contact {
-      padding-top: 5px;
+      padding-top: 6px;
+      .address {
+        margin-left: 28px;
+      }
       div {
         display: flex;
         align-items: flex-start;
         gap: 12px;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         img {
           margin-top: 4px;
         }
@@ -38,7 +41,7 @@ const FooterWrapper = styled.div`
         line-height: 32px;
       }
       .email-input {
-        padding: 32px 0 16px;
+        padding: 39px 0 9px;
         display: flex;
         gap: 12px;
         border-bottom: 1px solid ${({ theme }) => theme.colors.textMedium};
@@ -98,13 +101,13 @@ const FooterWrapper = styled.div`
   }
   .footer-menu {
     ul {
-      padding: 4px 0 0;
+      padding: 6px 0 0;
       ${media.sm`
        padding: 0;
       `}
     }
     li {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
       cursor: pointer;
       transition: color 0.5s ease-out;
       position: relative;

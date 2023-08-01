@@ -2,10 +2,10 @@ import React from "react";
 import QbatchMakingWrapper from "./style";
 
 import { Row, Col } from "react-bootstrap";
+import { BiChevronRight } from "react-icons/bi";
 
 import Container from "../../UiComponent/Container";
-
-import GradientArrow from "../../../assets/images/icons/gradient-arrow.svg";
+import Divider from "../../UiComponent/Divider";
 
 const data = [
   {
@@ -85,19 +85,21 @@ const Index = () => {
             {data.map((item, ind) => (
               <Row key={ind} className="challenges-box">
                 <Col xs={5}>
-                  <div className="text-end pe-sm-0 pe-2">
+                  <div className="text-end pe-sm-0 pe-3">
                     <p>{item.challenges}</p>
                   </div>
                 </Col>
                 <Col xs={2}>
                   <div className="d-flex align-items-center justify-content-center gap-md-3 gap-1 challenges-icons">
                     <img src={item.icon1} alt="icon" />
-                    <GradientArrow />
+                    <div className="gradient-arrow">
+                      <BiChevronRight size={25} />
+                    </div>
                     <img src={item.icon2} alt="icon" />
                   </div>
                 </Col>
                 <Col xs={5}>
-                  <div className="ps-sm-0 ps-2">
+                  <div className="ps-sm-0 ps-3">
                     <p>{item.solve}</p>
                   </div>
                 </Col>
@@ -106,6 +108,7 @@ const Index = () => {
           </div>
         </div>
       </Container>
+      <Divider />
     </QbatchMakingWrapper>
   );
 };

@@ -7,8 +7,12 @@ import Container from "../../UiComponent/Container";
 
 const contactData = [
   {
-    title: "1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801, USA.",
+    title: "1309 Coffeen Avenue STE 1200 Sheridan,",
     icon: "/address-icon.svg",
+  },
+  {
+    title: "Wyoming 82801, USA.",
+    icon: "",
   },
   {
     title: "contact@qbatch.com",
@@ -34,7 +38,7 @@ const menuData = [
     to: "/",
   },
   {
-    name: "Discover Phas",
+    name: "Discover Phase",
     to: "/",
   },
 ];
@@ -130,8 +134,8 @@ const Index = () => {
               <div className="footer-contact">
                 {contactData.map((data, ind) => (
                   <div key={ind}>
-                    <img src={data.icon} alt="contact" />
-                    <span>{data.title}</span>
+                    <img src={data.icon} alt="contact" className={ind === 1 && "d-none"} />
+                    <span className={ind === 1 && "address"}>{data.title}</span>
                   </div>
                 ))}
               </div>
@@ -145,7 +149,7 @@ const Index = () => {
                   <input type="email" placeholder="Email Address" />
                   <div>
                     <span>Let’s Get Started</span>
-                    <img src="/arrow-right-small.svg" alt="arrow" />
+                    <img src="/footer-right-arrow.svg" alt="arrow" />
                   </div>
                 </div>
               </div>
