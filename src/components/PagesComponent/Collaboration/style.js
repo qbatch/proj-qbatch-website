@@ -25,7 +25,6 @@ const CollaborationWrapper = styled.div`
       p {
         max-width: 736px;
         margin: 0 auto;
-        line-height:1.4;
       }
     }
     .collaboration-content {
@@ -91,7 +90,7 @@ const CollaborationWrapper = styled.div`
           `}
         }
         p {
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+          font-size: ${({ theme }) => theme.fonts.baseFontSize};
           line-height: 24px;
           max-width: 588px;
           margin-bottom: 0;

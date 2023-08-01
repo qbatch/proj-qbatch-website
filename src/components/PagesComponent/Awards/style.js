@@ -7,20 +7,29 @@ const AwardsWrapper = styled.div`
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
-    background-image: url("/achievements-bg.svg");
+    background-image: url("/awards-bg.svg");
     background-size: cover;
     text-align: center;
     ${media.sm`
       padding: 40px 0 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
     `}
     .heading {
-      margin-bottom: 71px;
+      margin-bottom: 72px;
       max-width: 221px;
       text-align: left;
       font-size: 40px;
-      color:#2D2F31;
-      font-weight:700;
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
+      font-weight: 700;
       line-height: 52px;
+      ${media.sm`
+        margin-bottom:24px; 
+        max-width:100%;
+        font-size:24px;
+        line-height:32px;
+        text-align:center;
+      `}
     }
     .achievements-col {
       position: relative;
@@ -62,12 +71,37 @@ const AwardsWrapper = styled.div`
         `}
       }
     }
-    .awards-logos{
-      a{
-        img{
-          width:84px;
+    .awards-logos {
+      row-gap: 22px;
+      ${media.sm`
+        row-gap:15px;
+      `}
+      a {
+        padding:16px 0;
+        display: flex;
+        justify-content: center;
+        position:relative;
+        z-index:1;
+        ${media.sm`
+        padding:12px 0;
+      `}
+        img {
+          max-width: 100%;
         }
       }
+    }
+    .btn-awards{
+      text-align:left;
+      margin-top:-87px;
+       ${media.sm`
+          margin-top:24px;
+          margin-bottom:40px;
+          text-align:center;
+          button{
+            margin:0 auto;
+          }
+       `}
+
     }
   }
 `;

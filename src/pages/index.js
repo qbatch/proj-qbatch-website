@@ -27,8 +27,8 @@ const IndexPage = () => {
       <ProvenWorkExperience />
       <HappilyMaking />
       <WhatDifferenceQbatchMaking />
-      <Collaboration />
       <Awards/>
+      <Collaboration />
       <CreativeIntelligence/>
     </Layout>
   );
