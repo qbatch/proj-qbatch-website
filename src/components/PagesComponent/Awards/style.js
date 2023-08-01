@@ -72,7 +72,7 @@ const AwardsWrapper = styled.div`
       }
     }
     .awards-logos {
-      row-gap: 22px;
+      row-gap: 32px;
       ${media.sm`
         row-gap:15px;
       `}
