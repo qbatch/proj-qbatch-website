@@ -29,10 +29,6 @@ const FooterWrapper = styled.div`
         img {
           margin-top: 4px;
         }
-        span {
-          display: block;
-          max-width: 350px;
-        }
       }
     }
     .footer-email {
