@@ -13,6 +13,7 @@ import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperie
 import HappilyMaking from '../components/PagesComponent/MakingIndustries'
 import WhatDifferenceQbatchMaking from "../components/PagesComponent/WhatDifferenceQbatchMaking";
 import Collaboration from "../components/PagesComponent/Collaboration";
+import Awards from "../components/PagesComponent/Awards";
 
 const IndexPage = () => {
   return (
@@ -26,6 +27,7 @@ const IndexPage = () => {
       <HappilyMaking />
       <WhatDifferenceQbatchMaking />
       <Collaboration />
+      <Awards/>
     </Layout>
   );
 };
