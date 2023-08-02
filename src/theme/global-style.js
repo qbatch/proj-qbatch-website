@@ -58,6 +58,9 @@ const GlobalStyles = createGlobalStyle`
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 0;
     }
+    .pointer{
+      cursor:pointer;
+    }
     .section-heading {
       h1 {
         color: ${({ theme }) => theme.colors.primaryColor};

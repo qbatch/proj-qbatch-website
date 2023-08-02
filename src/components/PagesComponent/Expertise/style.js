@@ -38,7 +38,7 @@ const ExpertiseWrapper = styled.section`
     }
 
     .add-gap {
-      gap: 34px;
+      gap: 32px;
     }
     .title {
       margin-bottom: 9px;

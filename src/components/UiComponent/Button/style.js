@@ -34,7 +34,7 @@ const ButtonWrapper = styled(Button)`
         fill: ${({ theme }) => theme.colors.textMedium};
         position: absolute;
         transition: left 0.3s ease-in-out;
-        left: 0px;
+        left: 2px;
       }
     }
   }

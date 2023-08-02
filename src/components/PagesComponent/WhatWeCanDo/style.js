@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const WhatWeDoWrapper = styled.div`
   .base-space {
-    padding: 96px 0 24px;
+    padding: 97px 0 22px;
     ${media.sm`
       padding: 40px 0;
     `}
@@ -22,11 +22,14 @@ const WhatWeDoWrapper = styled.div`
     `}
   }
   .services-provided {
-    margin-top: 57px;
+    margin-top: 58px;
     .service {
-      margin-bottom: 71px;
+      margin-bottom: 73px;
       .do-title {
         margin-left: 40px;
+        h4{
+          margin-bottom:6px;
+        }
         span {
           color: ${({ theme }) => theme.colors.textMedium};
           white-space: pre-line;

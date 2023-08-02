@@ -10,6 +10,7 @@ import BannerImage from "../../../assets/images/banner-img.svg";
 import DedicatedDeveloperWrapper from "./style";
 
 const Index = () => {
+
   return (
     <DedicatedDeveloperWrapper>
       <Container  as="div">
@@ -49,4 +50,5 @@ const Index = () => {
     </DedicatedDeveloperWrapper>
   );
 };
+
 export default Index;

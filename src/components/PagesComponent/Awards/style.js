@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const AwardsWrapper = styled.div`
   .awards-main {
-    padding: 96px 0;
+    padding: 113px 0 95px 2px;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
@@ -37,11 +37,11 @@ const AwardsWrapper = styled.div`
         row-gap:15px;
       `}
       a {
-        padding:16px 0;
+        padding: 16px 0;
         display: flex;
         justify-content: center;
-        position:relative;
-        z-index:1;
+        position: relative;
+        z-index: 1;
         ${media.sm`
         padding:12px 0;
       `}
@@ -50,10 +50,10 @@ const AwardsWrapper = styled.div`
         }
       }
     }
-    .btn-awards{
-      text-align:left;
-      margin-top:-87px;
-       ${media.sm`
+    .btn-awards {
+      text-align: left;
+      margin-top: -87px;
+      ${media.sm`
           margin-top:24px;
           margin-bottom:40px;
           text-align:center;
@@ -61,7 +61,6 @@ const AwardsWrapper = styled.div`
             margin:0 auto;
           }
        `}
-
     }
   }
 `;

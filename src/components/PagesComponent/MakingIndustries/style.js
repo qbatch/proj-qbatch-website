@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const MakingIndustriesWrapper = styled.div`
-  padding: 97px 0;
+  padding: 98px 0 72px 0;
   background-color: #f7f8fa;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   background-image: url("/happily-making-bg.svg");
