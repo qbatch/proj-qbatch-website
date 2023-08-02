@@ -10,12 +10,8 @@ const StartProjectWrapper = styled.div`
     margin-top: 40px;
   }
   .seperation {
-    border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    margin-top: 16px;
-    padding-top: 16px;
     color: ${({ theme }) => theme.colors.bodyLight};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-    margin-bottom: 16px;
   }
   .testimonials {
     padding-top: 138px;

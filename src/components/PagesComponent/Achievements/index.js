@@ -33,7 +33,7 @@ const Index = () => {
           <h1 className="heading">Achievements Through The Years...</h1>
           <Row>
             {counterData.map((data, ind) => (
-              <Col md={4} sm={12} className="achievements-col">
+              <Col md={4} sm={12} key={ind} className="achievements-col">
                 <h1>
                   <CountUp end={data.count} duration={3} />
                   <span className="color-danger fw-light ms-2">

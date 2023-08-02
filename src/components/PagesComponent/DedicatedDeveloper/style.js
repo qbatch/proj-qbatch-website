@@ -79,7 +79,7 @@ const DedicatedDeveloperWrapper = styled.section`
   .paragraph {
     color: ${({ theme }) => theme.colors.bodyLight};
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
-    margin-top: 36px;
+    margin-top: 35px;
     line-height: 24px;
     margin-bottom: 48px;
     max-width: 557px;
@@ -90,7 +90,7 @@ const DedicatedDeveloperWrapper = styled.section`
   .add-space {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 37px;
     margin-bottom: 50px;
     ${media.sm`
           flex-direction: column;

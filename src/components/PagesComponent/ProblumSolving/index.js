@@ -1,8 +1,10 @@
 import React from 'react';
 import { Row, Col } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
-import ProblumSolvingWrapper from './style'
+
 import Container from '../../UiComponent/Container'
+
+import ProblumSolvingWrapper from "./style";
 
 const Index =()=>{
     return (
