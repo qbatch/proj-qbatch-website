@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Button from "react-bootstrap/Button";
+import { media } from "../../../theme/media-mixins";
 
 const ButtonWrapper = styled(Button)`
   display: flex;
@@ -10,6 +11,38 @@ const ButtonWrapper = styled(Button)`
   padding: 0;
   position: relative;
   white-space: nowrap;
+  ${media.xs`
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+  `}
+  &.header-btn {
+    border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+    color: ${({ theme }) => theme.colors.gardientColor};
+    padding: 3px 3px 3px 16px;
+    border-radius: 22px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .button-icon {
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      svg {
+        fill: ${({ theme }) => theme.colors.dangerColor};
+        left: 2px;
+      }
+    }
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+      color: ${({ theme }) => theme.colors.whiteColor};
+      &::after {
+        width: 0;
+      }
+      .button-icon {
+        border: 1px solid ${({ theme }) => theme.colors.whiteColor};
+      }
+    }
+  }
 
   .button-icon {
     width: 32px;
@@ -21,8 +54,8 @@ const ButtonWrapper = styled(Button)`
     transition: all 0.3s ease-in-out;
 
     div {
-      width: 22px;
-      height: 22px;
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
       display: flex;
       align-items: center;

@@ -1,34 +1,94 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
-const HeaderWrapper = styled.div`
-  .navbar {
-    padding: 18px 96px;
-  }
+const HeaderWrapper = styled.header`
+  height: 81px;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-sizing: border-box;
+
   .header-main {
-    width: 100%;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    background-color: ${({ theme }) => theme.colors.backgroundColor};
+    padding: 24px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    box-sizing: border-box;
-
+    .logo {
+      svg {
+        min-width: 70px;
+        ${media.xs`
+          width: 70px;
+        `}
+      }
+    }
     .header-menu {
+      margin-left: 124px;
+      margin-top: 2px;
+      ${media.lg`
+        margin-left: 0;
+      `}
+      ${media.md`
+        display: none;
+      `}
       ul {
         display: flex;
         align-items: center;
         margin-bottom: 0;
         li {
-          display: flex;
-          gap: 8px;
-          padding: 0 24px;
+          padding-left: 24px;
+          ${media.lg`
+            padding-left: 22px;
+          `}
           color: ${({ theme }) => theme.colors.textMedium};
+          font-weight: ${({ theme }) => theme.fontWeight.normal};
           cursor: pointer;
           position: relative;
-          transition: all 0.5s ease-in-out;
+          span {
+            transition: all 0.3s ease-in-out;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -2px;
+              height: 2px;
+              width: 0;
+              border-bottom: 2px solid
+                ${({ theme }) => theme.colors.dangerColor};
+              transition: all 0.3s ease-out;
+            }
+          }
+          &:first-child {
+            min-width: 112px;
+            ${media.lg`
+              min-width: 100px;
+            `}
+          }
+          &:nth-child(2) {
+            min-width: 167px;
+            ${media.lg`
+              min-width: 155px;
+            `}
+          }
+          &:nth-child(3) {
+            min-width: 122px;
+            ${media.lg`
+              min-width: 110px;
+            `}
+          }
+          &:nth-child(4) {
+            min-width: 110px;
+            ${media.lg`
+              min-width: 98px;
+            `}
+          }
+          &:last-child {
+            min-width: 88px;
+            ${media.lg`
+              min-width: 76px;
+            `}
+          }
           &::after {
             position: absolute;
             content: "";
@@ -40,19 +100,15 @@ const HeaderWrapper = styled.div`
           &:last-child::after {
             width: 0px;
           }
-          &:hover:before {
-            content: "";
-            position: absolute;
-            left: 24px;
-            bottom: -2px;
-            height: 2px;
-            width: 18px;
-            border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
-            transition: all 0.5s ease-in-out;
-          }
           &:hover {
             color: ${({ theme }) => theme.colors.primaryColor};
-            font-weight: ${({ theme }) => theme.fontWeight.bold};
+            font-weight: ${({ theme }) => theme.fontWeight.medium};
+            span {
+              transform: translateY(-2px);
+              &::before {
+                width: 18px;
+              }
+            }
           }
         }
       }
@@ -62,13 +118,14 @@ const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 48px;
-
+    ${media.lg`
+      gap: 20px;
+    `}
     .burger-icon {
       width: 32px;
       height: 32px;
       position: relative;
       cursor: pointer;
-
       span {
         display: block;
         width: 100%;
@@ -76,18 +133,17 @@ const HeaderWrapper = styled.div`
         background-color: ${({ theme }) => theme.colors.textMedium};
         position: absolute;
         right: 0;
-        transition: transform 0.3s ease;
-
+        transition: transform 0.3s ease-in;
         &:first-child {
-          top: 5px;
+          top: 8px;
         }
         &:nth-child(2) {
-          top: 42%;
+          top: 48%;
           transform: translateY(-50%);
         }
         &:last-child {
-          bottom: 10px;
-          width: 20px;
+          bottom: 8px;
+          width: 12px;
         }
       }
       &:hover {
@@ -98,11 +154,11 @@ const HeaderWrapper = styled.div`
           }
           &:nth-child(2) {
             transform: translateY(6px);
-            width: 20px;
+            width: 12px;
             background-color: ${({ theme }) => theme.colors.dangerColor};
           }
           &:last-child {
-            transform: translateY(-8px);
+            transform: translateY(-7px);
             width: 100%;
             background-color: ${({ theme }) => theme.colors.primaryColor};
           }
