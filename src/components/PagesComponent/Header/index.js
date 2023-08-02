@@ -1,53 +1,62 @@
 import React from "react";
+
+import Button from "../../UiComponent/Button";
+import Container from "../../UiComponent/Container";
+
+import Logo from "../../../assets/images/qbatch-logo.svg";
+
 import HeaderWrapper from "./style";
 
-// components
-import Button from "../../UiComponent/Button";
-import Divider from "../../UiComponent/Divider";
-
-// images
-import Logo from "../../../assets/images/qbatch-logo.svg";
-import ArrowDown from "../../../assets/images/icons/arrow-down.svg";
-
-// bootsrap
-import { Container, Navbar, Nav } from "react-bootstrap";
+const headerMenu = [
+  {
+    name: "Services",
+    to: "/",
+  },
+  {
+    name: "Hire Developers",
+    to: "/",
+  },
+  {
+    name: "Industries",
+    to: "/",
+  },
+  {
+    name: "Portfolio",
+    to: "/",
+  },
+  {
+    name: "Blog",
+    to: "/",
+  },
+];
 
 const Index = () => {
-
   return (
     <HeaderWrapper>
-      <Navbar expand="lg" sticky="top" bg="#fff">
-        <Container fluid className="p-0">
-          <Navbar.Brand href="#">
+      <Container>
+        <div className="header-main">
+          <div className="logo">
             <Logo />
-          </Navbar.Brand>
+          </div>
           <nav className="header-menu">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">
-                Services <ArrowDown />
-              </Nav.Link>
-              <Nav.Link href="#features">
-                Hire Developers <ArrowDown />
-              </Nav.Link>
-              <Nav.Link href="#pricing">
-                Industries <ArrowDown />
-              </Nav.Link>
-              <Nav.Link href="#pricing">
-                Portfolio <ArrowDown />
-              </Nav.Link>
-            </Nav>
+            <ul>
+              {headerMenu.map((menu, ind) => (
+                <li key={ind}>
+                  <span>{menu.name}</span>
+                </li>
+              ))}
+            </ul>
           </nav>
           <div className="menu-items">
-            <Button text="Contact" />
+            <Button text="Contact Us" className="header-btn" />
             <div className="burger-icon">
-              {[1, 2, 3].map(() => (
-                <span></span>
-              ))}
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
-        </Container>
-      </Navbar>
-      <Divider />
+        </div>
+      </Container>
     </HeaderWrapper>
   );
 };

@@ -5,10 +5,10 @@ import ArrowRight from "../../../assets/images/icons/arrow-right.svg";
 
 const index = (props) => {
     
-  const { text } = props;
+  const { text, className } = props;
 
   return (
-    <ButtonWrapper variant="text">
+    <ButtonWrapper variant="text" className={className}>
       {text}
       <div className="button-icon">
         <div><ArrowRight /></div>
