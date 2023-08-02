@@ -39,7 +39,7 @@ const AchievementsWrapper = styled.div`
       h1 {
         font-size: ${({ theme }) => theme.fonts.baseFontXl};
         color: ${({ theme }) => theme.colors.bodyTextVariant};
-        margin-bottom: 14px;
+        margin-bottom: 16px;
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};
         `}

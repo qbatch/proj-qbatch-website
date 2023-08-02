@@ -12,6 +12,7 @@ import TopCompanies from "../../../assets/images/top-companies.svg";
 import TopRated from "../../../assets/images/top-rated.svg";
 import Upfirms from "../../../assets/images/upfirms.svg";
 import TechImply from "../../../assets/images/tech-imply.svg";
+
 import AwardsWrapper from "./style";
 
 const awardsData = [

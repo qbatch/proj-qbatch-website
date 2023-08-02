@@ -7,7 +7,7 @@ import "../../../../node_modules/video-react/dist/video-react.css";
 
 import Container from "../../UiComponent/Container";
 import Input from "../../UiComponent/Input";
-import Select from "../../UiComponent/Collapse";
+import Collapse from "../../UiComponent/Collapse";
 import RadioButton from "../../UiComponent/RadioButton";
 import CheckBox from "../../UiComponent/CheckBox";
 import Button from '../../UiComponent/Button';
@@ -45,11 +45,15 @@ const Index = () => {
               <Input placeholder="Full Name" type="text" />
               <Input placeholder="Contact Number" type="text" />
               <Input placeholder="Email Address" type="email" />
-              <Select title="Select Collaboration Model" onClick={() => setOpen(true)} open={open}>
-                <div className="seperation d-flex justify-content-between">
-                  <span>Select Collaboration Model</span>
-                  <ArrowDown className="pointer" onClick={() => setOpen(false)} />
-                </div>
+              <Collapse
+                title="Select Collaboration Model"
+                onClick={() => setOpen(!open)}
+                open={open}
+                content={
+                 !open && modal  &&  <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
+                }
+              >
+                <div className="seperation d-flex justify-content-between"></div>
                 {["Time and Material", "Fixed Scope Product Development", "Hire Dedicated Development Team"].map(
                   (value) => {
                     return (
@@ -59,39 +63,46 @@ const Index = () => {
                         value={value}
                         checked={modal === value}
                         name="collaboration"
-                        onChange={(e) => setModal(e.target.value)}
+                        onChange={(e) => {
+                          setModal(e.target.value);
+                        }}
                       />
                     );
                   }
                 )}
-                {modal !== "" ? (
-                  <>
-                    <div className="seperation d-flex justify-content-between">
-                      <span>Select Collaboration Model</span>
-                      <ArrowDown className="pointer" onClick={() => setOpen(false)} />
-                    </div>
-                    {[modal].map((value) => {
-                      return (
-                        <RadioButton
-                          type="radio"
-                          label={value}
-                          value={value}
-                          name="dedicated"
-                          onChange={(e) => setModal(e.target.value)}
-                        />
-                      );
-                    })}
-                  </>
-                ) : (
-                  ""
-                )}
-              </Select>
+              </Collapse>
 
-              <Select title="Select Service(s)" onClick={() => setServiceOpen(true)} open={serviceOpen}>
-                <div className="seperation d-flex justify-content-between">
-                  <span>Select Service(s)</span>
-                  <ArrowDown className="pointer" onClick={() => setServiceOpen(false)} />
-                </div>
+              <Collapse
+                content={
+                  !serviceOpen && serviceSelect.length > 0 && serviceSelect ? (
+                    <>
+                      <Row>
+                        {serviceSelect.slice(0.6).map((value) => {
+                          return (
+                            <Col md={6}>
+                              <CheckBox
+                                label={value}
+                                checked={serviceSelect.includes(value)}
+                                value={value}
+                                name="collaboration"
+                                onChange={(e) =>
+                                  setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
+                                }
+                              />
+                            </Col>
+                          );
+                        })}
+                      </Row>
+                    </>
+                  ) : (
+                    ""
+                  )
+                }
+                title="Select Service(s)"
+                onClick={() => setServiceOpen(!serviceOpen)}
+                open={serviceOpen}
+              >
+                <div className="seperation d-flex justify-content-between"></div>
                 <Row>
                   {[
                     "Design & Development",
@@ -121,34 +132,7 @@ const Index = () => {
                       );
                     })}
                 </Row>
-                {serviceSelect.length > 0 && serviceSelect ? (
-                  <>
-                    <div className="seperation d-flex justify-content-between">
-                      <span>Select Service(s)</span>
-                      <ArrowDown className="pointer" onClick={() => setServiceOpen(false)} />
-                    </div>
-                    <Row>
-                      {serviceSelect.slice(0.6).map((value) => {
-                        return (
-                          <Col md={6}>
-                            <CheckBox
-                              label={value}
-                              checked={serviceSelect.includes(value)}
-                              value={value}
-                              name="collaboration"
-                              onChange={(e) =>
-                                setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
-                              }
-                            />
-                          </Col>
-                        );
-                      })}
-                    </Row>
-                  </>
-                ) : (
-                  ""
-                )}
-              </Select>
+              </Collapse>
               <Input
                 as="textarea"
                 marginBottom="21px"
