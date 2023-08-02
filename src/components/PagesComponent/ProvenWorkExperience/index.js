@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import ProvenExperienceWrapper from "./style";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -12,6 +11,8 @@ import Container from "../../UiComponent/Container";
 import ProjectIcon from "../../../assets/images/icons/ecom-circle-icon.svg";
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
+
+import ProvenExperienceWrapper from "./style";
 
 const projectSlides = [
   {
@@ -53,10 +54,6 @@ const responsive = {
     breakpoint: { max: 1200, min: 0 },
     items: 1,
   },
-  mobile: {
-    breakpoint: { max: 992, min: 0 },
-    items: 1,
-  },
 };
 
 const responsiveTitle = {
@@ -67,7 +64,6 @@ const responsiveTitle = {
 };
 
 const Index = () => {
-  
   const [currentInd, setCurrentInd] = useState(1);
 
   const carousel1Ref = useRef(null);
@@ -108,6 +104,8 @@ const Index = () => {
                   responsive={responsiveTitle}
                   arrows={false}
                   ref={carousel2Ref}
+                  swipeable={false}
+                  draggable={false}
                 >
                   {projectSlides.map((item, ind) => (
                     <div className="project-title" key={ind}>
@@ -159,6 +157,8 @@ const Index = () => {
                   responsive={responsive}
                   arrows={false}
                   ref={carousel1Ref}
+                  swipeable={false}
+                  draggable={false}
                 >
                   {projectSlides.map((item, ind) => (
                     <div key={ind}>

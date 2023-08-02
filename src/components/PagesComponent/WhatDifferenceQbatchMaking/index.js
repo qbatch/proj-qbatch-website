@@ -4,7 +4,6 @@ import { Row, Col } from "react-bootstrap";
 import { BiChevronRight } from "react-icons/bi";
 
 import Container from "../../UiComponent/Container";
-import Divider from "../../UiComponent/Divider";
 
 import QbatchMakingWrapper from "./style";
 
@@ -109,7 +108,6 @@ const Index = () => {
           </div>
         </div>
       </Container>
-      <Divider />
     </QbatchMakingWrapper>
   );
 };

@@ -1,9 +1,11 @@
 import styled from "styled-components";
-import { media } from "../../../theme/media-mixins";
 
 const MakingIndustriesWrapper = styled.div`
   padding: 97px 0;
   background-color: #f7f8fa;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  background-image: url("/happily-making-bg.svg");
+  background-size: cover;
   h1 {
     margin-bottom: 24px;
   }
