@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/Layout/layout'
-import Seo from '../components/seo'
+import SEO from "../components/Seo";
 import { graphql } from 'gatsby'
 
 
@@ -11,6 +11,6 @@ const BlogPage = () => {
     </Layout>
   )
 }
-export const Head = () => <Seo title="My Blog Posts" />
+export const Head = () => <SEO title="My Blog Posts" />;
 
 export default BlogPage
