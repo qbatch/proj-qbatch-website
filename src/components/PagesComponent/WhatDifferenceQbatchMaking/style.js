@@ -9,7 +9,7 @@ const QbatchMakingWrapper = styled.div`
     `}
   }
   .section-heading {
-    margin-bottom: 72px;
+    margin-bottom: 74px;
     ${media.xs`
       margin-bottom: 40px;
     `}

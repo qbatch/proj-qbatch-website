@@ -58,6 +58,7 @@ const awardsData = [
 ];
 
 const Index = () => {
+  
   return (
     <AwardsWrapper>
       <div className="awards-main">

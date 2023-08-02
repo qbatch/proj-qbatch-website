@@ -15,6 +15,7 @@ import WhatDifferenceQbatchMaking from "../components/PagesComponent/WhatDiffere
 import Collaboration from "../components/PagesComponent/Collaboration";
 import Awards from "../components/PagesComponent/Awards";
 import CreativeIntelligence from "../components/PagesComponent/CreativeIntelligence";
+import StartProject from '../components/PagesComponent/StartProject'
 
 const IndexPage = () => {
   return (
@@ -30,6 +31,7 @@ const IndexPage = () => {
       <Awards/>
       <Collaboration />
       <CreativeIntelligence/>
+      <StartProject />
     </Layout>
   );
 };
