@@ -45,8 +45,10 @@ const HeaderWrapper = styled.header`
           font-weight: ${({ theme }) => theme.fontWeight.normal};
           cursor: pointer;
           position: relative;
+
           span {
             transition: all 0.3s ease-in-out;
+            display: inline-block;
             &::before {
               content: "";
               position: absolute;
