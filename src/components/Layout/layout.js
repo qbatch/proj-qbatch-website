@@ -15,7 +15,7 @@ const Layout = ({children }) => {
       <ThemeProvider theme={Theme}>
         <Header />
         <GlobalStyle />
-        {children}
+         {/* {children} */}
         <Footer />
       </ThemeProvider>
     </>
