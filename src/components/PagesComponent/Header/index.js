@@ -31,6 +31,7 @@ const headerMenu = [
 ];
 
 const Index = () => {
+
   return (
     <HeaderWrapper>
       <Container>
@@ -50,9 +51,9 @@ const Index = () => {
           <div className="menu-items">
             <Button text="Contact Us" className="header-btn" />
             <div className="burger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
+              {[1, 2, 3].map((key) => (
+                <span key={key}></span>
+              ))}
             </div>
           </div>
         </div>

@@ -25,12 +25,18 @@ const ProblumSolvingWrapper = styled.div`
       margin-left: 154px;
       width: 163px;
     height: 163px;
+    ${media.md`
+       margin-left: 0;
+    `}
       &:after{
         content: url("/problum-background.svg");
         position: absolute;
         right: -144%;
     bottom: -121%;
     z-index: -1;
+    ${media.sm`
+    bottom: -133%;
+    `}
     }
     }
   .circle-box {

@@ -18,6 +18,7 @@ const DedicatedDeveloperWrapper = styled.section`
      padding: 32px 0px;
   `}
   }
+  
   .hire {
     color: ${({ theme }) => theme.colors.textMedium};
     position: relative;

@@ -16,6 +16,7 @@ import ArrowDown from "../../../assets/images/collapse-down.svg";
 import StartProjectWrapper from "./style";
 
 const Index = () => {
+
   const [open, setOpen] = useState(false);
   const [modal, setModal] = useState("");
   const recaptchaRef = React.useRef();
@@ -50,7 +51,8 @@ const Index = () => {
                 onClick={() => setOpen(!open)}
                 open={open}
                 content={
-                 !open && modal  &&  <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
+                  !open &&
+                  modal && <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
                 }
               >
                 <div className="seperation d-flex justify-content-between"></div>
@@ -58,6 +60,7 @@ const Index = () => {
                   (value) => {
                     return (
                       <RadioButton
+                        key={value}
                         type="radio"
                         label={value}
                         value={value}
@@ -77,10 +80,11 @@ const Index = () => {
                   !serviceOpen && serviceSelect.length > 0 && serviceSelect ? (
                     <>
                       <Row>
-                        {serviceSelect.slice(0.6).map((value) => {
+                        {serviceSelect.slice(0.6).map((value,key) => {
                           return (
                             <Col md={6}>
                               <CheckBox
+                               key={key}
                                 label={value}
                                 checked={serviceSelect.includes(value)}
                                 value={value}
@@ -121,6 +125,7 @@ const Index = () => {
                       return (
                         <Col md={6}>
                           <CheckBox
+                            key={value}
                             label={value}
                             checked={serviceSelect.includes(value)}
                             value={value}
@@ -133,20 +138,14 @@ const Index = () => {
                     })}
                 </Row>
               </Collapse>
-              <Input
-                as="textarea"
-                marginBottom="21px"
-                height="53px"
-                placeholder="Tell us about your project"
-                type="email"
-              />
+              <Input as="textarea" base="21px" height="53px" placeholder="Tell us about your project" type="email" />
               <div>
                 <CheckBox
-                  marginLeft="-4px"
+                  margin="-4px"
                   height="12px"
                   width="12px"
                   fontSize="12px"
-                  marginBottom="5px"
+                  base="5px"
                   label={
                     <>
                       I understand and agree to the
@@ -158,13 +157,13 @@ const Index = () => {
                   name="collaboration"
                 />
                 <CheckBox
-                  marginLeft="-4px"
+                  margin="-4px"
                   height="12px"
                   width="12px"
                   fontSize="12px"
                   label="I agree to receive marketing and promotion related emials."
                   name="collaboration"
-                  marginBottom="19px"
+                  base="19px"
                 />
                 <div className="d-flex justify-content-between align-items-center flex-warp gap-1 mt-3">
                   <ReCAPTCHA sitekey="6LezlHQnAAAAAFZigM4rT1-ESPRHDcPGoxXpxoKz" onChange={handleRecaptchaChange} />
@@ -178,11 +177,7 @@ const Index = () => {
               <h4 className="color-primary">Testimonials</h4>
               <p>Here's what our clients have to say</p>
               <div className="video-box">
-                <Player
-                  playsInline
-                  poster="/assets/poster.png"
-                  src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4"
-                >
+                <Player playsInline src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4">
                   <BigPlayButton position="center" />
                   <LoadingSpinner />
                 </Player>

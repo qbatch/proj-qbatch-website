@@ -4,10 +4,10 @@ const CheckBoxWrapper = styled.div`
   .form-check-label {
     color: ${({ theme }) => theme.colors.textMedium};
     font-size: ${(props, theme) => (props.fontSize ? `${props.fontSize}` : "16px")};
-    margin-left: ${(props) => (props.marginLeft ? `${props.marginLeft}` : "8px")};
+    margin-left: ${(props) => (props.margin ? `${props.margin}` : "8px")};
   }
   .form-check {
-    margin-bottom: ${(props) => (props.marginBottom ? `${props.marginBottom}` : "8px")};
+    margin-bottom: ${(props) => (props.base ? `${props.base}` : "8px")};
   }
   input[type="checkbox"] {
     -webkit-appearance: none;

@@ -61,9 +61,9 @@ const Index = () => {
         <Row className="justify-content-center">
           <Col md={8} lg={6} sm={12} sx={12}>
             <div className="arrow-section">
-              {industries.map((title, index) => {
+              {industries.map((title, i) => {
                 return (
-                  <div className="d-flex justify-content-between arrow-box-section">
+                  <div className="d-flex justify-content-between arrow-box-section" key={i}>
                     <div className="d-flex gap-3 mb-3">
                       <title.img />
                       <h4> {title.title}</h4>

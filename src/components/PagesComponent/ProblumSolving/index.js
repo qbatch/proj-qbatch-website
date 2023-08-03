@@ -24,7 +24,7 @@ const Index = () => {
               <div className="circle-bg">
                 <div className="circle-box">
                   <svg
-                    class="text-svg"
+                    className="text-svg"
                     viewBox="0 0 100 100"
                     width="100"
                     height="100"
@@ -38,7 +38,7 @@ const Index = () => {
                         a 37,37 0 1,1 -74,0"
                       />
                     </defs>
-                    <text font-size="17">
+                    <text>
                       <textPath href="#circle">
                         Launch Your idea . Launch Your idea . Launch Your idea .
                         Launch Your idea .

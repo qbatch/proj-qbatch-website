@@ -1,9 +1,10 @@
 import React,{ useState } from "react";
-import CollpaseWrapper from './style'
+import Collapse from "react-bootstrap/Collapse";
+
 import CollapseUp from '../../../assets/images/collapse-up.svg'
 import CollapseDown from "../../../assets/images/collapse-down.svg";
-import Button from "react-bootstrap/Button";
-import Collapse from "react-bootstrap/Collapse";
+
+import CollpaseWrapper from "./style";
 
 function Example(props) {
   const { title, children, open, onClick, content } = props;

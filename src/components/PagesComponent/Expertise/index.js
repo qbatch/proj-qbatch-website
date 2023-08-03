@@ -60,9 +60,9 @@ const Index = () => {
             </div>
           </Col>
           <Col lg={7} md={8} sm={12} xs={12} >
-            {experties.map((list, index) => {
+            {experties.map((list, i) => {
               return (
-                <div className="d-flex skill-section align-items-center justify-content-between skill ">
+                <div className="d-flex skill-section align-items-center justify-content-between skill" key={i}>
                   <div className="d-flex add-gap">
                     <div>
                       <list.img />
@@ -71,7 +71,7 @@ const Index = () => {
                       <h4 className="title">{list.title}</h4>
                       <div className="badges-gap d-flex flex-wrap">
                         {list.badge.map((badge) => (
-                          <span className="skill-badge">{badge}</span>
+                          <span className="skill-badge" key={badge}>{badge}</span>
                         ))}
                       </div>
                     </div>
