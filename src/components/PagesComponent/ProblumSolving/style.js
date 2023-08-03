@@ -4,13 +4,13 @@ import { media } from "../../../theme/media-mixins";
 const ProblumSolvingWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 167px 0 155px;
-  background-image: url("/problum-background.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 0;
+  overflow:hidden;
   h2 {
     color: ${({ theme }) => theme.colors.whiteColor};
     font-weight: 400;
     line-height: 52px;
+    position:relative;
+    z-index: 2;
   }
   ${media.sm`
         .box-center{
@@ -19,12 +19,25 @@ const ProblumSolvingWrapper = styled.div`
         }
            
     `}
+    .circle-bg{
+      position:relative;
+      z-index: 1;
+      margin-left: 154px;
+      width: 163px;
+    height: 163px;
+      &:after{
+        content: url("/problum-background.svg");
+        position: absolute;
+        right: -144%;
+    bottom: -121%;
+    z-index: -1;
+    }
+    }
   .circle-box {
     border: 1px solid ${({ theme }) => theme.colors.whiteColor};
     width: 163px;
     height: 163px;
     border-radius: 50%;
-    margin-left: 154px;
     margin-top: 20px;
     ${media.md`
        margin-left: 0;
@@ -33,6 +46,12 @@ const ProblumSolvingWrapper = styled.div`
     cursor: pointer;
     transition: background-color 0.5s ease-out 100ms;
     position: relative;
+    /* &:after{
+        content: url("/problum-background.svg");
+        position: absolute;
+        right: -147%;
+        top: -122%;
+    } */
     .text-svg {
       fill: ${({ theme }) => theme.colors.whiteColor};
       height: auto;

@@ -3,9 +3,9 @@ import { css } from "styled-components";
 
  const breakpoints = {
   xs: "480px",
-  sm: "768px",
-  md: "992px",
-  lg: "1200px",
+  sm: "767px",
+  md: "991px",
+  lg: "1199px",
 };
 
 export const media = Object.keys(breakpoints).reduce((accumulator, label) => {
