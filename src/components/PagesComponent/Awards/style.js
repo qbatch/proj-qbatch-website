@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const AwardsWrapper = styled.div`
   .awards-main {
-    padding: 113px 0 95px 2px;
+    padding: 113px 0 95px;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
