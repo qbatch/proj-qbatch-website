@@ -2,12 +2,11 @@ import React from "react";
 import CollaborationWrapper from "./style";
 import { BsArrowRight } from "react-icons/bs";
 
+import Container from "../../UiComponent/Container";
 
 import TimeIcon from "../../../assets/images/icons/time-clock.svg";
 import FixedScopeIcon from "../../../assets/images/icons/fixed-scope.svg";
 import DevTeamIcon from "../../../assets/images/icons/dev-team.svg";
-
-import Container from '../../UiComponent/Container'
 
 const experties = [
   {
@@ -39,7 +38,7 @@ const Index = () => {
           <div className="collaboration-content">
           {experties.map((list, index) => {
               return (
-                <div className="d-flex skill-section align-items-center justify-content-between ">
+                <div className="d-flex skill-section align-items-center justify-content-between" key={index}>
                   <div className="d-flex add-gap align-items-center">
                     <div className="list-icon">
                       <list.img />

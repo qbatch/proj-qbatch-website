@@ -71,7 +71,7 @@ const Index = () => {
             <Col md={8} sm={12}>
               <Row className="awards-logos">
                 {awardsData.map((data, ind) => (
-                  <Col md={3} sm={3} xs={6}>
+                  <Col md={3} sm={3} xs={6} key={ind}>
                     <a href={data.link} target="_blank">
                       {data.img}
                     </a>

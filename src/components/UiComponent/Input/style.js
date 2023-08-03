@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 const Input = styled(Form)`
   .bottom-space {
-    margin-bottom: ${(props) => (props.marginBottom ? `${props.marginBottom}` : "13px")};
+    margin-bottom: ${(props) => (props.base ? `${props.base}` : "13px")};
   }
   .form-control {
     border: none;

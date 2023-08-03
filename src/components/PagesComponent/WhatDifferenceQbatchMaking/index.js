@@ -60,6 +60,7 @@ const data = [
 ];
 
 const Index = () => {
+  
   return (
     <QbatchMakingWrapper>
       <Container>

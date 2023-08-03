@@ -9,11 +9,9 @@ import BannerImage from "../../../assets/images/banner-img.svg";
 
 import DedicatedDeveloperWrapper from "./style";
 
-const Index = () => {
-
-  return (
+const Index = () => (
     <DedicatedDeveloperWrapper>
-      <Container  as="div">
+      <Container>
         <Row>
           <Col lg={6} md={6} sm={12} xs={12}>
             <div className="title-portion">
@@ -40,8 +38,8 @@ const Index = () => {
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="text-center add-space">
-              {["Transparent", "Trustworthy", "Reliable", "Progressive", "Real", "Creative"].map((value) => (
-                <h4 className="divider-heading">{value}</h4>
+              {["Transparent", "Trustworthy", "Reliable", "Progressive", "Real", "Creative"].map((value,i) => (
+                <h4 className="divider-heading" key={i}>{value}</h4>
               ))}
             </div>
           </Col>
@@ -49,6 +47,5 @@ const Index = () => {
       </Container>
     </DedicatedDeveloperWrapper>
   );
-};
 
 export default Index;

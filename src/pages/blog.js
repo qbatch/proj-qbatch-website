@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 
 
 const BlogPage = () => {
-    
+  
   return (
     <Layout pageTitle="My Blog Posts">
     </Layout>
