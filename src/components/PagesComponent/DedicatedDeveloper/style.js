@@ -13,7 +13,7 @@ const DedicatedDeveloperWrapper = styled.section`
   }
 
   .title-portion {
-    padding: 155px 0px;
+    padding: 158px 0px;
     ${media.sm`
      padding: 32px 0px;
   `}

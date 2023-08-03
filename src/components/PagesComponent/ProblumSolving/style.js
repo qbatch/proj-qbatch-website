@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const ProblumSolvingWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
-  padding: 167px 0 157px;
+  padding: 167px 0 155px;
   background-image: url("/problum-background.svg");
   background-repeat: no-repeat;
   background-position: 100% 0;
