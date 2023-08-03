@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const StartProjectWrapper = styled.div`
-  padding: 96px 0;
+  padding: 97px 0 96px;
+  ${media.sm`
+      padding: 40px 0;
+    `}
   h2 {
     margin: 1px 0 29px -1px;
   }

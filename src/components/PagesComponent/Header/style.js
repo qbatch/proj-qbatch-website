@@ -39,7 +39,7 @@ const HeaderWrapper = styled.header`
         li {
           padding-left: 24px;
           ${media.lg`
-            padding-left: 22px;
+            padding-left: 20px;
           `}
           color: ${({ theme }) => theme.colors.textMedium};
           font-weight: ${({ theme }) => theme.fontWeight.normal};
@@ -64,31 +64,31 @@ const HeaderWrapper = styled.header`
           &:first-child {
             min-width: 112px;
             ${media.lg`
-              min-width: 100px;
+              min-width: 96px;
             `}
           }
           &:nth-child(2) {
             min-width: 167px;
             ${media.lg`
-              min-width: 155px;
+              min-width: 151px;
             `}
           }
           &:nth-child(3) {
             min-width: 122px;
             ${media.lg`
-              min-width: 110px;
+              min-width: 106px;
             `}
           }
           &:nth-child(4) {
             min-width: 110px;
             ${media.lg`
-              min-width: 98px;
+              min-width: 92px;
             `}
           }
           &:last-child {
             min-width: 88px;
             ${media.lg`
-              min-width: 76px;
+              min-width: 70px;
             `}
           }
           &::after {
