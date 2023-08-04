@@ -32,5 +32,17 @@ const StartProjectWrapper = styled.div`
       border-radius: 18px;
     }
   }
+  .zero-height {
+    height: 0;
+    transition: height 1s ease-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .add-height {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s all ease-in;
+  }
 `;
 export default StartProjectWrapper;

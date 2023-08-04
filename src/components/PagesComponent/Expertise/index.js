@@ -1,6 +1,7 @@
 import React from "react";
 import {Row, Col } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
+import ArrowDownward from "../../../assets/images/arrow_downward.svg";
 
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
@@ -71,13 +72,15 @@ const Index = () => {
                       <h4 className="title">{list.title}</h4>
                       <div className="badges-gap d-flex flex-wrap">
                         {list.badge.map((badge) => (
-                          <span className="skill-badge" key={badge}>{badge}</span>
+                          <span className="skill-badge" key={badge}>
+                            {badge}
+                          </span>
                         ))}
                       </div>
                     </div>
                   </div>
                   <div className="arrow-box">
-                    <BsArrowRight />
+                    <ArrowDownward />
                   </div>
                 </div>
               );

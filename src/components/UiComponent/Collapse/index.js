@@ -22,7 +22,7 @@ function Example(props) {
             <CollapseUp onClick={onClick} className="pointer" />
           )}
         </div>
-        <div className="mt-2">{content}</div>
+        <div className="mt-3">{content}</div>
       </>
       <Collapse in={open}>
         <div id="example-collapse-text">{children}</div>

@@ -13,6 +13,7 @@ import CheckBox from "../../UiComponent/CheckBox";
 import Button from '../../UiComponent/Button';
 
 import ArrowDown from "../../../assets/images/collapse-down.svg";
+
 import StartProjectWrapper from "./style";
 
 const Index = () => {
@@ -51,8 +52,11 @@ const Index = () => {
                 onClick={() => setOpen(!open)}
                 open={open}
                 content={
-                  !open &&
-                  modal && <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
+                  // !open &&
+                  // modal &&
+                  <div className={!open && modal ? "add-height" : "zero-height"}>
+                    <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
+                  </div>
                 }
               >
                 <div className="seperation d-flex justify-content-between"></div>
@@ -77,14 +81,13 @@ const Index = () => {
 
               <Collapse
                 content={
-                  !serviceOpen && serviceSelect.length > 0 && serviceSelect ? (
-                    <>
+                    <div className={!serviceOpen && serviceSelect.length > 0 && serviceSelect  ? "add-height" : "zero-height"}>
                       <Row>
-                        {serviceSelect.slice(0.6).map((value,key) => {
+                        {serviceSelect.slice(0.6).map((value, key) => {
                           return (
                             <Col md={6}>
                               <CheckBox
-                               key={key}
+                                key={key}
                                 label={value}
                                 checked={serviceSelect.includes(value)}
                                 value={value}
@@ -97,10 +100,7 @@ const Index = () => {
                           );
                         })}
                       </Row>
-                    </>
-                  ) : (
-                    ""
-                  )
+                    </div>
                 }
                 title="Select Service(s)"
                 onClick={() => setServiceOpen(!serviceOpen)}

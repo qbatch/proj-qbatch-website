@@ -60,8 +60,7 @@ const ExpertiseWrapper = styled.section`
     cursor: pointer;
     transition: background-color 0.5s ease-out 100ms;
     svg {
-      font-size: 54px;
-      transition: font-size 0.5s ease-out 100ms;
+      transition: width 0.5s ease-out 100ms;
       color: ${({ theme }) => theme.colors.dangerColor};
       ${media.md`
              font-size: 32px;
@@ -70,8 +69,8 @@ const ExpertiseWrapper = styled.section`
     &:hover {
       background-color: ${({ theme }) => theme.colors.primaryColor};
       svg {
-        color: ${({ theme }) => theme.colors.whiteColor};
-        font-size: 24px;
+        width: 30px;
+        color:#ffffff;
       }
     }
   }
