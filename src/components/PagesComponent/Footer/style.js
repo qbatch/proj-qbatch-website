@@ -45,7 +45,7 @@ const FooterWrapper = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: ${({ theme }) => theme.colors.bodyLight};
+          color: ${({ theme }) => theme.colors.whiteColor};
           padding: 0;
           &::placeholder {
             color: ${({ theme }) => theme.colors.bodyLight};
