@@ -29,7 +29,7 @@ const Index = () => {
   return (
     <AchievementsWrapper>
       <div className="achievements-main">
-        <Container>
+        <Container className="achievements-inner-wrapper">
           <h1 className="heading">Achievements Through The Years...</h1>
           <Row>
             {counterData.map((data, ind) => (

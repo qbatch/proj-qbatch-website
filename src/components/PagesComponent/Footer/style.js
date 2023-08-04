@@ -88,7 +88,7 @@ const FooterWrapper = styled.div`
               width: 18px;
             }
             img {
-              transform: rotate(-60deg);
+              transform: rotate(-45deg);
             }
           }
         }
