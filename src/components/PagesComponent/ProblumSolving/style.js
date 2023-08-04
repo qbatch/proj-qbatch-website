@@ -52,12 +52,6 @@ const ProblumSolvingWrapper = styled.div`
     cursor: pointer;
     transition: background-color 0.5s ease-out 100ms;
     position: relative;
-    /* &:after{
-        content: url("/problum-background.svg");
-        position: absolute;
-        right: -147%;
-        top: -122%;
-    } */
     .text-svg {
       fill: ${({ theme }) => theme.colors.whiteColor};
       height: auto;
