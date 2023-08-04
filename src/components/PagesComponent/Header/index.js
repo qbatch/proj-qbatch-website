@@ -32,7 +32,7 @@ const headerMenu = [
 ];
 
 const Index = () => {
-  const [openDrawer, setOpenDrawer] = useState(true);
+  const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <>
       <HeaderWrapper>
