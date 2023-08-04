@@ -71,6 +71,9 @@ const GlobalStyles = createGlobalStyle`
     img,svg{
         max-width:100%;
     }
+    .header-drawer {
+      overflow: auto;
+    }
 
     @media (max-width: 1200px) {
       h1{
