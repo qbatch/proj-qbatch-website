@@ -7,21 +7,21 @@ const MakingIndustriesWrapper = styled.div`
   background-image: url("/happily-making-bg.svg");
   background-size: cover;
   position: relative;
-  &::before{
-  content : '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: block;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(180deg, rgba(246, 247, 250, 0.70) 0%, rgba(246, 247, 250, 0.60) 100%);
-}
-.industries-inner-wrapper{
-  position: relative;
-  z-index: 2;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(246, 247, 250, 0.7) 0%, rgba(246, 247, 250, 0.6) 100%);
+  }
+  .industries-inner-wrapper {
+    position: relative;
+    z-index: 2;
+  }
   ${media.sm`
     padding: 40px 0;
   `}
@@ -47,20 +47,19 @@ const MakingIndustriesWrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 0.5s ease-out 100ms;
       cursor: pointer;
-      .arrow-right {
-        font-size: 25px;
-        margin-right: 2px;
+      transition: background-color 0.5s ease-out 100ms;
+      svg {
+        transition: width 0.5s ease-out 100ms;
         color: ${({ theme }) => theme.colors.dangerColor};
-        margin-top: 3px;
-        transition: font-size 0.5s ease-out 100ms;
+        width: 24px;
+        pointer-events: none;
       }
       &:hover {
         background-color: ${({ theme }) => theme.colors.primaryColor};
-        .arrow-right {
-          color: ${({ theme }) => theme.colors.whiteColor};
-          font-size: 16px;
+        svg {
+          width: 12px;
+          color: #ffffff;
         }
       }
     }

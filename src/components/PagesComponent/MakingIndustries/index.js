@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
+import ArrowDown  from '../../../assets/images/arrow_downward.svg'
 
 import Container from "../../UiComponent/Container";
 
@@ -69,7 +70,7 @@ const Index = () => {
                       <h4> {title.title}</h4>
                     </div>
                     <div className="arrow-box">
-                      <BsArrowRight className="arrow-right" />
+                      <ArrowDown className="arrow-right" />
                     </div>
                   </div>
                 );

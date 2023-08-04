@@ -62,6 +62,7 @@ const ExpertiseWrapper = styled.section`
     svg {
       transition: width 0.5s ease-out 100ms;
       color: ${({ theme }) => theme.colors.dangerColor};
+      pointer-events: none;
       ${media.md`
              font-size: 32px;
     `}
@@ -70,7 +71,7 @@ const ExpertiseWrapper = styled.section`
       background-color: ${({ theme }) => theme.colors.primaryColor};
       svg {
         width: 30px;
-        color:#ffffff;
+        color: #ffffff;
       }
     }
   }
