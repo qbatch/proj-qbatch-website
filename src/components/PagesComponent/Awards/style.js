@@ -8,8 +8,16 @@ const AwardsWrapper = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
     background-image: url("/awards-bg.svg");
-    background-size: cover;
+    background-size: initial;
     text-align: center;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    ${media.lg`
+      background-position: -7px bottom;
+    `}
+    ${media.md`
+      background-position: -33px bottom;
+    `}
     ${media.sm`
       padding: 40px 0 0;
       background-size: 100%;
@@ -23,6 +31,10 @@ const AwardsWrapper = styled.div`
       color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-weight: 700;
       line-height: 52px;
+      ${media.md`
+        font-size:35px;
+        line-height:40px;
+      `}
       ${media.sm`
         margin-bottom:24px; 
         max-width:100%;
