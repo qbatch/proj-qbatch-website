@@ -2,17 +2,33 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const AchievementsWrapper = styled.div`
+position:relative;
+&::before{
+  content : '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(246, 247, 250, 0.70) 0%, rgba(246, 247, 250, 0.60) 100%);
+}
   .achievements-main {
     padding: 96px 0;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    background-color: ${({ theme }) => theme.colors.onGradient};
     background-image: url("/achievements-bg.svg");
     background-size: cover;
     text-align: center;
+    position : relative;
     ${media.sm`
       padding: 40px 0 0;
     `}
+    .achievements-inner-wrapper{
+      position: relative;
+      z-index: 2;
+    }
     .heading {
       margin-bottom: 71px;
     }

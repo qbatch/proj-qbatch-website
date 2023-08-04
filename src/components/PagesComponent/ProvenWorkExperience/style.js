@@ -77,8 +77,9 @@ const ProvenExperienceWrapper = styled.div`
       img {
         object-fit: cover;
         min-width: 100%;
-        height: 379px;
+        height: 378px;
         border-radius: 24px;
+        border-bottom-right-radius: 0;
         ${media.md`
           min-width: 100%;
         `}
