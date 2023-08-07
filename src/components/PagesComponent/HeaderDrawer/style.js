@@ -91,14 +91,15 @@ const DrawerWrapper = styled.div`
   .dropdown-menu {
     background-color: transparent;
     border: none;
-    margin-top: 37px;
+    margin-top: 61px;
     padding: 0;
+    transform: none !important;
     .dropdown-header {
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       color: ${({ theme }) => theme.colors.whiteColor};
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       padding: 0;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
     }
     .dropdown-item {
       color: ${({ theme }) => theme.colors.dividerColor};
@@ -113,7 +114,7 @@ const DrawerWrapper = styled.div`
     }
   }
   .sub-menu2 {
-    margin-top: 32px;
+    margin-top: 35px;
   }
   .bottom-content {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
@@ -304,8 +305,7 @@ const DrawerWrapper = styled.div`
           ${media.sm`
             position: static !important;
             height: auto;
-            margin-top: 0px;
-            margin-bottom: 30px;
+            margin-top: 30px;
           `}
         }
       }

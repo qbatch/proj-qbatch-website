@@ -65,6 +65,15 @@ const FooterWrapper = styled.div`
             white-space: nowrap;
             font-weight: ${({ theme }) => theme.fontWeight.bold};
             transition: color 0.5s ease-out;
+            ${media.lg`
+              display: none;
+            `}
+            ${media.sm`
+              display: block;
+            `}
+            ${media.xs`
+              display: none;
+            `}
           }
           img {
             transition: transform 0.5s ease-out;
