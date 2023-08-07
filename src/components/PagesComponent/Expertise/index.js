@@ -54,21 +54,21 @@ const Index = () => {
       <Container>
         <div className="base-space">
         <Row>
-          <Col lg={5} md={4} sm={12} xs={12}>
+          <Col lg={5} md={12} sm={12} xs={12}>
             <h1 className="color-primary mb-5 heading">Expertise to ace your next project</h1>
-            <div className="pt-4">
+            <div className="pt-lg-4 pb-lg-0 pb-5">
               <Button text="Explore More" />
             </div>
           </Col>
-          <Col lg={7} md={8} sm={12} xs={12} >
+          <Col lg={7} md={12} sm={12} xs={12} >
             {experties.map((list, i) => {
               return (
-                <div className="d-flex skill-section align-items-center justify-content-between skill" key={i}>
-                  <div className="d-flex add-gap">
+                <div className="d-flex skill-section justify-content-between skill" key={i}>
+                  <div className="d-flex add-gap w-100 align-items-center">
                     <div>
                       <list.img />
                     </div>
-                    <div className="">
+                    <div className="w-100">
                       <h4 className="title">{list.title}</h4>
                       <div className="badges-gap d-flex flex-wrap">
                         {list.badge.map((badge) => (
@@ -78,9 +78,12 @@ const Index = () => {
                         ))}
                       </div>
                     </div>
-                  </div>
-                  <div className="arrow-box">
+
+                  <div className="box-arrow-wrapper">
+                  <div className="arrow-box ms-auto">
                     <ArrowDownward />
+                  </div>
+                  </div>
                   </div>
                 </div>
               );

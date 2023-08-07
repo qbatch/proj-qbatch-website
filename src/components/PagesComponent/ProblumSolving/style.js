@@ -5,6 +5,9 @@ const ProblumSolvingWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 167px 0 155px;
   overflow: hidden;
+  ${media.md`
+   padding: 100px 0;
+  `}
   h2 {
     color: ${({ theme }) => theme.colors.whiteColor};
     font-weight: 400;
@@ -26,7 +29,7 @@ const ProblumSolvingWrapper = styled.div`
     width: 163px;
     height: 163px;
     ${media.md`
-       margin-left: 0;
+       margin: auto;
     `}
     &:after {
       content: url("/problum-background.svg");
@@ -67,6 +70,8 @@ const ProblumSolvingWrapper = styled.div`
     .red-arrow {
       font-size: 81px;
       color: ${({ theme }) => theme.colors.dangerColor};
+      height: 50px;
+      width: 62px;
       position: absolute;
       top: 55px;
       left: 48px;
