@@ -10,6 +10,13 @@ module.exports = {
     DEV_SSR: true,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: "a79x3n88si2q",
+        accessToken: "jQDsVtu7P86V1Ke-0RAu4MH_98teoF9V3PICHYbYuC0",
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-styled-components",
