@@ -13,7 +13,7 @@ const Index = () => (
     <DedicatedDeveloperWrapper>
       <Container>
         <Row>
-          <Col lg={6} md={6} sm={12} xs={12}>
+          <Col lg={6} md={12} sm={12} xs={12}>
             <div className="title-portion">
               <h4 className="hire">Hire</h4>
               <h1 className="add-bottom-space">Dedicated Developers </h1>
@@ -25,10 +25,10 @@ const Index = () => (
                 outreach with our time-tested development flow, error-free code quality, and on-
                 time project delivery.
               </p>
-              <Button text="Let’s Start a Project" />
+              <Button text="Let’s Start a Project" className="mx-lg-0 mx-auto"/>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={12} xs={12} className="d-flex justify-content-end p-0">
+          <Col lg={6} md={0} sm={0} xs={0} className="d-flex justify-content-end p-0 d-lg-block d-none">
             <div className="image-portion">
               <BannerImage />
             </div>

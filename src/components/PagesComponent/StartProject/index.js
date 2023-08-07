@@ -165,9 +165,9 @@ const Index = () => {
                   name="collaboration"
                   base="19px"
                 />
-                <div className="d-flex justify-content-between align-items-center flex-warp gap-1 mt-3">
+                <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
                   <ReCAPTCHA sitekey="6LezlHQnAAAAAFZigM4rT1-ESPRHDcPGoxXpxoKz" onChange={handleRecaptchaChange} />
-                  <Button text="Submit" />
+                  <Button text="Submit" className="pt-md-0 pt-3"/>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ const Index = () => {
             </h2>
           </Col>
           <Col md={4}>
-            <div className="box-center">
+            <div className="box-center pt-lg-0 pt-4">
               <div className="circle-bg">
                 <div className="circle-box">
                   <svg className="text-svg" viewBox="0 0 100 100" width="80" height="80">

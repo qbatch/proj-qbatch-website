@@ -41,11 +41,11 @@ position:relative;
         position: absolute;
         content: "";
         width: 1px;
-        height: 190px;
+        height: 100%;
         background-color: ${({ theme }) => theme.colors.dividerColor};
         right: 0;
         top: 0;
-        ${media.sm`
+        ${media.xs`
           width: 0px;
         `}
       }
