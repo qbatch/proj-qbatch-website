@@ -3,7 +3,6 @@ import React, { useState, useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import { Row, Col } from "react-bootstrap";
 import { Player, BigPlayButton, LoadingSpinner } from "video-react";
 
 import ProjectIcon from "../../../assets/images/icons/ecom-circle-icon.svg";
@@ -111,7 +110,7 @@ const Index = () => {
             draggable={false}
           >
             {projectSlides.map((item, ind) => (
-              <div className="project-title" key={ind}>
+              <div className="testimonial-title" key={ind}>
                 <ProjectIcon />
                 <div className="inner-text">
                   <h4>{item.title}</h4>

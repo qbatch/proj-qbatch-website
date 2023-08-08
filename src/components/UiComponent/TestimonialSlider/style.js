@@ -9,14 +9,14 @@ const ProvenExperienceWrapper = styled.div`
     `}
   }
   .video-wrapper{
-    border-radius: 24px 24px 0px 24px;
-    overflow: hidden;
-
-  .video-react{
-    padding-top : 372px !important;
+    .video-react{
+      padding-top : 372px !important;
+      ${media.md`
+      padding-top: 200px !important;
+      `}
+    }
   }
-  }
-  .project-title {
+  .testimonial-title {
     display: flex;
     align-items: center;
     svg{
@@ -58,49 +58,12 @@ const ProvenExperienceWrapper = styled.div`
       padding: 0 0 40px 20px;
     `}
   }
-  .section-slider {
-    position: relative;
+  .react-multi-carousel-list {
+    position: static;border-radius: 24px 24px 0px 24px;
     overflow: hidden;
   }
-  .project-tags {
-    margin-top: 24px;
-    gap: 8px;
-    div {
-      padding: 3px 7px;
-      border: 1px solid ${({ theme }) => theme.colors.bodyLight};
-      color: ${({ theme }) => theme.colors.textMedium};
-      border-radius: 2px;
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-      white-space: nowrap;
-    }
-  }
-  .projects-carousel {
-    padding-left: 108px;
-    ${media.md`
-      padding-left: 12px;
-      padding-top: 32px;
-    `}
-    div {
-      padding-right: 144px;
-      ${media.md`
-        padding-right: 40px;
-      `}
-      img {
-        object-fit: cover;
-        min-width: 100%;
-        height: 378px;
-        border-radius: 24px;
-        border-bottom-right-radius: 0;
-        ${media.md`
-          min-width: 100%;
-        `}
-      }
-    }
-  }
-  .react-multi-carousel-list {
-    position: static;
-  }
   .carousel-button-group {
+    background-color: #fff;
     gap: 12px;
     position: absolute;
     top: 0;
