@@ -18,8 +18,11 @@ const StartProjectWrapper = styled.div`
   }
   .testimonials {
     padding-top: 138px;
-    h4 {
+    .testimonial-heading {
       margin-bottom: 29px;
+    }
+    .testimonial-paragraph{
+      margin-bottom: 35px;
     }
   }
   .video-box {

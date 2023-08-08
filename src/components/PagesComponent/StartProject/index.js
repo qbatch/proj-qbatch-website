@@ -15,6 +15,7 @@ import Button from '../../UiComponent/Button';
 import ArrowDown from "../../../assets/images/collapse-down.svg";
 
 import StartProjectWrapper from "./style";
+import TestimonialCarousel from "../../UiComponent/TestimonialSlider"
 
 const Index = () => {
 
@@ -174,14 +175,9 @@ const Index = () => {
           </Col>
           <Col lg={5} md={6} sm={12} xs={12}>
             <div className="testimonials">
-              <h4 className="color-primary">Testimonials</h4>
-              <p>Here's what our clients have to say</p>
-              <div className="video-box">
-                <Player playsInline src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4">
-                  <BigPlayButton position="center" />
-                  <LoadingSpinner />
-                </Player>
-              </div>
+              <h4 className="color-primary testimonial-heading">Testimonials</h4>
+              <p className="testimonial-paragraph">Here's what our clients have to say</p>
+              <TestimonialCarousel/>
             </div>
           </Col>
         </Row>
