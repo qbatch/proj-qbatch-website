@@ -51,29 +51,39 @@ const ExpertiseWrapper = styled.section`
     }
   }
   .arrow-box {
-    width: 62px;
-    height: 62px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.5s ease-out 100ms;
-    svg {
-      transition: width 0.5s ease-out 100ms;
-      color: ${({ theme }) => theme.colors.dangerColor};
-      pointer-events: none;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.5s ease-out 100ms;
       ${media.md`
-             font-size: 32px;
-    `}
-    }
-    &:hover {
-      background-color: ${({ theme }) => theme.colors.primaryColor};
+       width: 40px;
+       height: 40px;
+      `}
+
       svg {
-        width: 30px;
-        color: #ffffff;
+        transition: width 0.5s ease-out 100ms;
+        color: ${({ theme }) => theme.colors.dangerColor};
+        width: 46px;
+        pointer-events: none;
+        ${media.md `
+         width: 40px;
+        `}
+      }
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.primaryColor};
+        svg {
+          width: 28px;
+          color: #ffffff;
+          ${media.md`
+         width: 24px;
+         `}
+        }
+        
       }
     }
-  }
 `;
 export default ExpertiseWrapper;

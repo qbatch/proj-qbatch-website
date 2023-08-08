@@ -15,6 +15,7 @@ import Button from '../../UiComponent/Button';
 import ArrowDown from "../../../assets/images/collapse-down.svg";
 
 import StartProjectWrapper from "./style";
+import TestimonialCarousel from "../../UiComponent/TestimonialSlider"
 
 const Index = () => {
 
@@ -165,23 +166,18 @@ const Index = () => {
                   name="collaboration"
                   base="19px"
                 />
-                <div className="d-flex justify-content-between align-items-center flex-warp gap-1 mt-3">
+                <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
                   <ReCAPTCHA sitekey="6LezlHQnAAAAAFZigM4rT1-ESPRHDcPGoxXpxoKz" onChange={handleRecaptchaChange} />
-                  <Button text="Submit" />
+                  <Button text="Submit" className="pt-md-0 pt-3"/>
                 </div>
               </div>
             </div>
           </Col>
           <Col lg={5} md={6} sm={12} xs={12}>
             <div className="testimonials">
-              <h4 className="color-primary">Testimonials</h4>
-              <p>Here's what our clients have to say</p>
-              <div className="video-box">
-                <Player playsInline src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4">
-                  <BigPlayButton position="center" />
-                  <LoadingSpinner />
-                </Player>
-              </div>
+              <h4 className="color-primary testimonial-heading">Testimonials</h4>
+              <p className="testimonial-paragraph">Here's what our clients have to say</p>
+              <TestimonialCarousel/>
             </div>
           </Col>
         </Row>
