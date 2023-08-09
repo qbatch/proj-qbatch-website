@@ -106,7 +106,7 @@ const DrawerWrapper = styled.div`
       line-height: 24px;
       padding: 0;
       margin-bottom: 16px;
-      &:hover {
+      &:hover,&:focus,&:focus-visible,&:active {
         outline: none;
         box-shadow: none;
         background: none;
