@@ -12,31 +12,32 @@ import ProjectIcon from "../../../assets/images/icons/ecom-circle-icon.svg";
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
+
 import ProvenExperienceWrapper from "./style";
 
 const projectSlides = [
   {
     id: 1,
     projectImg:
-      "https://cdn.pixabay.com/photo/2023/07/19/05/54/european-shorthair-8136129_1280.jpg",
+      "/slider-image.png",
     title: "Ecom Circles",
   },
   {
     id: 2,
     projectImg:
-      "https://cdn.pixabay.com/photo/2023/07/17/13/50/baby-snow-leopard-8132690_1280.jpg",
+       "/slider-image.png",
     title: "Store Filter",
   },
   {
     id: 3,
     projectImg:
-      "https://cdn.pixabay.com/photo/2023/06/09/18/18/deer-8052359_1280.jpg",
+        "/slider-image.png",
     title: "Sales Support",
   },
   {
     id: 4,
     projectImg:
-      "https://cdn.pixabay.com/photo/2023/07/07/05/56/bird-8111792_1280.jpg",
+        "/slider-image.png",
     title: "Squid Plan",
   },
 ];
@@ -44,15 +45,18 @@ const projectSlides = [
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1700 },
-    items: 1.5,
+    items: 1,
+    partialVisibilityGutter: 202,
   },
   desktop: {
     breakpoint: { max: 1700, min: 1200 },
-    items: 1.24,
+    items: 1,
+    partialVisibilityGutter: 202,
   },
   tablet: {
     breakpoint: { max: 1200, min: 0 },
     items: 1,
+    partialVisibilityGutter: 202 ,
   },
 };
 
@@ -98,7 +102,7 @@ const Index = () => {
       <div className="container-slider">
         <div className="section-slider">
           <Row>
-            <Col lg={3} md={12} sm={12} className="p-0">
+            <Col lg={4} md={12} sm={12} className="p-0">
               <div className="carousel-padding">
                 <Carousel
                   responsive={responsiveTitle}
@@ -151,14 +155,16 @@ const Index = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={9} md={12} sm={12} className="p-0">
+            <Col lg={8} md={12} sm={12} className="p-0">
               <div className="projects-carousel">
                 <Carousel
+                  partialVisible={true}
                   responsive={responsive}
                   arrows={false}
                   ref={carousel1Ref}
                   swipeable={false}
                   draggable={false}
+                  itemClass="qb-carousel-item"
                 >
                   {projectSlides.map((item, ind) => (
                     <div key={ind}>
