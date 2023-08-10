@@ -64,6 +64,7 @@ const ValueSystemWrapper = styled.div  `
       border-bottom: 0;
     }
     ${media.md`
+    min-height: 170px;
      &:nth-child(even){
       border-right: 0;
      }
@@ -75,8 +76,8 @@ const ValueSystemWrapper = styled.div  `
       border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor};
      }
     `}
-    ${media.md`
-      min-height: 170px
+    ${media.sm`
+      border-right: 0 !important;
     `}
   }
 `
