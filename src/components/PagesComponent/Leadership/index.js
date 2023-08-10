@@ -18,8 +18,8 @@ const Index = () => {
             </div>
           </Col>
           <Col lg={8}>
-            <div className="leaders-wrapper row">
-              <div className="leader col-6">
+            <Row className="leaders-wrapper">
+              <Col md={6} className="leader">
                 <div className="leader-info">
                   <h4 className="leader-name">Ibrahim Zahoor</h4>
                   <span className="leader-title">CEO & Founder</span>
@@ -27,8 +27,8 @@ const Index = () => {
                 <div className="leader-img-wrapper">
                   <img className="leader-img" src="/leader-1.jpeg" />
                 </div>
-              </div>
-              <div className="leader col-6">
+              </Col>
+              <Col md={6} className="leader">
                 <div className="leader-info">
                   <h4 className="leader-name">Hassan Akram</h4>
                   <span className="leader-title">CTO & co - Founder Qbatch</span>
@@ -36,8 +36,8 @@ const Index = () => {
                 <div className="leader-img-wrapper">
                   <img className="leader-img" src="/leader-2.jpeg" />
                 </div>
-              </div>
-            </div>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
