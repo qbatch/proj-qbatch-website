@@ -126,6 +126,10 @@ const FooterWrapper = styled.div`
         border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
         transition: all 0.5s ease-out;
       }
+      a {
+        color: ${({ theme }) => theme.colors.bodyLight};
+        text-decoration: none;
+      }
       &:hover {
         color: ${({ theme }) => theme.colors.whiteColor};
         &::before {
