@@ -47,6 +47,10 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   justify-content: end;
   align-items: end;
   position: relative;
+  padding-top: 24px;
+  ${media.lg`
+   justify-content: center;
+  `}
     .leader-img-wrapper{
       height: 244px;
       width: 216px;
