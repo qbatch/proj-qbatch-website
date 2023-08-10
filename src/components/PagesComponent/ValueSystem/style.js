@@ -63,7 +63,7 @@ const ValueSystemWrapper = styled.div  `
     &:nth-child(9){
       border-bottom: 0;
     }
-    ${media.lg`
+    ${media.md`
      &:nth-child(even){
       border-right: 0;
      }
