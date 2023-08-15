@@ -50,7 +50,7 @@ const menu2Data = [
   },
   {
     name: "Contact Us",
-    to: "/",
+    to: "/contact",
   },
   {
     name: "Qbatch Career",

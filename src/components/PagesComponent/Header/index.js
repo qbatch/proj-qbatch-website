@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 import Drawer from "../HeaderDrawer";
+// import { navigate } from 'gatsby';
 
 import Logo from "../../../assets/images/qbatch-logo.svg";
 
@@ -33,6 +34,9 @@ const headerMenu = [
 
 const Index = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
+  // const handleNavigate = () => {
+  //   navigate('/contact');
+  // };
   return (
     <>
       <HeaderWrapper>
@@ -51,7 +55,9 @@ const Index = () => {
               </ul>
             </nav>
             <div className="menu-items">
-              <Button text="Contact Us" className="header-btn" />
+                {/* <Button onClick={()=> navigate('/contact')} text="Contact Us" className="header-btn" /> */}
+                <Button text="Contact Us" className="header-btn" />
+             
               <div className="burger-icon" onClick={() => setOpenDrawer(true)}>
               {[1, 2, 3].map((key) => (
                 <span key={key}></span>
