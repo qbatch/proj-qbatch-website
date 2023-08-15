@@ -8,6 +8,7 @@ const ProblumSolvingWrapper = styled.div`
   ${media.md`
    padding: 100px 0;
   `}
+
   h2 {
     color: ${({ theme }) => theme.colors.whiteColor};
     font-weight: 400;
@@ -88,6 +89,34 @@ const ProblumSolvingWrapper = styled.div`
         filter: invert(18%) sepia(84%) saturate(2395%) hue-rotate(196deg) brightness(98%) contrast(101%);
       }
     }
+  }
+  &.contact-project-cost{
+    background-color: #F2F3F5;
+    padding: 188px 0 178px;
+    ${media.md`
+   padding: 100px 0;
+  `}
+    .heading-break{
+    max-width:90%;
+  }
+  .circle-bg {
+    margin-left: 145px;
+  }
+  .circle-box {
+    border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+    .text-svg {
+      fill: ${({ theme }) => theme.colors.primaryColor};
+    }
+    &:hover {
+      background-color: inherit;
+      .text-svg {
+        fill: ${({ theme }) => theme.colors.primaryColor};
+      }
+      .red-arrow {
+        filter:none;
+      }
+    }
+  }
   }
 `;
 export default ProblumSolvingWrapper;
