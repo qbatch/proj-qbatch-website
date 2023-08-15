@@ -15,17 +15,25 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
+    "@apollo/client": "^3.8.0",
     "babel-plugin-styled-components": "^2.1.4",
     "bootstrap": "^5.3.0",
+    "dotenv": "^16.3.1",
     "gatsby": "^5.11.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-apollo": "^4.0.3",
     "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sharp": "^5.11.0",
     "gatsby-plugin-styled-components": "^6.11.0",
     "gatsby-source-contentful": "^8.11.0",
     "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-source-strapi": "^3.3.0",
+    "gatsby-transformer-json": "^5.11.0",
+    "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
+    "graphql": "^16.7.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-countup": "^6.4.2",
@@ -36,6 +44,7 @@
     "react-modern-drawer": "^1.2.0",
     "react-multi-carousel": "^2.8.4",
     "styled-components": "^6.0.6",
+    "ts-invariant": "^0.10.3",
     "video-react": "^0.16.0"
   }
 }

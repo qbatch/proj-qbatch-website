@@ -1,15 +1,17 @@
-import * as React from 'react'
-import Layout from '../components/Layout/layout'
-import SEO from "../components/Seo";
+import React from 'react'
+import axios from "axios";
 
-const AboutPage = () => {
+import { StaticQuery, graphql } from 'gatsby';
+
+const  Restaurants =() => {
+//   axios.get("http://localhost:1337/api/restaurants").then((response) => {
+//   console.log(response);
+// });
+
   return (
-    <Layout pageTitle="About Me">
-      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
-    </Layout>
-  )
+    <ul>
+      <h1>Hello</h1>
+    </ul>
+  );
 }
-
-export const Head = () => <SEO title="About  Me" />;
-
-export default AboutPage
+export default Restaurants;

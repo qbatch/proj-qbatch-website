@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
-import ArrowDown  from '../../../assets/images/arrow_downward.svg'
+import ArrowDown from "../../../assets/images/arrow_downward.svg";
 
 import Container from "../../UiComponent/Container";
 
@@ -12,73 +12,60 @@ import HealthCare from "../../../assets/images/health-care.svg";
 import EdTech from "../../../assets/images/edtech.svg";
 import RetailGoods from "../../../assets/images/retail.svg";
 import Traval from "../../../assets/images/traval.svg";
-
+import { StaticQuery, graphql } from "gatsby";
 import MakingIndustriesWrapper from "./style";
 
-const Index = () => {
+export const query = graphql`
+  query {
+    allStrapiHappilyMaking {
+      nodes {
+        heading
+        description {
+          data {
+            description
+          }
+        }
+        list {
+          internal {
+            content
+          }
+        }
+      }
+    }
+  }
+`;
 
-  const industries = [
-    {
-      title: "E-Commerce",
-      img: Ecommerce,
-    },
-    {
-      title: "Logistics and Supply Chain",
-      img: Logictics,
-    },
-    {
-      title: "FinTech",
-      img: FinTech,
-    },
-    {
-      title: "Healthcare",
-      img: HealthCare,
-    },
-    {
-      title: "EdTech",
-      img: EdTech,
-    },
-    {
-      title: "Retail and Consumer Goods",
-      img: RetailGoods,
-    },
-    {
-      title: "Travel and Transportation",
-      img: Traval,
-    },
-  ];
-  
+const Index = () => {
   return (
     <MakingIndustriesWrapper>
-      <Container className="industries-inner-wrapper">
-        <h1 className="text-center color-primary">
-          Happily Making Industries People-First
-        </h1>
-        <p className="text-center">
-          You are the industry leader of today and tomorrow. Let us help you
-          become unstoppable with versatile expertise and wide-spectrum
-          technologies.
-        </p>
-        <Row className="justify-content-center">
-          <Col md={8} lg={6} sm={12} sx={12}>
-            <div className="arrow-section">
-              {industries.map((title, i) => {
-                return (
-                  <div className="d-flex justify-content-between arrow-box-section" key={i}>
-                    <div className="d-flex gap-3 mb-3">
-                      <title.img />
-                      <h4> {title.title}</h4>
-                    </div>
-                    <div className="arrow-box">
-                      <ArrowDown className="arrow-right" />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <StaticQuery
+        query={query}
+        render={(data) => (
+          <Container className="industries-inner-wrapper">
+            <h1 className="text-center color-primary">{data.allStrapiHappilyMaking.nodes[0].heading}</h1>
+            <p className="text-center">{data.allStrapiHappilyMaking.nodes[0].description.data.description}</p>
+            <Row className="justify-content-center">
+              <Col md={8} lg={6} sm={12} sx={12}>
+                <div className="arrow-section">
+                  {JSON.parse(data.allStrapiHappilyMaking.nodes[0].list.internal.content).map((title, i) => {
+                    return (
+                      <div className="d-flex justify-content-between arrow-box-section" key={i}>
+                        <div className="d-flex gap-3 mb-3">
+                          <img src={title.img} />
+                          <h4> {title.name}</h4>
+                        </div>
+                        <div className="arrow-box">
+                          <ArrowDown className="arrow-right" />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        )}
+      />
     </MakingIndustriesWrapper>
   );
 };
