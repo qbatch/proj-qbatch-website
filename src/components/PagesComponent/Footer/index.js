@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import {Link} from 'gatsby'
 
 import Container from "../../UiComponent/Container";
 
@@ -46,11 +47,11 @@ const menuData = [
 const menu2Data = [
   {
     name: "Company",
-    to: "/",
+    to: "/company",
   },
   {
     name: "Contact Us",
-    to: "/",
+    to: "/contact",
   },
   {
     name: "Qbatch Career",
@@ -125,7 +126,7 @@ const Index = () => {
               <div className="footer-menu">
                 <ul>
                   {menu2Data.map((menu, ind) => (
-                    <li key={ind}>{menu.name}</li>
+                    <li key={ind}><Link to={menu.to}>{menu.name}</Link></li>
                   ))}
                 </ul>
               </div>

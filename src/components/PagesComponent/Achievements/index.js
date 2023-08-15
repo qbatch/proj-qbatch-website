@@ -1,45 +1,33 @@
 import React from "react";
-
 import AchievementsWrapper from "./style";
 import Container from "../../UiComponent/Container";
-
 import { Row, Col } from "react-bootstrap";
-
 import CountUp from "react-countup";
+import { counterData } from "../../../constants";
 
-const counterData = [
-  {
-    id: 1,
-    count: 150,
-    desc: "Full stack Developers",
-  },
-  {
-    id: 2,
-    count: 300,
-    desc: "Solutions Delivered \n Successfully",
-  },
-  {
-    id: 3,
-    count: 98,
-    desc: "Customer Happiness \n Index",
-  },
-];
+const Index = ({ page }) => {
+  const numCols = page === "index" ? 4 : 3;
+  const displayedCounterData = page === "index" ? counterData.slice(0, 3) : counterData;
 
-const Index = () => {
   return (
     <AchievementsWrapper>
       <div className="achievements-main">
         <Container className="achievements-inner-wrapper">
           <h1 className="heading">Achievements Through The Years...</h1>
           <Row>
-            {counterData.map((data, ind) => (
-              <Col md={4} sm={4} xs={12} key={ind} className="achievements-col">
-                <h1>
+            {displayedCounterData.map((data, ind) => (
+              <Col
+                md={numCols} 
+                sm={numCols} 
+                xs={12} 
+                key={ind} 
+                className="achievements-col"
+              >
+                <h1 className={`${page === "index" ? "heading" : ""}`}>
                   <CountUp end={data.count} duration={3} />
-                  <span className="color-danger fw-light ms-2">
-                    {ind === 2 ? "%" : "+"}
-                  </span>
+                  {data.symbol && <span className="color-danger fw-light ms-2">{data.symbol}</span>}
                 </h1>
+
                 <p>{data.desc}</p>
               </Col>
             ))}

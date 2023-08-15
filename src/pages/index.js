@@ -15,17 +15,19 @@ import Awards from "../components/PagesComponent/Awards";
 import CreativeIntelligence from "../components/PagesComponent/CreativeIntelligence";
 import StartProject from '../components/PagesComponent/StartProject'
 
+
+
 const IndexPage = () => (
     <Layout>
       <DedicatedDevelopment />
-      <Achievements />
+      <Achievements page="index"/>
       <WhatWeCanDo />
       <Expertise />
       <ProblumSolving />
       <ProvenWorkExperience />
       <HappilyMaking />
       <WhatDifferenceQbatchMaking />
-      <Awards/>
+      <Awards  maxCols={8}/>
       <Collaboration />
       <CreativeIntelligence/>
       <StartProject />

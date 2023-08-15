@@ -52,7 +52,7 @@ position:relative;
       &:last-child::after {
         width: 0px;
       }
-      h1 {
+      .heading {
         font-size: ${({ theme }) => theme.fonts.baseFontXl};
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         margin-bottom: 16px;
