@@ -63,7 +63,7 @@ const ProvenExperienceWrapper = styled.div`
     overflow: hidden;
   }
   .carousel-button-group {
-    background-color: ${({ theme }) => theme.colors.backgroundColor};
+    background-color: ${({ theme }) => theme.colors.backgroundColor};  
     gap: 12px;
     position: absolute;
     top: 0;

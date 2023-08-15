@@ -49,7 +49,7 @@ position: relative;
         font-size:35px;
         line-height:40px;
       `}
-      ${media.sm`
+      ${media.md`
         margin-bottom:24px; 
         max-width:100%;
         font-size:24px;
@@ -73,6 +73,9 @@ position: relative;
       `}
         img {
           max-width: 100%;
+          ${media.xs`
+           height: 65px;
+          `}
         }
       }
     }

@@ -27,7 +27,7 @@ const IndexPage = () => (
       <ProvenWorkExperience />
       <HappilyMaking />
       <WhatDifferenceQbatchMaking />
-      <Awards />
+      <Awards  maxCols={8}/>
       <Collaboration />
       <CreativeIntelligence/>
       <StartProject />

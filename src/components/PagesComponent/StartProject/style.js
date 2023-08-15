@@ -3,6 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const StartProjectWrapper = styled.div`
   padding: 97px 0 96px;
+  background-color: ${({ theme }) => theme.colors.backgroundColor}; 
   ${media.sm`
       padding: 40px 0;
     `}

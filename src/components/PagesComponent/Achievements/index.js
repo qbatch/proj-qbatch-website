@@ -6,6 +6,7 @@ import CountUp from "react-countup";
 import { counterData } from "../../../constants";
 
 const Index = ({ page }) => {
+  const numCols = page === "index" ? 4 : 3;
   const displayedCounterData = page === "index" ? counterData.slice(0, 3) : counterData;
 
   return (
@@ -16,8 +17,8 @@ const Index = ({ page }) => {
           <Row>
             {displayedCounterData.map((data, ind) => (
               <Col
-                md={page === "index" ? 4 : 3} 
-                sm={page === "index" ? 4 : 3} 
+                md={numCols} 
+                sm={numCols} 
                 xs={12} 
                 key={ind} 
                 className="achievements-col"

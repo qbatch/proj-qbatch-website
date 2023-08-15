@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import CompanyBanner from "../components/PagesComponent/CompanyBanner"
@@ -8,8 +9,9 @@ import CompanyAchievements from "../components/PagesComponent/CompanyAchievement
 import OurClients from "../components/PagesComponent/Clients"
 import Leadership from "../components/PagesComponent/Leadership"
 import ValueSystem from "../components/PagesComponent/ValueSystem"
-import CompanyAwards from "../components/PagesComponent/CompanyAwards"
+import Awards from "../components/PagesComponent/Awards"
 import Clients from "../components/PagesComponent/Careers"
+
 const Company = () => (
   <Layout>
     <CompanyBanner/>
@@ -19,7 +21,7 @@ const Company = () => (
     <OurClients/>
     <Leadership/>
     <ValueSystem/>
-    <CompanyAwards/>
+    <Awards/>
     <Clients/>
   </Layout>
 )

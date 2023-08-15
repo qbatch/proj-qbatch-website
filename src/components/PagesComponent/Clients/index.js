@@ -23,7 +23,7 @@ const Index = () => {
                 {clientsData.map((data, ind) => (
                   <div className="logo" key={ind}>
                     <a href={data.link} target="_blank">
-                      <img src={data.img} alt="logo"/>
+                      <img src={data.img} alt="client_logo"/>
                     </a>
                   </div>
                 ))}
