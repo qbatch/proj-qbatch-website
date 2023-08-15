@@ -5,9 +5,7 @@ const DedicatedDeveloperWrapper = styled.section`
   .image-portion {
     padding-top: 94px;
     padding-right: 12px;
-    ${media.sm`
-     padding: 30px 0px;
-     text-align: center;
+    ${media.md`
      display: none;
   `}
   }
@@ -27,6 +25,7 @@ const DedicatedDeveloperWrapper = styled.section`
     color: ${({ theme }) => theme.colors.textMedium};
     position: relative;
     margin-bottom: 6px;
+    display: block;
     &::before {
       content: "";
       position: absolute;
@@ -35,11 +34,6 @@ const DedicatedDeveloperWrapper = styled.section`
       bottom: 1px;
       background-color: ${({ theme }) => theme.colors.dangerColor};
     }
-
-    ${media.md`
-       display: flex;
-       justify-content: center;
-      `}
   }
   .add-bottom-space {
     margin-bottom: 10px;
@@ -91,7 +85,7 @@ const DedicatedDeveloperWrapper = styled.section`
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     margin-top: 35px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     max-width: 557px;
     ${media.md`
       margin-left: auto;
