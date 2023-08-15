@@ -3,33 +3,7 @@ import AchievementsWrapper from "./style";
 import Container from "../../UiComponent/Container";
 import { Row, Col } from "react-bootstrap";
 import CountUp from "react-countup";
-
-const counterData = [
-  {
-    id: 1,
-    count: 150,
-    desc: "Full stack Developers",
-    symbol: "+",
-  },
-  {
-    id: 2,
-    count: 300,
-    desc: "Solutions Delivered \n Successfully",
-    symbol: "+",
-  },
-  {
-    id: 3,
-    count: 98,
-    desc: "Customer Happiness \n Index",
-    symbol: "%",
-  },
-  {
-    id: 4,
-    count: 10,
-    desc: "Customer Happiness \n Index",
-    symbol: "",
-  },
-];
+import { counterData } from "../../../constants";
 
 const Index = ({ page }) => {
   const displayedCounterData = page === "index" ? counterData.slice(0, 3) : counterData;

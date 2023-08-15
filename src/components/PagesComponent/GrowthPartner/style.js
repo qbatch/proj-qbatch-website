@@ -8,21 +8,6 @@ const GrowthPartnerWrapper = styled.div`
     padding: 40px 0;
   `}
 
-  .underline-heading{
-    color: ${({ theme }) => theme.colors.bodyText};
-    font-weight: 500;
-    position: relative;
-    letter-spacing: 0.3px;
-    text-transform: capitalize;
-    &::before{
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 24px;
-      bottom: -2px;
-      background-color: #ED1C24;
-    }
-  }
   .main-heading{
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 25px;

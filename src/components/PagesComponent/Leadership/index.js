@@ -1,25 +1,8 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-
-import Container from "../../UiComponent/Container";
-
 import LeadershipWrapper from "./style";
-
-const leaderData = [
-  {
-    id: 1,
-    name: "Ibrahim Zahoor",
-    title: "CEO & Founder",
-    imageSrc: "/leader-1.jpeg",
-  },
-  {
-    id: 2,
-    name: "Hassan Akram",
-    title: "CTO & co - Founder Qbatch",
-    imageSrc: "/leader-2.jpeg",
-  },
-  // Add more leaders as needed
-];
+import { Col, Row } from "react-bootstrap";
+import Container from "../../UiComponent/Container";
+import { leaderData } from "../../../constants";
 
 const Index = () => {
   return (
@@ -40,11 +23,11 @@ const Index = () => {
             <Row className="leaders-wrapper">
               {leaderData.map((leader) => (
                 <Col md={6} className="leader" key={leader.id}>
-                  <div className="leader-info">
+                  <div className="leader-info order-2 order-md-1">
                     <h4 className="leader-name">{leader.name}</h4>
                     <span className="leader-title">{leader.title}</span>
                   </div>
-                  <div className="leader-img-wrapper">
+                  <div className="leader-img-wrapper order-1 order-md-2">
                     <img className="leader-img" src={leader.imageSrc} alt={leader.name} />
                   </div>
                 </Col>

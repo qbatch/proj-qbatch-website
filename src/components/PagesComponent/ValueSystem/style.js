@@ -5,21 +5,6 @@ const ValueSystemWrapper = styled.div  `
   ${media.sm`
     padding: 40px 0;
   `}
-  .underline-heading{
-    color: ${({ theme }) => theme.colors.bodyText};
-    font-weight: 700;
-    position: relative;
-    margin: 0;
-    //text-transform: capitalize;
-    &::before{
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 24px;
-      bottom: -2px;
-      background-color: #ED1C24;
-    }
-  }
   .heading-wrapper{
     padding-top: 4px;
   }
@@ -34,6 +19,9 @@ const ValueSystemWrapper = styled.div  `
   }
   .col-wrapper{
     padding-top: 76px;
+    ${media.sm`
+     padding-top: 26px;
+    `}
   }
   .value-col{
     padding: 24px 4.2% 16px;
@@ -64,9 +52,8 @@ const ValueSystemWrapper = styled.div  `
     &:nth-child(9){
       border-bottom: 0;
     }
-    ${media.md`
-    min-height: 170px;
-     &:nth-child(even){
+    ${media.lg`
+    &:nth-child(even){
       border-right: 0;
      }
      &:nth-child(odd){
@@ -77,7 +64,13 @@ const ValueSystemWrapper = styled.div  `
       border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor};
      }
     `}
+    ${media.md`
+    min-height: 170px;
+    
+    `}
     ${media.sm`
+    min-height: auto;
+    padding: 26px;
       border-right: 0 !important;
     `}
   }

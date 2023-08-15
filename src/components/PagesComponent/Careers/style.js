@@ -7,20 +7,8 @@ const CareerWrapper = styled.div`
   padding: 40px 0;
  `}
  .underline-heading{
-    color: ${({ theme }) => theme.colors.bodyText};
-    font-weight: 700;
-    position: relative;
-    margin: 0;
     padding-top: 12px;
-    //text-transform: capitalize;
-    &::before{
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 24px;
-      bottom: -2px;
-      background-color: #ED1C24;
-    }
+    
   }
   .heading{
     padding: 4px 0;
@@ -35,6 +23,9 @@ const CareerWrapper = styled.div`
   }
   .inner-card{
     margin-top: 70px;
+    ${media.sm`
+     margin-top: 24px;
+    `}
   }
   .wrapper{
     padding: 24px 24px 14px 24px;
@@ -46,7 +37,7 @@ const CareerWrapper = styled.div`
     .location-wrapper{
       display: flex;
       align-items: center;
-      img{
+      img{  
         height: 16px;
         width: 16px;
         margin-right: 8px;

@@ -3,22 +3,10 @@ import { Col, Row } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button";
+import { CareersData } from "../../../constants";
 
 import CareerWrapper from "./style";
 
-const CareersData = [
-  {
-    jobTitle: "Job Title 1",
-    location: "Onsite, Lahore",
-    tags: ["Chip/Label", "RubyOnRails", "Django", "nice"],
-  },
-  {
-    jobTitle: "Job Title 2",
-    location: "Onsite, Lahore",
-    tags: ["Chip/Label", "React", "Node.js", "nice", "nice-2"],
-  },
-  // Add more card objects as needed
-];
 const Index = () => {
   return (
     <CareerWrapper>

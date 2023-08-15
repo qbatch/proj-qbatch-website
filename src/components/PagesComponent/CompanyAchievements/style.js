@@ -7,22 +7,6 @@ padding: 96px 0 74px;
 ${media.sm`
     padding: 40px 0;
 `}
-.underline-heading{
-    color: ${({ theme }) => theme.colors.bodyText};
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 30px;
-    position: relative;
-    text-transform: capitalize;
-    &::before{
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 24px;
-      bottom: -2px;
-      background-color: #ED1C24;
-    }
-  }
 
   .counter-wrapper{
       padding-top: 34px;
@@ -35,7 +19,7 @@ ${media.sm`
   }
   .achievements-col{
     text-align: center;
-    padding: 44px 8px;
+    padding: 44px 12px;
     border-right: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor};
     h1{

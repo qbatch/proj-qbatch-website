@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import CountUp from "react-countup";
+import { companyCounter } from "../../../constants" 
 
 import Container from "../../UiComponent/Container";
 
@@ -16,56 +17,7 @@ const formatNumber = (count) => {
   return count;
 };
 
-const companyCounter = [
-  {
-    id: 1,
-    count: 98,
-    desc: "Customer Happiness Index",
-    symbol: "%", 
-  },
-  {
-    id: 2,
-    count: 300,
-    desc: "Partnerships Achieved",
-    symbol: "+", 
-  },
-  {
-    id: 3,
-    count: 150,
-    desc: "Projects Delivered",
-    symbol: "+", 
-  },
-  {
-    id: 4,
-    count: 15,
-    desc: "SaaS-Based Platforms Developed",
-    symbol: "+",
-  },
-  {
-    id: 5,
-    count: 30000,
-    desc: "Hrs Of Productivity Unlocked!",
-    symbol: "+",
-  },
-  {
-    id: 6,
-    count: 100,
-    desc: "Industry Experts",
-    symbol: "+",
-  },
-  {
-    id: 7,
-    count: 10,
-    desc: "Years Of Excellency",
-    symbol: "", 
-  },
-  {
-    id: 8,
-    count: 3,
-    desc: "Global Offices",
-    symbol: "", 
-  },
-];
+
 
 const Index = () => {
   return (

@@ -68,6 +68,21 @@ const GlobalStyles = createGlobalStyle`
         line-height: 32px;
       }
     }
+
+  .underline-heading{
+    color: ${({ theme }) => theme.colors.bodyText};
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 24px;
+      bottom: -2px;
+      background-color: #ED1C24;
+    }
+  }
     img,svg{
         max-width:100%;
     }

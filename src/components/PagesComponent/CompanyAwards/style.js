@@ -31,7 +31,7 @@ position: relative;
       background-position: -33px bottom;
     `}
     ${media.sm`
-      padding: 40px 0 0;
+      padding: 40px 0;
       background-size: 100%;
       background-repeat: no-repeat;
     `}
@@ -61,6 +61,9 @@ position: relative;
       row-gap: 32px;
       ${media.sm`
         row-gap:15px;
+        svg{
+          height: 64px;
+        }
       `}
       a {
         padding: 16px 0;

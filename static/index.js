@@ -25,7 +25,7 @@ const Index = () => {
                 {awardsData.map((data, ind) => (
                   <Col md={3} sm={3} xs={6} key={ind}>
                     <a href={data.link} target="_blank">
-                      <img src={data.img} />
+                      {data.img}
                     </a>
                   </Col>
                 ))}
