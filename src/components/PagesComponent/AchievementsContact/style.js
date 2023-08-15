@@ -35,6 +35,8 @@ position:relative;
     }
     .achievements-col {
       position: relative;
+      padding-top: 35px;
+    padding-bottom: 25px;
       ${media.sm`
         margin-bottom: 40px;
       `}
@@ -54,15 +56,8 @@ position:relative;
         width: 0px;
       }
       h1 {
-        font-size: ${({ theme }) => theme.fonts.baseFontXl};
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         margin-bottom: 16px;
-        ${media.lg`
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};
-        `}
-        ${media.sm`
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
-        `}
       }
       p {
         margin-bottom: 0;

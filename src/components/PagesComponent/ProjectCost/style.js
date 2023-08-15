@@ -3,11 +3,14 @@ import { media } from "../../../theme/media-mixins";
 
 const ProblumSolvingWrapper = styled.div`
   background-color: #F2F3F5;
-  padding: 167px 0 155px;
+  padding: 188px 0 178px;
   overflow: hidden;
   ${media.md`
    padding: 100px 0;
   `}
+  .heading-break{
+    max-width:90%;
+  }
   h2 {
     color: ${({ theme }) => theme.colors.bodyTextVariant};
     font-weight: 400;
@@ -25,7 +28,7 @@ const ProblumSolvingWrapper = styled.div`
   .circle-bg {
     position: relative;
     z-index: 1;
-    margin-left: 154px;
+    margin-left: 145px;
     width: 163px;
     height: 163px;
     ${media.md`
@@ -47,7 +50,6 @@ const ProblumSolvingWrapper = styled.div`
     width: 163px;
     height: 163px;
     border-radius: 50%;
-    margin-top: 20px;
     ${media.md`
        margin-left: 0;
     `}

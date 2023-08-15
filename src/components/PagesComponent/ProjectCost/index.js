@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { BsArrowRight } from "react-icons/bs";
 
 import Container from "../../UiComponent/Container";
 
@@ -13,7 +12,7 @@ const Index = () => {
       <Container>
         <Row>
           <Col md={8}>
-            <h1>
+            <h1 className="heading-break">
             Wondering how much
             your project would cost?
             </h1>
