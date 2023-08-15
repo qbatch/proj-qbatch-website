@@ -11,6 +11,7 @@ const ButtonWrapper = styled(Button)`
   padding: 0;
   position: relative;
   white-space: nowrap;
+  border: none;
   ${media.xs`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
   `}

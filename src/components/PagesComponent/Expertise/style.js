@@ -3,8 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const ExpertiseWrapper = styled.section`
   .base-space {
-    padding: 94px 0;
-    padding-bottom: 88px;
+    padding: 96px 0 84px;
     ${media.sm`
       padding: 40px 0;
     `}
@@ -17,13 +16,16 @@ const ExpertiseWrapper = styled.section`
   .heading {
     margin-right: 83px;
     ${media.md`
-           margin-right: 32px;
+      margin-right: 32px;
     `}
   }
   .skill-section {
     position: relative;
     padding-top: 16px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
+    svg {
+      max-width: none;
+    }
     .skill-badge {
       border: 1px solid ${({ theme }) => theme.colors.bodyLight};
       padding: 3px 8px;
