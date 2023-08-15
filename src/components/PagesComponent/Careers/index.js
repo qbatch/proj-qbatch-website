@@ -22,20 +22,21 @@ const Index = () => {
     <CareerWrapper>
       <Container>
         <Row className="justify-content-between">
-          <Col xl={4}>
-            <h4 className="underline-heading">Join Us!</h4>
+          <Col xl={4} lg={8}>
             <h2 className="heading">Careers</h2>
+            <h4 className="underline-heading">Join Us!</h4>
             <p className="paragraph">We believe our strength is derived from the brains and experiences of a like-minded community of experts. Qbatch is a workplace where you are invited to reach your full potential without any discrimination. Let’s achieve big things while having fun!</p>
           </Col>
-          <Col xl={7}>
+          <Col xxl={6} xl={8}>
+            <div className="cards-wrapper">
             <div className="d-block">
               <Button text="Explore All Jobs" className="ms-auto" />
             </div>
-            <Row className="cards-wrapper">
+            <Row>
               {CareersData.map((card, index) => (
                 <Col md={6} key={index} className="inner-card">
                   <div className="wrapper">
-                    <h4>{card.jobTitle}</h4>
+                    <h4 className="card-heading">{card.jobTitle}</h4>
                     <div className="location-wrapper">
                       <img src="/location-icon.svg" alt="Location Icon" />
                       <span className="location">{card.location}</span>
@@ -60,6 +61,7 @@ const Index = () => {
                 </Col>
               ))}
             </Row>
+            </div>
 
           </Col>
         </Row>

@@ -30,11 +30,11 @@ const ValueSystemWrapper = styled.div  `
     }
   }
   .col-wrapper{
-    padding-top: 64px;
+    padding-top: 76px;
   }
   .value-col{
-    padding: 36px 4.2% 16px;
-    min-height: 246px; 
+    padding: 24px 4.2% 16px;
+    min-height: 238px; 
     display: flex;
     align-items: flex-start;
     border-right: 1px solid ${({ theme }) => theme.colors.dividerColor};
@@ -53,9 +53,7 @@ const ValueSystemWrapper = styled.div  `
         line-height: 32px;
       }
     }
-    &:nth-child(3),
-    &:nth-child(6),
-    &:nth-child(9){
+    &:nth-child(3n){
       border-right: 0;
     }
     &:nth-child(7),

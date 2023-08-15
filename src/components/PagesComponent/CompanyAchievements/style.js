@@ -45,8 +45,7 @@ padding: 96px 0 74px;
       padding-top: 16px;
       letter-spacing: 1.3px;
     }
-    &:nth-child(4),
-    &:nth-child(8){
+    &:nth-child(4n){
       border-right: none;
     }
     &:nth-child(5),
@@ -59,8 +58,7 @@ padding: 96px 0 74px;
      &:nth-child(3){
       border-right: 0;
      }
-     &:nth-child(4),
-     &:nth-child(8){
+     &:nth-child(4n){
       border-right: 1px solid ${({ theme }) => theme.colors.dividerColor};
      }
      &:nth-child(5){

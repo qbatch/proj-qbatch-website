@@ -8,6 +8,7 @@ const CareerWrapper = styled.div`
     font-weight: 700;
     position: relative;
     margin: 0;
+    padding-top: 12px;
     //text-transform: capitalize;
     &::before{
       content: "";
@@ -19,23 +20,26 @@ const CareerWrapper = styled.div`
     }
   }
   .heading{
-    padding-top: 12px;
-    padding-bottom: 28px;
+    padding: 4px 0;
   }
   .paragraph{
     line-height: 32px;
-    padding-right: 24px;
+    padding-top: 30px;
+    padding-right: 32px;
   }
   .cards-wrapper{
-    margin-top: 68px;
-    .inner-card{
-      padding-bottom: 16px;
-    }
+    padding-top: 20px;
+  }
+  .inner-card{
+    margin-top: 70px;
   }
   .wrapper{
-    padding: 24px;
+    padding: 24px 24px 14px 24px;
     border-radius: 16px 16px 0 16px;
     border: 1px solid  ${({ theme }) => theme.colors.dividerColor};
+    .card-heading{
+      margin-bottom: 12px;
+    }
     .location-wrapper{
       display: flex;
       align-items: center;
@@ -51,7 +55,7 @@ const CareerWrapper = styled.div`
     }
   }
   .project-tags {
-    margin-top: 24px;
+    margin-top: 18px;
     gap: 8px;
     div {
       padding: 3px 7px;
@@ -68,7 +72,7 @@ const CareerWrapper = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 24px;
     .time{
     font-size:  ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.bodyText};

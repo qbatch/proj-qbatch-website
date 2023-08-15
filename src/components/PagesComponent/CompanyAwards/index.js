@@ -14,7 +14,7 @@ import Upfirms from "../../../assets/images/upfirms.svg";
 import TechImply from "../../../assets/images/tech-imply.svg";
 
 
-import AwardsWrapper from "./style";
+import CompanyAwardsWrapper from "./style";
 
 const awardsData = [
   {
@@ -57,12 +57,52 @@ const awardsData = [
     link: "https://www.techimply.com/profile/qbatch",
     img: <TechImply />,
   },
+  {
+    id: 9,
+    link: "https://topfirms.co/company-detail/3768/qbatch",
+    img: <TopFirms />,
+  },
+  {
+    id: 10,
+    link: "#",
+    img: <TopRated />,
+  },
+  {
+    id: 11,
+    link: "#",
+    img: <Upfirms />,
+  },
+  {
+    id: 12,
+    link: "https://www.techimply.com/profile/qbatch",
+    img: <TechImply />,
+  },
+  {
+    id: 13,
+    link: "https://topfirms.co/company-detail/3768/qbatch",
+    img: <TopFirms />,
+  },
+  {
+    id: 14,
+    link: "#",
+    img: <TopRated />,
+  },
+  {
+    id: 15,
+    link: "#",
+    img: <Upfirms />,
+  },
+  {
+    id: 16,
+    link: "https://www.techimply.com/profile/qbatch",
+    img: <TechImply />,
+  },
 ];
 
 const Index = () => {
   
   return (
-    <AwardsWrapper>
+    <CompanyAwardsWrapper>
       <div className="awards-main">
         <Container>
           <Row>
@@ -80,15 +120,10 @@ const Index = () => {
                 ))}
               </Row>
             </Col>
-            <Col sm={12}>
-              <div className="btn-awards">
-                <Button text="Explore More" />
-              </div>
-            </Col>
           </Row>
         </Container>
       </div>
-    </AwardsWrapper>
+    </CompanyAwardsWrapper>
   );
 };
 

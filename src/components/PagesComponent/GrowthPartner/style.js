@@ -21,16 +21,13 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   }
   .main-heading{
     color: ${({ theme }) => theme.colors.primaryColor};
-    margin-bottom: 28px;
-    margin-top: 20px;
+    margin: 20px 0;
   }
   .paragraph{
     line-height: 32px;
     font-weight: 400;
-    max-width: 573px;
-    &:last-child{
-    padding-top: 16px;
-    }
+    max-width: 597px;
+    padding-top: 4px;
     ${media.md`
     max-width: 100%;
     `}

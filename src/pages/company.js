@@ -8,7 +8,7 @@ import CompanyAchievements from "../components/PagesComponent/CompanyAchievement
 import OurClients from "../components/PagesComponent/Clients"
 import Leadership from "../components/PagesComponent/Leadership"
 import ValueSystem from "../components/PagesComponent/ValueSystem"
-import Awards from "../components/PagesComponent/Awards"
+import CompanyAwards from "../components/PagesComponent/CompanyAwards"
 import Clients from "../components/PagesComponent/Careers"
 const Company = () => (
   <Layout>
@@ -19,7 +19,7 @@ const Company = () => (
     <OurClients/>
     <Leadership/>
     <ValueSystem/>
-    <Awards/>
+    <CompanyAwards/>
     <Clients/>
   </Layout>
 )

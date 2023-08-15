@@ -6,13 +6,15 @@ padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 .content-wrapper{
   .heading{
-    padding-bottom: 32px;
+    padding-top: 3px;
+    padding-bottom: 20px;
     width: 100%;
   }
   .paragraph{
     font-weight: ${({ theme }) => theme.fontWeight.normal};
     line-height: 32px;
     max-width: 454px;
+    padding-top: 10px;
   }
   .list{
     list-style-type: none;
@@ -30,7 +32,7 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
         color: ${({ theme }) => theme.colors.bodyText};
         font-size: inherit;
         display: block;
-        padding-right: 2px;
+        padding-right: 4px;
       }
     }
   }
@@ -47,7 +49,7 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   justify-content: end;
   align-items: end;
   position: relative;
-  padding-top: 24px;
+  padding-top: 24pxgi;
   ${media.lg`
    justify-content: center;
   `}
