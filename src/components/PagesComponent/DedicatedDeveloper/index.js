@@ -28,7 +28,7 @@ const Index = () => (
               <Button text="Let’s Start a Project" className="mx-lg-0 mx-auto"/>
             </div>
           </Col>
-          <Col lg={6} md={0} sm={0} xs={0} className="d-flex justify-content-end p-0 d-lg-block d-none">
+          <Col lg={6} md={0} sm={0} xs={0} className="d-flex justify-content-end p-0">
             <div className="image-portion">
               <BannerImage />
             </div>

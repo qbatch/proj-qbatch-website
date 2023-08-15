@@ -3,13 +3,13 @@ import { media } from "../../../theme/media-mixins";
 
 const ProvenExperienceWrapper = styled.div`
   .section-heading {
-    padding: 96px 0 43px;
+    padding: 96px 0 46px;
     ${media.sm`
-      padding: 40px 0 40px;
+      padding: 40px 0;
     `}
   }
   .carousel-padding {
-    padding-top: 30px;
+    padding-top: 27px;
     padding-left: 153px;
     ${media.lg`
       padding-left: 51px;
