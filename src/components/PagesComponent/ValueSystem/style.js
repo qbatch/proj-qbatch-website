@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 const ValueSystemWrapper = styled.div  `
-  padding: 96px 0;
+  padding: 96px 0 84px;
+  ${media.sm`
+    padding: 40px 0;
+  `}
   .underline-heading{
     color: ${({ theme }) => theme.colors.bodyText};
     font-weight: 700;
@@ -45,7 +48,7 @@ const ValueSystemWrapper = styled.div  `
     }
     .col-inner{
       padding-left: 16px;
-      padding-top: 14px;
+      padding-top: 12px;
       h3{
         margin-bottom: 16px;
       }

@@ -1,8 +1,10 @@
 import React from "react";
-import AchievementsWrapper from "./style";
 import { Row, Col } from "react-bootstrap";
-import Container from "../../UiComponent/Container";
 import CountUp from "react-countup";
+
+import Container from "../../UiComponent/Container";
+
+import AchievementsWrapper from "./style";
 
 const formatNumber = (count) => {
   if (count >= 1000) {

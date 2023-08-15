@@ -1,8 +1,10 @@
 import React from "react";
-import CareerWrapper from "./style";
+import { Col, Row } from "react-bootstrap";
+
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button";
-import { Col, Row } from "react-bootstrap";
+
+import CareerWrapper from "./style";
 
 const CareersData = [
   {

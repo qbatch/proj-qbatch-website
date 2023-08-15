@@ -2,8 +2,6 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
-import Button from "../../UiComponent/Button";
-
 
 import AwardsWrapper from "./style";
 

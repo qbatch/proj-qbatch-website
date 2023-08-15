@@ -1,7 +1,10 @@
 import React from "react";
-import Container from "../../UiComponent/Container";
-import VisionWrapper from "./style";
 import { Row, Col } from "react-bootstrap";
+
+import Container from "../../UiComponent/Container";
+
+import VisionWrapper from "./style";
+
 const Index = () => {
   return (
    <VisionWrapper>

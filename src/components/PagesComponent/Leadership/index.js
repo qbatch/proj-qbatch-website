@@ -1,7 +1,9 @@
 import React from "react";
-import LeadershipWrapper from "./style";
 import { Col, Row } from "react-bootstrap";
+
 import Container from "../../UiComponent/Container";
+
+import LeadershipWrapper from "./style";
 
 const leaderData = [
   {

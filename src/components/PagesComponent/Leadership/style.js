@@ -2,13 +2,14 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const LeadershipWrapper = styled.div`
-padding: 96px 0;
+padding: 97px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+${media.sm`
+  padding: 40px 0;
+`}
 .content-wrapper{
   .heading{
-    padding-top: 3px;
-    padding-bottom: 20px;
-    width: 100%;
+    padding-bottom: 30px;
   }
   .paragraph{
     font-weight: ${({ theme }) => theme.fontWeight.normal};
@@ -27,12 +28,13 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
       color: ${({ theme }) => theme.colors.bodyText};
       line-height: 32px;
       display: flex;
+      max-width: 360px;
       &:before{
         content: '—';
         color: ${({ theme }) => theme.colors.bodyText};
         font-size: inherit;
         display: block;
-        padding-right: 4px;
+        padding-right: 5px;
       }
     }
   }
@@ -79,7 +81,7 @@ background: linear-gradient(180deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.
       }
     }
     .leader-info {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     margin-right: -54px;
     position: relative;
     z-index: 2;

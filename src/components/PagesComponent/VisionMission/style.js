@@ -2,14 +2,20 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const VisionWrapper = styled.div`
-border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-padding: 96px 0;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  padding: 97px 0 96px;
+  ${media.sm`
+    padding: 40px 0;
+  `}
 .image-portion{
   img{
     border-radius: 32px 32px 0 32px;
     height: 390px;
     width: 100%;
     object-fit: cover;
+    ${media.xs`
+      height: 290px;
+    `}
   }
 }
 .content-right{

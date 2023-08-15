@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins"
 
 const CareerWrapper = styled.div`
  padding: 96px 0;
+ ${media.sm`
+  padding: 40px 0;
+ `}
  .underline-heading{
     color: ${({ theme }) => theme.colors.bodyText};
     font-weight: 700;

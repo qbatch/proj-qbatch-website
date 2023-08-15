@@ -1,7 +1,9 @@
 import React from "react";
-import ValueSystemWrapper from "./style";
-import Container from "../../UiComponent/Container";
 import { Col, Row } from "react-bootstrap";
+
+import Container from "../../UiComponent/Container";
+
+import ValueSystemWrapper from "./style";
 
 const values = [
   {
@@ -49,8 +51,8 @@ const values = [
     title: "Counter-Culture",
     description: "We don’t compete, we play our own game.",
   },
- 
 ];
+
 const Index = () => {
   return (
     <ValueSystemWrapper>

@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const AchievementsWrapper = styled.div`
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 padding: 96px 0 74px;
+${media.sm`
+    padding: 40px 0;
+`}
 .underline-heading{
     color: ${({ theme }) => theme.colors.bodyText};
     font-weight: 500;
