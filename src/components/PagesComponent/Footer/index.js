@@ -61,33 +61,27 @@ const menu2Data = [
 
 const socialIcons = [
   {
-    img: "/facebook-icon.svg",
-    className: "facebook-icon",
+    img: "/facebook",
     to: "/",
   },
   {
-    img: "/instagram-icon.svg",
-    className: "insta-icon",
+    img: "/instagram",
     to: "/",
   },
   {
-    img: "/linkedin-icon.svg",
-    className: "linkedin-icon",
+    img: "/linkedin",
     to: "/",
   },
   {
-    img: "/twitter-icon.svg",
-    className: "twitter-icon",
+    img: "/twitter",
     to: "/",
   },
   {
-    img: "/behance-icon.svg",
-    className: "behance-icon",
+    img: "/behance",
     to: "/",
   },
   {
-    img: "/youtube-icon.svg",
-    className: "youtube-icon",
+    img: "/youtube",
     to: "/",
   },
 ];
@@ -117,7 +111,7 @@ const Index = () => {
               <div className="footer-menu">
                 <ul>
                   {menuData.map((menu, ind) => (
-                    <li key={ind}>{menu.name}</li>
+                    <li key={ind}><Link to={menu.to}>{menu.name}</Link></li>
                   ))}
                 </ul>
               </div>
@@ -126,7 +120,9 @@ const Index = () => {
               <div className="footer-menu">
                 <ul>
                   {menu2Data.map((menu, ind) => (
-                    <li key={ind}><Link to={menu.to}>{menu.name}</Link></li>
+                    <li key={ind}>
+                      <Link to={menu.to}>{menu.name}</Link>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -135,8 +131,8 @@ const Index = () => {
               <div className="footer-contact">
                 {contactData.map((data, ind) => (
                   <div key={ind}>
-                    <img src={data.icon} alt="contact" className={ind === 1 && "d-none"} />
-                    <span className={ind === 1 && "address"}>{data.title}</span>
+                    {data.icon && <img src={data.icon} alt="contact" />}
+                    <span className={!data.icon && "address"}>{data.title}</span>
                   </div>
                 ))}
               </div>
@@ -162,8 +158,8 @@ const Index = () => {
             <span className="follow-us">Follow Us at</span>
             <div className="d-flex social-icons">
               {socialIcons.map((item, ind) => (
-                <div className={item.className} key={ind}>
-                  <img src={item.img} alt={item.className} />
+                <div className={`${item.img.split('/')}-icon`} key={ind}>
+                  <img src={`${item.img}-icon.svg`} alt={item.img} />
                 </div>
               ))}
             </div>
@@ -172,7 +168,7 @@ const Index = () => {
             <ul>
               {bottomMenu.map((menu, ind) => (
                 <li key={ind} className="mb-0">
-                  {menu.name}
+                 <Link to={menu.to}> {menu.name}</Link>
                 </li>
               ))}
             </ul>
