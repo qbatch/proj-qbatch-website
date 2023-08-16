@@ -5,8 +5,7 @@ import Container from "../../UiComponent/Container";
 
 import GrowthPartnerWrapper from "./style";
 
-const Index = () => {
-  return (
+const Index = () => (
     <GrowthPartnerWrapper>
       <Container>
         <Row>
@@ -28,6 +27,5 @@ const Index = () => {
       </Container>
     </GrowthPartnerWrapper>
   )
-}
 
 export default Index;
