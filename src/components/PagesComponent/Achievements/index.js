@@ -9,8 +9,10 @@ import CountUp from "react-countup";
 import { counterData } from "../../../constants";
 
 const Index = ({ page }) => {
-  const numCols = page === "index" ? 4 : 3;
-  const displayedCounterData = page === "index" ? counterData.slice(0, 3) : counterData;
+  
+  const pageNumber = page === "home";
+  const numCols = pageNumber ? 4 : 3;
+  const displayedCounterData = pageNumber ? counterData.slice(0, 3) : counterData;
 
   return (
     <AchievementsWrapper>
@@ -19,18 +21,11 @@ const Index = ({ page }) => {
           <h1 className="heading">Achievements Through The Years...</h1>
           <Row>
             {displayedCounterData.map((data, ind) => (
-              <Col
-                md={numCols} 
-                sm={numCols} 
-                xs={12} 
-                key={ind} 
-                className="achievements-col"
-              >
-                <h1 className={`${page === "index" ? "heading" : ""}`}>
+              <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">
+                <h1 className={`${pageNumber &&  "heading" }`}>
                   <CountUp end={data.count} duration={3} />
                   {data.symbol && <span className="color-danger fw-light ms-2">{data.symbol}</span>}
                 </h1>
-
                 <p>{data.desc}</p>
               </Col>
             ))}

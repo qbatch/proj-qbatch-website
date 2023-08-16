@@ -9,6 +9,7 @@ import ProblumSolvingWrapper from "./style";
 
 const Index = (props) => {
   const {text, className} = props;
+
   return (
     <ProblumSolvingWrapper 
     className={className}
@@ -16,11 +17,7 @@ const Index = (props) => {
       <Container>
         <Row>
           <Col md={8}>
-          { text || <h2>
-                We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
-              you to transform on a massive scale<br></br> — <b>with logic, innovation and emotion.</b>
-            </h2>
-            }
+          {text}
           </Col>
           <Col md={4}>
             <div className="box-center pt-lg-0 pt-4">
