@@ -21,7 +21,7 @@ const GrowthPartnerWrapper = styled.div`
       font-weight: 400;
       max-width: 600px;
       &:last-child{
-      padding-top: 12px;
+      padding-top: 16px;
       }
       ${media.md`
       max-width: 100%;

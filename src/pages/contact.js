@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import StartProject from "../components/PagesComponent/StartProject";
-import Achievements from "../components/PagesComponent/AchievementsContact";
+import Achievements from "../components/PagesComponent/Achievements";
 import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
 import ProblemSolving from "../components/PagesComponent/ProblumSolving";
 
