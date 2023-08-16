@@ -34,9 +34,6 @@ const headerMenu = [
 
 const Index = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
-  // const handleNavigate = () => {
-  //   navigate('/contact');
-  // };
   return (
     <>
       <HeaderWrapper>
