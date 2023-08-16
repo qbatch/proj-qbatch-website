@@ -40,7 +40,7 @@ const Index = () => {
         <Container>
           <div className="header-main">   
             <div className="logo">
-              <Logo />
+             <a href="/"> <Logo /></a>
             </div>
             <nav className="header-menu">
               <ul>

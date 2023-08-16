@@ -18,6 +18,9 @@ const FooterWrapper = styled.div`
     `}
     .footer-contact {
       padding-top: 6px;
+      ${media.sm`
+       padding: 12px 0;
+      `}
       .address {
         margin-left: 28px;
       }
@@ -126,8 +129,14 @@ const FooterWrapper = styled.div`
         border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
         transition: all 0.5s ease-out;
       }
+      a {
+        color: ${({ theme }) => theme.colors.bodyLight};
+        text-decoration: none;
+      }
       &:hover {
-        color: ${({ theme }) => theme.colors.whiteColor};
+        a{
+          color: ${({ theme }) => theme.colors.whiteColor};
+        }
         &::before {
           width: 18px;
         }
