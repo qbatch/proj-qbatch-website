@@ -4,7 +4,6 @@ import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import CompanyBanner from "../components/PagesComponent/CompanyBanner"
 import GrowthPartner from "../components/PagesComponent/GrowthPartner"
-import VisionMission from "../components/PagesComponent/VisionMission"
 import CompanyAchievements from "../components/PagesComponent/CompanyAchievements"
 import OurClients from "../components/PagesComponent/Clients"
 import Leadership from "../components/PagesComponent/Leadership"
@@ -16,7 +15,6 @@ const Company = () => (
   <Layout>
     <CompanyBanner/>
     <GrowthPartner/>
-    <VisionMission/>
     <CompanyAchievements/>
     <OurClients/>
     <Leadership/>
