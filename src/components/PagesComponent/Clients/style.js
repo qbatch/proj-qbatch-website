@@ -73,7 +73,7 @@ position: relative;
       color: ${({ theme }) => theme.colors.primaryColor};
       font-weight: 700;
       line-height: 52px;
-      padding: 7px 0 0 39px;
+      padding: 8px 0 0 39px;
       ${media.lg`
        padding-left: 0;
        margin-bottom: 24px

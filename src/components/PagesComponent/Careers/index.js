@@ -45,7 +45,7 @@ const Index = () => {
                     </div>
                     <div className="bottom-wrapper">
                       <span className="time">Posted 1 hour ago</span>
-                      <Button text="Explore More"/>
+                      <button className="card-button">Explore More<img className="arrow-icon" src="/card-btn-arrow.svg" /></button>
                     </div>
                   </div>
                 </Col>
