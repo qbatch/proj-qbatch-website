@@ -7,9 +7,6 @@ import { css } from "styled-components";
    md: "991px",
    lg: "1199px",
  };
- const breakpointsMin = {
-   xl: "1920px",
- };
 
 export const media = Object.keys(breakpoints).reduce((accumulator, label) => {
   accumulator[label] = (...args) => css`
