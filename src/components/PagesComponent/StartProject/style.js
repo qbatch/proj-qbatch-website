@@ -16,6 +16,9 @@ const StartProjectWrapper = styled.div`
     color: ${({ theme }) => theme.colors.bodyLight};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   }
+  .project-form {
+    margin-top: 20px;
+  }
   .testimonials {
     padding-top: 138px;
     .testimonial-heading {
@@ -46,6 +49,9 @@ const StartProjectWrapper = styled.div`
     opacity: 1;
     visibility: visible;
     transition: 1s all ease-in;
+  }
+  .collapse-radio {
+    margin-bottom: 11px
   }
 `;
 export default StartProjectWrapper;

@@ -7,7 +7,7 @@ const CheckBoxWrapper = styled.div`
     margin-left: ${(props) => (props.margin ? `${props.margin}` : "8px")};
   }
   .form-check {
-    margin-bottom: ${(props) => (props.base ? `${props.base}` : "8px")};
+    margin-bottom: ${(props) => (props.base ? `${props.base}` : "11px")};
   }
   input[type="checkbox"] {
     -webkit-appearance: none;

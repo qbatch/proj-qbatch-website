@@ -9,7 +9,6 @@ const ProvenExperienceWrapper = styled.div`
     `}
   }
   .carousel-padding {
-    padding-top: 27px;
     padding-left: 153px;
     ${media.lg`
       padding-left: 51px;
@@ -69,7 +68,6 @@ const ProvenExperienceWrapper = styled.div`
     `}
     .qb-carousel-item{
       padding-right: 144px;
-      &:first-of-type{}
       ${media.md`
         padding-right: 40px;
       `}
@@ -83,13 +81,6 @@ const ProvenExperienceWrapper = styled.div`
         ${media.md`
           width: 100%;
         `}
-      }
-    }
-    li{
-      &:nth-last-child(2){
-        div{
-
-        }
       }
     }
   }
@@ -118,6 +109,12 @@ const ProvenExperienceWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         font-weight: ${({ theme }) => theme.fontWeight.light};
       }
+    }
+  }
+  @media(min-width:1920px){
+    .section-slider {
+      max-width:1920px;
+      margin:0 auto;
     }
   }
 `;
