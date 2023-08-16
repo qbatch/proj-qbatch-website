@@ -4,9 +4,13 @@ import { Row, Col } from "react-bootstrap";
 import Container from "../../UiComponent/Container";
 
 import GrowthPartnerWrapper from "./style";
+import VisionWrapper from "./style";
 
-const Index = () => (
+const Index = () => {
+  return(
+    
     <GrowthPartnerWrapper>
+      <div className="growth-wrapper">
       <Container>
         <Row>
           <Col lg={6}>
@@ -25,7 +29,45 @@ const Index = () => (
           </Col>
         </Row>
       </Container>
+    </div>
+    <div className="growth-wrapper">
+    <Container>
+      <Row className="content-col content-right">
+      <Col lg={6} className="order-1 order-lg-2">
+          <div className="content-wrapper">
+          <div className="content">
+            <h2 className="heading">Our Vision</h2>
+            <p className="paragraph">We are working every day and night to become your pedestal where innovation grows and flows freely into a worryless future. </p>
+          </div>
+          </div>
+        </Col>
+        <Col lg={6} className="order-2 order-lg-1">
+          <div className="image-portion-md">
+             <img src="/vision-img.png" />
+            </div>
+        </Col>
+      </Row>
+      <Row className="content-col">
+      <Col lg={6}>
+          <div className="content-wrapper justify-content-start">
+          <div className="content">
+            <h2 className="heading">Our Mission</h2>
+            <p className="paragraph">We are on a mission to help you modernize without fretting about financial and operational bottlenecks through intelligently designed and carefully deployed software solutions.  </p>
+          </div>
+          </div>
+        </Col>
+        <Col lg={6}>
+          <div className="image-portion-md">
+             <img src="/mission-img.png" />
+            </div>
+        </Col>
+      </Row>
+      
+    </Container>
+   </div>
     </GrowthPartnerWrapper>
+   
   )
+}
 
 export default Index;

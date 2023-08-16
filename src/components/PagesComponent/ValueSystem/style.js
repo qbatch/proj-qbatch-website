@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 const ValueSystemWrapper = styled.div  `
-  padding: 96px 0 84px;
+  padding: 96px 0;
   ${media.sm`
     padding: 40px 0;
   `}
@@ -11,7 +11,7 @@ const ValueSystemWrapper = styled.div  `
   .heading{
     font-weight: ${({ theme }) => theme.fontWeight.normal};
     color: ${({ theme }) => theme.colors.gardientColor};
-    padding-top: 12px;
+    padding-top: 10px;
     span{
       font-weight: ${({ theme }) => theme.fontWeight.bold};
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -38,7 +38,7 @@ const ValueSystemWrapper = styled.div  `
       padding-left: 16px;
       padding-top: 12px;
       h3{
-        margin-bottom: 16px;
+        margin-bottom: 18px;
       }
       p{
         line-height: 32px;

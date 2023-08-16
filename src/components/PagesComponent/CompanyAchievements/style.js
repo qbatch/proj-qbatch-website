@@ -15,7 +15,7 @@ ${media.sm`
   .main-heading{
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 28px;
-    margin-top: 16px;
+    margin-top: 18px;
   }
   .achievements-col{
     text-align: center;

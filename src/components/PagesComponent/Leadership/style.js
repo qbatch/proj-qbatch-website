@@ -9,7 +9,7 @@ ${media.sm`
 `}
 .content-wrapper{
   .heading{
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     ${media.sm`
      padding-bottom: 12px;
     `}
@@ -24,7 +24,7 @@ ${media.sm`
     list-style-type: none;
     padding-left: 0;
     padding-top: 16px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     max-width: 454px;
     li{
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
@@ -66,7 +66,7 @@ ${media.sm`
   justify-content: end;
   align-items: end;
   position: relative;
-  padding-top: 24pxgi;
+  padding-top: 24px;
   ${media.lg`
    justify-content: center;
   `}
@@ -103,7 +103,7 @@ background: linear-gradient(180deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.
       }
     }
     .leader-info {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     margin-right: -54px;
     position: relative;
     z-index: 2;

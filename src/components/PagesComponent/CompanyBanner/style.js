@@ -46,7 +46,7 @@ const BannerWrapper = styled.div`
     }
   }
   .banner-button {
-    padding-top: 40px;
+    padding-top: 42px;
     button {
       color:${({ theme }) => theme.colors.whiteColor};
       .button-icon {
