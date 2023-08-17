@@ -57,17 +57,8 @@ const FooterWrapper = styled.div`
             outline: none;
           }
         }
-        div {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          cursor: pointer;
-          position: relative;
+        button {
           span {
-            color: ${({ theme }) => theme.colors.dividerColor};
-            white-space: nowrap;
-            font-weight: ${({ theme }) => theme.fontWeight.bold};
-            transition: color 0.5s ease-out;
             ${media.lg`
               display: none;
             `}
@@ -77,31 +68,6 @@ const FooterWrapper = styled.div`
             ${media.xs`
               display: none;
             `}
-          }
-          img {
-            transition: transform 0.5s ease-out;
-            max-width: none;
-          }
-          &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            height: 2px;
-            width: 0;
-            border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
-            transition: all 0.5s ease-out;
-          }
-          &:hover {
-            span {
-              color: ${({ theme }) => theme.colors.whiteColor};
-            }
-            &::before {
-              width: 18px;
-            }
-            img {
-              transform: rotate(-45deg);
-            }
           }
         }
       }
