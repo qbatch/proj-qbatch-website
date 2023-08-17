@@ -24,7 +24,7 @@ const ValueSystemWrapper = styled.div  `
     `}
   }
   .value-col{
-    padding: 24px 4.2% 16px;
+    padding: 36px 4.2% 20px;
     min-height: 238px; 
     display: flex;
     align-items: flex-start;

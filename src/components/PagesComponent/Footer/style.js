@@ -141,6 +141,10 @@ const FooterWrapper = styled.div`
           width: 18px;
         }
       }
+      a{
+        color: ${({ theme }) => theme.colors.bodyLight};
+        text-decoration:none;
+      }
     }
   }
   .footer-menu-bottom {

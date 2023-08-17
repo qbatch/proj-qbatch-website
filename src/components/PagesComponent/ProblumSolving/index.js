@@ -7,16 +7,17 @@ import ArrowDownward from "../../../assets/images/arrow_downward.svg";
 
 import ProblumSolvingWrapper from "./style";
 
-const Index = () => {
+const Index = (props) => {
+  const {text, className} = props;
+
   return (
-    <ProblumSolvingWrapper>
+    <ProblumSolvingWrapper 
+    className={className}
+    >
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={8}>
-            <h2>
-              We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
-              you to transform on a massive scale<br></br>  <b>— with logic, innovation and emotion.</b>
-            </h2>
+          {text}
           </Col>
           <Col md={4}>
             <div className="box-center pt-lg-0 pt-4">
