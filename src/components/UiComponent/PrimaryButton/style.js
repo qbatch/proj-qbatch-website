@@ -10,8 +10,11 @@ const PrimaryButtonWrapper = styled(Button)`
   background-color: transparent;
   padding: 0;
   border: 0;
+  font-weight: bold;
+  min-width: 156px;
   color: ${(props, theme) => (props.color ? `${props.color}` : theme.colors.whiteColor)};
   &:hover {
+    color: ${(props, theme) => (props.color ? `${props.color}` : theme.colors.whiteColor)};
     background-color: transparent;
     border: none;
   }
@@ -50,9 +53,6 @@ const PrimaryButtonWrapper = styled(Button)`
     color: ${(props) => (props.color ? `${props.color}` : "#fff")};
   }
   &:hover {
-    span {
-      color: ${(props, theme) => (props.color ? `${props.color}` : theme.colors.whiteColor)};
-    }
     &::before {
       width: ${(props) => (props.borderBottom ? `${props.borderBottom}` : "18px")};
     }
