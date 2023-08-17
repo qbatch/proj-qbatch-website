@@ -117,7 +117,6 @@ const FooterWrapper = styled.div`
     li {
       margin-bottom: 8px;
       cursor: pointer;
-      transition: color 0.5s ease-out;
       position: relative;
       &::before {
         content: "";
@@ -132,6 +131,7 @@ const FooterWrapper = styled.div`
       a {
         color: ${({ theme }) => theme.colors.bodyLight};
         text-decoration: none;
+        transition: color 0.5s ease-out;
       }
       &:hover {
         a {

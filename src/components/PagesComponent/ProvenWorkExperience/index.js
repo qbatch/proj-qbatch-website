@@ -44,19 +44,14 @@ const projectSlides = [
 
 const responsive = {
   superLargeDesktop: {
-    breakpoint: { max: 4000, min: 1700 },
+    breakpoint: { max: 4000, min: 768 },
     items: 1,
     partialVisibilityGutter: 202,
   },
   desktop: {
-    breakpoint: { max: 1700, min: 1200 },
+    breakpoint: { max: 767, min: 0 },
     items: 1,
-    partialVisibilityGutter: 202,
-  },
-  tablet: {
-    breakpoint: { max: 1200, min: 0 },
-    items: 1,
-    partialVisibilityGutter: 202 ,
+    partialVisibilityGutter: 0,
   },
 };
 
@@ -102,7 +97,7 @@ const Index = () => {
       <div className="container-slider">
         <div className="section-slider">
           <Row>
-            <Col lg={4} md={12} sm={12} className="p-0">
+            <Col lg={4} md={12} sm={12} className="p-0 d-flex flex-column justify-content-center">
               <div className="carousel-padding">
                 <Carousel
                   responsive={responsiveTitle}
