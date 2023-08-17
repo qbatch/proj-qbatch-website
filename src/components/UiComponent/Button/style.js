@@ -17,7 +17,8 @@ const ButtonWrapper = styled(Button)`
   `}
   &.header-btn {
     border: 1px solid ${({ theme }) => theme.colors.primaryColor};
-    color: ${({ theme }) => theme.colors.gardientColor};
+    color: ${({ theme }) => theme.colors.whiteColor};
+    background-color: ${({ theme }) => theme.colors.primaryColor};
     padding: 3px 3px 3px 16px;
     border-radius: 22px;
     transition: all 0.3s ease-in-out;
@@ -34,7 +35,6 @@ const ButtonWrapper = styled(Button)`
       }
     }
     &:hover {
-      background-color: ${({ theme }) => theme.colors.primaryColor};
       color: ${({ theme }) => theme.colors.whiteColor};
       &::after {
         width: 0;

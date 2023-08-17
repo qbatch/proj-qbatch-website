@@ -1,10 +1,10 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { BsArrowRight } from "react-icons/bs";
 
 import Container from "../../UiComponent/Container";
 
 import ArrowDownward from "../../../assets/images/arrow_downward.svg";
+
 import ProblumSolvingWrapper from "./style";
 
 const Index = (props) => {

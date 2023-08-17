@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React from "react";
 import Collapse from "react-bootstrap/Collapse";
 
 import CollapseUp from '../../../assets/images/collapse-up.svg'
@@ -8,7 +8,6 @@ import CollpaseWrapper from "./style";
 
 function Example(props) {
   const { title, children, open, onClick, content } = props;
-
 
   return (
     <CollpaseWrapper>
@@ -22,7 +21,7 @@ function Example(props) {
             <CollapseUp onClick={onClick} className="pointer" />
           )}
         </div>
-        <div className="mt-3">{content}</div>
+        <div className="collpase-content">{content}</div>
       </>
       <Collapse in={open}>
         <div id="example-collapse-text">{children}</div>

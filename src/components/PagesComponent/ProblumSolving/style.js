@@ -10,11 +10,14 @@ const ProblumSolvingWrapper = styled.div`
   `}
 
   h2 {
-    color: ${({ theme }) => theme.colors.whiteColor};
+    color: ${({ theme }) => theme.colors.dividerColor};
     font-weight: 400;
     line-height: 52px;
     position: relative;
     z-index: 2;
+    b {
+      color: ${({ theme }) => theme.colors.whiteColor};
+    }
   }
   ${media.sm`
         .box-center{
@@ -62,7 +65,7 @@ const ProblumSolvingWrapper = styled.div`
       max-width: 66vmin;
       transform-origin: center;
       width: 100%;
-      transition: transform 2s ease-out 100ms;
+      transition: transform 0.5s ease-out 100ms;
       pointer-events: none;
       text {
         font-size: 7px;
@@ -76,7 +79,7 @@ const ProblumSolvingWrapper = styled.div`
       position: absolute;
       top: 55px;
       left: 48px;
-      transition: transform 2s ease-out 100ms;
+      transition: transform 0.5s ease-out 100ms;
     }
     &:hover {
       background-color: ${({ theme }) => theme.colors.whiteColor};
@@ -85,7 +88,7 @@ const ProblumSolvingWrapper = styled.div`
         transform: rotateZ(82deg);
       }
       .red-arrow {
-        transform: rotate(-56deg);
+        transform: rotate(-45deg);
         filter: invert(18%) sepia(84%) saturate(2395%) hue-rotate(196deg) brightness(98%) contrast(101%);
       }
     }

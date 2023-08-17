@@ -11,17 +11,15 @@ import Collapse from "../../UiComponent/Collapse";
 import RadioButton from "../../UiComponent/RadioButton";
 import CheckBox from "../../UiComponent/CheckBox";
 import Button from '../../UiComponent/Button';
-
-import ArrowDown from "../../../assets/images/collapse-down.svg";
+import TestimonialCarousel from "../../UiComponent/TestimonialSlider"
 
 import StartProjectWrapper from "./style";
-import TestimonialCarousel from "../../UiComponent/TestimonialSlider"
 
 const Index = () => {
 
   const [open, setOpen] = useState(false);
   const [modal, setModal] = useState("");
-  const recaptchaRef = React.useRef();
+  // const recaptchaRef = React.useRef();
   const [serviceOpen, setServiceOpen] = useState(false);
 
   const [serviceSelect, setServiceSelect] = useState([]);
@@ -44,7 +42,7 @@ const Index = () => {
           <Col lg={5} md={6} sm={12} xs={12}>
             <h2 className="color-primary">Start a Project</h2>
             <p>Work with the most friendly yet focused developers!</p>
-            <div className="mt-4">
+            <div className="project-form">
               <Input placeholder="Full Name" type="text" />
               <Input placeholder="Contact Number" type="text" />
               <Input placeholder="Email Address" type="email" />
@@ -64,17 +62,19 @@ const Index = () => {
                 {["Time and Material", "Fixed Scope Product Development", "Hire Dedicated Development Team"].map(
                   (value) => {
                     return (
-                      <RadioButton
-                        key={value}
-                        type="radio"
-                        label={value}
-                        value={value}
-                        checked={modal === value}
-                        name="collaboration"
-                        onChange={(e) => {
-                          setModal(e.target.value);
-                        }}
+                      <div className="collapse-radio">
+                        <RadioButton
+                          key={value}
+                          type="radio"
+                          label={value}
+                          value={value}
+                          checked={modal === value}
+                          name="collaboration"
+                          onChange={(e) => {
+                            setModal(e.target.value);
+                          }}
                       />
+                      </div>
                     );
                   }
                 )}

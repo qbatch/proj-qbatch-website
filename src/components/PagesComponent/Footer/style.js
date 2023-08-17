@@ -117,7 +117,6 @@ const FooterWrapper = styled.div`
     li {
       margin-bottom: 8px;
       cursor: pointer;
-      transition: color 0.5s ease-out;
       position: relative;
       &::before {
         content: "";
@@ -132,9 +131,10 @@ const FooterWrapper = styled.div`
       a {
         color: ${({ theme }) => theme.colors.bodyLight};
         text-decoration: none;
+        transition: color 0.5s ease-out;
       }
       &:hover {
-        a{
+        a {
           color: ${({ theme }) => theme.colors.whiteColor};
         }
         &::before {
@@ -197,14 +197,12 @@ const FooterWrapper = styled.div`
         border-radius: 50%;
         transition: background-color 0.5s ease-out;
         img {
-          filter: invert(61%) sepia(8%) saturate(960%) hue-rotate(170deg)
-            brightness(90%) contrast(81%);
+          filter: invert(61%) sepia(8%) saturate(960%) hue-rotate(170deg) brightness(90%) contrast(81%);
           transition: filter 0.5s ease-out;
         }
         &:hover {
           img {
-            filter: invert(100%) sepia(33%) saturate(1%) hue-rotate(246deg)
-              brightness(104%) contrast(101%);
+            filter: invert(100%) sepia(33%) saturate(1%) hue-rotate(246deg) brightness(104%) contrast(101%);
           }
         }
       }
@@ -213,7 +211,7 @@ const FooterWrapper = styled.div`
           background-color: rgba(53, 121, 234, 1);
         }
       }
-      .insta-icon {
+      .instagram-icon {
         transition: background 0.5s ease-out;
         &:hover {
           background: radial-gradient(
