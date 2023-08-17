@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {Link} from 'gatsby';
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 import Drawer from "../HeaderDrawer";
@@ -39,7 +39,9 @@ const Index = () => {
         <Container>
           <div className="header-main">
             <div className="logo">
-             <a href="/"> <Logo /></a>
+              <Link to="/">
+                <Logo />
+              </Link>
             </div>
             <nav className="header-menu">
               <ul>
@@ -53,9 +55,9 @@ const Index = () => {
             <div className="menu-items">
               <Button text="Contact Us" className="header-btn" />
               <div className="burger-icon" onClick={() => setOpenDrawer(true)}>
-              {[1, 2, 3].map((key) => (
-                <span key={key}></span>
-              ))}
+                {[1, 2, 3].map((key) => (
+                  <span key={key}></span>
+                ))}
               </div>
             </div>
           </div>

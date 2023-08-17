@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import {Link} from 'gatsby'
 
 import Container from "../../UiComponent/Container";
+import PrimaryButton from '../../UiComponent/PrimaryButton';
 
 import FooterWrapper from "./style";
 
@@ -111,7 +112,9 @@ const Index = () => {
               <div className="footer-menu">
                 <ul>
                   {menuData.map((menu, ind) => (
-                    <li key={ind}><Link to={menu.to}>{menu.name}</Link></li>
+                    <li key={ind}>
+                      <Link to={menu.to}>{menu.name}</Link>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -144,10 +147,7 @@ const Index = () => {
                 <div className="email-input">
                   <img src="/email-address-icon.svg" alt="email" />
                   <input type="email" placeholder="Email Address" />
-                  <div>
-                    <span>Let’s Get Started</span>
-                    <img src="/footer-right-arrow.svg" alt="arrow" />
-                  </div>
+                  <PrimaryButton color="#fff" text="Let’s Get Started" />
                 </div>
               </div>
             </Col>
@@ -158,7 +158,7 @@ const Index = () => {
             <span className="follow-us">Follow Us at</span>
             <div className="d-flex social-icons">
               {socialIcons.map((item, ind) => (
-                <div className={`${item.img.split('/')}-icon`} key={ind}>
+                <div className={`${item.img.split("/")}-icon`} key={ind}>
                   <img src={`${item.img}-icon.svg`} alt={item.img} />
                 </div>
               ))}
@@ -168,7 +168,7 @@ const Index = () => {
             <ul>
               {bottomMenu.map((menu, ind) => (
                 <li key={ind} className="mb-0">
-                 <Link to={menu.to}> {menu.name}</Link>
+                  <Link to={menu.to}> {menu.name}</Link>
                 </li>
               ))}
             </ul>

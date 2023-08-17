@@ -23,7 +23,7 @@ const IndexPage = () => (
       <Achievements page="index"/>
       <WhatWeCanDo />
       <Expertise />
-      <ProblumSolving />
+      <ProblumSolving  />
       <ProvenWorkExperience />
       <HappilyMaking />
       <WhatDifferenceQbatchMaking />
