@@ -29,9 +29,23 @@ position:relative;
       position: relative;
       z-index: 2;
     }
+    .row-wrapper {
+      padding-top: 2px;
+      .achievements-col {
+        padding: 32px 0 28px;
+      }
+      h1{
+        margin-bottom: 16px;
+      }
+      p{
+        line-height: 30px;
+        letter-spacing: 1px;
+      }
+    }
     .heading {
       margin-bottom: 71px;
     }
+    
     .achievements-col {
       position: relative;
       ${media.sm`

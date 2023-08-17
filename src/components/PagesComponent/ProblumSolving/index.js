@@ -15,7 +15,7 @@ const Index = (props) => {
     className={className}
     >
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={8}>
           {text}
           </Col>

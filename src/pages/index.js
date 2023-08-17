@@ -20,7 +20,7 @@ import StartProject from '../components/PagesComponent/StartProject'
 const IndexPage = () => (
     <Layout>
       <DedicatedDevelopment />
-      <Achievements page="index"/>
+      <Achievements page="home"/>
       <WhatWeCanDo />
       <Expertise />
       <ProblumSolving />

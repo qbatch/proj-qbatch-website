@@ -92,25 +92,27 @@ const ProblumSolvingWrapper = styled.div`
   }
   &.contact-project-cost{
     background-color: #F2F3F5;
-    padding: 188px 0 178px;
+    padding: 188px 0;
     ${media.md`
    padding: 100px 0;
   `}
     .heading-break{
     max-width:90%;
+    margin: 0;
   }
   .circle-bg {
     margin-left: 145px;
   }
   .circle-box {
     border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+    margin-top: 0;
     .text-svg {
       fill: ${({ theme }) => theme.colors.primaryColor};
     }
     &:hover {
-      background-color: inherit;
+      background-color: ${({ theme }) => theme.colors.primaryColor};
       .text-svg {
-        fill: ${({ theme }) => theme.colors.primaryColor};
+        fill: ${({ theme }) => theme.colors.whiteColor};
       }
       .red-arrow {
         filter:none;
