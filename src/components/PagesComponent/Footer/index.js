@@ -158,7 +158,7 @@ const Index = () => {
             <span className="follow-us">Follow Us at</span>
             <div className="d-flex social-icons">
               {socialIcons.map((item, ind) => (
-                <div className={`${item.img.split("/")}-icon`} key={ind}>
+                <div className={`${item.img.replace("/",'')}-icon`} key={ind}>
                   <img src={`${item.img}-icon.svg`} alt={item.img} />
                 </div>
               ))}
