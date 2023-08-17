@@ -46,7 +46,7 @@ const Index = () => {
                       </div>
                       <div className="bottom-wrapper">
                         <span className="time">Posted 1 hour ago</span>
-                        <PrimaryButton color="#0054A6" borderBottom="0" text=" Explore More" />
+                        <PrimaryButton text=" Explore More" />
                       </div>
                     </div>
                   </Col>

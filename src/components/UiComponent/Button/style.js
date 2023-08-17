@@ -61,7 +61,7 @@ const ButtonWrapper = styled(Button)`
       display: flex;
       align-items: center;
       background-color: ${({ theme }) => theme.colors.whiteColor};
-      transition: left 0.3s ease-in-out;
+      transition: left 0.3s ease-in-out, background-color 0.3s ease-in-out;
       position: relative;
 
       svg {

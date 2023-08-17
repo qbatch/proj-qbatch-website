@@ -57,6 +57,19 @@ const FooterWrapper = styled.div`
             outline: none;
           }
         }
+        button {
+          span {
+            ${media.lg`
+              display: none;
+            `}
+            ${media.sm`
+              display: block;
+            `}
+            ${media.xs`
+              display: none;
+            `}
+          }
+        }
       }
     }
   }

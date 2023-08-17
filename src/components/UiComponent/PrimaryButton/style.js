@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {Button} from 'react-bootstrap'
-import { media } from "../../../theme/media-mixins";
 
 const PrimaryButtonWrapper = styled(Button)`
   display: flex;
@@ -10,32 +9,21 @@ const PrimaryButtonWrapper = styled(Button)`
   background-color: transparent;
   padding: 0;
   border: 0;
-  font-weight: bold;
-  min-width: 156px;
-  color: ${(props, theme) => (props.color ? `${props.color}` : theme.colors.whiteColor)};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  min-width: auto;
+  .btn-text {
+    color: ${({ theme }) => (props)=> (props.color ? `${props.color}` : theme.colors.primaryColor)};
+    white-space: nowrap;
+  }
   &:hover {
-    color: ${(props, theme) => (props.color ? `${props.color}` : theme.colors.whiteColor)};
+    color: ${({ theme }) => (props)=> (props.color ? `${props.color}` : theme.colors.primaryColor)};
     background-color: transparent;
     border: none;
   }
   &.btn:active {
     background-color: transparent;
     border: none;
-  }
-  .button-text {
-    color: ${(props, theme) => (props.color ? `${props.color}` : theme.colors.whiteColor)};
-    white-space: nowrap;
-    font-weight: ${({ theme }) => theme.fontWeight.bold};
-    transition: color 0.5s ease-out;
-    ${media.lg`
-              display: none;
-            `}
-    ${media.sm`
-              display: block;
-            `}
-            ${media.xs`
-              display: none;
-            `}
+    color: ${({ theme }) => (props)=> (props.color ? `${props.color}` : theme.colors.primaryColor)};
   }
   img {
     transition: transform 0.5s ease-out;
@@ -50,11 +38,10 @@ const PrimaryButtonWrapper = styled(Button)`
     width: 0;
     border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
     transition: all 0.5s ease-out;
-    color: ${(props) => (props.color ? `${props.color}` : "#fff")};
   }
   &:hover {
     &::before {
-      width: ${(props) => (props.borderBottom ? `${props.borderBottom}` : "18px")};
+      width: ${(props) => (props.borderBottom ? "18px" : 0)};
     }
     img {
       transform: rotate(-45deg);
