@@ -102,6 +102,18 @@ const ButtonWrapper = styled(Button)`
       width: 22px;
     }
   }
+  &.secondary-btn {
+      color:${({ theme }) => theme.colors.whiteColor};
+      .button-icon {
+        border-color: ${({ theme }) => theme.colors.dangerColor};
+      }
+      &:hover {
+        .button-icon {
+          border-color: ${({ theme }) => theme.colors.primaryColor};
+        }
+      }
+    }
+  
 `;
 
 export default ButtonWrapper;

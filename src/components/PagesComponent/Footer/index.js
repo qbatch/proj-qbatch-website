@@ -29,7 +29,7 @@ const contactData = [
 const menuData = [
   {
     name: "Services",
-    to: "/",
+    to: "/services",
   },
   {
     name: "Portfolio",

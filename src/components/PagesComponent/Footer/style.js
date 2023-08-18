@@ -82,34 +82,28 @@ const FooterWrapper = styled.div`
     }
     li {
       margin-bottom: 8px;
-      cursor: pointer;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        height: 2px;
-        width: 0;
-        border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
-        transition: all 0.5s ease-out;
-      }
       a {
         color: ${({ theme }) => theme.colors.bodyLight};
         text-decoration: none;
         transition: color 0.5s ease-out;
-      }
-      &:hover {
-        a {
-          color: ${({ theme }) => theme.colors.whiteColor};
-        }
-        &::before {
-          width: 18px;
-        }
-      }
-      a{
-        color: ${({ theme }) => theme.colors.bodyLight};
-        text-decoration:none;
+        position: relative;
+        cursor: pointer;
+          &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          height: 2px;
+          width: 0;
+          border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
+          transition: all 0.5s ease-out;
+          }
+          &:hover {
+            color: ${({ theme }) => theme.colors.whiteColor};
+            &::before {
+              width: 18px;
+            }
+          }
       }
     }
   }

@@ -12,7 +12,7 @@ import HeaderWrapper from "./style";
 const headerMenu = [
   {
     name: "Services",
-    to: "/",
+    to: "/services",
   },
   {
     name: "Hire Developers",
@@ -48,7 +48,7 @@ const Index = () => {
               <ul>
                 {headerMenu.map((menu, ind) => (
                   <li key={ind}>
-                    <span>{menu.name}</span>
+                    <Link to={menu.to}><span>{menu.name}</span></Link>
                   </li>
                 ))}
               </ul>

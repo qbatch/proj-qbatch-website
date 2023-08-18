@@ -47,17 +47,6 @@ const BannerWrapper = styled.div`
   }
   .banner-button {
     padding-top: 42px;
-    button {
-      color:${({ theme }) => theme.colors.whiteColor};
-      .button-icon {
-        border-color: ${({ theme }) => theme.colors.dangerColor};
-      }
-      &:hover {
-        .button-icon {
-          border-color: ${({ theme }) => theme.colors.primaryColor};
-        }
-      }
-    }
   }
 `;
 

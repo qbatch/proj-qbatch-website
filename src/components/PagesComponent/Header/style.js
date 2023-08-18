@@ -41,8 +41,14 @@ const HeaderWrapper = styled.header`
           ${media.lg`
             padding-left: 20px;
           `}
-          color: ${({ theme }) => theme.colors.textMedium};
-          font-weight: ${({ theme }) => theme.fontWeight.normal};
+          a {
+            color: ${({ theme }) => theme.colors.textMedium};
+            font-weight: ${({ theme }) => theme.fontWeight.normal};
+            &:hover {
+              color: ${({ theme }) => theme.colors.primaryColor};
+              font-weight: ${({ theme }) => theme.fontWeight.medium};
+            }
+          }
           cursor: pointer;
           position: relative;
 
@@ -103,8 +109,6 @@ const HeaderWrapper = styled.header`
             width: 0px;
           }
           &:hover {
-            color: ${({ theme }) => theme.colors.primaryColor};
-            font-weight: ${({ theme }) => theme.fontWeight.medium};
             span {
               transform: translateY(-2px);
               &::before {
