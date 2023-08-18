@@ -19,7 +19,7 @@ const Index = () => (
             </h4>
         </div>
         <div className="banner-button">
-          <Button text="Let’s Start Building" />
+          <Button text="Let’s Start Building" className="secondary-btn" />
         </div>
       </Container>
     </BannerWrapper>
