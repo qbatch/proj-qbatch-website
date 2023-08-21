@@ -25,6 +25,7 @@ const experties = [
     description: "Leverage your global footprint in the rising techno-verse with Qbatch’s self-driven, smart, and skilled team of software developers.",
   },
 ];
+
 const Index = () => {
   
   return (
