@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { media } from "../../../theme/media-mixins";
+import { media, bgMixin } from "../../../theme/media-mixins";
 
 const SocialWrapper = styled.div`
-  .social-icons {
+  .social {
     gap: 16px;
     ${media.xs`
         justify-content: center;
@@ -15,7 +15,7 @@ const SocialWrapper = styled.div`
       width: 24px;
       height: 24px;
       border-radius: 50%;
-      transition: background-color 0.5s ease-out;
+      transition: background-color 0.5s ease-out, background-image 0.5s ease-out;
       img {
         filter: invert(61%) sepia(8%) saturate(960%) hue-rotate(170deg)
           brightness(90%) contrast(81%);
@@ -28,15 +28,12 @@ const SocialWrapper = styled.div`
         }
       }
     }
-    .facebook {
-      &:hover {
-        background-color: rgba(53, 121, 234, 1);
-      }
+    &__facebook {
+      ${bgMixin("rgba(53, 121, 234, 1)")};
     }
-    .instagram {
-      transition: background 0.5s ease-out;
+    &__instagram {
       &:hover {
-        background: radial-gradient(
+        background-image: radial-gradient(
           circle at 30% 107%,
           #fdf497 0%,
           #fdf497 5%,
@@ -46,25 +43,17 @@ const SocialWrapper = styled.div`
         );
       }
     }
-    .linkedin {
-      &:hover {
-        background-color: rgba(0, 122, 185, 1);
-      }
+    &__linkedin {
+      ${bgMixin("rgba(0, 122, 185, 1)")};
     }
-    .twitter {
-      &:hover {
-        background-color: rgba(0, 166, 222, 1);
-      }
+    &__twitter {
+      ${bgMixin("rgba(0, 166, 222, 1)")};
     }
-    .behance {
-      &:hover {
-        background-color: rgba(65, 118, 250, 1);
-      }
+    &__behance {
+      ${bgMixin("rgba(65, 118, 250, 1)")};
     }
-    .youtube {
-      &:hover {
-        background-color: rgba(255, 0, 0, 1);
-      }
+    &__youtube {
+      ${bgMixin("rgba(255, 0, 0, 1)")};
     }
   }
 `;

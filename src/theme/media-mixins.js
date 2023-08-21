@@ -1,4 +1,3 @@
-import React from 'react';
 import { css } from "styled-components";
 
  const breakpoints = {
@@ -16,3 +15,9 @@ export const media = Object.keys(breakpoints).reduce((accumulator, label) => {
   `;
   return accumulator;
 }, {});
+
+export const bgMixin = (color) => css`
+  &:hover {
+    background-color: ${color};
+  }
+`;

@@ -32,10 +32,10 @@ const socialIcons = [
 const Index = () => {
   return (
     <SocialWrapper>
-      <div className="d-flex flex-wrap social-icons">
+      <div className="d-flex flex-wrap social">
         {socialIcons.map((item, ind) => (
           <a href={item.to}>
-            <div className={item.img.replace("/", "")} key={ind}>
+            <div className={`social__${item.img.replace("/", "")}`} key={ind}>
               <img src={`${item.img}-icon.svg`} alt={item.img} />
             </div>
           </a>
