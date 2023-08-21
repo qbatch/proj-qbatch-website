@@ -21,6 +21,9 @@ const StartProjectWrapper = styled.div`
   }
   .testimonials {
     padding-top: 138px;
+    ${media.sm`
+      padding-top: 40px;
+    `}
     .testimonial-heading {
       margin-bottom: 29px;
     }

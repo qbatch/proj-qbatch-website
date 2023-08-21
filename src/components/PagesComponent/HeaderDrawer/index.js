@@ -5,6 +5,7 @@ import "react-modern-drawer/dist/index.css";
 import { NavDropdown, Row, Col, Dropdown } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
+import SocialIcons from "../../UiComponent/SocialIcons"
 
 import DrawerWrapper from "./style";
 
@@ -231,39 +232,6 @@ const companyMenu = [
   },
 ];
 
-const socialIcons = [
-  {
-    img: "/facebook-icon.svg",
-    className: "facebook-icon",
-    to: "/",
-  },
-  {
-    img: "/instagram-icon.svg",
-    className: "insta-icon",
-    to: "/",
-  },
-  {
-    img: "/linkedin-icon.svg",
-    className: "linkedin-icon",
-    to: "/",
-  },
-  {
-    img: "/twitter-icon.svg",
-    className: "twitter-icon",
-    to: "/",
-  },
-  {
-    img: "/behance-icon.svg",
-    className: "behance-icon",
-    to: "/",
-  },
-  {
-    img: "/youtube-icon.svg",
-    className: "youtube-icon",
-    to: "/",
-  },
-];
-
 const Index = (props) => {
   const { openDrawer, setOpenDrawer } = props;
 
@@ -389,13 +357,7 @@ const Index = (props) => {
               <Col md={3}>
                 <div className="social-section">
                   <span className="follow-us">Follow Us at:</span>
-                  <div className="d-flex flex-wrap social-icons">
-                    {socialIcons.map((item, ind) => (
-                      <div className={item.className} key={ind}>
-                        <img src={item.img} alt={item.className} />
-                      </div>
-                    ))}
-                  </div>
+                  <SocialIcons />
                 </div>
               </Col>
             </Row>

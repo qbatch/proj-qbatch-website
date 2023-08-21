@@ -4,6 +4,7 @@ import {Link} from 'gatsby'
 
 import Container from "../../UiComponent/Container";
 import PrimaryButton from '../../UiComponent/PrimaryButton';
+import SocialIcons from "../../UiComponent/SocialIcons";
 
 import FooterWrapper from "./style";
 
@@ -56,33 +57,6 @@ const menu2Data = [
   },
   {
     name: "Qbatch Career",
-    to: "/",
-  },
-];
-
-const socialIcons = [
-  {
-    img: "/facebook",
-    to: "/",
-  },
-  {
-    img: "/instagram",
-    to: "/",
-  },
-  {
-    img: "/linkedin",
-    to: "/",
-  },
-  {
-    img: "/twitter",
-    to: "/",
-  },
-  {
-    img: "/behance",
-    to: "/",
-  },
-  {
-    img: "/youtube",
     to: "/",
   },
 ];
@@ -153,16 +127,10 @@ const Index = () => {
             </Col>
           </Row>
         </div>
-        <div className="social-section d-flex align-items-center justify-content-between flex-wrap">
+        <div className="social-section d-flex align-items-center flex-wrap">
           <div className="d-flex align-items-center flex-wrap follow-section">
             <span className="follow-us">Follow Us at</span>
-            <div className="d-flex social-icons">
-              {socialIcons.map((item, ind) => (
-                <div className={`${item.img.replace("/",'')}-icon`} key={ind}>
-                  <img src={`${item.img}-icon.svg`} alt={item.img} />
-                </div>
-              ))}
-            </div>
+            <SocialIcons />
           </div>
           <div className="footer-menu footer-menu-bottom">
             <ul>
