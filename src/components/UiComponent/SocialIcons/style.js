@@ -28,12 +28,12 @@ const SocialWrapper = styled.div`
         }
       }
     }
-    .facebook-icon {
+    .facebook {
       &:hover {
         background-color: rgba(53, 121, 234, 1);
       }
     }
-    .instagram-icon {
+    .instagram {
       transition: background 0.5s ease-out;
       &:hover {
         background: radial-gradient(
@@ -46,22 +46,22 @@ const SocialWrapper = styled.div`
         );
       }
     }
-    .linkedin-icon {
+    .linkedin {
       &:hover {
         background-color: rgba(0, 122, 185, 1);
       }
     }
-    .twitter-icon {
+    .twitter {
       &:hover {
         background-color: rgba(0, 166, 222, 1);
       }
     }
-    .behance-icon {
+    .behance {
       &:hover {
         background-color: rgba(65, 118, 250, 1);
       }
     }
-    .youtube-icon {
+    .youtube {
       &:hover {
         background-color: rgba(255, 0, 0, 1);
       }
