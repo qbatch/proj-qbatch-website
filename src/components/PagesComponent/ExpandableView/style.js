@@ -10,7 +10,6 @@ const ExpandableView = styled.section`
     display: grid;
     grid-template-columns: auto 1fr 1fr;
     gap: 10px;
-    overflow:auto;
     .item {
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
       background-color: ${({ theme }) => theme.colors.whiteColor};
@@ -83,7 +82,7 @@ const ExpandableView = styled.section`
           opacity: 1;
           width: 100%;
         }
-        min-width: 853px;
+        min-width: 53px;
       }
     }
   }
