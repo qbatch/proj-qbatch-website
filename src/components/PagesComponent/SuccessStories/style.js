@@ -3,16 +3,27 @@ import { media } from "../../../theme/media-mixins";
 
 const DemoServiceWrapper = styled.div`
 overflow: hidden;
+padding: 97px 0;
+.heading{
+  margin-bottom: 28px;
+}
+.services-wrapper{
+  padding-top: 34px;
+}
   .wrapper {
     display: flex;
     transition: transform 0.6s;
+    gap: 24px;
     .column {
-      min-width: 33.33%;
-      padding: 10px;
+      min-width: 32.3%;
+      padding-top: 24px;
       position: relative;
       transition: min-width 0.6s;
       z-index: 1;
       cursor: pointer;
+      &:last-child{
+        padding-right: 0;
+      }
       &.primary {
         .column-inner {
           background-color: ${({ theme }) => theme.colors.secondaryColor};
@@ -33,8 +44,8 @@ overflow: hidden;
         }
       }
       .column-inner {
+        transition: 0.6s;
         display: flex;
-        align-items: center;
         gap: 16px;
         border: 1px solid ${({ theme }) => theme.colors.dividerColor};
         background-color: ${({ theme }) => theme.colors.whiteColor};
@@ -44,6 +55,7 @@ overflow: hidden;
         padding: 47px;
         height: 524px;
         .column-inner-left {
+          display: none;
           img {
             opacity: 0;
             transition: opacity 0.6s;
@@ -54,14 +66,14 @@ overflow: hidden;
           margin-bottom: 26px;
         }
         h3 {
-          margin-bottom: 18px;
+          margin-bottom: 16px;
         }
         .paragraph {
           color: ${({ theme }) => theme.colors.textMedium};
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
           max-width: 356px;
           line-height: 24px;
-          margin-bottom: 29px;
+          margin-bottom: 32px;
         }
         .badge {
           display: flex;
@@ -78,13 +90,14 @@ overflow: hidden;
         }
         button {
           position: absolute;
-          bottom: 46px;
+          bottom: 48px;
         }
       }
       &:hover {
-        min-width: 66.33%;
+        min-width: 64.6%;
         .column-inner {
           .column-inner-left {
+            display: block;
             img {
               opacity: 1;
               height: 400px;
