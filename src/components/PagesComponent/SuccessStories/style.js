@@ -45,9 +45,6 @@ const DemoServiceWrapper = styled.div`
         .column-inner-left {
           display: none;
           img {
-            /* transition: width 0.6s;
-            width: 0;
-            animation: fadeIn 5s; */
             width: 0;
             transition: width 1s ease-in-out;
             -moz-transition: width 1s ease-in-out;
@@ -57,6 +54,9 @@ const DemoServiceWrapper = styled.div`
         .column-inner-right {
           max-width: 350px;
           min-width: 350px;
+          ${media.sm`
+        min-width: 100%;
+        `}
           .logo {
             margin-bottom: 26px;
           }
@@ -114,7 +114,7 @@ const DemoServiceWrapper = styled.div`
           min-width: 100%;
         }
         .column-inner-left {
-          ${media.lg`
+          ${media.sm`
        display: none;
        img{
          width:0;
@@ -133,4 +133,4 @@ const DemoServiceWrapper = styled.div`
   }
 `;
 
-export default DemoServiceWrapper
+export default DemoServiceWrapper;
