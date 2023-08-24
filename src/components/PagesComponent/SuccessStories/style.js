@@ -3,20 +3,37 @@ import { media } from "../../../theme/media-mixins";
 
 const DemoServiceWrapper = styled.div`
   overflow: hidden;
+  padding: 98px 0;
+  .heading {
+    margin-bottom: 27px;
+  }
+  .stroies-wrapper {
+    margin-top: 76px;
+  }
   .wrapper {
     display: flex;
     transition: transform 0.6s;
     gap: 14px;
+    ${media.lg`
+    gap: 41px;
+    `}
     .column {
       min-width: 33%;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       position: relative;
       transition: min-width 0.6s;
       z-index: 1;
       cursor: pointer;
+      &.min-w-50 {
+        min-width: 50%;
+        ${media.lg`
+        min-width: 100%;
+      `}
+      }
+
       .column-inner {
+        transition: 0.6s;
         display: flex;
-        align-items: center;
         gap: 16px;
         border: 1px solid ${({ theme }) => theme.colors.dividerColor};
         background-color: ${({ theme }) => theme.colors.whiteColor};
@@ -26,15 +43,20 @@ const DemoServiceWrapper = styled.div`
         padding: 47px;
         height: 524px;
         .column-inner-left {
+          display: none;
           img {
-            visibility: hidden;
-            transition: visibility 0.6s;
+            /* transition: width 0.6s;
             width: 0;
+            animation: fadeIn 5s; */
+            width: 0;
+            transition: width 1s ease-in-out;
+            -moz-transition: width 1s ease-in-out;
+            -webkit-transition: width 1s ease-in-out;
           }
         }
         .column-inner-right {
-          max-width:350px;
-          min-width:350px;
+          max-width: 350px;
+          min-width: 350px;
           .logo {
             margin-bottom: 26px;
           }
@@ -85,13 +107,25 @@ const DemoServiceWrapper = styled.div`
       }
       &:hover {
         min-width: 66%;
-        &.w-50 {
+        ${media.lg`
+           min-width: 100%;
+         `}
+        &.min-w-50 {
           min-width: 100%;
         }
-        .column-inner-left{
-          img{
-            visibility:visible ;
-            width:300px;
+        .column-inner-left {
+          ${media.lg`
+       display: none;
+       img{
+         width:0;
+       }
+    `}
+          display: block;
+          img {
+            width: 100%;
+            transition: width 0.55s ease-in-out;
+            -moz-transition: width 0.55s ease-in-out;
+            -webkit-transition: width 0.55s ease-in-out;
           }
         }
       }
