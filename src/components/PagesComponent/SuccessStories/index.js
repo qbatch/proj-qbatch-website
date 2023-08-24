@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import StoriesWrapper from "./style";
-import ExpandableView from "./style";
 import PrimaryButton from "../../UiComponent/PrimaryButton";
 
 import Container from "../../UiComponent/Container";
+
 const stories = [
   {
     logo: "/ecom-circle.svg",
@@ -116,6 +116,7 @@ const stories = [
 ];
 
 const Index = () => {
+  
   const [width, setWidth] = useState("");
   const [columnSlice, setColumnSlice] = useState(3);
 
@@ -236,7 +237,6 @@ const Index = () => {
 
       columns.push(wrapperElement);
     }
-
     return columns;
   };
 
