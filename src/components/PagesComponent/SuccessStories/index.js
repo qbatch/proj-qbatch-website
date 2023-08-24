@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import DemoServiceWrapper from "./style";
+import StoriesWrapper from "./style";
 import ExpandableView from "./style";
 import PrimaryButton from "../../UiComponent/PrimaryButton";
 
@@ -176,12 +176,30 @@ const Index = () => {
           lastColumn.removeEventListener("mouseout", handleMouseOut);
         };
       }
+      else{
+         const lastColumn = wrapper.lastElementChild;
+        const handleMouseOver = () => {
+          wrapper.style.transform = "translateX(0%)";
+        };
+
+        const handleMouseOut = () => {
+          wrapper.style.transform = "translateX(0)";
+        };
+
+        lastColumn.addEventListener("mouseover", handleMouseOver);
+        lastColumn.addEventListener("mouseout", handleMouseOut);
+
+        return () => {
+          lastColumn.removeEventListener("mouseover", handleMouseOver);
+          lastColumn.removeEventListener("mouseout", handleMouseOut);
+        };
+      }
     });
   }, [columnSlice]);
 
   useEffect(() => {
     if (width) {
-      const slice = width > 1400 ? 3 : 2;
+      const slice = width > 1400 ? 3 : width < 991 ? 1 : 2 ;
       setColumnSlice(slice);
     }
   }, [columnSlice, width]);
@@ -223,13 +241,13 @@ const Index = () => {
   };
 
   return (
-    <DemoServiceWrapper>
+    <StoriesWrapper>
       <Container>
         <h1 className="color-primary heading">Our Success Stories</h1>
         <p>Our Success Stories Innovators from across the industry have trusted Qbatch to build high-impact products</p>
         <div className="stroies-wrapper">{renderColumns()}</div>
       </Container>
-    </DemoServiceWrapper>
+    </StoriesWrapper>
   );
 };
 

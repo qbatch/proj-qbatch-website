@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const DemoServiceWrapper = styled.div`
+const StoriesWrapper = styled.div`
   overflow: hidden;
   padding: 98px 0;
   .heading {
@@ -9,13 +9,54 @@ const DemoServiceWrapper = styled.div`
   }
   .stroies-wrapper {
     margin-top: 76px;
+    ${media.md`
+      display: flex;
+      flex-wrap: wrap;
+      
+    `}
+    ${media.sm`
+      display: block;
+    `}
   }
   .wrapper {
     display: flex;
     transition: transform 0.6s;
     gap: 14px;
-    ${media.lg`
+    ${media.md`
     gap: 41px;
+    width: 50%;
+    &:nth-child(odd){
+      .column{
+        margin-right: 12px;
+      }
+    }
+    &:nth-child(even){
+      .column{
+        margin-left: 12px;
+      }
+    }
+    .column{
+      .column-inner{
+        padding: 47px 33px !important;
+        height: 100% !important;
+        .column-inner-right{
+          min-width: 0 !important;
+        }
+      }
+    }
+    `}
+    ${media.sm`
+    width: 100%;
+    &:nth-child(odd){
+      .column{
+        margin-right: 0;
+      }
+    }
+    &:nth-child(even){
+      .column{
+        margin-left: 0;
+      }
+    }
     `}
     .column {
       min-width: 33%;
@@ -26,7 +67,7 @@ const DemoServiceWrapper = styled.div`
       cursor: pointer;
       &.min-w-50 {
         min-width: 50%;
-        ${media.lg`
+        ${media.sm`
         min-width: 100%;
       `}
       }
@@ -55,7 +96,10 @@ const DemoServiceWrapper = styled.div`
           max-width: 350px;
           min-width: 350px;
           ${media.sm`
-        min-width: 100%;
+            max-width: 100%;
+            .paragraph{
+              max-width: 100%  !important;
+            }
         `}
           .logo {
             margin-bottom: 26px;
@@ -105,21 +149,24 @@ const DemoServiceWrapper = styled.div`
           }
         }
       }
+      ${media.sm`
+        width: 100%;
+      `}
       &:hover {
         min-width: 66%;
         ${media.lg`
-           min-width: 100%;
+           min-width: 50%;
          `}
         &.min-w-50 {
           min-width: 100%;
         }
         .column-inner-left {
-          ${media.sm`
-       display: none;
-       img{
-         width:0;
-       }
-    `}
+          ${media.md`
+              display: none;
+              img{
+                width:0;
+              }
+            `}
           display: block;
           img {
             width: 100%;
@@ -131,6 +178,7 @@ const DemoServiceWrapper = styled.div`
       }
     }
   }
+
 `;
 
-export default DemoServiceWrapper;
+export default StoriesWrapper;
