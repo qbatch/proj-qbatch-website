@@ -102,10 +102,13 @@ const DrawerWrapper = styled.div`
       margin-bottom: 15px;
     }
     .dropdown-item {
-      color: ${({ theme }) => theme.colors.dividerColor};
       line-height: 24px;
       padding: 0;
       margin-bottom: 16px;
+      a{
+        color: ${({ theme }) => theme.colors.dividerColor};
+        text-decoration:none;
+      }
       &:hover,&:focus,&:focus-visible,&:active {
         outline: none;
         box-shadow: none;

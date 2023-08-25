@@ -12,7 +12,7 @@ import HeaderWrapper from "./style";
 const headerMenu = [
   {
     name: "Services",
-    to: "/services",
+    to: "/",
   },
   {
     name: "Hire Developers",
@@ -24,7 +24,7 @@ const headerMenu = [
   },
   {
     name: "Portfolio",
-    to: "/",
+    to: "/services",
   },
   {
     name: "Blog",
