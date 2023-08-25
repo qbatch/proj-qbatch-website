@@ -12,15 +12,15 @@ import HeaderWrapper from "./style";
 const headerMenu = [
   {
     name: "Services",
-    to: "/services",
+    to: "/",
   },
   {
     name: "Hire Developers",
-    to: "/hire-developers",
+    to: "/",
   },
   {
     name: "Industries",
-    to: "/industries",
+    to: "/",
   },
   {
     name: "Portfolio",
