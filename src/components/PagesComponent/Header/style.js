@@ -49,7 +49,7 @@ const HeaderWrapper = styled.header`
               font-weight: ${({ theme }) => theme.fontWeight.medium};
             }
           }
-          .active {
+          /* .active {
             color: ${({ theme }) => theme.colors.primaryColor};
             font-weight: ${({ theme }) => theme.fontWeight.medium};
             span {
@@ -65,7 +65,7 @@ const HeaderWrapper = styled.header`
                 transition: all 0.3s ease-out;
               }
             }
-          }
+          } */
           cursor: pointer;
           position: relative;
 

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import {Link} from 'gatsby';
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 import Drawer from "../HeaderDrawer";
