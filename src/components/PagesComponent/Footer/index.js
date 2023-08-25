@@ -48,7 +48,7 @@ const menuData = [
 
 const menu2Data = [
   {
-    name: "Company",
+    name: "About Us",
     to: "/company",
   },
   {
