@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import {Link} from 'gatsby';
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 import Drawer from "../HeaderDrawer";
@@ -12,33 +14,34 @@ import HeaderWrapper from "./style";
 const headerMenu = [
   {
     name: "Services",
-    to: "/",
-  },
-  {
-    name: "Hire Developers",
-    to: "/",
-  },
-  {
-    name: "Industries",
-    to: "/",
-  },
-  {
-    name: "Portfolio",
     to: "/services",
   },
   {
+    name: "Hire Developers",
+    to: "/hire-developers",
+  },
+  {
+    name: "Industries",
+    to: "/industries",
+  },
+  {
+    name: "Portfolio",
+    to: "/portfolio",
+  },
+  {
     name: "Blog",
-    to: "/",
+    to: "/blog",
   },
 ];
 
 const Index = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
+
   return (
     <>
       <HeaderWrapper>
         <Container>
-          <div className="header-main">   
+          <div className="header-main">
             <div className="logo">
               <Link to="/">
                 <Logo />
@@ -48,14 +51,15 @@ const Index = () => {
               <ul>
                 {headerMenu.map((menu, ind) => (
                   <li key={ind}>
-                    <Link to={menu.to}><span>{menu.name}</span></Link>
+                    <Link to={menu.to} activeClassName="active">
+                      <span>{menu.name}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </nav>
             <div className="menu-items">
-                <Button onClick={()=> navigate('/contact')} text="Contact Us" className="header-btn" />
-             
+              <Button onClick={() => navigate("/contact")} text="Contact Us" className="header-btn" />
               <div className="burger-icon" onClick={() => setOpenDrawer(true)}>
                 {[1, 2, 3].map((key) => (
                   <span key={key}></span>
