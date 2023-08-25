@@ -144,7 +144,7 @@ const Index = () => {
       if (columns.length === 3) {
         const lastColumn = wrapper.lastElementChild;
         const handleMouseOver = () => {
-          wrapper.style.transform = "translateX(-32%)";
+          wrapper.style.transform = "translateX(-33.88%)";
         };
 
         const handleMouseOut = () => {
@@ -200,7 +200,7 @@ const Index = () => {
 
   useEffect(() => {
     if (width) {
-      const slice = width > 1400 ? 3 : width < 991 ? 1 : 2 ;
+      const slice = width > 1400 ? 3 : width < 992 ? 1 : 2 ;
       setColumnSlice(slice);
     }
   }, [columnSlice, width]);
@@ -216,6 +216,7 @@ const Index = () => {
               <img src="/ecom-circle.png" className="image-logo" alt="no-image" />
             </div>
             <div className="column-inner-right">
+              <div>
               <img className="logo" src={item.logo} />
               <h3>{item.title}</h3>
               <p className="paragraph">{item.description}</p>
@@ -223,6 +224,7 @@ const Index = () => {
                 {item.badge.map((badge) => (
                   <span>{badge}</span>
                 ))}
+              </div>
               </div>
               <PrimaryButton text="View Details" color={i == 2 ? "#fff" : ""} />
             </div>

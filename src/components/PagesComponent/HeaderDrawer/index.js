@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import {Link} from 'gatsby'
 
 import { NavDropdown, Row, Col, Dropdown } from "react-bootstrap";
 
@@ -220,11 +221,11 @@ const howWeWorkMenu = [
 const companyMenu = [
   {
     menu: "About Us",
-    to: "/",
+    to: "/about",
   },
   {
     menu: "Careers",
-    to: "/",
+    to: "",
   },
   {
     menu: "Events & PR",
@@ -256,9 +257,7 @@ const Index = (props) => {
               onClick={() => setActiveState("services")}
               show={activeState === "services"}
             >
-              {servicesItems.map((data, ind) => (
-                <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-              ))}
+            {servicesItems.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
             </NavDropdown>
             <NavDropdown
               title="Hire Developers"
@@ -270,34 +269,24 @@ const Index = (props) => {
                 <div className="d-flex inner-menu">
                   <div>
                     <Dropdown.Header>Frameworks</Dropdown.Header>
-                    {frameworksMenu.map((data, ind) => (
-                      <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                    ))}
+                      {frameworksMenu.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
                   </div>
                   <div className="sub-menu2">
-                    {frameworksMenu2.map((data, ind) => (
-                      <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                    ))}
+                    {frameworksMenu2.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
                   </div>
                 </div>
                 <div className="d-flex inner-menu">
                   <div>
                     <Dropdown.Header>Trending</Dropdown.Header>
-                    {trendingMenu.map((data, ind) => (
-                      <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                    ))}
+                        {trendingMenu.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
                   </div>
                   <div className="sub-menu2">
-                    {trendingMenu2.map((data, ind) => (
-                      <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                    ))}
+                    {trendingMenu2.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
                   </div>
                 </div>
                 <div>
                   <Dropdown.Header>DevOps</Dropdown.Header>
-                  {devOpsmenu.map((data, ind) => (
-                    <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                  ))}
+                  {devOpsmenu.map((data, ind) => ( <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item> ))}
                 </div>
               </div>
             </NavDropdown>
@@ -307,9 +296,7 @@ const Index = (props) => {
               onClick={() => setActiveState("industries")}
               show={activeState === "industries"}
             >
-              {industriesMenu.map((data, ind) => (
-                <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-              ))}
+              {industriesMenu.map((data, ind) => ( <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item> ))}
             </NavDropdown>
             <NavDropdown
               title="How We Work"
@@ -317,9 +304,7 @@ const Index = (props) => {
               onClick={() => setActiveState("howWeWork")}
               show={activeState === "howWeWork"}
             >
-              {howWeWorkMenu.map((data, ind) => (
-                <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-              ))}
+              {howWeWorkMenu.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
             </NavDropdown>
             <NavDropdown
               title="Company"
@@ -327,9 +312,7 @@ const Index = (props) => {
               onClick={() => setActiveState("company")}
               show={activeState === "company"}
             >
-              {companyMenu.map((data, ind) => (
-                <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-              ))}
+              {companyMenu.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
             </NavDropdown>
           </div>
           <div className="bottom-content">
