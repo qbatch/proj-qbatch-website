@@ -8,7 +8,7 @@ import Collaboration from "../components/PagesComponent/Collaboration";
 import StartProject from "../components/PagesComponent/StartProject";
 import SuccessStories from "../components/PagesComponent/SuccessStories"
 
-const Services = () => {
+const Portfolio = () => {
   return (
     <Layout>
       <ServicesBanner />
@@ -19,8 +19,8 @@ const Services = () => {
       <StartProject />
     </Layout>
   );
-}
+};
 
-export const Head = () => <SEO title="Company" />;
+export const Head = () => <SEO title="Portfolio" />;
 
-export default Services;
+export default Portfolio;

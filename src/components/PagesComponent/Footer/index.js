@@ -30,11 +30,11 @@ const contactData = [
 const menuData = [
   {
     name: "Services",
-    to: "/services",
+    to: "/",
   },
   {
     name: "Portfolio",
-    to: "/",
+    to: "/portfolio",
   },
   {
     name: "Industry",
