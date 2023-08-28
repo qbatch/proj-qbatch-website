@@ -257,7 +257,7 @@ const Index = (props) => {
               onClick={() => setActiveState("services")}
               show={activeState === "services"}
             >
-            {servicesItems.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
+            {servicesItems.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
             </NavDropdown>
             <NavDropdown
               title="Hire Developers"
@@ -269,24 +269,24 @@ const Index = (props) => {
                 <div className="d-flex inner-menu">
                   <div>
                     <Dropdown.Header>Frameworks</Dropdown.Header>
-                      {frameworksMenu.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
+                      {frameworksMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
                   </div>
                   <div className="sub-menu2">
-                    {frameworksMenu2.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
+                    {frameworksMenu2.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
                   </div>
                 </div>
                 <div className="d-flex inner-menu">
                   <div>
                     <Dropdown.Header>Trending</Dropdown.Header>
-                        {trendingMenu.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
+                        {trendingMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
                   </div>
                   <div className="sub-menu2">
-                    {trendingMenu2.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
+                    {trendingMenu2.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
                   </div>
                 </div>
                 <div>
                   <Dropdown.Header>DevOps</Dropdown.Header>
-                  {devOpsmenu.map((data, ind) => ( <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item> ))}
+                  {devOpsmenu.map((data, ind) => ( <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link> ))}
                 </div>
               </div>
             </NavDropdown>
@@ -296,7 +296,7 @@ const Index = (props) => {
               onClick={() => setActiveState("industries")}
               show={activeState === "industries"}
             >
-              {industriesMenu.map((data, ind) => ( <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item> ))}
+              {industriesMenu.map((data, ind) => ( <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link> ))}
             </NavDropdown>
             <NavDropdown
               title="How We Work"
@@ -304,7 +304,7 @@ const Index = (props) => {
               onClick={() => setActiveState("howWeWork")}
               show={activeState === "howWeWork"}
             >
-              {howWeWorkMenu.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
+              {howWeWorkMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
             </NavDropdown>
             <NavDropdown
               title="Company"
@@ -312,7 +312,7 @@ const Index = (props) => {
               onClick={() => setActiveState("company")}
               show={activeState === "company"}
             >
-              {companyMenu.map((data, ind) => <Dropdown.Item key={ind}><Link to={data.to}>{data.menu}</Link></Dropdown.Item>)}
+              {companyMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
             </NavDropdown>
           </div>
           <div className="bottom-content">

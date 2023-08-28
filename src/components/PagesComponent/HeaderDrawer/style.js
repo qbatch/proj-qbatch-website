@@ -19,7 +19,7 @@ const DrawerWrapper = styled.div`
     cursor: pointer;
   }
   .menu-main {
-    height: 57.3vh;
+    height: 478px;
     gap: 144px;
     .hire-developers-menu {
       gap: 73px;
@@ -49,6 +49,7 @@ const DrawerWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         color: ${({ theme }) => theme.colors.bodyLight};
         position: relative;
+        transition: color 0.5s ease-out;
 
         &::after {
           display: none;
@@ -102,13 +103,11 @@ const DrawerWrapper = styled.div`
       margin-bottom: 15px;
     }
     .dropdown-item {
-      a {
-        color: ${({ theme }) => theme.colors.dividerColor};
-        text-decoration: none;
-        line-height: 24px;
-        padding: 0;
-        margin-bottom: 16px;
-      }
+      line-height: 24px;
+      padding: 0;
+      margin-bottom: 16px;
+      color: ${({ theme }) => theme.colors.dividerColor};
+      text-decoration:none;
       &:hover,
       &:focus,
       &:focus-visible,
