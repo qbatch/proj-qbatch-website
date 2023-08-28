@@ -33,18 +33,13 @@ const Index = () => (
           </div>
         </Col>
       </Row>
-
-      <Row>
-        <Col lg={12} md={12} sm={12} xs={12}>
-          <div className="text-center add-space">
-            {homeTiles.map((value, i) => (
-              <h4 className="divider-heading" key={i}>
-                {value}
-              </h4>
-            ))}
-          </div>
-        </Col>
-      </Row>
+      <div className="text-center add-space">
+        {homeTiles.map((value, i) => (
+          <h4 className="divider-heading" key={i}>
+            {value}
+          </h4>
+        ))}
+      </div>
     </Container>
   </DedicatedDeveloperWrapper>
 );
