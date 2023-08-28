@@ -17,25 +17,21 @@ import ProvenExperienceWrapper from "./style";
 
 const projectSlides = [
   {
-    id: 1,
     projectImg:
       "/slider-image.png",
     title: "Ecom Circles",
   },
   {
-    id: 2,
     projectImg:
        "/slider-image.png",
     title: "Store Filter",
   },
   {
-    id: 3,
     projectImg:
         "/slider-image.png",
     title: "Sales Support",
   },
   {
-    id: 4,
     projectImg:
         "/slider-image.png",
     title: "Squid Plan",

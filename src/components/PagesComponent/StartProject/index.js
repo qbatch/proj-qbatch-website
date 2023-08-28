@@ -32,7 +32,6 @@ const Index = () => {
     }
   };
    const handleRecaptchaChange = (value) => {
-     // This function will be called when the user completes the reCAPTCHA challenge
      console.log("reCAPTCHA value:", value);
    };
   return (
@@ -51,8 +50,6 @@ const Index = () => {
                 onClick={() => setOpen(!open)}
                 open={open}
                 content={
-                  // !open &&
-                  // modal &&
                   <div className={!open && modal ? "add-height" : "zero-height"}>
                     <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
                   </div>
@@ -130,7 +127,6 @@ const Index = () => {
                             label={value}
                             checked={serviceSelect.includes(value)}
                             value={value}
-                            className="abc"
                             name="collaboration"
                             onChange={handleChange}
                           />

@@ -13,28 +13,24 @@ import ProvenExperienceWrapper from "./style";
 
 const projectSlides = [
   {
-    id: 1,
     projectVideo:
       "http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4",
     title: "Client Name",
     subtitle: "Company Name"
   },
   {
-    id: 2,
     projectVideo:
       "http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4",
     title: "Store Filter",
     subtitle: "Company Name"
   },
   {
-    id: 3,
     projectVideo:
       "http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4",
     title: "Sales Support",
     subtitle: "Company Name"
   },
   {
-    id: 4,
     projectVideo:
       "http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4",
     title: "Squid Plan",
@@ -83,8 +79,6 @@ const Index = () => {
   return (
     <ProvenExperienceWrapper>
       <div className="section-slider">
-       
-
           <Carousel
             responsive={responsive}
             arrows={false}

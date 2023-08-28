@@ -6,58 +6,7 @@ import { BiChevronRight } from "react-icons/bi";
 import Container from "../../UiComponent/Container";
 
 import QbatchMakingWrapper from "./style";
-
-const data = [
-  {
-    id: 1,
-    challenges: "Inability to find top talent",
-    solve: "100+ experts ready to fill possible gaps",
-    icon1: "/top-talent-icon1.svg",
-    icon2: "/top-talent-icon2.svg",
-  },
-  {
-    id: 2,
-    challenges: "Slow delivery and time-to-market",
-    solve: "5x your time-to-market with our mission-critical services",
-    icon1: "/delivery-time-icon1.svg",
-    icon2: "/delivery-time-icon2.svg",
-  },
-  {
-    id: 3,
-    challenges: "Unpredictability about making investments",
-    solve: "No more spending on unproven ideas",
-    icon1: "/investment-icon1.svg",
-    icon2: "/investment-icon2.svg",
-  },
-  {
-    id: 4,
-    challenges: "Is your idea risk-free",
-    solve: "Build minimal- to zero-risk solutions",
-    icon1: "/risk-free-icon1.svg",
-    icon2: "/risk-free-icon2.svg",
-  },
-  {
-    id: 5,
-    challenges: "Tired of slow development and delivery",
-    solve: "Readily identify blockers for a quick launch",
-    icon1: "/development-icon1.svg",
-    icon2: "/development-icon2.svg",
-  },
-  {
-    id: 6,
-    challenges: "Honest feedback feels like a dream",
-    solve: "Get market-friendly feedback to set your next move",
-    icon1: "/feedback-icon1.svg",
-    icon2: "/feedback-icon2.svg",
-  },
-  {
-    id: 7,
-    challenges: "A future-ready plan is what you ever wanted",
-    solve: "Intense industry research and project mapping",
-    icon1: "/future-plan-icon1.svg",
-    icon2: "/future-plan-icon2.svg",
-  },
-];
+import {data} from '../../../constants/index'
 
 const Index = () => {
   

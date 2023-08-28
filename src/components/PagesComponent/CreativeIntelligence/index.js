@@ -8,7 +8,6 @@ import QuoteIcon from "../../../assets/images/quotes.svg";
 import CreativeIntelligenceWrapper from "./style";
 
 const Index = () => {
-
   return (
     <CreativeIntelligenceWrapper>
       <Container>

@@ -12,12 +12,12 @@ const Index = (props) => {
 
   return (
     <ProblumSolvingWrapper 
-    className={className}
+    className={className || ""}
     >
       <Container>
         <Row className="align-items-center">
           <Col md={8}>
-          {text}
+           {text}
           </Col>
           <Col md={4}>
             <div className="box-center pt-lg-0 pt-4">

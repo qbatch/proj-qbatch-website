@@ -85,22 +85,14 @@ const Index = () => {
             <Col md={2}>
               <div className="footer-menu">
                 <ul>
-                  {menuData.map((menu, ind) => (
-                    <li key={ind}>
-                      <Link to={menu.to}>{menu.name}</Link>
-                    </li>
-                  ))}
+                  {menuData.map((menu, ind) =>  <li key={ind}> <Link to={menu.to}>{menu.name}</Link> </li> )}
                 </ul>
               </div>
             </Col>
             <Col md={2}>
               <div className="footer-menu">
                 <ul>
-                  {menu2Data.map((menu, ind) => (
-                    <li key={ind}>
-                      <Link to={menu.to}>{menu.name}</Link>
-                    </li>
-                  ))}
+                  {menu2Data.map((menu, ind) => <li key={ind}> <Link to={menu.to}>{menu.name}</Link></li> )}
                 </ul>
               </div>
             </Col>
@@ -121,7 +113,7 @@ const Index = () => {
                 <div className="email-input">
                   <img src="/email-address-icon.svg" alt="email" />
                   <input type="email" placeholder="Email Address" />
-                  <PrimaryButton color="#fff" borderBottom={true} text="Let’s Get Started" />
+                  <PrimaryButton color="#fff" borderbottom text="Let’s Get Started" />
                 </div>
               </div>
             </Col>
@@ -134,11 +126,7 @@ const Index = () => {
           </div>
           <div className="footer-menu footer-menu-bottom">
             <ul>
-              {bottomMenu.map((menu, ind) => (
-                <li key={ind} className="mb-0">
-                  <Link to={menu.to}> {menu.name}</Link>
-                </li>
-              ))}
+              {bottomMenu.map((menu, ind) =>  <li key={ind} className="mb-0"> <Link to={menu.to}> {menu.name}</Link> </li> )}
             </ul>
           </div>
         </div>
