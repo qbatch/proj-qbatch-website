@@ -9,6 +9,7 @@ import AwardsWrapper from "./style";
 import { awardsData } from "../../../constants";
 
 const Index = ({ maxCols }) => {
+  
   const displayedAwards = maxCols ? awardsData.slice(0, maxCols) : awardsData;
 
   return (

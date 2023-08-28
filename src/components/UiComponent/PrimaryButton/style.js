@@ -12,18 +12,24 @@ const PrimaryButtonWrapper = styled(Button)`
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   min-width: auto;
   .btn-text {
-    color: ${({ theme }) => (props)=> (props.color ? `${props.color}` : theme.colors.primaryColor)};
+    color: ${({ theme }) =>
+      (props) =>
+        props.color ? `${props.color}` : theme.colors.primaryColor};
     white-space: nowrap;
   }
   &:hover {
-    color: ${({ theme }) => (props)=> (props.color ? `${props.color}` : theme.colors.primaryColor)};
+    color: ${({ theme }) =>
+      (props) =>
+        props.color ? `${props.color}` : theme.colors.primaryColor};
     background-color: transparent;
     border: none;
   }
   &.btn:active {
     background-color: transparent;
     border: none;
-    color: ${({ theme }) => (props)=> (props.color ? `${props.color}` : theme.colors.primaryColor)};
+    color: ${({ theme }) =>
+      (props) =>
+        props.color ? `${props.color}` : theme.colors.primaryColor};
   }
   img {
     transition: transform 0.5s ease-out;
@@ -41,7 +47,9 @@ const PrimaryButtonWrapper = styled(Button)`
   }
   &:hover {
     &::before {
-      width: ${(props) => (props.borderBottom ? "18px" : 0)};
+      width: ${({ theme }) =>
+        (props) =>
+          props.borderbottom ? `${props.borderbottom}` : "0px"};
     }
     img {
       transform: rotate(-45deg);

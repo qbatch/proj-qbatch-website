@@ -102,14 +102,17 @@ const DrawerWrapper = styled.div`
       margin-bottom: 15px;
     }
     .dropdown-item {
-      line-height: 24px;
-      padding: 0;
-      margin-bottom: 16px;
-      a{
+      a {
         color: ${({ theme }) => theme.colors.dividerColor};
-        text-decoration:none;
+        text-decoration: none;
+        line-height: 24px;
+        padding: 0;
+        margin-bottom: 16px;
       }
-      &:hover,&:focus,&:focus-visible,&:active {
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:active {
         outline: none;
         box-shadow: none;
         background: none;
@@ -171,16 +174,14 @@ const DrawerWrapper = styled.div`
           justify-content: center;
           img {
             max-width: none;
-            filter: invert(14%) sepia(93%) saturate(6280%) hue-rotate(352deg)
-              brightness(98%) contrast(90%);
+            filter: invert(14%) sepia(93%) saturate(6280%) hue-rotate(352deg) brightness(98%) contrast(90%);
           }
           &:hover {
             background-color: ${({ theme }) => theme.colors.whiteColor};
             img {
               width: 22px;
               height: 22px;
-              filter: invert(18%) sepia(100%) saturate(2276%) hue-rotate(196deg)
-                brightness(95%) contrast(102%);
+              filter: invert(18%) sepia(100%) saturate(2276%) hue-rotate(196deg) brightness(95%) contrast(102%);
             }
           }
         }

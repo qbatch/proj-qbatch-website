@@ -24,8 +24,8 @@ const Index = () => {
           </Col>
           <Col lg={8}>
             <Row className="leaders-wrapper">
-              {leaderData.map((leader) => (
-                <Col md={6} className="leader" key={leader.id}>
+              {leaderData.map((leader,i) => (
+                <Col md={6} className="leader" key={i}>
                   <div className="leader-info order-2 order-md-1">
                     <h4 className="leader-name">{leader.name}</h4>
                     <span className="leader-title">{leader.title}</span>
