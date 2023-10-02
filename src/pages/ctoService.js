@@ -4,11 +4,13 @@ import SEO from '../components/Seo';
 import Layout from '../components/Layout/layout';
 import StartProject from '../components/PagesComponent/StartProject';
 import CtoBanner from '../components/PagesComponent/CtoBanner';
+import TechnicalExcellence from "../components/PagesComponent/TechnicalExcellence";
 
 const CtoService = () => {
   return (
     <Layout>
       <CtoBanner />
+      <TechnicalExcellence />
       <StartProject />
     </Layout>
   )
