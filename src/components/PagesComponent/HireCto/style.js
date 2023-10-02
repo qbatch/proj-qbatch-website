@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const HireCtoWrapper = styled.div`
-  padding: 96px 0;
+  padding: 98px 0;
   .list-group {
     text-align: left;
     max-width: 930px;
-    margin: 52px auto 75px auto;
+    margin: 50px auto 71px auto;
     .list-group-item {
       border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
       border: 0px;
