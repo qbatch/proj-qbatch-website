@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const CtoBannerWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .banner-main {
-    padding: 97px 0px 130px;
+    padding: 98px 0px 130px;
     ${media.sm`
      padding: 40px 0px;
   `}
@@ -14,7 +14,7 @@ const CtoBannerWrapper = styled.div`
   h1 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 35px;
-      margin-top: 4px;
+      margin-top: 3px;
       span {
         color: ${({ theme }) => theme.colors.dangerColor};
       }

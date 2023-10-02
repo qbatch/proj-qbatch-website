@@ -79,7 +79,7 @@ const GlobalStyles = createGlobalStyle`
       position: absolute;
       height: 1px;
       width: 24px;
-      bottom: -2px;
+      bottom: 0px;
       background-color: #ED1C24;
     }
   }

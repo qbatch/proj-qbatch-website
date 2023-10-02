@@ -1,8 +1,12 @@
 import React from "react";
+
 import ListGroup from 'react-bootstrap/ListGroup';
+
 import Container from "../../UiComponent/Container/index";
+import Button from '../../UiComponent/Button/index';
+
 import HireCtoWrapper from "./style";
-import Button from '../../UiComponent/Button/index'
+
 const Index = () => {
     const list = [
       "Got a powerful idea but cannot cope with a tech part?",
