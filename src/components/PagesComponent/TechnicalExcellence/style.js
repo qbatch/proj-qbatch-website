@@ -13,7 +13,7 @@ const TechnicalExcellenceWrapper = styled.div`
     `}
   }
   .technical-paragraph {
-    padding-top: 8px;
+    padding-top: 9px;
     max-width: 580px;
     h4 {
       font-weight: ${({ theme }) => theme.fontWeight.normal};
