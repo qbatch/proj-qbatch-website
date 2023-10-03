@@ -7,6 +7,7 @@ import CtoBanner from "../components/PagesComponent/CtoBanner";
 import HireCto from "../components/PagesComponent/HireCto/index";
 import TechnicalExcellence from "../components/PagesComponent/TechnicalExcellence";
 import TechnicalGuidance from "../components/PagesComponent/TechnicalGuidance";
+import GrowingTechSide from "../components/PagesComponent/GrowingTechSide";
 
 const CtoService = () => {
   return (
@@ -15,6 +16,7 @@ const CtoService = () => {
       <HireCto />
       <TechnicalExcellence />
       <TechnicalGuidance />
+      <GrowingTechSide />
       <StartProject />
     </Layout>
   );
