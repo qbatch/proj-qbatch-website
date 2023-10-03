@@ -4,6 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 import Container from "../../UiComponent/Container/index";
 import Button from '../../UiComponent/Button/index';
+import Divider from '../../UiComponent/Divider'
 
 import HireCtoWrapper from "./style";
 
@@ -17,6 +18,7 @@ const Index = () => {
       "Can’t afford a full-time CTO and need a temporary CTO?",
     ];
   return (
+    <>
     <Container>
       <HireCtoWrapper>
         <div className="text-center">
@@ -38,6 +40,8 @@ const Index = () => {
         </div>
       </HireCtoWrapper>
     </Container>
+    <Divider />
+    </>
   );
 };
 export default Index;

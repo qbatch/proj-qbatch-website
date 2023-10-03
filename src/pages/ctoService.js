@@ -6,6 +6,7 @@ import StartProject from '../components/PagesComponent/StartProject';
 import CtoBanner from '../components/PagesComponent/CtoBanner';
 import HireCto from '../components/PagesComponent/HireCto/index'
 import TechnicalExcellence from "../components/PagesComponent/TechnicalExcellence";
+import CtoPersona from '../components/PagesComponent/CtoPersona'
 
 const CtoService = () => {
   return (
@@ -13,9 +14,10 @@ const CtoService = () => {
       <CtoBanner />
       <HireCto />
       <TechnicalExcellence />
+      <CtoPersona />
       <StartProject />
     </Layout>
-  )
+  );
 }
 export const Head = () => <SEO title="Cto as a Service" />;
 
