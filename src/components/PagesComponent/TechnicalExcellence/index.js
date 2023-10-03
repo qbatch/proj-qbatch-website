@@ -19,9 +19,15 @@ const Index = () => {
           <Col lg={6}>
             <div className="technical-paragraph">
               <h4>
-                Do you know? 3 in 10 company leaders are not sure if technology
-                is well integrated into their systems or not. Are you sure about
-                yours?
+                Do you know?{" "}
+                <a
+                  href="https://www.deloitte.com/an/en/our-thinking/insights/topics/leadership/digital-transformation-topics-for-corporate-technology-leadership.html"
+                  target="blank"
+                >
+                  3 in 10
+                </a>{" "}
+                company leaders are not sure if technology is well integrated
+                into their systems or not. Are you sure about yours?
               </h4>
               <p>
                 Digital adoption brings different challenges to each business.
