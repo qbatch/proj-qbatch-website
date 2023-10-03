@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const HireCtoWrapper = styled.div`
   padding: 98px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  ${media.sm`
+     padding: 40px 0px;
+  `}
   .list-group {
     text-align: left;
     max-width: 930px;

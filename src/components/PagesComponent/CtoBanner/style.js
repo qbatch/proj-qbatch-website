@@ -2,16 +2,16 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const CtoBannerWrapper = styled.div`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  .banner-main {
-    padding: 98px 0px 130px;
-    ${media.sm`
+  padding: 98px 0px 130px;
+  ${media.sm`
      padding: 40px 0px;
   `}
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  .banner-main {
     ${media.md`
      text-align: center;
     `}
-  h1 {
+    h1 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 35px;
       margin-top: 3px;
