@@ -64,7 +64,7 @@ const persona = [
                 <h2 className="color-primary">Let’s Select The Most Fitting CTO Persona</h2>
                 <p className="description">
                   As defined by{" "}
-                  <Link href="https://www.gartner.com/smarterwithgartner/understand-the-5-common-cto-personas">
+                  <Link target="blank" href="https://www.gartner.com/smarterwithgartner/understand-the-5-common-cto-personas">
                     {" "}
                     Gartner{" "}
                   </Link>

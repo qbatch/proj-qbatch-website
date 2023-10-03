@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const HireCtoWrapper = styled.div`
   padding: 97px 0;
+  ${media.sm`
+     padding: 40px 0px;
+  `}
   .list-group {
     text-align: left;
     max-width: 930px;

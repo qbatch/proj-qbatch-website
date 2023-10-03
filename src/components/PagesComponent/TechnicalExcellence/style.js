@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const TechnicalExcellenceWrapper = styled.div`
   padding: 94px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  ${media.sm`
+     padding: 40px 0px;
+  `}
   .technical-heading {
     color: ${({ theme }) => theme.colors.primaryColor};
     max-width: 650px;
@@ -15,6 +18,9 @@ const TechnicalExcellenceWrapper = styled.div`
   .technical-paragraph {
     padding-top: 9px;
     max-width: 580px;
+    a {
+      text-decoration: underline;
+    }
     h4 {
       font-weight: ${({ theme }) => theme.fontWeight.normal};
       line-height: 32px;
