@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const TechnicalExcellenceWrapper = styled.div`
-  padding: 96px 0;
+  padding: 94px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
      padding: 40px 0px;

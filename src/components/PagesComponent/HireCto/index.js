@@ -3,7 +3,8 @@ import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 
 import Container from "../../UiComponent/Container/index";
-import Button from "../../UiComponent/Button/index";
+import Button from '../../UiComponent/Button/index';
+import Divider from '../../UiComponent/Divider'
 
 import HireCtoWrapper from "./style";
 
@@ -17,8 +18,9 @@ const Index = () => {
     "Can’t afford a full-time CTO and need a temporary CTO?",
   ];
   return (
-    <HireCtoWrapper>
-      <Container>
+    <>
+    <Container>
+      <HireCtoWrapper>
         <div className="text-center">
           <h2 className="color-primary mb-1">
             Do you really need to hire a CTO? 
@@ -38,8 +40,10 @@ const Index = () => {
         <div className="d-flex justify-content-center">
           <Button text="Stuck in a different situation?" />
         </div>
-      </Container>
-    </HireCtoWrapper>
+      </HireCtoWrapper>
+    </Container>
+    <Divider />
+    </>
   );
 };
 export default Index;
