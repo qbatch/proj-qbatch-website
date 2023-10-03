@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
+import { Placeholder } from "gatsby-plugin-image";
 
 const StartProjectWrapper = styled.div`
   padding: 97px 0 95px;

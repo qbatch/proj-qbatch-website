@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Form from 'react-bootstrap/Form';
+import { media } from "../../../theme/media-mixins";
 
 const Input = styled(Form)`
   .bottom-space {
@@ -20,6 +21,12 @@ const Input = styled(Form)`
     &:focus {
       box-shadow: none;
     }
+    ${media.sm `
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    &::placeholder{
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    }
+    `}
   }
 `;
 export default Input;
