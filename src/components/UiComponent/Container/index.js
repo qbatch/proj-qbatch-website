@@ -3,17 +3,25 @@ import { media } from "../../../theme/media-mixins";
 
 const Container = styled.div`
   padding: 0 96px;
+
   ${media.lg`
   padding: 0 80px;
   `}
+
   ${media.md`
   padding: 0 60px;
   `}
-    ${media.sm`
+
+  ${media.sm`
   padding: 0 40px;
   `}
-      ${media.xs`
-  padding: 0 20px;
+
+  ${media.xs`
+    padding: 0 20px;
   `}
+  @media(min-width:1920px){
+    max-width:1920px;
+    margin:0 auto;
+  }
 `;
 export default Container;

@@ -5,23 +5,27 @@ const DedicatedDeveloperWrapper = styled.section`
   .image-portion {
     padding-top: 94px;
     padding-right: 12px;
-    ${media.sm`
-     padding: 30px 0px;
-     text-align: center;
+    ${media.md`
      display: none;
   `}
   }
 
   .title-portion {
-    padding: 155px 0px;
+    padding: 158px 0px;
+    ${media.md`
+     padding: 100px 0;
+     text-align: center;
+    `}
     ${media.sm`
-     padding: 32px 0px;
+     padding: 50px 0px;
   `}
   }
+  
   .hire {
     color: ${({ theme }) => theme.colors.textMedium};
     position: relative;
     margin-bottom: 6px;
+    display: block;
     &::before {
       content: "";
       position: absolute;
@@ -79,10 +83,15 @@ const DedicatedDeveloperWrapper = styled.section`
   .paragraph {
     color: ${({ theme }) => theme.colors.bodyLight};
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
-    margin-top: 36px;
+    margin-top: 35px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     max-width: 557px;
+    ${media.md`
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 35px; 
+    `}
     ${media.sm`
           max-width: 100%;
     `}
@@ -90,8 +99,11 @@ const DedicatedDeveloperWrapper = styled.section`
   .add-space {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 37px;
     margin-bottom: 50px;
+    ${media.md`
+      margin-top: 0;
+    `}
     ${media.sm`
           flex-direction: column;
   `}

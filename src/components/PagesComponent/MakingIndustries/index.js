@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
+import ArrowDown  from '../../../assets/images/arrow_downward.svg'
 
 import Container from "../../UiComponent/Container";
 
@@ -49,7 +50,7 @@ const Index = () => {
   
   return (
     <MakingIndustriesWrapper>
-      <Container>
+      <Container className="industries-inner-wrapper">
         <h1 className="text-center color-primary">
           Happily Making Industries People-First
         </h1>
@@ -61,19 +62,17 @@ const Index = () => {
         <Row className="justify-content-center">
           <Col md={8} lg={6} sm={12} sx={12}>
             <div className="arrow-section">
-              {industries.map((title, index) => {
-                return (
-                  <div className="d-flex justify-content-between arrow-box-section">
+              {industries.map((title, i) => (
+                  <div className="d-flex justify-content-between arrow-box-section" key={i}>
                     <div className="d-flex gap-3 mb-3">
                       <title.img />
                       <h4> {title.title}</h4>
                     </div>
                     <div className="arrow-box">
-                      <BsArrowRight className="arrow-right" />
+                      <ArrowDown className="arrow-right" />
                     </div>
                   </div>
-                );
-              })}
+                  ))}
             </div>
           </Col>
         </Row>

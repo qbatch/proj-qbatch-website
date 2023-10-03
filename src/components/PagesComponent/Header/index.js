@@ -1,54 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
+import {Link} from 'gatsby';
+import Button from "../../UiComponent/Button";
+import Container from "../../UiComponent/Container";
+import Drawer from "../HeaderDrawer";
+import { navigate } from 'gatsby';
+
+import Logo from "../../../assets/images/qbatch-logo.svg";
+
 import HeaderWrapper from "./style";
 
-// components
-import Button from "../../UiComponent/Button";
-import Divider from "../../UiComponent/Divider";
-
-// images
-import Logo from "../../../assets/images/qbatch-logo.svg";
-import ArrowDown from "../../../assets/images/icons/arrow-down.svg";
-
-// bootsrap
-import { Container, Navbar, Nav } from "react-bootstrap";
+const headerMenu = [
+  {
+    name: "Services",
+    to: "/",
+  },
+  {
+    name: "Hire Developers",
+    to: "/",
+  },
+  {
+    name: "Industries",
+    to: "/",
+  },
+  {
+    name: "Portfolio",
+    to: "/portfolio",
+  },
+  {
+    name: "Blog",
+    to: "/blog",
+  },
+];
 
 const Index = () => {
+  const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
-    <HeaderWrapper>
-      <Navbar expand="lg" sticky="top" bg="#fff">
-        <Container fluid className="p-0">
-          <Navbar.Brand href="#">
-            <Logo />
-          </Navbar.Brand>
-          <nav className="header-menu">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">
-                Services <ArrowDown />
-              </Nav.Link>
-              <Nav.Link href="#features">
-                Hire Developers <ArrowDown />
-              </Nav.Link>
-              <Nav.Link href="#pricing">
-                Industries <ArrowDown />
-              </Nav.Link>
-              <Nav.Link href="#pricing">
-                Portfolio <ArrowDown />
-              </Nav.Link>
-            </Nav>
-          </nav>
-          <div className="menu-items">
-            <Button text="Contact" />
-            <div className="burger-icon">
-              {[1, 2, 3].map(() => (
-                <span></span>
-              ))}
+    <>
+      <HeaderWrapper>
+        <Container>
+          <div className="header-main">
+            <div className="logo">
+              <Link to="/">
+                <Logo />
+              </Link>
+            </div>
+            <nav className="header-menu">
+              <ul>
+                {headerMenu.map((menu, ind) => (
+                  <li key={ind}>
+                    <Link to={menu.to} activeClassName="active">
+                      <span>{menu.name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="menu-items">
+              <Button onClick={() => navigate("/contact")} text="Contact Us" className="header-btn" />
+              <div className="burger-icon" onClick={() => setOpenDrawer(true)}>
+                {[1, 2, 3].map((key) => (
+                  <span key={key}></span>
+                ))}
+              </div>
             </div>
           </div>
         </Container>
-      </Navbar>
-      <Divider />
-    </HeaderWrapper>
+      </HeaderWrapper>
+      <Drawer openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
+    </>
   );
 };
 
