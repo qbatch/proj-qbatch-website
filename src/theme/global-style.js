@@ -132,5 +132,23 @@ const GlobalStyles = createGlobalStyle`
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm}
       }
     }
+    .slider-section{
+      position:relative;
+      min-height:700px;
+      padding-top:150px;
+      padding-bottom: 150px;
+      .fixed-slider-pagination{
+        position:absolute;
+        right:0;
+        top:150px;
+        .pagination-item{
+          margin-bottom: 15px;
+          cursor: pointer;
+        }
+        .pagination-item.active{
+          color:green;
+        }
+      }
+    }
 `;
 export default GlobalStyles;

@@ -14,6 +14,7 @@ import Collaboration from "../components/PagesComponent/Collaboration";
 import Awards from "../components/PagesComponent/Awards";
 import CreativeIntelligence from "../components/PagesComponent/CreativeIntelligence";
 import StartProject from "../components/PagesComponent/StartProject";
+import SliderSection from './slider';
 
 const IndexPage = () => (
   <Layout>
@@ -32,6 +33,7 @@ const IndexPage = () => (
     />
     <ProvenWorkExperience />
     <HappilyMaking />
+    <SliderSection />
     <WhatDifferenceQbatchMaking />
     <Awards maxCols={8} />
     <Collaboration />
