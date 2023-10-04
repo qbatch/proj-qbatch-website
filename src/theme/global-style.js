@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&display=swap');
-
     body{
         font-size:${({ theme }) => theme.fonts.baseFontSize};    
         font-weight:400;
@@ -70,8 +68,26 @@ const GlobalStyles = createGlobalStyle`
         line-height: 32px;
       }
     }
+
+  .underline-heading{
+    color: ${({ theme }) => theme.colors.bodyText};
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 24px;
+      bottom: 0px;
+      background-color: #ED1C24;
+    }
+  }
     img,svg{
         max-width:100%;
+    }
+    .header-drawer {
+      overflow: auto;
     }
 
     @media (max-width: 1200px) {

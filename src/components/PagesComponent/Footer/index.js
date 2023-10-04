@@ -1,7 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import {Link} from 'gatsby'
 
 import Container from "../../UiComponent/Container";
+import PrimaryButton from '../../UiComponent/PrimaryButton';
+import SocialIcons from "../../UiComponent/SocialIcons";
 
 import FooterWrapper from "./style";
 
@@ -31,7 +34,7 @@ const menuData = [
   },
   {
     name: "Portfolio",
-    to: "/",
+    to: "/portfolio",
   },
   {
     name: "Industry",
@@ -45,48 +48,15 @@ const menuData = [
 
 const menu2Data = [
   {
-    name: "Company",
-    to: "/",
+    name: "About Us",
+    to: "/about",
   },
   {
     name: "Contact Us",
-    to: "/",
+    to: "/contact",
   },
   {
     name: "Qbatch Career",
-    to: "/",
-  },
-];
-
-const socialIcons = [
-  {
-    img: "/facebook-icon.svg",
-    className: "facebook-icon",
-    to: "/",
-  },
-  {
-    img: "/instagram-icon.svg",
-    className: "insta-icon",
-    to: "/",
-  },
-  {
-    img: "/linkedin-icon.svg",
-    className: "linkedin-icon",
-    to: "/",
-  },
-  {
-    img: "/twitter-icon.svg",
-    className: "twitter-icon",
-    to: "/",
-  },
-  {
-    img: "/behance-icon.svg",
-    className: "behance-icon",
-    to: "/",
-  },
-  {
-    img: "/youtube-icon.svg",
-    className: "youtube-icon",
     to: "/",
   },
 ];
@@ -115,18 +85,14 @@ const Index = () => {
             <Col md={2}>
               <div className="footer-menu">
                 <ul>
-                  {menuData.map((menu, ind) => (
-                    <li key={ind}>{menu.name}</li>
-                  ))}
+                  {menuData.map((menu, ind) =>  <li key={ind}> <Link to={menu.to}>{menu.name}</Link> </li> )}
                 </ul>
               </div>
             </Col>
             <Col md={2}>
               <div className="footer-menu">
                 <ul>
-                  {menu2Data.map((menu, ind) => (
-                    <li key={ind}>{menu.name}</li>
-                  ))}
+                  {menu2Data.map((menu, ind) => <li key={ind}> <Link to={menu.to}>{menu.name}</Link></li> )}
                 </ul>
               </div>
             </Col>
@@ -134,8 +100,8 @@ const Index = () => {
               <div className="footer-contact">
                 {contactData.map((data, ind) => (
                   <div key={ind}>
-                    <img src={data.icon} alt="contact" className={ind === 1 && "d-none"} />
-                    <span className={ind === 1 && "address"}>{data.title}</span>
+                    {data.icon && <img src={data.icon} alt="contact" />}
+                    <span className={!data.icon && "address"}>{data.title}</span>
                   </div>
                 ))}
               </div>
@@ -147,33 +113,20 @@ const Index = () => {
                 <div className="email-input">
                   <img src="/email-address-icon.svg" alt="email" />
                   <input type="email" placeholder="Email Address" />
-                  <div>
-                    <span>Let’s Get Started</span>
-                    <img src="/footer-right-arrow.svg" alt="arrow" />
-                  </div>
+                  <PrimaryButton color="#fff" borderbottom text="Let’s Get Started" />
                 </div>
               </div>
             </Col>
           </Row>
         </div>
-        <div className="social-section d-flex align-items-center justify-content-between flex-wrap">
+        <div className="social-section d-flex align-items-center flex-wrap">
           <div className="d-flex align-items-center flex-wrap follow-section">
             <span className="follow-us">Follow Us at</span>
-            <div className="d-flex social-icons">
-              {socialIcons.map((item, ind) => (
-                <div className={item.className} key={ind}>
-                  <img src={item.img} alt={item.className} />
-                </div>
-              ))}
-            </div>
+            <SocialIcons />
           </div>
           <div className="footer-menu footer-menu-bottom">
             <ul>
-              {bottomMenu.map((menu, ind) => (
-                <li key={ind} className="mb-0">
-                  {menu.name}
-                </li>
-              ))}
+              {bottomMenu.map((menu, ind) =>  <li key={ind} className="mb-0"> <Link to={menu.to}> {menu.name}</Link> </li> )}
             </ul>
           </div>
         </div>

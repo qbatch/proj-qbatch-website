@@ -1,9 +1,11 @@
 import React from 'react';
 import Form from "react-bootstrap/Form";
+
 import RadioWrapper from './style'
 
 function CheckExample(props ) {
-  const { label, value, onChange, checked } = props;
+  const { label, value, onChange, checked, name } = props;
+  
   return (
     <RadioWrapper>
       <Form>
@@ -12,7 +14,7 @@ function CheckExample(props ) {
           checked={checked}
           label={label}
           value={value}
-          name="collaboration"
+          name={name || "collaboration"}
           onChange={onChange}
         />
       </Form>

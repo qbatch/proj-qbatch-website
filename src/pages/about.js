@@ -1,15 +1,39 @@
+<<<<<<< HEAD
 import * as React from 'react'
 import Layout from '../components/Layout/layout'
 import SEO from "../components/Seo";
+=======
+import * as React from "react";
+>>>>>>> 825427cf2f760a7d7205c89d0fb42651baadac58
 
-const AboutPage = () => {
-  return (
-    <Layout pageTitle="About Me">
-      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
-    </Layout>
-  )
-}
+import Layout from "../components/Layout/layout";
+import SEO from "../components/Seo";
+import CompanyBanner from "../components/PagesComponent/CompanyBanner";
+import GrowthPartner from "../components/PagesComponent/GrowthPartner";
+import CompanyAchievements from "../components/PagesComponent/CompanyAchievements";
+import OurClients from "../components/PagesComponent/Clients";
+import Leadership from "../components/PagesComponent/Leadership";
+import ValueSystem from "../components/PagesComponent/ValueSystem";
+import Awards from "../components/PagesComponent/Awards";
+import Clients from "../components/PagesComponent/Careers";
 
+<<<<<<< HEAD
 export const Head = () => <SEO title="About  Me" />;
+=======
+const About = () => (
+  
+  <Layout>
+    <CompanyBanner />
+    <GrowthPartner />
+    <CompanyAchievements />
+    <OurClients />
+    <Leadership />
+    <ValueSystem />
+    <Awards />
+    <Clients />
+  </Layout>
+);
+export const Head = () => <SEO title="About US" />;
+>>>>>>> 825427cf2f760a7d7205c89d0fb42651baadac58
 
-export default AboutPage
+export default About;
