@@ -4,7 +4,7 @@ import Container from '../Container'
 import Divider from '../Divider'
 import SliderWrapper from './style'
 const Index = (props) => {
-  const { data, align, heading, paragraph, width, seconedHeading, maxWidth } = props
+  const { data, align, heading, paragraph, width, seconedHeading, maxWidth, className } = props
   const settings = {
     dots: true,
     infinite: true,
@@ -17,7 +17,7 @@ const Index = (props) => {
   return (
     <>
       <Container>
-        <SliderWrapper maxWidth={maxWidth}>
+        <SliderWrapper maxWidth={maxWidth} className={className}>
           <div className={`upper-heading  text-${align || 'left'}`}>
             <h2>{heading}</h2>
             {seconedHeading && <h4>{seconedHeading}</h4>}
