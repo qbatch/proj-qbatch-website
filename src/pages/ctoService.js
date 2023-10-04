@@ -13,6 +13,7 @@ import ChooseCto from '../components/PagesComponent/ChooseCto';
 import CtoServiceModel from '../components/PagesComponent/CtoServiceModel';
 import OurProjects from "../components/PagesComponent/OurProjects";
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
+import FaqSection from '../components/PagesComponent/Faq'
 
 const CtoService = () => {
   return (
@@ -27,6 +28,8 @@ const CtoService = () => {
       <ChooseCto />
       <CtoServiceModel/>
       <OurProjects/>
+      <CtoServiceModel />
+      <FaqSection />
       <StartProject />
     </Layout>
   );
