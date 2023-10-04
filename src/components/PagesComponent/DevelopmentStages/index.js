@@ -16,6 +16,7 @@ const DevelopmentStages = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     vertical: true,
     beforeChange: (current, next) => {
       setActiveIndex(next);
