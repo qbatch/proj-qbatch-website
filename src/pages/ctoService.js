@@ -9,6 +9,7 @@ import TechnicalExcellence from "../components/PagesComponent/TechnicalExcellenc
 import CtoPersona from '../components/PagesComponent/CtoPersona'
 import TechnicalGuidance from "../components/PagesComponent/TechnicalGuidance";
 import GrowingTechSide from "../components/PagesComponent/GrowingTechSide";
+import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
 
 const CtoService = () => {
   return (
@@ -18,6 +19,7 @@ const CtoService = () => {
       <TechnicalExcellence />
       <CtoPersona />
       <TechnicalGuidance />
+      <DevelopmentStages />
       <GrowingTechSide />
       <StartProject />
     </Layout>
