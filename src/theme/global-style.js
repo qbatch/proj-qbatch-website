@@ -132,5 +132,8 @@ const GlobalStyles = createGlobalStyle`
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm}
       }
     }
+    .fs-24{
+      font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
+    }
 `;
 export default GlobalStyles;
