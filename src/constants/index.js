@@ -242,7 +242,79 @@ const stories = [
     primary: false,
   },
 ];
-
+const sliderItems = [
+  {
+    image: "/slide-img.jpg",
+    title: "Discovery Phase",
+    content:
+      "Perform competitor market research, choose suitable tech stack and MVP features, and write technical documentation to understand your concept in real-world terms under limited risks. ",
+    list: [
+      "Technology Consultancy",
+      "Risk Mitigation",
+      "Tech Stack Selection ",
+      "MVP feature Composition",
+    ],
+  },
+  {
+    image: "/slide-img.jpg",
+    title: "Project Planing",
+    content:
+      "After data collection, we elevate your development stages with strategy and logic by setting a realistic project plan, budget, and timeline according to available resources.",
+    list: [
+      "Shaping and Optimizing Development Plan",
+      "Technical Audit & Decision-making",
+      "Devising The Development Processes",
+      "Time, Budget, & Resource Estimate",
+    ],
+  },
+  {
+    image: "/slide-img.jpg",
+    title: "Product Development",
+    content:
+      "We, as your virtual CTO, ensure transparency in and continuous optimization of processes, communication, reporting, and project-critical documentation from start to end.",
+    list: [
+      "Team Composition & Planning",
+      "Set Clear Project Goals",
+      "Development Process Optimization",
+      "Daily Project and Team Management",
+    ],
+  },
+  {
+    image: "/slide-img.jpg",
+    title: "Project Scaling & Pitching",
+    content:
+      "We help startups stay wary of possible nuances and pitfalls by building and fostering scaling strategy, comprehensive pitch decks, and carefully communicating with investors as your CTO.",
+    list: [
+      "Forming Scaling Strategy ",
+      "IT Pitch Deck Development",
+      "Capturing Investments",
+      "Technical Dialogue with Investors",
+    ],
+  },
+  {
+    image: "/slide-img.jpg",
+    title: "Project Audit",
+    content:
+      "Conduct a project audit, review the code quality, and assess overall project performance and speed with our CTO services to streamline the IT delivery process, offering constant feedback for enhancements. ",
+    list: [
+      "Code Quality Reviews",
+      "Project Audits",
+      "Report and Predictive Analysis",
+      "Offering Problem-Solution Fit",
+    ],
+  },
+  {
+    image: "/slide-img.jpg",
+    title: "Handing Over & Retaining",
+    content:
+      "We won’t leave you at the very climax of your development stage like the rest. You will have all the intellectual property rights and our long-term support on a retainer basis as needed.",
+    list: [
+      "Knowledge & Documentation Transfer",
+      "Intellectual Property Rights",
+      "Ad-hoc Support & Maintenance",
+    ],
+  },
+];
 
 export {
   homeTiles,
@@ -256,4 +328,5 @@ export {
   weDoData,
   data,
   stories,
+  sliderItems,
 };

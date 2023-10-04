@@ -9,7 +9,8 @@ import TechnicalExcellence from "../components/PagesComponent/TechnicalExcellenc
 import CtoPersona from '../components/PagesComponent/CtoPersona'
 import TechnicalGuidance from "../components/PagesComponent/TechnicalGuidance";
 import GrowingTechSide from "../components/PagesComponent/GrowingTechSide";
-import ChooseCto from '../components/PagesComponent/ChooseCto'
+import ChooseCto from '../components/PagesComponent/ChooseCto';
+import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
 
 const CtoService = () => {
   return (
@@ -19,6 +20,7 @@ const CtoService = () => {
       <TechnicalExcellence />
       <CtoPersona />
       <TechnicalGuidance />
+      <DevelopmentStages />
       <GrowingTechSide />
       <ChooseCto />
       <StartProject />
