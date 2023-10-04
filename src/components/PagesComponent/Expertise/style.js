@@ -3,8 +3,10 @@ import { media } from "../../../theme/media-mixins";
 
 const ExpertiseWrapper = styled.section`
   .base-space {
-    padding: 95px 0;
-    padding-bottom: 88px;
+    padding: 96px 0 84px;
+    ${media.sm`
+      padding: 40px 0;
+    `}
   }
   .padding-0 {
     ${media.sm`
@@ -14,13 +16,16 @@ const ExpertiseWrapper = styled.section`
   .heading {
     margin-right: 83px;
     ${media.md`
-           margin-right: 32px;
+      margin-right: 32px;
     `}
   }
   .skill-section {
     position: relative;
     padding-top: 16px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
+    svg {
+      max-width: none;
+    }
     .skill-badge {
       border: 1px solid ${({ theme }) => theme.colors.bodyLight};
       padding: 3px 8px;
@@ -48,29 +53,39 @@ const ExpertiseWrapper = styled.section`
     }
   }
   .arrow-box {
-    width: 62px;
-    height: 62px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.5s ease-out 100ms;
-    svg {
-      font-size: 54px;
-      transition: font-size 0.5s ease-out 100ms;
-      color: ${({ theme }) => theme.colors.dangerColor};
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.5s ease-out 100ms;
       ${media.md`
-             font-size: 32px;
-    `}
-    }
-    &:hover {
-      background-color: ${({ theme }) => theme.colors.primaryColor};
+       width: 40px;
+       height: 40px;
+      `}
+
       svg {
-        color: ${({ theme }) => theme.colors.whiteColor};
-        font-size: 24px;
+        transition: width 0.5s ease-out 100ms;
+        color: ${({ theme }) => theme.colors.dangerColor};
+        width: 46px;
+        pointer-events: none;
+        ${media.md `
+         width: 40px;
+        `}
+      }
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.primaryColor};
+        svg {
+          width: 28px;
+          color: #ffffff;
+          ${media.md`
+         width: 24px;
+         `}
+        }
+        
       }
     }
-  }
 `;
 export default ExpertiseWrapper;

@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const WhatWeDoWrapper = styled.div`
   .base-space {
-    padding: 97px 0 22px;
+    padding: 96px 0 22px;
     ${media.sm`
       padding: 40px 0;
     `}

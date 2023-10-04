@@ -7,9 +7,25 @@ const CreativeIntelligenceWrapper = styled.div`
   background-image: url("/creativity-background.svg");
   background-repeat: no-repeat;
   background-position: top;
+  ${media.md`
+  background-position: -271px 14px;
+    background-size: cover;
+  `}
   ${media.sm`
       padding:70px 0 70px;
+      background-position: -144px 24px;
+    background-size: cover;
     `}
+    @media screen and (max-width:700px){
+      background-position: -155px top;
+    background-size: cover;
+    }
+    ${media.xs`
+    background-position: -170px top;
+`}
+    @media screen and (max-width:358px){
+      background-position: -187px -19px;
+    }
   .creative-content {
     max-width: 844px;
     margin: 0 auto;

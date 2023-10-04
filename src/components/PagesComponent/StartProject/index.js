@@ -7,18 +7,19 @@ import "../../../../node_modules/video-react/dist/video-react.css";
 
 import Container from "../../UiComponent/Container";
 import Input from "../../UiComponent/Input";
-import Select from "../../UiComponent/Collapse";
+import Collapse from "../../UiComponent/Collapse";
 import RadioButton from "../../UiComponent/RadioButton";
 import CheckBox from "../../UiComponent/CheckBox";
 import Button from '../../UiComponent/Button';
+import TestimonialCarousel from "../../UiComponent/TestimonialSlider"
 
-import ArrowDown from "../../../assets/images/collapse-down.svg";
 import StartProjectWrapper from "./style";
 
 const Index = () => {
+
   const [open, setOpen] = useState(false);
   const [modal, setModal] = useState("");
-  const recaptchaRef = React.useRef();
+  // const recaptchaRef = React.useRef();
   const [serviceOpen, setServiceOpen] = useState(false);
 
   const [serviceSelect, setServiceSelect] = useState([]);
@@ -31,7 +32,6 @@ const Index = () => {
     }
   };
    const handleRecaptchaChange = (value) => {
-     // This function will be called when the user completes the reCAPTCHA challenge
      console.log("reCAPTCHA value:", value);
    };
   return (
@@ -41,57 +41,70 @@ const Index = () => {
           <Col lg={5} md={6} sm={12} xs={12}>
             <h2 className="color-primary">Start a Project</h2>
             <p>Work with the most friendly yet focused developers!</p>
-            <div className="mt-4">
+            <div className="project-form">
               <Input placeholder="Full Name" type="text" />
               <Input placeholder="Contact Number" type="text" />
               <Input placeholder="Email Address" type="email" />
-              <Select title="Select Collaboration Model" onClick={() => setOpen(true)} open={open}>
-                <div className="seperation d-flex justify-content-between">
-                  <span>Select Collaboration Model</span>
-                  <ArrowDown className="pointer" onClick={() => setOpen(false)} />
-                </div>
+              <Collapse
+                title="Select Collaboration Model"
+                onClick={() => setOpen(!open)}
+                open={open}
+                content={
+                  <div className={!open && modal ? "add-height" : "zero-height"}>
+                    <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
+                  </div>
+                }
+              >
+                <div className="seperation d-flex justify-content-between"></div>
                 {["Time and Material", "Fixed Scope Product Development", "Hire Dedicated Development Team"].map(
                   (value) => {
                     return (
-                      <RadioButton
-                        type="radio"
-                        label={value}
-                        value={value}
-                        checked={modal === value}
-                        name="collaboration"
-                        onChange={(e) => setModal(e.target.value)}
-                      />
-                    );
-                  }
-                )}
-                {modal !== "" ? (
-                  <>
-                    <div className="seperation d-flex justify-content-between">
-                      <span>Select Collaboration Model</span>
-                      <ArrowDown className="pointer" onClick={() => setOpen(false)} />
-                    </div>
-                    {[modal].map((value) => {
-                      return (
+                      <div className="collapse-radio">
                         <RadioButton
+                          key={value}
                           type="radio"
                           label={value}
                           value={value}
-                          name="dedicated"
-                          onChange={(e) => setModal(e.target.value)}
-                        />
-                      );
-                    })}
-                  </>
-                ) : (
-                  ""
+                          checked={modal === value}
+                          name="collaboration"
+                          onChange={(e) => {
+                            setModal(e.target.value);
+                          }}
+                      />
+                      </div>
+                    );
+                  }
                 )}
-              </Select>
+              </Collapse>
 
-              <Select title="Select Service(s)" onClick={() => setServiceOpen(true)} open={serviceOpen}>
-                <div className="seperation d-flex justify-content-between">
-                  <span>Select Service(s)</span>
-                  <ArrowDown className="pointer" onClick={() => setServiceOpen(false)} />
-                </div>
+              <Collapse
+                content={
+                    <div className={!serviceOpen && serviceSelect.length > 0 && serviceSelect  ? "add-height" : "zero-height"}>
+                      <Row>
+                        {serviceSelect.slice(0.6).map((value, key) => {
+                          return (
+                            <Col md={6}>
+                              <CheckBox
+                                key={key}
+                                label={value}
+                                checked={serviceSelect.includes(value)}
+                                value={value}
+                                name="collaboration"
+                                onChange={(e) =>
+                                  setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
+                                }
+                              />
+                            </Col>
+                          );
+                        })}
+                      </Row>
+                    </div>
+                }
+                title="Select Service(s)"
+                onClick={() => setServiceOpen(!serviceOpen)}
+                open={serviceOpen}
+              >
+                <div className="seperation d-flex justify-content-between"></div>
                 <Row>
                   {[
                     "Design & Development",
@@ -110,10 +123,10 @@ const Index = () => {
                       return (
                         <Col md={6}>
                           <CheckBox
+                            key={value}
                             label={value}
                             checked={serviceSelect.includes(value)}
                             value={value}
-                            className="abc"
                             name="collaboration"
                             onChange={handleChange}
                           />
@@ -121,48 +134,15 @@ const Index = () => {
                       );
                     })}
                 </Row>
-                {serviceSelect.length > 0 && serviceSelect ? (
-                  <>
-                    <div className="seperation d-flex justify-content-between">
-                      <span>Select Service(s)</span>
-                      <ArrowDown className="pointer" onClick={() => setServiceOpen(false)} />
-                    </div>
-                    <Row>
-                      {serviceSelect.slice(0.6).map((value) => {
-                        return (
-                          <Col md={6}>
-                            <CheckBox
-                              label={value}
-                              checked={serviceSelect.includes(value)}
-                              value={value}
-                              name="collaboration"
-                              onChange={(e) =>
-                                setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
-                              }
-                            />
-                          </Col>
-                        );
-                      })}
-                    </Row>
-                  </>
-                ) : (
-                  ""
-                )}
-              </Select>
-              <Input
-                as="textarea"
-                marginBottom="21px"
-                height="53px"
-                placeholder="Tell us about your project"
-                type="email"
-              />
+              </Collapse>
+              <Input as="textarea" base="21px" height="53px" placeholder="Tell us about your project" type="email" />
               <div>
                 <CheckBox
-                  marginLeft="-4px"
+                  margin="-4px"
                   height="12px"
                   width="12px"
                   fontSize="12px"
-                  marginBottom="5px"
+                  base="5px"
                   label={
                     <>
                       I understand and agree to the
@@ -174,35 +154,26 @@ const Index = () => {
                   name="collaboration"
                 />
                 <CheckBox
-                  marginLeft="-4px"
+                  margin="-4px"
                   height="12px"
                   width="12px"
                   fontSize="12px"
                   label="I agree to receive marketing and promotion related emials."
                   name="collaboration"
-                  marginBottom="19px"
+                  base="19px"
                 />
-                <div className="d-flex justify-content-between mt-3">
+                <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
                   <ReCAPTCHA sitekey="6LezlHQnAAAAAFZigM4rT1-ESPRHDcPGoxXpxoKz" onChange={handleRecaptchaChange} />
-                  <Button text="Submit" />
+                  <Button text="Submit" className="pt-md-0 pt-3"/>
                 </div>
               </div>
             </div>
           </Col>
           <Col lg={5} md={6} sm={12} xs={12}>
             <div className="testimonials">
-              <h4 className="color-primary">Testimonials</h4>
-              <p>Here's what our clients have to say</p>
-              <div className="video-box">
-                <Player
-                  playsInline
-                  poster="/assets/poster.png"
-                  src="http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4"
-                >
-                  <BigPlayButton position="center" />
-                  <LoadingSpinner />
-                </Player>
-              </div>
+              <h4 className="color-primary testimonial-heading">Testimonials</h4>
+              <p className="testimonial-paragraph">Here's what our clients have to say</p>
+              <TestimonialCarousel/>
             </div>
           </Col>
         </Row>
