@@ -10,6 +10,7 @@ import CtoPersona from '../components/PagesComponent/CtoPersona'
 import TechnicalGuidance from "../components/PagesComponent/TechnicalGuidance";
 import GrowingTechSide from "../components/PagesComponent/GrowingTechSide";
 import ChooseCto from '../components/PagesComponent/ChooseCto';
+import CtoServiceModel from '../components/PagesComponent/CtoServiceModel'
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
 
 const CtoService = () => {
@@ -23,6 +24,7 @@ const CtoService = () => {
       <DevelopmentStages />
       <GrowingTechSide />
       <ChooseCto />
+      <CtoServiceModel/>
       <StartProject />
     </Layout>
   );
