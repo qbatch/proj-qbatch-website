@@ -18,6 +18,16 @@ const DevelopmentStages = () => {
     slidesToScroll: 1,
     adaptiveHeight: true,
     vertical: true,
+    adaptiveHeight: true,
+    responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+    ],
     beforeChange: (current, next) => {
       setActiveIndex(next);
     },
@@ -29,21 +39,22 @@ const DevelopmentStages = () => {
 
   useEffect(() => {
     // Handle mousewheel events to change slides
-    // const handleMouseWheel = (e) => {
-    //   e.preventDefault();
-    //   if (e.deltaY > 0) {
-    //     sliderRef.current.slickNext();
-    //   } else {
-    //     sliderRef.current.slickPrev();
-    //   }
-    // };
+    const handleMouseWheel = (e) => {
+      e.preventDefault();
+      if (e.deltaY > 0) {
+        sliderRef.current.slickNext();
+      } else {
+        sliderRef.current.slickPrev();
+      }
+    };
 
     // Add event listener for mousewheel
-    // document.addEventListener("wheel", handleMouseWheel);
+    const sliderElement = document.querySelector(".slider-column");
+    sliderElement.addEventListener("wheel", handleMouseWheel);
 
     return () => {
       // Remove event listener when component unmounts
-      //   document.removeEventListener("wheel", handleMouseWheel);
+      sliderElement.removeEventListener("wheel", handleMouseWheel);
     };
   }, []);
 
@@ -82,10 +93,13 @@ const DevelopmentStages = () => {
                   <div key={index} className="slider-item">
                     <Row>
                       <Col lg={5} md={5}>
+                      <div className="title title-responsive">
+                          <h3>{item.title}</h3>
+                        </div>
                         <img src={item.image} alt="project" />
                       </Col>
                       <Col lg={7} md={7} className="slider-column-text">
-                        <div className="title">
+                        <div className="title title-desktop">
                           <h3>{item.title}</h3>
                         </div>
                         <div className="content">
