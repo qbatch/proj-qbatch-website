@@ -195,6 +195,6 @@ const PersonaWrapper = styled.div`
         }
       }
     }
-  }
-`;
+`
+
 export default PersonaWrapper;
