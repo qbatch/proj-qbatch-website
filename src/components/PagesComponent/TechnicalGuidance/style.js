@@ -7,6 +7,11 @@ const TechnicalGuidanceWrapper = styled.div`
   ${media.sm`
      padding: 40px 0px;
   `}
+  .horizontal-section {
+    ${media.sm`
+      height: auto !important;
+    `}
+  }
   .sticky-wrapper {
     position: sticky;
     top: 150px;
@@ -60,6 +65,10 @@ const TechnicalGuidanceWrapper = styled.div`
     ${media.sm`
       min-width: 100%;
     `}
+    &:last-child{
+      min-width: 96px;
+      border: none;
+    }
     h4 {
       margin: 24px 0;
       white-space: pre-line;
@@ -80,6 +89,9 @@ const TechnicalGuidanceWrapper = styled.div`
     .element-wrapper {
       max-width: 1920px;
       margin:0 auto;
+    }
+    .horizontal-section {
+      height: 1700px !important;
     }
   }
 `;

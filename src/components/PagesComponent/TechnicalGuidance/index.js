@@ -68,7 +68,7 @@ const Index = () => {
       setHorLength(elementWrapper.scrollWidth);
       setDistFromTop(horizontalSection.offsetTop);
       setScrollDistance(distFromTop + horLength - windowWidth);
-      horizontalSection.style.height = horLength - 850 + "px";
+      horizontalSection.style.height = horLength + "px";
     }
   }, [windowWidth, horLength, distFromTop]);
 
@@ -118,6 +118,7 @@ const Index = () => {
                 <span>{data.desc}</span>
               </div>
             ))}
+            <div className="guidance-card" ></div>
           </div>
         </div>
       </div>
