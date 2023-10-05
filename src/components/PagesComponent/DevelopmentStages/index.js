@@ -18,6 +18,16 @@ const DevelopmentStages = () => {
     slidesToScroll: 1,
     adaptiveHeight: true,
     vertical: true,
+    adaptiveHeight: true,
+    responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+    ],
     beforeChange: (current, next) => {
       setActiveIndex(next);
     },
@@ -28,27 +38,44 @@ const DevelopmentStages = () => {
   };
 
   useEffect(() => {
-    // Handle mousewheel events to change slides
-    // const handleMouseWheel = (e) => {
-    //   e.preventDefault();
-    //   if (e.deltaY > 0) {
-    //     sliderRef.current.slickNext();
-    //   } else {
-    //     sliderRef.current.slickPrev();
-    //   }
-    // };
+    // Handle mousewheel events to change slides and enable/disable window scroll
+    const handleMouseWheel = (e) => {
+      const isAtFirstSlide = activeIndex === 0;
+      const isAtLastSlide = activeIndex === sliderItems.length - 1;
+
+      if (e.deltaY > 0) {
+        // Scrolling down
+        if (!isAtLastSlide) {
+          e.preventDefault();
+          sliderRef.current.slickNext();
+        } else {
+          // Enable window scroll when at the last slide
+          document.body.style.overflow = "auto";
+        }
+      } else if (e.deltaY < 0) {
+        // Scrolling up
+        if (isAtFirstSlide) {
+          // Enable window scroll when at the first slide and scrolling up
+          document.body.style.overflow = "auto";
+        } else {
+          e.preventDefault();
+          sliderRef.current.slickPrev();
+        }
+      }
+    };
 
     // Add event listener for mousewheel
-    // document.addEventListener("wheel", handleMouseWheel);
+    const sliderElement = document.querySelector(".stage-slider-main");
+    sliderElement.addEventListener("wheel", handleMouseWheel);
 
     return () => {
       // Remove event listener when component unmounts
-      //   document.removeEventListener("wheel", handleMouseWheel);
+      sliderElement.removeEventListener("wheel", handleMouseWheel);
     };
-  }, []);
+  }, [activeIndex]);
 
   return (
-    <StagesWrapper>
+    <StagesWrapper className="stage-slider-main">
       <div className="stages-header">
         <h2>Stuck at any of these development stages?  We can help.</h2>
         <p>
@@ -82,10 +109,13 @@ const DevelopmentStages = () => {
                   <div key={index} className="slider-item">
                     <Row>
                       <Col lg={5} md={5}>
+                      <div className="title title-responsive">
+                          <h3>{item.title}</h3>
+                        </div>
                         <img src={item.image} alt="project" />
                       </Col>
                       <Col lg={7} md={7} className="slider-column-text">
-                        <div className="title">
+                        <div className="title title-desktop">
                           <h3>{item.title}</h3>
                         </div>
                         <div className="content">
