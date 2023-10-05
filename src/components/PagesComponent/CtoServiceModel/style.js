@@ -5,7 +5,7 @@ const CtoServiceWrapper = styled.div`
  padding: 96px 0;
  h2{
   text-align: center;
-  margin-bottom: 72px;
+  margin-bottom: 70px;
   line-height: 52px;
  }
  .cto-service{
@@ -19,6 +19,10 @@ const CtoServiceWrapper = styled.div`
   &:last-child{
     margin-bottom: -2px;
   }
+
+  button{
+      margin-right: -8px;
+    }
     ${media.sm`
      display: block;
      button{

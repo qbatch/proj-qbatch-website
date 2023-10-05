@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const ChooseCtoWrapper = styled.div`
-  padding: 96px 0;
+  padding: 96px 0 94px;
   h3 {
     letter-spacing: 0.3px;
     margin-bottom: 24px;
@@ -25,6 +25,12 @@ const ChooseCtoWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         padding-bottom: 8px;
         line-height: 24px;
+        &:last-child{
+          padding-bottom: 0;
+          ${media.md`
+           padding-bottom: 8px;
+          `}
+        }
         .hash {
           margin-right: 8px;
         }
