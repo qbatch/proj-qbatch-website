@@ -38,28 +38,44 @@ const DevelopmentStages = () => {
   };
 
   useEffect(() => {
-    // Handle mousewheel events to change slides
+    // Handle mousewheel events to change slides and enable/disable window scroll
     const handleMouseWheel = (e) => {
-      e.preventDefault();
+      const isAtFirstSlide = activeIndex === 0;
+      const isAtLastSlide = activeIndex === sliderItems.length - 1;
+
       if (e.deltaY > 0) {
-        sliderRef.current.slickNext();
-      } else {
-        sliderRef.current.slickPrev();
+        // Scrolling down
+        if (!isAtLastSlide) {
+          e.preventDefault();
+          sliderRef.current.slickNext();
+        } else {
+          // Enable window scroll when at the last slide
+          document.body.style.overflow = "auto";
+        }
+      } else if (e.deltaY < 0) {
+        // Scrolling up
+        if (isAtFirstSlide) {
+          // Enable window scroll when at the first slide and scrolling up
+          document.body.style.overflow = "auto";
+        } else {
+          e.preventDefault();
+          sliderRef.current.slickPrev();
+        }
       }
     };
 
     // Add event listener for mousewheel
-    const sliderElement = document.querySelector(".slider-column");
+    const sliderElement = document.querySelector(".stage-slider-main");
     sliderElement.addEventListener("wheel", handleMouseWheel);
 
     return () => {
       // Remove event listener when component unmounts
       sliderElement.removeEventListener("wheel", handleMouseWheel);
     };
-  }, []);
+  }, [activeIndex]);
 
   return (
-    <StagesWrapper>
+    <StagesWrapper className="stage-slider-main">
       <div className="stages-header">
         <h2>Stuck at any of these development stages?  We can help.</h2>
         <p>
