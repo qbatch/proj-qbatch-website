@@ -79,7 +79,7 @@ const GlobalStyles = createGlobalStyle`
       position: absolute;
       height: 1px;
       width: 24px;
-      bottom: -2px;
+      bottom: 0px;
       background-color: #ED1C24;
     }
   }
@@ -131,6 +131,9 @@ const GlobalStyles = createGlobalStyle`
       h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm}
       }
+    }
+    .fs-24{
+      font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
     }
 `;
 export default GlobalStyles;

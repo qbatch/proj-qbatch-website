@@ -1,25 +1,31 @@
 import React from "react";
 import Collapse from "react-bootstrap/Collapse";
-
+import { BsPlusLg, BsDashLg } from "react-icons/bs";
 import CollapseUp from '../../../assets/images/collapse-up.svg'
 import CollapseDown from "../../../assets/images/collapse-down.svg";
 
 import CollpaseWrapper from "./style";
 
 function Example(props) {
-  const { title, children, open, onClick, content } = props;
+  const { title, children, open, onClick, content, faqSection } = props;
+  const openIcon = faqSection ? (
+    <BsDashLg className="color-primary pointer fs-24" onClick={onClick} />
+  ) : (
+    <CollapseDown onClick={onClick} className="pointer" />
+  );
+    const closeIcon = faqSection ? (
+      <BsPlusLg className="color-primary pointer fs-24" onClick={onClick} />
+    ) : (
+      <CollapseUp onClick={onClick} className="pointer" />
+    );
 
   return (
-    <CollpaseWrapper>
+    <CollpaseWrapper faqSection={faqSection}>
       <>
         <div className="collpase-select d-flex justify-content-between">
-          <span className="title">{title}</span>
+          <h4 className="title">{title}</h4>
 
-          {open ? (
-            <CollapseDown onClick={onClick} className="pointer" />
-          ) : (
-            <CollapseUp onClick={onClick} className="pointer" />
-          )}
+          {open ? openIcon : closeIcon}
         </div>
         <div className="collpase-content">{content}</div>
       </>
