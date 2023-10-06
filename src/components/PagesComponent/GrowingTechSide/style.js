@@ -19,6 +19,9 @@ const GrowingTechWrapper = styled.div`
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 900px;
     margin-bottom: 52px;
+    ${media.sm `
+      margin-bottom: 32px;
+    `}
   }
 `;
 
