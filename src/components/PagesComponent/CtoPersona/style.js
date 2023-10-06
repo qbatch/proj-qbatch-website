@@ -3,22 +3,23 @@ import { media } from "../../../theme/media-mixins";
 
 const PersonaWrapper = styled.div`
   padding: 99px 0 67px;
+  ${media.sm`
+     padding: 40px 0px;
+  `}
   .row {
     --bs-gutter-y: -5.3px;
   }
   .first-box {
-    min-height: 613px;
     ${media.sm`
-            min-height: 247px;
+            padding-bottom: 24px;
         `}
     h2 {
       line-height: 51px;
       max-width: 321px;
       margin-bottom: 24px;
-      @media screen and (max-width: 1540px) {
-        font-size: 32px;
-        line-height: 32px;
-      }
+      ${media.sm`
+       line-height: 32px;
+      `}
     }
     .description {
       max-width: 335px;
@@ -63,6 +64,9 @@ const PersonaWrapper = styled.div`
     ${media.lg`
             min-height: 595px;
         `}
+    ${media.md `
+      min-height: 540px;
+    `}
     ${media.sm`
             min-height: 320px;
         `}
@@ -115,16 +119,19 @@ const PersonaWrapper = styled.div`
     ${media.lg`
             min-height: 594px;
         `}
+        
+    ${media.md`
+            min-height: 540px;
+        `}
 
     ${media.sm`
             min-height: 500px;
         `}
       h2 {
       line-height: 52px;
-      @media screen and (max-width: 1540px) {
-        font-size: 32px;
-        line-height: 32px;
-      }
+      ${media.sm`
+       line-height: 32px;
+      `}
     }
     .circle-bg {
       position: relative;

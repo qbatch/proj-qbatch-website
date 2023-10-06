@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const InsightsWrapepr = styled.div`
       padding: 94px 0 91px;
+      ${media.sm`
+     padding: 40px 0px;
+  `}
   .carousel-header{
     margin-bottom: 72px;
     h2{

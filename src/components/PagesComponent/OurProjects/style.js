@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const OurProjectWrapper = styled.div`
 padding: 96px 0;
+${media.sm`
+     padding: 40px 0px;
+  `}
   .section-heading {
     padding-bottom: 62px;
     h2{
@@ -14,7 +17,7 @@ padding: 96px 0;
       line-height: 35px;
     }
     ${media.sm`
-      padding: 40px 0;
+      padding-bottom: 40px;
     `}
   }
   .carousel-padding {

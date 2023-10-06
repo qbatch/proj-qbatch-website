@@ -11,13 +11,16 @@ const TechnicalExcellenceWrapper = styled.div`
     color: ${({ theme }) => theme.colors.primaryColor};
     max-width: 650px;
     line-height: 52px;
-    ${media.md`
+    ${media.sm`
       line-height: 32px;
     `}
   }
   .technical-paragraph {
     padding-top: 9px;
     max-width: 580px;
+    ${media.md `
+     max-width: 100%;
+    `}
     a {
       text-decoration: underline;
     }

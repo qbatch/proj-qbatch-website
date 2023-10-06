@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const StartProjectWrapper = styled.div`
-  padding: 97px 0 95px;
+  padding: 96px 0;
   ${media.sm`
       padding: 40px 0;
     `}
@@ -18,6 +18,25 @@ const StartProjectWrapper = styled.div`
   }
   .project-form {
     margin-top: 20px;
+    &:has(.show) {
+    .collpase-select {
+      .title {
+        color: ${({ theme }) => theme.colors.bodyLight};
+      }
+    }
+  }
+
+  .collpase-select{
+      margin-top: 24px;
+    }
+    .collpase-content{
+      margin-top: 0;
+    }
+    .title{
+    font-weight:400;
+    font-size: 20px;
+    line-height: 32px;
+    }
   }
   .testimonials {
     padding-top: 138px;

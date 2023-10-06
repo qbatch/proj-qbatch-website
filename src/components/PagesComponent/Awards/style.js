@@ -31,7 +31,7 @@ position: relative;
       background-position: -33px bottom;
     `}
     ${media.sm`
-      padding: 40px 0 0;
+      padding: 40px 0 ;
       background-size: 100%;
       background-repeat: no-repeat;
     `}
@@ -84,9 +84,8 @@ position: relative;
       margin-top: -87px;
       position: relative;
       z-index: 2;
-      ${media.sm`
-          margin-top:24px;
-          margin-bottom:40px;
+      ${media.md`
+          margin-top:28px;
           text-align:center;
           button{
             margin:0 auto;

@@ -12,6 +12,7 @@ const DrawerWrapper = styled.div`
   background-image: url("/drawer-bg.svg");
   background-size: cover;
   position: relative;
+  min-height: 100vh;
   .cross-icon {
     position: absolute;
     right: 40px;

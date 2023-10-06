@@ -68,13 +68,16 @@ const TechnicalGuidanceWrapper = styled.div`
     &:last-child{
       min-width: 96px;
       border: none;
+      background-color: transparent;
     }
     h4 {
       margin: 24px 0;
       white-space: pre-line;
       line-height: 32px;
       ${media.sm`
+      margin: 24px 0 14px;
         white-space: wrap;
+        line-height: 24px;
       `}
     }
     span {
