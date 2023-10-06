@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const InsightsWrapepr = styled.div`
-  padding: 96px 0;
+      padding: 94px 0 91px;
   .carousel-header{
     margin-bottom: 72px;
     h2{
@@ -14,6 +14,7 @@ const InsightsWrapepr = styled.div`
       line-height: 24px;
       font-weight: 300;
       margin-bottom: 0;
+      padding-right: 30px;
     }
   }
  .slick-slider{

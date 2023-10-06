@@ -29,8 +29,8 @@ const CtoService = () => {
       <ChooseCto />
       <CtoServiceModel/>
       <OurProjects/>
-      <Insights/>
       <FaqSection />
+      <Insights/>
       <StartProject />
     </Layout>
   );

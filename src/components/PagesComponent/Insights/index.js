@@ -8,6 +8,8 @@ import PrimaryButton from '../../UiComponent/PrimaryButton';
 import ArrowLeftIcon from '../../../assets/images/icons/arrow-left-small.svg';
 import ArrowRightIcon from '../../../assets/images/icons/arrow-right-small.svg';
 
+import Divider from "../../UiComponent/Divider";
+
 const Index = () => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -169,6 +171,7 @@ const Index = () => {
           </Slider>
         </Container>
       </InsightsWrapper>
+      <Divider />
     </>
   );
 };
