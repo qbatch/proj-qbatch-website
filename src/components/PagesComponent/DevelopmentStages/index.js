@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Container, Row } from "react-bootstrap";
 import StagesWrapper from "./style";
-import { Controller, Scene } from 'react-scrollmagic';
 import { sliderItems } from "../../../constants";
 
 const DevelopmentStages = () => {
@@ -91,14 +90,6 @@ const DevelopmentStages = () => {
     <StagesWrapper id="scene-trigger" ref={scrollRef}
     className="stage-slider-main"
   >
-    <Controller>
-      <Scene
-        triggerHook="onLeave"
-        duration={600}
-        offset={-50}
-        pin
-        classToggle="scroll-section" triggerElement="#scene-trigger"
-      >
         <div>
           <Container>
             <div className="stages-header">
@@ -160,8 +151,6 @@ const DevelopmentStages = () => {
             </div>
           </Container>
           </div>
-          </Scene>
-    </Controller>
         </StagesWrapper>
   );
 };
