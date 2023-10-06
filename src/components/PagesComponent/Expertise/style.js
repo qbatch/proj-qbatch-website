@@ -65,6 +65,10 @@ const ExpertiseWrapper = styled.section`
        width: 40px;
        height: 40px;
       `}
+      ${media.sm`
+       width: 28px;
+       height: 28px;
+      `}
 
       svg {
         transition: width 0.5s ease-out 100ms;

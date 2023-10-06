@@ -36,6 +36,7 @@ const GrowthPartnerWrapper = styled.div`
         object-fit: cover;
         ${media.sm`
           height: 400px;
+          margin-top: 20px;
         `}
         ${media.xs`
           height: 290px;
@@ -80,7 +81,7 @@ const GrowthPartnerWrapper = styled.div`
       display: flex;
       align-items: center;
       ${media.md`
-        padding-bottom: 25px;
+        padding-bottom: 12px;
       `}
       .content{
         max-width: 573px;

@@ -25,8 +25,14 @@ const WhatWeDoWrapper = styled.div`
     margin-top: 58px;
     .service {
       margin-bottom: 73px;
+      img{
+        max-width: 60px;
+      }
       .do-title {
         margin-left: 40px;
+        ${media.sm `
+          margin-left: 30px;
+        `}
         h4{
           margin-bottom:6px;
         }
