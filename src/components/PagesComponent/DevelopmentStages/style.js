@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StagesWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundColor};
-  padding: 96px 0;
+  padding: 96px 0 90px;
   @media screen and (max-width: 767px) {
     padding-bottom: 32px;
   }
@@ -10,7 +10,7 @@ const StagesWrapper = styled.div`
     text-align: center;
     max-width: 811px;
     margin: 0 auto;
-    margin-bottom: 72px;
+    margin-bottom: 76px;
     @media screen and (max-width: 767px) {
       margin-bottom: 32px;
     }
@@ -18,7 +18,8 @@ const StagesWrapper = styled.div`
       color: ${({ theme }) => theme.colors.primaryColor};
       text-align: center;
       font-weight: 700;
-      margin-bottom: 24px;
+    line-height: 52px;
+      margin-bottom: 28px;
     }
     p {
       color: ${({ theme }) => theme.colors.textMedium};
@@ -42,6 +43,9 @@ const StagesWrapper = styled.div`
       font-weight: 400;
       line-height: 32px;
       position: relative;
+      &:last-child{
+        margin-bottom: 0;
+      }
       @media screen and (max-width: 1199px) {
         font-size: 16px;
         line-height: 24px;

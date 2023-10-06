@@ -4,6 +4,16 @@ const CollpaseWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   margin-bottom: 19px;
   padding-bottom: 8px;
+  &:last-child{
+    margin-bottom: -2px;
+  }
+  &:has(.show) {
+    .collpase-select {
+      .title {
+        color: ${({ theme }) => theme.colors.primaryColor};
+      }
+    }
+  }
   .collpase-select {
     display: flex;
     justify-content: space-between;
