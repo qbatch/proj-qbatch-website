@@ -5,6 +5,7 @@ const StagesWrapper = styled.div`
   padding: 96px 0 90px;
   @media screen and (max-width: 767px) {
     padding-bottom: 32px;
+    padding-top:60px;
   }
   .stages-header {
     text-align: center;
@@ -18,7 +19,6 @@ const StagesWrapper = styled.div`
       color: ${({ theme }) => theme.colors.primaryColor};
       text-align: center;
       font-weight: 700;
-    line-height: 52px;
       margin-bottom: 28px;
     }
     p {
@@ -97,6 +97,12 @@ const StagesWrapper = styled.div`
         }
       }
     }
+  }
+  &.sticky-wrapper {
+    position: sticky;
+    top: 60px;
+    width: 100%;
+    overflow: hidden;
   }
   .slider-section {
     .slider-item {

@@ -135,5 +135,8 @@ const GlobalStyles = createGlobalStyle`
     .fs-24{
       font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
     }
+    .scrollmagic-pin-spacer{
+      background-color: ${({ theme }) => theme.colors.backgroundColor};
+    }
 `;
 export default GlobalStyles;
