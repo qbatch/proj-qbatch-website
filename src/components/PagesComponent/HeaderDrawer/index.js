@@ -25,7 +25,7 @@ const servicesItems = [
   },
   {
     menu: "CTO as a Service",
-    to: "/",
+    to: "/ctoService",
   },
   {
     menu: "Product Design & Development",

@@ -103,17 +103,19 @@ const ButtonWrapper = styled(Button)`
     }
   }
   &.secondary-btn {
-      color:${({ theme }) => theme.colors.whiteColor};
+    color: ${({ theme }) => theme.colors.whiteColor};
+    .button-icon {
+      border-color: ${({ theme }) => theme.colors.dangerColor};
+      svg {
+        fill: ${({ theme }) => theme.colors.primaryColor};
+    }
+    }
+    &:hover {
       .button-icon {
-        border-color: ${({ theme }) => theme.colors.dangerColor};
-      }
-      &:hover {
-        .button-icon {
-          border-color: ${({ theme }) => theme.colors.primaryColor};
-        }
+        border-color: ${({ theme }) => theme.colors.primaryColor};
       }
     }
-  
+  }
 `;
 
 export default ButtonWrapper;
