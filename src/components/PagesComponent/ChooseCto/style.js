@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const ChooseCtoWrapper = styled.div`
   padding: 96px 0 94px;
+  ${media.sm`
+     padding: 40px 0px;
+  `}
   h3 {
     letter-spacing: 0.3px;
     margin-bottom: 24px;
@@ -10,6 +13,9 @@ const ChooseCtoWrapper = styled.div`
   h2 {
     max-width: 550px;
     line-height: 52px;
+    ${media.sm`
+        line-height: 32px;
+      `}
   }
   p {
     margin-top: 18px;

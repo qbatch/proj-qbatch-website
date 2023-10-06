@@ -3,10 +3,17 @@ import { media } from "../../../theme/media-mixins";
 
 const CtoServiceWrapper = styled.div`
  padding: 96px 0;
+ ${media.sm`
+     padding: 40px 0px;
+  `}
  h2{
   text-align: center;
   margin-bottom: 70px;
   line-height: 52px;
+  ${media.sm`
+        line-height: 32px;
+        margin-right: 0;
+      `}
  }
  .cto-service{
   display: flex;
