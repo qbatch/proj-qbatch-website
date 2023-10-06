@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Container, Row } from "react-bootstrap";
 import StagesWrapper from "./style";
+import { Controller, Scene } from 'react-scrollmagic';
 import { sliderItems } from "../../../constants";
 
 const DevelopmentStages = () => {
@@ -20,13 +21,13 @@ const DevelopmentStages = () => {
     vertical: true,
     adaptiveHeight: true,
     responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
+      },
     ],
     beforeChange: (current, next) => {
       setActiveIndex(next);
@@ -75,15 +76,21 @@ const DevelopmentStages = () => {
   }, [activeIndex]);
 
   return (
-    <StagesWrapper className="stage-slider-main">
-      <div className="stages-header">
-        <h2>Stuck at any of these development stages?  We can help.</h2>
-        <p>
-          Optimize your idea at each step with our technological prowess and
-          business-critical insight.
-        </p>
-      </div>
-      <Container>
+    <Controller>
+     <Scene
+          triggerHook="onLeave"
+          duration={600}
+          pin
+        >
+    <StagesWrapper>
+      <Container className="stage-slider-main">
+        <div className="stages-header">
+          <h2>Stuck at any of these development stages?  We can help.</h2>
+          <p>
+            Optimize your idea at each step with our technological prowess and
+            business-critical insight.
+          </p>
+        </div>
         <div className="slider-section">
           <Row>
             <Col lg={4} className="fixed-slider-column">
@@ -109,7 +116,7 @@ const DevelopmentStages = () => {
                   <div key={index} className="slider-item">
                     <Row>
                       <Col lg={5} md={5}>
-                      <div className="title title-responsive">
+                        <div className="title title-responsive">
                           <h3>{item.title}</h3>
                         </div>
                         <img src={item.image} alt="project" />
@@ -136,6 +143,8 @@ const DevelopmentStages = () => {
         </div>
       </Container>
     </StagesWrapper>
+    </Scene>
+  </Controller>
   );
 };
 
