@@ -14,8 +14,9 @@ const DevelopmentStages = () => {
   const scrollToSectionStart = () => {
     if (scrollRef.current) {
       const sectionTop = scrollRef.current.offsetTop;
+      const sectionTopCalc = sectionTop - 80;
       window.scrollTo({
-        top: sectionTop,
+        top: sectionTopCalc,
         behavior: "smooth",
       });
     }
@@ -59,19 +60,23 @@ const DevelopmentStages = () => {
           e.preventDefault();
           sliderRef.current.slickNext();
           scrollToSectionStart();
+          document.getElementById('scene-trigger').classList.add('section-sticky');
         } else {
           // Enable window scroll when at the last slide
           document.body.style.overflow = "auto";
+          document.getElementById('scene-trigger').classList.remove('section-sticky');
         }
       } else if (e.deltaY < 0) {
         // Scrolling up
         if (isAtFirstSlide) {
           // Enable window scroll when at the first slide and scrolling up
           document.body.style.overflow = "auto";
+          document.getElementById('scene-trigger').classList.remove('section-sticky');
         } else {
           e.preventDefault();
           sliderRef.current.slickPrev();
           scrollToSectionStart();
+          document.getElementById('scene-trigger').classList.add('section-sticky');
         }
       }
     };
