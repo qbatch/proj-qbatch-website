@@ -3,10 +3,6 @@ import styled from "styled-components";
 const StagesWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundColor};
   padding: 96px 0 90px;
-  &.section-sticky{
-    /* position:sticky;
-    top:80px;  */
-  }
   @media screen and (max-width: 767px) {
     padding-bottom: 32px;
     padding-top:60px;
