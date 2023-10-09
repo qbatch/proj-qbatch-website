@@ -92,7 +92,7 @@ const Index = () => {
     <>
     <Container>
       <FaqWrapper>
-        <h2 className="color-primary text-center">FAQs</h2>
+        <h2 className="color-primary text-center">Frequently Asked Questions</h2>
         <div className="faq-section">
           {frequentquestion.map((faq, index) => {
             return (
