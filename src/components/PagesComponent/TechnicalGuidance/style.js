@@ -35,6 +35,7 @@ const TechnicalGuidanceWrapper = styled.div`
     ${media.sm`
       padding: 60px 40px 0 40px;
       flex-direction: column;
+      transform: translateX(0) !important;
     `}
     ${media.xs`
       padding: 60px 20px 0 20px;
