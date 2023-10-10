@@ -16,6 +16,7 @@ const FaqWrapper = styled.div`
   .faq-content {
     color: ${({ theme }) => theme.colors.disableColor};
     font-size: 14px;
+    padding-bottom: 20px;
     span {
       display: block;
       &:first-child {
