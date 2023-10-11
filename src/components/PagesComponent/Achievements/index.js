@@ -18,14 +18,14 @@ const Index = ({ page }) => {
     <AchievementsWrapper>
       <div className="achievements-main">
         <Container className="achievements-inner-wrapper">
-          <h1 className="heading">Achievements Through The Years...</h1>
+          <h2 className="heading text-h1">Achievements Through The Years...</h2>
           <Row>
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">
-                <h1 className={`${pageNumber &&  "heading" }`}>
+                <span className={`${pageNumber &&  "heading text-h1 fw-bold" }`}>
                   <CountUp end={data.count} duration={3} />
                   {data.symbol && <span className="color-danger fw-light ms-2">{data.symbol}</span>}
-                </h1>
+                </span>
                 <p>{data.desc}</p>
               </Col>
             ))}

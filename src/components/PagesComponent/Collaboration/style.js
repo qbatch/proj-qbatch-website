@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const CollaborationWrapper = styled.div`
-  padding: 96px 0;
+  padding: 120px 0;
+  .heading{
+    margin-bottom: 24px;
+  }
   ${media.sm`
       padding:40px 0;
   `}
@@ -32,6 +35,9 @@ const CollaborationWrapper = styled.div`
         position: relative;
         padding-top: 32px;
         margin-bottom: 33px;
+        &:last-child{
+          margin-bottom: 10px;
+        }
         ${media.sm`
         gap:10px;
         padding-top: 16px;
@@ -77,6 +83,7 @@ const CollaborationWrapper = styled.div`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
           line-height: 40px;
           letter-spacing: 0.4px;
+          text-transform: inherit;
           ${media.sm`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
           line-height:28px;
@@ -90,7 +97,7 @@ const CollaborationWrapper = styled.div`
         p {
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
           line-height: 24px;
-          max-width: 588px;
+          max-width: 585px;
           margin-bottom: 0;
           ${media.xs`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeXs}; 

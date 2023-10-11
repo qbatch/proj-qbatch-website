@@ -16,7 +16,7 @@ const Index = () => {
       <Container>
         <div className="base-space">
           <div className="d-flex flex-column align-items-center text-center section-heading">
-            <h1>What can we do for you?</h1>
+            <h2 className="text-h1 heading">What can we do for you?</h2>
             <p>
               Gain an unfair advantage over your competitors with our goal-oriented approach, mandatory quality audits,
               and transparent processes from start to end. 
@@ -37,8 +37,8 @@ const Index = () => {
                           <img src={data.icon} />
                         </div>
                         <div className="do-title">
-                          <h4>{data.title}</h4>
-                          <span>{data.desc}</span>
+                          <h3 className="text-h4 heading">{data.title}</h3>
+                          <p className="paragraph">{data.desc}</p>
                         </div>
                       </div>
                     )}

@@ -15,14 +15,13 @@ const Index = () => (
       <Row>
         <Col lg={6} md={12} sm={12} xs={12}>
           <div className="title-portion">
-            <h4 className="hire">Hire</h4>
-            <h1 className="add-bottom-space">Dedicated Developers </h1>
+            <h1 className="add-bottom-space"><span className="hire text-h4">Hire </span>Dedicated Developers </h1>
             <h2 className="for-furture fw-normal">
               for a future <span className="you-deserve fw-bold"> You Deserve!</span>
             </h2>
             <p className="paragraph">
               200+ enterprises have already garnered great financial results and market outreach with our time-tested
-              development flow, error-free code quality, and on- time project delivery.
+              development flow, error-free code quality, and on-time project delivery.
             </p>
             <Button text="Let’s Start a Project" className="mx-lg-0 mx-auto" />
           </div>
@@ -35,9 +34,9 @@ const Index = () => (
       </Row>
       <div className="text-center add-space">
         {homeTiles.map((value, i) => (
-          <h4 className="divider-heading" key={i}>
+          <h3 className="divider-heading text-h4" key={i}>
             {value}
-          </h4>
+          </h3>
         ))}
       </div>
     </Container>

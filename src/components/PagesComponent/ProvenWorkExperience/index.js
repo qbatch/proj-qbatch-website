@@ -79,8 +79,8 @@ const Index = () => {
       <Container>
         <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
           <div>
-            <h1>Proven Work Experience</h1>
-            <p>
+            <h2 className="heading text-h1">Proven Work Experience</h2>
+            <p className="paragraph">
               Innovators from across the industry have trusted Qbatch to build
               high-impact products.
             </p>

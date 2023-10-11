@@ -108,7 +108,7 @@ const Index = () => {
             </Col>
             <Col md={4}>
               <div className="footer-email">
-                <h4>We’re excited to work together!</h4>
+                <span className="text-h4 fw-bold">We’re excited to work together!</span>
                 <span>Need guidance on a revamp or a new project launch?</span>
                 <div className="email-input">
                   <img src="/email-address-icon.svg" alt="email" />

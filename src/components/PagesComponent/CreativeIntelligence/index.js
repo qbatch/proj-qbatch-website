@@ -17,8 +17,8 @@ const Index = () => {
               <QuoteIcon />
             </div>
             <div className="creative-descriptiont">
-              <h4>Our Mantra</h4>
-              <h1>Creativity is Intelligence Having Fun. </h1>
+              
+              <h2 className="text-h1"><span className="text-h4">Our Mantra </span>Creativity is Intelligence Having Fun. </h2>
             </div>
           </div>
           <div className="signatures">

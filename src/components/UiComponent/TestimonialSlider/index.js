@@ -107,7 +107,7 @@ const Index = () => {
               <div className="testimonial-title" key={ind}>
                 <ProjectIcon />
                 <div className="inner-text">
-                  <h4>{item.title}</h4>
+                  <h3 className="text-h4 mb-0">{item.title}</h3>
                   <p>{item.subtitle}</p>
                 </div>
               </div>

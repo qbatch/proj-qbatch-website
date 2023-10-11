@@ -15,7 +15,7 @@ position: relative;
   background: linear-gradient(180deg, rgba(246, 247, 250, 0.70) 0%, rgba(246, 247, 250, 0.60) 100%);
 }
   .awards-main {
-    padding: 96px 0;
+    padding: 120px 0;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
@@ -81,7 +81,7 @@ position: relative;
     }
     .btn-awards {
       text-align: left;
-      margin-top: -87px;
+      margin-top: -110px;
       position: relative;
       z-index: 2;
       ${media.md`

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const MakingIndustriesWrapper = styled.div`
-  padding: 97px 0 73px 0;
+  padding: 121px 0 120px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   background-image: url("/happily-making-bg.svg");
   background-size: cover;
@@ -16,7 +16,11 @@ const MakingIndustriesWrapper = styled.div`
     display: block;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(246, 247, 250, 0.7) 0%, rgba(246, 247, 250, 0.6) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(246, 247, 250, 0.7) 0%,
+      rgba(246, 247, 250, 0.6) 100%
+    );
   }
   .industries-inner-wrapper {
     position: relative;
@@ -25,7 +29,7 @@ const MakingIndustriesWrapper = styled.div`
   ${media.sm`
     padding: 40px 0;
   `}
-  h1 {
+  .heading {
     margin-bottom: 24px;
   }
   p {
@@ -36,9 +40,9 @@ const MakingIndustriesWrapper = styled.div`
   }
   .arrow-section {
     margin-top: 72px;
-    margin-bottom: 23px;
-    h4 {
+    h3 {
       margin-top: 4px;
+      text-transform: inherit;
     }
     .arrow-box {
       width: 34px;
@@ -66,6 +70,10 @@ const MakingIndustriesWrapper = styled.div`
     .arrow-box-section {
       border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
       margin-bottom: 23px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 `;

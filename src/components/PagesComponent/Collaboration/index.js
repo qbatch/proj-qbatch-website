@@ -35,7 +35,7 @@ const Index = () => {
       <Container>
         <div className="collaboration-inn">
           <div className="section-heading">
-            <h1>Collaboration Models For Everlasting Partnerships</h1>
+            <h2 className="heading text-h1">Collaboration Models For Everlasting Partnerships</h2>
             <p>
               Our unique "Happy Paths" approach is a predictive and transparent way to implement your idea. Choose what
               suits you best
@@ -50,7 +50,7 @@ const Index = () => {
                       <list.img />
                     </div>
                     <div>
-                      <h4 className="title">{list.title}</h4>
+                      <h3 className="title text-h4">{list.title}</h3>
                       <p>{list.description}</p>
                     </div>
                   </div>

@@ -3,20 +3,22 @@ import { media } from "../../../theme/media-mixins";
 
 const ProblumSolvingWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
-  padding: 167px 0 155px;
+  padding: 165px 0 148px;
   overflow: hidden;
   ${media.md`
    padding: 100px 0;
   `}
 
-  h2 {
+  .quote {
     color: ${({ theme }) => theme.colors.dividerColor};
     font-weight: 400;
     line-height: 52px;
     position: relative;
     z-index: 2;
+    letter-spacing: 0.4px;
     b {
       color: ${({ theme }) => theme.colors.whiteColor};
+    letter-spacing: 0;
     }
   }
   ${media.sm`
@@ -32,6 +34,7 @@ const ProblumSolvingWrapper = styled.div`
     margin-left: 154px;
     width: 163px;
     height: 163px;
+    margin-bottom: 20px;
     ${media.md`
        margin: auto;
     `}
@@ -51,8 +54,9 @@ const ProblumSolvingWrapper = styled.div`
     width: 163px;
     height: 163px;
     border-radius: 50%;
-    margin-top: 20px;
     ${media.md`
+
+    margin-top: 20px;
        margin-left: 0;
     `}
 

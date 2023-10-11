@@ -3,17 +3,21 @@ import { media } from "../../../theme/media-mixins";
 
 const QbatchMakingWrapper = styled.div`
   .container-padding {
-    padding: 96px 0 41px;
+    padding: 120px 0;
     ${media.sm`
       padding: 40px 0 8px;
     `}
   }
   .section-heading {
-    margin-bottom: 74px;
+    margin-bottom: 42px;
+    p{
+      max-width: 450px;
+    margin: auto;
+    }
     ${media.xs`
       margin-bottom: 40px;
     `}
-    h1 {
+    .heading {
       margin-bottom: 24px;
     }
     p {
@@ -30,6 +34,9 @@ const QbatchMakingWrapper = styled.div`
     .challenges-box {
       margin-bottom: 40px;
       align-items: center;
+      &:last-child{
+        margin-bottom: 0;
+      }
       p {
         ${media.xs`
           font-size: 12px;
