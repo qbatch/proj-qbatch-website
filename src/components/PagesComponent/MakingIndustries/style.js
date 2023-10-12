@@ -37,12 +37,14 @@ const MakingIndustriesWrapper = styled.div`
     line-height: 32px;
     max-width: 771px;
     margin: 0 auto;
+    letter-spacing: 0.19px;
   }
   .arrow-section {
     margin-top: 72px;
     h3 {
       margin-top: 4px;
       text-transform: inherit;
+      letter-spacing: 0;
     }
     .arrow-box {
       width: 34px;

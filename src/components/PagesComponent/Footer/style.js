@@ -7,6 +7,7 @@ const FooterWrapper = styled.div`
   li {
     color: ${({ theme }) => theme.colors.bodyLight};
     line-height: 24px;
+    letter-spacing: 0.14px;
     ${media.xs`
      font-size: 14px;
     `}
@@ -28,7 +29,7 @@ const FooterWrapper = styled.div`
         display: flex;
         align-items: flex-start;
         gap: 12px;
-        margin-bottom: 8px;
+        margin-bottom: 9px;
         img {
           margin-top: 4px;
         }
@@ -40,6 +41,7 @@ const FooterWrapper = styled.div`
         line-height: 32px;
         display: block;
         padding-bottom: 8px;
+        letter-spacing: 0;
       }
       .email-input {
         padding: 39px 0 9px;
@@ -89,6 +91,7 @@ const FooterWrapper = styled.div`
         text-decoration: none;
         transition: color 0.5s ease-out;
         position: relative;
+        letter-spacing: 0.14px;
         cursor: pointer;
           &::before {
           content: "";
@@ -114,7 +117,8 @@ const FooterWrapper = styled.div`
       padding-top: 0;
       display: flex;
       flex-wrap: wrap;
-      gap: 64px;
+      gap: 58px;
+    margin-right: 4px;
       ${media.lg`
         gap: 30px;
       `}

@@ -14,6 +14,7 @@ const Input = styled(Form)`
     padding-left: 0;
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     height: ${(props) => (props.height ? `${props.height}` : "65px")};
+    letter-spacing: 0.19px;
     &::placeholder {
       color: ${({ theme }) => theme.colors.bodyLight};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};

@@ -10,6 +10,9 @@ const StartProjectWrapper = styled.div`
     margin: 1px 0 29px -1px;
     text-transform: inherit;
   }
+  .subtitle{
+    letter-spacing: 0.19px;
+  }
   .mt-40 {
     margin-top: 40px;
   }
@@ -18,7 +21,7 @@ const StartProjectWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   }
   .project-form {
-    margin-top: 40px;
+    margin-top: 38px;
     &:has(.show) {
     .collpase-select {
       .title {
@@ -37,10 +40,11 @@ const StartProjectWrapper = styled.div`
     font-weight:400;
     font-size: 20px;
     line-height: 32px;
+    letter-spacing: 0.14px;
     }
   }
   .testimonials {
-    padding-top: 158px;
+    padding-top: 156px;
     ${media.sm`
       padding-top: 40px;
     `}

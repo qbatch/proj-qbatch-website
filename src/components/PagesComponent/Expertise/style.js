@@ -23,8 +23,8 @@ const ExpertiseWrapper = styled.section`
   }
   .skill-section {
     position: relative;
-    padding-top: 16px;
-    margin-bottom: 35px;
+    padding-top: 18px;
+    margin-bottom: 33px;
     svg {
       max-width: none;
     }
