@@ -5,9 +5,10 @@ export const useSiteMetadata = () => {
     query {
       site {
         siteMetadata {
+          robots
           title
           description
-          twitterUsername
+          keywords
           image
           siteUrl
         }
