@@ -23,7 +23,7 @@ function Example(props) {
     <CollpaseWrapper faqSection={faqSection}>
       <>
         <div className="collpase-select d-flex justify-content-between">
-          <h4 className="title">{title}</h4>
+          <span className="title">{title}</span>
 
           {open ? openIcon : closeIcon}
         </div>

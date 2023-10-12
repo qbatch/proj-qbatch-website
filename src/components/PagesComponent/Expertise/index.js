@@ -55,7 +55,7 @@ const Index = () => {
         <div className="base-space">
           <Row>
             <Col lg={5} md={12} sm={12} xs={12}>
-              <h1 className="color-primary mb-5 heading">Expertise to ace your next project</h1>
+              <h2 className="color-primary mb-5 heading text-h1">Expertise to ace your next project</h2>
               <div className="pt-lg-4 pb-lg-0 pb-5">
                 <Button text="Explore More" />
               </div>
@@ -69,7 +69,7 @@ const Index = () => {
                         <list.img />
                       </div>
                       <div className="w-100">
-                        <h4 className="title">{list.title}</h4>
+                        <h3 className="title text-h4">{list.title}</h3>
                         <div className="badges-gap d-flex flex-wrap">
                           {list.badge.map((badge) => (
                             <span className="skill-badge" key={badge}>

@@ -319,7 +319,7 @@ const Index = (props) => {
             <Row>
               <Col md={6}>
                 <div className="drawer-email">
-                  <h3>We’re excited to work together!</h3>
+                  <span className="text-h3">We’re excited to work together!</span>
                   <span>
                     Need guidance on a revamp or a new project launch?
                   </span>

@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const StartProjectWrapper = styled.div`
-  padding: 96px 0;
+  padding: 120px 0;
   ${media.sm`
       padding: 40px 0;
     `}
   h2 {
     margin: 1px 0 29px -1px;
+    text-transform: inherit;
   }
   .mt-40 {
     margin-top: 40px;
@@ -17,7 +18,7 @@ const StartProjectWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   }
   .project-form {
-    margin-top: 20px;
+    margin-top: 40px;
     &:has(.show) {
     .collpase-select {
       .title {
@@ -39,7 +40,7 @@ const StartProjectWrapper = styled.div`
     }
   }
   .testimonials {
-    padding-top: 138px;
+    padding-top: 158px;
     ${media.sm`
       padding-top: 40px;
     `}

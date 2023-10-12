@@ -15,7 +15,7 @@ position:relative;
   background: linear-gradient(180deg, rgba(246, 247, 250, 0.70) 0%, rgba(246, 247, 250, 0.60) 100%);
 }
   .achievements-main {
-    padding: 96px 0;
+    padding: 120px 0;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-image: url("/achievements-bg.svg");
@@ -43,7 +43,7 @@ position:relative;
       }
     }
     .heading {
-      margin-bottom: 71px;
+      margin-bottom: 94px;
     }
     
     .achievements-col {
@@ -69,7 +69,6 @@ position:relative;
       .heading {
         font-size: ${({ theme }) => theme.fonts.baseFontXl};
         color: ${({ theme }) => theme.colors.bodyTextVariant};
-        margin-bottom: 16px;
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};
         `}
@@ -79,6 +78,7 @@ position:relative;
       }
       p {
         margin-bottom: 0;
+        margin-top: 14px;
         line-height: 32px;
         white-space: pre-line;
         ${media.lg`

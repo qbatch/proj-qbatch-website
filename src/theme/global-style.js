@@ -25,21 +25,23 @@ const GlobalStyles = createGlobalStyle`
         padding:0;
         list-style:none;
       }
-    h1{
+    h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH1};
     }
-    h2{
+    h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
     }
-    h3{
+    h3, .text-h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3}
     }
-    h4{
-        font-size:${({ theme }) => theme.fonts.baseFontSizeLg};     
+    h4, .text-h4{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
+        letter-spacing : 0.14px ;
     }
     p{
        font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
-       color: ${({ theme }) => theme.colors.textMedium};    
+       color: ${({ theme }) => theme.colors.textMedium};   
+       letter-spacing : 0.14px ; 
     }
     label,caption{
         font-size:${({ theme }) => theme.fonts.baseFontSize};      

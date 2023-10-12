@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const DedicatedDeveloperWrapper = styled.section`
+margin-bottom: 98px;
   .image-portion {
-    padding-top: 94px;
+    padding-top: 96px;
     padding-right: 12px;
     ${media.md`
      display: none;
@@ -42,6 +43,8 @@ const DedicatedDeveloperWrapper = styled.section`
   .for-furture {
     margin-right: -4px;
     color: ${({ theme }) => theme.colors.textMedium};
+    text-transform: lowercase;
+    letter-spacing: 0.3px;
     ${media.sm`
         flex-direction: column;
     `}
@@ -51,6 +54,7 @@ const DedicatedDeveloperWrapper = styled.section`
     white-space: nowrap;
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-left: -4px;
+    text-transform: capitalize;
     ${media.sm`
         margin-left: 0;
     `}
@@ -85,8 +89,8 @@ const DedicatedDeveloperWrapper = styled.section`
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     margin-top: 35px;
     line-height: 24px;
-    margin-bottom: 50px;
-    max-width: 557px;
+    margin-bottom: 74px;
+    max-width: 530px;
     ${media.md`
       margin-left: auto;
       margin-right: auto;
@@ -99,7 +103,7 @@ const DedicatedDeveloperWrapper = styled.section`
   .add-space {
     display: flex;
     justify-content: center;
-    margin-top: 37px;
+    margin-top: 15px;
     margin-bottom: 50px;
     ${media.md`
       margin-top: 0;

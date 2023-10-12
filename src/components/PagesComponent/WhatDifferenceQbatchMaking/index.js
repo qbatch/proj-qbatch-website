@@ -15,7 +15,7 @@ const Index = () => {
       <Container>
         <div className="container-padding">
           <div className="section-heading text-center">
-            <h1>What Difference is Qbatch Making?</h1>
+            <h2 className="text-h1 heading">What Difference is Qbatch Making?</h2>
             <p>We always present problems with tangible solutions.</p>
           </div>
           <Row>

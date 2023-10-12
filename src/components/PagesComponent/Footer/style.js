@@ -12,7 +12,7 @@ const FooterWrapper = styled.div`
     `}
   }
   .footer-section {
-    padding: 96px 0;
+    padding: 121px 0 95px;
     ${media.sm`
      padding: 40px 0;
     `}
@@ -35,9 +35,11 @@ const FooterWrapper = styled.div`
       }
     }
     .footer-email {
-      h4 {
+      .text-h4 {
         color: ${({ theme }) => theme.colors.whiteColor};
         line-height: 32px;
+        display: block;
+        padding-bottom: 8px;
       }
       .email-input {
         padding: 39px 0 9px;

@@ -42,12 +42,13 @@ const CreativeIntelligenceWrapper = styled.div`
         gap:20px;
     `}
     }
-    h4 {
+    span {
       font-weight: 400;
       letter-spacing: 0.48px;
       color: ${({ theme }) => theme.colors.dividerColor};
       position: relative;
       margin-bottom: 19px;
+      display: block;
       &:after {
         content: "";
         position: absolute;
@@ -58,7 +59,7 @@ const CreativeIntelligenceWrapper = styled.div`
         left: 0;
       }
     }
-    h1 {
+    h2 {
       color: ${({ theme }) => theme.colors.whiteColor};
       margin-bottom: 2px;
       ${media.lg`

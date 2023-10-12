@@ -171,7 +171,7 @@ const Index = () => {
           </Col>
           <Col lg={5} md={6} sm={12} xs={12}>
             <div className="testimonials">
-              <h4 className="color-primary testimonial-heading">Testimonials</h4>
+              <h2 className="color-primary testimonial-heading text-h4">Testimonials</h2>
               <p className="testimonial-paragraph">Here's what our clients have to say</p>
               <TestimonialCarousel/>
             </div>

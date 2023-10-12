@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const ExpertiseWrapper = styled.section`
   .base-space {
-    padding: 96px 0 84px;
+    padding: 120px 0 110px;
     ${media.sm`
       padding: 40px 0;
     `}
@@ -15,6 +15,8 @@ const ExpertiseWrapper = styled.section`
   }
   .heading {
     margin-right: 83px;
+    margin-bottom: 51px;
+    text-transform: inherit;
     ${media.md`
       margin-right: 32px;
     `}
@@ -47,6 +49,7 @@ const ExpertiseWrapper = styled.section`
     }
     .title {
       margin-bottom: 9px;
+      letter-spacing: 0;
     }
     .badges-gap {
       gap: 7px;

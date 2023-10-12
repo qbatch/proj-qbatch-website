@@ -27,6 +27,7 @@ const CollpaseWrapper = styled.div`
       max-width: ${(props, theme) => (props.faqSection ? `800px` : "")};
       padding-right: 20px;
       line-height: 32px;
+      margin-bottom: 8px;
     }
   }
   .collpase-content {

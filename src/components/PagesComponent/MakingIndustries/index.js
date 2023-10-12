@@ -51,9 +51,9 @@ const Index = () => {
   return (
     <MakingIndustriesWrapper>
       <Container className="industries-inner-wrapper">
-        <h1 className="text-center color-primary">
+        <h2 className="text-center color-primary text-h1 heading">
           Happily Making Industries People-First
-        </h1>
+        </h2>
         <p className="text-center">
           You are the industry leader of today and tomorrow. Let us help you
           become unstoppable with versatile expertise and wide-spectrum
@@ -66,7 +66,7 @@ const Index = () => {
                   <div className="d-flex justify-content-between arrow-box-section" key={i}>
                     <div className="d-flex gap-3 mb-3">
                       <title.img />
-                      <h4> {title.title}</h4>
+                      <h3 className="text-h4"> {title.title}</h3>
                     </div>
                     <div className="arrow-box">
                       <ArrowDown className="arrow-right" />

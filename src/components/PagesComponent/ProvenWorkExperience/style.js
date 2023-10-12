@@ -3,7 +3,14 @@ import { media } from "../../../theme/media-mixins";
 
 const ProvenExperienceWrapper = styled.div`
   .section-heading {
-    padding: 96px 0 46px;
+    padding: 120px 0 96px;
+    .heading{
+      padding-bottom: 24px;
+    }
+    .paragraph{
+      margin-bottom: 0;
+    }
+    
     ${media.sm`
       padding: 40px 0;
     `}
@@ -31,7 +38,7 @@ const ProvenExperienceWrapper = styled.div`
     }
   }
   .container-slider {
-    padding: 0 0 96px 74px;
+    padding: 0 0 120px 74px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     ${media.lg`
       padding: 0 0 96px 74px;
@@ -78,7 +85,9 @@ const ProvenExperienceWrapper = styled.div`
         width: 100%;
         border-radius: 24px;
         border-bottom-right-radius: 0;
+        height: 444px;
         ${media.md`
+          height: 375px;
           width: 100%;
         `}
       }
