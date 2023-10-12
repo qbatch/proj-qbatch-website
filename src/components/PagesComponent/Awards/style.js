@@ -73,6 +73,8 @@ position: relative;
       `}
         img {
           max-width: 100%;
+          width:84px;
+          height:84px ;
           ${media.xs`
            height: 65px;
           `}
