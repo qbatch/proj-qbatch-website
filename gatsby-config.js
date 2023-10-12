@@ -2,9 +2,8 @@ module.exports = {
   siteMetadata: {
     robots: `index, follow`,
     title: `Hire Skilled Dedicated Developers | Qbatch`,
-    description: `description" content="We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery."`,
+    description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
     keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
-    image: `/gatsby-icon.png`,
     siteUrl: `https://eclectic-palmier-c4e68a.netlify.app/`,
     httpEquiv: `en-us`,
   },
