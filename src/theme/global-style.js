@@ -69,6 +69,7 @@ const GlobalStyles = createGlobalStyle`
       }
       p {
         line-height: 32px;
+        letter-spacing: 0.19px;
       }
     }
 
@@ -94,44 +95,44 @@ const GlobalStyles = createGlobalStyle`
     }
 
     @media (max-width: 1200px) {
-      h1{
+      h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
       }
-      h2{
+      h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
       }
     }
     @media (max-width: 768px) {
-      h1{
+      h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
       }
-      h2{
+      h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
       }
-      h4{
+      h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};     
       }
       p{
        font-size:${({ theme }) => theme.fonts.baseFontSize};       
       }
-      h3{
+      h3, .text-h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}
       }
     }
     @media (max-width: 480px) {
-      h1{
+      h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
       }
-      h2{
+      h2 .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
       }
-      h4{
+      h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSize};     
       }
       p{
        font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};       
       }
-      h3{
+      h3, .text-h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm}
       }
     }

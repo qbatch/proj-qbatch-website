@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const CollaborationWrapper = styled.div`
-  padding: 120px 0;
-  .heading{
+  padding: 122px 0 120px;
+  .heading{ 
     margin-bottom: 24px;
   }
   ${media.sm`

@@ -12,7 +12,7 @@ const WhatWeDoWrapper = styled.div`
     .heading{
       text-transform: inherit;
     line-height: 84px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     }
     p {
       max-width: 820px;

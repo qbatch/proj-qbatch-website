@@ -40,7 +40,7 @@ const Index = () => {
         <Row className="justify-content-between">
           <Col lg={5} md={6} sm={12} xs={12}>
             <h2 className="color-primary">Start a Project</h2>
-            <p>Work with the most friendly yet focused developers!</p>
+            <p className="subtitle">Work with the most friendly yet focused developers!</p>
             <div className="project-form">
               <Input placeholder="Full Name" type="text" />
               <Input placeholder="Contact Number" type="text" />
