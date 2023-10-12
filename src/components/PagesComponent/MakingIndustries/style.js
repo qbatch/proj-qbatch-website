@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const MakingIndustriesWrapper = styled.div`
-  padding: 98px 0 72px 0;
+  padding: 97px 0 73px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   background-image: url("/happily-making-bg.svg");
   background-size: cover;
@@ -41,25 +41,25 @@ const MakingIndustriesWrapper = styled.div`
       margin-top: 4px;
     }
     .arrow-box {
-      width: 28px;
-      height: 28px;
+      width: 34px;
+      height: 34px;
       border-radius: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: background-color 0.5s ease-out 100ms;
+      transition: background-color 0.3s ease-out 100ms;
       svg {
-        transition: width 0.5s ease-out 100ms;
         color: ${({ theme }) => theme.colors.dangerColor};
         width: 24px;
         pointer-events: none;
+        transition: width 0.3s ease-out 100ms, color 0.3s ease-out 100ms;
       }
       &:hover {
         background-color: ${({ theme }) => theme.colors.primaryColor};
         svg {
-          width: 12px;
-          color: #ffffff;
+          width: 18px;
+          color: ${({ theme }) => theme.colors.whiteColor};
         }
       }
     }

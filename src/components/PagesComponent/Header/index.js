@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-
+import {Link} from 'gatsby';
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 import Drawer from "../HeaderDrawer";
+import { navigate } from 'gatsby';
 
 import Logo from "../../../assets/images/qbatch-logo.svg";
 
@@ -23,39 +24,44 @@ const headerMenu = [
   },
   {
     name: "Portfolio",
-    to: "/",
+    to: "/portfolio",
   },
   {
     name: "Blog",
-    to: "/",
+    to: "/blog",
   },
 ];
 
 const Index = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
+
   return (
     <>
       <HeaderWrapper>
         <Container>
           <div className="header-main">
             <div className="logo">
-              <Logo />
+              <Link to="/">
+                <Logo />
+              </Link>
             </div>
             <nav className="header-menu">
               <ul>
                 {headerMenu.map((menu, ind) => (
                   <li key={ind}>
-                    <span>{menu.name}</span>
+                    <Link to={menu.to} activeClassName="active">
+                      <span>{menu.name}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </nav>
             <div className="menu-items">
-              <Button text="Contact Us" className="header-btn" />
+              <Button onClick={() => navigate("/contact")} text="Contact Us" className="header-btn" />
               <div className="burger-icon" onClick={() => setOpenDrawer(true)}>
-              {[1, 2, 3].map((key) => (
-                <span key={key}></span>
-              ))}
+                {[1, 2, 3].map((key) => (
+                  <span key={key}></span>
+                ))}
               </div>
             </div>
           </div>

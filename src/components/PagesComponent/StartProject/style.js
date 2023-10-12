@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const StartProjectWrapper = styled.div`
-  padding: 97px 0 96px;
+  padding: 96px 0;
   ${media.sm`
       padding: 40px 0;
     `}
@@ -16,8 +16,33 @@ const StartProjectWrapper = styled.div`
     color: ${({ theme }) => theme.colors.bodyLight};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   }
+  .project-form {
+    margin-top: 20px;
+    &:has(.show) {
+    .collpase-select {
+      .title {
+        color: ${({ theme }) => theme.colors.bodyLight};
+      }
+    }
+  }
+
+  .collpase-select{
+      margin-top: 24px;
+    }
+    .collpase-content{
+      margin-top: 0;
+    }
+    .title{
+    font-weight:400;
+    font-size: 20px;
+    line-height: 32px;
+    }
+  }
   .testimonials {
     padding-top: 138px;
+    ${media.sm`
+      padding-top: 40px;
+    `}
     .testimonial-heading {
       margin-bottom: 29px;
     }
@@ -46,6 +71,9 @@ const StartProjectWrapper = styled.div`
     opacity: 1;
     visibility: visible;
     transition: 1s all ease-in;
+  }
+  .collapse-radio {
+    margin-bottom: 11px
   }
 `;
 export default StartProjectWrapper;

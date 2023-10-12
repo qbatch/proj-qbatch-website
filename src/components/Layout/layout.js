@@ -12,7 +12,6 @@ import Footer from '../PagesComponent/Footer'
 const Layout = ({children }) => {
 
   return (
-    <>
       <ThemeProvider theme={Theme}>
         <Header />
          <Helmet>
@@ -22,7 +21,6 @@ const Layout = ({children }) => {
         {children}
         <Footer />
       </ThemeProvider>
-    </>
   );
 }
 

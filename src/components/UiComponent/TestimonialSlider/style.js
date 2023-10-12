@@ -14,6 +14,12 @@ const ProvenExperienceWrapper = styled.div`
       ${media.md`
       padding-top: 200px !important;
       `}
+      ${media.sm`
+        height: 340px;
+      `}
+      ${media.xs`
+        height: 270px;
+      `}
     }
   }
   .testimonial-title {
@@ -63,7 +69,7 @@ const ProvenExperienceWrapper = styled.div`
     overflow: hidden;
   }
   .carousel-button-group {
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.colors.backgroundColor};  
     gap: 12px;
     position: absolute;
     top: 0;

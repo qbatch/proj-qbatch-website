@@ -14,7 +14,7 @@ const CollaborationWrapper = styled.div`
       text-align:center;
       ${media.sm`
       text-align:left;
-      margin-bottom:35px;
+      margin-bottom:32px;
       `}
       h1 {
         margin-bottom: 24px;
@@ -85,8 +85,6 @@ const CollaborationWrapper = styled.div`
         ${media.xs`
           font-size:18px;
           line-height:20px;
-          width: 125%;
-
           `}
         }
         p {
@@ -96,7 +94,7 @@ const CollaborationWrapper = styled.div`
           margin-bottom: 0;
           ${media.xs`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeXs}; 
-          line-height: 16px;
+          line-height: 20px;
           `}
         }
         .badges-gap {

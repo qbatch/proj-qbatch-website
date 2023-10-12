@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import {Link} from 'gatsby'
 
 import { NavDropdown, Row, Col, Dropdown } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
+import SocialIcons from "../../UiComponent/SocialIcons"
 
 import DrawerWrapper from "./style";
 
@@ -23,7 +25,7 @@ const servicesItems = [
   },
   {
     menu: "CTO as a Service",
-    to: "/",
+    to: "/ctoService",
   },
   {
     menu: "Product Design & Development",
@@ -219,47 +221,14 @@ const howWeWorkMenu = [
 const companyMenu = [
   {
     menu: "About Us",
-    to: "/",
+    to: "/about",
   },
   {
     menu: "Careers",
-    to: "/",
+    to: "",
   },
   {
     menu: "Events & PR",
-    to: "/",
-  },
-];
-
-const socialIcons = [
-  {
-    img: "/facebook-icon.svg",
-    className: "facebook-icon",
-    to: "/",
-  },
-  {
-    img: "/instagram-icon.svg",
-    className: "insta-icon",
-    to: "/",
-  },
-  {
-    img: "/linkedin-icon.svg",
-    className: "linkedin-icon",
-    to: "/",
-  },
-  {
-    img: "/twitter-icon.svg",
-    className: "twitter-icon",
-    to: "/",
-  },
-  {
-    img: "/behance-icon.svg",
-    className: "behance-icon",
-    to: "/",
-  },
-  {
-    img: "/youtube-icon.svg",
-    className: "youtube-icon",
     to: "/",
   },
 ];
@@ -288,9 +257,7 @@ const Index = (props) => {
               onClick={() => setActiveState("services")}
               show={activeState === "services"}
             >
-              {servicesItems.map((data, ind) => (
-                <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-              ))}
+            {servicesItems.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
             </NavDropdown>
             <NavDropdown
               title="Hire Developers"
@@ -302,34 +269,24 @@ const Index = (props) => {
                 <div className="d-flex inner-menu">
                   <div>
                     <Dropdown.Header>Frameworks</Dropdown.Header>
-                    {frameworksMenu.map((data, ind) => (
-                      <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                    ))}
+                      {frameworksMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
                   </div>
                   <div className="sub-menu2">
-                    {frameworksMenu2.map((data, ind) => (
-                      <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                    ))}
+                    {frameworksMenu2.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
                   </div>
                 </div>
                 <div className="d-flex inner-menu">
                   <div>
                     <Dropdown.Header>Trending</Dropdown.Header>
-                    {trendingMenu.map((data, ind) => (
-                      <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                    ))}
+                        {trendingMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
                   </div>
                   <div className="sub-menu2">
-                    {trendingMenu2.map((data, ind) => (
-                      <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                    ))}
+                    {trendingMenu2.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
                   </div>
                 </div>
                 <div>
                   <Dropdown.Header>DevOps</Dropdown.Header>
-                  {devOpsmenu.map((data, ind) => (
-                    <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-                  ))}
+                  {devOpsmenu.map((data, ind) => ( <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link> ))}
                 </div>
               </div>
             </NavDropdown>
@@ -339,9 +296,7 @@ const Index = (props) => {
               onClick={() => setActiveState("industries")}
               show={activeState === "industries"}
             >
-              {industriesMenu.map((data, ind) => (
-                <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-              ))}
+              {industriesMenu.map((data, ind) => ( <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link> ))}
             </NavDropdown>
             <NavDropdown
               title="How We Work"
@@ -349,9 +304,7 @@ const Index = (props) => {
               onClick={() => setActiveState("howWeWork")}
               show={activeState === "howWeWork"}
             >
-              {howWeWorkMenu.map((data, ind) => (
-                <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-              ))}
+              {howWeWorkMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
             </NavDropdown>
             <NavDropdown
               title="Company"
@@ -359,9 +312,7 @@ const Index = (props) => {
               onClick={() => setActiveState("company")}
               show={activeState === "company"}
             >
-              {companyMenu.map((data, ind) => (
-                <Dropdown.Item key={ind}>{data.menu}</Dropdown.Item>
-              ))}
+              {companyMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
             </NavDropdown>
           </div>
           <div className="bottom-content">
@@ -389,13 +340,7 @@ const Index = (props) => {
               <Col md={3}>
                 <div className="social-section">
                   <span className="follow-us">Follow Us at:</span>
-                  <div className="d-flex flex-wrap social-icons">
-                    {socialIcons.map((item, ind) => (
-                      <div className={item.className} key={ind}>
-                        <img src={item.img} alt={item.className} />
-                      </div>
-                    ))}
-                  </div>
+                  <SocialIcons />
                 </div>
               </Col>
             </Row>

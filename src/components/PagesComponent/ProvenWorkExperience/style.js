@@ -3,14 +3,13 @@ import { media } from "../../../theme/media-mixins";
 
 const ProvenExperienceWrapper = styled.div`
   .section-heading {
-    padding: 96px 0 43px;
+    padding: 96px 0 46px;
     ${media.sm`
-      padding: 40px 0 40px;
+      padding: 40px 0;
     `}
   }
   .carousel-padding {
-    padding-top: 30px;
-    padding-left: 131px;
+    padding-left: 153px;
     ${media.lg`
       padding-left: 51px;
     `}
@@ -32,10 +31,10 @@ const ProvenExperienceWrapper = styled.div`
     }
   }
   .container-slider {
-    padding: 0 0 96px 96px;
+    padding: 0 0 96px 74px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     ${media.lg`
-      padding: 0 0 96px 80px;
+      padding: 0 0 96px 74px;
     `}
     ${media.md`
       padding: 0 0 96px 60px;
@@ -64,24 +63,23 @@ const ProvenExperienceWrapper = styled.div`
     }
   }
   .projects-carousel {
-    padding-left: 108px;
     ${media.md`
-      padding-left: 12px;
       padding-top: 32px;
     `}
-    div {
+    .qb-carousel-item{
       padding-right: 144px;
       ${media.md`
         padding-right: 40px;
       `}
+    }
+    div {
       img {
         object-fit: cover;
-        min-width: 100%;
-        height: 378px;
+        width: 100%;
         border-radius: 24px;
         border-bottom-right-radius: 0;
         ${media.md`
-          min-width: 100%;
+          width: 100%;
         `}
       }
     }
@@ -111,6 +109,12 @@ const ProvenExperienceWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         font-weight: ${({ theme }) => theme.fontWeight.light};
       }
+    }
+  }
+  @media(min-width:1920px){
+    .section-slider {
+      max-width:1920px;
+      margin:0 auto;
     }
   }
 `;

@@ -12,6 +12,7 @@ const DrawerWrapper = styled.div`
   background-image: url("/drawer-bg.svg");
   background-size: cover;
   position: relative;
+  min-height: 100vh;
   .cross-icon {
     position: absolute;
     right: 40px;
@@ -19,7 +20,7 @@ const DrawerWrapper = styled.div`
     cursor: pointer;
   }
   .menu-main {
-    height: 57.3vh;
+    height: 478px;
     gap: 144px;
     .hire-developers-menu {
       gap: 73px;
@@ -49,6 +50,7 @@ const DrawerWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         color: ${({ theme }) => theme.colors.bodyLight};
         position: relative;
+        transition: color 0.5s ease-out;
 
         &::after {
           display: none;
@@ -102,11 +104,15 @@ const DrawerWrapper = styled.div`
       margin-bottom: 15px;
     }
     .dropdown-item {
-      color: ${({ theme }) => theme.colors.dividerColor};
       line-height: 24px;
       padding: 0;
       margin-bottom: 16px;
-      &:hover {
+      color: ${({ theme }) => theme.colors.dividerColor};
+      text-decoration:none;
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:active {
         outline: none;
         box-shadow: none;
         background: none;
@@ -168,16 +174,14 @@ const DrawerWrapper = styled.div`
           justify-content: center;
           img {
             max-width: none;
-            filter: invert(14%) sepia(93%) saturate(6280%) hue-rotate(352deg)
-              brightness(98%) contrast(90%);
+            filter: invert(14%) sepia(93%) saturate(6280%) hue-rotate(352deg) brightness(98%) contrast(90%);
           }
           &:hover {
             background-color: ${({ theme }) => theme.colors.whiteColor};
             img {
               width: 22px;
               height: 22px;
-              filter: invert(18%) sepia(100%) saturate(2276%) hue-rotate(196deg)
-                brightness(95%) contrast(102%);
+              filter: invert(18%) sepia(100%) saturate(2276%) hue-rotate(196deg) brightness(95%) contrast(102%);
             }
           }
         }
@@ -197,74 +201,18 @@ const DrawerWrapper = styled.div`
     }
     .social-section {
       margin-top: 11px;
+      ${media.sm`
+        margin-top: 24px;
+      `}
       .follow-us {
         color: ${({ theme }) => theme.colors.dividerColor};
         font-weight: ${({ theme }) => theme.fontWeight.bold};
+        margin-bottom: 18px;
+        display: block;
         ${media.xs`
         text-align: center;
         width: 100%;
       `}
-      }
-      .social-icons {
-        margin-top: 18px;
-        gap: 16px;
-        div {
-          cursor: pointer;
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          transition: background-color 0.5s ease-out;
-          img {
-            filter: invert(61%) sepia(8%) saturate(960%) hue-rotate(170deg)
-              brightness(90%) contrast(81%);
-            transition: filter 0.5s ease-out;
-            max-width: none;
-          }
-          &:hover {
-            img {
-              filter: invert(100%) sepia(33%) saturate(1%) hue-rotate(246deg)
-                brightness(104%) contrast(101%);
-            }
-          }
-        }
-        .facebook-icon {
-          &:hover {
-            background-color: rgba(53, 121, 234, 1);
-          }
-        }
-        .insta-icon {
-          transition: background 0.5s ease-out;
-          &:hover {
-            background: radial-gradient(
-              circle at 30% 107%,
-              #fdf497 0%,
-              #fdf497 5%,
-              #fd5949 45%,
-              #d6249f 60%,
-              #285aeb 90%
-            );
-          }
-        }
-        .linkedin-icon {
-          &:hover {
-            background-color: rgba(0, 122, 185, 1);
-          }
-        }
-        .twitter-icon {
-          &:hover {
-            background-color: rgba(0, 166, 222, 1);
-          }
-        }
-        .behance-icon {
-          &:hover {
-            background-color: rgba(65, 118, 250, 1);
-          }
-        }
-        .youtube-icon {
-          &:hover {
-            background-color: rgba(255, 0, 0, 1);
-          }
-        }
       }
     }
   }

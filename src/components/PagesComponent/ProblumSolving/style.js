@@ -8,12 +8,16 @@ const ProblumSolvingWrapper = styled.div`
   ${media.md`
    padding: 100px 0;
   `}
+
   h2 {
-    color: ${({ theme }) => theme.colors.whiteColor};
+    color: ${({ theme }) => theme.colors.dividerColor};
     font-weight: 400;
     line-height: 52px;
     position: relative;
     z-index: 2;
+    b {
+      color: ${({ theme }) => theme.colors.whiteColor};
+    }
   }
   ${media.sm`
         .box-center{
@@ -61,7 +65,7 @@ const ProblumSolvingWrapper = styled.div`
       max-width: 66vmin;
       transform-origin: center;
       width: 100%;
-      transition: transform 2s ease-out 100ms;
+      transition: transform 0.5s ease-out 100ms;
       pointer-events: none;
       text {
         font-size: 7px;
@@ -75,7 +79,7 @@ const ProblumSolvingWrapper = styled.div`
       position: absolute;
       top: 55px;
       left: 48px;
-      transition: transform 2s ease-out 100ms;
+      transition: transform 0.5s ease-out 100ms;
     }
     &:hover {
       background-color: ${({ theme }) => theme.colors.whiteColor};
@@ -84,10 +88,40 @@ const ProblumSolvingWrapper = styled.div`
         transform: rotateZ(82deg);
       }
       .red-arrow {
-        transform: rotate(-56deg);
+        transform: rotate(-45deg);
         filter: invert(18%) sepia(84%) saturate(2395%) hue-rotate(196deg) brightness(98%) contrast(101%);
       }
     }
+  }
+  &.contact-project-cost{
+    background-color: #F2F3F5;
+    padding: 188px 0;
+    ${media.md`
+   padding: 100px 0;
+  `}
+    .heading-break{
+    max-width:90%;
+    margin: 0;
+  }
+  .circle-bg {
+    margin-left: 145px;
+  }
+  .circle-box {
+    border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+    margin-top: 0;
+    .text-svg {
+      fill: ${({ theme }) => theme.colors.primaryColor};
+    }
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+      .text-svg {
+        fill: ${({ theme }) => theme.colors.whiteColor};
+      }
+      .red-arrow {
+        filter:none;
+      }
+    }
+  }
   }
 `;
 export default ProblumSolvingWrapper;

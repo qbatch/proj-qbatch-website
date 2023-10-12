@@ -13,7 +13,8 @@ const GlobalStyles = createGlobalStyle`
     }
     h1,h2,h3,h4,h5,h6{
         font-weight:700;
-        color:${({ theme }) => theme.colors.bodyTextVariant}
+        color:${({ theme }) => theme.colors.bodyTextVariant};
+        text-transform: capitalize;
     }
     a{
         color:${({ theme }) => theme.colors.primaryColor};
@@ -68,6 +69,21 @@ const GlobalStyles = createGlobalStyle`
         line-height: 32px;
       }
     }
+
+  .underline-heading{
+    color: ${({ theme }) => theme.colors.bodyText};
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 24px;
+      bottom: 0px;
+      background-color: #ED1C24;
+    }
+  }
     img,svg{
         max-width:100%;
     }
@@ -116,6 +132,12 @@ const GlobalStyles = createGlobalStyle`
       h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm}
       }
+    }
+    .fs-24{
+      font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
+    }
+    .scrollmagic-pin-spacer{
+      background-color: ${({ theme }) => theme.colors.backgroundColor};
     }
 `;
 export default GlobalStyles;
