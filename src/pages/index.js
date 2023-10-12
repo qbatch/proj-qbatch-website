@@ -40,6 +40,6 @@ const IndexPage = () => (
   </Layout>
 );
 
-export const Head = () => <SEO title="Home Page" />;
+export const Head = () => <SEO title="Hire Skilled Dedicated Developers | Qbatch" />
 
 export default IndexPage;
