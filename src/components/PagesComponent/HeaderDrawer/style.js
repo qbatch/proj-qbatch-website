@@ -109,6 +109,8 @@ const DrawerWrapper = styled.div`
       margin-bottom: 16px;
       color: ${({ theme }) => theme.colors.dividerColor};
       text-decoration:none;
+      animation: growDown 600ms ease-in-out forwards;
+      transform-origin: top center;
       &:hover,
       &:focus,
       &:focus-visible,
@@ -259,6 +261,17 @@ const DrawerWrapper = styled.div`
       }
     }
   }
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
 `;
 
 export default DrawerWrapper;

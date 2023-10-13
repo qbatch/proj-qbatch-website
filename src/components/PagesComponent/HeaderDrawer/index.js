@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-import {Link} from 'gatsby'
+import { Link } from "gatsby";
 
 import { NavDropdown, Row, Col, Dropdown } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
-import SocialIcons from "../../UiComponent/SocialIcons"
+import SocialIcons from "../../UiComponent/SocialIcons";
 
 import DrawerWrapper from "./style";
 
@@ -233,6 +233,51 @@ const companyMenu = [
   },
 ];
 
+const dropdownData = [
+  {
+    title: "Services",
+    state: "services",
+    menu: servicesItems,
+  },
+  {
+    title: "Hire Developers",
+    state: "hireDevelopers",
+    header: true,
+    subMenu: [
+      {
+        heading: "Frameworks",
+        menu1: frameworksMenu,
+        menu2: frameworksMenu2,
+      },
+      {
+        heading: "Trending",
+        menu1: trendingMenu,
+        menu2: trendingMenu2,
+      },
+      {
+        heading: "DevOps",
+        menu1: devOpsmenu,
+        menu2: [],
+      },
+    ],
+  },
+  {
+    title: "Industries",
+    state: "industries",
+    menu: industriesMenu,
+  },
+  {
+    title: "How We Work",
+    state: "howWeWork",
+    menu: howWeWorkMenu,
+  },
+  {
+    title: "Company",
+    state: "company",
+    menu: companyMenu,
+  },
+];
+
 const Index = (props) => {
   const { openDrawer, setOpenDrawer } = props;
 
@@ -251,75 +296,62 @@ const Index = (props) => {
             <img src="/drawer-cross.svg" alt="close" />
           </div>
           <div className="d-flex menu-main">
-            <NavDropdown
-              title="Services"
-              active={activeState === "services"}
-              onClick={() => setActiveState("services")}
-              show={activeState === "services"}
-            >
-            {servicesItems.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
-            </NavDropdown>
-            <NavDropdown
-              title="Hire Developers"
-              active={activeState === "hireDevelopers"}
-              onClick={() => setActiveState("hireDevelopers")}
-              show={activeState === "hireDevelopers"}
-            >
-              <div className="d-flex hire-developers-menu">
-                <div className="d-flex inner-menu">
-                  <div>
-                    <Dropdown.Header>Frameworks</Dropdown.Header>
-                      {frameworksMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
+            {dropdownData.map((item, ind) => (
+              <NavDropdown
+                title={item.title}
+                active={activeState === item.state}
+                onClick={() => setActiveState(item.state)}
+                show={activeState === item.state}
+                onMouseEnter={() => setActiveState(item.state)}
+                key={ind}
+              >
+                {!item.header ? (
+                  item.menu.map((data, ind) => (
+                    <Link to={data.to} className="dropdown-item" key={ind}>
+                      {data.menu}
+                    </Link>
+                  ))
+                ) : (
+                  <div className="d-flex hire-developers-menu">
+                    {item.subMenu.map((submenu, ind) => (
+                      <div className={"d-flex inner-menu"}>
+                        <div key={ind}>
+                          <Dropdown.Header>{submenu.heading}</Dropdown.Header>
+                          {submenu.menu1.map((data, ind) => (
+                            <Link
+                              to={data.to}
+                              className="dropdown-item"
+                              key={ind}
+                            >
+                              {data.menu}
+                            </Link>
+                          ))}
+                        </div>
+                        <div className="sub-menu2">
+                          {submenu.menu2.map((data, ind) => (
+                            <Link
+                              to={data.to}
+                              className="dropdown-item"
+                              key={ind}
+                            >
+                              {data.menu}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <div className="sub-menu2">
-                    {frameworksMenu2.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
-                  </div>
-                </div>
-                <div className="d-flex inner-menu">
-                  <div>
-                    <Dropdown.Header>Trending</Dropdown.Header>
-                        {trendingMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
-                  </div>
-                  <div className="sub-menu2">
-                    {trendingMenu2.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
-                  </div>
-                </div>
-                <div>
-                  <Dropdown.Header>DevOps</Dropdown.Header>
-                  {devOpsmenu.map((data, ind) => ( <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link> ))}
-                </div>
-              </div>
-            </NavDropdown>
-            <NavDropdown
-              title="Industries"
-              active={activeState === "industries"}
-              onClick={() => setActiveState("industries")}
-              show={activeState === "industries"}
-            >
-              {industriesMenu.map((data, ind) => ( <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link> ))}
-            </NavDropdown>
-            <NavDropdown
-              title="How We Work"
-              active={activeState === "howWeWork"}
-              onClick={() => setActiveState("howWeWork")}
-              show={activeState === "howWeWork"}
-            >
-              {howWeWorkMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
-            </NavDropdown>
-            <NavDropdown
-              title="Company"
-              active={activeState === "company"}
-              onClick={() => setActiveState("company")}
-              show={activeState === "company"}
-            >
-              {companyMenu.map((data, ind) => <Link to={data.to} className="dropdown-item" key={ind}>{data.menu}</Link>)}
-            </NavDropdown>
+                )}
+              </NavDropdown>
+            ))}
           </div>
           <div className="bottom-content">
             <Row>
               <Col md={6}>
                 <div className="drawer-email">
-                  <span className="text-h3 d-block fw-bold mb-2">We’re excited to work together!</span>
+                  <span className="text-h3 d-block fw-bold mb-2">
+                    We’re excited to work together!
+                  </span>
                   <span>
                     Need guidance on a revamp or a new project launch?
                   </span>

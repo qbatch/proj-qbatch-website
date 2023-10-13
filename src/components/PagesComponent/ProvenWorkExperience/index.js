@@ -20,21 +20,33 @@ const projectSlides = [
     projectImg:
       "/slider-image.png",
     title: "Ecom Circles",
+    logo: ProjectIcon,
+    category: "E-Commerce",
+    tags: ["Tech 1", "Tech 2", "Tech 3"]
   },
   {
     projectImg:
        "/slider-image.png",
     title: "Store Filter",
+    logo: ProjectIcon,
+    category: "E-Commerce",
+    tags: ["Tech 1", "Tech 2", "Tech 3"]
   },
   {
     projectImg:
         "/slider-image.png",
     title: "Sales Support",
+    logo: ProjectIcon,
+    category: "E-Commerce",
+    tags: ["Tech 1", "Tech 2", "Tech 3"]
   },
   {
     projectImg:
         "/slider-image.png",
     title: "Squid Plan",
+    logo: ProjectIcon,
+    category: "E-Commerce",
+    tags: ["Tech 1", "Tech 2", "Tech 3"]
   },
 ];
 
@@ -104,11 +116,11 @@ const Index = () => {
                 >
                   {projectSlides.map((item, ind) => (
                     <div className="project-title" key={ind}>
-                      <ProjectIcon />
+                      <img src={item.logo} alt="logo" />
                       <h3>{item.title}</h3>
-                      <span>E-Commerce</span>
+                      <span>{item.category}</span>
                       <div className="project-tags d-flex">
-                        {["Tech 1", "Tech 2", "Tech 3"].map((tag, ind) => (
+                        {item.tags.map((tag, ind) => (
                           <div key={ind}>{tag}</div>
                         ))}
                       </div>
