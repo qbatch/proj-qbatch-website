@@ -8,10 +8,8 @@ import { Row, Col } from "react-bootstrap";
 import Button from "../../../components/UiComponent/Button";
 import Container from "../../UiComponent/Container";
 
-import ProjectIcon from "../../../assets/images/icons/ecom-circle-icon.svg";
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
-
 
 import ProvenExperienceWrapper from "./style";
 
@@ -20,7 +18,7 @@ const projectSlides = [
     projectImg:
       "/slider-image.png",
     title: "Ecom Circles",
-    logo: ProjectIcon,
+    logo: "/ecom-circle-icon.svg",
     category: "E-Commerce",
     tags: ["Tech 1", "Tech 2", "Tech 3"]
   },
@@ -28,7 +26,7 @@ const projectSlides = [
     projectImg:
        "/slider-image.png",
     title: "Store Filter",
-    logo: ProjectIcon,
+    logo: "/ecom-circle-icon.svg",
     category: "E-Commerce",
     tags: ["Tech 1", "Tech 2", "Tech 3"]
   },
@@ -36,7 +34,7 @@ const projectSlides = [
     projectImg:
         "/slider-image.png",
     title: "Sales Support",
-    logo: ProjectIcon,
+    logo: "/ecom-circle-icon.svg",
     category: "E-Commerce",
     tags: ["Tech 1", "Tech 2", "Tech 3"]
   },
@@ -44,7 +42,7 @@ const projectSlides = [
     projectImg:
         "/slider-image.png",
     title: "Squid Plan",
-    logo: ProjectIcon,
+    logo: "/ecom-circle-icon.svg",
     category: "E-Commerce",
     tags: ["Tech 1", "Tech 2", "Tech 3"]
   },
