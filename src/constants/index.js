@@ -314,6 +314,36 @@ const sliderItems = [
   },
 ];
 
+const ecomSliderItems = [
+  {
+    image: "/slide-img.jpeg",
+    title: "Problem Analysis",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+  {
+    image: "/slide-img.jpeg",
+    title: "Software Automation Solution",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+  {
+    image: "/slide-img.jpeg",
+    title: "Installation",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+  {
+    image: "/slide-img.jpeg",
+    title: "Orchestration",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+  {
+    image: "/slide-img.jpeg",
+    title: "Full-Cycle Technical Support",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+];
+
+const ecomLogos = ["/blue-ware.svg","/ecom-circle-logo.svg","/north-ware.svg","/one-app.svg","/keurig-logo.svg","/sales-support-logo.svg"]
+
 export {
   homeTiles,
   CareersData,
@@ -327,4 +357,6 @@ export {
   data,
   stories,
   sliderItems,
+  ecomSliderItems,
+  ecomLogos
 };
