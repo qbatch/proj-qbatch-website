@@ -314,6 +314,97 @@ const sliderItems = [
   },
 ];
 
+const ecomSliderItems = [
+  {
+    image: "/slide-img.jpeg",
+    title: "Problem Analysis",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+  {
+    image: "/slide-img.jpeg",
+    title: "Software Automation Solution",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+  {
+    image: "/slide-img.jpeg",
+    title: "Installation",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+  {
+    image: "/slide-img.jpeg",
+    title: "Orchestration",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+  {
+    image: "/slide-img.jpeg",
+    title: "Full-Cycle Technical Support",
+    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+  },
+];
+const projects = [
+  {
+    img: '/blank-project.svg',
+    title: 'Custom E-commerce Software Development',
+    description:
+      'Build diverse e-commerce tools and SaaS products such as algorithm-based re-pricers, analyzers, extensions, and plug-ins suitable for your business-critical needs and sales growth. We’ve successfully developed 150+ custom software solutions globally.',
+  },
+  {
+    img: '/blank-project.svg',
+    title: '️️Workflow Automation',
+    description:
+      'Replace manual workflows with smart integrations and algorithms and accelerate fulfillment processes minus physical and logistic barriers. Qbatch’s e-commerce order fulfillment software solution is already powering 1000+ stores globally. Yours can be next!',
+  },
+  {
+    img: '/blank-project.svg',
+    title: '️️️Logistic Management',
+    description:
+      'Actively minimize delivery failures and detect status changes by getting a detailed view of onboard shipments with our automated shipping software solutions. Besides, we offer critical shipment identification that helps control the return ratio.',
+  },
+  {
+    img: '/blank-project.svg',
+    title: '️️️️Data Analysis and Reporting',
+    description:
+      'Easily extract data on top-selling and least-selling products, sales, profit/loss, finances, and inventory by integrating e-commerce sales analysis and reporting automation tools — avoiding unreliable sales information for unparalleled business growth',
+  },
+  {
+    img: '/blank-project.svg',
+    title: '️E-commerce Returns Management',
+    description:
+      'Mitigate risks of financial loss by quickly responding to lost/ damaged inventory, return requests, or fulfillment errors with our returns and refund automation software solution. Let’s control profitability and sustain your reputation as a trusted seller. ',
+  },
+  {
+    img: '/blank-project.svg',
+    title: '️️Inventory Management',
+    description:
+      'Sudden stockouts can annoy your customers and destroy your seller ratings. Qbatch’s automated inventory management helps you filter inventory, perform audits to reduce returns, and closely track bulk orders and stock movements. ',
+  },
+  {
+    img: '/blank-project.svg',
+    title: '️️️Warehouse Management Software (WMS)',
+    description:
+      'Eliminate time-consuming tasks such as manual data entry and analysis with our automated warehouse management system that ensures SKU-level traceability, web and mobile-based tracking, automatic product purchases, and stock-level maintenance.',
+  },
+    {
+    img: '/blank-project.svg',
+    title: '️️️️Marketing Campaigns and Optimization',
+    description:
+      'Automate audience segmentation, personalization, and decision-making based on behaviors and patterns to increase the likelihood of more conversions with our dynamic e-commerce marketing management software solution.',
+  },
+      {
+    img: '/blank-project.svg',
+    title: '️️️️Amazon SP-API /Advertising API Integration',
+    description:
+      'Experience smooth transformation from Amazon MWS to SP-API and effortlessly automate data for improved selling efficiency, better insights, and smarter decision-making. Let’s take advantage of intuitive APIs for uncompromised CX and scalability',
+  },
+        {
+    img: '/blank-project.svg',
+    title: '️️️️E-commerce Customer Service',
+    description:
+      'Mitigate risks of financial loss by quickly responding to lost/ damaged inventory, return requests, or fulfillment errors with our returns and refund automation software solution. Let’s control profitability and sustain your reputation as a trusted seller. ',
+  },
+]
+const ecomLogos = ["/blue-ware.svg","/ecom-circle-logo.svg","/north-ware.svg","/one-app.svg","/keurig-logo.svg","/sales-support-logo.svg"]
+
 export {
   homeTiles,
   CareersData,
@@ -327,4 +418,7 @@ export {
   data,
   stories,
   sliderItems,
+  ecomSliderItems,
+  ecomLogos,
+  projects
 };

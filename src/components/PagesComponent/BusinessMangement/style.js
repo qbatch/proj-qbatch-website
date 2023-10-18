@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins"
 const BusinessMangementWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 120px 0;
-  h2 {
+  .text-h2{
     color: ${({ theme }) => theme.colors.whiteColor};
     line-height: 52px;
     max-width: 828px;
@@ -24,6 +24,7 @@ const BusinessMangementWrapper = styled.div`
     .description {
       height: 0;
       opacity: 0;
+      max-width: 509px;
       transition: height 0.5s, opacity 0.5s;
     }
     &:hover {
@@ -32,6 +33,10 @@ const BusinessMangementWrapper = styled.div`
         opacity: 1;
       }
     }
+  }
+  .add-space{
+    margin-left: 27px;
+    margin-top: 75px;
   }
 `
 export default BusinessMangementWrapper;
