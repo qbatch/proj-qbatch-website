@@ -7,8 +7,10 @@ const BannerWrapper = styled.div`
   background-position: 100% 0;
   background-repeat: no-repeat;
   padding: 132px 0 98px 0;
+
   ${media.sm`
     padding: 40px 0;
+    background-position: bottom left;
   `}
   p{
   color: ${({ theme }) => theme.colors.whiteColor};
@@ -16,6 +18,11 @@ const BannerWrapper = styled.div`
   line-height:32px; 
   max-width: 929px;
   margin-top: 24px; 
+  }
+  .banner-headings{
+    ${media.md`
+      text-align: center;
+    `}
   }
   .banner-button{
     display: flex;
@@ -25,6 +32,13 @@ const BannerWrapper = styled.div`
           margin-right: 116px;
           margin-top: 37px;
     }
+    ${media.md`
+      justify-content: center;
+      button{
+        margin-top: 20px;
+        margin-right: 0;
+      }
+    `}
   }
 `;
 const H1 = styled.h1`
@@ -35,6 +49,18 @@ const H1 = styled.h1`
   &.color-change{
       color: ${({ theme }) => theme.colors.bodyLight};
   }
+  ${media.lg`
+    font-size: 80px;
+    line-height: 86px;
+  `}
+  ${media.sm`
+  font-size: 60px;
+    line-height: 68px;
+  `}
+  ${media.xs`
+  font-size: 48px;
+    line-height: 52px;
+  `}
 `
 
-export  {BannerWrapper,H1};
+export { BannerWrapper, H1 };
