@@ -7,11 +7,13 @@ import WhatCanHelp from '../components/PagesComponent/WhatCanYouHelp/index'
 import BusinessMangement from '../components/PagesComponent/BusinessMangement/index'
 import EcomLogoSection from "../components/PagesComponent/EcomLogoSection";
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
+import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
 import { ecomSliderItems } from "../constants";
 
 const Ecommerce = () => {
   return (
     <Layout>
+      <EcommerceBanner />
       <EcomLogoSection />
       <WhatCanHelp />
       <DevelopmentStages
