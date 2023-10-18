@@ -7,17 +7,17 @@ import BlankImg from '../../../assets/images/blank-img.svg'
 const Index = () => {
   const helpingCard = [
     {
-      img: '/blank-img.svg',
+      img: '/custom-software.svg',
       title: 'Develop Custom Software Solutions',
       caption: 'We build custom software solutions for sellers, retailers, 3PLs, and agencies.',
     },
     {
-      img: '/blank-img.svg',
+      img: '/automate.svg',
       title: 'Automate Manual Processes ',
       caption: 'No more wasting time on non-value-added tasks, only flawless processes and results.',
     },
     {
-      img: '/blank-img.svg',
+      img: '/marketplace-data.svg',
       title: `Extract ${'&'} Integrate   Marketplace Data`,
       caption: 'Trace, analyze, and integrate competitor data, high/low-selling products, and market trends.',
     },
