@@ -20,7 +20,7 @@ const About = () => (
     <OurClients />
     <Leadership />
     <ValueSystem />
-    <Awards />
+    <Awards  maxCols={8}/>
     <Clients />
   </Layout>
 );

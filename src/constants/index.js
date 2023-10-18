@@ -57,32 +57,32 @@ const values = [
 
 const awardsData = [
   { id: 1, link: 'https://www.designrush.com/agency/profile/qbatch', img: '/design-rush.svg' },
-  {
-    id: 2,
-    link: 'https://upcity.com/profiles/qbatch/sheridan',
-    img: 'https://upcity-marketplace.s3.amazonaws.com/badge/171/basic_full_color/65189dd26c5102f17656998d7315e688.png',
-  },
+  { id: 2, link: 'https://www.techimply.com/profile/qbatch', img: '/itfirms-top-app-developers-badge-2023.svg' },
   { id: 3, link: 'https://www.topdevelopers.co/profile/qbatch', img: '/top-developers.svg' },
   { id: 4, link: 'https://www.goodfirms.co/company/qbatch-llc', img: '/good-firms.svg' },
   { id: 5, link: 'https://topfirms.co/company-detail/3768/qbatch', img: '/top-firms.svg' },
+  { id: 6, link: '#', img: '/top-rated.svg' },
+  { id: 7, link: '#', img: '/upfirms.svg' },
+  { id: 8, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
   {
-    id: 6,
+    id: 9,
+    link: 'https://upcity.com/profiles/qbatch/sheridan',
+    img: 'https://upcity-marketplace.s3.amazonaws.com/badge/171/basic_full_color/65189dd26c5102f17656998d7315e688.png',
+  },
+  { id: 10, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
+  {
+    id: 11,
     link: 'https://www.appfutura.com/companies/qbatch',
     img: 'https://www.appfutura.com/img/badges/badge-top-software-development-company.png',
   },
-  {
-    id: 7,
-    link: 'https://reputedfirms.com/qbatch',
-    img: 'https://reputedfirms.com/images/verified-certified.svg',
-  },
-  { id: 8, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
-  { id: 9, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
-  { id: 10, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
-  { id: 11, link: '#', img: '/top-rated.svg' },
   { id: 12, link: '#', img: '/upfirms.svg' },
   { id: 13, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
   { id: 14, link: '#', img: '/top-rated.svg' },
-  { id: 15, link: '#', img: '/upfirms.svg' },
+  {
+    id: 15,
+    link: 'https://reputedfirms.com/qbatch',
+    img: 'https://reputedfirms.com/images/verified-certified.svg',
+  },
   { id: 16, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
 ]
 
