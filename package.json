@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint ."
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.1.4",
@@ -36,5 +37,11 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.0.6",
     "video-react": "^0.16.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.51.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "gatsby-plugin-eslint": "^4.0.4"
   }
 }
