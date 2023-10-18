@@ -76,7 +76,7 @@ const awardsData = [
     img: 'https://reputedfirms.com/images/verified-certified.svg',
   },
   { id: 8, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
-  { id: 9, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
+  { id: 9, link: 'https://www.techimply.com/profile/qbatch', img: '/itfirms-top-app-developers-badge-2023.svg' },
   { id: 10, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
   { id: 11, link: '#', img: '/top-rated.svg' },
   { id: 12, link: '#', img: '/upfirms.svg' },
