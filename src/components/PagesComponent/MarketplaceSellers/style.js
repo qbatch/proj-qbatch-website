@@ -20,7 +20,7 @@ const MarketplaceSellersWrapper = styled.div`
     max-width: 1038px;
     margin-bottom: 20px;
     ${media.sm `
-      margin-bottom: 32px;
+      margin-bottom: 16px;
     `}
   }
   .paragraph{
@@ -30,7 +30,10 @@ const MarketplaceSellersWrapper = styled.div`
     margin-bottom: 84px;
     letter-spacing: 0.69px;
     color: ${({ theme }) => theme.colors.whiteColor};
-    
+    ${media.sm`
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    margin-bottom :40px;
+    `}
   }
 `;
 
