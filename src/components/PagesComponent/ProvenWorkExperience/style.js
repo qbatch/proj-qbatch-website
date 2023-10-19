@@ -4,13 +4,15 @@ import { media } from "../../../theme/media-mixins";
 const ProvenExperienceWrapper = styled.div`
   .section-heading {
     padding: 120px 0 96px;
-    .heading{
+    .heading {
       padding-bottom: 24px;
     }
-    .paragraph{
+    .paragraph {
       margin-bottom: 0;
+      color: ${({ theme }) => theme.colors.bodyText};
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     }
-    
+
     ${media.sm`
       padding: 40px 0;
     `}
@@ -73,7 +75,7 @@ const ProvenExperienceWrapper = styled.div`
     ${media.md`
       padding-top: 32px;
     `}
-    .qb-carousel-item{
+    .qb-carousel-item {
       padding-right: 144px;
       ${media.md`
         padding-right: 40px;
@@ -120,12 +122,12 @@ const ProvenExperienceWrapper = styled.div`
       }
     }
   }
-  @media(min-width:1920px){
+  @media (min-width: 1920px) {
     .section-slider {
-      max-width:1920px;
-      margin:0 auto;
+      max-width: 1920px;
+      margin: 0 auto;
     }
   }
-`;
+`
 
 export default ProvenExperienceWrapper;

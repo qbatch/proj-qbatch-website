@@ -8,9 +8,10 @@ import BusinessMangement from '../components/PagesComponent/BusinessMangement/in
 import EcomLogoSection from "../components/PagesComponent/EcomLogoSection";
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
 import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
+import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
 import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments"
-import { ecomSliderItems } from "../constants";
-
+import { ecomSliderItems, marketPlace } from '../constants'
+console.log(marketPlace, 'marketPlace')
 const Ecommerce = () => {
   return (
     <Layout>
@@ -30,9 +31,20 @@ const Ecommerce = () => {
       />
       <BusinessMangement />
       <IdeasAndInvestments />
+      <ProvenWorkExperience />
+      <DevelopmentStages
+        heading="Integrations for Your Marketplace"
+        sliderData={marketPlace}
+        col1={5}
+        col2={7}
+        subCol1={6}
+        subCol2={6}
+        mt="mt-4"
+        className="ecom-section"
+      />
       <StartProject />
     </Layout>
-  );
+  )
 };
 export const Head = () => <SEO title="ecommerce" />;
 

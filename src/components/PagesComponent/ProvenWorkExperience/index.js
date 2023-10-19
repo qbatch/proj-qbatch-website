@@ -15,38 +15,41 @@ import ProvenExperienceWrapper from "./style";
 
 const projectSlides = [
   {
-    projectImg:
-      "/slider-image.png",
-    title: "Ecom Circles",
-    logo: "/ecom-circle-icon.svg",
-    category: "E-Commerce",
-    tags: ["Tech 1", "Tech 2", "Tech 3"]
+    projectImg: '/E-Com-Circles.svg',
+    title: 'Ecom Circles',
+    logo: '/e-commerce-logo.svg',
+    category: 'E-Commerce',
+    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
   },
   {
-    projectImg:
-       "/slider-image.png",
-    title: "Store Filter",
-    logo: "/ecom-circle-icon.svg",
-    category: "E-Commerce",
-    tags: ["Tech 1", "Tech 2", "Tech 3"]
+    projectImg: '/one-app-app.svg',
+    title: 'Store Filter',
+    logo: '/one-app-logo.svg',
+    category: 'E-Commerce',
+    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
   },
   {
-    projectImg:
-        "/slider-image.png",
-    title: "Sales Support",
-    logo: "/ecom-circle-icon.svg",
-    category: "E-Commerce",
-    tags: ["Tech 1", "Tech 2", "Tech 3"]
+    projectImg: '/store-filter-app.svg',
+    title: 'Sales Support',
+    logo: '/store-filter-logo.svg',
+    category: 'E-Commerce',
+    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
   },
   {
-    projectImg:
-        "/slider-image.png",
-    title: "Squid Plan",
-    logo: "/ecom-circle-icon.svg",
-    category: "E-Commerce",
-    tags: ["Tech 1", "Tech 2", "Tech 3"]
+    projectImg: '/friend-filter-app.svg',
+    title: 'Squid Plan',
+    logo: 'friend-filter-logo.svg',
+    category: 'E-Commerce',
+    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
   },
-];
+  {
+    projectImg: '/sales-support-app.svg',
+    title: 'Squid Plan',
+    logo: 'sales-support-logo.svg',
+    category: 'E-Commerce',
+    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
+  },
+]
 
 const responsive = {
   superLargeDesktop: {
@@ -91,8 +94,7 @@ const Index = () => {
           <div>
             <h2 className="heading text-h1">Proven Work Experience</h2>
             <p className="paragraph">
-              Innovators from across the industry have trusted Qbatch to build
-              high-impact products.
+              Innovators from across the industry have trusted Qbatch to build high-impact products.
             </p>
           </div>
           <div className="mt-md-4 mt-0">
@@ -128,8 +130,8 @@ const Index = () => {
                 <div className="carousel-button-group d-flex align-items-center">
                   <ArrowLeftIcon
                     onClick={() => {
-                      handleButtonClickPre();
-                      setCurrentInd(currentInd === 1 ? 1 : currentInd - 1);
+                      handleButtonClickPre()
+                      setCurrentInd(currentInd === 1 ? 1 : currentInd - 1)
                     }}
                   />
                   <span>
@@ -145,12 +147,8 @@ const Index = () => {
                   </span>
                   <ArrowRightIcon
                     onClick={() => {
-                      handleButtonClickNext();
-                      setCurrentInd(
-                        currentInd === projectSlides.length
-                          ? currentInd
-                          : currentInd + 1
-                      );
+                      handleButtonClickNext()
+                      setCurrentInd(currentInd === projectSlides.length ? currentInd : currentInd + 1)
                     }}
                   />
                 </div>
@@ -179,7 +177,7 @@ const Index = () => {
         </div>
       </div>
     </ProvenExperienceWrapper>
-  );
+  )
 };
 
 export default Index;

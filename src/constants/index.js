@@ -341,6 +341,31 @@ const ecomSliderItems = [
     content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
   },
 ];
+const marketPlace = [
+  {
+    image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg'],
+    title: 'Marketplace',
+  },
+  {
+    image: ['/shopify.svg', '/woo-commerce.png', '/amazon-vendor.svg', '/kindle.svg'],
+    title: 'Platform',
+  },
+  {
+    image: [
+      '/amazon-seller.svg',
+      '/amazon-shipping.svg',
+      '/amazon-product.svg',
+      '/amazon-business.svg',
+      '/ebay.svg',
+      '/walmart.svg',
+    ],
+    title: 'API’s',
+  },
+  {
+    image: ['/keepa.svg', '/rainforest-api.svg'],
+    title: '3rd Party API’s',
+  },
+]
 const projects = [
   {
     img: '/Custom E-Commerce Business management_Custom E-commerce Software Development.svg',
@@ -420,5 +445,6 @@ export {
   sliderItems,
   ecomSliderItems,
   ecomLogos,
-  projects
-};
+  projects,
+  marketPlace,
+}

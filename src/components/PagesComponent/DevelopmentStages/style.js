@@ -39,6 +39,7 @@ const StagesWrapper = styled.div`
     }
     li {
       margin-bottom: 24px;
+      margin-bottom: ${(props) => (props.marketplace ? `${props.marketplace}` : '24px')};
       padding-left: 20px;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-size: 20px;
@@ -61,7 +62,7 @@ const StagesWrapper = styled.div`
         border-radius: 12px;
         border: 1px solid ${({ theme }) => theme.colors.dangerColor};
         background: #fff;
-        content: "";
+        content: '';
         top: 12px;
         position: absolute;
         @media screen and (max-width: 1199px) {
@@ -71,7 +72,7 @@ const StagesWrapper = styled.div`
       &:after {
         width: 1px;
         height: 38px;
-        content: "";
+        content: '';
         position: absolute;
         left: 3.5px;
         top: 25px;
@@ -208,5 +209,8 @@ const StagesWrapper = styled.div`
       }
     }
   }
-`;
+  .mb-8 {
+    margin-bottom: 60px;
+  }
+`
 export default StagesWrapper;
