@@ -12,6 +12,9 @@ import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperie
 import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments"
 import { ecomSliderItems, marketPlace } from '../constants'
 console.log(marketPlace, 'marketPlace')
+import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers"
+import { ecomSliderItems } from "../constants";
+
 const Ecommerce = () => {
   return (
     <Layout>
@@ -42,6 +45,7 @@ const Ecommerce = () => {
         mt="mt-4"
         className="ecom-section"
       />
+      <MarketplaceSellers />
       <StartProject />
     </Layout>
   )
