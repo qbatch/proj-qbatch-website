@@ -45,8 +45,9 @@ const StartProjectWrapper = styled.div`
   }
   .testimonials {
     padding-top: 168px;
-    ${media.sm`
-      padding-top: 40px;
+    ${media.md`
+      padding-bottom: 80px;
+      padding-top: 0;
     `}
     .testimonial-heading {
       margin-bottom: 29px;

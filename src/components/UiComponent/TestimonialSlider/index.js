@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import { Player, BigPlayButton, LoadingSpinner } from "video-react";
+// import { Player, BigPlayButton, LoadingSpinner } from "video-react";
 
 import ProjectIcon from "../../../assets/images/icons/ecom-circle-icon.svg";
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
@@ -13,25 +13,26 @@ import ProvenExperienceWrapper from "./style";
 
 const projectSlides = [
   {
-    projectVideo:
-      "http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4",
+    clientImage:
+      "/client-1.svg",
+    testimonial: '“It’s been my pleasure to work with the development team at !batch for the past 3 years ona number of very large and complex web applications. The attention to detail and level of communication has been superior.”',
     title: "Client Name",
     subtitle: "Company Name"
   },
   {
-    projectVideo:
+    clientImage:
       "http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4",
     title: "Store Filter",
     subtitle: "Company Name"
   },
   {
-    projectVideo:
+    clientImage:
       "http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4",
     title: "Sales Support",
     subtitle: "Company Name"
   },
   {
-    projectVideo:
+    clientImage:
       "http://peach.themazzone.com/durian/movies/sintel-1024-surround.mp4",
     title: "Squid Plan",
     subtitle: "Company Name"
@@ -87,11 +88,13 @@ const Index = () => {
             draggable={false}
           >
             {projectSlides.map((item, ind) => (
-              <div className="video-wrapper" key={ind}>
-                <Player playsInline src={item.projectVideo}>
+              <div className="testimonial-wrapper" key={ind}>
+                <img className="client-image" src={item.clientImage} />
+                <p className="testimonial-text">{item.testimonial}</p>
+                {/* <Player playsInline src={item.projectVideo}>
                   <BigPlayButton position="center" />
                   <LoadingSpinner />
-                </Player>
+                </Player> */}
               </div>
             ))}
           </Carousel>

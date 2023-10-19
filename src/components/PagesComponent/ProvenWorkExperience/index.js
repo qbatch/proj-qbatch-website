@@ -71,7 +71,7 @@ const responsiveTitle = {
   },
 };
 
-const Index = () => {
+const Index = ({ heading, paragraph }) => {
   const [currentInd, setCurrentInd] = useState(1);
 
   const carousel1Ref = useRef(null);
@@ -92,9 +92,9 @@ const Index = () => {
       <Container>
         <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
           <div>
-            <h2 className="heading text-h1">Proven Work Experience</h2>
+            <h2 className="heading text-h1">{heading}</h2>
             <p className="paragraph">
-              Innovators from across the industry have trusted Qbatch to build high-impact products.
+            {paragraph}
             </p>
           </div>
           <div className="mt-md-4 mt-0">

@@ -38,7 +38,7 @@ const CtoService = () => {
       <GrowingTechSide />
       <ChooseCto />
       <CtoServiceModel />
-      <ProvenWorkExperience />
+      <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
       <FaqSection />
       <Insights />
       <StartProject />
