@@ -30,7 +30,7 @@ const IndexPage = () => (
         </p>
       }
     />
-    <ProvenWorkExperience />
+    <ProvenWorkExperience heading="Proven Work Experience"  paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."/>
     <HappilyMaking />
     <WhatDifferenceQbatchMaking />
     <Awards maxCols={8} />

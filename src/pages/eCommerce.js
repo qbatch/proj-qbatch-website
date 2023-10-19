@@ -11,7 +11,7 @@ import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
 import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
 import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments"
 import { ecomSliderItems, marketPlace } from '../constants'
-import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers"
+import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers";
 
 const Ecommerce = () => {
   return (
@@ -32,7 +32,7 @@ const Ecommerce = () => {
       />
       <BusinessMangement />
       <IdeasAndInvestments />
-      <ProvenWorkExperience />
+      <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
       <DevelopmentStages
         heading="Integrations for Your Marketplace"
         sliderData={marketPlace}

@@ -38,7 +38,7 @@ const Index = () => {
     <StartProjectWrapper>
       <Container>
         <Row className="justify-content-between">
-          <Col lg={5} md={6} sm={12} xs={12}>
+          <Col xxl={5} lg={5} className="order-2 order-lg-1">
             <h2 className="color-primary">Start a Project</h2>
             <p className="subtitle">Work with the most friendly yet focused developers!</p>
             <div className="project-form">
@@ -169,7 +169,7 @@ const Index = () => {
               </div>
             </div>
           </Col>
-          <Col lg={5} md={6} sm={12} xs={12}>
+          <Col xxl={5} lg={6} className="order-1 order-lg-2">
             <div className="testimonials">
               <p className="testimonial-paragraph">Not just words, but our driving force to deliver real results consistently! Here's what our clients have to say</p>
               <TestimonialCarousel/>

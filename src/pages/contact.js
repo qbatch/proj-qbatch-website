@@ -11,7 +11,7 @@ const ContactUs = () => {
     <Layout pageTitle="Contact Us">
       <StartProject />
       <Achievements />
-      <ProvenWorkExperience />
+      <ProvenWorkExperience heading="Proven Work Experience" paragraph="They imagined it, we brought it to the world!" />
       <ProblemSolving
         className="contact-project-cost"
         text={<h1 className="heading-break">Wondering how much your project would cost?</h1>}

@@ -8,8 +8,47 @@ const ProvenExperienceWrapper = styled.div`
       padding: 40px 0 40px;
     `}
   }
-  .video-wrapper{
-    .video-react{
+  .testimonial-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 48px;
+    background-color: ${({ theme }) => theme.colors.whiteColor};
+    border-radius: 24px 24px 0 24px;
+    .client-image{
+      border-radius: 160px;
+      height: 158px;
+      width: 158px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .testimonial-text{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-weight: 300;
+      line-height: 32px;
+      color: ${({ theme }) => theme.colors.bodyLight};
+    }
+    @media (max-width: 1399px){
+      padding: 32px;
+      gap: 32px;
+      .client-image{
+        height: 130px;
+        width: 130px;
+      }
+    }
+    ${media.lg`
+      padding: 32px 10px;
+      .client-image{
+        height: 120px;
+        width: 120px;
+      }
+    `}
+    ${media.sm`
+       flex-wrap: wrap;
+       text-align: center;
+    `}
+    /* .video-react{
       padding-top : 372px !important;
       ${media.md`
       padding-top: 200px !important;
@@ -20,7 +59,7 @@ const ProvenExperienceWrapper = styled.div`
       ${media.xs`
         height: 270px;
       `}
-    }
+    } */
   }
   .testimonial-title {
     display: flex;
