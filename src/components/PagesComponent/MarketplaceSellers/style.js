@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const IdeasWrapper = styled.div`
+const MarketplaceSellersWrapper = styled.div`
   background: url("/growing-bg.svg");
   background-size: cover;
   padding: 120px 203px 173px;
@@ -18,15 +18,20 @@ const IdeasWrapper = styled.div`
   .heading {
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 1038px;
-    text-transform: none;
-    .inner-heading{
-      color: ${({ theme }) => theme.colors.dividerColor};
-      display: block;
-    }
+    margin-bottom: 20px;
     ${media.sm `
       margin-bottom: 32px;
     `}
   }
+  .paragraph{
+    font-size: 24px;
+    max-width: 931px;
+    font-weight: 300;
+    margin-bottom: 84px;
+    letter-spacing: 0.69px;
+    color: ${({ theme }) => theme.colors.whiteColor};
+    
+  }
 `;
 
-export default IdeasWrapper;
+export default MarketplaceSellersWrapper;

@@ -9,6 +9,7 @@ import EcomLogoSection from "../components/PagesComponent/EcomLogoSection";
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
 import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
 import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments"
+import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers"
 import { ecomSliderItems } from "../constants";
 
 const Ecommerce = () => {
@@ -30,6 +31,7 @@ const Ecommerce = () => {
       />
       <BusinessMangement />
       <IdeasAndInvestments />
+      <MarketplaceSellers />
       <StartProject />
     </Layout>
   );
