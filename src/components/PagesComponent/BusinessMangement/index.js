@@ -3,11 +3,11 @@ import {Row,Col} from 'react-bootstrap'
 import Container from '../../UiComponent/Container'
 import Button from '../../UiComponent/Button'
 import {projects} from '../../../constants'
-import BusinessMangementWrapper from './style'
+import ManagementWrapper from './style'
 const Index = () => {
 
   return (
-    <BusinessMangementWrapper>
+    <ManagementWrapper>
       <Container>
         <h3 className="text-h2">Custom e-commerce business management software solutions for your next big project.</h3>
         <Row>
@@ -46,7 +46,7 @@ const Index = () => {
             </Col>
         </Row>
       </Container>
-    </BusinessMangementWrapper>
+    </ManagementWrapper>
   )
 }
 export default Index
