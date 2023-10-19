@@ -11,7 +11,7 @@ import TechnicalGuidance from "../components/PagesComponent/TechnicalGuidance";
 import GrowingTechSide from "../components/PagesComponent/GrowingTechSide";
 import ChooseCto from "../components/PagesComponent/ChooseCto";
 import CtoServiceModel from "../components/PagesComponent/CtoServiceModel";
-import OurProjects from "../components/PagesComponent/OurProjects";
+import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
 import Insights from "../components/PagesComponent/Insights";
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
 import FaqSection from "../components/PagesComponent/Faq";
@@ -38,12 +38,12 @@ const CtoService = () => {
       <GrowingTechSide />
       <ChooseCto />
       <CtoServiceModel />
-      <OurProjects />
+      <ProvenWorkExperience />
       <FaqSection />
       <Insights />
       <StartProject />
     </Layout>
-  );
+  )
 };
 export const Head = () => <SEO title="Cto as a Service" />;
 
