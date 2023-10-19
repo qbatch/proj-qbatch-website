@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins" 
 
-const BusinessMangementWrapper = styled.div`
+const ManagementWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 120px 0;
   .text-h2{
@@ -39,4 +39,4 @@ const BusinessMangementWrapper = styled.div`
     margin-top: 75px;
   }
 `
-export default BusinessMangementWrapper;
+export default ManagementWrapper;

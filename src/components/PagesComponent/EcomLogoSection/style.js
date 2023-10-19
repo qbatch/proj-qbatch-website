@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const EcomLogoWrapper = styled.div`
-  padding: 96px 0;
+const LogoWrapper = styled.div`
+  padding: 120px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
      padding: 40px 0px;
@@ -25,5 +25,5 @@ const EcomLogoWrapper = styled.div`
   }
 `;
 
-export default EcomLogoWrapper;
+export default LogoWrapper;
 

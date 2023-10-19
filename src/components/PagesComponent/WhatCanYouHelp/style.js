@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const HelpWrapper = styled.div`
-  padding: 96px 0;
+  padding: 73px 0 98px 0;
   .add-top-space {
     margin-top: 74px;
   }
