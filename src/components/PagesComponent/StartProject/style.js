@@ -44,7 +44,7 @@ const StartProjectWrapper = styled.div`
     }
   }
   .testimonials {
-    padding-top: 156px;
+    padding-top: 168px;
     ${media.sm`
       padding-top: 40px;
     `}
@@ -52,7 +52,12 @@ const StartProjectWrapper = styled.div`
       margin-bottom: 29px;
     }
     .testimonial-paragraph{
-      margin-bottom: 35px;
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: 0.7px;
+      line-height: 32px;
+      max-width: 545px;
     }
   }
   .video-box {

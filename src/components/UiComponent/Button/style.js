@@ -104,6 +104,7 @@ const ButtonWrapper = styled(Button)`
   }
   &.secondary-btn {
     color: ${({ theme }) => theme.colors.whiteColor};
+    font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
     .button-icon {
       border-color: ${({ theme }) => theme.colors.dangerColor};
       svg {

@@ -1,15 +1,17 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const StagesWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundColor};
-  padding: 96px 0 90px;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  padding: 120px 0 120px;
   @media screen and (max-width: 767px) {
     padding-bottom: 32px;
-    padding-top:60px;
+    padding-top: 60px;
   }
   .stages-header {
     text-align: center;
-    max-width: 811px;
+    max-width: 840px;
     margin: 0 auto;
     margin-bottom: 76px;
     @media screen and (max-width: 767px) {
@@ -37,13 +39,14 @@ const StagesWrapper = styled.div`
     }
     li {
       margin-bottom: 24px;
+      margin-bottom: ${(props) => (props.marketplace ? `${props.marketplace}` : '24px')};
       padding-left: 20px;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-size: 20px;
       font-weight: 400;
       line-height: 32px;
       position: relative;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
       @media screen and (max-width: 1199px) {
@@ -59,7 +62,7 @@ const StagesWrapper = styled.div`
         border-radius: 12px;
         border: 1px solid ${({ theme }) => theme.colors.dangerColor};
         background: #fff;
-        content: "";
+        content: '';
         top: 12px;
         position: absolute;
         @media screen and (max-width: 1199px) {
@@ -69,7 +72,7 @@ const StagesWrapper = styled.div`
       &:after {
         width: 1px;
         height: 38px;
-        content: "";
+        content: '';
         position: absolute;
         left: 3.5px;
         top: 25px;
@@ -174,5 +177,40 @@ const StagesWrapper = styled.div`
       }
     }
   }
-`;
+  .slider-btn {
+    margin-top: 68px;
+    margin-left: 12px;
+  }
+  .ecom-section {
+    padding-left: 0;
+    ${media.sm`
+      padding-left: 30px;
+    `}
+    .slider-item {
+      .title {
+        display: none;
+        ${media.sm`
+        &.title-responsive {
+          display: none;
+        }
+        `}
+      }
+      .content {
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        letter-spacing: 0.8px;
+        line-height: 32px;
+        margin-top: 24px;
+        max-width: 350px;
+        ${media.sm`
+          font-size: ${({ theme }) => theme.fonts.baseFontSize};
+            text-align: center;
+            max-width: 100%;
+        `}
+      }
+    }
+  }
+  .mb-8 {
+    margin-bottom: 60px;
+  }
+`
 export default StagesWrapper;

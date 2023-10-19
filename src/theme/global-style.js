@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
       cursor:pointer;
     }
     .section-heading {
-      h1 {
+      h1 .text-h1{
         color: ${({ theme }) => theme.colors.primaryColor};
         margin-bottom: 16px;
       }
