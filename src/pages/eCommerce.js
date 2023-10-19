@@ -11,9 +11,7 @@ import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
 import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
 import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments"
 import { ecomSliderItems, marketPlace } from '../constants'
-console.log(marketPlace, 'marketPlace')
 import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers"
-import { ecomSliderItems } from "../constants";
 
 const Ecommerce = () => {
   return (
@@ -33,8 +31,9 @@ const Ecommerce = () => {
         className="ecom-section"
       />
       <BusinessMangement />
-      <IdeasAndInvestments />
+
       <ProvenWorkExperience />
+      <IdeasAndInvestments />
       <DevelopmentStages
         heading="Integrations for Your Marketplace"
         sliderData={marketPlace}
