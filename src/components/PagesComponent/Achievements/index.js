@@ -9,7 +9,7 @@ import CountUp from "react-countup";
 import { counterData } from "../../../constants";
 
 const Index = ({ page }) => {
-  
+
   const pageNumber = page === "home";
   const numCols = pageNumber ? 4 : 3;
   const displayedCounterData = pageNumber ? counterData.slice(0, 3) : counterData;
@@ -22,7 +22,7 @@ const Index = ({ page }) => {
           <Row>
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">
-                <span className={`${pageNumber &&  "heading text-h1 fw-bold" }`}>
+                <span className={pageNumber ? "heading fw-bold" : "text-h1 fw-bold"}>
                   <CountUp end={data.count} duration={3} />
                   {data.symbol && <span className="color-danger fw-light ms-2">{data.symbol}</span>}
                 </span>

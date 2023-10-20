@@ -15,7 +15,7 @@ import TestimonialCarousel from "../../UiComponent/TestimonialSlider"
 
 import StartProjectWrapper from "./style";
 
-const Index = () => {
+const Index = ({ page }) => {
 
   const [open, setOpen] = useState(false);
   const [modal, setModal] = useState("");
@@ -39,7 +39,11 @@ const Index = () => {
       <Container>
         <Row className="justify-content-between">
           <Col xxl={5} lg={5} className="order-2 order-lg-1">
-            <h2 className="color-primary">Start a Project</h2>
+          {page === "contact" ? (
+              <h1 className=" text-h2 color-primary">Start a Project</h1>
+            ) : (
+              <h2 className="color-primary">Start a Project</h2>
+            )}
             <p className="subtitle">Work with the most friendly yet focused developers!</p>
             <div className="project-form">
               <Input placeholder="Full Name" type="text" />
