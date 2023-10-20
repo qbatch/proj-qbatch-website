@@ -10,7 +10,7 @@ const StartProjectWrapper = styled.div`
     margin: 1px 0 29px -1px;
     text-transform: inherit;
   }
-  .subtitle{
+  .subtitle {
     letter-spacing: 0.19px;
   }
   .mt-40 {
@@ -23,24 +23,24 @@ const StartProjectWrapper = styled.div`
   .project-form {
     margin-top: 38px;
     &:has(.show) {
-    .collpase-select {
-      .title {
-        color: ${({ theme }) => theme.colors.bodyLight};
+      .collpase-select {
+        .title {
+          color: ${({ theme }) => theme.colors.bodyLight};
+        }
       }
     }
-  }
 
-  .collpase-select{
+    .collpase-select {
       margin-top: 24px;
     }
-    .collpase-content{
+    .collpase-content {
       margin-top: 0;
     }
-    .title{
-    font-weight:400;
-    font-size: 20px;
-    line-height: 32px;
-    letter-spacing: 0.14px;
+    .title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.14px;
     }
   }
   .testimonials {
@@ -52,9 +52,10 @@ const StartProjectWrapper = styled.div`
     .testimonial-heading {
       margin-bottom: 29px;
     }
-    .testimonial-paragraph{
+    .testimonial-paragraph {
       margin-bottom: 24px;
-      font-size: 24px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      color:${({ theme }) => theme.colors.textMedium}
       font-weight: 300;
       letter-spacing: 0.7px;
       line-height: 32px;
@@ -84,7 +85,7 @@ const StartProjectWrapper = styled.div`
     transition: 1s all ease-in;
   }
   .collapse-radio {
-    margin-bottom: 11px
+    margin-bottom: 11px;
   }
-`;
+`
 export default StartProjectWrapper;

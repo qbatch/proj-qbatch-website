@@ -20,6 +20,6 @@ const ContactUs = () => {
   );
 };
 
-export const Head = () => <SEO title="Contact Us" />;
+export const Head = () => <SEO title="Contact Us | Qbatch" />
 
 export default ContactUs;

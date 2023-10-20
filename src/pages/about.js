@@ -24,6 +24,11 @@ const About = () => (
     <Clients />
   </Layout>
 );
-export const Head = () => <SEO title="About US" />;
+export const Head = () => (
+  <SEO
+    title="About Us | Qbatch"
+    description="We create products that make millions of lives easier every day ensuring real and lasting human experiences in the ever-changing world of innovation."
+  />
+)
 
 export default About;
