@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const LeadershipWrapper = styled.div`
-padding: 97px 0;
+padding: 120px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
   padding: 40px 0;
@@ -103,7 +103,7 @@ background: linear-gradient(180deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.
       }
     }
     .leader-info {
-    margin-bottom: 24px;
+    margin-bottom: 48px;
     margin-right: -54px;
     position: relative;
     z-index: 2;

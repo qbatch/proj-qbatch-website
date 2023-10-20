@@ -18,16 +18,13 @@ const projectSlides = [
     projectImg: '/E-Com-Circles.svg',
     title: 'Ecom Circles',
     logo: '/e-commerce-logo.svg',
-    description:
-      'We created an all-in-one E-commerce Management Software trusted by 3000+ Amazon and Walmart sellers to organize and streamline their drop-shipping business.',
+    category: 'E-Commerce',
     tags: ['Automation', 'Saas', 'Warehousing'],
   },
   {
     projectImg: '/one-app-app.svg',
     title: 'One APp',
     logo: '/one-app-logo.svg',
-    description:
-      'We developed a powerful E-commerce marketplace that manages the daily inventory and stock data of above 50 different stores. The automated & algorithmic Repricer allows optimal order management, total control over centralized accounts, better profit/loss calculation, & reliable FBA forecasting.',
     category: 'E-Commerce',
     tags: ['E-commerce', 'Automation', 'Saas'],
   },
@@ -35,16 +32,11 @@ const projectSlides = [
     projectImg: '/store-filter-app.svg',
     title: 'Store Filter',
     logo: '/store-filter-logo.svg',
-    description:
-      'We developed a witty searchable database for eCom agencies, Shopify store owners, and Brokers to know everything their competitors are doing and earn a competitive edge. The app enables real-time reporting on your competition marketing efforts',
-    category: 'E-Commerce',
     tags: ['Database', 'Data Analytics', 'Web App+'],
   },
   {
     projectImg: '/friend-filter-app.svg',
     title: 'Friend Filter',
-    description:
-      'Grow Your Influence on Facebook: Our platform helps remove inactive friends, increase engagement, and gets your posts shown to more people. Join 120,000+ Satisfied Users Whove Supercharged Their Facebook Presence with FriendFilter.',
     logo: 'friend-filter-logo.svg',
     category: 'E-Commerce',
     tags: ['E-commerce', 'Automation', 'Saas'],
@@ -52,9 +44,6 @@ const projectSlides = [
   {
     projectImg: '/sales-support-app.svg',
     title: 'Sales Support',
-    description:
-      'We’ve created an immaculate Amazon Wholesale Kickstarter that helped launch 1000+ businesses on Amazon. The platform features a Repricer for automated pricing and a catalog analyzer for better forecasting and profit/loss analysis. While the reimbursements removal and FBA forecasting elevated their business off the ground.',
-    logo: 'friend-filter-logo.svg',
     logo: 'sales-support-logo.svg',
     category: 'E-Commerce',
     tags: ['Automation', 'Saas', 'warehousing'],
@@ -126,7 +115,7 @@ const Index = ({ heading, paragraph }) => {
                     <div className="project-title" key={ind}>
                       <img src={item.logo} alt="logo" />
                       <h3>{item.title}</h3>
-                      <span>{item.description}</span>
+                      <span>{item.category}</span>
                       <div className="project-tags d-flex">
                         {item.tags.map((tag, ind) => (
                           <div key={ind}>{tag}</div>

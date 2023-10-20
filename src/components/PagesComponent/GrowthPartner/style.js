@@ -53,7 +53,6 @@ const GrowthPartnerWrapper = styled.div`
     .image-portion-md{
       img{
         height: 496px;
-        width: 100%;
         border-radius: 32px 32px 0 32px;
         object-fit: cover;
         ${media.xs`
@@ -66,6 +65,7 @@ const GrowthPartnerWrapper = styled.div`
     .content-right{
       .content{
         padding-left: 96px;
+        padding-top: 128px;
         ${media.md`
         padding-left: 0;
         `}
@@ -78,6 +78,7 @@ const GrowthPartnerWrapper = styled.div`
         ${media.md`
         justify-content: start;
         `}
+       
       }
     }
     .content-col{
@@ -87,12 +88,12 @@ const GrowthPartnerWrapper = styled.div`
       }
     }
     .content-wrapper{
-      height: 100%;
-      display: flex;
-      align-items: center;
       ${media.md`
         padding-bottom: 12px;
       `}
+    }
+    .mission {
+      padding-top: 152px;
     }
 `
 

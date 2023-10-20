@@ -8,6 +8,7 @@ const ButtonWrapper = styled(Button)`
   gap: 11px;
   color: ${({ theme }) => theme.colors.primaryColor};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
+  font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   padding: 0;
   position: relative;
   white-space: nowrap;
@@ -19,13 +20,15 @@ const ButtonWrapper = styled(Button)`
     border: 1px solid ${({ theme }) => theme.colors.primaryColor};
     color: ${({ theme }) => theme.colors.whiteColor};
     background-color: ${({ theme }) => theme.colors.primaryColor};
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     padding: 0 3px 0 16px;
     border-radius: 22px;
     transition: all 0.3s ease-in-out;
     display: flex;
     align-items: center;
     gap: 16px;
+    ${media.xs`
+    padding: 2px 3px 2px 16px;
+  `}
     .button-icon {
       width: 24px;
       height: 24px;

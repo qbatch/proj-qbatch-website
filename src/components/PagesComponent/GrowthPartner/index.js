@@ -21,7 +21,7 @@ const Index = () => {
           </Col>
           <Col lg={6}>
             <div className="image-portion">
-             <img src="/company-portion-img.png" alt="company" />
+             <img src="/Growth-Partners.svg" alt="growth partners" />
             </div>
           </Col>
         </Row>
@@ -40,14 +40,14 @@ const Index = () => {
         </Col>
         <Col lg={6} className="order-2 order-lg-1">
           <div className="image-portion-md">
-             <img src="/vision-img.png" />
+             <img src="/Our-Vision.svg" alt="our vision" />
             </div>
         </Col>
       </Row>
       <Row className="content-col">
       <Col lg={6}>
           <div className="content-wrapper justify-content-start">
-          <div className="content">
+          <div className="content mission">
             <h2 className="heading">Our Mission</h2>
             <p className="paragraph">We are on a mission to help you modernize without fretting about financial and operational bottlenecks through intelligently designed and carefully deployed software solutions.  </p>
           </div>
@@ -55,7 +55,7 @@ const Index = () => {
         </Col>
         <Col lg={6}>
           <div className="image-portion-md">
-             <img src="/mission-img.png" />
+             <img src="/Our-Mission.svg" alt="our mission" />
             </div>
         </Col>
       </Row>

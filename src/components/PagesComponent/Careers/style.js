@@ -2,18 +2,14 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins" 
 
 const CareerWrapper = styled.div`
- padding: 96px 0;
+ padding: 120px 0;
  ${media.sm`
   padding: 40px 0;
  `}
- .underline-heading{
-    padding-top: 12px;
-    
-  }
   .heading{
-    padding: 3px 0;
     span {
       display: block;
+      margin-bottom: 20px;
     }
   }
   .paragraph{

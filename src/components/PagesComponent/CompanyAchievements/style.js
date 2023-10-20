@@ -3,11 +3,10 @@ import { media } from "../../../theme/media-mixins";
 
 const AchievementsWrapper = styled.div`
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-padding: 96px 0 74px;
+padding: 120px 0 97px;
 ${media.sm`
     padding: 40px 0;
 `}
-
   .counter-wrapper{
       padding-top: 34px;
       padding-bottom: 10px;
@@ -15,10 +14,9 @@ ${media.sm`
   .main-heading{
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 28px;
-    margin-top: 18px;
     span {
       display: block;
-      margin-bottom: 24px;
+      margin-bottom: 30px;
     }
   }
   .achievements-col{
@@ -33,7 +31,7 @@ ${media.sm`
       max-width: 221px;
       margin: 0 auto;
       line-height: 30px;
-      padding-top: 16px;
+      padding-top: 8px;
       letter-spacing: 1.3px;
     }
     &:nth-child(4n){

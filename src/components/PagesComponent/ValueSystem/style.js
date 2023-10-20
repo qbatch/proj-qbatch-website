@@ -1,17 +1,13 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 const ValueSystemWrapper = styled.div  `
-  padding: 96px 0;
+  padding: 120px 0;
   ${media.sm`
     padding: 40px 0;
   `}
-  .heading-wrapper{
-    padding-top: 4px;
-  }
   .heading{
     font-weight: ${({ theme }) => theme.fontWeight.normal};
     color: ${({ theme }) => theme.colors.gardientColor};
-    padding-top: 10px;
     span{
       &:first-child {
         display: block;

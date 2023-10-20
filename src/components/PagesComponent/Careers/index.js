@@ -14,7 +14,7 @@ const Index = () => {
       <Container>
         <Row className="justify-content-between">
           <Col xl={4} lg={8}>
-            <h2 className="heading">Careers <span className="underline-heading text-h4">Join Us!</span></h2>
+            <h2 className="heading"><span className="underline-heading text-h4">Join Us!</span> Careers</h2>
             <p className="paragraph">
               We believe our strength is derived from the brains and experiences of a like-minded community of experts.
               Qbatch is a workplace where you are invited to reach your full potential without any discrimination. Let’s
