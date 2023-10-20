@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'gatsby'
 import { Row, Col } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
@@ -20,7 +21,8 @@ const Index = (props) => {
            {text}
           </Col>
           <Col md={4}>
-            <div className="box-center pt-lg-0 pt-4">
+            <Link to="/contact">
+            <div className="box-center pt-lg-0 pt-4" >
               <div className="circle-bg">
                 <div className="circle-box">
                   <svg className="text-svg" viewBox="0 0 100 100" width="80" height="80">
@@ -45,6 +47,7 @@ const Index = (props) => {
                 </div>
               </div>
             </div>
+            </Link>
           </Col>
         </Row>
       </Container>

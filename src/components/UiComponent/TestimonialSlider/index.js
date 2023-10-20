@@ -33,12 +33,12 @@ const projectSlides = [
     clientImage: '/ershad.png',
     testimonial:
       '“One of the most hardworking guys I have ever seen! Will definitely work with Qbatch team in the future!”',
-    title: 'Michael Flanagan',
+    title: 'Ershad Anari',
     subtitle: 'SecondBind',
     logo: '/testimonial.svg',
   },
   {
-    clientImage: '/ershad.png',
+    clientImage: '/victor-simon.png',
     testimonial:
       '“Qbatch worked with us for 2 years and their team has become one of the most important members of our team. Very skilful and highly responsible.”',
     title: 'Victor Simon',
