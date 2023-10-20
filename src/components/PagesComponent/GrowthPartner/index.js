@@ -21,7 +21,7 @@ const Index = () => {
           </Col>
           <Col lg={6}>
             <div className="image-portion">
-             <img src="/growth-partners.svg" alt="growth partners" />
+             <img src="/growth-partner.svg" alt="growth partners" />
             </div>
           </Col>
         </Row>
@@ -40,7 +40,7 @@ const Index = () => {
         </Col>
         <Col lg={6} className="order-2 order-lg-1">
           <div className="image-portion-md">
-             <img src="/our-vision.svg" alt="our vision" />
+             <img src="/our-visions.svg" alt="our vision" />
             </div>
         </Col>
       </Row>
@@ -55,7 +55,7 @@ const Index = () => {
         </Col>
         <Col lg={6}>
           <div className="image-portion-md">
-             <img src="/our-mission.svg" alt="our mission" />
+             <img src="/our-missions.svg" alt="our mission" />
             </div>
         </Col>
       </Row>
