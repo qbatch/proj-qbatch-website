@@ -139,7 +139,7 @@ const HeaderWrapper = styled.header`
   .menu-items {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 28px;
     ${media.lg`
       gap: 20px;
     `}

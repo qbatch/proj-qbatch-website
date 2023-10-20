@@ -2,24 +2,31 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const GrowthPartnerWrapper = styled.div`
-  .growth-wrapper{
-    padding: 96px 0;
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    padding: 120px 0;
     ${media.sm`
       padding: 40px 0;
     `}
+  .growth-wrapper{
     .underline-heading{
       text-transform:  capitalize;
     }
+    .heading {
+      margin-bottom: 8px;
+    }
     .main-heading{
       color: ${({ theme }) => theme.colors.primaryColor};
-      margin-bottom: 25px;
-      margin-top: 20px;
+      margin-bottom: 28px;
+      span {
+        display: block;
+        margin-bottom: 16px;
+      }
     }
     .paragraph{
       line-height: 32px;
       font-weight: 400;
       max-width: 600px;
+      letter-spacing: 0.2px;
       &:last-child{
       padding-top: 16px;
       }
@@ -45,7 +52,7 @@ const GrowthPartnerWrapper = styled.div`
     }
     .image-portion-md{
       img{
-        height: 390px;
+        height: 496px;
         width: 100%;
         border-radius: 32px 32px 0 32px;
         object-fit: cover;
@@ -58,10 +65,13 @@ const GrowthPartnerWrapper = styled.div`
     
     .content-right{
       .content{
-        padding-left: 25px;
+        padding-left: 96px;
         ${media.md`
         padding-left: 0;
         `}
+        .paragraph {
+          max-width: 595px;
+        }
       }
       .content-wrapper{
         justify-content: center;
@@ -71,7 +81,7 @@ const GrowthPartnerWrapper = styled.div`
       }
     }
     .content-col{
-      padding-top: 72px;
+      margin-top: 144px;
       &:first-child{
         padding-top: 0;
       }
@@ -83,10 +93,6 @@ const GrowthPartnerWrapper = styled.div`
       ${media.md`
         padding-bottom: 12px;
       `}
-      .content{
-        max-width: 573px;
-        margin-bottom: 10px;
-      }
     }
 `
 

@@ -16,6 +16,10 @@ ${media.sm`
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 28px;
     margin-top: 18px;
+    span {
+      display: block;
+      margin-bottom: 24px;
+    }
   }
   .achievements-col{
     text-align: center;

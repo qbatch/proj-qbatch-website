@@ -4,18 +4,15 @@ import { Row, Col } from "react-bootstrap";
 import Container from "../../UiComponent/Container";
 
 import GrowthPartnerWrapper from "./style";
-import VisionWrapper from "./style";
 
 const Index = () => {
   return(
-    
     <GrowthPartnerWrapper>
       <div className="growth-wrapper">
       <Container>
         <Row>
           <Col lg={6}>
-            <h4 className="underline-heading">We are your</h4>
-            <h2 className="main-heading">Growth Partners!</h2>
+            <h2 className="main-heading"><span className="underline-heading text-h4">We are your </span>Growth Partners!</h2>
             <p className="paragraph">We don’t just code or design, our efficiency is rooted in deeply understanding your challenge.
              Our goal is to add technological value to your business and future-proof your success. Therefore, we aim to be your software development partners! </p>
             <p className="paragraph">Team Qbatch has happily delivered powerful and painless software services and solutions in HealthTech, EdTech, 

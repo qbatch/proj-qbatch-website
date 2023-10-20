@@ -27,7 +27,7 @@ const Index = () => {
               {leaderData.map((leader,i) => (
                 <Col md={6} className="leader" key={i}>
                   <div className="leader-info order-2 order-md-1">
-                    <h4 className="leader-name">{leader.name}</h4>
+                    <h3 className="leader-name text-h4">{leader.name}</h3>
                     <span className="leader-title">{leader.title}</span>
                   </div>
                   <div className="leader-img-wrapper order-1 order-md-2">

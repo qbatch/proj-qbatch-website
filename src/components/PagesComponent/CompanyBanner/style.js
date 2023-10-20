@@ -18,11 +18,15 @@ const BannerWrapper = styled.div`
   line-height:32px; 
   max-width: 929px;
   margin-top: 24px; 
+  letter-spacing: 0.2px;
   }
   .banner-headings{
     ${media.md`
       text-align: center;
     `}
+    span {
+      display: block;
+    }
   }
   .banner-button{
     display: flex;
@@ -46,7 +50,7 @@ const H1 = styled.h1`
   color: ${({ theme }) => theme.colors.whiteColor};
   line-height: 102px;
   margin-bottom: 0px;
-  &.color-change{
+  .color-change{
       color: ${({ theme }) => theme.colors.bodyLight};
   }
   ${media.lg`

@@ -12,6 +12,9 @@ const CareerWrapper = styled.div`
   }
   .heading{
     padding: 3px 0;
+    span {
+      display: block;
+    }
   }
   .paragraph{
     line-height: 32px;

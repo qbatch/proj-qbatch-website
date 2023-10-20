@@ -12,10 +12,7 @@ const Index = () => {
     <ValueSystemWrapper>
     <Container>
       <div className="heading-wrapper">
-        <h4 className="underline-heading">
-          It’s not about being different,
-        </h4>
-        <h2 className="heading">
+        <h2 className="heading"><span className="underline-heading text-h4">It’s not about being different, </span>
           it’s about having a <span>“Value System”</span>
         </h2>
       </div>

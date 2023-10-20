@@ -13,8 +13,14 @@ const ValueSystemWrapper = styled.div  `
     color: ${({ theme }) => theme.colors.gardientColor};
     padding-top: 10px;
     span{
-      font-weight: ${({ theme }) => theme.fontWeight.bold};
-    color: ${({ theme }) => theme.colors.primaryColor};
+      &:first-child {
+        display: block;
+        margin-bottom: 24px;
+      }
+      &:nth-child(2) {
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
+        color: ${({ theme }) => theme.colors.primaryColor};
+      }
     }
   }
   .col-wrapper{
