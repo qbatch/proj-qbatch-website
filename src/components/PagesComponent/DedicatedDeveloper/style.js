@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const DedicatedDeveloperWrapper = styled.section`
-  margin-bottom: 98px;
   position: relative;
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   overflow: hidden;

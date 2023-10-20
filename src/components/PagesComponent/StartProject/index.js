@@ -50,13 +50,13 @@ const Index = () => {
                 onClick={() => setOpen(!open)}
                 open={open}
                 content={
-                  <div className={!open && modal ? "add-height" : "zero-height"}>
+                  <div className={!open && modal ? 'add-height' : 'zero-height'}>
                     <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
                   </div>
                 }
               >
                 <div className="seperation d-flex justify-content-between"></div>
-                {["Time and Material", "Fixed Scope Product Development", "Hire Dedicated Development Team"].map(
+                {['Time and Material', 'Fixed Scope Product Development', 'Hire Dedicated Development Team'].map(
                   (value) => {
                     return (
                       <div className="collapse-radio">
@@ -68,37 +68,39 @@ const Index = () => {
                           checked={modal === value}
                           name="collaboration"
                           onChange={(e) => {
-                            setModal(e.target.value);
+                            setModal(e.target.value)
                           }}
-                      />
+                        />
                       </div>
-                    );
+                    )
                   }
                 )}
               </Collapse>
 
               <Collapse
                 content={
-                    <div className={!serviceOpen && serviceSelect.length > 0 && serviceSelect  ? "add-height" : "zero-height"}>
-                      <Row>
-                        {serviceSelect.slice(0.6).map((value, key) => {
-                          return (
-                            <Col md={6}>
-                              <CheckBox
-                                key={key}
-                                label={value}
-                                checked={serviceSelect.includes(value)}
-                                value={value}
-                                name="collaboration"
-                                onChange={(e) =>
-                                  setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
-                                }
-                              />
-                            </Col>
-                          );
-                        })}
-                      </Row>
-                    </div>
+                  <div
+                    className={!serviceOpen && serviceSelect.length > 0 && serviceSelect ? 'add-height' : 'zero-height'}
+                  >
+                    <Row>
+                      {serviceSelect.slice(0.6).map((value, key) => {
+                        return (
+                          <Col md={6}>
+                            <CheckBox
+                              key={key}
+                              label={value}
+                              checked={serviceSelect.includes(value)}
+                              value={value}
+                              name="collaboration"
+                              onChange={(e) =>
+                                setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
+                              }
+                            />
+                          </Col>
+                        )
+                      })}
+                    </Row>
+                  </div>
                 }
                 title="Select Service(s)"
                 onClick={() => setServiceOpen(!serviceOpen)}
@@ -107,16 +109,16 @@ const Index = () => {
                 <div className="seperation d-flex justify-content-between"></div>
                 <Row>
                   {[
-                    "Design & Development",
-                    "MVP Development",
-                    "Mobile App Development",
-                    "CTO as a Service",
-                    "Enterprise Software Development",
-                    "DvOps & Cloud",
-                    "Mobile Development",
-                    "Web App Development",
-                    "E-Commerce Automation Services",
-                    "Other",
+                    'Design & Development',
+                    'MVP Development',
+                    'Mobile App Development',
+                    'CTO as a Service',
+                    'Enterprise Software Development',
+                    'DvOps & Cloud',
+                    'Mobile Development',
+                    'Web App Development',
+                    'E-Commerce Automation Services',
+                    'Other',
                   ]
                     .slice(0.6)
                     .map((value) => {
@@ -131,7 +133,7 @@ const Index = () => {
                             onChange={handleChange}
                           />
                         </Col>
-                      );
+                      )
                     })}
                 </Row>
               </Collapse>
@@ -164,20 +166,21 @@ const Index = () => {
                 />
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
                   <ReCAPTCHA sitekey="6LezlHQnAAAAAFZigM4rT1-ESPRHDcPGoxXpxoKz" onChange={handleRecaptchaChange} />
-                  <Button text="Submit" className="pt-md-0 pt-3"/>
+                  <Button text="Submit" className="pt-md-0 pt-3" />
                 </div>
               </div>
             </div>
           </Col>
           <Col xxl={5} lg={6} className="order-1 order-lg-2">
             <div className="testimonials">
-              <p className="testimonial-paragraph">Not just words, but our driving force to deliver real results consistently! Here's what our clients have to say</p>
-              <TestimonialCarousel/>
+              <h3 className="color-primary">Testimonials</h3>
+              <p className="testimonial-paragraph">Here's what our clients have to say</p>
+              <TestimonialCarousel />
             </div>
           </Col>
         </Row>
       </Container>
     </StartProjectWrapper>
-  );
+  )
 };
 export default Index;
