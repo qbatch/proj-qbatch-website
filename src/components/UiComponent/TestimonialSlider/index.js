@@ -18,7 +18,6 @@ const projectSlides = [
       '“It’s been my pleasure to work with the development team at !batch for the past 3 years ona number of very large and complex web applications. The attention to detail and level of communication has been superior.”',
     title: 'Michael Flanagan',
     subtitle: 'Minmax Industries',
-    logo: '/testimonial.svg',
   },
   {
     clientImage: 'valentine.png',
@@ -27,7 +26,6 @@ const projectSlides = [
     title: 'Michael Flanagan',
     title: 'Valentine Nwachukwu',
     subtitle: 'Zaden Technologies',
-    logo: '/testimonial.svg',
   },
   {
     clientImage: '/ershad.png',
@@ -35,7 +33,6 @@ const projectSlides = [
       '“One of the most hardworking guys I have ever seen! Will definitely work with Qbatch team in the future!”',
     title: 'Ershad Anari',
     subtitle: 'SecondBind',
-    logo: '/testimonial.svg',
   },
   {
     clientImage: '/victor-simon.png',
@@ -43,7 +40,6 @@ const projectSlides = [
       '“Qbatch worked with us for 2 years and their team has become one of the most important members of our team. Very skilful and highly responsible.”',
     title: 'Victor Simon',
     subtitle: 'North Aware',
-    logo: '/testimonial.svg',
   },
 ]
 
@@ -104,7 +100,6 @@ const Index = () => {
           <Carousel responsive={responsiveTitle} arrows={false} ref={carousel2Ref} swipeable={false} draggable={false}>
             {projectSlides.map((item, ind) => (
               <div className="testimonial-title" key={ind}>
-                <img className="client-image" src={item.logo} />
                 <div className="inner-text">
                   <h3 className="text-h4 mb-0">{item.title}</h3>
                   <p>{item.subtitle}</p>

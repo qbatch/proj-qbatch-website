@@ -23,7 +23,7 @@ const projectSlides = [
   },
   {
     projectImg: '/one-app-app.svg',
-    title: 'One APp',
+    title: 'One App',
     logo: '/one-app-logo.svg',
     category: 'E-Commerce',
     tags: ['E-commerce', 'Automation', 'Saas'],
@@ -32,22 +32,22 @@ const projectSlides = [
     projectImg: '/store-filter-app.svg',
     title: 'Store Filter',
     logo: '/store-filter-logo.svg',
-    category: 'E-Commerce',
+    category: 'eCom research',
     tags: ['Database', 'Data Analytics', 'Web App+'],
   },
   {
     projectImg: '/friend-filter-app.svg',
     title: 'Friend Filter',
     logo: 'friend-filter-logo.svg',
-    category: 'E-Commerce',
-    tags: ['E-commerce', 'Automation', 'Saas'],
+    category: 'Marketing',
+    tags: ['Social Media', 'Reporting', 'Saas'],
   },
   {
     projectImg: '/sales-support-app.svg',
     title: 'Sales Support',
     logo: 'sales-support-logo.svg',
     category: 'E-Commerce',
-    tags: ['Automation', 'Saas', 'warehousing'],
+    tags: ['Automation', 'Saas', 'Warehousing'],
   },
 ]
 
