@@ -18,36 +18,46 @@ const projectSlides = [
     projectImg: '/E-Com-Circles.svg',
     title: 'Ecom Circles',
     logo: '/e-commerce-logo.svg',
-    category: 'E-Commerce',
-    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
+    description:
+      'We created an all-in-one E-commerce Management Software trusted by 3000+ Amazon and Walmart sellers to organize and streamline their drop-shipping business.',
+    tags: ['Automation', 'Saas', 'Warehousing'],
   },
   {
     projectImg: '/one-app-app.svg',
     title: 'One APp',
     logo: '/one-app-logo.svg',
+    description:
+      'We developed a powerful E-commerce marketplace that manages the daily inventory and stock data of above 50 different stores. The automated & algorithmic Repricer allows optimal order management, total control over centralized accounts, better profit/loss calculation, & reliable FBA forecasting.',
     category: 'E-Commerce',
-    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
+    tags: ['E-commerce', 'Automation', 'Saas'],
   },
   {
     projectImg: '/store-filter-app.svg',
     title: 'Store Filter',
     logo: '/store-filter-logo.svg',
+    description:
+      'We developed a witty searchable database for eCom agencies, Shopify store owners, and Brokers to know everything their competitors are doing and earn a competitive edge. The app enables real-time reporting on your competition marketing efforts',
     category: 'E-Commerce',
-    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
+    tags: ['Database', 'Data Analytics', 'Web App+'],
   },
   {
     projectImg: '/friend-filter-app.svg',
     title: 'Friend Filter',
+    description:
+      'Grow Your Influence on Facebook: Our platform helps remove inactive friends, increase engagement, and gets your posts shown to more people. Join 120,000+ Satisfied Users Whove Supercharged Their Facebook Presence with FriendFilter.',
     logo: 'friend-filter-logo.svg',
     category: 'E-Commerce',
-    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
+    tags: ['E-commerce', 'Automation', 'Saas'],
   },
   {
     projectImg: '/sales-support-app.svg',
     title: 'Sales Support',
+    description:
+      'We’ve created an immaculate Amazon Wholesale Kickstarter that helped launch 1000+ businesses on Amazon. The platform features a Repricer for automated pricing and a catalog analyzer for better forecasting and profit/loss analysis. While the reimbursements removal and FBA forecasting elevated their business off the ground.',
+    logo: 'friend-filter-logo.svg',
     logo: 'sales-support-logo.svg',
     category: 'E-Commerce',
-    tags: ['Tech 1', 'Tech 2', 'Tech 3'],
+    tags: ['Automation', 'Saas', 'warehousing'],
   },
 ]
 
@@ -93,9 +103,7 @@ const Index = ({ heading, paragraph }) => {
         <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
           <div>
             <h2 className="heading text-h1">{heading}</h2>
-            <p className="paragraph">
-            {paragraph}
-            </p>
+            <p className="paragraph">{paragraph}</p>
           </div>
           <div className="mt-md-4 mt-0">
             <Button text="Explore More" />
@@ -118,7 +126,7 @@ const Index = ({ heading, paragraph }) => {
                     <div className="project-title" key={ind}>
                       <img src={item.logo} alt="logo" />
                       <h3>{item.title}</h3>
-                      <span>{item.category}</span>
+                      <span>{item.description}</span>
                       <div className="project-tags d-flex">
                         {item.tags.map((tag, ind) => (
                           <div key={ind}>{tag}</div>

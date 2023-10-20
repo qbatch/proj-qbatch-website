@@ -34,9 +34,10 @@ const ProvenExperienceWrapper = styled.div`
       margin-bottom: 5px;
     }
     span {
-      color: ${({ theme }) => theme.colors.primaryColor};
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+      color: ${({ theme }) => theme.colors.textMedium};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      max-width:350px;
+      display:inline-block;
     }
   }
   .container-slider {
