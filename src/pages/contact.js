@@ -9,12 +9,12 @@ import ProblemSolving from "../components/PagesComponent/ProblumSolving";
 const ContactUs = () => {
   return (
     <Layout pageTitle="Contact Us">
-      <StartProject />
+      <StartProject page="contact" />
       <Achievements />
       <ProvenWorkExperience heading="Proven Work Experience" paragraph="They imagined it, we brought it to the world!" />
       <ProblemSolving
         className="contact-project-cost"
-        text={<h1 className="heading-break">Wondering how much your project would cost?</h1>}
+        text={<h2 className="text-h1 heading-break">Wondering how much your project would cost?</h2>}
       />
     </Layout>
   );
