@@ -19,7 +19,8 @@ const ButtonWrapper = styled(Button)`
     border: 1px solid ${({ theme }) => theme.colors.primaryColor};
     color: ${({ theme }) => theme.colors.whiteColor};
     background-color: ${({ theme }) => theme.colors.primaryColor};
-    padding: 3px 3px 3px 16px;
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+    padding: 0 3px 0 16px;
     border-radius: 22px;
     transition: all 0.3s ease-in-out;
     display: flex;

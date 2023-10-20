@@ -9,7 +9,9 @@ const Index = () => (
     <BannerWrapper>
       <Container>
         <div className="banner-headings">
-          {["Team Spirit", "Great Work", "lasting Partnerships"].map((value, i) => <H1 className={value.includes('lasting') ? "color-change" : ""} key={i}>{value}</H1> )}
+          <H1>
+          {["Team Spirit ", "Great Work ", "lasting Partnerships"].map((value, i) => <span className={value.includes('lasting') ? "color-change" : ""} key={i}>{value}</span> )}
+          </H1>
           <p>
             As a close-knit team, we strive to create products that facilitate millions of people every
             day. We heavily focus on building high-potential teams that believe in deriving real and

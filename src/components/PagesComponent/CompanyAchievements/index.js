@@ -21,16 +21,15 @@ const Index = () => {
   return (
     <AchievementsWrapper>
       <Container>
-        <h4 className="underline-heading">Together</h4>
-        <h2 className="main-heading">We can achieve more — Beyond these numbers</h2>
+        <h2 className="main-heading"><span className="underline-heading text-h4">Together </span>We can achieve more — Beyond these numbers</h2>
         <div className="counter-wrapper">
           <Row>
             {companyCounter.map((data, ind) => (
               <Col md={3} sm={4} xs={6} key={ind} className="achievements-col">
-                <h1>
+                <h3 className="text-h1">
                   <CountUp end={data.count} duration={3} formattingFn={(value) => formatNumber(value)} />
                   <span className="color-danger fw-light ms-2">{data.symbol}</span>
-                </h1>
+                </h3>
                 <p>{data.desc}</p>
               </Col>
             ))}
