@@ -32,6 +32,7 @@ const projectSlides = [
     projectImg: '/store-filter-app.svg',
     title: 'Store Filter',
     logo: '/store-filter-logo.svg',
+    category: 'E-Commerce',
     tags: ['Database', 'Data Analytics', 'Web App+'],
   },
   {
