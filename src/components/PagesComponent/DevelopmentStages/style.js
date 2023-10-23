@@ -186,6 +186,12 @@ const StagesWrapper = styled.div`
     ${media.sm`
       padding-left: 30px;
     `}
+    img {
+      max-width: none;
+      ${media.lg`
+      max-width: 100%;
+    `}
+    }
     .slider-item {
       .title {
         display: none;
@@ -199,12 +205,19 @@ const StagesWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         letter-spacing: 0.8px;
         line-height: 32px;
-        margin-top: 24px;
+        margin-top: 92px;
         max-width: 350px;
+        ul {
+          display: none;
+        }
+        ${media.lg`
+          margin-top: 40px;
+        `}
         ${media.sm`
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
             text-align: center;
             max-width: 100%;
+            margin-top: 8px;
         `}
       }
     }

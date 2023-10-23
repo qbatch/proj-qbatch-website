@@ -5,19 +5,19 @@ import 'slick-carousel/slick/slick-theme.css'
 import { Col, Container, Row } from 'react-bootstrap'
 
 import Button from '../../UiComponent/Button'
+import { marketPlaceData } from '../../../constants'
 
-import StagesWrapper from './style'
+import StagesWrapper from '../DevelopmentStages/style'
 
-const DevelopmentStages = (props) => {
+const Index = () => {
 
-  const { heading, desc, sliderData, col1, col2, subCol1, subCol2, className, mt } = props
-  const sliderRef = useRef(null)
-  const scrollRef = useRef(null)
+  const sliderRef2 = useRef(null)
+  const scrollRef2 = useRef(null)
   const [activeIndex, setActiveIndex] = useState(0)
 
   const scrollToSectionStart = () => {
-    if (scrollRef.current) {
-      const sectionTop = scrollRef.current.offsetTop
+    if (scrollRef2.current) {
+      const sectionTop = scrollRef2.current.offsetTop
       const sectionTopCalc = sectionTop - 80
       window.scrollTo({
         top: sectionTopCalc,
@@ -47,66 +47,66 @@ const DevelopmentStages = (props) => {
   }
 
   const handlePaginationItemClick = (index) => {
-    sliderRef.current.slickGoTo(index)
+    sliderRef2.current.slickGoTo(index)
   }
 
   useEffect(() => {
     const handleMouseWheel = (e) => {
       const isAtFirstSlide = activeIndex === 0
-      const isAtLastSlide = activeIndex === sliderData?.length - 1
+      const isAtLastSlide = activeIndex === marketPlaceData.length - 1
 
       if (e.deltaY > 0) {
         if (!isAtLastSlide) {
           e.preventDefault()
-          sliderRef.current.slickNext()
+          sliderRef2.current.slickNext()
           scrollToSectionStart()
-          document.getElementById('scene-trigger').classList.add('section-sticky')
+          document.getElementById('scene-trigger2').classList.add('section-sticky')
         } else {
           document.body.style.overflow = 'auto'
-          document.getElementById('scene-trigger').classList.remove('section-sticky')
+          document.getElementById('scene-trigger2').classList.remove('section-sticky')
         }
       } else if (e.deltaY < 0) {
         if (isAtFirstSlide) {
           document.body.style.overflow = 'auto'
-          document.getElementById('scene-trigger').classList.remove('section-sticky')
+          document.getElementById('scene-trigger2').classList.remove('section-sticky')
         } else {
           e.preventDefault()
-          sliderRef.current.slickPrev()
+          sliderRef2.current.slickPrev()
           scrollToSectionStart()
-          document.getElementById('scene-trigger').classList.add('section-sticky')
+          document.getElementById('scene-trigger2').classList.add('section-sticky')
         }
       }
     }
 
     // Add event listener for mousewheel
-    const sliderElement = document.querySelector('.stage-slider-main')
+    const sliderElement = document.querySelector('.stage-slider-main2')
     sliderElement.addEventListener('wheel', handleMouseWheel)
 
     return () => {
       // Remove event listener when the component unmounts
       sliderElement.removeEventListener('wheel', handleMouseWheel)
     }
-  }, [activeIndex, sliderData?.length])
-  const marketplace = sliderData.find((x) => x.content);
+  }, [activeIndex])
+  const marketplace = marketPlaceData.find((x) => x.content);
   return (
     <StagesWrapper
-      id="scene-trigger"
-      ref={scrollRef}
-      className="stage-slider-main"
+      id="scene-trigger2"
+      ref={scrollRef2}
+      className="stage-slider-main2"
       marketplace={marketplace ? '' : '49px'}
     >
       <div>
         <Container>
           <div className="stages-header">
-            <h2>{heading}</h2>
-            <p>{desc}</p>
+            <h2>Our 5-Step E-commerce Automation Process</h2>
+            <p>To help you stand your ground in the ever-growing e-commerce district!</p>
           </div>
           <div className="slider-section">
             <Row>
-              <Col lg={col1} className="fixed-slider-column">
+              <Col lg={5} className="fixed-slider-column">
                 <div className="pagination fixed-slider-pagination">
-                  <ul className={mt}>
-                    {sliderData?.map((item, index) => (
+                  <ul className="mt-4">
+                    {marketPlaceData?.map((item, index) => (
                       <li
                         key={index}
                         className={`pagination-item ${activeIndex === index ? 'active' : ''}`}
@@ -118,9 +118,9 @@ const DevelopmentStages = (props) => {
                   </ul>
                 </div>
               </Col>
-              <Col lg={col2} md={12} className={className}>
-                <Slider {...sliderSettings} ref={sliderRef}>
-                  {sliderData?.map((item, index) => (
+              <Col lg={7} md={12} className="ecom-section">
+                <Slider {...sliderSettings} ref={sliderRef2}>
+                  {marketPlaceData?.map((item, index) => (
                     <div key={index} className="slider-item">
                       <Row>
                         {!item.content ? (
@@ -133,13 +133,13 @@ const DevelopmentStages = (props) => {
                           ))
                         ) : (
                           <>
-                            <Col lg={subCol1} md={5}>
+                            <Col lg={6} md={5}>
                               <div className="title title-responsive">
                                 <h3>{item.title}</h3>
                               </div>
                               <img src={item.image} alt="project" />
                             </Col>
-                            <Col lg={subCol2} md={7} className="slider-column-text">
+                            <Col lg={6} md={7} className="slider-column-text">
                               <div className="title title-desktop">
                                 <h3>{item.title}</h3>
                               </div>
@@ -174,4 +174,4 @@ const DevelopmentStages = (props) => {
   )
 }
 
-export default DevelopmentStages
+export default Index;
