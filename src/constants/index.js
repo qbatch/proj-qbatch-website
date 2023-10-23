@@ -430,6 +430,34 @@ const projects = [
 ]
 const ecomLogos = ["/blue-ware.svg","/ecom-circle-logo.svg","/north-ware.svg","/one-app.svg","/keurig-logo.svg","/sales-support-logo.svg"]
 
+const revenueData = [
+  {
+    img: "/retail-arbitrage.svg",
+    title: "Retail Arbitrage",
+    description: "Find profitable products, deal with price volatility, and grow account health."
+  },
+  {
+    img: "/label-brands.svg",
+    title: "Private Label Brands",
+    description: "Deal with stock-outs and stock-ins and maintain quality control."
+  },
+  {
+    img: "/wholesale-sellers.svg",
+    title: "Wholesale Sellers",
+    description: "Avoid poor labor management, pricing wars, and storage costs towards better time to market."
+  },
+  {
+    img: "/dropshipping.svg",
+    title: "Dropshipping",
+    description: "Automate slow order fulfillment and cheer up unhappy customers by bringing business consistency."
+  },
+  {
+    img: "/warehousing.svg",
+    title: "Warehousing/ 3PL/Prep Center",
+    description: "Go data-driven and eliminate inaccurate inventory management and substandard processes."
+  },
+]
+
 export {
   homeTiles,
   CareersData,
@@ -447,4 +475,5 @@ export {
   ecomLogos,
   projects,
   marketPlaceData,
+  revenueData
 }

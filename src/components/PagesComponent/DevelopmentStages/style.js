@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const StagesWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundColor};
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  padding: 120px 0 120px;
+  padding: 120px 0;
   @media screen and (max-width: 767px) {
     padding-bottom: 32px;
     padding-top: 60px;

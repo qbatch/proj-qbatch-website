@@ -11,10 +11,11 @@ import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
 import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
 import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments"
 import FaqSection from '../components/PagesComponent/Faq'
-import { ecomSliderItems, marketPlace } from '../constants'
+import { ecomSliderItems } from '../constants'
 import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers";
 import QuotationSection from '../components/PagesComponent/QuotationSection'
 import MarketplaceIntegrations from "../components/PagesComponent/MarketplaceIntegrations";
+import TrippleYourRevenue from "../components/PagesComponent/TrippleYourRevenue";
 
 const Ecommerce = () => {
    const ctoBenefits = [
@@ -176,6 +177,7 @@ const Ecommerce = () => {
         className="ecom-section"
       />
       <BusinessMangement />
+      <TrippleYourRevenue />
       <IdeasAndInvestments />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
       <MarketplaceIntegrations />

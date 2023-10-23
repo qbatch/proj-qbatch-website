@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins"
 
 const ManagementWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
-  padding: 120px 0;
+  padding: 122px 0;
   .text-h2{
     color: ${({ theme }) => theme.colors.whiteColor};
     line-height: 52px;
@@ -36,7 +36,7 @@ const ManagementWrapper = styled.div`
   }
   .add-space{
     margin-left: 27px;
-    margin-top: 75px;
+    margin-top: 73px;
   }
 `
 export default ManagementWrapper;
