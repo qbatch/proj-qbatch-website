@@ -14,6 +14,7 @@ import FaqSection from '../components/PagesComponent/Faq'
 import { ecomSliderItems, marketPlace } from '../constants'
 import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers";
 import QuotationSection from '../components/PagesComponent/QuotationSection'
+import MarketplaceIntegrations from "../components/PagesComponent/MarketplaceIntegrations";
 
 const Ecommerce = () => {
    const ctoBenefits = [
@@ -177,16 +178,7 @@ const Ecommerce = () => {
       <BusinessMangement />
       <IdeasAndInvestments />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
-      <DevelopmentStages
-        heading="Integrations for Your Marketplace"
-        sliderData={marketPlace}
-        col1={5}
-        col2={7}
-        subCol1={6}
-        subCol2={6}
-        mt="mt-4"
-        className="ecom-section"
-      />
+      <MarketplaceIntegrations />
       <MarketplaceSellers />
       <FaqSection faqQuestion={faqQuestion} />
       <QuotationSection />

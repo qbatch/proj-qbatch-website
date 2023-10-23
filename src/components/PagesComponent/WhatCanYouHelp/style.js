@@ -3,6 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const HelpWrapper = styled.div`
   padding: 73px 0 98px 0;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .add-top-space {
     margin-top: 74px;
   }

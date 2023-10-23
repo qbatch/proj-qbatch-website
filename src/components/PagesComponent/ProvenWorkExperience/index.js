@@ -44,7 +44,7 @@ const projectSlides = [
   },
   {
     projectImg: '/sales-support-app.svg',
-    title: 'Seller Repay',
+    title: 'Sales Support',
     logo: '/sales-support-logo.svg',
     category: 'E-Commerce',
     tags: ['Automation', 'Saas', 'Warehousing'],

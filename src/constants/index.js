@@ -321,7 +321,7 @@ const ecomSliderItems = [
     content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
   },
   {
-    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.jpeg",
+    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
     title: "Software Automation Solution",
     content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
   },
@@ -341,7 +341,7 @@ const ecomSliderItems = [
     content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
   },
 ];
-const marketPlace = [
+const marketPlaceData = [
   {
     image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg'],
     title: 'Marketplace',
@@ -446,5 +446,5 @@ export {
   ecomSliderItems,
   ecomLogos,
   projects,
-  marketPlace,
+  marketPlaceData,
 }
