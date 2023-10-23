@@ -18,6 +18,148 @@ import FaqSection from "../components/PagesComponent/Faq";
 import { sliderItems } from "../constants";
 
 const CtoService = () => {
+     const ctoBenefits = [
+       'Technological expertise and guidance',
+       'Strategic roadmap and execution',
+       'Saves you money',
+       'Change management and vision alignment',
+       'Technology adoption and infrastructure development',
+       'Unbiasted and objective analysis',
+       'Access to industry community',
+       'Initiatives and execution',
+       'Risk management',
+       'Focus on core technical areas',
+     ]
+
+     const faqQuestion = [
+       {
+         id: 1,
+         title: 'What is CTO as a Service, and how can it benefit my business?',
+         content: (
+           <div className="faq-content">
+             <span>
+               CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+               strategic technology leadership, guidance, and expertise.
+             </span>
+             <span>Following are benefits of hiring a CTO:</span>
+             <ul>
+               {ctoBenefits.map((list, ind) => (
+                 <li key={ind}>{list}</li>
+               ))}
+             </ul>
+           </div>
+         ),
+       },
+       {
+         id: 2,
+         title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
+         content: (
+           <div className="faq-content">
+             <span>
+               CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+               strategic technology leadership, guidance, and expertise.
+             </span>
+             <span>Following are benefits of hiring a CTO:</span>
+             <ul>
+               {ctoBenefits.map((list, ind) => (
+                 <li key={ind}>{list}</li>
+               ))}
+             </ul>
+           </div>
+         ),
+       },
+       {
+         id: 3,
+         title: 'What is CTO as a Service, and how can it benefit my business?',
+         content: (
+           <div className="faq-content">
+             <span>
+               CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+               strategic technology leadership, guidance, and expertise.
+             </span>
+             <span>Following are benefits of hiring a CTO:</span>
+             <ul>
+               {ctoBenefits.map((list, ind) => (
+                 <li key={ind}>{list}</li>
+               ))}
+             </ul>
+           </div>
+         ),
+       },
+       {
+         id: 4,
+         title: 'What is CTO as a Service, and how can it benefit my business?',
+         content: (
+           <div className="faq-content">
+             <span>
+               CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+               strategic technology leadership, guidance, and expertise.
+             </span>
+             <span>Following are benefits of hiring a CTO:</span>
+             <ul>
+               {ctoBenefits.map((list, ind) => (
+                 <li key={ind}>{list}</li>
+               ))}
+             </ul>
+           </div>
+         ),
+       },
+       {
+         id: 5,
+         title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
+         content: (
+           <div className="faq-content">
+             <span>
+               CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+               strategic technology leadership, guidance, and expertise.
+             </span>
+             <span>Following are benefits of hiring a CTO:</span>
+             <ul>
+               {ctoBenefits.map((list, ind) => (
+                 <li key={ind}>{list}</li>
+               ))}
+             </ul>
+           </div>
+         ),
+       },
+
+       {
+         id: 6,
+         title: 'What is CTO as a Service, and how can it benefit my business?',
+         content: (
+           <div className="faq-content">
+             <span>
+               CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+               strategic technology leadership, guidance, and expertise.
+             </span>
+             <span>Following are benefits of hiring a CTO:</span>
+             <ul>
+               {ctoBenefits.map((list, ind) => (
+                 <li key={ind}>{list}</li>
+               ))}
+             </ul>
+           </div>
+         ),
+       },
+       {
+         id: 7,
+         title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
+         content: (
+           <div className="faq-content">
+             <span>
+               CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+               strategic technology leadership, guidance, and expertise.
+             </span>
+             <span>Following are benefits of hiring a CTO:</span>
+             <ul>
+               {ctoBenefits.map((list, ind) => (
+                 <li key={ind}>{list}</li>
+               ))}
+             </ul>
+           </div>
+         ),
+       },
+     ]
   return (
     <Layout>
       <CtoBanner />
@@ -39,7 +181,7 @@ const CtoService = () => {
       <ChooseCto />
       <CtoServiceModel />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
-      <FaqSection />
+      <FaqSection faqQuestion={faqQuestion} />
       <Insights />
       <StartProject />
     </Layout>
