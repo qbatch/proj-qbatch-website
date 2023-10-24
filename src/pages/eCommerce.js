@@ -15,9 +15,14 @@ import { eComSliderItems } from '../constants'
 import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers";
 import QuotationSection from '../components/PagesComponent/QuotationSection'
 import MarketplaceIntegrations from "../components/PagesComponent/MarketplaceIntegrations";
+<<<<<<< HEAD
 import TripleYourRevenue from "../components/PagesComponent/TripleYourRevenue";
 
 const ECommerce = () => {
+=======
+import TrippleYourRevenue from "../components/PagesComponent/TrippleYourRevenue";
+import Automation from "../components/PagesComponent/Automation";
+>>>>>>> 0892d97d17fc8c0f07a5a057e3e1424dbc56b5ad
 
    const ctoBenefits = [
      'Technological expertise and guidance',

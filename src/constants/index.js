@@ -508,6 +508,41 @@ const revenueData = [
   },
 ]
 
+const automationData = [
+  {
+    img: "/data-driven-decisions.svg",
+    description: "Make data-driven decisions for targeted marketing and optimization."
+  },
+  {
+    img: "/marketplaces-logistics-and-stores.svg",
+    description: "Facilitate communication across marketplaces, logistics, and stores."
+  },
+  {
+    img: "/tasks-for-faster-sales.svg",
+    description: "Eliminate repetitive tasks for faster sales."
+  },
+  {
+    img: "/orders-across-inventories.svg",
+    description: "Manage multichannel orders across inventories."
+  },
+  {
+    img: "/overstocking-in-your-supply-chain.svg",
+    description: "Auto-track stockouts and overstocking in your supply chain."
+  },
+  {
+    img: "/market-and-operational-costs.svg",
+    description: "Reduce time-to-market and operational costs."
+  },
+  {
+    img: "/foolproof-security-standards.svg",
+    description: "Ensure foolproof security standards."
+  },
+  {
+    img: "/shopping-experiences.svg",
+    description: "Deliver personalized shopping experiences."
+  },
+]
+
 export {
   homeTiles,
   CareersData,
@@ -525,5 +560,5 @@ export {
   ecomLogos,
   projects,
   marketPlaceData,
-  revenueData,
+  revenueData
 }
