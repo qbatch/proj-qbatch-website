@@ -17,7 +17,7 @@ const Index = () => {
   const scrollToSectionStart = () => {
     if (scrollRef2.current) {
       const sectionTop = scrollRef2.current.offsetTop;
-      const sectionTopCalc = sectionTop - 80;
+      const sectionTopCalc = sectionTop - 20;
       window.scrollTo({
         top: sectionTopCalc,
         behavior: "smooth",
