@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const ProblumSolvingWrapper = styled.div`
+const ProblemSolvingWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 165px 0 148px;
   overflow: hidden;
@@ -128,4 +128,4 @@ const ProblumSolvingWrapper = styled.div`
   }
   }
 `;
-export default ProblumSolvingWrapper;
+export default ProblemSolvingWrapper;

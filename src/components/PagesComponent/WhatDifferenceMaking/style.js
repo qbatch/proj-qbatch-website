@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const QbatchMakingWrapper = styled.div`
+const MakingWrapper = styled.div`
   .container-padding {
     padding: 120px 0;
     ${media.sm`
@@ -10,9 +10,9 @@ const QbatchMakingWrapper = styled.div`
   }
   .section-heading {
     margin-bottom: 42px;
-    p{
+    p {
       max-width: 450px;
-    margin: auto;
+      margin: auto;
     }
     ${media.xs`
       margin-bottom: 40px;
@@ -34,7 +34,7 @@ const QbatchMakingWrapper = styled.div`
     .challenges-box {
       margin-bottom: 40px;
       align-items: center;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
       p {
@@ -55,11 +55,7 @@ const QbatchMakingWrapper = styled.div`
       min-width: 30px;
       position: relative;
       height: 2px;
-      background: linear-gradient(
-        to right,
-        rgba(237, 28, 36, 1),
-        rgba(0, 84, 166, 1)
-      );
+      background: linear-gradient(to right, rgba(237, 28, 36, 1), rgba(0, 84, 166, 1));
       ${media.xs`
         height: 1px;
       `}
@@ -78,6 +74,6 @@ const QbatchMakingWrapper = styled.div`
       }
     }
   }
-`;
+`
 
-export default QbatchMakingWrapper;
+export default MakingWrapper

@@ -163,7 +163,7 @@ const Index = () => {
                     </div>
                     <h6 className='heading'>{card.title}</h6>
                     <p className='paragraph'>{card.content}</p>
-                    <PrimaryButton borderbottom text="Explore More" />
+                    <PrimaryButton borderBottom text="Explore More" />
                   </div>
                 </div>
               </div>

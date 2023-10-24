@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Button from "react-bootstrap/Button";
-import { media } from "../../../theme/media-mixins";
+import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
+import { media } from '../../../theme/media-mixins';
 
 const ButtonWrapper = styled(Button)`
   display: flex;
@@ -77,7 +77,7 @@ const ButtonWrapper = styled(Button)`
     }
   }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -108,12 +108,12 @@ const ButtonWrapper = styled(Button)`
   }
   &.secondary-btn {
     color: ${({ theme }) => theme.colors.whiteColor};
-    font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     .button-icon {
       border-color: ${({ theme }) => theme.colors.dangerColor};
       svg {
         fill: ${({ theme }) => theme.colors.primaryColor};
-    }
+      }
     }
     &:hover {
       .button-icon {
@@ -121,6 +121,6 @@ const ButtonWrapper = styled(Button)`
       }
     }
   }
-`;
+`
 
 export default ButtonWrapper;

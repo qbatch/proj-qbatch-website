@@ -1,12 +1,12 @@
 import React from 'react';
-import { EcommerceBannerWrapper, H1 } from './style';
+import { ECommerceBannerWrapper, H1 } from './style';
 import Button from "../../UiComponent/Button";
 
 import Container from "../../UiComponent/Container";
 
 const index = () => {
   return (
-    <EcommerceBannerWrapper>
+    <ECommerceBannerWrapper>
       <Container>
         <div className='title-portion'>
           <p className='sub-heading'>Custom E-Commerce Software Solutions</p>
@@ -26,7 +26,7 @@ const index = () => {
 
       </Container>
 
-    </EcommerceBannerWrapper>
+    </ECommerceBannerWrapper>
   );
 };
 

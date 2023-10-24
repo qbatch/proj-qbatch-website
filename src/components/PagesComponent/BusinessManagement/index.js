@@ -1,9 +1,10 @@
-import React from 'react'
-import {Row,Col} from 'react-bootstrap'
-import Container from '../../UiComponent/Container'
-import Button from '../../UiComponent/Button'
-import {projects} from '../../../constants'
-import ManagementWrapper from './style'
+import React from 'react';
+import {Row,Col} from 'react-bootstrap';
+import Container from '../../UiComponent/Container';
+import Button from '../../UiComponent/Button';
+import {projects} from '../../../constants';
+import ManagementWrapper from './style';
+
 const Index = () => {
 
   return (

@@ -3,21 +3,22 @@ import React from "react";
 import SEO from "../components/Seo";
 import Layout from "../components/Layout/layout";
 import StartProject from "../components/PagesComponent/StartProject";
-import WhatCanHelp from '../components/PagesComponent/WhatCanYouHelp/index'
-import BusinessMangement from '../components/PagesComponent/BusinessMangement/index'
-import EcomLogoSection from "../components/PagesComponent/EcomLogoSection";
+import WhatCanHelp from '../components/PagesComponent/WhatCanYouHelp'
+import BusinessManagement from '../components/PagesComponent/BusinessManagement'
+import EComLogoSection from "../components/PagesComponent/EComLogoSection";
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
-import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
+import ECommerceBanner from "../components/PagesComponent/ECommerceBanner";
 import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
 import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments"
 import FaqSection from '../components/PagesComponent/Faq'
-import { ecomSliderItems } from '../constants'
+import { eComSliderItems } from '../constants'
 import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers";
 import QuotationSection from '../components/PagesComponent/QuotationSection'
 import MarketplaceIntegrations from "../components/PagesComponent/MarketplaceIntegrations";
-import TrippleYourRevenue from "../components/PagesComponent/TrippleYourRevenue";
+import TripleYourRevenue from "../components/PagesComponent/TripleYourRevenue";
 
-const Ecommerce = () => {
+const ECommerce = () => {
+
    const ctoBenefits = [
      'Technological expertise and guidance',
      'Strategic roadmap and execution',
@@ -162,13 +163,13 @@ const Ecommerce = () => {
    ]
   return (
     <Layout>
-      <EcommerceBanner />
-      <EcomLogoSection />
+      <ECommerceBanner />
+      <EComLogoSection />
       <WhatCanHelp />
       <DevelopmentStages
         heading="Our 5-Step E-commerce Automation Process"
         desc="To help you stand your ground in the ever-growing e-commerce district!"
-        sliderData={ecomSliderItems}
+        sliderData={eComSliderItems}
         col1={5}
         col2={7}
         subCol1={6}
@@ -176,8 +177,8 @@ const Ecommerce = () => {
         mt="mt-4"
         className="ecom-section"
       />
-      <BusinessMangement />
-      <TrippleYourRevenue />
+      <BusinessManagement />
+      <TripleYourRevenue />
       <IdeasAndInvestments />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
       <MarketplaceIntegrations />
@@ -188,6 +189,6 @@ const Ecommerce = () => {
     </Layout>
   )
 };
-export const Head = () => <SEO title="ecommerce" />;
+export const Head = () => <SEO title="eCommerce" />;
 
-export default Ecommerce;
+export default ECommerce

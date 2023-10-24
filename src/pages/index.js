@@ -1,19 +1,19 @@
-import * as React from "react";
+import * as React from 'react';
 // components for home page
-import Layout from "../components/Layout/layout";
-import SEO from "../components/Seo";
-import DedicatedDevelopment from "../components/PagesComponent/DedicatedDeveloper";
-import Achievements from "../components/PagesComponent/Achievements";
-import WhatWeCanDo from "../components/PagesComponent/WhatWeCanDo";
-import Expertise from "../components/PagesComponent/Expertise";
-import ProblumSolving from "../components/PagesComponent/ProblumSolving";
-import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
-import HappilyMaking from "../components/PagesComponent/MakingIndustries";
-import WhatDifferenceQbatchMaking from "../components/PagesComponent/WhatDifferenceQbatchMaking";
-import Collaboration from "../components/PagesComponent/Collaboration";
-import Awards from "../components/PagesComponent/Awards";
-import CreativeIntelligence from "../components/PagesComponent/CreativeIntelligence";
-import StartProject from "../components/PagesComponent/StartProject";
+import Layout from '../components/Layout/layout';
+import SEO from '../components/Seo';
+import DedicatedDevelopment from '../components/PagesComponent/DedicatedDeveloper';
+import Achievements from '../components/PagesComponent/Achievements';
+import WhatWeCanDo from '../components/PagesComponent/WhatWeCanDo';
+import Expertise from '../components/PagesComponent/Expertise';
+import ProblemSolving from '../components/PagesComponent/ProblemSolving';
+import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience';
+import HappilyMaking from '../components/PagesComponent/MakingIndustries';
+import WhatDifferenceMaking from '../components/PagesComponent/WhatDifferenceMaking';
+import Collaboration from '../components/PagesComponent/Collaboration';
+import Awards from '../components/PagesComponent/Awards';
+import CreativeIntelligence from '../components/PagesComponent/CreativeIntelligence';
+import StartProject from '../components/PagesComponent/StartProject';
 
 const IndexPage = () => (
   <Layout>
@@ -21,24 +21,26 @@ const IndexPage = () => (
     <Achievements page="home" />
     <WhatWeCanDo />
     <Expertise />
-    <ProblumSolving
+    <ProblemSolving
       text={
         <p className="text-h2 quote">
-          We go beyond traditional problem-solving techniques and old-fashioned
-          promises to assist visionaries like you to transform on a massive
-          scale<br></br> — <b>with logic, innovation and emotion.</b>
+          We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like you
+          to transform on a massive scale<br></br> — <b>with logic, innovation and emotion.</b>
         </p>
       }
     />
-    <ProvenWorkExperience heading="Proven Work Experience"  paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."/>
+    <ProvenWorkExperience
+      heading="Proven Work Experience"
+      paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."
+    />
     <HappilyMaking />
-    <WhatDifferenceQbatchMaking />
+    <WhatDifferenceMaking />
     <Awards maxCols={8} />
     <Collaboration />
     <CreativeIntelligence />
     <StartProject />
   </Layout>
-);
+)
 
 export const Head = () => <SEO title="Hire Skilled Dedicated Developers | Qbatch" />
 

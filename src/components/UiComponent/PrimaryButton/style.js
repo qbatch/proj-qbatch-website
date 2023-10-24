@@ -36,7 +36,7 @@ const PrimaryButtonWrapper = styled(Button)`
     max-width: none;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -2px;
@@ -49,11 +49,11 @@ const PrimaryButtonWrapper = styled(Button)`
     &::before {
       width: ${({ theme }) =>
         (props) =>
-          props.borderbottom ? `${props.borderbottom}` : "0px"};
+          props.borderBottom ? `${props.borderBottom}` : '0px'};
     }
     img {
       transform: rotate(-45deg);
     }
   }
-`;
+`
 export default PrimaryButtonWrapper;

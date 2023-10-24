@@ -6,13 +6,13 @@ import Container from "../../UiComponent/Container";
 
 import ArrowDownward from "../../../assets/images/arrow_downward.svg";
 
-import ProblumSolvingWrapper from "./style";
+import ProblemSolvingWrapper from "./style";
 
 const Index = (props) => {
   const {text, className} = props;
 
   return (
-    <ProblumSolvingWrapper 
+    <ProblemSolvingWrapper 
     className={className || ""}
     >
       <Container>
@@ -51,7 +51,7 @@ const Index = (props) => {
           </Col>
         </Row>
       </Container>
-    </ProblumSolvingWrapper>
+    </ProblemSolvingWrapper>
   );
 };
 export default Index;

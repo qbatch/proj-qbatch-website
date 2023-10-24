@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const EcommerceBannerWrapper = styled.section`
+const ECommerceBannerWrapper = styled.section`
   padding: 125px 0 100px;
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   ${media.md`
@@ -132,4 +132,4 @@ const H1 = styled.h1`
   `}
 `;
 
-export { EcommerceBannerWrapper, H1 };
+export { ECommerceBannerWrapper, H1 };

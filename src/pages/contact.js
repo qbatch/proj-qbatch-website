@@ -4,7 +4,7 @@ import SEO from "../components/Seo";
 import StartProject from "../components/PagesComponent/StartProject";
 import Achievements from "../components/PagesComponent/Achievements";
 import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
-import ProblemSolving from "../components/PagesComponent/ProblumSolving";
+import ProblemSolving from "../components/PagesComponent/ProblemSolving";
 
 const ContactUs = () => {
   return (

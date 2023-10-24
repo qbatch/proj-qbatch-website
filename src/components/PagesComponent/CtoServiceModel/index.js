@@ -49,7 +49,7 @@ const Index = () => {
                   <p>{data.description}</p>
                 </div>
               </div>
-              <PrimaryButton borderbottom text="Hire Now" />
+              <PrimaryButton borderBottom text="Hire Now" />
             </div>
           ))}
         </Container>

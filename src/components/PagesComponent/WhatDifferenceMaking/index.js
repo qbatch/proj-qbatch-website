@@ -5,13 +5,13 @@ import { BiChevronRight } from "react-icons/bi";
 
 import Container from "../../UiComponent/Container";
 
-import QbatchMakingWrapper from "./style";
+import MakingWrapper from "./style";
 import {data} from '../../../constants/index'
 
 const Index = () => {
   
   return (
-    <QbatchMakingWrapper>
+    <MakingWrapper>
       <Container>
         <div className="container-padding">
           <div className="section-heading text-center">
@@ -58,8 +58,8 @@ const Index = () => {
           </div>
         </div>
       </Container>
-    </QbatchMakingWrapper>
-  );
+    </MakingWrapper>
+  )
 };
 
 export default Index;
