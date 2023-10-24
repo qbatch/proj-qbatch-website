@@ -1,14 +1,21 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const RevenueWrapper = styled.div`
   padding: 120px 0 128px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  ${media.sm`
+    padding: 40px;
+  `}
   h2,
   h3 {
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 28px;
   }
   .revenue-heading {
+    ${media.sm`
+        text-align: center;
+      `}
     p {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       color: ${({ theme }) => theme.colors.bodyTextVariant};
@@ -16,10 +23,9 @@ const RevenueWrapper = styled.div`
     }
   }
   .slider-section {
-    gap: 54px;
-    padding-left: 248px;
     margin-top: 76px;
     .slide-counter {
+      padding-left: 14px;
       span {
         display: block;
         &:first-child {
@@ -40,7 +46,15 @@ const RevenueWrapper = styled.div`
       }
     }
     .slider-data {
-      gap: 64px;
+      padding-left: 18px;
+      gap: 8%;
+      @media screen and (max-width: 1300px) {
+        gap: 20px;
+      }
+      ${media.sm`
+        flex-direction: column;
+        text-align: center;
+      `}
       h4 {
         color: ${({ theme }) => theme.colors.textMedium};
         font-weight: ${({ theme }) => theme.fontWeight.light};

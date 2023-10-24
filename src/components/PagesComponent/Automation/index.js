@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { revenueData } from "../../../constants";
+import { automationData } from "../../../constants";
 import Container from "../../UiComponent/Container";
 
-import RevenueWrapper from "./style";
+import AutomationWrapper from "./style";
 import { Col, Row } from "react-bootstrap";
 
 const Index = () => {
@@ -48,7 +48,7 @@ const Index = () => {
   useEffect(() => {
     const handleMouseWheel = (e) => {
       const isAtFirstSlide = activeIndex === 0;
-      const isAtLastSlide = activeIndex === revenueData.length - 1;
+      const isAtLastSlide = activeIndex === automationData.length - 1;
 
       if (e.deltaY > 0) {
         if (!isAtLastSlide) {
@@ -56,33 +56,33 @@ const Index = () => {
           sliderRef2.current.slickNext();
           scrollToSectionStart();
           document
-            .getElementById("revenue-trigger")
+            .getElementById("automation-trigger")
             .classList.add("section-sticky");
         } else {
           document.body.style.overflow = "auto";
           document
-            .getElementById("revenue-trigger")
+            .getElementById("automation-trigger")
             .classList.remove("section-sticky");
         }
       } else if (e.deltaY < 0) {
         if (isAtFirstSlide) {
           document.body.style.overflow = "auto";
           document
-            .getElementById("revenue-trigger")
+            .getElementById("automation-trigger")
             .classList.remove("section-sticky");
         } else {
           e.preventDefault();
           sliderRef2.current.slickPrev();
           scrollToSectionStart();
           document
-            .getElementById("revenue-trigger")
+            .getElementById("automation-trigger")
             .classList.add("section-sticky");
         }
       }
     };
 
     // Add event listener for mousewheel
-    const sliderElement = document.querySelector(".stage-slider-revenue");
+    const sliderElement = document.querySelector(".stage-slider-automation");
     sliderElement.addEventListener("wheel", handleMouseWheel);
 
     return () => {
@@ -91,40 +91,48 @@ const Index = () => {
     };
   }, [activeIndex]);
   return (
-    <RevenueWrapper
-      id="revenue-trigger"
+    <AutomationWrapper
+      id="automation-trigger"
       ref={scrollRef2}
-      className="stage-slider-revenue"
+      className="stage-slider-automation"
     >
       <Container>
-        <div className="revenue-heading">
-          <h2>To all the sellers, it’s time to triple your revenue!</h2>
-          <p>We tap multiple selling verticals not limited to</p>
+        <div className="automation-heading">
+          <h2>
+            Automation is 99% software but, 1% mindset{" "}
+            <span>(and oh, that 1%)</span>
+          </h2>
+          <p>This is your hint to bury your conventional e-commerce ways and</p>
         </div>
         <div className="slider-section">
           <Row>
             <div className="d-flex justify-content-center">
-              <Col xl={8} lg={10} md={12}>
+              <Col lg={10} md={12}>
                 <Row>
                   <Col lg={1} md={12}>
-                    <div className="slide-counter d-flex flex-column justify-content-center h-100">
+                    <div className="slide-counter">
                       <span>{activeIndex + 1}</span>
                       <span></span>
-                      <span>{revenueData.length}</span>
+                      <span>{automationData.length}</span>
                     </div>
                   </Col>
                   <Col lg={11} md={12}>
                     <Slider {...sliderSettings} ref={sliderRef2}>
-                      {revenueData?.map((item, index) => (
+                      {automationData?.map((item, index) => (
                         <div
                           key={index}
                           className="slider-data d-flex align-items-center"
                         >
-                          <img src={item.img} alt="logo" />
-                          <div>
-                            <h3>{item.title}</h3>
-                            <h4>{item.description}</h4>
-                          </div>
+                          <Row>
+                            <Col md={5}>
+                              <div className="d-flex align-items-center h-100">
+                                <h3>{item.description}</h3>
+                              </div>
+                            </Col>
+                            <Col md={7} className="ps-0">
+                              <img src={item.img} alt="logo" />
+                            </Col>
+                          </Row>
                         </div>
                       ))}
                     </Slider>
@@ -135,7 +143,7 @@ const Index = () => {
           </Row>
         </div>
       </Container>
-    </RevenueWrapper>
+    </AutomationWrapper>
   );
 };
 
