@@ -15,7 +15,7 @@ const Index = () => {
     useEffect(() => {
       const intervalId = setInterval(() => {
         setContentChange(true)
-      }, 2000)
+      }, 5000)
       return () => {
         clearInterval(intervalId)
       }
