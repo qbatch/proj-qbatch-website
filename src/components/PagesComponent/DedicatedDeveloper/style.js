@@ -9,18 +9,13 @@ const DedicatedDeveloperWrapper = styled.section`
     position: absolute;
     right: 0;
     height: 100%;
+    ${media.sm`
+     display: none;
+  `}
   }
   .banner-h1 {
     font-size: 60px;
   }
-
-  /* .image-portion {
-    padding-top: 96px;
-    padding-right: 12px;
-    ${media.md`
-     display: none;
-  `}
-  } */
 
   .title-portion {
     padding: 216px 0px 120px;
@@ -28,6 +23,7 @@ const DedicatedDeveloperWrapper = styled.section`
     margin: auto;
     position: relative;
     z-index: 2;
+
     ${media.md`
      padding: 100px 0;
      text-align: center;
@@ -45,7 +41,7 @@ const DedicatedDeveloperWrapper = styled.section`
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     letter-spacing: 0;
-    margin-right: -15px;
+    margin-right: 10px;
     ${media.md`
       font-size: 120px;
       line-height: 120px;
@@ -62,7 +58,7 @@ const DedicatedDeveloperWrapper = styled.section`
     color: ${({ theme }) => theme.colors.whiteColor};
     text-transform: capitalize;
     letter-spacing: 0.3px;
-    @media (min-width: 1200px){
+    @media (min-width: 1200px) {
       display: block;
     }
     ${media.lg`
@@ -94,7 +90,7 @@ const DedicatedDeveloperWrapper = styled.section`
     letter-spacing: 0.22px;
     line-height: 31px;
     margin-bottom: 73px;
-    max-width: 924px;
+    max-width: 1012px;
     color: ${({ theme }) => theme.colors.whiteColor};
     ${media.lg`
       margin-left: 4px;
@@ -133,14 +129,14 @@ const DedicatedDeveloperWrapper = styled.section`
   `}
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         height: 6px;
         width: 6px;
         bottom: 0;
         right: -40px;
         border-radius: 10px;
-        background-color: ${({ theme }) => theme.colors.dangerColor} ;
+        background-color: ${({ theme }) => theme.colors.dangerColor};
         top: 11px;
         ${media.md`
           right: -15px;
@@ -156,7 +152,7 @@ const DedicatedDeveloperWrapper = styled.section`
       }
     }
   }
-`;
+`
 
 const H1 = styled.h1`
   font-size: 60px;
@@ -170,6 +166,7 @@ const H1 = styled.h1`
     font-size: 40px;
     line-height: 46px;
   `}
-`;
+`
+
 
 export { DedicatedDeveloperWrapper, H1 };
