@@ -17,17 +17,9 @@ const DedicatedDeveloperWrapper = styled.section`
     font-size: 60px;
   }
 
-  /* .image-portion {
-    padding-top: 96px;
-    padding-right: 12px;
-    ${media.md`
-     display: none;
-  `}
-  } */
-
   .title-portion {
     padding: 216px 0px 120px;
-    /* max-width: 1170px; */
+    max-width: 1170px;
     margin: auto;
     position: relative;
     z-index: 2;
@@ -50,9 +42,6 @@ const DedicatedDeveloperWrapper = styled.section`
     font-weight: 700;
     letter-spacing: 0;
     margin-right: 10px;
-    transition: all 0.5s ease-in-out;
-    animation: fadeInX;
-    animation-duration: 2s;
     ${media.md`
       font-size: 120px;
       line-height: 120px;
