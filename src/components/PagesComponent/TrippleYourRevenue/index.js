@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import VisibilitySensor from "react-visibility-sensor";
 
 import { revenueData } from "../../../constants";
 import Container from "../../UiComponent/Container";
@@ -13,6 +14,7 @@ const Index = () => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [prevVisibility, setPrevVisibility] = useState(false);
 
   const scrollToSectionStart = () => {
     if (scrollRef2.current) {
@@ -23,6 +25,20 @@ const Index = () => {
         behavior: "smooth",
       });
     }
+  };
+  const handleVisibilityChange = (isVisible) => {
+    // If the section becomes visible or when scrolling from top or bottom
+    if (isVisible || (isVisible && !prevVisibility)) {
+      scrollToSectionStart(isVisible);
+    }
+    setPrevVisibility(isVisible); // Store the previous visibility state
+  };
+  const handleMouseEnter = () => {
+    document.body.style.overflow = "hidden";
+    scrollToSectionStart();
+  };
+  const handleMouseLeave = () => {
+    document.body.style.overflow = "auto";
   };
   const sliderSettings = {
     dots: false,
@@ -55,28 +71,22 @@ const Index = () => {
           e.preventDefault();
           sliderRef2.current.slickNext();
           scrollToSectionStart();
-          document
-            .getElementById("revenue-trigger")
-            .classList.add("section-sticky");
+          document.body.style.overflow = "hidden";
         } else {
-          document.body.style.overflow = "auto";
-          document
-            .getElementById("revenue-trigger")
-            .classList.remove("section-sticky");
+          setTimeout(() => {
+            document.body.style.overflow = "auto";
+          }, 1000);
         }
       } else if (e.deltaY < 0) {
         if (isAtFirstSlide) {
-          document.body.style.overflow = "auto";
-          document
-            .getElementById("revenue-trigger")
-            .classList.remove("section-sticky");
+          setTimeout(() => {
+            document.body.style.overflow = "auto";
+          }, 1000);
         } else {
           e.preventDefault();
           sliderRef2.current.slickPrev();
           scrollToSectionStart();
-          document
-            .getElementById("revenue-trigger")
-            .classList.add("section-sticky");
+          document.body.style.overflow = "hidden";
         }
       }
     };
@@ -91,8 +101,14 @@ const Index = () => {
     };
   }, [activeIndex]);
   return (
+    <VisibilitySensor onChange={handleVisibilityChange}
+    partialVisibility={true}
+    offset={{bottom:300, top:300}}
+    >
     <RevenueWrapper
       id="revenue-trigger"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       ref={scrollRef2}
       className="stage-slider-revenue"
     >
@@ -136,6 +152,7 @@ const Index = () => {
         </div>
       </Container>
     </RevenueWrapper>
+    </VisibilitySensor>
   );
 };
 
