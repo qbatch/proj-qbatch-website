@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { media } from "../../../theme/media-mixins";
 
 const CollpaseWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
@@ -22,12 +21,15 @@ const CollpaseWrapper = styled.div`
     margin-top: 32px;
     .title {
       color: ${(props, theme) => (props.faqSection ? `#2D2F31` : "#7C8EA1")};
-      font-weight: ${(props, theme) => (props.faqSection ? `600` : "")};
-      letter-spacing: ${(props, theme) => (props.faqSection ? `0.20px` : "")};
-      max-width: ${(props, theme) => (props.faqSection ? `800px` : "")};
+      font-weight: ${(props, theme) => (props.faqSection ? `700` : "")};
+      max-width: ${(props, theme) => (props.faqSection ? `840px` : "")};
+      font-size: ${(props, theme) => (props.faqSection ? "24px" : "")};
       padding-right: 20px;
       line-height: 32px;
       margin-bottom: 8px;
+    }
+    svg {
+      min-width: 24px;
     }
   }
   .collpase-content {

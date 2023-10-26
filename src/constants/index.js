@@ -1,4 +1,4 @@
-
+import React from "react";
 const weDoData = [
   { icon: "/lounch-icon.svg", title: "Develop an MVP", desc: "Launch foolproof MVPs that stand \n the test of time." },
   { icon: "/expand-icon.svg", title: "Expand Your Team", desc: "Get the best returns on investment \n with our hi-tech industry experts." },
@@ -343,11 +343,11 @@ const ecomSliderItems = [
 ];
 const marketPlaceData = [
   {
-    image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg'],
+    image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg',"","",""],
     title: 'Marketplace',
   },
   {
-    image: ['/shopify.svg', '/woo-commerce.png', '/amazon-vendor.svg', '/kindle.svg'],
+    image: ['/shopify.svg', '/woo-commerce.png', '/amazon-vendor.svg', '/kindle.svg',"","",""],
     title: 'Platform',
   },
   {
@@ -358,6 +358,7 @@ const marketPlaceData = [
       '/amazon-business.svg',
       '/ebay.svg',
       '/walmart.svg',
+      ""
     ],
     title: 'API’s',
   },
@@ -458,6 +459,275 @@ const revenueData = [
   },
 ]
 
+const automationData = [
+  {
+    img: "/data-driven-decisions.svg",
+    description: "Make data-driven decisions for targeted marketing and optimization."
+  },
+  {
+    img: "/marketplaces-logistics-and-stores.svg",
+    description: "Facilitate communication across marketplaces, logistics, and stores."
+  },
+  {
+    img: "/tasks-for-faster-sales.svg",
+    description: "Eliminate repetitive tasks for faster sales."
+  },
+  {
+    img: "/orders-across-inventories.svg",
+    description: "Manage multichannel orders across inventories."
+  },
+  {
+    img: "/overstocking-in-your-supply-chain.svg",
+    description: "Auto-track stockouts and overstocking in your supply chain."
+  },
+  {
+    img: "/market-and-operational-costs.svg",
+    description: "Reduce time-to-market and operational costs."
+  },
+  {
+    img: "/foolproof-security-standards.svg",
+    description: "Ensure foolproof security standards."
+  },
+  {
+    img: "/shopping-experiences.svg",
+    description: "Deliver personalized shopping experiences."
+  },
+]
+
+const ctoBenefits = [
+  'Technological expertise and guidance',
+  'Strategic roadmap and execution',
+  'Saves you money',
+  'Change management and vision alignment',
+  'Technology adoption and infrastructure development',
+  'Unbiasted and objective analysis',
+  'Access to industry community',
+  'Initiatives and execution',
+  'Risk management',
+  'Focus on core technical areas',
+]
+const faqQuestion = [
+  {
+    id: 1,
+    title: 'What is CTO as a Service, and how can it benefit my business?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'What is CTO as a Service, and how can it benefit my business?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'What is CTO as a Service, and how can it benefit my business?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+
+  {
+    id: 6,
+    title: 'What is CTO as a Service, and how can it benefit my business?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+]
+
+const ecomFaqQuestion = [
+  {
+    id: 1,
+    title: 'Why do I need e-commerce automation services?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'How can e-commerce automation services help me save time and increase productivity?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'Will e-commerce automation services help me reduce errors and improve accuracy?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'How can I get started with your e-commerce automation services?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What can be automated in e-commerce?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+]
 export {
   homeTiles,
   CareersData,
@@ -475,5 +745,8 @@ export {
   ecomLogos,
   projects,
   marketPlaceData,
-  revenueData
+  revenueData,
+  automationData,
+  faqQuestion,
+  ecomFaqQuestion
 }

@@ -4,17 +4,27 @@ import { media } from "../../../theme/media-mixins"
 const ManagementWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 122px 0;
+  ${media.sm`
+    padding: 60px 0;
+  `}
   .text-h2{
     color: ${({ theme }) => theme.colors.whiteColor};
     line-height: 52px;
     max-width: 828px;
     margin: 0 auto 73px;
     text-align: center;
+    ${media.sm`
+     margin: 0 auto 40px;
+    line-height: 42px;
+  `}
   }
   .hover-box {
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     color: ${({ theme }) => theme.colors.whiteColor};
     padding: 48px 32px 24px 32px;
+    ${media.sm`
+      padding: 30px 0 10px;
+    `}
 
     cursor: pointer;
     h4 {
@@ -24,13 +34,21 @@ const ManagementWrapper = styled.div`
     .description {
       height: 0;
       opacity: 0;
-      max-width: 509px;
+      max-width: 630px;
       transition: height 0.5s, opacity 0.5s;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      line-height: 32px;
+      ${media.sm`
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      `}
     }
     &:hover {
       .description {
         height: 136px;
         opacity: 1;
+        ${media.sm`
+        height: auto;
+      `}
       }
     }
   }

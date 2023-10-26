@@ -71,7 +71,7 @@ const responsiveTitle = {
   },
 };
 
-const Index = ({ heading, paragraph }) => {
+const Index = ({ heading, paragraph, componentName }) => {
   const [currentInd, setCurrentInd] = useState(1);
 
   const carousel1Ref = useRef(null);
@@ -92,7 +92,7 @@ const Index = ({ heading, paragraph }) => {
       <Container>
         <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
           <div>
-            <h2 className="heading text-h1">{heading}</h2>
+            <h2 className={`heading ${componentName === "index" && "text-h1"}`}>{heading}</h2>
             <p className="paragraph">{paragraph}</p>
           </div>
           <div className="mt-md-4 mt-0">

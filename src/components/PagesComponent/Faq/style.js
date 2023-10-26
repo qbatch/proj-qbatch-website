@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 const FaqWrapper = styled.div`
-  padding: 96px 0;
+  padding: 120px 0;
   max-width: 929px;
   margin: auto;
   ${media.sm`
@@ -14,9 +14,10 @@ const FaqWrapper = styled.div`
     `}
   }
   .faq-content {
-    color: ${({ theme }) => theme.colors.disableColor};
-    font-size: 14px;
+    color: ${({ theme }) => theme.colors.textMedium};
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
     padding-bottom: 20px;
+    line-height: 24px;
     span {
       display: block;
       &:first-child {
