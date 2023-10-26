@@ -16,6 +16,7 @@ const ProvenExperienceWrapper = styled.div`
     padding: 48px;
     background-color: ${({ theme }) => theme.colors.whiteColor};
     border-radius: 24px 24px 0 24px;
+    min-height:363px;
     .client-image{
       border-radius: 160px;
       height: 158px;

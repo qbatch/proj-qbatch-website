@@ -9,7 +9,7 @@ const DrawerWrapper = styled.div`
    padding: 96px 0 40px;
   `}
   box-sizing: border-box;
-  background-image: url("/drawer-bg.svg");
+  background-image: url('/drawer-bg.svg');
   background-size: cover;
   position: relative;
   min-height: 100vh;
@@ -56,7 +56,7 @@ const DrawerWrapper = styled.div`
           display: none;
         }
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           left: 0;
           bottom: -3px;
@@ -77,7 +77,7 @@ const DrawerWrapper = styled.div`
         color: ${({ theme }) => theme.colors.whiteColor};
         font-weight: ${({ theme }) => theme.fontWeight.bold};
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           left: 0;
           bottom: -3px;
@@ -96,6 +96,7 @@ const DrawerWrapper = styled.div`
     margin-top: 61px;
     padding: 0;
     transform: none !important;
+    inset: 0 !important;
     .dropdown-header {
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       color: ${({ theme }) => theme.colors.whiteColor};
@@ -108,7 +109,7 @@ const DrawerWrapper = styled.div`
       padding: 0;
       margin-bottom: 16px;
       color: ${({ theme }) => theme.colors.dividerColor};
-      text-decoration:none;
+      text-decoration: none;
       animation: growDown 600ms ease-in-out forwards;
       transform-origin: top center;
       &:hover,
@@ -263,15 +264,15 @@ const DrawerWrapper = styled.div`
   }
   @keyframes growDown {
     0% {
-        transform: scaleY(0)
+      transform: scaleY(0);
     }
     80% {
-        transform: scaleY(1.1)
+      transform: scaleY(1.1);
     }
     100% {
-        transform: scaleY(1)
+      transform: scaleY(1);
     }
-}
-`;
+  }
+`
 
 export default DrawerWrapper;
