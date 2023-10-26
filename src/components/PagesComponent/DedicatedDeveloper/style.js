@@ -19,7 +19,7 @@ const DedicatedDeveloperWrapper = styled.section`
 
   .title-portion {
     padding: 216px 0px 120px;
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: auto;
     position: relative;
     z-index: 2;
