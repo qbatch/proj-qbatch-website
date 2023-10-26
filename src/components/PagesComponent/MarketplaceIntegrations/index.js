@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick-theme.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import VisibilitySensor from "react-visibility-sensor";
 
-import Button from '../../UiComponent/Button'
 import { marketPlaceData } from '../../../constants'
 
 import StagesWrapper from '../DevelopmentStages/style'
@@ -49,6 +48,7 @@ const Index = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
+    verticalSwiping: true,
     responsive: [
       {
         breakpoint: 991,
@@ -123,10 +123,9 @@ const Index = () => {
       <div>
         <Container>
           <div className="stages-header">
-            <h2>Our 5-Step E-commerce Automation Process</h2>
-            <p>To help you stand your ground in the ever-growing e-commerce district!</p>
+            <h2>Integrations for Your Marketplace</h2>
           </div>
-          <div className="slider-section">
+          <div className="slider-section marketplace-section">
             <Row>
               <Col lg={5} className="fixed-slider-column">
                 <div className="pagination fixed-slider-pagination">
@@ -144,52 +143,23 @@ const Index = () => {
                 </div>
               </Col>
               <Col lg={7} md={12} className="ecom-section">
-                <Slider {...sliderSettings} ref={sliderRef2}>
+                <Slider {...sliderSettings} ref={sliderRef2} className='marketplace-slider'>
                   {marketPlaceData?.map((item, index) => (
                     <div key={index} className="slider-item">
-                      <Row>
-                        {!item.content ? (
-                          item.image.map((img) => (
+                      <Row className='pt-4'>
+                          {item.image.map((img) => (
                             <Col md={6}>
-                              <div className="mb-5">
-                                <img src={img} alt="project" />
+                              <div className="marketplace-logo">
+                                {img === "" ? "" :
+                                  <img src={img} alt="project" />
+                                }
                               </div>
                             </Col>
-                          ))
-                        ) : (
-                          <>
-                            <Col lg={6} md={5}>
-                              <div className="title title-responsive">
-                                <h3>{item.title}</h3>
-                              </div>
-                              <img src={item.image} alt="project" />
-                            </Col>
-                            <Col lg={6} md={7} className="slider-column-text">
-                              <div className="title title-desktop">
-                                <h3>{item.title}</h3>
-                              </div>
-                              <div className="content">
-                                {item.content}
-                                <ul>
-                                  {item.list?.map((listItem, listIndex) => (
-                                    <li key={listIndex}>{listItem}</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </Col>
-                          </>
-                        )}
+                          ))}
                       </Row>
                     </div>
                   ))}
                 </Slider>
-                {marketplace ? (
-                  <div className="slider-btn">
-                    <Button text="Book Free Demo" />
-                  </div>
-                ) : (
-                  ''
-                )}
               </Col>
             </Row>
           </div>

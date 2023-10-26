@@ -58,6 +58,7 @@ const DevelopmentStages = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
+    verticalSwiping: true,
     responsive: [
       {
         breakpoint: 991,

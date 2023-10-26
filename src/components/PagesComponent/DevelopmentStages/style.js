@@ -11,6 +11,9 @@ const StagesWrapper = styled.div`
     top:0;
     z-index: 1;
   }
+  &.stage-slider-main2 {
+    padding: 120px 0 62px;
+  } 
   @media screen and (max-width: 767px) {
     padding-bottom: 32px;
     padding-top: 60px;
@@ -183,14 +186,32 @@ const StagesWrapper = styled.div`
       }
     }
   }
+  .marketplace-section {
+    .marketplace-logo {
+      padding-bottom: 60px;
+      ${media.md`
+       display: flex;
+       justify-content: center;
+      `}
+    }
+    .fixed-slider-pagination {
+      padding-left: 182px;
+      ${media.lg`
+       padding-left: 72px;
+      `}
+    }
+  }
   .slider-btn {
     margin-top: 68px;
     margin-left: 12px;
+    ${media.sm`
+      margin-top: 0;
+    `}
   }
   .ecom-section {
     padding-left: 0;
     ${media.sm`
-      padding-left: 30px;
+      padding: 0 20px;
     `}
     img {
       max-width: none;

@@ -5,16 +5,18 @@ const AutomationWrapper = styled.div`
  padding: 120px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 40px;
+    padding: 60px 0;
   `}
   .automation-heading {
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
-      margin-bottom: 28px;
+      margin-bottom: 26px;
       max-width: 630px;
+      line-height: 52px;
       ${media.sm`
          text-align: center;
          max-width: 100%;
+        line-height: 28px;
       `}
       span {
         color: ${({ theme }) => theme.colors.bodyTextVariant};
@@ -32,20 +34,35 @@ const AutomationWrapper = styled.div`
       ${media.sm`
          text-align: center;
          max-width: 100%;
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        line-height: 24px;
       `}
     }
   }
   .slider-section {
     margin-top: 82px;
-   
+    ${media.sm`
+      margin-top: 28px;
+    `}
+    .center-align {
+      display: flex;
+      justify-content: center;
+      ${media.sm`
+        display: block;
+      `}
+    }
     .slide-counter {
-      padding-left: 34px;
+      padding-left: 36px;
       padding-top: 156px;
       ${media.lg`
         padding-left: 0;
       `}
       ${media.sm`
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 28px;
       `}
       span {
         display: block;
@@ -82,8 +99,10 @@ const AutomationWrapper = styled.div`
         line-height: 40px;
         text-transform: none;
         ${media.sm`
-        text-align: center;
-        max-width: 100%;
+          text-align: center;
+          max-width: 100%;
+          padding-left: 0;
+          line-height: 32px;
       `}
       }
     }

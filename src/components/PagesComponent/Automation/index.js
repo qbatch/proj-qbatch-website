@@ -48,6 +48,7 @@ const Index = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
+    verticalSwiping: true,
     responsive: [
       {
         breakpoint: 991,
@@ -123,7 +124,7 @@ const Index = () => {
         </div>
         <div className="slider-section">
           <Row>
-            <div className="d-flex justify-content-center">
+            <div className="center-align">
               <Col lg={10} md={12}>
                 <Row>
                   <Col lg={1} md={12}>
@@ -146,7 +147,7 @@ const Index = () => {
                                 <h3>{item.description}</h3>
                               </div>
                             </Col>
-                            <Col md={7} className="ps-0">
+                            <Col md={7} className="px-0">
                               <img src={item.img} alt="logo" />
                             </Col>
                           </Row>

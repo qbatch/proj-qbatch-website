@@ -2,7 +2,6 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { HelpWrapper, Card } from './style'
 import Container from '../../UiComponent/Container'
-import BlankImg from '../../../assets/images/blank-img.svg'
 
 const Index = () => {
   const helpingCard = [

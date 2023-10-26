@@ -47,6 +47,7 @@ const Index = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
+    verticalSwiping: true,
     responsive: [
       {
         breakpoint: 991,
@@ -119,7 +120,7 @@ const Index = () => {
         </div>
         <div className="slider-section">
           <Row>
-            <div className="d-flex justify-content-center">
+            <div className="center-align">
               <Col xl={8} lg={10} md={12}>
                 <Row>
                   <Col lg={1} md={12}>
@@ -132,15 +133,20 @@ const Index = () => {
                   <Col lg={11} md={12}>
                     <Slider {...sliderSettings} ref={sliderRef2}>
                       {revenueData?.map((item, index) => (
-                        <div
-                          key={index}
-                          className="slider-data d-flex align-items-center"
-                        >
-                          <img src={item.img} alt="logo" />
-                          <div>
-                            <h3>{item.title}</h3>
-                            <h4>{item.description}</h4>
-                          </div>
+                        <div key={index} className="slider-data">
+                          <Row>
+                            <Col md={5}>
+                              <div className="slider-img">
+                                <img src={item.img} alt="logo" />
+                              </div>
+                            </Col>
+                            <Col md={7}>
+                              <div className="slider-desc d-flex flex-column justify-content-center h-100">
+                                <h3>{item.title}</h3>
+                                <h4>{item.description}</h4>
+                              </div>
+                            </Col>
+                          </Row>
                         </div>
                       ))}
                     </Slider>
