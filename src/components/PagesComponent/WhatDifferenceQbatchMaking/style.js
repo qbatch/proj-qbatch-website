@@ -11,7 +11,7 @@ const QbatchMakingWrapper = styled.div`
   .section-heading {
     margin-bottom: 42px;
     p{
-      max-width: 450px;
+      max-width: 469px;
     margin: auto;
     }
     ${media.xs`

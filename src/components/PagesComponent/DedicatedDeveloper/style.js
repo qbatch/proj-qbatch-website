@@ -152,6 +152,9 @@ const DedicatedDeveloperWrapper = styled.section`
       }
     }
   }
+  .add-space-top{
+    top:30px;
+  }
 `
 
 const H1 = styled.h1`
