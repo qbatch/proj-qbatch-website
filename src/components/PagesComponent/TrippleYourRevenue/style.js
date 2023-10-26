@@ -13,6 +13,9 @@ const RevenueWrapper = styled.div`
     margin-bottom: 28px;
   }
   .revenue-heading {
+    ${media.sm`
+        text-align: center;
+      `}
     p {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       color: ${({ theme }) => theme.colors.bodyTextVariant};
@@ -23,8 +26,6 @@ const RevenueWrapper = styled.div`
     }
   }
   .slider-section {
-    gap: 54px;
-    padding-left: 248px;
     margin-top: 76px;
     ${media.sm`
       margin-top: 28px;

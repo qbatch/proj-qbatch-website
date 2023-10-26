@@ -19,8 +19,8 @@ const Container = styled.div`
   ${media.xs`
     padding: 0 20px;
   `}
-  @media(min-width:1920px){
-    max-width:1920px;
+  @media(min-width:1600px){
+    max-width:1600px;
     margin:0 auto;
   }
 `;

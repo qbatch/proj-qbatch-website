@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { Col, Container, Row } from 'react-bootstrap'
+import VisibilitySensor from "react-visibility-sensor";
 
 import { marketPlaceData } from '../../../constants'
 
@@ -12,7 +13,23 @@ const Index = () => {
 
   const sliderRef2 = useRef(null)
   const scrollRef2 = useRef(null)
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [prevVisibility, setPrevVisibility] = useState(false);
+
+  const handleVisibilityChange = (isVisible) => {
+    // If the section becomes visible or when scrolling from top or bottom
+    if (isVisible || (isVisible && !prevVisibility)) {
+      scrollToSectionStart(isVisible);
+    }
+    setPrevVisibility(isVisible); // Store the previous visibility state
+  };
+  const handleMouseEnter = () => {
+    document.body.style.overflow = "hidden";
+    scrollToSectionStart();
+  };
+  const handleMouseLeave = () => {
+    document.body.style.overflow = "auto";
+  };
 
   const scrollToSectionStart = () => {
     if (scrollRef2.current) {
@@ -60,20 +77,22 @@ const Index = () => {
           e.preventDefault()
           sliderRef2.current.slickNext()
           scrollToSectionStart()
-          document.getElementById('scene-trigger2').classList.add('section-sticky')
+          document.body.style.overflow = "hidden";
         } else {
-          document.body.style.overflow = 'auto'
-          document.getElementById('scene-trigger2').classList.remove('section-sticky')
+          setTimeout(() => {
+            document.body.style.overflow = "auto";
+          }, 1000);
         }
       } else if (e.deltaY < 0) {
         if (isAtFirstSlide) {
-          document.body.style.overflow = 'auto'
-          document.getElementById('scene-trigger2').classList.remove('section-sticky')
+          setTimeout(() => {
+            document.body.style.overflow = "auto";
+          }, 1000);
         } else {
           e.preventDefault()
           sliderRef2.current.slickPrev()
           scrollToSectionStart()
-          document.getElementById('scene-trigger2').classList.add('section-sticky')
+          document.body.style.overflow = "hidden";
         }
       }
     }
@@ -89,9 +108,15 @@ const Index = () => {
   }, [activeIndex])
   const marketplace = marketPlaceData.find((x) => x.content);
   return (
+    <VisibilitySensor onChange={handleVisibilityChange}
+    partialVisibility={true}
+    offset={{bottom:300, top:300}}
+    >
     <StagesWrapper
       id="scene-trigger2"
       ref={scrollRef2}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       className="stage-slider-main2"
       marketplace={marketplace ? '' : '49px'}
     >
@@ -141,6 +166,7 @@ const Index = () => {
         </Container>
       </div>
     </StagesWrapper>
+    </VisibilitySensor>
   )
 }
 

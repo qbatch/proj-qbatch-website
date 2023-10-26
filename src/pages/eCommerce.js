@@ -16,6 +16,7 @@ import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers"
 import QuotationSection from '../components/PagesComponent/QuotationSection'
 import MarketplaceIntegrations from "../components/PagesComponent/MarketplaceIntegrations";
 import TrippleYourRevenue from "../components/PagesComponent/TrippleYourRevenue";
+import Automation from "../components/PagesComponent/Automation";
 
 const Ecommerce = () => {
    
@@ -37,6 +38,7 @@ const Ecommerce = () => {
       />
       <BusinessMangement />
       <TrippleYourRevenue />
+      <Automation />
       <IdeasAndInvestments />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
       <MarketplaceIntegrations />
