@@ -153,6 +153,7 @@ const stories = [
     badge: ["Automation", "Saas", "Warehousing"],
     link: "/",
     primary: false,
+    img: "/ecom-circles-stories.svg"
   },
   {
     logo: "/medical.svg",

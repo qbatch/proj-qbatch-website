@@ -22,6 +22,7 @@ const StoriesWrapper = styled.div`
 
   .wrapper {
     display: flex;
+    flex-wrap: wrap;
     transition: transform 0.6s;
     gap: 24px;
 
@@ -77,14 +78,6 @@ const StoriesWrapper = styled.div`
       z-index: 1;
       cursor: pointer;
 
-      &.min-w-50 {
-        min-width: 50%;
-
-        ${media.sm`
-          min-width: 100%;
-        `}
-      }
-
       .column-inner {
         transition: 0.6s;
         display: flex;
@@ -92,14 +85,11 @@ const StoriesWrapper = styled.div`
         border: 1px solid ${({ theme }) => theme.colors.dividerColor};
         background-color: ${({ theme }) => theme.colors.whiteColor};
         border-radius: 24px;
-        padding: 47px;
         height: 524px;
 
         .column-inner-left {
-          display: none;
-
           img {
-            width: 0;
+            border-radius: 24px 0 0 24px;
             transition: width 1s ease-in-out;
             -moz-transition: width 1s ease-in-out;
             -webkit-transition: width 1s ease-in-out;
@@ -108,7 +98,9 @@ const StoriesWrapper = styled.div`
 
         .column-inner-right {
           max-width: 350px;
-          
+          padding: 48px 48px 48px 0;
+          display:flex;
+          flex-direction: column;
           ${media.lg`
             width: 100%;
             max-width: 100%;
@@ -116,7 +108,9 @@ const StoriesWrapper = styled.div`
               max-width: 100% !important;
             }
           `}
-
+            .content {
+              flex: 1;
+            }
           .logo {
             margin-bottom: 26px;
           }
@@ -151,42 +145,11 @@ const StoriesWrapper = styled.div`
         }
       }
 
-      &.primary {
-        .column-inner {
-          background-color: ${({ theme }) => theme.colors.secondaryColor};
-          h3, .paragraph {
-            color: ${({ theme }) => theme.colors.whiteColor};
-          }
-
-          .badge {
-            span {
-              color: ${({ theme }) => theme.colors.whiteColor};
-            }
-          }
-
-          button {
-            span {
-              color: ${({ theme }) => theme.colors.whiteColor};
-            }
-          }
-        }
-      }
-
       ${media.sm`
         width: 100%;
       `}
 
       &:hover {
-        min-width: calc(100% * 0.66);
-
-        ${media.lg`
-          min-width: 50%;
-        `}
-
-        &.min-w-50 {
-          min-width: 100%;
-        }
-
         .column-inner-left {
           ${media.md`
             display: none;
