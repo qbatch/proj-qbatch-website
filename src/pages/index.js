@@ -36,7 +36,7 @@ const IndexPage = () => (
       componentName="index"
     />
     <HappilyMaking />
-    <WhatDifferenceQbatchMaking />
+    <WhatDifferenceQbatchMaking heading='What Difference is Qbatch Making?' paragraph='We always present problems with tangible solutions.'/>
     <Awards maxCols={8} />
     <Collaboration />
     <CreativeIntelligence />

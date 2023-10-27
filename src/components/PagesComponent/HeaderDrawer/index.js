@@ -16,8 +16,8 @@ const servicesItems = [
     to: "/",
   },
   {
-    menu: "Web and Mobile App Development",
-    to: "/",
+    menu: "WebApp Development",
+    to: "/webapp",
   },
   {
     menu: "E-commerce Automation Services",
