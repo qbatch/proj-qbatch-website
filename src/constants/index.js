@@ -150,64 +150,82 @@ const stories = [
     title: "Ecom Circles",
     description:
       "We created an all-in-one E-commerce Management Software trusted by 3000+ Amazon and Walmart sellers to organize and streamline their drop-shipping business.",
-    badge: ["Automation", "Saas", "Warehousing"],
+    badge: ["Automation", "SaaS", "Warehousing"],
     link: "/",
-    primary: false,
-    img: "/ecom-circles-stories.svg"
+    imgOpen: "/ecom-circles-stories.svg"
   },
   {
-    logo: "/medical.svg",
-    title: "My IMC",
+    logo: "/rooney-innovation-logo.svg",
+    title: "Ronny Innovations",
     description:
-      "A convenient clinical app with 50k+ downloads for patients to book appointments withdoctors and manage medical history from anywhere, anytime.",
-    badge: ["Mobile App", "HealthTech", "Data Management"],
+      "A state-of-the-art 3PL Solution for Warehouses that manages inventory levels, track stock movement, and monitor order fulfillment in real-time. Roney’s intuitive interface provides actionable insights into your warehouse’s performance, allowing you to make informed decisions toward operational excellence.",
+    badge: ["E-Commerce", "3PL Solution", "Warehousing"],
     link: "/",
-    primary: false,
+    imgClose: "/rooney-innovation.png"
   },
   {
-    logo: "/mediacl-primary.svg",
-    title: "IMC Women’s Health",
+    logo: "/birch-fog.svg",
+    title: "Brich+Fog",
     description:
-      "A personalized clinical app for women housed by board-certified gynaecologists for both routine checkups and specialized care.",
-    badge: ["Mobile App", "HealthTech", "Data Management"],
+      "Fortunate enough to build North America's only anti-anxiety brand that offers full-family CBD and plant-based, and holistic health solutions and products.",
+    badge: ["PWA", "E-commerce", "HealthTech","Custom"],
     link: "/",
-    primary: true,
-  },
-  {
-    logo: "/sales-support.svg",
-    title: "Sales Support",
-    description:
-      "We’ve created an immaculate Amazon Wholesale Kickstarter that helped launch 1000+ businesses on Amazon. The platform features a Repricer for automated pricing and a catalog analyzer for better forecasting and profit/loss analysis. While the reimbursements removal and FBA forecasting elevated their business off the ground.",
-    badge: ["Automation", "Saas", "Warehousing"],
-    link: "/",
-    primary: true,
+    imgClose: "/birch-&-fog.png"
   },
   {
     logo: "/one-apply.svg",
     title: "One App",
     description:
       "We developed a powerful E-commerce marketplace that manages the daily inventory and stock data of above 50 different stores. The automated & algorithmic Repricer allows optimal order management, total control over centralized accounts, better profit/loss calculation, & reliable FBA forecasting.",
-    badge: ["E-commerce", "Automation", "SaaS"],
+    badge: ["Automation", "SaaS", "Warehousing"],
     link: "/",
-    primary: false,
+    imgOpen: "/one-app-01.svg"
   },
   {
-    logo: "/tripexpert.svg",
-    title: "Tripexpert",
+    logo: "/store-filter.svg",
+    title: "Store Filter",
     description:
-      "We offered maintenance and support to a hefty travel experience expert for a faster-loading website amid massive data operations. We introduced booking.com, Agoda, and ElasticSearc as reliable integrations to enable easy search. While data scraping improved overall platform performance. ",
-    badge: ["Maintenance & Support", "Integrations", "Data Scraping", "Travel"],
+      "We developed a witty searchable database for eCom agencies, Shopify store owners, and Brokers to know everything their competitors are doing and earn a competitive edge. The app enables real-time reporting on your competition's marketing efforts.",
+    badge: ["Database", "Data Analytics", "Web App"],
     link: "/",
-    primary: false,
+    imgOpen: "/store-filter-01.svg"
   },
   {
-    logo: "/blueware-discount.svg",
-    title: "Bluewarehouse discounts",
+    logo: "/eu-outdoor-logo.svg",
+    title: "European Outdoors",
     description:
-      "We elevated business experience for leading warehouse merchandise with hybrid app development for trackable product management and ShipsStation software for convenient order management.",
-    badge: ["Hybrid App", "Integrations", "E-commerce", "B2c"],
+      "A powerful Warehouse Software that manages and syncs products across Amazon, Vendor Central, eBay, Walmart & Custom(Facebook + Instagram + Phone) & entertains orders respectively.",
+    badge: ["Warehouse", "Software Development"],
     link: "/",
-    primary: false,
+    imgClose: "/european-outdoors.png"
+  },
+  {
+    logo: "/friend-filter-logo.svg",
+    title: "Friend Filter",
+    description:
+      "A high-profile move to help high-stake social media industrialists remove inactive friends from their Facebook. It is a simple Analytics & Reporting app and extension that scans your Facebook activity, lists your inactive friends, and auto-removes them per your request.",
+    badge: ["Social Media", "Facebook", "Mobile App", "Analytics", "B2B"],
+    link: "/",
+    imgClose: "/friend-filter.png"
+  },
+  {
+    logo: "/seller-repay-logo.svg",
+    title: "Seller Repay",
+    description:
+      "Seller Repay is the Amazon Reimbursement Tool that identifies and recovers funds lost due to lost inventory, damaged inventory, customer returns, overcharged fees, and shipping errors on the Amazon platform. With automated tracking and reporting, it ensures accurate financial reconciliation and maximizes reimbursement potential, optimizing seller account management.",
+    badge: ["E-commerce", "SaaS", "Automation"],
+    link: "/",
+    imgOpen: "/seller-repay.svg"
+  },
+  {
+    logo: "/sales-support.svg",
+    title: "Sales Support",
+    description:
+      "We’ve created an immaculate Amazon Wholesale Kickstarter that helped launch 1000+ businesses on Amazon. The platform features a Repricer for automated pricing and a catalog analyzer for better forecasting and profit/loss analysis. While the reimbursements removal and FBA forecasting elevated their business off the ground.",
+    badge: ["Automation", "Saas", "Platform Management", "Web App"],
+    link: "/",
+    imgOpen: "/sales-support-01.svg"
+
   },
   {
     logo: "/northware.svg",
@@ -216,34 +234,25 @@ const stories = [
       "We tailored a high-quality E-commerce platform that caters to the winter clothing needs of Canadian snowbirds. The platform uses a Shopify CMS for a versatile custom development solution for increased customer engagement and retention.",
     badge: ["Custom Software Development", "CMS", "Shopify+"],
     link: "/",
-    primary: false,
+    imgClose: "/northware.png"
   },
   {
-    logo: "/store-filter.svg",
-    title: "Store Filter",
+    logo: "/blueware-discount.svg",
+    title: "Bluewarehouse discounts",
     description:
-      "We developed a witty searchable database for eCom agencies, Shopify store owners, and Brokers to know everything their competitors are doing and earn a competitive edge. The app enables real-time reporting on your competition's marketing efforts.",
-    badge: ["Database", "Data Analytics", "Web App+"],
+      "We elevated business experience for leading warehouse merchandise with hybrid app development for trackable product management and ShipsStation software for convenient order management.",
+    badge: ["Hybrid App", "Integrations", "E-commerce", "B2c"],
     link: "/",
-    primary: false,
+    imgClose: "/blue-warehouse.png"
   },
   {
-    logo: "/birch-fog.svg",
-    title: "Brich+Fog",
+    logo: "/carbon6-logo.svg",
+    title: "Carbon 6",
     description:
-      "Fortunate enough to build North America's only anti-anxiety brand that offers full-family CBD and plant-based, and holistic health solutions and products.",
-    badge: ["Database", "Data Analytics", "Web App+"],
+      "Carbon 6 Repricer is an effective algorithm-based repricer software solution that facilitates Amazon sellers to automate, manage, review, and list down product pricing from across marketplaces and competitors.",
+    badge: ["E-Commerce", "Automation", "Amazon"],
     link: "/",
-    primary: false,
-  },
-  {
-    logo: "/eliven-health.svg",
-    title: "Enlivened Health",
-    description:
-      "A credible Online Dispensary platform for doctors to avail professional-grade products integrated with automated calculations and payments system eliminating hassle and upfront costs.",
-    badge: ["Automation", "Web App", "HealthTech"],
-    link: "/",
-    primary: false,
+    imgOpen: "/carbon-6-repricer.svg"
   },
   {
     logo: "/keurig.svg",
@@ -252,7 +261,7 @@ const stories = [
       "We’ve helped launch an intuitive E-commerce business management platform for the biggest beverage company in North America with 150+ principal warehouses. The mobile app offers easy grocery and product delivery services with over 100K+ downloads.",
     badge: ["Mobile App", "HealthTech", "Data Management"],
     link: "/",
-    primary: false,
+    imgOpen: "/keurig-01.svg"
   },
 ];
 const sliderItems = [
