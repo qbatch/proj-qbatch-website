@@ -49,6 +49,7 @@ const projectSlides = [
     category: 'E-Commerce',
     tags: ['Automation', 'Saas', 'Warehousing'],
   },
+  {}
 ]
 
 const responsive = {
@@ -118,7 +119,7 @@ const Index = ({ heading, paragraph, componentName }) => {
                       <h3>{item.title}</h3>
                       <span>{item.category}</span>
                       <div className="project-tags d-flex">
-                        {item.tags.map((tag, ind) => (
+                        {item.tags?.map((tag, ind) => (
                           <div key={ind}>{tag}</div>
                         ))}
                       </div>
@@ -140,7 +141,7 @@ const Index = ({ heading, paragraph, componentName }) => {
                     <span>/</span>
                     <span>
                       {projectSlides.length < 10 && 0}
-                      {projectSlides.length}
+                      {projectSlides.length - 1}
                     </span>
                   </span>
                   <ArrowRightIcon
@@ -165,7 +166,9 @@ const Index = ({ heading, paragraph, componentName }) => {
                 >
                   {projectSlides.map((item, ind) => (
                     <div key={ind}>
-                      <img src={item.projectImg} alt="project" />
+                      {item.projectImg &&
+                        <img src={item.projectImg} alt="project" />
+                      }
                     </div>
                   ))}
                 </Carousel>
