@@ -7,6 +7,8 @@ import Container from "../../UiComponent/Container";
 import { stories } from "../../../constants";
 
 const Index = () => {
+  const [backgroundImg, setBackgorundImg] = useState();
+  console.log(backgroundImg,"omgn")
   return (
     <StoriesWrapper>
       <Container>
@@ -22,17 +24,13 @@ const Index = () => {
                 className="column"
                 key={index}
               >
-                <div className={`column-inner ${item.imgOpen && "primary-boder"}`}>
+                <div className={`column-inner ${item.imgOpen ? "primary-boder" : ""}`}>
                   {item.imgOpen && (
-                    <div className="column-inner-left">
-                      <img
-                        src={item.imgOpen}
-                        className="image-logo"
-                        alt="no-image"
-                      />
+                    <div className="column-inner-left"> 
+                     
                     </div>
                   )}
-                  <div className={`column-inner-right ${item.imgClose && "close-column-inner"}`}>
+                  <div className={`column-inner-right ${item.imgClose ? "close-column-inner" : ""}`}>
                     <div className="close-image">
                       <img src={item.imgClose} alt="story" />
                     </div>

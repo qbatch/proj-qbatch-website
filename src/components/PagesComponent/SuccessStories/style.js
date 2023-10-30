@@ -30,10 +30,15 @@ const StoriesWrapper = styled.div`
           }
         }
         .column-inner-left {
-          img {
+          background-image: url("/ecom-circles-stories.svg");
+          width: 50%;
+          min-width: 350px;
+          border-radius: 24px 0 0 24px;
+          background-size: cover;
+          /* img {
             border-radius: 24px 0 0 24px;
             max-width: none;
-          }
+          } */
         }
         .close-image {
           opacity: 0;
@@ -44,6 +49,7 @@ const StoriesWrapper = styled.div`
           }
         }
         .column-inner-right {
+          width: 50%;
           position: relative;
           ${media.lg`
             width: 100%;
