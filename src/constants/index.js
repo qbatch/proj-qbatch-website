@@ -165,7 +165,7 @@ const stories = [
   },
   {
     logo: "/birch-fog.svg",
-    title: "Brich+Fog",
+    title: "Birch+FOG",
     description:
       "Fortunate enough to build North America's only anti-anxiety brand that offers full-family CBD and plant-based, and holistic health solutions and products.",
     badge: ["PWA", "E-commerce", "HealthTech","Custom"],
@@ -238,7 +238,7 @@ const stories = [
   },
   {
     logo: "/blueware-discount.svg",
-    title: "Bluewarehouse discounts",
+    title: "Blue Warehouse Discounts",
     description:
       "We elevated business experience for leading warehouse merchandise with hybrid app development for trackable product management and ShipsStation software for convenient order management.",
     badge: ["Hybrid App", "Integrations", "E-commerce", "B2c"],

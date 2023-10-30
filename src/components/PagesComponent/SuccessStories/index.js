@@ -1,14 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import StoriesWrapper from "./style";
+import { StoriesWrapper, ImageOpenStyle } from "./style";
 
 import PrimaryButton from "../../UiComponent/PrimaryButton";
 import Container from "../../UiComponent/Container";
 import { stories } from "../../../constants";
 
 const Index = () => {
-  const [backgroundImg, setBackgorundImg] = useState();
-  console.log(backgroundImg,"omgn")
   return (
     <StoriesWrapper>
       <Container>
@@ -20,17 +18,20 @@ const Index = () => {
         <Row className="wrapper">
           {stories.map((item, index) => (
             <Col xl={item.imgOpen ? 8 : 4}>
-              <div
-                className="column"
-                key={index}
-              >
-                <div className={`column-inner ${item.imgOpen ? "primary-boder" : ""}`}>
+              <div className="column" key={index}>
+                <div
+                  className={`column-inner ${
+                    item.imgOpen ? "primary-boder" : ""
+                  }`}
+                >
                   {item.imgOpen && (
-                    <div className="column-inner-left"> 
-                     
-                    </div>
+                    <ImageOpenStyle src={item.imgOpen}></ImageOpenStyle>
                   )}
-                  <div className={`column-inner-right ${item.imgClose ? "close-column-inner" : ""}`}>
+                  <div
+                    className={`column-inner-right ${
+                      item.imgClose ? "close-column-inner" : ""
+                    }`}
+                  >
                     <div className="close-image">
                       <img src={item.imgClose} alt="story" />
                     </div>

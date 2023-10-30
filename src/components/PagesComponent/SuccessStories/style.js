@@ -3,7 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const StoriesWrapper = styled.div`
   padding: 120px 0;
-
+  ${media.sm`
+    padding: 60px 0;
+  `}
   .heading {
     margin-bottom: 28px;
   }
@@ -21,24 +23,17 @@ const StoriesWrapper = styled.div`
         border: 1px solid ${({ theme }) => theme.colors.dividerColor};
         background-color: ${({ theme }) => theme.colors.whiteColor};
         border-radius: 24px 24px 0 24px;
-        height: 524px;
+        height: auto;
+        min-height: 524px;
         transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+        ${media.sm`
+          flex-direction: column;
+        `}
         &:hover {
           box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.16);
           &.primary-boder {
             border: 1px solid ${({ theme }) => theme.colors.primaryColor};
           }
-        }
-        .column-inner-left {
-          background-image: url("/ecom-circles-stories.svg");
-          width: 50%;
-          min-width: 350px;
-          border-radius: 24px 0 0 24px;
-          background-size: cover;
-          /* img {
-            border-radius: 24px 0 0 24px;
-            max-width: none;
-          } */
         }
         .close-image {
           opacity: 0;
@@ -46,30 +41,42 @@ const StoriesWrapper = styled.div`
           transition: opacity 0.5s ease-in-out;
           img {
             border-radius: 24px 24px 0 24px;
+            width: 100%;
+            height: 522px;
           }
         }
         .column-inner-right {
-          width: 50%;
+          width: 51%;
           position: relative;
-          ${media.lg`
-            width: 100%;
-            max-width: 100%;
-            .paragraph{
-              max-width: 100% !important;
-            }
+          ${media.sm`
+              width: 100%;
           `}
           .content {
             opacity: 1;
-            padding: 48px 47px 48px 73px;
+            padding: 48px 47px 48px 70px;
+            margin-bottom: 24px;
+            ${media.md`
+              padding: 48px 32px 48px 32px;
+            `}
           }
           &.close-column-inner {
+            width: 100%;
+            ${media.sm`
+                min-height: 524px;
+              `}
             .content {
               padding-left: 48px;
+              ${media.sm`
+                padding: 48px 32px 48px 32px;
+              `}
             }
             button {
               position: absolute;
               bottom: 44px;
               left: 48px;
+              ${media.sm`
+              left: 32px;
+            `}
             }
           }
           .logo {
@@ -79,6 +86,9 @@ const StoriesWrapper = styled.div`
             position: absolute;
             bottom: 44px;
             left: 73px;
+            ${media.md`
+              left: 32px;
+            `}
           }
           h3 {
             margin-bottom: 18px;
@@ -92,6 +102,11 @@ const StoriesWrapper = styled.div`
             line-height: 24px;
             margin-bottom: 30px;
             letter-spacing: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
           }
 
           .badge {
@@ -127,4 +142,17 @@ const StoriesWrapper = styled.div`
   }
 `;
 
-export default StoriesWrapper;
+const ImageOpenStyle = styled.div`
+    background-image: url(${(props) => (props.src ? `${props.src}` : '')});
+    width: 49%;
+    border-radius: 24px 0 0 24px;
+    background-size: cover;
+    ${media.sm`
+      width: 100%;
+      height: 350px;
+      background-position: center;
+      border-radius: 24px 24px 0 0;
+    `}
+`
+
+export  {StoriesWrapper, ImageOpenStyle};
