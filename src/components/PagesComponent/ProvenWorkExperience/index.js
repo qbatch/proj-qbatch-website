@@ -165,9 +165,7 @@ const Index = ({ heading, paragraph, componentName }) => {
                 >
                   {projectSlides.map((item, ind) => (
                     <div key={ind}>
-                      {item.projectImg &&
-                        <img src={item.projectImg} alt="project" />
-                      }
+                      <img src={item.projectImg} alt="project" />
                     </div>
                   ))}
                   <div></div>
