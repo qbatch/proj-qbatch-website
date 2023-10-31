@@ -49,7 +49,6 @@ const projectSlides = [
     category: 'E-Commerce',
     tags: ['Automation', 'Saas', 'Warehousing'],
   },
-  {}
 ]
 
 const responsive = {
@@ -141,12 +140,12 @@ const Index = ({ heading, paragraph, componentName }) => {
                     <span>/</span>
                     <span>
                       {projectSlides.length < 10 && 0}
-                      {projectSlides.length - 1}
+                      {projectSlides.length}
                     </span>
                   </span>
                   <ArrowRightIcon
                     onClick={() => {
-                      handleButtonClickNext()
+                      {currentInd === projectSlides.length ? "" :  handleButtonClickNext()}
                       setCurrentInd(currentInd === projectSlides.length ? currentInd : currentInd + 1)
                     }}
                   />
@@ -171,6 +170,7 @@ const Index = ({ heading, paragraph, componentName }) => {
                       }
                     </div>
                   ))}
+                  <div></div>
                 </Carousel>
               </div>
             </Col>
