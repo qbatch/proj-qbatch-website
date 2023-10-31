@@ -9,6 +9,7 @@ const PrimaryButtonWrapper = styled(Button)`
   background-color: transparent;
   padding: 0;
   border: 0;
+  font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   min-width: auto;
   .btn-text {

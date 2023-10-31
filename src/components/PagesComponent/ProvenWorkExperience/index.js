@@ -118,7 +118,7 @@ const Index = ({ heading, paragraph, componentName }) => {
                       <h3>{item.title}</h3>
                       <span>{item.category}</span>
                       <div className="project-tags d-flex">
-                        {item.tags.map((tag, ind) => (
+                        {item.tags?.map((tag, ind) => (
                           <div key={ind}>{tag}</div>
                         ))}
                       </div>
@@ -145,7 +145,7 @@ const Index = ({ heading, paragraph, componentName }) => {
                   </span>
                   <ArrowRightIcon
                     onClick={() => {
-                      handleButtonClickNext()
+                      {currentInd === projectSlides.length ? "" :  handleButtonClickNext()}
                       setCurrentInd(currentInd === projectSlides.length ? currentInd : currentInd + 1)
                     }}
                   />
@@ -168,6 +168,7 @@ const Index = ({ heading, paragraph, componentName }) => {
                       <img src={item.projectImg} alt="project" />
                     </div>
                   ))}
+                  <div></div>
                 </Carousel>
               </div>
             </Col>
