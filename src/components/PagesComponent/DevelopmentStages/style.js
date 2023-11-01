@@ -30,7 +30,7 @@ const StagesWrapper = styled.div`
       color: ${({ theme }) => theme.colors.primaryColor};
       text-align: center;
       font-weight: 700;
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
     p {
       color: ${({ theme }) => theme.colors.textMedium};
