@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const HelpWrapper = styled.div`
-  padding: 73px 0 98px 0;
+  padding: 122px 0 98px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
     padding: 60px 0;
