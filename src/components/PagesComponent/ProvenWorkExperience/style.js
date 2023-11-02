@@ -121,9 +121,9 @@ const ProvenExperienceWrapper = styled.div`
       }
     }
   }
-  @media (min-width: 1920px) {
+  @media (min-width: 1600px) {
     .section-slider {
-      max-width: 1920px;
+      max-width: 1600px;
       margin: 0 auto;
     }
   }
