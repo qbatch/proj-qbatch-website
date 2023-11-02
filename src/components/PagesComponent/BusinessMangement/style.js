@@ -10,8 +10,8 @@ const ManagementWrapper = styled.div`
   .text-h2{
     color: ${({ theme }) => theme.colors.whiteColor};
     line-height: 52px;
-    max-width: 828px;
-    margin: 0 auto 73px;
+    max-width: 1100px;
+    margin: 0 auto 72px;
     text-align: center;
     ${media.sm`
      margin: 0 auto 40px;

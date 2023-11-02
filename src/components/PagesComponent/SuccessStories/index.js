@@ -24,8 +24,12 @@ const Index = () => {
                     item.imgOpen ? "primary-boder" : ""
                   }`}
                 >
-                  {item.imgOpen && (
+                  {item.imgOpen ? (
                     <ImageOpenStyle src={item.imgOpen}></ImageOpenStyle>
+                  ) : (
+                    <div className="close-small-img">
+                      <ImageOpenStyle src={item.imgClose} type="close"></ImageOpenStyle>
+                    </div>
                   )}
                   <div
                     className={`column-inner-right ${

@@ -35,10 +35,23 @@ const StoriesWrapper = styled.div`
             border: 1px solid ${({ theme }) => theme.colors.primaryColor};
           }
         }
+        .close-small-img {
+          display: none;
+          width: 98%;
+          ${media.lg`
+            display: block;
+          `}
+          ${media.sm`
+            width: 100%;
+          `}
+        }
         .close-image {
           opacity: 0;
           height: 0;
           transition: opacity 0.5s ease-in-out;
+          ${media.lg`
+            display: none;
+          `}
           img {
             border-radius: 24px 24px 0 24px;
             width: 100%;
@@ -50,6 +63,7 @@ const StoriesWrapper = styled.div`
           position: relative;
           ${media.sm`
               width: 100%;
+              min-height: 450px;
           `}
           .content {
             opacity: 1;
@@ -61,22 +75,25 @@ const StoriesWrapper = styled.div`
           }
           &.close-column-inner {
             width: 100%;
-            ${media.sm`
-                min-height: 524px;
-              `}
             .content {
               padding-left: 48px;
-              ${media.sm`
-                padding: 48px 32px 48px 32px;
+              ${media.lg`
+                padding-left: 70px;
+              `}
+              ${media.md`
+                padding-left: 32px;
               `}
             }
             button {
               position: absolute;
               bottom: 44px;
               left: 48px;
-              ${media.sm`
-              left: 32px;
-            `}
+              ${media.lg`
+                left: 70px;
+              `}
+                ${media.md`
+                left: 32px;
+              `}
             }
           }
           .logo {
@@ -85,7 +102,7 @@ const StoriesWrapper = styled.div`
           button {
             position: absolute;
             bottom: 44px;
-            left: 73px;
+            left: 70px;
             ${media.md`
               left: 32px;
             `}
@@ -133,6 +150,9 @@ const StoriesWrapper = styled.div`
               }
               .content {
                 display: none;
+                ${media.lg`
+                 display: block;
+                `}
               }
             }
           }
@@ -144,7 +164,8 @@ const StoriesWrapper = styled.div`
 
 const ImageOpenStyle = styled.div`
     background-image: url(${(props) => (props.src ? `${props.src}` : '')});
-    width: 49%;
+    width: ${(props) => (props.type ? "99%" : "49%")};
+    height: ${(props) => (props.type ? "100%" : '')};
     border-radius: 24px 0 0 24px;
     background-size: cover;
     ${media.sm`

@@ -16,7 +16,8 @@ import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers"
 import QuotationSection from "../components/PagesComponent/QuotationSection";
 import MarketplaceIntegrations from "../components/PagesComponent/MarketplaceIntegrations";
 import TrippleYourRevenue from "../components/PagesComponent/TrippleYourRevenue";
-import Automation from "../components/PagesComponent/Automation";
+import Automation from "../components/PagesComponent/TechnicalGuidance";
+import { automationData } from "../constants";
 
 const Ecommerce = () => {
   return (
@@ -37,11 +38,14 @@ const Ecommerce = () => {
       />
       <BusinessMangement />
       <TrippleYourRevenue />
-      <Automation />
-      <IdeasAndInvestments
-        heading="100+ businesses trusted us with their ideas and investments,"
-        span="will you?"
+      <Automation
+        data={automationData}
+        heading="Automation is 99% software but, 1% mindset "
+        span="(and oh, that 1%)"
+        desc="This is your hint to bury your conventional e-commerce ways and"
+        className="automation-section"
       />
+      <IdeasAndInvestments />
       <ProvenWorkExperience
         heading="Our Projects"
         paragraph="They imagined it, we brought it to the world!"

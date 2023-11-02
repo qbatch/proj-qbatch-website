@@ -4,9 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const MarketplaceSellersWrapper = styled.div`
   background: url("/growing-bg.svg");
   background-size: cover;
-  padding: 120px 203px 173px;
+  padding: 120px 203px;
   ${media.md`
-    padding: 96px 120px 120px;
+    padding: 96px 120px;
   `}
   ${media.sm`
     padding: 96px 40px;
@@ -27,7 +27,7 @@ const MarketplaceSellersWrapper = styled.div`
     font-size: 24px;
     max-width: 931px;
     font-weight: 300;
-    margin-bottom: 84px;
+    margin-bottom: 78px;
     letter-spacing: 0.69px;
     color: ${({ theme }) => theme.colors.whiteColor};
     ${media.sm`

@@ -2,92 +2,62 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const RevenueWrapper = styled.div`
-  padding: 120px 0;
+  padding: 120px 0 96px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
     padding: 60px 0;
   `}
-  h2,
-  h3 {
-    color: ${({ theme }) => theme.colors.primaryColor};
-    margin-bottom: 28px;
+  p {
+    line-height: 32px;
   }
   .revenue-heading {
-    ${media.sm`
-        text-align: center;
-      `}
-    p {
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-      color: ${({ theme }) => theme.colors.bodyTextVariant};
-      letter-spacing: 0.7px;
+    max-width: 360px;
+    h2 {
+      line-height: 52px;
+      color: ${({ theme }) => theme.colors.primaryColor};
+      margin-bottom: 24px;
       ${media.sm`
-        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        line-height: 32px;
       `}
     }
-  }
-  .slider-section {
-    margin-top: 76px;
     ${media.sm`
-      margin-top: 28px;
+      max-width: 100%;
+      margin-bottom: 60px;
+      text-align: center;
     `}
-    .center-align {
-      display: flex;
-      justify-content: center;
-      ${media.sm`
-        display: block;
-      `}
-    }
-    .slide-counter {
-      padding-left: 14px;
-      ${media.sm`
-       align-items: center;
-       padding-left: 0;
-      `}
-      span {
-        display: block;
-        &:first-child {
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-          color: ${({ theme }) => theme.colors.primaryColor};
-          font-weight:  ${({ theme }) => theme.fontWeight.medium};
-        }
-        &:nth-child(2) {
-          width: 32px;
-          height: 1px;
-          background-color: ${({ theme }) => theme.colors.dividerColor};
-          transform: rotate(-45deg);
-        }
-        &:nth-child(3) {
-          color: ${({ theme }) => theme.colors.textMedium};
-          margin-left: 20px;
-        }
+  }
+  .revenue-box {
+    border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    border-radius: 24px 24px 0px 24px;
+    padding: 48px 48px 0;
+    min-height: 448px;
+    margin-bottom: 24px;
+    ${media.sm`
+      min-height: auto;
+      padding-bottom: 48px;
+    `}
+    .revenue-data {
+      h3 {
+        color: ${({ theme }) => theme.colors.primaryColor};
+        margin-bottom: 16px;
+        font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+        letter-spacing: 0.6px
       }
-    }
-    .slider-data {
-      padding-left: 18px;
+      p {
+        letter-spacing: 0;
+      }
       ${media.sm`
         text-align: center;
         padding-left: 0;
       `}
-      .slider-img {
+      .revenue-img {
         ${media.sm`
           display: flex;
           justify-content: center;
         `}
       }
-      .slider-desc {
-        padding-left: 40px;
-        ${media.sm`
-         padding-left: 0;
-        `}
-      }
-      h4 {
-        color: ${({ theme }) => theme.colors.textMedium};
-        font-weight: ${({ theme }) => theme.fontWeight.light};
-        max-width: 440px;
-        letter-spacing: 0.5px;
-        ${media.sm`
-         max-width: 100%;
-        `}
+      .revenue-desc {
+        margin-top: 40px;
       }
     }
   }

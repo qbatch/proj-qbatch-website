@@ -2,39 +2,47 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const ServicesBannerWrapper = styled.div`
-  background-image: url("/company-banner-img.png");
-  background-size: cover;
-  background-position: bottom;
-  padding: 98px 0 96px; 
-  display: flex;
-  justify-content: center;
+  background-image: url('/portfolio-banner.svg');
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
+  background-repeat: no-repeat;
+  background-size: 78% 100%;
+  background-position: center;
+  padding: 98px 0 120px 0px;
   ${media.sm`
     padding: 40px 0;
   `}
   .banner-content {
-    margin-left: -20px;
-    ${media.lg`
-    margin-left: 0;
-  `}
-    h2 {
-      color: ${({theme}) => theme.colors.whiteColor};
-      margin-bottom: 26px;
+    margin-left: 53px;
+    margin-top: 28px;
+    h1 {
+      color: ${({ theme }) => theme.colors.whiteColor};
+      margin-bottom: 16px;
     }
-    h4 {
-      color: ${({theme}) => theme.colors.dividerColor};
-      font-weight: ${({theme}) => theme.fontWeight.normal};
+    .second-h1 {
+      display: flex;
+      color: ${({ theme }) => theme.colors.bodyLight};
+    }
+    h2 {
+      color: ${({ theme }) => theme.colors.dividerColor};
+      font-weight: ${({ theme }) => theme.fontWeight.normal};
       line-height: 32px;
-      letter-spacing: 0.48px;
-      max-width: 910px;
-      margin-bottom: 24px;
+      max-width: 1070px;
+      margin-bottom: 32px;
+      text-transform: none;
       b {
-        color: ${({theme}) => theme.colors.whiteColor};
+        color: ${({ theme }) => theme.colors.whiteColor};
         letter-spacing: 0;
+        margin-top: 5px;
+        display: block;
       }
       &:nth-child(3) {
-        max-width: 770px;
+        max-width: 1150px;
       }
     }
+  }
+  .button-box {
+    margin-top: 86px;
+    margin-left: 4px;
   }
 `
 
