@@ -13,6 +13,9 @@ const StagesWrapper = styled.div`
   }
   &.stage-slider-main2 {
     padding: 120px 0 62px;
+    .stages-header {
+      margin-bottom: 54px;
+    }
   } 
   @media screen and (max-width: 767px) {
     padding-bottom: 32px;
