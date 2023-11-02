@@ -27,6 +27,14 @@ const IdeasWrapper = styled.div`
       margin-bottom: 32px;
     `}
   }
+  button {
+    padding-top: 72px;
+  }
+  &.desired-result {
+    .heading {
+      max-width: 800px;
+    }
+  }
 `;
 
 export default IdeasWrapper;
