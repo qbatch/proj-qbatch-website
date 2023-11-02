@@ -8,7 +8,7 @@ const weDoData = [
   { id: 6 },
 ];
 const counterData = [
-  { id: 1, count: 150, desc: "Full Stack Developers", symbol: "+" },
+  { id: 1, count: 150, desc: "Full Stack Developers"},
   { id: 2, count: 300, desc: "Solutions Delivered \n Successfully", symbol: "+" },
   { id: 3, count: 98, desc: "Customer Happiness \n Index", symbol: "%" },
   { id: 4, count: 10, desc: "Customer Happiness \n Index", symbol: "" },
@@ -23,6 +23,16 @@ const companyCounter = [
   { id: 6, count: 100, desc: "Industry Experts", symbol: "+" },
   { id: 7, count: 10, desc: "Years Of Excellency", symbol: "" },
   { id: 8, count: 3, desc: "Global Offices", symbol: "" }
+];
+const peopleFirstData = [
+  { id: 1, icon: '/people-first-icon-1.svg', desc: "E-commerce" },
+  { id: 2, icon: '/people-first-icon-2.svg', desc: "Logistics & Supply Chain"},
+  { id: 3, icon: '/people-first-icon-3.svg', desc: "FinTech"},
+  { id: 4, icon: '/people-first-icon-4.svg', desc: "Healthcare"},
+  { id: 5, icon: '/people-first-icon-5.svg', desc: "EdTech"},
+  { id: 6, icon: '/people-first-icon-6.svg', desc: "Retail & Consumer Goods"},
+  { id: 7, icon: '/people-first-icon-7.svg', desc: "Travel & Transportation",},
+  { id: 8, icon: '/people-first-icon-8.svg', desc: "IoT",}
 ];
 
 const leaderData = [
@@ -778,6 +788,7 @@ export {
   clientsData,
   leaderData,
   companyCounter,
+  peopleFirstData,
   counterData,
   weDoData,
   data,
