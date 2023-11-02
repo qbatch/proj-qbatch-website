@@ -3,23 +3,22 @@ import React from "react";
 import SEO from "../components/Seo";
 import Layout from "../components/Layout/layout";
 import StartProject from "../components/PagesComponent/StartProject";
-import WhatCanHelp from '../components/PagesComponent/WhatCanYouHelp/index'
-import BusinessMangement from '../components/PagesComponent/BusinessMangement/index'
+import WhatCanHelp from "../components/PagesComponent/WhatCanYouHelp/index";
+import BusinessMangement from "../components/PagesComponent/BusinessMangement/index";
 import EcomLogoSection from "../components/PagesComponent/EcomLogoSection";
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
 import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
-import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
-import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments"
-import FaqSection from '../components/PagesComponent/Faq'
-import { ecomSliderItems, ecomFaqQuestion } from '../constants'
+import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
+import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments";
+import FaqSection from "../components/PagesComponent/Faq";
+import { ecomSliderItems, ecomFaqQuestion } from "../constants";
 import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers";
-import QuotationSection from '../components/PagesComponent/QuotationSection'
+import QuotationSection from "../components/PagesComponent/QuotationSection";
 import MarketplaceIntegrations from "../components/PagesComponent/MarketplaceIntegrations";
 import TrippleYourRevenue from "../components/PagesComponent/TrippleYourRevenue";
 import Automation from "../components/PagesComponent/Automation";
 
 const Ecommerce = () => {
-   
   return (
     <Layout>
       <EcommerceBanner />
@@ -39,15 +38,21 @@ const Ecommerce = () => {
       <BusinessMangement />
       <TrippleYourRevenue />
       <Automation />
-      <IdeasAndInvestments />
-      <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
+      <IdeasAndInvestments
+        heading="100+ businesses trusted us with their ideas and investments,"
+        span="will you?"
+      />
+      <ProvenWorkExperience
+        heading="Our Projects"
+        paragraph="They imagined it, we brought it to the world!"
+      />
       <MarketplaceIntegrations />
       <MarketplaceSellers />
       <FaqSection faqQuestion={ecomFaqQuestion} />
       <QuotationSection />
       <StartProject />
     </Layout>
-  )
+  );
 };
 export const Head = () => <SEO title="ecommerce" />;
 

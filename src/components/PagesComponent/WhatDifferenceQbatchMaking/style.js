@@ -2,17 +2,18 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const QbatchMakingWrapper = styled.div`
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .container-padding {
     padding: 120px 0;
     ${media.sm`
-      padding: 40px 0 8px;
+      padding: 60px 0;
     `}
   }
   .section-heading {
-    margin-bottom: 42px;
+    margin-bottom: 72px;
     p{
       max-width: 469px;
-    margin: auto;
+      margin: auto;
     }
     ${media.xs`
       margin-bottom: 40px;
