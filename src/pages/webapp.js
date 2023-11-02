@@ -9,6 +9,7 @@ import AppDevelopment from '../components/PagesComponent/AppDevelopmentService'
 import WhatDifferenceQbatchMaking from '../components/PagesComponent/WhatDifferenceQbatchMaking'
 import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience';
 import StartProject from "../components/PagesComponent/StartProject";
+import SolutionToChoose from "../components/PagesComponent/SolutionToChoose";
 import PeopleFirst from '../components/PagesComponent/PeopleFirst';
 const webapp = () => {
   return (
@@ -29,10 +30,7 @@ const webapp = () => {
       <ProvenWorkExperience
         heading="Success Stories"
         paragraph="They imagined it, we brought it to the world!"
-      />
-      <StartProject />
-      <WhatDifferenceQbatchMaking heading='How We Make Custom Web Apps Differently' innerPage={true}/>
-      <ProvenWorkExperience heading="Success Stories" paragraph="They imagined it, we brought it to the world!" />
+      />   
       <PeopleFirst/>
       <StartProject/>
     </Layout>
