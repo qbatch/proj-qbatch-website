@@ -11,11 +11,14 @@ import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperie
 import StartProject from "../components/PagesComponent/StartProject";
 import SolutionToChoose from "../components/PagesComponent/SolutionToChoose";
 import PeopleFirst from '../components/PagesComponent/PeopleFirst';
+import YouCanTrust from "../components/PagesComponent/YouCanTrust";
+
 const webapp = () => {
   return (
     <Layout>
       <WebappBanner />
       <Achievements page="home" innerPage={true} />
+      <YouCanTrust />
       <SolutionToChoose />
       <AppDevelopment />
       <WhatDifferenceQbatchMaking
