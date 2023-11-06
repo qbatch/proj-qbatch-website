@@ -8,26 +8,30 @@ import Divider from "../../UiComponent/Divider";
 
 const CtoServiceModels = [
   {
-    icon: 'https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg',
+    icon: '/cto-as-a-service-collaboration-models _full-time-cto.svg',
     title: 'Full-time CTO',
-    description: 'If you are still shaping your idea and collecting technical requirements, our fractional CTO services can help you translate your ambiguities into detailed docs, technical action plans, budget estimates, and IT pitch decks as needed.',
+    description:
+      'If you are still shaping your idea and collecting technical requirements, our fractional CTO services can help you translate your ambiguities into detailed docs, technical action plans, budget estimates, and IT pitch decks as needed.',
   },
   {
-    icon: 'https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg',
+    icon: '/cto-as-a-service-collaboration-models _one-time-project-cto.svg',
     title: 'Part-time CTO',
-    description: 'If you don’t have enough resources to hire a permanent CTO, you can immediately lend our years of technical experience and insight to fulfill the needs of your startup under a small budget.',
+    description:
+      'If you don’t have enough resources to hire a permanent CTO, you can immediately lend our years of technical experience and insight to fulfill the needs of your startup under a small budget.',
   },
   {
-    icon: 'https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg',
+    icon: '/cto-as-a-service-collaboration-models _interim-cto.svg',
     title: 'Interim CTO',
-    description: 'If you’ve lost your full-time CTO, our interim leadership can help you keep your technical and development tasks on track and the talent engaged until a new full-time CTO is hired. ',
+    description:
+      'If you’ve lost your full-time CTO, our interim leadership can help you keep your technical and development tasks on track and the talent engaged until a new full-time CTO is hired. ',
   },
   {
-    icon: 'https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg',
+    icon: '/cto-as-a-service-collaboration-models-part_time-cto.svg',
     title: 'One-Time Project CTO',
-    description: 'Perfect for fixed-scope projects where our CTO enters to solve critical problems, help with transformations, MVP development, and team and process management to achieve agreed-upon project objectives.',
-  }
-];
+    description:
+      'Perfect for fixed-scope projects where our CTO enters to solve critical problems, help with transformations, MVP development, and team and process management to achieve agreed-upon project objectives.',
+  },
+]
 
 const Index = () => {
   return (
