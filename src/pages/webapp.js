@@ -15,6 +15,10 @@ import Collaboration from "../components/PagesComponent/Collaboration";
 import FaqSection from "../components/PagesComponent/Faq";
 import PeopleFirst from '../components/PagesComponent/PeopleFirst';
 import { webAppFaq } from "../constants";
+import LostToLaunched from "../components/PagesComponent/DevelopmentStages";
+import LanguagesAndFrameworks from "../components/PagesComponent/LanguagesAndFrameworks"
+import { lostToLaunchedItems } from "../constants";
+
 const webapp = () => {
   return (
     <Layout>
@@ -32,6 +36,19 @@ const webapp = () => {
         isButton={true}
         className="desired-result"
       />
+      <LostToLaunched
+        heading="Lost to Launched"
+        desc="Web Application Development Process"
+        sliderData={lostToLaunchedItems}
+        col1={5}
+        col2={7}
+        subCol1={6}
+        subCol2={6}
+        mt="mt-4"
+        className="ecom-section launched"
+        isScroll={false}
+      />
+      <LanguagesAndFrameworks />
       <Collaboration heading="text-h2"/>
       <ProvenWorkExperience
         heading="Success Stories"

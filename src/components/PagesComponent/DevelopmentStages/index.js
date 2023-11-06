@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import VisibilitySensor from "react-visibility-sensor";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 import Button from "../../UiComponent/Button";
+import Container from "../../UiComponent/Container";
 
 import StagesWrapper from "./style";
 
@@ -20,6 +21,7 @@ const DevelopmentStages = (props) => {
     subCol2,
     className,
     mt,
+    isScroll,
   } = props;
   const sliderRef = useRef(null);
   const scrollRef = useRef(null);
@@ -34,11 +36,15 @@ const DevelopmentStages = (props) => {
     setPrevVisibility(isVisible); // Store the previous visibility state
   };
   const handleMouseEnter = () => {
-    document.body.style.overflow = "hidden";
-    scrollToSectionStart();
+    if (isScroll) {
+      document.body.style.overflow = "hidden";
+      scrollToSectionStart();
+    }
   };
   const handleMouseLeave = () => {
-    document.body.style.overflow = "auto";
+    if (isScroll) {
+      document.body.style.overflow = "auto";
+    }
   };
 
   const scrollToSectionStart = () => {
@@ -106,28 +112,31 @@ const DevelopmentStages = (props) => {
         }
       }
     };
+    if (isScroll) {
+      // Add event listener for mousewheel
+      const sliderElement = document.querySelector(".stage-slider-main");
+      sliderElement.addEventListener("wheel", handleMouseWheel);
 
-    // Add event listener for mousewheel
-    const sliderElement = document.querySelector(".stage-slider-main");
-    sliderElement.addEventListener("wheel", handleMouseWheel);
-
-    return () => {
-      // Remove event listener when the component unmounts
-      sliderElement.removeEventListener("wheel", handleMouseWheel);
-    };
+      return () => {
+        // Remove event listener when the component unmounts
+        sliderElement.removeEventListener("wheel", handleMouseWheel);
+      };
+    }
   }, [activeIndex, sliderData?.length]);
   const marketplace = sliderData.find((x) => x.content);
   return (
-    <VisibilitySensor onChange={handleVisibilityChange}
-    partialVisibility={true}
-    offset={{bottom:400, top:400}}
-    >
+    <>
+      <VisibilitySensor
+        onChange={isScroll && handleVisibilityChange}
+        partialVisibility={true}
+        offset={{ bottom: 400, top: 400 }}
+      >
         <StagesWrapper
           id="scene-trigger"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           ref={scrollRef}
-          className={`stage-slider-main`}
+          className={`stage-slider-main ${className}`}
           marketplace={marketplace ? "" : "49px"}
         >
           <div>
@@ -212,7 +221,51 @@ const DevelopmentStages = (props) => {
             </Container>
           </div>
         </StagesWrapper>
-        </VisibilitySensor>
+      </VisibilitySensor>
+      {/* small screen data */}
+      <StagesWrapper className="small-screen-data">
+        <Container>
+          <div className="stages-header">
+            <h2>{heading}</h2>
+            <p>{desc}</p>
+          </div>
+          <div className="slider-section">
+            {sliderData?.map((item, index) => (
+              <div key={index} className="slider-item">
+                <h3>{item.title}</h3>
+                <Row className="mb-5">
+                  {!item.content ? (
+                    item.image.map((img) => (
+                      <Col md={12}>
+                        <div className="mb-5">
+                          <img src={img} alt="project" />
+                        </div>
+                      </Col>
+                    ))
+                  ) : (
+                    <>
+                      <Col md={5}>
+                        <img src={item.image} alt="project" />
+                      </Col>
+                      <Col md={7} className="slider-column-text">
+                        <div className="content">
+                          {item.content}
+                          <ul>
+                            {item.list?.map((listItem, listIndex) => (
+                              <li key={listIndex}>{listItem}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </Col>
+                    </>
+                  )}
+                </Row>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </StagesWrapper>
+    </>
   );
 };
 
