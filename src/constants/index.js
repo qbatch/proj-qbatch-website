@@ -361,6 +361,38 @@ const ecomSliderItems = [
     content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
   },
 ];
+const lostToLaunchedItems = [
+  {
+    image: "/5 Step E-Commerce Automation_Problem Analysis.svg",
+    title: "Project Mapping",
+    content: "Requirement analysis to form a risk-free and modern solution.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    title: "Visual & Technical Design",
+    content: "Prototype designing testing to rectify concerns in real-world terms.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Installation.svg",
+    title: "Development",
+    content: "Business logic and code development according to the approved design.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Orchestration.svg",
+    title: "Ensuring Security & QA",
+    content: "Security and QA testing to secure your product from cyberattacks and functional issues.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    title: "Deployment",
+    content: "Final execution of the tested and optimized software solution.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    title: "Launch & Support",
+    content: "A happy project launch with continued support and maintenance.",
+  },
+];
 const marketPlaceData = [
   {
     image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg',"","",""],
@@ -385,6 +417,320 @@ const marketPlaceData = [
   {
     image: ['/keepa.svg', '/rainforest-api.svg'],
     title: '3rd Party API’s',
+  },
+]
+const languagesData = [
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
+      },
+    ],    
+    title: 'Backend',
+  },
+  {
+    content: [
+      {
+        img: "/vue-js.svg",
+        desc: "Vue JS"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/react-seeklogo.svg",
+        desc: "React JS"
+      },
+      {
+        img: "/typescript.svg",
+        desc: "Type Script"
+      },
+      {
+        img: "/javascript-seeklogo.svg",
+        desc: "Java Script"
+      },
+      {
+        img: "/angular-seeklogo.svg",
+        desc: "Angular"
+      },
+      {
+        img: "/electron-seeklogo.svg",
+        desc: "Electron"
+      },
+      {
+        img: "/gatsby-monogram.svg",
+        desc: "Gatsby JS"
+      },
+      {
+        img: "/redux-seeklogo.svg",
+        desc: "Redux"
+      },
+      {
+        img: "/webpack-seeklogo.svg",
+        desc: "Webpack"
+      },
+      {
+        img: "/html5-logo.svg",
+        desc: "HTML 5"
+      },
+      {
+        img: "/css3-seeklogo.svg",
+        desc: "CSS 3"
+      }
+    ],  
+    title: 'Frontend',
+  },
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
+      }
+    ], 
+    title: 'Design',
+  },
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
+      }
+    ], 
+    title: 'Database',
+  },
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
+      }
+    ], 
+    title: 'Testing',
+  },
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
+      }
+    ], 
+    title: 'DevOps',
+  },
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
+      }
+    ], 
+    title: 'Cloud/Platform',
+  },
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
+      }
+    ], 
+    title: 'Others',
   },
 ]
 const projects = [
@@ -1055,5 +1401,7 @@ export {
   automationData,
   faqQuestion,
   ecomFaqQuestion,
-  guidanceData
+  guidanceData,
+  lostToLaunchedItems,
+  languagesData
 }
