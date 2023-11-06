@@ -14,6 +14,7 @@ import FullCycle from "../components/PagesComponent/FullCicle";
 import Collaboration from "../components/PagesComponent/Collaboration";
 import FaqSection from "../components/PagesComponent/Faq";
 import PeopleFirst from '../components/PagesComponent/PeopleFirst';
+import YouCanTrust from "../components/PagesComponent/YouCanTrust";
 import { webAppFaq } from "../constants";
 import LostToLaunched from "../components/PagesComponent/DevelopmentStages";
 import LanguagesAndFrameworks from "../components/PagesComponent/LanguagesAndFrameworks"
@@ -24,6 +25,7 @@ const webapp = () => {
     <Layout>
       <WebappBanner />
       <Achievements page="home" innerPage={true} />
+      <YouCanTrust />
       <FullCycle/>
       <SolutionToChoose />
       <AppDevelopment />

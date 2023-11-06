@@ -1377,6 +1377,25 @@ const guidanceData = [
     desc: "Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.",
   },
 ];
+
+const youCanTrustData = [
+  {
+    icon: "/time-budget.svg",
+    title: "On-time and On-budget",
+  },
+  {
+    icon: "/strongly-agile.svg",
+    title: "Strongly Agile",
+  },
+  {
+    icon: "/stable-code.svg",
+    title: "100% Stable Code",
+  },
+  {
+    icon: "/cash-free.svg",
+    title: "Crash-free Product",
+  },
+];
 export {
   homeTiles,
   CareersData,
@@ -1402,6 +1421,7 @@ export {
   faqQuestion,
   ecomFaqQuestion,
   guidanceData,
+  youCanTrustData,
   lostToLaunchedItems,
   languagesData
 }
