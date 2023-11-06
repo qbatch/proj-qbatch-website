@@ -10,12 +10,17 @@ import WhatDifferenceQbatchMaking from '../components/PagesComponent/WhatDiffere
 import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience';
 import StartProject from "../components/PagesComponent/StartProject";
 import SolutionToChoose from "../components/PagesComponent/SolutionToChoose";
+import FullCycle from "../components/PagesComponent/FullCicle";
+import Collaboration from "../components/PagesComponent/Collaboration";
+import FaqSection from "../components/PagesComponent/Faq";
 import PeopleFirst from '../components/PagesComponent/PeopleFirst';
+import { webAppFaq } from "../constants";
 const webapp = () => {
   return (
     <Layout>
       <WebappBanner />
       <Achievements page="home" innerPage={true} />
+      <FullCycle/>
       <SolutionToChoose />
       <AppDevelopment />
       <WhatDifferenceQbatchMaking
@@ -27,11 +32,13 @@ const webapp = () => {
         isButton={true}
         className="desired-result"
       />
+      <Collaboration heading="text-h2"/>
       <ProvenWorkExperience
         heading="Success Stories"
         paragraph="They imagined it, we brought it to the world!"
       />   
       <PeopleFirst/>
+      <FaqSection faqQuestion={webAppFaq} />
       <StartProject/>
     </Layout>
   );

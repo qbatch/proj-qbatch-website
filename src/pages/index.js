@@ -38,7 +38,7 @@ const IndexPage = () => (
     <HappilyMaking />
     <WhatDifferenceQbatchMaking heading='What Difference is Qbatch Making?' paragraph='We always present problems with tangible solutions.'/>
     <Awards maxCols={8} />
-    <Collaboration />
+    <Collaboration headingClass="text-h1"/>
     <CreativeIntelligence />
     <StartProject />
   </Layout>

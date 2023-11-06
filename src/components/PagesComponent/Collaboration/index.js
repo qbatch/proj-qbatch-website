@@ -3,7 +3,6 @@ import CollaborationWrapper from "./style";
 import { BsArrowRight } from "react-icons/bs";
 
 import Container from "../../UiComponent/Container";
-
 import TimeIcon from "../../../assets/images/icons/time-clock.svg";
 import FixedScopeIcon from "../../../assets/images/icons/fixed-scope.svg";
 import DevTeamIcon from "../../../assets/images/icons/dev-team.svg";
@@ -23,19 +22,19 @@ const experties = [
   },
   {
     img: DevTeamIcon,
-    title: "Hire Dedicated Development Team ",
+    title: "Hire Dedicated Development Team ",
     description:
       "Leverage your global footprint in the rising techno-verse with Qbatch’s self-driven, smart, and skilled team of software developers.",
   },
 ];
 
-const Index = () => {
+const Index = ({ headingClass }) => {
   return (
     <CollaborationWrapper>
       <Container>
         <div className="collaboration-inn">
           <div className="section-heading">
-            <h2 className="heading text-h1">Collaboration Models For Everlasting Partnerships</h2>
+            <h2 className={`heading ${headingClass}`}>Collaboration Models For Everlasting Partnerships</h2>
             <p>
               Our unique "Happy Paths" approach is a predictive and transparent way to implement your idea. Choose what
               suits you best
