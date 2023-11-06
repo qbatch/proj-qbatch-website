@@ -10,8 +10,15 @@ import WhatDifferenceQbatchMaking from '../components/PagesComponent/WhatDiffere
 import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience';
 import StartProject from "../components/PagesComponent/StartProject";
 import SolutionToChoose from "../components/PagesComponent/SolutionToChoose";
+import FullCycle from "../components/PagesComponent/FullCicle";
+import Collaboration from "../components/PagesComponent/Collaboration";
+import FaqSection from "../components/PagesComponent/Faq";
 import PeopleFirst from '../components/PagesComponent/PeopleFirst';
 import YouCanTrust from "../components/PagesComponent/YouCanTrust";
+import { webAppFaq } from "../constants";
+import LostToLaunched from "../components/PagesComponent/DevelopmentStages";
+import LanguagesAndFrameworks from "../components/PagesComponent/LanguagesAndFrameworks"
+import { lostToLaunchedItems } from "../constants";
 
 const webapp = () => {
   return (
@@ -19,6 +26,7 @@ const webapp = () => {
       <WebappBanner />
       <Achievements page="home" innerPage={true} />
       <YouCanTrust />
+      <FullCycle/>
       <SolutionToChoose />
       <AppDevelopment />
       <WhatDifferenceQbatchMaking
@@ -30,11 +38,26 @@ const webapp = () => {
         isButton={true}
         className="desired-result"
       />
+      <LostToLaunched
+        heading="Lost to Launched"
+        desc="Web Application Development Process"
+        sliderData={lostToLaunchedItems}
+        col1={5}
+        col2={7}
+        subCol1={6}
+        subCol2={6}
+        mt="mt-4"
+        className="ecom-section launched"
+        isScroll={false}
+      />
+      <LanguagesAndFrameworks />
+      <Collaboration heading="text-h2"/>
       <ProvenWorkExperience
         heading="Success Stories"
         paragraph="They imagined it, we brought it to the world!"
       />   
       <PeopleFirst/>
+      <FaqSection faqQuestion={webAppFaq} />
       <StartProject/>
     </Layout>
   );

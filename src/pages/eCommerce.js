@@ -35,6 +35,7 @@ const Ecommerce = () => {
         subCol2={6}
         mt="mt-4"
         className="ecom-section"
+        isScroll={true}
       />
       <BusinessMangement />
       <TrippleYourRevenue />

@@ -17,7 +17,6 @@ const Portfolio = () => {
       <SuccessStories />
       <Divider margin="0px" />
       <Collaboration />
-      <Divider margin="0px" />
       <StartProject />
     </Layout>
   );

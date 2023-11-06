@@ -3,6 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const CollaborationWrapper = styled.div`
   padding: 122px 0 120px;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .heading{ 
     margin-bottom: 24px;
   }
@@ -34,14 +35,16 @@ const CollaborationWrapper = styled.div`
       .skill-section {
         position: relative;
         padding-top: 32px;
-        margin-bottom: 33px;
+        padding-bottom: 33px;
+        border-bottom: 1px solid #D2D9DC;
         &:last-child{
-          margin-bottom: 10px;
+          padding-bottom: 10px;
+          border-bottom: none;
         }
         ${media.sm`
         gap:10px;
         padding-top: 16px;
-        margin-bottom: 16px;
+        padding-bottom: 16px;
         `}
         .skill-badge {
           border: 1px solid ${({ theme }) => theme.colors.bodyLight};
