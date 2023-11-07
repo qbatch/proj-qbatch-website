@@ -214,6 +214,10 @@ const StagesWrapper = styled.div`
     ${media.sm`
       margin-top: 0;
     `}
+    ${media.md`
+     display: flex;
+     justify-content: center;
+    `}
   }
   .ecom-section {
     padding-left: 0;
@@ -325,7 +329,6 @@ const StagesWrapper = styled.div`
         `}
     }
     }
-    
   }
 `
 export default StagesWrapper;

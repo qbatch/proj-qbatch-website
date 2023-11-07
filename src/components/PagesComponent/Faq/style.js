@@ -5,7 +5,7 @@ const FaqWrapper = styled.div`
   max-width: 929px;
   margin: auto;
   ${media.sm`
-     padding: 40px 0px;
+     padding: 60px 0px;
   `}
   .faq-section{
     margin-top:106px;

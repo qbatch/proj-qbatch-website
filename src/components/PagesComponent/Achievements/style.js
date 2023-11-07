@@ -15,7 +15,7 @@ position:relative;
   background: linear-gradient(180deg, rgba(246, 247, 250, 0.70) 0%, rgba(246, 247, 250, 0.60) 100%);
 }
   .achievements-main {
-    padding: 120px 0;
+    padding: 120px 0 145px;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-image: url("/achievements-bg.svg");
@@ -23,7 +23,7 @@ position:relative;
     text-align: center;
     position : relative;
     ${media.sm`
-      padding: 40px 0 0;
+      padding: 60px 0 0;
     `}
     .achievements-inner-wrapper{
       position: relative;

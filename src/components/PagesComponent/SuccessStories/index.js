@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { StoriesWrapper, ImageOpenStyle } from "./style";
 
-import PrimaryButton from "../../UiComponent/PrimaryButton";
+// import PrimaryButton from "../../UiComponent/PrimaryButton";
 import Container from "../../UiComponent/Container";
 import { stories } from "../../../constants";
 
@@ -40,7 +40,7 @@ const Index = () => {
                       <img src={item.imgClose} alt="story" />
                     </div>
                     <div className="content">
-                      <img className="logo" src={item.logo} />
+                      <img className="logo" src={item.logo} alt="logo" />
                       <h3>{item.title}</h3>
                       <p className="paragraph">{item.description}</p>
                       <div className="badge">
@@ -49,7 +49,7 @@ const Index = () => {
                         ))}
                       </div>
                     </div>
-                    <PrimaryButton text="View Details" />
+                    {/* <PrimaryButton text="View Details" /> */}
                   </div>
                 </div>
               </div>

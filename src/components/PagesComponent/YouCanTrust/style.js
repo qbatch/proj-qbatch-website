@@ -68,10 +68,7 @@ const YouCanTrustWrapper = styled.div`
       ${media.lg`
         padding-bottom: 100px;
       `}
-      img {
-        padding-left: 40px;
-      }
-      h3 {
+      h4 {
         margin-bottom: 44px;
         text-transform: none;
       }
@@ -105,7 +102,10 @@ const YouCanTrustWrapper = styled.div`
   .trust-btn {
     display: flex;
     justify-content: center;
-    margin-top: 58px;
+    margin-top: 15px;
+    ${media.md`
+      margin-top: 52px;
+    `}
   }
 `;
 

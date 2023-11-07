@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const StartProjectWrapper = styled.div`
   padding: 120px 0;
   ${media.sm`
-      padding: 40px 0;
+      padding: 60px 0;
     `}
   h2 {
     margin: 1px 0 29px -1px;
