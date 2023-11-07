@@ -170,6 +170,9 @@ const Index = () => {
               </div>
             </div>
           ))}
+           <div className="trust-btn">
+              <Button text="Get Started Risk-Free" />
+            </div>
         </Container>
       </YouCanTrustWrapper>
     </>

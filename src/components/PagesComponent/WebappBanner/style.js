@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const WebappBanenrWrapper = styled.div`
 background-color: ${({ theme }) => theme.colors.secondaryColor};
-padding: 120px 0 72px;
+padding: 120px 0 70px;
 .banner-content{
     max-width: 100%;
     ${media.sm`
@@ -71,6 +71,9 @@ padding: 120px 0 72px;
     margin: auto;
     `}
   }
+}
+.secondary-btn {
+  margin-right: 71px;
 }
 `;
 export default WebappBanenrWrapper;

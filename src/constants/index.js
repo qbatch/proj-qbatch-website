@@ -506,229 +506,194 @@ const languagesData = [
       {
         img: "/css3-seeklogo.svg",
         desc: "CSS 3"
-      }
+      },
     ],  
     title: 'Frontend',
   },
   {
     content: [
       {
-        img: "/ruby-on-rails.svg",
-        desc: "Ruby On Rails"
+        img: "/figma-seeklogo.svg",
+        desc: "Figma"
       },
       {
-        img: "/node-js.svg",
-        desc: "Node Js"
+        img: "/adobe-illustrator-seeklogo.svg",
+        desc: "Adobe Illustrator"
       },
       {
-        img: "/flask.svg",
-        desc: "Flask"
+        img: "/adobe-photoshop-seeklogo.svg",
+        desc: "Adobe Photoshop"
       },
-      {
-        img: "/next-js.svg",
-        desc: "Next JS"
-      },
-      {
-        img: "/nest-js.svg",
-        desc: "Nest JS"
-      },
-      {
-        img: "/python.svg",
-        desc: "Python"
-      },
-      {
-        img: "/django.svg",
-        desc: "Django"
-      },
-      {
-        img: "/express-js.svg",
-        desc: "Express JS"
-      }
     ], 
     title: 'Design',
   },
   {
     content: [
       {
-        img: "/ruby-on-rails.svg",
-        desc: "Ruby On Rails"
+        img: "/postgresql-seeklogo.svg",
+        desc: "PostgreSQL"
       },
       {
-        img: "/node-js.svg",
-        desc: "Node Js"
+        img: "/neo4j-seeklogo.svg",
+        desc: "Neo4j"
       },
       {
-        img: "/flask.svg",
-        desc: "Flask"
+        img: "/mongodb-seeklogo.svg",
+        desc: "MongoDB"
       },
       {
-        img: "/next-js.svg",
-        desc: "Next JS"
+        img: "/cassandra-seeklogo.svg",
+        desc: "Cassandra"
       },
       {
-        img: "/nest-js.svg",
-        desc: "Nest JS"
+        img: "/sql-server-seeklogo.svg",
+        desc: "SQL Server"
       },
       {
-        img: "/python.svg",
-        desc: "Python"
+        img: "/my-sql.svg",
+        desc: "MySQL"
       },
       {
-        img: "/django.svg",
-        desc: "Django"
+        img: "/maria-db.svg",
+        desc: "MariaDB"
       },
       {
-        img: "/express-js.svg",
-        desc: "Express JS"
-      }
+        img: "/aws-dynamodb-seeklogo.svg",
+        desc: "DynamoDB"
+      },
+      {
+        img: "/redis.svg",
+        desc: "Redis"
+      },
+      {
+        img: "/sqlite.svg",
+        desc: "SQLite"
+      },
+      {
+        img: "/elasticsearch-seeklogo.svg",
+        desc: "Elasticsearch"
+      },
+      {
+        img: "/spark-seeklogo.svg",
+        desc: "Apache Spark"
+      },
     ], 
     title: 'Database',
   },
   {
     content: [
       {
-        img: "/ruby-on-rails.svg",
-        desc: "Ruby On Rails"
+        img: "/jmeter.svg",
+        desc: "JMeter"
       },
       {
-        img: "/node-js.svg",
-        desc: "Node Js"
+        img: "/pytest-logo.svg",
+        desc: "PyTest"
       },
       {
-        img: "/flask.svg",
-        desc: "Flask"
+        img: "/mocha.svg",
+        desc: "Mocha"
       },
       {
-        img: "/next-js.svg",
-        desc: "Next JS"
+        img: "/rspec.svg",
+        desc: "RSpec"
       },
-      {
-        img: "/nest-js.svg",
-        desc: "Nest JS"
-      },
-      {
-        img: "/python.svg",
-        desc: "Python"
-      },
-      {
-        img: "/django.svg",
-        desc: "Django"
-      },
-      {
-        img: "/express-js.svg",
-        desc: "Express JS"
-      }
+      
     ], 
     title: 'Testing',
   },
   {
     content: [
       {
-        img: "/ruby-on-rails.svg",
-        desc: "Ruby On Rails"
+        img: "/kubernetes.svg",
+        desc: "Kubernetes"
       },
       {
-        img: "/node-js.svg",
-        desc: "Node Js"
+        img: "/docker.svg",
+        desc: "Docker"
       },
       {
-        img: "/flask.svg",
-        desc: "Flask"
+        img: "/jenkins.svg",
+        desc: "Jenkins"
       },
       {
-        img: "/next-js.svg",
-        desc: "Next JS"
+        img: "/ansible.svg",
+        desc: "Ansible"
       },
       {
-        img: "/nest-js.svg",
-        desc: "Nest JS"
+        img: "/terraform.svg",
+        desc: "Terraform"
       },
       {
-        img: "/python.svg",
-        desc: "Python"
+        img: "/circle-ci.svg",
+        desc: "CircleCI"
       },
       {
-        img: "/django.svg",
-        desc: "Django"
+        img: "/aws-logo.svg",
+        desc: "AWS"
       },
       {
-        img: "/express-js.svg",
-        desc: "Express JS"
-      }
+        img: "/azure-logo.svg",
+        desc: "Microsoft Azure"
+      },
+      {
+        img: "/google-cloud.svg",
+        desc: "Google Cloud"
+      },
+      {
+        img: "/chef-logo.svg",
+        desc: "Chef"
+      },
     ], 
     title: 'DevOps',
   },
   {
     content: [
       {
-        img: "/ruby-on-rails.svg",
-        desc: "Ruby On Rails"
+        img: "/gcp-seeklogo.svg",
+        desc: "GCP"
       },
       {
-        img: "/node-js.svg",
-        desc: "Node Js"
+        img: "/azure-logo.svg",
+        desc: "Microsoft Azure"
       },
       {
-        img: "/flask.svg",
-        desc: "Flask"
+        img: "/aws-logo.svg",
+        desc: "AWS"
       },
       {
-        img: "/next-js.svg",
-        desc: "Next JS"
+        img: "/kubernetes.svg",
+        desc: "Kubernetes"
       },
       {
-        img: "/nest-js.svg",
-        desc: "Nest JS"
+        img: "/docker.svg",
+        desc: "Docker"
       },
-      {
-        img: "/python.svg",
-        desc: "Python"
-      },
-      {
-        img: "/django.svg",
-        desc: "Django"
-      },
-      {
-        img: "/express-js.svg",
-        desc: "Express JS"
-      }
     ], 
     title: 'Cloud/Platform',
   },
   {
     content: [
       {
-        img: "/ruby-on-rails.svg",
-        desc: "Ruby On Rails"
+        img: "/appian.svg",
+        desc: "Appian"
       },
       {
-        img: "/node-js.svg",
-        desc: "Node Js"
+        img: "/bubble.svg",
+        desc: "Bubble.io"
       },
       {
-        img: "/flask.svg",
-        desc: "Flask"
+        img: "/flutter.svg",
+        desc: "Flutter"
       },
       {
-        img: "/next-js.svg",
-        desc: "Next JS"
+        img: "/retool-seeklogo.svg",
+        desc: "Retool"
       },
       {
-        img: "/nest-js.svg",
-        desc: "Nest JS"
+        img: "/betty-block.svg",
+        desc: "Betty Block"
       },
-      {
-        img: "/python.svg",
-        desc: "Python"
-      },
-      {
-        img: "/django.svg",
-        desc: "Django"
-      },
-      {
-        img: "/express-js.svg",
-        desc: "Express JS"
-      }
     ], 
     title: 'Others',
   },
@@ -907,6 +872,45 @@ const automationData = [
   {
     icon: "/shopping-experiences.svg",
     desc: "Deliver personalized shopping experiences."
+  },
+]
+
+const webExpertiseData = [
+  {
+    icon: "/serverless-microservices.svg",
+    desc: "Serverless Microservices based Web Apps."
+  },
+  {
+    icon: "/service-oriented-architectures.svg",
+    desc: "Service-Oriented-Architectures (SOA)."
+  },
+  {
+    icon: "/multi-service-cloud.svg",
+    desc: "Multi-service Cloud Applications."
+  },
+  {
+    icon: "/operational-automation.svg",
+    desc: "Operational Automation & Analytics."
+  },
+  {
+    icon: "/knowledge-management-systems.svg",
+    desc: "Document & Knowledge Management Systems."
+  },
+  {
+    icon: "/ecommerce-apps.svg",
+    desc: "E-commerce & M-commerce Apps."
+  },
+  {
+    icon: "/admin-panels-dashboards.svg",
+    desc: "Admin Panels & Management Dashboards"
+  },
+  {
+    icon: "/product-configurators.svg",
+    desc: "Product configurators."
+  },
+  {
+    icon: "/ondemand-apps.svg",
+    desc: "On-Demand Apps."
   },
 ]
 
@@ -1423,5 +1427,6 @@ export {
   guidanceData,
   youCanTrustData,
   lostToLaunchedItems,
-  languagesData
+  languagesData,
+  webExpertiseData
 }

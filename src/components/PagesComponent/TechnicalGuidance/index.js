@@ -79,7 +79,7 @@ const Index = (props) => {
               <div className="guidance-card" key={ind}>
                 <img src={data.icon} alt="card icon" />
                 <h4>{data.title}</h4>
-                <span>{data.desc}</span>
+                <p>{data.desc}</p>
               </div>
             ))}
             <div className="guidance-card"></div>

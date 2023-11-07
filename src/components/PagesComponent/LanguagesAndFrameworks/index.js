@@ -23,6 +23,7 @@ const Index = () => {
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 991,

@@ -223,7 +223,7 @@ const DevelopmentStages = (props) => {
         </StagesWrapper>
       </VisibilitySensor>
       {/* small screen data */}
-      <StagesWrapper className="small-screen-data">
+      <StagesWrapper className={`small-screen-data ${className}`}>
         <Container>
           <div className="stages-header">
             <h2>{heading}</h2>
@@ -263,6 +263,13 @@ const DevelopmentStages = (props) => {
               </div>
             ))}
           </div>
+          {marketplace ? (
+            <div className="slider-btn">
+              <Button text="Book Free Demo" />
+            </div>
+          ) : (
+            ""
+          )}
         </Container>
       </StagesWrapper>
     </>

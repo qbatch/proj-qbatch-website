@@ -30,6 +30,7 @@ const LanguagesWrapper = styled.div`
    
     ul {
       padding-left: 0;
+      width: 150px;
     }
     li {
       margin-bottom: 32px;
@@ -116,7 +117,9 @@ const LanguagesWrapper = styled.div`
   .languages-btn {
     display: flex;
     justify-content: center;
-    margin-top: 98px;
+  }
+  .framework-item {
+    min-height: 700px;
   }
 `;
 
