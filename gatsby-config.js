@@ -25,10 +25,20 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-recaptcha',
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,
     },
+    {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+        async: false,
+        defer: false,
+        args: `?onload=onloadCallback&render=explicit`,
+      },
+    },
+
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
