@@ -16,12 +16,16 @@ const servicesItems = [
     to: "/",
   },
   {
-    menu: "Web and Mobile App Development",
-    to: "/",
-  },
-  {
     menu: "E-commerce Automation Services",
     to: "/eCommerce",
+  },
+  {
+    menu: "Web App Development",
+    to: "/webapp",
+  },
+  {
+    menu: "Mobile App Development",
+    to: "/",
   },
   {
     menu: "CTO as a Service",

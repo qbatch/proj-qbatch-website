@@ -50,6 +50,8 @@ const TechnicalGuidanceWrapper = styled.div`
       ${media.sm`
         line-height: 32px;
         margin-right: 0;
+        width: 100%;
+        text-align: center;
       `}
       span {
         color: ${({ theme }) => theme.colors.dangerColor};
@@ -65,18 +67,20 @@ const TechnicalGuidanceWrapper = styled.div`
         max-width: 100%;
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         line-height: 24px;
+        text-align: center;
       `}
     }
   }
   .guidance-card {
     min-width: 453px;
-    padding: 31px;
+    padding: 32px;
     background-color: ${({ theme }) => theme.colors.whiteColor};
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-radius: 24px 24px 0;
     box-sizing: border-box;
     ${media.md`
       min-width: 100%;
+      text-align: center;
     `}
     &:last-child{
       min-width: 96px;
@@ -96,12 +100,8 @@ const TechnicalGuidanceWrapper = styled.div`
         line-height: 24px;
       `}
     }
-    span {
-      color: ${({ theme }) => theme.colors.textMedium};
-      line-height: 24px;
-      ${media.sm`
-        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
-      `}
+    p {
+      line-height: 32px;
     }
   }
   &.automation-section {
@@ -125,10 +125,8 @@ const TechnicalGuidanceWrapper = styled.div`
     }
   }
   .guidance-card {
-    span {
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-      display: block;
-      line-height: 32px;
+    min-width: 366px;
+    p {
       margin-top: 32px;
     }
     
@@ -137,6 +135,24 @@ const TechnicalGuidanceWrapper = styled.div`
     padding-top: 48px;
   }
 }
+&.expertise-section {
+  .guidance-heading {
+    flex-direction: column;
+    h2 {
+      max-width: 100%;
+    }
+    p {
+      max-width: 910px;
+    }
+  }
+  .guidance-card {
+    min-width: 310px;
+  }
+  button {
+    display: none;
+  }
+}
+
   @media (min-width: 1600px) {
     .element-wrapper {
       max-width: 1600px;

@@ -16,7 +16,6 @@ import Awards from '../components/PagesComponent/Awards'
 import CreativeIntelligence from '../components/PagesComponent/CreativeIntelligence'
 import StartProject from '../components/PagesComponent/StartProject'
 
-
 const IndexPage = () => {
  
   return (

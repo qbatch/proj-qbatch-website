@@ -8,7 +8,7 @@ const weDoData = [
   { id: 6 },
 ];
 const counterData = [
-  { id: 1, count: 150, desc: "Full Stack Developers", symbol: "+" },
+  { id: 1, count: 150, desc: "Full Stack Developers"},
   { id: 2, count: 300, desc: "Solutions Delivered \n Successfully", symbol: "+" },
   { id: 3, count: 98, desc: "Customer Happiness \n Index", symbol: "%" },
   { id: 4, count: 10, desc: "Customer Happiness \n Index", symbol: "" },
@@ -23,6 +23,16 @@ const companyCounter = [
   { id: 6, count: 100, desc: "Industry Experts", symbol: "+" },
   { id: 7, count: 10, desc: "Years Of Excellency", symbol: "" },
   { id: 8, count: 3, desc: "Global Offices", symbol: "" }
+];
+const peopleFirstData = [
+  { id: 1, icon: '/people-first-icon-1.svg', desc: "E-commerce" },
+  { id: 2, icon: '/people-first-icon-2.svg', desc: "Logistics & Supply Chain"},
+  { id: 3, icon: '/people-first-icon-3.svg', desc: "FinTech"},
+  { id: 4, icon: '/people-first-icon-4.svg', desc: "Healthcare"},
+  { id: 5, icon: '/people-first-icon-5.svg', desc: "EdTech"},
+  { id: 6, icon: '/people-first-icon-6.svg', desc: "Retail & Consumer Goods"},
+  { id: 7, icon: '/people-first-icon-7.svg', desc: "Travel & Transportation",},
+  { id: 8, icon: '/people-first-icon-8.svg', desc: "IoT",}
 ];
 
 const leaderData = [
@@ -351,6 +361,38 @@ const ecomSliderItems = [
     content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
   },
 ];
+const lostToLaunchedItems = [
+  {
+    image: "/5 Step E-Commerce Automation_Problem Analysis.svg",
+    title: "Project Mapping",
+    content: "Requirement analysis to form a risk-free and modern solution.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    title: "Visual & Technical Design",
+    content: "Prototype designing testing to rectify concerns in real-world terms.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Installation.svg",
+    title: "Development",
+    content: "Business logic and code development according to the approved design.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Orchestration.svg",
+    title: "Ensuring Security & QA",
+    content: "Security and QA testing to secure your product from cyberattacks and functional issues.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    title: "Deployment",
+    content: "Final execution of the tested and optimized software solution.",
+  },
+  {
+    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    title: "Launch & Support",
+    content: "A happy project launch with continued support and maintenance.",
+  },
+];
 const marketPlaceData = [
   {
     image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg',"","",""],
@@ -375,6 +417,285 @@ const marketPlaceData = [
   {
     image: ['/keepa.svg', '/rainforest-api.svg'],
     title: '3rd Party API’s',
+  },
+]
+const languagesData = [
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
+      },
+    ],    
+    title: 'Backend',
+  },
+  {
+    content: [
+      {
+        img: "/vue-js.svg",
+        desc: "Vue JS"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/react-seeklogo.svg",
+        desc: "React JS"
+      },
+      {
+        img: "/typescript.svg",
+        desc: "Type Script"
+      },
+      {
+        img: "/javascript-seeklogo.svg",
+        desc: "Java Script"
+      },
+      {
+        img: "/angular-seeklogo.svg",
+        desc: "Angular"
+      },
+      {
+        img: "/electron-seeklogo.svg",
+        desc: "Electron"
+      },
+      {
+        img: "/gatsby-monogram.svg",
+        desc: "Gatsby JS"
+      },
+      {
+        img: "/redux-seeklogo.svg",
+        desc: "Redux"
+      },
+      {
+        img: "/webpack-seeklogo.svg",
+        desc: "Webpack"
+      },
+      {
+        img: "/html5-logo.svg",
+        desc: "HTML 5"
+      },
+      {
+        img: "/css3-seeklogo.svg",
+        desc: "CSS 3"
+      },
+    ],  
+    title: 'Frontend',
+  },
+  {
+    content: [
+      {
+        img: "/figma-seeklogo.svg",
+        desc: "Figma"
+      },
+      {
+        img: "/adobe-illustrator-seeklogo.svg",
+        desc: "Adobe Illustrator"
+      },
+      {
+        img: "/adobe-photoshop-seeklogo.svg",
+        desc: "Adobe Photoshop"
+      },
+    ], 
+    title: 'Design',
+  },
+  {
+    content: [
+      {
+        img: "/postgresql-seeklogo.svg",
+        desc: "PostgreSQL"
+      },
+      {
+        img: "/neo4j-seeklogo.svg",
+        desc: "Neo4j"
+      },
+      {
+        img: "/mongodb-seeklogo.svg",
+        desc: "MongoDB"
+      },
+      {
+        img: "/cassandra-seeklogo.svg",
+        desc: "Cassandra"
+      },
+      {
+        img: "/sql-server-seeklogo.svg",
+        desc: "SQL Server"
+      },
+      {
+        img: "/my-sql.svg",
+        desc: "MySQL"
+      },
+      {
+        img: "/maria-db.svg",
+        desc: "MariaDB"
+      },
+      {
+        img: "/aws-dynamodb-seeklogo.svg",
+        desc: "DynamoDB"
+      },
+      {
+        img: "/redis.svg",
+        desc: "Redis"
+      },
+      {
+        img: "/sqlite.svg",
+        desc: "SQLite"
+      },
+      {
+        img: "/elasticsearch-seeklogo.svg",
+        desc: "Elasticsearch"
+      },
+      {
+        img: "/spark-seeklogo.svg",
+        desc: "Apache Spark"
+      },
+    ], 
+    title: 'Database',
+  },
+  {
+    content: [
+      {
+        img: "/jmeter.svg",
+        desc: "JMeter"
+      },
+      {
+        img: "/pytest-logo.svg",
+        desc: "PyTest"
+      },
+      {
+        img: "/mocha.svg",
+        desc: "Mocha"
+      },
+      {
+        img: "/rspec.svg",
+        desc: "RSpec"
+      },
+      
+    ], 
+    title: 'Testing',
+  },
+  {
+    content: [
+      {
+        img: "/kubernetes.svg",
+        desc: "Kubernetes"
+      },
+      {
+        img: "/docker.svg",
+        desc: "Docker"
+      },
+      {
+        img: "/jenkins.svg",
+        desc: "Jenkins"
+      },
+      {
+        img: "/ansible.svg",
+        desc: "Ansible"
+      },
+      {
+        img: "/terraform.svg",
+        desc: "Terraform"
+      },
+      {
+        img: "/circle-ci.svg",
+        desc: "CircleCI"
+      },
+      {
+        img: "/aws-logo.svg",
+        desc: "AWS"
+      },
+      {
+        img: "/azure-logo.svg",
+        desc: "Microsoft Azure"
+      },
+      {
+        img: "/google-cloud.svg",
+        desc: "Google Cloud"
+      },
+      {
+        img: "/chef-logo.svg",
+        desc: "Chef"
+      },
+    ], 
+    title: 'DevOps',
+  },
+  {
+    content: [
+      {
+        img: "/gcp-seeklogo.svg",
+        desc: "GCP"
+      },
+      {
+        img: "/azure-logo.svg",
+        desc: "Microsoft Azure"
+      },
+      {
+        img: "/aws-logo.svg",
+        desc: "AWS"
+      },
+      {
+        img: "/kubernetes.svg",
+        desc: "Kubernetes"
+      },
+      {
+        img: "/docker.svg",
+        desc: "Docker"
+      },
+    ], 
+    title: 'Cloud/Platform',
+  },
+  {
+    content: [
+      {
+        img: "/appian.svg",
+        desc: "Appian"
+      },
+      {
+        img: "/bubble.svg",
+        desc: "Bubble.io"
+      },
+      {
+        img: "/flutter.svg",
+        desc: "Flutter"
+      },
+      {
+        img: "/retool-seeklogo.svg",
+        desc: "Retool"
+      },
+      {
+        img: "/betty-block.svg",
+        desc: "Betty Block"
+      },
+    ], 
+    title: 'Others',
   },
 ]
 const projects = [
@@ -439,6 +760,56 @@ const projects = [
       'Mitigate risks of financial loss by quickly responding to lost/ damaged inventory, return requests, or fulfillment errors with our returns and refund automation software solution. Let’s control profitability and sustain your reputation as a trusted seller. ',
   },
 ]
+const fullCycle = [
+  {
+    img: '/fullCycle-1.svg',
+    title: 'SaaS Web Development',
+    description:
+      'Build a multi-tenant, fast, and secure web-based app for your business and consumers over the internet with our SaaS platform web development services. We’ve developed 150+ scalable web, IoT, and mobile SaaS applications for early-stage startups to big enterprises. Let’s build yours! ',
+  },
+  {
+    img: '/fullCycle-2.svg',
+    title: 'Progressive Web App Development Services ',
+    description:
+      'Bring the performance of a native app to browsers and across platforms without loss of speed with our high-quality progressive web app development services. Get in touch to launch remarkably immersive and highly responsive user experiences with our feature-packed progressive web app solutions. ',
+  },
+  {
+    img: '/fullCycle-3.svg',
+    title: '️️Web Portal Development',
+    description:
+      'Deliver powerful digital experiences and generate massive outcomes with our full-spectrum web portal development services. We offer both enterprise-level web portal and custom-made web portal solutions combined with trusted expertise and tools. ',
+  },
+  {
+    img: '/fullCycle-4.svg',
+    title: '️️️Enterprise Web App Development',
+    description:
+      'Escalate your organization and its operations by building dynamic web-based solutions across e-commerce, inventory, transport, learning, healthcare, and other procedural business ecosystems. We also offer fullstack web app development, QA, reengineering, consulting, and support services.',
+  },
+  {
+    img: '/fullCycle-5.svg',
+    title: 'API development and integration',
+    description:
+      'Address the most pressing technical needs without wasting huge sums with our custom web app development company. We create result-driven APIs with analytics, geolocation, payment processing, and other business-specific integrations that cater to evolving user demands.',
+  },
+  {
+    img: '/fullCycle-6.svg',
+    title: 'Front-end Development Services',
+    description:
+      'Build modern single-page web apps leveraging the component-driven and reusable architecture of React.js, Angular.js, Vue.js., Next, and Gatsby. Our Web app developers deliver next-gen user experiences through seamless integration and interaction with multiple APIs and databases. ',
+  },
+  {
+    img: '/fullCycle-7.svg',
+    title: 'Backend Development Services',
+    description:
+      'Set up some rock-solid software architecture and APIs across domains with our backend expertise in Cloud, DevOps, PHP, Python, JS, .NET, Java, and RoR to easily accommodate large and advanced data structures bolstering attack-proof security. ',
+  },
+    {
+    img: '/fullCycle-8.svg',
+    title: '️️️Web App Reengineering and Consultancy ',
+    description:
+      'Figure out the latest technologies, modern designs, data security approaches, and innovative architectures to future-proof your enterprise from looming market trends. Respond to changing market risks with our competent yet reliable custom web app development consultancy.',
+  },
+]
 const ecomLogos = ["/blue-ware.svg","/ecom-circle-logo.svg","/north-ware.svg","/one-app.svg","/keurig-logo.svg","/sales-support-logo.svg"]
 
 const revenueData = [
@@ -501,6 +872,45 @@ const automationData = [
   {
     icon: "/shopping-experiences.svg",
     desc: "Deliver personalized shopping experiences."
+  },
+]
+
+const webExpertiseData = [
+  {
+    icon: "/serverless-microservices.svg",
+    desc: "Serverless Microservices based Web Apps."
+  },
+  {
+    icon: "/service-oriented-architectures.svg",
+    desc: "Service-Oriented-Architectures (SOA)."
+  },
+  {
+    icon: "/multi-service-cloud.svg",
+    desc: "Multi-service Cloud Applications."
+  },
+  {
+    icon: "/operational-automation.svg",
+    desc: "Operational Automation & Analytics."
+  },
+  {
+    icon: "/knowledge-management-systems.svg",
+    desc: "Document & Knowledge Management Systems."
+  },
+  {
+    icon: "/ecommerce-apps.svg",
+    desc: "E-commerce & M-commerce Apps."
+  },
+  {
+    icon: "/admin-panels-dashboards.svg",
+    desc: "Admin Panels & Management Dashboards"
+  },
+  {
+    icon: "/product-configurators.svg",
+    desc: "Product configurators."
+  },
+  {
+    icon: "/ondemand-apps.svg",
+    desc: "On-Demand Apps."
   },
 ]
 
@@ -738,6 +1148,207 @@ const ecomFaqQuestion = [
     ),
   },
 ]
+const webAppFaq = [
+  {
+    id: 1,
+    title: 'What is a web application development company?',
+    content: (
+      <div className="faq-content">
+        <span>
+        A web application development company builds small-scale and large-scale web applications for startups, scaleups, and businesses.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'How to choose the right web development company for my project?',
+    content: (
+      <div className="faq-content">
+        <span>Following are tips to choose the right web development company for my project:</span>
+        <ul>
+          <li>Determine the type of website you need</li>
+          <li>Understand your requirements</li>
+          <li>Factor in all the costs</li>
+          <li>Create a list of top web development companies</li>
+          <li>Study the companies</li>
+          <li>Review their work and services</li>
+          <li>Figure out who meets your requirements</li>
+          <li>Contact them, share your requirements, and see what they offer</li>
+        </ul>
+        <span><b><i>Bonus tip</i></b>: Communication and transparency should be their core values.</span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'What services does a web application development company offer?',
+    content: (
+      <div className="faq-content">
+        <span>
+        A custom web application development company offers these services:
+        </span>
+        <ul>
+         <li>Web App Reengineering and Consultancy</li>
+         <li>Backend Development Services</li>
+         <li>Front-end Development Services</li>
+         <li>API development and integration</li>
+         <li>Enterprise Web App Development</li>
+         <li>Web Portal Development</li>
+         <li>Progressive Web App Development Services</li>
+         <li>SaaS Web Development</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'What is the process of developing a web application?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Typically, a web application development process includes these steps:
+        </span>
+        <ul>
+          <li>PROJECT MAPPING</li>
+          <span>Requirement analysis to form a risk-free and modern solution.</span>
+          <li>VISUAL AND TECHNICAL DESIGN</li>
+          <span>Prototype designing testing to rectify concerns in real-world terms.</span>
+          <li>DEVELOPMENT</li>
+          <span>Business logic and code development according to the approved design.</span>
+          <li>ENSURING SECURITY AND QA</li>
+          <span>Security and QA testing to secure your product from cyberattacks and functional issues.</span>
+          <li>DEPLOYMENT</li>
+          <span>The final execution of the tested and optimized software solution.</span>
+          <li>LAUNCH AND SUPPORT</li>
+          <span>A happy project launch with continued support and maintenance.</span>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'How long does it take to develop a custom web application?',
+    content: (
+      <div className="faq-content">
+        <span>
+         The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'What technologies do web application development companies use?',
+    content: (
+      <div className="faq-content">
+        <span>
+         The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
+        </span>
+        <ul>
+          <li>Javascript</li>
+          <li>HTML and CSS</li>
+          <li>Angular</li>
+          <li>Ruby on Rails</li>
+          <li>Meteor Js</li>
+          <li>Express.js</li>
+          <li>Django</li>
+          <li>Laravel</li>
+          <li>Python</li>
+          <li>Ruby</li>
+          <li>PHP</li>
+          <li>GoLang</li>
+          <li>Swift</li>
+          <li>Java</li>
+          <li>Elixir</li>
+          <li>Scale</li>
+        </ul>
+        <span>And more</span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'Can a web application development company help with website maintenance and updates?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Yes, a web application development company definitely helps with website maintenance and updates. With custom web application development being the primary focus, web development specialists also offer retainer-based maintenance and support services for websites. Following are ways a company helps with ongoing website maintenance and updates:
+        </span>
+        <ul>
+          <li>Regular software and content updates</li>
+          <li>Bug fixes</li>
+          <li>Emergency support</li>
+          <li>Overall performance and security optimization</li>
+          <li>Data backups and recovery</li>
+          <li>Mobile responsiveness</li>
+          <li>User experience improvements</li>
+          <li>Analytics and assessments</li>
+          <li>Technology and platform updates</li>
+          <li>Consultation and recommendations</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: 'What is the cost of web application development?',
+    content: (
+      <div className="faq-content">
+        <span>
+        There are no standard answers to how much a web application development may cost. But web app scope, region, complexity, and resources involved largely predict the costs of a web app development project. As per a rough estimate, a basic web app may cost $20,000 – $50,000, proof of concept (PoC) for startups may cost  $50,000 – $70,000, while mid-complexity web apps or modern MVPs may cost  $50,000 – $150,000.
+
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 9,
+    title: 'Do web application development companies provide ongoing support?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Yes, web app development agencies offer ongoing support besides full-cycle web app development services which include regular updates, security optimization, performance audits, responsiveness, analytics, UX improvements, consultation, innovation support, and more.
+        </span>
+        <ul>
+          <li>Global collaboration and communication</li>
+          <li>Automation and productivity</li>
+          <li>Enhanced customer happiness</li>
+          <li>Data-driven insights and decisions</li>
+          <li>Scalability and increased demand</li>
+          <li>Higher ROI</li>
+          <li>Opportunity to build brand awareness</li>
+          <li>Innovation and differentiation</li>
+          <li>Increased sales and market value</li>
+          <li>Safe information storage</li>
+          <li>Accessibility and convenience</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 10,
+    title: 'What are the benefits of hiring a web application development company?',
+    content: (
+      <div className="faq-content">
+        <span>
+        These are the benefits of hiring a web application development company:
+        <ul>
+          <li>Save time and money</li>
+          <li>Reliable and experience-driven website</li>
+          <li>Pleasing design experiences</li>
+          <li>Builds 100 stable code</li>
+          <li>Strongly agile approach</li>
+          <li>Responsive and fast website</li>
+          <li>Access to latest tech stack</li>
+          <li>Look trustworthy</li>
+          <li>SEO Optimized</li>
+        </ul>
+        </span>
+      </div>
+    ),
+  }
+]
 const guidanceData = [
   {
     icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
@@ -770,6 +1381,25 @@ const guidanceData = [
     desc: "Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.",
   },
 ];
+
+const youCanTrustData = [
+  {
+    icon: "/time-budget.svg",
+    title: "On-time and On-budget",
+  },
+  {
+    icon: "/strongly-agile.svg",
+    title: "Strongly Agile",
+  },
+  {
+    icon: "/stable-code.svg",
+    title: "100% Stable Code",
+  },
+  {
+    icon: "/cash-free.svg",
+    title: "Crash-free Product",
+  },
+];
 export {
   homeTiles,
   CareersData,
@@ -778,6 +1408,7 @@ export {
   clientsData,
   leaderData,
   companyCounter,
+  peopleFirstData,
   counterData,
   weDoData,
   data,
@@ -786,10 +1417,16 @@ export {
   ecomSliderItems,
   ecomLogos,
   projects,
+  fullCycle,
   marketPlaceData,
+  webAppFaq,
   revenueData,
   automationData,
   faqQuestion,
   ecomFaqQuestion,
-  guidanceData
+  guidanceData,
+  youCanTrustData,
+  lostToLaunchedItems,
+  languagesData,
+  webExpertiseData
 }

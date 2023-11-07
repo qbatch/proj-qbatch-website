@@ -35,6 +35,7 @@ const Ecommerce = () => {
         subCol2={6}
         mt="mt-4"
         className="ecom-section"
+        isScroll={true}
       />
       <BusinessMangement />
       <TrippleYourRevenue />
@@ -45,7 +46,10 @@ const Ecommerce = () => {
         desc="This is your hint to bury your conventional e-commerce ways and"
         className="automation-section"
       />
-      <IdeasAndInvestments />
+      <IdeasAndInvestments
+        heading="100+ businesses trusted us with their ideas and investments,"
+        span="will you?"
+      />
       <ProvenWorkExperience
         heading="Our Projects"
         paragraph="They imagined it, we brought it to the world!"
