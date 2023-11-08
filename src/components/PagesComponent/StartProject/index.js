@@ -63,10 +63,26 @@ const Index = ({ page }) => {
     }
 
   }
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSubmit = async (e) => {
     setSubmitted(true)
-    console.log('Collected Form Data:', formData)
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:1337/api/contacts", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ data: formData }),
+      });
+ 
+      if (response.ok) {
+        console.log('Message sent successfully');
+      } else {
+        console.error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error', error);
+    }
   }
   return (
     <StartProjectWrapper>
