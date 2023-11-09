@@ -102,6 +102,7 @@ const CareersData = [
 ];
 
 const homeTiles = ["Transparent", "Trustworthy", "Reliable", "Progressive", "Real", "Creative"];
+const dedicatedTiles = ["Top talent", "100% Stable Code", "On-time & On-budget", "Proactive Communication"];
 
 const data = [
   {
@@ -1349,6 +1350,126 @@ const webAppFaq = [
     ),
   }
 ]
+const mobileAppFaq = [
+  {
+    id: 1,
+    title: 'Why should I choose your mobile app development services for my project?',
+    content: (
+      <div className="faq-content">
+        <span>
+        A web application development company builds small-scale and large-scale web applications for startups, scaleups, and businesses.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'What is your mobile app development process, and how do you ensure quality?',
+    content: (
+      <div className="faq-content">
+        <span>Following are tips to choose the right web development company for my project:</span>
+        <ul>
+          <li>Determine the type of website you need</li>
+          <li>Understand your requirements</li>
+          <li>Factor in all the costs</li>
+          <li>Create a list of top web development companies</li>
+          <li>Study the companies</li>
+          <li>Review their work and services</li>
+          <li>Figure out who meets your requirements</li>
+          <li>Contact them, share your requirements, and see what they offer</li>
+        </ul>
+        <span><b><i>Bonus tip</i></b>: Communication and transparency should be their core values.</span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'How experienced is your team of mobile app developers?',
+    content: (
+      <div className="faq-content">
+        <span>
+        A custom web application development company offers these services:
+        </span>
+        <ul>
+         <li>Web App Reengineering and Consultancy</li>
+         <li>Backend Development Services</li>
+         <li>Front-end Development Services</li>
+         <li>API development and integration</li>
+         <li>Enterprise Web App Development</li>
+         <li>Web Portal Development</li>
+         <li>Progressive Web App Development Services</li>
+         <li>SaaS Web Development</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'Do you offer custom app development to meet unique business needs?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Typically, a web application development process includes these steps:
+        </span>
+        <ul>
+          <li>PROJECT MAPPING</li>
+          <span>Requirement analysis to form a risk-free and modern solution.</span>
+          <li>VISUAL AND TECHNICAL DESIGN</li>
+          <span>Prototype designing testing to rectify concerns in real-world terms.</span>
+          <li>DEVELOPMENT</li>
+          <span>Business logic and code development according to the approved design.</span>
+          <li>ENSURING SECURITY AND QA</li>
+          <span>Security and QA testing to secure your product from cyberattacks and functional issues.</span>
+          <li>DEPLOYMENT</li>
+          <span>The final execution of the tested and optimized software solution.</span>
+          <li>LAUNCH AND SUPPORT</li>
+          <span>A happy project launch with continued support and maintenance.</span>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What is your mobile app testing strategy to ensure functionality and performance?',
+    content: (
+      <div className="faq-content">
+        <span>
+         The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'What platforms do you develop mobile apps for?',
+    content: (
+      <div className="faq-content">
+        <span>
+         The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
+        </span>
+        <ul>
+          <li>Javascript</li>
+          <li>HTML and CSS</li>
+          <li>Angular</li>
+          <li>Ruby on Rails</li>
+          <li>Meteor Js</li>
+          <li>Express.js</li>
+          <li>Django</li>
+          <li>Laravel</li>
+          <li>Python</li>
+          <li>Ruby</li>
+          <li>PHP</li>
+          <li>GoLang</li>
+          <li>Swift</li>
+          <li>Java</li>
+          <li>Elixir</li>
+          <li>Scale</li>
+        </ul>
+        <span>And more</span>
+      </div>
+    ),
+  },
+]
 const guidanceData = [
   {
     icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
@@ -1382,6 +1503,39 @@ const guidanceData = [
   },
 ];
 
+const developmentServicesData = [
+  {
+    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    title: "Custom Mobile App Solutions",
+    desc: "Custom mobile app development services for fully automated and modern enterprise operations toward better business management, visibility, transparency, and accountability.",
+  },
+  {
+    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    title: "UX/UI Mobile App Design",
+    desc: "Hire our mobile app designers to achieve a personalized and engaging UX/UI mobile app outlook. It would help your business to deliver the best impressions on your prospects and engage them longer.",
+  },
+  {
+    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    title: "AI App Development",
+    desc: 'Innovate your mobile app, its processes, and services with our unconventional AI mobile app development services. Let’s explore futuristic algorithms and rebuild your enterprise today.',
+  },
+  {
+    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    title: "Mobile App Consulting",
+    desc: "Worried about executing your mobile app idea? We offer reliable mobile consulting services to help you shape and launch a powerful mobile application that expedites your business and meets your goals.",
+  },
+  {
+    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    title: "Third-party Integration Services",
+    desc: "Extend the usability and multi-functionality of your mobile app for your enterprise members and users by integrating third-party integrations like maps, social platforms, payment extensions, etc.",
+  },
+  {
+    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    title: "Mobile Testing & QA",
+    desc: "Minimize app uninstallation and boost your reputation by availing our mobile app testing services. We conduct grass-root level QA to identify potential bugs and assure sustainable performance.",
+  },
+];
+
 const youCanTrustData = [
   {
     icon: "/time-budget.svg",
@@ -1398,6 +1552,23 @@ const youCanTrustData = [
   {
     icon: "/cash-free.svg",
     title: "Crash-free Product",
+  },
+];
+const multiPlatformData = [
+  {
+    icon: "/mobile-development.svg",
+    title: "Android Mobile App Development",
+    desc: "Building unique Android products that live up to user expectations amid choke-full competition is crucial. Qbatch’s custom Android app development services offer deep expertise in creating off-the-chart Android mobile, TV, tablet, and wearable software apps.",
+  },
+  {
+    icon: "/mobile-development.svg",
+    title: "iOS Mobile App Development",
+    desc: "With attention spans getting shorter, users want solutions at their fingertips with a simple swipe. Qbatch’s iOS mobile app developers for hire have delivered highly scalable and captivating iOS app solutions for iPhone, iPad, Apple Watch, and Apple TV to thousands of users.",
+  },
+  {
+    icon: "/mobile-development.svg",
+    title: "Cross-Platform Mobile App Development",
+    desc: 'Decrease time to market and costs by building high-value and secure mobile experiences with Qbatch’s cross-platform app development services. We use trusted cross-platform development technology i.e., React Native and Flutter to assure smooth and sustainable human interactions.',
   },
 ];
 export {
@@ -1428,5 +1599,9 @@ export {
   youCanTrustData,
   lostToLaunchedItems,
   languagesData,
-  webExpertiseData
+  webExpertiseData,
+  dedicatedTiles,
+  multiPlatformData,
+  developmentServicesData,
+  mobileAppFaq
 }

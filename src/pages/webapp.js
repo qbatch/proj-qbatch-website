@@ -44,6 +44,7 @@ const webapp = () => {
         heading="Is your web app failing to bring the desired result? That could be serious!"
         isButton={true}
         className="desired-result"
+        btnText="Get Started Risk-Free"
       />
       <LostToLaunched
         heading="Lost to Launched"

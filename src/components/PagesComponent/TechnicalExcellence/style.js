@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const TechnicalExcellenceWrapper = styled.div`
-  padding: 94px 0;
+  padding: 120px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-     padding: 40px 0px;
+     padding: 60px 0px;
   `}
   .technical-heading {
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -13,13 +13,17 @@ const TechnicalExcellenceWrapper = styled.div`
     line-height: 52px;
     ${media.sm`
       line-height: 32px;
+      text-align: center;
     `}
   }
   .technical-paragraph {
     padding-top: 9px;
     max-width: 580px;
-    ${media.md `
+    ${media.md`
      max-width: 100%;
+    `}
+    ${media.sm`
+      text-align: center;
     `}
     a {
       text-decoration: underline;
@@ -29,7 +33,6 @@ const TechnicalExcellenceWrapper = styled.div`
       line-height: 32px;
       letter-spacing: 0.5px;
       margin-bottom: 24px;
-      
     }
     p {
       margin-bottom: 32px;
@@ -40,6 +43,14 @@ const TechnicalExcellenceWrapper = styled.div`
       a {
         margin-left: 5px;
       }
+    }
+  }
+  &.mobile-apps {
+    .technical-paragraph {
+      max-width: 650px;
+      ${media.md`
+        max-width: 100%;
+     `}
     }
   }
 `;

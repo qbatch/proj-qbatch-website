@@ -25,7 +25,7 @@ const servicesItems = [
   },
   {
     menu: "Mobile App Development",
-    to: "/",
+    to: "/mobileApp",
   },
   {
     menu: "CTO as a Service",

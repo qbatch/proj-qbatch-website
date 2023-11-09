@@ -6,7 +6,7 @@ import Button from "../../UiComponent/Button";
 import TechnicalGuidanceWrapper from "./style";
 
 const Index = (props) => {
-  const { data, heading, span, desc, className } = props;
+  const { data, heading, span, desc, className, isButton } = props;
   const isBrowser = typeof window !== "undefined";
   const [windowWidth, setWindowWidth] = useState(
     isBrowser ? window.innerWidth : 0
@@ -69,9 +69,11 @@ const Index = (props) => {
                 <span>{span}</span>
               </h2>
               {desc && <p>{desc}</p>}
-              <div className="mt-2">
-                <Button text="Let’s Get Started" />
-              </div>
+              {isButton && (
+                <div className="mt-2">
+                  <Button text="Let’s Get Started" />
+                </div>
+              )}
             </div>
           </Container>
           <div className="element-wrapper">

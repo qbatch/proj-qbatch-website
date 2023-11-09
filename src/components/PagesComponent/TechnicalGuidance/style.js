@@ -120,12 +120,12 @@ const TechnicalGuidanceWrapper = styled.div`
         text-transform: lowercase;
       }
     }
-    button {
-      display: none;
-    }
   }
   .guidance-card {
     min-width: 366px;
+    &:last-child{
+      min-width: 96px;
+    }
     p {
       margin-top: 32px;
     }
@@ -147,12 +147,37 @@ const TechnicalGuidanceWrapper = styled.div`
   }
   .guidance-card {
     min-width: 310px;
-  }
-  button {
-    display: none;
+    &:last-child{
+      min-width: 96px;
+    }
   }
 }
-
+&.development-section {
+  .guidance-heading {
+    flex-direction: column;
+    h2 {
+      max-width: 100%;
+    }
+    p {
+      max-width: 100%;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      color: ${({ theme }) => theme.colors.bodyText};
+    }
+  }
+  .guidance-card {
+    min-width: 499px;
+    &:last-child{
+      min-width: 96px;
+    }
+    img {
+      width: 64px;
+      height: 64px;
+    }
+    p {
+      letter-spacing: 0;
+    }
+  }
+}
   @media (min-width: 1600px) {
     .element-wrapper {
       max-width: 1600px;
