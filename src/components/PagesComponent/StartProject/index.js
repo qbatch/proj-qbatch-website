@@ -1,54 +1,122 @@
-import React, { useState } from "react";
-import { Row, Col } from "react-bootstrap";
-import ReCAPTCHA from "react-google-recaptcha";
-import { Link } from "gatsby";
-import { Player, BigPlayButton, LoadingSpinner } from "video-react";
-import "../../../../node_modules/video-react/dist/video-react.css";
+import React, { useState } from 'react'
+import { Row, Col, Form } from 'react-bootstrap'
+import ReCaptcha from '@pittica/gatsby-plugin-recaptcha'
+import { Link } from 'gatsby'
+import '../../../../node_modules/video-react/dist/video-react.css'
 
-import Container from "../../UiComponent/Container";
-import Input from "../../UiComponent/Input";
-import Collapse from "../../UiComponent/Collapse";
-import RadioButton from "../../UiComponent/RadioButton";
-import CheckBox from "../../UiComponent/CheckBox";
-import Button from '../../UiComponent/Button';
-import TestimonialCarousel from "../../UiComponent/TestimonialSlider"
+import Container from '../../UiComponent/Container'
+import Input from '../../UiComponent/Input'
+import Collapse from '../../UiComponent/Collapse'
+import RadioButton from '../../UiComponent/RadioButton'
+import CheckBox from '../../UiComponent/CheckBox'
+import Button from '../../UiComponent/Button'
+import TestimonialCarousel from '../../UiComponent/TestimonialSlider'
 
-import StartProjectWrapper from "./style";
+import StartProjectWrapper from './style'
 
 const Index = ({ page }) => {
+  const [submitted, setSubmitted] = useState(false)
+  const submit = (token) => {
+    console.log(token)
+  }
 
-  const [open, setOpen] = useState(false);
-  const [modal, setModal] = useState("");
-  // const recaptchaRef = React.useRef();
-  const [serviceOpen, setServiceOpen] = useState(false);
+  const [open, setOpen] = useState(false)
+  const [modal, setModal] = useState('')
+  const [serviceOpen, setServiceOpen] = useState(false)
 
-  const [serviceSelect, setServiceSelect] = useState([]);
+  const [serviceSelect, setServiceSelect] = useState([])
 
-  const handleChange = (e) => {
-    if (e.target.checked) {
-      setServiceSelect([...serviceSelect, e.target.value]);
-    } else {
-      setServiceSelect(serviceSelect.filter((item) => item !== e.target.value));
-    }
+  const [formData, setFormData] = useState({
+    name: '',
+    number: '',
+    email: '',
+    collaboration: '',
+    services: [],
+    description:'',
+    terms:false,
+    promotion:false,
+  })
+
+   const toggleCheckbox = (name) => {
+    setFormData({
+      ...formData,
+      [name]: !formData[name],
+    });
   };
-   const handleRecaptchaChange = (value) => {
-     console.log("reCAPTCHA value:", value);
-   };
+  
+  const handleInputChange = (event) => {
+    const { name, value, type, checked } = event.target
+    if (type === 'checkbox') {
+      if (checked) {
+        setFormData({ ...formData, services: [...formData.services, value] })
+      } else {
+        setFormData({
+          ...formData,
+          services: formData.services.filter((service) => service !== value),
+        })
+      }
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      })
+    }
+
+  }
+  const handleSubmit = async (e) => {
+    setSubmitted(true)
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:1337/api/contacts", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ data: formData }),
+      });
+ 
+      if (response.ok) {
+        console.log('Message sent successfully');
+      } else {
+        console.error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error', error);
+    }
+  }
   return (
     <StartProjectWrapper>
       <Container>
         <Row className="justify-content-between">
           <Col xxl={5} lg={5} className="order-2 order-lg-1">
-          {page === "contact" ? (
+            {page === 'contact' ? (
               <h1 className=" text-h2 color-primary">Start a Project</h1>
             ) : (
               <h2 className="color-primary">Start a Project</h2>
             )}
             <p className="subtitle">Work with the most friendly yet focused developers!</p>
-            <div className="project-form">
-              <Input placeholder="Full Name" type="text" />
-              <Input placeholder="Contact Number" type="text" />
-              <Input placeholder="Email Address" type="email" />
+            <Form className="project-form" onSubmit={handleSubmit}>
+              <Input
+                placeholder="Full Name"
+                name="name"
+                type="text"
+                value={formData.name}
+                onChange={handleInputChange}
+              />
+              <Input
+                placeholder="Contact Number"
+                name="number"
+                type="text"
+                value={formData.number}
+                onChange={handleInputChange}
+              />
+              <Input
+                placeholder="Email Address"
+                value={formData.email}
+                name="email"
+                type="email"
+                onChange={handleInputChange}
+              />
               <Collapse
                 title="Select Collaboration Model"
                 onClick={() => setOpen(!open)}
@@ -69,11 +137,9 @@ const Index = ({ page }) => {
                           type="radio"
                           label={value}
                           value={value}
-                          checked={modal === value}
+                          checked={formData.collaboration === value}
                           name="collaboration"
-                          onChange={(e) => {
-                            setModal(e.target.value)
-                          }}
+                          onChange={handleInputChange}
                         />
                       </div>
                     )
@@ -131,17 +197,24 @@ const Index = ({ page }) => {
                           <CheckBox
                             key={value}
                             label={value}
-                            checked={serviceSelect.includes(value)}
+                            checked={formData.services.includes(value)}
                             value={value}
-                            name="collaboration"
-                            onChange={handleChange}
+                            name="services"
+                            onChange={handleInputChange}
                           />
                         </Col>
                       )
                     })}
                 </Row>
               </Collapse>
-              <Input as="textarea" base="21px" height="53px" placeholder="Tell us about your project" type="email" />
+              <Input
+                as="textarea"
+                base="21px"
+                name="description"
+                height="53px"
+                placeholder="Tell us about your project"
+                onChange={handleInputChange}
+              />
               <div>
                 <CheckBox
                   margin="-4px"
@@ -149,6 +222,7 @@ const Index = ({ page }) => {
                   width="12px"
                   fontSize="12px"
                   base="5px"
+                  onChange={() => toggleCheckbox('promotion')}
                   label={
                     <>
                       I understand and agree to the
@@ -157,7 +231,7 @@ const Index = ({ page }) => {
                       </Link>
                     </>
                   }
-                  name="collaboration"
+                  name="terms"
                 />
                 <CheckBox
                   margin="-4px"
@@ -165,15 +239,21 @@ const Index = ({ page }) => {
                   width="12px"
                   fontSize="12px"
                   label="I agree to receive marketing and promotion related emials."
-                  name="collaboration"
+                  name="promotion"
                   base="19px"
+                  onChange={() => toggleCheckbox('promotion')}
                 />
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
-                  <ReCAPTCHA sitekey="6LezlHQnAAAAAFZigM4rT1-ESPRHDcPGoxXpxoKz" onChange={handleRecaptchaChange} />
-                  <Button text="Submit" className="pt-md-0 pt-3" />
+                  <ReCaptcha
+                    action="homepage"
+                    siteKey="6Lc47vwoAAAAAPn5GzX7tbV_mwo92EogNVvNeR0l"
+                    onVerify={(token) => submit(token)}
+                    submitted={submitted}
+                  />
+                  <Button text="Submit" className="pt-md-0 pt-3" onClick={handleSubmit} />
                 </div>
               </div>
-            </div>
+            </Form>
           </Col>
           <Col xxl={5} lg={6} className="order-1 order-lg-2">
             <div className="testimonials">
@@ -186,5 +266,5 @@ const Index = ({ page }) => {
       </Container>
     </StartProjectWrapper>
   )
-};
-export default Index;
+}
+export default Index
