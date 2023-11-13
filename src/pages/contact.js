@@ -10,7 +10,7 @@ const ContactUs = () => {
   return (
     <Layout pageTitle="Contact Us">
       <StartProject page="contact" />
-      <Achievements />
+      <Achievements page="contact" />
       <ProvenWorkExperience heading="Proven Work Experience" paragraph="They imagined it, we brought it to the world!" />
       <ProblemSolving
         className="contact-project-cost"

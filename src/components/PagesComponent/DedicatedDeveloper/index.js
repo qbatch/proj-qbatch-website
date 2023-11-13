@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from "react";
+import TextTransition, { presets } from 'react-text-transition';
 
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
@@ -12,7 +13,7 @@ const Index = () => {
     useEffect(() => {
       const intervalId = setInterval(() => {
         setContentChange(!contentChange)
-      }, 3000)
+      }, 6000)
       return () => {
         clearInterval(intervalId)
       }
@@ -26,6 +27,7 @@ const Index = () => {
       <Container>
         <div className="title-portion">
           <div className="inner">
+          <TextTransition springConfig={presets.molasses} direction="down">
             <span>
               <H1>
                 <span className="hire position-relative">
@@ -39,7 +41,7 @@ const Index = () => {
                 </span>
                 {contentChange ? 'Stakeholders Trusted Us' : 'Dedicated Developers'}
                 <span className="for-furture">
-                  {contentChange ? 'With Their Ideas & Investments,' : 'for a futures'}{' '}
+                  {contentChange ? 'With Their Ideas & Investments,' : 'for a future'}{' '}
                   <span className="you-deserve fw-bold"> {contentChange ? 'Will You?' : 'You Deserve!'}</span>
                 </span>
               </H1>
@@ -47,6 +49,7 @@ const Index = () => {
                 <p className="paragraph">{contentChange ? stackHolder : enterprises}</p>
               </div>
             </span>
+            </TextTransition>
             <div className="d-flex justify-content-end">
               <Button text="Let’s Start a Project" className="mx-lg-0 mx-auto secondary-btn" />
             </div>

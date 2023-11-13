@@ -25,7 +25,7 @@ const webapp = () => {
   return (
     <Layout>
       <WebappBanner />
-      <Achievements page="home" innerPage={true} />
+      <Achievements innerPage={true} />
       <YouCanTrust />
       <FullCycle />
       <SolutionToChoose />
