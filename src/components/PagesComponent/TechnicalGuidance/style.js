@@ -126,6 +126,9 @@ const TechnicalGuidanceWrapper = styled.div`
     &:last-child{
       min-width: 96px;
     }
+    ${media.md`
+      min-width: 100%;
+    `}
     p {
       margin-top: 32px;
     }
@@ -150,6 +153,9 @@ const TechnicalGuidanceWrapper = styled.div`
     &:last-child{
       min-width: 96px;
     }
+    ${media.md`
+      min-width: 100%;
+    `}
   }
 }
 &.development-section {
@@ -169,6 +175,9 @@ const TechnicalGuidanceWrapper = styled.div`
     &:last-child{
       min-width: 96px;
     }
+    ${media.md`
+      min-width: 100%;
+    `}
     img {
       width: 64px;
       height: 64px;

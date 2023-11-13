@@ -68,8 +68,8 @@ const MobileApp = () => {
         sliderData={lostToLaunchedItems}
         col1={5}
         col2={7}
-        subCol1={6}
-        subCol2={6}
+        subCol1={5}
+        subCol2={7}
         mt="mt-4"
         className="ecom-section launched"
         isScroll={false}

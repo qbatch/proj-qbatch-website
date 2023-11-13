@@ -364,32 +364,32 @@ const ecomSliderItems = [
 ];
 const lostToLaunchedItems = [
   {
-    image: "/5 Step E-Commerce Automation_Problem Analysis.svg",
+    image: "/project-mapping.svg",
     title: "Project Mapping",
     content: "Requirement analysis to form a risk-free and modern solution.",
   },
   {
-    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    image: "/visual-and-technical-design.svg",
     title: "Visual & Technical Design",
     content: "Prototype designing testing to rectify concerns in real-world terms.",
   },
   {
-    image: "/5 Step E-Commerce Automation_Installation.svg",
+    image: "/launched-development.svg",
     title: "Development",
     content: "Business logic and code development according to the approved design.",
   },
   {
-    image: "/5 Step E-Commerce Automation_Orchestration.svg",
+    image: "/ensuring-security.svg",
     title: "Ensuring Security & QA",
     content: "Security and QA testing to secure your product from cyberattacks and functional issues.",
   },
   {
-    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    image: "/launched-deployment.svg",
     title: "Deployment",
     content: "Final execution of the tested and optimized software solution.",
   },
   {
-    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
+    image: "/launch-and-support.svg",
     title: "Launch & Support",
     content: "A happy project launch with continued support and maintenance.",
   },
@@ -1505,32 +1505,32 @@ const guidanceData = [
 
 const developmentServicesData = [
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    icon: "/custom-mobile-app.svg",
     title: "Custom Mobile App Solutions",
     desc: "Custom mobile app development services for fully automated and modern enterprise operations toward better business management, visibility, transparency, and accountability.",
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    icon: "/ux-ui-mobile-app.svg",
     title: "UX/UI Mobile App Design",
     desc: "Hire our mobile app designers to achieve a personalized and engaging UX/UI mobile app outlook. It would help your business to deliver the best impressions on your prospects and engage them longer.",
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    icon: "/ai-app.svg",
     title: "AI App Development",
     desc: 'Innovate your mobile app, its processes, and services with our unconventional AI mobile app development services. Let’s explore futuristic algorithms and rebuild your enterprise today.',
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    icon: "/mobile-app-consulting.svg",
     title: "Mobile App Consulting",
     desc: "Worried about executing your mobile app idea? We offer reliable mobile consulting services to help you shape and launch a powerful mobile application that expedites your business and meets your goals.",
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    icon: "/third-party-integration.svg",
     title: "Third-party Integration Services",
     desc: "Extend the usability and multi-functionality of your mobile app for your enterprise members and users by integrating third-party integrations like maps, social platforms, payment extensions, etc.",
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
+    icon: "/mobile-testing.svg",
     title: "Mobile Testing & QA",
     desc: "Minimize app uninstallation and boost your reputation by availing our mobile app testing services. We conduct grass-root level QA to identify potential bugs and assure sustainable performance.",
   },
@@ -1556,17 +1556,17 @@ const youCanTrustData = [
 ];
 const multiPlatformData = [
   {
-    icon: "/mobile-development.svg",
+    icon: "/android-mobile-app.svg",
     title: "Android Mobile App Development",
     desc: "Building unique Android products that live up to user expectations amid choke-full competition is crucial. Qbatch’s custom Android app development services offer deep expertise in creating off-the-chart Android mobile, TV, tablet, and wearable software apps.",
   },
   {
-    icon: "/mobile-development.svg",
+    icon: "/ios-mobile-app.svg",
     title: "iOS Mobile App Development",
     desc: "With attention spans getting shorter, users want solutions at their fingertips with a simple swipe. Qbatch’s iOS mobile app developers for hire have delivered highly scalable and captivating iOS app solutions for iPhone, iPad, Apple Watch, and Apple TV to thousands of users.",
   },
   {
-    icon: "/mobile-development.svg",
+    icon: "/cross-platform-mobile-app.svg",
     title: "Cross-Platform Mobile App Development",
     desc: 'Decrease time to market and costs by building high-value and secure mobile experiences with Qbatch’s cross-platform app development services. We use trusted cross-platform development technology i.e., React Native and Flutter to assure smooth and sustainable human interactions.',
   },
