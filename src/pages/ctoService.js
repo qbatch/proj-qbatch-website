@@ -23,12 +23,33 @@ const CtoService = () => {
     <Layout>
       <CtoBanner />
       <HireCto />
-      <TechnicalExcellence />
+      <TechnicalExcellence
+        heading="We are Your Right-Hand Men Towards Total Technical Excellence"
+        title={true}
+        paragraph1={
+          <>
+            Digital adoption brings different challenges to each business. And
+            our highly experienced technical leadership knows how to keep your
+            boat afloat in the rising technological waves. Besides, spending on
+            digital transformation is expected to reach
+            <a
+              href="https://statista.com/statistics/870924/worldwide-digital-transformation-market-size/"
+              target="blank"
+            >
+              $3.4 trillion by 2026
+            </a>
+          </>
+        }
+        paragraph2="Thus, we take no risks and work heartily on building high-margin
+        technology roadmaps for your dear business to thrive on a larger
+        scale."
+      />
       <CtoPersona />
       <TechnicalGuidance
         data={guidanceData}
         heading="More Than Just “Technical Guidance” Explore Our Enterprise-level "
         span="CTO Services"
+        isButton={true}
       />
       <DevelopmentStages
         heading="Stuck at any of these development stages? We can help."

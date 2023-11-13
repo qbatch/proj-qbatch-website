@@ -122,7 +122,7 @@ const DevelopmentStages = (props) => {
         sliderElement.removeEventListener("wheel", handleMouseWheel);
       };
     }
-  }, [activeIndex, sliderData?.length]);
+  }, [activeIndex, sliderData?.length, isScroll]);
   const marketplace = sliderData.find((x) => x.content);
   return (
     <>

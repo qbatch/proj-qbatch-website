@@ -6,46 +6,33 @@ import Container from "../../UiComponent/Container";
 
 import TechnicalExcellenceWrapper from "./style";
 
-const Index = () => {
+const Index = (props) => {
+  const { heading, title, paragraph1, paragraph2, className } = props;
+
   return (
-    <TechnicalExcellenceWrapper>
+    <TechnicalExcellenceWrapper className={className}>
       <Container>
         <Row>
           <Col lg={6}>
-            <h2 className="technical-heading">
-              We are Your Right-Hand Men Towards Total Technical Excellence
-            </h2>
+            <h2 className="technical-heading">{heading}</h2>
           </Col>
           <Col lg={6}>
             <div className="technical-paragraph">
-              <h4>
-                Do you know?{" "}
-                <a
-                  href="https://www.deloitte.com/an/en/our-thinking/insights/topics/leadership/digital-transformation-topics-for-corporate-technology-leadership.html"
-                  target="blank"
-                >
-                  3 in 10
-                </a>{" "}
-                company leaders are not sure if technology is well integrated
-                into their systems or not. Are you sure about yours?
-              </h4>
-              <p>
-                Digital adoption brings different challenges to each business.
-                And our highly experienced technical leadership knows how to
-                keep your boat afloat in the rising technological waves.
-                Besides, spending on digital transformation is expected to reach
-                <a
-                  href="https://statista.com/statistics/870924/worldwide-digital-transformation-market-size/"
-                  target="blank"
-                >
-                  $3.4 trillion by 2026
-                </a>
-              </p>
-              <p>
-                Thus, we take no risks and work heartily on building high-margin
-                technology roadmaps for your dear business to thrive on a larger
-                scale.
-              </p>
+              {title && (
+                <h4>
+                  Do you know?{" "}
+                  <a
+                    href="https://www.deloitte.com/an/en/our-thinking/insights/topics/leadership/digital-transformation-topics-for-corporate-technology-leadership.html"
+                    target="blank"
+                  >
+                    3 in 10
+                  </a>{" "}
+                  company leaders are not sure if technology is well integrated
+                  into their systems or not. Are you sure about yours?
+                </h4>
+              )}
+              <p>{paragraph1}</p>
+              <p>{paragraph2}</p>
             </div>
           </Col>
         </Row>

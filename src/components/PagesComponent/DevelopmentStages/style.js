@@ -264,15 +264,25 @@ const StagesWrapper = styled.div`
     .slider-item {
       .content {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-        max-width: 380px;
+        max-width: 390px;
         letter-spacing: 0;
-        margin-top: 20px;
+        padding-top: 60px;
+        padding-left: 48px;
         ${media.sm`
           max-width: 100%;
+          padding-top: 0;
+          padding-left: 0;
+        `}
+      }
+      img {
+        padding-left: 12px;
+        ${media.md`
+          padding-left: 0;
         `}
       }
     }
     .fixed-slider-pagination {
+      padding-left: 120px;
       li {
         margin-bottom: 32px;
         &:last-child {
@@ -281,13 +291,13 @@ const StagesWrapper = styled.div`
       }
     }
     .stages-header {
-      margin-bottom: 74px;
+      margin-bottom: 72px;
       h2 {
         margin-bottom: 28px;
       }
       p {
         font-size:  ${({ theme }) => theme.fonts.baseFontSizeLg};
-        letter-spacing: 0.7px;
+        letter-spacing: 0.6px;
       }
     }
     .slider-btn {

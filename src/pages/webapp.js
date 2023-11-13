@@ -44,6 +44,7 @@ const webapp = () => {
         heading="Is your web app failing to bring the desired result? That could be serious!"
         isButton={true}
         className="desired-result"
+        btnText="Get Started Risk-Free"
       />
       <LostToLaunched
         heading="Lost to Launched"
@@ -51,8 +52,8 @@ const webapp = () => {
         sliderData={lostToLaunchedItems}
         col1={5}
         col2={7}
-        subCol1={6}
-        subCol2={6}
+        subCol1={5}
+        subCol2={7}
         mt="mt-4"
         className="ecom-section launched"
         isScroll={false}

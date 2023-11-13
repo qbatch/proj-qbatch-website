@@ -1,11 +1,8 @@
 import React,{useState,useEffect} from "react";
 
-import { Row, Col } from "react-bootstrap";
-
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 
-import BannerImage from "../../../assets/images/banner-img.svg";
 import { homeTiles } from "../../../constants/index";
 import { DedicatedDeveloperWrapper, H1 } from "./style";
 
