@@ -18,7 +18,7 @@ const DedicatedDeveloperWrapper = styled.section`
   }
 
   .title-portion {
-    padding: 216px 0px 120px;
+    padding: 214px 90px 120px;
     /* max-width: 1170px; */
     margin: auto;
     position: relative;
@@ -41,7 +41,7 @@ const DedicatedDeveloperWrapper = styled.section`
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     letter-spacing: 0;
-    margin-right: 10px;
+    margin-right: 26px;
     ${media.md`
       font-size: 120px;
       line-height: 120px;
@@ -84,13 +84,13 @@ const DedicatedDeveloperWrapper = styled.section`
     `}
   }
   .paragraph {
-    margin-left: 82px;
+    margin-left: 86px;
     font-size: 24px;
-    margin-top: 27px;
-    letter-spacing: 0.22px;
-    line-height: 31px;
-    margin-bottom: 73px;
-    max-width: 1012px;
+    margin-top: 28px;
+    letter-spacing: 0.2px;
+    line-height: 32px;
+    margin-bottom: 42px;
+    max-width: 1000px;
     color: ${({ theme }) => theme.colors.whiteColor};
     ${media.lg`
       margin-left: 4px;
@@ -161,7 +161,7 @@ const H1 = styled.h1`
   font-size: 60px;
   margin-bottom: 0px;
   color: ${({ theme }) => theme.colors.whiteColor};
-  line-height: 60px;
+  line-height: 66px;
   &.color-change {
     color: ${({ theme }) => theme.colors.bodyLight};
   }

@@ -8,9 +8,9 @@ import CountUp from "react-countup";
 
 import { counterData } from "../../../constants";
 
-const Index = ({ innerPage }) => { // Change the prop name to innerPage
-  const numCols = innerPage ? 4 : 3;
-  const displayedCounterData = innerPage ? counterData.slice(0, 3) : counterData;
+const Index = ({ innerPage, page }) => {
+  const numCols = page === "contact" ? 3 : 4;
+  const displayedCounterData = page === "contact" ? counterData : counterData.slice(0, 3);
 
   return (
     <AchievementsWrapper>
@@ -22,7 +22,7 @@ const Index = ({ innerPage }) => { // Change the prop name to innerPage
           <Row>
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">
-                <span className={innerPage ? "heading fw-bold" : "text-h1 fw-bold"}>
+                <span className={page === "contact" ?  "text-h1 fw-bold" : "heading fw-bold"}>
                   <CountUp end={data.count} duration={3} />
                   {data.symbol && (
                     <span className="color-danger fw-light ms-2">{data.symbol}</span>
