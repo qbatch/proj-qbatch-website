@@ -38,7 +38,13 @@ module.exports = {
         args: `?onload=onloadCallback&render=explicit`,
       },
     },
-
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'static',
+        path: `${__dirname}/static/`,
+      },
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

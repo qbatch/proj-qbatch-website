@@ -1,10 +1,9 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import CountUp from 'react-countup'
 
-import AchievementsWrapper from "./style";
 import Container from "../../UiComponent/Container";
-
-import CountUp from "react-countup";
+import AchievementsWrapper from './style'
 
 import { counterData } from "../../../constants";
 
