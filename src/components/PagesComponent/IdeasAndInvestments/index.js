@@ -15,7 +15,9 @@ const Index = (props) => {
             {heading} {span && <span className="inner-heading">{span}</span>}
           </h2>
           {isButton && (
-            <Button text={btnText} className="secondary-btn" />
+            <div className="idea-btn">
+              <Button text={btnText} className="secondary-btn" />
+            </div>
           )}
         </div>
       </Container>

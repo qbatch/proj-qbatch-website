@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 import VisibilitySensor from "react-visibility-sensor";
 import { Col, Row } from "react-bootstrap";
 
-import { revenueData } from "../../../constants";
 import Container from "../../UiComponent/Container";
 
 import SecretSauceWrapper from "./style";
 
-const Index = () => {
+const Index = (props) => {
+  const { heading, heading2, desc, data, className } = props;
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -65,7 +65,7 @@ const Index = () => {
   useEffect(() => {
     const handleMouseWheel = (e) => {
       const isAtFirstSlide = activeIndex === 0;
-      const isAtLastSlide = activeIndex === revenueData.length - 1;
+      const isAtLastSlide = activeIndex === data.length - 1;
 
       if (e.deltaY > 0) {
         if (!isAtLastSlide) {
@@ -100,7 +100,7 @@ const Index = () => {
       // Remove event listener when the component unmounts
       sliderElement.removeEventListener("wheel", handleMouseWheel);
     };
-  }, [activeIndex]);
+  }, [activeIndex, data.length]);
   return (
     <>
       <VisibilitySensor
@@ -113,33 +113,29 @@ const Index = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           ref={scrollRef2}
-          className="secret-slider-revenue"
+          className={`secret-slider-revenue ${className}`}
         >
           <Container>
             <div className="secret-heading">
-              <h2>Our Secret Sauce?</h2>
-              <h3 className="text-h4">100% Communication & Transparency</h3>
-              <p>
-                “We’re looking into the problem, we will update you as soon as
-                we have promising information” — not a statement but a
-                commitment to our clients that we are resolving the problem.
-              </p>
+              <h2>{heading}</h2>
+              {heading2 && <h3 className="text-h4">{heading2}</h3>}
+              <p>{desc}</p>
             </div>
             <div className="slider-section">
               <Row>
                 <div className="center-align">
-                  <Col xl={10} lg={10} md={12}>
+                  <Col xl={10} lg={12} md={12}>
                     <Row>
                       <Col lg={2} md={12}>
                         <div className="slide-counter">
                           <span>{activeIndex + 1}</span>
                           <span></span>
-                          <span>{revenueData.length}</span>
+                          <span>{data.length}</span>
                         </div>
                       </Col>
                       <Col lg={10} md={12}>
                         <Slider {...sliderSettings} ref={sliderRef2}>
-                          {revenueData?.map((item, index) => (
+                          {data?.map((item, index) => (
                             <div key={index} className="slider-data">
                               <Row>
                                 <Col md={4}>
@@ -167,19 +163,15 @@ const Index = () => {
         </SecretSauceWrapper>
       </VisibilitySensor>
       {/* small screen section */}
-      <SecretSauceWrapper className="secret-small-section">
+      <SecretSauceWrapper className={`secret-small-section ${className}`}>
         <Container>
           <div className="secret-heading">
-            <h2>Our Secret Sauce?</h2>
-            <h3 className="text-h4">100% Communication & Transparency</h3>
-            <p>
-              “We’re looking into the problem, we will update you as soon as we
-              have promising information” — not a statement but a commitment to
-              our clients that we are resolving the problem.
-            </p>
+            <h2>{heading}</h2>
+            <h3 className="text-h4">{heading2}</h3>
+            <p>{desc}</p>
           </div>
           <div>
-            {revenueData?.map((item, index) => (
+            {data?.map((item, index) => (
               <div key={index} className="slider-data">
                 <Row>
                   <Col md={4}>

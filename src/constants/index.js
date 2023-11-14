@@ -32,7 +32,7 @@ const peopleFirstData = [
   { id: 5, icon: '/people-first-icon-5.svg', desc: "EdTech"},
   { id: 6, icon: '/people-first-icon-6.svg', desc: "Retail & Consumer Goods"},
   { id: 7, icon: '/people-first-icon-7.svg', desc: "Travel & Transportation",},
-  { id: 8, icon: '/people-first-icon-8.svg', desc: "IoT",}
+  { id: 8, icon: '/iot.svg', desc: "IoT",}
 ];
 
 const leaderData = [
@@ -841,6 +841,39 @@ const revenueData = [
   },
 ]
 
+const customEnterpriseData = [
+  {
+    img: "/retail-arbitrage.svg",
+    title: "Custom Enterprise Application Development",
+    description: "Avoid spending on redundant and ready-made solutions, instead detect the comprised areas of your business with our trusted enterprise application development services. We help you create unique solutions that replace existing loopholes with high-performing functionality units."
+  },
+  {
+    img: "/label-brands.svg",
+    title: "Enterprise Mobility Services",
+    description: "Become mobile-first and deliver an optimal experience to a large number of audiences who rely on the utilities your business offers. Qbatch’s turnkey enterprise mobility solutions enable organizations to enjoy suitable, accessible, and easy-to-adapt solutions."
+  },
+  {
+    img: "/wholesale-sellers.svg",
+    title: "Digital Transformation Consulting",
+    description: "Close the gap between your current and desired success levels speedily by adopting and embracing futuristic technology without hampering your data. Let’s become technology adoption partners and reinvent your business together!"
+  },
+  {
+    img: "/dropshipping.svg",
+    title: "Data Management and Business Intelligence (BI)",
+    description: "Integrate powerful data management modules and AI-driven tools to break down complex data into predictive decisions. We as an enterprise software development services company use analytics and automation for easy and quick bulk data management and assessment.nctionality units."
+  },
+  {
+    img: "/warehousing.svg",
+    title: "Software Integration Services",
+    description: "Achieve business sustenance, data networking, and effortless collaboration by integrating your existing software with faster and more secure technology. Readily meet market and end-user demands and transform better with our top enterprise app developers."
+  },
+  {
+    img: "/warehousing.svg",
+    title: "Legacy Application Modernization",
+    description: "You are at great financial and reputation risk if your business depends on outdated software.  Our legacy application modernization services will help you figure out why your existing system no longer brings results and build a modern solution that lasts and gets real results."
+  },
+]
+
 const automationData = [
   {
     icon: "/data-driven-decisions.svg",
@@ -1536,6 +1569,49 @@ const developmentServicesData = [
   },
 ];
 
+const developmentExpertiseData = [
+  {
+    icon: "/custom-mobile-app.svg",
+    title: "Data Warehousing",
+    desc: "Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.",
+  },
+  {
+    icon: "/ux-ui-mobile-app.svg",
+    title: "CRM Development",
+    desc: "Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!",
+  },
+  {
+    icon: "/ai-app.svg",
+    title: "IT Modernization Services",
+    desc: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
+  },
+  {
+    icon: "/mobile-app-consulting.svg",
+    title: "CMS Development",
+    desc: "Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.",
+  },
+  {
+    icon: "/third-party-integration.svg",
+    title: "SCM Development",
+    desc: "Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.",
+  },
+  {
+    icon: "/mobile-testing.svg",
+    title: "EHR Development",
+    desc: "Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.",
+  },
+  {
+    icon: "/mobile-testing.svg",
+    title: "BI Services",
+    desc: "Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.",
+  },
+  {
+    icon: "/mobile-testing.svg",
+    title: "HRM Software Development",
+    desc: "Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.",
+  },
+];
+
 const youCanTrustData = [
   {
     icon: "/time-budget.svg",
@@ -1571,6 +1647,80 @@ const multiPlatformData = [
     desc: 'Decrease time to market and costs by building high-value and secure mobile experiences with Qbatch’s cross-platform app development services. We use trusted cross-platform development technology i.e., React Native and Flutter to assure smooth and sustainable human interactions.',
   },
 ];
+const choiceEnterpriseData = [
+ {
+  icon: "/business-needs.svg",
+  title: "Business Needs",
+  desc: "Does the current software or process understand your organization’s needs and provides intended solutions?"
+ },
+ {
+  icon: "/user-expectations.svg",
+  title: "User Expectations",
+  desc: "Are your users/ customers happy with the current software functionality, interface, and design? Does it offer easy-to-use features or are they just making the user journey difficult?"
+ },
+ {
+  icon: "/operational-efficiency.svg",
+  title: "Operational Efficiency",
+  desc: "Do you plan to improve and automate organizational workflows with minimal occurrence of errors and reduced workloads assuring more productivity?"
+ },
+ {
+  icon: "/budget-constraints.svg",
+  title: "Budget Constraints",
+  desc: "Does the expected ROI associated with the new software outweigh its costs? It is necessary to take expert advice from enterprise software consultants for realistic budgeting."
+ },
+ {
+  icon: "/technology-selection.svg",
+  title: "Technology Selection",
+  desc: "Are you choosing the right technology for your organization and its members? Did you train them? Are you investing to maintain and support that technology?"
+ },
+ {
+  icon: "/existing-systems.svg",
+  title: "Existing Systems",
+  desc: "Do you plan to integrate the new software with old systems and applications for better data communication?"
+ },
+ {
+  icon: "/security-and-compliance.svg",
+  title: "Security and Compliance",
+  desc: "Does your custom enterprise software comply with security standards and practices to protect sensitive data?"
+ },
+ {
+  icon: "/Enterprise-timeline.svg",
+  title: "Timeline",
+  desc: "Are you mindful of the elements that may impact business applications development timelines, such as resource availability and technical roadblocks?"
+ },
+]
+const technologicalCapacityData = [
+  {
+   icon: "/business-needs.svg",
+   title: "AI & ML",
+   desc: "Garner greater operational intelligence, reduced costs, and top-grade automation to ensure that much-anticipated transition."
+  },
+  {
+   icon: "/user-expectations.svg",
+   title: "IoT",
+   desc: "Integrate your smart sensors and devices and monitor through a central console and capture insightful data for improved enterprise-level connectivity."
+  },
+  {
+   icon: "/operational-efficiency.svg",
+   title: "Blockchain",
+   desc: "Be in the vanguard of your enterprise and its processes with higher-level data control and automation beyond third-party interference."
+  },
+  {
+   icon: "/budget-constraints.svg",
+   title: "Data Science",
+   desc: "Dealing with tons of data? No worries, our expertise in Big Data can help you streamline your data streams for smarter and market-relevant decision-making."
+  },
+  {
+   icon: "/technology-selection.svg",
+   title: "Cloud Computing",
+   desc: "A flexible and interconnected business requires robust cloud computing services for flawless execution of the latest technologies like AWS, Azure, and Google Cloud."
+  },
+  {
+   icon: "/existing-systems.svg",
+   title: "Low-Code/No-Code",
+   desc: "Build your enterprise software using no-code/ low-code platforms for managing visual elements like drag-and-drop and pull-down menu interfaces."
+  },
+ ]
 export {
   homeTiles,
   CareersData,
@@ -1603,5 +1753,9 @@ export {
   dedicatedTiles,
   multiPlatformData,
   developmentServicesData,
-  mobileAppFaq
+  mobileAppFaq,
+  choiceEnterpriseData,
+  customEnterpriseData,
+  developmentExpertiseData,
+  technologicalCapacityData
 }
