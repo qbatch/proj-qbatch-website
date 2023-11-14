@@ -24,7 +24,7 @@ const Index = ({ maxCols }) => {
               <Row className="awards-logos">
                 {displayedAwards.map((data, ind) => (
                   <Col md={3} sm={3} xs={6} key={ind}>
-                    <a href={data.link} target="_blank">
+                    <a href={data.link} target="blank">
                       <img src={data.img} alt={`Award ${ind + 1}`} />
                     </a>
                   </Col>

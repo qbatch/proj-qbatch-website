@@ -10,13 +10,31 @@ import HireCtoWrapper from "./style";
 
 const Index = () => {
   const list = [
-    "Got a powerful idea but cannot cope with a tech part?",
-    "Hesitant about whether the selected tech stack is right?",
-    "Got an MVP but not sure how to gain the trust of investors?",
-    "Are you a mature startup but cannot outperform its competitors?",
-    "Is your business already big enough, but got some internal infrastructure issues?",
-    "Can’t afford a full-time CTO and need a temporary CTO?",
-  ];
+    {
+      img: '/hire-a-cto_powerful-idea.svg',
+      description: 'Got a powerful idea but cannot cope with a tech part?',
+    },
+    {
+      img: '/hire-a-cto_selected-tech-stack.svg',
+      description: 'Hesitant about whether the selected tech stack is right?',
+    },
+    {
+      img: '/hire-a-cto_gain-the-trust.svg',
+      description: 'Got a powerful idea but cannot cope with a tech part?',
+    },
+    {
+      img: '/hire-a-cto_mature-startup.svg',
+      description: 'Are you a mature startup but cannot outperform its competitors?',
+    },
+    {
+      img: '/hire-a-cto_interenal-infrastructure-issues.svg',
+      description: 'Is your business already big enough, but got some internal infrastructure issues?',
+    },
+    {
+      img: '/hire-a-cto_cant-afford-cto.svg',
+      description: 'Can’t afford a full-time CTO and need a temporary CTO?',
+    },
+  ]
   return (
     <>
     <Container>
@@ -31,8 +49,8 @@ const Index = () => {
           <ListGroup>
             {list.map((service, index) => (
               <ListGroup.Item as="li" key={index}>
-                <div className="grey-box" />
-                <span> {service}</span>
+                <img className="me-4" src={service.img} alt="no-service" />
+                <span> {service.description}</span>
               </ListGroup.Item>
             ))}
           </ListGroup>

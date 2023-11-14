@@ -277,63 +277,63 @@ const stories = [
 ];
 const sliderItems = [
   {
-    image: "/slide-img.jpeg",
-    title: "Discovery Phase",
+    image: '/discovery-phase.svg',
+    title: 'Discovery Phase',
     content:
-      "Perform competitor market research, choose suitable tech stack and MVP features, and write technical documentation to understand your concept in real-world terms under limited risks. ",
-    list: ["Technology Consultancy", "Risk Mitigation", "Tech Stack Selection ", "MVP feature Composition"],
+      'Perform competitor market research, choose suitable tech stack and MVP features, and write technical documentation to understand your concept in real-world terms under limited risks. ',
+    list: ['Technology Consultancy', 'Risk Mitigation', 'Tech Stack Selection ', 'MVP feature Composition'],
   },
   {
-    image: "/slide-img.jpeg",
-    title: "Project Planing",
+    image: '/project-planning.svg',
+    title: 'Project Planing',
     content:
-      "After data collection, we elevate your development stages with strategy and logic by setting a realistic project plan, budget, and timeline according to available resources.",
+      'After data collection, we elevate your development stages with strategy and logic by setting a realistic project plan, budget, and timeline according to available resources.',
     list: [
-      "Shaping and Optimizing Development Plan",
-      "Technical Audit & Decision-making",
-      "Devising The Development Processes",
-      "Time, Budget, & Resource Estimate",
+      'Shaping and Optimizing Development Plan',
+      'Technical Audit & Decision-making',
+      'Devising The Development Processes',
+      'Time, Budget, & Resource Estimate',
     ],
   },
   {
-    image: "/slide-img.jpeg",
-    title: "Product Development",
+    image: '/product-development.svg',
+    title: 'Product Development',
     content:
-      "We, as your virtual CTO, ensure transparency in and continuous optimization of processes, communication, reporting, and project-critical documentation from start to end.",
+      'We, as your virtual CTO, ensure transparency in and continuous optimization of processes, communication, reporting, and project-critical documentation from start to end.',
     list: [
-      "Team Composition & Planning",
-      "Set Clear Project Goals",
-      "Development Process Optimization",
-      "Daily Project and Team Management",
+      'Team Composition & Planning',
+      'Set Clear Project Goals',
+      'Development Process Optimization',
+      'Daily Project and Team Management',
     ],
   },
   {
-    image: "/slide-img.jpeg",
-    title: "Project Scaling & Pitching",
+    image: '/project-scaling.svg',
+    title: 'Project Scaling & Pitching',
     content:
-      "We help startups stay wary of possible nuances and pitfalls by building and fostering scaling strategy, comprehensive pitch decks, and carefully communicating with investors as your CTO.",
+      'We help startups stay wary of possible nuances and pitfalls by building and fostering scaling strategy, comprehensive pitch decks, and carefully communicating with investors as your CTO.',
     list: [
-      "Forming Scaling Strategy ",
-      "IT Pitch Deck Development",
-      "Capturing Investments",
-      "Technical Dialogue with Investors",
+      'Forming Scaling Strategy ',
+      'IT Pitch Deck Development',
+      'Capturing Investments',
+      'Technical Dialogue with Investors',
     ],
   },
   {
-    image: "/slide-img.jpeg",
-    title: "Project Audit",
+    image: '/project-audit.svg',
+    title: 'Project Audit',
     content:
-      "Conduct a project audit, review the code quality, and assess overall project performance and speed with our CTO services to streamline the IT delivery process, offering constant feedback for enhancements. ",
-    list: ["Code Quality Reviews", "Project Audits", "Report and Predictive Analysis", "Offering Problem-Solution Fit"],
+      'Conduct a project audit, review the code quality, and assess overall project performance and speed with our CTO services to streamline the IT delivery process, offering constant feedback for enhancements. ',
+    list: ['Code Quality Reviews', 'Project Audits', 'Report and Predictive Analysis', 'Offering Problem-Solution Fit'],
   },
   {
-    image: "/slide-img.jpeg",
-    title: "Handing Over & Retaining",
+    image: '/handing-over.svg',
+    title: 'Handing Over & Retaining',
     content:
-      "We won’t leave you at the very climax of your development stage like the rest. You will have all the intellectual property rights and our long-term support on a retainer basis as needed.",
-    list: ["Knowledge & Documentation Transfer", "Intellectual Property Rights", "Ad-hoc Support & Maintenance"],
+      'We won’t leave you at the very climax of your development stage like the rest. You will have all the intellectual property rights and our long-term support on a retainer basis as needed.',
+    list: ['Knowledge & Documentation Transfer', 'Intellectual Property Rights', 'Ad-hoc Support & Maintenance'],
   },
-];
+]
 
 const ecomSliderItems = [
   {
@@ -1472,36 +1472,36 @@ const mobileAppFaq = [
 ]
 const guidanceData = [
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
-    title: "Vision and Future \n Alignment",
-    desc: "Build a roadmap that elevates your technical strategy, objectives, and operations to achieve a holistic digital footprint powering associated people, processes, and possibilities with our CTO consulting services. Let’s turn your vision into victory.",
+    icon: '/vertical-aligmnet.svg',
+    title: 'Vision and Future Alignment',
+    desc: 'Build a roadmap that elevates your technical strategy, objectives, and operations to achieve a holistic digital footprint powering associated people, processes, and possibilities with our CTO consulting services. Let’s turn your vision into victory.',
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
-    title: "Leading and Scaling \n Teams",
-    desc: "Your development team decides and shapes the future of the entire business. Thus we keep the bar high when it comes to tech leadership and management. Enjoy proficient team management, process optimization, and daily reporting with our CTO services.",
+    icon: '/leading-and-scaling-teams.svg',
+    title: 'Leading and Scaling  Teams',
+    desc: 'Your development team decides and shapes the future of the entire business. Thus we keep the bar high when it comes to tech leadership and management. Enjoy proficient team management, process optimization, and daily reporting with our CTO services.',
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
-    title: "Strategic Procurement and \n Cost Optimization",
+    icon: '/strategic-procurement-and-cost-optimization.svg',
+    title: 'Strategic Procurement and Cost Optimization',
     desc: 'Technology expenses can quickly escalate if the"build vs. buy" analysis goes wrong with suppliers and vendors. Our CTO advisory services develop a problem-solution fit by running iterations and finding critical areas that truly require investment. ',
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
-    title: "Technical Audits, Due Diligence, and Change Management",
-    desc: "We dive deeper into the technical risks associated with your business processes and strategy, conduct audits, prepare you for due diligence, and prescribe rock-solid change management roadmaps toward total digital transformation and delivery across the company.",
+    icon: '/technical-audit.svg',
+    title: 'Technical Audits, Due Diligence, and Change Management',
+    desc: 'We dive deeper into the technical risks associated with your business processes and strategy, conduct audits, prepare you for due diligence, and prescribe rock-solid change management roadmaps toward total digital transformation and delivery across the company.',
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
-    title: "System Engineering and \n Design",
-    desc: "You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise systems",
+    icon: '/system-engineering-and-design.svg',
+    title: 'System Engineering and Design',
+    desc: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise systems',
   },
   {
-    icon: "https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_1280.jpg",
-    title: "Technology Integration and \n Analysis",
-    desc: "Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.",
+    icon: '/technology-integration-and-analysis.svg',
+    title: 'Technology Integration and Analysis',
+    desc: 'Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.',
   },
-];
+]
 
 const developmentServicesData = [
   {
