@@ -13,7 +13,7 @@ import DrawerWrapper from "./style";
 const servicesItems = [
   {
     menu: "Enterprise Software Development Solutions",
-    to: "/",
+    to: "/enterprise",
   },
   {
     menu: "E-commerce Automation Services",

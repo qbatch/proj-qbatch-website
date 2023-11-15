@@ -105,7 +105,7 @@ const Index = () => {
                 <h3>{item.title}</h3>
                 <Row>
                   {item.content.map((data) => (
-                    <Col md={4} sm={6}>
+                    <Col md={4} sm={6} xs={6}>
                       <div className="framework-logo">
                         {data.img === "" ? (
                           ""

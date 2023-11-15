@@ -91,7 +91,7 @@ const TechnicalGuidanceWrapper = styled.div`
       `}
     }
     h4 {
-      margin: 24px 0;
+      margin: 24px 0 16px;
       white-space: pre-line;
       line-height: 32px;
       ${media.sm`
@@ -102,6 +102,7 @@ const TechnicalGuidanceWrapper = styled.div`
     }
     p {
       line-height: 32px;
+      margin-bottom: 0;
     }
   }
   &.automation-section {
@@ -184,6 +185,33 @@ const TechnicalGuidanceWrapper = styled.div`
     }
     p {
       letter-spacing: 0;
+    }
+  }
+  &.enterprise {
+    .guidance-card {
+     min-width: 422px;
+     &:last-child{
+      min-width: 96px;
+      }
+    }
+    .guidance-heading {
+      text-align: center;
+      h2 {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-right: 0;
+      }
+     p {
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+      max-width: 830px;
+      margin: 0 auto;
+      ${media.md`
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      `}
+     }
+    }
+    .element-wrapper {
+      padding-top: 72px;
     }
   }
 }

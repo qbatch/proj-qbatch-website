@@ -6,23 +6,26 @@ import Container from "../../UiComponent/Container";
 
 import DedicatedMobileWrapper from "./style";
 
-const Index = () => {
+const Index = (props) => {
+  const { heading, desc, isList, btnText, className } = props;
   return (
-    <DedicatedMobileWrapper>
+    <DedicatedMobileWrapper className={className}>
       <Container>
         <div className="dedicated-heading">
-          <h2 className="text-h1">Hire Dedicated Mobile App Developers</h2>
-          <h3 className="text-h2">For building stunning mobile apps</h3>
+          <h2 className="text-h1">{heading}</h2>
+          <h3 className="text-h2">{desc}</h3>
         </div>
-        <div className="dedicated-list">
-          {dedicatedTiles.map((value, i) => (
-            <h4 className="list-heading" key={i}>
-              {value}
-            </h4>
-          ))}
-        </div>
+        {isList && (
+          <div className="dedicated-list">
+            {dedicatedTiles.map((value, i) => (
+              <h4 className="list-heading" key={i}>
+                {value}
+              </h4>
+            ))}
+          </div>
+        )}
         <div className="d-flex justify-content-center">
-          <Button text="Get Your Devs" className="secondary-btn" />
+          <Button text={btnText} className="secondary-btn" />
         </div>
       </Container>
     </DedicatedMobileWrapper>

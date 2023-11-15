@@ -19,20 +19,30 @@ const IdeasWrapper = styled.div`
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 1038px;
     text-transform: none;
-    .inner-heading{
+    .inner-heading {
       color: ${({ theme }) => theme.colors.dividerColor};
       display: block;
     }
-    ${media.sm `
+    ${media.sm`
       margin-bottom: 32px;
     `}
   }
-  button {
+  .idea-btn {
     padding-top: 72px;
   }
   &.desired-result {
     .heading {
       max-width: 800px;
+    }
+  }
+  &.enterprise {
+    .heading {
+      max-width: 100%;
+    }
+    .idea-btn {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
     }
   }
 `;

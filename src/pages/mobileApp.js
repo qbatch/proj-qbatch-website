@@ -18,7 +18,12 @@ import CrewNotVendors from "../components/PagesComponent/CrewNotVendors";
 import DedicatedMobileDevelopers from "../components/PagesComponent/DedicatedMobileDevelopers";
 import MultiplePlatformSolutions from "../components/PagesComponent/MultiplePlatformSolutions";
 
-import { lostToLaunchedItems, mobileAppFaq, developmentServicesData } from "../constants";
+import {
+  lostToLaunchedItems,
+  mobileAppFaq,
+  developmentServicesData,
+  revenueData,
+} from "../constants";
 
 const MobileApp = () => {
   return (
@@ -52,10 +57,22 @@ const MobileApp = () => {
         is bold enough to take on challenges and launch ground-breaking and
         goal-driven mobile apps for you."
       />
-      <SecretSauce />
+      <SecretSauce
+        heading="Our Secret Sauce?"
+        heading2="100% Communication & Transparency"
+        desc="“We’re looking into the problem, we will update you as soon as
+                we have promising information” — not a statement but a
+                commitment to our clients that we are resolving the problem."
+        data={revenueData}
+      />
       <CrewNotVendors />
       <MultiplePlatformSolutions />
-      <DedicatedMobileDevelopers />
+      <DedicatedMobileDevelopers
+        heading="Hire Dedicated Mobile App Developers"
+        desc="For building stunning mobile apps"
+        isList={true}
+        btnText="Get Your Devs"
+      />
       <AppDevelopmentServices
         data={developmentServicesData}
         heading="Full Suite of Custom Mobile App Development Services"
@@ -78,7 +95,7 @@ const MobileApp = () => {
         heading="How We Make Custom Web Apps Differently"
         innerPage={true}
       />
-      <Achievements page="home" innerPage={true} />
+      <Achievements innerPage={true} />
       <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
       <Collaboration heading="text-h2" />
       <PeopleFirst />
@@ -93,6 +110,6 @@ const MobileApp = () => {
     </Layout>
   );
 };
-export const Head = () => <SEO title="webapp development" />;
+export const Head = () => <SEO title="mobile app development" />;
 
 export default MobileApp;
