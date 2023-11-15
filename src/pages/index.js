@@ -1,8 +1,8 @@
 import * as React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+// import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/Layout/layout'
-import SEO from '../components/Seo'
+// import SEO from '../components/Seo'
 import DedicatedDevelopment from '../components/PagesComponent/DedicatedDeveloper'
 import Achievements from '../components/PagesComponent/Achievements'
 import WhatWeCanDo from '../components/PagesComponent/WhatWeCanDo'
@@ -21,7 +21,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <DedicatedDevelopment />
-      <Achievements page="home" />
+      <Achievements />
       <WhatWeCanDo />
       <Expertise />
       <ProblumSolving
@@ -47,24 +47,24 @@ const IndexPage = () => {
   )
 }
 
-export const Head = () =>{
-   const data = useStaticQuery(graphql`
-     query MyQuery {
-       allStrapiHome {
-         nodes {
-           seo {
-             keywords
-             metaDescription
-             metaTitle
-           }
-         }
-       }
-     }
-   `)
+// export const Head = () =>{
+//    const data = useStaticQuery(graphql`
+//      query MyQuery {
+//        allStrapiHome {
+//          nodes {
+//            seo {
+//              keywords
+//              metaDescription
+//              metaTitle
+//            }
+//          }
+//        }
+//      }
+//    `)
 
-   const seoData = data.allStrapiHome.nodes[0].seo
+//    const seoData = data.allStrapiHome.nodes[0].seo
 
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
-}
+//   return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+// }
 
 export default IndexPage

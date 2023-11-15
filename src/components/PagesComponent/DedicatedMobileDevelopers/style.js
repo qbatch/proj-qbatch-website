@@ -67,6 +67,15 @@ const DedicatedMobileWrapper = styled.div`
       }
     }
   }
+  &.you-know-section {
+    .dedicated-heading {
+      h3 {
+        max-width: 760px;
+        margin: 0 auto;
+        margin-bottom: 72px;
+      }
+    }
+  }
 `;
 
 export default DedicatedMobileWrapper;
