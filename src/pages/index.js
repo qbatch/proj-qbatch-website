@@ -1,8 +1,8 @@
 import * as React from 'react'
-// import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/Layout/layout'
-// import SEO from '../components/Seo'
+import SEO from '../components/Seo'
 import DedicatedDevelopment from '../components/PagesComponent/DedicatedDeveloper'
 import Achievements from '../components/PagesComponent/Achievements'
 import WhatWeCanDo from '../components/PagesComponent/WhatWeCanDo'

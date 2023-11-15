@@ -41,7 +41,6 @@ const GlobalStyles = createGlobalStyle`
     .text-h4-light{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
         line-height: 32px;
-        letter-spacing : 0.14px ;
         font-weight:${({ theme }) => theme.fontWeight.light} ;
     }
     p{
