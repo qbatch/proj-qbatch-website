@@ -65,6 +65,14 @@ const ChoiceEnterpriseWrapper = styled.div`
   .equal-height-row > div > div {
     flex: 1;
   }
+  &.helpSection{
+    .choice-heading{
+      text-align: left;
+      p{
+        margin-left: 0;
+      }
+    }
+  }
   &.capacity-section {
     padding: 120px 0 72px;
     .choice-heading {

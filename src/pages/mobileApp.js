@@ -8,6 +8,7 @@ import Achievements from "../components/PagesComponent/Achievements";
 import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
 import Collaboration from "../components/PagesComponent/Collaboration";
 import PeopleFirst from "../components/PagesComponent/PeopleFirst";
+import { peopleFirstData } from "../constants";
 import DesiredResult from "../components/PagesComponent/IdeasAndInvestments";
 import FaqSection from "../components/PagesComponent/Faq";
 import StartProject from "../components/PagesComponent/StartProject";
@@ -98,7 +99,7 @@ const MobileApp = () => {
       <Achievements innerPage={true} />
       <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
       <Collaboration heading="text-h2" />
-      <PeopleFirst />
+      <PeopleFirst peopleFirstData={peopleFirstData} paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies." heading="Happily Making Industries People-First"/>
       <DesiredResult
         heading="Got a unique mobile app idea? Learn more about development time and cost estimation!"
         isButton={true}

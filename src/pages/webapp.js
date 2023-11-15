@@ -19,7 +19,7 @@ import { webAppFaq } from "../constants";
 import LostToLaunched from "../components/PagesComponent/DevelopmentStages";
 import LanguagesAndFrameworks from "../components/PagesComponent/LanguagesAndFrameworks";
 import WebExpertise from "../components/PagesComponent/TechnicalGuidance";
-import { lostToLaunchedItems, webExpertiseData } from "../constants";
+import { lostToLaunchedItems, webExpertiseData, peopleFirstData } from "../constants";
 
 const webapp = () => {
   return (
@@ -64,7 +64,7 @@ const webapp = () => {
         heading="Success Stories"
         paragraph="They imagined it, we brought it to the world!"
       />
-      <PeopleFirst />
+       <PeopleFirst peopleFirstData={peopleFirstData} paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies." heading="Happily Making Industries People-First"/>
       <FaqSection faqQuestion={webAppFaq} />
       <StartProject />
     </Layout>

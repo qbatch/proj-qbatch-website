@@ -55,7 +55,7 @@ const Ecommerce = () => {
         paragraph="They imagined it, we brought it to the world!"
       />
       <MarketplaceIntegrations />
-      <MarketplaceSellers />
+      <MarketplaceSellers heading="Saving Marketplace Sellers from doing too much work." paragraph="Shrug off non-value-adding, repetitive tasks through modern technology and genius domain savvies. " btnText="Take my worries away!"/>
       <FaqSection faqQuestion={ecomFaqQuestion} />
       <QuotationSection />
       <StartProject />

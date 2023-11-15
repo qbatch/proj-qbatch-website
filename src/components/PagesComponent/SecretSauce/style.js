@@ -4,6 +4,14 @@ import { media } from "../../../theme/media-mixins";
 const SecretSauceWrapper = styled.div`
   padding: 120px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  &.cycle-section{
+    .secret-heading{
+      text-align: center;
+      p{
+        margin: auto;
+      }
+    }
+  }
   ${media.sm`
     padding: 60px 0;
   `}

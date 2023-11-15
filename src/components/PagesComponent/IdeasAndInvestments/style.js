@@ -14,7 +14,14 @@ const IdeasWrapper = styled.div`
   ${media.xs`
     padding: 96px 20px;
   `}
-
+  &.productDesign{
+    .heading{
+      max-width: 1170px;
+    }
+    button{
+      margin-left: auto;
+    }
+  }
   .heading {
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 1038px;

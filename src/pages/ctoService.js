@@ -16,13 +16,17 @@ import Insights from "../components/PagesComponent/Insights";
 import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
 import FaqSection from "../components/PagesComponent/Faq";
 import { sliderItems, faqQuestion } from "../constants";
-import { guidanceData } from "../constants";
+import { guidanceData, ctoList } from "../constants";
 
 const CtoService = () => {
   return (
     <Layout>
       <CtoBanner />
-      <HireCto />
+      <HireCto 
+      list={ ctoList } 
+      btnText="Stuck in a different situation?"
+      heading="Do you really need to hire a CTO? Find for yourself"
+      />
       <TechnicalExcellence
         heading="We are Your Right-Hand Men Towards Total Technical Excellence"
         title={true}
