@@ -1945,7 +1945,7 @@ const productDesignData = [
 ];
 const customEnterpriseData = [
   {
-    img: "/enterprise-application.svg",
+    img: "/interprise-application.svg",
     title: "Custom Enterprise Application Development",
     description: "Avoid spending on redundant and ready-made solutions, instead detect the comprised areas of your business with our trusted enterprise application development services. We help you create unique solutions that replace existing loopholes with high-performing functionality units."
   },
@@ -1960,7 +1960,7 @@ const customEnterpriseData = [
     description: "Close the gap between your current and desired success levels speedily by adopting and embracing futuristic technology without hampering your data. Let’s become technology adoption partners and reinvent your business together!"
   },
   {
-    img: "/custom-enterprise-software-development-services_data.svg",
+    img: "/custom-enterprise-software-development-services.svg",
     title: "Data Management and Business Intelligence (BI)",
     description: "Integrate powerful data management modules and AI-driven tools to break down complex data into predictive decisions. We as an enterprise software development services company use analytics and automation for easy and quick bulk data management and assessment.nctionality units."
   },
@@ -1992,7 +1992,7 @@ const cycleProductData = [
     description: "You’re providing all the great features, but your users still won’t respond? Our product designers rely on a user-first mindset that helps them improve the value of your app features and functionalities assuring navigable experiences and fail-safe performance under any user load. "
   },
   {
-    img: "/custom-enterprise-software-development-services_data.svg",
+    img: "/custom-enterprise-software-development-services.svg",
     title: "Prototyping",
     description: "Don’t risk spending on unproven ideas. We help you test your idea in the ever-evolving market situations at a low cost before launching its complete version. Our digital product developers practice the MVP approach and depend on the experiences of early adopters to create fully functional prototypes."
   },

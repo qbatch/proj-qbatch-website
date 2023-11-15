@@ -55,7 +55,7 @@ const StartProjectWrapper = styled.div`
     .testimonial-paragraph {
       margin-bottom: 24px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-      color:${({ theme }) => theme.colors.textMedium}
+      color:${({ theme }) => theme.colors.textMedium};
       font-weight: 300;
       letter-spacing: 0.7px;
       line-height: 32px;
