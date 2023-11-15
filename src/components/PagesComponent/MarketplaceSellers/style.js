@@ -5,6 +5,14 @@ const MarketplaceSellersWrapper = styled.div`
   background: url("/growing-bg.svg");
   background-size: cover;
   padding: 120px 203px;
+  &.productDesign{
+    .text-h2.heading{
+      font-size: 68px;
+      ${media.md`
+       font-size: 32px;
+      `}
+    }
+  }
   ${media.md`
     padding: 96px 120px;
   `}

@@ -11,11 +11,19 @@ const counterData = [
   { id: 1, count: 150, desc: "Full Stack Developers"},
   { id: 2, count: 300, desc: "Solutions Delivered \n Successfully", symbol: "+" },
   { id: 3, count: 98, desc: "Customer Happiness \n Index", symbol: "%" },
-  { id: 4, count: 10, desc: "Customer Happiness \n Index", symbol: "" },
+  { id: 4, count: 10, desc: "Years of Excellency", symbol: "" },
+];
+const productDesignCounterData = [
+  { id: 1, count: 150, desc: "Full Stack Developers", symbol: "+"},
+  { id: 2, count: 150, desc: "Solutions Delivered Successfully", symbol: "+" },
+  { id: 3, count: 98, desc: "Customer Happiness Index", symbol: "%" },
+  { id: 4, desc: "Customers stay for future projects", symbol: "" },
+  { id: 5, count: 8, desc: "Years of Spectacular Experience", symbol: "+" },
+  { id: 6, count: 3, desc: "Global Offices", symbol: "" },
 ];
 
 const companyCounter = [
-  { id: 1, count: 98, desc: "Customer Happiness Index", symbol: "%" },
+  { id: 1, count: 150, desc: "Customer Happiness Index", symbol: "%" },
   { id: 2, count: 300, desc: "Partnerships Achieved", symbol: "+" },
   { id: 3, count: 150, desc: "Projects Delivered", symbol: "+" },
   { id: 4, count: 15, desc: "SaaS-Based Platforms Developed", symbol: "+" },
@@ -34,7 +42,51 @@ const peopleFirstData = [
   { id: 7, icon: '/people-first-icon-7.svg', desc: "Travel & Transportation",},
   { id: 8, icon: '/iot.svg', desc: "IoT",}
 ];
-
+const whyChooseQbatchData = [
+  { id: 1, icon: '/people-first-icon-1.svg', desc: "Technical Excellence" },
+  { id: 2, icon: '/people-first-icon-2.svg', desc: "Efficient Talent Pool"},
+  { id: 3, icon: '/people-first-icon-3.svg', desc: "Data Ownership and Control"},
+  { id: 4, icon: '/people-first-icon-5.svg', desc: "Immaculate Software Engineering"},
+  { id: 5, icon: '/people-first-icon-6.svg', desc: "Strongly Agile"},
+  { id: 6, icon: '/people-first-icon-7.svg', desc: "Optimal R&D"},
+  { id: 7, icon: '/people-first-icon-5.svg', desc: "Proactive Communication",},
+  { id: 8, icon: '/people-first-icon-6.svg', desc: "Flexible Business Models",},
+  { id: 9, icon: '/people-first-icon-7.svg', desc: "Great Value for Money",}
+];
+const softwareProductData = [
+  { id: 1, icon: '/people-first-icon-1.svg', desc: "SaaS Platforms" },
+  { id: 2, icon: '/people-first-icon-2.svg', desc: "Minimum Viable Product"},
+  { id: 3, icon: '/people-first-icon-3.svg', desc: "E-learning Platforms"},
+  { id: 4, icon: '/people-first-icon-4.svg', desc: "Online Marketplaces"},
+  { id: 5, icon: '/people-first-icon-5.svg', desc: "Data Visualization Dashboards"},
+  { id: 6, icon: '/people-first-icon-6.svg', desc: "Content Management Platforms"},
+  { id: 7, icon: '/people-first-icon-7.svg', desc: "Location-based Apps",},
+  { id: 8, icon: '/people-first-icon-8.svg', desc: "Warehouse Management Systems",},
+  { id: 9, icon: '/people-first-icon-5.svg', desc: "Online Streaming Platforms"},
+  { id: 10, icon: '/people-first-icon-6.svg', desc: "Booking Apps"},
+  { id: 11, icon: '/people-first-icon-7.svg', desc: "On-demand services platforms",},
+  { id: 12, icon: '/people-first-icon-8.svg', desc: "Warehouse Management Systems",}
+];
+const developmentProcessData = [
+  {
+    image: '/slide-img.jpeg',
+    duration: '1-2 weeks',
+    title: 'Discovery Phase',
+    description: 'We test and validate your unproven concept according to the market situation before securing your idea and investment.',
+  },
+  {
+    image: '/slide-img.jpeg',
+    duration: '6 - 8 weeks',
+    title: 'MVP Development',
+    description: 'We finalize crucial features and functionality to reduce time to market and make the product necessarily and publicly useful.',
+  },
+  {
+    image: '/slide-img.jpeg',
+    duration: 'Retainer Based',
+    title: 'Maintenance & Support',
+    description: 'It may take a few weeks to deploy and make your product available to the general masses. We continue our support to growing your product.',
+  },
+];
 const leaderData = [
   {  name: "Ibrahim Zahoor", title: "CEO & Founder", imageSrc: "/leader-1.jpeg" },
   { name: "Hassan Akram", title: "CTO & co - Founder Qbatch", imageSrc: "/leader-2.jpeg" },
@@ -841,39 +893,6 @@ const revenueData = [
   },
 ]
 
-const customEnterpriseData = [
-  {
-    img: "/retail-arbitrage.svg",
-    title: "Custom Enterprise Application Development",
-    description: "Avoid spending on redundant and ready-made solutions, instead detect the comprised areas of your business with our trusted enterprise application development services. We help you create unique solutions that replace existing loopholes with high-performing functionality units."
-  },
-  {
-    img: "/label-brands.svg",
-    title: "Enterprise Mobility Services",
-    description: "Become mobile-first and deliver an optimal experience to a large number of audiences who rely on the utilities your business offers. Qbatch’s turnkey enterprise mobility solutions enable organizations to enjoy suitable, accessible, and easy-to-adapt solutions."
-  },
-  {
-    img: "/wholesale-sellers.svg",
-    title: "Digital Transformation Consulting",
-    description: "Close the gap between your current and desired success levels speedily by adopting and embracing futuristic technology without hampering your data. Let’s become technology adoption partners and reinvent your business together!"
-  },
-  {
-    img: "/dropshipping.svg",
-    title: "Data Management and Business Intelligence (BI)",
-    description: "Integrate powerful data management modules and AI-driven tools to break down complex data into predictive decisions. We as an enterprise software development services company use analytics and automation for easy and quick bulk data management and assessment.nctionality units."
-  },
-  {
-    img: "/warehousing.svg",
-    title: "Software Integration Services",
-    description: "Achieve business sustenance, data networking, and effortless collaboration by integrating your existing software with faster and more secure technology. Readily meet market and end-user demands and transform better with our top enterprise app developers."
-  },
-  {
-    img: "/warehousing.svg",
-    title: "Legacy Application Modernization",
-    description: "You are at great financial and reputation risk if your business depends on outdated software.  Our legacy application modernization services will help you figure out why your existing system no longer brings results and build a modern solution that lasts and gets real results."
-  },
-]
-
 const automationData = [
   {
     icon: "/data-driven-decisions.svg",
@@ -1166,6 +1185,116 @@ const ecomFaqQuestion = [
   {
     id: 5,
     title: 'What can be automated in e-commerce?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+]
+const productDesignFaq = [
+  {
+    id: 1,
+    title: 'What is full-cycle software product development?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'How can you help me develop my product idea?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'What are the 5 stages of product development?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'How can I select a trustworthy software product development company?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What happens after the software is delivered? Who handles support and maintenance?',
+    content: (
+      <div className="faq-content">
+        <span>
+          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+          strategic technology leadership, guidance, and expertise.
+        </span>
+        <span>Following are benefits of hiring a CTO:</span>
+        <ul>
+          {ctoBenefits.map((list, ind) => (
+            <li key={ind}>{list}</li>
+          ))}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'What platforms do you develop mobile apps for?',
     content: (
       <div className="faq-content">
         <span>
@@ -1569,7 +1698,210 @@ const developmentServicesData = [
   },
 ];
 
-const developmentExpertiseData = [
+const youCanTrustData = [
+  {
+    icon: "/time-budget.svg",
+    title: "On-time and On-budget",
+  },
+  {
+    icon: "/strongly-agile.svg",
+    title: "Strongly Agile",
+  },
+  {
+    icon: "/stable-code.svg",
+    title: "100% Stable Code",
+  },
+  {
+    icon: "/cash-free.svg",
+    title: "Crash-free Product",
+  },
+];
+const multiPlatformData = [
+  {
+    icon: "/android-mobile-app.svg",
+    title: "Android Mobile App Development",
+    desc: "Building unique Android products that live up to user expectations amid choke-full competition is crucial. Qbatch’s custom Android app development services offer deep expertise in creating off-the-chart Android mobile, TV, tablet, and wearable software apps.",
+  },
+  {
+    icon: "/ios-mobile-app.svg",
+    title: "iOS Mobile App Development",
+    desc: "With attention spans getting shorter, users want solutions at their fingertips with a simple swipe. Qbatch’s iOS mobile app developers for hire have delivered highly scalable and captivating iOS app solutions for iPhone, iPad, Apple Watch, and Apple TV to thousands of users.",
+  },
+  {
+    icon: "/cross-platform-mobile-app.svg",
+    title: "Cross-Platform Mobile App Development",
+    desc: 'Decrease time to market and costs by building high-value and secure mobile experiences with Qbatch’s cross-platform app development services. We use trusted cross-platform development technology i.e., React Native and Flutter to assure smooth and sustainable human interactions.',
+  },
+];
+const ctoList = [
+  {
+    img: '/hire-a-cto_powerful-idea.svg',
+    description: 'Got a powerful idea but cannot cope with a tech part?',
+  },
+  {
+    img: '/hire-a-cto_selected-tech-stack.svg',
+    description: 'Hesitant about whether the selected tech stack is right?',
+  },
+  {
+    img: '/hire-a-cto_gain-the-trust.svg',
+    description: 'Got a powerful idea but cannot cope with a tech part?',
+  },
+  {
+    img: '/hire-a-cto_mature-startup.svg',
+    description: 'Are you a mature startup but cannot outperform its competitors?',
+  },
+  {
+    img: '/hire-a-cto_interenal-infrastructure-issues.svg',
+    description: 'Is your business already big enough, but got some internal infrastructure issues?',
+  },
+  {
+    img: '/hire-a-cto_cant-afford-cto.svg',
+    description: 'Can’t afford a full-time CTO and need a temporary CTO?',
+  },
+];
+const productDesignlist = [
+  {
+    img: '/slide-img.jpeg',
+    description: 'Why do you need software product design and development services?',
+  },
+  {
+    img: '/slide-img.jpeg',
+    description: 'I’m looking to partner with a dedicated team of product developers to grow my startup',
+  },
+  {
+    img: '/slide-img.jpeg',
+    description: 'I’m looking to launch a stellar MVP and reach out to investors for their trust and investment.',
+  },
+  {
+    img: '/slide-img.jpeg',
+    description: 'I’m planning to launch my product in the market but prefer a technical audit beforehand.',
+  },
+  {
+    img: '/slide-img.jpeg',
+    description: 'I’m seeking to build a digital product from scratch in collaboration with industry professionals.',
+  },
+  {
+    img: '/slide-img.jpeg',
+    description: 'I already have a product that doesn’t respond to user needs and fails to meet business expectations.',
+  },
+]
+const technologicalCapacityData = [
+  {
+   icon: "/business-needs.svg",
+   title: "AI & ML",
+   desc: "Garner greater operational intelligence, reduced costs, and top-grade automation to ensure that much-anticipated transition."
+  },
+  {
+   icon: "/user-expectations.svg",
+   title: "IoT",
+   desc: "Integrate your smart sensors and devices and monitor through a central console and capture insightful data for improved enterprise-level connectivity."
+  },
+  {
+   icon: "/operational-efficiency.svg",
+   title: "Blockchain",
+   desc: "Be in the vanguard of your enterprise and its processes with higher-level data control and automation beyond third-party interference."
+  },
+  {
+   icon: "/budget-constraints.svg",
+   title: "Data Science",
+   desc: "Dealing with tons of data? No worries, our expertise in Big Data can help you streamline your data streams for smarter and market-relevant decision-making."
+  },
+  {
+   icon: "/technology-selection.svg",
+   title: "Cloud Computing",
+   desc: "A flexible and interconnected business requires robust cloud computing services for flawless execution of the latest technologies like AWS, Azure, and Google Cloud."
+  },
+  {
+   icon: "/existing-systems.svg",
+   title: "Low-Code/No-Code",
+   desc: "Build your enterprise software using no-code/ low-code platforms for managing visual elements like drag-and-drop and pull-down menu interfaces."
+  },
+ ]
+const productDesignData = [
+  {
+   icon: "/business-needs.svg",
+   title: "Verifying and Prioritizing Ideas",
+   desc: "Is your backlog full of great ideas but you cannot decide which idea should flow first? Our product developers help you articulate your ideas into utility-driven products to win bigger stakeholder buy-in. "
+  },
+  {
+   icon: "/user-expectations.svg",
+   title: "Fostering Ownership",
+   desc: "Suffering from unproductive debates, weak ideas, and repeated market challenges? We instill ownership by aligning your team’s vision and goals, so they only deliver results and not painful experiences."
+  },
+  {
+   icon: "/operational-efficiency.svg",
+   title: "Product Thinking DNA",
+   desc: "Our product designers live and breathe product thinking. We deeply empathize with the end user and respond to their expectations via flawless product functionality and performance."
+  },
+  {
+   icon: "/budget-constraints.svg",
+   title: "Human-Centric Product Design",
+   desc: "Did you ever abandon or uninstall a mobile app due to poor design? Ever imagined the same for your product? Thus, we assure your product design is not just stunning. It is also easy to use۔"
+  },
+  {
+   icon: "/technology-selection.svg",
+   title: "Product Market-Fit",
+   desc: "We critically study and analyze market needs and build purpose-driven solutions as a response. As the market evolves, we quickly test, adapt, and make changes in the development phase."
+  },
+  {
+   icon: "/existing-systems.svg",
+   title: "User-First Product Development",
+   desc: "Our digital product development team builds event-driven and self-healing architectures that constantly support new feature requests and changes, aligning well with software delivery and business goals."
+  },
+  {
+   icon: "/existing-systems.svg",
+   title: "Optimized Response & Conversions",
+   desc: "Is your current product responding to your users’ needs? We perform in-depth architectural reviews and audits to improve conversions and returns of your product before testing new ideas."
+  },
+  {
+   icon: "/existing-systems.svg",
+   title: "DevOps Mindset",
+   desc: "Our “Shift-left” approach and DevOps mindset motivate our product developers to follow the best coding practices – delivering quality-driven, secure, and adaptive software."
+  },
+ ]
+ const choiceEnterpriseData = [
+  {
+   icon: "/business-needs.svg",
+   title: "Business Needs",
+   desc: "Does the current software or process understand your organization’s needs and provides intended solutions?"
+  },
+  {
+   icon: "/user-expectations.svg",
+   title: "User Expectations",
+   desc: "Are your users/ customers happy with the current software functionality, interface, and design? Does it offer easy-to-use features or are they just making the user journey difficult?"
+  },
+  {
+   icon: "/operational-efficiency.svg",
+   title: "Operational Efficiency",
+   desc: "Do you plan to improve and automate organizational workflows with minimal occurrence of errors and reduced workloads assuring more productivity?"
+  },
+  {
+   icon: "/budget-constraints.svg",
+   title: "Budget Constraints",
+   desc: "Does the expected ROI associated with the new software outweigh its costs? It is necessary to take expert advice from enterprise software consultants for realistic budgeting."
+  },
+  {
+   icon: "/technology-selection.svg",
+   title: "Technology Selection",
+   desc: "Are you choosing the right technology for your organization and its members? Did you train them? Are you investing to maintain and support that technology?"
+  },
+  {
+   icon: "/existing-systems.svg",
+   title: "Existing Systems",
+   desc: "Do you plan to integrate the new software with old systems and applications for better data communication?"
+  },
+  {
+   icon: "/security-and-compliance.svg",
+   title: "Security and Compliance",
+   desc: "Does your custom enterprise software comply with security standards and practices to protect sensitive data?"
+  },
+  {
+   icon: "/Enterprise-timeline.svg",
+   title: "Timeline",
+   desc: "Are you mindful of the elements that may impact business applications development timelines, such as resource availability and technical roadblocks?"
+  },
+ ]
+ const developmentExpertiseData = [
   {
     icon: "/custom-mobile-app.svg",
     title: "Data Warehousing",
@@ -1611,116 +1943,87 @@ const developmentExpertiseData = [
     desc: "Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.",
   },
 ];
-
-const youCanTrustData = [
+const customEnterpriseData = [
   {
-    icon: "/time-budget.svg",
-    title: "On-time and On-budget",
+    img: "/enterprise-application.svg",
+    title: "Custom Enterprise Application Development",
+    description: "Avoid spending on redundant and ready-made solutions, instead detect the comprised areas of your business with our trusted enterprise application development services. We help you create unique solutions that replace existing loopholes with high-performing functionality units."
   },
   {
-    icon: "/strongly-agile.svg",
-    title: "Strongly Agile",
+    img: "/enterprise-mobility-service.svg",
+    title: "Enterprise Mobility Services",
+    description: "Become mobile-first and deliver an optimal experience to a large number of audiences who rely on the utilities your business offers. Qbatch’s turnkey enterprise mobility solutions enable organizations to enjoy suitable, accessible, and easy-to-adapt solutions."
   },
   {
-    icon: "/stable-code.svg",
-    title: "100% Stable Code",
+    img: "/digital-transformation-consulting.svg",
+    title: "Digital Transformation Consulting",
+    description: "Close the gap between your current and desired success levels speedily by adopting and embracing futuristic technology without hampering your data. Let’s become technology adoption partners and reinvent your business together!"
   },
   {
-    icon: "/cash-free.svg",
-    title: "Crash-free Product",
-  },
-];
-const multiPlatformData = [
-  {
-    icon: "/android-mobile-app.svg",
-    title: "Android Mobile App Development",
-    desc: "Building unique Android products that live up to user expectations amid choke-full competition is crucial. Qbatch’s custom Android app development services offer deep expertise in creating off-the-chart Android mobile, TV, tablet, and wearable software apps.",
+    img: "/custom-enterprise-software-development-services_data.svg",
+    title: "Data Management and Business Intelligence (BI)",
+    description: "Integrate powerful data management modules and AI-driven tools to break down complex data into predictive decisions. We as an enterprise software development services company use analytics and automation for easy and quick bulk data management and assessment.nctionality units."
   },
   {
-    icon: "/ios-mobile-app.svg",
-    title: "iOS Mobile App Development",
-    desc: "With attention spans getting shorter, users want solutions at their fingertips with a simple swipe. Qbatch’s iOS mobile app developers for hire have delivered highly scalable and captivating iOS app solutions for iPhone, iPad, Apple Watch, and Apple TV to thousands of users.",
+    img: "/custom-enterprise-software.svg",
+    title: "Software Integration Services",
+    description: "Achieve business sustenance, data networking, and effortless collaboration by integrating your existing software with faster and more secure technology. Readily meet market and end-user demands and transform better with our top enterprise app developers."
   },
   {
-    icon: "/cross-platform-mobile-app.svg",
-    title: "Cross-Platform Mobile App Development",
-    desc: 'Decrease time to market and costs by building high-value and secure mobile experiences with Qbatch’s cross-platform app development services. We use trusted cross-platform development technology i.e., React Native and Flutter to assure smooth and sustainable human interactions.',
+    img: "/legacy-application.svg",
+    title: "Legacy Application Modernization",
+    description: "You are at great financial and reputation risk if your business depends on outdated software.  Our legacy application modernization services will help you figure out why your existing system no longer brings results and build a modern solution that lasts and gets real results."
   },
-];
-const choiceEnterpriseData = [
- {
-  icon: "/business-needs.svg",
-  title: "Business Needs",
-  desc: "Does the current software or process understand your organization’s needs and provides intended solutions?"
- },
- {
-  icon: "/user-expectations.svg",
-  title: "User Expectations",
-  desc: "Are your users/ customers happy with the current software functionality, interface, and design? Does it offer easy-to-use features or are they just making the user journey difficult?"
- },
- {
-  icon: "/operational-efficiency.svg",
-  title: "Operational Efficiency",
-  desc: "Do you plan to improve and automate organizational workflows with minimal occurrence of errors and reduced workloads assuring more productivity?"
- },
- {
-  icon: "/budget-constraints.svg",
-  title: "Budget Constraints",
-  desc: "Does the expected ROI associated with the new software outweigh its costs? It is necessary to take expert advice from enterprise software consultants for realistic budgeting."
- },
- {
-  icon: "/technology-selection.svg",
-  title: "Technology Selection",
-  desc: "Are you choosing the right technology for your organization and its members? Did you train them? Are you investing to maintain and support that technology?"
- },
- {
-  icon: "/existing-systems.svg",
-  title: "Existing Systems",
-  desc: "Do you plan to integrate the new software with old systems and applications for better data communication?"
- },
- {
-  icon: "/security-and-compliance.svg",
-  title: "Security and Compliance",
-  desc: "Does your custom enterprise software comply with security standards and practices to protect sensitive data?"
- },
- {
-  icon: "/Enterprise-timeline.svg",
-  title: "Timeline",
-  desc: "Are you mindful of the elements that may impact business applications development timelines, such as resource availability and technical roadblocks?"
- },
 ]
-const technologicalCapacityData = [
+const cycleProductData = [
   {
-   icon: "/business-needs.svg",
-   title: "AI & ML",
-   desc: "Garner greater operational intelligence, reduced costs, and top-grade automation to ensure that much-anticipated transition."
+    img: "/enterprise-application.svg",
+    title: "Discovery Workshops",
+    description: "Converting your idea into a utility requires a deliberate understanding of your end users' needs and real-world problems. Our enterprise software product development as a service includes understanding the changing user demands and helping you build and launch dynamic, feature-packed digital products."
   },
   {
-   icon: "/user-expectations.svg",
-   title: "IoT",
-   desc: "Integrate your smart sensors and devices and monitor through a central console and capture insightful data for improved enterprise-level connectivity."
+    img: "/enterprise-mobility-service.svg",
+    title: "Wireframing",
+    description: "Converting your idea into a utility requires a deliberate understanding of your end users' needs and real-world problems. Our enterprise software product development as a service includes understanding the changing user demands and helping you build and launch dynamic, feature-packed digital products."
   },
   {
-   icon: "/operational-efficiency.svg",
-   title: "Blockchain",
-   desc: "Be in the vanguard of your enterprise and its processes with higher-level data control and automation beyond third-party interference."
+    img: "/digital-transformation-consulting.svg",
+    title: "UX/UI Design",
+    description: "You’re providing all the great features, but your users still won’t respond? Our product designers rely on a user-first mindset that helps them improve the value of your app features and functionalities assuring navigable experiences and fail-safe performance under any user load. "
   },
   {
-   icon: "/budget-constraints.svg",
-   title: "Data Science",
-   desc: "Dealing with tons of data? No worries, our expertise in Big Data can help you streamline your data streams for smarter and market-relevant decision-making."
+    img: "/custom-enterprise-software-development-services_data.svg",
+    title: "Prototyping",
+    description: "Don’t risk spending on unproven ideas. We help you test your idea in the ever-evolving market situations at a low cost before launching its complete version. Our digital product developers practice the MVP approach and depend on the experiences of early adopters to create fully functional prototypes."
   },
   {
-   icon: "/technology-selection.svg",
-   title: "Cloud Computing",
-   desc: "A flexible and interconnected business requires robust cloud computing services for flawless execution of the latest technologies like AWS, Azure, and Google Cloud."
+    img: "/custom-enterprise-software.svg",
+    title: "Product Development & Management Consulting",
+    description: "Slow development processes, improper security management, wrong selection of technology, or lack of motivation are some of the few situations our product experts help by offering cloud-native microservices and technical advice to ensure crash-proof and sustainable product launches."
   },
   {
-   icon: "/existing-systems.svg",
-   title: "Low-Code/No-Code",
-   desc: "Build your enterprise software using no-code/ low-code platforms for managing visual elements like drag-and-drop and pull-down menu interfaces."
+    img: "/legacy-application.svg",
+    title: "MVP Development",
+    description: "Test unproven ideas and turn them into a minimal product that ensures maximum concept validation among early adopters with our minimum viable product development services. 150+ startups, scale-ups, and enterprises have leveraged our services for an effortless product development journey."
   },
- ]
+  {
+    img: "/legacy-application.svg",
+    title: "Code Refactoring",
+    description: "Transform your product by refactoring the old code and making feature additions to achieve the desired product-market fit. Our custom product development services have built and revamped 150+ products that are constantly thriving under the forever-changing market activity."
+  },
+  {
+    img: "/legacy-application.svg",
+    title: "Software QA and Testing",
+    description: "We perform strict quality checks on your products performing both automated and manual testing to reduce regression risks and extensive code churn removing any backdoors to cyberattacks and poor user experience."
+  },
+  {
+    img: "/legacy-application.svg",
+    title: "Launch & Maintenance",
+    description: "After a rigorous series of QA audits, automated tests, TTD, and code reviews, we bring your product to fruition with continued support featuring continuous integration and delivery and needed improvements to keep your product relevant in the raging technology marathon."
+  },
+]
+
+
 export {
   homeTiles,
   CareersData,
@@ -1731,6 +2034,7 @@ export {
   companyCounter,
   peopleFirstData,
   counterData,
+  productDesignCounterData,
   weDoData,
   data,
   stories,
@@ -1756,6 +2060,14 @@ export {
   mobileAppFaq,
   choiceEnterpriseData,
   customEnterpriseData,
+  cycleProductData,
   developmentExpertiseData,
-  technologicalCapacityData
+  technologicalCapacityData,
+  productDesignData,
+  ctoList,
+  productDesignlist,
+  softwareProductData,
+  developmentProcessData,
+  productDesignFaq,
+  whyChooseQbatchData
 }

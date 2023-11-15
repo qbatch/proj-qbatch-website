@@ -22,7 +22,8 @@ import {
   choiceEnterpriseData,
   customEnterpriseData,
   developmentExpertiseData,
-  technologicalCapacityData
+  technologicalCapacityData,
+  peopleFirstData
 } from "../constants";
 
 const Enterprise = () => {
@@ -86,7 +87,7 @@ const Enterprise = () => {
       <LanguagesAndFrameworks />
       <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
       <Collaboration heading="text-h2" />
-      <PeopleFirst />
+      <PeopleFirst peopleFirstData={peopleFirstData} paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies." heading="Happily Making Industries People-First"/>
       <DesiredResult
         heading="Got a unique mobile app idea? Learn more about development time and cost estimation!"
         isButton={true}

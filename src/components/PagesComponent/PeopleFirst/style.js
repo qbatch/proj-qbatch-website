@@ -7,6 +7,24 @@ padding: 120px 0 112px;
 ${media.sm`
     padding: 40px 0;
 `}
+.section-btn{
+  display: none;
+}
+&.productDesignPage{
+  .section-btn{
+    margin-top: 74px !important;
+    display: flex;
+    margin: auto;
+  }
+  .sub-heading{
+    max-width: 811px;
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    font-weight: ${({ theme }) => theme.fontWeight.light}
+  }
+}
+.row > .achievements-col:nth-last-child(-n+4) {
+  border-bottom: none;
+}
   .counter-wrapper{
       padding-top: 58px;
       padding-bottom: 10px;
@@ -15,12 +33,19 @@ ${media.sm`
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 24px;
     line-height: 52px;
+    ${media.sm`
+      line-height: 32px;
+    `}
   }
   .paragraph{
     max-width: 720px;
     line-height: 32px;
     letter-spacing: 0;
+    ${media.sm`
+      line-height: 24px;
+    `}
   }
+  
   .achievements-col{
     text-align: center;
     padding: 32px 12px;
@@ -35,16 +60,12 @@ ${media.sm`
       margin: 0 auto;
       font-weight: 700;
       padding-top: 8px;
+      max-width: 270px;
     }
     &:nth-child(4n){
       border-right: none;
     }
-    &:nth-child(5),
-    &:nth-child(6),
-    &:nth-child(7),
-    &:nth-child(8){
-      border-bottom: none;
-    }
+    
     ${media.md`
      &:nth-child(3){
       border-right: 0;

@@ -33,7 +33,7 @@ const servicesItems = [
   },
   {
     menu: "Product Design & Development",
-    to: "/",
+    to: "/productDesign",
   },
   {
     menu: "MVP Development",

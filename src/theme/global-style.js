@@ -38,6 +38,11 @@ const GlobalStyles = createGlobalStyle`
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
         letter-spacing : 0.14px ;
     }
+    .text-h4-light{
+        font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
+        line-height: 32px;
+        font-weight:${({ theme }) => theme.fontWeight.light} ;
+    }
     p{
        font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
        color: ${({ theme }) => theme.colors.textMedium};   
@@ -111,6 +116,9 @@ const GlobalStyles = createGlobalStyle`
       }
       h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};     
+      }
+      .text-h4-light{
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       }
       p{
        font-size:${({ theme }) => theme.fonts.baseFontSize};       
