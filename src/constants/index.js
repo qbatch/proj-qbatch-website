@@ -1945,7 +1945,7 @@ const productDesignData = [
 ];
 const customEnterpriseData = [
   {
-    img: "/enterprise-application.svg",
+    img: "/interprise-application.svg",
     title: "Custom Enterprise Application Development",
     description: "Avoid spending on redundant and ready-made solutions, instead detect the comprised areas of your business with our trusted enterprise application development services. We help you create unique solutions that replace existing loopholes with high-performing functionality units."
   },
