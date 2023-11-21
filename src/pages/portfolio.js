@@ -1,4 +1,5 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
@@ -21,7 +22,24 @@ const Portfolio = () => {
     </Layout>
   );
 };
+export const Head = () =>{
+   const data = useStaticQuery(graphql`
+     query MyStaticQuery {
+       allStrapiPortfolio {
+         nodes {
+           seo {
+             keywords
+             metaDescription
+             metaTitle
+           }
+         }
+       }
+     }
+   `)
 
-export const Head = () => <SEO title="Portfolio" />;
+   const seoData = data.allStrapiPortfolio.nodes[0].seo[0]
+
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+}
 
 export default Portfolio;

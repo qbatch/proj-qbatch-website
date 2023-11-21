@@ -67,13 +67,13 @@ const Index = ({ page }) => {
     setSubmitted(true)
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:1337/api/contacts", {
+      const response = await fetch('https://cms.qbatch.com/api/contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ data: formData }),
-      });
+      })
  
       if (response.ok) {
         console.log('Message sent successfully');
