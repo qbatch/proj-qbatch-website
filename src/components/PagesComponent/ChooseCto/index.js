@@ -22,49 +22,43 @@ const Index = () => {
   ];
   return (
     <>
-    <Container>
-      <ChooseCtoWrapper>
-        <h3>Why Choose Our CTO as a Service?</h3>
-        <Row>
-          <Col md={12} lg={6}>
-            <h2 className="color-primary">We want you to become a pioneer before the world calls you a laggard.</h2>
-          </Col>
-          <Col md={12} lg={6}>
-            <p>
-              Big brains and the right technical expertise are two key ingredients to achieving your long-term and
-              mission-critical business goals. We can help you figure out what you’ve been missing in your technology
-              adoption and transformation journey.{" "}
-            </p>
-            <div className="service-list">
-              <Row>
-                <Col md={6} lg={6} sm={12}>
-                  <ul>
-                    {list.slice(0, 6).map((service, index) => (
-                      <li key={index}>
-                        <span className="hash">-</span>
-                        {service}
-                      </li>
+      <Container>
+        <ChooseCtoWrapper>
+          <h3>Why Choose Our CTO as a Service?</h3>
+          <Row>
+            <Col md={12} lg={6}>
+              <h2 className="color-primary">We want you to become a pioneer before the world calls you a laggard.</h2>
+            </Col>
+            <Col md={12} lg={6}>
+              <p>
+                Big brains and the right technical expertise are two key ingredients to achieving your long-term and
+                mission-critical business goals. We can help you figure out what you’ve been missing in your technology
+                adoption and transformation journey.{' '}
+              </p>
+              <div className="service-list">
+                {list.length >= 12 && (
+                  <Row>
+                    {Array.from({ length: 2 }, (_, colIndex) => (
+                      <Col key={colIndex} md={6} lg={6} sm={12}>
+                        <ul>
+                          {list.slice(colIndex * 6, (colIndex + 1) * 6).map((service, index) => (
+                            <li key={index}>
+                              <span className="hash">-</span>
+                              {service}
+                            </li>
+                          ))}
+                        </ul>
+                      </Col>
                     ))}
-                  </ul>
-                </Col>
-                <Col md={6} lg={6} sm={12}>
-                  <ul>
-                    {list.slice(6, 11).map((service, index) => (
-                      <li key={index}>
-                        <span className="hash">-</span>
-                        {service}
-                      </li>
-                    ))}
-                  </ul>
-                </Col>
-              </Row>
-            </div>
-          </Col>
-        </Row>
-      </ChooseCtoWrapper>
-    </Container>
-    <Divider />
+                  </Row>
+                )}
+              </div>
+            </Col>
+          </Row>
+        </ChooseCtoWrapper>
+      </Container>
+      <Divider />
     </>
-  );
+  )
 };
 export default Index;

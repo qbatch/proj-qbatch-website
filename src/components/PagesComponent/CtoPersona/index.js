@@ -6,54 +6,9 @@ import PersonaWrapper from "./style";
 import Container from "../../UiComponent/Container"
 import ArrowDownward from "../../../assets/images/arrow_downward.svg";
 import Divider from "../../UiComponent/Divider";
+import {persona} from "../../../constants"
 
 const Index = () => {
-const persona = [
-  {
-    title: "Digital Business Leader/ Influencer/ Deep Thinker",
-    list: [
-      "Suitable for consumer-goods companies",
-      "Pushes technology in the company’s digital strategies and budget.",
-      "Holds decision-making authority for innovation-driven investments.",
-      "Translates customer and market requirements into digital products and services.",
-      "Deep understanding of technology trends, strategy, and execution. ",
-      "Innovates enterprise architecture through R&D and budgeting.",
-    ],
-  },
-  {
-    title: "Business Enabler ",
-    list: [
-      "Prevents business units from becoming obsolete",
-      "Facilitates responsive IT delivery mechanism via technical leadership.",
-      "Governs and guides key technology adoption and investment decisions.",
-      "Brainstorms and strategizes digital business platforms.",
-      "Works with engineering teams to develop, enhance, and redesign products.",
-      "Creates risk assessments when introducing new operational technology and ideas.",
-    ],
-  },
-  {
-    title: "IT Innovator/ Challenger/ Tech Visionary/ Change Agent",
-    list: [
-      "Key catalyzer of technology adoption and sustenance.",
-      "Serves as the central point for technology innovation.",
-      "Provides leadership to innovation managers and company-wide technology specialists.",
-      "Heads IT engineering team and guides the impact of IT innovations.",
-      "Promotes the adoption of agile and DevOps-oriented approach",
-      "Introduces hybrid multi-cloud, edge computing, containerization, and automation.",
-    ],
-  },
-  {
-    title: "IT Chief Operating Officer/ Owners",
-    list: [
-      "Suitable for single or similar product companies.",
-      "Heads the day-to-day agreed-upon delivery of IT services.",
-      "Involved in IT purchasing and procurement decisions.",
-      "Runs and maintains IT service management, vendor management, and compliance.",
-      "Monitors and responds to incidents that might affect internal and external systems.",
-      "Assures modernization, optimization, and consolidation of systems such as CRM or ERP.",
-    ],
-  },
-];
   return (
     <>
       <PersonaWrapper>
@@ -105,14 +60,14 @@ const persona = [
                               id="circle"
                               rx="15"
                               d="M 50, 50
-                        m -37, 0
-                        a 37,37 0 1,1 74,0
-                        a 37,37 0 1,1 -74,0"
+                                m -37, 0
+                                a 37,37 0 1,1 74,0
+                                a 37,37 0 1,1 -74,0"
                             />
                           </defs>
                           <text>
                             <textPath href="#circle">
-                              Can't Find your CTO Type? Can't Find your CTO Type? Can't Find your CTO Type?{" "}
+                              Can't Find your CTO Type? Can't Find your CTO Type? Can't Find your CTO Type?
                             </textPath>
                           </text>
                         </svg>
