@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import StartProject from "../components/PagesComponent/StartProject";
@@ -19,7 +20,24 @@ const ContactUs = () => {
     </Layout>
   );
 };
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query MyStaticQuery {
+      allStrapiContactUs {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
 
-export const Head = () => <SEO title="Contact Us | Qbatch" />
+  const seoData = data.allStrapiContactUs.nodes[0].seo[0]
+
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+}
 
 export default ContactUs;

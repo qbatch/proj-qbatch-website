@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import CompanyBanner from "../components/PagesComponent/CompanyBanner";
@@ -24,11 +24,25 @@ const About = () => (
     <Clients />
   </Layout>
 );
-export const Head = () => (
-  <SEO
-    title="About Us | Qbatch"
-    description="We create products that make millions of lives easier every day ensuring real and lasting human experiences in the ever-changing world of innovation."
-  />
-)
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query aboutUsQuery {
+      allStrapiAboutUs {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
+
+  const seoData = data.allStrapiAboutUs.nodes[0].seo[0]
+  console.log(seoData, 'seoData')
+
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+}
 
 export default About;
