@@ -27,22 +27,7 @@ import {
 } from "../constants";
 
 const MobileApp = () => {
-     const data = useStaticQuery(graphql`
-       query MyQuery {
-         allStrapiMobileApp {
-           nodes {
-             seo {
-               keywords
-               metaDescription
-               metaTitle
-             }
-           }
-         }
-       }
-     `)
-  const seoData = data.allStrapiMobileApp.nodes[0].seo[0]
   return (
-    <>
       <Layout>
         <TechnicalExcellence
           heading="Robots won’t use your mobile apps, Humans will!"
@@ -122,8 +107,6 @@ const MobileApp = () => {
         <FaqSection faqQuestion={mobileAppFaq} />
         <StartProject />
       </Layout>
-      <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
-    </>
   )
 };
 
