@@ -1,4 +1,5 @@
 import React from "react";
+import { useStaticQuery, graphql } from 'gatsby';
 
 import SEO from "../components/Seo";
 import Layout from "../components/Layout/layout";
@@ -62,6 +63,25 @@ const Ecommerce = () => {
     </Layout>
   );
 };
-export const Head = () => <SEO title="ecommerce" />;
+
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query EcommerceQuery {
+      allStrapiEcommerce {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
+
+  const seoData = data.allStrapiEcommerce.nodes[0]?.seo[0]
+  
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+}
 
 export default Ecommerce;

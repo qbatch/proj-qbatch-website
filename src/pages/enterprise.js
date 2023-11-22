@@ -1,4 +1,5 @@
 import React from "react";
+import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
@@ -100,6 +101,24 @@ const Enterprise = () => {
   );
 };
 
-export const Head = () => <SEO title="enterprise software development" />;
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query EnterpriseQuery {
+      allStrapiEnterprise {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
+
+  const seoData = data.allStrapiEnterprise.nodes[0]?.seo[0]
+  
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+}
 
 export default Enterprise;

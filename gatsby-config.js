@@ -6,16 +6,16 @@ const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = env.parsed
 const strapiConfig = {
   apiURL,
   accessToken,
-  collectionTypes: ['home','contact'],
+  collectionTypes: ['home', 'contact', 'portfolio', 'about-us', 'contact-us', 'mobile-app','cto-service','web-app','product-design', 'ecommerce','enterprise'],
   queryLimit: 1000,
 }
 module.exports = {
   siteMetadata: {
     robots: ``,
-    title: ``,
+    title: `Qbatch`,
     description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
     keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
-    siteUrl: `https://eclectic-palmier-c4e68a.netlify.app/`,
+    siteUrl: `https://www.qbtach.com`,
     httpEquiv: `en-us`,
   },
   flags: {
