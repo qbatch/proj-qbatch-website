@@ -1,5 +1,6 @@
 import * as React from "react";
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby';
+
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import CompanyBanner from "../components/PagesComponent/CompanyBanner";
@@ -26,7 +27,7 @@ const About = () => (
 );
 export const Head = () => {
   const data = useStaticQuery(graphql`
-    query aboutUsQuery {
+    query AboutUsQuery {
       allStrapiAboutUs {
         nodes {
           seo {
@@ -39,9 +40,8 @@ export const Head = () => {
     }
   `)
 
-  const seoData = data.allStrapiAboutUs.nodes[0].seo[0]
-  console.log(seoData, 'seoData')
-
+  const seoData = data.allStrapiAboutUs.nodes[0]?.seo[0]
+  
   return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
 }
 

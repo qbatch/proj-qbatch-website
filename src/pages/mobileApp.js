@@ -127,5 +127,24 @@ const MobileApp = () => {
   )
 };
 
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query MobileAppQuery {
+      allStrapiMobileApp {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
+
+  const seoData = data.allStrapiMobileApp.nodes[0]?.seo[0] 
+
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
+}
 
 export default MobileApp;

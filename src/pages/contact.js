@@ -22,7 +22,7 @@ const ContactUs = () => {
 };
 export const Head = () => {
   const data = useStaticQuery(graphql`
-    query MyStaticQuery {
+    query ContactQuery {
       allStrapiContactUs {
         nodes {
           seo {
@@ -34,7 +34,7 @@ export const Head = () => {
       }
     }
   `)
-  const seoData = data.allStrapiContactUs.nodes[0].seo[0]
+  const seoData = data.allStrapiContactUs.nodes[0]?.seo[0]
   return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
 }
 
