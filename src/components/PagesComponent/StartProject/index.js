@@ -244,12 +244,12 @@ const Index = ({ page }) => {
                   onChange={() => toggleCheckbox('promotion')}
                 />
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
-                  <ReCaptcha
+                  {/* <ReCaptcha
                     action="homepage"
                     siteKey="6Lc47vwoAAAAAPn5GzX7tbV_mwo92EogNVvNeR0l"
                     onVerify={(token) => submit(token)}
                     submitted={submitted}
-                  />
+                  /> */}
                   <Button text="Submit" className="pt-md-0 pt-3" onClick={handleSubmit} />
                 </div>
               </div>
