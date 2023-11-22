@@ -27,8 +27,7 @@ const Index = () => {
       <Container>
         <div className="title-portion">
           <div className="inner">
-          <TextTransition springConfig={presets.molasses} direction="down">
-            <span>
+          <TextTransition springConfig={presets.molasses} direction="down" className="text-transition">
               <H1>
                 <span className="hire position-relative">
                   {contentChange ? (
@@ -39,20 +38,17 @@ const Index = () => {
                     'hire'
                   )}
                 </span>
-                {contentChange ? 'Stakeholders Trusted Us' : 'Dedicated Developers'}
+                <span className="d-inline-block">{contentChange ? 'Stakeholders Trusted Us' : 'Dedicated Developers'}</span>
                 <span className="for-furture">
                   {contentChange ? 'With Their Ideas & Investments,' : 'for a future'}{' '}
                   <span className="you-deserve fw-bold"> {contentChange ? 'Will You?' : 'You Deserve!'}</span>
                 </span>
               </H1>
-              <div className="inner-text">
                 <p className="paragraph">{contentChange ? stackHolder : enterprises}</p>
-              </div>
-            </span>
             </TextTransition>
-            <div className="d-flex justify-content-end">
-              <Button text="Let’s Start a Project" className="mx-lg-0 mx-auto secondary-btn" />
-            </div>
+          </div>
+          <div className="d-flex justify-content-end">
+            <Button text="Let’s Start a Project" className="mx-lg-0 mx-auto secondary-btn" />
           </div>
         </div>
         <div className="text-center add-space">

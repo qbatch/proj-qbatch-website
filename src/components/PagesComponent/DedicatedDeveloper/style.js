@@ -31,6 +31,9 @@ const DedicatedDeveloperWrapper = styled.section`
     ${media.sm`
      padding: 50px 0px;
   `}
+  .text-transition {
+    height: auto !important;
+  }
   }
 
   .hire {
