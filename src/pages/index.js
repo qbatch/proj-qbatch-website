@@ -17,7 +17,6 @@ import CreativeIntelligence from '../components/PagesComponent/CreativeIntellige
 import StartProject from '../components/PagesComponent/StartProject'
 
 const IndexPage = () => {
- 
   return (
     <Layout>
       <DedicatedDevelopment />
@@ -47,24 +46,24 @@ const IndexPage = () => {
   )
 }
 
-export const Head = () =>{
-   const data = useStaticQuery(graphql`
-     query MyQuery {
-       allStrapiHome {
-         nodes {
-           seo {
-             keywords
-             metaDescription
-             metaTitle
-           }
-         }
-       }
-     }
-   `)
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allStrapiHome {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
 
-   const seoData = data.allStrapiHome.nodes[0].seo
+  const seoData = data.allStrapiHome.nodes[0]?.seo[0] // Fix: Access the first element of the array
 
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
 }
 
 export default IndexPage

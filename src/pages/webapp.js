@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useStaticQuery, graphql } from 'gatsby'
 import SEO from "../components/Seo";
 import Layout from "../components/Layout/layout";
 import WebappBanner from "../components/PagesComponent/WebappBanner";
@@ -22,6 +22,7 @@ import WebExpertise from "../components/PagesComponent/TechnicalGuidance";
 import { lostToLaunchedItems, webExpertiseData, peopleFirstData } from "../constants";
 
 const webapp = () => {
+
   return (
     <Layout>
       <WebappBanner />
@@ -70,5 +71,23 @@ const webapp = () => {
     </Layout>
   );
 };
-export const Head = () => <SEO title="webapp development" />;
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allStrapiWebApp {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
+
+  const seoData = data.allStrapiWebApp.nodes[0]?.seo[0] // Fix: Access the first element of the array
+
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
+}
 export default webapp;
