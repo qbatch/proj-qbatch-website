@@ -54,34 +54,34 @@ const whyChooseQbatchData = [
   { id: 9, icon: '/people-first-icon-7.svg', desc: "Great Value for Money",}
 ];
 const softwareProductData = [
-  { id: 1, icon: '/people-first-icon-1.svg', desc: "SaaS Platforms" },
-  { id: 2, icon: '/people-first-icon-2.svg', desc: "Minimum Viable Product"},
-  { id: 3, icon: '/people-first-icon-3.svg', desc: "E-learning Platforms"},
-  { id: 4, icon: '/people-first-icon-4.svg', desc: "Online Marketplaces"},
-  { id: 5, icon: '/people-first-icon-5.svg', desc: "Data Visualization Dashboards"},
-  { id: 6, icon: '/people-first-icon-6.svg', desc: "Content Management Platforms"},
-  { id: 7, icon: '/people-first-icon-7.svg', desc: "Location-based Apps",},
-  { id: 8, icon: '/people-first-icon-8.svg', desc: "Warehouse Management Systems",},
-  { id: 9, icon: '/people-first-icon-5.svg', desc: "Online Streaming Platforms"},
-  { id: 10, icon: '/people-first-icon-6.svg', desc: "Booking Apps"},
-  { id: 11, icon: '/people-first-icon-7.svg', desc: "On-demand services platforms",},
-  { id: 12, icon: '/people-first-icon-8.svg', desc: "Warehouse Management Systems",}
+  { id: 1, icon: '/saas-platforms.svg', desc: "SaaS Platforms" },
+  { id: 2, icon: '/minimum-viable-product.svg', desc: "Minimum Viable Product"},
+  { id: 3, icon: '/e-learning-platforms.svg', desc: "E-learning Platforms"},
+  { id: 4, icon: '/online-marketplace.svg', desc: "Online Marketplaces"},
+  { id: 5, icon: '/data-visualization-dashboards.svg', desc: "Data Visualization Dashboards"},
+  { id: 6, icon: '/content-management.svg', desc: "Content Management Platforms"},
+  { id: 7, icon: '/location-based-apps.svg', desc: "Location-based Apps",},
+  { id: 8, icon: '/warehouse-management.svg', desc: "Warehouse Management Systems",},
+  { id: 9, icon: '/online-streaming-platforms.svg', desc: "Online Streaming Platforms"},
+  { id: 10, icon: '/booking-apps.svg', desc: "Booking Apps"},
+  { id: 11, icon: '/on-demand-services-platforms.svg', desc: "On-demand services platforms",},
+  { id: 12, icon: '/sap-enterprise-tools.svg', desc: "Warehouse Management Systems",}
 ];
 const developmentProcessData = [
   {
-    image: '/slide-img.jpeg',
+    image: '/discovery-phase-icon.svg',
     duration: '1-2 weeks',
     title: 'Discovery Phase',
     description: 'We test and validate your unproven concept according to the market situation before securing your idea and investment.',
   },
   {
-    image: '/slide-img.jpeg',
+    image: '/mvp-development-icon.svg',
     duration: '6 - 8 weeks',
     title: 'MVP Development',
     description: 'We finalize crucial features and functionality to reduce time to market and make the product necessarily and publicly useful.',
   },
   {
-    image: '/slide-img.jpeg',
+    image: '/support-icon.svg',
     duration: 'Retainer Based',
     title: 'Maintenance & Support',
     description: 'It may take a few weeks to deploy and make your product available to the general masses. We continue our support to growing your product.',
@@ -1761,27 +1761,27 @@ const ctoList = [
 ];
 const productDesignlist = [
   {
-    img: '/slide-img.jpeg',
+    img: '/product-design-icon-1.svg',
     description: 'Why do you need software product design and development services?',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/product-design-icon-2.svg',
     description: 'I’m looking to partner with a dedicated team of product developers to grow my startup',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/product-design-icon-3.svg',
     description: 'I’m looking to launch a stellar MVP and reach out to investors for their trust and investment.',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/product-design-icon-4.svg',
     description: 'I’m planning to launch my product in the market but prefer a technical audit beforehand.',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/product-design-icon-5.svg',
     description: 'I’m seeking to build a digital product from scratch in collaboration with industry professionals.',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/product-design-icon-6.svg',
     description: 'I already have a product that doesn’t respond to user needs and fails to meet business expectations.',
   },
 ]
@@ -1819,42 +1819,42 @@ const technologicalCapacityData = [
  ]
 const productDesignData = [
   {
-   icon: "/business-needs.svg",
+   icon: "/help-icon-1.svg",
    title: "Verifying and Prioritizing Ideas",
    desc: "Is your backlog full of great ideas but you cannot decide which idea should flow first? Our product developers help you articulate your ideas into utility-driven products to win bigger stakeholder buy-in. "
   },
   {
-   icon: "/user-expectations.svg",
+   icon: "/help-icon-5.svg",
    title: "Fostering Ownership",
    desc: "Suffering from unproductive debates, weak ideas, and repeated market challenges? We instill ownership by aligning your team’s vision and goals, so they only deliver results and not painful experiences."
   },
   {
-   icon: "/operational-efficiency.svg",
+   icon: "/help-icon-2.svg",
    title: "Product Thinking DNA",
    desc: "Our product designers live and breathe product thinking. We deeply empathize with the end user and respond to their expectations via flawless product functionality and performance."
   },
   {
-   icon: "/budget-constraints.svg",
+   icon: "/help-icon-6.svg",
    title: "Human-Centric Product Design",
    desc: "Did you ever abandon or uninstall a mobile app due to poor design? Ever imagined the same for your product? Thus, we assure your product design is not just stunning. It is also easy to use۔"
   },
   {
-   icon: "/technology-selection.svg",
+   icon: "/help-icon-3.svg",
    title: "Product Market-Fit",
    desc: "We critically study and analyze market needs and build purpose-driven solutions as a response. As the market evolves, we quickly test, adapt, and make changes in the development phase."
   },
   {
-   icon: "/existing-systems.svg",
+   icon: "/help-icon-7.svg",
    title: "User-First Product Development",
    desc: "Our digital product development team builds event-driven and self-healing architectures that constantly support new feature requests and changes, aligning well with software delivery and business goals."
   },
   {
-   icon: "/existing-systems.svg",
+   icon: "/help-icon-4.svg",
    title: "Optimized Response & Conversions",
    desc: "Is your current product responding to your users’ needs? We perform in-depth architectural reviews and audits to improve conversions and returns of your product before testing new ideas."
   },
   {
-   icon: "/existing-systems.svg",
+   icon: "/help-icon-8.svg",
    title: "DevOps Mindset",
    desc: "Our “Shift-left” approach and DevOps mindset motivate our product developers to follow the best coding practices – delivering quality-driven, secure, and adaptive software."
   },
@@ -1977,7 +1977,7 @@ const customEnterpriseData = [
 ]
 const cycleProductData = [
   {
-    img: "/enterprise-application.svg",
+    img: "/enterprise-mobility-service.svg",
     title: "Discovery Workshops",
     description: "Converting your idea into a utility requires a deliberate understanding of your end users' needs and real-world problems. Our enterprise software product development as a service includes understanding the changing user demands and helping you build and launch dynamic, feature-packed digital products."
   },
