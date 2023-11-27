@@ -1,14 +1,22 @@
-import React from 'react'
-import Container from '../../UiComponent/Container'
-import BlogDetailsWrapper from './style'
+import React from "react";
+import Container from "../../UiComponent/Container";
+import BlogDetailsWrapper from "./style";
+import { navigate } from "gatsby";
 
 const Index = () => {
   return (
     <BlogDetailsWrapper>
       <Container>
-        <div className="breadcrumb">Home {">"} Blog {">"} Blog detail page</div>
+        <div className="breadcrumb">
+          Home {">"} Blog {">"} Blog detail page
+        </div>
         <h1 className="title d-flex gap-4">
-          <img src="/back-arrow.svg" alt="no-arrow" />
+          <img
+            src="/back-arrow.svg"
+            alt="no-arrow"
+            className="pointer"
+            onClick={() => navigate("/blog")}
+          />
           Blog Title will come here
         </h1>
         <div className="d-flex gap-72">
@@ -28,7 +36,7 @@ const Index = () => {
         </div>
       </Container>
     </BlogDetailsWrapper>
-  )
-}
+  );
+};
 
 export default Index;

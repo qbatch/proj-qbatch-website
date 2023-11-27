@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import Container from "../../UiComponent/Container";
 import Button from "../../../components/UiComponent/Button";
+import PrimaryButton from "../../UiComponent/PrimaryButton";
+import { blogCardsData } from "../../../constants";
+
+import BlogCardsWrapper from "../BlogCards/style";
 import ContentWrapper from "./style";
 
 const Index = () => {
@@ -11,7 +15,7 @@ const Index = () => {
     setTarget(value);
     const element = document.getElementById(value);
     if (element) {
-      // element.scrollIntoView({ behavior: 'smooth', block: 'start',top: 0 })
+      element.scrollIntoView({ behavior: "smooth", block: "start", top: 0 });
     }
   };
   const socialIcons = [
@@ -215,6 +219,41 @@ const Index = () => {
                 </div>
                 <div className="might-section">
                   <h3>You might also like…</h3>
+                  <BlogCardsWrapper>
+                    <Row>
+                      {blogCardsData.slice(0, 2).map((card, ind) => (
+                        <Col md={6}>
+                          <div className="inner" key={ind}>
+                            <div className="card-img">
+                              <img src={card.img} alt={card.title} />
+                              <div className="d-flex align-items-center justify-content-between">
+                                <div className="blog-badge">Blog</div>
+                                <span className="hours">17 Hours ago</span>
+                              </div>
+                            </div>
+                            <div className="inner-content">
+                              <p>{card.title}</p>
+                              <div className="d-flex gap-2">
+                                <div className="blog-badge">{card.category}</div>
+                                <div className="blog-badge">Cybersecurity</div>
+                              </div>
+                              <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
+                                <span>Author Name Here</span>
+                                <div className="timer">
+                                  <img src="/timer-blue.svg" alt="timer" />
+                                  <span>5 Minutes Read</span>
+                                </div>
+                              </div>
+                              <PrimaryButton
+                                text="Explore More"
+                                fontSize="16px"
+                              />
+                            </div>
+                          </div>
+                        </Col>
+                      ))}
+                    </Row>
+                  </BlogCardsWrapper>
                 </div>
               </div>
             </Col>
@@ -257,6 +296,10 @@ const Index = () => {
               </div>
               <div className="subsribe-button">
                 <h2>Get the top stories like these delivered to your inbox</h2>
+                <div className="subscribe-email">
+                  <img src="/email.svg" alt="email" />
+                  <input type="email" placeholder="Email Address" />
+                </div>
                 <div>
                   <Button className="secondary-btn" text="We Can Help" />
                 </div>

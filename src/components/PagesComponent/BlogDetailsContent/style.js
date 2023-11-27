@@ -6,10 +6,7 @@ const ContentWrapper = styled.div`
     margin: 0 auto;
   }
   .content-section {
-    /* height: calc(100vh - 100px);
-    overflow: auto; */
     .inner-content {
-      padding: 97px 0px;
       padding-bottom: 49px;
       &.small-space {
         padding: 75px 0px;
@@ -68,7 +65,6 @@ const ContentWrapper = styled.div`
     margin-top: 51px;
   }
   .author-name {
-    margin-top: 96px;
     padding: 32px;
     border-radius: 24px 24px 0px 24px;
     border: 1px solid ${({ theme }) => theme.colors.disableColor};
@@ -97,7 +93,7 @@ const ContentWrapper = styled.div`
     margin: 32px 0;
   }
   .might-section {
-    margin: 73px 0;
+    margin-top: 72px;
   }
   .side-scroll {
     position: sticky;
@@ -129,13 +125,13 @@ const ContentWrapper = styled.div`
     }
     .title-ul {
       opacity: 0;
-      margin-top: 30px;
+      margin-top: 26px;
       transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
       .title {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
         color: ${({ theme }) => theme.colors.textMedium};
-        margin-left: 19px;
-        margin-bottom: 10px;
+        margin-left: 20px;
+        height: 32px;
         cursor: pointer;
         &.active {
           color: ${({ theme }) => theme.colors.primaryColor};
@@ -148,15 +144,56 @@ const ContentWrapper = styled.div`
     height: 553px;
     background-repeat: no-repeat;
     margin-left: 40px;
-    padding: 53px 49px;
+    padding: 48px;
     margin-top: 62px;
     background-position: right;
     background-size: cover;
     margin-bottom: 12px;
+    border-radius: 24px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2 {
-      color: ${({ theme }) => theme.colors.whiteColor};
-      line-height: 51px;
+      color: ${({ theme }) => theme.colors.dividerColor};
+      line-height: 52px;
+      margin-bottom: 0;
     }
+    .subscribe-email {
+      display: flex;
+      gap: 12px;
+      background-color: ${({ theme }) => theme.colors.whiteColor};
+      padding: 16px;
+      border-radius: 8px;
+      margin: 56px 0 48px;
+      input {
+        border: none;
+        color: ${({ theme }) => theme.colors.textMedium};
+        &::placeholder {
+          color: ${({ theme }) => theme.colors.bodyLight};
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .scroll-propgress {
+    position: fixed;
+    top: 81px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .progress-container {
+    background-color: ${({ theme }) => theme.colors.whiteColor};
+    height: 4px;
+    width: 100%;
+  }
+
+  .progress-bar {
+    background-color: ${({ theme }) => theme.colors.primaryColor};
+    height: 4px;
+    width: 5%;
   }
 `;
 export default ContentWrapper;

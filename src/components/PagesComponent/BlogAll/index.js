@@ -7,7 +7,7 @@ import DeliveredToInbox from "../../PagesComponent/DeliveredToInbox";
 import BlogCards from "../../PagesComponent/BlogCards";
 
 import BlogAllWrapprt from "./style";
-import { Link } from "gatsby";
+import { navigate } from "gatsby";
 
 const index = ({ data }) => {
   return (
@@ -38,12 +38,11 @@ const index = ({ data }) => {
               <span>Author Name Here</span>
               <span>23 June, 2023</span>
             </div>
-            <Link to="/blogDetails">
               <Button
                 text="Explore More"
                 className="header-btn blog-banner-btn"
+                onClick={()=> navigate("/blogDetails")}
               />
-            </Link>
           </div>
         </div>
       </div>

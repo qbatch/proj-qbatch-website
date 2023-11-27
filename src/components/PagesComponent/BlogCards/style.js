@@ -64,7 +64,7 @@ const BlogCardsWrapper = styled.div`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
         }
       }
-      .author-name {
+      .read-time {
         margin: 26px 0 36px;
         color: ${({ theme }) => theme.colors.textMedium};
       }
