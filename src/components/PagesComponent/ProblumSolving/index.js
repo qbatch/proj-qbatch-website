@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'gatsby'
 import { Row, Col } from "react-bootstrap";
+import { navigate } from 'gatsby';
 
 import Container from "../../UiComponent/Container";
 
@@ -43,7 +44,7 @@ const Index = (props) => {
                       </textPath>
                     </text>
                   </svg>
-                  <ArrowDownward className="red-arrow" />
+                  <ArrowDownward onClick={() => navigate("/contact")}  className="red-arrow" />
                 </div>
               </div>
             </div>

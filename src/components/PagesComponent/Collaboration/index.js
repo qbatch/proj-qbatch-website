@@ -53,9 +53,9 @@ const Index = ({ headingClass }) => {
                       <p>{list.description}</p>
                     </div>
                   </div>
-                  <div className="arrow-box">
+                  {/* <div className="arrow-box">
                     <BsArrowRight />
-                  </div>
+                  </div> */}
                 </div>
               );
             })}

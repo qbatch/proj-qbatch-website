@@ -69,7 +69,7 @@ const Index = () => {
                       <h3 className="text-h4"> {title.title}</h3>
                     </div>
                     <div className="arrow-box">
-                      <ArrowDown className="arrow-right" />
+                      {/* <ArrowDown className="arrow-right" /> */}
                     </div>
                   </div>
                   ))}
