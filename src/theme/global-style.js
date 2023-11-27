@@ -98,7 +98,18 @@ const GlobalStyles = createGlobalStyle`
     .header-drawer {
       overflow: auto;
     }
-
+    .blog-badge {
+      padding: 6px 12px;
+      background-color: ${({ theme }) => theme.colors.whiteColor};
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+      font-weight: ${({ theme }) => theme.fontWeight.baseFontSizeXs};
+      color: ${({ theme }) => theme.colors.primaryColor};
+      border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+      height: 28px;
+      box-sizing: border-box;
+      border-radius: 32px;
+      display: inline-block;
+    }
     @media (max-width: 1200px) {
       h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};

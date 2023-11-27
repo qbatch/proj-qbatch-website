@@ -2022,7 +2022,57 @@ const cycleProductData = [
     description: "After a rigorous series of QA audits, automated tests, TTD, and code reviews, we bring your product to fruition with continued support featuring continuous integration and delivery and needed improvements to keep your product relevant in the raging technology marathon."
   },
 ]
-
+const blogCardsData = [
+  {
+    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
+    title: "Blog Title will come here up to two lines.",
+    category: "Software Development",
+    content:
+      "Blog description in maximum two lines will come here. Blog description in max two lines will come here.",
+  },
+  {
+    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
+    title: "Blog Title will come here up to two lines Latest Blog Title Here",
+    category: "Cybersecurity",
+    content:
+      "Latest insight details will come here. Or we can give latest insight details will come here. est insight details will come here est insight details will come here",
+  },
+  {
+    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
+    title: "Blog Title will come here up to two lines Latest Blog Title Here",
+    category: "Software Development",
+    content:
+      "Latest insight details will come here. Or we can give latest insight details.",
+  },
+  {
+    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
+    title: "Latest Insight Title Here",
+    category: "Cybersecurity",
+    content:
+      "Latest insight details will come here. Or we can give latest insight details.",
+  },
+  {
+    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
+    title: "Latest Insight Title Here",
+    category: "Software Development",
+    content:
+      "Latest insight details will come here. Or we can give latest insight details.",
+  },
+  {
+    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
+    title: "Latest Insight Title Here",
+    category: "Cybersecurity",
+    content:
+      "Latest insight details will come here. Or we can give latest insight details.",
+  },
+  {
+    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
+    title: "Latest Insight Title Here",
+    category: "Software Development",
+    content:
+      "Latest insight details will come here. Or we can give latest insight details.",
+  },
+];
 
 export {
   homeTiles,
@@ -2069,5 +2119,6 @@ export {
   softwareProductData,
   developmentProcessData,
   productDesignFaq,
-  whyChooseQbatchData
+  whyChooseQbatchData,
+  blogCardsData
 }
