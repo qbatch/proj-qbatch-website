@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button} from 'react-bootstrap'
+import { Button } from "react-bootstrap";
 
 const PrimaryButtonWrapper = styled(Button)`
   display: flex;
@@ -9,7 +9,9 @@ const PrimaryButtonWrapper = styled(Button)`
   background-color: transparent;
   padding: 0;
   border: 0;
-  font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+  font-size: ${({ theme }) =>
+    (props) =>
+      props.fontSize ? `${props.fontSize}` : theme.fonts.baseFontSizeSm};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   min-width: auto;
   .btn-text {

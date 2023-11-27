@@ -5,27 +5,27 @@ import SocialWrapper from "./style";
 const socialIcons = [
   {
     img: "/facebook",
-    to: "https://www.google.com",
+    to: "https://www.facebook.com/qbatch/",
   },
   {
     img: "/instagram",
-    to: "/",
+    to: "https://www.instagram.com/qbatch/",
   },
   {
     img: "/linkedin",
-    to: "/",
+    to: "https://www.linkedin.com/company/qbatch/",
   },
   {
     img: "/twitter",
-    to: "/",
+    to: "https://twitter.com/qbatchofficial",
   },
   {
     img: "/behance",
-    to: "/",
+    to: "https://www.behance.net/ibrahimzahoor",
   },
   {
     img: "/youtube",
-    to: "/",
+    to: "https://www.youtube.com/@qbatch6700",
   },
 ];
 
@@ -34,7 +34,7 @@ const Index = () => {
     <SocialWrapper>
       <div className="d-flex flex-wrap social">
         {socialIcons.map((item, ind) => (
-          <a href={item.to}>
+          <a href={item.to} target="_blank" rel="noreferrer">
             <div className={`social__${item.img.replace("/", "")}`} key={ind}>
               <img src={`${item.img}-icon.svg`} alt={item.img} />
             </div>

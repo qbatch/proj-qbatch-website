@@ -47,6 +47,16 @@ const ButtonWrapper = styled(Button)`
         border: 1px solid ${({ theme }) => theme.colors.whiteColor};
       }
     }
+    &.blog-banner-btn {
+      background-color: transparent;
+      color: ${({ theme }) => theme.colors.dividerColor};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      padding: 3px 3px 3px 14px;
+      &:hover {
+        background-color:  ${({ theme }) => theme.colors.primaryColor};
+        color: ${({ theme }) => theme.colors.whiteColor};
+      }
+    }
   }
 
   .button-icon {
