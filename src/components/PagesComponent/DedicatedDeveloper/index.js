@@ -3,6 +3,7 @@ import TextTransition, { presets } from 'react-text-transition';
 
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
+import { navigate } from 'gatsby';
 
 import { homeTiles } from "../../../constants/index";
 import { DedicatedDeveloperWrapper, H1 } from "./style";
@@ -48,7 +49,7 @@ const Index = () => {
             </TextTransition>
           </div>
           <div className="d-flex justify-content-end">
-            <Button text="Let’s Start a Project" className="mx-lg-0 mx-auto secondary-btn" />
+            <Button onClick={() => navigate("/contact")}  text="Let’s Start a Project" className="mx-lg-0 mx-auto secondary-btn" />
           </div>
         </div>
         <div className="text-center add-space">

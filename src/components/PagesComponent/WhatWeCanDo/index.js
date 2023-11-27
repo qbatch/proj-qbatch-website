@@ -29,7 +29,7 @@ const Index = () => {
                   <div className={i !== 5 ? "service" : ""}>
                     {i === 5 ? (
                       <div className="services-btn">
-                        <Button text="View All Services" />
+                        {/* <Button text="View All Services" /> */}
                       </div>
                     ) : (
                       <div className="d-flex align-items-start">

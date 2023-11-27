@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { navigate } from 'gatsby';
 
 import { Row, Col } from "react-bootstrap";
 
@@ -96,7 +97,7 @@ const Index = ({ heading, paragraph, componentName }) => {
             <p className="paragraph">{paragraph}</p>
           </div>
           <div className="mt-md-4 mt-0">
-            <Button text="Explore More" />
+            <Button onClick={() => navigate("/portfolio")}  text="Explore More" />
           </div>
         </div>
       </Container>
