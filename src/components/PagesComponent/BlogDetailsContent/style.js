@@ -6,8 +6,10 @@ const ContentWrapper = styled.div`
     margin: 0 auto;
   }
   .content-section {
+    padding-top: 96px;
+    scroll-behavior: smooth;
     .inner-content {
-      padding-bottom: 49px;
+      margin-bottom: 49px;
       &.small-space {
         padding: 75px 0px;
         padding-bottom: 0px;
@@ -33,19 +35,7 @@ const ContentWrapper = styled.div`
         }
       }
     }
-    .can-help {
-      background-image: url("/we-can-help.svg");
-      width: 100%;
-      background-repeat: no-repeat;
-      padding: 74px 0;
-      text-align: center;
-      h4 {
-        color: ${({ theme }) => theme.colors.whiteColor};
-        margin-left: 6px;
-        letter-spacing: 0px;
-        margin-bottom: 3px;
-      }
-    }
+
     .social-links {
       .title {
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
@@ -97,16 +87,53 @@ const ContentWrapper = styled.div`
   }
   .side-scroll {
     position: sticky;
-    top: 30%;
-    display: flex;
-    &:hover {
-      .dashed-ul {
-        opacity: 0;
-        transform: translateX(10px);
+    top: 55%;
+    left: 0;
+    height: 100%;
+    width: 108px;
+    overflow: hidden;
+        a {
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+          color: ${({ theme }) => theme.colors.textMedium};
+          display: block;
+          border-bottom: none;
+          &.title {
+            width: 150px;
+            height: 32px;
+            transform: translateX(-104%);
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 1;
+          }
+          &.active {
+            height: 0px;
+            color: ${({ theme }) => theme.colors.primaryColor};
+          }
+          &.line {
+            width: 28px;
+            border-bottom: 1px solid ${({ theme }) => theme.colors.textMedium};
+            height: 0;
+            margin-bottom: 0px;
+            opacity: 1;
+
+            &.active {
+              height: 32px;
+              width: 28px;
+              border-bottom: 1px solid ${({ theme }) => theme.colors.primaryColor};
+            }
+          }
+        
       }
-      .title-ul {
-        opacity: 1;
-        transform: translateX(-44px);
+      &:hover {
+        a {
+          &.title {
+            transform: translateX(0);
+            opacity: 1;
+            margin-left:4px;
+          }
+          &.line {
+            opacity: 0;
+          }
+        }
       }
     }
 
@@ -140,7 +167,7 @@ const ContentWrapper = styled.div`
     }
   }
   .subsribe-button {
-    background-image: url("/email-bg.svg");
+    background-image: url('/email-bg.svg');
     height: 553px;
     background-repeat: no-repeat;
     margin-left: 40px;
@@ -195,5 +222,18 @@ const ContentWrapper = styled.div`
     height: 4px;
     width: 5%;
   }
-`;
+  .can-help {
+    background-image: url('/we-can-help.svg');
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 74px 0;
+    text-align: center;
+    h4 {
+      color: ${({ theme }) => theme.colors.whiteColor};
+      margin-left: 6px;
+      letter-spacing: 0px;
+      margin-bottom: 3px;
+    }
+  }
+`
 export default ContentWrapper;
