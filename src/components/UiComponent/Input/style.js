@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import { media } from "../../../theme/media-mixins";
 
-const Input = styled(Form)`
+const Input = styled.div`
   .bottom-space {
     margin-bottom: ${(props) => (props.base ? `${props.base}` : "8px")};
   }
@@ -22,12 +22,21 @@ const Input = styled(Form)`
     &:focus {
       box-shadow: none;
     }
-    ${media.sm `
+    ${media.sm`
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     &::placeholder{
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
     }
     `}
   }
+  .form-control:valid {
+    background-image: none;
+    border-color: ${({ theme }) => theme.colors.dividerColor};
+    &:focus {
+      box-shadow: none;
+      border-color: ${({ theme }) => theme.colors.dividerColor};
+    }
+  }
+   
 `;
 export default Input;

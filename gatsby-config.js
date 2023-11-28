@@ -6,7 +6,7 @@ const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = env.parsed
 const strapiConfig = {
   apiURL,
   accessToken,
-  collectionTypes: ['home', 'contact', 'portfolio', 'about-us', 'contact-us', 'mobile-app','cto-service','web-app','product-design', 'ecommerce','enterprise'],
+  collectionTypes: ['home', 'contact', 'portfolio', 'about-us', 'contact-us', 'mobile-app','cto-service','web-app','product-design', 'ecommerce','enterprise', "blog"],
   queryLimit: 1000,
 }
 module.exports = {

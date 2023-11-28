@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
@@ -69,7 +70,6 @@ const BlogPage = () => {
     },
   ];
   
-
   return (
     <Layout>
       <BlogBanner />
@@ -84,6 +84,24 @@ const BlogPage = () => {
     </Layout>
   );
 };
-export const Head = () => <SEO title="My Blog Posts" />;
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query BlogQuery {
+      allStrapiBlog {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
+
+  const seoData = data.allStrapiBlog.nodes[0]?.seo[0]
+  
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+}
 
 export default BlogPage;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const ContentWrapper = styled.div`
   .row {
@@ -9,7 +10,7 @@ const ContentWrapper = styled.div`
     padding-top: 96px;
     scroll-behavior: smooth;
     .inner-content {
-      margin-bottom: 49px;
+      margin-bottom: 72px;
       &.small-space {
         padding: 75px 0px;
         padding-bottom: 0px;
@@ -59,6 +60,9 @@ const ContentWrapper = styled.div`
     border-radius: 24px 24px 0px 24px;
     border: 1px solid ${({ theme }) => theme.colors.disableColor};
     margin-left: 40px;
+    ${media.sm`
+      margin-left: 0;
+    `}
     .avatar-box {
       gap: 23px;
       margin-bottom: 24px;
@@ -66,6 +70,7 @@ const ContentWrapper = styled.div`
         font-size: 20px;
         color: ${({ theme }) => theme.colors.primaryColor};
         line-height: 32px;
+        width: 150px
       }
     }
     .title {
@@ -92,6 +97,9 @@ const ContentWrapper = styled.div`
     height: 100%;
     width: 108px;
     overflow: hidden;
+    ${media.sm`
+      display: none;
+    `}
         a {
           font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
           color: ${({ theme }) => theme.colors.textMedium};
@@ -165,21 +173,24 @@ const ContentWrapper = styled.div`
         }
       }
     }
-  }
+
   .subsribe-button {
     background-image: url('/email-bg.svg');
-    height: 553px;
+    height: auto;
     background-repeat: no-repeat;
     margin-left: 40px;
     padding: 48px;
     margin-top: 62px;
     background-position: right;
     background-size: cover;
-    margin-bottom: 12px;
+    margin-bottom: 60px;
     border-radius: 24px 24px 0 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    ${media.sm`
+      margin-left: 0;
+    `}
     h2 {
       color: ${({ theme }) => theme.colors.dividerColor};
       line-height: 52px;
@@ -192,9 +203,11 @@ const ContentWrapper = styled.div`
       padding: 16px;
       border-radius: 8px;
       margin: 56px 0 48px;
+      width: 100%;
       input {
         border: none;
         color: ${({ theme }) => theme.colors.textMedium};
+        width: 100%;
         &::placeholder {
           color: ${({ theme }) => theme.colors.bodyLight};
         }
@@ -226,14 +239,17 @@ const ContentWrapper = styled.div`
     background-image: url('/we-can-help.svg');
     width: 100%;
     background-repeat: no-repeat;
-    padding: 74px 0;
+    padding: 74px 40px;
     text-align: center;
+    border-radius: 24px 24px 0 24px;
     h4 {
-      color: ${({ theme }) => theme.colors.whiteColor};
-      margin-left: 6px;
+      color: ${({ theme }) => theme.colors.dividerColor};
       letter-spacing: 0px;
-      margin-bottom: 3px;
+      line-height: 32px;
+      max-width: 568px;
+      margin: 0 auto;
     }
   }
+  
 `
 export default ContentWrapper;
