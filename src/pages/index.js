@@ -66,7 +66,7 @@ export const Head = () => {
     }
   `);
 
-  const seoData = data.allStrapiHome.nodes[0]?.seo;
+  const seoData = data.allStrapiHome.nodes[0]?.seo
 
   return (
     <SEO

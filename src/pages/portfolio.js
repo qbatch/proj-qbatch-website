@@ -38,9 +38,9 @@ export const Head = () => {
     }
   `)
 
-  const seoData = data.allStrapiPortfolio.nodes[0]?.seo[0] 
+  const seoData = data.allStrapiPortfolio.nodes[0]?.seo
 
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
+  return <SEO title={seoData?.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
 }
 
 export default Portfolio;

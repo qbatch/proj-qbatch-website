@@ -1,47 +1,15 @@
 import React, { useState, useRef } from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 // import { Player, BigPlayButton, LoadingSpinner } from "video-react";
 
-import ProjectIcon from "../../../assets/images/icons/ecom-circle-icon.svg";
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
 import ProvenExperienceWrapper from "./style";
-
-const projectSlides = [
-  {
-    clientImage: '/client-1.svg',
-    testimonial:
-      '“It’s been my pleasure to work with the development team at !batch for the past 3 years ona number of very large and complex web applications. The attention to detail and level of communication has been superior.”',
-    title: 'Michael Flanagan',
-    subtitle: 'Minmax Industries',
-  },
-  {
-    clientImage: 'valentine.png',
-    testimonial:
-      '“It was fantastic working with Qbatch. They had a great eye for detail and were able to deliver the requested design with thoroughness and full quality. I look forward to hiring them again for future design work.”',
-    title: 'Michael Flanagan',
-    title: 'Valentine Nwachukwu',
-    subtitle: 'Zaden Technologies',
-  },
-  {
-    clientImage: '/ershad.png',
-    testimonial:
-      '“One of the most hardworking guys I have ever seen! Will definitely work with Qbatch team in the future!”',
-    title: 'Ershad Anari',
-    subtitle: 'SecondBind',
-  },
-  {
-    clientImage: '/victor-simon.png',
-    testimonial:
-      '“Qbatch worked with us for 2 years and their team has become one of the most important members of our team. Very skilful and highly responsible.”',
-    title: 'Victor Simon',
-    subtitle: 'North Aware',
-  },
-]
 
 const responsive = {
   superLargeDesktop: {
@@ -81,14 +49,34 @@ const Index = () => {
     carousel2Ref.current.next();
   };
 
+  const data = useStaticQuery(graphql`
+    query testimonialsQuery {
+      allStrapiContactUs {
+        nodes {
+          testimonials {
+            clientName
+            feedback
+            agencyName
+            clientImg {
+              localFile {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+    `);
+    const testimonialsData = data.allStrapiContactUs.nodes[0].testimonials;
+
   return (
     <ProvenExperienceWrapper>
       <div className="section-slider">
         <Carousel responsive={responsive} arrows={false} ref={carousel1Ref} swipeable={false} draggable={false}>
-          {projectSlides.map((item, ind) => (
+          {testimonialsData.map((item, ind) => (
             <div className="testimonial-wrapper" key={ind}>
-              <img className="client-image" src={item.clientImage} />
-              <p className="testimonial-text">{item.testimonial}</p>
+              <img className="client-image" src={item.clientImg.localFile.url} alt="client" />
+              <p className="testimonial-text">{item.feedback}</p>
               {/* <Player playsInline src={item.projectVideo}>
                   <BigPlayButton position="center" />
                   <LoadingSpinner />
@@ -98,11 +86,11 @@ const Index = () => {
         </Carousel>
         <div className="bottom-slider">
           <Carousel responsive={responsiveTitle} arrows={false} ref={carousel2Ref} swipeable={false} draggable={false}>
-            {projectSlides.map((item, ind) => (
+            {testimonialsData.map((item, ind) => (
               <div className="testimonial-title" key={ind}>
                 <div className="inner-text">
-                  <h3 className="text-h4 mb-0">{item.title}</h3>
-                  <p>{item.subtitle}</p>
+                  <h3 className="text-h4 mb-0">{item.clientName}</h3>
+                  <p>{item.agencyName}</p>
                 </div>
               </div>
             ))}
@@ -121,14 +109,14 @@ const Index = () => {
               </span>
               <span>/</span>
               <span>
-                {projectSlides.length < 10 && 0}
-                {projectSlides.length}
+                {testimonialsData.length < 10 && 0}
+                {testimonialsData.length}
               </span>
             </span>
             <ArrowRightIcon
               onClick={() => {
                 handleButtonClickNext()
-                setCurrentInd(currentInd === projectSlides.length ? currentInd : currentInd + 1)
+                setCurrentInd(currentInd === testimonialsData.length ? currentInd : currentInd + 1)
               }}
             />
           </div>
