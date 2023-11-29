@@ -19,6 +19,13 @@ const Index = ({ maxCols }) => {
           <Row>
             <Col lg={4} sm={12}>
               <h2 className="heading">Awards & Recognition</h2>
+              {maxCols && (
+                <Col sm={12}>
+                  <div className="btn-awards">
+                    <Button text="Explore More" />
+                  </div>
+                </Col>
+              )}
             </Col>
             <Col lg={8} sm={12}>
               <Row className="awards-logos">
@@ -31,18 +38,11 @@ const Index = ({ maxCols }) => {
                 ))}
               </Row>
             </Col>
-            {maxCols && (
-              <Col sm={12}>
-                <div className="btn-awards">
-                  <Button text="Explore More" />
-                </div>
-              </Col>
-            )}
           </Row>
         </Container>
       </div>
     </AwardsWrapper>
-  );
+  )
 };
 
 export default Index;
