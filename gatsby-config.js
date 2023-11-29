@@ -1,7 +1,7 @@
 const env = require('dotenv').config({
   path: require('path').join(__dirname, '.env'),
 })
-const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = env.parsed
+const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = process.env;
 
 const strapiConfig = {
   apiURL,
