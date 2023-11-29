@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -14,45 +15,8 @@ import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
 import ProvenExperienceWrapper from "./style";
 
-const projectSlides = [
-  {
-    projectImg: '/E-Com-Circles.svg',
-    title: 'Ecom Circles',
-    logo: '/e-commerce-logo.svg',
-    category: 'E-Commerce',
-    tags: ['Automation', 'Saas', 'Warehousing'],
-  },
-  {
-    projectImg: '/one-app-app.svg',
-    title: 'One App',
-    logo: '/one-app-logo.svg',
-    category: 'E-Commerce',
-    tags: ['E-commerce', 'Automation', 'Saas'],
-  },
-  {
-    projectImg: '/store-filter-app.svg',
-    title: 'Store Filter',
-    logo: '/store-filter-logo.svg',
-    category: 'eCom research',
-    tags: ['Database', 'Data Analytics', 'Web App+'],
-  },
-  {
-    projectImg: '/seller-repay-app.svg',
-    title: 'Seller Repay',
-    logo: '/seller-repay-logo.svg',
-    category: 'Seller Repay',
-    tags: ['eCom', 'Automation', 'Saas'],
-  },
-  {
-    projectImg: '/sales-support-app.svg',
-    title: 'Sales Support',
-    logo: '/sales-support-logo.svg',
-    category: 'E-Commerce',
-    tags: ['Automation', 'Saas', 'Warehousing'],
-  },
-]
-
 const responsive = {
+
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 768 },
     items: 1,
@@ -88,6 +52,33 @@ const Index = ({ heading, paragraph, componentName }) => {
     carousel2Ref.current.next();
   };
 
+    const data = useStaticQuery(graphql`
+      query portfolioQuery {
+        allStrapiPortfolio {
+          nodes {
+            projects {
+              projectCategory
+              projectName
+              projectTags {
+                strapi_json_value
+              }
+              projectImg {
+                localFile {
+                  url
+                }
+              }
+              projectLogo {
+                localFile {
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    `);
+    const portfolioData = data.allStrapiPortfolio.nodes[0].projects;
+
   return (
     <ProvenExperienceWrapper>
       <Container>
@@ -113,13 +104,13 @@ const Index = ({ heading, paragraph, componentName }) => {
                   swipeable={false}
                   draggable={false}
                 >
-                  {projectSlides.map((item, ind) => (
+                  {portfolioData.map((item, ind) => (
                     <div className="project-title" key={ind}>
-                      <img src={item.logo} alt="logo" />
-                      <h3>{item.title}</h3>
-                      <span>{item.category}</span>
+                      <img src={item.projectLogo.localFile.url} alt="logo" />
+                      <h3>{item.projectName}</h3>
+                      <span>{item.projectCategory}</span>
                       <div className="project-tags d-flex">
-                        {item.tags?.map((tag, ind) => (
+                        {item.projectTags?.strapi_json_value.map((tag, ind) => (
                           <div key={ind}>{tag}</div>
                         ))}
                       </div>
@@ -140,14 +131,14 @@ const Index = ({ heading, paragraph, componentName }) => {
                     </span>
                     <span>/</span>
                     <span>
-                      {projectSlides.length < 10 && 0}
-                      {projectSlides.length}
+                      {portfolioData.length < 10 && 0}
+                      {portfolioData.length}
                     </span>
                   </span>
                   <ArrowRightIcon
                     onClick={() => {
-                      {currentInd === projectSlides.length ? "" :  handleButtonClickNext()}
-                      setCurrentInd(currentInd === projectSlides.length ? currentInd : currentInd + 1)
+                      {currentInd === portfolioData.length ? "" :  handleButtonClickNext()}
+                      setCurrentInd(currentInd === portfolioData.length ? currentInd : currentInd + 1)
                     }}
                   />
                 </div>
@@ -164,9 +155,9 @@ const Index = ({ heading, paragraph, componentName }) => {
                   draggable={false}
                   itemClass="qb-carousel-item"
                 >
-                  {projectSlides.map((item, ind) => (
+                  {portfolioData.map((item, ind) => (
                     <div key={ind}>
-                      <img src={item.projectImg} alt="project" />
+                      <img src={item.projectImg.localFile.url} alt="project" />
                     </div>
                   ))}
                   <div></div>
