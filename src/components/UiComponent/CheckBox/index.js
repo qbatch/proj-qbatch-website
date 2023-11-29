@@ -3,9 +3,9 @@ import Form from "react-bootstrap/Form";
 import CheckBoxWrapper from "./style";
 
 function CheckReverseExample(props) {
-  const { label, onChange, checked, className, value, height, name, width, margin, fontSize, base, required } = props;
+  const { label, checked,onChange, className, value, height, name, width, margin, fontSize, base, required } = props;
   return (
-    <CheckBoxWrapper width={width} height={height} margin={margin || ""} fontSize={fontSize} base={base || ""}>
+    <CheckBoxWrapper width={width} height={height} margin={margin} fontSize={fontSize} base={base}>
       <Form.Group>
         <Form.Check
           className={className}

@@ -19,7 +19,7 @@ const Index = () => {
             {fullCycle.slice(0, 4).map((project, index) => {
               const { title, img, description } = project
               return (
-                <div className="hover-box">
+                <div className="hover-box" key={index}>
                   <div className="d-flex gap-4 align-items-center pb-4">
                     <img src={img} alt="no-project" />
                     <h3 className='text-h4 title'>{title}</h3>
@@ -33,10 +33,10 @@ const Index = () => {
             {fullCycle.slice(4, 8).map((project, index) => {
               const { title, img, description } = project
               return (
-                <div className="hover-box">
+                <div className="hover-box" key={index}>
                   <div className="d-flex gap-4 align-items-center pb-4">
                     <img src={img} alt="no-project" />
-                    <h3 className='text-h4 title'>{title}</h3>
+                    <h3 className="text-h4 title">{title}</h3>
                   </div>
                   <div className="description">{description}</div>
                 </div>

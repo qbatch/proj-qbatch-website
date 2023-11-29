@@ -113,7 +113,7 @@ const Index = () => {
                 <div className="email-input">
                   <img src="/email-address-icon.svg" alt="email" />
                   <input type="email" placeholder="Email Address" />
-                  <PrimaryButton color="#fff" borderbottom text="Let’s Get Started" />
+                  <PrimaryButton color="#fff"  text="Let’s Get Started" />
                 </div>
               </div>
             </Col>

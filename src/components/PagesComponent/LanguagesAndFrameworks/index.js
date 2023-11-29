@@ -81,8 +81,8 @@ const Index = () => {
                 {languagesData?.map((item, index) => (
                   <div key={index} className="framework-item">
                     <Row>
-                      {item.content.map((data) => (
-                        <Col md={4}>
+                      {item.content.map((data,i) => (
+                        <Col md={4} key={i}>
                           <div className="framework-logo">
                             {data.img === "" ? (
                               ""
@@ -104,8 +104,8 @@ const Index = () => {
               <div key={ind}>
                 <h3>{item.title}</h3>
                 <Row>
-                  {item.content.map((data) => (
-                    <Col md={4} sm={6} xs={6}>
+                  {item.content.map((data,i) => (
+                    <Col md={4} sm={6} xs={6} key={i}>
                       <div className="framework-logo">
                         {data.img === "" ? (
                           ""

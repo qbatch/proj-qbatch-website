@@ -26,10 +26,8 @@ const IndexPage = () => {
       <ProblumSolving
         text={
           <p className="text-h2 quote">
-            We go beyond traditional problem-solving techniques and
-            old-fashioned promises to assist visionaries like you to transform
-            on a massive scale<br></br> —{" "}
-            <b>with logic, innovation, and emotion.</b>
+            We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
+            you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
           </p>
         }
       />
@@ -48,7 +46,7 @@ const IndexPage = () => {
       <CreativeIntelligence />
       <StartProject />
     </Layout>
-  );
+  )
 };
 
 export const Head = () => {

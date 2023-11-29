@@ -17,7 +17,7 @@ function TextControlsExample(props) {
   } = props;
 
   return (
-    <Input height={height} base={base || ""}>
+    <Input height={height} base={base}>
       <Form.Group className="bottom-space">
         <Form.Control
           as={as}

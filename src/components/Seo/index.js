@@ -17,7 +17,7 @@ const SEO = ({ title, description, pathname, children }) => {
       <meta name="description" content={seo.description} />
       <link rel="canonical" href={seo.url} />
       <meta name="keywords" content={seo.keywords} />
-      <meta http-equiv="content-language" content="en-us" />
+      <meta http="content-language" content="en-us" />
       {children}
     </>
   )

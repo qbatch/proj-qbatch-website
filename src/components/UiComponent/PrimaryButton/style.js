@@ -39,7 +39,7 @@ const PrimaryButtonWrapper = styled(Button)`
     max-width: none;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -2px;
@@ -50,13 +50,11 @@ const PrimaryButtonWrapper = styled(Button)`
   }
   &:hover {
     &::before {
-      width: ${({ theme }) =>
-        (props) =>
-          props.borderbottom ? `${props.borderbottom}` : "0px"};
+      /* width: ${(props) => (props.borderbottom ? props.borderbottom : '0px')}; */
     }
     img {
       transform: rotate(-45deg);
     }
   }
-`;
+`
 export default PrimaryButtonWrapper;

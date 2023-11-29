@@ -29,6 +29,7 @@ const Index = (props) => {
             {faqQuestion.map((faq, index) => {
               return (
                 <Collapse
+                  key={index}
                   faqSection
                   title={faq.title}
                   onClick={() => handleOpen(faq.id)}

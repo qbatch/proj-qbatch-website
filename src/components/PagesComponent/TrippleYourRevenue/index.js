@@ -18,9 +18,9 @@ const Index = () => {
             </div>
           </Col>
           {revenueData?.map((item, index) => (
-            <Col xl={4} md={6}>
+            <Col xl={4} md={6} key={index}>
               <div className="revenue-box">
-                <div key={index} className="revenue-data">
+                <div className="revenue-data">
                   <div className="revenue-img">
                     <img src={item.img} alt="logo" />
                   </div>
@@ -35,7 +35,7 @@ const Index = () => {
         </Row>
       </Container>
     </RevenueWrapper>
-  );
+  )
 };
 
 export default Index;

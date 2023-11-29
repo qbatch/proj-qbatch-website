@@ -57,10 +57,10 @@ const Index = () => {
               </ul>
             </nav>
             <div className="menu-items">
-              <Button onClick={() => navigate("/contact")} text="Contact Us" className="header-btn" />
+              <Button onClick={() => navigate('/contact')} text="Contact Us" className="header-btn" />
               <div className="burger-icon" onClick={() => setOpenDrawer(true)}>
                 {[1, 2, 3].map((key) => (
-                  <span key={key}></span>
+                  <span key={`${key}`}></span>
                 ))}
               </div>
             </div>
@@ -69,7 +69,7 @@ const Index = () => {
       </HeaderWrapper>
       <Drawer openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
     </>
-  );
+  )
 };
 
 export default Index;

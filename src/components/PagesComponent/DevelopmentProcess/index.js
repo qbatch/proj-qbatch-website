@@ -13,7 +13,7 @@ const Index = ({ boxesData }) => {
             <Col lg={4} key={index}>
               <div className='box'>
                 <div className='box-header'>
-                  <img src={data.image} alt='box-image' />
+                  <img src={data.image} alt='box' />
                   <h3 className='text-h3'>{data.duration}</h3>
                 </div>
                 <h4>{data.title}</h4>

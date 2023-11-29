@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 
@@ -203,18 +204,14 @@ function App() {
               <a
                 key={index}
                 href={`#section${index + 1}`}
-                className={index === activeSection ? "title active" : "title"}
+                className={index === activeSection ? 'title active' : 'title'}
               >
                 {list.title}
               </a>
               <a
                 key={index}
                 href={`#section${index + 1}`}
-                className={
-                  [activeSection, showbars]?.includes(index)
-                    ? "active line"
-                    : "line"
-                }
+                className={[activeSection, showbars]?.includes(index) ? 'active line' : 'line'}
               />
             </>
           ))}
@@ -225,19 +222,15 @@ function App() {
             <Row>
               <Col lg={8} md={6} sm={12}>
                 {content.map((list, index) => (
-                  <div
-                    key={index}
-                    className="section inner-content"
-                    id={`section${index + 1}`}
-                  >
+                  <div key={index} className="section inner-content" id={`section${index + 1}`}>
                     {list.content}
                   </div>
                 ))}
                 <div className="social-links d-flex">
                   <span className="title">Share</span>
                   <ul className="d-flex social-link">
-                    {socialIcons.map((icon) => (
-                      <li>
+                    {socialIcons.map((icon, key) => (
+                      <li key={key}>
                         <a href={icon.to} target="_blank" rel="noreferrer">
                           <img src={`${icon.img}.svg`} alt="no-icon" />
                         </a>
@@ -265,9 +258,7 @@ function App() {
                             <div className="inner-content">
                               <p>{card.title}</p>
                               <div className="d-flex gap-2">
-                                <div className="blog-badge">
-                                  {card.category}
-                                </div>
+                                <div className="blog-badge">{card.category}</div>
                                 <div className="blog-badge">Cybersecurity</div>
                               </div>
                               <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
@@ -277,10 +268,7 @@ function App() {
                                   <span>5 Minutes Read</span>
                                 </div>
                               </div>
-                              <PrimaryButton
-                                text="Explore More"
-                                fontSize="16px"
-                              />
+                              <PrimaryButton text="Explore More" fontSize="16px" />
                             </div>
                           </div>
                         </Col>
@@ -297,8 +285,7 @@ function App() {
                       <span>Author Name Will Come Here</span>
                     </div>
                     <span className="title">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </span>
                     <div className="d-flex justify-content-between mt-32">
                       <ul className="d-flex social-link">
@@ -319,18 +306,12 @@ function App() {
                         </li>
                       </ul>
                       <div>
-                        <img
-                          src="/author-name-arrow.svg"
-                          className="pointer"
-                          alt="no-arrow"
-                        />
+                        <img src="/author-name-arrow.svg" className="pointer" alt="no-arrow" />
                       </div>
                     </div>
                   </div>
                   <div className="subsribe-button">
-                    <h2>
-                      Get the top stories like these delivered to your inbox
-                    </h2>
+                    <h2>Get the top stories like these delivered to your inbox</h2>
                     <div className="subscribe-email">
                       <img src="/email.svg" alt="email" />
                       <input type="email" placeholder="Email Address" />
@@ -346,7 +327,7 @@ function App() {
         </div>
       </div>
     </ContentWrapper>
-  );
+  )
 }
 
 export default App;

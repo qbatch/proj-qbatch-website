@@ -16,7 +16,7 @@ module.exports = {
     description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
     keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
     siteUrl: `https://www.qbtach.com`,
-    httpEquiv: `en-us`,
+    http: `en-us`,
   },
   flags: {
     DEV_SSR: true,

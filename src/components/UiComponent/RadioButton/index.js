@@ -8,7 +8,6 @@ function CheckExample(props ) {
   
   return (
     <RadioWrapper>
-      <Form>
         <Form.Check
           type="radio"
           checked={checked}
@@ -17,7 +16,6 @@ function CheckExample(props ) {
           name={name || "collaboration"}
           onChange={onChange}
         />
-      </Form>
     </RadioWrapper>
   );
 }

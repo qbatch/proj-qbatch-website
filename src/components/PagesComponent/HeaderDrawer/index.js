@@ -288,56 +288,43 @@ const Index = (props) => {
   const [activeState, setActiveState] = useState("services");
 
   return (
-    <Drawer
-      open={openDrawer}
-      size="100%"
-      direction="right"
-      className="header-drawer"
-    >
+    <Drawer open={openDrawer} size="100%" direction="right" className="header-drawer">
       <DrawerWrapper>
         <Container>
           <div className="cross-icon" onClick={() => setOpenDrawer(false)}>
             <img src="/drawer-cross.svg" alt="close" />
           </div>
           <div className="d-flex menu-main">
-            {dropdownData.map((item, ind) => (
+            {dropdownData.map((item, i) => (
               <NavDropdown
+                key={i}
                 title={item.title}
                 active={activeState === item.state}
                 onClick={() => setActiveState(item.state)}
                 show={activeState === item.state}
                 onMouseEnter={() => setActiveState(item.state)}
-                key={ind}
               >
                 {!item.header ? (
-                  item.menu.map((data, ind) => (
-                    <Link to={data.to} className="dropdown-item" key={ind}>
+                  item.menu.map((data, i) => (
+                    <Link to={data.to} className="dropdown-item" key={i}>
                       {data.menu}
                     </Link>
                   ))
                 ) : (
                   <div className="d-flex hire-developers-menu">
                     {item.subMenu.map((submenu, ind) => (
-                      <div className={"d-flex inner-menu"}>
-                        <div key={ind}>
+                      <div className={'d-flex inner-menu'} key={ind}>
+                        <div>
                           <Dropdown.Header>{submenu.heading}</Dropdown.Header>
                           {submenu.menu1.map((data, ind) => (
-                            <Link
-                              to={data.to}
-                              className="dropdown-item"
-                              key={ind}
-                            >
+                            <Link to={data.to} className="dropdown-item" key={data.menu}>
                               {data.menu}
                             </Link>
                           ))}
                         </div>
                         <div className="sub-menu2">
                           {submenu.menu2.map((data, ind) => (
-                            <Link
-                              to={data.to}
-                              className="dropdown-item"
-                              key={ind}
-                            >
+                            <Link to={data.to} className="dropdown-item" key={data.menu}>
                               {data.menu}
                             </Link>
                           ))}
@@ -353,12 +340,8 @@ const Index = (props) => {
             <Row>
               <Col md={6}>
                 <div className="drawer-email">
-                  <span className="text-h3 d-block fw-bold mb-2">
-                    We’re excited to work together!
-                  </span>
-                  <span>
-                    Need guidance on a revamp or a new project launch?
-                  </span>
+                  <span className="text-h3 d-block fw-bold mb-2">We’re excited to work together!</span>
+                  <span>Need guidance on a revamp or a new project launch?</span>
                   <div className="email-input">
                     <input type="email" placeholder="Email Address" />
                     <div>
@@ -384,7 +367,7 @@ const Index = (props) => {
         </Container>
       </DrawerWrapper>
     </Drawer>
-  );
+  )
 };
 
 export default Index;

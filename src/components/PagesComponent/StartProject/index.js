@@ -163,11 +163,11 @@ const Index = ({ page }) => {
                   "Time and Material",
                   "Fixed Scope Product Development",
                   "Hire Dedicated Development Team",
-                ].map((value) => {
+                ].map((value,i) => {
                   return (
-                    <div className="collapse-radio">
+                    <div className="collapse-radio" key={i}>
                       <RadioButton
-                        key={value}
+                        key={i}
                         type="radio"
                         label={value}
                         value={value}
@@ -190,25 +190,21 @@ const Index = ({ page }) => {
                     }
                   >
                     <Row>
-                      {serviceSelect.slice(0.6).map((value, key) => {
+                      {serviceSelect.slice(0.6).map((value, i) => {
                         return (
-                          <Col md={6}>
+                          <Col md={6} key={i}>
                             <CheckBox
-                              key={key}
+                              key={i}
                               label={value}
                               checked={serviceSelect.includes(value)}
                               value={value}
                               name="collaboration"
                               onChange={(e) =>
-                                setServiceSelect(
-                                  serviceSelect.filter(
-                                    (item) => item !== e.target.value
-                                  )
-                                )
+                                setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
                               }
                             />
                           </Col>
-                        );
+                        )
                       })}
                     </Row>
                   </div>
@@ -232,11 +228,11 @@ const Index = ({ page }) => {
                     "Other",
                   ]
                     .slice(0.6)
-                    .map((value) => {
+                    .map((value,i) => {
                       return (
-                        <Col md={6}>
+                        <Col md={6} key={i}>
                           <CheckBox
-                            key={value}
+                            key={i}
                             label={value}
                             checked={formData.services?.includes(value)}
                             value={value}
@@ -244,7 +240,7 @@ const Index = ({ page }) => {
                             onChange={handleInputChange}
                           />
                         </Col>
-                      );
+                      )
                     })}
                 </Row>
               </Collapse>
