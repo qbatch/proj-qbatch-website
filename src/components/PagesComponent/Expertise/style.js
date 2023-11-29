@@ -40,7 +40,7 @@ const ExpertiseWrapper = styled.section`
       position: absolute;
       width: 100%;
       height: 1px;
-      background-color: ${({ theme }) => theme.colors.dividingColor};
+      background-color: ${({ theme }) => theme.colors.dividerColor};
       bottom: -24px;
     }
 

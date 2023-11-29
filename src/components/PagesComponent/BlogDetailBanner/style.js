@@ -1,20 +1,24 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const BlogDetailsWrapper = styled.div`
   background-image: url('/shopping-cart.png');
   width: 100%;
   height: 497px;
   padding: 96px 67px;
-  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  ${media.sm`
+    padding: 96px 0;
+  `}
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.bodyLight};
-    margin-left: 52px;
-    margin-top: 4px;
-    margin-bottom: 11px;
+    margin: 4px 0 11px 52px;
+    ${media.xs`
+      margin: 0 0 12px;
+  `}
   }
   .title {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
@@ -22,7 +26,6 @@ const BlogDetailsWrapper = styled.div`
     margin-bottom: 26px;
   }
   .read-time {
-    margin-left: 52px;
     display: flex;
     gap: 8px;
     color: ${({ theme }) => theme.colors.whiteColor};
@@ -46,7 +49,6 @@ const BlogDetailsWrapper = styled.div`
   .chips {
     display: flex;
     gap: 8px;
-    margin-left: 52px;
     margin-bottom: 33px;
     span {
       background-color: ${({ theme }) => theme.colors.whiteColor};
@@ -59,7 +61,6 @@ const BlogDetailsWrapper = styled.div`
   .author-name {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.dividerColor};
-    margin-left: 52px;
   }
 `
 export default BlogDetailsWrapper;

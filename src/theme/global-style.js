@@ -110,6 +110,15 @@ const GlobalStyles = createGlobalStyle`
       border-radius: 32px;
       display: inline-block;
     }
+    .was-validated .form-check-input:valid {
+      border-color: #ccc;
+      &:checked {
+        background-color: transparent;
+      }
+    }
+    .was-validated .form-check-input:valid~.form-check-label {
+      color: #5F737C;
+    }
     @media (max-width: 1200px) {
       h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};

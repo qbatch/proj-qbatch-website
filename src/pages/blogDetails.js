@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { useStaticQuery, graphql } from 'gatsby';
+
 import Layout from "../components/Layout/layout";
 import BlogDetailBanner from "../components/PagesComponent/BlogDetailBanner";
 import BlogDetailsContent from "../components/PagesComponent/BlogDetailsContent";
@@ -22,7 +24,7 @@ const BlogPage = () => {
       window.removeEventListener("scroll", progressBarScroll);
     };
   }, []);
-  
+
   return (
     <Layout pageTitle="My Blog Posts">
       <ContentWrapper>
@@ -37,6 +39,25 @@ const BlogPage = () => {
     </Layout>
   );
 };
-export const Head = () => <SEO title="My Blog Posts" />;
+
+export const Head = () => {
+  const data = useStaticQuery(graphql`
+    query BlogDetailsQuery {
+      allStrapiBlog {
+        nodes {
+          seo {
+            keywords
+            metaDescription
+            metaTitle
+          }
+        }
+      }
+    }
+  `)
+
+  const seoData = data.allStrapiBlog.nodes[0]?.seo[0]
+  
+  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+}
 
 export default BlogPage;
