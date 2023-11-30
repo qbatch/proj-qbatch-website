@@ -32,7 +32,18 @@ const strapiConfig = {
       },
     },
   }, 
-  'mobile-app','cto-service','web-app','product-design', 'ecommerce','enterprise', "blog"],
+  'mobile-app','cto-service','web-app','product-design', 'ecommerce','enterprise', {
+    singularName: 'blog',
+    queryParams: {
+      populate: {
+        'article': {
+          populate: "*"
+        },
+        'seo': "*",
+        'category': "*"
+      },
+    },
+  }],
   queryLimit: 1000,
 }
 module.exports = {
