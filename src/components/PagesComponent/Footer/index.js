@@ -100,7 +100,7 @@ const Index = () => {
               <div className="footer-contact">
                 {contactData.map((data, ind) => (
                   <div key={ind}>
-                    {data.icon && <img src={data.icon} alt="contact" />}
+                    {data.icon && <img src={data.icon} alt="contact" width="16px" height="16px" />}
                     <span className={!data.icon && "address"}>{data.title}</span>
                   </div>
                 ))}
@@ -111,7 +111,7 @@ const Index = () => {
                 <span className="text-h4 fw-bold">We’re excited to work together!</span>
                 <span>Need guidance on a revamp or a new project launch?</span>
                 <div className="email-input">
-                  <img src="/email-address-icon.svg" alt="email" />
+                  <img src="/email-address-icon.svg" alt="email" width="24px" height="24px" />
                   <input type="email" placeholder="Email Address" />
                   <PrimaryButton color="#fff" borderbottom text="Let’s Get Started" />
                 </div>
