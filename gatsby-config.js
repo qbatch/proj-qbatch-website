@@ -86,11 +86,5 @@ module.exports = {
         icon: './src/assets/images/qbatch-logo.svg',
       },
     },
-    {
-      resolve: 'gatsby-plugin-apollo',
-      options: {
-        uri: 'https://cms.qbatch.com',
-      },
-    },
   ],
 }
