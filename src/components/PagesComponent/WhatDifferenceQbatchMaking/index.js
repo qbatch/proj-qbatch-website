@@ -11,7 +11,7 @@ const Index = ({ heading, innerPage, paragraph }) => {
       <Container>
         <div className="container-padding">
           <div className="section-heading text-center">
-            <h2 className={innerPage ? "heading" : "heading text-h1"}>{heading}</h2>
+            <h2 className={innerPage ? 'heading' : 'heading text-h1'}>{heading}</h2>
             {paragraph && <p>{paragraph}</p>}
           </div>
           <Row>
@@ -21,7 +21,7 @@ const Index = ({ heading, innerPage, paragraph }) => {
               </div>
             </Col>
             <Col md={2} className="d-sm-none d-md-block"></Col>
-            <Col md={5} sm={6} >
+            <Col md={5} sm={6}>
               <div className="text-center text-sm-start">
                 <h3 className="color-primary">We Solve Them</h3>
               </div>
@@ -37,11 +37,11 @@ const Index = ({ heading, innerPage, paragraph }) => {
                 </Col>
                 <Col xs={2}>
                   <div className="d-flex align-items-center justify-content-center gap-md-3 gap-1 challenges-icons">
-                    <img src={item.icon1} alt="icon" />
+                    <img src={item.icon1} alt="icon" width="32px" height="32px" />
                     <div className="gradient-arrow">
                       <BiChevronRight size={25} />
                     </div>
-                    <img src={item.icon2} alt="icon" />
+                    <img src={item.icon2} alt="icon" width="32px" height="32px" />
                   </div>
                 </Col>
                 <Col xs={5}>
@@ -55,7 +55,7 @@ const Index = ({ heading, innerPage, paragraph }) => {
         </div>
       </Container>
     </QbatchMakingWrapper>
-  );
+  )
 };
 
 export default Index;

@@ -297,7 +297,7 @@ const Index = (props) => {
       <DrawerWrapper>
         <Container>
           <div className="cross-icon" onClick={() => setOpenDrawer(false)}>
-            <img src="/drawer-cross.svg" alt="close" />
+            <img src="/drawer-cross.svg" alt="close" width="32px" height="32px" />
           </div>
           <div className="d-flex menu-main">
             {dropdownData.map((item, ind) => (
@@ -362,7 +362,7 @@ const Index = (props) => {
                   <div className="email-input">
                     <input type="email" placeholder="Email Address" />
                     <div>
-                      <img src="/drawer-arrow.svg" alt="arrow" />
+                      <img src="/drawer-arrow.svg" alt="arrow" width="28px" height="28px" />
                     </div>
                   </div>
                 </div>

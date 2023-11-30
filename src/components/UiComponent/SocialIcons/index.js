@@ -36,7 +36,7 @@ const Index = () => {
         {socialIcons.map((item, ind) => (
           <a href={item.to} target="_blank" rel="noreferrer">
             <div className={`social__${item.img.replace("/", "")}`} key={ind}>
-              <img src={`${item.img}-icon.svg`} alt={item.img} />
+              <img src={`${item.img}-icon.svg`} alt={item.img} width="24px" height="24px" />
             </div>
           </a>
         ))}

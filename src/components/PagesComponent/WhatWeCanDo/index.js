@@ -34,7 +34,7 @@ const Index = () => {
                     ) : (
                       <div className="d-flex align-items-start">
                         <div className="mt-2">
-                          <img src={data.icon} />
+                          <img src={data.icon} alt="no-icon" width="60px" height="60px" />
                         </div>
                         <div className="do-title">
                           <h3 className="text-h4 heading">{data.title}</h3>
