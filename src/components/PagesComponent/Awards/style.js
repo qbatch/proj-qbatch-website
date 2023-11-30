@@ -81,8 +81,7 @@ position: relative;
       }
     }
     .btn-awards {
-      text-align: left;
-      margin-top: -110px;
+      margin-top: -25px;
       position: relative;
       z-index: 2;
       ${media.md`

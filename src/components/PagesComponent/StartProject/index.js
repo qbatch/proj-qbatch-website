@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Row, Col, Form } from "react-bootstrap";
-import ReCaptcha from "@pittica/gatsby-plugin-recaptcha";
 import { Link } from "gatsby";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

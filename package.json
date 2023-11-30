@@ -15,7 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@pittica/gatsby-plugin-recaptcha": "^2.0.3",
     "babel-plugin-styled-components": "^2.1.4",
     "bootstrap": "^5.3.0",
     "dotenv": "^16.3.1",
