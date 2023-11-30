@@ -1,21 +1,21 @@
 import React from "react";
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Layout from "../components/Layout/layout";
-import SEO from "../components/Seo";
-import WhatDifferenceQbatchMaking from "../components/PagesComponent/WhatDifferenceQbatchMaking";
-import LostToLaunched from "../components/PagesComponent/DevelopmentStages";
-import LanguagesAndFrameworks from "../components/PagesComponent/LanguagesAndFrameworks";
-import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
-import Collaboration from "../components/PagesComponent/Collaboration";
-import PeopleFirst from "../components/PagesComponent/PeopleFirst";
-import DesiredResult from "../components/PagesComponent/IdeasAndInvestments";
-import FaqSection from "../components/PagesComponent/Faq";
-import StartProject from "../components/PagesComponent/StartProject";
-import ChoiseYourEnterprise from "../components/PagesComponent/ChoiceYourEnterprise";
-import SecretSauce from "../components/PagesComponent/SecretSauce";
-import SofwareDevelopmentExpertise from "../components/PagesComponent/TechnicalGuidance";
-import DoYouKnow from "../components/PagesComponent/DedicatedMobileDevelopers";
+import Layout from "../../components/Layout/layout";
+import SEO from "../../components/Seo";
+import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
+import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
+import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
+import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import Collaboration from "../../components/PagesComponent/Collaboration";
+import PeopleFirst from "../../components/PagesComponent/PeopleFirst";
+import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
+import FaqSection from "../../components/PagesComponent/Faq";
+import StartProject from "../../components/PagesComponent/StartProject";
+import ChoiseYourEnterprise from "../../components/PagesComponent/ChoiceYourEnterprise";
+import SecretSauce from "../../components/PagesComponent/SecretSauce";
+import SofwareDevelopmentExpertise from "../../components/PagesComponent/TechnicalGuidance";
+import DoYouKnow from "../../components/PagesComponent/DedicatedMobileDevelopers";
 
 import {
   lostToLaunchedItems,
@@ -25,7 +25,7 @@ import {
   developmentExpertiseData,
   technologicalCapacityData,
   peopleFirstData
-} from "../constants";
+} from "../../constants";
 
 const Enterprise = () => {
   return (

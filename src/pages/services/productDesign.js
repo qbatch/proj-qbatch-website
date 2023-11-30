@@ -1,19 +1,19 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Layout from '../components/Layout/layout'
-import SEO from '../components/Seo'
-import HireCto from '../components/PagesComponent/HireCto'
-import TheySayWeSay from '../components/PagesComponent/TheySayWeSay'
-import DesiredResult from '../components/PagesComponent/IdeasAndInvestments'
-import PeopleFirst from '../components/PagesComponent/PeopleFirst'
-import DevelopmentProcess from '../components/PagesComponent/DevelopmentProcess'
-import StartProject from '../components/PagesComponent/StartProject'
-import FaqSection from '../components/PagesComponent/Faq'
-import Collaboration from '../components/PagesComponent/Collaboration'
-import MarketplaceSellers from '../components/PagesComponent/MarketplaceSellers'
-import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
-import ChooseYourEnterprise from '../components/PagesComponent/ChoiceYourEnterprise'
-import SecretSauce from '../components/PagesComponent/SecretSauce'
+import Layout from '../../components/Layout/layout'
+import SEO from '../../components/Seo'
+import HireCto from '../../components/PagesComponent/HireCto'
+import TheySayWeSay from '../../components/PagesComponent/TheySayWeSay'
+import DesiredResult from '../../components/PagesComponent/IdeasAndInvestments'
+import PeopleFirst from '../../components/PagesComponent/PeopleFirst'
+import DevelopmentProcess from '../../components/PagesComponent/DevelopmentProcess'
+import StartProject from '../../components/PagesComponent/StartProject'
+import FaqSection from '../../components/PagesComponent/Faq'
+import Collaboration from '../../components/PagesComponent/Collaboration'
+import MarketplaceSellers from '../../components/PagesComponent/MarketplaceSellers'
+import ProvenWorkExperience from '../../components/PagesComponent/ProvenWorkExperience'
+import ChooseYourEnterprise from '../../components/PagesComponent/ChoiceYourEnterprise'
+import SecretSauce from '../../components/PagesComponent/SecretSauce'
 import {
   productDesignlist,
   softwareProductData,
@@ -21,9 +21,9 @@ import {
   productDesignFaq,
   productDesignData,
   cycleProductData,
-} from '../constants'
-import WhyChooseQbatch from '../components/PagesComponent/WhyChooseQbatch'
-import SeemToWork from '../components/PagesComponent/SeemToWork'
+} from '../../constants'
+import WhyChooseQbatch from '../../components/PagesComponent/WhyChooseQbatch'
+import SeemToWork from '../../components/PagesComponent/SeemToWork'
 
 const ProductDesign = () => {
   return (
@@ -97,7 +97,7 @@ export const Head = () => {
     }
   `)
 
-  const seoData = data.allStrapiProductDesign.nodes[0]?.seo[0] // Fix: Access the first element of the array
+  const seoData = data.allStrapiProductDesign.nodes[0]?.seo[0]
 
   return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
 }
