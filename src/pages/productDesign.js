@@ -97,7 +97,7 @@ export const Head = () => {
     }
   `)
 
-  const seoData = data.allStrapiProductDesign.nodes[0]?.seo[0] // Fix: Access the first element of the array
+  const seoData = data.allStrapiProductDesign.nodes[0]?.seo // Fix: Access the first element of the array
 
   return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
 }
