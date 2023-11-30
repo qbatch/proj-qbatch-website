@@ -29,9 +29,12 @@ export const Head = () => {
       allStrapiPortfolio {
         nodes {
           seo {
-            keywords
-            metaDescription
             metaTitle
+            metaRobots
+            metaDescription
+            language
+            keywords
+            slug
           }
         }
       }
@@ -40,7 +43,16 @@ export const Head = () => {
 
   const seoData = data.allStrapiPortfolio.nodes[0]?.seo
 
-  return <SEO title={seoData?.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
+  return (
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
 }
 
 export default Portfolio;
