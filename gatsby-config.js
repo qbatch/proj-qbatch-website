@@ -37,12 +37,12 @@ const strapiConfig = {
 }
 module.exports = {
   siteMetadata: {
-    robots: ``,
+    robots: `index,folow`,
     title: `Qbatch`,
     description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
     keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
-    siteUrl: `https://www.qbtach.com`,
-    httpEquiv: `en-us`,
+    siteUrl: `https://qbtach.com`,
+    language: `en-us`,
   },
   flags: {
     DEV_SSR: true,
@@ -52,6 +52,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-recaptcha',
+    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,
@@ -83,6 +84,12 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: './src/assets/images/qbatch-logo.svg',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-apollo',
+      options: {
+        uri: 'https://cms.qbatch.com',
       },
     },
   ],
