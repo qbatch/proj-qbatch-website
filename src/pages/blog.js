@@ -99,7 +99,7 @@ export const Head = () => {
     }
   `)
 
-  const seoData = data.allStrapiBlog.nodes[0]?.seo[0]
+  const seoData = data.allStrapiBlog.nodes[0]?.seo
   
   return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
 }

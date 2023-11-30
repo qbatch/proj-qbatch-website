@@ -125,7 +125,7 @@ export const Head = () => {
     }
   `)
 
-  const seoData = data.allStrapiMobileApp.nodes[0]?.seo[0] 
+  const seoData = data.allStrapiMobileApp.nodes[0]?.seo 
 
   return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
 }
