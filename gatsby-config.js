@@ -3,7 +3,7 @@ const siteMetadata = {
   title: `Qbatch`,
   description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
   keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
-  siteUrl: `https://qbtach.com`,
+  siteUrl: `https://qbatch.com`,
   language: `en-us`,
 }
 
