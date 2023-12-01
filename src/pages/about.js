@@ -44,7 +44,6 @@ export const Head = () => {
   `)
 
   const seoData = data.allStrapiAboutUs.nodes[0]?.seo[0]
-  console.log(data, 'data')
   
   return (
     <SEO

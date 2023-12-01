@@ -73,21 +73,33 @@ const webapp = () => {
 };
 export const Head = () => {
   const data = useStaticQuery(graphql`
-    query WebAppQuery{
+    query WebAppQuery {
       allStrapiWebApp {
         nodes {
           seo {
-            keywords
-            metaDescription
             metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
           }
         }
       }
     }
   `)
 
-  const seoData = data.allStrapiWebApp.nodes[0]?.seo
+  const seoData = data.allStrapiWebApp.nodes[0]?.seo[0]
 
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
 }
 export default webapp;
