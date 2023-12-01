@@ -88,9 +88,12 @@ export const Head = () => {
       allStrapiProductDesign {
         nodes {
           seo {
-            keywords
-            metaDescription
             metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
           }
         }
       }
@@ -98,8 +101,17 @@ export const Head = () => {
   `)
 
   const seoData = data.allStrapiProductDesign.nodes[0]?.seo[0]
-
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keywords={seoData.keywords} />
+    console.log(seoData, 'seoData')
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
 }
 
 export default ProductDesign

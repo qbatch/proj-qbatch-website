@@ -70,18 +70,30 @@ export const Head = () => {
       allStrapiEcommerce {
         nodes {
           seo {
-            keywords
-            metaDescription
             metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
           }
         }
       }
     }
   `)
 
-  const seoData = data.allStrapiEcommerce.nodes[0]?.seo
+  const seoData = data.allStrapiEcommerce.nodes[0]?.seo[0]
   
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
 }
 
 export default Ecommerce;

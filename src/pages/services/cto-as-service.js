@@ -87,18 +87,29 @@ export const Head = () => {
       allStrapiCtoService {
         nodes {
           seo {
-            keywords
-            metaDescription
             metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
           }
         }
       }
     }
   `)
 
-  const seoData = data.allStrapiCtoService.nodes[0]?.seo
-  
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+  const seoData = data.allStrapiCtoService.nodes[0]?.seo[0]
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
 }
 
 export default CtoService;
