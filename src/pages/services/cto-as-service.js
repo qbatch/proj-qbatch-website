@@ -1,23 +1,23 @@
 import React from "react";
 import { useStaticQuery, graphql } from 'gatsby';
 
-import SEO from "../components/Seo";
-import Layout from "../components/Layout/layout";
-import StartProject from "../components/PagesComponent/StartProject";
-import CtoBanner from "../components/PagesComponent/CtoBanner";
-import HireCto from "../components/PagesComponent/HireCto/index";
-import TechnicalExcellence from "../components/PagesComponent/TechnicalExcellence";
-import CtoPersona from "../components/PagesComponent/CtoPersona";
-import TechnicalGuidance from "../components/PagesComponent/TechnicalGuidance";
-import GrowingTechSide from "../components/PagesComponent/GrowingTechSide";
-import ChooseCto from "../components/PagesComponent/ChooseCto";
-import CtoServiceModel from "../components/PagesComponent/CtoServiceModel";
-import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
-import Insights from "../components/PagesComponent/Insights";
-import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
-import FaqSection from "../components/PagesComponent/Faq";
-import { sliderItems, faqQuestion } from "../constants";
-import { guidanceData, ctoList } from "../constants";
+import SEO from "../../components/Seo";
+import Layout from "../../components/Layout/layout";
+import StartProject from "../../components/PagesComponent/StartProject";
+import CtoBanner from "../../components/PagesComponent/CtoBanner";
+import HireCto from "../../components/PagesComponent/HireCto/index";
+import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
+import CtoPersona from "../../components/PagesComponent/CtoPersona";
+import TechnicalGuidance from "../../components/PagesComponent/TechnicalGuidance";
+import GrowingTechSide from "../../components/PagesComponent/GrowingTechSide";
+import ChooseCto from "../../components/PagesComponent/ChooseCto";
+import CtoServiceModel from "../../components/PagesComponent/CtoServiceModel";
+import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import Insights from "../../components/PagesComponent/Insights";
+import DevelopmentStages from "../../components/PagesComponent/DevelopmentStages";
+import FaqSection from "../../components/PagesComponent/Faq";
+import { sliderItems, faqQuestion } from "../../constants";
+import { guidanceData, ctoList } from "../../constants";
 
 const CtoService = () => {
   return (
@@ -87,18 +87,29 @@ export const Head = () => {
       allStrapiCtoService {
         nodes {
           seo {
-            keywords
-            metaDescription
             metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
           }
         }
       }
     }
   `)
 
-  const seoData = data.allStrapiCtoService.nodes[0]?.seo
-  
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+  const seoData = data.allStrapiCtoService.nodes[0]?.seo[0]
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
 }
 
 export default CtoService;

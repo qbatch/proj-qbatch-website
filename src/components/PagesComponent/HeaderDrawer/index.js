@@ -12,46 +12,46 @@ import DrawerWrapper from "./style";
 
 const servicesItems = [
   {
-    menu: "Enterprise Software Development Solutions",
-    to: "/enterprise",
+    menu: 'Enterprise Software Development Solutions',
+    to: '/services/enterprise-software',
   },
   {
-    menu: "E-commerce Automation Services",
-    to: "/eCommerce",
+    menu: 'E-commerce Automation Services',
+    to: '/services/e-commerce-automation/',
   },
   {
-    menu: "Web App Development",
-    to: "/webapp",
+    menu: 'Web App Development',
+    to: '/services/web-app',
   },
   {
-    menu: "Mobile App Development",
-    to: "/mobileApp",
+    menu: 'Mobile App Development',
+    to: '/services/mobile-app',
   },
   {
-    menu: "CTO as a Service",
-    to: "/ctoService",
+    menu: 'CTO as a Service',
+    to: '/services/cto-as-service',
   },
   {
-    menu: "Product Design & Development",
-    to: "/productDesign",
+    menu: 'Product Design & Development',
+    to: '/services/product-design',
   },
   {
-    menu: "MVP Development",
-    to: "/",
+    menu: 'MVP Development',
+    to: '/',
   },
   {
-    menu: "DevOps and Cloud Computing",
-    to: "/",
+    menu: 'DevOps and Cloud Computing',
+    to: '/',
   },
   {
-    menu: "Low-code/ No-code Platform Development",
-    to: "/",
+    menu: 'Low-code/ No-code Platform Development',
+    to: '/',
   },
   {
-    menu: "UX/UI Design",
-    to: "/",
+    menu: 'UX/UI Design',
+    to: '/',
   },
-];
+]
 
 const frameworksMenu = [
   {

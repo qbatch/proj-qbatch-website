@@ -56,6 +56,8 @@ const StoriesWrapper = styled.div`
             border-radius: 24px 24px 0 24px;
             width: 100%;
             height: 522px;
+            object-fit: cover;
+            object-position: center;
           }
         }
         .column-inner-right {
@@ -168,6 +170,7 @@ const ImageOpenStyle = styled.div`
     height: ${(props) => (props.type ? "100%" : '')};
     border-radius: 24px 0 0 24px;
     background-size: cover;
+    background-position: center;
     ${media.sm`
       width: 100%;
       height: 350px;
