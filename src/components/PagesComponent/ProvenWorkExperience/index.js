@@ -140,10 +140,10 @@ const Index = ({ heading, paragraph, componentName }) => {
                   </span>
                   <ArrowRightIcon
                     onClick={() => {
-                      {
-                        currentInd === portfolioData.length ? '' : handleButtonClickNext()
-                      }
-                      setCurrentInd(currentInd === portfolioData.length ? currentInd : currentInd + 1)
+                      if ( currentInd !== portfolioData.filter((x)=> x.imgOpen).length) {
+                        handleButtonClickNext()
+                      };
+                      setCurrentInd(currentInd === portfolioData.filter((x)=> x.imgOpen).length ? currentInd : currentInd + 1)
                     }}
                   />
                 </div>

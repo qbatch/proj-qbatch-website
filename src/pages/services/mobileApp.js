@@ -1,30 +1,30 @@
 import React from "react";
 import { useStaticQuery, graphql } from 'gatsby'
-import SEO from "../components/Seo";
-import Layout from "../components/Layout/layout";
-import LostToLaunched from "../components/PagesComponent/DevelopmentStages";
-import WhatDifferenceQbatchMaking from "../components/PagesComponent/WhatDifferenceQbatchMaking";
-import Achievements from "../components/PagesComponent/Achievements";
-import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
-import Collaboration from "../components/PagesComponent/Collaboration";
-import PeopleFirst from "../components/PagesComponent/PeopleFirst";
-import { peopleFirstData } from "../constants";
-import DesiredResult from "../components/PagesComponent/IdeasAndInvestments";
-import FaqSection from "../components/PagesComponent/Faq";
-import StartProject from "../components/PagesComponent/StartProject";
-import AppDevelopmentServices from "../components/PagesComponent/TechnicalGuidance";
-import TechnicalExcellence from "../components/PagesComponent/TechnicalExcellence";
-import SecretSauce from "../components/PagesComponent/SecretSauce";
-import CrewNotVendors from "../components/PagesComponent/CrewNotVendors";
-import DedicatedMobileDevelopers from "../components/PagesComponent/DedicatedMobileDevelopers";
-import MultiplePlatformSolutions from "../components/PagesComponent/MultiplePlatformSolutions";
+import SEO from "../../components/Seo";
+import Layout from "../../components/Layout/layout";
+import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
+import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
+import Achievements from "../../components/PagesComponent/Achievements";
+import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import Collaboration from "../../components/PagesComponent/Collaboration";
+import PeopleFirst from "../../components/PagesComponent/PeopleFirst";
+import { peopleFirstData } from "../../constants";
+import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
+import FaqSection from "../../components/PagesComponent/Faq";
+import StartProject from "../../components/PagesComponent/StartProject";
+import AppDevelopmentServices from "../../components/PagesComponent/TechnicalGuidance";
+import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
+import SecretSauce from "../../components/PagesComponent/SecretSauce";
+import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
+import DedicatedMobileDevelopers from "../../components/PagesComponent/DedicatedMobileDevelopers";
+import MultiplePlatformSolutions from "../../components/PagesComponent/MultiplePlatformSolutions";
 
 import {
   lostToLaunchedItems,
   mobileAppFaq,
   developmentServicesData,
   revenueData,
-} from "../constants";
+} from "../../constants";
 
 const MobileApp = () => {
   return (

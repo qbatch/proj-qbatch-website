@@ -1,12 +1,42 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { StoriesWrapper, ImageOpenStyle } from "./style";
+import { useStaticQuery, graphql } from "gatsby";
 
 // import PrimaryButton from "../../UiComponent/PrimaryButton";
 import Container from "../../UiComponent/Container";
-import { stories } from "../../../constants";
 
 const Index = () => {
+  const data = useStaticQuery(graphql`
+    query storiesQuery {
+      allStrapiPortfolio {
+        nodes {
+          projects {
+            projectCategory
+            projectDesc
+            projectName
+            imgOpen
+            projectImg {
+              localFile {
+                url
+              }
+            }
+            projectLogo {
+              localFile {
+                url
+              }
+            }
+            projectTags {
+              strapi_json_value
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const portfolioData = data.allStrapiPortfolio.nodes[0].projects;
+
   return (
     <StoriesWrapper>
       <Container>
@@ -16,7 +46,7 @@ const Index = () => {
           Qbatch to build high-impact products
         </p>
         <Row className="wrapper">
-          {stories.map((item, index) => (
+          {portfolioData.map((item, index) => (
             <Col xl={item.imgOpen ? 8 : 4}>
               <div className="column" key={index}>
                 <div
@@ -25,26 +55,29 @@ const Index = () => {
                   }`}
                 >
                   {item.imgOpen ? (
-                    <ImageOpenStyle src={item.imgOpen}></ImageOpenStyle>
+                    <ImageOpenStyle src={item.projectImg.localFile.url}></ImageOpenStyle>
                   ) : (
                     <div className="close-small-img">
-                      <ImageOpenStyle src={item.imgClose} type="close"></ImageOpenStyle>
+                      <ImageOpenStyle
+                        src={item.projectImg.localFile.url}
+                        type="close"
+                      ></ImageOpenStyle>
                     </div>
                   )}
                   <div
                     className={`column-inner-right ${
-                      item.imgClose ? "close-column-inner" : ""
+                      item.imgOpen ? "" : "close-column-inner"
                     }`}
                   >
                     <div className="close-image">
-                      <img src={item.imgClose} alt="story" />
+                      <img src={item.projectImg.localFile.url} alt="story" />
                     </div>
                     <div className="content">
-                      <img className="logo" src={item.logo} alt="logo" />
-                      <h3>{item.title}</h3>
-                      <p className="paragraph">{item.description}</p>
+                      <img className="logo" src={item.projectLogo.localFile.url} alt="logo" />
+                      <h3>{item.projectName}</h3>
+                      <p className="paragraph">{item.projectDesc}</p>
                       <div className="badge">
-                        {item.badge.map((badge) => (
+                        {item.projectTags.strapi_json_value.map((badge) => (
                           <span>{badge}</span>
                         ))}
                       </div>
