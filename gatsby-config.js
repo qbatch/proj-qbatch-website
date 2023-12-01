@@ -13,42 +13,34 @@ const strapiConfig = {
   apiURL,
   accessToken,
   collectionTypes: [
-    'home',
-    'contact',
-    {
-      singularName: 'portfolio',
-      queryParams: {
-        populate: {
-          projects: {
-            populate: '*',
-          },
-          seo: '*',
+   "home",
+   'contact', 
+  {
+    singularName: 'portfolio',
+    queryParams: {
+      populate: {
+        'projects': {
+          populate: "*"
         },
+        'seo': "*"
       },
     },
-    'about-us',
-    {
-      singularName: 'contact-us',
-      queryParams: {
-        populate: {
-          testimonials: {
-            populate: '*',
-          },
-          seo: '*',
+  },
+   'about-us', 
+  {
+    singularName: 'contact-us',
+    queryParams: {
+      populate: {
+        'testimonials': {
+          populate: "*"
         },
+        'seo': "*"
       },
     },
-    'mobile-app',
-    'cto-service',
-    'web-app',
-    'product-design',
-    'ecommerce',
-    'enterprise',
-    'blog',
-  ],
+  }, 
+  'mobile-app','cto-service','web-app','product-design', 'ecommerce','enterprise', "blog"],
   queryLimit: 1000,
 }
-
 module.exports = {
   siteMetadata,
   flags: {
@@ -60,6 +52,10 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-source-strapi`,
+      options: strapiConfig,
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -92,10 +88,6 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-source-strapi`,
-      options: strapiConfig,
-    },
-    {
       resolve: `gatsby-plugin-recaptcha`,
       options: {
         async: false,
@@ -110,6 +102,7 @@ module.exports = {
         path: `${__dirname}/static/`,
       },
     },
+
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
