@@ -5,7 +5,10 @@ const siteMetadata = {
   keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
   siteUrl: `https://qbatch.com`,
   language: `en-us`,
-}
+},
+env = require('dotenv').config({
+  path: require('path').join(__dirname, '.env'),
+})
 
 const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = process.env
 
@@ -60,7 +63,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: `${siteMetadata.siteUrl}`,
-        sitemap: `${siteMetadata.siteUrl}sitemap-index.xml`,
+        sitemap: `${siteMetadata.siteUrl}/sitemap-index.xml`,
         policy: [
           { userAgent: '*', disallow: ['/cgi-bin/', '/wp-admin/'] },
           { userAgent: 'Googlebot', allow: '/' },
