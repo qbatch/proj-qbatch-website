@@ -13,7 +13,7 @@ import DrawerWrapper from "./style";
 const servicesItems = [
   {
     menu: 'Enterprise Software Development Solutions',
-    to: '/services/enterprise-software',
+    to: '/services/enterprise-software-development',
   },
   {
     menu: 'E-commerce Automation Services',
@@ -21,11 +21,11 @@ const servicesItems = [
   },
   {
     menu: 'Web App Development',
-    to: '/services/web-app',
+    to: '/services/web-app-development',
   },
   {
     menu: 'Mobile App Development',
-    to: '/services/mobile-app',
+    to: '/services/mobile-app-development',
   },
   {
     menu: 'CTO as a Service',
@@ -33,7 +33,7 @@ const servicesItems = [
   },
   {
     menu: 'Product Design & Development',
-    to: '/services/product-design',
+    to: '/services/product-design-development',
   },
   {
     menu: 'MVP Development',
