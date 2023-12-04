@@ -1,56 +1,58 @@
-const siteMetadata = {
-  robots: `index,folow`,
-  title: `Qbatch`,
-  description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
-  keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
-  siteUrl: `https://qbtach.com`,
-  language: `en-us`,
-}
-
-const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = process.env
+const env = require('dotenv').config({
+  path: require('path').join(__dirname, '.env'),
+})
+const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = process.env;
 
 const strapiConfig = {
   apiURL,
   accessToken,
   collectionTypes: [
-    'home',
-    'contact',
-    {
-      singularName: 'portfolio',
-      queryParams: {
-        populate: {
-          projects: {
-            populate: '*',
-          },
-          seo: '*',
+   'contact', 
+   {
+    singularName: 'awards-and-recognition',
+    queryParams: {
+      populate: {
+        'awards': {
+          populate: "*"
         },
       },
     },
-    'about-us',
-    {
-      singularName: 'contact-us',
-      queryParams: {
-        populate: {
-          testimonials: {
-            populate: '*',
-          },
-          seo: '*',
+  },
+  {
+    singularName: 'our-client',
+    queryParams: {
+      populate: {
+        'clients': {
+          populate: "*"
         },
       },
     },
-    'mobile-app',
-    'cto-service',
-    'web-app',
-    'product-design',
-    'ecommerce',
-    'enterprise',
-    'blog',
-  ],
+  },
+  {
+    singularName: 'testimonial',
+    queryParams: {
+      populate: "*"
+    },
+  },
+  {
+    singularName: 'our-project',
+    queryParams: {
+      populate: "*"
+    },
+  },
+  "blog"],
+  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio'],
   queryLimit: 1000,
 }
-
 module.exports = {
-  siteMetadata,
+  siteMetadata: {
+    robots: `index,folow`,
+    title: `Qbatch`,
+    description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
+    keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
+    siteUrl: `https://qbtach.com`,
+    language: `en-us`,
+  },
   flags: {
     DEV_SSR: true,
   },
@@ -60,37 +62,6 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: `${siteMetadata.siteUrl}`,
-        sitemap: `${siteMetadata.siteUrl}sitemap-index.xml`,
-        policy: [
-          { userAgent: '*', disallow: ['/cgi-bin/', '/wp-admin/'] },
-          { userAgent: 'Googlebot', allow: '/' },
-          { userAgent: 'googlebot-image', allow: '/' },
-          { userAgent: 'googlebot-mobile', allow: '/' },
-          { userAgent: 'Googlebot-News', allow: '/' },
-          { userAgent: 'Googlebot-Video/1.0', allow: '/' },
-          { userAgent: 'APIs-Google', allow: '/' },
-          { userAgent: 'Googlebot-Image/1.0', allow: '/' },
-          { userAgent: 'MSNBot', disallow: '' },
-          { userAgent: 'Slurp', disallow: '' },
-          { userAgent: 'Teoma', disallow: '' },
-          { userAgent: 'Gigabot', disallow: '' },
-          { userAgent: 'Robozilla', disallow: '' },
-          { userAgent: 'Nutch', disallow: '' },
-          { userAgent: 'ia_archiver', disallow: '' },
-          { userAgent: 'baiduspider', disallow: '' },
-          { userAgent: 'naverbot', disallow: '' },
-          { userAgent: 'yeti', disallow: '' },
-          { userAgent: 'yahoo-mmcrawler', disallow: '' },
-          { userAgent: 'psbot', disallow: '' },
-          { userAgent: 'yahoo-blogs/v3.9', disallow: '' },
-        ],
-      },
-    },
-    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,

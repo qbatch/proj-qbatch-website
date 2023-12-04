@@ -9,25 +9,23 @@ import Container from "../../UiComponent/Container";
 const Index = () => {
   const data = useStaticQuery(graphql`
     query storiesQuery {
-      allStrapiPortfolio {
+      allStrapiOurProject {
         nodes {
-          projects {
-            projectCategory
-            projectDesc
-            projectName
-            imgOpen
-            projectImg {
-              localFile {
-                url
-              }
+          projectName
+          projectDesc
+          projectCategory
+          imgOpen
+          projectTags {
+            strapi_json_value
+          }
+          projectImg {
+            localFile {
+              url
             }
-            projectLogo {
-              localFile {
-                url
-              }
-            }
-            projectTags {
-              strapi_json_value
+          }
+          projectLogo {
+            localFile {
+              url
             }
           }
         }
@@ -35,7 +33,7 @@ const Index = () => {
     }
   `);
 
-  const portfolioData = data.allStrapiPortfolio.nodes[0].projects;
+  const portfolioData = data.allStrapiOurProject.nodes;
 
   return (
     <StoriesWrapper>

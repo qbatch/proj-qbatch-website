@@ -99,7 +99,7 @@ export const Head = () => {
     }
   `)
 
-  const seoData = data.allStrapiCtoService.nodes[0]?.seo[0]
+  const seoData = data.allStrapiCtoService.nodes[0]?.seo
   return (
     <SEO
       title={seoData.metaTitle}
