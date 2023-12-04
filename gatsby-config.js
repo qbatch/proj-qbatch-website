@@ -16,36 +16,54 @@ const strapiConfig = {
   apiURL,
   accessToken,
   collectionTypes: [
-   "home",
    'contact', 
-  {
-    singularName: 'portfolio',
+   {
+    singularName: 'awards-and-recognition',
     queryParams: {
       populate: {
-        'projects': {
+        'awards': {
           populate: "*"
         },
         'seo': "*"
       },
     },
   },
-   'about-us', 
   {
-    singularName: 'contact-us',
+    singularName: 'our-client',
     queryParams: {
       populate: {
-        'testimonials': {
+        'clients': {
           populate: "*"
         },
         'seo': "*"
       },
     },
-  }, 
-  'mobile-app','cto-service','web-app','product-design', 'ecommerce','enterprise', "blog"],
+  },
+  {
+    singularName: 'testimonial',
+    queryParams: {
+      populate: "*"
+    },
+  },
+  {
+    singularName: 'our-project',
+    queryParams: {
+      populate: "*"
+    },
+  },
+  "blog"],
+  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio'],
   queryLimit: 1000,
 }
 module.exports = {
-  siteMetadata,
+  siteMetadata: {
+    robots: `index,folow`,
+    title: `Qbatch`,
+    description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
+    keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
+    siteUrl: `https://qbtach.com`,
+    language: `en-us`,
+  },
   flags: {
     DEV_SSR: true,
   },

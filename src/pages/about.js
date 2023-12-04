@@ -43,7 +43,7 @@ export const Head = () => {
     }
   `)
 
-  const seoData = data.allStrapiAboutUs.nodes[0]?.seo[0]
+  const seoData = data.allStrapiAboutUs.nodes[0]?.seo
   
   return (
     <SEO

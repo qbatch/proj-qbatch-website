@@ -54,24 +54,23 @@ const Index = ({ heading, paragraph, componentName }) => {
 
     const data = useStaticQuery(graphql`
       query portfolioQuery {
-        allStrapiPortfolio {
+        allStrapiOurProject {
           nodes {
-            projects {
-              projectCategory
-              projectName
-              projectTags {
-                strapi_json_value
+            projectName
+            projectDesc
+            projectCategory
+            imgOpen
+            projectTags {
+              strapi_json_value
+            }
+            projectImg {
+              localFile {
+                url
               }
-              projectImg {
-                localFile {
-                  url
-                }
-              }
-              imgOpen
-              projectLogo {
-                localFile {
-                  url
-                }
+            }
+            projectLogo {
+              localFile {
+                url
               }
             }
           }
@@ -79,7 +78,8 @@ const Index = ({ heading, paragraph, componentName }) => {
       }
     `)
 
-    const portfolioData = data.allStrapiPortfolio.nodes[0].projects;
+    const portfolioData = data.allStrapiOurProject.nodes;
+    
   return (
     <ProvenExperienceWrapper>
       <Container>

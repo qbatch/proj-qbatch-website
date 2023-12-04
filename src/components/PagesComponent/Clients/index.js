@@ -1,14 +1,33 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import { useStaticQuery, graphql } from 'gatsby'
 
-import { clientsData } from "../../../constants";
+// import { clientsData } from "../../../constants";
 
 import Container from "../../UiComponent/Container";
 
 import AwardsWrapper from "./style";
 
-
 const Index = () => {
+
+  const data = useStaticQuery(graphql`
+  query ClientsQuery {
+    allStrapiOurClient {
+      nodes {
+        clients {
+          link
+          logo {
+            localFile {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`);
+
+const clientsData = data.allStrapiOurClient.nodes;
   
   return (
     <AwardsWrapper>
@@ -22,8 +41,8 @@ const Index = () => {
               <div className="clients-logos">
                 {clientsData.map((data, ind) => (
                   <div className="logo" key={ind}>
-                    <a href={data.link} target="_blank">
-                      <img src={data.img} alt="client_logo"/>
+                    <a href={data.clients.link} target="_blank" rel="noreferrer">
+                      <img src={data.clients.logo.localFile.url} alt="client_logo"/>
                     </a>
                   </div>
                 ))}

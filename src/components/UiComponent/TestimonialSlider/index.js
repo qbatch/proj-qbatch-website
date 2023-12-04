@@ -50,24 +50,22 @@ const Index = () => {
   };
 
   const data = useStaticQuery(graphql`
-    query testimonialsQuery {
-      allStrapiContactUs {
+    query TestimonialsQuery {
+      allStrapiTestimonial {
         nodes {
-          testimonials {
-            clientName
-            feedback
-            agencyName
-            clientImg {
-              localFile {
-                url
-              }
+          clientName
+          feedback
+          agencyName
+          clientImg {
+            localFile {
+              url
             }
           }
         }
       }
     }
     `);
-    const testimonialsData = data.allStrapiContactUs.nodes[0].testimonials;
+    const testimonialsData = data.allStrapiTestimonial.nodes;
 
   return (
     <ProvenExperienceWrapper>
