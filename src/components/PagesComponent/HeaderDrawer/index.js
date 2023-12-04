@@ -29,7 +29,7 @@ const servicesItems = [
   },
   {
     menu: 'CTO as a Service',
-    to: '/services/cto-as-service',
+    to: '/services/cto-as-a-service',
   },
   {
     menu: 'Product Design & Development',
