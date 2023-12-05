@@ -55,6 +55,7 @@ export const Head = () => {
   `)
 
   const seoData = data.allStrapiAboutUs.nodes[0]?.seo
+  console.log(JSON.stringify(seoData.structuredData))
   return (
     <SEO
       title={seoData.metaTitle}
