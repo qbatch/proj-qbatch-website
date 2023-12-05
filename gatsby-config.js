@@ -10,7 +10,7 @@ env = require('dotenv').config({
   path: require('path').join(__dirname, '.env'),
 })
 
-const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = process.env
+const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken, GOOGLE_TAG_ID: googleTagId } = process.env
 
 const strapiConfig = {
   apiURL,
@@ -132,7 +132,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: 'GTM-W3DPVBGB',
+        id: googleTagId,
         includeInDevelopment: false,
       },
     },
