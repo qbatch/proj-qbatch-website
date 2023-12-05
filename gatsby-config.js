@@ -1,14 +1,15 @@
 const siteMetadata = {
-  robots: `index,folow`,
-  title: `Qbatch`,
-  description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
-  keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
-  siteUrl: `https://qbatch.com`,
-  language: `en-us`,
-},
-env = require('dotenv').config({
-  path: require('path').join(__dirname, '.env'),
-})
+    robots: `index,folow`,
+    title: `Qbatch`,
+    description: `We are busy building empires for our dear clients globally. Hire our skilled software developers for error-free code, and on-time project delivery.`,
+    keywords: `hire best dedicated developers, hire dedicated software development team, dedicated mobile app development team`,
+    siteUrl: `https://qbatch.com`,
+    twitterUsername: `@qbatchofficial`,
+    language: `en-us`,
+  },
+  env = require('dotenv').config({
+    path: require('path').join(__dirname, '.env'),
+  })
 
 const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = process.env
 
@@ -50,7 +51,7 @@ const strapiConfig = {
     },
   },
   "blog"],
-  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio'],
+  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio','faq'],
   queryLimit: 1000,
 }
 module.exports = {

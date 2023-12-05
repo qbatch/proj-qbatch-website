@@ -31,12 +31,23 @@ export const Head = () => {
       allStrapiAboutUs {
         nodes {
           seo {
+            structuredData {
+              _context
+              _type
+              name
+              url
+              potentialAction {
+                _type
+                query_input
+                target
+              }
+            }
+            keywords
+            language
+            metaDescription
+            metaRobots
             metaTitle
             slug
-            metaRobots
-            metaDescription
-            language
-            keywords
           }
         }
       }
@@ -44,7 +55,6 @@ export const Head = () => {
   `)
 
   const seoData = data.allStrapiAboutUs.nodes[0]?.seo
-  
   return (
     <SEO
       title={seoData.metaTitle}
@@ -53,7 +63,9 @@ export const Head = () => {
       language={seoData.language}
       robots={seoData.metaRobots}
       pathname={seoData.slug}
-    />
+    >
+      <script type="application/ld+json">{JSON.stringify(seoData.structuredData)}</script>
+    </SEO>
   )
 }
 
