@@ -24,7 +24,6 @@ const strapiConfig = {
         'awards': {
           populate: "*"
         },
-        'seo': "*"
       },
     },
   },
@@ -35,7 +34,6 @@ const strapiConfig = {
         'clients': {
           populate: "*"
         },
-        'seo': "*"
       },
     },
   },
@@ -129,6 +127,13 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: './src/assets/images/qbatch-logo.svg',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-W3DPVBGB',
+        includeInDevelopment: false,
       },
     },
   ],
