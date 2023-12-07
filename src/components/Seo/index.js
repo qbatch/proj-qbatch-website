@@ -30,12 +30,17 @@ const SEO = ({ title, description, language, robots, pathname, children }) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
+
       <meta name="twitter:description" content={seo.description} />
       {/* <meta name="twitter:image" content={seo.image} /> */}
       <meta name="twitter:creator" content={seo.userName} />
       <meta property="og:url" content={seo.url} key="og:url" />
       <meta property="og:title" content={seo.title} key="og:title" />
       <meta property="og:description" content={seo.description} key="og:description" />
+      <meta property="og:type" content="WebPage" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       {/* <meta property="og:image" content={seo.image} key="og:image" /> */}
       <link rel="canonical" href={seo.url} />
       <meta name="keywords" content={seo.keywords} />
