@@ -79,7 +79,6 @@ const Index = ({ heading, paragraph, componentName }) => {
     `)
 
     const portfolioData = data.allStrapiOurProject.nodes;
-    
   return (
     <ProvenExperienceWrapper>
       <Container>
@@ -109,7 +108,7 @@ const Index = ({ heading, paragraph, componentName }) => {
                     .filter((x) => x.imgOpen)
                     .map((item, ind) => (
                       <div className="project-title" key={ind}>
-                        <img src={item.projectLogo.localFile.url} alt="logo" width="190px" height="52px" />
+                        <img src={item.projectLogo?.localFile.url} alt="logo" width="190px" height="52px" />
                         <h3>{item.projectName}</h3>
                         <span>{item.projectCategory}</span>
                         <div className="project-tags d-flex">

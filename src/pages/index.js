@@ -1,20 +1,20 @@
-import * as React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import React, { useEffect, useState } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Layout from "../components/Layout/layout";
-import SEO from "../components/Seo";
-import DedicatedDevelopment from "../components/PagesComponent/DedicatedDeveloper";
-import Achievements from "../components/PagesComponent/Achievements";
-import WhatWeCanDo from "../components/PagesComponent/WhatWeCanDo";
-import Expertise from "../components/PagesComponent/Expertise";
-import ProblumSolving from "../components/PagesComponent/ProblumSolving";
-import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
-import HappilyMaking from "../components/PagesComponent/MakingIndustries";
-import WhatDifferenceQbatchMaking from "../components/PagesComponent/WhatDifferenceQbatchMaking";
-import Collaboration from "../components/PagesComponent/Collaboration";
-import Awards from "../components/PagesComponent/Awards";
-import CreativeIntelligence from "../components/PagesComponent/CreativeIntelligence";
-import StartProject from "../components/PagesComponent/StartProject";
+import Layout from '../components/Layout/layout'
+import SEO from '../components/Seo'
+import DedicatedDevelopment from '../components/PagesComponent/DedicatedDeveloper'
+import Achievements from '../components/PagesComponent/Achievements'
+import WhatWeCanDo from '../components/PagesComponent/WhatWeCanDo'
+import Expertise from '../components/PagesComponent/Expertise'
+import ProblumSolving from '../components/PagesComponent/ProblumSolving'
+import ProvenWorkExperience from '../components/PagesComponent/ProvenWorkExperience'
+import HappilyMaking from '../components/PagesComponent/MakingIndustries'
+import WhatDifferenceQbatchMaking from '../components/PagesComponent/WhatDifferenceQbatchMaking'
+import Collaboration from '../components/PagesComponent/Collaboration'
+import Awards from '../components/PagesComponent/Awards'
+import CreativeIntelligence from '../components/PagesComponent/CreativeIntelligence'
+import StartProject from '../components/PagesComponent/StartProject'
 
 const IndexPage = () => {
   return (
@@ -26,10 +26,8 @@ const IndexPage = () => {
       <ProblumSolving
         text={
           <p className="text-h2 quote">
-            We go beyond traditional problem-solving techniques and
-            old-fashioned promises to assist visionaries like you to transform
-            on a massive scale<br></br> —{" "}
-            <b>with logic, innovation, and emotion.</b>
+            We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
+            you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
           </p>
         }
       />
@@ -48,10 +46,11 @@ const IndexPage = () => {
       <CreativeIntelligence />
       <StartProject />
     </Layout>
-  );
-};
+  )
+}
 
 export const Head = () => {
+  const [schema,setSchema]=useState({})
   const data = useStaticQuery(graphql`
     query HomeQuery {
       allStrapiHome {
@@ -67,8 +66,25 @@ export const Head = () => {
       }
     }
   `)
-
+  
   const seoData = data.allStrapiHome.nodes[0]?.seo
+   useEffect(() => {
+     const fetchData = async () => {
+       try {
+         const response = await fetch('https://cms.qbatch.com/api/faq')
+         if (!response.ok) {
+           throw new Error('Network response was not ok')
+         }
+
+         const movies = await response.json()
+         setSchema(movies.data.attributes.structuredData)
+       } catch (error) {
+         console.error('Error fetching data:', error)
+       }
+     }
+
+     fetchData()
+   }, [])
 
   return (
     <SEO
@@ -77,8 +93,10 @@ export const Head = () => {
       keywords={seoData.keywords}
       language={seoData.language}
       robots={seoData.metaRobots}
-    />
+    >
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </SEO>
   )
-};
+}
 
-export default IndexPage;
+export default IndexPage
