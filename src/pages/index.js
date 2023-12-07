@@ -84,7 +84,7 @@ export const Head = () => {
      }
 
      fetchData()
-   }, [])
+   }, [schema])
 
   return (
     <SEO
