@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import axios from 'axios';
 
 import Layout from '../components/Layout/layout'
 import SEO from '../components/Seo'
@@ -71,12 +72,9 @@ export const Head = () => {
    useEffect(() => {
      const fetchData = async () => {
        try {
-         const response = await fetch('https://cms.qbatch.com/api/faq')
-         if (!response.ok) {
-           throw new Error('Network response was not ok')
-         }
-
-         const movies = await response.json()
+         const response = await axios.get('https://cms.qbatch.com/api/faq');
+         console.log('response', response);
+         const movies = await response.data;
          setSchema(movies.data.attributes.structuredData)
        } catch (error) {
          console.error('Error fetching data:', error)
