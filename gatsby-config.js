@@ -6,6 +6,7 @@ const siteMetadata = {
     siteUrl: `https://qbatch.com`,
     twitterUsername: `@qbatchofficial`,
     language: `en-us`,
+    defaultImage: `https://cms.qbatch.com/uploads/Your_Idea_820_03532d7cf6.jpg`,
   },
   env = require('dotenv').config({
     path: require('path').join(__dirname, '.env'),
@@ -48,6 +49,16 @@ const strapiConfig = {
     singularName: 'our-project',
     queryParams: {
       populate: "*"
+    },
+  },
+  {
+    singularName: 'home',
+     queryParams: {
+      populate: {
+       'seo': {
+          populate: "*"
+        },
+      }
     },
   },
   "blog"],

@@ -84,6 +84,11 @@ export const Head = () => {
                 target
               }
             }
+            metaimage {
+              localFile {
+                url
+              }
+            }
             language
             metaDescription
             metaRobots
@@ -93,11 +98,10 @@ export const Head = () => {
         }
       }
     }
-  `);
+  `)
 
   const seoData = data.allStrapiHome.nodes[0]?.seo;
 
-  // Convert keys by replacing underscores with '@'
   const schemaData = seoData.structuredData
     ? _.mapKeys(seoData.structuredData, (value, key) =>
         key.replace(/^_/, '@')
@@ -112,11 +116,12 @@ export const Head = () => {
         keywords={seoData.keywords}
         language={seoData.language}
         robots={seoData.metaRobots}
+        image={seoData.metaimage[0].localFile.url}
       >
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </SEO>
     </>
-  );
+  )
 };
 
 
