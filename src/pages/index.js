@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import axios from 'axios';
+import _ from 'lodash'
+import axios from 'axios'
 
 import Layout from '../components/Layout/layout'
 import SEO from '../components/Seo'
@@ -51,12 +52,38 @@ const IndexPage = () => {
 }
 
 export const Head = () => {
-  const [schema,setSchema]=useState({})
   const data = useStaticQuery(graphql`
     query HomeQuery {
       allStrapiHome {
         nodes {
           seo {
+            structuredData {
+              _context
+              _type
+              _contactPoint {
+                _type
+                areaServed
+                availableLanguage
+                contactType
+                telephone
+              }
+              address {
+                _type
+                addressCountry
+                addressLocality
+                addressRegion
+                postalCode
+                streetAddress
+              }
+              email
+              name
+              sameAs
+              potentialAction {
+                _type
+                query_input
+                target
+              }
+            }
             language
             metaDescription
             metaRobots
@@ -66,35 +93,31 @@ export const Head = () => {
         }
       }
     }
-  `)
-  
-  const seoData = data.allStrapiHome.nodes[0]?.seo
-   useEffect(() => {
-     const fetchData = async () => {
-       try {
-         const response = await axios.get('https://cms.qbatch.com/api/faq');
-         console.log('response', response);
-         const movies = await response.data;
-         setSchema(movies.data.attributes.structuredData)
-       } catch (error) {
-         console.error('Error fetching data:', error)
-       }
-     }
+  `);
 
-     fetchData()
-   }, [schema])
+  const seoData = data.allStrapiHome.nodes[0]?.seo;
+
+  // Convert keys by replacing underscores with '@'
+  const schemaData = seoData.structuredData
+    ? _.mapKeys(seoData.structuredData, (value, key) =>
+        key.replace(/^_/, '@')
+      )
+    : {};
 
   return (
-    <SEO
-      title={seoData.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      robots={seoData.metaRobots}
-    >
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </SEO>
-  )
-}
+    <>
+      <SEO
+        title={seoData.metaTitle}
+        description={seoData.metaDescription}
+        keywords={seoData.keywords}
+        language={seoData.language}
+        robots={seoData.metaRobots}
+      >
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+      </SEO>
+    </>
+  );
+};
+
 
 export default IndexPage
