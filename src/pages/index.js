@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import _ from 'lodash'
-import axios from 'axios'
 
 import Layout from '../components/Layout/layout'
 import SEO from '../components/Seo'

@@ -61,8 +61,18 @@ const strapiConfig = {
       }
     },
   },
+    {
+    singularName: 'header',
+     queryParams: {
+      populate: {
+       'logo': {
+          populate: "*"
+        },
+      }
+    },
+  },
   "blog"],
-  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio','faq'],
+  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio','faq','header'],
   queryLimit: 1000,
 }
 module.exports = {
