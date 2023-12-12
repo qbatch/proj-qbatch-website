@@ -28,7 +28,6 @@ const BlogAllWrapprt = styled.div`
     `}
     }
     .blog-title {
-      margin-bottom: 32px;
       h2 {
         color: ${({ theme }) => theme.colors.whiteColor};
         line-height: 52px;
@@ -36,10 +35,28 @@ const BlogAllWrapprt = styled.div`
           line-height: 32px;
         `}
       }
-      span {
-        color: ${({ theme }) => theme.colors.dividerColor};
-        line-height: 24px;
+      .banner-desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 32px;
+        h1,h2,h3,h4,h5,h6 {
+          display: none;
+        }
+        p {
+          font-size: ${({ theme }) => theme.fonts.baseFontSize};
+          color: ${({ theme }) => theme.colors.dividerColor};
+          line-height: 24px;
+        }
+        span {
+          color: ${({ theme }) => theme.colors.dividerColor};
+          font-size: ${({ theme }) => theme.fonts.baseFontSize};
+          font-family: 'Inter Tight', sans-serif;
+        }
       }
+      
     }
     .timer {
       margin-bottom: 34px;

@@ -1,24 +1,24 @@
 import React from "react";
 import { useStaticQuery, graphql } from 'gatsby';
 
-import SEO from "../components/Seo";
-import Layout from "../components/Layout/layout";
-import StartProject from "../components/PagesComponent/StartProject";
-import WhatCanHelp from "../components/PagesComponent/WhatCanYouHelp/index";
-import BusinessMangement from "../components/PagesComponent/BusinessMangement/index";
-import EcomLogoSection from "../components/PagesComponent/EcomLogoSection";
-import DevelopmentStages from "../components/PagesComponent/DevelopmentStages";
-import EcommerceBanner from "../components/PagesComponent/EcommerceBanner";
-import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
-import IdeasAndInvestments from "../components/PagesComponent/IdeasAndInvestments";
-import FaqSection from "../components/PagesComponent/Faq";
-import { ecomSliderItems, ecomFaqQuestion } from "../constants";
-import MarketplaceSellers from "../components/PagesComponent/MarketplaceSellers";
-import QuotationSection from "../components/PagesComponent/QuotationSection";
-import MarketplaceIntegrations from "../components/PagesComponent/MarketplaceIntegrations";
-import TrippleYourRevenue from "../components/PagesComponent/TrippleYourRevenue";
-import Automation from "../components/PagesComponent/TechnicalGuidance";
-import { automationData } from "../constants";
+import SEO from "../../components/Seo";
+import Layout from "../../components/Layout/layout";
+import StartProject from "../../components/PagesComponent/StartProject";
+import WhatCanHelp from "../../components/PagesComponent/WhatCanYouHelp/index";
+import BusinessMangement from "../../components/PagesComponent/BusinessMangement/index";
+import EcomLogoSection from "../../components/PagesComponent/EcomLogoSection";
+import DevelopmentStages from "../../components/PagesComponent/DevelopmentStages";
+import EcommerceBanner from "../../components/PagesComponent/EcommerceBanner";
+import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import IdeasAndInvestments from "../../components/PagesComponent/IdeasAndInvestments";
+import FaqSection from "../../components/PagesComponent/Faq";
+import { ecomSliderItems, ecomFaqQuestion } from "../../constants";
+import MarketplaceSellers from "../../components/PagesComponent/MarketplaceSellers";
+import QuotationSection from "../../components/PagesComponent/QuotationSection";
+import MarketplaceIntegrations from "../../components/PagesComponent/MarketplaceIntegrations";
+import TrippleYourRevenue from "../../components/PagesComponent/TrippleYourRevenue";
+import Automation from "../../components/PagesComponent/TechnicalGuidance";
+import { automationData } from "../../constants";
 
 const Ecommerce = () => {
   return (
@@ -70,18 +70,30 @@ export const Head = () => {
       allStrapiEcommerce {
         nodes {
           seo {
-            keywords
-            metaDescription
             metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
           }
         }
       }
     }
   `)
 
-  const seoData = data.allStrapiEcommerce.nodes[0]?.seo[0]
+  const seoData = data.allStrapiEcommerce.nodes[0]?.seo
   
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
 }
 
 export default Ecommerce;

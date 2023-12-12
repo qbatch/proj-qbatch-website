@@ -12,46 +12,46 @@ import DrawerWrapper from "./style";
 
 const servicesItems = [
   {
-    menu: "Enterprise Software Development Solutions",
-    to: "/enterprise",
+    menu: 'Enterprise Software Development Solutions',
+    to: '/services/enterprise-software-development',
   },
   {
-    menu: "E-commerce Automation Services",
-    to: "/eCommerce",
+    menu: 'E-commerce Automation Services',
+    to: '/services/e-commerce-automation/',
   },
   {
-    menu: "Web App Development",
-    to: "/webapp",
+    menu: 'Web App Development',
+    to: '/services/web-app-development',
   },
   {
-    menu: "Mobile App Development",
-    to: "/mobileApp",
+    menu: 'Mobile App Development',
+    to: '/services/mobile-app-development',
   },
   {
-    menu: "CTO as a Service",
-    to: "/ctoService",
+    menu: 'CTO as a Service',
+    to: '/services/cto-as-a-service',
   },
   {
-    menu: "Product Design & Development",
-    to: "/productDesign",
+    menu: 'Product Design & Development',
+    to: '/services/product-design-development',
   },
   {
-    menu: "MVP Development",
-    to: "/",
+    menu: 'MVP Development',
+    to: '/',
   },
   {
-    menu: "DevOps and Cloud Computing",
-    to: "/",
+    menu: 'DevOps and Cloud Computing',
+    to: '/',
   },
   {
-    menu: "Low-code/ No-code Platform Development",
-    to: "/",
+    menu: 'Low-code/ No-code Platform Development',
+    to: '/',
   },
   {
-    menu: "UX/UI Design",
-    to: "/",
+    menu: 'UX/UI Design',
+    to: '/',
   },
-];
+]
 
 const frameworksMenu = [
   {
@@ -297,7 +297,7 @@ const Index = (props) => {
       <DrawerWrapper>
         <Container>
           <div className="cross-icon" onClick={() => setOpenDrawer(false)}>
-            <img src="/drawer-cross.svg" alt="close" />
+            <img src="/drawer-cross.svg" alt="close" width="32px" height="32px" />
           </div>
           <div className="d-flex menu-main">
             {dropdownData.map((item, ind) => (
@@ -362,7 +362,7 @@ const Index = (props) => {
                   <div className="email-input">
                     <input type="email" placeholder="Email Address" />
                     <div>
-                      <img src="/drawer-arrow.svg" alt="arrow" />
+                      <img src="/drawer-arrow.svg" alt="arrow" width="28px" height="28px" />
                     </div>
                   </div>
                 </div>

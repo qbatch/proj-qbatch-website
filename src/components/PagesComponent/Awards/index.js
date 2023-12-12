@@ -1,16 +1,34 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import { useStaticQuery, graphql } from "gatsby";
 
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button";
 
 import AwardsWrapper from "./style";
 
-import { awardsData } from "../../../constants";
-
 const Index = ({ maxCols }) => {
   
-  const displayedAwards = maxCols ? awardsData.slice(0, maxCols) : awardsData;
+  const data = useStaticQuery(graphql`
+    query AwardsQuery {
+      allStrapiAwardsAndRecognition {
+        nodes {
+          awards {
+            link
+            logo {
+              localFile {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+`);
+
+const awardsData = data.allStrapiAwardsAndRecognition.nodes;
+
+const displayedAwards = maxCols ? awardsData.slice(0, maxCols) : awardsData;
 
   return (
     <AwardsWrapper>
@@ -31,8 +49,8 @@ const Index = ({ maxCols }) => {
               <Row className="awards-logos">
                 {displayedAwards.map((data, ind) => (
                   <Col md={3} sm={3} xs={6} key={ind}>
-                    <a href={data.link} target="blank">
-                      <img src={data.img} alt={`Award ${ind + 1}`} />
+                    <a href={data.awards.link} target="blank">
+                      <img src={data.awards.logo.localFile.url} alt={`Award ${ind + 1}`} />
                     </a>
                   </Col>
                 ))}

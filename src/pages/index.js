@@ -57,14 +57,16 @@ export const Head = () => {
       allStrapiHome {
         nodes {
           seo {
-            keywords
+            language
             metaDescription
+            metaRobots
             metaTitle
+            keywords
           }
         }
       }
     }
-  `);
+  `)
 
   const seoData = data.allStrapiHome.nodes[0]?.seo
 
@@ -73,8 +75,10 @@ export const Head = () => {
       title={seoData.metaTitle}
       description={seoData.metaDescription}
       keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
     />
-  );
+  )
 };
 
 export default IndexPage;

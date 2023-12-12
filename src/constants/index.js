@@ -117,37 +117,6 @@ const values = [
   { icon: "/value-img-9.svg", title: "Counter-Culture", description: "We don’t compete, we play our own game." },
 ];
 
-const awardsData = [
-  { id: 1, link: 'https://www.designrush.com/agency/profile/qbatch', img: '/design-rush.svg' },
-  {
-    id: 2,
-    link: 'https://upcity.com/profiles/qbatch/sheridan',
-    img: 'https://upcity-marketplace.s3.amazonaws.com/badge/171/basic_full_color/65189dd26c5102f17656998d7315e688.png',
-  },
-  { id: 3, link: 'https://www.topdevelopers.co/profile/qbatch', img: '/top-developers.svg' },
-  { id: 4, link: 'https://www.goodfirms.co/company/qbatch-llc', img: '/good-firms.svg' },
-  { id: 5, link: 'https://topfirms.co/company-detail/3768/qbatch', img: '/top-firms.svg' },
-  {
-    id: 6,
-    link: 'https://www.appfutura.com/companies/qbatch',
-    img: 'https://www.appfutura.com/img/badges/badge-top-software-development-company.png',
-  },
-  {
-    id: 7,
-    link: 'https://reputedfirms.com/qbatch',
-    img: 'https://reputedfirms.com/images/verified-certified.svg',
-  },
-  { id: 8, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
-  { id: 9, link: 'https://www.techimply.com/profile/qbatch', img: '/itfirms-top-app-developers-badge-2023.svg' },
-  { id: 10, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
-  { id: 11, link: '#', img: '/top-rated.svg' },
-  { id: 12, link: '#', img: '/upfirms.svg' },
-  { id: 13, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
-  { id: 14, link: '#', img: '/top-rated.svg' },
-  { id: 15, link: '#', img: '/upfirms.svg' },
-  { id: 16, link: 'https://www.techimply.com/profile/qbatch', img: '/tech-imply.svg' },
-]
-
 const CareersData = [
   { jobTitle: "Job Title 1", location: "Onsite, Lahore", tags: ["Chip/Label", "RubyOnRails", "Django", "nice"] },
   { jobTitle: "Job Title 2", location: "Onsite, Lahore", tags: ["Chip/Label", "React", "Node.js", "nice", "nice-2"] },
@@ -207,126 +176,7 @@ const data = [
     icon2: "/future-plan-icon2.svg",
   },
 ];
-const stories = [
-  {
-    logo: "/ecom-circle.svg",
-    title: "Ecom Circles",
-    description:
-      "We created an all-in-one E-commerce Management Software trusted by 3000+ Amazon and Walmart sellers to organize and streamline their drop-shipping business.",
-    badge: ["Automation", "SaaS", "Warehousing"],
-    link: "/",
-    imgOpen: "/ecom-circles-stories.svg"
-  },
-  {
-    logo: "/rooney-innovation-logo.svg",
-    title: "Ronny Innovations",
-    description:
-      "A state-of-the-art 3PL Solution for Warehouses that manages inventory levels, track stock movement, and monitor order fulfillment in real-time. Roney’s intuitive interface provides actionable insights into your warehouse’s performance, allowing you to make informed decisions toward operational excellence.",
-    badge: ["E-Commerce", "3PL Solution", "Warehousing"],
-    link: "/",
-    imgClose: "/rooney-innovation.png"
-  },
-  {
-    logo: "/birch-fog.svg",
-    title: "Birch+FOG",
-    description:
-      "Fortunate enough to build North America's only anti-anxiety brand that offers full-family CBD and plant-based, and holistic health solutions and products.",
-    badge: ["PWA", "E-commerce", "HealthTech","Custom"],
-    link: "/",
-    imgClose: "/birch-&-fog.png"
-  },
-  {
-    logo: "/one-apply.svg",
-    title: "One App",
-    description:
-      "We developed a powerful E-commerce marketplace that manages the daily inventory and stock data of above 50 different stores. The automated & algorithmic Repricer allows optimal order management, total control over centralized accounts, better profit/loss calculation, & reliable FBA forecasting.",
-    badge: ["Automation", "SaaS", "Warehousing"],
-    link: "/",
-    imgOpen: "/one-app-01.svg"
-  },
-  {
-    logo: "/store-filter.svg",
-    title: "Store Filter",
-    description:
-      "We developed a witty searchable database for eCom agencies, Shopify store owners, and Brokers to know everything their competitors are doing and earn a competitive edge. The app enables real-time reporting on your competition's marketing efforts.",
-    badge: ["Database", "Data Analytics", "Web App"],
-    link: "/",
-    imgOpen: "/store-filter-01.svg"
-  },
-  {
-    logo: "/eu-outdoor-logo.svg",
-    title: "European Outdoors",
-    description:
-      "A powerful Warehouse Software that manages and syncs products across Amazon, Vendor Central, eBay, Walmart & Custom(Facebook + Instagram + Phone) & entertains orders respectively.",
-    badge: ["Warehouse", "Software Development"],
-    link: "/",
-    imgClose: "/european-outdoors.png"
-  },
-  {
-    logo: "/friend-filter-logo.svg",
-    title: "Friend Filter",
-    description:
-      "A high-profile move to help high-stake social media industrialists remove inactive friends from their Facebook. It is a simple Analytics & Reporting app and extension that scans your Facebook activity, lists your inactive friends, and auto-removes them per your request.",
-    badge: ["Social Media", "Facebook", "Mobile App", "Analytics", "B2B"],
-    link: "/",
-    imgClose: "/friend-filter.png"
-  },
-  {
-    logo: "/seller-repay-logo.svg",
-    title: "Seller Repay",
-    description:
-      "Seller Repay is the Amazon Reimbursement Tool that identifies and recovers funds lost due to lost inventory, damaged inventory, customer returns, overcharged fees, and shipping errors on the Amazon platform. With automated tracking and reporting, it ensures accurate financial reconciliation and maximizes reimbursement potential, optimizing seller account management.",
-    badge: ["E-commerce", "SaaS", "Automation"],
-    link: "/",
-    imgOpen: "/seller-repay.svg"
-  },
-  {
-    logo: "/sales-support.svg",
-    title: "Sales Support",
-    description:
-      "We’ve created an immaculate Amazon Wholesale Kickstarter that helped launch 1000+ businesses on Amazon. The platform features a Repricer for automated pricing and a catalog analyzer for better forecasting and profit/loss analysis. While the reimbursements removal and FBA forecasting elevated their business off the ground.",
-    badge: ["Automation", "Saas", "Platform Management", "Web App"],
-    link: "/",
-    imgOpen: "/sales-support-01.svg"
 
-  },
-  {
-    logo: "/northware.svg",
-    title: "Northaware",
-    description:
-      "We tailored a high-quality E-commerce platform that caters to the winter clothing needs of Canadian snowbirds. The platform uses a Shopify CMS for a versatile custom development solution for increased customer engagement and retention.",
-    badge: ["Custom Software Development", "CMS", "Shopify+"],
-    link: "/",
-    imgClose: "/northware.png"
-  },
-  {
-    logo: "/blueware-discount.svg",
-    title: "Blue Warehouse Discounts",
-    description:
-      "We elevated business experience for leading warehouse merchandise with hybrid app development for trackable product management and ShipsStation software for convenient order management.",
-    badge: ["Hybrid App", "Integrations", "E-commerce", "B2c"],
-    link: "/",
-    imgClose: "/blue-warehouse.png"
-  },
-  {
-    logo: "/carbon6-logo.svg",
-    title: "Carbon 6",
-    description:
-      "Carbon 6 Repricer is an effective algorithm-based repricer software solution that facilitates Amazon sellers to automate, manage, review, and list down product pricing from across marketplaces and competitors.",
-    badge: ["E-Commerce", "Automation", "Amazon"],
-    link: "/",
-    imgOpen: "/carbon-6-repricer.svg"
-  },
-  {
-    logo: "/keurig.svg",
-    title: "Keurig",
-    description:
-      "We’ve helped launch an intuitive E-commerce business management platform for the biggest beverage company in North America with 150+ principal warehouses. The mobile app offers easy grocery and product delivery services with over 100K+ downloads.",
-    badge: ["Mobile App", "HealthTech", "Data Management"],
-    link: "/",
-    imgOpen: "/keurig-01.svg"
-  },
-];
 const sliderItems = [
   {
     image: '/discovery-phase.svg',
@@ -2022,62 +1872,10 @@ const cycleProductData = [
     description: "After a rigorous series of QA audits, automated tests, TTD, and code reviews, we bring your product to fruition with continued support featuring continuous integration and delivery and needed improvements to keep your product relevant in the raging technology marathon."
   },
 ]
-const blogCardsData = [
-  {
-    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
-    title: "Blog Title will come here up to two lines.",
-    category: "Software Development",
-    content:
-      "Blog description in maximum two lines will come here. Blog description in max two lines will come here.",
-  },
-  {
-    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
-    title: "Blog Title will come here up to two lines Latest Blog Title Here",
-    category: "Cybersecurity",
-    content:
-      "Latest insight details will come here. Or we can give latest insight details will come here. est insight details will come here est insight details will come here",
-  },
-  {
-    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
-    title: "Blog Title will come here up to two lines Latest Blog Title Here",
-    category: "Software Development",
-    content:
-      "Latest insight details will come here. Or we can give latest insight details.",
-  },
-  {
-    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
-    title: "Latest Insight Title Here",
-    category: "Cybersecurity",
-    content:
-      "Latest insight details will come here. Or we can give latest insight details.",
-  },
-  {
-    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
-    title: "Latest Insight Title Here",
-    category: "Software Development",
-    content:
-      "Latest insight details will come here. Or we can give latest insight details.",
-  },
-  {
-    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
-    title: "Latest Insight Title Here",
-    category: "Cybersecurity",
-    content:
-      "Latest insight details will come here. Or we can give latest insight details.",
-  },
-  {
-    img: "https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg",
-    title: "Latest Insight Title Here",
-    category: "Software Development",
-    content:
-      "Latest insight details will come here. Or we can give latest insight details.",
-  },
-];
 
 export {
   homeTiles,
   CareersData,
-  awardsData,
   values,
   clientsData,
   leaderData,
@@ -2087,7 +1885,6 @@ export {
   productDesignCounterData,
   weDoData,
   data,
-  stories,
   sliderItems,
   ecomSliderItems,
   ecomLogos,
@@ -2120,5 +1917,4 @@ export {
   developmentProcessData,
   productDesignFaq,
   whyChooseQbatchData,
-  blogCardsData
 }

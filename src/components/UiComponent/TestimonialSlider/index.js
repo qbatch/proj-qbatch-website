@@ -50,24 +50,22 @@ const Index = () => {
   };
 
   const data = useStaticQuery(graphql`
-    query testimonialsQuery {
-      allStrapiContactUs {
+    query TestimonialsQuery {
+      allStrapiTestimonial {
         nodes {
-          testimonials {
-            clientName
-            feedback
-            agencyName
-            clientImg {
-              localFile {
-                url
-              }
+          clientName
+          feedback
+          agencyName
+          clientImg {
+            localFile {
+              url
             }
           }
         }
       }
     }
     `);
-    const testimonialsData = data.allStrapiContactUs.nodes[0].testimonials;
+    const testimonialsData = data.allStrapiTestimonial.nodes;
 
   return (
     <ProvenExperienceWrapper>
@@ -75,7 +73,7 @@ const Index = () => {
         <Carousel responsive={responsive} arrows={false} ref={carousel1Ref} swipeable={false} draggable={false}>
           {testimonialsData.map((item, ind) => (
             <div className="testimonial-wrapper" key={ind}>
-              <img className="client-image" src={item.clientImg.localFile.url} alt="client" />
+              <img className="client-image" src={item.clientImg?.localFile.url} alt="client" width="158" />
               <p className="testimonial-text">{item.feedback}</p>
               {/* <Player playsInline src={item.projectVideo}>
                   <BigPlayButton position="center" />

@@ -1,16 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
+import { navigate } from "gatsby";
 
 import Container from "../../UiComponent/Container";
 import PrimaryButton from "../../UiComponent/PrimaryButton";
-import { blogCardsData } from "../../../constants";
 import Button from "../../../components/UiComponent/Button";
 import BlogCardsWrapper from "../BlogCards/style";
+import { Queries } from "../../../constants/queries";
+import { ReadingTime, TimeAgo } from "../../../constants/Utils";
+
 import ContentWrapper from "./style";
 
-function App() {
+function App({ data }) {
   const [activeSection, setActiveSection] = useState(0);
   const [showbars, setShowbars] = useState();
+
+  const blogArticle = Queries();
+  const blogLikedData = blogArticle.allStrapiArticle.nodes.filter(
+    (item) => item.blogTitle !== data?.blogTitle
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +26,7 @@ function App() {
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section, index) => {
-        const offsetTop = section.offsetTop; // Adjust the offset as needed
+        const offsetTop = section.offsetTop;
         const offsetBottom = offsetTop + section.offsetHeight;
 
         if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
@@ -103,19 +111,7 @@ function App() {
     );
   };
   const thirdContent = () => {
-    return (
-      <ContentWrapper>
-        <div className="can-help" id="Third Section">
-          <h4>
-            Can’t get the hang of latest tools & technology? We know, deciding &
-            making the right investments is difficult.
-          </h4>
-          <div className="d-flex justify-content-center can-help-button">
-            <Button className="secondary-btn" text="We Can Help" />
-          </div>
-        </div>
-      </ContentWrapper>
-    );
+    return <ContentWrapper></ContentWrapper>;
   };
   const forthContent = () => {
     return (
@@ -224,15 +220,37 @@ function App() {
           <Container>
             <Row>
               <Col lg={8} md={6} sm={12}>
-                {content.map((list, index) => (
-                  <div
-                    key={index}
-                    className="section inner-content"
-                    id={`section${index + 1}`}
-                  >
-                    {list.content}
+                <div
+                  className="section inner-content"
+                  // id={`section${index + 1}`}
+                >
+                  <span
+                    className="paragraph"
+                    dangerouslySetInnerHTML={{
+                      __html: data?.blogDescription?.data.blogDescription,
+                    }}
+                  />
+                </div>
+                <div className="can-help" id="Third Section">
+                  <h4>
+                    Can’t get the hang of latest tools & technology? We know,
+                    deciding & making the right investments is difficult.
+                  </h4>
+                  <div className="d-flex justify-content-center can-help-button">
+                    <Button className="secondary-btn" text="We Can Help" />
                   </div>
-                ))}
+                </div>
+                <div
+                  className="section inner-content"
+                  // id={`section${index + 1}`}
+                >
+                  <span
+                    className="paragraph"
+                    dangerouslySetInnerHTML={{
+                      __html: data?.bottomDescription?.data.bottomDescription,
+                    }}
+                  />
+                </div>
                 <div className="social-links d-flex">
                   <span className="title">Share</span>
                   <ul className="d-flex social-link">
@@ -252,39 +270,65 @@ function App() {
                   <h3>You might also like…</h3>
                   <BlogCardsWrapper>
                     <Row>
-                      {blogCardsData.slice(0, 2).map((card, ind) => (
-                        <Col xl={6}>
-                          <div className="inner" key={ind}>
-                            <div className="card-img">
-                              <img src={card.img} alt={card.title} />
-                              <div className="d-flex align-items-center justify-content-between">
-                                <div className="blog-badge">Blog</div>
-                                <span className="hours">17 Hours ago</span>
-                              </div>
-                            </div>
-                            <div className="inner-content">
-                              <p>{card.title}</p>
-                              <div className="d-flex gap-2">
-                                <div className="blog-badge">
-                                  {card.category}
+                      {blogLikedData
+                        .slice(0, 2)
+                        .reverse()
+                        .map((card, ind) => {
+                          const customDate = new Date(card?.publishedAt);
+                          return (
+                            <Col xl={6}>
+                              <div className="inner" key={ind}>
+                                <div className="card-img">
+                                  <img
+                                    src={card.blogImg.localFile.url}
+                                    alt={card.blogTitle}
+                                  />
+                                  <div className="d-flex align-items-center justify-content-between">
+                                    <div className="blog-badge">Blog</div>
+                                    <span className="hours">
+                                      <TimeAgo customDate={customDate} />
+                                    </span>
+                                  </div>
                                 </div>
-                                <div className="blog-badge">Cybersecurity</div>
-                              </div>
-                              <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-                                <span>Author Name Here</span>
-                                <div className="timer">
-                                  <img src="/timer-blue.svg" alt="timer" />
-                                  <span>5 Minutes Read</span>
+                                <div className="inner-content">
+                                  <p className="blog-title">{card.blogTitle}</p>
+                                  <div className="d-flex gap-2">
+                                    {data?.blogTags.strapi_json_value.map(
+                                      (tag, ind) => (
+                                        <div className="blog-badge">
+                                          <span key={ind}>{tag}</span>
+                                        </div>
+                                      )
+                                    )}
+                                  </div>
+                                  <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
+                                    <span>{card.user.username}</span>
+                                    <div className="timer">
+                                      <img src="/timer-blue.svg" alt="timer" />
+                                      <span>
+                                        <ReadingTime
+                                          description={
+                                            card?.blogDescription?.data
+                                              .blogDescription
+                                          }
+                                        />{" "}
+                                        Minutes Read
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <PrimaryButton
+                                    text="Explore More"
+                                    fontSize="16px"
+                                    onClick={() => {
+                                      navigate("/blogDetails");
+                                      localStorage.setItem("blog_id", card.id);
+                                    }}
+                                  />
                                 </div>
                               </div>
-                              <PrimaryButton
-                                text="Explore More"
-                                fontSize="16px"
-                              />
-                            </div>
-                          </div>
-                        </Col>
-                      ))}
+                            </Col>
+                          );
+                        })}
                     </Row>
                   </BlogCardsWrapper>
                 </div>
@@ -294,7 +338,7 @@ function App() {
                   <div className="author-name">
                     <div className="avatar-box d-flex flex-wrap align-items-center">
                       <img src="/avatar.svg" alt="no-avartar" />
-                      <span>Author Name Will Come Here</span>
+                      <span>{data?.user.username}</span>
                     </div>
                     <span className="title">
                       Lorem Ipsum is simply dummy text of the printing and

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
@@ -9,17 +8,20 @@ import SearchInput from "../components/UiComponent/SearchInput";
 import BlogAll from "../components/PagesComponent/BlogAll";
 import BlogCards from "../components/PagesComponent/BlogCards";
 import Container from "../components/UiComponent/Container";
-import { blogCardsData } from "../constants";
+import  { Queries }  from "../constants/queries";
 
 const BlogPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
+
+  const blogArticle = Queries();
+  const blogData = blogArticle.allStrapiArticle.nodes;
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
   };
 
-  const filteredData = blogCardsData.filter(item =>
-    item.title.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredData = blogData.filter(item =>
+    item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const tabsData = [
@@ -85,23 +87,18 @@ const BlogPage = () => {
   );
 };
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query BlogQuery {
-      allStrapiBlog {
-        nodes {
-          seo {
-            keywords
-            metaDescription
-            metaTitle
-          }
-        }
-      }
-    }
-  `)
-
-  const seoData = data.allStrapiBlog.nodes[0]?.seo
-  
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+  const blogSeo = Queries();
+  const seoData = blogSeo.allStrapiBlog.nodes[0]?.seo
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
 }
 
 export default BlogPage;

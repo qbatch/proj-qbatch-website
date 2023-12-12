@@ -54,41 +54,42 @@ const Index = ({ heading, paragraph, componentName }) => {
 
     const data = useStaticQuery(graphql`
       query portfolioQuery {
-        allStrapiPortfolio {
+        allStrapiOurProject {
           nodes {
-            projects {
-              projectCategory
-              projectName
-              projectTags {
-                strapi_json_value
+            projectName
+            projectDesc
+            projectCategory
+            imgOpen
+            projectTags {
+              strapi_json_value
+            }
+            projectImg {
+              localFile {
+                url
               }
-              projectImg {
-                localFile {
-                  url
-                }
-              }
-              projectLogo {
-                localFile {
-                  url
-                }
+            }
+            projectLogo {
+              localFile {
+                url
               }
             }
           }
         }
       }
-    `);
-    const portfolioData = data.allStrapiPortfolio.nodes[0].projects;
+    `)
 
+    const portfolioData = data.allStrapiOurProject.nodes;
+    
   return (
     <ProvenExperienceWrapper>
       <Container>
         <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
           <div>
-            <h2 className={`heading ${componentName === "index" && "text-h1"}`}>{heading}</h2>
+            <h2 className={`heading ${componentName === 'index' && 'text-h1'}`}>{heading}</h2>
             <p className="paragraph">{paragraph}</p>
           </div>
           <div className="mt-md-4 mt-0">
-            <Button onClick={() => navigate("/portfolio")}  text="Explore More" />
+            <Button onClick={() => navigate('/portfolio')} text="Explore More" />
           </div>
         </div>
       </Container>
@@ -104,18 +105,20 @@ const Index = ({ heading, paragraph, componentName }) => {
                   swipeable={false}
                   draggable={false}
                 >
-                  {portfolioData.map((item, ind) => (
-                    <div className="project-title" key={ind}>
-                      <img src={item.projectLogo.localFile.url} alt="logo" />
-                      <h3>{item.projectName}</h3>
-                      <span>{item.projectCategory}</span>
-                      <div className="project-tags d-flex">
-                        {item.projectTags?.strapi_json_value.map((tag, ind) => (
-                          <div key={ind}>{tag}</div>
-                        ))}
+                  {portfolioData
+                    .filter((x) => x.imgOpen)
+                    .map((item, ind) => (
+                      <div className="project-title" key={ind}>
+                        <img src={item.projectLogo.localFile.url} alt="logo" width="190px" height="52px" />
+                        <h3>{item.projectName}</h3>
+                        <span>{item.projectCategory}</span>
+                        <div className="project-tags d-flex">
+                          {item.projectTags?.strapi_json_value.map((tag, ind) => (
+                            <div key={ind}>{tag}</div>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
                 </Carousel>
                 <div className="carousel-button-group d-flex align-items-center">
                   <ArrowLeftIcon
@@ -131,14 +134,16 @@ const Index = ({ heading, paragraph, componentName }) => {
                     </span>
                     <span>/</span>
                     <span>
-                      {portfolioData.length < 10 && 0}
-                      {portfolioData.length}
+                      {portfolioData.filter((x) => x.imgOpen).length < 10 && 0}
+                      {portfolioData.filter((x) => x.imgOpen).length}
                     </span>
                   </span>
                   <ArrowRightIcon
                     onClick={() => {
-                      {currentInd === portfolioData.length ? "" :  handleButtonClickNext()}
-                      setCurrentInd(currentInd === portfolioData.length ? currentInd : currentInd + 1)
+                      if ( currentInd !== portfolioData.filter((x)=> x.imgOpen).length) {
+                        handleButtonClickNext()
+                      };
+                      setCurrentInd(currentInd === portfolioData.filter((x)=> x.imgOpen).length ? currentInd : currentInd + 1)
                     }}
                   />
                 </div>
@@ -155,11 +160,13 @@ const Index = ({ heading, paragraph, componentName }) => {
                   draggable={false}
                   itemClass="qb-carousel-item"
                 >
-                  {portfolioData.map((item, ind) => (
-                    <div key={ind}>
-                      <img src={item.projectImg.localFile.url} alt="project" />
-                    </div>
-                  ))}
+                  {portfolioData
+                    .filter((x) => x.imgOpen)
+                    .map((item, ind) => (
+                      <div key={ind}>
+                        <img src={item.projectImg?.localFile.url} alt="project" />
+                      </div>
+                    ))}
                   <div></div>
                 </Carousel>
               </div>
