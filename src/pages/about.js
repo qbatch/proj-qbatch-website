@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from 'gatsby';
-
+import _ from 'lodash'
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import CompanyBanner from "../components/PagesComponent/CompanyBanner";
@@ -55,6 +55,9 @@ export const Head = () => {
   `)
 
   const seoData = data.allStrapiAboutUs.nodes[0]?.seo
+    const schemaData = seoData.structuredData
+      ? _.mapKeys(seoData.structuredData, (value, key) => key.replace(/^_/, '@'))
+      : {}
   return (
     <SEO
       title={seoData.metaTitle}
@@ -64,7 +67,7 @@ export const Head = () => {
       robots={seoData.metaRobots}
       pathname={seoData.slug}
     >
-      <script type="application/ld+json">{JSON.stringify(seoData.structuredData)}</script>
+      <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
     </SEO>
   )
 }

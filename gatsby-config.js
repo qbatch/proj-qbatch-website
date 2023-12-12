@@ -6,12 +6,13 @@ const siteMetadata = {
     siteUrl: `https://qbatch.com`,
     twitterUsername: `@qbatchofficial`,
     language: `en-us`,
+    defaultImage: `https://cms.qbatch.com/uploads/Your_Idea_820_03532d7cf6.jpg`,
   },
   env = require('dotenv').config({
     path: require('path').join(__dirname, '.env'),
   })
 
-const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken } = process.env
+const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken, GOOGLE_TAG_ID: googleTagId } = process.env
 
 const strapiConfig = {
   apiURL,
@@ -45,14 +46,6 @@ const strapiConfig = {
     },
   },
   {
-    singularName: 'category',
-    populate: {
-      'articles': {
-        populate: "*"
-      },
-    },
-  },
-  {
     singularName: 'our-project',
     queryParams: {
       populate: "*"
@@ -63,9 +56,29 @@ const strapiConfig = {
     queryParams: {
       populate: "*"
     },
-  }
+  },
+  {
+  singularName: 'home',
+     queryParams: {
+      populate: {
+       'seo': {
+          populate: "*"
+        },
+      }
+    },
+  },
+  {
+    singularName: 'header',
+     queryParams: {
+      populate: {
+       'logo': {
+          populate: "*"
+        },
+      }
+    },
+  },
 ],
-  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio','faq', 'blog'],
+  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio','faq', 'blog', "header"],
   queryLimit: 1000,
 }
 module.exports = {
@@ -147,7 +160,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: 'GTM-W3DPVBGB',
+        id: googleTagId,
         includeInDevelopment: false,
       },
     },
