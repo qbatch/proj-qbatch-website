@@ -45,12 +45,17 @@ const BlogCardsWrapper = styled.div`
       ${media.sm`
        padding: 20px;
       `}
-      p {
+      .inner-title {
         font-weight: ${({ theme }) => theme.fontWeight.bold};
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         line-height: 32px;
         margin-bottom: 24px;
         letter-spacing: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         ${media.xs`
           line-height: 24px;
         `}
@@ -99,18 +104,34 @@ const BlogCardsWrapper = styled.div`
           line-height: 40px;
           letter-spacing: 0.7px;
           margin: 16px 0;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
           ${media.xs`
             line-height: 32px;
           `}
         }
         .descripiton {
-          color: ${({ theme }) => theme.colors.textMedium};
-          line-height: 24px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
           margin-bottom: 24px;
-          display: block;
-        }
-        .author-name {
-          margin: 48px 0 0;
+          h1,h2,h3,h4,h5,h6 {
+            display: none;
+          }
+          p {
+            font-size: ${({ theme }) => theme.fonts.baseFontSize};
+            line-height: 24px;
+          }
+          span {
+            color: ${({ theme }) => theme.colors.textMedium};
+            font-size: ${({ theme }) => theme.fonts.baseFontSize};
+            font-family: 'Inter Tight', sans-serif;
+          }
         }
       }
     }

@@ -1,13 +1,18 @@
-import React, { useEffect } from "react";
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { useEffect, useState } from "react";
 
 import Layout from "../components/Layout/layout";
 import BlogDetailBanner from "../components/PagesComponent/BlogDetailBanner";
 import BlogDetailsContent from "../components/PagesComponent/BlogDetailsContent";
 import SEO from "../components/Seo";
 import ContentWrapper from "../components/PagesComponent/BlogDetailsContent/style";
+import  { Queries }  from "../constants/queries";
 
-const BlogPage = () => {
+const BlogDetails = () => {
+  const [blogId, setBlogId] = useState();
+  
+  const blogQuery = Queries();
+  const blogData = blogQuery.allStrapiArticle.nodes.find(node => node.id === blogId);
+
   function progressBarScroll() {
     let winScroll =
         document.body.scrollTop || document.documentElement.scrollTop,
@@ -25,6 +30,13 @@ const BlogPage = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const item = localStorage.getItem('blog_id');
+      setBlogId(item);
+    }
+  }, []);
+
   return (
     <Layout pageTitle="My Blog Posts">
       <ContentWrapper>
@@ -34,30 +46,28 @@ const BlogPage = () => {
           </div>
         </div>
       </ContentWrapper>
-      <BlogDetailBanner />
-      <BlogDetailsContent />
+      <BlogDetailBanner data={blogData} />
+      <BlogDetailsContent data={blogData} />
     </Layout>
   );
 };
 
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query BlogDetailsQuery {
-      allStrapiBlog {
-        nodes {
-          seo {
-            keywords
-            metaDescription
-            metaTitle
-          }
-        }
-      }
-    }
-  `)
+  const [blogId, setBlogId] = useState();
 
-  const seoData = data.allStrapiBlog.nodes[0]?.seo
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const item = localStorage.getItem('blog_id');
+      setBlogId(item);
+    }
+  }, []);
+
+  const blogSeo = Queries();
+  const blogSeoData = blogSeo.allStrapiArticle.nodes.find(node => node.id === blogId);
+
+  const seoData = blogSeoData?.seo
   
-  return <SEO title={seoData.metaTitle} description={seoData.metaDescription} keyword={seoData.keywords} />
+  return <SEO title={seoData?.metaTitle} description={seoData?.metaDescription} keyword={seoData?.keywords} />
 }
 
-export default BlogPage;
+export default BlogDetails;

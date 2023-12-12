@@ -101,7 +101,7 @@ export const Head = () => {
   `)
 
   const seoData = data.allStrapiProductDesign.nodes[0]?.seo
-    console.log(seoData, 'seoData')
+  
   return (
     <SEO
       title={seoData.metaTitle}

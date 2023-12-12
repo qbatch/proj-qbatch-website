@@ -2,15 +2,17 @@ import React from "react";
 import Container from "../../UiComponent/Container";
 import BlogDetailsWrapper from "./style";
 import { navigate } from "gatsby";
+import { ReadingTime, TimeAgo } from "../../../constants/Utils";
 
-const Index = () => {
+const Index = ({ data }) => {
+  const customDate = new Date(data?.publishedAt);
   return (
     <BlogDetailsWrapper>
       <Container>
         <div className="breadcrumb">
           Home {">"} Blog {">"} Blog detail page
         </div>
-        <div className="d-flex align-items-start flex-wrap gap-4">
+        <div className="d-flex align-items-start details-flex gap-4">
           <img
             src="/back-arrow.svg"
             alt="no-arrow"
@@ -18,21 +20,29 @@ const Index = () => {
             onClick={() => navigate("/blog")}
           />
           <div>
-            <h1 className="title">Blog Title will come here</h1>
+            <h1 className="title text-h2">{data?.blogTitle}</h1>
             <div className="d-flex gap-72">
               <div className="read-time">
-                <img src="/clock.svg" alt="no-time" />5 Minutes Read
+                <img src="/clock.svg" alt="no-time" />
+                <span>
+                  <ReadingTime
+                    description={data?.blogDescription?.data.blogDescription}
+                  />
+                  {" "}
+                  Minutes Read
+                </span>
               </div>
               <div className="published-time">
-                <span className="publish">Published on:</span>8 Hours ago
+                <span className="publish">Published on:</span><TimeAgo customDate={customDate} />
               </div>
             </div>
             <div className="chips">
-              <span>Cybersecurity</span>
-              <span>Software Development</span>
+              {data?.blogTags.strapi_json_value.map((tag, ind) => (
+                <span key={ind}>{tag}</span>
+              ))}
             </div>
             <div className="author-name">
-              <span>Author Name Here</span>
+              <span>{data?.user.username}</span>
             </div>
           </div>
         </div>

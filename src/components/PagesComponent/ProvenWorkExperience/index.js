@@ -79,6 +79,7 @@ const Index = ({ heading, paragraph, componentName }) => {
     `)
 
     const portfolioData = data.allStrapiOurProject.nodes;
+    
   return (
     <ProvenExperienceWrapper>
       <Container>

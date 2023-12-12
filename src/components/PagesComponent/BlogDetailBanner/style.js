@@ -20,19 +20,25 @@ const BlogDetailsWrapper = styled.div`
       margin: 0 0 12px;
   `}
   }
+  .details-flex {
+    ${media.sm`
+    flex-wrap: wrap;
+  `}
+  }
   .title {
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
     color: ${({ theme }) => theme.colors.whiteColor};
     margin-bottom: 26px;
   }
   .read-time {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     color: ${({ theme }) => theme.colors.whiteColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
   }
   .published-time {
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
 
     span {

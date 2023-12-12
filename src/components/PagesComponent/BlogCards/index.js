@@ -1,92 +1,149 @@
 import React from "react";
-
-import PrimaryButton from "../../UiComponent/PrimaryButton";
-
-import BlogCardsWrapper from "./style";
 import { Col, Row } from "react-bootstrap";
 import { navigate } from "gatsby";
 
-const index = (props) => {
-  const { heading, isBtn, isSlice, blogInner, data } = props;
+import PrimaryButton from "../../UiComponent/PrimaryButton";
+import { TimeAgo, ReadingTime } from "../../../constants/Utils";
+
+import BlogCardsWrapper from "./style";
+
+const Index = (props) => {
+  const { heading, isBtn, isSlice, blogInner, data, isFavorite } = props;
+
+  const categoryData = data.filter(
+    (item) => item.category.categoryName === heading
+  );
+  const editorPicksData = data.filter((item) => item.favorite === true);
+
+  const BlogPost = ({ card, ind }) => {
+    const customDate = new Date(card.publishedAt);
+
+    return ind === 0 ? (
+      <Col md={12}>
+        <div className="inner first-card" key={ind}>
+          <Row>
+            <Col md={6}>
+              <div className="card-img">
+                <img src={card.blogImg.localFile.url} alt={card.blogTitle} />
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className="inner-content">
+                <div className="d-flex align-items-center justify-content-between">
+                  <div className="blog-badge">Blog</div>
+                  <span className="hours">
+                    <TimeAgo customDate={customDate} />
+                  </span>
+                </div>
+                <h3>{card.blogTitle}</h3>
+                <div className="descripiton">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: card.blogDescription?.data.blogDescription,
+                    }}
+                  />
+                </div>
+                <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
+                  <span className="blog-badge">
+                    {card.blogTags.strapi_json_value[0]}
+                  </span>
+                  <div className="timer">
+                    <img src="/timer-blue.svg" alt="timer" />
+                    <span>
+                      <ReadingTime
+                        description={card.blogDescription?.data.blogDescription}
+                      />{" "}
+                      Minutes Read
+                    </span>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-0 read-time">
+                  <span>{card.user.username}</span>
+                  <PrimaryButton
+                    text="Explore More"
+                    fontSize="16px"
+                    color="#0054A6"
+                    onClick={() => {
+                      navigate("/blogDetails");
+                      localStorage.setItem("blog_id", card.id);
+                    }}
+                  />
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </Col>
+    ) : (
+      <Col md={6}>
+        <div className="inner" key={ind}>
+          <div className="card-img">
+            <img src={card.blogImg.localFile.url} alt={card.blogTitle} />
+            <div className="d-flex align-items-center justify-content-between">
+              <div className="blog-badge">Blog</div>
+              <span className="hours">
+                <TimeAgo customDate={customDate} />
+              </span>
+            </div>
+          </div>
+          <div className="inner-content">
+            <p className="inner-title">{card.blogTitle}</p>
+            <div className="blog-badge">
+              {card.blogTags.strapi_json_value[0]}
+            </div>
+            <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
+              <span>{card.user.username}</span>
+              <div className="timer">
+                <img src="/timer-blue.svg" alt="timer" />
+                <span>
+                  <ReadingTime
+                    description={card.blogDescription?.data.blogDescription}
+                  />{" "}
+                  Minutes Read
+                </span>
+              </div>
+            </div>
+            <PrimaryButton
+              text="Explore More"
+              fontSize="16px"
+              onClick={() => {
+                navigate("/blogDetails");
+                localStorage.setItem("blog_id", card.id);
+              }}
+            />
+          </div>
+        </div>
+      </Col>
+    );
+  };
+
   return (
     <BlogCardsWrapper blogInner={blogInner}>
       <div className="d-flex align-items-center justify-content-between blog-heading">
         <h2>{heading}</h2>
         {isBtn && <PrimaryButton text="Explore More" />}
       </div>
-      <Row>
-        {(isSlice ? data?.slice(0, 3) : data).map((card, ind) =>
-          ind === 0 ? (
-            <Col md={12}>
-              <div className="inner first-card" key={ind}>
-                <Row>
-                  <Col md={6}>
-                    <div className="card-img">
-                      <img src={card.img} alt={card.title} />
-                    </div>
-                  </Col>
-                  <Col md={6}>
-                    <div className="inner-content">
-                      <div className="d-flex align-items-center justify-content-between">
-                        <div className="blog-badge">Blog</div>
-                        <span className="hours">17 Hours ago</span>
-                      </div>
-                      <h3>{card.title}</h3>
-                      <span className="descripiton">{card.content}</span>
-                      <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
-                        <span className="blog-badge">{card.category}</span>
-                        <div className="timer">
-                          <img src="/timer-blue.svg" alt="timer" />
-                          <span>5 Minutes Read</span>
-                        </div>
-                      </div>
-                      <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-                        <span>Author Name Here</span>
-                        <PrimaryButton
-                          text="Explore More"
-                          fontSize="16px"
-                          color="#0054A6"
-                          onClick={() => navigate("/blogDetails")}
-                        />
-                      </div>
-                    </div>
-                  </Col>
-                </Row>
-              </div>
-            </Col>
-          ) : (
-            <Col md={6}>
-              <div className="inner" key={ind}>
-                <div className="card-img">
-                  <img src={card.img} alt={card.title} />
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="blog-badge">Blog</div>
-                    <span className="hours">17 Hours ago</span>
-                  </div>
-                </div>
-                <div className="inner-content">
-                  <p>{card.title}</p>
-                  <div className="blog-badge">{card.category}</div>
-                  <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-                    <span>Author Name Here</span>
-                    <div className="timer">
-                      <img src="/timer-blue.svg" alt="timer" />
-                      <span>5 Minutes Read</span>
-                    </div>
-                  </div>
-                  <PrimaryButton
-                    text="Explore More"
-                    fontSize="16px"
-                    onClick={() => navigate("/blogDetails")}
-                  />
-                </div>
-              </div>
-            </Col>
+      {data.length === 0 || (!blogInner && categoryData.length === 0) ? (
+        "No Data Found"
+      ) : (
+        <Row>
+          {(isFavorite
+            ? editorPicksData
+            : isSlice
+            ? (heading && !blogInner ? categoryData : data)?.slice(0, 3)
+            : heading && !blogInner
+            ? categoryData
+            : data
           )
-        )}
-      </Row>
+            .slice(0)
+            .reverse()
+            .map((card, ind) => {
+              return <BlogPost card={card} ind={ind} />;
+            })}
+        </Row>
+      )}
     </BlogCardsWrapper>
   );
 };
 
-export default index;
+export default Index;
