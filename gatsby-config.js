@@ -18,61 +18,75 @@ const strapiConfig = {
   apiURL,
   accessToken,
   collectionTypes: [
-   'contact', 
-   {
-    singularName: 'awards-and-recognition',
-    queryParams: {
-      populate: {
-        'awards': {
-          populate: "*"
-        },
-      },
-    },
-  },
-  {
-    singularName: 'our-client',
-    queryParams: {
-      populate: {
-        'clients': {
-          populate: "*"
-        },
-      },
-    },
-  },
-  {
-    singularName: 'testimonial',
-    queryParams: {
-      populate: "*"
-    },
-  },
-  {
-    singularName: 'our-project',
-    queryParams: {
-      populate: "*"
-    },
-  },
-  {
-    singularName: 'home',
-     queryParams: {
-      populate: {
-       'seo': {
-          populate: "*"
-        },
-      }
-    },
-  },
+    'contact',
     {
-    singularName: 'header',
-     queryParams: {
-      populate: {
-       'logo': {
-          populate: "*"
+      singularName: 'awards-and-recognition',
+      queryParams: {
+        populate: {
+          awards: {
+            populate: '*',
+          },
         },
-      }
+      },
     },
-  },
-  "blog"],
-  singleTypes: ['home', 'about-us', 'mobile-app', 'cto-service', 'web-app', 'product-design', 'ecommerce', 'enterprise', 'contact-us', 'portfolio','faq','header'],
+    {
+      singularName: 'our-client',
+      queryParams: {
+        populate: {
+          clients: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'testimonial',
+      queryParams: {
+        populate: '*',
+      },
+    },
+    {
+      singularName: 'our-project',
+      queryParams: {
+        populate: '*',
+      },
+    },
+    {
+      singularName: 'home',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'header',
+      queryParams: {
+        populate: {
+          logo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    'blog',
+  ],
+  singleTypes: [
+    'home',
+    'about-us',
+    'mobile-app',
+    'cto-service',
+    'web-app',
+    'product-design',
+    'ecommerce',
+    'enterprise',
+    'contact-us',
+    'portfolio',
+    'faq',
+    'header',
+  ],
   queryLimit: 1000,
 }
 module.exports = {
@@ -127,6 +141,81 @@ module.exports = {
         async: false,
         defer: false,
         args: `?onload=onloadCallback&render=explicit`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        query: `
+    {
+      allStrapiHome {
+        edges {
+          node {
+            id
+            slug
+            updatedAt
+          }
+        }
+      } 
+      allStrapiBlog {
+        edges {
+          node {
+            id
+            slug
+            updatedAt
+          }
+        }
+      }
+       allStrapiMobileApp {
+        edges {
+          node {
+            id
+            slug
+            updatedAt
+          }
+        }
+      }
+      allStrapiPortfolio {
+        edges {
+          node {
+            id
+            slug
+            updatedAt
+          }
+        }
+      }
+        allStrapiAboutUs {
+        edges {
+          node {
+            id
+            slug
+            updatedAt
+          }
+        }
+      }
+    }
+  `,
+        output: '/sitemap.xml',
+        mapping: {
+          allStrapiHome: {
+            sitemap: 'home',
+            // Additional mapping for 'allStrapiHome' if needed
+          },
+          allStrapiBlog: {
+            // Corrected the mapping object
+            sitemap: 'blog',
+            prefix: 'your-prefix/',
+          },
+          allStrapiMobileApp: {
+            sitemap: 'mobile-app-development',
+          },
+          allStrapiPortfolio: {
+            sitemap: 'portfolio',
+          },
+          allStrapiAboutUs: {
+            sitemap: 'about-us',
+          },
+        },
       },
     },
     {
