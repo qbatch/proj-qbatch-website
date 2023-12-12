@@ -17,7 +17,7 @@ const {
   STRAPI_TOKEN: accessToken,
   GOOGLE_TAG_ID: googleTagId,
 } = process.env;
-
+console.log(googleTagId,"idd")
 const strapiConfig = {
   apiURL,
   accessToken,
