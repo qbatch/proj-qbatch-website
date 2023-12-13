@@ -15,8 +15,8 @@ const Index = (props) => {
   );
   const editorPicksData = data.filter((item) => item.favorite === true);
 
-  const BlogPost = ({ card, ind }) => {
-    const customDate = new Date(card.publishedAt);
+  const BlogPost = ({ card, ind, onClick }) => {
+    const customDate = new Date(card.publishedAt)
 
     return ind === 0 ? (
       <Col md={12}>
@@ -44,16 +44,11 @@ const Index = (props) => {
                   />
                 </div>
                 <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
-                  <span className="blog-badge">
-                    {card.blogTags.strapi_json_value[0]}
-                  </span>
+                  <span className="blog-badge">{card.blogTags.strapi_json_value[0]}</span>
                   <div className="timer">
                     <img src="/timer-blue.svg" alt="timer" />
                     <span>
-                      <ReadingTime
-                        description={card.blogDescription?.data.blogDescription}
-                      />{" "}
-                      Minutes Read
+                      <ReadingTime description={card.blogDescription?.data.blogDescription} /> Minutes Read
                     </span>
                   </div>
                 </div>
@@ -64,8 +59,9 @@ const Index = (props) => {
                     fontSize="16px"
                     color="#0054A6"
                     onClick={() => {
-                      navigate("/blogDetails");
-                      localStorage.setItem("blog_id", card.id);
+                      navigate('/blogDetails', {
+                        state: { blogId: card.id },
+                      })
                     }}
                   />
                 </div>
@@ -88,18 +84,13 @@ const Index = (props) => {
           </div>
           <div className="inner-content">
             <p className="inner-title">{card.blogTitle}</p>
-            <div className="blog-badge">
-              {card.blogTags.strapi_json_value[0]}
-            </div>
+            <div className="blog-badge">{card.blogTags.strapi_json_value[0]}</div>
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
               <span>{card.user.username}</span>
               <div className="timer">
                 <img src="/timer-blue.svg" alt="timer" />
                 <span>
-                  <ReadingTime
-                    description={card.blogDescription?.data.blogDescription}
-                  />{" "}
-                  Minutes Read
+                  <ReadingTime description={card.blogDescription?.data.blogDescription} /> Minutes Read
                 </span>
               </div>
             </div>
@@ -107,15 +98,16 @@ const Index = (props) => {
               text="Explore More"
               fontSize="16px"
               onClick={() => {
-                navigate("/blogDetails");
-                localStorage.setItem("blog_id", card.id);
+                navigate('/blogDetails', {
+                  state: { blogId: card.id },
+                })
               }}
             />
           </div>
         </div>
       </Col>
-    );
-  };
+    )
+  }
 
   return (
     <BlogCardsWrapper blogInner={blogInner}>

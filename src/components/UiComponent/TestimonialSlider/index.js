@@ -75,10 +75,6 @@ const Index = () => {
             <div className="testimonial-wrapper" key={ind}>
               <img className="client-image" src={item.clientImg?.localFile.url} alt="client" width="158" />
               <p className="testimonial-text">{item.feedback}</p>
-              {/* <Player playsInline src={item.projectVideo}>
-                  <BigPlayButton position="center" />
-                  <LoadingSpinner />
-                </Player> */}
             </div>
           ))}
         </Carousel>
