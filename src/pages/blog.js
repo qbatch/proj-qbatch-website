@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import BlogBanner from "../components/PagesComponent/BlogBanner";
@@ -26,51 +25,55 @@ const BlogPage = () => {
 
   const tabsData = [
     {
-      eventKey: "all",
-      title: "All",
-      component: <BlogAll data={filteredData} />,
+      eventKey: 'all',
+      title: 'All',
+      component: (
+        <BlogAll
+          data={filteredData}
+        />
+      ),
     },
     {
-      eventKey: "technology",
-      title: "Technology & Innovation",
+      eventKey: 'technology',
+      title: 'Technology & Innovation',
       component: <BlogCards heading="Technology & Innovation" data={filteredData} />,
     },
     {
-      eventKey: "software",
-      title: "Software",
+      eventKey: 'software',
+      title: 'Software',
       component: <BlogCards heading="Software" data={filteredData} />,
     },
     {
-      eventKey: "automation",
-      title: "Automation",
+      eventKey: 'automation',
+      title: 'Automation',
       component: <BlogCards heading="Automation" data={filteredData} />,
     },
     {
-      eventKey: "data",
-      title: "Data",
+      eventKey: 'data',
+      title: 'Data',
       component: <BlogCards heading="Data" data={filteredData} />,
     },
     {
-      eventKey: "leadership",
-      title: "Leadership",
+      eventKey: 'leadership',
+      title: 'Leadership',
       component: <BlogCards heading="Leadership" data={filteredData} />,
     },
     {
-      eventKey: "strategy",
-      title: "Strategy & Process",
+      eventKey: 'strategy',
+      title: 'Strategy & Process',
       component: <BlogCards heading="Strategy & Process" data={filteredData} />,
     },
     {
-      eventKey: "developers",
-      title: "For Developers",
+      eventKey: 'developers',
+      title: 'For Developers',
       component: <BlogCards heading="For Developers" data={filteredData} />,
     },
     {
-      eventKey: "outsourcing",
-      title: "Outsourcing",
+      eventKey: 'outsourcing',
+      title: 'Outsourcing',
       component: <BlogCards heading="Outsourcing" data={filteredData} />,
     },
-  ];
+  ]
   
   return (
     <Layout>

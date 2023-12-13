@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { useLocation } from '@reach/router'
 import Layout from "../components/Layout/layout";
 import BlogDetailBanner from "../components/PagesComponent/BlogDetailBanner";
 import BlogDetailsContent from "../components/PagesComponent/BlogDetailsContent";
@@ -53,21 +53,16 @@ const BlogDetails = () => {
 };
 
 export const Head = () => {
-  const [blogId, setBlogId] = useState();
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const item = localStorage.getItem('blog_id');
-      setBlogId(item);
-    }
-  }, []);
+    const location = useLocation()
+    const id = location.state?.blogId
+;
 
   const blogSeo = Queries();
-  const blogSeoData = blogSeo.allStrapiArticle.nodes.find(node => node.id === blogId);
+  const blogSeoData = blogSeo.allStrapiArticle.nodes.find((node) => node.id === id)
 
   const seoData = blogSeoData?.seo
   
-  return <SEO title={seoData?.metaTitle} description={seoData?.metaDescription} keyword={seoData?.keywords} />
+  return <SEO title={seoData?.metaTitle} description={seoData?.metaDescription} keyword={seoData?.keywords}  />
 }
 
 export default BlogDetails;
