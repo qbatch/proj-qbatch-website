@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout/layout";
+import { useStaticQuery, graphql } from 'gatsby'
 import SEO from "../components/Seo";
 import BlogBanner from "../components/PagesComponent/BlogBanner";
 import Tabs from "../components/UiComponent/Tabs";
@@ -10,28 +11,21 @@ import Container from "../components/UiComponent/Container";
 import  { Queries }  from "../constants/queries";
 
 const BlogPage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('')
 
-  const blogArticle = Queries();
-  const blogData = blogArticle.allStrapiArticle.nodes;
+  const blogArticle = Queries()
+  const blogData = blogArticle.allStrapiArticle.nodes
 
   const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-  };
+    setSearchTerm(e.target.value)
+  }
 
-  const filteredData = blogData.filter(item =>
-    item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
+  const filteredData = blogData.filter((item) => item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()))
   const tabsData = [
     {
       eventKey: 'all',
       title: 'All',
-      component: (
-        <BlogAll
-          data={filteredData}
-        />
-      ),
+      component: <BlogAll data={filteredData} />,
     },
     {
       eventKey: 'technology',
@@ -74,7 +68,7 @@ const BlogPage = () => {
       component: <BlogCards heading="Outsourcing" data={filteredData} />,
     },
   ]
-  
+
   return (
     <Layout>
       <BlogBanner />
@@ -87,11 +81,21 @@ const BlogPage = () => {
         </div>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 export const Head = () => {
   const blogSeo = Queries();
   const seoData = blogSeo.allStrapiBlog.nodes[0]?.seo
+    const data = useStaticQuery(graphql`query {
+      allStrapiArticle {
+        nodes {
+          blogTitle
+          seo {
+            slug
+          }
+        }
+      }
+    }`)
   return (
     <SEO
       title={seoData.metaTitle}
@@ -105,3 +109,4 @@ export const Head = () => {
 }
 
 export default BlogPage;
+
