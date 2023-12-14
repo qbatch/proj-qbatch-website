@@ -7,35 +7,27 @@ import SEO from "../components/Seo";
 import ContentWrapper from "../components/PagesComponent/BlogDetailsContent/style";
 import  { Queries }  from "../constants/queries";
 
-const BlogDetails = () => {
-  const [blogId, setBlogId] = useState();
-  
-  const blogQuery = Queries();
-  const blogData = blogQuery.allStrapiArticle.nodes.find(node => node.id === blogId);
+const BlogDetails = ({ pageContext }) => {
+    const location = useLocation()
+    const id = location.state?.blogId
+
+  const blogQuery = Queries()
+  const blogData = blogQuery.allStrapiArticle.nodes.find((node) => node.id === id)
 
   function progressBarScroll() {
-    let winScroll =
-        document.body.scrollTop || document.documentElement.scrollTop,
-      height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight,
-      scrolled = (winScroll / height) * 100;
-    document.getElementById("progressBar").style.width = scrolled + 5 + "%";
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+      height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+      scrolled = (winScroll / height) * 100
+    document.getElementById('progressBar').style.width = scrolled + 5 + '%'
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", progressBarScroll);
+    window.addEventListener('scroll', progressBarScroll)
     return () => {
-      window.removeEventListener("scroll", progressBarScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const item = localStorage.getItem('blog_id');
-      setBlogId(item);
+      window.removeEventListener('scroll', progressBarScroll)
     }
-  }, []);
+  }, [])
+  
 
   return (
     <Layout pageTitle="My Blog Posts">
@@ -49,20 +41,24 @@ const BlogDetails = () => {
       <BlogDetailBanner data={blogData} />
       <BlogDetailsContent data={blogData} />
     </Layout>
-  );
-};
+  )
+}
 
-export const Head = () => {
-    const location = useLocation()
-    const id = location.state?.blogId
-;
-
-  const blogSeo = Queries();
+export const Head = ({ pageContext }) => {
+  const { title } = pageContext;
+  const location = useLocation()
+  const id = location.state?.blogId
+  const blogSeo = Queries()
   const blogSeoData = blogSeo.allStrapiArticle.nodes.find((node) => node.id === id)
-
   const seoData = blogSeoData?.seo
-  
-  return <SEO title={seoData?.metaTitle} description={seoData?.metaDescription} keyword={seoData?.keywords}  />
+  return (
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData?.metaDescription}
+      keyword={seoData?.keywords}
+      pathname={title}
+    />
+  )
 }
 
 export default BlogDetails;

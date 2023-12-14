@@ -59,13 +59,6 @@ export const Head = () => {
             structuredData {
               _context
               _type
-              _contactPoint {
-                _type
-                areaServed
-                availableLanguage
-                contactType
-                telephone
-              }
               address {
                 _type
                 addressCountry
@@ -101,7 +94,7 @@ export const Head = () => {
 
   const seoData = data.allStrapiHome.nodes[0]?.seo;
 
-  const schemaData = seoData.structuredData
+  const schemaData = seoData?.structuredData
     ? _.mapKeys(seoData.structuredData, (value, key) =>
         key.replace(/^_/, '@')
       )

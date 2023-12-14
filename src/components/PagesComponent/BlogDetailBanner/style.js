@@ -2,17 +2,18 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogDetailsWrapper = styled.div`
-  background-image: url('/shopping-cart.png');
+  background-image: ${(props) => (props.backgroundImage ? `url(${props.backgroundImage})` : '')};
   width: 100%;
   height: 497px;
   padding: 96px 67px;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  ${media.sm`
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);
+    ${media.sm`
     padding: 96px 0;
   `}
-  .breadcrumb {
+    .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.bodyLight};
     margin: 4px 0 11px 52px;
