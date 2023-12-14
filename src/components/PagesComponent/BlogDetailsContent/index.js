@@ -279,10 +279,7 @@ function App({ data }) {
                             <Col xl={6}>
                               <div className="inner" key={ind}>
                                 <div className="card-img">
-                                  <img
-                                    src={card.blogImg.localFile.url}
-                                    alt={card.blogTitle}
-                                  />
+                                  <img src={card.blogImg.localFile.url} alt={card.blogTitle} />
                                   <div className="d-flex align-items-center justify-content-between">
                                     <div className="blog-badge">Blog</div>
                                     <span className="hours">
@@ -293,25 +290,18 @@ function App({ data }) {
                                 <div className="inner-content">
                                   <p className="blog-title">{card.blogTitle}</p>
                                   <div className="d-flex gap-2">
-                                    {data?.blogTags.strapi_json_value.map(
-                                      (tag, ind) => (
-                                        <div className="blog-badge">
-                                          <span key={ind}>{tag}</span>
-                                        </div>
-                                      )
-                                    )}
+                                    {data?.blogTags.strapi_json_value.map((tag, ind) => (
+                                      <div className="blog-badge">
+                                        <span key={ind}>{tag}</span>
+                                      </div>
+                                    ))}
                                   </div>
                                   <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
                                     <span>{card.user.username}</span>
                                     <div className="timer">
                                       <img src="/timer-blue.svg" alt="timer" />
                                       <span>
-                                        <ReadingTime
-                                          description={
-                                            card?.blogDescription?.data
-                                              .blogDescription
-                                          }
-                                        />{" "}
+                                        <ReadingTime description={card?.blogDescription?.data.blogDescription} />{' '}
                                         Minutes Read
                                       </span>
                                     </div>
@@ -320,14 +310,15 @@ function App({ data }) {
                                     text="Explore More"
                                     fontSize="16px"
                                     onClick={() => {
-                                      navigate("/blogDetails");
-                                      localStorage.setItem("blog_id", card.id);
+                                      navigate(`/blog${card.seo.slug}`, {
+                                        state: { blogId: card.id },
+                                      })
                                     }}
                                   />
                                 </div>
                               </div>
                             </Col>
-                          );
+                          )
                         })}
                     </Row>
                   </BlogCardsWrapper>
