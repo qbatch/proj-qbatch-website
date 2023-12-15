@@ -1,6 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql } from 'gatsby';
-
+import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
 import SEO from "../../components/Seo";
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
@@ -102,24 +101,9 @@ const Enterprise = () => {
 };
 
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query EnterpriseQuery {
-      allStrapiEnterprise {
-        nodes {
-          seo {
-            metaTitle
-            slug
-            metaRobots
-            metaDescription
-            language
-            keywords
-          }
-        }
-      }
-    }
-  `)
+    const enterpriseData = Queries()
 
-  const seoData = data.allStrapiEnterprise.nodes[0]?.seo
+  const seoData = enterpriseData.allStrapiEnterprise.nodes[0]?.seo
   
   return (
     <SEO
