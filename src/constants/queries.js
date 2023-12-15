@@ -78,6 +78,35 @@ export const Queries = () => {
                  streetAddress
                  telephone
                }
+               brand {
+                 _type
+                 location
+                 logo {
+                   _type
+                   height
+                   url
+                 }
+                 name
+                 sameAs
+                 url
+               }
+               founder {
+                 _type
+                 description
+                 email
+                 gender
+                 image
+                 jobTitle
+                 knowsLanguage
+                 name
+                 sameAs
+                 url
+               }
+               geo {
+                 _type
+                 latitude
+                 longitude
+               }
                contactPoint {
                  _type
                  contactOption

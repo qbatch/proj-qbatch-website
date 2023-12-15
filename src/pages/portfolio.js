@@ -23,8 +23,8 @@ const Portfolio = () => {
 };
 
 export const Head = () => {
-    const homeData = Queries();
-    const seoData = homeData.allStrapiPortfolio.nodes[0]?.seo
+    const portfolioData = Queries();
+    const seoData = portfolioData?.allStrapiPortfolio.nodes[0]?.seo
   return (
     <SEO
       title={seoData?.metaTitle}
