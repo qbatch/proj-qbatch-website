@@ -8,15 +8,11 @@ const siteMetadata = {
     language: `en-us`,
     defaultImage: `https://cms.qbatch.com/uploads/Your_Idea_820_03532d7cf6.jpg`,
   },
-  env = require("dotenv").config({
-    path: require("path").join(__dirname, ".env"),
-  });
+  env = require('dotenv').config({
+    path: require('path').join(__dirname, '.env'),
+  })
 
-const {
-  STRAPI_API_URL: apiURL,
-  STRAPI_TOKEN: accessToken,
-  GOOGLE_TAG_ID: googleTagId,
-} = process.env;
+const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken, GOOGLE_TAG_ID: googleTagId } = process.env
 const strapiConfig = {
   apiURL,
   accessToken,
@@ -98,6 +94,7 @@ const strapiConfig = {
     'faq',
     'blog',
     'header',
+    'service',
   ],
   queryLimit: 1000,
 }
@@ -160,15 +157,6 @@ module.exports = {
       options: {
         query: `
           {
-            allStrapiHome {
-              edges {
-                node {
-                  id
-                  slug
-                  updatedAt
-                }
-              }
-            } 
             allStrapiBlog {
               edges {
                 node {
@@ -178,7 +166,7 @@ module.exports = {
                 }
               }
             }
-            allStrapiMobileApp {
+            allStrapiService {
               edges {
                 node {
                   id
@@ -187,6 +175,15 @@ module.exports = {
                 }
               }
             }
+            allStrapiEnterprise {
+                edges {
+                  node {
+                    id
+                    slug
+                    updatedAt
+                  }
+                }
+              }
             allStrapiPortfolio {
               edges {
                 node {
@@ -196,7 +193,7 @@ module.exports = {
                 }
               }
             }
-              allStrapiAboutUs {
+                allStrapiAboutUs {
               edges {
                 node {
                   id
@@ -208,23 +205,23 @@ module.exports = {
           }
   `,
         mapping: {
-          allStrapiHome: {
-            sitemap: 'home',
-            // Additional mapping for 'allStrapiHome' if needed
+          allStrapiService: {
+            sitemap: 'services',
+            prefix: [
+              '/services/enterprise-software-development/',
+              '/services/e-commerce-automation/',
+              '/services/web-app-development/',
+              '/services/mobile-app-development/',
+              '/services/cto-as-a-service/',
+            ],
           },
           allStrapiBlog: {
-            // Corrected the mapping object
             sitemap: 'blog',
-            prefix: 'your-prefix/',
-          },
-          allStrapiMobileApp: {
-            sitemap: 'mobile-app-development',
+            prefix: 'blog/',
           },
           allStrapiPortfolio: {
             sitemap: 'portfolio',
-          },
-          allStrapiAboutUs: {
-            sitemap: 'about-us',
+            prefix: 'portfolio/',
           },
         },
       },
