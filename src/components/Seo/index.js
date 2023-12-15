@@ -2,12 +2,11 @@ import React from 'react'
 import { useSiteMetadata } from '../../hooks/use-site-metadata.jsx'
 
 const SEO = (props) => {
-  const { title, description, language, robots, pathname, children, image } = props
+  const { title, description, language, robots, pathname, children, image, keywords } = props
   const {
     title: defaultTitle,
     description: defaultDescription,
     siteUrl,
-    keywords,
     twitterUsername,
     robots: defaultrobots,
     language: defaultLanguage,
