@@ -208,23 +208,14 @@ module.exports = {
           }
   `,
         mapping: {
-          allStrapiHome: {
-            sitemap: 'home',
-            // Additional mapping for 'allStrapiHome' if needed
+          allStrapiService: {
+            sitemap: 'services',
           },
           allStrapiBlog: {
-            // Corrected the mapping object
             sitemap: 'blog',
-            prefix: 'your-prefix/',
-          },
-          allStrapiMobileApp: {
-            sitemap: 'mobile-app-development',
           },
           allStrapiPortfolio: {
             sitemap: 'portfolio',
-          },
-          allStrapiAboutUs: {
-            sitemap: 'about-us',
           },
         },
       },
