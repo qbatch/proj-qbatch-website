@@ -193,7 +193,7 @@ module.exports = {
                 }
               }
             }
-                allStrapiAboutUs {
+            allStrapiAboutUs {
               edges {
                 node {
                   id
@@ -207,21 +207,15 @@ module.exports = {
         mapping: {
           allStrapiService: {
             sitemap: 'services',
-            prefix: [
-              '/services/enterprise-software-development/',
-              '/services/e-commerce-automation/',
-              '/services/web-app-development/',
-              '/services/mobile-app-development/',
-              '/services/cto-as-a-service/',
-            ],
+            allStrapiBlog: {
+              sitemap: 'enterprise-software-development',
+            },
           },
           allStrapiBlog: {
             sitemap: 'blog',
-            prefix: 'blog/',
           },
           allStrapiPortfolio: {
             sitemap: 'portfolio',
-            prefix: 'portfolio/',
           },
         },
       },
