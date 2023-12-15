@@ -1,5 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql } from 'gatsby'
+import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
 import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
@@ -111,24 +111,9 @@ const MobileApp = () => {
 };
 
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query MobileAppQuery {
-      allStrapiMobileApp {
-        nodes {
-          seo {
-            metaTitle
-            slug
-            metaRobots
-            metaDescription
-            language
-            keywords
-          }
-        }
-      }
-    }
-  `)
+    const mobileAppData = Queries()
 
-  const seoData = data.allStrapiMobileApp.nodes[0]?.seo
+  const seoData = mobileAppData.allStrapiMobileApp.nodes[0]?.seo
 
   return (
     <SEO

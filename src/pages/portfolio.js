@@ -1,6 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby'
-
+import { Queries } from '../constants/queries'
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import Divider from "../components/UiComponent/Divider";
@@ -24,25 +23,8 @@ const Portfolio = () => {
 };
 
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query PortfolioQuery {
-      allStrapiPortfolio {
-        nodes {
-          seo {
-            metaTitle
-            metaRobots
-            metaDescription
-            language
-            keywords
-            slug
-          }
-        }
-      }
-    }
-  `)
-
-  const seoData = data.allStrapiPortfolio.nodes[0]?.seo
-
+    const homeData = Queries();
+    const seoData = homeData.allStrapiPortfolio.nodes[0]?.seo
   return (
     <SEO
       title={seoData?.metaTitle}

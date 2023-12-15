@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from 'gatsby';
+import { Queries } from '../constants/queries'
 import _ from 'lodash'
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
@@ -26,38 +27,8 @@ const About = () => (
   </Layout>
 );
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query AboutUsQuery {
-      allStrapiAboutUs {
-        nodes {
-          seo {
-            structuredData {
-              _context
-              _type
-              name
-              url
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-            keywords
-            language
-            metaDescription
-            metaRobots
-            metaTitle
-            slug
-          }
-        }
-      }
-    }
-  `)
-
-  const seoData = data.allStrapiAboutUs.nodes[0]?.seo
-    const schemaData = seoData.structuredData
-      ? _.mapKeys(seoData.structuredData, (value, key) => key.replace(/^_/, '@'))
-      : {}
+  const aboutUsData = Queries()
+  const seoData = aboutUsData.allStrapiAboutUs.nodes[0]?.seo
   return (
     <SEO
       title={seoData.metaTitle}
@@ -66,9 +37,7 @@ export const Head = () => {
       language={seoData.language}
       robots={seoData.metaRobots}
       pathname={seoData.slug}
-    >
-      <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
-    </SEO>
+    />
   )
 }
 

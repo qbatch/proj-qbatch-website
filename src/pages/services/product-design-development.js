@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Queries } from '../../constants/queries'
 import Layout from '../../components/Layout/layout'
 import SEO from '../../components/Seo'
 import HireCto from '../../components/PagesComponent/HireCto'
@@ -83,24 +83,9 @@ const ProductDesign = () => {
 }
 
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query ProductQuery {
-      allStrapiProductDesign {
-        nodes {
-          seo {
-            metaTitle
-            slug
-            metaRobots
-            metaDescription
-            language
-            keywords
-          }
-        }
-      }
-    }
-  `)
+    const productDesignData = Queries()
 
-  const seoData = data.allStrapiProductDesign.nodes[0]?.seo
+  const seoData = productDesignData.allStrapiProductDesign.nodes[0]?.seo
   
   return (
     <SEO

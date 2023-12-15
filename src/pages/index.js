@@ -1,7 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import _ from 'lodash'
-
+import { Queries } from '../constants/queries'
 import Layout from '../components/Layout/layout'
 import SEO from '../components/Seo'
 import DedicatedDevelopment from '../components/PagesComponent/DedicatedDeveloper'
@@ -51,55 +49,27 @@ const IndexPage = () => {
 }
 
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query HomeQuery {
-      allStrapiHome {
-        nodes {
-          seo {
-            structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-              }
-              email
-              name
-              sameAs
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-            metaimage {
-              localFile {
-                url
-              }
-            }
-            language
-            metaDescription
-            metaRobots
-            metaTitle
-            keywords
-          }
+  const homeData = Queries();
+  const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
+  const seoData = seo
+  const schemaData = schema
+
+  function replaceUnderscoreWithAt(obj) {
+    if (obj && typeof obj === 'object') {
+      if (Array.isArray(obj)) {
+        return obj.map((item) => replaceUnderscoreWithAt(item))
+      } else {
+        const updatedObj = {}
+        for (const [key, value] of Object.entries(obj)) {
+          updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
         }
+        return updatedObj
       }
+    } else {
+      return obj
     }
-  `)
-
-  const seoData = data.allStrapiHome.nodes[0]?.seo;
-
-  const schemaData = seoData?.structuredData
-    ? _.mapKeys(seoData.structuredData, (value, key) =>
-        key.replace(/^_/, '@')
-      )
-    : {};
-
+  }
+  const transformedObject = replaceUnderscoreWithAt(schemaData)
   return (
     <>
       <SEO
@@ -110,11 +80,12 @@ export const Head = () => {
         robots={seoData.metaRobots}
         image={seoData.metaimage[0].localFile.url}
       >
-        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+        {transformedObject
+          .filter((x) => x.visibilityIn)
+          .map((data, i) => <script key={i} type="application/ld+json">{JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}</script>)}
       </SEO>
     </>
   )
 };
-
 
 export default IndexPage
