@@ -69,6 +69,14 @@ export const Queries = () => {
                areaServed
                email
                description
+               potentialAction {
+                 _type
+                 query_input
+                 target {
+                   type
+                   urlTemplate
+                 }
+               }
                address {
                  _type
                  addressCountry
