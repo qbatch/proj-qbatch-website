@@ -1,4 +1,5 @@
 import React from 'react'
+import { Script } from 'gatsby'
 import { Queries } from '../constants/queries'
 import Layout from '../components/Layout/layout'
 import SEO from '../components/Seo'
@@ -16,40 +17,7 @@ import CreativeIntelligence from '../components/PagesComponent/CreativeIntellige
 import StartProject from '../components/PagesComponent/StartProject'
 
 const IndexPage = () => {
-  return (
-    <Layout>
-      <DedicatedDevelopment />
-      <Achievements page="home" />
-      <WhatWeCanDo />
-      <Expertise />
-      <ProblumSolving
-        text={
-          <p className="text-h2 quote">
-            We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
-            you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
-          </p>
-        }
-      />
-      <ProvenWorkExperience
-        heading="Proven Work Experience"
-        paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."
-        componentName="index"
-      />
-      <HappilyMaking />
-      <WhatDifferenceQbatchMaking
-        heading="What Difference is Qbatch Making?"
-        paragraph="We always present problems with tangible solutions."
-      />
-      <Awards maxCols={8} />
-      <Collaboration />
-      <CreativeIntelligence />
-      <StartProject />
-    </Layout>
-  )
-}
-
-export const Head = () => {
-  const homeData = Queries();
+  const homeData = Queries()
   const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
   const seoData = seo
   const schemaData = schema
@@ -72,6 +40,41 @@ export const Head = () => {
   const transformedObject = replaceUnderscoreWithAt(schemaData)
   return (
     <>
+      <Script type="application/ld+json">
+        {transformedObject
+          .filter((x) => !x.visibilityIn)
+          .map((data, i) => (
+              JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)
+          ))}
+      </Script>
+      <Layout>
+        <DedicatedDevelopment />
+        <Achievements page="home" />
+        <WhatWeCanDo />
+        <Expertise />
+        <ProblumSolving
+          text={
+            <p className="text-h2 quote">
+              We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
+              you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
+            </p>
+          }
+        />
+        <ProvenWorkExperience
+          heading="Proven Work Experience"
+          paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."
+          componentName="index"
+        />
+        <HappilyMaking />
+        <WhatDifferenceQbatchMaking
+          heading="What Difference is Qbatch Making?"
+          paragraph="We always present problems with tangible solutions."
+        />
+        <Awards maxCols={8} />
+        <Collaboration />
+        <CreativeIntelligence />
+        <StartProject />
+      </Layout>
       <SEO
         title={seoData.metaTitle}
         description={seoData.metaDescription}
@@ -82,10 +85,54 @@ export const Head = () => {
       >
         {transformedObject
           .filter((x) => x.visibilityIn)
-          .map((data, i) => <script key={i} type="application/ld+json">{JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}</script>)}
+          .map((data, i) => (
+            <script key={i} type="application/ld+json">
+              {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
+            </script>
+          ))}
       </SEO>
     </>
   )
-};
+}
+
+// export const Head = () => {
+//   const homeData = Queries();
+//   const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
+//   const seoData = seo
+//   const schemaData = schema
+
+//   function replaceUnderscoreWithAt(obj) {
+//     if (obj && typeof obj === 'object') {
+//       if (Array.isArray(obj)) {
+//         return obj.map((item) => replaceUnderscoreWithAt(item))
+//       } else {
+//         const updatedObj = {}
+//         for (const [key, value] of Object.entries(obj)) {
+//           updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
+//         }
+//         return updatedObj
+//       }
+//     } else {
+//       return obj
+//     }
+//   }
+//   const transformedObject = replaceUnderscoreWithAt(schemaData)
+//   return (
+//     <>
+//       <SEO
+//         title={seoData.metaTitle}
+//         description={seoData.metaDescription}
+//         keywords={seoData.keywords}
+//         language={seoData.language}
+//         robots={seoData.metaRobots}
+//         image={seoData.metaimage[0].localFile.url}
+//       >
+//         {transformedObject
+//           .filter((x) => x.visibilityIn)
+//           .map((data, i) => <script key={i} type="application/ld+json">{JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}</script>)}
+//       </SEO>
+//     </>
+//   )
+// };
 
 export default IndexPage
