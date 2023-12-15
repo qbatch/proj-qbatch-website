@@ -1,5 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql } from 'gatsby'
+import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
 import WebappBanner from "../../components/PagesComponent/WebappBanner";
@@ -72,24 +72,9 @@ const webapp = () => {
   );
 };
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query WebAppQuery {
-      allStrapiWebApp {
-        nodes {
-          seo {
-            metaTitle
-            slug
-            metaRobots
-            metaDescription
-            language
-            keywords
-          }
-        }
-      }
-    }
-  `)
+    const webAppData = Queries();
 
-  const seoData = data.allStrapiWebApp.nodes[0]?.seo
+  const seoData = webAppData.allStrapiWebApp.nodes[0]?.seo
 
   return (
     <SEO

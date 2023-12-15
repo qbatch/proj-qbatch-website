@@ -1,6 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql } from 'gatsby';
-
+import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
 import StartProject from "../../components/PagesComponent/StartProject";
@@ -82,24 +81,8 @@ const CtoService = () => {
 };
 
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query CtoQuery {
-      allStrapiCtoService {
-        nodes {
-          seo {
-            metaTitle
-            slug
-            metaRobots
-            metaDescription
-            language
-            keywords
-          }
-        }
-      }
-    }
-  `)
-
-  const seoData = data.allStrapiCtoService.nodes[0]?.seo
+  const ctoData = Queries()
+  const seoData = ctoData.allStrapiCtoService.nodes[0]?.seo
   return (
     <SEO
       title={seoData.metaTitle}
