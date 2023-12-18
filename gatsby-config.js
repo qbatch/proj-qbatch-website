@@ -207,9 +207,14 @@ module.exports = {
         mapping: {
           allStrapiService: {
             sitemap: 'services',
-            allStrapiBlog: {
-              sitemap: 'enterprise-software-development',
-            },
+            resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+            serialize: ({ site, allStrapiService }) =>
+              allStrapiService.edges.map(({ node }) => ({
+                url: `${site.siteMetadata.siteUrl}/services/${node.slug}`,
+                changefreq: 'daily',
+                priority: 0.7,
+                lastmod: node.updatedAt,
+              })),
           },
           allStrapiBlog: {
             sitemap: 'blog',
