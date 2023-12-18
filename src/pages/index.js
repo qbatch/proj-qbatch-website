@@ -81,58 +81,18 @@ const IndexPage = () => {
         keywords={seoData.keywords}
         language={seoData.language}
         robots={seoData.metaRobots}
-        image={seoData.metaimage[0].localFile.url}
+        image={seoData.metaimage[0]?.localFile?.url}
       >
         {transformedObject
           .filter((x) => x.visibilityIn)
           .map((data, i) => (
-            <script key={i} type="application/ld+json">
+            <Script key={i} type="application/ld+json">
               {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
-            </script>
+            </Script>
           ))}
       </SEO>
     </>
   )
 }
-
-// export const Head = () => {
-//   const homeData = Queries();
-//   const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
-//   const seoData = seo
-//   const schemaData = schema
-
-//   function replaceUnderscoreWithAt(obj) {
-//     if (obj && typeof obj === 'object') {
-//       if (Array.isArray(obj)) {
-//         return obj.map((item) => replaceUnderscoreWithAt(item))
-//       } else {
-//         const updatedObj = {}
-//         for (const [key, value] of Object.entries(obj)) {
-//           updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
-//         }
-//         return updatedObj
-//       }
-//     } else {
-//       return obj
-//     }
-//   }
-//   const transformedObject = replaceUnderscoreWithAt(schemaData)
-//   return (
-//     <>
-//       <SEO
-//         title={seoData.metaTitle}
-//         description={seoData.metaDescription}
-//         keywords={seoData.keywords}
-//         language={seoData.language}
-//         robots={seoData.metaRobots}
-//         image={seoData.metaimage[0].localFile.url}
-//       >
-//         {transformedObject
-//           .filter((x) => x.visibilityIn)
-//           .map((data, i) => <script key={i} type="application/ld+json">{JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}</script>)}
-//       </SEO>
-//     </>
-//   )
-// };
 
 export default IndexPage

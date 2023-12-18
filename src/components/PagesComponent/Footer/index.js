@@ -72,7 +72,7 @@ const bottomMenu = [
   },
   {
     name: "Privacy Policy",
-    to: "/",
+    to: "/privacy-policy",
   },
 ];
 
