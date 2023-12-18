@@ -73,7 +73,7 @@ export const Queries = () => {
                  _type
                  query_input
                  target {
-                   type
+                   _type
                    urlTemplate
                  }
                }
@@ -145,7 +145,7 @@ export const Queries = () => {
                  _type
                  query_input
                  target {
-                   type
+                   _type
                    urlTemplate
                  }
                }
