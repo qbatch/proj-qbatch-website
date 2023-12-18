@@ -95,6 +95,7 @@ const strapiConfig = {
     'blog',
     'header',
     'service',
+    'privacy-policy'
   ],
   queryLimit: 1000,
 }

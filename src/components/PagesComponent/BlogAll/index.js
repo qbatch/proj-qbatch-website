@@ -63,8 +63,9 @@ const index = ({ data }) => {
                   text="Explore More"
                   className="header-btn blog-banner-btn"
                   onClick={() => {
-                    navigate("/blogDetails");
-                    localStorage.setItem("blog_id", item.id);
+                    navigate(`/blog${item.seo.slug}`, {
+                      state: { blogId: item.id },
+                    })
                   }}
                 />
               </div>
