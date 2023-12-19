@@ -8,24 +8,23 @@ const PrivacyWrapper = styled.div`
   `}
 
   h3 {
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
     margin-bottom: 24px;
   }
   h4 {
-    font-size:  ${({ theme }) => theme.fonts.baseFontSizeSm};
+    font-size: 20px;
   }
   p {
-    font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    font-size: 16px;
     line-height: 24px;
   }
   ul {
     list-style: disc;
     padding-left: 32px;
-    color:  ${({ theme }) => theme.colors.textMedium};
+    color: #5f737c;
     margin-bottom: 24px;
     letter-spacing: 0.14px;
     line-height: 24px;
   }
-`;
+`
 
 export default PrivacyWrapper;
