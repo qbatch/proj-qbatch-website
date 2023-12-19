@@ -1,10 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Layout from "../../components/Layout/layout";
-import Container from "../../components/UiComponent/Container";
+import Layout from "../components/Layout/layout";
+import StaticPage from "../components/PagesComponent/StaticPage";
 
-import PrivacyWrapper from "./style";
 
 const PrivacyPolicy = () => {
   const data = useStaticQuery(graphql`
@@ -19,17 +18,9 @@ const PrivacyPolicy = () => {
   const privacyData = data.allStrapiPrivacyPolicyContentTextnode.nodes[0];
 
   return (
-    <Layout>
-      <PrivacyWrapper>
-        <Container>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: privacyData?.content,
-            }}
-          />
-        </Container>
-      </PrivacyWrapper>
-    </Layout>
+     <Layout>
+        <StaticPage data={privacyData} />
+     </Layout>
   );
 };
 
