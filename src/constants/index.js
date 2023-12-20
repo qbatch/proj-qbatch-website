@@ -966,15 +966,8 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+        Choosing e-commerce automation services allows you to put repetitive and time-consuming tasks on auto-pilot, getting more done in less time. For example, you can automate marketing and sales, order fulfillment and shipment, billing and payment, returns management, customer service operations, and more. This way you save finances and labor, increasing returns on investment.
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
-        <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
-        </ul>
       </div>
     ),
   },
@@ -984,15 +977,10 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+        The technology used in e-commerce automation services lets you perform tasks with little or no human involvement, giving you time to spend on creative and strategic tasks instead of unimportant work. E-commerce management automation helps you with barcoding, inventory management, order management, finding the right products, and making better relationships with your customers.
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
-        <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
-        </ul>
+        <span>Reduced workload and minimized human errors allow smooth user journey, thus increasing productivity and enabling customer retention.
+        </span>
       </div>
     ),
   },
@@ -1002,15 +990,8 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+        E-commerce task automation prevents human errors keeping the team involved in significant tasks and improving overall operational efficiency and consistency leaving limited room for distractions and mistakes. This helps in achieving accuracy in data collection and analysis, faster communication, record keeping, and generating lucrative outcomes as a result.
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
-        <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
-        </ul>
       </div>
     ),
   },
@@ -1020,14 +1001,15 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+        Getting started with e-commerce automation is no rocket science. Anyone from the supply chain and seller community can easily avail of e-commerce software automation services in 6 steps:
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Facing a problem?</li>
+          <li>Get in touch with Team Qbatch</li>
+          <li>Share your problem statement</li>
+          <li>We will perform a requirement analysis and offer a roadmap</li>
+          <li>We sign a risk-free contract</li>
+          <li>We break a sweat and make a successful launch that sells!</li>
         </ul>
       </div>
     ),
@@ -1038,14 +1020,19 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+        You can perform e-commerce process automation on the following operations:
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Customer experience automation to promptly manage customer queries and complaints.</li>
+          <li>Shipping and order fulfillment to simplify pick & pack and shipping processes</li>
+          <li>Inventory automation to hide or unpublish stock-outs until they are available again.</li>
+          <li>Printing product shipment labels and tracking numbers</li>
+          <li>E-commerce security automation to detect and stop high-risk orders.</li>
+          <li>E-commerce process automation helps in audience segmentation and personalization. </li>
+          <li>E-commerce marketing automation to apply discounts and send targeted emails</li>
+          <li>Invoicing and reconciliation automation to keep track of expenses.</li>
+          <li>E-commerce workflow automation to manage operational and administrative tasks</li>
+          <li>Others include advertising and customer journey automation</li>
         </ul>
       </div>
     ),
