@@ -68,7 +68,7 @@ const bottomMenu = [
   },
   {
     name: "Terms & Conditions",
-    to: "/",
+    to: "/terms-and-conditions",
   },
   {
     name: "Privacy Policy",
