@@ -9,8 +9,8 @@ const index = () => {
     <EcommerceBannerWrapper>
       <Container>
         <div className='title-portion'>
-          <p className='sub-heading'>Custom E-Commerce Software Solutions</p>
-          <H1><span className="bigger">BIGGER</span>Returns Required </H1>
+          <h1 className='sub-heading'>Custom E-Commerce Software Solutions</h1>
+          <H1><span className="bigger">Bigger</span> Returns Required </H1>
         </div>
       </Container>
       <img src='/bold-text.svg' alt='bold-text' className='banner-img' />

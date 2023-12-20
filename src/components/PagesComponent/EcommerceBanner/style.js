@@ -35,6 +35,7 @@ const EcommerceBannerWrapper = styled.section`
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     letter-spacing: 0;
+    text-transform: uppercase;
     ${media.lg`
       display: block;
       margin-bottom: 24px;
@@ -118,7 +119,7 @@ const EcommerceBannerWrapper = styled.section`
   }
 `;
 
-const H1 = styled.h1`
+const H1 = styled.h2`
   font-size: 53px;
   margin-bottom: 0px;
   color: ${({ theme }) => theme.colors.whiteColor};
