@@ -3,7 +3,7 @@ import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
 import StartProject from "../../components/PagesComponent/StartProject";
-import CtoBanner from "../../components/PagesComponent/CtoBanner";
+import Banner from "../../components/PagesComponent/PageBanner";
 import HireCto from "../../components/PagesComponent/HireCto/index";
 import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
 import CtoPersona from "../../components/PagesComponent/CtoPersona";
@@ -17,11 +17,19 @@ import DevelopmentStages from "../../components/PagesComponent/DevelopmentStages
 import FaqSection from "../../components/PagesComponent/Faq";
 import { sliderItems, faqQuestion } from "../../constants";
 import { guidanceData, ctoList } from "../../constants";
+import CtoBannerImage from "../../../static/cto-banner.png";
 
 const CtoService = () => {
   return (
     <Layout>
-      <CtoBanner />
+      <Banner
+        subheading="CTO as a Service"
+        heading="Rethink and Rebuild Your Technical Prowess"
+        paragraph="Neglecting a tiny detail can lead to huge technical debts. Get high-impact technical guidance and confidently deal with time- and money-critical situations toward greater business growth."
+        buttonText="Get Free CTO Consultation"
+        imgSrc={CtoBannerImage}
+        wrapperClass="cto-banner"
+      />
       <HireCto 
       list={ ctoList } 
       btnText="Stuck in a different situation?"

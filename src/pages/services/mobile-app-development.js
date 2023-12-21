@@ -15,9 +15,11 @@ import StartProject from "../../components/PagesComponent/StartProject";
 import AppDevelopmentServices from "../../components/PagesComponent/TechnicalGuidance";
 import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
 import SecretSauce from "../../components/PagesComponent/SecretSauce";
+import Banner from "../../components/PagesComponent/PageBanner";
 import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
 import DedicatedMobileDevelopers from "../../components/PagesComponent/DedicatedMobileDevelopers";
 import MultiplePlatformSolutions from "../../components/PagesComponent/MultiplePlatformSolutions";
+import BannerImage from "../../../static/mobile-app-banner.png";
 
 import {
   lostToLaunchedItems,
@@ -29,6 +31,14 @@ import {
 const MobileApp = () => {
   return (
       <Layout>
+         <Banner
+          subheading="Mobile App Development"
+          heading="Deliver Powerful Mobile App Experiences"
+          paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
+          buttonText="Kickstart Your Transformation Journey"
+          imgSrc={BannerImage}
+          wrapperClass="mobile-app-banner"
+        />
         <TechnicalExcellence
           heading="Robots won’t use your mobile apps, Humans will!"
           title={false}

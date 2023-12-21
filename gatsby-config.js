@@ -111,6 +111,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
+
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,
@@ -154,7 +155,7 @@ module.exports = {
         args: `?onload=onloadCallback&render=explicit`,
       },
     },
- 
+
     {
       resolve: 'gatsby-source-filesystem',
       options: {

@@ -69,14 +69,6 @@ export const Queries = () => {
                areaServed
                email
                description
-               potentialAction {
-                 _type
-                 query_input
-                 target {
-                   _type
-                   urlTemplate
-                 }
-               }
                address {
                  _type
                  addressCountry
@@ -141,14 +133,6 @@ export const Queries = () => {
                slogan
                telephone
                url
-               potentialAction {
-                 _type
-                 query_input
-                 target {
-                   _type
-                   urlTemplate
-                 }
-               }
              }
            }
            seo {
