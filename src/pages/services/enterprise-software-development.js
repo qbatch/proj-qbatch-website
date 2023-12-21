@@ -2,6 +2,7 @@ import React from "react";
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
 import SEO from "../../components/Seo";
+import Banner from "../../components/PagesComponent/PageBanner";
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
 import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
 import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
@@ -15,6 +16,7 @@ import ChoiseYourEnterprise from "../../components/PagesComponent/ChoiceYourEnte
 import SecretSauce from "../../components/PagesComponent/SecretSauce";
 import SofwareDevelopmentExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import DoYouKnow from "../../components/PagesComponent/DedicatedMobileDevelopers";
+import BannerImage from "../../../static/enterprise-banner.png";
 
 import {
   lostToLaunchedItems,
@@ -29,6 +31,15 @@ import {
 const Enterprise = () => {
   return (
     <Layout>
+      <Banner
+          subheading="Enterprise App Development Company"
+          heading="Your “Great Transformation” Journey Begins Here"
+          paragraph="Worried about the challenges that come with a growing enter-
+          prise? Get ready to build a market-ready solution inspired by the latest technology and insight with team Qbatch."
+          buttonText="Explore Services"
+          imgSrc={BannerImage}
+          wrapperClass="enterprise-banner"
+        />
       <ChoiseYourEnterprise
         heading="Are You Making the Right Choice For Your Enterprise?"
         desc1=" Enterprise systems often rely on certain workflows and tools that do
