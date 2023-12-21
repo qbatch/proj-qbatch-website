@@ -13,7 +13,7 @@ const FooterWrapper = styled.div`
     `}
   }
   .footer-section {
-    padding: 121px 0 95px;
+    padding: 96px 0 96px;
     ${media.sm`
      padding: 40px 0;
     `}

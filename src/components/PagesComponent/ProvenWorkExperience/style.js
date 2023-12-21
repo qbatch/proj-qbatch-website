@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const ProvenExperienceWrapper = styled.div`
   .section-heading {
-    padding: 120px 0 96px;
+    padding: 96px 0 96px;
     .heading {
       padding-bottom: 24px;
     }

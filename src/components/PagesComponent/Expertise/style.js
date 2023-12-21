@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const ExpertiseWrapper = styled.section`
   .base-space {
-    padding: 120px 0 110px;
+    padding: 96px 0 96px;
     ${media.sm`
       padding: 40px 0;
     `}

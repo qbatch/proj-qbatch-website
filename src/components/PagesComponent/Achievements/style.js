@@ -15,7 +15,7 @@ position:relative;
   background: linear-gradient(180deg, rgba(246, 247, 250, 0.70) 0%, rgba(246, 247, 250, 0.60) 100%);
 }
   .achievements-main {
-    padding: 120px 0 145px;
+    padding: 96px 0 96px;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-image: url("/achievements-bg.svg");
@@ -68,6 +68,7 @@ position:relative;
       }
       .heading {
         font-size: ${({ theme }) => theme.fonts.baseFontXl};
+        font-weight:600;
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};

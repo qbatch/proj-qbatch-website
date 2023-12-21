@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const ProblumSolvingWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
-  padding: 165px 0 148px;
+  padding: 96px 0 96px;
   overflow: hidden;
   ${media.md`
    padding: 100px 0;

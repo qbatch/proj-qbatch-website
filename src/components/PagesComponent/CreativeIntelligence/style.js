@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const CreativeIntelligenceWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
-  padding: 146px 0 141px;
+  padding: 96px 0 96px;
   background-image: url("/creativity-background.svg");
   background-repeat: no-repeat;
   background-position: top;

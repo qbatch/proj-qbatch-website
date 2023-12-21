@@ -17,7 +17,6 @@ const Index = (props) => {
 
   const BlogPost = ({ card, ind, onClick }) => {
     const customDate = new Date(card.publishedAt)
-    
     return ind === 0 ? (
       <Col md={12}>
         <div className="inner first-card" key={ind}>
@@ -59,7 +58,7 @@ const Index = (props) => {
                     fontSize="16px"
                     color="#0054A6"
                     onClick={() => {
-                      navigate(`/blog${card.seo.slug}`, {
+                      navigate(`/blog/${card.category.categoryName}${card.seo.slug}`, {
                         state: { blogId: card.id },
                       })
                     }}
@@ -98,7 +97,7 @@ const Index = (props) => {
               text="Explore More"
               fontSize="16px"
               onClick={() => {
-                navigate(`/blog${card.seo.slug}`, {
+                navigate(`/blog/${card.category.categoryName}${card.seo.slug}`, {
                   state: { blogId: card.id },
                 })
               }}
