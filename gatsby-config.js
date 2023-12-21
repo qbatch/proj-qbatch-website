@@ -110,6 +110,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
+
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,
@@ -146,6 +147,71 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        query: `
+          {
+            allStrapiBlog {
+              edges {
+                node {
+                  id
+                  slug
+                  updatedAt
+                }
+              }
+            }
+            allStrapiService {
+              edges {
+                node {
+                  id
+                  slug
+                  updatedAt
+                }
+              }
+            }
+            allStrapiEnterprise {
+                edges {
+                  node {
+                    id
+                    slug
+                    updatedAt
+                  }
+                }
+              }
+            allStrapiPortfolio {
+              edges {
+                node {
+                  id
+                  slug
+                  updatedAt
+                }
+              }
+            }
+            allStrapiAboutUs {
+              edges {
+                node {
+                  id
+                  slug
+                  updatedAt
+                }
+              }
+            }
+          }
+  `,
+        mapping: {
+          allStrapiService: {
+            sitemap: 'services',
+          },
+          allStrapiBlog: {
+            sitemap: 'blog',
+          },
+          allStrapiPortfolio: {
+            sitemap: 'portfolio',
+          },
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-recaptcha`,
       options: {
         async: false,
@@ -153,7 +219,7 @@ module.exports = {
         args: `?onload=onloadCallback&render=explicit`,
       },
     },
- 
+
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -181,6 +247,30 @@ module.exports = {
       options: {
         id: googleTagId,
         includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        useAutoGen: true,
+        autoGenHomeLabel: 'Home',
+        defaultCrumb: {
+          location: {
+            pathname: '/',
+          },
+          crumbLabelUpdates: [
+            {
+              pathname: '/',
+              crumbLabel: 'Home',
+            },
+            {
+              pathname: '/blog',
+              crumbLabel: 'Blog',
+            },
+          ],
+          crumbLabel: 'Home',
+          crumbSeparator: ' >  ',
+        },
       },
     },
   ],
