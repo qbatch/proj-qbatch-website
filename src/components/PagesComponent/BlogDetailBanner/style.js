@@ -10,13 +10,16 @@ const BlogDetailsWrapper = styled.div`
   background-position: right;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);
-    ${media.sm`
+  ${media.sm`
     padding: 96px 0;
   `}
-    .breadcrumb {
+  .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-    color: ${({ theme }) => theme.colors.bodyLight};
+    color: ${({ theme }) => theme.colors.whiteColor};
     margin: 4px 0 11px 52px;
+    a {
+      color: ${({ theme }) => theme.colors.whiteColor};
+    }
     ${media.xs`
       margin: 0 0 12px;
   `}
@@ -44,7 +47,7 @@ const BlogDetailsWrapper = styled.div`
 
     span {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-      color: ${({ theme }) => theme.colors.bodyLight};
+      color: ${({ theme }) => theme.colors.whiteColor};
     }
     color: ${({ theme }) => theme.colors.whiteColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};

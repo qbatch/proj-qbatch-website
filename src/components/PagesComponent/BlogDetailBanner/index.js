@@ -1,21 +1,38 @@
 import React from "react";
+import { Link } from 'gatsby'
 import Container from "../../UiComponent/Container";
 import BlogDetailsWrapper from "./style";
 import { navigate } from "gatsby";
 import { ReadingTime, TimeAgo } from "../../../constants/Utils";
 
 const Index = ({ data }) => {
-  const customDate = new Date(data?.publishedAt);
+  const customDate = new Date(data?.publishedAt)
+  const title = data?.blogTitle;
+    const customCrumbs = [
+      { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
+      { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
+      { pathname: '/blog', crumbLabel: data?.category.categoryName, crumbSeparator: '> ' },
+      { pathname: '/blog', crumbLabel: data?.blogTitle, crumbSeparator: '>' },
+    ]
   return (
     <BlogDetailsWrapper backgroundImage={data?.blogImg.localFile.url}>
       <Container>
         <div className="breadcrumb">
-          Home {'>'} Blog {'>'} Blog detail page
+          <ul className="d-flex gap-2">
+            {customCrumbs.map((crumb, index) => (
+              <li key={index}>
+                <Link to={crumb.pathname}>
+                <span>{crumb.crumbLabel}</span>
+                {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="d-flex align-items-start details-flex gap-4">
           <img src="/back-arrow.svg" alt="no-arrow" className="pointer" onClick={() => navigate('/blog')} />
           <div>
-            <h1 className="title text-h2">{data?.blogTitle}</h1>
+            <h1 className="title text-h2">{title}</h1>
             <div className="d-flex gap-72">
               <div className="read-time">
                 <img src="/clock.svg" alt="no-time" />
@@ -41,6 +58,6 @@ const Index = ({ data }) => {
       </Container>
     </BlogDetailsWrapper>
   )
-};
+}
 
 export default Index;
