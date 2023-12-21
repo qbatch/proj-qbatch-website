@@ -148,7 +148,7 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-plugin-advanced-sitemap`,
+      resolve: `gatsby-plugin-advanced-sitemap-patch`,
       options: {
         query: `
           {
@@ -248,30 +248,6 @@ module.exports = {
       options: {
         id: googleTagId,
         includeInDevelopment: false,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-breadcrumb`,
-      options: {
-        useAutoGen: true,
-        autoGenHomeLabel: 'Home',
-        defaultCrumb: {
-          location: {
-            pathname: '/',
-          },
-          crumbLabelUpdates: [
-            {
-              pathname: '/',
-              crumbLabel: 'Home',
-            },
-            {
-              pathname: '/blog',
-              crumbLabel: 'Blog',
-            },
-          ],
-          crumbLabel: 'Home',
-          crumbSeparator: ' >  ',
-        },
       },
     },
   ],
