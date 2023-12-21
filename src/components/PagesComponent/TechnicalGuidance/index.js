@@ -80,7 +80,6 @@ const Index = (props) => {
             {data.map((data, ind) => (
               <div className="guidance-card" key={ind}>
                 <img src={data.icon} alt="card icon" />
-                <h4>{data.title}</h4>
                 <p>{data.desc}</p>
               </div>
             ))}
