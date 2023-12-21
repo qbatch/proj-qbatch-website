@@ -15,7 +15,7 @@ position: relative;
   background: linear-gradient(180deg, rgba(246, 247, 250, 0.70) 0%, rgba(246, 247, 250, 0.60) 100%);
 }
   .awards-main {
-    padding: 120px 0;
+    padding: 96px 0;
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
     background-image: url("/awards-bg.svg");

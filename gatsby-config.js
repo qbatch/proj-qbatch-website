@@ -175,7 +175,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: './src/assets/images/qbatch-logo.svg',
+        icon: './src/assets/images/qbatch-favicon.png',
       },
     },
     {

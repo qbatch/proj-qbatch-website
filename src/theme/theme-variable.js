@@ -1,5 +1,5 @@
-const fsxl = "96px";
-const fsh1 = "68px";
+const fsxl = "60px";
+const fsh1 = "56px";
 const fsh2 = "40px";
 const fsh3 = "32px";
 const fslg = "24px";

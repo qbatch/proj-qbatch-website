@@ -21,10 +21,16 @@ const Index = ({ data }) => {
           <ul className="d-flex gap-2">
             {customCrumbs.map((crumb, index) => (
               <li key={index}>
-                <Link to={crumb.pathname}>
-                <span>{crumb.crumbLabel}</span>
-                {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
-                </Link>
+                <div
+                  to={crumb.pathname}
+                  onClick={() => {
+                    navigate(crumb.pathname,)
+                     localStorage.setItem('category', data?.category.categoryName)
+                  }}
+                >
+                  <span>{crumb.crumbLabel}</span>
+                  {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
+                </div>
               </li>
             ))}
           </ul>

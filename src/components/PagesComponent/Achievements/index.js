@@ -21,7 +21,7 @@ const Index = ({ innerPage, page }) => {
           <Row>
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">
-                <span className={page === "contact" ?  "text-h1 fw-bold" : "heading fw-bold"}>
+                <span className={page === "contact" ?  "text-h1" : "heading"}>
                   <CountUp end={data.count} duration={3} />
                   {data.symbol && (
                     <span className="color-danger fw-light ms-2">{data.symbol}</span>
