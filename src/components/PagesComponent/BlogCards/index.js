@@ -58,7 +58,7 @@ const Index = (props) => {
                     fontSize="16px"
                     color="#0054A6"
                     onClick={() => {
-                      navigate(`/blog/${card.category.categoryName}${card.seo.slug}`, {
+                      navigate(`/blog${card.seo.slug}`, {
                         state: { blogId: card.id },
                       })
                     }}
