@@ -1598,27 +1598,27 @@ const ctoList = [
 ];
 const productDesignlist = [
   {
-    img: '/slide-img.jpeg',
+    img: '/software-product.svg',
     description: 'Why do you need software product design and development services?',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/dedicated-team.svg',
     description: 'I’m looking to partner with a dedicated team of product developers to grow my startup',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/steller-mvp.svg',
     description: 'I’m looking to launch a stellar MVP and reach out to investors for their trust and investment.',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/product-market.svg',
     description: 'I’m planning to launch my product in the market but prefer a technical audit beforehand.',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/digital-product.svg',
     description: 'I’m seeking to build a digital product from scratch in collaboration with industry professionals.',
   },
   {
-    img: '/slide-img.jpeg',
+    img: '/business-expectations.svg',
     description: 'I already have a product that doesn’t respond to user needs and fails to meet business expectations.',
   },
 ]
