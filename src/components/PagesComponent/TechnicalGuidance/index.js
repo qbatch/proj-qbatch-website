@@ -60,34 +60,38 @@ const Index = (props) => {
 
   return (
     <TechnicalGuidanceWrapper className={className}>
-      <div className="horizontal-section">
-        <div className="sticky-wrapper">
-          <Container>
-            <div className="d-flex align-items-start justify-content-between flex-wrap guidance-heading">
-              <h2>
-                {heading}
-                <span>{span}</span>
-              </h2>
-              {desc && <p>{desc}</p>}
-              {isButton && (
-                <div className="mt-2">
-                  <Button text="Let’s Get Started" />
-                </div>
-              )}
-            </div>
-          </Container>
-          <div className="element-wrapper">
-            {data.map((data, ind) => (
+    <div className="horizontal-section">
+      <div className="sticky-wrapper">
+        <Container>
+          <div className="d-flex align-items-start justify-content-between flex-wrap guidance-heading">
+            <h2>
+              {heading}
+              <span>{span}</span>
+            </h2>
+            {desc && <p>{desc}</p>}
+            {isButton && (
+              <div className="mt-2">
+                <Button text="Let’s Get Started" />
+              </div>
+            )}
+          </div>
+        </Container>
+        <div className="element-wrapper">
+          {data.length > 0 &&
+            data.map((data, ind) => (
               <div className="guidance-card" key={ind}>
                 <img src={data.icon} alt="card icon" />
+                {data.title && (  // Check if data.title exists
+                  <h4>{data.title}</h4>
+                )}
                 <p>{data.desc}</p>
               </div>
             ))}
             <div className="guidance-card"></div>
-          </div>
         </div>
       </div>
-    </TechnicalGuidanceWrapper>
+    </div>
+  </TechnicalGuidanceWrapper>
   );
 };
 
