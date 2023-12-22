@@ -69,24 +69,27 @@ const softwareProductData = [
 ];
 const developmentProcessData = [
   {
-    image: '/slide-img.jpeg',
+    image: '/1-2-weeks.svg',
     duration: '1-2 weeks',
     title: 'Discovery Phase',
-    description: 'We test and validate your unproven concept according to the market situation before securing your idea and investment.',
+    description:
+      'We test and validate your unproven concept according to the market situation before securing your idea and investment.',
   },
   {
-    image: '/slide-img.jpeg',
+    image: '/6-8-weeks.svg',
     duration: '6 - 8 weeks',
     title: 'MVP Development',
-    description: 'We finalize crucial features and functionality to reduce time to market and make the product necessarily and publicly useful.',
+    description:
+      'We finalize crucial features and functionality to reduce time to market and make the product necessarily and publicly useful.',
   },
   {
-    image: '/slide-img.jpeg',
+    image: '/retainer-based.svg',
     duration: 'Retainer Based',
     title: 'Maintenance & Support',
-    description: 'It may take a few weeks to deploy and make your product available to the general masses. We continue our support to growing your product.',
+    description:
+      'It may take a few weeks to deploy and make your product available to the general masses. We continue our support to growing your product.',
   },
-];
+]
 const leaderData = [
   {  name: "Ibrahim Zahoor", title: "CEO & Founder", imageSrc: "/leader-1.jpeg" },
   { name: "Hassan Akram", title: "CTO & co - Founder Qbatch", imageSrc: "/leader-2.jpeg" },
