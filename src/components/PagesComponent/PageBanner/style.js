@@ -23,7 +23,7 @@ const CtoBannerWrapper = styled.div`
         font-size: 16px;
       `}
     }
-    h1 {
+    .text-h1 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 34px;
       margin-top: 3px;
