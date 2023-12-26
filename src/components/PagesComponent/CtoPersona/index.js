@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from 'gatsby'
 import {Row,Col} from 'react-bootstrap'
 import ListGroup from "react-bootstrap/ListGroup";
 import PersonaWrapper from "./style";
@@ -63,10 +63,13 @@ const persona = [
               <div className="first-box">
                 <h2 className="color-primary">Let’s Select The Most Fitting CTO Persona</h2>
                 <p className="description">
-                  As defined by{" "}
-                  <Link target="blank" href="https://www.gartner.com/smarterwithgartner/understand-the-5-common-cto-personas">
-                    {" "}
-                    Gartner{" "}
+                  As defined by{' '}
+                  <Link
+                    target="blank"
+                    href="https://www.gartner.com/smarterwithgartner/understand-the-5-common-cto-personas"
+                  >
+                    {' '}
+                    Gartner{' '}
                   </Link>
                   , we offer these 4 most comprehensive CTO leadership styles as per your needs and requirements.
                 </p>
@@ -81,7 +84,7 @@ const persona = [
                       {persona.list.map((service, index) => (
                         <li data-icon="-" key={index}>
                           <span>
-                            {" "}
+                            {' '}
                             <div className="hash">-</div> {service}
                           </span>
                         </li>
@@ -89,7 +92,7 @@ const persona = [
                     </ul>
                   </div>
                 </Col>
-              );
+              )
             })}
             <Col lg={4} md={6} sm={12}>
               <div className="button-box">
@@ -105,18 +108,18 @@ const persona = [
                               id="circle"
                               rx="15"
                               d="M 50, 50
-                        m -37, 0
-                        a 37,37 0 1,1 74,0
-                        a 37,37 0 1,1 -74,0"
+                              m -37, 0
+                              a 37,37 0 1,1 74,0
+                              a 37,37 0 1,1 -74,0"
                             />
                           </defs>
                           <text>
                             <textPath href="#circle">
-                              Can't Find your CTO Type? Can't Find your CTO Type? Can't Find your CTO Type?{" "}
+                              Can't Find your CTO Type? Can't Find your CTO Type? Can't Find your CTO Type?{' '}
                             </textPath>
                           </text>
                         </svg>
-                        <ArrowDownward className="red-arrow" />
+                        <ArrowDownward onClick={() => navigate('/contact')} className="red-arrow" />
                       </div>
                     </div>
                   </div>
@@ -128,6 +131,6 @@ const persona = [
       </PersonaWrapper>
       <Divider />
     </>
-  );
+  )
 };
 export default Index;
