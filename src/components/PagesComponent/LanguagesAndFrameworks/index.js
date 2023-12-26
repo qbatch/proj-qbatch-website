@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { navigate } from 'gatsby'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -43,18 +44,14 @@ const Index = () => {
   };
 
   return (
-    <LanguagesWrapper
-      id="scene-trigger2"
-      ref={scrollRef2}
-      className="stage-slider-main2"
-    >
+    <LanguagesWrapper id="scene-trigger2" ref={scrollRef2} className="stage-slider-main2">
       <div>
         <Container>
           <div className="languages-header">
             <h2>Languages & Frameworks We Use</h2>
             <p>
-              Time-tested Web Application Development tools and technologies to
-              build a cross-platform and secure application:
+              Time-tested Web Application Development tools and technologies to build a cross-platform and secure
+              application:
             </p>
           </div>
 
@@ -65,9 +62,7 @@ const Index = () => {
                   {languagesData?.map((item, index) => (
                     <li
                       key={index}
-                      className={`pagination-item ${
-                        activeIndex === index ? "active" : ""
-                      }`}
+                      className={`pagination-item ${activeIndex === index ? 'active' : ''}`}
                       onClick={() => handlePaginationItemClick(index)}
                     >
                       {item.title}
@@ -84,11 +79,7 @@ const Index = () => {
                       {item.content.map((data) => (
                         <Col md={4}>
                           <div className="framework-logo">
-                            {data.img === "" ? (
-                              ""
-                            ) : (
-                              <img src={data.img} alt="project" />
-                            )}
+                            {data.img === '' ? '' : <img src={data.img} alt="project" />}
                             <p>{data.desc}</p>
                           </div>
                         </Col>
@@ -107,11 +98,7 @@ const Index = () => {
                   {item.content.map((data) => (
                     <Col md={4} sm={6} xs={6}>
                       <div className="framework-logo">
-                        {data.img === "" ? (
-                          ""
-                        ) : (
-                          <img src={data.img} alt="project" />
-                        )}
+                        {data.img === '' ? '' : <img src={data.img} alt="project" />}
                         <p>{data.desc}</p>
                       </div>
                     </Col>
@@ -121,12 +108,12 @@ const Index = () => {
             ))}
           </div>
           <div className="languages-btn">
-            <Button text="Discover the Right Toolkit for Your Project" />
+            <Button onClick={() => navigate('/contact')} text="Discover the Right Toolkit for Your Project" />
           </div>
         </Container>
       </div>
     </LanguagesWrapper>
-  );
+  )
 };
 
 export default Index;

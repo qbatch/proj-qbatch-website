@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from 'gatsby'
 import { Container } from "react-bootstrap";
 
 import Button from "../../UiComponent/Button";
@@ -10,10 +11,10 @@ const Index = () => {
     <GrowingTechWrapper>
       <Container>
         <h1>Hesitant about growing the tech side of your business?</h1>
-        <Button text="Get Unbiased Consultation" className="secondary-btn" />
+        <Button onClick={() => navigate('/contact')} text="Get Unbiased Consultation" className="secondary-btn" />
       </Container>
     </GrowingTechWrapper>
-  );
+  )
 };
 
 export default Index;

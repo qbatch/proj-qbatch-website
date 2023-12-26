@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from 'gatsby'
 
 import CtoServiceWrapper from './style';
 
@@ -38,29 +39,24 @@ const Index = () => {
     <>
       <CtoServiceWrapper>
         <Container>
-          <h2 className='color-primary'>CTO as a Service Collaboration Models</h2>
+          <h2 className="color-primary">CTO as a Service Collaboration Models</h2>
           {CtoServiceModels.map((data, index) => (
-            <div className='cto-service' key={index}>
-              <div className='inner-wrapper'>
-                <img
-                  src={data.icon} 
-                  alt="card icon"
-                  width="72px"
-                  height="72px"
-                />
-                <div className='inner-text'>
+            <div className="cto-service" key={index}>
+              <div className="inner-wrapper">
+                <img src={data.icon} alt="card icon" width="72px" height="72px" />
+                <div className="inner-text">
                   <h3>{data.title}</h3>
                   <p>{data.description}</p>
                 </div>
               </div>
-              <PrimaryButton borderbottom text="Hire Now" />
+              <PrimaryButton onClick={() => navigate('/contact')} borderbottom text="Hire Now" />
             </div>
           ))}
         </Container>
       </CtoServiceWrapper>
       <Divider />
     </>
-  );
+  )
 };
 
 export default Index;

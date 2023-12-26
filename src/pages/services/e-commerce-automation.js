@@ -5,7 +5,6 @@ import Layout from "../../components/Layout/layout";
 import StartProject from "../../components/PagesComponent/StartProject";
 import WhatCanHelp from "../../components/PagesComponent/WhatCanYouHelp/index";
 import BusinessMangement from "../../components/PagesComponent/BusinessMangement/index";
-import EcomLogoSection from "../../components/PagesComponent/EcomLogoSection";
 import DevelopmentStages from "../../components/PagesComponent/DevelopmentStages";
 import EcommerceBanner from "../../components/PagesComponent/EcommerceBanner";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
@@ -23,7 +22,6 @@ const Ecommerce = () => {
   return (
     <Layout>
       <EcommerceBanner />
-      <EcomLogoSection />
       <WhatCanHelp />
       <DevelopmentStages
         heading="Our 5-Step E-commerce Automation Process"

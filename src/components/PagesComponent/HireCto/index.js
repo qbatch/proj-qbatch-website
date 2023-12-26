@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from 'gatsby'
 
 import ListGroup from "react-bootstrap/ListGroup";
 
@@ -11,12 +12,10 @@ import HireCtoWrapper from "./style";
 const Index = ({ list, btnText, groupClass, heading, paragraph }) => {
   return (
     <>
-    <Container>
-        <HireCtoWrapper  className={groupClass}>
+      <Container>
+        <HireCtoWrapper className={groupClass}>
           <div className="text-center">
-            <h2 className="color-primary mb-1 heading">
-              {heading }
-            </h2>
+            <h2 className="color-primary mb-1 heading">{heading}</h2>
           </div>
           <div>
             <ListGroup>
@@ -30,12 +29,12 @@ const Index = ({ list, btnText, groupClass, heading, paragraph }) => {
           </div>
           <p className="text-center paragraph">{paragraph}</p>
           <div className="d-flex justify-content-center">
-           <Button text={btnText} />
+            <Button onClick={() => navigate('/contact')} text={btnText} />
           </div>
         </HireCtoWrapper>
       </Container>
       <Divider />
     </>
-  );
+  )
 };
 export default Index;

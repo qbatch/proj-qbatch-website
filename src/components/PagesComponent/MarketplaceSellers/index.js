@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from 'gatsby'
 import { Container } from "react-bootstrap";
 
 import Button from "../../UiComponent/Button";
@@ -6,14 +7,14 @@ import  MarketplaceSellersWrapper from "./style";
 
 const Index = ({heading, paragraph, btnText, wrapperClass}) => {
   return (
-    < MarketplaceSellersWrapper className={wrapperClass}>
+    <MarketplaceSellersWrapper className={wrapperClass}>
       <Container>
         <h2 className="text-h2 heading">{heading}</h2>
         <p className="paragraph">{paragraph}</p>
-        <Button text={btnText} className="secondary-btn" />
+        <Button onClick={() => navigate('/contact')} text={btnText} className="secondary-btn" />
       </Container>
-    </ MarketplaceSellersWrapper>
-  );
+    </MarketplaceSellersWrapper>
+  )
 };
 
 export default Index;

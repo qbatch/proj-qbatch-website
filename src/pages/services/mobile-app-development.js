@@ -124,7 +124,6 @@ export const Head = () => {
     const mobileAppData = Queries()
 
   const seoData = mobileAppData.allStrapiMobileApp.nodes[0]?.seo
-
   return (
     <SEO
       title={seoData.metaTitle}
