@@ -11,8 +11,8 @@ const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
         <Row>
           <Col lg={7} md={12} sm={12} xs={12}>
             <div className="banner-main">
-              <h4 className="banner-sub-heading">{subheading}</h4>
-              <h1>{heading}</h1>
+              <h1 className="banner-sub-heading text-h4">{subheading}</h1>
+              <h2 className="text-h1">{heading}</h2>
               <p>{paragraph}</p>
               <Button text={buttonText} className="mx-lg-0 mx-auto" />
             </div>
