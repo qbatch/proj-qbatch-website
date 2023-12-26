@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from 'gatsby'
 import {Row,Col} from 'react-bootstrap'
 
 import Container from '../../UiComponent/Container'
@@ -23,14 +24,14 @@ const ProjectBox = ({ title, img, description }) => (
       <Container>
         <h3 className="text-h2">Custom e-commerce business management software solutions for your next big project.</h3>
         <Row>
-            {[...projects.slice(0, 5), ...projects.slice(5, 10)].map((project, index) => (
-              <Col lg={6} md={12} sm={12} key={index}>
-                <ProjectBox {...project} />
-              </Col>
-            ))}
+          {[...projects.slice(0, 5), ...projects.slice(5, 10)].map((project, index) => (
+            <Col lg={6} md={12} sm={12} key={index}>
+              <ProjectBox {...project} />
+            </Col>
+          ))}
           <Col lg={12} md={12}>
             <div className="d-flex justify-content-center add-space">
-              <Button text="Get Services" className="secondary-btn" />
+              <Button onClick={() => navigate('/contact')} text="Get Services" className="secondary-btn" />
             </div>
           </Col>
         </Row>

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { navigate } from 'gatsby'
 import Slider from "react-slick";
 import VisibilitySensor from "react-visibility-sensor";
 import "slick-carousel/slick/slick.css";
@@ -137,7 +138,7 @@ const DevelopmentStages = (props) => {
           onMouseLeave={handleMouseLeave}
           ref={scrollRef}
           className={`stage-slider-main ${className}`}
-          marketplace={marketplace ? "" : "49px"}
+          marketplace={marketplace ? '' : '49px'}
         >
           <div>
             <Container>
@@ -153,9 +154,7 @@ const DevelopmentStages = (props) => {
                         {sliderData?.map((item, index) => (
                           <li
                             key={index}
-                            className={`pagination-item ${
-                              activeIndex === index ? "active" : ""
-                            }`}
+                            className={`pagination-item ${activeIndex === index ? 'active' : ''}`}
                             onClick={() => handlePaginationItemClick(index)}
                           >
                             {item.title}
@@ -185,11 +184,7 @@ const DevelopmentStages = (props) => {
                                   </div>
                                   <img src={item.image} alt="project" />
                                 </Col>
-                                <Col
-                                  lg={subCol2}
-                                  md={7}
-                                  className="slider-column-text"
-                                >
+                                <Col lg={subCol2} md={7} className="slider-column-text">
                                   <div className="title title-desktop">
                                     <h3>{item.title}</h3>
                                   </div>
@@ -210,10 +205,10 @@ const DevelopmentStages = (props) => {
                     </Slider>
                     {marketplace ? (
                       <div className="slider-btn">
-                        <Button text="Book Free Demo" />
+                        <Button onClick={() => navigate('/contact')} text="Book Free Demo" />
                       </div>
                     ) : (
-                      ""
+                      ''
                     )}
                   </Col>
                 </Row>
@@ -265,15 +260,15 @@ const DevelopmentStages = (props) => {
           </div>
           {marketplace ? (
             <div className="slider-btn">
-              <Button text="Book Free Demo" />
+              <Button onClick={() => navigate('/contact')} text="Book Free Demo" />
             </div>
           ) : (
-            ""
+            ''
           )}
         </Container>
       </StagesWrapper>
     </>
-  );
+  )
 };
 
 export default DevelopmentStages;

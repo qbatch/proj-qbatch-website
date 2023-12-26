@@ -75,7 +75,6 @@ export const Head = () => {
     const webAppData = Queries();
 
   const seoData = webAppData.allStrapiWebApp.nodes[0]?.seo
-
   return (
     <SEO
       title={seoData.metaTitle}

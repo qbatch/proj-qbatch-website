@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from 'gatsby'
 import { Container } from "react-bootstrap";
 
 import Button from "../../UiComponent/Button";
@@ -16,13 +17,13 @@ const Index = (props) => {
           </h2>
           {isButton && (
             <div className="idea-btn">
-              <Button text={btnText} className="secondary-btn" />
+              <Button text={btnText} onClick={() => navigate('/contact')} className="secondary-btn" />
             </div>
           )}
         </div>
       </Container>
     </IdeasWrapper>
-  );
+  )
 };
 
 export default Index;

@@ -31,9 +31,9 @@ const CtoService = () => {
         wrapperClass="cto-banner"
       />
       <HireCto 
-      list={ ctoList } 
-      btnText="Stuck in a different situation?"
-      heading="Do you really need to hire a CTO? Find for yourself"
+        list={ ctoList } 
+        btnText="Stuck in a different situation?"
+        heading="Do you really need to hire a CTO? Find for yourself"
       />
       <TechnicalExcellence
         heading="We are Your Right-Hand Men Towards Total Technical Excellence"

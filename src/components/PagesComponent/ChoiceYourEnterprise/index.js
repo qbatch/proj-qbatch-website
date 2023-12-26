@@ -1,5 +1,5 @@
 import React from "react";
-
+import { navigate } from 'gatsby'
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button";
 
@@ -19,10 +19,7 @@ const index = (props) => {
         <Row className="equal-height-row">
           {listData.map((item, ind) => (
             <Col lg={6}>
-              <div
-                className="d-flex align-items-start gap-4 choice-list"
-                key={ind}
-              >
+              <div className="d-flex align-items-start gap-4 choice-list" key={ind}>
                 <img src={item.icon} alt={item.title} />
                 <div>
                   <h4>{item.title}</h4>
@@ -33,13 +30,13 @@ const index = (props) => {
           ))}
           {isBtn && (
             <div className="choice-btn">
-              <Button text="Got Something in Mind?" />
+              <Button text="Got Something in Mind?" onClick={() => navigate('/contact')} />
             </div>
           )}
         </Row>
       </Container>
     </ChoiceEnterpriseWrapper>
-  );
+  )
 };
 
 export default index;

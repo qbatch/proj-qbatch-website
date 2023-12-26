@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from 'gatsby'
 
 import Button from "../../UiComponent/Button";
 import { dedicatedTiles } from "../../../constants";
@@ -25,11 +26,11 @@ const Index = (props) => {
           </div>
         )}
         <div className="d-flex justify-content-center">
-          <Button text={btnText} className="secondary-btn" />
+          <Button onClick={() => navigate('/contact')} text={btnText} className="secondary-btn" />
         </div>
       </Container>
     </DedicatedMobileWrapper>
-  );
+  )
 };
 
 export default Index;

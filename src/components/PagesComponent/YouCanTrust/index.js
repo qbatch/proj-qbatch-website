@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { navigate } from 'gatsby'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -104,11 +105,7 @@ const Index = () => {
     "Developers that stay laser-focused and put equal effort into both back-end and front-end systems ensuring user experience and convenience from scratch to end— are rare. That’s why we as custom web application developers perform the daunting task by validating your vision with complete vigilance and launching web experiences that serve and leave a mark.";
   return (
     <>
-      <VisibilitySensor
-        onChange={handleVisibilityChange}
-        partialVisibility={true}
-        offset={{ bottom: 300, top: 300 }}
-      >
+      <VisibilitySensor onChange={handleVisibilityChange} partialVisibility={true} offset={{ bottom: 300, top: 300 }}>
         <YouCanTrustWrapper
           id="automation-trigger"
           ref={scrollRef2}
@@ -150,7 +147,7 @@ const Index = () => {
               </Col>
             </Row>
             <div className="trust-btn">
-              <Button text="Get Started Risk-Free" />
+              <Button onClick={() => navigate('/contact')} text="Get Started Risk-Free" />
             </div>
           </Container>
         </YouCanTrustWrapper>
@@ -170,13 +167,13 @@ const Index = () => {
               </div>
             </div>
           ))}
-           <div className="trust-btn">
-              <Button text="Get Started Risk-Free" />
-            </div>
+          <div className="trust-btn">
+            <Button onClick={() => navigate('/contact')} text="Get Started Risk-Free" />
+          </div>
         </Container>
       </YouCanTrustWrapper>
     </>
-  );
+  )
 };
 
 export default Index;
