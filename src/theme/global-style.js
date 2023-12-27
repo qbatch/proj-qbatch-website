@@ -170,5 +170,20 @@ const GlobalStyles = createGlobalStyle`
     .scrollmagic-pin-spacer{
       background-color: ${({ theme }) => theme.colors.backgroundColor};
     }
-`;
+    .tabs-buttons{
+      border: 1px solid rgb(210, 217, 220);
+    border-radius: 32px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(95, 115, 124);
+    padding: 12px 20px;
+    height: 48px;
+        white-space: nowrap;
+    &.active{
+      background-color: rgb(0, 84, 166);
+    color: rgb(255, 255, 255);
+    border-radius: 32px;
+    border: 1px solid rgb(0, 84, 166);
+    }
+    }
+`
 export default GlobalStyles;

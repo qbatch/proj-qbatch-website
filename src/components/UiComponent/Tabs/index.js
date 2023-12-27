@@ -7,18 +7,16 @@ import TabsWrapper from "./style";
 const index = ({ tabsData }) => {
   return (
     <TabsWrapper>
-      <Tabs
-        defaultActiveKey="all"
-        id="uncontrolled-tab-example"
-      >
+      <Tabs defaultActiveKey="all" >
         {tabsData?.map((item, ind) => (
-          <Tab eventKey={item.eventKey} title={item.title} key={ind}>
+          <Tab eventKey={item.eventKey} title={item.title} key={ind} onClick={item.onClick}>
             {item.component}
           </Tab>
         ))}
       </Tabs>
+      
     </TabsWrapper>
-  );
+  )
 };
 
 export default index;
