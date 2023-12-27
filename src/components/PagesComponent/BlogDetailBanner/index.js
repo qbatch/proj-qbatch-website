@@ -11,7 +11,7 @@ const Index = ({ data }) => {
     const customCrumbs = [
       { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
       { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
-      { pathname: '/blog', crumbLabel: data?.category.categoryName, crumbSeparator: '> ' },
+      { pathname: `/blog/${data?.category.categoryName}`, crumbLabel: data?.category.categoryName, crumbSeparator: '> ' },
       { pathname: '/blog', crumbLabel: data?.blogTitle, crumbSeparator: '>' },
     ]
   return (
@@ -21,16 +21,10 @@ const Index = ({ data }) => {
           <ul className="d-flex gap-2">
             {customCrumbs.map((crumb, index) => (
               <li key={index}>
-                <div
-                  to={crumb.pathname}
-                  onClick={() => {
-                    navigate(crumb.pathname,)
-                     localStorage.setItem('category', data?.category.categoryName)
-                  }}
-                >
+                <Link className="cursor-pointer" to={crumb.pathname}>
                   <span>{crumb.crumbLabel}</span>
                   {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
-                </div>
+                </Link>
               </li>
             ))}
           </ul>

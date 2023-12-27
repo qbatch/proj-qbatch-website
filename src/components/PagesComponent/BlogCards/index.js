@@ -97,7 +97,7 @@ const Index = (props) => {
               text="Explore More"
               fontSize="16px"
               onClick={() => {
-                navigate(`/blog/${card.category.categoryName}${card.seo.slug}`, {
+                navigate(`/blog${card.seo.slug}`, {
                   state: { blogId: card.id },
                 })
               }}

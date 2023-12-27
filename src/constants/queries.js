@@ -23,11 +23,6 @@ export const Queries = () => {
                blogDescription
              }
            }
-           bottomDescription {
-             data {
-               bottomDescription
-             }
-           }
            user {
              username
            }

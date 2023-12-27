@@ -240,17 +240,6 @@ function App({ data }) {
                     <Button className="secondary-btn" text="We Can Help" />
                   </div>
                 </div>
-                <div
-                  className="section inner-content"
-                  // id={`section${index + 1}`}
-                >
-                  <span
-                    className="paragraph"
-                    dangerouslySetInnerHTML={{
-                      __html: data?.bottomDescription?.data.bottomDescription,
-                    }}
-                  />
-                </div>
                 <div className="social-links d-flex">
                   <span className="title">Share</span>
                   <ul className="d-flex social-link">
