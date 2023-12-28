@@ -1,67 +1,30 @@
-import React,{useState,useEffect} from "react";
-import TextTransition, { presets } from 'react-text-transition';
-
-import Button from "../../UiComponent/Button";
-import Container from "../../UiComponent/Container";
-import { navigate } from 'gatsby';
-
-import { homeTiles } from "../../../constants/index";
-import { DedicatedDeveloperWrapper, H1 } from "./style";
+import React from 'react'
+import Button from '../../UiComponent/HomeButton/index'
+import Container from '../../UiComponent/Container'
+import { navigate } from 'gatsby'
+import { DedicatedDeveloperWrapper } from './style'
 
 const Index = () => {
-  const [contentChange,setContentChange]=useState(false)
 
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        setContentChange(!contentChange)
-      }, 6000)
-      return () => {
-        clearInterval(intervalId)
-      }
-    }, [contentChange])
-
-  const enterprises="200+ enterprises have already garnered great financial results and market outreach with our time-tested development flow, error-free code quality, and on-time project delivery.";
-  const stackHolder="If you are still stuck on old traditional business ways, take a break and switch to software-driven processes with out high-impact supply chain & logistics development & management solutions.";
   return (
     <DedicatedDeveloperWrapper>
-      <img src="/banner-arrow-vector.svg" alt="banner-background" className="home-banner-bg" />
       <Container>
         <div className="title-portion">
-          <div className="inner">
-          <TextTransition springConfig={presets.molasses} direction="down" className="text-transition">
-              <H1>
-                <span className="hire position-relative">
-                  {contentChange ? (
-                    <>
-                      100<span className="position-absolute add-space-top">+</span>
-                    </>
-                  ) : (
-                    'hire'
-                  )}
-                </span>
-                <span className="d-inline-block">{contentChange ? 'Stakeholders Trusted Us' : 'Dedicated Developers'}</span>
-                <span className="for-furture">
-                  {contentChange ? 'With Their Ideas & Investments,' : 'for a future'}{' '}
-                  <span className="you-deserve fw-bold"> {contentChange ? 'Will You?' : 'You Deserve!'}</span>
-                </span>
-              </H1>
-                <p className="paragraph">{contentChange ? stackHolder : enterprises}</p>
-            </TextTransition>
-          </div>
-          <div className="d-flex justify-content-end">
-            <Button onClick={() => navigate("/contact")}  text="Let’s Start a Project" className="mx-lg-0 mx-auto secondary-btn" />
+          <h1>
+            Software Development & Consultancy for <span>Enterprise Owners | </span>
+          </h1>
+          <p>
+            200+ enterprises have already garnered great financial results and market outreach with our time-tested
+            development flow, error-free code quality, and on-time project delivery.
+          </p>
+          <div className="text-center d-flex align-items-center justify-content-center">
+          <Button text="Schedule a Meeting" onClick={()=>navigate('/contact')} />
           </div>
         </div>
-        <div className="text-center add-space">
-          {homeTiles.map((value, i) => (
-            <h3 className="divider-heading text-h4" key={i}>
-              {value}
-            </h3>
-          ))}
-        </div>
+        <div className="text-center add-space"></div>
       </Container>
     </DedicatedDeveloperWrapper>
-  )};
+  )
+}
 
-export default Index;
-
+export default Index

@@ -34,7 +34,16 @@ const Index = (props) => {
                     <TimeAgo customDate={customDate} />
                   </span>
                 </div>
-                <h3>{card.blogTitle}</h3>
+                <h3
+                  className="pointer"
+                  onClick={() => {
+                    navigate(`/blog${card.seo.slug}`, {
+                      state: { blogId: card.id },
+                    })
+                  }}
+                >
+                  {card.blogTitle}
+                </h3>
                 <div className="descripiton">
                   <span
                     dangerouslySetInnerHTML={{
@@ -82,7 +91,16 @@ const Index = (props) => {
             </div>
           </div>
           <div className="inner-content">
-            <p className="inner-title">{card.blogTitle}</p>
+            <p
+              className="inner-title pointer"
+              onClick={() => {
+                navigate(`/blog${card.seo.slug}`, {
+                  state: { blogId: card.id },
+                })
+              }}
+            >
+              {card.blogTitle}
+            </p>
             <div className="blog-badge">{card.blogTags.strapi_json_value[0]}</div>
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
               <span>{card.user.username}</span>
