@@ -66,8 +66,9 @@ const Index = () => {
               <ul>
                 {headerMenu.map((menu, ind) => (
                   <li key={ind}>
+
                     <Link to={menu.to} activeClassName="active">
-                      <span>{menu.name}</span>
+                      <span onClick={menu.name === 'Services' ? ()=>setOpenDrawer(true) :""}>{menu.name}</span>
                     </Link>
                   </li>
                 ))}
