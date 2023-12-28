@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
     body{
@@ -185,5 +185,42 @@ const GlobalStyles = createGlobalStyle`
     border: 1px solid rgb(0, 84, 166);
     }
     }
+ 
+    .paragraph{
+     .raw-html-embed{
+      background-image: url('/we-can-help.svg');
+      width: 100%;
+      background-repeat: no-repeat;
+      padding: 74px 40px;
+      text-align: center;
+      border-radius: 24px 24px 0 24px;
+      margin-bottom: 32px;
+      }
+      h4 {
+        color: ${({ theme }) => theme.colors.dividerColor};
+        letter-spacing: 0px;
+        line-height: 32px; 
+        margin-bottom:32px;
+      }
+      button{
+      color: rgb(255, 255, 255);
+      padding:8px 24px;
+      border-radius:50px;
+      font-size: 20px;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      font-weight:600;
+      user-select: none;
+      background-color: rgb(237, 28, 36);
+      border: 1px solid rgb(237, 28, 36);
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+  }
 `
-export default GlobalStyles;
+export default GlobalStyles

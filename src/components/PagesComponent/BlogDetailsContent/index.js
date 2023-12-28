@@ -222,7 +222,6 @@ function App({ data }) {
               <Col lg={8} md={6} sm={12}>
                 <div
                   className="section inner-content"
-                  // id={`section${index + 1}`}
                 >
                   <span
                     className="paragraph"
@@ -230,15 +229,6 @@ function App({ data }) {
                       __html: data?.blogDescription?.data.blogDescription,
                     }}
                   />
-                </div>
-                <div className="can-help" id="Third Section">
-                  <h4>
-                    Can’t get the hang of latest tools & technology? We know,
-                    deciding & making the right investments is difficult.
-                  </h4>
-                  <div className="d-flex justify-content-center can-help-button">
-                    <Button className="secondary-btn" text="We Can Help" />
-                  </div>
                 </div>
                 <div className="social-links d-flex">
                   <span className="title">Share</span>
