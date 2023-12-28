@@ -19,11 +19,13 @@ const ContentWrapper = styled.div`
         padding-bottom: 28px;
       }
       .paragraph {
-        h1,h2,h3 {
+        h1,
+        h2,
+        h3 {
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
           margin-bottom: 32px;
           span {
-            font-family: "Inter Tight", sans-serif;
+            font-family: 'Inter Tight', sans-serif;
             font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
             color: ${({ theme }) => theme.colors.bodyTextVariant};
             font-weight: ${({ theme }) => theme.fontWeight.semiBold} !important;
@@ -42,7 +44,7 @@ const ContentWrapper = styled.div`
           span {
             color: ${({ theme }) => theme.colors.textMedium};
             font-size: ${({ theme }) => theme.fonts.baseFontSize};
-            font-family: "Inter Tight", sans-serif;
+            font-family: 'Inter Tight', sans-serif;
           }
         }
         .table {
@@ -196,7 +198,7 @@ const ContentWrapper = styled.div`
   }
 
   .subsribe-button {
-    background-image: url("/email-bg.svg");
+    background-image: url('/email-bg.svg');
     height: auto;
     background-repeat: no-repeat;
     margin-left: 40px;
@@ -256,21 +258,6 @@ const ContentWrapper = styled.div`
     height: 4px;
     width: 5%;
   }
-  .can-help {
-    background-image: url("/we-can-help.svg");
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 74px 40px;
-    text-align: center;
-    border-radius: 24px 24px 0 24px;
-    margin-bottom: 32px;
-    h4 {
-      color: ${({ theme }) => theme.colors.dividerColor};
-      letter-spacing: 0px;
-      line-height: 32px;
-      max-width: 568px;
-      margin: 0 auto;
-    }
-  }
-`;
+
+`
 export default ContentWrapper;
