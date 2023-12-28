@@ -5,7 +5,6 @@ const DedicatedDeveloperWrapper = styled.section`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   background-image: url('./home-banner.png');
   overflow: hidden;
-  height: 100vh;
   .title-portion {
     padding: 220px 73px;
     h1 {
@@ -16,6 +15,7 @@ const DedicatedDeveloperWrapper = styled.section`
       line-height: 79px;
       span {
         color: ${({ theme }) => theme.colors.highlightColor};
+        padding-left:4px;
       }
     }
     p {

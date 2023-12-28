@@ -4,6 +4,7 @@ import Container from "../../UiComponent/Container";
 import BlogDetailsWrapper from "./style";
 import { navigate } from "gatsby";
 import { ReadingTime, TimeAgo } from "../../../constants/Utils";
+import moment from "moment"
 
 const Index = ({ data }) => {
   const customDate = new Date(data?.publishedAt)
@@ -12,8 +13,9 @@ const Index = ({ data }) => {
       { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
       { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
       { pathname: `/blog/${data?.category.categoryName}`, crumbLabel: data?.category.categoryName, crumbSeparator: '> ' },
-      { pathname: '/blog', crumbLabel: data?.blogTitle, crumbSeparator: '>' },
+      { crumbLabel: data?.blogTitle, crumbSeparator: '>' },
     ]
+    
   return (
     <BlogDetailsWrapper backgroundImage={data?.blogImg.localFile.url}>
       <Container>
@@ -21,7 +23,7 @@ const Index = ({ data }) => {
           <ul className="d-flex gap-2">
             {customCrumbs.map((crumb, index) => (
               <li key={index}>
-                <Link className="cursor-pointer" to={crumb.pathname}>
+                <Link className="pointer" to={crumb.pathname}>
                   <span>{crumb.crumbLabel}</span>
                   {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
                 </Link>
@@ -41,8 +43,8 @@ const Index = ({ data }) => {
                 </span>
               </div>
               <div className="published-time">
-                <span className="publish">Published on:</span>
-                <TimeAgo customDate={customDate} />
+                <span className="publish">Modified Date:</span>
+                {moment(data?.updatedAt).format('DD/MM/YYYY')}
               </div>
             </div>
             <div className="chips">
