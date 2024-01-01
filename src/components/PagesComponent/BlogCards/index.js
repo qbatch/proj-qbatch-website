@@ -9,7 +9,6 @@ import BlogCardsWrapper from "./style";
 
 const Index = (props) => {
   const { heading, isBtn, isSlice, blogInner, data, isFavorite, } = props;
-  console.log(data, 'data')
   const categoryData = data.filter(
     (item) => item.category.categoryName === heading
   );
