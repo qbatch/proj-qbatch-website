@@ -63,7 +63,7 @@ const index = ({ data }) => {
                   text="Explore More"
                   className="header-btn blog-banner-btn"
                   onClick={() => {
-                    navigate(`/blog${item.seo.slug}`, {
+                    navigate(`/blog${item.seo.slug}${item.id}`, {
                       state: { blogId: item.id },
                     })
                   }}

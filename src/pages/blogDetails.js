@@ -8,11 +8,10 @@ import ContentWrapper from "../components/PagesComponent/BlogDetailsContent/styl
 import  { Queries }  from "../constants/queries";
 
 const BlogDetails = ({ pageContext }) => {
-    const location = useLocation()
-    const id = location.state?.blogId
+  const path = pageContext?.title.split("/")[3];
 
   const blogQuery = Queries()
-  const blogData = blogQuery.allStrapiArticle.nodes.find((node) => node.id === id)
+  const blogData = blogQuery.allStrapiArticle.nodes.find((node) => node.id === path)
 
   function progressBarScroll() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop,

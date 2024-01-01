@@ -67,7 +67,7 @@ const Index = (props) => {
                     fontSize="16px"
                     color="#0054A6"
                     onClick={() => {
-                      navigate(`/blog${card.seo.slug}`, {
+                      navigate(`/blog${card.seo.slug}${card.id}`, {
                         state: { blogId: card.id },
                       })
                     }}
@@ -115,7 +115,7 @@ const Index = (props) => {
               text="Explore More"
               fontSize="16px"
               onClick={() => {
-                navigate(`/blog${card.seo.slug}`, {
+                navigate(`/blog${card.seo.slug}${card.id}`, {
                   state: { blogId: card.id },
                 })
               }}

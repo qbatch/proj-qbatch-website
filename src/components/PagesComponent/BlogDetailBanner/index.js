@@ -13,7 +13,7 @@ const Index = ({ data }) => {
       { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
       { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
       { pathname: `/blog/${data?.category.categoryName}`, crumbLabel: data?.category.categoryName, crumbSeparator: '> ' },
-      { crumbLabel: data?.blogTitle, crumbSeparator: '>' },
+      {pathname: `/blog${data?.seo.slug}${data.id}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
     ]
     
   return (
