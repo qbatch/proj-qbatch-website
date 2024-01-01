@@ -224,7 +224,7 @@ const GlobalStyles = createGlobalStyle`
               color: #fff;
       }
       }
-      ul{
+      ul,olons{
         list-style:disc;
         padding-left:24px;
         font-size: 16px;

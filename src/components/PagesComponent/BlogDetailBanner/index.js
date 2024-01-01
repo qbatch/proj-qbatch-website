@@ -18,14 +18,6 @@ const Index = ({ data }) => {
       { pathname: `/blog${data?.seo.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
     ]
 
-    const blogQuery = Queries()
-    const locationRoute = location.pathname.split('/')[2];
-    console.log(
-      blogQuery.allStrapiArticle.nodes.filter((x) => x.category.slug),
-      'jjj'
-    )
-    const blogData = blogQuery.allStrapiArticle.nodes.find((node) => node.id === '2' )
-       console.log(location.pathname.split('/')[2], 'location')
   return (
     <BlogDetailsWrapper backgroundImage={data?.blogImg.localFile.url}>
       <Container>
