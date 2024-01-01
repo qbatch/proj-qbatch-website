@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Queries } from '../../constants/queries'
 import Layout from '../../components/Layout/layout'
 import SEO from '../../components/Seo'
-import Banner from "../../components/PagesComponent/PageBanner";
+import Banner from '../../components/PagesComponent/PageBanner'
 import HireCto from '../../components/PagesComponent/HireCto'
 import TheySayWeSay from '../../components/PagesComponent/TheySayWeSay'
 import DesiredResult from '../../components/PagesComponent/IdeasAndInvestments'
@@ -15,7 +15,7 @@ import MarketplaceSellers from '../../components/PagesComponent/MarketplaceSelle
 import ProvenWorkExperience from '../../components/PagesComponent/ProvenWorkExperience'
 import ChooseYourEnterprise from '../../components/PagesComponent/ChoiceYourEnterprise'
 import SecretSauce from '../../components/PagesComponent/SecretSauce'
-import BannerImage from "../../../static/product-design-banner.png";
+import BannerImage from '../../../static/product-design-dev.svg'
 
 import {
   productDesignlist,
@@ -32,16 +32,16 @@ const ProductDesign = () => {
   return (
     <Layout pageTitle="Product Design and Development">
       <Banner
-          subheading="Software Product Development"
-          heading="Transpire, Transform, Transcend."
-          paragraph="As product specialists, we’ve helped 100+ startups, scaleups, and
+        subheading="Software Product Development"
+        heading="Transpire, Transform, Transcend."
+        paragraph="As product specialists, we’ve helped 100+ startups, scaleups, and
           and enterprises build resilient and modern products. Our software
           product development services exceed user expectations, encour-
           age conversions, and deliver impressive ROI."
-          buttonText="Launch Your Idea"
-          imgSrc={BannerImage}
-          wrapperClass="product-design-banner"
-        />
+        buttonText="Launch Your Idea"
+        blogInner={BannerImage}
+        wrapperClass="product-design-banner"
+      />
       <HireCto
         list={productDesignlist}
         btnText=" Let’s fix it"
@@ -97,10 +97,10 @@ const ProductDesign = () => {
 }
 
 export const Head = () => {
-    const productDesignData = Queries()
+  const productDesignData = Queries()
 
   const seoData = productDesignData.allStrapiProductDesign.nodes[0]?.seo
-  
+
   return (
     <SEO
       title={seoData.metaTitle}

@@ -3,7 +3,11 @@ import { media } from "../../../theme/media-mixins";
 
 const CtoBannerWrapper = styled.div`
   position: relative;
-  max-width: 1600px;
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
+  background-image: ${(props) => `url(${props.blogInner ? props.blogInner : ''})`};
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 132px 0 98px 0;
   margin: auto;
   ${media.sm`
      padding: 40px 0px;
@@ -13,20 +17,21 @@ const CtoBannerWrapper = styled.div`
     ${media.md`
      text-align: center;
     `}
-    .banner-sub-heading{
-      font-size:24px;
+    .banner-sub-heading {
+      font-size: 20px;
       font-weight: 700;
       padding-bottom: 10px;
-      color: ${({ theme }) => theme.colors.secondaryColor};
+      color: ${({ theme }) => theme.colors.bodyLight};
       letter-spacing: 0;
       ${media.lg`
         font-size: 16px;
       `}
     }
     .text-h1 {
-      color: ${({ theme }) => theme.colors.primaryColor};
+      color: ${({ theme }) => theme.colors.whiteColor};
       margin-bottom: 34px;
       margin-top: 3px;
+      max-width: 723px;
       ${media.md`
       margin: auto;
       margin-bottom: 24px;
@@ -40,7 +45,7 @@ const CtoBannerWrapper = styled.div`
       margin-bottom: 40px;
       line-height: 32px;
       font-size: 24px;
-      letter-spacing: 0.7px;
+      color: ${({ theme }) => theme.colors.whiteColor};
       ${media.lg`
         margin: 0 auto;
         margin-bottom: 32px;
@@ -50,36 +55,36 @@ const CtoBannerWrapper = styled.div`
     }
   }
 
-  &.cto-banner{
+  &.cto-banner {
     padding: 143px 0 50px;
-    .banner-img{
+    .banner-img {
       margin-top: -48px;
-      object-fit: contain
-    }
-   .banner-main{
-    h1{
-      max-width: 744px;
-    }
-    p{
-      max-width: 690px;
-    }
-   }
-   @media (max-width: 1480px){
-    padding: 143px 0 140px;
-   }
-  }
-  &.product-design-banner{
-    padding: 143px 0 144px;
-    .banner-img{
       object-fit: contain;
     }
-    p{
-      max-width:724px;
+    .banner-main {
+      h1 {
+        max-width: 744px;
+      }
+      p {
+        max-width: 690px;
+      }
+    }
+    @media (max-width: 1480px) {
+      padding: 143px 0 140px;
     }
   }
-  &.mobile-app-banner{
+  &.product-design-banner {
+    padding: 143px 0 144px;
+    .banner-img {
+      object-fit: contain;
+    }
+    p {
+      max-width: 724px;
+    }
+  }
+  &.mobile-app-banner {
     padding: 159px 0px 144px;
-    .banner-img{
+    .banner-img {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -88,13 +93,13 @@ const CtoBannerWrapper = styled.div`
       object-fit: contain;
       object-position: bottom;
     }
-    h1{
+    h1 {
       max-width: 756px;
     }
   }
-  &.enterprise-banner{
+  &.enterprise-banner {
     padding: 143px 0px 120px;
-    .banner-img{
+    .banner-img {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -103,7 +108,7 @@ const CtoBannerWrapper = styled.div`
       object-fit: contain;
       object-position: bottom;
     }
-    h1{
+    h1 {
       max-width: 904px;
     }
   }
@@ -112,6 +117,6 @@ const CtoBannerWrapper = styled.div`
       padding: 100px 0;
     }
   `}
-`;
+`
 
 export default CtoBannerWrapper;

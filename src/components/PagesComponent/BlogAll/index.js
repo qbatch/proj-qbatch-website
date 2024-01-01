@@ -38,7 +38,7 @@ const index = ({ data }) => {
               </div>
               <div className="d-flex justify-content-between flex-wrap gap-3">
                 <div className="blog-badge">
-                  {item.blogTags.strapi_json_value[0]}
+                  {item.blogTags?.strapi_json_value[0]}
                 </div>
                 <div className="timer">
                   <img src="/timer.svg" alt="timer" />
