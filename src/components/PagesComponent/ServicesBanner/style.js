@@ -1,49 +1,52 @@
-import styled from "styled-components";
-import { media } from "../../../theme/media-mixins";
+import styled from 'styled-components'
+import { media } from '../../../theme/media-mixins'
 
 const ServicesBannerWrapper = styled.div`
-  background-image: url('/portfolio-banner.svg');
+  background-image: url('/abouUs-banner.svg');
   background-color: ${({ theme }) => theme.colors.secondaryColor};
+  background-position: 100% 53px;
   background-repeat: no-repeat;
-  background-size: 78% 100%;
-  background-position: center;
-  padding: 98px 0 120px 0px;
+  padding: 132px 0 98px 0;
+
   ${media.sm`
     padding: 40px 0;
+    background-position: bottom left;
   `}
-  .banner-content {
-    margin-left: 53px;
-    margin-top: 28px;
-    h1 {
-      color: ${({ theme }) => theme.colors.whiteColor};
-      margin-bottom: 16px;
-    }
-    .second-h1 {
-      display: flex;
-      color: ${({ theme }) => theme.colors.bodyLight};
-    }
-    h2 {
-      color: ${({ theme }) => theme.colors.dividerColor};
-      font-weight: ${({ theme }) => theme.fontWeight.normal};
-      line-height: 32px;
-      max-width: 1070px;
-      margin-bottom: 32px;
-      text-transform: none;
-      b {
-        color: ${({ theme }) => theme.colors.whiteColor};
-        letter-spacing: 0;
-        margin-top: 5px;
-        display: block;
-      }
-      &:nth-child(3) {
-        max-width: 1150px;
-      }
-    }
+  p {
+    color: ${({ theme }) => theme.colors.whiteColor};
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    line-height: 32px;
+    max-width: 749px;
+    margin-top: 33px;
+    letter-spacing: 0px;
+    margin-bottom: 78px;
   }
-  .button-box {
-    margin-top: 86px;
-    margin-left: 4px;
+  .banner-headings {
+    padding-top: 37px;
+    ${media.md`
+      text-align: center;
+    `}
+    span {
+      display: block;
+    }
   }
 `
+const H1 = styled.h1`
+  font-size: 64px;
+  color: ${({ theme }) => theme.colors.whiteColor};
+  margin-bottom: 0px;
+  ${media.lg`
+    font-size: 80px;
+    line-height: 86px;
+  `}
+  ${media.sm`
+  font-size: 60px;
+    line-height: 68px;
+  `}
+  ${media.xs`
+  font-size: 48px;
+    line-height: 52px;
+  `}
+`
 
-export default ServicesBannerWrapper;
+export { ServicesBannerWrapper, H1 }

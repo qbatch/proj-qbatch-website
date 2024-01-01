@@ -1,7 +1,6 @@
 import * as React from "react";
-import { useStaticQuery, graphql } from 'gatsby';
+
 import { Queries } from '../constants/queries'
-import _ from 'lodash'
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import CompanyBanner from "../components/PagesComponent/CompanyBanner";
