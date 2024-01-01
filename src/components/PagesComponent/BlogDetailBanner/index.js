@@ -1,21 +1,31 @@
 import React from "react";
 import { Link } from 'gatsby'
+import { useLocation } from '@reach/router'
 import Container from "../../UiComponent/Container";
 import BlogDetailsWrapper from "./style";
 import { navigate } from "gatsby";
 import { ReadingTime, TimeAgo } from "../../../constants/Utils";
 import moment from "moment"
-
+import { Queries } from '../../../constants/queries'
 const Index = ({ data }) => {
-  const customDate = new Date(data?.publishedAt)
+   const location = useLocation()
+
   const title = data?.blogTitle;
     const customCrumbs = [
       { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
       { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
-      { pathname: `/blog/${data?.category.categoryName}`, crumbLabel: data?.category.categoryName, crumbSeparator: '> ' },
-      { crumbLabel: data?.blogTitle, crumbSeparator: '>' },
+      { pathname: `/blog/${data?.category?.slug}`, crumbLabel: data?.category.categoryName, crumbSeparator: '> ' },
+      { pathname: `/blog${data?.seo.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
     ]
-    
+
+    const blogQuery = Queries()
+    const locationRoute = location.pathname.split('/')[2];
+    console.log(
+      blogQuery.allStrapiArticle.nodes.filter((x) => x.category.slug),
+      'jjj'
+    )
+    const blogData = blogQuery.allStrapiArticle.nodes.find((node) => node.id === '2' )
+       console.log(location.pathname.split('/')[2], 'location')
   return (
     <BlogDetailsWrapper backgroundImage={data?.blogImg.localFile.url}>
       <Container>

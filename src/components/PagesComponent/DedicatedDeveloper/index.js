@@ -11,7 +11,7 @@ const Index = () => {
       <Container>
         <div className="title-portion">
           <h1>
-            Software Development & Consultancy for
+            Software Development & <br /> Consultancy for
             <span>
               <Typewriter
                 words={['Startups', 'Entrepreneurs', 'Enterprise Owners', 'Risk-takers', 'Innovators']}

@@ -12,7 +12,9 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             category {
               categoryName
+              slug
             }
+            id
           }
         }
       }
@@ -32,10 +34,10 @@ exports.createPages = async ({ graphql, actions }) => {
     context: {
       title: `/blog${node.seo.slug}`,
     },
-  });
+  })
   
   createPage({
-    path: `/blog/${node.category.categoryName}`,
+    path: `/blog/${node.category.slug}`,
     component: path.resolve('./src/pages/blog.js'),
     context: {
       title: node.category.categoryName,

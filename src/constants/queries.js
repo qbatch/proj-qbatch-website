@@ -28,6 +28,7 @@ export const Queries = () => {
            }
            category {
              categoryName
+             slug
            }
            blogTags {
              strapi_json_value
