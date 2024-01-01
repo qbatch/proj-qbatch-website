@@ -31,6 +31,7 @@ const BlogPage = ({ pageContext }) => {
   function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
   }
+    console.log(uniqueCategories, 'blogData')
   return (
     <Layout>
       <BlogBanner />
@@ -54,7 +55,7 @@ const BlogPage = ({ pageContext }) => {
                       className={`tabs-buttons ${activeTab === tabs.category.categoryName ? 'active' : ''}`}
                       onClick={() => {
                         setActiveTab(tabs.category.categoryName)
-                        navigate(`/blog/${tabs.category.categoryName}`)
+                        navigate(`/blog/${tabs.category.slug}`)
                       }}
                     >
                       {capitalizeFirstLetter(tabs.category.categoryName)}
@@ -67,18 +68,7 @@ const BlogPage = ({ pageContext }) => {
               {location.pathname === '/blog/' ? (
                 <BlogAll data={filteredData} />
               ) : (
-                blogData.map((tabs, id) => {
-                  return (
-                    <>
-                      <div
-                        key={tabs.title}
-                        style={{ display: activeTab === tabs.category.categoryName ? 'block' : 'none' }}
-                      >
-                        <BlogCards heading={tabs.category.categoryName} data={filteredData} />
-                      </div>
-                    </>
-                  )
-                })
+                <BlogCards heading={activeTab} data={filteredData} />
               )}
             </div>
           </div>

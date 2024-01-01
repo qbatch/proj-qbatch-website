@@ -220,6 +220,18 @@ const GlobalStyles = createGlobalStyle`
       background-color: rgb(237, 28, 36);
       border: 1px solid rgb(237, 28, 36);
       transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      a{
+              color: #fff;
+      }
+      }
+      ul{
+        list-style:disc;
+        padding-left:24px;
+        font-size: 16px;
+        color: #5F737C;
+        li{
+          margin-bottom:8px;
+        }
       }
   }
 `

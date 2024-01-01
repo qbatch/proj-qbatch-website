@@ -9,7 +9,7 @@ import BlogCardsWrapper from "./style";
 
 const Index = (props) => {
   const { heading, isBtn, isSlice, blogInner, data, isFavorite, } = props;
-
+  console.log(data, 'data')
   const categoryData = data.filter(
     (item) => item.category.categoryName === heading
   );
@@ -132,7 +132,7 @@ const Index = (props) => {
         <h2>{heading}</h2>
         {isBtn && <PrimaryButton text="Explore More" />}
       </div>
-      {data.length === 0 || (!blogInner && categoryData.length === 0) ? (
+      {data.length === 0  ? (
         "No Data Found"
       ) : (
         <Row>
