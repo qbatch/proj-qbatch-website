@@ -6,9 +6,9 @@ const StagesWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   padding: 120px 0;
   transition: all 0.3s ease;
-  &.section-sticky{
-    position:sticky;
-    top:0;
+  &.section-sticky {
+    position: sticky;
+    top: 0;
     z-index: 1;
   }
   &.stage-slider-main {
@@ -21,7 +21,7 @@ const StagesWrapper = styled.div`
     .stages-header {
       margin-bottom: 54px;
     }
-  } 
+  }
   @media screen and (max-width: 767px) {
     padding-bottom: 32px;
     padding-top: 60px;
@@ -47,7 +47,6 @@ const StagesWrapper = styled.div`
     }
   }
   .fixed-slider-pagination {
-    padding-left: 63px;
     @media screen and (max-width: 1400px) {
       padding-left: 0;
     }
@@ -152,6 +151,7 @@ const StagesWrapper = styled.div`
         line-height: 24px;
         padding-right: 35px;
         min-height: 218px;
+        min-height: ${(props) => (props.minHeight ? props.minHeight : '218px')};
         @media screen and (max-width: 1199px) {
           padding-right: 0;
           min-height: 216px;
@@ -225,7 +225,7 @@ const StagesWrapper = styled.div`
       padding: 0 20px;
     `}
     img {
-      max-width: none;
+      max-width: ${(props) => (props.maxWidth ? props.maxWidth : 'none')};
       ${media.lg`
       max-width: 100%;
     `}
@@ -282,7 +282,7 @@ const StagesWrapper = styled.div`
       }
     }
     .fixed-slider-pagination {
-      padding-left: 120px;
+      padding-left: ${(props) => (props.paddingLeft ? props.paddingLeft : '120px')};
       li {
         margin-bottom: 32px;
         &:last-child {
@@ -296,7 +296,7 @@ const StagesWrapper = styled.div`
         margin-bottom: 28px;
       }
       p {
-        font-size:  ${({ theme }) => theme.fonts.baseFontSizeLg};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         letter-spacing: 0.6px;
       }
     }
@@ -337,7 +337,19 @@ const StagesWrapper = styled.div`
         ${media.sm`
           margin-top: 8px;
         `}
+      }
     }
+  }
+  &.product-development-service {
+    .slider-item {
+      .content {
+        padding-top: 26px;
+        padding-left: 0px;
+        margin-top:0px;
+        max-width:100%;
+        padding-right:0px;
+        font-size:20px;
+      }
     }
   }
 `
