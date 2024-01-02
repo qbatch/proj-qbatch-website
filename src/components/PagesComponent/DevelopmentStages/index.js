@@ -23,7 +23,10 @@ const DevelopmentStages = (props) => {
     className,
     mt,
     isScroll,
-  } = props;
+    paddingLeft,
+    maxWidth,
+    minHeight,
+  } = props
   const sliderRef = useRef(null);
   const scrollRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -139,6 +142,9 @@ const DevelopmentStages = (props) => {
           ref={scrollRef}
           className={`stage-slider-main ${className}`}
           marketplace={marketplace ? '' : '49px'}
+          paddingLeft={paddingLeft}
+          maxWidth={maxWidth}
+          minHeight={minHeight}
         >
           <div>
             <Container>

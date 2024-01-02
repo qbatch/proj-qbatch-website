@@ -9,7 +9,7 @@ import  { Queries }  from "../constants/queries";
 
 const BlogDetails = ({ pageContext }) => {
     const path = pageContext?.title;
-  const blogQuery = Queries()
+    const blogQuery = Queries()
     const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.seo.slug === `${path}`)
   function progressBarScroll() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop,

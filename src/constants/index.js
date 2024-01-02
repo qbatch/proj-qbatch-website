@@ -43,30 +43,30 @@ const peopleFirstData = [
   { id: 8, icon: '/iot.svg', desc: "IoT",}
 ];
 const whyChooseQbatchData = [
-  { id: 1, icon: '/people-first-icon-1.svg', desc: "Technical Excellence" },
-  { id: 2, icon: '/people-first-icon-2.svg', desc: "Efficient Talent Pool"},
-  { id: 3, icon: '/people-first-icon-3.svg', desc: "Data Ownership and Control"},
-  { id: 4, icon: '/people-first-icon-5.svg', desc: "Immaculate Software Engineering"},
-  { id: 5, icon: '/people-first-icon-6.svg', desc: "Strongly Agile"},
-  { id: 6, icon: '/people-first-icon-7.svg', desc: "Optimal R&D"},
-  { id: 7, icon: '/people-first-icon-5.svg', desc: "Proactive Communication",},
-  { id: 8, icon: '/people-first-icon-6.svg', desc: "Flexible Business Models",},
-  { id: 9, icon: '/people-first-icon-7.svg', desc: "Great Value for Money",}
-];
+  { id: 1, icon: '/technical-excellence.svg', desc: 'Technical Excellence' },
+  { id: 2, icon: '/efficient-talent-pool.svg', desc: 'Efficient Talent Pool' },
+  { id: 3, icon: '/data-ownership.svg', desc: 'Data Ownership and Control' },
+  { id: 4, icon: '/Immaculate-software.svg', desc: 'Immaculate Software Engineering' },
+  { id: 5, icon: '/strongly-agile-product.svg', desc: 'Strongly Agile' },
+  { id: 6, icon: '/optimal-rd.svg', desc: 'Optimal R&D' },
+  { id: 7, icon: '/proactive-communication.svg', desc: 'Proactive Communication' },
+  { id: 8, icon: '/flexible-business.svg', desc: 'Flexible Business Models' },
+  { id: 9, icon: '/great-value.svg', desc: 'Great Value for Money' },
+]
 const softwareProductData = [
-  { id: 1, icon: '/people-first-icon-1.svg', desc: "SaaS Platforms" },
-  { id: 2, icon: '/people-first-icon-2.svg', desc: "Minimum Viable Product"},
-  { id: 3, icon: '/people-first-icon-3.svg', desc: "E-learning Platforms"},
-  { id: 4, icon: '/people-first-icon-4.svg', desc: "Online Marketplaces"},
-  { id: 5, icon: '/people-first-icon-5.svg', desc: "Data Visualization Dashboards"},
-  { id: 6, icon: '/people-first-icon-6.svg', desc: "Content Management Platforms"},
-  { id: 7, icon: '/people-first-icon-7.svg', desc: "Location-based Apps",},
-  { id: 8, icon: '/people-first-icon-8.svg', desc: "Warehouse Management Systems",},
-  { id: 9, icon: '/people-first-icon-5.svg', desc: "Online Streaming Platforms"},
-  { id: 10, icon: '/people-first-icon-6.svg', desc: "Booking Apps"},
-  { id: 11, icon: '/people-first-icon-7.svg', desc: "On-demand services platforms",},
-  { id: 12, icon: '/people-first-icon-8.svg', desc: "Warehouse Management Systems",}
-];
+  { id: 1, icon: '/sass-platform.svg', desc: 'SaaS Platforms' },
+  { id: 2, icon: '/minimam-value.svg', desc: 'Minimum Viable Product' },
+  { id: 3, icon: '/e-platform.svg', desc: 'E-learning Platforms' },
+  { id: 4, icon: '/online-marketplaces.svg', desc: 'Online Marketplaces' },
+  { id: 5, icon: '/data-visulations.svg', desc: 'Data Visualization Dashboards' },
+  { id: 6, icon: '/content-management.svg', desc: 'Content Management Platforms' },
+  { id: 7, icon: '/location-based.svg', desc: 'Location-based Apps' },
+  { id: 8, icon: '/warehouse-management.svg', desc: 'Warehouse Management Systems' },
+  { id: 9, icon: '/online-streaming.svg', desc: 'Online Streaming Platforms' },
+  { id: 10, icon: '/booking-apps.svg', desc: 'Booking Apps' },
+  { id: 11, icon: '/on-demand-services.svg', desc: 'On-demand services platforms' },
+  { id: 12, icon: '/sap-enterprises.svg', desc: 'Warehouse Management Systems' },
+]
 const developmentProcessData = [
   {
     image: '/1-2-weeks.svg',
@@ -299,6 +299,58 @@ const lostToLaunchedItems = [
     content: "A happy project launch with continued support and maintenance.",
   },
 ];
+
+const productDevlopmentServices = [
+  {
+    image: '/enterprise-application.svg',
+    title: 'Discovery Workshops',
+    content:
+      'Converting your idea into a utility requires a deliberate understanding of your end users needs and real-world problems. Our enterprise software product development as a service includes understanding the changing user demands and helping you build and launch dynamic, feature-packed digital products.',
+  },
+  {
+    image: '/enterprise-mobility-service.svg',
+    title: 'Wireframing',
+    content:
+      'Converting your idea into a utility requires a deliberate understanding of your end users needs and real-world problems. Our enterprise software product development as a service includes understanding the changing user demands and helping you build and launch dynamic, feature-packed digital products.',
+  },
+  {
+    image: '/digital-transformation-consulting.svg',
+    title: 'UX/UI Design',
+    content:
+      'You’re providing all the great features, but your users still won’t respond? Our product designers rely on a user-first mindset that helps them improve the value of your app features and functionalities assuring navigable experiences and fail-safe performance under any user load. ',
+  },
+  {
+    image: '/custom-enterprise-software-development-services.svg',
+    title: 'Prototyping',
+    content:
+      'Don’t risk spending on unproven ideas. We help you test your idea in the ever-evolving market situations at a low cost before launching its complete version. Our digital product developers practice the MVP approach and depend on the experiences of early adopters to create fully functional prototypes.',
+  },
+  {
+    image: '/custom-enterprise-software.svg',
+    title: 'Product Development & Management Consulting',
+    content:
+      'Slow development processes, improper security management, wrong selection of technology, or lack of motivation are some of the few situations our product experts help by offering cloud-native microservices and technical advice to ensure crash-proof and sustainable product launches.',
+  },
+  {
+    image: '/legacy-application.svg',
+    title: 'MVP Development',
+    content:
+      'Test unproven ideas and turn them into a minimal product that ensures maximum concept validation among early adopters with our minimum viable product development services. 150+ startups, scale-ups, and enterprises have leveraged our services for an effortless product development journey.',
+  },
+  {
+    image: '/legacy-application.svg',
+    title: 'Code Refactoring',
+    content:
+      'Transform your product by refactoring the old code and making feature additions to achieve the desired product-market fit. Our custom product development services have built and revamped 150+ products that are constantly thriving under the forever-changing market activity.',
+  },
+  {
+    image: '/legacy-application.svg',
+    title: 'Launch & Maintenance',
+    content:
+      'After a rigorous series of QA audits, automated tests, TTD, and code reviews, we bring your product to fruition with continued support featuring continuous integration and delivery and needed improvements to keep your product relevant in the raging technology marathon.',
+  },
+]
+
 const marketPlaceData = [
   {
     image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg',"","",""],
@@ -1907,4 +1959,5 @@ export {
   developmentProcessData,
   productDesignFaq,
   whyChooseQbatchData,
+  productDevlopmentServices,
 }

@@ -39,7 +39,9 @@ ${media.sm`
   }
   .paragraph{
     max-width: 720px;
+    color:#2D2F31;
     line-height: 32px;
+    font-weight:600;
     letter-spacing: 0;
     ${media.sm`
       line-height: 24px;

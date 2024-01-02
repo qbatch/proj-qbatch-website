@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: `/blog${node.seo.slug}`,
     component: path.resolve('./src/pages/blogDetails.js'),
     context: {
-      title: `${node.seo.slug}`,
+      title: node.seo.slug,
     },
   })
   
