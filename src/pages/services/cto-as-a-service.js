@@ -72,7 +72,7 @@ const CtoService = () => {
         subCol1={5}
         subCol2={7}
         className="slider-column"
-        isScroll={true}
+        isScroll={false}
       />
       <GrowingTechSide />
       <ChooseCto />

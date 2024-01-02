@@ -25,21 +25,22 @@ import {
   customEnterpriseData,
   developmentExpertiseData,
   technologicalCapacityData,
-  peopleFirstData
-} from "../../constants";
+  peopleFirstData,
+  productDevlopmentServices,
+} from '../../constants'
 
 const Enterprise = () => {
   return (
     <Layout>
       <Banner
-          subheading="Enterprise App Development Company"
-          heading="Your “Great Transformation” Journey Begins Here"
-          paragraph="Worried about the challenges that come with a growing enter-
+        subheading="Enterprise App Development Company"
+        heading="Your “Great Transformation” Journey Begins Here"
+        paragraph="Worried about the challenges that come with a growing enter-
           prise? Get ready to build a market-ready solution inspired by the latest technology and insight with team Qbatch."
-          buttonText="Explore Services"
-          imgSrc={BannerImage}
-          wrapperClass="enterprise-banner"
-        />
+        buttonText="Explore Services"
+        imgSrc={BannerImage}
+        wrapperClass="enterprise-banner"
+      />
       <ChoiseYourEnterprise
         heading="Are You Making the Right Choice For Your Enterprise?"
         desc1=" Enterprise systems often rely on certain workflows and tools that do
@@ -50,15 +51,22 @@ const Enterprise = () => {
         listData={choiceEnterpriseData}
         isBtn={true}
       />
-       <WhatDifferenceQbatchMaking
-        heading="Why Trust Qbatch for Your Enterprise Software?"
-        innerPage={true}
-      />
-      <SecretSauce
+      <WhatDifferenceQbatchMaking heading="Why Trust Qbatch for Your Enterprise Software?" innerPage={true} />
+
+      <LostToLaunched
         heading="Custom Enterprise Software Development Services"
-        desc="Don’t hamper your growth by second-guessing your choices and hire Qbatch as your partner enterprise app development company to help your enterprise-level projects with the following services:"
-        data={customEnterpriseData}
-        className="enterprise-section"
+        desc="Don’t hamper your growth by second-guessing your choices and hire Qbatch as your partner enterprise app development company to help your enterprise-level projects with the following services: "
+        sliderData={customEnterpriseData}
+        col1={5}
+        col2={7}
+        subCol1={5}
+        subCol2={7}
+        mt="mt-4"
+        className="ecom-section product-development-service"
+        isScroll={false}
+        paddingLeft="0px"
+        maxWidth="100%"
+        minHeight="524px"
       />
       <DesiredResult
         heading="Kickoff Enterprise Transformation toward a scalable and human-driven future."
@@ -77,7 +85,7 @@ const Enterprise = () => {
         listData={technologicalCapacityData}
         className="capacity-section"
       />
-       <DoYouKnow
+      <DoYouKnow
         heading="Do You Know?"
         desc="Choosing the Right Technology For Your Enterprise is a Risky Business."
         btnText="Get Expert Advice"
@@ -98,7 +106,11 @@ const Enterprise = () => {
       <LanguagesAndFrameworks />
       <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
       <Collaboration heading="text-h2" />
-      <PeopleFirst peopleFirstData={peopleFirstData} paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies." heading="Happily Making Industries People-First"/>
+      <PeopleFirst
+        peopleFirstData={peopleFirstData}
+        paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies."
+        heading="Happily Making Industries People-First"
+      />
       <DesiredResult
         heading="Got a unique mobile app idea? Learn more about development time and cost estimation!"
         isButton={true}
@@ -108,7 +120,7 @@ const Enterprise = () => {
       <FaqSection faqQuestion={mobileAppFaq} />
       <StartProject />
     </Layout>
-  );
+  )
 };
 
 export const Head = () => {

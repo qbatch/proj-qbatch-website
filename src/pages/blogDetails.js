@@ -47,11 +47,12 @@ export const Head = ({ pageContext }) => {
   const blogSeo = Queries()
   const blogSeoData = blogSeo.allStrapiArticle.nodes.find((node) => node.id === id)
   const seoData = blogSeoData?.seo
+  console.log(seoData, 'seoData')
   return (
     <SEO
       title={seoData?.metaTitle}
       description={seoData?.metaDescription}
-      keyword={seoData?.keywords}
+      keywords={seoData?.keywords}
       pathname={`/blog${title}`}
     />
   )

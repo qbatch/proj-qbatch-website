@@ -772,29 +772,29 @@ const ecomLogos = ["/blue-ware.svg","/ecom-circle-logo.svg","/north-ware.svg","/
 
 const revenueData = [
   {
-    img: "/retail-arbitrage.svg",
-    title: "Retail Arbitrage",
-    description: "Find profitable products, deal with price volatility, and grow account health."
+    image: '/retail-arbitrage.svg',
+    title: 'Retail Arbitrage',
+    content: 'Find profitable products, deal with price volatility, and grow account health.',
   },
   {
-    img: "/label-brands.svg",
-    title: "Private Label Brands",
-    description: "Deal with stock-outs and stock-ins and maintain quality control."
+    image: '/label-brands.svg',
+    title: 'Private Label Brands',
+    content: 'Deal with stock-outs and stock-ins and maintain quality control.',
   },
   {
-    img: "/wholesale-sellers.svg",
-    title: "Wholesale Sellers",
-    description: "Avoid poor labor management, pricing wars, and storage costs towards better time to market."
+    image: '/wholesale-sellers.svg',
+    title: 'Wholesale Sellers',
+    content: 'Avoid poor labor management, pricing wars, and storage costs towards better time to market.',
   },
   {
-    img: "/dropshipping.svg",
-    title: "Dropshipping",
-    description: "Automate slow order fulfillment and cheer up unhappy customers by bringing business consistency."
+    image: '/dropshipping.svg',
+    title: 'Dropshipping',
+    content: 'Automate slow order fulfillment and cheer up unhappy customers by bringing business consistency.',
   },
   {
-    img: "/warehousing.svg",
-    title: "Warehousing/ 3PL/Prep Center",
-    description: "Go data-driven and eliminate inaccurate inventory management and substandard processes."
+    image: '/warehousing.svg',
+    title: 'Warehousing/ 3PL/Prep Center',
+    content: 'Go data-driven and eliminate inaccurate inventory management and substandard processes.',
   },
 ]
 
@@ -1837,34 +1837,40 @@ const productDesignData = [
 ];
 const customEnterpriseData = [
   {
-    img: "/interprise-application.svg",
-    title: "Custom Enterprise Application Development",
-    description: "Avoid spending on redundant and ready-made solutions, instead detect the comprised areas of your business with our trusted enterprise application development services. We help you create unique solutions that replace existing loopholes with high-performing functionality units."
+    image: '/interprise-application.svg',
+    title: 'Custom Enterprise Application Development',
+    content:
+      'Avoid spending on redundant and ready-made solutions, instead detect the comprised areas of your business with our trusted enterprise application development services. We help you create unique solutions that replace existing loopholes with high-performing functionality units.',
   },
   {
-    img: "/enterprise-mobility-service.svg",
-    title: "Enterprise Mobility Services",
-    description: "Become mobile-first and deliver an optimal experience to a large number of audiences who rely on the utilities your business offers. Qbatch’s turnkey enterprise mobility solutions enable organizations to enjoy suitable, accessible, and easy-to-adapt solutions."
+    image: '/enterprise-mobility-service.svg',
+    title: 'Enterprise Mobility Services',
+    content:
+      'Become mobile-first and deliver an optimal experience to a large number of audiences who rely on the utilities your business offers. Qbatch’s turnkey enterprise mobility solutions enable organizations to enjoy suitable, accessible, and easy-to-adapt solutions.',
   },
   {
-    img: "/digital-transformation-consulting.svg",
-    title: "Digital Transformation Consulting",
-    description: "Close the gap between your current and desired success levels speedily by adopting and embracing futuristic technology without hampering your data. Let’s become technology adoption partners and reinvent your business together!"
+    image: '/digital-transformation-consulting.svg',
+    title: 'Digital Transformation Consulting',
+    content:
+      'Close the gap between your current and desired success levels speedily by adopting and embracing futuristic technology without hampering your data. Let’s become technology adoption partners and reinvent your business together!',
   },
   {
-    img: "/custom-enterprise-software-development-services.svg",
-    title: "Data Management and Business Intelligence (BI)",
-    description: "Integrate powerful data management modules and AI-driven tools to break down complex data into predictive decisions. We as an enterprise software development services company use analytics and automation for easy and quick bulk data management and assessment.nctionality units."
+    image: '/custom-enterprise-software-development-services.svg',
+    title: 'Data Management and Business Intelligence (BI)',
+    content:
+      'Integrate powerful data management modules and AI-driven tools to break down complex data into predictive decisions. We as an enterprise software development services company use analytics and automation for easy and quick bulk data management and assessment.nctionality units.',
   },
   {
-    img: "/custom-enterprise-software.svg",
-    title: "Software Integration Services",
-    description: "Achieve business sustenance, data networking, and effortless collaboration by integrating your existing software with faster and more secure technology. Readily meet market and end-user demands and transform better with our top enterprise app developers."
+    image: '/custom-enterprise-software.svg',
+    title: 'Software Integration Services',
+    content:
+      'Achieve business sustenance, data networking, and effortless collaboration by integrating your existing software with faster and more secure technology. Readily meet market and end-user demands and transform better with our top enterprise app developers.',
   },
   {
-    img: "/legacy-application.svg",
-    title: "Legacy Application Modernization",
-    description: "You are at great financial and reputation risk if your business depends on outdated software.  Our legacy application modernization services will help you figure out why your existing system no longer brings results and build a modern solution that lasts and gets real results."
+    image: '/legacy-application.svg',
+    title: 'Legacy Application Modernization',
+    content:
+      'You are at great financial and reputation risk if your business depends on outdated software.  Our legacy application modernization services will help you figure out why your existing system no longer brings results and build a modern solution that lasts and gets real results.',
   },
 ]
 const cycleProductData = [
