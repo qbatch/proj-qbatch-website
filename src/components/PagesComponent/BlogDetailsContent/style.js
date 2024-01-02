@@ -20,9 +20,8 @@ const ContentWrapper = styled.div`
       }
       .paragraph {
         h1,
-        h2,
         h3 {
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
+          font-size:22px;
           margin-bottom: 32px;
           span {
             font-family: 'Inter Tight', sans-serif;
@@ -30,6 +29,9 @@ const ContentWrapper = styled.div`
             color: ${({ theme }) => theme.colors.bodyTextVariant};
             font-weight: ${({ theme }) => theme.fontWeight.semiBold} !important;
           }
+        }
+        h2{
+          font-size:26px;
         }
         p {
           font-size: ${({ theme }) => theme.fonts.baseFontSize};

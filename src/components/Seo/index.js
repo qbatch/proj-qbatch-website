@@ -22,6 +22,7 @@ const SEO = (props) => {
     keywords,
     image,
   }
+  console.log(seo,"ddd")
   return (
     <>
       <title>{seo.title}</title>

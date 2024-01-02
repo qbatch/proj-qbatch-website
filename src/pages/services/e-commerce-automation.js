@@ -7,7 +7,7 @@ import StartProject from "../../components/PagesComponent/StartProject";
 import WhatCanHelp from "../../components/PagesComponent/WhatCanYouHelp/index";
 import BusinessMangement from "../../components/PagesComponent/BusinessMangement/index";
 import DevelopmentStages from "../../components/PagesComponent/DevelopmentStages";
-
+import LostToLaunched from '../../components/PagesComponent/DevelopmentStages'
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
 import IdeasAndInvestments from "../../components/PagesComponent/IdeasAndInvestments";
 import FaqSection from "../../components/PagesComponent/Faq";
@@ -42,7 +42,7 @@ const Ecommerce = () => {
         subCol2={6}
         mt="mt-4"
         className="ecom-section"
-        isScroll={true}
+        isScroll={false}
       />
       <BusinessMangement />
       <TrippleYourRevenue />

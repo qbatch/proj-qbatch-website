@@ -224,8 +224,17 @@ const GlobalStyles = createGlobalStyle`
               color: #fff;
       }
       }
-      ul,olons{
+      ul,ol{
         list-style:disc;
+        padding-left:24px;
+        font-size: 16px;
+        color: #5F737C;
+        li{
+          margin-bottom:8px;
+        }
+      }
+      ol{
+        list-style:decimal;
         padding-left:24px;
         font-size: 16px;
         color: #5F737C;
