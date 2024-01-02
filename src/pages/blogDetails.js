@@ -52,7 +52,7 @@ export const Head = ({ pageContext }) => {
       title={seoData?.metaTitle}
       description={seoData?.metaDescription}
       keyword={seoData?.keywords}
-      pathname={title}
+      pathname={`/blog${title}`}
     />
   )
 }
