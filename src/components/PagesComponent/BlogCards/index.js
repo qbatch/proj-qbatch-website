@@ -16,13 +16,14 @@ const Index = (props) => {
 
   const BlogPost = ({ card, ind, onClick }) => {
     const customDate = new Date(card.publishedAt)
+    console.log(card, 'card')
     return ind === 0 ? (
       <Col md={12}>
         <div className="inner first-card" key={ind}>
           <Row>
             <Col md={6}>
               <div className="card-img">
-                <img src={card.blogImg.localFile.url} alt={card.blogTitle} />
+                <img src={card?.blogImg?.localFile.url} alt={card.blogTitle} />
               </div>
             </Col>
             <Col md={6}>
