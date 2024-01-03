@@ -35,7 +35,7 @@ const BlogDetails = ({ pageContext }) => {
         </div>
       </ContentWrapper>
       <BlogDetailBanner data={blogData} />
-      <BlogDetailsContent data={blogData} />
+      <BlogDetailsContent data={blogData} path={path} />
     </Layout>
   )
 }
