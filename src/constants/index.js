@@ -1524,6 +1524,133 @@ const mobileAppFaq = [
     ),
   },
 ]
+const enterPrisFaq = [
+  {
+    id: 1,
+    title: 'What are the key features to look for in an enterprise app development service?',
+    content: (
+      <div className="faq-content">
+        <span>An enterprise app development service should offer these features:</span>
+        <ul>
+          <li>Fail-safe security measures</li>
+          <li>User-centric interface design </li>
+          <li>Smooth development and crash-proof code</li>
+          <li>Real-time analytics capability</li>
+          <li>Easy integration across other business intelligence platforms </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'What platforms does your enterprise app development company support ',
+    content: (
+      <div className="faq-content">
+        <span>Our enterprise app development company supports multiple platforms which includes:</span>
+        <ul>
+          <li>Android</li>
+          <li>iOS</li>
+          <li>Cross-platform </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'What steps do you follow in the app development lifecycle?	',
+    content: (
+      <div className="faq-content">
+        <span>Following are the steps we follow in the enterprise app development lifecycle</span>
+        <ul>
+          <li>Ideation and planning</li>
+          <li>Requirements gathering</li>
+          <li>Wireframing and prototyping</li>
+          <li>UI/UX design</li>
+          <li>Development</li>
+          <li>Software testing and QA</li>
+          <li>Deployment</li>
+          <li>Launch and Distribution</li>
+          <li>Post launch support and maintenance</li>
+          <li>Continuous improvement</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'How do you ensure the security of enterprise apps and sensitive data?',
+    content: (
+      <div className="faq-content">
+        <span>Following are the ways how we ensure security of enterprise apps and sensitive data:</span>
+        <ul>
+          <li>Risk assessment and threat modeling</li>
+          <li>Code reviews and audits</li>
+          <li>Mult-Factor Authentication (MFA) and Role-Based Access Control (RBAC)</li>
+          <li>Industry-level data encryption algorithms and protocols</li>
+          <li>Regular security patches and updates</li>
+          <li>User data security </li>
+          <li>Strict access control policy </li>
+          <li>HTTPS and SSL/TLS encryption for secure data communication </li>
+          <li>Comprehensive attack response plan </li>
+          <li>Compliance and regulations</li>
+          <li>Third-party security </li>
+          <li>Security audits and assessments </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What sets your enterprise app development company apart from competitors?	',
+    content: (
+      <div className="faq-content">
+        <span>Below are reasons that sets our enterprise app development company apart from competitors:</span>
+        <ul>
+          <li>Total Process Transparency </li>
+          <span>
+            We offer full and clear insight into how processes execute identifying loopholes, rework, and bottlenecks.
+          </span>
+          <li>Cross-Sector Expertise</li>
+          <span>Soft-skill-based leadership qualities to build teams, solve problems, and achieve goals. </span>
+          <li>100% Founder's Mentality</li>
+          <span>Based on the insurgent mission, immersive vision, and obsession to stay on top.</span>
+          <li>Pay-as-you-go Model</li>
+          <span>Only pay for the services, resources, and time you take, nothing more, nothing less.</span>
+          <li>Dependable Engineering Craftsmanship</li>
+          <span>Building statement products with quality — no corners cut, each step perfected. </span>
+          <li>No Biases, Only Neutral Feedback</li>
+          <span>Objective and unbiased evaluation of your software without any interest or preconceived notions. </span>
+          <li>Technology Leadership</li>
+          <span>
+            To oversee a team of technical experts ensuring seamless functioning of a tech-driven infrastructure.{' '}
+          </span>
+          <li>Highly Solution-Oriented Mindset</li>
+          <span>We won’t relax until we find the answer to fix your business problem.</span>
+          <li>Spectacular Price-Quality Ratio</li>
+          <span>Get exceptional product quality and value at a very reasonable price. </span>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'What industries have you worked with in developing enterprise applications?	',
+    content: (
+      <div className="faq-content">
+        <span>We have successfully worked in these industries in developing enterprise applications:</span>
+        <ul>
+          <li>E-commerce</li>
+          <li>Logistics and Supply Chain</li>
+          <li>FinTech</li>
+          <li>Healthcare</li>
+          <li>EdTech</li>
+          <li>Retail and Consumer Goods</li>
+          <li>Travel and Transportation</li>
+        </ul>
+      </div>
+    ),
+  },
+]
 const guidanceData = [
   {
     icon: '/vertical-aligmnet.svg',
@@ -1953,6 +2080,7 @@ export {
   multiPlatformData,
   developmentServicesData,
   mobileAppFaq,
+  enterPrisFaq,
   choiceEnterpriseData,
   customEnterpriseData,
   cycleProductData,

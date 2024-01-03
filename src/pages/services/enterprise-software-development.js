@@ -20,7 +20,7 @@ import BannerImage from "../../../static/enterprise-banner.png";
 
 import {
   lostToLaunchedItems,
-  mobileAppFaq,
+  enterPrisFaq,
   choiceEnterpriseData,
   customEnterpriseData,
   developmentExpertiseData,
@@ -117,7 +117,7 @@ const Enterprise = () => {
         className="desired-result"
         btnText="Get Free Price Estimate"
       />
-      <FaqSection faqQuestion={mobileAppFaq} />
+      <FaqSection faqQuestion={enterPrisFaq} />
       <StartProject />
     </Layout>
   )
