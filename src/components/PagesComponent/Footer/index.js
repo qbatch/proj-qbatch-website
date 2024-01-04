@@ -75,6 +75,32 @@ const bottomMenu = [
     to: "/privacy-policy",
   },
 ];
+const socialLinks = [
+  {
+    img: '/facebook',
+    to: 'https://www.facebook.com/qbatch/',
+  },
+  {
+    img: '/instagram',
+    to: 'https://www.instagram.com/qbatch/',
+  },
+  {
+    img: '/linkedin',
+    to: 'https://www.linkedin.com/company/qbatch/',
+  },
+  {
+    img: '/twitter',
+    to: 'https://twitter.com/qbatchofficial',
+  },
+  {
+    img: '/behance',
+    to: 'https://www.behance.net/ibrahimzahoor',
+  },
+  {
+    img: '/youtube',
+    to: 'https://www.youtube.com/@qbatch6700',
+  },
+]
 
 const Index = () => {
   return (
@@ -85,14 +111,24 @@ const Index = () => {
             <Col md={2}>
               <div className="footer-menu">
                 <ul>
-                  {menuData.map((menu, ind) =>  <li key={ind}> <Link to={menu.to}>{menu.name}</Link> </li> )}
+                  {menuData.map((menu, ind) => (
+                    <li key={ind}>
+                      {' '}
+                      <Link to={menu.to}>{menu.name}</Link>{' '}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </Col>
             <Col md={2}>
               <div className="footer-menu">
                 <ul>
-                  {menu2Data.map((menu, ind) => <li key={ind}> <Link to={menu.to}>{menu.name}</Link></li> )}
+                  {menu2Data.map((menu, ind) => (
+                    <li key={ind}>
+                      {' '}
+                      <Link to={menu.to}>{menu.name}</Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </Col>
@@ -101,7 +137,7 @@ const Index = () => {
                 {contactData.map((data, ind) => (
                   <div key={ind}>
                     {data.icon && <img src={data.icon} alt="contact" width="16px" height="16px" />}
-                    <span className={!data.icon && "address"}>{data.title}</span>
+                    <span className={!data.icon && 'address'}>{data.title}</span>
                   </div>
                 ))}
               </div>
@@ -122,17 +158,22 @@ const Index = () => {
         <div className="social-section d-flex align-items-center flex-wrap">
           <div className="d-flex align-items-center flex-wrap follow-section">
             <span className="follow-us">Follow Us at</span>
-            <SocialIcons />
+            <SocialIcons socialIcons={socialLinks} />
           </div>
           <div className="footer-menu footer-menu-bottom">
             <ul>
-              {bottomMenu.map((menu, ind) =>  <li key={ind} className="mb-0"> <Link to={menu.to}> {menu.name}</Link> </li> )}
+              {bottomMenu.map((menu, ind) => (
+                <li key={ind} className="mb-0">
+                  {' '}
+                  <Link to={menu.to}> {menu.name}</Link>{' '}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </Container>
     </FooterWrapper>
-  );
+  )
 };
 
 export default Index;

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
+import { BsReddit } from 'react-icons/bs'
 import { navigate } from "gatsby";
-
+import SocialIcons from '../../UiComponent/SocialIcons'
 import Container from "../../UiComponent/Container";
 import PrimaryButton from "../../UiComponent/PrimaryButton";
 import Button from "../../../components/UiComponent/Button";
@@ -142,19 +143,19 @@ function App({ data, path }) {
   const socialIcons = [
     {
       img: '/facebook',
-      to: 'https://www.facebook.com/sharer.php?u=https://qbatch.com/blog/',
+      to: `https://www.facebook.com/sharer.php?u=https://qbatch.com/blog${path}`,
     },
     {
       img: '/twitter',
-      to: 'https://twitter.com/intent/tweet?url=https://qbatch.com/blog/',
+      to: `https://twitter.com/intent/tweet?url=https://qbatch.com/blog${path}`,
     },
     {
-      img: '/linkdin',
-      to: 'https://www.linkedin.com/shareArticle?url=https://qbatch.com/blog/',
+      img: '/linkedin',
+      to: `https://www.linkedin.com/shareArticle?url=https://qbatch.com/blog${path}`,
     },
     {
       img: '/reddit',
-      to: 'https://reddit.com/submit?url=https://qbatch.com/blog/',
+      to: `https://reddit.com/submit?url=https://qbatch.com/blog${path}`,
     },
   ]
 
@@ -192,17 +193,9 @@ function App({ data, path }) {
                     }}
                   />
                 </div>
-                <div className="social-links d-flex">
+                <div className="social-links d-flex gap-4">
                   <span className="title">Share</span>
-                  <ul className="d-flex social-link">
-                    {socialIcons.map((icon) => (
-                      <li>
-                        <a href={`${icon.to}/${path}`} target="_blank" rel="noreferrer">
-                          <img src={`${icon.img}.svg`} alt="no-icon" />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                  <SocialIcons socialIcons={socialIcons} />
                 </div>
                 <div className="divider">
                   <hr />
