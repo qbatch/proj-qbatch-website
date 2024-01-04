@@ -958,7 +958,6 @@ const faqQuestion = [
     content: (
       <div className="faq-content">
         <span>These are the key responsibilities of on-demand CTO services:</span>
-        <span>Following are benefits of hiring a CTO:</span>
         <ul>
           {ctoResponsibilities.map((list, ind) => (
             <li key={ind}>{list}</li>
@@ -975,7 +974,6 @@ const faqQuestion = [
         <span>
           A virtual CTO contribute to your company’s technology strategy and innovation in the following ways:
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
         <ul>
           {ctoContribute.map((list, ind) => (
             <li key={ind}>{list}</li>
@@ -995,7 +993,6 @@ const faqQuestion = [
     content: (
       <div className="faq-content">
         <span>You have four pricing options or hiring models to hire a CTO or availing IT leadership services:</span>
-        <span>Following are benefits of hiring a CTO:</span>
         <ul>
           <li>Full-time CTO</li>
           <li>Part-time CTO</li>
@@ -1032,23 +1029,32 @@ const faqQuestion = [
     title: 'What challenges can a CTO as a Service help businesses overcome?',
     content: (
       <div className="faq-content">
-        <span>What challenges can a CTO as a Service help businesses overcome?</span>
-        <span>Following are benefits of hiring a CTO:</span>
+        <span>CTO support for businesses help stakeholders overcome several challenges:</span>
         <ul>
           <li>Lack of technology leadership and expertise</li>
-          <li>
-            <li>Lack of technology leadership and expertise</li>
-            <li>Dealing with talent shortage</li>
-            <li>Dealing with talent shortage</li>
-            <li>Getting investor attention</li>
-            <li>Data privacy and cybersecurity threats</li>
-            <li>Inefficienct technology strategy and executione</li>
-            <li>Choosing the righ tech stack</li>
-            <li>Technology debt management and budgeting</li>
-            <li>Poor project management and implementation</li>
-            <li>Adapting to market changes</li>
-          </li>
+          <li>Updating old infrastructure with new technology</li>
+          <li>Dealing with talent shortage</li>
+          <li>Isolated position in the industry</li>
+          <li>Getting investor attention</li>
+          <li>Data privacy and cybersecurity threats</li>
+          <li>Inefficienct technology strategy and executione</li>
+          <li>Choosing the righ tech stack</li>
+          <li>Technology debt management and budgeting</li>
+          <li>Poor project management and implementation</li>
+          <li>Adapting to market changes</li>
         </ul>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: 'Is your CTO as a Service available on-demand, and how quickly can they start supporting my business?',
+    content: (
+      <div className="faq-content">
+        <span>
+          Yes, our CTO as a Service is available on-demand, they can start supporting your business within 24 hrs after
+          contact.{' '}
+        </span>
       </div>
     ),
   },
@@ -1150,7 +1156,6 @@ const productDesignFaq = [
     content: (
       <div className="faq-content">
         <span>Full-cycle software product development or software development lifecycle is based on seven stages:</span>
-        <span>Following are benefits of hiring a CTO:</span>
         <ul>
           <li>Planning</li>
           <li>Requirement Analysis</li>
@@ -1170,7 +1175,6 @@ const productDesignFaq = [
     content: (
       <div className="faq-content">
         <span>Following are key steps we follow to develop and grow your product idea:</span>
-        <span>Following are benefits of hiring a CTO:</span>
         <ul>
           <li>Defining and refining your product idea</li>
           <li>Researching your idea’s target audience and real-world problems</li>
@@ -1210,7 +1214,6 @@ const productDesignFaq = [
         <span>
           Selecting and partnering with a trustworthy product development company is easy, just make sure they offer:
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
         <ul>
           <li>Spectacular Price-Quality Ratio</li>
           <li>Total Process Transparency </li>
@@ -1226,7 +1229,7 @@ const productDesignFaq = [
           Team Qbatch is a full-fledged custom software product development company 100% invested in your product growth
           offering the above features as brownie points. You can verily trust us with your idea.{' '}
         </span>
-        <h6>How?</h6>
+        <h6 className="my-2">How?</h6>
         <ul>
           <li>Get in touch and share your ideas</li>
           <li>Choose a hiring model </li>
