@@ -884,6 +884,40 @@ const ctoBenefits = [
   'Risk management',
   'Focus on core technical areas',
 ]
+const ctoService = [
+  'Comprehensive technology strategy and roadmap including tech stack, tools, & techniques',
+  'Scalable technology infrastructure',
+  'Tech-driven product development',
+  'Technical talent hunting and aquisition',
+  'Agile development practices',
+  'Vendor and partnership management',
+  'Data-driven policymaking',
+  'Technology cost optimization',
+  'Latest technology adoption',
+  'Adapting to change and growth  mindset',
+  'Interim leadership to assure technical guidance and growth continuity',
+  'Security and compliance',
+]
+const ctoResponsibilities = [
+  'Assists during the discovery phase',
+  'Ideation and conceptualization',
+  'Project planning and scaling',
+  'Discovers and implements new technology',
+  'Product development and launch',
+  'Project audit and analysis',
+  'Hiring, training, and retaining talent.',
+  'Leadership skill to motivat teams ',
+  'System infrastructure modernization and supervision ',
+  'Pitching to investors',
+]
+const ctoContribute = [
+  'Adds a fresh perspective to the technical side of your business strategy',
+  'Offers viable tech solutions due to extensive industry exposure ',
+  'Has a wide view of tech trends and offers innovation plans',
+  'Capable of taking on diverse roles when needed',
+  'Keeps a track record of running successful tech adoption projects',
+  'Works on pay-as-you-go model offering excellent price-quality ratio',
+]
 const faqQuestion = [
   {
     id: 1,
@@ -908,13 +942,10 @@ const faqQuestion = [
     title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
     content: (
       <div className="faq-content">
-        <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
-        </span>
+        <span>A CTO as a Service (CaaS) can help startups and small businesses scale effectively through:</span>
         <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
+          {ctoService.map((list, ind) => (
             <li key={ind}>{list}</li>
           ))}
         </ul>
@@ -923,16 +954,13 @@ const faqQuestion = [
   },
   {
     id: 3,
-    title: 'What is CTO as a Service, and how can it benefit my business?',
+    title: 'What are the key responsibilities of a CTO as a Service?',
     content: (
       <div className="faq-content">
-        <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
-        </span>
+        <span>These are the key responsibilities of on-demand CTO services:</span>
         <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
+          {ctoResponsibilities.map((list, ind) => (
             <li key={ind}>{list}</li>
           ))}
         </ul>
@@ -941,36 +969,38 @@ const faqQuestion = [
   },
   {
     id: 4,
-    title: 'What is CTO as a Service, and how can it benefit my business?',
+    title: 'How can a virtual CTO contribute to my company technology strategy and innovation?	',
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+          A virtual CTO contribute to your company’s technology strategy and innovation in the following ways:
         </span>
         <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
+          {ctoContribute.map((list, ind) => (
             <li key={ind}>{list}</li>
           ))}
         </ul>
+        <span>
+          A virtual Chief Technology Officer (CTO) may not be physically present but they play a significant role in
+          shaping your company's technology strategy and stirring innovation through remote collaboration and massive
+          technological expertise.
+        </span>
       </div>
     ),
   },
   {
     id: 5,
-    title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
+    title: 'How does your CTO as a Service model work, and what are the pricing options?',
     content: (
       <div className="faq-content">
-        <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
-        </span>
+        <span>You have four pricing options or hiring models to hire a CTO or availing IT leadership services:</span>
         <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Full-time CTO</li>
+          <li>Part-time CTO</li>
+          <li>Interim CTO</li>
+          <li>One-project based CTO</li>
         </ul>
       </div>
     ),
@@ -978,36 +1008,46 @@ const faqQuestion = [
 
   {
     id: 6,
-    title: 'What is CTO as a Service, and how can it benefit my business?',
+    title: 'How do you ensure seamless collaboration between your virtual CTO and our in-house team?',
     content: (
       <div className="faq-content">
-        <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
-        </span>
-        <span>Following are benefits of hiring a CTO:</span>
+        <span>Following are ways our virtual CTOs ensure seamless collaboration with your in-house team:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Clear communication channels and tools</li>
+          <li>Regular meetings, brainstorming sessions, and team integration</li>
+          <li>Shared documentation and collaboration tools</li>
+          <li>Project management platforms</li>
+          <li>Defined team roles and responsibilties</li>
+          <li>Solid feedback loop</li>
+          <li>Cultural sensitivity and open dialogue </li>
+          <li>Conflict resolution and mutual respect </li>
+          <li>Face-to-face interactions via video calls and recreational sessions</li>
+          <li>Shared goals and vision </li>
         </ul>
       </div>
     ),
   },
   {
     id: 7,
-    title: 'How can a CTO as a Service help startups and small businesses scale effectively?',
+    title: 'What challenges can a CTO as a Service help businesses overcome?',
     content: (
       <div className="faq-content">
-        <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
-        </span>
+        <span>What challenges can a CTO as a Service help businesses overcome?</span>
         <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Lack of technology leadership and expertise</li>
+          <li>
+            <li>Lack of technology leadership and expertise</li>
+            <li>Dealing with talent shortage</li>
+            <li>Dealing with talent shortage</li>
+            <li>Getting investor attention</li>
+            <li>Data privacy and cybersecurity threats</li>
+            <li>Inefficienct technology strategy and executione</li>
+            <li>Choosing the righ tech stack</li>
+            <li>Technology debt management and budgeting</li>
+            <li>Poor project management and implementation</li>
+            <li>Adapting to market changes</li>
+          </li>
         </ul>
       </div>
     ),
@@ -1021,7 +1061,10 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-        Choosing e-commerce automation services allows you to put repetitive and time-consuming tasks on auto-pilot, getting more done in less time. For example, you can automate marketing and sales, order fulfillment and shipment, billing and payment, returns management, customer service operations, and more. This way you save finances and labor, increasing returns on investment.
+          Choosing e-commerce automation services allows you to put repetitive and time-consuming tasks on auto-pilot,
+          getting more done in less time. For example, you can automate marketing and sales, order fulfillment and
+          shipment, billing and payment, returns management, customer service operations, and more. This way you save
+          finances and labor, increasing returns on investment.
         </span>
       </div>
     ),
@@ -1032,9 +1075,14 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-        The technology used in e-commerce automation services lets you perform tasks with little or no human involvement, giving you time to spend on creative and strategic tasks instead of unimportant work. E-commerce management automation helps you with barcoding, inventory management, order management, finding the right products, and making better relationships with your customers.
+          The technology used in e-commerce automation services lets you perform tasks with little or no human
+          involvement, giving you time to spend on creative and strategic tasks instead of unimportant work. E-commerce
+          management automation helps you with barcoding, inventory management, order management, finding the right
+          products, and making better relationships with your customers.
         </span>
-        <span>Reduced workload and minimized human errors allow smooth user journey, thus increasing productivity and enabling customer retention.
+        <span>
+          Reduced workload and minimized human errors allow smooth user journey, thus increasing productivity and
+          enabling customer retention.
         </span>
       </div>
     ),
@@ -1045,7 +1093,10 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-        E-commerce task automation prevents human errors keeping the team involved in significant tasks and improving overall operational efficiency and consistency leaving limited room for distractions and mistakes. This helps in achieving accuracy in data collection and analysis, faster communication, record keeping, and generating lucrative outcomes as a result.
+          E-commerce task automation prevents human errors keeping the team involved in significant tasks and improving
+          overall operational efficiency and consistency leaving limited room for distractions and mistakes. This helps
+          in achieving accuracy in data collection and analysis, faster communication, record keeping, and generating
+          lucrative outcomes as a result.
         </span>
       </div>
     ),
@@ -1056,7 +1107,8 @@ const ecomFaqQuestion = [
     content: (
       <div className="faq-content">
         <span>
-        Getting started with e-commerce automation is no rocket science. Anyone from the supply chain and seller community can easily avail of e-commerce software automation services in 6 steps:
+          Getting started with e-commerce automation is no rocket science. Anyone from the supply chain and seller
+          community can easily avail of e-commerce software automation services in 6 steps:
         </span>
         <ul>
           <li>Facing a problem?</li>
@@ -1074,9 +1126,7 @@ const ecomFaqQuestion = [
     title: 'What can be automated in e-commerce?',
     content: (
       <div className="faq-content">
-        <span>
-        You can perform e-commerce process automation on the following operations:
-        </span>
+        <span>You can perform e-commerce process automation on the following operations:</span>
         <ul>
           <li>Customer experience automation to promptly manage customer queries and complaints.</li>
           <li>Shipping and order fulfillment to simplify pick & pack and shipping processes</li>
@@ -1099,16 +1149,18 @@ const productDesignFaq = [
     title: 'What is full-cycle software product development?',
     content: (
       <div className="faq-content">
-        <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
-        </span>
+        <span>Full-cycle software product development or software development lifecycle is based on seven stages:</span>
         <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Planning</li>
+          <li>Requirement Analysis</li>
+          <li>Design</li>
+          <li>Development</li>
+          <li>Testing</li>
+          <li>Deployment</li>
+          <li>Maintenance</li>
         </ul>
+        <span>These stages may overlap or move in order depending on the development technique you use. </span>
       </div>
     ),
   },
@@ -1117,15 +1169,19 @@ const productDesignFaq = [
     title: 'How can you help me develop my product idea?',
     content: (
       <div className="faq-content">
-        <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
-        </span>
+        <span>Following are key steps we follow to develop and grow your product idea:</span>
         <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Defining and refining your product idea</li>
+          <li>Researching your idea’s target audience and real-world problems</li>
+          <li>Designing a wireframe and offering a roadmap </li>
+          <li>Building and testing a prototype in the market</li>
+          <li>Rectifying your idea per the responses</li>
+          <li>DCreating jaw-dropping product design</li>
+          <li>Developing an MVP based on necessary features and functionalities</li>
+          <li>Launching the MVP for immediate public use</li>
+          <li>Getting feedback from the early adopters</li>
+          <li>Running iterations to grow your product responding to ever-changing user needs</li>
         </ul>
       </div>
     ),
@@ -1135,15 +1191,13 @@ const productDesignFaq = [
     title: 'What are the 5 stages of product development?',
     content: (
       <div className="faq-content">
-        <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
-        </span>
-        <span>Following are benefits of hiring a CTO:</span>
+        <span>Following are the 5 main stages of enterprise product development:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Brainstorming & Ideation</li>
+          <li>R&D and Screening </li>
+          <li>Concept Development & Wireframing</li>
+          <li>Product Prototyping</li>
+          <li>MVP Launch & Iterations</li>
         </ul>
       </div>
     ),
@@ -1154,14 +1208,32 @@ const productDesignFaq = [
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+          Selecting and partnering with a trustworthy product development company is easy, just make sure they offer:
         </span>
         <span>Following are benefits of hiring a CTO:</span>
         <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
+          <li>Spectacular Price-Quality Ratio</li>
+          <li>Total Process Transparency </li>
+          <li>Cross-Sector Expertise </li>
+          <li>100% Founder's Mentality</li>
+          <li>Pay-as-you-go Model</li>
+          <li>Dependable Engineering Craftsmanship</li>
+          <li>Neutral Software Analysis</li>
+          <li>Technology Leadership</li>
+          <li>Highly Solution Oriented Mindset</li>
+        </ul>
+        <span>
+          Team Qbatch is a full-fledged custom software product development company 100% invested in your product growth
+          offering the above features as brownie points. You can verily trust us with your idea.{' '}
+        </span>
+        <h6>How?</h6>
+        <ul>
+          <li>Get in touch and share your ideas</li>
+          <li>Choose a hiring model </li>
+          <li>Select from the talent pool and build your dream team </li>
+          <li>We prepare a roadmap and offer you a project estimation</li>
+          <li>Risk-free contract sign-off</li>
+          <li>Kickstart your project toward a seamless and successful launch</li>
         </ul>
       </div>
     ),
@@ -1172,33 +1244,30 @@ const productDesignFaq = [
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+          After software product delivery, software maintenance begins. It is a critical process that includes
+          performance optimization through several iterations of advanced development to reduce errors and redundant
+          development elements.
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
-        <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
-        </ul>
+        <span>
+          Software maintenance is a continuous activity handled by product owners and technical experts to rectify
+          faults and add/ delete features and other attributes to ensure product adaptation suitable to ever-changing
+          user situations and requirements.{' '}
+        </span>
+        <span>
+          The software support and maintenance process is an ongoing process because no software is ever ‘finished.’
+        </span>
       </div>
     ),
   },
   {
     id: 6,
-    title: 'What platforms do you develop mobile apps for?',
+    title: 'How much will it cost to develop a software product?',
     content: (
       <div className="faq-content">
         <span>
-          CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-          strategic technology leadership, guidance, and expertise.
+          Software development costs majorly depend on the product size and time required to build that app. The
+          software development cost ranges between $25,000 to $250,000.
         </span>
-        <span>Following are benefits of hiring a CTO:</span>
-        <ul>
-          {ctoBenefits.map((list, ind) => (
-            <li key={ind}>{list}</li>
-          ))}
-        </ul>
       </div>
     ),
   },
@@ -1411,8 +1480,24 @@ const mobileAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        A web application development company builds small-scale and large-scale web applications for startups, scaleups, and businesses.
+          As a mobile app development services company, we offer 100% communication & transparency throughout the
+          product lifecycle. With our top-tier mobile app developers, you can:
         </span>
+        <ul>
+          <li>Find Product-Market-Fit</li>
+          <span>Build and launch your MVP with maximum impact in the highly competitive product market.</span>
+          <li>Direct Access to Time Reports</li>
+          <span>Keep track of the SDLC for work progress and possible delays and share feedback as needed.</span>
+          <li>Well-Aligned Iteration Goals</li>
+          <span>
+            The primary thing that keeps us driven is to find what's required for your product to succeed and sustain.
+          </span>
+          <li>Strongly Agile </li>
+          <span>Periodic communication between stakeholders and the development team so you never miss a beat. </span>
+          <li>Low-code Development </li>
+          <span>Reduce development time by 90% and build sophisticated mobile apps in a single platform. </span>
+        </ul>
+        <span>We are your Crew, not “Vendors”</span>
       </div>
     ),
   },
@@ -1421,18 +1506,23 @@ const mobileAppFaq = [
     title: 'What is your mobile app development process, and how do you ensure quality?',
     content: (
       <div className="faq-content">
-        <span>Following are tips to choose the right web development company for my project:</span>
-        <ul>
-          <li>Determine the type of website you need</li>
-          <li>Understand your requirements</li>
-          <li>Factor in all the costs</li>
-          <li>Create a list of top web development companies</li>
-          <li>Study the companies</li>
-          <li>Review their work and services</li>
-          <li>Figure out who meets your requirements</li>
-          <li>Contact them, share your requirements, and see what they offer</li>
-        </ul>
-        <span><b><i>Bonus tip</i></b>: Communication and transparency should be their core values.</span>
+        <span>
+          Below mentioned is our mobile app development process which also ensures quality from scratch to end:{' '}
+        </span>
+        <h6>PROJECT MAPPING</h6>
+        <span>Requirement analysis to form a risk-free and modern solution.</span>
+        <h6>VISUAL AND TECHNICAL DESIGN</h6>
+        <span>Prototype designing testing to rectify concerns in real-world terms.</span>
+        <h6>DEVELOPMENT</h6>
+        <span>Business logic and code development according to the approved design. </span>
+        <h6>ENSURING SECURITY AND QA</h6>
+        <span>Security and QA testing to secure your product from cyberattacks and functional issues. </span>
+        <h6>DEPLOYMENT</h6>
+        <span>The final execution of the tested and optimized software solution.</span>
+        <h6>LAUNCH AND SUPPORT</h6>
+        <span>A happy project launch with continued support and maintenance</span>
+        <h6>LAUNCH AND SUPPORT</h6>
+        <span>A happy project launch with continued support and maintenance</span>
       </div>
     ),
   },
@@ -1442,18 +1532,9 @@ const mobileAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        A custom web application development company offers these services:
+          On average, our team of mobile app developers has 3+ years of experience that have built cross-platform mobile
+          apps across several industries.{' '}
         </span>
-        <ul>
-         <li>Web App Reengineering and Consultancy</li>
-         <li>Backend Development Services</li>
-         <li>Front-end Development Services</li>
-         <li>API development and integration</li>
-         <li>Enterprise Web App Development</li>
-         <li>Web Portal Development</li>
-         <li>Progressive Web App Development Services</li>
-         <li>SaaS Web Development</li>
-        </ul>
       </div>
     ),
   },
@@ -1463,22 +1544,10 @@ const mobileAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Typically, a web application development process includes these steps:
+          Yes, we offer custom app development services to meet unique business needs ranging from increased brand
+          awareness, global reach, technological advancement, higher level collaboration and communication, business
+          expansion, revenue generation, and more.{' '}
         </span>
-        <ul>
-          <li>PROJECT MAPPING</li>
-          <span>Requirement analysis to form a risk-free and modern solution.</span>
-          <li>VISUAL AND TECHNICAL DESIGN</li>
-          <span>Prototype designing testing to rectify concerns in real-world terms.</span>
-          <li>DEVELOPMENT</li>
-          <span>Business logic and code development according to the approved design.</span>
-          <li>ENSURING SECURITY AND QA</li>
-          <span>Security and QA testing to secure your product from cyberattacks and functional issues.</span>
-          <li>DEPLOYMENT</li>
-          <span>The final execution of the tested and optimized software solution.</span>
-          <li>LAUNCH AND SUPPORT</li>
-          <span>A happy project launch with continued support and maintenance.</span>
-        </ul>
       </div>
     ),
   },
@@ -1488,7 +1557,8 @@ const mobileAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-         The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
+          Our mobile app testing strategy includes testing on both real devices and virtual devices i.e. Android
+          emulators and iOS simulators for accurate test results and greater agility.
         </span>
       </div>
     ),
@@ -1499,27 +1569,15 @@ const mobileAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-         The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
+          The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources
+          involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a
+          wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
         </span>
         <ul>
-          <li>Javascript</li>
-          <li>HTML and CSS</li>
-          <li>Angular</li>
-          <li>Ruby on Rails</li>
-          <li>Meteor Js</li>
-          <li>Express.js</li>
-          <li>Django</li>
-          <li>Laravel</li>
-          <li>Python</li>
-          <li>Ruby</li>
-          <li>PHP</li>
-          <li>GoLang</li>
-          <li>Swift</li>
-          <li>Java</li>
-          <li>Elixir</li>
-          <li>Scale</li>
+          <li>iOS</li>
+          <li>Android</li>
+          <li>Cross-platform</li>
         </ul>
-        <span>And more</span>
       </div>
     ),
   },
