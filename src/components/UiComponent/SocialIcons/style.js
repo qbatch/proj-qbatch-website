@@ -17,19 +17,17 @@ const SocialWrapper = styled.div`
       border-radius: 50%;
       transition: background-color 0.5s ease-out, background-image 0.5s ease-out;
       img {
-        filter: invert(61%) sepia(8%) saturate(960%) hue-rotate(170deg)
-          brightness(90%) contrast(81%);
+        filter: invert(61%) sepia(8%) saturate(960%) hue-rotate(170deg) brightness(90%) contrast(81%);
         transition: filter 0.5s ease-out;
       }
       &:hover {
         img {
-          filter: invert(100%) sepia(33%) saturate(1%) hue-rotate(246deg)
-            brightness(104%) contrast(101%);
+          filter: brightness(0) invert(1);
         }
       }
     }
     &__facebook {
-      ${bgMixin("rgba(53, 121, 234, 1)")};
+      ${bgMixin('rgba(53, 121, 234, 1)')};
     }
     &__instagram {
       &:hover {
@@ -44,18 +42,21 @@ const SocialWrapper = styled.div`
       }
     }
     &__linkedin {
-      ${bgMixin("rgba(0, 122, 185, 1)")};
+      ${bgMixin('rgba(0, 122, 185, 1)')};
     }
     &__twitter {
-      ${bgMixin("rgba(0, 166, 222, 1)")};
+      ${bgMixin('rgba(0, 166, 222, 1)')};
     }
     &__behance {
-      ${bgMixin("rgba(65, 118, 250, 1)")};
+      ${bgMixin('rgba(65, 118, 250, 1)')};
     }
     &__youtube {
-      ${bgMixin("rgba(255, 0, 0, 1)")};
+      ${bgMixin('rgba(255, 0, 0, 1)')};
+    }
+    &__reddit {
+      ${bgMixin('rgb(255, 69, 0)')};
     }
   }
-`;
+`
 
 export default SocialWrapper;
