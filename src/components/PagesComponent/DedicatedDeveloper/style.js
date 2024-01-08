@@ -1,23 +1,24 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const DedicatedDeveloperWrapper = styled.section`
-  background-color: ${({ theme }) => theme.colors.secondaryColor};
-  background-image: url('./home-banner.png');
-  overflow: hidden;
-  height: 100vh;
-  background-size: 100% 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  animation: shrink 5s infinite alternate;
-  @keyframes shrink {
-    0% {
-      background-size: 100% 100%;
-    }
-    100% {
-      background-size: 110% 110%;
-    }
-  }
+const DedicatedDeveloperWrapper = styled.div`
+    background-color: ${({ theme }) => theme.colors.secondaryColor};
+    background-image: url('/home-banner.png');
+    overflow: hidden;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: shrink 5s infinite alternate;
+      @keyframes shrink {
+        0% {
+          background-size: 100% 100%;
+        }
+        100% {
+          background-size: 105% 105%;
+        }
+      }
+
   .title-portion {
     padding: 220px 0;
     display: flex;
