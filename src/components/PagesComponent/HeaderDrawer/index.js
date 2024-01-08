@@ -36,8 +36,8 @@ const servicesItems = [
     to: '/services/product-design-development',
   },
   {
-    menu: 'MVP Development',
-    to: '/',
+    menu: 'Web & data Scraping Services',
+    to: '/services/web-and-data-scraping',
   },
   {
     menu: 'DevOps and Cloud Computing',

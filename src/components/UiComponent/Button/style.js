@@ -53,7 +53,7 @@ const ButtonWrapper = styled(Button)`
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       padding: 3px 3px 3px 14px;
       &:hover {
-        background-color:  ${({ theme }) => theme.colors.primaryColor};
+        background-color: ${({ theme }) => theme.colors.primaryColor};
         color: ${({ theme }) => theme.colors.whiteColor};
       }
     }
@@ -87,7 +87,7 @@ const ButtonWrapper = styled(Button)`
     }
   }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -118,19 +118,22 @@ const ButtonWrapper = styled(Button)`
   }
   &.secondary-btn {
     color: ${({ theme }) => theme.colors.whiteColor};
-    font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     .button-icon {
       border-color: ${({ theme }) => theme.colors.dangerColor};
       svg {
         fill: ${({ theme }) => theme.colors.primaryColor};
-    }
+      }
     }
     &:hover {
       .button-icon {
         border-color: ${({ theme }) => theme.colors.primaryColor};
       }
     }
+    ${media.sm`
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+  `}
   }
-`;
+`
 
 export default ButtonWrapper;
