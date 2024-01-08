@@ -112,6 +112,21 @@ const CtoBannerWrapper = styled.div`
       max-width: 904px;
     }
   }
+  &.web-data-scraping {
+    padding: 212px 0 189px;
+    .banner-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      max-width: 55%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+    h1 {
+      max-width: 904px;
+    }
+  }
   ${media.md`
     &.enterprise-banner,&.mobile-app-banner,&.product-design-banner,&.cto-banner{
       padding: 100px 0;

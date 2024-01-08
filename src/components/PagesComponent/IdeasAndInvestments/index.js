@@ -7,16 +7,16 @@ import Button from "../../UiComponent/Button";
 import IdeasWrapper from "./style";
 
 const Index = (props) => {
-  const { heading, span, isButton, className, btnText } = props;
+  const { heading, span, isButton, className, btnText, headingSize, align } = props
   return (
     <IdeasWrapper className={className}>
       <Container>
-        <div className="d-flex justify-content-between align-items-end flex-wrap">
-          <h2 className="text-h1 heading">
+        <div className="">
+          <h2 className={`text-h1 heading ${headingSize}`}>
             {heading} {span && <span className="inner-heading">{span}</span>}
           </h2>
           {isButton && (
-            <div className="idea-btn">
+            <div className={`idea-btn ${align}`}>
               <Button text={btnText} onClick={() => navigate('/contact')} className="secondary-btn" />
             </div>
           )}

@@ -41,11 +41,10 @@ const BlogDetails = ({ pageContext }) => {
 }
 
 export const Head = ({ pageContext }) => {
+  const path = pageContext?.title
   const { title } = pageContext;
-  const location = useLocation()
-  const id = location.state?.blogId
   const blogSeo = Queries()
-  const blogSeoData = blogSeo.allStrapiArticle.nodes.find((node) => node.id === id)
+  const blogSeoData = blogSeo.allStrapiArticle.nodes.find((node) => node.seo.slug === `${path}`)
   const seoData = blogSeoData?.seo
   console.log(seoData, 'seoData')
   return (
