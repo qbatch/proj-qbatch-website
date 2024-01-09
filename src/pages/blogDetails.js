@@ -43,12 +43,12 @@ const BlogDetails = ({ pageContext }) => {
 export const Head = ({ pageContext }) => {
   const path = pageContext?.title
   const { title } = pageContext;
-  const blogSeo = Queries()
   const blogQuery = Queries()
-  const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.seo.slug === `${path}`)
-  const blogSeoData = blogSeo.allStrapiArticle.nodes.find((node) => node.seo.slug === `${path}`)
+  const allStrapiArticleNodes = blogQuery.allStrapiArticle.nodes
+  const blogData = allStrapiArticleNodes.find((node) => node.seo.slug === `${path}`)
+  const blogSeoData = allStrapiArticleNodes.find((node) => node.seo.slug === `${path}`)
   const seoData = blogSeoData?.seo
-  const seoImage = blogData.blogImg.localFile.url
+  const seoImage = blogData?.blogImg?.localFile.url
   return (
     <SEO
       title={seoData?.metaTitle}
