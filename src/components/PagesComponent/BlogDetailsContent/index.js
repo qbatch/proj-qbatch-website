@@ -18,7 +18,6 @@ function App({ data, path }) {
 
   const blogArticle = Queries()
   const blogLikedData = blogArticle.allStrapiArticle.nodes.filter((item) => item.blogTitle !== data?.blogTitle)
-  console.log(blogLikedData, 'blogLikedData')
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('.section')

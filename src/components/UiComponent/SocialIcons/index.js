@@ -4,7 +4,6 @@ import SocialWrapper from "./style";
 
 const Index = (props) => {
   const { socialIcons } = props;
-  console.log(socialIcons, 'socialIcons')
   return (
     <SocialWrapper>
       <div className="d-flex flex-wrap social">
