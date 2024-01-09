@@ -44,15 +44,18 @@ export const Head = ({ pageContext }) => {
   const path = pageContext?.title
   const { title } = pageContext;
   const blogSeo = Queries()
+  const blogQuery = Queries()
+  const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.seo.slug === `${path}`)
   const blogSeoData = blogSeo.allStrapiArticle.nodes.find((node) => node.seo.slug === `${path}`)
   const seoData = blogSeoData?.seo
-  console.log(seoData, 'seoData')
+  const seoImage = blogData.blogImg.localFile.url
   return (
     <SEO
       title={seoData?.metaTitle}
       description={seoData?.metaDescription}
-      keywords={seoData?.keywords}
+      keywords={blogData?.blogData}
       pathname={`/blog${title}`}
+      image={seoImage}
     />
   )
 }
