@@ -16,7 +16,6 @@ const Index = (props) => {
 
   const BlogPost = ({ card, ind, onClick }) => {
     const customDate = new Date(card.publishedAt)
-    console.log(card, 'card')
     return ind === 0 ? (
       <Col md={12}>
         <div className="inner first-card" key={ind}>
