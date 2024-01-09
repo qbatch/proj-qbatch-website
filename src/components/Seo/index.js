@@ -31,7 +31,7 @@ const SEO = (props) => {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.image} />
+      {seo.image && <meta name="twitter:image" content={seo.image} />}
       <meta name="twitter:creator" content={seo.userName} />
       <meta property="og:url" content={seo.url} key="og:url" />
       <meta property="og:title" content={seo.title} key="og:title" />
@@ -40,7 +40,7 @@ const SEO = (props) => {
       <meta property="og:locale" content="en_US" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image" content={seo.image} key="og:image" />
+      {seo.image && <meta property="og:image" content={seo.image} key="og:image" />}
       <link rel="canonical" href={seo.url} />
       <meta name="keywords" content={seo.keywords} />
       <meta http-equiv="content-language" content={seo.language} />
