@@ -23,6 +23,7 @@ const AssistantWrapper = styled.div`
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
+      margin-bottom: 24px;
       span {
         border: 1px solid ${({ theme }) => theme.colors.dividerColor};
         color: ${({ theme }) => theme.colors.bodyLight};
@@ -37,6 +38,9 @@ const AssistantWrapper = styled.div`
     }
     p {
       font-size: 16px;
+      ${media.sm`
+            font-size: 14px;
+      `}
     }
     .scraper-box {
       padding: 72px 0px;
