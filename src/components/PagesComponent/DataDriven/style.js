@@ -9,7 +9,10 @@ const DataDriven = styled.div`
   .images-box {
     .d-flex {
       padding: 0 60px;
-      margin-bottom:24px;
+      margin-bottom: 24px;
+      ${media.lg`
+             padding: 0 20px;
+      `}
       ${media.md`
             padding: 0  ;
       `}

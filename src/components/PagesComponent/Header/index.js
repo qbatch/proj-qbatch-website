@@ -6,7 +6,6 @@ import Container from "../../UiComponent/Container";
 import Drawer from "../HeaderDrawer";
 import { navigate } from 'gatsby';
 
-import Logo from "../../../assets/images/qbatch-logo.svg";
 
 import HeaderWrapper from "./style";
 
@@ -57,8 +56,11 @@ const Index = () => {
         <Container>
           <div className="header-main">
             <div className="logo">
-              <Link to="/">
+              <Link to="/" className="d-none">
                 <img src={Logo} alt="no-logo" />
+              </Link>
+              <Link to="/">
+                <img src='/qbatch-logo.png' alt="no-logo" />
               </Link>
             </div>
             <nav className="header-menu">
@@ -66,7 +68,7 @@ const Index = () => {
                 {headerMenu.map((menu, ind) => (
                   <li key={ind}>
                     <Link to={menu.to} activeClassName="active">
-                      <span onClick={menu.name === 'Services' ? ()=>setOpenDrawer(true) :""}>{menu.name}</span>
+                      <span onClick={menu.name === 'Services' ? () => setOpenDrawer(true) : ''}>{menu.name}</span>
                     </Link>
                   </li>
                 ))}

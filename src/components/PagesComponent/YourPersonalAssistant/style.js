@@ -10,8 +10,8 @@ const AssistantWrapper = styled.div`
     .assistent-box {
       border-bottom: 1px solid #d2d9dc;
       min-height: 170px;
-      margin-top:24px;
-      margin-bottom:24px;
+      margin-top: 24px;
+      margin-bottom: 24px;
       .d-flex {
         margin-bottom: 24px;
         ${media.md`
@@ -21,6 +21,9 @@ const AssistantWrapper = styled.div`
       h4 {
         letter-spacing: 0px;
         font-size: 20px;
+        ${media.md`
+            font-size: 16px;
+      `}
       }
     }
     a {
@@ -31,6 +34,14 @@ const AssistantWrapper = styled.div`
     }
     p {
       font-size: 16px;
+      ${media.md`
+            font-size: 12px;
+      `}
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 `

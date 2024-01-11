@@ -18,9 +18,15 @@ const AssistantWrapper = styled.div`
             padding: 0  ;
       `}
       }
+      h2 {
+        margin-bottom: 24px;
+      }
       h4 {
         letter-spacing: 0px;
         font-size: 20px;
+        ${media.md`
+            font-size: 16px;
+      `}
       }
     }
     a {
@@ -31,6 +37,9 @@ const AssistantWrapper = styled.div`
     }
     p {
       font-size: 16px;
+      ${media.md`
+            font-size: 14px;
+      `}
     }
   }
 `
