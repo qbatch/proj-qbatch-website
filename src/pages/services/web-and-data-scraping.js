@@ -4,22 +4,24 @@ import { Queries } from '../../constants/queries'
 import SEO from '../../components/Seo'
 import Layout from '../../components/Layout/layout'
 import StartProject from '../../components/PagesComponent/StartProject'
-import WhatCanHelp from '../../components/PagesComponent/WhatCanYouHelp/index'
+import WebDataScrapingTechnology from '../../components/PagesComponent/WebDataScrapingTechnology'
 import ScrapeData from '../../components/PagesComponent/ScrapeData'
 import YourPersonalAssistant from '../../components/PagesComponent/YourPersonalAssistant'
-import ProvenWorkExperience from '../../components/PagesComponent/ProvenWorkExperience'
+import DataDeliveryFormats from '../../components/PagesComponent/DataDeliveryFormats'
 import DomainSpecificData from '../../components/PagesComponent/DomainSpecificData'
 import FaqSection from '../../components/PagesComponent/Faq'
 import DataDriven from '../../components/PagesComponent/DataDriven'
+import ChooseQbatch from '../../components/PagesComponent/ChooseQbatch'
 import StoppingDataDriven from '../../components/PagesComponent/StoppingDataDriven'
-import { ecomSliderItems, ecomFaqQuestion } from '../../constants'
+import Collaboration from '../../components/PagesComponent/Collaboration'
+import { webScrapingFaq } from '../../constants'
 import MarketplaceSellers from '../../components/PagesComponent/MarketplaceSellers'
-import QuotationSection from '../../components/PagesComponent/QuotationSection'
-import MarketplaceIntegrations from '../../components/PagesComponent/MarketplaceIntegrations'
+import DedicationWork from '../../components/PagesComponent/DedicationWork'
+import FeaturedProjects from '../../components/PagesComponent/FeaturedProjects'
 import ExtractionServices from '../../components/PagesComponent/ExtractionServices'
 import DesiredResult from '../../components/PagesComponent/IdeasAndInvestments'
 import WebScrapping from '../../../static/web-and-data-scraping.svg'
-import { automationData } from '../../constants'
+import WebScrappingBackground from '../../../static/web-scraping-bg.svg'
 
 const Ecommerce = () => {
   return (
@@ -34,6 +36,7 @@ const Ecommerce = () => {
       />
       <DataDriven />
       <StoppingDataDriven />
+      <DedicationWork />
       <YourPersonalAssistant />
       <ExtractionServices />
       <DesiredResult
@@ -45,15 +48,18 @@ const Ecommerce = () => {
       />
       <DomainSpecificData />
       <ScrapeData />
-      <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
-      <MarketplaceIntegrations />
+      <WebDataScrapingTechnology />
+      <DataDeliveryFormats />
+
       <MarketplaceSellers
-        heading="Saving Marketplace Sellers from doing too much work."
-        paragraph="Shrug off non-value-adding, repetitive tasks through modern technology and genius domain savvies. "
-        btnText="Take my worries away!"
+        heading="Scrape powerful data at scale — no coding, no servers, no expensive software required. We do it all for you!"
+        btnText="Hire Dedicated Web Scrapers"
+        backgroundImage={WebScrappingBackground}
       />
-      <FaqSection faqQuestion={ecomFaqQuestion} />
-      <QuotationSection />
+      <FeaturedProjects />
+      <ChooseQbatch />
+      <Collaboration />
+      <FaqSection faqQuestion={webScrapingFaq} />
       <StartProject />
     </Layout>
   )

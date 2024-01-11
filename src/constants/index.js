@@ -13,6 +13,11 @@ const counterData = [
   { id: 3, count: 98, desc: "Customer Happiness \n Index", symbol: "%" },
   { id: 4, count: 10, desc: "Years of Excellency", symbol: "" },
 ];
+const dedicationWork = [
+  { id: 1, count: 11000, desc: 'Web pages scraped so far', symbol: '+' },
+  { id: 2, count: 70, desc: 'Companies served', symbol: '+' },
+  { id: 3, count: 99.9, desc: 'Data Reliability', symbol: '%' },
+]
 const productDesignCounterData = [
   { id: 1, count: 150, desc: "Full Stack Developers", symbol: "+"},
   { id: 2, count: 150, desc: "Solutions Delivered Successfully", symbol: "+" },
@@ -1054,6 +1059,208 @@ const faqQuestion = [
         <span>
           Yes, our CTO as a Service is available on-demand, they can start supporting your business within 24 hrs after
           contact.{' '}
+        </span>
+      </div>
+    ),
+  },
+]
+
+const webScrapingFaq = [
+  {
+    id: 1,
+    title: 'How much do the data web scraping services cost?',
+    content: (
+      <div className="faq-content">
+        <span>
+          Data web scraping services costs range from around $600 to $1000 depending on the volume and complexity of
+          data as well as the expertise of the web scraping team.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'Can you handle large-scale web scraping projects?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, team Qbatch can handle large-scale web scraping projects by carefully:</span>
+        <ul>
+          <li>Locating and understanding data sources</li>
+          <li>YSelecting suitable web scraping automation tools</li>
+          <li>Managing requests using proxy servers</li>
+          <li>Scheduling data scraping</li>
+          <li>Validating and cleaning data</li>
+          <li>Processing and storing data</li>
+          <li>Monitoring and maintaining web data scraping framework</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'What is large-scale web scraping?',
+    content: (
+      <div className="faq-content">
+        <span>
+          Large-scale web scraping is the process of performing data extraction from millions of websites or mobile apps
+          extensively. Web scraping is an automated process that involves running multiple web scrapers on many
+          websites, both large and small, simultaneously depending upon the business's needs.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'Can you scrape websites that require login credentials?	',
+    content: (
+      <div className="faq-content">
+        <span>
+          Yes, scraping websites that require login credentials is technically possible. However, it is important to
+          comply with laws associated with user data privacy like GDPR. For that, general knowledge of HTTP Request
+          Methods is important. Besides you can add “/robots. txt” to the website’s URL end to check whether the website
+          supports web scraping.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'How do you ensure data quality and accuracy?	',
+    content: (
+      <div className="faq-content">
+        <span>
+          Following are reliable practices our web scrapers for hire practice to ensure data quality and accuracy
+          towards its intended purpose:
+        </span>
+        <ul>
+          <li>Establishing data governance guidelines </li>
+          <li>Defining data metrics</li>
+          <li>Identifying data quality failures</li>
+          <li>Setting up a data audit process </li>
+          <li>Ensuring data integrity</li>
+          <li>Monitoring and cleaning collected data </li>
+          <li>Validating data input</li>
+          <li>Validating data input</li>
+          <li>Backing up data to avoid permanent loss</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'Why should I use web scraping services?',
+    content: (
+      <div className="faq-content">
+        <span>You should use web scraping services for these reasons: </span>
+        <ul>
+          <li>Price monitoring .</li>
+          <li>Staying ahead of market trends</li>
+          <li>Keeping an eye on your competitors</li>
+          <li>Maintaining your brand image and identity</li>
+          <li>Social media management</li>
+          <li>SEO and SERP enhancement </li>
+          <li>Knowing your target audience better</li>
+          <li>Designing targeted marketing and advertisement campaigns</li>
+          <li>Improvising actively with changing industry trends</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'Below are the data types you can scrape using our web data scraping services?',
+    content: (
+      <div className="faq-content">
+        <span>You should use web scraping services for these reasons: </span>
+        <ul>
+          <li>Product and brand information </li>
+          <li>Pricing data</li>
+          <li>Images</li>
+          <li>Texts</li>
+          <li>Videos</li>
+          <li>Links </li>
+          <li>Links</li>
+          <li>Hidden information Images</li>
+          <li>Customer behavior and patterns </li>
+          <li>User feedback and sentiments</li>
+          <li>Social Media reviews and more</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How accurate is the data obtained through scraping?',
+    content: (
+      <div className="faq-content">
+        <span>
+          Data scraping collects data from different platforms with an accuracy of over 90%. Website scraping services
+          save you from messy copy-and-paste rituals juggling between layout documents — delivering safe and precise
+          information to the table.{' '}
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How is data scraping different from web crawling?',
+    content: (
+      <div className="faq-content">
+        <span>Following are a few differences between data scraping and web crawling:</span>
+        <ul>
+          <li>Web scraping extracts the data while web crawling indexes and finds web pages.</li>
+          <li>
+            Web scraping entails tools and services to automate data collection from small and large websites at once
+            while web crawling employs crawlers or bots to permanently follow links based on hyperlinks. Google and Bing
+            use crawlers to extract general data fields such as page titles, snippets, URL paths, etc. to show in the
+            search results.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How is data scraping different from web crawling?',
+    content: (
+      <div className="faq-content">
+        <span>
+          Yes, you can specify data fields for scraping via "custom extraction" — creating custom fields and getting
+          analyses based on page content and structure. How to create a custom field:
+        </span>
+        <ul>
+          <li>Set up a scraping configuration in the setting interface. </li>
+          <li>Add extraction rules to retrieve data during the page fetch.</li>
+          <li>
+            Choose extraction rules in the source code as per your requirement. These rules are usually written as
+            REGEX, XPATH queries, or as a combination of both.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'Are the scraped data formats compatible with my existing systems or databases?',
+    content: (
+      <div className="faq-content">
+        <span>
+          Yes, you can choose from multiple data formats such as CSV, XML, JSON, SQL format, tab-delimited, fixed-width,
+          etc., to match scraped data with your existing systems or databases.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'Are there any legal constraints or terms of service that need to be considered while scraping data?',
+    content: (
+      <div className="faq-content">
+        <span>
+          The only legal constraint to consider when data scraping is to not scrape sensitive/private data for profit.
+          Business owners worry about copyright infringement, contract breach, fraud, data theft, and more in case of
+          data scraping. Ethically, it is recommended to provide a user agent string to the data owner as a way to
+          contact you if needed.
         </span>
       </div>
     ),
@@ -2110,9 +2317,11 @@ const cycleProductData = [
 ]
 
 export {
+  dedicationWork,
   homeTiles,
   CareersData,
   values,
+  webScrapingFaq,
   clientsData,
   leaderData,
   companyCounter,

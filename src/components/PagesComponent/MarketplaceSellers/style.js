@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const MarketplaceSellersWrapper = styled.div`
-  background: url("/growing-bg.svg");
+  background-image: ${(props) => (props.backgroundImage ? `url(${props.backgroundImage})` : '/growing-bg.svg')};
   background-size: cover;
   padding: 120px 203px;
-  &.productDesign{
-    .text-h2.heading{
+  &.productDesign {
+    .text-h2.heading {
       font-size: 68px;
       ${media.md`
        font-size: 32px;
@@ -27,11 +27,11 @@ const MarketplaceSellersWrapper = styled.div`
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 1038px;
     margin-bottom: 20px;
-    ${media.sm `
+    ${media.sm`
       margin-bottom: 16px;
     `}
   }
-  .paragraph{
+  .paragraph {
     font-size: 24px;
     max-width: 931px;
     font-weight: 300;
@@ -43,6 +43,6 @@ const MarketplaceSellersWrapper = styled.div`
     margin-bottom :40px;
     `}
   }
-`;
+`
 
 export default MarketplaceSellersWrapper;

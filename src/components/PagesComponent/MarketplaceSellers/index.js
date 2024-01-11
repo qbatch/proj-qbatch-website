@@ -5,9 +5,9 @@ import { Container } from "react-bootstrap";
 import Button from "../../UiComponent/Button";
 import  MarketplaceSellersWrapper from "./style";
 
-const Index = ({heading, paragraph, btnText, wrapperClass}) => {
+const Index = ({ heading, paragraph, btnText, wrapperClass, backgroundImage }) => {
   return (
-    <MarketplaceSellersWrapper className={wrapperClass}>
+    <MarketplaceSellersWrapper className={wrapperClass} backgroundImage={backgroundImage}>
       <Container>
         <h2 className="text-h2 heading">{heading}</h2>
         <p className="paragraph">{paragraph}</p>
@@ -15,7 +15,7 @@ const Index = ({heading, paragraph, btnText, wrapperClass}) => {
       </Container>
     </MarketplaceSellersWrapper>
   )
-};
+}
 
 export default Index;
 
