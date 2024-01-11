@@ -5,6 +5,15 @@ const AssistantWrapper = styled.div`
   padding: 95px 0px;
   .heading-box {
     margin-bottom: 71px;
+    h2{
+      margin-bottom:24px;
+    }
+    p {
+      font-size: 16px;
+      ${media.md`
+            font-size: 14px;
+      `}
+    }
   }
   .images-box {
     .assistent-box {

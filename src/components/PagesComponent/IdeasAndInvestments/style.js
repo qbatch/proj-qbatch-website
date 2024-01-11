@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const IdeasWrapper = styled.div`
-  background: url("/growing-bg.svg");
+  background: url('/growing-bg.svg');
   background-size: cover;
   padding: 120px 203px;
   ${media.md`
@@ -14,18 +14,23 @@ const IdeasWrapper = styled.div`
   ${media.xs`
     padding: 96px 20px;
   `}
-  &.productDesign{
-    .heading{
+  .caption {
+    color: ${({ theme }) => theme.colors.whiteColor};
+    font-size: ${({ theme }) => theme.fonts.fsxs};
+  }
+  &.productDesign {
+    .heading {
       max-width: 1170px;
     }
-    button{
+    button {
       margin-left: auto;
     }
   }
   .heading {
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 1038px;
-    text-transform: none;
+    text-transform: capitalize;
+    margin-bottom:16px;
     .inner-heading {
       color: ${({ theme }) => theme.colors.dividerColor};
       display: block;
@@ -52,6 +57,6 @@ const IdeasWrapper = styled.div`
       width: 100%;
     }
   }
-`;
+`
 
 export default IdeasWrapper;

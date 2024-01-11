@@ -33,6 +33,9 @@ ${media.sm`
       line-height: 30px;
       padding-top: 8px;
       letter-spacing: 1.3px;
+      text-transform: capitalize;
+}
+
     }
     &:nth-child(4n){
       border-right: none;

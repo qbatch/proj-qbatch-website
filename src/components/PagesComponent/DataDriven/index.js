@@ -10,7 +10,7 @@ const Index = () => {
     const dataDrivenData = [
       {
         img: '/retain-23x-more-customers.svg',
-        title: 'Acquire 23X more customers.',
+        title: 'Acquire 23X more customers',
       },
       {
         img: '/retain-6x-more-customers.svg',
@@ -18,7 +18,7 @@ const Index = () => {
       },
       {
         img: '/retain-19x-more-customers.svg',
-        title: `Gain 19X more   profit`,
+        title: `Gain 19X more profit`,
       },
     ] 
 

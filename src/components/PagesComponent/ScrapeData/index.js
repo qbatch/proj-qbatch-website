@@ -55,7 +55,11 @@ const Index = () => {
                     <img src={data.img} alt={data.title} />
                     <h4 className="title">{data.title}</h4>
                   </div>
-                  <img src="/data-arrow.svg" className="arrow-img" alt="no-arrow" />
+                  {i < dataProcesss.length - 1 ? (
+                    <img src="/data-arrow.svg" className="arrow-img" alt="no-arrow" />
+                  ) : (
+                    ''
+                  )}
                 </div>
               )
             })}
@@ -73,7 +77,11 @@ const Index = () => {
                     <span className="index">{i + 1}</span>
                     <h4 className="title">{data.title}</h4>
                   </div>
-                  <img src="/data-arrow.svg" className="arrow-img" alt="no-arrow" />
+                  {i < dataProcesssWithoutImages.length - 1 ? (
+                    <img src="/data-arrow.svg" className="arrow-img" alt="no-arrow" />
+                  ) : (
+                    ''
+                  )}
                 </div>
               )
             })}
