@@ -82,7 +82,7 @@ const Index = () => {
                 return (
                   <Col md={6}>
                     <div className="d-flex flex-column assistent-box">
-                      <div className="d-flex gap-3">
+                      <div className="d-flex gap-3 align-items-center">
                         <img src={list.img} alt={list.title} />
                         <h4>{list.title}</h4>
                       </div>

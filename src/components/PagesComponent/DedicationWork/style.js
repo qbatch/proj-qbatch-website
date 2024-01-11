@@ -46,7 +46,7 @@ const AchievementsWrapper = styled.div`
         background-color: ${({ theme }) => theme.colors.dividerColor};
         right: 0;
         top: 0;
-        ${media.xs`
+        ${media.sm`
           width: 0px;
         `}
       }

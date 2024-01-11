@@ -1189,7 +1189,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 7,
+    id: 8,
     title: 'How accurate is the data obtained through scraping?',
     content: (
       <div className="faq-content">
@@ -1202,7 +1202,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 7,
+    id: 9,
     title: 'How is data scraping different from web crawling?',
     content: (
       <div className="faq-content">
@@ -1220,7 +1220,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 7,
+    id: 10,
     title: 'How is data scraping different from web crawling?',
     content: (
       <div className="faq-content">
@@ -1240,7 +1240,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 7,
+    id: 11,
     title: 'Are the scraped data formats compatible with my existing systems or databases?',
     content: (
       <div className="faq-content">
@@ -1252,7 +1252,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 7,
+    id: 12,
     title: 'Are there any legal constraints or terms of service that need to be considered while scraping data?',
     content: (
       <div className="faq-content">
