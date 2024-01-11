@@ -7,7 +7,7 @@ import Button from "../../UiComponent/Button";
 import IdeasWrapper from "./style";
 
 const Index = (props) => {
-  const { heading, span, isButton, className, btnText, headingSize, align } = props
+  const { heading, span, isButton, className, btnText, headingSize, align, caption } = props
   return (
     <IdeasWrapper className={className}>
       <Container>
@@ -15,6 +15,7 @@ const Index = (props) => {
           <h2 className={`text-h1 heading ${headingSize}`}>
             {heading} {span && <span className="inner-heading">{span}</span>}
           </h2>
+          {caption && <span className="caption">{caption}</span> }
           {isButton && (
             <div className={`idea-btn ${align}`}>
               <Button text={btnText} onClick={() => navigate('/contact')} className="secondary-btn" />

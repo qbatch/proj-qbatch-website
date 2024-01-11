@@ -72,8 +72,9 @@ const Index = () => {
     <>
       <AssistantWrapper>
         <Container>
-          <div className="text-center heading-box">
+          <div className=" heading-box">
             <h2 className="color-primary">Domain-Specific Data Scraping Solutions</h2>
+            <p>we offer well-structured and customized data extraction solutions in the following domains:</p>
           </div>
 
           <div className="images-box">
