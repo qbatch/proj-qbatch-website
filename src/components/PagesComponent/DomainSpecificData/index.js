@@ -95,9 +95,6 @@ const Index = () => {
             </Row>
           </div>
 
-          <div className="d-flex justify-content-center my-5">
-            <Button text="Scrape Your Data" onClick={() => navigate('/contact')} />
-          </div>
         </Container>
       </AssistantWrapper>
       <Divider />
