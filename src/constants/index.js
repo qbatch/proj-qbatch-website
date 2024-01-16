@@ -1086,7 +1086,7 @@ const webScrapingFaq = [
         <span>Yes, team Qbatch can handle large-scale web scraping projects by carefully:</span>
         <ul>
           <li>Locating and understanding data sources</li>
-          <li>YSelecting suitable web scraping automation tools</li>
+          <li>Selecting suitable web scraping automation tools</li>
           <li>Managing requests using proxy servers</li>
           <li>Scheduling data scraping</li>
           <li>Validating and cleaning data</li>
