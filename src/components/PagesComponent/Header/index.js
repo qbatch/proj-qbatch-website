@@ -60,7 +60,7 @@ const Index = () => {
                 <img src={Logo} alt="no-logo" />
               </Link>
               <Link to="/">
-                <img src='/qbatch-logo.png' alt="no-logo" />
+                <img src='/qbatch-logo.svg' alt="no-logo" />
               </Link>
             </div>
             <nav className="header-menu">
