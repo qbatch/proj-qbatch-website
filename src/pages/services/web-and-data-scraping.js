@@ -23,7 +23,7 @@ import DesiredResult from '../../components/PagesComponent/IdeasAndInvestments'
 import WebScrapping from '../../../static/web-and-data-scraping.svg'
 import WebScrappingBackground from '../../../static/web-scraping-bg.svg'
 
-const Ecommerce = () => {
+const WebDataScrapping = () => {
   return (
     <Layout>
       <Banner
@@ -67,9 +67,9 @@ const Ecommerce = () => {
 }
 
 export const Head = () => {
-  const eCommerceData = Queries()
-  const seoData = eCommerceData.allStrapiEcommerce.nodes[0]?.seo
-
+    const webScrapingData = Queries()
+    const seoData = webScrapingData.allStrapiWebAndDataScraping.nodes[0]?.seo[0]
+  console.log(seoData, 'seoData')
   return (
     <SEO
       title={seoData.metaTitle}
@@ -77,9 +77,9 @@ export const Head = () => {
       keywords={seoData.keywords}
       language={seoData.language}
       robots={seoData.metaRobots}
-      pathname={seoData.slug}
+      pathname={`/services${seoData.slug}`}
     />
   )
 }
 
-export default Ecommerce
+export default WebDataScrapping

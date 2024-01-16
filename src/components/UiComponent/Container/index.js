@@ -3,7 +3,6 @@ import { media } from "../../../theme/media-mixins";
 
 const Container = styled.div`
   padding: 0 144px;
-
   ${media.lg`
   padding: 0 80px;
   `}
@@ -19,9 +18,9 @@ const Container = styled.div`
   ${media.xs`
     padding: 0 20px;
   `}
-  @media(min-width:1600px){
-    max-width:1600px;
-    margin:0 auto;
+  @media(min-width:1600px) {
+    max-width: 1600px;
+    margin: 0 auto;
   }
-`;
+`
 export default Container;

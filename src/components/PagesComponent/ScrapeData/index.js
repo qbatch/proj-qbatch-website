@@ -13,7 +13,7 @@ const Index = () => {
     },
     {
       img: '/you-use.svg',
-      title: 'You Identify',
+      title: 'You Use',
     },
   ]
   const dataProcesssWithoutImages = [

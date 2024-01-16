@@ -16,7 +16,7 @@ const ChoseQbatchWrapper = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:70px;
+    gap:33px;
 
     img {
       width: 80px;

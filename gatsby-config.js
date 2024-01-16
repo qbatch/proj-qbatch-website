@@ -96,7 +96,8 @@ const strapiConfig = {
     'header',
     'service',
     'privacy-policy',
-    'terms-and-condition'
+    'web-and-data-scraping',
+    'terms-and-condition',
   ],
   queryLimit: 1000,
 }

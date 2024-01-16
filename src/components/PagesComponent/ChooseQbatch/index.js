@@ -22,8 +22,8 @@ const Index = () => {
       title: '100% Founders Mentality',
     },
     {
-      img: '/technical-excellence.svg',
-      title: 'Technical Excellence',
+      img: '/dependable-engineering.svg',
+      title: 'Dependable Engineering Craftsmanship',
     },
     {
       img: '/neutral-software-analysis.svg',

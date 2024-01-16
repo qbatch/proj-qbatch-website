@@ -17,7 +17,6 @@ const BlogDetails = ({ pageContext }) => {
       scrolled = (winScroll / height) * 100
     document.getElementById('progressBar').style.width = scrolled + 5 + '%'
   }
-
   useEffect(() => {
     window.addEventListener('scroll', progressBarScroll)
     return () => {
