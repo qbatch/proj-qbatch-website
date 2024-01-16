@@ -37,7 +37,7 @@ const BlogPage = ({ pageContext }) => {
       <Container>
         <div className="position-relative">
           <div className="tabs d-flex flex-column gap-2">
-            <div className="d-flex gap-2">
+            <div className="d-flex gap-2 flex-wrap">
               <button
                 className={`tabs-buttons ${location.pathname === '/blog/' ? 'active' : ''}`}
                 onClick={() => {

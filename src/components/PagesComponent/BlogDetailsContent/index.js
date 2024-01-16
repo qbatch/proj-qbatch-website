@@ -15,7 +15,6 @@ import ContentWrapper from "./style";
 function App({ data, path }) {
   const [activeSection, setActiveSection] = useState(0)
   const [showbars, setShowbars] = useState()
-
   const blogArticle = Queries()
   const blogLikedData = blogArticle.allStrapiArticle.nodes.filter((item) => item.blogTitle !== data?.blogTitle)
   useEffect(() => {
@@ -286,7 +285,16 @@ function App({ data, path }) {
                         </li>
                       </ul>
                       <div>
-                        <img src="/author-name-arrow.svg" className="pointer" alt="no-arrow" />
+                        <img
+                          src="/author-name-arrow.svg"
+                          className="pointer"
+                          alt="no-arrow"
+                          onClick={() => {
+                            navigate(`/author/${data?.user.username}`, {
+                              state: { slug: data.seo.slug },
+                            })
+                          }}
+                        />
                       </div>
                     </div>
                   </div>

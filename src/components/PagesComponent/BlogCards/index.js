@@ -1,14 +1,13 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { navigate } from "gatsby";
-
 import PrimaryButton from "../../UiComponent/PrimaryButton";
 import { TimeAgo, ReadingTime } from "../../../constants/Utils";
 
 import BlogCardsWrapper from "./style";
 
 const Index = (props) => {
-  const { heading, isBtn, isSlice, blogInner, data, isFavorite, } = props;
+  const { heading, isBtn, isSlice, blogInner, data, isFavorite, upperHeading } = props;
   const categoryData = data.filter(
     (item) => item.category.categoryName === heading
   );
@@ -126,13 +125,15 @@ const Index = (props) => {
   }
 
   return (
+  <>
     <BlogCardsWrapper blogInner={blogInner}>
       <div className="d-flex align-items-center justify-content-between blog-heading">
+        {upperHeading && <h2>{props.upperHeading}</h2>}
         <h2>{heading}</h2>
         {isBtn && <PrimaryButton text="Explore More" />}
       </div>
-      {data.length === 0  ? (
-        "No Data Found"
+      {data.length === 0 ? (
+        'No Data Found'
       ) : (
         <Row>
           {(isFavorite
@@ -146,12 +147,13 @@ const Index = (props) => {
             .slice(0)
             .reverse()
             .map((card, ind) => {
-              return <BlogPost card={card} ind={ind} />;
+              return <BlogPost card={card} ind={ind} />
             })}
         </Row>
       )}
     </BlogCardsWrapper>
-  );
+    </>
+  )
 };
 
 export default Index;

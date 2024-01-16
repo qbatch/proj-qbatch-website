@@ -21,7 +21,6 @@ const IndexPage = () => {
   const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
   const seoData = seo
   const schemaData = schema
-  console.log(seoData, 'seoData')
   function replaceUnderscoreWithAt(obj) {
     if (obj && typeof obj === 'object') {
       if (Array.isArray(obj)) {
