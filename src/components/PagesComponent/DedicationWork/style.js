@@ -69,6 +69,7 @@ const AchievementsWrapper = styled.div`
         margin-top: 14px;
         line-height: 32px;
         white-space: pre-line;
+        text-transform: capitalize;
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
         `}

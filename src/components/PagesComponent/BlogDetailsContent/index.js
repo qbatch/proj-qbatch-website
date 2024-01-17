@@ -289,7 +289,7 @@ function App({ data, path }) {
                           className="pointer"
                           alt="no-arrow"
                           onClick={() => {
-                            navigate(`/author/${data?.user.username}`, {
+                            navigate(`/authors/${data?.user.username}`, {
                               state: { slug: data.seo.slug },
                             })
                           }}

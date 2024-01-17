@@ -11,7 +11,7 @@ const Index = (props) => {
   const categoryData = data?.filter(
     (item) => item.category.categoryName === heading
   );
-  const editorPicksData = data.filter((item) => item.favorite === true);
+  const editorPicksData = data?.filter((item) => item.favorite === true);
 
   const BlogPost = ({ card, ind, onClick }) => {
     const customDate = new Date(card.publishedAt)
@@ -132,11 +132,12 @@ const Index = (props) => {
         <h2>{heading}</h2>
         {isBtn && <PrimaryButton text="Explore More" />}
       </div>
-      {data.length === 0 ? (
+      {data?.length === 0 ? (
         'No Data Found'
       ) : (
         <Row>
-          {(isFavorite
+          {data &&
+          (isFavorite
             ? editorPicksData
             : isSlice
             ? (heading && !blogInner ? categoryData : data)?.slice(0, 3)
@@ -148,7 +149,8 @@ const Index = (props) => {
             .reverse()
             .map((card, ind) => {
               return <BlogPost card={card} ind={ind} />
-            })}
+            })} 
+      
         </Row>
       )}
     </BlogCardsWrapper>

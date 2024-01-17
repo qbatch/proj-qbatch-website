@@ -11,7 +11,7 @@ const Author = ({ pageContext, location }) => {
   const { state } = location
   const slug = state && state.slug
   const blogQuery = Queries()
-  const recommendedArticles = blogQuery.allStrapiUser.nodes.filter((x) => x.username === title)[0].recommendeds
+  const recommendedArticles = blogQuery.allStrapiUser.nodes.filter((x) => x.username === title)[0]?.recommendeds
   const data = blogQuery.allStrapiArticle.nodes.filter((x) => x.user.username === title)
   return (
     <Layout>
