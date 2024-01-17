@@ -224,7 +224,7 @@ const Index = ({ page }) => {
                     "Mobile App Development",
                     "CTO as a Service",
                     "Enterprise Software Development",
-                    "DvOps & Cloud",
+                    "DevOps & Cloud",
                     "Mobile Development",
                     "Web App Development",
                     "E-Commerce Automation Services",
