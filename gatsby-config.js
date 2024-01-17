@@ -79,6 +79,12 @@ const strapiConfig = {
         },
       },
     },
+    {
+      singularName: 'user',
+      queryParams: {
+        populate: '*',
+      },
+    },
   ],
   singleTypes: [
     'home',
@@ -96,7 +102,7 @@ const strapiConfig = {
     'header',
     'service',
     'privacy-policy',
-    'terms-and-condition'
+    'terms-and-condition',
   ],
   queryLimit: 1000,
 }

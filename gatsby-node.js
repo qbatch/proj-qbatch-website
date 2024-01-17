@@ -14,8 +14,14 @@ exports.createPages = async ({ graphql, actions }) => {
               categoryName
               slug
             }
-            user{
+            user {
               username
+              description
+              image {
+                localFile {
+                  url
+                }
+              }
             }
             id
           }
@@ -52,6 +58,8 @@ exports.createPages = async ({ graphql, actions }) => {
      component: path.resolve('./src/pages/author.js'),
      context: {
        title: node.user.username,
+       description: node.user.description,
+       img: node.user.image,
      },
    })
   

@@ -7,16 +7,18 @@ import { Queries } from '../constants/queries'
 import Layout from '../components/Layout/layout'
 
 const Author = ({ pageContext, location }) => {
-  const path = pageContext?.title
+  const {title,description,img}=pageContext;
   const { state } = location
   const slug = state && state.slug
   const blogQuery = Queries()
-  const data = blogQuery.allStrapiArticle.nodes.filter((x) => x.user.username === path)
+  const recommendedArticles = blogQuery.allStrapiUser.nodes.filter((x) => x.username === title)[0].recommendeds
+  const data = blogQuery.allStrapiArticle.nodes.filter((x) => x.user.username === title)
   return (
     <Layout>
-      <AuthorBanner data={data} slug={slug} />
+      <AuthorBanner title={title} slug={slug} authorImage={img?.localFile?.url} description={description} />
       <Container>
-      <BlogCards upperHeading={`Recent Stories by ${path}`} data={data} />
+        <BlogCards upperHeading={`Recent Stories by ${title}`} data={data} />
+        <BlogCards upperHeading={'Recommended Articles'} data={recommendedArticles} />
       </Container>
     </Layout>
   )

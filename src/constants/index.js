@@ -1238,7 +1238,7 @@ const webScrapingFaq = [
   },
   {
     id: 11,
-    title: 'How is data scraping different from web crawling?',
+    title: 'Can I specify the data fields I want to scrape?',
     content: (
       <div className="faq-content">
         <span>

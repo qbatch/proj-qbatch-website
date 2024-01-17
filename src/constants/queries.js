@@ -25,6 +25,12 @@ export const Queries = () => {
            }
            user {
              username
+             description
+             image {
+               localFile {
+                 url
+               }
+             }
            }
            category {
              categoryName
@@ -238,6 +244,52 @@ export const Queries = () => {
              metaDescription
              language
              keywords
+           }
+         }
+       }
+       allStrapiUser {
+         nodes {
+           username
+           recommendeds {
+             blogTitle
+             blogDescription {
+               data {
+                 blogDescription
+               }
+             }
+             user {
+               username
+               description
+               image {
+                 localFile {
+                   url
+                 }
+               }
+             }
+             category {
+               categoryName
+               slug
+             }
+             blogTags {
+               strapi_json_value
+             }
+             blogImg {
+               localFile {
+                 url
+               }
+             }
+             id
+             publishedAt
+             favorite
+             bannerBlog
+             seo {
+               metaTitle
+               slug
+               metaRobots
+               metaDescription
+               language
+               keywords
+             }
            }
          }
        }

@@ -8,7 +8,7 @@ import BlogCardsWrapper from "./style";
 
 const Index = (props) => {
   const { heading, isBtn, isSlice, blogInner, data, isFavorite, upperHeading } = props;
-  const categoryData = data.filter(
+  const categoryData = data?.filter(
     (item) => item.category.categoryName === heading
   );
   const editorPicksData = data.filter((item) => item.favorite === true);
@@ -59,7 +59,7 @@ const Index = (props) => {
                   </div>
                 </div>
                 <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-0 read-time">
-                  <span>{card.user.username}</span>
+                  <span>{card?.user?.username}</span>
                   <PrimaryButton
                     text="Explore More"
                     fontSize="16px"
@@ -101,7 +101,7 @@ const Index = (props) => {
             </p>
             <div className="blog-badge">{card.blogTags.strapi_json_value[0]}</div>
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-              <span>{card.user.username}</span>
+              <span>{card?.user?.username}</span>
               <div className="timer">
                 <img src="/timer-blue.svg" alt="timer" />
                 <span>

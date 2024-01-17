@@ -41,6 +41,7 @@ const BlogDetailsWrapper = styled.div`
     font-weight: 400;
     line-height: 18px;
     max-width: 734px;
+    min-height:200px;
   }
   .image-box {
     padding: 0px 40px;
