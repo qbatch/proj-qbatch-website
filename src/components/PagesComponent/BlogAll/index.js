@@ -9,18 +9,18 @@ import DeliveredToInbox from "../../PagesComponent/DeliveredToInbox";
 import BlogCards from "../../PagesComponent/BlogCards";
 import { ReadingTime } from "../../../constants/Utils";
 
-import BlogAllWrapprt from "./style";
+import { BlogAllWrapprt, InnerBannerWrapper } from './style'
 
 const index = ({ data }) => {
   const blogBannerData = data.filter((item) => item.bannerBlog === true);
-  
+  console.log(blogBannerData.blogImg, 'blogBannerData')
   return (
     <BlogAllWrapprt>
       {blogBannerData
         .slice(0, 1)
         .reverse()
         .map((item, ind) => (
-          <div className="inner-banner" key={ind}>
+          <InnerBannerWrapper key={ind} backgroundImage={item.blogImg?.localFile.url}>
             <div className="full-flex">
               <div className="blog-badge">Blog</div>
             </div>
@@ -60,7 +60,7 @@ const index = ({ data }) => {
                 />
               </div>
             </div>
-          </div>
+          </InnerBannerWrapper>
         ))}
 
       <BlogCards heading="Latest Stories" isBtn={true} isSlice={true} blogInner={true} data={data} />

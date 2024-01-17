@@ -28,7 +28,7 @@ const experties = [
   },
 ];
 
-const Index = ({ headingClass }) => {
+const Index = ({ headingClass, paragraph }) => {
   return (
     <CollaborationWrapper>
       <Container>
@@ -36,8 +36,8 @@ const Index = ({ headingClass }) => {
           <div className="section-heading">
             <h2 className={`heading ${headingClass}`}>Collaboration Models For Everlasting Partnerships</h2>
             <p>
-              Our unique "Happy Paths" approach is a predictive and transparent way to implement your idea. Choose what
-              suits you best
+              {paragraph ||
+                'Our unique Happy Paths approach is a predictive and transparent way to implement your idea. Choose what suits you best'}
             </p>
           </div>
           <div className="collaboration-content">
@@ -57,13 +57,13 @@ const Index = ({ headingClass }) => {
                     <BsArrowRight />
                   </div> */}
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       </Container>
     </CollaborationWrapper>
-  );
-};
+  )
+}
 
 export default Index;

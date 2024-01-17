@@ -42,6 +42,7 @@ const FooterWrapper = styled.div`
         display: block;
         padding-bottom: 8px;
         letter-spacing: 0;
+        text-transform:capitalize;
       }
       .email-input {
         padding: 39px 0 9px;

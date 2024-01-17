@@ -156,7 +156,6 @@ function App({ data, path }) {
       to: `https://reddit.com/submit?url=https://qbatch.com/blog${path}`,
     },
   ]
-
   return (
     <ContentWrapper>
       <div className="d-sm-flex">
@@ -229,7 +228,7 @@ function App({ data, path }) {
                                     ))}
                                   </div>
                                   <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-                                    <span>{card.user.username}</span>
+                                    <span>{card?.user?.username}</span>
                                     <div className="timer">
                                       <img src="/timer-blue.svg" alt="timer" />
                                       <span>
@@ -264,7 +263,7 @@ function App({ data, path }) {
                       <span>{data?.user.username}</span>
                     </div>
                     <span className="title">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      {data?.user.description}
                     </span>
                     <div className="d-flex justify-content-between mt-32">
                       <ul className="d-flex social-link">

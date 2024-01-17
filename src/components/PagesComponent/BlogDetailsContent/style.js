@@ -21,7 +21,7 @@ const ContentWrapper = styled.div`
       .paragraph {
         h1,
         h3 {
-          font-size:22px;
+          font-size: 22px;
           margin-bottom: 32px;
           span {
             font-family: 'Inter Tight', sans-serif;
@@ -30,8 +30,8 @@ const ContentWrapper = styled.div`
             font-weight: ${({ theme }) => theme.fontWeight.semiBold} !important;
           }
         }
-        h2{
-          font-size:26px;
+        h2 {
+          font-size: 26px;
         }
         p {
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
@@ -101,6 +101,12 @@ const ContentWrapper = styled.div`
     }
     .title {
       line-height: 23px;
+      display: -webkit-box;
+      max-width: 400px;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .social-link {
       gap: 20px;
@@ -260,6 +266,5 @@ const ContentWrapper = styled.div`
     height: 4px;
     width: 5%;
   }
-
 `
 export default ContentWrapper;

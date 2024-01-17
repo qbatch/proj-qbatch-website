@@ -9,10 +9,10 @@ const WhatWeDoWrapper = styled.div`
     `}
   }
   .section-heading {
-    .heading{
+    .heading {
       text-transform: inherit;
-    line-height: 84px;
-    margin-bottom: 22px;
+      line-height: 84px;
+      margin-bottom: 22px;
     }
     p {
       max-width: 820px;
@@ -30,15 +30,15 @@ const WhatWeDoWrapper = styled.div`
   .services-provided {
     .service {
       margin-top: 58px;
-      img{
+      img {
         max-width: 60px;
       }
       .do-title {
         margin-left: 40px;
-        ${media.sm `
+        ${media.sm`
           margin-left: 30px;
         `}
-        .heading{
+        .heading {
           margin-bottom: 18px;
           color: ${({ theme }) => theme.colors.bodyTextVariant};
           letter-spacing: 0;
@@ -46,6 +46,7 @@ const WhatWeDoWrapper = styled.div`
         .paragraph {
           color: ${({ theme }) => theme.colors.textMedium};
           white-space: pre-line;
+          text-transform: capitalize;
           line-height: 24px;
           font-size: 16px;
           ${media.sm`
@@ -55,6 +56,6 @@ const WhatWeDoWrapper = styled.div`
       }
     }
   }
-`;
+`
 
 export default WhatWeDoWrapper;

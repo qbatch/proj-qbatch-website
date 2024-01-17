@@ -3,6 +3,7 @@ import { media } from '../../../theme/media-mixins'
 
 const AssistantWrapper = styled.div`
   padding: 95px 0px;
+  padding-bottom:16px;
   .heading-box {
     margin-bottom: 71px;
   }

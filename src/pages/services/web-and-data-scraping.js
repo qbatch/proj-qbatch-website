@@ -59,7 +59,7 @@ const Ecommerce = () => {
       />
       <FeaturedProjects />
       <ChooseQbatch />
-      <Collaboration />
+      <Collaboration paragraph="Predictive and transparent ways to implement your idea. Choose what suits you best" />
       <FaqSection faqQuestion={webScrapingFaq} />
       <StartProject />
     </Layout>
