@@ -1068,6 +1068,24 @@ const faqQuestion = [
 const webScrapingFaq = [
   {
     id: 1,
+    title: 'Can you handle large-scale web scraping projects?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, team Qbatch can handle large-scale web scraping projects by carefully:</span>
+        <ul>
+          <li>Locating and understanding data sources</li>
+          <li>Selecting suitable web scraping automation tools</li>
+          <li>Managing requests using proxy servers</li>
+          <li>Scheduling data scraping</li>
+          <li>Validating and cleaning data</li>
+          <li>Processing and storing data</li>
+          <li>Monitoring and maintaining web data scraping framework</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 2,
     title: 'How much do the data web scraping services cost?',
     content: (
       <div className="faq-content">
@@ -1079,7 +1097,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 2,
+    id: 3,
     title: 'Can you handle large-scale web scraping projects?',
     content: (
       <div className="faq-content">
@@ -1097,7 +1115,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 3,
+    id: 4,
     title: 'What is large-scale web scraping?',
     content: (
       <div className="faq-content">
@@ -1110,7 +1128,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 4,
+    id: 5,
     title: 'Can you scrape websites that require login credentials?	',
     content: (
       <div className="faq-content">
@@ -1124,7 +1142,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     title: 'How do you ensure data quality and accuracy?	',
     content: (
       <div className="faq-content">
@@ -1140,20 +1158,19 @@ const webScrapingFaq = [
           <li>Ensuring data integrity</li>
           <li>Monitoring and cleaning collected data </li>
           <li>Validating data input</li>
-          <li>Validating data input</li>
           <li>Backing up data to avoid permanent loss</li>
         </ul>
       </div>
     ),
   },
   {
-    id: 5,
+    id: 7,
     title: 'Why should I use web scraping services?',
     content: (
       <div className="faq-content">
         <span>You should use web scraping services for these reasons: </span>
         <ul>
-          <li>Price monitoring .</li>
+          <li>Price monitoring</li>
           <li>Staying ahead of market trends</li>
           <li>Keeping an eye on your competitors</li>
           <li>Maintaining your brand image and identity</li>
@@ -1167,7 +1184,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 6,
+    id: 8,
     title: 'Below are the data types you can scrape using our web data scraping services?',
     content: (
       <div className="faq-content">
@@ -1189,20 +1206,20 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 8,
+    id: 9,
     title: 'How accurate is the data obtained through scraping?',
     content: (
       <div className="faq-content">
         <span>
           Data scraping collects data from different platforms with an accuracy of over 90%. Website scraping services
           save you from messy copy-and-paste rituals juggling between layout documents — delivering safe and precise
-          information to the table.{' '}
+          information to the table.
         </span>
       </div>
     ),
   },
   {
-    id: 9,
+    id: 10,
     title: 'How is data scraping different from web crawling?',
     content: (
       <div className="faq-content">
@@ -1220,7 +1237,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 10,
+    id: 11,
     title: 'How is data scraping different from web crawling?',
     content: (
       <div className="faq-content">
@@ -1240,7 +1257,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 11,
+    id: 12,
     title: 'Are the scraped data formats compatible with my existing systems or databases?',
     content: (
       <div className="faq-content">
@@ -1252,7 +1269,7 @@ const webScrapingFaq = [
     ),
   },
   {
-    id: 12,
+    id: 13,
     title: 'Are there any legal constraints or terms of service that need to be considered while scraping data?',
     content: (
       <div className="faq-content">
