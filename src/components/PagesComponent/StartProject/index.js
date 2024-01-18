@@ -101,20 +101,13 @@ const Index = ({ page }) => {
       <Container>
         <Row className="justify-content-between">
           <Col xxl={5} lg={5} className="order-2 order-lg-1">
-            {page === "contact" ? (
+            {page === 'contact' ? (
               <h1 className=" text-h2 color-primary">Start a Project</h1>
             ) : (
               <h2 className="color-primary">Start a Project</h2>
             )}
-            <p className="subtitle">
-              Work with the most friendly yet focused developers!
-            </p>
-            <Form
-              className="project-form"
-              noValidate
-              validated={validated}
-              onSubmit={handleSubmit}
-            >
+            <p className="subtitle">Work with the most friendly yet focused developers!</p>
+            <Form className="project-form" noValidate validated={validated} onSubmit={handleSubmit}>
               <Input
                 placeholder="Full Name"
                 name="name"
@@ -144,49 +137,35 @@ const Index = ({ page }) => {
                 onClick={() => setOpen(!open)}
                 open={open}
                 content={
-                  <div
-                    className={!open && modal ? "add-height" : "zero-height"}
-                  >
-                    <RadioButton
-                      type="radio"
-                      label={modal}
-                      value={modal}
-                      checked={modal}
-                      name="collaboration"
-                    />
+                  <div className={!open && modal ? 'add-height' : 'zero-height'}>
+                    <RadioButton type="radio" label={modal} value={modal} checked={modal} name="collaboration" />
                   </div>
                 }
               >
                 <div className="seperation d-flex justify-content-between"></div>
-                {[
-                  "Time and Material",
-                  "Fixed Scope Product Development",
-                  "Hire Dedicated Development Team",
-                ].map((value) => {
-                  return (
-                    <div className="collapse-radio">
-                      <RadioButton
-                        key={value}
-                        type="radio"
-                        label={value}
-                        value={value}
-                        checked={formData.collaboration === value}
-                        name="collaboration"
-                        onChange={handleInputChange}
-                      />
-                    </div>
-                  );
-                })}
+                {['Time and Material', 'Fixed Scope Product Development', 'Hire Dedicated Development Team'].map(
+                  (value) => {
+                    return (
+                      <div className="collapse-radio">
+                        <RadioButton
+                          key={value}
+                          type="radio"
+                          label={value}
+                          value={value}
+                          checked={formData.collaboration === value}
+                          name="collaboration"
+                          onChange={handleInputChange}
+                        />
+                      </div>
+                    )
+                  }
+                )}
               </Collapse>
 
               <Collapse
                 content={
                   <div
-                    className={
-                      !serviceOpen && serviceSelect.length > 0 && serviceSelect
-                        ? "add-height"
-                        : "zero-height"
-                    }
+                    className={!serviceOpen && serviceSelect.length > 0 && serviceSelect ? 'add-height' : 'zero-height'}
                   >
                     <Row>
                       {serviceSelect.slice(0.6).map((value, key) => {
@@ -199,15 +178,11 @@ const Index = ({ page }) => {
                               value={value}
                               name="collaboration"
                               onChange={(e) =>
-                                setServiceSelect(
-                                  serviceSelect.filter(
-                                    (item) => item !== e.target.value
-                                  )
-                                )
+                                setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
                               }
                             />
                           </Col>
-                        );
+                        )
                       })}
                     </Row>
                   </div>
@@ -219,16 +194,16 @@ const Index = ({ page }) => {
                 <div className="seperation d-flex justify-content-between"></div>
                 <Row>
                   {[
-                    "Design & Development",
-                    "MVP Development",
-                    "Mobile App Development",
-                    "CTO as a Service",
-                    "Enterprise Software Development",
-                    "DevOps & Cloud",
-                    "Mobile Development",
-                    "Web App Development",
-                    "E-Commerce Automation Services",
-                    "Other",
+                    'Design & Development',
+                    'MVP Development',
+                    'Mobile App Development',
+                    'CTO as a Service',
+                    'Enterprise Software Development',
+                    'DevOps & Cloud',
+                    'Mobile Development',
+                    'Web App Development',
+                    'E-Commerce Automation Services',
+                    'Other',
                   ]
                     .slice(0.6)
                     .map((value) => {
@@ -243,7 +218,7 @@ const Index = ({ page }) => {
                             onChange={handleInputChange}
                           />
                         </Col>
-                      );
+                      )
                     })}
                 </Row>
               </Collapse>
@@ -262,12 +237,12 @@ const Index = ({ page }) => {
                   width="12px"
                   fontSize="12px"
                   base="5px"
-                  onChange={() => toggleCheckbox("terms")}
+                  onChange={() => toggleCheckbox('terms')}
                   required={true}
                   label={
                     <>
                       I understand and agree to the
-                      <Link className="ms-1" to="/">
+                      <Link className="ms-1" to="/terms-and-conditions">
                         Terms & Conditions
                       </Link>
                     </>
@@ -282,7 +257,7 @@ const Index = ({ page }) => {
                   label="I agree to receive marketing and promotion related emails."
                   name="promotion"
                   base="19px"
-                  onChange={() => toggleCheckbox("promotion")}
+                  onChange={() => toggleCheckbox('promotion')}
                 />
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
                   {/* <ReCaptcha
@@ -291,11 +266,7 @@ const Index = ({ page }) => {
                     onVerify={(token) => submit(token)}
                     submitted={submitted}
                   /> */}
-                  <Button
-                    text="Submit"
-                    btnType="submit"
-                    className="pt-md-0 pt-3"
-                  />
+                  <Button text="Submit" btnType="submit" className="pt-md-0 pt-3" />
                 </div>
               </div>
             </Form>
@@ -303,9 +274,7 @@ const Index = ({ page }) => {
           <Col xxl={5} lg={6} className="order-1 order-lg-2">
             <div className="testimonials">
               <h3 className="color-primary">Testimonials</h3>
-              <p className="testimonial-paragraph">
-                Here's what our clients have to say
-              </p>
+              <p className="testimonial-paragraph">Here's what our clients have to say</p>
               <TestimonialCarousel />
             </div>
           </Col>
@@ -313,6 +282,6 @@ const Index = ({ page }) => {
       </Container>
       <ToastContainer />
     </StartProjectWrapper>
-  );
+  )
 };
 export default Index;

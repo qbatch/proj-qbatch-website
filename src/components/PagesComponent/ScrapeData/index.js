@@ -9,11 +9,11 @@ const Index = () => {
     },
     {
       img: '/we-scrape.svg',
-      title: 'You Identify',
+      title: 'We Scrape',
     },
     {
       img: '/you-use.svg',
-      title: 'You Identify',
+      title: 'You Use',
     },
   ]
   const dataProcesssWithoutImages = [

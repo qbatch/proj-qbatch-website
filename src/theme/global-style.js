@@ -196,11 +196,22 @@ const GlobalStyles = createGlobalStyle`
       border-radius: 24px 24px 0 24px;
       margin-bottom: 32px;
       }
+
+      &.quotes-block{
+        display: block;
+      }
+      h1{
+       color: ${({ theme }) => theme.colors.whiteColor}; 
+        margin-bottom:16px; 
+      }
       h4 {
         color: ${({ theme }) => theme.colors.dividerColor};
         letter-spacing: 0px;
         line-height: 32px; 
         margin-bottom:32px;
+      }
+      p{
+       color: ${({ theme }) => theme.colors.whiteColor};  
       }
       button{
       color: rgb(255, 255, 255);
@@ -242,6 +253,31 @@ const GlobalStyles = createGlobalStyle`
           margin-bottom:8px;
         }
       }
+  }
+      .paragraph{
+           .raw-html-embed .quotes-block{
+      p{
+          color: ${({ theme }) => theme.colors.whiteColor};  
+      }
+      }
+    .raw-html-embed .quotes-block{
+ h1{
+       color: ${({ theme }) => theme.colors.whiteColor}; 
+      }
+       p{
+       color: ${({ theme }) => theme.colors.whiteColor}!important;  
+      }
+      }
+  
+      
+     
+      h4 {
+        color: ${({ theme }) => theme.colors.dividerColor};
+        letter-spacing: 0px;
+        line-height: 32px; 
+        margin-bottom:32px;
+      }
+     
   }
 `
 export default GlobalStyles
