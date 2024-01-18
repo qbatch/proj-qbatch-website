@@ -22,7 +22,7 @@ const ContentWrapper = styled.div`
         h1,
         h3 {
           font-size: 22px;
-          margin-bottom: 32px;
+          margin-bottom: 16px;
           span {
             font-family: 'Inter Tight', sans-serif;
             font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};

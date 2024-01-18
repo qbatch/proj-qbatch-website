@@ -19,7 +19,7 @@ const Index = ({ data }) => {
     ]
 
   return (
-    <BlogDetailsWrapper backgroundImage={data?.blogImg?.localFile.url}>
+    <BlogDetailsWrapper>
       <Container>
         <div className="breadcrumb">
           <ul className="d-flex gap-2">

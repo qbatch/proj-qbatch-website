@@ -2,14 +2,13 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogDetailsWrapper = styled.div`
-  background-image: ${(props) => (props.backgroundImage ? `url(${props.backgroundImage})` : '')};
+  background-image: url('/blog-details-banner.svg');
   width: 100%;
   height: 497px;
   padding: 96px 67px;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);
   ${media.sm`
     padding: 96px 0;
   `}
@@ -32,6 +31,7 @@ const BlogDetailsWrapper = styled.div`
   .title {
     color: ${({ theme }) => theme.colors.whiteColor};
     margin-bottom: 26px;
+    max-width: 650px;
   }
   .read-time {
     display: flex;

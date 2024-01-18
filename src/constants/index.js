@@ -1158,6 +1158,7 @@ const webScrapingFaq = [
           <li>Ensuring data integrity</li>
           <li>Monitoring and cleaning collected data </li>
           <li>Validating data input</li>
+          <li>Removing data clones</li>
           <li>Backing up data to avoid permanent loss</li>
         </ul>
       </div>
@@ -1185,10 +1186,10 @@ const webScrapingFaq = [
   },
   {
     id: 8,
-    title: 'Below are the data types you can scrape using our web data scraping services?',
+    title: 'What types of data can be scraped using these services?',
     content: (
       <div className="faq-content">
-        <span>You should use web scraping services for these reasons: </span>
+        <span>Below are the data types you can scrape using our web data scraping services </span>
         <ul>
           <li>Product and brand information </li>
           <li>Pricing data</li>
@@ -1196,7 +1197,7 @@ const webScrapingFaq = [
           <li>Texts</li>
           <li>Videos</li>
           <li>Links </li>
-          <li>Links</li>
+          <li>HTML codesI understand and agree to the</li>
           <li>Hidden information Images</li>
           <li>Customer behavior and patterns </li>
           <li>User feedback and sentiments</li>

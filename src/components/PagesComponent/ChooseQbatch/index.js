@@ -22,15 +22,15 @@ const Index = () => {
       title: '100% Founders Mentality',
     },
     {
-      img: '/technical-excellence.svg',
-      title: 'Technical Excellence',
+      img: '/dependable-engineering.svg',
+      title: 'Dependable Engineering Craftsmanship',
     },
     {
       img: '/neutral-software-analysis.svg',
       title: 'Neutral Software Analysis',
     },
     {
-      img: '/technical-excellence.svg',
+      img: '/technical-excellence-scraping.svg',
       title: 'Technical Excellence',
     },
 
@@ -48,7 +48,7 @@ const Index = () => {
       title: 'Optimal R&D',
     },
     {
-      img: '/proactive-communication.svg',
+      img: '/proactive-communicationHow do you ensure data quality and accuracy?-scraping.svg',
       title: 'Proactive Communication',
     },
     {
