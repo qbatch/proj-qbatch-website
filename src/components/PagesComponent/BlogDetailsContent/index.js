@@ -221,7 +221,7 @@ function App({ data, path }) {
                                 <div className="inner-content">
                                   <p className="blog-title">{card.blogTitle}</p>
                                   <div className="d-flex gap-2">
-                                    {data?.blogTags.strapi_json_value.map((tag, ind) => (
+                                    {data?.blogTags?.strapi_json_value.map((tag, ind) => (
                                       <div className="blog-badge">
                                         <span key={ind}>{tag}</span>
                                       </div>

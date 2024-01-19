@@ -50,7 +50,7 @@ const Index = ({ data }) => {
               </div>
             </div>
             <div className="chips">
-              {data?.blogTags.strapi_json_value.map((tag, ind) => (
+              {data?.blogTags?.strapi_json_value.map((tag, ind) => (
                 <span key={ind}>{tag}</span>
               ))}
             </div>

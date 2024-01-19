@@ -291,6 +291,12 @@ export const Queries = () => {
                keywords
              }
            }
+           seo {
+             metaTitle
+             metaDescription
+             metaRobots
+             slug
+           }
          }
        }
      }

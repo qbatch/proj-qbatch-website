@@ -185,17 +185,39 @@ const GlobalStyles = createGlobalStyle`
     border: 1px solid rgb(0, 84, 166);
     }
     }
- 
-    .paragraph{
-     .raw-html-embed{
-      background-image: url('/we-can-help.svg');
+    .bg-added{
+          background-image: url('/we-can-help.svg');
       width: 100%;
       background-repeat: no-repeat;
       padding: 74px 40px;
       text-align: center;
       border-radius: 24px 24px 0 24px;
       margin-bottom: 32px;
+      
+
       }
+      .no-bg-image{
+        border-radius: 24px 24px 0px 24px;
+        border:1px solid  ${({ theme }) => theme.colors.dividerColor};
+        padding: 36px;
+        margin-bottom:24px;
+        .username{
+          font-size:${({ theme }) => theme.fonts.baseFontSize};
+          color:${({ theme }) => theme.colors.primaryColor};
+          white-space:nowrap;
+        }
+        .caption{
+          font-size:${({ theme }) => theme.fonts.baseFontSizeXs};
+          color:${({ theme }) => theme.colors.textMedium};
+        }
+        .paragraph{
+          font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+          color:${({ theme }) => theme.colors.textMedium};
+          line-height:24px;
+        }
+      }
+    .paragraph{
+   
 
       &.quotes-block{
         display: block;
@@ -264,9 +286,6 @@ const GlobalStyles = createGlobalStyle`
  h1{
        color: ${({ theme }) => theme.colors.whiteColor}; 
       }
-       p{
-       color: ${({ theme }) => theme.colors.whiteColor}!important;  
-      }
       }
   
       
@@ -278,6 +297,12 @@ const GlobalStyles = createGlobalStyle`
         margin-bottom:32px;
       }
      
+  }
+  .fs-12{
+    font-size:12px!important;
+  }
+  .divider-color{
+     color: ${({ theme }) => theme.colors.dividerColor};
   }
 `
 export default GlobalStyles

@@ -75,7 +75,7 @@ const Index = () => {
                       <h3>{item.projectName}</h3>
                       <p className="paragraph">{item.projectDesc}</p>
                       <div className="badge">
-                        {item.projectTags.strapi_json_value.map((badge) => (
+                        {item.projectTags?.strapi_json_value.map((badge) => (
                           <span>{badge}</span>
                         ))}
                       </div>
