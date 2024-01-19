@@ -50,7 +50,7 @@ const Index = (props) => {
                   />
                 </div>
                 <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
-                  <span className="blog-badge">{card.blogTags.strapi_json_value[0]}</span>
+                  <span className="blog-badge">{card.blogTags?.strapi_json_value[0]}</span>
                   <div className="timer">
                     <img src="/timer-blue.svg" alt="timer" />
                     <span>
@@ -99,7 +99,7 @@ const Index = (props) => {
             >
               {card.blogTitle}
             </p>
-            <div className="blog-badge">{card.blogTags.strapi_json_value[0]}</div>
+            <div className="blog-badge">{card.blogTags?.strapi_json_value[0]}</div>
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
               <span>{card?.user?.username}</span>
               <div className="timer">
