@@ -13,7 +13,6 @@ import { BlogAllWrapprt, InnerBannerWrapper } from './style'
 
 const index = ({ data }) => {
   const blogBannerData = data.filter((item) => item.bannerBlog === true);
-  console.log(blogBannerData.blogImg, 'blogBannerData')
   return (
     <BlogAllWrapprt>
       {blogBannerData

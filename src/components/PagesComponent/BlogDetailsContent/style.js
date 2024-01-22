@@ -35,7 +35,7 @@ const ContentWrapper = styled.div`
         }
         p {
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
-          color: ${({ theme }) => theme.colors.textMedium};
+          color: ${({ theme }) => theme.colors.bodyTextVariant};
           line-height: 24px;
           letter-spacing: 0px;
           margin-bottom: 32px;
@@ -44,7 +44,7 @@ const ContentWrapper = styled.div`
             margin: 40px 0;
           }
           span {
-            color: ${({ theme }) => theme.colors.textMedium};
+            color: ${({ theme }) => theme.colors.bodyTextVariant};
             font-size: ${({ theme }) => theme.fonts.baseFontSize};
             font-family: 'Inter Tight', sans-serif;
           }
@@ -84,6 +84,7 @@ const ContentWrapper = styled.div`
   .author-name {
     padding: 32px;
     border-radius: 24px 24px 0px 24px;
+
     border: 1px solid ${({ theme }) => theme.colors.disableColor};
     margin-left: 40px;
     ${media.sm`
@@ -92,6 +93,9 @@ const ContentWrapper = styled.div`
     .avatar-box {
       gap: 23px;
       margin-bottom: 24px;
+      .avatar-image {
+        border-radius: 24px 24px 0 24px;
+      }
       span {
         font-size: 20px;
         color: ${({ theme }) => theme.colors.primaryColor};
@@ -101,6 +105,7 @@ const ContentWrapper = styled.div`
     }
     .title {
       line-height: 23px;
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
       display: -webkit-box;
       max-width: 400px;
       -webkit-line-clamp: 2;
@@ -110,6 +115,9 @@ const ContentWrapper = styled.div`
     }
     .social-link {
       gap: 20px;
+      li img{
+        cursor:pointer;
+      }
     }
     .mt-32 {
       margin-top: 32px;

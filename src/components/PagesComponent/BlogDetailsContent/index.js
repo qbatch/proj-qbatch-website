@@ -156,6 +156,7 @@ function App({ data, path }) {
       to: `https://reddit.com/submit?url=https://qbatch.com/blog${path}`,
     },
   ]
+  console.log(data,"ddd")
   return (
     <ContentWrapper>
       <div className="d-sm-flex">
@@ -259,28 +260,26 @@ function App({ data, path }) {
                 <ContentWrapper>
                   <div className="author-name">
                     <div className="avatar-box d-flex flex-wrap align-items-center">
-                      <img src="/avatar.svg" alt="no-avartar" />
+                      <img
+                        className="avatar-image"
+                        width="72px"
+                        height="72px"
+                        src={data?.user.image?.localFile.url || '/avatar.svg'}
+                        alt="no-avartar"
+                      />
                       <span>{data?.user.username}</span>
                     </div>
-                    <span className="title">
-                      {data?.user.description}
-                    </span>
+                    <span className="title">{data?.user.description}</span>
                     <div className="d-flex justify-content-between mt-32">
-                      <ul className="d-flex social-link">
+                      <ul className="d-flex social-link ps-0">
                         <li>
-                          <img src="/facebook.svg" alt="no-svg" />
+                          <img src="/linkdin.svg" alt="no-icon" />
                         </li>
                         <li>
-                          <img src="/instagram.svg" alt="no-svg" />
+                          <img src="/twitter.svg" alt="no-icon" />
                         </li>
                         <li>
-                          <img src="/linkdin.svg" alt="no-svg" />
-                        </li>
-                        <li>
-                          <img src="/twitter.svg" alt="no-svg" />
-                        </li>
-                        <li>
-                          <img src="/behance.svg" alt="no-svg" />
+                          <img src="/medium.svg" alt="no-icon" />
                         </li>
                       </ul>
                       <div>
