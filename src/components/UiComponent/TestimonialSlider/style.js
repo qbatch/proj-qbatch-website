@@ -8,7 +8,7 @@ const ProvenExperienceWrapper = styled.div`
       padding: 40px 0 40px;
     `}
   }
-  .testimonial-wrapper{
+  .testimonial-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,24 +16,24 @@ const ProvenExperienceWrapper = styled.div`
     padding: 48px;
     background-color: ${({ theme }) => theme.colors.whiteColor};
     border-radius: 24px 24px 0 24px;
-    min-height:363px;
-    .client-image{
+    min-height: 363px;
+    .client-image {
       border-radius: 160px;
       height: 158px;
       width: 158px;
       object-fit: cover;
       object-position: center;
     }
-    .testimonial-text{
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+    .testimonial-text {
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       font-weight: 300;
       line-height: 32px;
       color: ${({ theme }) => theme.colors.bodyLight};
     }
-    @media (max-width: 1399px){
+    @media (max-width: 1399px) {
       padding: 32px;
       gap: 32px;
-      .client-image{
+      .client-image {
         height: 130px;
         width: 130px;
       }
@@ -65,11 +65,11 @@ const ProvenExperienceWrapper = styled.div`
   .testimonial-title {
     display: flex;
     align-items: center;
-    svg{
+    svg {
       height: 40px;
       width: 50px;
     }
-    .inner-text{
+    .inner-text {
       padding-left: 16px;
     }
     h4 {
@@ -84,10 +84,10 @@ const ProvenExperienceWrapper = styled.div`
       margin: 0;
     }
   }
-  .bottom-slider{
+  .bottom-slider {
     position: relative;
     margin-top: 36px;
-    }
+  }
   .container-slider {
     padding: 0 0 96px 96px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
@@ -105,11 +105,12 @@ const ProvenExperienceWrapper = styled.div`
     `}
   }
   .react-multi-carousel-list {
-    position: static;border-radius: 24px 24px 0px 24px;
+    position: static;
+    border-radius: 24px 24px 0px 24px;
     overflow: hidden;
   }
   .carousel-button-group {
-    background-color: ${({ theme }) => theme.colors.backgroundColor};  
+    background-color: ${({ theme }) => theme.colors.backgroundColor};
     gap: 12px;
     position: absolute;
     top: 0;
@@ -133,6 +134,6 @@ const ProvenExperienceWrapper = styled.div`
       }
     }
   }
-`;
+`
 
 export default ProvenExperienceWrapper;

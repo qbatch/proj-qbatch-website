@@ -43,7 +43,7 @@ const Ecommerce = () => {
         heading="Do you know? Companies with potent data-driven cultures grow around 30% Outpacing Their Competitors By $1.8 Trillion Annually."
         isButton={true}
         caption="(Forrester)"
-        btnText="Tell Me How to Become Data-Driven"
+        btnText="Tell Me How To Become Data-Driven"
         headingSize="text-h2"
         align="d-flex justify-content-center"
       />

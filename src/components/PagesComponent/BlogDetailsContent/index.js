@@ -181,7 +181,7 @@ function App({ data, path }) {
         <div className="content-section content">
           <Container>
             <Row>
-              <Col lg={8} md={6} sm={12}>
+              <Col lg={8} md={12} sm={12}>
                 <div className="section inner-content">
                   <span
                     className="paragraph"
@@ -255,7 +255,7 @@ function App({ data, path }) {
                   </BlogCardsWrapper>
                 </div>
               </Col>
-              <Col lg={4} md={6} sm={12}>
+              <Col lg={4} md={12} sm={12}>
                 <ContentWrapper>
                   <div className="author-name">
                     <div className="avatar-box d-flex flex-wrap align-items-center">

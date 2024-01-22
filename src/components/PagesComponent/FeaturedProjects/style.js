@@ -44,6 +44,9 @@ const AssistantWrapper = styled.div`
     }
     .scraper-box {
       padding: 72px 0px;
+      .caption {
+        color: ${({ theme }) => theme.colors.textMedium};
+      }
     }
   }
 `

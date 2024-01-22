@@ -30,7 +30,7 @@ const contactData = [
 const menuData = [
   {
     name: "Services",
-    to: "/",
+    to: "#",
   },
   {
     name: "Portfolio",
@@ -38,11 +38,11 @@ const menuData = [
   },
   {
     name: "Industry",
-    to: "/",
+    to: "#",
   },
   {
     name: "Discover Phase",
-    to: "/",
+    to: "#",
   },
 ];
 
@@ -57,7 +57,7 @@ const menu2Data = [
   },
   {
     name: "Qbatch Career",
-    to: "/",
+    to: "#",
   },
 ];
 

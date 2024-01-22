@@ -41,14 +41,16 @@ const BlogDetailsWrapper = styled.div`
     font-weight: 400;
     line-height: 18px;
     max-width: 734px;
-    min-height:200px;
+    min-height: 200px;
   }
   .image-box {
     padding: 0px 40px;
+    margin-top: 27px;
+    text-align: center;
     ${media.sm`
     padding: 0;
   `}
-    text-align:center;
+
     img {
       max-width: fit-content;
       ${media.sm`
