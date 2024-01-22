@@ -27,6 +27,7 @@ const theme = {
     bodyLight: '#7C8EA1',
     disableColor: '#889095',
     highlightColor: '#FD3',
+    textColor: '#FFDD33',
   },
   fonts: {
     baseFontSizeH1: fsh1,

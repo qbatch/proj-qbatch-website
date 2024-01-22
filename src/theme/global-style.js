@@ -278,7 +278,7 @@ const GlobalStyles = createGlobalStyle`
         list-style:disc;
         padding-left:24px;
         font-size: 16px;
-        color: #5F737C;
+              color:${({ theme }) => theme.colors.bodyTextVariant};
         li{
           margin-bottom:8px;
         }
@@ -287,7 +287,7 @@ const GlobalStyles = createGlobalStyle`
         list-style:decimal;
         padding-left:24px;
         font-size: 16px;
-        color: #5F737C;
+        color:${({ theme }) => theme.colors.bodyTextVariant};
         li{
           margin-bottom:8px;
         }

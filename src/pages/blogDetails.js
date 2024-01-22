@@ -17,7 +17,7 @@ const BlogDetails = ({ pageContext }) => {
       scrolled = (winScroll / height) * 100
     document.getElementById('progressBar').style.width = scrolled + 5 + '%'
   }
-
+  console.log(blogQuery.allStrapiArticle.nodes.find((x)=> x.user.username), 'blogQuery')
   useEffect(() => {
     window.addEventListener('scroll', progressBarScroll)
     return () => {
