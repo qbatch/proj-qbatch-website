@@ -4,6 +4,8 @@ import BlogCards from '../components/PagesComponent/BlogCards'
 import Container from '../components/UiComponent/Container'
 import { Queries } from '../constants/queries'
 import SEO from '../components/Seo'
+import { useLocation } from '@reach/router'
+
 import Layout from '../components/Layout/layout'
 
 const Author = ({ pageContext, location }) => {
@@ -24,8 +26,11 @@ const Author = ({ pageContext, location }) => {
   )
 }
 export const Head = () => {
+  const location = useLocation();
+  const currentUrl = location.href;
+  const url = currentUrl?.split('/')[4];
   const blogSeo = Queries()
-  const seoData = blogSeo.allStrapiUser.nodes.find((x=>x.seo)).seo
+  const seoData = blogSeo.allStrapiUser.nodes.find((x) => x.seo).seo
   return (
     <SEO
       title={seoData.metaTitle}
@@ -33,7 +38,7 @@ export const Head = () => {
       keywords={seoData.keywords}
       language={seoData.language}
       robots={seoData.metaRobots}
-      pathname={`/authors${seoData.slug}`}
+      pathname={`/authors/${url}/`}
     />
   )
 }

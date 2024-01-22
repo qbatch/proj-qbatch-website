@@ -48,7 +48,7 @@ const Index = () => {
       title: 'Optimal R&D',
     },
     {
-      img: '/proactive-communicationHow do you ensure data quality and accuracy?-scraping.svg',
+      img: '/proactive-communication-scraping.svg',
       title: 'Proactive Communication',
     },
     {

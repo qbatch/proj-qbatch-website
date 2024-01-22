@@ -3,7 +3,7 @@ import { media } from '../../../theme/media-mixins'
 
 const AssistantWrapper = styled.div`
   padding: 95px 0px;
-  padding-bottom:16px;
+  padding-bottom: 16px;
   .heading-box {
     margin-bottom: 71px;
   }
@@ -39,7 +39,7 @@ const AssistantWrapper = styled.div`
             font-size: 12px;
       `}
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;

@@ -23,8 +23,7 @@ const Index = () => {
         'Microservice',
       ],
       paragraph: [
-        'We have developed a sophisticated scraping project with a microservices architecture that efficiently handles incoming requests from both an API server and internal calls. ',
-        'The scraper intelligently selects proxies from a pool of proxies using smart algorithms. This proxy selection mechanism enhances the project’s capability to access and scrape websites while maintaining anonymity and reliability.',
+        'We have developed a sophisticated scraping project with a microservices architecture that efficiently handles incoming requests from both an API server and internal calls. The scraper intelligently selects proxies from a pool of proxies using smart algorithms. This proxy selection mechanism enhances the project’s capability to access and scrape websites while maintaining anonymity and reliability. ',
         'Generic-Scraper manages high traffic loads and automatically recovers services in case of failures through Kubernetes integration. This architecture allows for efficient and reliable web scraping, making the system adaptable to varying workloads and proxy requirements.',
       ],
     },
@@ -63,7 +62,7 @@ const Index = () => {
                           <div className="d-flex flex-column ">
                             <div className="d-flex flex-column gap-3">
                               <h3>{list.title}</h3>
-                              <Link className="link">{list.caption}</Link>
+                              <span className="caption">{list.caption}</span>
                               <div class="badges">
                                 {list.badge.map((badge) => (
                                   <span>{badge}</span>

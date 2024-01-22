@@ -183,7 +183,7 @@ const devOpsmenu = [
 const industriesMenu = [
   {
     menu: "E-commerce",
-    to: "/",
+    to: "#",
   },
   {
     menu: "Logistics and Supply Chain",

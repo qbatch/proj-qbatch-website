@@ -186,14 +186,28 @@ const GlobalStyles = createGlobalStyle`
     }
     }
     .bg-added{
-          background-image: url('/we-can-help.svg');
+      background-image: url('/we-can-help.svg');
       width: 100%;
       background-repeat: no-repeat;
       padding: 74px 40px;
       text-align: center;
       border-radius: 24px 24px 0 24px;
       margin-bottom: 32px;
+      @media(max-width:992px){
       
+        &.bg-remove{
+        background-image:none ;
+        background-color:${({ theme }) => theme.colors.secondaryColor};
+        padding: 24px;
+        .gap-4{
+          flex-wrap:wrap;
+        }
+      }
+    
+      }
+        .add-border-radius{
+          border-radius: 12px 12px 0px 12px;
+       } 
 
       }
       .no-bg-image{
@@ -201,6 +215,9 @@ const GlobalStyles = createGlobalStyle`
         border:1px solid  ${({ theme }) => theme.colors.dividerColor};
         padding: 36px;
         margin-bottom:24px;
+        @media(max-width:991px){
+          flex-wrap:wrap;
+        }
         .username{
           font-size:${({ theme }) => theme.fonts.baseFontSize};
           color:${({ theme }) => theme.colors.primaryColor};
