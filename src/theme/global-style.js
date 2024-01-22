@@ -229,7 +229,7 @@ const GlobalStyles = createGlobalStyle`
         }
         .paragraph{
           font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
-          color:${({ theme }) => theme.colors.textMedium};
+          color:${({ theme }) => theme.colors.bodyTextVariant};
           line-height:24px;
         }
       }
