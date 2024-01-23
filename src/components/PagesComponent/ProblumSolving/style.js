@@ -18,7 +18,8 @@ const ProblumSolvingWrapper = styled.div`
     letter-spacing: 0.4px;
     b {
       color: ${({ theme }) => theme.colors.whiteColor};
-    letter-spacing: 0;
+      letter-spacing: 0;
+      text-transform: capitalize;
     }
   }
   ${media.sm`
@@ -39,7 +40,7 @@ const ProblumSolvingWrapper = styled.div`
        margin: auto;
     `}
     &:after {
-      content: url("/problum-background.svg");
+      content: url('/problum-background.svg');
       position: absolute;
       right: -144%;
       bottom: -121%;
@@ -97,35 +98,35 @@ const ProblumSolvingWrapper = styled.div`
       }
     }
   }
-  &.contact-project-cost{
-    background-color: #F2F3F5;
+  &.contact-project-cost {
+    background-color: #f2f3f5;
     padding: 188px 0;
     ${media.md`
    padding: 100px 0;
   `}
-    .heading-break{
-    max-width:90%;
-    margin: 0;
-  }
-  .circle-bg {
-    margin-left: 145px;
-  }
-  .circle-box {
-    border: 1px solid ${({ theme }) => theme.colors.primaryColor};
-    margin-top: 0;
-    .text-svg {
-      fill: ${({ theme }) => theme.colors.primaryColor};
+    .heading-break {
+      max-width: 90%;
+      margin: 0;
     }
-    &:hover {
-      background-color: ${({ theme }) => theme.colors.primaryColor};
+    .circle-bg {
+      margin-left: 145px;
+    }
+    .circle-box {
+      border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+      margin-top: 0;
       .text-svg {
-        fill: ${({ theme }) => theme.colors.whiteColor};
+        fill: ${({ theme }) => theme.colors.primaryColor};
       }
-      .red-arrow {
-        filter:none;
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.primaryColor};
+        .text-svg {
+          fill: ${({ theme }) => theme.colors.whiteColor};
+        }
+        .red-arrow {
+          filter: none;
+        }
       }
     }
   }
-  }
-`;
+`
 export default ProblumSolvingWrapper;

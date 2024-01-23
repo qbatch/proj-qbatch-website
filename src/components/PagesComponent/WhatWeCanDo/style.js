@@ -10,7 +10,6 @@ const WhatWeDoWrapper = styled.div`
   }
   .section-heading {
     .heading {
-      text-transform: inherit;
       line-height: 84px;
       margin-bottom: 22px;
     }

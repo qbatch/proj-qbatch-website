@@ -17,7 +17,7 @@ const Index = () => {
               <h2 className="heading">Leadership you can Trust</h2>
               <p className="paragraph">We partner with visionaries like you to assist your business’ technological transformation on a massive scale</p>
               <ul className="list">
-                <li>With logic, innovation, and emotion</li>
+                <li>With Logic, Innovation, And Emotion</li>
                 <li>Beyond traditional problem-solving technique and old-fashioned promises.</li>
               </ul>
             </div>

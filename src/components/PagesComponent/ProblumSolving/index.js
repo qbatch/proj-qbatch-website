@@ -40,7 +40,7 @@ const Index = (props) => {
                     </defs>
                     <text>
                       <textPath href="#circle">
-                        Launch Your idea . Launch Your idea . Launch Your idea . Launch Your idea .
+                        Launch Your idea! . Launch Your idea! . Launch Your idea! . Launch Your idea! .
                       </textPath>
                     </text>
                   </svg>

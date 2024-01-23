@@ -156,7 +156,6 @@ function App({ data, path }) {
       to: `https://reddit.com/submit?url=https://qbatch.com/blog${path}`,
     },
   ]
-  console.log(data,"ddd")
   return (
     <ContentWrapper>
       <div className="d-sm-flex">
