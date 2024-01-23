@@ -8,11 +8,11 @@ const weDoData = [
   { id: 6 },
 ];
 const counterData = [
-  { id: 1, count: 150, desc: "Full Stack Developers"},
-  { id: 2, count: 300, desc: "Solutions Delivered \n Successfully", symbol: "+" },
-  { id: 3, count: 98, desc: "Customer Happiness \n Index", symbol: "%" },
-  { id: 4, count: 10, desc: "Years of Excellency", symbol: "" },
-];
+  { id: 1, count: 150, desc: 'Full Stack Developers', symbol: '+' },
+  { id: 2, count: 300, desc: 'Solutions Delivered \n Successfully', symbol: '+' },
+  { id: 3, count: 98, desc: 'Customer Happiness \n Index', symbol: '%' },
+  { id: 4, count: 10, desc: 'Years of Excellency', symbol: '' },
+]
 const dedicationWork = [
   { id: 1, count: 11000, desc: 'Web pages scraped so far', symbol: '+' },
   { id: 2, count: 70, desc: 'Companies served', symbol: '+' },

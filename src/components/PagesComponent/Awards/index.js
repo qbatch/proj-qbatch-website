@@ -37,13 +37,13 @@ const displayedAwards = maxCols ? awardsData.slice(0, maxCols) : awardsData;
           <Row>
             <Col lg={4} sm={12}>
               <h2 className="heading">Awards & Recognition</h2>
-              {maxCols && (
+              {/* {maxCols && (
                 <Col sm={12}>
                   <div className="btn-awards">
                     <Button text="Explore More" />
                   </div>
                 </Col>
-              )}
+              )} */}
             </Col>
             <Col lg={8} sm={12}>
               <Row className="awards-logos">

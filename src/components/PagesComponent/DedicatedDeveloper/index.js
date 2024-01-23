@@ -25,7 +25,7 @@ const Index = () => {
             </span>
           </h1>
           <p>
-            200+ enterprises have already garnered great financial results and market outreach withour time-tested
+            200+ enterprises have already garnered great financial results and market outreach with our time-tested
             development flow, error-free code quality, and on-time project delivery.
           </p>
           <div className="text-center d-flex align-items-center justify-content-center">

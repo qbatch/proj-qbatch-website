@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     h1,h2,h3,h4,h5,h6{
         font-weight:600;
         color:${({ theme }) => theme.colors.bodyTextVariant};
-        text-transform: capitalize;
+        text-transform: capitalize!importan;
     }
     a{
         color:${({ theme }) => theme.colors.primaryColor};
@@ -228,7 +228,7 @@ const GlobalStyles = createGlobalStyle`
           color:${({ theme }) => theme.colors.textMedium};
         }
         .paragraph{
-          font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+          font-size:${({ theme }) => theme.fonts.baseFontSize};
           color:${({ theme }) => theme.colors.bodyTextVariant};
           line-height:24px;
         }
@@ -314,9 +314,6 @@ const GlobalStyles = createGlobalStyle`
         margin-bottom:32px;
       }
      
-  }
-  .fs-12{
-    font-size:12px!important;
   }
   .divider-color{
      color: ${({ theme }) => theme.colors.dividerColor};
