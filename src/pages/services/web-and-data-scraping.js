@@ -68,8 +68,7 @@ const Ecommerce = () => {
 
 export const Head = () => {
   const eCommerceData = Queries()
-  const seoData = eCommerceData.allStrapiEcommerce.nodes[0]?.seo
-
+  const seoData = eCommerceData.allStrapiWebAndDataScraping.nodes[0].seo[0]
   return (
     <SEO
       title={seoData.metaTitle}
@@ -77,7 +76,7 @@ export const Head = () => {
       keywords={seoData.keywords}
       language={seoData.language}
       robots={seoData.metaRobots}
-      pathname={seoData.slug}
+      pathname={`/services${seoData.slug}`}
     />
   )
 }

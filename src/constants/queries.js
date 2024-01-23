@@ -299,6 +299,18 @@ export const Queries = () => {
            }
          }
        }
+       allStrapiWebAndDataScraping {
+         nodes {
+           seo {
+             metaTitle
+             slug
+             metaRobots
+             metaDescription
+             language
+             keywords
+           }
+         }
+       }
      }
    `)
     
