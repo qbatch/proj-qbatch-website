@@ -115,6 +115,7 @@ const Enterprise = () => {
         heading="Got a unique mobile app idea? Learn more about development time and cost estimation!"
         isButton={true}
         className="desired-result"
+        align="d-flex justify-content-end"
         btnText="Get Free Price Estimate"
       />
       <FaqSection faqQuestion={enterPrisFaq} />

@@ -1873,7 +1873,9 @@ const enterPrisFaq = [
           <li>Code reviews and audits</li>
           <li>Mult-Factor Authentication (MFA) and Role-Based Access Control (RBAC)</li>
           <li>Industry-level data encryption algorithms and protocols</li>
+          <li>Robust APIs decurity approaches against unauthorized data access</li>
           <li>Regular security patches and updates</li>
+          <li>Foolproof data storage </li>
           <li>User data security </li>
           <li>Strict access control policy </li>
           <li>HTTPS and SSL/TLS encryption for secure data communication </li>
@@ -2092,32 +2094,32 @@ const productDesignlist = [
 ]
 const technologicalCapacityData = [
   {
-   icon: "/business-needs.svg",
+   icon: "/ai-ml.svg",
    title: "AI & ML",
    desc: "Garner greater operational intelligence, reduced costs, and top-grade automation to ensure that much-anticipated transition."
   },
   {
-   icon: "/user-expectations.svg",
+   icon: "/iot-icon.svg",
    title: "IoT",
    desc: "Integrate your smart sensors and devices and monitor through a central console and capture insightful data for improved enterprise-level connectivity."
   },
   {
-   icon: "/operational-efficiency.svg",
+   icon: "/blockchain.svg",
    title: "Blockchain",
    desc: "Be in the vanguard of your enterprise and its processes with higher-level data control and automation beyond third-party interference."
   },
   {
-   icon: "/budget-constraints.svg",
+   icon: "/data-science.svg",
    title: "Data Science",
    desc: "Dealing with tons of data? No worries, our expertise in Big Data can help you streamline your data streams for smarter and market-relevant decision-making."
   },
   {
-   icon: "/technology-selection.svg",
+   icon: "/cloud-computing.svg",
    title: "Cloud Computing",
    desc: "A flexible and interconnected business requires robust cloud computing services for flawless execution of the latest technologies like AWS, Azure, and Google Cloud."
   },
   {
-   icon: "/existing-systems.svg",
+   icon: "/no-code.svg",
    title: "Low-Code/No-Code",
    desc: "Build your enterprise software using no-code/ low-code platforms for managing visual elements like drag-and-drop and pull-down menu interfaces."
   },
@@ -2207,47 +2209,47 @@ const productDesignData = [
   },
  ]
  const developmentExpertiseData = [
-  {
-    icon: "/custom-mobile-app.svg",
-    title: "Data Warehousing",
-    desc: "Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.",
-  },
-  {
-    icon: "/ux-ui-mobile-app.svg",
-    title: "CRM Development",
-    desc: "Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!",
-  },
-  {
-    icon: "/ai-app.svg",
-    title: "IT Modernization Services",
-    desc: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
-  },
-  {
-    icon: "/mobile-app-consulting.svg",
-    title: "CMS Development",
-    desc: "Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.",
-  },
-  {
-    icon: "/third-party-integration.svg",
-    title: "SCM Development",
-    desc: "Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.",
-  },
-  {
-    icon: "/mobile-testing.svg",
-    title: "EHR Development",
-    desc: "Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.",
-  },
-  {
-    icon: "/mobile-testing.svg",
-    title: "BI Services",
-    desc: "Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.",
-  },
-  {
-    icon: "/mobile-testing.svg",
-    title: "HRM Software Development",
-    desc: "Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.",
-  },
-];
+   {
+     icon: '/data-warehouse.svg',
+     title: 'Data Warehousing',
+     desc: 'Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.',
+   },
+   {
+     icon: '/crm-development.svg',
+     title: 'CRM Development',
+     desc: 'Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!',
+   },
+   {
+     icon: '/modernization-services.svg',
+     title: 'IT Modernization Services',
+     desc: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
+   },
+   {
+     icon: '/cms-development.svg',
+     title: 'CMS Development',
+     desc: 'Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.',
+   },
+   {
+     icon: '/scm-development.svg',
+     title: 'SCM Development',
+     desc: 'Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.',
+   },
+   {
+     icon: '/ehr-development.svg',
+     title: 'EHR Development',
+     desc: 'Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.',
+   },
+   {
+     icon: '/bi-service.svg',
+     title: 'BI Services',
+     desc: 'Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.',
+   },
+   {
+     icon: '/hrm-development.svg',
+     title: 'HRM Software Development',
+     desc: 'Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.',
+   },
+ ]
 const customEnterpriseData = [
   {
     image: '/interprise-application.svg',
