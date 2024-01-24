@@ -6,6 +6,7 @@ const ProvenExperienceWrapper = styled.div`
     padding: 96px 0 96px;
     .heading {
       padding-bottom: 24px;
+      text-transform: capitalize;
     }
     .paragraph {
       margin-bottom: 0;

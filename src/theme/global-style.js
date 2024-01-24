@@ -44,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
         font-weight:${({ theme }) => theme.fontWeight.light} ;
     }
     p{
-       font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+       font-size:${({ theme }) => theme.fonts.baseFontSize};
        color: ${({ theme }) => theme.colors.textMedium};   
        letter-spacing : 0.14px ; 
     }

@@ -209,13 +209,13 @@ const DevelopmentStages = (props) => {
                         </div>
                       ))}
                     </Slider>
-                    {marketplace ? (
+                    {/* {marketplace ? (
                       <div className="slider-btn">
                         <Button onClick={() => navigate('/contact')} text="Book Free Demo" />
                       </div>
                     ) : (
                       ''
-                    )}
+                    )} */}
                   </Col>
                 </Row>
               </div>
@@ -264,13 +264,13 @@ const DevelopmentStages = (props) => {
               </div>
             ))}
           </div>
-          {marketplace ? (
+          {/* {marketplace ? (
             <div className="slider-btn">
               <Button onClick={() => navigate('/contact')} text="Book Free Demo" />
             </div>
           ) : (
             ''
-          )}
+          )} */}
         </Container>
       </StagesWrapper>
     </>
