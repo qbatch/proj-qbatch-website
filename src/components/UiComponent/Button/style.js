@@ -134,6 +134,6 @@ const ButtonWrapper = styled(Button)`
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
   `}
   }
-`
+`;
 
 export default ButtonWrapper;

@@ -63,7 +63,7 @@ const CtoService = () => {
         data={guidanceData}
         width="350px"
       />
-      <DevelopmentStages
+      {/* <DevelopmentStages
         heading="Stuck at any of these development stages? We can help."
         desc="Optimize your idea at each step with our technological prowess and business-critical insight."
         sliderData={sliderItems}
@@ -73,6 +73,13 @@ const CtoService = () => {
         subCol2={7}
         className="slider-column"
         isScroll={false}
+      /> */}
+      <Slider
+        heading="Stuck at any of these development stages? We can help."
+        paragraph="Optimize your idea at each step with our technological prowess and business-critical insight."
+        data={sliderItems}
+        width="350px"
+        align='center'
       />
       <GrowingTechSide />
       <ChooseCto />

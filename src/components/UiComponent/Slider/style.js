@@ -13,7 +13,6 @@ const SliderWrapper = styled.div`
     }
     `}
   .upper-heading {
-    
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
@@ -34,10 +33,20 @@ const SliderWrapper = styled.div`
     .content {
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       color: ${({ theme }) => theme.colors.textMedium};
-      max-width:400px;
+      max-width: 400px;
       ${media.sm`
         max-width: 100%;
     `}
+    }
+    ul {
+      margin-top: 24px;
+      list-style: disc;
+      padding-left: 24px;
+      li {
+        color: ${({ theme }) => theme.colors.textMedium};
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        margin-bottom:8px;
+      }
     }
   }
   .slick-dots {
