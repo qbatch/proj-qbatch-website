@@ -71,7 +71,7 @@ const Index = () => {
                       <img src={item.projectImg.localFile.url} alt="story" />
                     </div>
                     <div className="content">
-                      <img className="logo" src={item.projectLogo.localFile.url} alt="logo" />
+                      <img className="logo" src={item.projectLogo?.localFile.url} alt="logo" />
                       <h3>{item.projectName}</h3>
                       <p className="paragraph">{item.projectDesc}</p>
                       <div className="badge">
