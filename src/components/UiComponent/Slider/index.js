@@ -31,6 +31,13 @@ const Index = (props) => {
                   <div class="slider-data">
                     <div className="title">{data.title}</div>
                     <div className="content">{data.content}</div>
+                    {data.list && (
+                      <ul>
+                        {data.list.map((list) => (
+                          <li>{list}</li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
               )
