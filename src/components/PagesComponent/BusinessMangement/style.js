@@ -7,7 +7,7 @@ const ManagementWrapper = styled.div`
   ${media.sm`
     padding: 60px 0;
   `}
-  .text-h2{
+  .text-h2 {
     color: ${({ theme }) => theme.colors.whiteColor};
     line-height: 52px;
     max-width: 1100px;
@@ -30,13 +30,14 @@ const ManagementWrapper = styled.div`
     h4 {
       color: ${({ theme }) => theme.colors.dividerColor};
       margin-bottom: 0;
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
     }
     .description {
       height: 0;
       opacity: 0;
       max-width: 630px;
       transition: height 0.5s, opacity 0.5s;
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       line-height: 32px;
       ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
@@ -52,7 +53,7 @@ const ManagementWrapper = styled.div`
       }
     }
   }
-  .add-space{
+  .add-space {
     margin-left: 27px;
     margin-top: 73px;
   }

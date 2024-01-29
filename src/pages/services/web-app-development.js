@@ -55,8 +55,14 @@ const webapp = () => {
         isButton={true}
         className="desired-result"
         btnText="Get Started Risk-Free"
+        align="d-flex justify-content-end"
       />
-      <Slider align="center" heading="Lost to Launched" paragraph="Web Application Development Process" data={lostToLaunchedItems} />
+      <Slider
+        align="center"
+        heading="Lost to Launched"
+        paragraph="Web Application Development Process"
+        data={lostToLaunchedItems}
+      />
       <LanguagesAndFrameworks />
       <Collaboration heading="text-h2" />
       <ProvenWorkExperience heading="Success Stories" paragraph="They imagined it, we brought it to the world!" />

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
@@ -8,6 +8,11 @@ import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperie
 import ProblemSolving from "../components/PagesComponent/ProblumSolving";
 
 const ContactUs = () => {
+    useEffect(() => {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }, 500)
+    }, [])
   return (
     <Layout pageTitle="Contact Us">
       <StartProject page="contact" />

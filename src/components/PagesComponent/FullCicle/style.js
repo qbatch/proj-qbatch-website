@@ -3,13 +3,13 @@ import { media } from "../../../theme/media-mixins"
 
 const FullCycleWrapper = styled.div`
   padding: 120px 0;
-  .main-heading{
+  .main-heading {
     color: ${({ theme }) => theme.colors.primaryColor};
     max-width: 811px;
     padding-bottom: 17px;
     line-height: 52px;
   }
-  .paragraph{
+  .paragraph {
     max-width: 751px;
     margin-bottom: 64px;
     line-height: 32px;
@@ -28,9 +28,10 @@ const FullCycleWrapper = styled.div`
 
     cursor: pointer;
     .title {
-      color: ${({ theme }) => theme.colors.blackColor};
+      color: ${({ theme }) => theme.colors.textMedium};
       margin-bottom: 0;
       font-weight: ${({ theme }) => theme.fontWeight.normal};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
     }
     .description {
       color: ${({ theme }) => theme.colors.textMedium};
@@ -38,7 +39,7 @@ const FullCycleWrapper = styled.div`
       opacity: 0;
       max-width: 630px;
       transition: height 0.5s, opacity 0.5s;
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       line-height: 32px;
       ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
@@ -54,7 +55,7 @@ const FullCycleWrapper = styled.div`
       }
     }
   }
-  .add-space{
+  .add-space {
     margin-left: 27px;
     margin-top: 73px;
   }
