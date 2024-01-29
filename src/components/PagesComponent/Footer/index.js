@@ -48,18 +48,18 @@ const menuData = [
 
 const menu2Data = [
   {
-    name: "About Us",
-    to: "/about",
+    name: 'About Us',
+    to: '/about',
   },
   {
-    name: "Contact Us",
-    to: "/contact",
+    name: 'Contact Us',
+    to: '/contact',
   },
   {
-    name: "Qbatch Career",
-    to: "#",
+    name: 'Qbatch Career',
+    to: 'https://careers.qbatch.com/jobs',
   },
-];
+]
 
 const bottomMenu = [
   {
@@ -94,11 +94,11 @@ const socialLinks = [
   },
   {
     img: '/behance',
-    to: 'https://www.behance.net/ibrahimzahoor',
+    to: 'https://www.behance.net/qbatch',
   },
   {
     img: '/youtube',
-    to: 'https://www.youtube.com/@qbatch6700',
+    to: 'https://www.youtube.com/@qbatch',
   },
 ]
 
