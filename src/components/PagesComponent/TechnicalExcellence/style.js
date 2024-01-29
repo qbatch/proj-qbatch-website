@@ -33,6 +33,7 @@ const TechnicalExcellenceWrapper = styled.div`
       line-height: 32px;
       letter-spacing: 0.5px;
       margin-bottom: 24px;
+      text-transform: none;
     }
     p {
       margin-bottom: 32px;
@@ -53,6 +54,6 @@ const TechnicalExcellenceWrapper = styled.div`
      `}
     }
   }
-`;
+`
 
 export default TechnicalExcellenceWrapper;

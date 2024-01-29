@@ -27,7 +27,7 @@ ${media.sm`
     margin-bottom: 20px;
     max-width: 454px;
     li{
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       color: ${({ theme }) => theme.colors.bodyText};
       line-height: 32px;
       display: flex;

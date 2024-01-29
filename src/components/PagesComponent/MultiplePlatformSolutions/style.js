@@ -26,10 +26,12 @@ const MultiPlatformWrapper = styled.div`
       text-transform: none;
       line-height: 32px;
       letter-spacing: 0.7px;
-      ${media.md`
+      font-size: 16px;
+      color: #5F737C;
+       ${media.md`
         max-width: 100%;
         margin-bottom: 72px;
-      `}
+      `};
     }
   }
   .platform-list {

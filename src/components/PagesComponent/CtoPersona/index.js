@@ -79,7 +79,7 @@ const persona = [
               return (
                 <Col lg={4} md={6} sm={12}>
                   <div className="persona-box" key={index}>
-                    <h4 className="color-primary">{persona.title}</h4>
+                    <h4>{persona.title}</h4>
                     <ul className="persona-list">
                       {persona.list.map((service, index) => (
                         <li data-icon="-" key={index}>
@@ -115,7 +115,7 @@ const persona = [
                           </defs>
                           <text>
                             <textPath href="#circle">
-                              Can't Find your CTO Type? Can't Find your CTO Type? Can't Find your CTO Type?{' '}
+                              Can't Find Your CTO Type? Can't Find Your CTO Type? Can't Find Your CTO Type? 
                             </textPath>
                           </text>
                         </svg>

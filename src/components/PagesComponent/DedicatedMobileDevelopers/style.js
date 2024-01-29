@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const DedicatedMobileWrapper = styled.div`
-  background: url("/quotation-bg.svg");
+  background: url('/quotation-bg.svg');
   background-size: cover;
   padding: 120px 0;
   text-align: center;
@@ -37,7 +37,7 @@ const DedicatedMobileWrapper = styled.div`
   }
   .list-heading {
     position: relative;
-    color: ${({ theme }) => theme.colors.dividerColor};
+    color: ${({ theme }) => theme.colors.textColor};
     font-weight: 300;
     margin: 0 35px;
     ${media.md`
@@ -45,7 +45,7 @@ const DedicatedMobileWrapper = styled.div`
   `}
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       height: 6px;
       width: 6px;
@@ -76,6 +76,6 @@ const DedicatedMobileWrapper = styled.div`
       }
     }
   }
-`;
+`
 
 export default DedicatedMobileWrapper;

@@ -18,7 +18,7 @@ const ChooseCtoWrapper = styled.div`
       `}
   }
   p {
-    margin-top: 18px;
+    margin-top: 16px;
     max-width: 567px;
     line-height: 32px;
   }

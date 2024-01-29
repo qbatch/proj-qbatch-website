@@ -911,7 +911,7 @@ const ctoResponsibilities = [
   'Discovers and implements new technology',
   'Product development and launch',
   'Project audit and analysis',
-  'Hiring, training, and retaining talent.',
+  'Hiring, training, and retaining talent',
   'Leadership skill to motivat teams ',
   'System infrastructure modernization and supervision ',
   'Pitching to investors',
