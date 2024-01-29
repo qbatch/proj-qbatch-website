@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react'
 import Banner from '../components/PagesComponent/PageBanner'
 import { Queries } from '../constants/queries'
 import Layout from "../components/Layout/layout";
@@ -10,6 +10,12 @@ import StartProject from "../components/PagesComponent/StartProject";
 import SuccessStories from "../components/PagesComponent/SuccessStories";
 
 const Portfolio = () => {
+  useEffect(()=>{
+ setTimeout(() => {
+   window.scrollTo({ top: 0, behavior: 'smooth' })
+ }, 500)
+  },[])
+ 
   return (
     <Layout>
       <Banner

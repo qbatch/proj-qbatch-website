@@ -2,6 +2,7 @@ import React from "react";
 import Banner from '../../components/PagesComponent/PageBanner'
 import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
+import Slider from '../../components/UiComponent/Slider'
 import Layout from "../../components/Layout/layout";
 import StartProject from "../../components/PagesComponent/StartProject";
 import WhatCanHelp from "../../components/PagesComponent/WhatCanYouHelp/index";
@@ -32,26 +33,26 @@ const Ecommerce = () => {
         blogInner={EcommerceBanner}
       />
       <WhatCanHelp />
-      <DevelopmentStages
+      <Slider
         heading="Our 5-Step E-commerce Automation Process"
-        desc="To help you stand your ground in the ever-growing e-commerce district!"
-        sliderData={ecomSliderItems}
-        col1={5}
-        col2={7}
-        subCol1={6}
-        subCol2={6}
-        mt="mt-4"
-        className="ecom-section"
-        isScroll={false}
+        paragraph="To help you stand your ground in the ever-growing e-commerce district!"
+        data={ecomSliderItems}
+        align="center"
       />
       <BusinessMangement />
       <TrippleYourRevenue />
-      <Automation
+      {/* <Automation
         data={automationData}
         heading="Automation is 99% software but, 1% mindset "
         span="(and oh, that 1%)"
         desc="This is your hint to bury your conventional e-commerce ways and"
         className="automation-section"
+      /> */}
+      <Slider
+        heading="Automation is 99% software but, 1% mindset "
+        paragraph="This is your hint to bury your conventional e-commerce ways and"
+        data={automationData}
+        align="center"
       />
       <IdeasAndInvestments heading="100+ businesses trusted us with their ideas and investments," span="will you?" />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />

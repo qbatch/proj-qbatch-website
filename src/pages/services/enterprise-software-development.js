@@ -17,7 +17,7 @@ import SecretSauce from "../../components/PagesComponent/SecretSauce";
 import SofwareDevelopmentExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import DoYouKnow from "../../components/PagesComponent/DedicatedMobileDevelopers";
 import BannerImage from "../../../static/enterprise-banner.png";
-
+import Slider from '../../components/UiComponent/Slider'
 import {
   lostToLaunchedItems,
   enterPrisFaq,
@@ -52,21 +52,10 @@ const Enterprise = () => {
         isBtn={true}
       />
       <WhatDifferenceQbatchMaking heading="Why Trust Qbatch for Your Enterprise Software?" innerPage={true} />
-
-      <LostToLaunched
+      <Slider
         heading="Custom Enterprise Software Development Services"
-        desc="Don’t hamper your growth by second-guessing your choices and hire Qbatch as your partner enterprise app development company to help your enterprise-level projects with the following services: "
-        sliderData={customEnterpriseData}
-        col1={5}
-        col2={7}
-        subCol1={5}
-        subCol2={7}
-        mt="mt-4"
-        className="ecom-section product-development-service"
-        isScroll={false}
-        paddingLeft="0px"
-        maxWidth="100%"
-        minHeight="524px"
+        paragraph="Don’t hamper your growth by second-guessing your choices and hire Qbatch as your partner enterprise app development company to help your enterprise-level projects with the following services:"
+        data={customEnterpriseData}
       />
       <DesiredResult
         heading="Kickoff Enterprise Transformation toward a scalable and human-driven future."
@@ -74,11 +63,12 @@ const Enterprise = () => {
         className="enterprise"
         btnText="Let’s Transform"
       />
-      <SofwareDevelopmentExpertise
-        data={developmentExpertiseData}
+      <Slider
         heading="Enterprise Software Development Expertise"
-        desc="Here, choose the right enterprise software solution for your business and we’ll provide you with experience-driven software architecture, flexible reconfiguration, and complete process control."
-        className="development-section enterprise"
+        paragraph="Here, choose the right enterprise software solution for your business and we’ll provide you with experience-driven software architecture, flexible reconfiguration, and complete process control."
+        data={developmentExpertiseData}
+        align="center"
+        width="350px"
       />
       <ChoiseYourEnterprise
         heading="Technological Capacity To Bring That Change!"
@@ -91,17 +81,11 @@ const Enterprise = () => {
         btnText="Get Expert Advice"
         className="you-know-section"
       />
-      <LostToLaunched
+      <Slider
         heading="Lost to Launched"
-        desc="Our Mobile App Development Process Enroute Successs"
-        sliderData={lostToLaunchedItems}
-        col1={5}
-        col2={7}
-        subCol1={5}
-        subCol2={7}
-        mt="mt-4"
-        className="ecom-section launched"
-        isScroll={false}
+        paragraph="Our Mobile App Development Process Enroute Successs"
+        data={lostToLaunchedItems}
+        align="center"
       />
       <LanguagesAndFrameworks />
       <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />

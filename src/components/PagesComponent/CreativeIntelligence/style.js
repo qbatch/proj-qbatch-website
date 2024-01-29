@@ -31,7 +31,7 @@ const CreativeIntelligenceWrapper = styled.div`
     margin: 0 auto;
     .creative-quote {
       min-width: 52px;
-      padding-top: 8%;
+      padding-top: 6%;
       ${media.xs`
         min-width:35px;
     `}

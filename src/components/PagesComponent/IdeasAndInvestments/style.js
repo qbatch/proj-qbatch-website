@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const IdeasWrapper = styled.div`
-  background: url('/growing-bg.svg');
+  background: url('/unique-modal.svg');
   background-size: cover;
   padding: 120px 203px;
   ${media.md`
@@ -30,7 +30,7 @@ const IdeasWrapper = styled.div`
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 1038px;
     text-transform: capitalize;
-    margin-bottom:16px;
+    margin-bottom: 16px;
     .inner-heading {
       color: ${({ theme }) => theme.colors.dividerColor};
       display: block;
@@ -38,9 +38,6 @@ const IdeasWrapper = styled.div`
     ${media.sm`
       margin-bottom: 32px;
     `}
-  }
-  .idea-btn {
-    padding-top: 72px;
   }
   &.desired-result {
     .heading {
