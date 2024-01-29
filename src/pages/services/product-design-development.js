@@ -4,7 +4,7 @@ import Layout from '../../components/Layout/layout'
 import SEO from '../../components/Seo'
 import Banner from '../../components/PagesComponent/PageBanner'
 import HireCto from '../../components/PagesComponent/HireCto'
-import LostToLaunched from '../../components/PagesComponent/DevelopmentStages'
+import Slider from '../../components/UiComponent/Slider'
 import TheySayWeSay from '../../components/PagesComponent/TheySayWeSay'
 import DesiredResult from '../../components/PagesComponent/IdeasAndInvestments'
 import PeopleFirst from '../../components/PagesComponent/PeopleFirst'
@@ -58,20 +58,11 @@ const ProductDesign = () => {
         desc1="Qbatch being a trusted product development services company doesn’t make false promises but believes in a value system: "
         className="helpSection"
       />
-      <LostToLaunched
+      <Slider
         heading="Explore Our Full-Cycle Product Development Services"
-        desc="From workshops to the app’s public launch and continuous support throughout, our product engineering team devotedly brainstorms, documents, prototypes, builds, and upgrades the product until you make a lasting impact in the raging market. "
-        sliderData={productDevlopmentServices}
-        col1={5}
-        col2={7}
-        subCol1={5}
-        subCol2={7}
-        mt="mt-4"
-        className="ecom-section product-development-service"
-        isScroll={false}
-        paddingLeft="0px"
-        maxWidth="100%"
-        minHeight="524px"
+        paragraph="From workshops to the app’s public launch and continuous support throughout, our product engineering team devotedly brainstorms, documents, prototypes, builds, and upgrades the product until you make a lasting impact in the raging market."
+        data={productDevlopmentServices}
+        width="350px"
       />
       <DesiredResult
         heading="Simply describe your idea and we will take care of the rest from team management and development to the successful product launch."

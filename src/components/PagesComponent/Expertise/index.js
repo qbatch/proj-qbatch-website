@@ -20,7 +20,7 @@ const Index = () => {
     {
       img: FullStack,
       title: "Full Stack Web Development",
-      badge: ["Chip/Label ", "RubyOnRails", "Django"],
+      badge: ["Chip/Label ", "Ruby On Rails", "Django"],
     },
     {
       img: MobileApp,

@@ -37,7 +37,7 @@ const Index = ({ headingClass, paragraph }) => {
             <h2 className={`heading ${headingClass}`}>Collaboration Models For Everlasting Partnerships</h2>
             <p>
               {paragraph ||
-                'Our unique Happy Paths approach is a predictive and transparent way to implement your idea. Choose what suits you best'}
+                'Our unique "Happy Paths" approach is a predictive and transparent way to implement your idea. Choose what suits you best'}
             </p>
           </div>
           <div className="collaboration-content">

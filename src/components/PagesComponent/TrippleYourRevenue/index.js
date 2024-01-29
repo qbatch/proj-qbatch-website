@@ -22,7 +22,7 @@ const Index = () => {
               <div className="revenue-box">
                 <div key={index} className="revenue-data">
                   <div className="revenue-img">
-                    <img src={item.img} alt="logo" />
+                    <img src={item.image} alt="logo" />
                   </div>
                   <div className="revenue-desc d-flex flex-column justify-content-center h-100">
                     <h3>{item.title}</h3>

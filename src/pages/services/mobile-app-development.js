@@ -15,6 +15,7 @@ import StartProject from "../../components/PagesComponent/StartProject";
 import AppDevelopmentServices from "../../components/PagesComponent/TechnicalGuidance";
 import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
 import SecretSauce from "../../components/PagesComponent/SecretSauce";
+import Slider from '../../components/UiComponent/Slider'
 import Banner from "../../components/PagesComponent/PageBanner";
 import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
 import DedicatedMobileDevelopers from "../../components/PagesComponent/DedicatedMobileDevelopers";
@@ -73,19 +74,12 @@ const MobileApp = () => {
                 commitment to our clients that we are resolving the problem."
         data={revenueData}
       /> */}
-      <LostToLaunched
+      <Slider
         heading="Our Secret Sauce?"
-        desc="We’re looking into the problem, we will update you as soon as
+        paragraph="We’re looking into the problem, we will update you as soon as
                 we have promising information” — not a statement but a
                 commitment to our clients that we are resolving the problem."
-        sliderData={revenueData}
-        col1={5}
-        col2={7}
-        subCol1={5}
-        subCol2={7}
-        mt="mt-4"
-        className="ecom-section product-development-service"
-        isScroll={false}
+        data={revenueData}
       />
       <CrewNotVendors />
       <MultiplePlatformSolutions />
@@ -95,23 +89,16 @@ const MobileApp = () => {
         isList={true}
         btnText="Get Your Devs"
       />
-      <AppDevelopmentServices
-        data={developmentServicesData}
+      <Slider
         heading="Full Suite of Custom Mobile App Development Services"
-        desc=" ExploreTime-tested Web Application Development tools and technologies to build a cross-platform and secure application:"
-        className="development-section"
+        paragraph="ExploreTime-tested Web Application Development tools and technologies to build a cross-platform and secure application:"
+        data={developmentServicesData}
+        width="350px"
       />
-      <LostToLaunched
+      <Slider
         heading="Lost to Launched"
-        desc="Our Mobile App Development Process Enroute Successs"
-        sliderData={lostToLaunchedItems}
-        col1={5}
-        col2={7}
-        subCol1={5}
-        subCol2={7}
-        mt="mt-4"
-        className="ecom-section launched"
-        isScroll={false}
+        paragraph="Our Mobile App Development Process Enroute Successs"
+        data={lostToLaunchedItems}
       />
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
       <Achievements innerPage={true} />

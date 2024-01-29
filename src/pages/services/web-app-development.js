@@ -3,7 +3,7 @@ import Banner from '../../components/PagesComponent/PageBanner'
 import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
-import WebappBanner from "../../components/PagesComponent/WebappBanner";
+import Slider from '../../components/UiComponent/Slider'
 import Achievements from "../../components/PagesComponent/Achievements";
 import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
 import AppDevelopment from "../../components/PagesComponent/AppDevelopmentService";
@@ -21,7 +21,7 @@ import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
 import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
 import WebExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import WebappImage from '../../../static/web-app-dev.svg'
-import { lostToLaunchedItems, webExpertiseData, peopleFirstData } from "../../constants";
+import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData } from '../../constants'
 
 const webapp = () => {
 
@@ -36,14 +36,17 @@ const webapp = () => {
         blogInner={WebappImage}
       />
       <Achievements innerPage={true} />
-      <YouCanTrust />
+      <Slider
+        heading="We Are Developers You Can Trust For Your Web App"
+        paragraph="A web app is more than APIs and design, it’s following the human-to-human approach and building what the world needs."
+        data={youCanTrustData}
+      />
       <FullCycle />
       <SolutionToChoose />
-      <WebExpertise
-        data={webExpertiseData}
+      <Slider
         heading="Explore Our Advanced Web Application Expertise"
-        desc="From legacy system modernization to developing high-performing microservices, team Qbatch has delivered 300+ custom solutions for several businesses globally. "
-        className="expertise-section"
+        paragraph="From legacy system modernization to developing high-performing microservices, team Qbatch has delivered 300+ custom solutions for several businesses globally."
+        data={webExpertiseData}
       />
       <AppDevelopment />
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
@@ -53,18 +56,7 @@ const webapp = () => {
         className="desired-result"
         btnText="Get Started Risk-Free"
       />
-      <LostToLaunched
-        heading="Lost to Launched"
-        desc="Web Application Development Process"
-        sliderData={lostToLaunchedItems}
-        col1={5}
-        col2={7}
-        subCol1={5}
-        subCol2={7}
-        mt="mt-4"
-        className="ecom-section launched"
-        isScroll={false}
-      />
+      <Slider align="center" heading="Lost to Launched" paragraph="Web Application Development Process" data={lostToLaunchedItems} />
       <LanguagesAndFrameworks />
       <Collaboration heading="text-h2" />
       <ProvenWorkExperience heading="Success Stories" paragraph="They imagined it, we brought it to the world!" />

@@ -19,7 +19,7 @@ const ChoiceEnterpriseWrapper = styled.div`
       `}
     }
     p {
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       line-height: 32px;
       letter-spacing: 0.7px;
       max-width: 950px;

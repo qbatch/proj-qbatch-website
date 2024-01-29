@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const MarketplaceSellersWrapper = styled.div`
-  background-image: ${(props) => (props.backgroundImage ? `url(${props.backgroundImage})` : '/growing-bg.svg')};
+  background-image: ${(props) =>
+    props.backgroundImage ? `url(${props.backgroundImage})` : 'url(/growing-bg.svg)'};
   background-size: cover;
   padding: 120px 203px;
   &.productDesign {

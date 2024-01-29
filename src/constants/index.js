@@ -126,7 +126,7 @@ const values = [
 ];
 
 const CareersData = [
-  { jobTitle: "Job Title 1", location: "Onsite, Lahore", tags: ["Chip/Label", "RubyOnRails", "Django", "nice"] },
+  { jobTitle: "Job Title 1", location: "Onsite, Lahore", tags: ["Chip/Label", "Ruby On Rails", "Django", "nice"] },
   { jobTitle: "Job Title 2", location: "Onsite, Lahore", tags: ["Chip/Label", "React", "Node.js", "nice", "nice-2"] },
 ];
 
@@ -158,7 +158,7 @@ const data = [
   {
     id: 4,
     challenges: "Is your idea risk-free",
-    solve: "Build minimal- to zero-risk solutions",
+    solve: "Build minimal to zero-risk solutions",
     icon1: "/risk-free-icon1.svg",
     icon2: "/risk-free-icon2.svg",
   },
@@ -805,75 +805,75 @@ const revenueData = [
 
 const automationData = [
   {
-    icon: "/data-driven-decisions.svg",
-    desc: "Make data-driven decisions for targeted marketing and optimization."
+    image: "/data-driven-decisions.svg",
+    content: "Make data-driven decisions for targeted marketing and optimization."
   },
   {
-    icon: "/marketplaces-logistics-and-stores.svg",
-    desc: "Facilitate communication across marketplaces, logistics, and stores."
+    image: "/marketplaces-logistics-and-stores.svg",
+    content: "Facilitate communication across marketplaces, logistics, and stores."
   },
   {
-    icon: "/tasks-for-faster-sales.svg",
-    desc: "Eliminate repetitive tasks for faster sales."
+    image: "/tasks-for-faster-sales.svg",
+    content: "Eliminate repetitive tasks for faster sales."
   },
   {
-    icon: "/orders-across-inventories.svg",
-    desc: "Manage multichannel orders across inventories."
+    image: "/orders-across-inventories.svg",
+    content: "Manage multichannel orders across inventories."
   },
   {
-    icon: "/overstocking-in-your-supply-chain.svg",
-    desc: "Auto-track stockouts and overstocking in your supply chain."
+    image: "/overstocking-in-your-supply-chain.svg",
+    content: "Auto-track stockouts and overstocking in your supply chain."
   },
   {
-    icon: "/market-and-operational-costs.svg",
-    desc: "Reduce time-to-market and operational costs."
+    image: "/market-and-operational-costs.svg",
+    content: "Reduce time-to-market and operational costs."
   },
   {
-    icon: "/foolproof-security-standards.svg",
-    desc: "Ensure foolproof security standards."
+    image: "/foolproof-security-standards.svg",
+    content: "Ensure foolproof security standards."
   },
   {
-    icon: "/shopping-experiences.svg",
-    desc: "Deliver personalized shopping experiences."
+    image: "/shopping-experiences.svg",
+    content: "Deliver personalized shopping experiences."
   },
 ]
 
 const webExpertiseData = [
   {
-    icon: "/serverless-microservices.svg",
-    desc: "Serverless Microservices based Web Apps."
+    image: '/serverless-microservices.svg',
+    title: 'Serverless Microservices based Web Apps.',
   },
   {
-    icon: "/service-oriented-architectures.svg",
-    desc: "Service-Oriented-Architectures (SOA)."
+    image: '/service-oriented-architectures.svg',
+    title: 'Service-Oriented-Architectures (SOA).',
   },
   {
-    icon: "/multi-service-cloud.svg",
-    desc: "Multi-service Cloud Applications."
+    image: '/multi-service-cloud.svg',
+    title: 'Multi-service Cloud Applications.',
   },
   {
-    icon: "/operational-automation.svg",
-    desc: "Operational Automation & Analytics."
+    image: '/operational-automation.svg',
+    title: 'Operational Automation & Analytics.',
   },
   {
-    icon: "/knowledge-management-systems.svg",
-    desc: "Document & Knowledge Management Systems."
+    image: '/knowledge-management-systems.svg',
+    title: 'Document & Knowledge Management Systems.',
   },
   {
-    icon: "/ecommerce-apps.svg",
-    desc: "E-commerce & M-commerce Apps."
+    image: '/ecommerce-apps.svg',
+    title: 'E-commerce & M-commerce Apps.',
   },
   {
-    icon: "/admin-panels-dashboards.svg",
-    desc: "Admin Panels & Management Dashboards"
+    image: '/admin-panels-dashboards.svg',
+    title: 'Admin Panels & Management Dashboards',
   },
   {
-    icon: "/product-configurators.svg",
-    desc: "Product configurators."
+    image: '/product-configurators.svg',
+    title: 'Product configurators.',
   },
   {
-    icon: "/ondemand-apps.svg",
-    desc: "On-Demand Apps."
+    image: '/ondemand-apps.svg',
+    title: 'On-Demand Apps.',
   },
 ]
 
@@ -1871,7 +1871,7 @@ const enterPrisFaq = [
         <ul>
           <li>Risk assessment and threat modeling</li>
           <li>Code reviews and audits</li>
-          <li>Mult-Factor Authentication (MFA) and Role-Based Access Control (RBAC)</li>
+          <li>Multi-Factor Authentication (MFA) and Role-Based Access Control (RBAC)</li>
           <li>Industry-level data encryption algorithms and protocols</li>
           <li>Robust APIs decurity approaches against unauthorized data access</li>
           <li>Regular security patches and updates</li>
@@ -1941,88 +1941,89 @@ const enterPrisFaq = [
 ]
 const guidanceData = [
   {
-    icon: '/vertical-aligmnet.svg',
+    image: '/vertical-aligmnet.svg',
     title: 'Vision and Future Alignment',
-    desc: 'Build a roadmap that elevates your technical strategy, objectives, and operations to achieve a holistic digital footprint powering associated people, processes, and possibilities with our CTO consulting services. Let’s turn your vision into victory.',
+    content: 'Build a roadmap that elevates your technical strategy, objectives, and operations to achieve a holistic digital footprint powering associated people, processes, and possibilities with our CTO consulting services. Let’s turn your vision into victory.',
   },
   {
-    icon: '/leading-and-scaling-teams.svg',
+    image: '/leading-and-scaling-teams.svg',
     title: 'Leading and Scaling  Teams',
-    desc: 'Your development team decides and shapes the future of the entire business. Thus we keep the bar high when it comes to tech leadership and management. Enjoy proficient team management, process optimization, and daily reporting with our CTO services.',
+    content: 'Your development team decides and shapes the future of the entire business. Thus we keep the bar high when it comes to tech leadership and management. Enjoy proficient team management, process optimization, and daily reporting with our CTO services.',
   },
   {
-    icon: '/strategic-procurement-and-cost-optimization.svg',
+    image: '/strategic-procurement-and-cost-optimization.svg',
     title: 'Strategic Procurement and Cost Optimization',
-    desc: 'Technology expenses can quickly escalate if the"build vs. buy" analysis goes wrong with suppliers and vendors. Our CTO advisory services develop a problem-solution fit by running iterations and finding critical areas that truly require investment. ',
+    content: 'Technology expenses can quickly escalate if the"build vs. buy" analysis goes wrong with suppliers and vendors. Our CTO advisory services develop a problem-solution fit by running iterations and finding critical areas that truly require investment. ',
   },
   {
-    icon: '/technical-audit.svg',
+    image: '/technical-audit.svg',
     title: 'Technical Audits, Due Diligence, and Change Management',
-    desc: 'We dive deeper into the technical risks associated with your business processes and strategy, conduct audits, prepare you for due diligence, and prescribe rock-solid change management roadmaps toward total digital transformation and delivery across the company.',
+    content: 'We dive deeper into the technical risks associated with your business processes and strategy, conduct audits, prepare you for due diligence, and prescribe rock-solid change management roadmaps toward total digital transformation and delivery across the company.',
   },
   {
-    icon: '/system-engineering-and-design.svg',
+    image: '/system-engineering-and-design.svg',
     title: 'System Engineering and Design',
-    desc: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise systems',
+    content: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise systems',
   },
   {
-    icon: '/technology-integration-and-analysis.svg',
+    image: '/technology-integration-and-analysis.svg',
     title: 'Technology Integration and Analysis',
-    desc: 'Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.',
+    content: 'Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.',
   },
 ]
 
 const developmentServicesData = [
   {
-    icon: "/custom-mobile-app.svg",
-    title: "Custom Mobile App Solutions",
-    desc: "Custom mobile app development services for fully automated and modern enterprise operations toward better business management, visibility, transparency, and accountability.",
+    image: '/custom-mobile-app.svg',
+    title: 'Custom Mobile App Solutions',
+    content:
+      'Custom mobile app development services for fully automated and modern enterprise operations toward better business management, visibility, transparency, and accountability.',
   },
   {
-    icon: "/ux-ui-mobile-app.svg",
-    title: "UX/UI Mobile App Design",
-    desc: "Hire our mobile app designers to achieve a personalized and engaging UX/UI mobile app outlook. It would help your business to deliver the best impressions on your prospects and engage them longer.",
+    image: '/ux-ui-mobile-app.svg',
+    title: 'UX/UI Mobile App Design',
+    content: 'Hire our mobile app designers to achieve a personalized and engaging UX/UI mobile app outlook. It would help your business to deliver the best impressions on your prospects and engage them longer.',
   },
   {
-    icon: "/ai-app.svg",
-    title: "AI App Development",
-    desc: 'Innovate your mobile app, its processes, and services with our unconventional AI mobile app development services. Let’s explore futuristic algorithms and rebuild your enterprise today.',
+    image: '/ai-app.svg',
+    title: 'AI App Development',
+    content: 'Innovate your mobile app, its processes, and services with our unconventional AI mobile app development services. Let’s explore futuristic algorithms and rebuild your enterprise today.',
   },
   {
-    icon: "/mobile-app-consulting.svg",
-    title: "Mobile App Consulting",
-    desc: "Worried about executing your mobile app idea? We offer reliable mobile consulting services to help you shape and launch a powerful mobile application that expedites your business and meets your goals.",
+    image: '/mobile-app-consulting.svg',
+    title: 'Mobile App Consulting',
+    content: 'Worried about executing your mobile app idea? We offer reliable mobile consulting services to help you shape and launch a powerful mobile application that expedites your business and meets your goals.',
   },
   {
-    icon: "/third-party-integration.svg",
-    title: "Third-party Integration Services",
-    desc: "Extend the usability and multi-functionality of your mobile app for your enterprise members and users by integrating third-party integrations like maps, social platforms, payment extensions, etc.",
+    image: '/third-party-integration.svg',
+    title: 'Third-party Integration Services',
+    content: 'Extend the usability and multi-functionality of your mobile app for your enterprise members and users by integrating third-party integrations like maps, social platforms, payment extensions, etc.',
   },
   {
-    icon: "/mobile-testing.svg",
-    title: "Mobile Testing & QA",
-    desc: "Minimize app uninstallation and boost your reputation by availing our mobile app testing services. We conduct grass-root level QA to identify potential bugs and assure sustainable performance.",
+    image: '/mobile-testing.svg',
+    title: 'Mobile Testing & QA',
+    content: 'Minimize app uninstallation and boost your reputation by availing our mobile app testing services. We conduct grass-root level QA to identify potential bugs and assure sustainable performance.',
   },
-];
+]
 
 const youCanTrustData = [
   {
-    icon: "/time-budget.svg",
-    title: "On-time and On-budget",
+    image: '/time-budget.svg',
+    title: 'On-time and On-budget',
   },
   {
-    icon: "/strongly-agile.svg",
-    title: "Strongly Agile",
+    image: '/strongly-agile.svg',
+    title: 'Strongly Agile',
   },
   {
-    icon: "/stable-code.svg",
-    title: "100% Stable Code",
+    image: '/stable-code.svg',
+    title: '100% Stable Code',
   },
   {
-    icon: "/cash-free.svg",
-    title: "Crash-free Product",
+    imagewebExpertiseData: '/cash-free.svg',
+    title: 'Crash-free Product',
   },
-];
+]
 const multiPlatformData = [
   {
     icon: "/android-mobile-app.svg",
@@ -2175,7 +2176,7 @@ const productDesignData = [
   {
    icon: "/user-expectations.svg",
    title: "User Expectations",
-   desc: "Are your users/ customers happy with the current software functionality, interface, and design? Does it offer easy-to-use features or are they just making the user journey difficult?"
+   desc: "Are your users/customers happy with the current software functionality, interface, and design? Does it offer easy-to-use features or are they just making the user journey difficult?"
   },
   {
    icon: "/operational-efficiency.svg",
@@ -2210,44 +2211,44 @@ const productDesignData = [
  ]
  const developmentExpertiseData = [
    {
-     icon: '/data-warehouse.svg',
+     image: '/data-warehouse.svg',
      title: 'Data Warehousing',
-     desc: 'Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.',
+     content: 'Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.',
    },
    {
-     icon: '/crm-development.svg',
+     image: '/crm-development.svg',
      title: 'CRM Development',
-     desc: 'Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!',
+     content: 'Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!',
    },
    {
-     icon: '/modernization-services.svg',
+     image: '/modernization-services.svg',
      title: 'IT Modernization Services',
-     desc: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
+     content: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
    },
    {
-     icon: '/cms-development.svg',
+     image: '/cms-development.svg',
      title: 'CMS Development',
-     desc: 'Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.',
+     content: 'Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.',
    },
    {
-     icon: '/scm-development.svg',
+     image: '/scm-development.svg',
      title: 'SCM Development',
-     desc: 'Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.',
+     content: 'Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.',
    },
    {
-     icon: '/ehr-development.svg',
+     image: '/ehr-development.svg',
      title: 'EHR Development',
-     desc: 'Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.',
+     content: 'Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.',
    },
    {
-     icon: '/bi-service.svg',
+     image: '/bi-service.svg',
      title: 'BI Services',
-     desc: 'Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.',
+     content: 'Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.',
    },
    {
-     icon: '/hrm-development.svg',
+     image: '/hrm-development.svg',
      title: 'HRM Software Development',
-     desc: 'Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.',
+     content: 'Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.',
    },
  ]
 const customEnterpriseData = [
@@ -2273,7 +2274,7 @@ const customEnterpriseData = [
     image: '/custom-enterprise-software-development-services.svg',
     title: 'Data Management and Business Intelligence (BI)',
     content:
-      'Integrate powerful data management modules and AI-driven tools to break down complex data into predictive decisions. We as an enterprise software development services company use analytics and automation for easy and quick bulk data management and assessment.nctionality units.',
+      'Integrate powerful data management modules and AI-driven tools to break down complex data into predictive decisions. We as an enterprise software development services company use analytics and automation for easy and quick bulk data management and assessment fnctionality units.',
   },
   {
     image: '/custom-enterprise-software.svg',
