@@ -12,8 +12,8 @@ const Index = (props) => {
   return (
     <TechnicalExcellenceWrapper className={className}>
       <Container>
-        <Row>
-          <Col lg={6}>
+        <Row className='justify-content-between'>
+          <Col lg={5}>
             <h2 className="technical-heading">{heading}</h2>
           </Col>
           <Col lg={6}>

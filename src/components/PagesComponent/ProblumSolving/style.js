@@ -100,7 +100,7 @@ const ProblumSolvingWrapper = styled.div`
   }
   &.contact-project-cost {
     background-color: #f2f3f5;
-    padding: 188px 0;
+    padding: 96px 0;
     ${media.md`
    padding: 100px 0;
   `}

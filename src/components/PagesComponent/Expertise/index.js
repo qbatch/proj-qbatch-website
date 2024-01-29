@@ -30,7 +30,7 @@ const Index = () => {
     {
       img: UIUX,
       title: "Product, UX & UI Design",
-      badge: ["Research ", "Wireframe", "User Interface", "Prototyping", "Figma", "Figjam"],
+      badge: ["Research ", "Wireframe", "User Interface", "Prototyping", "Figma"],
     },
     {
       img: SupplyChain,

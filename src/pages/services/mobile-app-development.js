@@ -76,9 +76,11 @@ const MobileApp = () => {
       /> */}
       <Slider
         heading="Our Secret Sauce?"
+        seconedHeading="100% Communication & Transparency"
         paragraph="We’re looking into the problem, we will update you as soon as
                 we have promising information” — not a statement but a
                 commitment to our clients that we are resolving the problem."
+        maxWidth="697px"
         data={revenueData}
       />
       <CrewNotVendors />
@@ -99,6 +101,7 @@ const MobileApp = () => {
         heading="Lost to Launched"
         paragraph="Our Mobile App Development Process Enroute Successs"
         data={lostToLaunchedItems}
+        align="center"
       />
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
       <Achievements innerPage={true} />
@@ -114,6 +117,7 @@ const MobileApp = () => {
         isButton={true}
         className="desired-result"
         btnText="Get Free Price Estimate"
+        align='d-flex justify-content-end'
       />
       <FaqSection faqQuestion={mobileAppFaq} />
       <StartProject />

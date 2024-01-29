@@ -63,6 +63,7 @@ const ProductDesign = () => {
         paragraph="From workshops to the app’s public launch and continuous support throughout, our product engineering team devotedly brainstorms, documents, prototypes, builds, and upgrades the product until you make a lasting impact in the raging market."
         data={productDevlopmentServices}
         width="350px"
+        align="center"
       />
       <DesiredResult
         heading="Simply describe your idea and we will take care of the rest from team management and development to the successful product launch."

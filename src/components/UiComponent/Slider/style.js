@@ -18,6 +18,7 @@ const SliderWrapper = styled.div`
       margin-bottom: 24px;
     }
     p {
+      max-width: ${(props) => (props.maxWidth ? props.maxWidth : '')};
       ${media.sm`
         max-width: 100%;
     `}
@@ -45,7 +46,7 @@ const SliderWrapper = styled.div`
       li {
         color: ${({ theme }) => theme.colors.textMedium};
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        margin-bottom:8px;
+        margin-bottom: 8px;
       }
     }
   }

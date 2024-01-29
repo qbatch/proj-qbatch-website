@@ -24,7 +24,7 @@ const Index = () => {
     <>
     <Container>
       <ChooseCtoWrapper>
-        <h3>Why Choose Our CTO as a Service?</h3>
+        <h5>Why Choose Our CTO as a Service?</h5>
         <Row>
           <Col md={12} lg={6}>
             <h2 className="color-primary">We want you to become a pioneer before the world calls you a laggard.</h2>

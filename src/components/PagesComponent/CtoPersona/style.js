@@ -182,7 +182,7 @@ const PersonaWrapper = styled.div`
         transition: transform 0.5s ease-out 100ms;
         pointer-events: none;
         text {
-          font-size: 7px;
+          font-size: 6.5px;
         }
       }
       .red-arrow {

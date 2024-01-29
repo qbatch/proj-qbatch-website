@@ -25,7 +25,7 @@ const CtoService = () => {
     <Layout>
       <Banner
         subheading="CTO as a Service"
-        heading="Rethink and Rebuild Your Technical Prowess"
+        heading="Rethink and Rebuild Your Technical Process"
         paragraph="Neglecting a tiny detail can lead to huge technical debts. Get high-impact technical guidance and confidently deal with time- and money-critical situations toward greater business growth."
         buttonText="Get Free CTO Consultation"
         imgSrc={CtoBannerImage}
@@ -63,20 +63,9 @@ const CtoService = () => {
         data={guidanceData}
         width="350px"
       />
-      {/* <DevelopmentStages
-        heading="Stuck at any of these development stages? We can help."
-        desc="Optimize your idea at each step with our technological prowess and business-critical insight."
-        sliderData={sliderItems}
-        col1={4}
-        col2={8}
-        subCol1={5}
-        subCol2={7}
-        className="slider-column"
-        isScroll={false}
-      /> */}
       <Slider
         heading="Stuck at any of these development stages? We can help."
-        paragraph="Optimize your idea at each step with our technological prowess and business-critical insight."
+        paragraph="Optimize your idea at each step with our technological process and business-critical insight."
         data={sliderItems}
         width="350px"
         align='center'

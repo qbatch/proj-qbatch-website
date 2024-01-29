@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     h1,h2,h3,h4,h5,h6{
         font-weight:600;
         color:${({ theme }) => theme.colors.bodyTextVariant};
-        text-transform: capitalize!important;
+        text-transform: capitalize;
     }
     a{
         color:${({ theme }) => theme.colors.primaryColor};
