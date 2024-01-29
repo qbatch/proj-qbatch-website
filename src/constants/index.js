@@ -247,31 +247,32 @@ const sliderItems = [
 
 const ecomSliderItems = [
   {
-    image: "/5 Step E-Commerce Automation_Problem Analysis.svg",
-    title: "Problem Analysis",
-    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+    image: '/5 Step E-Commerce Automation_Problem Analysis.svg',
+    title: 'Problem Analysis',
+    content: 'We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.',
   },
   {
-    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
-    title: "Software Automation Solution",
-    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+    image: '/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg',
+    title: 'Software Automation Solution',
+    content: 'We build modular, comprehensive, and fail-safe automation solutions for your business infrastructure.  ',
   },
   {
-    image: "/5 Step E-Commerce Automation_Installation.svg",
-    title: "Installation",
-    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+    image: '/5 Step E-Commerce Automation_Installation.svg',
+    title: 'Installation',
+    content: 'We install software solutions to achieve aspired technological sophistication and speed. ',
   },
   {
-    image: "/5 Step E-Commerce Automation_Orchestration.svg",
-    title: "Orchestration",
-    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+    image: '/5 Step E-Commerce Automation_Orchestration.svg',
+    title: 'Orchestration',
+    content:
+      'Complete process orchestration that supports real-time activity within and outside the distribution centers.',
   },
   {
-    image: "/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg",
-    title: "Full-Cycle Technical Support",
-    content: "We evaluate your problem statement and offer a carefully sorted roadmap and price estimate plan.",
+    image: '/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg',
+    title: 'Full-Cycle Technical Support',
+    content: 'We stay in touch with you for technical support on a long-term basis or as required.',
   },
-];
+]
 const lostToLaunchedItems = [
   {
     image: "/project-mapping.svg",

@@ -1,9 +1,8 @@
-import styled from "styled-components";
-import { media } from "../../../theme/media-mixins";
+import styled from 'styled-components'
+import { media } from '../../../theme/media-mixins'
 
 const Container = styled.div`
-  /* padding: 0 144px; */
-  padding: 0 96px;
+  padding: 0 144px;
   ${media.lg`
   padding: 0 80px;
   `}
@@ -24,4 +23,4 @@ const Container = styled.div`
     margin: 0 auto;
   }
 `
-export default Container;
+export default Container
