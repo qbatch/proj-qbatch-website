@@ -33,7 +33,7 @@ const Index = (props) => {
           </Col>
           <Col lg={4}>
             <div className="image-box">
-              <img src={authorImage || '/author-pic.png'} alt="no-author" />
+              <img width='300px' height='300px' src={authorImage || '/author-pic.png'} alt="no-author" />
             </div>
           </Col>
         </Row>
