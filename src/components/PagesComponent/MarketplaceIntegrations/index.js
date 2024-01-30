@@ -78,7 +78,7 @@ const Index = () => {
                             <Col md={6}>
                               <div className="marketplace-logo">
                                 {img === "" ? "" :
-                                  <img src={img} alt="project" />
+                                  <img src={img} width='200px' alt="project" />
                                 }
                               </div>
                             </Col>

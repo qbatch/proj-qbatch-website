@@ -359,22 +359,22 @@ const productDevlopmentServices = [
 
 const marketPlaceData = [
   {
-    image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg',"","",""],
+    image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg', '', '', ''],
     title: 'Marketplace',
   },
   {
-    image: ['/shopify.svg', '/woo-commerce.png', '/amazon-vendor.svg', '/kindle.svg',"","",""],
+    image: ['/shopify.svg', '/woo-commerce.png', '/amazon-vendor.png', '/kindle.svg', '', '', ''],
     title: 'Platform',
   },
   {
     image: [
-      '/amazon-seller.svg',
-      '/amazon-shipping.svg',
-      '/amazon-product.svg',
-      '/amazon-business.svg',
+      '/amazon-seller.webp',
+      '/amazon-shipping.png',
+      '/amazon-product.png',
+      '/amazon-business.png',
       '/ebay.svg',
       '/walmart.svg',
-      ""
+      '',
     ],
     title: 'API’s',
   },
