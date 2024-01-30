@@ -54,12 +54,12 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
    createPage({
-     path: `/authors/${node.user?.username}`,
+     path: `/authors/${node.user.username}`,
      component: path.resolve('./src/pages/authors.js'),
      context: {
-       title: node.user?.username,
-       description: node.user?.description,
-       img: node.user?.image,
+       title: node.user.username,
+       description: node.user.description,
+       img: node.user.image,
      },
    })
   
