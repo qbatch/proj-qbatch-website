@@ -799,7 +799,7 @@ const revenueData = [
   },
   {
     image: '/warehousing.svg',
-    title: 'Warehousing/ 3PL/Prep Center',
+    title: 'Warehousing / 3PL / Prep Center',
     content: 'Go data-driven and eliminate inaccurate inventory management and substandard processes.',
   },
 ]
@@ -866,7 +866,7 @@ const webExpertiseData = [
   },
   {
     image: '/admin-panels-dashboards.svg',
-    title: 'Admin Panels & Management Dashboards',
+    title: 'Admin Panels & Management Dashboards.',
   },
   {
     image: '/product-configurators.svg',
@@ -2021,7 +2021,7 @@ const youCanTrustData = [
     title: '100% Stable Code',
   },
   {
-    imagewebExpertiseData: '/cash-free.svg',
+    image: '/cash-free.svg',
     title: 'Crash-free Product',
   },
 ]

@@ -38,7 +38,6 @@ const RevenueWrapper = styled.div`
     `}
     .revenue-data {
       h3 {
-        color: ${({ theme }) => theme.colors.primaryColor};
         margin-bottom: 16px;
         font-weight: ${({ theme }) => theme.fontWeight.semiBold};
         letter-spacing: 0.6px
