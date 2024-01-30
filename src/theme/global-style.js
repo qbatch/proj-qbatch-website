@@ -244,7 +244,6 @@ const GlobalStyles = createGlobalStyle`
         margin-bottom:16px; 
       }
       h4 {
-        color: ${({ theme }) => theme.colors.dividerColor};
         letter-spacing: 0px;
         line-height: 32px; 
         margin-bottom:32px;
@@ -308,7 +307,6 @@ const GlobalStyles = createGlobalStyle`
       
      
       h4 {
-        color: ${({ theme }) => theme.colors.dividerColor};
         letter-spacing: 0px;
         line-height: 32px; 
         margin-bottom:32px;
