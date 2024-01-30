@@ -47,12 +47,17 @@ const BlogDetailsWrapper = styled.div`
     padding: 0px 40px;
     margin-top: 27px;
     text-align: center;
+    position: relative;
+    height:100%;
     ${media.sm`
     padding: 0;
   `}
 
     img {
       max-width: fit-content;
+      position: absolute;
+      bottom: 27px;
+      left: 0px;
       ${media.sm`
       max-width:100%;
   `}
