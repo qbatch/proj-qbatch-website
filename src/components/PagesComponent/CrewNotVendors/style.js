@@ -20,6 +20,7 @@ const CrewWrapper = styled.div`
       span {
         &:first-child {
           color: ${({ theme }) => theme.colors.whiteColor};
+          font-style:italic;
         }
         &:nth-child(2) {
           color: ${({ theme }) => theme.colors.dividerColor};

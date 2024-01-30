@@ -26,7 +26,7 @@ const Index = () => {
                   </div>
                   <div className="revenue-desc d-flex flex-column justify-content-center h-100">
                     <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <p>{item.content}</p>
                   </div>
                 </div>
               </div>
