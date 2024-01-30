@@ -35,10 +35,10 @@ export const Head = () => {
   return (
     <SEO
       title={seoData?.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      robots={seoData.metaRobots}
+      description={seoData?.metaDescription}
+      keywords={seoData?.keywords}
+      language={seoData?.language}
+      robots={seoData?.metaRobots}
       pathname={`/authors/${url}/`}
     />
   )

@@ -55,9 +55,9 @@ const MobileApp = () => {
               href="https://www.statista.com/statistics/271644/worldwide-free-and-paid-mobile-app-store-downloads/"
               target="blank"
             >
-              255 billion
+              257 billion
             </a>{' '}
-            app downloads in 2022 alone across the globe. So, even if they have to order a robot, they’d do it through a
+            app downloads in 2023 alone across the globe. So, even if they have to order a robot, they’d do it through a
             mobile app, right?!
           </>
         }
