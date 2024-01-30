@@ -80,7 +80,7 @@ const Index = (props) => {
       <Col md={6}>
         <div className="inner" key={ind}>
           <div className="card-img">
-            <img src={card.blogImg.localFile.url} alt={card.blogTitle} />
+            <img src={card.blogImg?.localFile.url} alt={card.blogTitle} />
             <div className="d-flex align-items-center justify-content-between">
               <div className="blog-badge">Blog</div>
               <span className="hours">
