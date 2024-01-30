@@ -31,7 +31,7 @@ export const Head = () => {
   const authorName = location?.pathname.split('/')[2]
   const url = currentUrl?.split('/')[4];
   const blogSeo = Queries()
-  const seoData = blogSeo.allStrapiUser.nodes?.filter((x) => x.username === authorName)[0].seo
+  const seoData = blogSeo.allStrapiUser.nodes?.filter((x) => x.username === authorName)[0]?.seo
   return (
     <SEO
       title={seoData?.metaTitle}
