@@ -124,7 +124,7 @@ const StoriesWrapper = styled.div`
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 6;
+            -webkit-line-clamp: 7;
             -webkit-box-orient: vertical;
           }
 

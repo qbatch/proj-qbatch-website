@@ -28,12 +28,13 @@ const Author = ({ pageContext, location }) => {
 export const Head = () => {
   const location = useLocation();
   const currentUrl = location.href;
+  const authorName = location?.pathname.split('/')[2]
   const url = currentUrl?.split('/')[4];
   const blogSeo = Queries()
-  const seoData = blogSeo.allStrapiUser.nodes.find((x) => x.seo).seo
+  const seoData = blogSeo.allStrapiUser.nodes?.filter((x) => x.username === authorName)[0].seo
   return (
     <SEO
-      title={seoData.metaTitle}
+      title={seoData?.metaTitle}
       description={seoData.metaDescription}
       keywords={seoData.keywords}
       language={seoData.language}
