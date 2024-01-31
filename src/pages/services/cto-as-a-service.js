@@ -1,6 +1,6 @@
 import React from "react";
-import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
+import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
 import StartProject from "../../components/PagesComponent/StartProject";
 import Banner from "../../components/PagesComponent/PageBanner";
@@ -19,7 +19,6 @@ import { guidanceData, ctoList } from "../../constants";
 import CtoBannerImage from "../../../static/cto-banner.svg";
 
 const CtoService = () => {
-
   return (
     <Layout>
       <Banner
