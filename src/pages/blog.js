@@ -11,7 +11,7 @@ import Container from "../components/UiComponent/Container";
 import  { Queries }  from "../constants/queries";
 
 const BlogPage = ({ pageContext }) => {
-      const location = useLocation()
+  const location = useLocation()
   const { title } = pageContext;
   const [activeTab, setActiveTab] = useState(title);
   const [searchTerm, setSearchTerm] = useState('');

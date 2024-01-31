@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { navigate } from 'gatsby'
 import { Queries } from '../../../constants/queries'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -101,10 +102,17 @@ const Index = () => {
               <div className="insight-card" key={index}>
                 <div className="inner">
                   <img className="card-img" src={card.blogImg?.localFile.url} alt={card.blogTitle} />
-                    <div className="inner-content"> 
+                  <div className="inner-content">
                     <h6 className="heading">{card.blogTitle}</h6>
-                    {/* <p className="paragraph">{card.content}</p> */}
-                    <PrimaryButton borderbottom text="Explore More" />
+                    <PrimaryButton
+                      borderbottom
+                      text="Explore More"
+                      onClick={() => {
+                        navigate(`/blog${card.seo.slug}`, {
+                          state: { blogId: card.id },
+                        })
+                      }}
+                    />
                   </div>
                 </div>
               </div>
