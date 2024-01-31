@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from '@reach/router'
+import React, { useEffect } from "react";
+
+import PageNotFound from '../pages/404';
 import Layout from "../components/Layout/layout";
 import BlogDetailBanner from "../components/PagesComponent/BlogDetailBanner";
 import BlogDetailsContent from "../components/PagesComponent/BlogDetailsContent";
@@ -8,6 +9,7 @@ import ContentWrapper from "../components/PagesComponent/BlogDetailsContent/styl
 import  { Queries }  from "../constants/queries";
 
 const BlogDetails = ({ pageContext }) => {
+  
     const path = pageContext?.title;
     const blogQuery = Queries()
     const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.seo.slug === `${path}`)
@@ -23,7 +25,9 @@ const BlogDetails = ({ pageContext }) => {
       window.removeEventListener('scroll', progressBarScroll)
     }
   }, [])
-  
+    if (!blogData) {
+        return <PageNotFound />
+      }
   return (
     <Layout pageTitle="My Blog Posts">
       <ContentWrapper>

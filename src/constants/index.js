@@ -28,15 +28,15 @@ const productDesignCounterData = [
 ];
 
 const companyCounter = [
-  { id: 1, count: 150, desc: "Customer Happiness Index", symbol: "%" },
-  { id: 2, count: 300, desc: "Partnerships Achieved", symbol: "+" },
-  { id: 3, count: 150, desc: "Projects Delivered", symbol: "+" },
-  { id: 4, count: 15, desc: "SaaS-Based Platforms Developed", symbol: "+" },
-  { id: 5, count: 30000, desc: "Hrs Of Productivity Unlocked!", symbol: "+" },
-  { id: 6, count: 100, desc: "Industry Experts", symbol: "+" },
-  { id: 7, count: 10, desc: "Years Of Excellency", symbol: "" },
-  { id: 8, count: 3, desc: "Global Offices", symbol: "" }
-];
+  { id: 1, count: 98, desc: 'Customer Happiness Index', symbol: '%' },
+  { id: 2, count: 300, desc: 'Partnerships Achieved', symbol: '+' },
+  { id: 3, count: 150, desc: 'Projects Delivered', symbol: '+' },
+  { id: 4, count: 15, desc: 'SaaS-Based Platforms Developed', symbol: '+' },
+  { id: 5, count: 30000, desc: 'Hrs Of Productivity Unlocked!', symbol: '+' },
+  { id: 6, count: 100, desc: 'Industry Experts', symbol: '+' },
+  { id: 7, count: 10, desc: 'Years Of Excellency', symbol: '' },
+  { id: 8, count: 3, desc: 'Global Offices', symbol: '' },
+]
 const peopleFirstData = [
   { id: 1, icon: '/people-first-icon-1.svg', desc: "E-commerce" },
   { id: 2, icon: '/people-first-icon-2.svg', desc: "Logistics & Supply Chain"},
@@ -70,7 +70,7 @@ const softwareProductData = [
   { id: 9, icon: '/online-streaming.svg', desc: 'Online Streaming Platforms' },
   { id: 10, icon: '/booking-apps.svg', desc: 'Booking Apps' },
   { id: 11, icon: '/on-demand-services.svg', desc: 'On-demand services platforms' },
-  { id: 12, icon: '/sap-enterprises.svg', desc: 'Warehouse Management Systems' },
+  { id: 12, icon: '/sap-enterprises.svg', desc: 'SAP Enterprises Tools' },
 ]
 const developmentProcessData = [
   {
@@ -97,7 +97,7 @@ const developmentProcessData = [
 ]
 const leaderData = [
   {  name: "Ibrahim Zahoor", title: "CEO & Founder", imageSrc: "/leader-1.jpeg" },
-  { name: "Hassan Akram", title: "CTO & co - Founder Qbatch", imageSrc: "/leader-2.jpeg" },
+  { name: "Hassan Akram", title: "CTO & CO - Founder Qbatch", imageSrc: "/leader-2.jpeg" },
 ];
 
 const clientsData = [
@@ -1407,7 +1407,7 @@ const productDesignFaq = [
           <li>Designing a wireframe and offering a roadmap </li>
           <li>Building and testing a prototype in the market</li>
           <li>Rectifying your idea per the responses</li>
-          <li>DCreating jaw-dropping product design</li>
+          <li>Creating jaw-dropping product design</li>
           <li>Developing an MVP based on necessary features and functionalities</li>
           <li>Launching the MVP for immediate public use</li>
           <li>Getting feedback from the early adopters</li>
@@ -2128,46 +2128,46 @@ const technologicalCapacityData = [
  ]
 const productDesignData = [
   {
-   icon: "/business-needs.svg",
-   title: "Verifying and Prioritizing Ideas",
-   desc: "Is your backlog full of great ideas but you cannot decide which idea should flow first? Our product developers help you articulate your ideas into utility-driven products to win bigger stakeholder buy-in. "
+    icon: '/verifying-and-prioritizing-ideas.svg',
+    title: 'Verifying and Prioritizing Ideas',
+    desc: 'Is your backlog full of great ideas but you cannot decide which idea should flow first? Our product developers help you articulate your ideas into utility-driven products to win bigger stakeholder buy-in. ',
   },
   {
-   icon: "/user-expectations.svg",
-   title: "Fostering Ownership",
-   desc: "Suffering from unproductive debates, weak ideas, and repeated market challenges? We instill ownership by aligning your team’s vision and goals, so they only deliver results and not painful experiences."
+    icon: '/fostering-ownership.svg',
+    title: 'Fostering Ownership',
+    desc: 'Suffering from unproductive debates, weak ideas, and repeated market challenges? We instill ownership by aligning your team’s vision and goals, so they only deliver results and not painful experiences.',
   },
   {
-   icon: "/operational-efficiency.svg",
-   title: "Product Thinking DNA",
-   desc: "Our product designers live and breathe product thinking. We deeply empathize with the end user and respond to their expectations via flawless product functionality and performance."
+    icon: '/operational-efficiency.svg',
+    title: 'Product Thinking DNA',
+    desc: 'Our product designers live and breathe product thinking. We deeply empathize with the end user and respond to their expectations via flawless product functionality and performance.',
   },
   {
-   icon: "/budget-constraints.svg",
-   title: "Human-Centric Product Design",
-   desc: "Did you ever abandon or uninstall a mobile app due to poor design? Ever imagined the same for your product? Thus, we assure your product design is not just stunning. It is also easy to use۔"
+    icon: '/budget-constraints.svg',
+    title: 'Human-Centric Product Design',
+    desc: 'Did you ever abandon or uninstall a mobile app due to poor design? Ever imagined the same for your product? Thus, we assure your product design is not just stunning. It is also easy to use۔',
   },
   {
-   icon: "/technology-selection.svg",
-   title: "Product Market-Fit",
-   desc: "We critically study and analyze market needs and build purpose-driven solutions as a response. As the market evolves, we quickly test, adapt, and make changes in the development phase."
+    icon: '/technology-selection.svg',
+    title: 'Product Market-Fit',
+    desc: 'We critically study and analyze market needs and build purpose-driven solutions as a response. As the market evolves, we quickly test, adapt, and make changes in the development phase.',
   },
   {
-   icon: "/existing-systems.svg",
-   title: "User-First Product Development",
-   desc: "Our digital product development team builds event-driven and self-healing architectures that constantly support new feature requests and changes, aligning well with software delivery and business goals."
+    icon: '/existing-systems.svg',
+    title: 'User-First Product Development',
+    desc: 'Our digital product development team builds event-driven and self-healing architectures that constantly support new feature requests and changes, aligning well with software delivery and business goals.',
   },
   {
-   icon: "/existing-systems.svg",
-   title: "Optimized Response & Conversions",
-   desc: "Is your current product responding to your users’ needs? We perform in-depth architectural reviews and audits to improve conversions and returns of your product before testing new ideas."
+    icon: '/existing-systems.svg',
+    title: 'Optimized Response & Conversions',
+    desc: 'Is your current product responding to your users’ needs? We perform in-depth architectural reviews and audits to improve conversions and returns of your product before testing new ideas.',
   },
   {
-   icon: "/existing-systems.svg",
-   title: "DevOps Mindset",
-   desc: "Our “Shift-left” approach and DevOps mindset motivate our product developers to follow the best coding practices – delivering quality-driven, secure, and adaptive software."
+    icon: '/existing-systems.svg',
+    title: 'DevOps Mindset',
+    desc: 'Our “Shift-left” approach and DevOps mindset motivate our product developers to follow the best coding practices – delivering quality-driven, secure, and adaptive software.',
   },
- ]
+]
  const choiceEnterpriseData = [
   {
    icon: "/business-needs.svg",

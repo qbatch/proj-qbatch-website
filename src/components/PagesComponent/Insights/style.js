@@ -85,6 +85,7 @@ const InsightsWrapepr = styled.div`
     border: 1px solid #D2D9DC;
     border-radius: 16px 16px 0px 16px;
     overflow: hidden;
+    min-height:400px;
     .card-img{
       height: 224px;
       width: 100%;

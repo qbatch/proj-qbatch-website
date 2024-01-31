@@ -85,6 +85,106 @@ const strapiConfig = {
         populate: '*',
       },
     },
+    {
+      singularName: 'cto-service',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'ecommerce',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'enterprise',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'mobile-app',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'web-app',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'web-and-data-scraping',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'product-design',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'about-us',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'portfolio',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'contact-us',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
   ],
   singleTypes: [
     'home',

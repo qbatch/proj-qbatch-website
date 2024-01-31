@@ -21,7 +21,7 @@ const FaqWrapper = styled.div`
     span {
       display: block;
       &:first-child {
-        margin-bottom: 24px;
+        margin-bottom: 12px;
       }
       &:nth-child(2) {
         margin-bottom: 4px;

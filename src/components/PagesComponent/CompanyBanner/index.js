@@ -1,5 +1,5 @@
 import React from "react";
-
+import { navigate } from 'gatsby'
 import Container from "../../UiComponent/Container";
 import Button from '../../UiComponent/HomeButton/index'
 
@@ -19,7 +19,7 @@ const Index = () => (
             </p>
         </div>
         <div className="banner-button">
-          <Button text="Let’s Start Building" className="secondary-btn" />
+          <Button text="Let’s Start Building" onClick={()=>navigate('/contact')} className="secondary-btn" />
         </div>
       </Container>
     </BannerWrapper>

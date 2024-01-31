@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { Queries } from '../../../constants/queries'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -14,66 +15,9 @@ const Index = () => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
-
+   const blogArticle = Queries()
+   const blogData = blogArticle.allStrapiArticle.nodes
   // Data for the cards
-  const cardData = [
-    {
-      img: 'https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg',
-      title: 'Latest Insight Title Here',
-      tag: 'News',
-      date: '23 June, 2023',
-      content: 'Latest insight details will come here. Or we can give latest insight details will come here.'
-    },
-    {
-      img: 'https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg',
-      title: 'Latest Insight Title Here',
-      tag: 'Blog',
-      date: '23 June, 2023',
-      content: 'Latest insight details will come here. Or we can give latest insight details will come here. est insight details will come here est insight details will come here'
-    },
-    {
-      img: 'https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg',
-      title: 'Latest Insight Title Here',
-      tag: 'Case Study',
-      date: '23 June, 2023',
-      content: 'Latest insight details will come here. Or we can give latest insight details.'
-    },
-    {
-      img: 'https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg',
-      title: 'Latest Insight Title Here',
-      tag: 'Project',
-      date: '23 June, 2023',
-      content: 'Latest insight details will come here. Or we can give latest insight details.'
-    },
-    {
-      img: 'https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg',
-      title: 'Latest Insight Title Here',
-      tag: 'News',
-      date: '23 June, 2023',
-      content: 'Latest insight details will come here. Or we can give latest insight details.'
-    },
-    {
-      img: 'https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg',
-      title: 'Latest Insight Title Here',
-      tag: 'News',
-      date: '23 June, 2023',
-      content: 'Latest insight details will come here. Or we can give latest insight details.'
-    },
-    {
-      img: 'https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg',
-      title: 'Latest Insight Title Here',
-      tag: 'News',
-      date: '23 June, 2023',
-      content: 'Latest insight details will come here. Or we can give latest insight details.'
-    },
-    {
-      img: 'https://static.vecteezy.com/system/resources/previews/004/141/669/large_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg',
-      title: 'Latest Insight Title Here',
-      tag: 'News',
-      date: '23 June, 2023',
-      content: 'Latest insight details will come here. Or we can give latest insight details.'
-    },
-  ];
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -132,19 +76,20 @@ const Index = () => {
     <>
       <InsightsWrapper>
         <Container>
-          <div className='wrapper'>
+          <div className="wrapper">
             <div className="carousel-header">
-              <h2 className='color-primary'>Latest Insights & News</h2>
+              <h2 className="color-primary">Latest Insights & News</h2>
               <p>We work hard to keep you updated about trending technology and developments from around the world!</p>
             </div>
-
 
             <div className="custom-controls">
               <button className="prev-btn" onClick={handlePrevClick}>
                 <ArrowLeftIcon />
               </button>
               <div className="slide-counter">
-                <span>{formatSlideNumber(currentSlide + 1)}</span><span>/</span><span>{formatSlideNumber(totalSlides)}</span>
+                <span>{formatSlideNumber(currentSlide + 1)}</span>
+                <span>/</span>
+                <span>{formatSlideNumber(totalSlides)}</span>
               </div>
               <button className="next-btn" onClick={handleNextClick}>
                 <ArrowRightIcon />
@@ -152,17 +97,13 @@ const Index = () => {
             </div>
           </div>
           <Slider ref={sliderRef} {...settings}>
-            {cardData.map((card, index) => (
-              <div className='insight-card' key={index}>
-                <div className='inner'>
-                  <img className='card-img' src={card.img} alt={card.title} />
-                  <div className='inner-content'>
-                    <div className='d-flex justify-content-between align-items-center'>
-                    <span className='tag'>{card.tag}</span>
-                    <span className='date'>{card.date}</span>
-                    </div>
-                    <h6 className='heading'>{card.title}</h6>
-                    <p className='paragraph'>{card.content}</p>
+            {blogData.map((card, index) => (
+              <div className="insight-card" key={index}>
+                <div className="inner">
+                  <img className="card-img" src={card.blogImg?.localFile.url} alt={card.blogTitle} />
+                    <div className="inner-content"> 
+                    <h6 className="heading">{card.blogTitle}</h6>
+                    {/* <p className="paragraph">{card.content}</p> */}
                     <PrimaryButton borderbottom text="Explore More" />
                   </div>
                 </div>
@@ -173,7 +114,7 @@ const Index = () => {
       </InsightsWrapper>
       <Divider />
     </>
-  );
+  )
 };
 
 export default Index;

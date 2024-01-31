@@ -119,6 +119,7 @@ export const Head = () => {
       description={seoData.metaDescription}
       keywords={seoData.keywords}
       language={seoData.language}
+      image={seoData.metaimage[0].localFile.url}
       robots={seoData.metaRobots}
       pathname={`/services${seoData.slug}`}
     />

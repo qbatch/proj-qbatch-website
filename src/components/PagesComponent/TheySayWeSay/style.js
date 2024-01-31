@@ -14,8 +14,6 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     align-items: center;
     height: 100%;
     .side-img{
-      height: 100%;
-      width: 100%;
       max-width: 574px;
       max-height: 448px;
       object-fit: cover;
