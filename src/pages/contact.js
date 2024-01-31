@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import  { Queries }  from "../constants/queries";
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import StartProject from "../components/PagesComponent/StartProject";
@@ -8,6 +9,7 @@ import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperie
 import ProblemSolving from "../components/PagesComponent/ProblumSolving";
 
 const ContactUs = () => {
+
     useEffect(() => {
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -26,23 +28,8 @@ const ContactUs = () => {
   );
 };
 export const Head = () => {
-  const data = useStaticQuery(graphql`
-    query ContactQuery {
-      allStrapiContactUs {
-        nodes {
-          seo {
-            metaTitle
-            slug
-            metaRobots
-            metaDescription
-            language
-            keywords
-          }
-        }
-      }
-    }
-  `)
-  const seoData = data.allStrapiContactUs.nodes[0]?.seo
+  const blogQuery = Queries()
+   const seoData = blogQuery.allStrapiContactUs.nodes[0]?.seo
   return (
     <SEO
       title={seoData.metaTitle}
@@ -51,6 +38,7 @@ export const Head = () => {
       language={seoData.language}
       robots={seoData.metaRobots}
       pathname={seoData.slug}
+      image={seoData.metaimage[0].localFile.url}
     />
   )
 }

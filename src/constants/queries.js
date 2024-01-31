@@ -160,6 +160,11 @@ export const Queries = () => {
              language
              keywords
              slug
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }
@@ -172,6 +177,11 @@ export const Queries = () => {
              metaRobots
              metaTitle
              slug
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }
@@ -184,6 +194,11 @@ export const Queries = () => {
              metaDescription
              language
              keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }
@@ -196,6 +211,11 @@ export const Queries = () => {
              metaDescription
              language
              keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }
@@ -208,6 +228,11 @@ export const Queries = () => {
              metaDescription
              language
              keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }
@@ -220,6 +245,11 @@ export const Queries = () => {
              metaDescription
              language
              keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }
@@ -232,6 +262,11 @@ export const Queries = () => {
              metaDescription
              language
              keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }
@@ -244,6 +279,11 @@ export const Queries = () => {
              metaDescription
              language
              keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }
@@ -308,6 +348,28 @@ export const Queries = () => {
              metaDescription
              language
              keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
+           }
+         }
+       }
+       allStrapiContactUs {
+         nodes {
+           seo {
+             metaTitle
+             slug
+             metaRobots
+             metaDescription
+             language
+             keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
            }
          }
        }

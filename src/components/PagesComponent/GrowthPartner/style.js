@@ -2,19 +2,19 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const GrowthPartnerWrapper = styled.div`
-    border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    padding: 120px 0;
-    ${media.sm`
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  padding: 120px 0;
+  ${media.sm`
       padding: 40px 0;
     `}
-  .growth-wrapper{
-    .underline-heading{
-      text-transform:  capitalize;
+  .growth-wrapper {
+    .underline-heading {
+      text-transform: capitalize;
     }
     .heading {
       margin-bottom: 8px;
     }
-    .main-heading{
+    .main-heading {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 28px;
       span {
@@ -22,20 +22,20 @@ const GrowthPartnerWrapper = styled.div`
         margin-bottom: 16px;
       }
     }
-    .paragraph{
+    .paragraph {
       line-height: 32px;
       font-weight: 400;
       max-width: 600px;
       letter-spacing: 0.2px;
-      &:last-child{
-      padding-top: 16px;
+      &:last-child {
+        padding-top: 16px;
       }
       ${media.md`
       max-width: 100%;
       `}
     }
-    .image-portion{
-      img{
+    .image-portion {
+      img {
         height: 496px;
         width: 100%;
         border-radius: 32px 32px 0 32px;
@@ -50,8 +50,8 @@ const GrowthPartnerWrapper = styled.div`
         `}
       }
     }
-    .image-portion-md{
-      img{
+    .image-portion-md {
+      img {
         height: 496px;
         border-radius: 32px 32px 0 32px;
         object-fit: cover;
@@ -61,40 +61,46 @@ const GrowthPartnerWrapper = styled.div`
       }
     }
   }
-    
-    .content-right{
-      .content{
-        padding-left: 96px;
-        padding-top: 128px;
-        ${media.md`
+
+  .content-right {
+    .content {
+      padding-left: 96px;
+      padding-top: 128px;
+      ${media.md`
         padding-left: 0;
+        padding-top: 16px;
         `}
-        .paragraph {
-          max-width: 595px;
-        }
+      .paragraph {
+        max-width: 595px;
       }
-      .content-wrapper{
-        justify-content: center;
-        ${media.md`
+    }
+    .content-wrapper {
+      justify-content: center;
+      ${media.md`
         justify-content: start;
         `}
-       
-      }
     }
-    .content-col{
-      margin-top: 144px;
-      &:first-child{
-        padding-top: 0;
-      }
+  }
+  .content-col {
+    margin-top: 144px;
+    ${media.md`
+            margin-top: 16px;
+        `}
+    &:first-child {
+      padding-top: 0;
     }
-    .content-wrapper{
-      ${media.md`
+  }
+  .content-wrapper {
+    ${media.md`
         padding-bottom: 12px;
       `}
-    }
-    .mission {
-      padding-top: 152px;
-    }
+  }
+  .mission {
+    padding-top: 152px;
+    ${media.md`
+            padding-top: 0px;
+        `}
+  }
 `
 
 export default GrowthPartnerWrapper;

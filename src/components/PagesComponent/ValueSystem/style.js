@@ -1,57 +1,57 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
-const ValueSystemWrapper = styled.div  `
+const ValueSystemWrapper = styled.div`
   padding: 120px 0;
   ${media.sm`
     padding: 40px 0;
   `}
-  .heading{
+  .heading {
     font-weight: ${({ theme }) => theme.fontWeight.normal};
     color: ${({ theme }) => theme.colors.gardientColor};
-    span{
+    span {
       &:first-child {
         display: block;
         margin-bottom: 24px;
       }
-      &:nth-child(2) {
-        font-weight: ${({ theme }) => theme.fontWeight.bold};
-        color: ${({ theme }) => theme.colors.primaryColor};
-      }
+    }
+    .value-system {
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
+      color: ${({ theme }) => theme.colors.primaryColor};
     }
   }
-  .col-wrapper{
+  .col-wrapper {
     padding-top: 76px;
     ${media.sm`
      padding-top: 26px;
     `}
   }
-  .value-col{
+  .value-col {
     padding: 36px 4.2% 20px;
-    min-height: 238px; 
+    min-height: 238px;
     display: flex;
     align-items: flex-start;
     border-right: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor};
-    .value-icon{
+    border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    .value-icon {
       height: 60px;
       width: 60px;
     }
-    .col-inner{
+    .col-inner {
       padding-left: 16px;
       padding-top: 12px;
-      h3{
+      h3 {
         margin-bottom: 18px;
       }
-      p{
+      p {
         line-height: 32px;
       }
     }
-    &:nth-child(3n){
+    &:nth-child(3n) {
       border-right: 0;
     }
     &:nth-child(7),
     &:nth-child(8),
-    &:nth-child(9){
+    &:nth-child(9) {
       border-bottom: 0;
     }
     ${media.lg`

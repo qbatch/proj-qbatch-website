@@ -39,7 +39,7 @@ const ProductDesign = () => {
           and enterprises build resilient and modern products. Our software
           product development services exceed user expectations, encour-
           age conversions, and deliver impressive ROI."
-        buttonText="Launch Your Idea"
+        buttonText="Get Free Consultation"
         blogInner={BannerImage}
         wrapperClass="product-design-banner"
       />
@@ -76,7 +76,7 @@ const ProductDesign = () => {
         peopleFirstData={softwareProductData}
         paragraph="We as a software product development company can build these for you and more on demand"
         heading="Did we mention your next ‘Software Project’ below?"
-        btnText="Got an Idea"
+        // btnText="Got an Idea"
         wrapperClass="productDesignPage"
       />
 
@@ -113,6 +113,7 @@ export const Head = () => {
       keywords={seoData.keywords}
       language={seoData.language}
       robots={seoData.metaRobots}
+      image={seoData.metaimage[0].localFile.url}
       pathname={`/services${seoData.slug}`}
     />
   )
