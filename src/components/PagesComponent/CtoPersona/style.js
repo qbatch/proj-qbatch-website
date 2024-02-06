@@ -7,7 +7,7 @@ const PersonaWrapper = styled.div`
      padding: 40px 0px;
   `}
   .row {
-    --bs-gutter-y: -5.3px;
+    --bs-gutter-y: 20px;
   }
   .first-box {
     ${media.sm`
@@ -54,6 +54,7 @@ const PersonaWrapper = styled.div`
     margin-top: -2px;
     margin-bottom: 26px;
     min-height: 584px;
+    height: 100%;
     @media screen and (max-width: 1575px) {
       min-height: 610px;
     }
@@ -109,6 +110,7 @@ const PersonaWrapper = styled.div`
     border-radius: 24px 24px 0px 24px;
     overflow: hidden;
     min-height: 584px;
+    height: 100%;
     @media screen and (max-width: 1575px) {
       min-height: 610px;
     }

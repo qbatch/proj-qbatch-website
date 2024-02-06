@@ -115,6 +115,11 @@ const InsightsWrapepr = styled.div`
       .heading {
         margin-top: 20px;
         margin-bottom: 10px;
+        min-height: 51px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
       .paragraph {
         font-size: 16px;

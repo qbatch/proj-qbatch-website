@@ -41,9 +41,10 @@ const clientsData = data.allStrapiOurClient.nodes;
               <div className="clients-logos">
                 {clientsData.map((data, ind) => (
                   <div className="logo" key={ind}>
-                    <a href={data.clients.link} target="_blank" rel="noreferrer">
+                    {/* <a href={data.clients.link} target="_blank" rel="noreferrer">
                       <img src={data.clients.logo.localFile.url} alt="client_logo"/>
-                    </a>
+                    </a> */}
+                     <img src={data.clients.logo.localFile.url} alt="client_logo"/>
                   </div>
                 ))}
               </div>

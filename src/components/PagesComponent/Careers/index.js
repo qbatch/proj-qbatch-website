@@ -24,7 +24,9 @@ const Index = () => {
           <Col xxl={6} xl={8}>
             <div className="cards-wrapper">
               <div className="d-block">
-                <Button text="Explore All Jobs" className="ms-auto" />
+                <a href="https://careers.qbatch.com/jobs">
+                <Button text="Explore All Jobs" className="ms-auto"/>
+                </a>
               </div>
               <Row>
                 {CareersData.map((card, index) => (

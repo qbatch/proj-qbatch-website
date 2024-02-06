@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const IdeasWrapper = styled.div`
-  background: url('/unique-modal.svg');
+  background: url('/inner-banner-bg.svg');
   background-size: cover;
   padding: 120px 203px;
   ${media.md`

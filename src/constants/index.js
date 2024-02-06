@@ -97,7 +97,7 @@ const developmentProcessData = [
 ]
 const leaderData = [
   {  name: "Ibrahim Zahoor", title: "CEO & Founder", imageSrc: "/leader-1.jpeg" },
-  { name: "Hassan Akram", title: "CTO & CO - Founder Qbatch", imageSrc: "/leader-2.jpeg" },
+  { name: "Hassan Akram", title: "CTO & Co - Founder Qbatch", imageSrc: "/leader-2.jpeg" },
 ];
 
 const clientsData = [
@@ -924,6 +924,50 @@ const ctoContribute = [
   'Keeps a track record of running successful tech adoption projects',
   'Works on pay-as-you-go model offering excellent price-quality ratio',
 ]
+
+const devOpsFaq = [
+  {
+    id: 1,
+    title: 'How are Qbatch developers different?',
+    content: (
+      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+      strategic technology leadership, guidance, and expertise.</p>
+    )
+  },
+  {
+    id: 2,
+    title: 'How to hire top remote developers through Qbatch?',
+    content: (
+      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+      strategic technology leadership, guidance, and expertise.</p>
+    )
+  },
+  {
+    id: 3,
+    title: 'How much does it cost to hire software developers on Qbatch?',
+    content: (
+      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+      strategic technology leadership, guidance, and expertise.</p>
+    )
+  },
+  {
+    id: 4,
+    title: 'Why should I use web scraping services?',
+    content: (
+      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+      strategic technology leadership, guidance, and expertise.</p>
+    )
+  },
+  {
+    id: 5,
+    title: 'Do you offer flexible hiring models, such as full-time, part-time, or freelance developers?',
+    content: (
+      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
+      strategic technology leadership, guidance, and expertise.</p>
+    )
+  },
+]
+
 const faqQuestion = [
   {
     id: 1,
@@ -2386,4 +2430,5 @@ export {
   productDesignFaq,
   whyChooseQbatchData,
   productDevlopmentServices,
+  devOpsFaq,
 }
