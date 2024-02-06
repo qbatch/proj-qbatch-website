@@ -35,6 +35,7 @@ const SEO = (props) => {
       <meta name="twitter:creator" content={seo.userName} />
       <meta property="og:url" content={seo.url} key="og:url" />
       <meta property="og:title" content={seo.title} key="og:title" />
+      <meta property="og:tag" content={seo.image} key="og:tag" />
       <meta property="og:description" content={seo.description} key="og:description" />
       <meta property="og:type" content="WebPage" />
       <meta property="og:locale" content="en_US" />

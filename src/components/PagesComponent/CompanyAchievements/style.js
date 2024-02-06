@@ -34,7 +34,13 @@ ${media.sm`
       padding-top: 8px;
       letter-spacing: 1.3px;
       text-transform: capitalize;
-}
+    }
+    &:nth-child(4n){
+      border-right: none;
+    }
+    &:nth-last-child(-n+4) {
+      border-bottom: none;
+    }
 
     }
     &:nth-child(4n){
@@ -75,8 +81,6 @@ ${media.sm`
     }
     `}
 
-    
-  }
 `
 
 export default AchievementsWrapper;

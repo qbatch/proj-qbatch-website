@@ -33,6 +33,9 @@ const CtoBannerWrapper = styled.div`
       margin-bottom: 34px;
       margin-top: 3px;
       max-width: 723px;
+      i{
+        color: ${({ theme }) => theme.colors.textColor};
+      }
       ${media.md`
       margin: auto;
       margin-bottom: 24px;
@@ -55,6 +58,16 @@ const CtoBannerWrapper = styled.div`
       `}
     }
   }
+  &.services-banner{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 0;
+    & > div{
+      width: 100%;
+    }
+  }
 
   &.cto-banner {
     padding: 143px 0 50px;
@@ -68,6 +81,9 @@ const CtoBannerWrapper = styled.div`
       }
       p {
         max-width: 690px;
+        i{
+          color: ${({ theme }) => theme.colors.textColor};
+        }
       }
     }
     @media (max-width: 1480px) {

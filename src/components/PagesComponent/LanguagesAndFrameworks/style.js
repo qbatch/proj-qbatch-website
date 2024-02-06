@@ -22,6 +22,7 @@ const LanguagesWrapper = styled.div`
     }
     p {
       letter-spacing: 0;
+      line-height: 24px;
     }
   }
   .fixed-slider-pagination {

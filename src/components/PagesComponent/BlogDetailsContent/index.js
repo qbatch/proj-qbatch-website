@@ -13,131 +13,72 @@ import { ReadingTime, TimeAgo } from "../../../constants/Utils";
 import ContentWrapper from "./style";
 
 function App({ data, path }) {
-  const [activeSection, setActiveSection] = useState(0)
-  const [showbars, setShowbars] = useState()
-  const blogArticle = Queries()
-  const blogLikedData = blogArticle.allStrapiArticle.nodes.filter((item) => item.blogTitle !== data?.blogTitle)
+  const [activeSection, setActiveSection] = useState(0);
+  const [activeHeadingIndex, setActiveHeadingIndex] = useState(0);
+  const blogArticle = Queries();
+  const blogLikedData = blogArticle.allStrapiArticle.nodes.filter((item) => item.blogTitle !== data?.blogTitle);
+  
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('.section')
-      const scrollPosition = window.scrollY + 100
+      const headings = document.querySelectorAll('#contentContainer h2');
+      const scrollPosition = window.scrollY + 100;
 
-      sections.forEach((section, index) => {
-        const offsetTop = section.offsetTop
-        const offsetBottom = offsetTop + section.offsetHeight
+      headings.forEach((heading, index) => {
+        const offsetTop = heading.offsetTop;
+        const offsetBottom = offsetTop + heading.offsetHeight;
 
         if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-          setActiveSection(index)
+          setActiveHeadingIndex(index);
         }
-      })
-    }
+      });
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
-  const firstContent = () => {
-    return (
-      <ContentWrapper>
-        <div className="inner-content">
-          <p className="paragraph">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-          <p className="paragraph">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-            sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-            ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-            nulla pariatur?
-          </p>
-        </div>
-        <img src="/content-box.svg" alt="no-content" />
-      </ContentWrapper>
-    )
-  }
-  const secondContent = () => {
-    return (
-      <ContentWrapper>
-        <p className="paragraph">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-          dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-          amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-          laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-          voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-          pariatur?
-        </p>
-        <p className="paragraph">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum
-        </p>
-      </ContentWrapper>
-    )
-  }
-  const thirdContent = () => {
-    return <ContentWrapper></ContentWrapper>
-  }
-  const forthContent = () => {
-    return (
-      <ContentWrapper>
-        <p className="paragraph mb-32">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-          dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-          amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-          laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-          voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-          pariatur?{' '}
-        </p>
-        <p className="paragraph ">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.
-        </p>
-      </ContentWrapper>
-    )
-  }
-  const content = [
-    {
-      title: 'First Heading',
-      content: firstContent(),
-    },
-    {
-      title: 'Seconed Heading',
-      content: secondContent(),
-    },
-    {
-      title: 'Third Heading',
-      content: thirdContent(),
-    },
-    {
-      title: 'Forth Heading',
-      content: forthContent(),
-    },
-  ]
+  useEffect(() => {
+    const addUniqueIdsToHeadings = () => {
+      const contentContainer = document.getElementById("contentContainer");
+
+      if (contentContainer) {
+        const headings = contentContainer.querySelectorAll("h2");
+
+        headings.forEach((heading, index) => {
+          heading.id = `heading_${index + 1}`;
+        });
+      }
+    };
+
+    addUniqueIdsToHeadings();
+  }, [data]);
+
+  const extractHeadings = () => {
+    const headings = [];
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = data?.blogDescription?.data.blogDescription;
+
+    const h2Elements = tempDiv.querySelectorAll("h2");
+
+    h2Elements.forEach((h2, index) => {
+      const headingText = h2.textContent;
+      headings.push({
+        title: headingText,
+        content: (
+          <ContentWrapper key={index} id={`section${index + 1}`}>
+            <h2>{headingText}</h2>
+          </ContentWrapper>
+        ),
+      });
+    });
+
+    return headings;
+  };
+
+  const content = extractHeadings();
   const socialIcons = [
     {
       img: '/facebook',
@@ -155,7 +96,8 @@ function App({ data, path }) {
       img: '/reddit',
       to: `https://reddit.com/submit?url=https://qbatch.com/blog${path}`,
     },
-  ]
+  ];
+
   return (
     <ContentWrapper>
       <div className="d-sm-flex">
@@ -164,15 +106,15 @@ function App({ data, path }) {
             <>
               <a
                 key={index}
-                href={`#section${index + 1}`}
-                className={index === activeSection ? 'title active' : 'title'}
+                href={`#heading_${index + 1}`}
+                className={`title ${activeHeadingIndex === index ? 'active' : ''}`}
               >
                 {list.title}
               </a>
               <a
                 key={index}
-                href={`#section${index + 1}`}
-                className={[activeSection, showbars]?.includes(index) ? 'active line' : 'line'}
+                href={`#heading_${index + 1}`}
+                className={`line ${activeHeadingIndex === index ? 'active' : ''}`}
               />
             </>
           ))}
@@ -183,12 +125,13 @@ function App({ data, path }) {
             <Row>
               <Col lg={8} md={12} sm={12}>
                 <div className="section inner-content">
-                  <span
-                    className="paragraph"
-                    dangerouslySetInnerHTML={{
-                      __html: data?.blogDescription?.data.blogDescription,
-                    }}
-                  />
+                <div
+                  id="contentContainer"
+                  className="paragraph"
+                  dangerouslySetInnerHTML={{
+                    __html: data?.blogDescription?.data.blogDescription,
+                  }}
+                />
                 </div>
                 <div className="social-links d-flex gap-4">
                   <span className="title">Share</span>

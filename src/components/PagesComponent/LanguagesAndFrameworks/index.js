@@ -8,10 +8,9 @@ import { Col, Row } from "react-bootstrap";
 import { languagesData } from "../../../constants";
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button"
-
 import LanguagesWrapper from "./style";
 
-const Index = () => {
+const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-tested Web Application Development tools and technologies to build a cross-platform and secure application:',paragraphMaxWidth  }) => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -48,11 +47,8 @@ const Index = () => {
       <div>
         <Container>
           <div className="languages-header">
-            <h2>Languages & Frameworks We Use</h2>
-            <p>
-              Time-tested Web Application Development tools and technologies to build a cross-platform and secure
-              application:
-            </p>
+            <h2>{heading}</h2>
+            <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
           </div>
 
           <Row className="desktop-data">

@@ -132,10 +132,10 @@ const ContentWrapper = styled.div`
   }
   .side-scroll {
     position: sticky;
-    top: 55%;
+    top: 20%; /* Stick to the middle of the container */
     left: 0;
     height: 100%;
-    width: 108px;
+    max-width: 250px;
     overflow: hidden;
     ${media.sm`
       display: none;
@@ -143,17 +143,20 @@ const ContentWrapper = styled.div`
     a {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
       color: ${({ theme }) => theme.colors.textMedium};
+      text-decoration: none;
       display: block;
       border-bottom: none;
       &.title {
-        width: 150px;
-        height: 32px;
+        max-width: 250px;
+        padding-top: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         transform: translateX(-104%);
         transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
         opacity: 1;
       }
       &.active {
-        height: 0px;
         color: ${({ theme }) => theme.colors.primaryColor};
       }
       &.line {
@@ -164,7 +167,6 @@ const ContentWrapper = styled.div`
         opacity: 1;
 
         &.active {
-          height: 32px;
           width: 28px;
           border-bottom: 1px solid ${({ theme }) => theme.colors.primaryColor};
         }
