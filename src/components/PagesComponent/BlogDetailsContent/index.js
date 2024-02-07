@@ -15,6 +15,7 @@ import ContentWrapper from "./style";
 function App({ data, path }) {
   const [activeSection, setActiveSection] = useState(0);
   const [activeHeadingIndex, setActiveHeadingIndex] = useState(0);
+  const [headings, setHeadings] = useState([]);
   const blogArticle = Queries();
   const blogLikedData = blogArticle.allStrapiArticle.nodes.filter((item) => item.blogTitle !== data?.blogTitle);
   
@@ -56,29 +57,30 @@ function App({ data, path }) {
     addUniqueIdsToHeadings();
   }, [data]);
 
-  const extractHeadings = () => {
-    const headings = [];
+  useEffect(() => {
+    const extractHeadings = () => {
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = data?.blogDescription?.data.blogDescription;
 
     const h2Elements = tempDiv.querySelectorAll("h2");
-
-    h2Elements.forEach((h2, index) => {
+    const extractedHeadings = Array.from(h2Elements).map((h2, index) => {
       const headingText = h2.textContent;
-      headings.push({
-        title: headingText,
-        content: (
-          <ContentWrapper key={index} id={`section${index + 1}`}>
-            <h2>{headingText}</h2>
-          </ContentWrapper>
-        ),
+        return {
+          title: headingText,
+          content: (
+            <ContentWrapper key={index} id={`section${index + 1}`}>
+              <h2>{headingText}</h2>
+            </ContentWrapper>
+          ),
+        };
       });
-    });
 
-    return headings;
-  };
+      setHeadings(extractedHeadings);
+    };
 
-  const content = extractHeadings();
+    extractHeadings();
+  }, [data]);
+
   const socialIcons = [
     {
       img: '/facebook',
@@ -102,7 +104,7 @@ function App({ data, path }) {
     <ContentWrapper>
       <div className="d-sm-flex">
         <div className={`side-scroll`}>
-          {content.map((list, index) => (
+          {headings.map((list, index) => (
             <>
               <a
                 key={index}
@@ -125,13 +127,13 @@ function App({ data, path }) {
             <Row>
               <Col lg={8} md={12} sm={12}>
                 <div className="section inner-content">
-                <div
-                  id="contentContainer"
-                  className="paragraph"
-                  dangerouslySetInnerHTML={{
-                    __html: data?.blogDescription?.data.blogDescription,
-                  }}
-                />
+                  <div
+                    id="contentContainer"
+                    className="paragraph"
+                    dangerouslySetInnerHTML={{
+                      __html: data?.blogDescription?.data.blogDescription,
+                    }}
+                  />
                 </div>
                 <div className="social-links d-flex gap-4">
                   <span className="title">Share</span>
@@ -150,8 +152,8 @@ function App({ data, path }) {
                         .map((card, ind) => {
                           const customDate = new Date(card?.publishedAt)
                           return (
-                            <Col xl={6}>
-                              <div className="inner" key={ind}>
+                            <Col xl={6} key={ind}>
+                              <div className="inner">
                                 <div className="card-img">
                                   <img src={card.blogImg?.localFile.url} alt={card.blogTitle} />
                                   <div className="d-flex align-items-center justify-content-between">
@@ -165,8 +167,8 @@ function App({ data, path }) {
                                   <p className="blog-title">{card.blogTitle}</p>
                                   <div className="d-flex gap-2">
                                     {data?.blogTags?.strapi_json_value.map((tag, ind) => (
-                                      <div className="blog-badge">
-                                        <span key={ind}>{tag}</span>
+                                      <div className="blog-badge" key={ind}>
+                                        <span>{tag}</span>
                                       </div>
                                     ))}
                                   </div>
