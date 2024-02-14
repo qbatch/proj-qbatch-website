@@ -41,7 +41,7 @@ const servicesItems = [
   },
   {
     menu: 'DevOps and Cloud Computing',
-    to: '/services/dev-ops',
+    to: '/events/wl-event',
   },
   {
     menu: 'Low-code/ No-code Platform Development',
