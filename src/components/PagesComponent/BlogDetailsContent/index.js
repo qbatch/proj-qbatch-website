@@ -104,22 +104,20 @@ function App({ data, path }) {
     <ContentWrapper>
       <div className="d-sm-flex">
         <div className={`side-scroll`}>
-          {headings.map((list, index) => (
-            <>
-              <a
-                key={index}
-                href={`#heading_${index + 1}`}
-                className={`title ${activeHeadingIndex === index ? 'active' : ''}`}
-              >
-                {list.title}
-              </a>
-              <a
-                key={index}
-                href={`#heading_${index + 1}`}
-                className={`line ${activeHeadingIndex === index ? 'active' : ''}`}
-              />
-            </>
-          ))}
+        {headings.map((list, index) => (
+          <React.Fragment key={index}>
+            <a
+              href={`#heading_${index + 1}`}
+              className={`title ${activeHeadingIndex === index ? 'active' : ''}`}
+            >
+              {list.title}
+            </a>
+            <a
+              href={`#heading_${index + 1}`}
+              className={`line ${activeHeadingIndex === index ? 'active' : ''}`}
+            />
+          </React.Fragment>
+        ))}
         </div>
 
         <div className="content-section content">
