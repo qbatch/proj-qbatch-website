@@ -40,20 +40,42 @@ function App({ data, path }) {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   useEffect(() => {
     const addUniqueIdsToHeadings = () => {
       const contentContainer = document.getElementById("contentContainer");
-
+  
       if (contentContainer) {
         const headings = contentContainer.querySelectorAll("h2");
-
+  
+        // Iterate through each h2 element
         headings.forEach((heading, index) => {
-          heading.id = `heading_${index + 1}`;
+          // Create a new div element with class "heading-wrapper"
+          const wrapperDiv = document.createElement("div");
+          wrapperDiv.classList.add("heading-wrapper");
+          
+          // Create an empty div
+          const emptyDiv = document.createElement("div");
+          // Get the ID of the heading
+          const headingId = `heading_${index + 1}`;
+          // Set the ID for the empty div
+          
+          // Append the empty div before the heading
+          wrapperDiv.appendChild(emptyDiv);
+  
+          // Clone the heading
+          const clonedHeading = heading.cloneNode(true);
+          // Set the ID for the heading
+          clonedHeading.id = headingId;
+          
+          // Append the heading to the wrapper div
+          wrapperDiv.appendChild(clonedHeading);
+  
+          // Replace the heading with the wrapper div
+          heading.parentNode.replaceChild(wrapperDiv, heading);
         });
       }
     };
-
+  
     addUniqueIdsToHeadings();
   }, [data]);
 
@@ -104,20 +126,23 @@ function App({ data, path }) {
     <ContentWrapper>
       <div className="d-sm-flex">
         <div className={`side-scroll`}>
+          <span className="table-content-header">Table of Content</span>
+        <div className="side-scroll-content">
+        <ol>
         {headings.map((list, index) => (
           <React.Fragment key={index}>
-            <a
-              href={`#heading_${index + 1}`}
-              className={`title ${activeHeadingIndex === index ? 'active' : ''}`}
-            >
-              {list.title}
-            </a>
-            <a
-              href={`#heading_${index + 1}`}
-              className={`line ${activeHeadingIndex === index ? 'active' : ''}`}
-            />
+            <li>
+              <a
+                href={`#heading_${index + 1}`}
+                className={`title ${activeHeadingIndex === index ? 'active' : ''}`}
+              >
+                {list.title}
+              </a>
+            </li>
           </React.Fragment>
         ))}
+        </ol>
+        </div>
         </div>
 
         <div className="content-section content">

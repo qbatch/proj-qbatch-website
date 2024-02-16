@@ -8,7 +8,6 @@ const BlogDetailsWrapper = styled.div`
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);
   ${media.sm`
     padding: 96px 0;
   `}
@@ -40,7 +39,7 @@ const BlogDetailsWrapper = styled.div`
     color: ${({ theme }) => theme.colors.dividerColor};
     font-weight: 400;
     line-height: 24px;
-    max-width: 734px;
+    max-width: 548px;
   }
   .image-box {
     text-align: center;
