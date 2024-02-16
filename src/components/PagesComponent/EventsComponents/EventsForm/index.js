@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ButtonArrow from '../../../../../static/event-btn-arrow.svg'
 import FormVector from '../../../../../static/event-form-vector-1.svg'
 
-const EventsForm = () => {
+const EventsForm = ({paragraph}) => {
 
   const [submitted, setSubmitted] = useState(false);
   const [validated, setValidated] = useState(false);
@@ -82,7 +82,7 @@ const EventsForm = () => {
           <Col xl={6}>
             <div className='section-box-left'>
               <p className='text-h3 paragraph'>
-              Qbatch is excited to exhibit at the most influential e-commerce marketplace show. Let’s catch up and explore the cutting-edge developments in selling, white label, retailer, and supplier markets.
+              {paragraph}
               </p>
             </div>
           </Col>
