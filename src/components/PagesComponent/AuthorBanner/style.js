@@ -4,7 +4,7 @@ import { media } from '../../../theme/media-mixins'
 const BlogDetailsWrapper = styled.div`
   background-image: url('/author-bg.svg');
   width: 100%;
-  padding: 95px 67px 0px 67px;
+  padding: 95px 67px;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -39,25 +39,25 @@ const BlogDetailsWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
     color: ${({ theme }) => theme.colors.dividerColor};
     font-weight: 400;
-    line-height: 18px;
+    line-height: 24px;
     max-width: 734px;
-    min-height: 200px;
   }
   .image-box {
-    padding: 0px 40px;
-    margin-top: 27px;
     text-align: center;
     position: relative;
-    height:100%;
+    height: 192px;
+    width: 192px;
+    border-radius: 12px 12px 0 12px;
+    background-color: ${({ theme }) => theme.colors.dividerColor};
     ${media.sm`
     padding: 0;
   `}
 
     img {
-      max-width: fit-content;
-      position: absolute;
-      bottom: 27px;
+      object-fit: cover;
       left: 0px;
+      height:100%;
+      width: 100%;
       ${media.sm`
       max-width:100%;
   `}

@@ -19,8 +19,8 @@ const index = ({ data }) => {
         .slice(0, 1)
         .reverse()
         .map((item, ind) => (
-          <InnerBannerWrapper key={ind} backgroundImage={item.blogImg?.localFile.url}>
-            <div className="full-flex">
+          <InnerBannerWrapper key={ind} backgroundImage="/blog-main-banner.svg">
+            <div className="full-flex mb-5">
               <div className="blog-badge">Blog</div>
             </div>
             <div>

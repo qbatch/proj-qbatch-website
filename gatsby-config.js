@@ -18,6 +18,7 @@ const strapiConfig = {
   accessToken,
   collectionTypes: [
     'contact',
+    'book-meeting',
     {
       singularName: 'awards-and-recognition',
       queryParams: {
@@ -184,7 +185,7 @@ const strapiConfig = {
           },
         },
       },
-    },
+    }
   ],
   singleTypes: [
     'home',
