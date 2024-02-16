@@ -71,7 +71,7 @@ const EventsForm = () => {
   };
   return (
     <EventsFormWrapper>
-      <div className='section-bg'>
+      <div className='section-bg d-xl-flex d-none'>
         <div className='left-box'>
           <img src={FormVector} />
         </div>
@@ -79,14 +79,14 @@ const EventsForm = () => {
       </div>
       <Container>
         <Row>
-          <Col lg={6}>
+          <Col xl={6}>
             <div className='section-box-left'>
               <p className='text-h3 paragraph'>
               Qbatch is excited to exhibit at the most influential e-commerce marketplace show. Let’s catch up and explore the cutting-edge developments in selling, white label, retailer, and supplier markets.
               </p>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col xl={6}>
             <div className='form-wrapper'>
               <p className='form-paragraph'>Effortless Networking Without The Chase</p>
               <h2 className='form-heading'>BOOK A MEETING</h2>

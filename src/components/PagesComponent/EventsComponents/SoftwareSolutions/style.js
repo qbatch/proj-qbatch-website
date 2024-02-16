@@ -19,6 +19,8 @@ position: relative;
   padding: 72px 0;
   max-width: 1050px;
   margin: auto;
+  position: relative;
+  z-index: 22;
   .software-solution-box{
     height: 128px;
     width: 100%;

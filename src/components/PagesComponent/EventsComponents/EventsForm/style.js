@@ -1,9 +1,20 @@
 import styled from "styled-components";
+import { media } from "../../../../theme/media-mixins";
 
 const EventsFormWrapper = styled.div`
 position: relative;
   .section-box-left{
+    ${media.xl`
+      padding-left: 0;
+    `}
+    ${media.lg`
+      padding-left: 96px;
+    `}
+    ${media.md`
+      padding: 96px 0;
+    `}
     padding: 96px;
+
     .paragraph{
       color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-weight: ${({ theme }) => theme.fontWeight.normal};
@@ -12,6 +23,9 @@ position: relative;
   }
   .form-wrapper{
     padding: 15%;
+    ${media.lg`
+      padding: 0 15% 15%;
+    `}
     .form-paragraph{
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       color: ${({ theme }) => theme.colors.bodyTextVariant};
