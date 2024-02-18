@@ -85,6 +85,17 @@ const Index = ({ page }) => {
             position: "top-right",
             autoClose: 5000,
           });
+          setValidated(false);
+          setFormData({
+            name: "",
+            number: "",
+            email: "",
+            collaboration: "",
+            services: [],
+            description: "",
+            terms: false,
+            promotion: false,
+          })
         } else {
           toast.error("Something went wrong", {
             position: "top-right",

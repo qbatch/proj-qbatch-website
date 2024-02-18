@@ -5,6 +5,7 @@ import { css } from "styled-components";
    sm: "767px",
    md: "991px",
    lg: "1199px",
+   xl: "1399px"
  };
 
 export const media = Object.keys(breakpoints).reduce((accumulator, label) => {
