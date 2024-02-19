@@ -147,6 +147,7 @@ const Index = (props) => {
           )
             .slice(0)
             .reverse()
+            .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
             .map((card, ind) => {
               return <BlogPost card={card} ind={ind} />
             })} 

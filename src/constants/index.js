@@ -804,6 +804,24 @@ const revenueData = [
   },
 ]
 
+const servicesSliderData = [
+  {
+    image: "/service-slider-placeholder.svg",
+    title: "Artificial Intelligence (AI)",
+    content: "We bring extensive expertise in predictive modeling, data mining, computer vision, and natural language processing. AI helps us streamline overall business workflows for you, reducing overall human effort."
+  },
+  {
+    image: "/service-slider-placeholder.svg",
+    title: "Artificial Intelligence (AI)",
+    content: "We bring extensive expertise in predictive modeling, data mining, computer vision, and natural language processing. AI helps us streamline overall business workflows for you, reducing overall human effort."
+  },
+  {
+    image: "/service-slider-placeholder.svg",
+    title: "Artificial Intelligence (AI)",
+    content: "We bring extensive expertise in predictive modeling, data mining, computer vision, and natural language processing. AI helps us streamline overall business workflows for you, reducing overall human effort."
+  }
+]
+
 const automationData = [
   {
     image: "/data-driven-decisions.svg",
@@ -2404,6 +2422,7 @@ export {
   marketPlaceData,
   webAppFaq,
   revenueData,
+  servicesSliderData,
   automationData,
   faqQuestion,
   ecomFaqQuestion,

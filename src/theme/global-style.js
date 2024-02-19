@@ -319,5 +319,6 @@ const GlobalStyles = createGlobalStyle`
   .divider-color{
      color: ${({ theme }) => theme.colors.dividerColor};
   }
+
 `
 export default GlobalStyles

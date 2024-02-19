@@ -6,6 +6,7 @@ const CheckBoxWrapper = styled.div`
     font-size: ${(props, theme) => (props.fontSize ? `${props.fontSize}` : "16px")};
     margin-left: ${(props) => (props.margin ? `${props.margin}` : "8px")};
     letter-spacing: 0.1px;
+    text-align: left;
   }
   .form-check {
     margin-bottom: ${(props) => (props.base ? `${props.base}` : "11px")};

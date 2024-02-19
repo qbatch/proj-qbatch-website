@@ -17,7 +17,7 @@ const Index = (props) => {
   return (
     <>
       <Container>
-        <SliderWrapper maxWidth={maxWidth}>
+        <SliderWrapper maxWidth={maxWidth} className={className}>
           <div className={`upper-heading  text-${align || 'left'}`}>
             <h2>{heading}</h2>
             {seconedHeading && <h4>{seconedHeading}</h4>}
