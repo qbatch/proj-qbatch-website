@@ -11,6 +11,13 @@ import CalendarSchedule from '../../components/PagesComponent/EventsComponents/C
 import EventsBannerImg from "../../../static/events-banner-img.jpeg"
 import EventImg from "../../../static/prosper-show-logo.svg"
 const WLevent = () => {
+  const innerContentData = [
+    { number: '300', title: 'Exhibitors' },
+    { number: '150', title: 'Keynote Speakers' },
+    { number: '150', title: 'Seminars' },
+    { number: '50', title: 'Innovation Awards' },
+    { number: '150', title: 'Product Launches' }
+  ];
   return (
     <Layout>
       <EventsBanner
@@ -21,11 +28,19 @@ const WLevent = () => {
        eventDate="February 27 to 28, 2024"
        eventVenue="Royal Victoria Dock, London"
       />
-      <EventsForm/>
+      <EventsForm 
+        paragraph="Qbatch is exhibiting at the world’s biggest marketplace seller event. We’re excited to meet with top-tier sellers and various stakeholders to discuss resilient business solutions for a brighter future."
+      />
       <SoftwareSolutions/>
-      <BusinessExperience/>
+      <BusinessExperience
+      dark
+        sectionBackground="/experience-bg-2.svg"
+      />
       <OurTeam/>
-      <WhatToExpect/>
+      <WhatToExpect
+        paragraph="Prosper Show is a unique networking and educational platform for established marketplace sellers focused on maximizing profits, outdoing competition, and increasing brand footprint. Team Qbatch looks forward to meeting you there — don't miss this chance to take your business to the next level!"
+        innerContentData={innerContentData}
+      />
       <PreviousEvents/>
       <CalendarSchedule/>
     </Layout>

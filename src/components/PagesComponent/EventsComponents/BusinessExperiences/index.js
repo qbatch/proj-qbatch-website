@@ -2,11 +2,14 @@ import React from 'react';
 import BusinessExperienceWrapper from './style';
 import Container from '../../../UiComponent/Container';
 
-import ButtonArrow from '../../../../../static/event-btn-arrow.svg'
+import ButtonArrow from '../../../../../static/event-btn-arrow.svg';
 
-const BusinessExperience = () => {
+const BusinessExperience = ({ sectionBackground, dark }) => {
   return (
-    <BusinessExperienceWrapper>
+    <BusinessExperienceWrapper
+      style={{ backgroundImage: `url(${sectionBackground})` }}
+      className={dark ? 'dark' : ''}
+    >
       <Container>
         <h2 className='heading'>We’re launching <span>Seller Terminal </span>tool to simplify your marketplace business experiences</h2>
         <div className='experience-wrapper'>

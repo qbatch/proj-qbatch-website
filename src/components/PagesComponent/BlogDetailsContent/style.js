@@ -19,6 +19,16 @@ const ContentWrapper = styled.div`
         padding-bottom: 28px;
       }
       .paragraph {
+        .heading-wrapper{
+          position: relative;
+          & > div{
+            height: 100px;
+            background-color: transparent;
+            z-index: -1;
+            position: absolute;
+            top: -100px;
+          }
+        }
         h1,
         h3 {
           font-size: 22px;
@@ -32,13 +42,14 @@ const ContentWrapper = styled.div`
         }
         h2 {
           font-size: 26px;
+          margin: 48px 0 15px;
         }
         p {
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
           color: ${({ theme }) => theme.colors.bodyTextVariant};
           line-height: 24px;
           letter-spacing: 0px;
-          margin-bottom: 32px;
+          margin-bottom: 20px;
           img {
             border-radius: 24px 24px 0 24px;
             margin: 40px 0;
@@ -47,6 +58,12 @@ const ContentWrapper = styled.div`
             color: ${({ theme }) => theme.colors.bodyTextVariant};
             font-size: ${({ theme }) => theme.fonts.baseFontSize};
             font-family: 'Inter Tight', sans-serif;
+          }
+        }
+        ul, ol{
+          margin-bottom: 20px;
+          li{
+            margin-bottom: 16px;
           }
         }
         .table {
@@ -132,57 +149,41 @@ const ContentWrapper = styled.div`
   }
   .side-scroll {
     position: sticky;
-    top: 20%; /* Stick to the middle of the container */
+    margin: 100px 0 100px 12px;
+    border-radius: 8px 8px 0 8px;
+    top: 20%;
     left: 0;
     height: 100%;
-    max-width: 250px;
-    overflow: hidden;
-    ${media.sm`
-      display: none;
-    `}
+    max-width: 300px;
+    background-color:  ${({ theme }) => theme.colors.whiteColor};
+      box-shadow: 0 3px 15px rgba(0,0,0,0.16);
+    .table-content-header{
+      background-color: ${({ theme }) => theme.colors.onGradient};
+      color: ${({ theme }) => theme.colors.gardientColor};
+      width: 100%;
+      padding: 8px 16px;
+      display: block;
+    }
+    .side-scroll-content{
+      padding: 8px 16px 0 0;
+      li{
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+      }
+    }
     a {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+      line-break: 18px;
       color: ${({ theme }) => theme.colors.textMedium};
       text-decoration: none;
       display: block;
       border-bottom: none;
       &.title {
         max-width: 250px;
-        padding-top: 12px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        transform: translateX(-104%);
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        opacity: 1;
+        padding-bottom: 12px;
       }
-      &.active {
+      /* &.active {
         color: ${({ theme }) => theme.colors.primaryColor};
-      }
-      &.line {
-        width: 28px;
-        border-bottom: 1px solid ${({ theme }) => theme.colors.textMedium};
-        height: 0;
-        margin-bottom: 0px;
-        opacity: 1;
-
-        &.active {
-          width: 28px;
-          border-bottom: 1px solid ${({ theme }) => theme.colors.primaryColor};
-        }
-      }
-    }
-    &:hover {
-      a {
-        &.title {
-          transform: translateX(0);
-          opacity: 1;
-          margin-left: 4px;
-        }
-        &.line {
-          opacity: 0;
-        }
-      }
+      } */
     }
   }
 

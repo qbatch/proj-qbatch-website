@@ -18,6 +18,7 @@ const strapiConfig = {
   accessToken,
   collectionTypes: [
     'contact',
+    'book-meeting',
     {
       singularName: 'awards-and-recognition',
       queryParams: {
@@ -184,7 +185,7 @@ const strapiConfig = {
           },
         },
       },
-    },
+    }
   ],
   singleTypes: [
     'home',
@@ -226,7 +227,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: `${siteMetadata.siteUrl}`,
         sitemap: `${siteMetadata.siteUrl}/sitemap-index.xml`,
         policy: [
           { userAgent: '*', disallow: ['/cgi-bin/', '/wp-admin/'] },

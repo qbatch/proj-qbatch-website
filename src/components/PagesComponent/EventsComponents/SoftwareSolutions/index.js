@@ -13,27 +13,27 @@ const SoftwareSolutions = () => {
         <h2 className='text-h2 heading'>We power online sellers, retailers, and distributors to unravel their potential by building purpose-driven software solutions.</h2>
         <div className='boxes-wrapper'>
           <Row className='g-3'>
-            <Col lg={4}>
+            <Col lg={4} md={6}>
               <div className='software-solution-box'><span>
                 Business Process Automation</span></div>
             </Col>
-            <Col lg={4}>
+            <Col lg={4} md={6}>
               <div className='software-solution-box'><span>
               Marketplace Data Extraction</span></div>
             </Col>
-            <Col lg={4}>
+            <Col lg={4} md={6}>
               <div className='software-solution-box'><span>
               Data Analytics</span></div>
             </Col>
-            <Col lg={4}>
+            <Col lg={4} md={6}>
               <div className='software-solution-box'><span>
               Amazon Reimbursement Service</span></div>
             </Col>
-            <Col lg={4}>
+            <Col lg={4} md={6}>
               <div className='software-solution-box'><span>
                Fulfillment Automation</span></div>
             </Col>
-            <Col lg={4}>
+            <Col lg={4} md={6}>
               <div className='software-solution-box'><span>
                 PPC Automation </span></div>
             </Col>

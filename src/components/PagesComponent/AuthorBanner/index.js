@@ -8,8 +8,14 @@ const Index = (props) => {
   return (
     <BlogDetailsWrapper>
       <Container>
-        <Row>
-          <Col lg={8}>
+        <div className='d-flex gap-5 align-items-start justify-content-left'>
+          <div>
+            <div className="image-box">
+              <img width='300px' height='300px' src={authorImage || '/author-pic.png'} alt="no-author" />
+            </div>
+          </div>
+
+          <div>
             <div class="d-flex gap-4">
               {/* <div className="d-flex align-items-start arrow-box ">
                 <img
@@ -30,13 +36,8 @@ const Index = (props) => {
                 <p className="paragraph">{description || 'No Description'}</p>
               </div>
             </div>
-          </Col>
-          <Col lg={4}>
-            <div className="image-box">
-              <img width='300px' height='300px' src={authorImage || '/author-pic.png'} alt="no-author" />
-            </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Container>
     </BlogDetailsWrapper>
   )

@@ -1,12 +1,28 @@
 import styled from "styled-components";
-import ExperienceBg from '../../../../../static/experience-bg.svg';
 
 const BusinessExperienceWrapper = styled.div`
   padding: 96px 0;
-  background-image: url(${ExperienceBg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  &.dark{
+    .heading{
+      color: ${({ theme }) => theme.colors.textColor};
+    }
+    .experience-box{
+      background-color: #011212;
+      .inner-heading{
+        color:  ${({ theme }) => theme.colors.textColor};
+      }
+      p{
+        color:  ${({ theme }) => theme.colors.whiteColor};
+      }
+    }
+    button{
+      background-color: ${({ theme }) => theme.colors.textColor};
+      color:  ${({ theme }) => theme.colors.bdoyTextVariant};
+    }
+  }
   .heading {
     color: #fff;
     text-align: center;
