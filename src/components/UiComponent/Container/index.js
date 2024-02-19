@@ -3,6 +3,7 @@ import { media } from '../../../theme/media-mixins'
 
 const Container = styled.div`
   padding: 0 144px;
+  height:100%;
   ${media.lg`
   padding: 0 80px;
   `}

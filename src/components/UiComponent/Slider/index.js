@@ -4,7 +4,7 @@ import Container from '../Container'
 import Divider from '../Divider'
 import SliderWrapper from './style'
 const Index = (props) => {
-  const { data, align, heading, paragraph, width, seconedHeading, maxWidth } = props
+  const { data, align, heading, paragraph, width, seconedHeading, maxWidth, className } = props
   const settings = {
     dots: true,
     infinite: true,

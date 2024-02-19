@@ -40,7 +40,10 @@ const ProductDesign = () => {
           product development services exceed user expectations, encour-
           age conversions, and deliver impressive ROI."
         buttonText="Get Free Consultation"
+        mobileViewBanner={BannerImage}
         blogInner={BannerImage}
+        col1lg={12}
+        className="d-flex align-items-center justify-content-start"
         wrapperClass="product-design-banner"
       />
       <HireCto

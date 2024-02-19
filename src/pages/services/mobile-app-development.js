@@ -37,7 +37,10 @@ const MobileApp = () => {
         heading="Deliver Powerful Mobile App Experiences"
         paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
         buttonText="Kickstart Your Transformation Journey"
-        imgSrc={BannerImage}
+        imgSrc={BannerImage}        
+        mobileViewBanner={BannerImage}        
+        col1lg={12}
+        className="d-flex align-items-center"
         wrapperClass="mobile-app-banner"
       />
       <TechnicalExcellence
