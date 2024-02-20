@@ -23,6 +23,9 @@ const Portfolio = () => {
         heading="They Trusted Us. So Can You."
         paragraph="Every project and partnership has been a journey of faith and commitment. We are gratefully playing a part in this massive technology adoption and transformation marathon - with science, passion, and innovation through sustainable and low-cost software implementations."
         buttonText="Let’s Start Building"
+        col1lg={12}
+        className="container-wrapper"
+        mobileViewBanner={EcommerceBanner}
         blogInner={EcommerceBanner}
         wrapperClass="cto-banner"
       />

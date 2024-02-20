@@ -39,6 +39,9 @@ const Enterprise = () => {
           prise? Get ready to build a market-ready solution inspired by the latest technology and insight with team Qbatch."
         buttonText="Explore Services"
         imgSrc={BannerImage}
+        mobileViewBanner={BannerImage}
+        col1lg={12}
+        className="d-flex align-items-center"
         wrapperClass="enterprise-banner"
       />
       <ChoiseYourEnterprise

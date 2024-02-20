@@ -33,7 +33,10 @@ const webapp = () => {
         paragraph="88% of consumers use computers to research products and services before making a purchase. Don’t leave your potential customers confused, instead amuse them with a stunning web appearance! "
         buttonText="Kickstart Your Transformation Journey"
         wrapperClass="cto-banner"
+        col1lg={12}
+        className="d-flex align-items-center justify-content-start"
         blogInner={WebappImage}
+        mobileViewBanner={WebappImage}
       />
       <Achievements innerPage={true} />
       <Slider

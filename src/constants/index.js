@@ -2029,7 +2029,7 @@ const guidanceData = [
     content: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise systems',
   },
   {
-    image: '/technology-integration-and-analysis.svg',
+    image: '/technical-audit.svg',
     title: 'Technology Integration and Analysis',
     content: 'Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.',
   },

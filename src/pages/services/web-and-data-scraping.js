@@ -32,6 +32,9 @@ const Ecommerce = () => {
         paragraph="Top-tier proxy networks, powerful web scrapers, and a world-class data team scraping - to help you build no-fail data pipelines with confidence."
         buttonText="Get Free Estimates"
         wrapperClass="web-data-scraping"
+        col1lg={12}
+        className="d-flex align-items-center justify-content-start"
+        mobileViewBanner={WebScrapping}
         blogInner={WebScrapping}
       />
       <DataDriven />

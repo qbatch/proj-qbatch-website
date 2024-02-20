@@ -87,11 +87,14 @@ const ProvenExperienceWrapper = styled.div`
         width: 100%;
         border-radius: 24px;
         border-bottom-right-radius: 0;
-        height: 444px;
+        /* this code is commented because this create issue with image */
+        /* height: 444px;
         ${media.md`
           height: 375px;
           width: 100%;
-        `}
+        `} */
+        /* this code is commented because this create issue with image */
+        
       }
     }
   }
