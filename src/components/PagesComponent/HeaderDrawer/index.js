@@ -45,180 +45,180 @@ const servicesItems = [
   },
   {
     menu: 'Low-code/ No-code Platform Development',
-    to: '#',
+    to: '',
   },
   {
     menu: 'UX/UI Design',
-    to: '#',
+    to: '',
   },
 ]
 
 const frameworksMenu = [
   {
     menu: "Node.js",
-    to: "#",
+    to: "",
   },
   {
     menu: "MEAN/MERN",
-    to: "#",
+    to: "",
   },
   {
     menu: "ROR",
-    to: "#",
+    to: "",
   },
   {
     menu: "Django",
-    to: "#",
+    to: "",
   },
   {
     menu: "React Native",
-    to: "#",
+    to: "",
   },
   {
     menu: "Flutter",
-    to: "#",
+    to: "",
   },
 ];
 
 const frameworksMenu2 = [
   {
     menu: "Retool",
-    to: "#",
+    to: "",
   },
   {
     menu: "JavaScript",
-    to: "#",
+    to: "",
   },
   {
     menu: "Ruby",
-    to: "#",
+    to: "",
   },
   {
     menu: "Python",
-    to: "#",
+    to: "",
   },
 ];
 
 const trendingMenu = [
   {
     menu: "Cloud and DevOps",
-    to: "#",
+    to: "",
   },
   {
     menu: "Internet of Things",
-    to: "#",
+    to: "",
   },
   {
     menu: "Big Data & Analytics",
-    to: "#",
+    to: "",
   },
   {
     menu: "Data Science",
-    to: "#",
+    to: "",
   },
   {
     menu: "AI/ML",
-    to: "#",
+    to: "",
   },
   {
     menu: "RPA",
-    to: "#",
+    to: "",
   },
 ];
 
 const trendingMenu2 = [
   {
     menu: "Web3.0",
-    to: "#",
+    to: "",
   },
   {
     menu: "Blockchain",
-    to: "#",
+    to: "",
   },
   {
     menu: "AWS",
-    to: "#",
+    to: "",
   },
   {
     menu: "Azure",
-    to: "#",
+    to: "",
   },
   {
     menu: "GCP",
-    to: "#",
+    to: "",
   },
 ];
 
 const devOpsmenu = [
   {
     menu: "Chef",
-    to: "#",
+    to: "",
   },
   {
     menu: "Teraform",
-    to: "#",
+    to: "",
   },
   {
     menu: "Kubernetes",
-    to: "#",
+    to: "",
   },
   {
     menu: "Docker",
-    to: "#",
+    to: "",
   },
   {
     menu: "Jenkins",
-    to: "#",
+    to: "",
   },
   {
     menu: "Ansible",
-    to: "#",
+    to: "",
   },
   {
     menu: "CircleCI",
-    to: "#",
+    to: "",
   },
 ];
 
 const industriesMenu = [
   {
     menu: "E-commerce",
-    to: "#",
+    to: "",
   },
   {
     menu: "Logistics and Supply Chain",
-    to: "#",
+    to: "",
   },
   {
     menu: "FinTech",
-    to: "#",
+    to: "",
   },
   {
     menu: "Healthcare",
-    to: "#",
+    to: "",
   },
   {
     menu: "EdTech",
-    to: "#",
+    to: "",
   },
   {
     menu: "Retail and Consumer Goods",
-    to: "#",
+    to: "",
   },
   {
     menu: "Travel and Transportation",
-    to: "#",
+    to: "",
   },
 ];
 
 const howWeWorkMenu = [
   {
     menu: "Process",
-    to: "#",
+    to: "",
   },
   {
     menu: "Discovery Phase",
-    to: "#",
+    to: "",
   },
 ];
 
@@ -233,7 +233,7 @@ const companyMenu = [
   },
   {
     menu: "Events & PR",
-    to: "#",
+    to: "",
   },
 ];
 

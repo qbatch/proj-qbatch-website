@@ -91,7 +91,9 @@ const HeaderWrapper = styled.header`
             `}
           }
           &:nth-child(2) {
-            min-width: 167px;
+            /* min-width: 167px; */
+            min-width: 116px;
+            
             ${media.lg`
               min-width: 151px;
             `}
