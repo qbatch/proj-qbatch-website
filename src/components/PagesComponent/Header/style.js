@@ -15,6 +15,7 @@ const HeaderWrapper = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width:100%;
     .logo {
       svg {
         min-width: 70px;

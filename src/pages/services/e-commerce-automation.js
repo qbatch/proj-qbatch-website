@@ -30,6 +30,9 @@ const Ecommerce = () => {
         paragraph="Stop time on slow, repetitive tasks and switch to data-driven approach with our custom solutions for Sellers, Aggregators, and Brand Owners. "
         buttonText="Explore Services"
         wrapperClass="cto-banner"
+        col1lg={12}
+        className="d-flex align-items-center justify-content-start"
+        mobileViewBanner={EcommerceBanner}
         blogInner={EcommerceBanner}
       />
       <WhatCanHelp />

@@ -44,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
         font-weight:${({ theme }) => theme.fontWeight.light} ;
     }
     p{
-       font-size:${({ theme }) => theme.fonts.baseFontSize};
+       font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
        color: ${({ theme }) => theme.colors.textMedium};   
        letter-spacing : 0.14px ; 
     }
@@ -125,6 +125,9 @@ const GlobalStyles = createGlobalStyle`
       }
       h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
+      }
+      p{
+       font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
       }
     }
     @media (max-width: 768px) {
@@ -249,7 +252,7 @@ const GlobalStyles = createGlobalStyle`
         margin-bottom:32px;
       }
       p{
-       color: ${({ theme }) => theme.colors.whiteColor};  
+       color: ${({ theme }) => theme.colors.whiteColor};
       }
       button{
       color: rgb(255, 255, 255);

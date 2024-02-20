@@ -27,10 +27,11 @@ const DedicatedDeveloperWrapper = styled.div`
     justify-content: center;
     height: 100vh;
     h1 {
-      font-size: 64px;
       color: ${({ theme }) => theme.colors.whiteColor};
       text-align: center;
-      line-height: 79px;
+      ${media.sm`
+      line-height: 32px;
+      `}
       span {
         color: ${({ theme }) => theme.colors.highlightColor};
         padding-left: 4px;
@@ -38,9 +39,7 @@ const DedicatedDeveloperWrapper = styled.div`
     }
     p {
       color: ${({ theme }) => theme.colors.whiteColor};
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       letter-spacing: 0px;
-      line-height: 32px;
       text-align: center;
       max-width: 933px;
       padding: 24px 0px;

@@ -5,13 +5,13 @@ import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/HomeButton";
 import CtoBannerWrapper from "./style";
 
-const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, paragraphMaxWidth, subheadingColor }) => {
+const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor }) => {
   const defaultCol1lg = 7;
   const defaultCol2lg = 5;
 
   return (
     <CtoBannerWrapper className={wrapperClass} blogInner={blogInner}>
-      <Container>
+      <Container className={className}>
         <Row>
           <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
             <div className="banner-main">
@@ -28,6 +28,7 @@ const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
             </Col>
           )}
         </Row>
+        <img className="mobile-view-banner" src={mobileViewBanner}/>
       </Container>
     </CtoBannerWrapper>
   )
