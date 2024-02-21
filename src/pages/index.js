@@ -3,6 +3,7 @@ import { Script } from 'gatsby'
 import { Queries } from '../constants/queries'
 import Layout from '../components/Layout/layout'
 import SEO from '../components/Seo'
+import EventsBanner from '../components/PagesComponent/EventsBanner'
 import DedicatedDevelopment from '../components/PagesComponent/DedicatedDeveloper'
 import Achievements from '../components/PagesComponent/Achievements'
 import WhatWeCanDo from '../components/PagesComponent/WhatWeCanDo'
@@ -48,6 +49,16 @@ const IndexPage = () => {
       </Script>
       <Layout>
         <DedicatedDevelopment />
+        <EventsBanner
+         eventLogo1='/white-label.svg'
+         eventName1='White Label Expo'
+         eventDate1='February 27 - 28, 2024'
+         eventBoothNo1='WL1546'
+         eventLogo2='/prosper-show.svg'
+         eventName2='Prosper Show'
+         eventDate2='March 4 - 6, 2024'
+         eventBoothNo2='814'
+        />
         <Achievements page="home" />
         <WhatWeCanDo />
         <Expertise />

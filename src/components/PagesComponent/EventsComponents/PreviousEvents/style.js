@@ -21,19 +21,12 @@ padding: 96px 0;
 .slide {
   transition: transform 0.3s ease, opacity 0.3s ease;
   img{
-    height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: center;
-    ${media.lg `
-      height: 300px;
-      padding: 0 32px;
-    `}
+    aspect-ratio: 3 / 2;
     ${media.md `
-      height: 350px;
-    `}
-    ${media.sm `
-      height: 350px;
+      padding: 0 32px;
     `}
   }
 }

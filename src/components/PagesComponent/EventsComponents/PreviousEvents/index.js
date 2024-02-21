@@ -16,7 +16,7 @@ const PreviousEvents = () => {
     autoplaySpeed: 1900,
     responsive: [
       {
-        breakpoint: 992, 
+        breakpoint: 768, 
         settings: {
           slidesToShow: 1,
         },

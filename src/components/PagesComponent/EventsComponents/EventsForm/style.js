@@ -102,6 +102,34 @@ position: relative;
       background-color: #F7F8F9;
     }
   }
+
+&.dark{
+  .section-bg{
+    .right-box{
+      background-color: ${({ theme }) => theme.colors.secondaryColor};
+    }
+  }
+  .form-wrapper{
+    .form-paragraph{
+      color:  ${({ theme }) => theme.colors.whiteColor};
+    }
+    .form-heading{
+      color:  ${({ theme }) => theme.colors.textColor};
+    }
+    button{
+      background-color: ${({ theme }) => theme.colors.textColor};
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
+    }
+    .link-text{
+      color: ${({ theme }) => theme.colors.whiteColor};
+      font-size:  ${({ theme }) => theme.fonts.baseFontSizeSm};
+      a{
+        color: ${({ theme }) => theme.colors.textColor};
+        text-decoration: underline
+      }
+    }
+  }
+}
 `
 
 export default EventsFormWrapper;

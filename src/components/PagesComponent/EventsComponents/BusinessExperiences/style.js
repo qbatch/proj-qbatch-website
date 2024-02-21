@@ -5,6 +5,11 @@ const BusinessExperienceWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  & > div{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   &.dark{
     .heading{
       color: ${({ theme }) => theme.colors.textColor};

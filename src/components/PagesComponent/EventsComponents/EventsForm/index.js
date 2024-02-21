@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ButtonArrow from '../../../../../static/event-btn-arrow.svg'
 import FormVector from '../../../../../static/event-form-vector-1.svg'
 
-const EventsForm = ({paragraph}) => {
+const EventsForm = ({paragraph, dark}) => {
 
   const [submitted, setSubmitted] = useState(false);
   const [validated, setValidated] = useState(false);
@@ -70,7 +70,7 @@ const EventsForm = ({paragraph}) => {
     
   };
   return (
-    <EventsFormWrapper>
+    <EventsFormWrapper className={dark ? 'dark' : ''}>
       <div className='section-bg d-xl-flex d-none'>
         <div className='left-box'>
           <img src={FormVector} />
@@ -104,7 +104,7 @@ const EventsForm = ({paragraph}) => {
                 <button type='submit'>Let’s Meet<img src={ButtonArrow} alt='arrow' /></button>
               </form>
               <div className='text-center'>
-                <p>Or <a href='#'><i>schedule a meeting at your convenience</i></a></p>
+                <p className="link-text">Or <a href='#'><i>schedule a meeting at your convenience</i></a></p>
               </div>
             </div>
           </Col>
