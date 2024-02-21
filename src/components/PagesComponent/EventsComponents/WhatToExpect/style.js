@@ -3,6 +3,8 @@ import styled from "styled-components";
 const WhatToExpectWrapper = styled.div`
 padding: 96px 0;
 position: relative;
+background-size: cover;
+background-repeat: no-repeat;
 &::after{
   content: '';
   display: block;

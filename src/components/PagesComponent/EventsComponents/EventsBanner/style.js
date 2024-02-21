@@ -89,6 +89,35 @@ align-items: center;
     }
   }
 }
+.coupon-wrapper{
+  .heading{
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
+    text-shadow: 2px 2px 6px #00000080;
+    color: ${({ theme }) => theme.colors.textColor};
+    text-align: center;
+    width: 100%;
+    max-width: 480px;
+    span{
+      color: ${({ theme }) => theme.colors.whiteColor};
+      font-size:  ${({ theme }) => theme.fonts.baseFontSizeLg};
+      font-weight:  ${({ theme }) => theme.fontWeight.light};
+      .highlighted{
+        font-weight:  ${({ theme }) => theme.fontWeight.bold};
+        color: ${({ theme }) => theme.colors.textColor};
+      }
+      &.promo-code{
+      text-decoration: underline;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
+      color: ${({ theme }) => theme.colors.textColor};
+      font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
+    }
+    }
+  }
+  button{
+    margin: auto;
+    margin-top: 48px;
+  }
+}
 `
 
 export default EventsBannerWrapper
