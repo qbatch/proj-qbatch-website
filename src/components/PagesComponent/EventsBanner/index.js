@@ -37,7 +37,7 @@ const index = ({eventLogo1, eventName1, eventBoothNo1, eventDate1, eventLogo2, e
           </div>
         </div>
 
-        <button className='arrow-button' onClick={() => navigate(`/events/white-label-expo`)}>
+        <button className='arrow-button' onClick={() => navigate(`/events/prosper-show`)}>
           <ArrowRight />
         </button>
 
