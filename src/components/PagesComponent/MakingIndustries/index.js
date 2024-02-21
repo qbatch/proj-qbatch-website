@@ -49,7 +49,7 @@ const Index = () => {
   ];
   
   return (
-    <MakingIndustriesWrapper>
+    <MakingIndustriesWrapper id="industries">
       <Container className="industries-inner-wrapper">
         <h2 className="text-center color-primary text-h1 heading">
           Happily Making Industries People-First

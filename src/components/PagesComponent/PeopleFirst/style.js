@@ -82,6 +82,17 @@ const PeopleFirstWrapper = styled.div`
       border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor};
     }
     `}
+    ${media.sm`
+    &:nth-child(9){
+      border-right: 0;
+      border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor} !important;
+    }
+     &:nth-child(10){
+      border-right: 0;
+      border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor} !important;
+    }
+    
+    `}
     @media (max-width: 767px) {
       &:nth-child(even) {
         border-right: 0;

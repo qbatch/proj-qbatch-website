@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const DevelopmentProcessWrapper = styled.div`
 padding: 120px 0;
@@ -22,6 +23,9 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
       gap: 32px;
       align-items: center;
       margin-bottom: 24px;
+      ${media.customBrakePoint`
+      flex-direction:column;
+      `}
       h3.text-h3{
         font-weight: ${({ theme }) => theme.fontWeight.semiBold};
         line-height: 40px;

@@ -70,12 +70,12 @@ const softwareProductData = [
   { id: 9, icon: '/online-streaming.svg', desc: 'Online Streaming Platforms' },
   { id: 10, icon: '/booking-apps.svg', desc: 'Booking Apps' },
   { id: 11, icon: '/on-demand-services.svg', desc: 'On-demand services platforms' },
-  { id: 12, icon: '/sap-enterprises.svg', desc: 'SAP Enterprises Tools' },
+  { id: 12, icon: '/sap-enterprises.svg', desc: 'SAP Enterprises Tools' },
 ]
 const developmentProcessData = [
   {
     image: '/1-2-weeks.svg',
-    duration: '1-2 weeks',
+    duration: '1 - 2 weeks',
     title: 'Discovery Phase',
     description:
       'We test and validate your unproven concept according to the market situation before securing your idea and investment.',

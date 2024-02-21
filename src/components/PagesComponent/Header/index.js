@@ -12,14 +12,10 @@ import HeaderWrapper from "./style";
 const headerMenu = [
   {
     name: "Services",
-  },
-  {
-    name: "Hire Developers",
-    to: "/",
-  },
+  },,
   {
     name: "Industries",
-    to: "/",
+    to: "#industries",
   },
   {
     name: "Portfolio",

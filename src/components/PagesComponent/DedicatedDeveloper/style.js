@@ -10,6 +10,10 @@ const DedicatedDeveloperWrapper = styled.div`
     background-position: center center;
     background-repeat: no-repeat;
     animation: shrink 5s infinite alternate;
+    ${media.sm`
+    animation:none;
+    background-size: cover;
+    `}
       @keyframes shrink {
         0% {
           background-size: 100% 100%;
@@ -34,7 +38,7 @@ const DedicatedDeveloperWrapper = styled.div`
       `}
       span {
         color: ${({ theme }) => theme.colors.highlightColor};
-        padding-left: 4px;
+        padding-left: 8px;
       }
     }
     p {

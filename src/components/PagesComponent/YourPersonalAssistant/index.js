@@ -16,7 +16,7 @@ const Index = () => {
     },
     {
       img: '/from-unstructured-to-structured-data.svg',
-      title: 'From unstructured to   structured data',
+      title: 'From unstructured to structured data',
       description: 'Standardize, cleanse, and aggregate data into tangible, structured feeds.',
     },
     {
