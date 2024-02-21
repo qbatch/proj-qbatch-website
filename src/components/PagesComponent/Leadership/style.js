@@ -10,6 +10,7 @@ ${media.sm`
 .content-wrapper{
   .heading{
     padding-bottom: 20px;
+    padding-right: 64px;
     ${media.sm`
      padding-bottom: 12px;
     `}
@@ -60,6 +61,16 @@ ${media.sm`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: end;
+}
+.leaders-cards-wrapper{
+  display:flex;
+  align-items:center;
+  grid-gap:24px;
+  padding-top:120px;
+  ${media.sm`
+  flex-wrap:wrap;
+  grid-row-gap:150px;
+  `}
 }
 .leader{
   display: flex;
