@@ -50,7 +50,7 @@ position: relative;
     }
     label{
       margin-bottom: 8px;
-      color: ${({ theme }) => theme.colors.bodyTextVariant};
+      color: ${({ theme }) => theme.colors.whiteColor};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       text-align: left;
     }

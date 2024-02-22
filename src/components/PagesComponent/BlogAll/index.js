@@ -19,11 +19,11 @@ const index = ({ data }) => {
         .slice(0, 1)
         .reverse()
         .map((item, ind) => (
-          <InnerBannerWrapper key={ind} backgroundImage="/blog-main-banner.svg">
-            <div className="full-flex mb-5">
-              <div className="blog-badge">Blog</div>
-            </div>
+          <InnerBannerWrapper key={ind}>
+              <div className="blog-badge blog-badge-main">Blog</div>
             <div>
+              <img className="blog-image" src={item.blogImg?.localFile.url} />
+              <div className="blog-wrapper">
               <div className="blog-title">
                 <h2>{item.blogTitle}</h2>
                 <div className="banner-desc">
@@ -38,9 +38,9 @@ const index = ({ data }) => {
                 <div className="blog-badge">{item.blogTags?.strapi_json_value[0]}</div>
                 <div className="timer">
                   <img src="/timer.svg" alt="timer" />
-                  <span>
+                  <div>
                     <ReadingTime description={item.blogDescription?.data.blogDescription} /> Minutes Read
-                  </span>
+                  </div>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-between flex-wrap gap-4">
@@ -50,13 +50,14 @@ const index = ({ data }) => {
                 </div>
                 <Button
                   text="Explore More"
-                  className="header-btn blog-banner-btn"
+                  className="header-btn"
                   onClick={() => {
                     navigate(`/blog${item.seo.slug}`, {
                       state: { blogId: item.id },
                     })
                   }}
                 />
+              </div>
               </div>
             </div>
           </InnerBannerWrapper>

@@ -185,7 +185,17 @@ const strapiConfig = {
           },
         },
       },
-    }
+    },
+    {
+      singularName: 'prosper-show',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
   ],
   singleTypes: [
     'home',
@@ -205,6 +215,7 @@ const strapiConfig = {
     'privacy-policy',
     'web-and-data-scraping',
     'terms-and-condition',
+    'prosper-show'
   ],
   queryLimit: 1000,
 }

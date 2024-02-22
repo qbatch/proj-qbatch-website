@@ -5,7 +5,7 @@ import EventsBannerWrapper from './style';
 
 import Button from '../../../UiComponent/HomeButton/index'
 
-const EventsBanner = ({ backgroundImage, eventName, eventLogo, boothNumber, eventDate, eventVenue, promoCode, valuedAt }) => {
+const EventsBanner = ({ backgroundImage, eventName, eventLogo, boothNumber, eventDate, eventVenue, promoCode, valuedAt, couponLink }) => {
   return (
     <EventsBannerWrapper style={{ backgroundImage: `url(${backgroundImage})` }}>
       <Container>
@@ -29,7 +29,9 @@ const EventsBanner = ({ backgroundImage, eventName, eventLogo, boothNumber, even
                 <span> a <span className='highlighted'>FREE</span> Attendee Expo Hall Only Pass
                 {valuedAt && <span className='highlighted d-block'>(valued at {valuedAt})</span>}</span>
               </h3>
-              <Button text="Register Now" onClick={() => navigate('#')} />
+              <a href={couponLink}>
+              <Button text="Register Now" />
+              </a>
             </div>
           )}
         </div>

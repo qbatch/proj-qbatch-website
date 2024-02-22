@@ -49,16 +49,6 @@ const IndexPage = () => {
       </Script>
       <Layout>
         <DedicatedDevelopment />
-        <EventsBanner
-         eventLogo1='/white-label.svg'
-         eventName1='White Label Expo'
-         eventDate1='February 27 - 28, 2024'
-         eventBoothNo1='WL1546'
-         eventLogo2='/prosper-show.svg'
-         eventName2='Prosper Show'
-         eventDate2='March 4 - 6, 2024'
-         eventBoothNo2='814'
-        />
         <Achievements page="home" />
         <WhatWeCanDo />
         <Expertise />
@@ -84,6 +74,16 @@ const IndexPage = () => {
         <Collaboration />
         <CreativeIntelligence />
         <StartProject />
+        <EventsBanner
+         eventLogo1='/white-label.svg'
+         eventName1='White Label Expo'
+         eventDate1='February 27 - 28, 2024'
+         eventBoothNo1='WL1546'
+         eventLogo2='/prosper-show.svg'
+         eventName2='Prosper Show'
+         eventDate2='March 4 - 6, 2024'
+         eventBoothNo2='814'
+        />
       </Layout>
       <SEO
         title={seoData.metaTitle}

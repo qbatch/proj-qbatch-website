@@ -13,70 +13,9 @@ const Index = (props) => {
   );
   const editorPicksData = data?.filter((item) => item.favorite === true);
 
-  const BlogPost = ({ card, ind, onClick }) => {
+  const BlogPost = ({ card, ind }) => {
     const customDate = new Date(card.publishedAt)
-    return ind === 0 ? (
-      <Col md={12}>
-        <div className="inner first-card" key={ind}>
-          <Row>
-            <Col md={6}>
-              <div className="card-img">
-                <img src={card?.blogImg?.localFile.url} alt={card.blogTitle} />
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className="inner-content">
-                <div className="d-flex align-items-center justify-content-between">
-                  <div className="blog-badge">Blog</div>
-                  <span className="hours">
-                    <TimeAgo customDate={customDate} />
-                  </span>
-                </div>
-                <h3
-                  className="pointer"
-                  onClick={() => {
-                    navigate(`/blog${card.seo.slug}`, {
-                      state: { blogId: card.id },
-                    })
-                  }}
-                >
-                  {card.blogTitle}
-                </h3>
-                <div className="descripiton">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: card.blogDescription?.data.blogDescription,
-                    }}
-                  />
-                </div>
-                <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
-                  <span className="blog-badge">{card.blogTags?.strapi_json_value[0]}</span>
-                  <div className="timer">
-                    <img src="/timer-blue.svg" alt="timer" />
-                    <span>
-                      <ReadingTime description={card.blogDescription?.data.blogDescription} /> Minutes Read
-                    </span>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-0 read-time">
-                  <span>{card?.user?.username}</span>
-                  <PrimaryButton
-                    text="Explore More"
-                    fontSize="16px"
-                    color="#0054A6"
-                    onClick={() => {
-                      navigate(`/blog${card.seo.slug}`, {
-                        state: { blogId: card.id },
-                      })
-                    }}
-                  />
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </div>
-      </Col>
-    ) : (
+    return (
       <Col md={6}>
         <div className="inner" key={ind}>
           <div className="card-img">
@@ -121,7 +60,7 @@ const Index = (props) => {
           </div>
         </div>
       </Col>
-    )
+    );
   }
 
   return (
@@ -140,7 +79,7 @@ const Index = (props) => {
           (isFavorite
             ? editorPicksData
             : isSlice
-            ? (heading && !blogInner ? categoryData : data)?.slice(0, 3)
+            ? (heading && !blogInner ? categoryData : data)?.slice(Math.max((heading && !blogInner ? categoryData : data)?.length - 2, 0))
             : heading && !blogInner
             ? categoryData
             : data
