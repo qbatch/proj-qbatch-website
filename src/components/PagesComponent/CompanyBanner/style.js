@@ -12,15 +12,6 @@ const BannerWrapper = styled.div`
     padding: 40px 0;
     background-position: bottom left;
   `}
-  p {
-    color: ${({ theme }) => theme.colors.whiteColor};
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-    line-height: 32px;
-    max-width: 749px;
-    margin-top: 33px;
-    letter-spacing:0px;
-    margin-bottom:78px;
-  }
   .banner-headings {
     padding-top: 37px;
     ${media.md`
@@ -29,24 +20,20 @@ const BannerWrapper = styled.div`
     span {
       display: block;
     }
+    p {
+    color: ${({ theme }) => theme.colors.whiteColor};
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    max-width: 749px;
+    margin-top: 33px;
+    letter-spacing:0px;
+    margin-bottom:78px;
+  }
   }
 `
 const H1 = styled.h1`
-  font-size:64px;
+    font-size: ${({ theme }) => theme.fonts.fsh1};
   color: ${({ theme }) => theme.colors.whiteColor};
   margin-bottom: 0px;
-  ${media.lg`
-    font-size: 80px;
-    line-height: 86px;
-  `}
-  ${media.sm`
-  font-size: 60px;
-    line-height: 68px;
-  `}
-  ${media.xs`
-  font-size: 48px;
-    line-height: 52px;
-  `}
 `
 
 export { BannerWrapper, H1 };

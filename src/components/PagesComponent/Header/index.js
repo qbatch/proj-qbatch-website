@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, } from "react";
 import {Link} from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby'
 import Button from "../../UiComponent/Button";
@@ -8,11 +8,10 @@ import { navigate } from 'gatsby';
 
 
 import HeaderWrapper from "./style";
-
 const headerMenu = [
   {
     name: "Services",
-  },,
+  },
   {
     name: "Industries",
     to: "#industries",
