@@ -112,6 +112,7 @@ const ContentWrapper = styled.div`
       margin-bottom: 24px;
       .avatar-image {
         border-radius: 24px 24px 0 24px;
+        object-fit: cover;
       }
       span {
         font-size: 20px;
@@ -180,6 +181,7 @@ const ContentWrapper = styled.div`
       &.title {
         max-width: 250px;
         padding-bottom: 12px;
+        line-height: 18px;
       }
       /* &.active {
         color: ${({ theme }) => theme.colors.primaryColor};

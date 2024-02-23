@@ -30,6 +30,7 @@ const FaqWrapper = styled.div`
     ul {
       list-style: disc;
       padding-left: 24px;
+      margin-bottom: 12px;
     }
   }
 `;

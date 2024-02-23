@@ -98,13 +98,12 @@ const EventsForm = ({paragraph, dark}) => {
                 <label>How would you like to meet us?</label>
                 <select value={formData.meetingType} name="meetingType" onChange={handleInputChange}>
                   <option>In-Person</option>
-                  <option>In-Person1</option>
-                  <option>In-Person2</option>
+                  <option>Online</option>
                 </select>
                 <button type='submit'>Let’s Meet<img src={ButtonArrow} alt='arrow' /></button>
               </form>
               <div className='text-center'>
-                <p className="link-text">Or <a href='#'><i>schedule a meeting at your convenience</i></a></p>
+                <p className="link-text">Or <a href='#event-form'><i>schedule a meeting at your convenience</i></a></p>
               </div>
             </div>
           </Col>

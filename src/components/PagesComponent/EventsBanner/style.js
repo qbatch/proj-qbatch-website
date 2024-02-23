@@ -5,6 +5,9 @@ background: linear-gradient(90deg, #0455A4 0%, #0E2647 100%);
 display: flex;
 align-items: center;
 justify-content: space-between;
+position: sticky;
+bottom: 0;
+z-index: 22;
 .box{
   display: flex;
   align-items: center;

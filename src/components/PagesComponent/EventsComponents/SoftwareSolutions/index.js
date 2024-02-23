@@ -10,7 +10,7 @@ const SoftwareSolutions = () => {
   return (
     <SoftwareSolutionsWrapper>
       <Container>
-        <h2 className='text-h2 heading'>We power online sellers, retailers, and distributors to unravel their potential by building purpose-driven software solutions.</h2>
+        <h2 className='text-h2 heading'>We power online sellers, retailers, and distributors with purpose-driven software solutions.</h2>
         <div className='boxes-wrapper'>
           <Row className='g-3'>
             <Col lg={4} md={6}>
@@ -39,7 +39,9 @@ const SoftwareSolutions = () => {
             </Col>
           </Row>
         </div>
-        <button className='inner-btn' type='submit'>Let’s Meet<img src={ButtonArrow} alt='arrow' /></button>
+       <a href='#event-form'>
+       <button  className='inner-btn' type='submit'>Let’s Meet<img src={ButtonArrow} alt='arrow' /></button>
+       </a>
       </Container>
       <div className='solution-bg'>
         <img src={Abstract} />

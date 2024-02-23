@@ -3,10 +3,29 @@ import CalendarScheduleWrapper from './style';
 import { InlineWidget } from "react-calendly";
 import { Col, Row } from 'react-bootstrap';
 import Container from '../../../UiComponent/Container';
+import SocialIcons from "../../../UiComponent/SocialIcons";
 
 const CalendarSchedule = () => {
+  const socialLinks = [
+    {
+      img: '/facebook',
+      to: 'https://www.facebook.com/qbatch/',
+    },
+    {
+      img: '/linkedin',
+      to: 'https://www.linkedin.com/company/qbatch/',
+    },
+    {
+      img: '/twitter',
+      to: 'https://twitter.com/qbatchofficial',
+    },
+    {
+      img: '/instagram',
+      to: 'https://www.instagram.com/qbatch/',
+    },
+  ]
   return (
-    <CalendarScheduleWrapper>
+    <CalendarScheduleWrapper id='event-form'>
       <Container>
       <div className='custom-container'>
         <div className='calendar-schedule-inner'>
@@ -16,11 +35,8 @@ const CalendarSchedule = () => {
                 <h2 className='heading text-h2'>Meet to innovate!</h2>
                 <p className='paragraph'>We’re excited to learn, build, and broaden our horizons at the<br/> <span>White Label Expo 2024</span>, are you? </p>
                 <p className='paragraph-small'>Follow us on social media for live event updates</p>
-                <div className='socials'>
-                  <a href='#'><img src='/facebook-icon.svg' /></a>
-                  <a href='#'><img src='/twitter-icon.svg' /></a>
-                  <a href='#'><img src='/linkedin-icon.svg' /></a>
-                  <a href='#'><img src='/reddit-icon.svg' /></a>
+                <div className='m-auto socials'>
+                <SocialIcons socialIcons={socialLinks} />
                 </div>
               </div>
           </Col>

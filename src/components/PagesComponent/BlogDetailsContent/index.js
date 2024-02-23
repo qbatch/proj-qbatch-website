@@ -47,30 +47,28 @@ function App({ data, path }) {
       if (contentContainer) {
         const headings = contentContainer.querySelectorAll("h2");
   
-        // Iterate through each h2 element
         headings.forEach((heading, index) => {
-          // Create a new div element with class "heading-wrapper"
           const wrapperDiv = document.createElement("div");
           wrapperDiv.classList.add("heading-wrapper");
-          
-          // Create an empty div
-          const emptyDiv = document.createElement("div");
-          // Get the ID of the heading
-          const headingId = `heading_${index + 1}`;
-          // Set the ID for the empty div
-          
-          // Append the empty div before the heading
-          wrapperDiv.appendChild(emptyDiv);
   
-          // Clone the heading
+          const emptyDiv = document.createElement("div");
+          const headingText = heading.textContent
+            .trim()
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, '') // Remove any characters that are not word characters, spaces, or hyphens
+            .replace(/\s+/g, '-'); // Replace spaces with hyphens
+  
+          const headingId = `${headingText}`;
+          const emptyDivId = `${headingText}`;
+  
+          wrapperDiv.appendChild(emptyDiv);
+          emptyDiv.id = emptyDivId; // Set ID for empty div
+  
           const clonedHeading = heading.cloneNode(true);
-          // Set the ID for the heading
           clonedHeading.id = headingId;
-          
-          // Append the heading to the wrapper div
+  
           wrapperDiv.appendChild(clonedHeading);
   
-          // Replace the heading with the wrapper div
           heading.parentNode.replaceChild(wrapperDiv, heading);
         });
       }
@@ -78,6 +76,7 @@ function App({ data, path }) {
   
     addUniqueIdsToHeadings();
   }, [data]);
+  
 
   useEffect(() => {
     const extractHeadings = () => {
@@ -129,24 +128,25 @@ function App({ data, path }) {
           <span className="table-content-header">Table of Content</span>
         <div className="side-scroll-content">
         <ol>
-        {headings.map((list, index) => (
-          <React.Fragment key={index}>
-            <li>
-              <a
-                href={`#heading_${index + 1}`}
-                className={`title ${activeHeadingIndex === index ? 'active' : ''}`}
-              >
-                {list.title}
-              </a>
-            </li>
-          </React.Fragment>
-        ))}
+          {headings.map((list, index) => (
+            <React.Fragment key={index}>
+              <li>
+                <a
+                  href={`#${list.title.trim().toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')}`}
+                  className="title"
+                >
+                  {list.title}
+                </a>
+              </li>
+            </React.Fragment>
+          ))}
         </ol>
+
         </div>
         </div>
 
         <div className="content-section content">
-          <Container>
+          <Container className="ps-5">
             <Row>
               <Col lg={8} md={12} sm={12}>
                 <div className="section inner-content">

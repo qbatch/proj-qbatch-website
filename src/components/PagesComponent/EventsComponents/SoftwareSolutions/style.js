@@ -15,6 +15,10 @@ position: relative;
   align-items: center;
   justify-content: center;
 }
+.team-wrapper-container{
+  position: relative;
+  z-index: 97;
+}
 .boxes-wrapper{
   padding: 72px 0;
   max-width: 1050px;
@@ -55,6 +59,7 @@ position: relative;
       max-width: 453px;
       width: 100%;
       display: flex;
+      cursor: pointer;
       align-items: center;
       justify-content: center;
       gap: 16px;
@@ -62,6 +67,8 @@ position: relative;
       border: none;
       background-color: ${({ theme }) => theme.colors.primaryColor};
       margin: 24px auto 32px;
+      position: relative;
+      z-index: 22;
 
     }
 `

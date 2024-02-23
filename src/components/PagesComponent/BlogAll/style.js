@@ -8,13 +8,21 @@ const BlogAllWrapprt = styled.div`
 
 `
 const InnerBannerWrapper = styled.div`
-  background-image: ${(props) => (props.backgroundImage ? `url(${props.backgroundImage})` : '')};
-  background-size: cover;
   border-radius: 24px 24px 0;
-  background-position: right;
-  display: flex;
-  flex-direction: column;
-  padding: 48px;
+  border: 1px solid  ${({ theme }) => theme.colors.dividerColor};
+  position: relative;
+  overflow: hidden;
+  .blog-image{
+    aspect-ratio: 4/2;
+  }
+  .blog-badge-main{
+    position: absolute;
+    top: 48px;
+    left: 48px;
+  }
+  .blog-wrapper{
+    padding: 48px;
+  }
   ${media.sm`
       height: auto;
     `}
@@ -29,7 +37,7 @@ const InnerBannerWrapper = styled.div`
   }
   .blog-title {
     h2 {
-      color: ${({ theme }) => theme.colors.whiteColor};
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
       line-height: 52px;
       ${media.sm`
           line-height: 32px;
@@ -52,7 +60,7 @@ const InnerBannerWrapper = styled.div`
       }
       p {
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        color: ${({ theme }) => theme.colors.dividerColor};
+        color: ${({ theme }) => theme.colors.textMedium};
         line-height: 24px;
       }
       span {
@@ -66,19 +74,24 @@ const InnerBannerWrapper = styled.div`
     margin-bottom: 34px;
     display: flex;
     align-items: center;
-    span {
+    div{
       margin-left: 12px;
-      color: ${({ theme }) => theme.colors.dividerColor};
+    }
+    span {
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
+    }
+    img{
+      filter: brightness(0) saturate(100%) invert(23%) sepia(65%) saturate(1901%) hue-rotate(190deg) brightness(97%) contrast(106%);
     }
   }
   .author-name {
-    color: ${({ theme }) => theme.colors.dividerColor};
+    color: ${({ theme }) => theme.colors.bodyTextVariant};
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
     ${media.xs`
-        gap: 16px;
-      `}
+      gap: 16px;
+    `}
   }
 `
 

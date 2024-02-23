@@ -19,7 +19,7 @@ const OurTeam = () => {
                     <span>CEO & Co-Founder</span>
                   </div>
                   <div className='social'>
-                    <a href='#'><img src='/linkedin.svg' /></a>
+                    <a target='_blank' href='https://www.linkedin.com/in/ibrahimzahoor/'><img src='/linkedin.svg' /></a>
                   </div>
                   <p className='paragraph'>“With a wealth of experience streamlining crucial E-commerce business processes, I offer a reliable approach to simplify complex tasks and operations.”</p>
                 </div>
@@ -34,7 +34,7 @@ const OurTeam = () => {
                     <span>CTO & Co-Founder</span>
                   </div>
                   <div className='social'>
-                    <a href='#'><img src='/linkedin.svg' /></a>
+                    <a target='_blank' href='https://www.linkedin.com/in/hassanakram/'><img src='/linkedin.svg' /></a>
                   </div>
                   <p className='paragraph'>“Having faced challenging technical situations, I thrive on problem-solving, automating difficult tasks, and creating impactful products.”</p>
                 </div>

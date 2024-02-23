@@ -8,7 +8,6 @@ import OurTeam from '../../components/PagesComponent/EventsComponents/OurTeam';
 import WhatToExpect from '../../components/PagesComponent/EventsComponents/WhatToExpectBoxes';
 import PreviousEvents from '../../components/PagesComponent/EventsComponents/PreviousEvents';
 import CalendarSchedule from '../../components/PagesComponent/EventsComponents/CalendarSchedule';
-import EventsBannerImg from "../../../static/events-banner-img.jpeg"
 import EventImg from "../../../static/prosper-show-logo.svg"
 const WLevent = () => {
   const innerContentDataBox = [
@@ -30,6 +29,7 @@ const WLevent = () => {
        eventVenue="Royal Victoria Dock, London"
        promoCode="EXIV882491"
        valuedAt="$300"
+       couponLink='https://registration.experientevent.com/ShowPSL241/?flow=attendee&MarketingCode=EXIV882491'
       />
       <EventsForm 
         paragraph="Qbatch is exhibiting at the world’s biggest marketplace seller event. We’re excited to meet with top-tier sellers and various stakeholders to discuss resilient business solutions for a brighter future."
@@ -51,5 +51,19 @@ const WLevent = () => {
     </Layout>
   );
 };
+// export const Head = () => {
+//   const prosperShow = Queries();
+//   const seoData = prosperShow.allStrapiProsperShow.nodes[0]?.seo
+//   return (
+//     <SEO
+//       title={seoData.metaTitle}
+//       description={seoData.metaDescription}
+//       keywords={seoData.keywords}
+//       language={seoData.language}
+//       robots={seoData.metaRobots}
+//       pathname={seoData.slug}
+//     />
+//   )
+// }
 
 export default WLevent;
