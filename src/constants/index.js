@@ -2200,32 +2200,32 @@ const productDesignData = [
     desc: 'Suffering from unproductive debates, weak ideas, and repeated market challenges? We instill ownership by aligning your team’s vision and goals, so they only deliver results and not painful experiences.',
   },
   {
-    icon: '/operational-efficiency.svg',
+    icon: '/product-thinking-dna.svg',
     title: 'Product Thinking DNA',
     desc: 'Our product designers live and breathe product thinking. We deeply empathize with the end user and respond to their expectations via flawless product functionality and performance.',
   },
   {
-    icon: '/budget-constraints.svg',
+    icon: '/human-centeric-product-design.svg',
     title: 'Human-Centric Product Design',
     desc: 'Did you ever abandon or uninstall a mobile app due to poor design? Ever imagined the same for your product? Thus, we assure your product design is not just stunning. It is also easy to use۔',
   },
   {
-    icon: '/technology-selection.svg',
+    icon: '/product-market-fit.svg',
     title: 'Product Market-Fit',
     desc: 'We critically study and analyze market needs and build purpose-driven solutions as a response. As the market evolves, we quickly test, adapt, and make changes in the development phase.',
   },
   {
-    icon: '/existing-systems.svg',
+    icon: '/user-first-product-development.svg',
     title: 'User-First Product Development',
     desc: 'Our digital product development team builds event-driven and self-healing architectures that constantly support new feature requests and changes, aligning well with software delivery and business goals.',
   },
   {
-    icon: '/existing-systems.svg',
+    icon: '/optimized-response-and-conversion.svg',
     title: 'Optimized Response & Conversions',
     desc: 'Is your current product responding to your users’ needs? We perform in-depth architectural reviews and audits to improve conversions and returns of your product before testing new ideas.',
   },
   {
-    icon: '/existing-systems.svg',
+    icon: '/devops-mindset.svg',
     title: 'DevOps Mindset',
     desc: 'Our “Shift-left” approach and DevOps mindset motivate our product developers to follow the best coding practices – delivering quality-driven, secure, and adaptive software.',
   },

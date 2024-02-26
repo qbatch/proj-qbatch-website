@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from "../../components/Layout/layout";
 import EventsBanner from '../../components/PagesComponent/EventsComponents/EventsBanner';
 import EventsForm from '../../components/PagesComponent/EventsComponents/EventsForm';
+import { Queries } from '../../constants/queries'
+import SEO from "../../components/Seo";
 import SoftwareSolutions from '../../components/PagesComponent/EventsComponents/SoftwareSolutions';
 import BusinessExperience from '../../components/PagesComponent/EventsComponents/BusinessExperiences';
 import OurTeam from '../../components/PagesComponent/EventsComponents/OurTeam';
@@ -34,6 +36,7 @@ const WLevent = () => {
       <EventsForm 
         paragraph="Qbatch is exhibiting at the world’s biggest marketplace seller event. We’re excited to meet with top-tier sellers and various stakeholders to discuss resilient business solutions for a brighter future."
         dark
+        eventName="Prosper Show"
       />
       <SoftwareSolutions/>
       <BusinessExperience
@@ -47,23 +50,26 @@ const WLevent = () => {
         innerContentData={innerContentDataBox}
       />
       <PreviousEvents/>
-      <CalendarSchedule/>
+      <CalendarSchedule
+      eventName="Prosper Show 2024"
+        widgetUrl="https://calendly.com/qbatch/prosper-show-2024?month=2024-03"
+      />
     </Layout>
   );
 };
-// export const Head = () => {
-//   const prosperShow = Queries();
-//   const seoData = prosperShow.allStrapiProsperShow.nodes[0]?.seo
-//   return (
-//     <SEO
-//       title={seoData.metaTitle}
-//       description={seoData.metaDescription}
-//       keywords={seoData.keywords}
-//       language={seoData.language}
-//       robots={seoData.metaRobots}
-//       pathname={seoData.slug}
-//     />
-//   )
-// }
+export const Head = () => {
+  const prosperShow = Queries();
+  const seoData = prosperShow.allStrapiProsperShow.nodes[0]?.seo
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
+}
 
 export default WLevent;

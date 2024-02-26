@@ -12,6 +12,15 @@ const Index = (props) => {
     (item) => item.category.categoryName === heading
   );
   const editorPicksData = data?.filter((item) => item.favorite === true);
+  const formatUsername = (username) => {
+    const parts = username.split('-');
+    if (parts.length === 1) {
+      return username.charAt(0).toUpperCase() + username.slice(1).toLowerCase();
+    }
+    const formattedParts = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase());
+  
+    return formattedParts.join(' ');
+  };
 
   const BlogPost = ({ card, ind }) => {
     const customDate = new Date(card.publishedAt)
@@ -40,7 +49,7 @@ const Index = (props) => {
             </p>
             <div className="blog-badge">{card.blogTags?.strapi_json_value[0]}</div>
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-              <span>{card?.user?.username}</span>
+              <span>{formatUsername(card?.user?.username)}</span>
               <div className="timer">
                 <img src="/timer-blue.svg" alt="timer" />
                 <span>
@@ -79,7 +88,7 @@ const Index = (props) => {
           (isFavorite
             ? editorPicksData
             : isSlice
-            ? (heading && !blogInner ? categoryData : data)?.slice(Math.max((heading && !blogInner ? categoryData : data)?.length - 2, 0))
+            ? (heading && !blogInner ? categoryData : data)?.slice(Math.max((heading && !blogInner ? categoryData : data)?.length - 4, 0))
             : heading && !blogInner
             ? categoryData
             : data

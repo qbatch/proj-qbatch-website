@@ -4,6 +4,15 @@ import Container from '../../UiComponent/Container'
 import BlogDetailsWrapper from './style'
 
 const Index = (props) => {
+  const formatUsername = (username) => {
+    const parts = username.split('-');
+    if (parts.length === 1) {
+      return username.charAt(0).toUpperCase() + username.slice(1).toLowerCase();
+    }
+    const formattedParts = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase());
+  
+    return formattedParts.join(' ');
+  };
   const { title, description, authorImage } = props
   return (
     <BlogDetailsWrapper>
@@ -26,7 +35,7 @@ const Index = (props) => {
                 />
               </div> */}
               <div className="details-flex">
-                <h2 class="title">{title || 'No Author Name'} </h2>
+                <h2 class="title">{formatUsername(title || 'No Author Name')}</h2>
                 <span class="position">Content Manager</span>
                 <div class="social-icons">
                   <img src="/linkdin.svg" alt="no-icon" />

@@ -79,7 +79,7 @@ const Index = ({ page }) => {
           },
           body: JSON.stringify({ data: formData }),
         });
-
+  
         if (response.ok) {
           toast.success("Message sent successfully...", {
             position: "top-right",
@@ -95,7 +95,7 @@ const Index = ({ page }) => {
             description: "",
             terms: false,
             promotion: false,
-          })
+          });
         } else {
           toast.error("Something went wrong", {
             position: "top-right",
@@ -106,7 +106,7 @@ const Index = ({ page }) => {
         console.error("Error", error);
       }
     }
-  };
+  };  
   return (
     <StartProjectWrapper>
       <Container>
@@ -240,6 +240,7 @@ const Index = ({ page }) => {
                 height="53px"
                 placeholder="Tell us about your project"
                 onChange={handleInputChange}
+                value={formData.description}
               />
               <div>
                 <CheckBox

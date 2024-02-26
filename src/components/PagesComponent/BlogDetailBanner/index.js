@@ -22,7 +22,7 @@ const Index = ({ data }) => {
     <BlogDetailsWrapper>
       <Container>
         <div className="breadcrumb">
-          <ul className="d-flex gap-2">
+          <ul className="d-flex gap-2 ps-0">
             {customCrumbs.map((crumb, index) => (
               <li key={index}>
                 <Link className="pointer" to={crumb.pathname}>

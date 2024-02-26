@@ -5,7 +5,7 @@ import { Col, Row } from 'react-bootstrap';
 import Container from '../../../UiComponent/Container';
 import SocialIcons from "../../../UiComponent/SocialIcons";
 
-const CalendarSchedule = () => {
+const CalendarSchedule = ({ widgetUrl, eventName }) => {
   const socialLinks = [
     {
       img: '/facebook',
@@ -33,7 +33,7 @@ const CalendarSchedule = () => {
             <Col lg={12}>
               <div className='inner-left'>
                 <h2 className='heading text-h2'>Meet to innovate!</h2>
-                <p className='paragraph'>We’re excited to learn, build, and broaden our horizons at the<br/> <span>White Label Expo 2024</span>, are you? </p>
+                <p className='paragraph'>We’re excited to learn, build, and broaden our horizons at the<br/> <span>{eventName}</span>, are you? </p>
                 <p className='paragraph-small'>Follow us on social media for live event updates</p>
                 <div className='m-auto socials'>
                 <SocialIcons socialIcons={socialLinks} />
@@ -43,7 +43,7 @@ const CalendarSchedule = () => {
           <Col lg={12}>
             <div className='calendly-container'>
               <InlineWidget
-                  url="https://calendly.com/qbatch/prosper-show-2024?month=2024-03"
+                  url={widgetUrl}
                   styles={{
                     height: "100%",
                     width: "100%",
