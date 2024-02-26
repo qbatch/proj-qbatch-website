@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ButtonArrow from '../../../../../static/event-btn-arrow.svg'
 import FormVector from '../../../../../static/event-form-vector-1.svg'
 
-const EventsForm = ({paragraph, dark}) => {
+const EventsForm = ({paragraph, dark, eventName}) => {
 
   const [submitted, setSubmitted] = useState(false);
   const [validated, setValidated] = useState(false);
@@ -17,8 +17,9 @@ const EventsForm = ({paragraph, dark}) => {
     name: "",
     contactNo: "",
     email: "",
-    meetingType: "",
+    meetingType: "In-Person",
     companyName: "",
+    eventName: eventName,
   });
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -55,8 +56,9 @@ const EventsForm = ({paragraph, dark}) => {
             name: "",
             contactNo: "",
             email: "",
-            meetingType: "",
+            meetingType: "In-Person",
             companyName: "",
+            eventName: eventName,
           })
         } else {
           toast.error("Something went wrong", {
@@ -97,11 +99,11 @@ const EventsForm = ({paragraph, dark}) => {
                 <input type='text' name="companyName" value={formData.companyName} onChange={handleInputChange}  placeholder='Company'/>
                 <label>How would you like to meet us?</label>
                 <select value={formData.meetingType} name="meetingType" onChange={handleInputChange}>
-                  <option>In-Person</option>
-                  <option>Online</option>
+                  <option value="In-Person">In-Person</option>
+                  <option value="Online">Online</option>
                 </select>
                 <button type='submit'>Let’s Meet<img src={ButtonArrow} alt='arrow' /></button>
-              </form>
+              </form>ß
               <div className='text-center'>
                 <p className="link-text">Or <a href='#event-form'><i>schedule a meeting at your convenience</i></a></p>
               </div>

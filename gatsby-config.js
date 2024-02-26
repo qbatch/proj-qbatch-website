@@ -196,6 +196,16 @@ const strapiConfig = {
         },
       },
     },
+    {
+      singularName: 'white-label-expo',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
   ],
   singleTypes: [
     'home',

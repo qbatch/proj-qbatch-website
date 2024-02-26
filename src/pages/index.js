@@ -76,7 +76,7 @@ const IndexPage = () => {
         <StartProject />
         <EventsBanner
          eventLogo1='/white-label.svg'
-         eventName1='White Label Expo'
+         eventName1='White Label World Expo'
          eventDate1='February 27 - 28, 2024'
          eventBoothNo1='WL1546'
          eventLogo2='/prosper-show.svg'

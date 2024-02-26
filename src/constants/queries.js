@@ -253,6 +253,40 @@ export const Queries = () => {
            }
          }
        }
+       allStrapiProsperShow {
+         nodes {
+           seo {
+             metaTitle
+             slug
+             metaRobots
+             metaDescription
+             language
+             keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
+           }
+         }
+       }
+       allStrapiWhiteLabelExpo {
+         nodes {
+           seo {
+             metaTitle
+             slug
+             metaRobots
+             metaDescription
+             language
+             keywords
+             metaimage {
+               localFile {
+                 url
+               }
+             }
+           }
+         }
+       }
        allStrapiMobileApp {
          nodes {
            seo {
@@ -299,6 +333,7 @@ export const Queries = () => {
              }
              user {
                username
+               name
                description
                image {
                  localFile {
@@ -373,6 +408,7 @@ export const Queries = () => {
            }
          }
        }
+       
      }
    `)
     

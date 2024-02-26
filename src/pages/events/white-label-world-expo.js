@@ -8,6 +8,8 @@ import OurTeam from '../../components/PagesComponent/EventsComponents/OurTeam';
 import WhatToExpect from '../../components/PagesComponent/EventsComponents/WhatToExpect';
 import PreviousEvents from '../../components/PagesComponent/EventsComponents/PreviousEvents';
 import CalendarSchedule from '../../components/PagesComponent/EventsComponents/CalendarSchedule';
+import { Queries } from '../../constants/queries'
+import SEO from "../../components/Seo";
 
 const WLevent = () => {
   const innerContentData = [
@@ -30,6 +32,7 @@ const WLevent = () => {
       <EventsForm
        paragraph="Qbatch is excited to exhibit at the most influential e-commerce marketplace show. Let’s catch up and explore the cutting-edge developments in selling, white label, retailer, and supplier markets. "
        dark
+       eventName="White Label World Expo"
       />
       <SoftwareSolutions/>
       <BusinessExperience
@@ -43,9 +46,27 @@ const WLevent = () => {
         innerContentData={innerContentData}
       />
       <PreviousEvents/>
-      <CalendarSchedule/>
+      <CalendarSchedule
+      eventName="White Label World Expo 2024"
+        widgetUrl="https://calendly.com/qbatch/while-label-expo-2024"
+      />
     </Layout>
   );
 };
+
+export const Head = () => {
+  const whiteLabelExpo = Queries();
+  const seoData = whiteLabelExpo.allStrapiWhiteLabelExpo.nodes[0]?.seo
+  return (
+    <SEO
+      title={seoData.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+    />
+  )
+}
 
 export default WLevent;

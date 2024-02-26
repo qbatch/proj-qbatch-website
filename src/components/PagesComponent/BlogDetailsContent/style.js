@@ -156,6 +156,7 @@ const ContentWrapper = styled.div`
     left: 0;
     height: 100%;
     max-width: 300px;
+    width:100%;
     background-color:  ${({ theme }) => theme.colors.whiteColor};
       box-shadow: 0 3px 15px rgba(0,0,0,0.16);
     .table-content-header{
@@ -279,5 +280,24 @@ const ContentWrapper = styled.div`
     height: 4px;
     width: 5%;
   }
+
+  ${media.md`
+    .side-scroll{
+      margin: 80px 60px 52px;
+      position: relative;
+    }
+    .content-section{
+      padding-top: 0;
+    }
+  `}
+  ${media.sm`
+    .side-scroll{
+      margin: 80px 3rem 52px;
+      position: relative;
+    }
+    .content-section{
+      padding-top: 0;
+    }
+  `}
 `
 export default ContentWrapper;

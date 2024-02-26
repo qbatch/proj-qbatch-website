@@ -18,7 +18,15 @@ function App({ data, path }) {
   const [headings, setHeadings] = useState([]);
   const blogArticle = Queries();
   const blogLikedData = blogArticle.allStrapiArticle.nodes.filter((item) => item.blogTitle !== data?.blogTitle);
+  const formatUsername = (username) => {
+    const parts = username.split('-');
+    if (parts.length === 1) {
+      return username.charAt(0).toUpperCase() + username.slice(1).toLowerCase();
+    }
+    const formattedParts = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase());
   
+    return formattedParts.join(' ');
+  };
   useEffect(() => {
     const handleScroll = () => {
       const headings = document.querySelectorAll('#contentContainer h2');
@@ -123,7 +131,7 @@ function App({ data, path }) {
 
   return (
     <ContentWrapper>
-      <div className="d-sm-flex">
+      <div className="d-lg-flex">
         <div className={`side-scroll`}>
           <span className="table-content-header">Table of Content</span>
         <div className="side-scroll-content">
@@ -148,7 +156,7 @@ function App({ data, path }) {
         <div className="content-section content">
           <Container className="ps-5">
             <Row>
-              <Col lg={8} md={12} sm={12}>
+              <Col xl={8} sm={12}>
                 <div className="section inner-content">
                   <div
                     id="contentContainer"
@@ -223,7 +231,7 @@ function App({ data, path }) {
                   </BlogCardsWrapper>
                 </div>
               </Col>
-              <Col lg={4} md={12} sm={12}>
+              <Col xl={4} sm={12}>
                 <ContentWrapper>
                   <div className="author-name">
                     <div className="avatar-box d-flex flex-wrap align-items-center">
@@ -234,7 +242,7 @@ function App({ data, path }) {
                         src={data?.user.image?.localFile.url || '/avatar.svg'}
                         alt="no-avartar"
                       />
-                      <span>{data?.user.username}</span>
+                      <span>{formatUsername(data?.user.username)}</span>
                     </div>
                     <span className="title">{data?.user.description}</span>
                     <div className="d-flex justify-content-between mt-32">
