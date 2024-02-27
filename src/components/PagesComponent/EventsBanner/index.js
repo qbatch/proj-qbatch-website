@@ -56,7 +56,7 @@ const Index = ({ eventLogo1, eventName1, eventBoothNo1, eventDate1, eventLogo2, 
                 <p className='booth'>Booth No. {eventBoothNo1}</p>
               </div>
             </div>
-            <button className='arrow-button' onClick={() => navigate(`/events/white-label-expo`)}>
+            <button className='arrow-button' onClick={() => navigate(`/events/white-label-world-expo`)}>
               <ArrowRight />
             </button>
           </div>
