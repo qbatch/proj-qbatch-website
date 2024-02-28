@@ -26,9 +26,9 @@ const WLevent = () => {
        backgroundImage='/prosper-event-banner-img.svg'
        eventName="Prosper Show"
        eventLogo={EventImg}
-       boothNumber=" WL1546"
-       eventDate="February 27 to 28, 2024"
-       eventVenue="Royal Victoria Dock, London"
+       boothNumber="814"
+       eventDate="March 4 to 6, 2024"
+       eventVenue="Mandalay Bay Las Vegas"
        promoCode="EXIV882491"
        valuedAt="$300"
        couponLink='https://registration.experientevent.com/ShowPSL241/?flow=attendee&MarketingCode=EXIV882491'
