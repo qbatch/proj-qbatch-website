@@ -17,6 +17,7 @@ export const Queries = () => {
        }
        allStrapiArticle {
          nodes {
+           updatedAt
            blogTitle
            blogDescription {
              data {
@@ -25,12 +26,17 @@ export const Queries = () => {
            }
            user {
              username
+             name
              description
              image {
                localFile {
                  url
                }
              }
+              Socials {
+               socialLink
+               socialPlatform
+              }
            }
            category {
              categoryName
@@ -168,6 +174,40 @@ export const Queries = () => {
            }
          }
        }
+       allStrapiTermsAndCondition {
+        nodes {
+          seo {
+            metaTitle
+            metaRobots
+            metaDescription
+            language
+            keywords
+            slug
+            metaimage {
+              localFile {
+                url
+              }
+            }
+          }
+        }
+      }
+       allStrapiPrivacyPolicy {
+        nodes {
+          seo {
+            metaTitle
+            metaRobots
+            metaDescription
+            language
+            keywords
+            slug
+            metaimage {
+              localFile {
+                url
+              }
+            }
+          }
+        }
+      }
        allStrapiAboutUs {
          nodes {
            seo {

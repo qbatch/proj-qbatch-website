@@ -55,7 +55,7 @@ const Index = ({ data }) => {
               ))}
             </div>
             <div className="author-name">
-              <span>{data?.user.username}</span>
+              <span>{data?.user.name}</span>
             </div>
           </div>
         </div>

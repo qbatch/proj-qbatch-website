@@ -113,6 +113,7 @@ const ContentWrapper = styled.div`
       .avatar-image {
         border-radius: 24px 24px 0 24px;
         object-fit: cover;
+        background: ${({ theme }) => theme.colors.dividerColor};
       }
       span {
         font-size: 20px;

@@ -194,9 +194,11 @@ const DrawerWrapper = styled.div`
       margin-top: 9px;
       li {
         line-height: 24px;
-        color: ${({ theme }) => theme.colors.bodyLight};
         cursor: pointer;
         margin-bottom: 16px;
+        a{
+          color: ${({ theme }) => theme.colors.bodyLight};
+        }
         &:last-child {
           margin-bottom: 0;
         }

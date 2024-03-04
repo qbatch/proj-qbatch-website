@@ -10,7 +10,7 @@ import BlogCards from '../components/PagesComponent/BlogCards'
 import Container from '../components/UiComponent/Container'
 
 const Author = ({ pageContext, location }) => {
-  const { title, description, img } = pageContext;
+  const { title, name, description, img } = pageContext;
   const { state } = location;
   const slug = state && state.slug;
   const blogQuery = Queries();
@@ -23,9 +23,9 @@ const Author = ({ pageContext, location }) => {
 
   return (
     <Layout>
-      <AuthorBanner title={title} slug={slug} authorImage={img?.localFile?.url} description={description} />
+      <AuthorBanner title={name} slug={slug} authorImage={img?.localFile?.url} description={description} />
       <Container>
-        <BlogCards upperHeading={`Recent Stories by ${title}`} data={data} />
+        <BlogCards upperHeading={`Recent Stories by ${name}`} data={data} />
         <BlogCards upperHeading={'Recommended Articles'} data={recommendedArticles} />
       </Container>
     </Layout>

@@ -18,15 +18,6 @@ function App({ data, path }) {
   const [headings, setHeadings] = useState([]);
   const blogArticle = Queries();
   const blogLikedData = blogArticle.allStrapiArticle.nodes.filter((item) => item.blogTitle !== data?.blogTitle);
-  const formatUsername = (username) => {
-    const parts = username.split('-');
-    if (parts.length === 1) {
-      return username.charAt(0).toUpperCase() + username.slice(1).toLowerCase();
-    }
-    const formattedParts = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase());
-  
-    return formattedParts.join(' ');
-  };
   useEffect(() => {
     const handleScroll = () => {
       const headings = document.querySelectorAll('#contentContainer h2');
@@ -154,7 +145,7 @@ function App({ data, path }) {
         </div>
 
         <div className="content-section content">
-          <Container className="ps-5">
+          <Container className="ps-lg-5">
             <Row>
               <Col xl={8} sm={12}>
                 <div className="section inner-content">
@@ -242,21 +233,24 @@ function App({ data, path }) {
                         src={data?.user.image?.localFile.url || '/avatar.svg'}
                         alt="no-avartar"
                       />
-                      <span>{formatUsername(data?.user.username)}</span>
+                      <span>{data?.user.name}</span>
                     </div>
                     <span className="title">{data?.user.description}</span>
                     <div className="d-flex justify-content-between mt-32">
-                      <ul className="d-flex social-link ps-0">
-                        <li>
-                          <img src="/linkdin.svg" alt="no-icon" />
+                    <ul className="d-flex social-link ps-0">
+                      {data?.user?.Socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social.socialLink} target="_blank" rel="noopener noreferrer">
+                            {social.socialPlatform === "linkedin" && <img src="/linkedin.svg" alt="LinkedIn" />}
+                            {social.socialPlatform === "twitter" && <img src="/twitter.svg" alt="Twitter" />}
+                            {social.socialPlatform === "medium" && <img src="/medium.svg" alt="Medium" />}
+                            {social.socialPlatform === "instagram" && <img src="/instagram.svg" alt="Instagram" />}
+                            {social.socialPlatform === "facebook" && <img src="/facebook.svg" alt="Facebook" />}
+                            {social.socialPlatform === "reddit" && <img src="/reddit.svg" alt="Reddit" />}
+                          </a>
                         </li>
-                        <li>
-                          <img src="/twitter.svg" alt="no-icon" />
-                        </li>
-                        <li>
-                          <img src="/medium.svg" alt="no-icon" />
-                        </li>
-                      </ul>
+                      ))}
+                    </ul>
                       <div>
                         <img
                           src="/author-name-arrow.svg"
