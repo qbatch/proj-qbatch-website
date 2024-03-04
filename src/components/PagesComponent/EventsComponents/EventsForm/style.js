@@ -19,6 +19,7 @@ position: relative;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-weight: ${({ theme }) => theme.fontWeight.normal};
       line-height: 48px;
+      font-size:${({ theme }) => theme.fssm};
     }
   }
   .form-wrapper{
@@ -111,7 +112,7 @@ position: relative;
   }
   .form-wrapper{
     .form-paragraph{
-      color:  ${({ theme }) => theme.colors.whiteColor};
+      /* color:  ${({ theme }) => theme.colors.whiteColor}; */
     }
     .form-heading{
       color:  ${({ theme }) => theme.colors.textColor};

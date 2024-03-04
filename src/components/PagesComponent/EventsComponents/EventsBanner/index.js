@@ -9,7 +9,7 @@ const EventsBanner = ({ backgroundImage, eventName, eventLogo, boothNumber, even
   return (
     <EventsBannerWrapper style={{ backgroundImage: `url(${backgroundImage})` }}>
       <Container>
-        <div className='d-flex justify-content-between align-items-center py-5 flex-wrap'>
+        <div className='d-flex justify-content-between align-items-center py-5 flex-wrap prosper-banner-overlay'>
           <h1 className='banner-heading'>
             <span>Join Qbatch at </span> 
             <div className='banner-heading-wrapper'>
