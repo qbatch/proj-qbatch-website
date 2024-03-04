@@ -282,6 +282,12 @@ module.exports = {
         async: false,
         defer: false,
         args: `?onload=onloadCallback&render=explicit`,
+        exclude: [
+          '/services/data-scrapping/',
+          '/services/dev-ops/',
+          '/services/services',
+          '/blogDetails',
+        ],
       },
     },
 
