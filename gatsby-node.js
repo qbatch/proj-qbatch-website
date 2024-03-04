@@ -16,12 +16,17 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             user {
               username
+              name
               description
               image {
                 localFile {
                   url
                 }
               }
+              Socials {
+                socialLink
+                socialPlatform
+               }
             }
             id
           }
@@ -58,6 +63,7 @@ exports.createPages = async ({ graphql, actions }) => {
      component: path.resolve('./src/pages/authors.js'),
      context: {
        title: node.user?.username,
+       name: node.user?.name,
        description: node.user?.description,
        img: node.user?.image,
      },

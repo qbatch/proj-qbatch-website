@@ -13,15 +13,6 @@ import { BlogAllWrapprt, InnerBannerWrapper } from './style'
 
 const index = ({ data }) => {
   const blogBannerData = data.filter((item) => item.bannerBlog === true);
-  const formatUsername = (username) => {
-    const parts = username.split('-');
-    if (parts.length === 1) {
-      return username.charAt(0).toUpperCase() + username.slice(1).toLowerCase();
-    }
-    const formattedParts = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase());
-  
-    return formattedParts.join(' ');
-  };
   return (
     <BlogAllWrapprt>
       {blogBannerData
@@ -54,7 +45,7 @@ const index = ({ data }) => {
               </div>
               <div className="d-flex align-items-center justify-content-between flex-wrap gap-4">
                 <div className="author-name">
-                  <span> <img/> {formatUsername(item.user.username)}</span>
+                  <span> <img/> {item.user.name}</span>
                   <span>{moment(item.publishedAt).format('DD MMMM, YYYY')}</span>
                 </div>
                 <Button

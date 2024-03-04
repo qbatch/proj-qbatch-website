@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { Link } from "gatsby";
@@ -286,6 +286,17 @@ const Index = (props) => {
   const { openDrawer, setOpenDrawer } = props;
 
   const [activeState, setActiveState] = useState("services");
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 991);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Drawer
@@ -348,6 +359,9 @@ const Index = (props) => {
                 )}
               </NavDropdown>
             ))}
+            <div className="nav-item">
+            {isSmallScreen && <Link to="/blog" className="nav-link">Blog</Link>}
+            </div>
           </div>
           <div className="bottom-content">
             <Row>
@@ -369,8 +383,8 @@ const Index = (props) => {
               </Col>
               <Col md={3}>
                 <ul className="bottom-menu">
-                  <li>Terms & Conditions</li>
-                  <li>Privacy Policy</li>
+                  <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
                 </ul>
               </Col>
               <Col md={3}>

@@ -296,11 +296,20 @@ const GlobalStyles = createGlobalStyle`
       }
   }
       .paragraph{
-           .raw-html-embed .quotes-block{
-      p{
-          color: ${({ theme }) => theme.colors.whiteColor};  
+        .raw-html-embed 
+        .quotes-block{
+          p{
+              color: ${({ theme }) => theme.colors.whiteColor};  
+          }
       }
-      }
+      img{
+            max-width: 120px;
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 12px;
+            background: ${({ theme }) => theme.colors.dividerColor};
+          }
     .raw-html-embed .quotes-block{
  h1{
        color: ${({ theme }) => theme.colors.whiteColor}; 
