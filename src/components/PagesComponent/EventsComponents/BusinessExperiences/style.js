@@ -31,7 +31,7 @@ const BusinessExperienceWrapper = styled.div`
   .heading {
     color: #fff;
     text-align: center;
-    font-size: 40px;
+    font-size: ${({ theme }) => theme.fsh2};
     max-width: 930px;
     margin: auto;
     span{
