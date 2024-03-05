@@ -42,6 +42,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const strapiBlogPosts = result.data.allStrapiArticle.edges
 
   strapiBlogPosts.forEach(({ node }) => {
+  console.log("Socials:", node.user?.Socials);
   createPage({
     path: `/blog${node.seo?.slug}`,
     component: path.resolve('./src/pages/blogDetails.js'),
@@ -57,16 +58,16 @@ exports.createPages = async ({ graphql, actions }) => {
       title: node.category?.categoryName,
     },
   })
-
-   createPage({
-     path: `/authors/${node.user?.username}`,
-     component: path.resolve('./src/pages/authors.js'),
-     context: {
-       title: node.user?.username,
-       name: node.user?.name,
-       description: node.user?.description,
-       img: node.user?.image,
-     },
-   })
+  createPage({
+    path: `/authors/${node.user?.username}`,
+    component: path.resolve('./src/pages/authors.js'),
+    context: {
+      title: node.user?.username,
+      name: node.user?.name,
+      description: node.user?.description,
+      img: node.user?.image,
+      socials: node.user?.Socials,
+    },
+  })
   
 })};

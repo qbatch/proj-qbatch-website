@@ -46,7 +46,7 @@ const BlogDetailsWrapper = styled.div`
     position: relative;
     height: 192px;
     width: 192px;
-    border-radius: 12px 12px 0 12px;
+    border-radius: 100px;
     background-color: ${({ theme }) => theme.colors.dividerColor};
     ${media.sm`
     padding: 0;
