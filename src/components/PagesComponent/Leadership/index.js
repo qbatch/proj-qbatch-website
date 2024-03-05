@@ -35,14 +35,14 @@ const Index = () => {
                 title="Ibrahim Zahoor"
                 profile="/ceo.svg"
                 designation="CEO & Co-Founder"
-                socialLink="#"
+                socialLink="https://qbatch.com/events/white-label-world-expo/#event-form"
                 aboutText="“With a wealth of experience streamlining crucial E-commerce business processes, I offer a reliable approach to simplify complex tasks and operations.”"
               />
               <LeaderCard
                 title="Hassan Akram"
                 profile="/cto.svg"
                 designation="CTO & Co-Founder"
-                socialLink="#"
+                socialLink="https://qbatch.com/events/white-label-world-expo/#event-form"
                 aboutText="“Having faced challenging technical situations, I thrive
                   on problem-solving, automating difficult tasks, and
                   creating impactful products.”"

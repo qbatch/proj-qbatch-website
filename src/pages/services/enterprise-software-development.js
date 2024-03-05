@@ -28,10 +28,12 @@ import {
   peopleFirstData,
   productDevlopmentServices,
 } from '../../constants'
+import { ResponsiveStyleWrapper } from "./style";
 
 const Enterprise = () => {
   return (
     <Layout>
+      <ResponsiveStyleWrapper>
       <Banner
         subheading="Enterprise App Development Company"
         heading="Your “Great Transformation” Journey Begins Here"
@@ -72,6 +74,7 @@ const Enterprise = () => {
         data={developmentExpertiseData}
         align="center"
         width="350px"
+        className="enterprise-software"
       />
       <ChoiseYourEnterprise
         heading="Technological Capacity To Bring That Change!"
@@ -107,6 +110,7 @@ const Enterprise = () => {
       />
       <FaqSection faqQuestion={enterPrisFaq} />
       <StartProject />
+      </ResponsiveStyleWrapper>
     </Layout>
   )
 };
