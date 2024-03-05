@@ -11,6 +11,9 @@ const InsightsWrapepr = styled.div`
     h2 {
       line-height: 52px;
       margin-bottom: 29px;
+      ${media.xs`
+      line-height:24px;
+      `}
     }
     p {
       font-size: 16px;

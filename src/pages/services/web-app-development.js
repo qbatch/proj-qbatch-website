@@ -22,11 +22,13 @@ import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAnd
 import WebExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import WebappImage from '../../../static/web-app-dev.svg'
 import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData } from '../../constants'
+import { ResponsiveStyleWrapper } from "./style";
 
 const webapp = () => {
 
   return (
     <Layout>
+      <ResponsiveStyleWrapper>
       <Banner
         subheading="Web Application Development Company"
         heading="If You Think Web Apps Are Old-Fashioned. Think Again"
@@ -50,6 +52,7 @@ const webapp = () => {
         heading="Explore Our Advanced Web Application Expertise"
         paragraph="From legacy system modernization to developing high-performing microservices, team Qbatch has delivered 300+ custom solutions for several businesses globally."
         data={webExpertiseData}
+        className="explore-slider"
       />
       <AppDevelopment />
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
@@ -76,6 +79,7 @@ const webapp = () => {
       />
       <FaqSection faqQuestion={webAppFaq} />
       <StartProject />
+      </ResponsiveStyleWrapper>
     </Layout>
   )
 };

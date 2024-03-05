@@ -14,7 +14,7 @@ const LeaderCard = (props) => {
             <span>{designation}</span>
           </div>
           <div className="social">
-            <a href={socialLink}>
+            <a href={socialLink} target="_blank">
               <img src="/linkedin.svg" alt="linkedin" />
             </a>
           </div>
