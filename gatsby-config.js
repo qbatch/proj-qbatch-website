@@ -277,17 +277,22 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-plugin-recaptcha`,
+      resolve: 'gatsby-plugin-sitemap',
       options: {
-        async: false,
-        defer: false,
-        args: `?onload=onloadCallback&render=explicit`,
         exclude: [
           '/services/data-scrapping/',
           '/services/dev-ops/',
           '/services/services',
           '/blogDetails',
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+        async: false,
+        defer: false,
+        args: `?onload=onloadCallback&render=explicit`,
       },
     },
 
