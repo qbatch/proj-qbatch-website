@@ -1,13 +1,13 @@
 const siteMetadata = {
-    robots: `index,folow`,
-    title: ``,
-    description: ``,
-    keywords: ``,
-    siteUrl: `https://qbatch.com`,
-    twitterUsername: `@qbatchofficial`,
-    language: `en-us`,
-    defaultImage: `https://cms.qbatch.com/uploads/Your_Idea_820_03532d7cf6.jpg`,
-  },
+  robots: `index,folow`,
+  title: ``,
+  description: ``,
+  keywords: ``,
+  siteUrl: `https://qbatch.com`,
+  twitterUsername: `@qbatchofficial`,
+  language: `en-us`,
+  defaultImage: `https://cms.qbatch.com/uploads/Your_Idea_820_03532d7cf6.jpg`,
+};
   env = require('dotenv').config({
     path: require('path').join(__dirname, '.env'),
   })
@@ -250,6 +250,12 @@ module.exports = {
       options: {
         host: `${siteMetadata.siteUrl}`,
         sitemap: `${siteMetadata.siteUrl}/sitemap-index.xml`,
+        exclude: [
+          '/services/data-scrapping/',
+          '/services/dev-ops/',
+          '/services/services',
+          '/blogDetails',
+        ],
         policy: [
           { userAgent: '*', disallow: ['/cgi-bin/', '/wp-admin/'] },
           { userAgent: 'Googlebot', allow: '/' },
@@ -275,19 +281,12 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-recaptcha`,
       options: {
         async: false,
         defer: false,
         args: `?onload=onloadCallback&render=explicit`,
-        exclude: [
-          '/services/data-scrapping/',
-          '/services/dev-ops/',
-          '/services/services',
-          '/blogDetails',
-        ],
       },
     },
 
