@@ -10,7 +10,7 @@ import BlogCards from '../components/PagesComponent/BlogCards'
 import Container from '../components/UiComponent/Container'
 
 const Author = ({ pageContext, location }) => {
-  const { title, name, description, img } = pageContext;
+  const { title, name, description, img, socials} = pageContext;
   const { state } = location;
   const slug = state && state.slug;
   const blogQuery = Queries();
@@ -20,10 +20,9 @@ const Author = ({ pageContext, location }) => {
   if (!recommendedArticles) {
     return <PageNotFound />
   }
-
   return (
     <Layout>
-      <AuthorBanner title={name} slug={slug} authorImage={img?.localFile?.url} description={description} />
+      <AuthorBanner title={name} slug={slug} authorImage={img?.localFile?.url} description={description} socials={socials} />
       <Container>
         <BlogCards upperHeading={`Recent Stories by ${name}`} data={data} />
         <BlogCards upperHeading={'Recommended Articles'} data={recommendedArticles} />

@@ -111,7 +111,7 @@ const ContentWrapper = styled.div`
       gap: 23px;
       margin-bottom: 24px;
       .avatar-image {
-        border-radius: 24px 24px 0 24px;
+        border-radius: 100px;
         object-fit: cover;
         background: ${({ theme }) => theme.colors.dividerColor};
       }
