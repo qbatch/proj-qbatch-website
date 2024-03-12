@@ -32,7 +32,6 @@ const DedicatedDeveloperWrapper = styled.div`
     height: 100vh;
     h1 {
       color: ${({ theme }) => theme.colors.whiteColor};
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};
       text-align: center;
       ${media.sm`
       line-height: 32px;

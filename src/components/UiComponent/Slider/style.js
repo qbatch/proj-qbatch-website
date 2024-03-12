@@ -33,6 +33,7 @@ const SliderWrapper = styled.div`
     }
     .content {
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      line-height:24px;
       color: ${({ theme }) => theme.colors.textMedium};
       max-width: 400px;
       ${media.sm`

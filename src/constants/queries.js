@@ -242,6 +242,23 @@ export const Queries = () => {
            }
          }
        }
+       allStrapiDevelopementService {
+        nodes {
+          seo {
+            metaTitle
+            metaRobots
+            slug
+            metaDescription
+            language
+            keywords
+            metaimage {
+              localFile {
+                url
+              }
+            }
+          }
+        }
+      }
        allStrapiEcommerce {
          nodes {
            seo {

@@ -18,6 +18,12 @@ padding: 96px 0;
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-radius: 24px 24px 0 24px;
     background-color: #FFF;
+    position: relative;
+    height: 100%;
+    ${media.sm`
+      padding: 24px;
+      padding-bottom: 48px;
+    `}
     .box-header{
       display: flex;
       align-items: center;
@@ -30,13 +36,16 @@ padding: 96px 0;
     .box-body{
       .paragraph{
         line-height: 24px;
-        font-weight: ${({ theme }) => theme.fontWeight.normal};
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
         margin-bottom: 48px;
       }
       button{
         display: flex;
         margin-left: auto;
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        position: absolute;
+        bottom: 48px;
+        right: 48px;
       }
     }
   }

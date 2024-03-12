@@ -64,10 +64,11 @@ const CtoBannerWrapper = styled.div`
   }
   &.services-banner{
     min-height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 150px 0;
+    padding: 100px 0;
     & > div{
       width: 100%;
     }

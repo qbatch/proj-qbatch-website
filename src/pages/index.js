@@ -74,7 +74,7 @@ const IndexPage = () => {
         <Collaboration />
         <CreativeIntelligence />
         <StartProject />
-        <EventsBanner
+        {/* <EventsBanner
          eventLogo1='/white-label.svg'
          eventName1='White Label World Expo'
          eventDate1='February 27 - 28, 2024'
@@ -83,7 +83,7 @@ const IndexPage = () => {
          eventName2='Prosper Show'
          eventDate2='March 4 - 6, 2024'
          eventBoothNo2='814'
-        />
+        /> */}
       </Layout>
       <SEO
         title={seoData.metaTitle}

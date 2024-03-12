@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {Link} from 'gatsby'
+import { Link } from 'gatsby';
 
 import Container from "../../UiComponent/Container";
 import PrimaryButton from '../../UiComponent/PrimaryButton';
@@ -58,6 +58,7 @@ const menu2Data = [
   {
     name: 'Qbatch Career',
     to: 'https://careers.qbatch.com/jobs',
+    external: true, // Indicating this link is external
   },
 ]
 
@@ -103,6 +104,18 @@ const socialLinks = [
 ]
 
 const Index = () => {
+  const renderMenuLink = (menu) => {
+    if (menu.external) {
+      return (
+        <a href={menu.to} target="_blank" rel="noopener noreferrer">{menu.name}</a>
+      );
+    } else {
+      return (
+        <Link to={menu.to}>{menu.name}</Link>
+      );
+    }
+  };
+
   return (
     <FooterWrapper>
       <Container>
@@ -126,7 +139,7 @@ const Index = () => {
                   {menu2Data.map((menu, ind) => (
                     <li key={ind}>
                       {' '}
-                      <Link to={menu.to}>{menu.name}</Link>
+                      {renderMenuLink(menu)}
                     </li>
                   ))}
                 </ul>

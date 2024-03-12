@@ -13,6 +13,12 @@ const counterData = [
   { id: 3, count: 98, desc: 'Customer Happiness \n Index', symbol: '%' },
   { id: 4, count: 10, desc: 'Years of Excellency', symbol: '' },
 ]
+const counterData2 = [
+  { id: 1, count: 150, desc: 'Full Stack Developers', symbol: '+' },
+  { id: 2, count: 300, desc: 'Solutions Delivered \n Successfully', symbol: '+' },
+  { id: 2, count: 200, desc: 'Tech Stacks', symbol: '+' },
+  { id: 3, count: 98, desc: 'Customer Happiness \n Index', symbol: '%' },
+]
 const dedicationWork = [
   { id: 1, count: 11000, desc: 'Web pages scraped so far', symbol: '+' },
   { id: 2, count: 70, desc: 'Companies served', symbol: '+' },
@@ -854,6 +860,38 @@ const automationData = [
   {
     image: "/shopping-experiences.svg",
     content: "Deliver personalized shopping experiences."
+  },
+]
+const lostToLaunched = [
+  {
+    image: "/lost-to-launched_project-mapping.svg",
+    title: "Project Mapping",
+    content: "Make data-driven decisions for targeted marketing and optimization."
+  },
+  {
+    image: "/lost-to-launched_technical-design.svg",
+    title: "Visual & Technical Design",
+    content: "Facilitate communication across marketplaces, logistics, and stores."
+  },
+  {
+    image: "/lost-to-launched_development.svg",
+    title: "Development",
+    content: "Eliminate repetitive tasks for faster sales."
+  },
+  {
+    image: "/lost-to-launched_ensuring-security-and-qa.svg",
+    title: "Ensuring Security & QA",
+    content: "Manage multichannel orders across inventories."
+  },
+  {
+    image: "/lost-to-launched_deployment.svg",
+    title: "Deployment",
+    content: "Auto-track stockouts and overstocking in your supply chain."
+  },
+  {
+    image: "/lost-to-launched_launch-and-support.svg",
+    title: "Launch & Support",
+    content: "Reduce time-to-market and operational costs."
   },
 ]
 
@@ -2411,6 +2449,7 @@ export {
   companyCounter,
   peopleFirstData,
   counterData,
+  counterData2,
   productDesignCounterData,
   weDoData,
   data,
@@ -2424,6 +2463,7 @@ export {
   revenueData,
   servicesSliderData,
   automationData,
+  lostToLaunched,
   faqQuestion,
   ecomFaqQuestion,
   guidanceData,
