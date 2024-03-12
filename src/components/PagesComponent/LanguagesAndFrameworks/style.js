@@ -21,6 +21,7 @@ const LanguagesWrapper = styled.div`
       letter-spacing: 0;
     }
     p {
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       letter-spacing: 0;
       line-height: 24px;
     }

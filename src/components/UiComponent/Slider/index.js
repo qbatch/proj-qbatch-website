@@ -4,7 +4,7 @@ import Container from '../Container'
 import Divider from '../Divider'
 import SliderWrapper from './style'
 const Index = (props) => {
-  const { data, align, heading, paragraph, width, seconedHeading, maxWidth, className } = props
+  const { data, align, heading, paragraph, width, height, seconedHeading, maxWidth, className } = props
   const settings = {
     dots: true,
     infinite: true,
@@ -28,7 +28,7 @@ const Index = (props) => {
               {data.map((data, i) => {
                 return (
                   <div className="d-flex align-items-center justify-content-center make-responsive gap-4 my-5">
-                    <img width={width || ''} src={data.image} alt={data.title} />
+                    <img width={width || ''} height={height || ''} src={data.image} alt={data.title} />
                     <div class="slider-data">
                       <div className="title">{data.title}</div>
                       <div className="content">{data.content}</div>

@@ -97,6 +97,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'developement-service',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'ecommerce',
       queryParams: {
         populate: {
@@ -253,7 +263,6 @@ module.exports = {
         exclude: [
           '/services/data-scrapping/',
           '/services/dev-ops/',
-          '/services/services',
           '/blogDetails',
         ],
         policy: [
