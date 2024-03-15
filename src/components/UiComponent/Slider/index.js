@@ -21,13 +21,13 @@ const Index = (props) => {
           <div className={`upper-heading  text-${align || 'left'}`}>
             <h2>{heading}</h2>
             {seconedHeading && <h4>{seconedHeading}</h4>}
-            <p>{paragraph}</p>
+            <p className='paragraph'>{paragraph}</p>
           </div>
           <div className="slider-width">
             <Slider {...settings}>
               {data.map((data, i) => {
                 return (
-                  <div className="d-flex align-items-center justify-content-center make-responsive gap-4 my-5">
+                  <div className="d-flex align-items-center justify-content-center make-responsive gap-5 my-5">
                     <img width={width || ''} height={height || ''} src={data.image} alt={data.title} />
                     <div class="slider-data">
                       <div className="title">{data.title}</div>
