@@ -2,7 +2,12 @@ import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 const SliderWrapper = styled.div`
   padding: 96px 0;
-
+  &.devops-slider{
+    .paragraph{
+      max-width: 608px;
+      margin: auto;
+    }
+  }
   .slider-width {
     max-width: 1020px;
     margin: 0 auto;
@@ -19,6 +24,7 @@ const SliderWrapper = styled.div`
     }
     p {
       max-width: ${(props) => (props.maxWidth ? props.maxWidth : '')};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       ${media.sm`
         max-width: 100%;
     `}

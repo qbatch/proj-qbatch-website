@@ -41,8 +41,9 @@ const ChoiceEnterpriseWrapper = styled.div`
       letter-spacing: 0;
     }
     p {
-      line-height: 32px;
+      line-height: 24px;
       max-width: 572px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       margin-bottom: 32px;
       letter-spacing: 0;
       min-height: 96px;
@@ -77,6 +78,28 @@ const ChoiceEnterpriseWrapper = styled.div`
     padding: 120px 0 72px;
     .choice-heading {
       text-align: left;
+    }
+  }
+
+  &.why-dev-ops{
+    & > div{
+    width: 80%;
+    ${media.xl`
+     width: 100%;
+    `}
+    }
+    margin: auto;
+    .choice-list{
+      p{
+        min-height: 0;
+        margin-bottom: 0;
+        max-width: 385px;
+      }
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+    }
+    img{
+      background-color: ${({ theme }) => theme.colors.dangerColor};
     }
   }
 `;

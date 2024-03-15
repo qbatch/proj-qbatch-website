@@ -8,7 +8,7 @@ const CtoBannerWrapper = styled.div`
   background-position: 100% 100%;
   background-repeat: no-repeat;
   padding: 132px 0 98px 0;
-  height:calc(100vh - 70px);
+  min-height:calc(100vh - 70px);
   margin: auto;
   /* ${media.sm`
      padding: 40px 0px;
@@ -73,7 +73,14 @@ const CtoBannerWrapper = styled.div`
       width: 100%;
     }
   }
-
+  &.dev-ops-banner{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    .inner-container{
+      width:100%;
+    }
+  }
   &.cto-banner {
     padding: 143px 0 50px;
     background-position:right;

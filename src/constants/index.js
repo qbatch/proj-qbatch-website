@@ -827,6 +827,23 @@ const servicesSliderData = [
     content: "We bring extensive expertise in predictive modeling, data mining, computer vision, and natural language processing. AI helps us streamline overall business workflows for you, reducing overall human effort."
   }
 ]
+const devOpsSliderData = [
+  {
+    image: "/service-slider-placeholder.svg",
+    title: "Analysis and Planning",
+    content: "We examine your enterprise’s existing processes and technical infrastructure, building an exhaustive strategy for automating the infrastructure."
+  },
+  {
+    image: "/service-slider-placeholder.svg",
+    title: "Analysis and Planning",
+    content: "We examine your enterprise’s existing processes and technical infrastructure, building an exhaustive strategy for automating the infrastructure."
+  },
+  {
+    image: "/service-slider-placeholder.svg",
+    title: "Analysis and Planning",
+    content: "We examine your enterprise’s existing processes and technical infrastructure, building an exhaustive strategy for automating the infrastructure."
+  }
+]
 
 const automationData = [
   {
@@ -2226,6 +2243,43 @@ const technologicalCapacityData = [
    desc: "Build your enterprise software using no-code/ low-code platforms for managing visual elements like drag-and-drop and pull-down menu interfaces."
   },
  ]
+const whyDevOpsData = [
+  {
+   icon: "/ai-ml.svg",
+   title: "Lead the market",
+   desc: "Quickly adapt to market demands, and build lasting user experiences. "
+  },
+  {
+    icon: "/ai-ml.svg",
+   title: "Scale easily",
+   desc: "Leverage DevOps automation services without risking your enterprise operations."
+  },
+  {
+    icon: "/ai-ml.svg",
+   title: "Reduce expenditure",
+   desc: "Automated testing and bug tracking eliminate possible technical debts thus adding value for money."
+  },
+  {
+    icon: "/ai-ml.svg",
+   title: "Build a close-knit team",
+   desc: "Create an agile and connected culture bringing development, and operation guys together."
+  },
+  {
+    icon: "/ai-ml.svg",
+   title: "Deploy continuously",
+   desc: "Streamline the delivery pipeline by continuously deploying into multiple SDLC environments."
+  },
+  {
+   icon: "/ai-ml.svg",
+   title: "Iterate and release frequently",
+   desc: "Deliver helpful features through frequent automation and optimization."
+  },
+  {
+   icon: "/ai-ml.svg",
+   title: "Increase consistency",
+   desc: "Foster consistency across development, testing, production environments, and hybrid cloud."
+  },
+ ]
 const productDesignData = [
   {
     icon: '/verifying-and-prioritizing-ideas.svg',
@@ -2462,6 +2516,7 @@ export {
   webAppFaq,
   revenueData,
   servicesSliderData,
+  devOpsSliderData,
   automationData,
   lostToLaunched,
   faqQuestion,
@@ -2481,6 +2536,7 @@ export {
   cycleProductData,
   developmentExpertiseData,
   technologicalCapacityData,
+  whyDevOpsData,
   productDesignData,
   ctoList,
   productDesignlist,
