@@ -8,7 +8,7 @@ const ResponsiveStyleWrapper = styled.div`
     width: 200px;
 }
   `
-}
+  }
 }
 .explore-slider {
   ${media.xs`
@@ -16,9 +16,9 @@ const ResponsiveStyleWrapper = styled.div`
     text-align:center;
 }
   `
-}
+  }
 }
 
 
 `;
-export { ResponsiveStyleWrapper }
+export default ResponsiveStyleWrapper;

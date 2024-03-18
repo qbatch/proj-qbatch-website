@@ -28,7 +28,7 @@ const Ecommerce = () => {
     <Layout>
       <Banner
         subheading="Web & data Scraping Services"
-        heading="Get Data The Way You Want"
+        heading="Get DataThe Way You Want"
         paragraph="Top-tier proxy networks, powerful web scrapers, and a world-class data team scraping - to help you build no-fail data pipelines with confidence."
         buttonText="Get Free Estimates"
         wrapperClass="web-data-scraping"
