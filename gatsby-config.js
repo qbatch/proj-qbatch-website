@@ -107,6 +107,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'devop',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'ecommerce',
       queryParams: {
         populate: {
@@ -258,11 +268,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: `${siteMetadata.siteUrl}`,
         sitemap: `${siteMetadata.siteUrl}/sitemap-index.xml`,
         exclude: [
-          '/services/data-scrapping/',
-          '/services/dev-ops/',
           '/blogDetails',
         ],
         policy: [

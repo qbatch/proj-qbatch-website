@@ -190,20 +190,25 @@ const GlobalStyles = createGlobalStyle`
     }
     .bg-added{
       background-image: url('/we-can-help.svg');
+      background-size: cover;
       width: 100%;
       background-repeat: no-repeat;
-      padding: 74px 40px;
+      padding: 48px 40px;
       text-align: center;
       border-radius: 24px 24px 0 24px;
       margin-bottom: 32px;
+      height: 100%;
       @media(max-width:992px){
       
         &.bg-remove{
         background-image:none ;
         background-color:${({ theme }) => theme.colors.secondaryColor};
         padding: 24px;
+      }
+      @media (max-width: 575px){
         .gap-4{
           flex-wrap:wrap;
+          justify-content: center;
         }
       }
     
@@ -257,6 +262,7 @@ const GlobalStyles = createGlobalStyle`
       button{
       color: rgb(255, 255, 255);
       padding:8px 24px;
+      margin-top: 16px;
       border-radius:50px;
       font-size: 20px;
       display: inline-block;
@@ -295,6 +301,27 @@ const GlobalStyles = createGlobalStyle`
         }
       }
   }
+  .quote-template{
+    & > div{
+      align-items: center;
+    }
+    .img-wrapper{
+      position: relative;
+      .small-quotes{
+        position: absolute;
+        left: 12px;
+      }
+      .quote-author-image{
+        margin-top: 12px;
+        max-width: 114px;
+        aspect-ratio: 2/3;
+      }
+    }
+    .fs-12{
+      font-size: 12px !important;
+      line-height: 18px !important;
+    }
+  }
       .paragraph{
         .raw-html-embed 
         .quotes-block{
@@ -303,12 +330,8 @@ const GlobalStyles = createGlobalStyle`
           }
       }
       img{
-            max-width: 120px;
-            width: 100%;
-            height: 120px;
             object-fit: cover;
             border-radius: 12px 12px 0 12px;
-            background: ${({ theme }) => theme.colors.dividerColor};
           }
     .raw-html-embed .quotes-block{
  h1{
