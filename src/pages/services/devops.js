@@ -94,7 +94,6 @@ const DevOps = () => {
 export const Head = () => {
   const serviceData = Queries()
   const seoData = serviceData?.allStrapiDevop?.nodes[0]?.seo
-  console.log(seoData)
   return (
     <SEO
       title={seoData?.metaTitle}
