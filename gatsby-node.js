@@ -42,7 +42,6 @@ exports.createPages = async ({ graphql, actions }) => {
   const strapiBlogPosts = result.data.allStrapiArticle.edges
 
   strapiBlogPosts.forEach(({ node }) => {
-  console.log("Socials:", node.user?.Socials);
   createPage({
     path: `/blog${node.seo?.slug}`,
     component: path.resolve('./src/pages/blogDetails.js'),

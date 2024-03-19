@@ -28,7 +28,6 @@ const EventsForm = ({paragraph, dark, eventName}) => {
         [name]: value,
       });
   };
-  console.log(formData, 'name')
   const handleSubmit = async (e) => {
     setSubmitted(true);
     e.preventDefault();
