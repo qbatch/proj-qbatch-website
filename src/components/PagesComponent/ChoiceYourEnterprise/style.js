@@ -82,8 +82,10 @@ const ChoiceEnterpriseWrapper = styled.div`
   }
 
   &.why-dev-ops{
+
     & > div{
     width: 80%;
+    margin: auto;
     ${media.xl`
      width: 100%;
     `}
