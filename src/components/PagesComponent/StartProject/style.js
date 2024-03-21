@@ -6,12 +6,16 @@ const StartProjectWrapper = styled.div`
   ${media.sm`
       padding: 60px 0;
     `}
+    ${media.xs`
+      padding: 40px 0;
+    `}
   h2 {
-    margin: 1px 0 29px -1px;
+    margin-bottom: 24px;
     text-transform: inherit;
   }
   .subtitle {
     letter-spacing: 0.19px;
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
   }
   .mt-40 {
     margin-top: 40px;
@@ -22,6 +26,9 @@ const StartProjectWrapper = styled.div`
   }
   .project-form {
     margin-top: 38px;
+    ${media.xs`
+      margin-top: 20px;
+    `}
     &:has(.show) {
       .collpase-select {
         .title {
@@ -38,8 +45,8 @@ const StartProjectWrapper = styled.div`
     }
     .title {
       font-weight: 400;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      line-height: 24px;
       letter-spacing: 0.14px;
     }
   }
@@ -48,6 +55,9 @@ const StartProjectWrapper = styled.div`
     ${media.md`
       padding-bottom: 80px;
       padding-top: 0;
+    `}
+    ${media.xs`
+      padding-bottom: 60px;
     `}
     .testimonial-heading {
       margin-bottom: 29px;

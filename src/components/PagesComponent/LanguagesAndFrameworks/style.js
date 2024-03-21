@@ -5,7 +5,7 @@ const LanguagesWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   padding: 120px 0;
   ${media.sm`
-    padding: 60px 0;
+    padding: 40px 0;
     text-align: center;
   `}
   .desktop-data {
@@ -104,6 +104,9 @@ const LanguagesWrapper = styled.div`
     margin-bottom: 46px;
     img {
       margin-bottom: 22px;
+    }
+    p {
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     }
   }
   .small-screen-data {

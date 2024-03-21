@@ -13,7 +13,7 @@ const InnerBannerWrapper = styled.div`
     padding: 96px 40px;
   `}
   ${media.xs`
-    padding: 96px 20px;
+    padding: 60px 20px;
   `}
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};
@@ -30,9 +30,6 @@ const InnerBannerWrapper = styled.div`
       color: ${({ theme }) => theme.colors.dividerColor};
       display: block;
     }
-    ${media.sm`
-      margin-bottom: 32px;
-    `}
   }
 `
 

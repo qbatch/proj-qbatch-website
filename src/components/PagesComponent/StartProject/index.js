@@ -285,7 +285,7 @@ const Index = ({ page }) => {
           </Col>
           <Col xxl={5} lg={6} className="order-1 order-lg-2">
             <div className="testimonials">
-              <h3 className="color-primary">Testimonials</h3>
+              <h3 className="color-primary text-h4">Testimonials</h3>
               <p className="testimonial-paragraph">Here's what our clients have to say</p>
               <TestimonialCarousel />
             </div>

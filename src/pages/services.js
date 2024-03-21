@@ -17,7 +17,7 @@ import StartProject from "../components/PagesComponent/StartProject";
 import DummyImg from "../assets/images/simple-four-step-process_tell-us-your-requirements.svg"
 import Achievements from '../components/PagesComponent/Achievements2';
 
-import { devOpsFaq, servicesSliderData, lostToLaunched } from "../constants";
+import { servicesSliderData, lostToLaunchedItems } from "../constants";
 
 const adaptiveSoftwareData = [
   {
@@ -82,16 +82,16 @@ const DevOps = () => {
         heading="Adaptive Software Development Methodologies We Support"
         paragraph="Over 300 software projects are enjoying sky-high business results with our genius usage of modern software development practices. We value your investments. "
       />
-      <Languages heading="What Tech Stacks We Use?" paragraph="We are made of 50% people skills and 50% tools to ensure constant performance and security featuring uncompromising quality and speed. " paragraphMaxWidth={'754px'} />
+      <Languages heading="What Tech Stacks We Use?" paragraph="We are made of 50% people skills and 50% tools to ensure constant performance and security featuring uncompromising quality and speed. " paragraphMaxWidth={'754px'} showBtn={true} />
       <Slider
         heading="Lost to Launched"
         paragraph="Our Ultimate Process to Success"
         height="192"
-        data={lostToLaunched}
+        data={lostToLaunchedItems}
         align="center"
         className="competency-slider"
       />
-      <ProvenWorkExperience heading="Products that Empowered Millions"/>
+      <ProvenWorkExperience heading="Products that Empowered Millions" exploreBtn={true}/>
       <InnerBanner
        heading="Is your current project not bringing results? 
        Then bring THAT change!"
@@ -103,8 +103,7 @@ const DevOps = () => {
        btnSpacingTop={72}
        btnAlign="center"
       />
-      <Collaboration />
-      <FaqSection faqQuestion={devOpsFaq} />
+      <Collaboration headingClass="services-light" />
       <CreativeIntelligence/>
       <StartProject />
     </Layout>

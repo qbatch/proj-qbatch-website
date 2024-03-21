@@ -44,13 +44,18 @@ const Index = ({ headingClass, paragraph, expertiseData, heading }) => {
             {experties.map((list, index) => {
               return (
                 <div className="d-flex skill-section align-items-center justify-content-between" key={index}>
-                  <div className="d-flex add-gap align-items-center">
+                  <div className="d-flex add-gap">
                     <div className="list-icon">
                       <list.img />
                     </div>
                     <div>
+                      {headingClass === 'services-light' ? 
+                      <h3 className="title fw-normal">{list.title}</h3>
+                      :
                       <h3 className="title text-h4">{list.title}</h3>
+                      }
                       <p>{list.description}</p>
+                      
                     </div>
                   </div>
                   {/* <div className="arrow-box">

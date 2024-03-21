@@ -121,7 +121,7 @@ const Index = () => {
       <Container>
         <div className="footer-section">
           <Row>
-            <Col md={2}>
+            <Col md={2} xs={6}>
               <div className="footer-menu">
                 <ul>
                   {menuData.map((menu, ind) => (
@@ -133,7 +133,7 @@ const Index = () => {
                 </ul>
               </div>
             </Col>
-            <Col md={2}>
+            <Col md={2} xs={6}>
               <div className="footer-menu">
                 <ul>
                   {menu2Data.map((menu, ind) => (
@@ -160,8 +160,6 @@ const Index = () => {
                 <span className="text-h4 fw-bold">We’re excited to work together!</span>
                 <span>Need guidance on a revamp or a new project launch?</span>
                 <div className="email-input">
-                  <img src="/email-address-icon.svg" alt="email" width="24px" height="24px" />
-                  <input type="email" placeholder="Email Address" />
                   <PrimaryButton color="#fff" borderbottom text="Let’s Get Started" />
                 </div>
               </div>

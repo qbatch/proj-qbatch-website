@@ -12,7 +12,7 @@ const Input = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-radius: 0px;
     padding-left: 0;
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
     height: ${(props) => (props.height ? `${props.height}` : "65px")};
     letter-spacing: 0.19px;
     &::placeholder {

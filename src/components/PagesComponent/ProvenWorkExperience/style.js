@@ -17,6 +17,9 @@ const ProvenExperienceWrapper = styled.div`
     ${media.sm`
       padding: 60px 0;
     `}
+    ${media.xs`
+      padding: 40px 0 20px;
+    `}
   }
   .carousel-padding {
     padding-left: 153px;
@@ -33,6 +36,9 @@ const ProvenExperienceWrapper = styled.div`
       letter-spacing: 0.2px;
       margin-top: 32px;
       margin-bottom: 5px;
+      ${media.xs`
+        margin-top: 20px;
+      `}
     }
     span {
       color: ${({ theme }) => theme.colors.primaryColor};

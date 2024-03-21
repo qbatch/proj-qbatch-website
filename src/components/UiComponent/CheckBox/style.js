@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const CheckBoxWrapper = styled.div`
   .form-check-label {
@@ -10,6 +11,9 @@ const CheckBoxWrapper = styled.div`
   }
   .form-check {
     margin-bottom: ${(props) => (props.base ? `${props.base}` : "11px")};
+    ${media.xs`
+      margin-bottom: 0;
+    `}
   }
   input[type="checkbox"] {
     -webkit-appearance: none;
