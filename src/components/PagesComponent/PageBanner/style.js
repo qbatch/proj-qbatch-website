@@ -72,6 +72,9 @@ const CtoBannerWrapper = styled.div`
     & > div{
       width: 100%;
     }
+    ${media.sm`
+      min-height: auto;
+    `}
   }
   &.dev-ops-banner{
     padding: 100px 0;

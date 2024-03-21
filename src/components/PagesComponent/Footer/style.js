@@ -46,33 +46,9 @@ const FooterWrapper = styled.div`
       }
       .email-input {
         padding: 39px 0 9px;
-        display: flex;
-        gap: 12px;
-        border-bottom: 1px solid ${({ theme }) => theme.colors.textMedium};
-        input {
-          width: 100%;
-          background-color: transparent;
-          border: none;
-          color: ${({ theme }) => theme.colors.whiteColor};
-          padding: 0;
-          &::placeholder {
-            color: ${({ theme }) => theme.colors.bodyLight};
-          }
-          &:focus {
-            outline: none;
-          }
-        }
         button {
           span {
-            ${media.lg`
-              display: none;
-            `}
-            ${media.sm`
-              display: block;
-            `}
-            ${media.xs`
-              display: none;
-            `}
+            color: ${({ theme }) => theme.colors.dividerColor};
           }
         }
       }
@@ -146,6 +122,7 @@ const FooterWrapper = styled.div`
     }
     .follow-us {
       color: ${({ theme }) => theme.colors.dividerColor};
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-right: 32px;
       ${media.xs`

@@ -1,4 +1,4 @@
-const fsxl = "60px";
+const fsxl = "56px";
 const fsh1 = "64px";
 const fsh2 = "40px";
 const fsh3 = "32px";

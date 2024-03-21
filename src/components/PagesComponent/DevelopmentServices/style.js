@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const DevelopmentServicesWrapper = styled.div `
 padding: 96px 0;
+${media.sm`
+  padding: 40px 0;
+`}
 .section-main-heading{
   max-width: 340px;
   font-weight: ${({ theme }) => theme.fontWeight.bold};
@@ -20,6 +23,7 @@ padding: 96px 0;
     background-color: #FFF;
     position: relative;
     height: 100%;
+    transition: background-color 0.5s, color 0.5s;
     ${media.sm`
       padding: 24px;
       padding-bottom: 48px;
@@ -46,6 +50,17 @@ padding: 96px 0;
         position: absolute;
         bottom: 48px;
         right: 48px;
+      }
+    }
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.secondaryColor};
+      .box-heading, .paragraph {
+        color: ${({ theme }) => theme.colors.whiteColor};
+      }
+      button{
+        .btn-text {
+          color: ${({ theme }) => theme.colors.highlightColor};
+        }
       }
     }
   }

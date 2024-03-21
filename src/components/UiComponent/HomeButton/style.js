@@ -8,7 +8,7 @@ const ButtonWrapper = styled(Button)`
   font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   min-width: 162px;
   display: flex;
-  font-weight: 600;
+  font-weight: 700;
   align-items: center;
   gap: 34px;
   padding: 4px 4px 4px 24px;

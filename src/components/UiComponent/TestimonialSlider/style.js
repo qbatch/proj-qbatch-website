@@ -80,7 +80,6 @@ const ProvenExperienceWrapper = styled.div`
     p {
       color: ${({ theme }) => theme.colors.primaryColor};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
       margin: 0;
     }
   }

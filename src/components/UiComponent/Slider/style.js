@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 const SliderWrapper = styled.div`
   padding: 96px 0;
+  ${media.sm`
+    padding: 40px 0;
+  `}
   &.devops-slider{
     .paragraph{
       max-width: 608px;
@@ -31,6 +34,9 @@ const SliderWrapper = styled.div`
     }
   }
   .slider-data {
+    ${media.sm`
+    text-align: center;
+  `}
     .title {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       color: ${({ theme }) => theme.colors.bodyTextVariant};

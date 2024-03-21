@@ -10,7 +10,7 @@ import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button"
 import LanguagesWrapper from "./style";
 
-const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-tested Web Application Development tools and technologies to build a cross-platform and secure application:',paragraphMaxWidth  }) => {
+const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-tested Web Application Development tools and technologies to build a cross-platform and secure application:',paragraphMaxWidth, showBtn  }) => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -103,9 +103,13 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
               </div>
             ))}
           </div>
-          <div className="languages-btn">
-            <Button onClick={() => navigate('/contact')} text="Discover the Right Toolkit for Your Project" />
-          </div>
+          {!showBtn ? 
+            <div className="languages-btn">
+              <Button onClick={() => navigate('/contact')} text="Discover the Right Toolkit for Your Project" />
+            </div>
+            :
+            ''
+          }
         </Container>
       </div>
     </LanguagesWrapper>

@@ -39,10 +39,6 @@ const CollaborationWrapper = styled.div`
         padding-top: 32px;
         padding-bottom: 33px;
         border-bottom: 1px solid #D2D9DC;
-        &:last-child{
-          padding-bottom: 10px;
-          border-bottom: none;
-        }
         ${media.sm`
         gap:10px;
         padding-top: 16px;
