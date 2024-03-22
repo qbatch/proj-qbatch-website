@@ -25,7 +25,7 @@ const StartProjectWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   }
   .project-form {
-    margin-top: 38px;
+    margin-top: 50px;
     ${media.xs`
       margin-top: 20px;
     `}

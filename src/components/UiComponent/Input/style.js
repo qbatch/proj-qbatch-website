@@ -13,11 +13,11 @@ const Input = styled.div`
     border-radius: 0px;
     padding-left: 0;
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
-    height: ${(props) => (props.height ? `${props.height}` : "65px")};
+    height: ${(props) => (props.height ? `${props.height}` : "60px")};
     letter-spacing: 0.19px;
     &::placeholder {
       color: ${({ theme }) => theme.colors.bodyLight};
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
     }
     &:focus {
       box-shadow: none;
