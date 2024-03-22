@@ -2,6 +2,31 @@ const path = require('path')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
+  createPage({
+    path: "/sitemap.xml",
+    component: require.resolve("./src/sitemap/sitemap.js"),
+  });
+  createPage({
+    path: "/sitemap-services.xml",
+    component: require.resolve("./src/sitemap/sitemap-services.js"),
+  });
+  createPage({
+    path: "/sitemap-blog.xml",
+    component: require.resolve("./src/sitemap/sitemap-blog.js"),
+  });
+  createPage({
+    path: "/sitemap-pages.xml",
+    component: require.resolve("./src/sitemap/sitemap-pages.js"),
+  });
+  createPage({
+    path: "/sitemap-authors.xml",
+    component: require.resolve("./src/sitemap/sitemap-authors.js"),
+  });
+  createPage({
+    path: "/sitemap-events.xml",
+    component: require.resolve("./src/sitemap/sitemap-events.js"),
+  });
+
   const result = await graphql(`
     query {
       allStrapiArticle {
