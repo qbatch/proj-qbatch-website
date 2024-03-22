@@ -223,6 +223,15 @@ const GlobalStyles = createGlobalStyle`
         border:1px solid  ${({ theme }) => theme.colors.dividerColor};
         padding: 36px;
         margin-bottom:24px;
+        div{
+          &:nth-child(1) {
+            min-width: 162px;
+        }
+        }
+        img{
+          width:72px;
+          height:72px;
+        }
         @media(max-width:991px){
           flex-wrap:wrap;
         }
