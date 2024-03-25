@@ -41,7 +41,7 @@ const servicesItems = [
   },
   {
     menu: 'DevOps and Cloud Computing',
-    to: '#',
+    to: '/services/devops',
   },
   {
     menu: 'Low-code/ No-code Platform Development',

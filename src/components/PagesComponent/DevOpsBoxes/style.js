@@ -5,6 +5,9 @@ const DevOpsBoxesWrapper = styled.div`
 padding: 96px 0;
 background: url('/devOps-boxes-bg.svg');
 border-bottom: 2px solid ${({ theme }) => theme.colors.dividerColor};
+${media.sm`
+    padding:30px 0;
+  `}
 & > div{
   max-width: 80%;
   margin: auto;

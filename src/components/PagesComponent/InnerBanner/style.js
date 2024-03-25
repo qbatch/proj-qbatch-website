@@ -10,10 +10,7 @@ const InnerBannerWrapper = styled.div`
     padding: 96px 120px 120px;
   `}
   ${media.sm`
-    padding: 96px 40px;
-  `}
-  ${media.xs`
-    padding: 60px 20px;
+    padding: 60px 40px;
   `}
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};

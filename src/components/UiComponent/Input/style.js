@@ -18,6 +18,7 @@ const Input = styled.div`
     &::placeholder {
       color: ${({ theme }) => theme.colors.bodyLight};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      text-transform:capitalize;
     }
     &:focus {
       box-shadow: none;
@@ -26,6 +27,7 @@ const Input = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     &::placeholder{
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
+          text-transform:capitalize;
     }
     `}
   }

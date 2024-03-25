@@ -10,10 +10,9 @@ const CtoBannerWrapper = styled.div`
   padding: 132px 0 98px 0;
   min-height:calc(100vh - 70px);
   margin: auto;
-  /* ${media.sm`
-     padding: 40px 0px;
-     height:auto;
-  `} */
+  ${media.lg`
+     min-height:calc(100vh - 700px);
+  `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .banner-main {
     position:relative;

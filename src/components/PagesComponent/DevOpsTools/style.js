@@ -1,8 +1,12 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const DevOpsToolsWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+${media.sm`
+    padding:30px 0;
+  `}
 .heading{
   text-align: center;
   margin-bottom: 72px;
@@ -22,6 +26,9 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     max-width: 220px;
     width: 100%;
     margin-bottom: 72px;
+    ${media.sm`
+        margin-bottom: 12px;
+  `}
     img{
       height: 60px;
       width: auto;
