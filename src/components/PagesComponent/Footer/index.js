@@ -69,11 +69,11 @@ const bottomMenu = [
   },
   {
     name: "Terms & Conditions",
-    to: "/terms-and-conditions",
+    to: "/terms-and-conditions/",
   },
   {
     name: "Privacy Policy",
-    to: "/privacy-policy",
+    to: "/privacy-policy/",
   },
 ];
 const socialLinks = [
