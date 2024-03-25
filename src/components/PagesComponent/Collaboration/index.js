@@ -50,9 +50,9 @@ const Index = ({ headingClass, paragraph, expertiseData, heading }) => {
                     </div>
                     <div>
                       {headingClass === 'services-light' ? 
-                      <h3 className="title fw-normal">{list.title}</h3>
+                      <span className="title fw-normal">{list.title}</span>
                       :
-                      <h3 className="title text-h4">{list.title}</h3>
+                      <span className="title text-h4">{list.title}</span>
                       }
                       <p>{list.description}</p>
                       

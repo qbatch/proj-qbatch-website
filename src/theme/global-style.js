@@ -60,6 +60,9 @@ const GlobalStyles = createGlobalStyle`
     .fw-light {
       font-weight: ${({ theme }) => theme.fontWeight.light};
     }
+    .text-color{
+         color: ${({ theme }) => theme.colors.textColor};
+    }
     .heading {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 0;

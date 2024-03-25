@@ -84,6 +84,8 @@ const CollaborationWrapper = styled.div`
           line-height: 40px;
           letter-spacing: 0.4px;
           text-transform: inherit;
+          font-size:32px;
+          font-weight:300;  
           ${media.sm`
           line-height:28px;
           margin-bottom:8px;

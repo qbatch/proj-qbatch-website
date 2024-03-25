@@ -1,8 +1,11 @@
 import styled from "styled-components";
-
+import { media } from "../../../theme/media-mixins";
 const DevOpsSupremacyWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
+ ${media.sm`
+    padding-bottom:0px;
+  `}
 .wrapper{
   max-width: 450px;
 }
@@ -26,6 +29,10 @@ border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
     display: flex;
     align-items: end;
     gap: 8px;
+    span:first-child{
+      min-width:50px; 
+      display: inline-block;
+    }
     .counter-symbol{
       color: ${({ theme }) => theme.colors.dangerColor};
       font-weight: ${({ theme }) => theme.fontWeight.light};

@@ -835,13 +835,23 @@ const devOpsSliderData = [
   },
   {
     image: "/service-slider-placeholder.svg",
-    title: "Analysis and Planning",
-    content: "We examine your enterprise’s existing processes and technical infrastructure, building an exhaustive strategy for automating the infrastructure."
+    title: "Automation",
+    content: "We perform configuration and provisioning on testing, deployment, and production settings and automize the entire infrastructure."
   },
   {
     image: "/service-slider-placeholder.svg",
-    title: "Analysis and Planning",
-    content: "We examine your enterprise’s existing processes and technical infrastructure, building an exhaustive strategy for automating the infrastructure."
+    title: "Continuous Integration",
+    content: "We integrate code changes into a repository, merge automated releases, and run tests every time a change is made for version stability and control."
+  },
+    {
+    image: "/service-slider-placeholder.svg",
+    title: "Continuous Deployment",
+    content: "We deploy upgraded environments to the infrastructure and execute new developments throughout the CI/CD pipeline, avoiding any delays or bugs."
+  },
+   {
+    image: "/service-slider-placeholder.svg",
+    title: "Security Protocols",
+    content: "We stay laser-focused to protect your end product from bugs and errors. Thus we only trust risk-free and stringent security practices and tools to perform automated testing and assure compliance."
   }
 ]
 
@@ -2245,37 +2255,37 @@ const technologicalCapacityData = [
  ]
 const whyDevOpsData = [
   {
-   icon: "/ai-ml.svg",
+   icon: "/lead-the-market.svg",
    title: "Lead the market",
    desc: "Quickly adapt to market demands, and build lasting user experiences. "
   },
   {
-    icon: "/ai-ml.svg",
+    icon: "/lead-the-market.svg",
    title: "Scale easily",
    desc: "Leverage DevOps automation services without risking your enterprise operations."
   },
   {
-    icon: "/ai-ml.svg",
+    icon: "/lead-the-market.svg",
    title: "Reduce expenditure",
    desc: "Automated testing and bug tracking eliminate possible technical debts thus adding value for money."
   },
   {
-    icon: "/ai-ml.svg",
+    icon: "/lead-the-market.svg",
    title: "Build a close-knit team",
    desc: "Create an agile and connected culture bringing development, and operation guys together."
   },
   {
-    icon: "/ai-ml.svg",
+    icon: "/lead-the-market.svg",
    title: "Deploy continuously",
    desc: "Streamline the delivery pipeline by continuously deploying into multiple SDLC environments."
   },
   {
-   icon: "/ai-ml.svg",
+   icon: "/lead-the-market.svg",
    title: "Iterate and release frequently",
    desc: "Deliver helpful features through frequent automation and optimization."
   },
   {
-   icon: "/ai-ml.svg",
+   icon: "/lead-the-market.svg",
    title: "Increase consistency",
    desc: "Foster consistency across development, testing, production environments, and hybrid cloud."
   },

@@ -5,7 +5,7 @@ const ChoiceEnterpriseWrapper = styled.div`
   padding: 120px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 60px 0;
+    padding-bottom:0px;
   `}
   .choice-heading {
     text-align: center;

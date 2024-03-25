@@ -29,6 +29,7 @@ padding: 96px 0;
     background-color: #FFF;
     position: relative;
     height: 100%;
+    cursor:pointer;
     ${media.sm`
       padding: 24px;
       padding-bottom: 48px;
@@ -59,6 +60,12 @@ padding: 96px 0;
         bottom: 48px;
         right: 48px;
       }
+    }
+    &:hover{
+       background-color: ${({ theme }) => theme.colors.primaryColor};
+       .text-h4,.paragraph{
+         color: ${({ theme }) => theme.colors.whiteColor};
+       }
     }
   }
 `

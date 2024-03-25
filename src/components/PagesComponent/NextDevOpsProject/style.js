@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const NextDevOpsProjectWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+${media.sm`
+    padding:40px 0;
+  `}
 .heading{
   margin-bottom: 96px;
 }
@@ -23,12 +26,19 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     text-align: center;
     gap: 24px;
     margin-bottom: 72px;
+    ${media.sm`
+   margin-bottom: 12px;
+  `}
     img{
       height: 114px;
     }
     span{
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
-      color: ${({ theme }) => theme.colors.textMedium};;
+      color: ${({ theme }) => theme.colors.textMedium};
+      min-height:50px;
+      ${media.sm`
+   font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+  `}
     }
   }
 }

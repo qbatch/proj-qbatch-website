@@ -42,8 +42,12 @@ const AchievementsWrapper = styled.div`
         letter-spacing: 1px;
       }
     }
-    .heading {
-      margin-bottom: 94px;
+    .text-under-heading{
+        color: ${({ theme }) => theme.colors.textMedium};
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        padding-top:24px;
+        padding-bottom: 94px;
+        display:inline-block
     }
 
     .achievements-col {
@@ -65,6 +69,9 @@ const AchievementsWrapper = styled.div`
       }
       &:last-child::after {
         width: 0px;
+      }
+      .description{
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm}; 
       }
       .heading {
         font-size: ${({ theme }) => theme.fonts.baseFontXl};

@@ -13,6 +13,7 @@ import Achievements from '../../components/PagesComponent/Achievements';
 import Collaboration from '../../components/PagesComponent/Collaboration';
 import FaqSection from "../../components/PagesComponent/Faq";
 import StartProject from "../../components/PagesComponent/StartProject";
+import AwsPartner from '../../components/PagesComponent/AwsPartner'
 
 import { devOpsFaq, devOpsSliderData, whyDevOpsData } from "../../constants";
 import DevOpsSupremacy from '../../components/PagesComponent/DevOpsSupremacy';
@@ -31,11 +32,11 @@ const DevOps = () => {
         heading="Beyond Silo Mentality, Towards Shared Responsibility"
         paragraph={
           <span className='banner-paragraph'>
-            Let’s go beyond misaligned goals, patchy processes, and communication gaps, and deliver high-quality apps without worrying about the underlying infrastructure with our <i>DevOps services and solutions.</i> <br /><br />
-            No more <i>"throw it over the wall"</i> mentality only clear communication and continuous value.
+            Let’s go beyond misaligned goals, patchy processes, and communication gaps, and deliver high-quality apps without worrying about the underlying infrastructure with our <i className="text-color">DevOps services and solutions.</i> <br /><br />
+            No more <i className="text-color">"throw it over the wall"</i> mentality only clear communication and continuous value.
           </span>
         }
-        buttonText="Get Free CTO Consultation"
+        buttonText="Kick-Start My DevOps Journey"
         wrapperClass="dev-ops-banner"
         className="inner-container"
         col1lg={10}
@@ -43,9 +44,9 @@ const DevOps = () => {
         headingMaxWidth={'890px'}
         paragraphMaxWidth={'770px'}
       />
+      <AwsPartner />
       <DevOpsSupremacy/>
       <EmbraceEnterprise/>
-
       <WhyDevOps
         className="why-dev-ops"
         heading="With DevOps Engineers, You Can"
@@ -81,9 +82,9 @@ const DevOps = () => {
        btnText="Start Risk-Free DevOps Journey"
        caption="Gartner"
        btnSpacingTop={72}
-       btnAlign="left"
+       btnAlign="center"
       />
-      <ProvenWorkExperience heading="Products that Empowered Millions"/>
+      <ProvenWorkExperience exploreBtn heading="Products that Empowered Millions"/>
       <Collaboration />
        <FaqSection faqQuestion={devOpsFaq} />
       <StartProject />
