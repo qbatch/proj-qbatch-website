@@ -818,13 +818,23 @@ const servicesSliderData = [
   },
   {
     image: "/service-slider-placeholder.svg",
-    title: "Artificial Intelligence (AI)",
-    content: "We bring extensive expertise in predictive modeling, data mining, computer vision, and natural language processing. AI helps us streamline overall business workflows for you, reducing overall human effort."
+    title: "Robotic Process Automation (RPA)",
+    content: "We help automate your operations processes using software robots that simulate human actions and interact with software and digital systems to save time and avoid manual operations."
   },
   {
     image: "/service-slider-placeholder.svg",
-    title: "Artificial Intelligence (AI)",
-    content: "We bring extensive expertise in predictive modeling, data mining, computer vision, and natural language processing. AI helps us streamline overall business workflows for you, reducing overall human effort."
+    title: "Internet of Things (IoT)",
+    content: "We create tailored IoT solutions catered to your unique business needs across industries. We focus on multi-device integration to ensure high-performing and responsive technology integration."
+  },
+  {
+    image: "/service-slider-placeholder.svg",
+    title: "Augmented Reality/ Virtual Reality (AR/VR)",
+    content: "We deliver niche-specific AR/VR solutions for immersive experiences via AR-powered events, training sessions, navigation, and 2D/3D projections for businesses and folks globally."
+  },
+  {
+    image: "/service-slider-placeholder.svg",
+    title: "Machine Learning (ML))",
+    content: "We leverage powerful cloud-based platforms to accelerate ML tools and perform predictive analysis, data pre-processing, model training and tuning, and orchestration."
   }
 ]
 const devOpsSliderData = [

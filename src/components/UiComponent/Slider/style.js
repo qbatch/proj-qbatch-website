@@ -50,7 +50,10 @@ const SliderWrapper = styled.div`
       max-width: 400px;
       ${media.sm`
         max-width: 100%;
-    `}
+      `}
+      ${media.xs`
+        padding: 0 10px;
+      `}
     }
     ul {
       margin-top: 24px;

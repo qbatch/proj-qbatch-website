@@ -102,8 +102,14 @@ const LanguagesWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 46px;
+    div {
+      min-height: 70px;
+      ${media.sm`
+        min-height: 85px;
+      `}
+    }
     img {
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
     p {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};

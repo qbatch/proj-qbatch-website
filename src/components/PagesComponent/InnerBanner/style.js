@@ -28,6 +28,11 @@ const InnerBannerWrapper = styled.div`
       display: block;
     }
   }
+  .idea-btn {
+    ${media.xs`
+      margin-top: 30px !important;
+    `}
+  }
 `
 
 export default InnerBannerWrapper;
