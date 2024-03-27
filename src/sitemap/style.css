@@ -1,0 +1,45 @@
+
+.sitemap-link a{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  padding: 8px 4px;
+  display: block;
+}
+.back-btn{
+  padding: 8px 4px;
+  display: block;
+  font-weight: 500;
+  margin: 24px 0 16px;
+}
+.sitemap-link{
+  border-bottom: 1px solid #d7d7d7;
+  width: 100%;
+  text-decoration: none;
+}
+.sitemap-link img,
+.back-btn img{
+  height: 20px;
+  padding-right: 8px;
+}
+.sitemap-link:last-child{
+  border-bottom: 1px solid #d7d7d7;
+}
+urlset {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+url {
+  margin-bottom: 10px;
+}
+
+loc {
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+div{
+  display: block;
+}
