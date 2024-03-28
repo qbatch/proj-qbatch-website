@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { useStaticQuery, graphql } from 'gatsby'
 
-// import { clientsData } from "../../../constants";
 
 import Container from "../../UiComponent/Container";
 

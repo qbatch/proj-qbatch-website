@@ -3,7 +3,6 @@ import { Col, Row } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
 
-import { leaderData } from "../../../constants";
 
 import LeadershipWrapper from "./style";
 import LeaderCard from "../leaderCard";

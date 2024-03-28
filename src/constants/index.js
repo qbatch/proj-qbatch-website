@@ -101,23 +101,7 @@ const developmentProcessData = [
       'It may take a few weeks to deploy and make your product available to the general masses. We continue our support to growing your product.',
   },
 ]
-const leaderData = [
-  {  name: "Ibrahim Zahoor", title: "CEO & Founder", imageSrc: "/leader-1.jpeg" },
-  { name: "Hassan Akram", title: "CTO & Co - Founder Qbatch", imageSrc: "/leader-2.jpeg" },
-];
 
-const clientsData = [
-  { id: 1, link: "https://www.designrush.com/agency/profile/qbatch", img: '/logo1.svg' },
-  { id: 2, link: "#", img: '/logo2.svg' },
-  { id: 3, link: "https://www.topdevelopers.co/profile/qbatch", img: '/logo3.svg' },
-  { id: 4, link: "https://www.goodfirms.co/company/qbatch-llc", img: '/logo4.svg' },
-  { id: 5, link: "https://topfirms.co/company-detail/3768/qbatch", img: '/logo5.svg' },
-  { id: 6, link: "#", img: '/logo6.svg' },
-  { id: 7, link: "#", img: '/logo7.svg' },
-  { id: 8, link: "https://www.techimply.com/profile/qbatch", img: '/logo8.svg' },
-  { id: 9, link: "https://www.techimply.com/profile/qbatch", img: '/logo9.svg' },
-  { id: 10, link: "https://www.techimply.com/profile/qbatch", img: '/logo10.svg' },
-];
 
 const values = [
   { icon: "/value-img-1.svg", title: "Curious", description: "Asking the right questions and relentlessly adapting." },
@@ -2518,8 +2502,6 @@ export {
   CareersData,
   values,
   webScrapingFaq,
-  clientsData,
-  leaderData,
   companyCounter,
   peopleFirstData,
   counterData,
