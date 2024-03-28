@@ -16,7 +16,7 @@ import FaqSection from "../../components/PagesComponent/Faq";
 import Slider from '../../components/UiComponent/Slider'
 import { sliderItems, faqQuestion } from "../../constants";
 import { guidanceData, ctoList } from "../../constants";
-import CtoBannerImage from "../../../static/cto-banner.svg";
+import CtoBannerImage from "../../../static/cto-banner.png";
 
 const CtoService = () => {
   return (
