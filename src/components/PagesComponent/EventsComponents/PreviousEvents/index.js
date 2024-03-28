@@ -47,13 +47,13 @@ const PreviousEvents = () => {
             <img src="/gallery-img-4.jpeg" alt="Image 4" />
           </div>
           <div className='slide'>
-            <img src="/gallery-img-5.jpeg" alt="Image 5" />
+            <img src="/gallery-img-5.webp" alt="Image 5" />
           </div>
           <div className='slide'>
-            <img src="/gallery-img-6.jpeg" alt="Image 6" />
+            <img src="/gallery-img-6.webp" alt="Image 6" />
           </div>
           <div className='slide'>
-            <img src="/gallery-img-7.jpeg" alt="Image 7" />
+            <img src="/gallery-img-7.webp" alt="Image 7" />
           </div>
           {/* Add more images as needed */}
         </Slider>
