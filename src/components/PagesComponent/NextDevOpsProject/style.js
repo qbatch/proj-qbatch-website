@@ -9,6 +9,9 @@ ${media.sm`
   `}
 .heading{
   margin-bottom: 96px;
+  ${media.sm`
+     margin-bottom:40px;
+  `}
 }
 .boxes{
   display: flex;

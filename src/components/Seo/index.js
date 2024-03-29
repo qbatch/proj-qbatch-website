@@ -47,7 +47,7 @@ const SEO = (props) => {
       <meta name="keywords" content={seo.keywords} />
       <meta http-equiv="content-language" content={seo.language} />
       </head>
-      {children}
+terms-and-conditions/      {children}
     </>
   )
 }
