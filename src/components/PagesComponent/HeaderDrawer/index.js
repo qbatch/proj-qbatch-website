@@ -383,8 +383,8 @@ const Index = (props) => {
               </Col>
               <Col md={3}>
                 <ul className="bottom-menu">
-                  <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
-                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                  <li><a href="/terms-and-conditions/">Terms & Conditions</a></li>
+                  <li><a href="/privacy-policy/">Privacy Policy</a></li>
                 </ul>
               </Col>
               <Col md={3}>

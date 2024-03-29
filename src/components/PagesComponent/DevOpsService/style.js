@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const DeveOpsServiceWrapper = styled.div `
 padding: 96px 0;
+ ${media.sm`
+    padding:40px 0;
+  `}
 .section-main{
   max-width: 690px;
 }
