@@ -363,6 +363,17 @@ const GlobalStyles = createGlobalStyle`
   .divider-color{
      color: ${({ theme }) => theme.colors.dividerColor};
   }
+#freshteam-widget{
+    background-color:transparent!important;
+  div:first-child{
+  background-color:transparent!important;
+  }
 
+  @media(max-width:1200px){
+    .content{
+      width:100%!important;
+    }
+  }
+}
 `
 export default GlobalStyles

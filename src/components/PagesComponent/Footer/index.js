@@ -111,6 +111,7 @@ const Index = () => {
       );
     } else {
       return (
+        menu.to === '/about' ? <a href={menu.to}>{menu.name}</a> :
         <Link to={menu.to}>{menu.name}</Link>
       );
     }
