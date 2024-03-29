@@ -62,7 +62,7 @@ padding: 96px 0;
       }
     }
     &:hover{
-       background-color: ${({ theme }) => theme.colors.primaryColor};
+       background-color: ${({ theme }) => theme.colors.secondaryColor};
        .text-h4,.paragraph{
          color: ${({ theme }) => theme.colors.whiteColor};
        }
