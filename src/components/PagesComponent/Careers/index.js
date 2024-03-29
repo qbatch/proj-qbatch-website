@@ -1,14 +1,24 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Col, Row } from "react-bootstrap";
-
 import Container from "../../UiComponent/Container";
-import Button from "../../UiComponent/Button";
-import PrimaryButton from '../../UiComponent/PrimaryButton';
-import { CareersData } from "../../../constants";
 
 import CareerWrapper from "./style";
 
 const Index = () => {
+   useEffect(() => {
+    loadScripts();
+    return () => {
+    };
+  }, []);
+
+  const loadScripts = () => {
+    const script = document.createElement("script");
+    script.src = "https://s3.amazonaws.com/files.freshteam.com/production/65182/attachments/6013099378/original/6000003854_widget.js?1706874422";
+    script.async = true;
+    document.body.appendChild(script);
+
+  };
+
   return (
     <CareerWrapper>
       <Container>
@@ -21,15 +31,17 @@ const Index = () => {
               achieve big things while having fun!
             </p>
           </Col>
-          <Col xxl={6} xl={8}>
+          <Col xxl={8} xl={8}>
             <div className="cards-wrapper">
-              <div className="d-block">
+              {/* <div className="d-block">
                 <a href="https://careers.qbatch.com/jobs">
                 <Button text="Explore All Jobs" className="ms-auto"/>
                 </a>
-              </div>
+              </div> */}
               <Row>
-                {CareersData.map((card, index) => (
+                <div id='freshteam-widget'></div> 
+
+                {/* {CareersData.map((card, index) => (
                   <Col md={6} key={index} className="inner-card">
                     <div className="wrapper">
                       <h3 className="card-heading text-h4">{card.jobTitle}</h3>
@@ -51,7 +63,7 @@ const Index = () => {
                       </div>
                     </div>
                   </Col>
-                ))}
+                ))} */}
               </Row>
             </div>
           </Col>
