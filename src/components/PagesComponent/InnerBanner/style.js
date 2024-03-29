@@ -5,12 +5,12 @@ const InnerBannerWrapper = styled.div`
   background: url('/inner-banner-bg.svg');
   background-size: cover;
   background-position: top;
-  padding: 120px 203px;
+  padding: 96px 203px;
   ${media.md`
     padding: 96px 120px 120px;
   `}
   ${media.sm`
-    padding: 60px 40px;
+    padding: 40px 40px;
   `}
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};
