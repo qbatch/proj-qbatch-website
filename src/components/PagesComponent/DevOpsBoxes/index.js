@@ -19,7 +19,7 @@ const DevOpsBoxes = () => {
           <Col lg={4}>
             <div className='box'>
               <h3 className='box-text'>
-                30
+                70
                 <span>Cloud Infrastructures Designed</span>
               </h3>
             </div>

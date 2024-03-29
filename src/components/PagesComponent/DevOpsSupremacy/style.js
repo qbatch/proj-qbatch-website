@@ -4,7 +4,7 @@ const DevOpsSupremacyWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
  ${media.sm`
-    padding-bottom:0px;
+   padding:40px 0px;
   `}
 .wrapper{
   max-width: 450px;
@@ -42,6 +42,7 @@ border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
   }
   .counter-paragraph{
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+    color: ${({ theme }) => theme.fonts.bodyTextVariant};
     line-height: 32px;
     max-width: 450px;
   }
