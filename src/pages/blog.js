@@ -80,8 +80,14 @@ const BlogPage = ({ pageContext }) => {
   )
 }
 export const Head = () => {
+  const location = useLocation();
   const blogSeo = Queries();
-  const seoData = blogSeo.allStrapiBlog.nodes[0]?.seo
+
+  const categoryPath = location.pathname.split('/')[2];
+
+  const categoryData = blogSeo.allStrapiCategory.nodes;
+  const categoryFilter = categoryData.filter((item) => item.slug === categoryPath);
+  const seoData = categoryPath ? categoryFilter[0]?.seo : blogSeo.allStrapiBlog.nodes[0]?.seo
   return (
     <SEO
       title={seoData.metaTitle}
