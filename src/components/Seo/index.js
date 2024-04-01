@@ -1,5 +1,7 @@
 import React from 'react'
+import PropTypes from "prop-types"
 import { useSiteMetadata } from '../../hooks/use-site-metadata.jsx'
+import { Helmet } from "react-helmet";
 
 const SEO = (props) => {
   const { title, description, language, robots, pathname, children, image, keywords } = props
@@ -22,33 +24,127 @@ const SEO = (props) => {
     keywords,
     image,
   }
+  const staging=  process.env.ENV
+  console.log(staging,"staging")
+  const isDev = false;
+  const meta=[
+        {
+          name: `description`,
+          content: seo.description,
+        },
+          {
+          name: `robots`,
+          content: seo.robots,
+        },
+        {
+          property: `og:title`,
+          content: seo.title,
+        },
+        {
+          property: `og:description`,
+          content: seo.description,
+           key:"og:description"
+        },
+        {
+          property: `og:type`,
+          content:"WebPage"
+        },
+        {
+          name: `twitter:card`,
+          content:"summary_large_image"
+        },
+        {
+          name: `twitter:creator`,
+          content: seo.userName,
+        },
+        {
+          name: `twitter:title`,
+          content: seo.title,
+        },
+        {
+          name: `twitter:description`,
+          content: seo.description,
+        },
+         {
+          name: `twitter:card`,
+          content:"summary_large_image"
+        },
+          {
+          name: `twitter:title`,
+          content:seo.title
+        },
+         {
+          name: `twitter:url`,
+          content:seo.url
+        },
+        {
+          name: `twitter:description`,
+          content:seo.description
+        },
+         {
+          name: `twitter:image`,
+          content:seo.image && seo.image
+        },
+        {
+          name: `or:url`,
+          content:seo.url,
+          key:"og:url"
+        },
+           {
+          name: `or:locale`,
+          content:"en_US"
+        },
+        {
+          name: `og:image:width`,
+          content:"1200"
+        },
+         {
+          name: `og:image:height`,
+          content:"630"
+        },
+         {
+          name: `keywords`,
+          content:seo.keywords
+        },
+         {
+          name: `content-language`,
+          content:seo.language
+        }
+      ]
+ 
+  
+
   return (
     <>
-    <head>
-      <title>{seo.title}</title>
-      <meta name="robots" content={seo.robots} />
-      <meta name="description" content={seo.description} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:url" content={seo.url} />
-      <meta name="twitter:description" content={seo.description} />
+    <Helmet
+       htmlAttributes={{
+        language,
+      }}
+      titleTemplate={seo.title}
+       title={seo.title}
+       meta={staging ? [{
+              name: `robots`,
+              content: "noindex,nofollow",
+            }]
+          : meta}
+       />
       {seo.image && <meta name="twitter:image" content={seo.image} />}
-      <meta name="twitter:creator" content={seo.userName} />
-      <meta property="og:url" content={seo.url} key="og:url" />
-      <meta property="og:title" content={seo.title} key="og:title" />
-      <meta property="og:tag" content={seo.image} key="og:tag" />
-      <meta property="og:description" content={seo.description} key="og:description" />
-      <meta property="og:type" content="WebPage" />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
       {seo.image && <meta property="og:image" content={seo.image} key="og:image" />}
       <link rel="canonical" href={seo.url} />
-      <meta name="keywords" content={seo.keywords} />
-      <meta http-equiv="content-language" content={seo.language} />
-      </head>
-    {children}
+      {children}
     </>
+
   )
+}
+  SEO.defaultProps = {
+  language: `en`,
+  meta: [],
+  description: ``,
+}
+SEO.propTypes = {
+  description: PropTypes.string,
+  lang: PropTypes.string,
+  meta: PropTypes.arrayOf(PropTypes.object),
+  title: PropTypes.string.isRequired,
 }
 export default SEO
