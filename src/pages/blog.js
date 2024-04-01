@@ -95,7 +95,7 @@ export const Head = () => {
       keywords={seoData.keywords}
       language={seoData.language}
       robots={seoData.metaRobots}
-      pathname={seoData.slug}
+      pathname={location.pathname}
     />
   )
 }
