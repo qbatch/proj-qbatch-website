@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../../../../node_modules/video-react/dist/video-react.css";
+import emailjs from '@emailjs/browser';
 
 import Container from "../../UiComponent/Container";
 import Input from "../../UiComponent/Input";
@@ -61,6 +62,7 @@ const Index = ({ page }) => {
       });
     }
   };
+
   const handleSubmit = async (e) => {
     setSubmitted(true);
     e.preventDefault();
@@ -70,6 +72,17 @@ const Index = ({ page }) => {
       e.stopPropagation();
     }
     setValidated(true);
+
+    const templateParams = {
+      from_name: formData.name,
+      from_contact: formData.number,
+      from_email: formData.email,
+      collaboration: formData.collaboration,
+      services: formData.services,
+      to_name: "Qbatch",
+      message: formData.description
+    }
+
     if (formData.terms === true) {
       try {
         const response = await fetch("https://cms.qbatch.com/api/contacts", {
@@ -79,12 +92,27 @@ const Index = ({ page }) => {
           },
           body: JSON.stringify({ data: formData }),
         });
-  
         if (response.ok) {
           toast.success("Message sent successfully...", {
             position: "top-right",
             autoClose: 5000,
           });
+          emailjs
+          .send(
+            process.env.GATSBY_EMAIL_SERVICE_ID,
+            process.env.GATSBY_EMAIL_TEMPLATE_ID,
+            templateParams,
+            process.env.GATSBY_EMAIL_PUBLIC_KEY
+          )
+          .then(
+            (result) => {
+              console.log('Message sent!', result);
+            
+            },
+            (error) => {
+              console.log('Something went wrong, please try again later', error);
+            }
+          );
           setValidated(false);
           setFormData({
             name: "",
