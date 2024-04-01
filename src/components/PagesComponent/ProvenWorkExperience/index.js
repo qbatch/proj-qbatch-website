@@ -168,7 +168,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn }) => {
                     .filter((x) => x.imgOpen)
                     .map((item, ind) => (
                       <div key={ind}>
-                        <img src={item.projectImg?.localFile.url} alt="project" />
+                        <img src={item.projectImg?.localFile?.url} alt="project" />
                       </div>
                     ))}
                   <div></div>

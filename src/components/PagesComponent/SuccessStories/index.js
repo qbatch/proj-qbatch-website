@@ -53,11 +53,11 @@ const Index = () => {
                   }`}
                 >
                   {item.imgOpen ? (
-                    <ImageOpenStyle src={item.projectImg.localFile.url}></ImageOpenStyle>
+                    <ImageOpenStyle src={item.projectImg.localFile?.url}></ImageOpenStyle>
                   ) : (
                     <div className="close-small-img">
                       <ImageOpenStyle
-                        src={item.projectImg.localFile.url}
+                        src={item.projectImg.localFile?.url}
                         type="close"
                       ></ImageOpenStyle>
                     </div>
@@ -68,10 +68,10 @@ const Index = () => {
                     }`}
                   >
                     <div className="close-image">
-                      <img src={item.projectImg.localFile.url} alt="story" />
+                      <img src={item.projectImg.localFile?.url} alt="story" />
                     </div>
                     <div className="content">
-                      <img className="logo" src={item.projectLogo?.localFile.url} alt="logo" />
+                      <img className="logo" src={item.projectLogo?.localFile?.url} alt="logo" />
                       <h3>{item.projectName}</h3>
                       <p className="paragraph">{item.projectDesc}</p>
                       <div className="badge">
