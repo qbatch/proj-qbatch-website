@@ -41,14 +41,15 @@ const DedicatedDeveloperWrapper = styled.div`
         padding-left: 8px;
       }
     }
-    p {
-      color: ${({ theme }) => theme.colors.whiteColor};
+    h2 {
+      color: ${({ theme }) => theme.colors.dividerColor};
       letter-spacing: 0px;
       text-align: center;
-      max-width: 933px;
+      max-width: 950px;
       padding: 24px 0px;
       margin: 0 auto;
       margin-bottom: 44px;
+      line-height: 32px;
     }
   }
 `

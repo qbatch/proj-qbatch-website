@@ -27,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
       }
     h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH1};
+        line-height: 68px;
     }
     h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
@@ -38,14 +39,18 @@ const GlobalStyles = createGlobalStyle`
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
         letter-spacing : 0.14px ;
     }
+    .text-xl {
+      font-size:${({ theme }) => theme.fonts.baseFontXl}; 
+    }
     .text-h4-light{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
         line-height: 32px;
         font-weight:${({ theme }) => theme.fontWeight.light} ;
     }
     p{
-       font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
-       color: ${({ theme }) => theme.colors.textMedium};   
+       font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+       color: ${({ theme }) => theme.colors.textMedium};
+       font-weight: ${({ theme }) => theme.fontWeight.light};
        letter-spacing : 0.14px ; 
     }
     label,caption{

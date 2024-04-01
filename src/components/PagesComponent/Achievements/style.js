@@ -28,6 +28,9 @@ const AchievementsWrapper = styled.div`
     .achievements-inner-wrapper {
       position: relative;
       z-index: 2;
+      h2 {
+        margin-bottom: 72px;
+      }
     }
     .row-wrapper {
       padding-top: 2px;

@@ -16,10 +16,10 @@ const Index = ({ innerPage, page, mainHeading }) => {
     <AchievementsWrapper>
       <div className="achievements-main">
         <Container className="achievements-inner-wrapper">
-          <h2 className={innerPage ? "" : "text-h1"}>
+          <h2 className={innerPage ? "" : "text-h1 color-primary"}>
             {heading}
           </h2>
-          <span className="text-under-heading">Here's what stats and our clients have to say:</span>
+          {/* <span className="text-under-heading">Here's what stats and our clients have to say:</span> */}
           <Row>
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">
@@ -29,7 +29,7 @@ const Index = ({ innerPage, page, mainHeading }) => {
                     <span className="color-danger fw-light ms-2">{data.symbol}</span>
                   )}
                 </span>
-                <p className="description">{data.desc}</p>
+                <p className="description fw-normal">{data.desc}</p>
               </Col>
             ))}
           </Row>

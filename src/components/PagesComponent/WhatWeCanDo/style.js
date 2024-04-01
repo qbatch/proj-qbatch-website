@@ -14,7 +14,7 @@ const WhatWeDoWrapper = styled.div`
       margin-bottom: 22px;
     }
     p {
-      max-width: 820px;
+      max-width: 830px;
     }
   }
   .services-btn {
