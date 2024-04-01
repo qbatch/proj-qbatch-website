@@ -32,11 +32,11 @@ const Index = () => {
     <DedicatedDeveloperWrapper>
       <Container>
         <div className="title-portion">
-          <h1 className="text-xl">
-            Software Development & <br /> Consultancy for
+          <h1>
+            Software Development & Consultancy <br /> for {' '}
             <span ref={textRef}/>
           </h1>
-          <h2 className="text-h4 fw-normal">
+          <h2 className="text-h5 fw-normal">
             200+ enterprises have already garnered great financial results and
             market outreach with our time-tested development flow, error-free
             code quality, and on-time project delivery.
@@ -48,7 +48,6 @@ const Index = () => {
             />
           </div>
         </div>
-        <div className="text-center add-space"></div>
       </Container>
     </DedicatedDeveloperWrapper>
   );

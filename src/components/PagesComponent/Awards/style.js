@@ -41,7 +41,6 @@ position: relative;
       max-width: 221px;
       text-align: left;
       font-size: 40px;
-      color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-weight: 700;
       line-height: 52px;
       ${media.md`

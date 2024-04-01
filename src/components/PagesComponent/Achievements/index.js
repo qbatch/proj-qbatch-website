@@ -19,7 +19,6 @@ const Index = ({ innerPage, page, mainHeading }) => {
           <h2 className={innerPage ? "" : "text-h1 color-primary"}>
             {heading}
           </h2>
-          {/* <span className="text-under-heading">Here's what stats and our clients have to say:</span> */}
           <Row>
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">

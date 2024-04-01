@@ -45,11 +45,10 @@ const DedicatedDeveloperWrapper = styled.div`
       color: ${({ theme }) => theme.colors.dividerColor};
       letter-spacing: 0px;
       text-align: center;
-      max-width: 950px;
+      max-width: 810px;
       padding: 24px 0px;
       margin: 0 auto;
-      margin-bottom: 44px;
-      line-height: 32px;
+      margin-bottom: 24px;
     }
   }
 `

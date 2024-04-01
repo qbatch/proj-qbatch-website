@@ -29,7 +29,7 @@ const AchievementsWrapper = styled.div`
       position: relative;
       z-index: 2;
       h2 {
-        margin-bottom: 72px;
+        margin-bottom: 96px;
       }
     }
     .row-wrapper {
@@ -44,13 +44,6 @@ const AchievementsWrapper = styled.div`
         line-height: 30px;
         letter-spacing: 1px;
       }
-    }
-    .text-under-heading{
-        color: ${({ theme }) => theme.colors.textMedium};
-        font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        padding-top:24px;
-        padding-bottom: 94px;
-        display:inline-block
     }
 
     .achievements-col {
@@ -77,7 +70,7 @@ const AchievementsWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm}; 
       }
       .heading {
-        font-size: ${({ theme }) => theme.fonts.baseFontXl};
+        font-size: ${({ theme }) => theme.fonts.baseFontNumber};
         font-weight: 600;
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         ${media.lg`
