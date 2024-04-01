@@ -8,11 +8,13 @@ const siteMetadata = {
   language: `en-us`,
   defaultImage: `https://cms.qbatch.com/uploads/Your_Idea_820_03532d7cf6.jpg`,
 };
+
   env = require('dotenv').config({
-    path: require('path').join(__dirname, '.env.development'),
+    path: require('path').join(__dirname, '.env'),
   })
 
 const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken, GOOGLE_TAG_ID: googleTagId } = process.env
+
 const strapiConfig = {
   apiURL,
   accessToken,
