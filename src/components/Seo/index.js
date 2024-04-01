@@ -24,9 +24,7 @@ const SEO = (props) => {
     keywords,
     image,
   }
-  const staging=  process.env.ENV
-  console.log(staging,"staging")
-  const isDev = false;
+  const staging=  process.env.GATSBY_ENV
   const meta=[
         {
           name: `description`,
