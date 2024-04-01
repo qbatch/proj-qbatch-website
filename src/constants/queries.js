@@ -482,7 +482,25 @@ export const Queries = () => {
            }
          }
        }
-       
+       allStrapiCategory {
+        nodes {
+          categoryName
+          slug
+          seo {
+            metaTitle
+            metaDescription
+            language
+            slug
+            keywords
+            metaRobots
+            metaimage {
+              localFile {
+                url
+              }
+            }
+          }
+        }
+      }
      }
    `)
     

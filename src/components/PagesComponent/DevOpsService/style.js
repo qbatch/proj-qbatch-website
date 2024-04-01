@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const DeveOpsServiceWrapper = styled.div `
 padding: 96px 0;
+ ${media.sm`
+    padding:40px 0;
+  `}
 .section-main{
   max-width: 690px;
 }
@@ -62,7 +65,7 @@ padding: 96px 0;
       }
     }
     &:hover{
-       background-color: ${({ theme }) => theme.colors.primaryColor};
+       background-color: ${({ theme }) => theme.colors.secondaryColor};
        .text-h4,.paragraph{
          color: ${({ theme }) => theme.colors.whiteColor};
        }

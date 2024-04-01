@@ -86,6 +86,15 @@ const DevOps = () => {
       />
       <ProvenWorkExperience exploreBtn heading="Products that Empowered Millions"/>
       <Collaboration />
+       <InnerBanner
+       heading="Minimize development costs and timelines with DevOps Engineering Services.”"
+       headingMaxWidth="1042px"
+       wrapperClass="text-center"
+       isButton={true}
+       btnText="Get DevOps Services"
+       btnSpacingTop={72}
+       btnAlign="center"
+      />
        <FaqSection faqQuestion={devOpsFaq} />
       <StartProject />
     </Layout>
@@ -103,7 +112,7 @@ export const Head = () => {
       language={seoData?.language}
       robots={seoData?.metaRobots}
       image={seoData?.metaimage[0].localFile.url}
-      pathname={`/${seoData?.slug}/`}
+      pathname={`/services/${seoData?.slug}/`}
     />
   )
 }

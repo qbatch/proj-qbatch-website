@@ -20,6 +20,11 @@ const SliderWrapper = styled.div`
       flex-direction: column;
     }
     `}
+    @media(max-width:575px){
+      .slick-next{
+        right:0px
+      }
+    }
   .upper-heading {
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
