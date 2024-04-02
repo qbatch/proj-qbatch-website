@@ -103,10 +103,7 @@ const LanguagesWrapper = styled.div`
     align-items: center;
     margin-bottom: 46px;
     div {
-      min-height: 70px;
-      ${media.sm`
-        min-height: 85px;
-      `}
+      min-height: 85px;
     }
     img {
       margin-bottom: 20px;

@@ -16,7 +16,8 @@ const SitemapPages = ({ data }) => {
     "/sitemap-authors.xml", 
     "/authors/",
     "/dev-404-page",
-    "/404.html"
+    "/404.html",
+    "/blogDetails"
   ];
 
   const pages = allSitePage.nodes.map((node) => {

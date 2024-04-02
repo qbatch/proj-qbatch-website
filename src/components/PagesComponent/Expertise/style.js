@@ -14,7 +14,7 @@ const ExpertiseWrapper = styled.section`
   `}
   }
   .heading {
-    margin-right: 83px;
+    max-width: 400px;
     margin-bottom: 51px;
     text-transform: inherit;
     ${media.md`

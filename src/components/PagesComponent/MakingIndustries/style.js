@@ -34,7 +34,6 @@ const MakingIndustriesWrapper = styled.div`
   }
   p {
     color: ${({ theme }) => theme.colors.textMedium};
-    line-height: 32px;
     max-width: 771px;
     margin: 0 auto;
     letter-spacing: 0.19px;

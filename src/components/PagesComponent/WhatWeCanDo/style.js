@@ -10,11 +10,10 @@ const WhatWeDoWrapper = styled.div`
   }
   .section-heading {
     .heading {
-      line-height: 84px;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
     p {
-      max-width: 820px;
+      max-width: 830px;
     }
   }
   .services-btn {
@@ -28,7 +27,7 @@ const WhatWeDoWrapper = styled.div`
   }
   .services-provided {
     .service {
-      margin-top: 58px;
+      margin-top: 56px;
       img {
         max-width: 60px;
       }
@@ -38,7 +37,7 @@ const WhatWeDoWrapper = styled.div`
           margin-left: 30px;
         `}
         .heading {
-          margin-bottom: 18px;
+          margin-bottom: 12px;
           color: ${({ theme }) => theme.colors.bodyTextVariant};
           letter-spacing: 0;
         }

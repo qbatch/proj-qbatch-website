@@ -11,13 +11,13 @@ const ProblumSolvingWrapper = styled.div`
 
   .quote {
     color: ${({ theme }) => theme.colors.dividerColor};
-    font-weight: 400;
     line-height: 52px;
     position: relative;
     z-index: 2;
     letter-spacing: 0.4px;
     b {
       color: ${({ theme }) => theme.colors.whiteColor};
+      font-weight:${({ theme }) => theme.fontWeight.bold} ;
       letter-spacing: 0;
       text-transform: capitalize;
     }

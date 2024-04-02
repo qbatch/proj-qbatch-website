@@ -27,10 +27,8 @@ const CollaborationWrapper = styled.div`
           `}
       }
       p {
-        max-width: 736px;
+        max-width: 700px;
         margin: 0 auto;
-        font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        line-height: 24px;
       }
     }
     .collaboration-content {
@@ -84,8 +82,7 @@ const CollaborationWrapper = styled.div`
           line-height: 40px;
           letter-spacing: 0.4px;
           text-transform: inherit;
-          font-size:32px;
-          font-weight:300;  
+          font-weight: ${({ theme }) => theme.fontWeight.semiBold};
           ${media.sm`
           line-height:28px;
           margin-bottom:8px;
@@ -96,14 +93,8 @@ const CollaborationWrapper = styled.div`
           `}
         }
         p {
-          font-size: ${({ theme }) => theme.fonts.baseFontSize};
-          line-height: 24px;
           max-width: 585px;
           margin-bottom: 0;
-          ${media.xs`
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeXs}; 
-          line-height: 20px;
-          `}
         }
         .badges-gap {
           gap: 7px;

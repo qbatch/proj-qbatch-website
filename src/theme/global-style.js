@@ -11,10 +11,15 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${({ theme }) => theme.colors.backgroundColor};  
         box-sizing: border-box;
     }
-    h1,h2,h3,h4,h5,h6{
+    h1,h2 {
         font-weight:700;
         color:${({ theme }) => theme.colors.bodyTextVariant};
         text-transform: capitalize;
+    }
+    h3,h4,h5,h6 {
+      font-weight:600;
+      color:${({ theme }) => theme.colors.bodyTextVariant};
+      text-transform: capitalize;
     }
     a{
         color:${({ theme }) => theme.colors.primaryColor};
@@ -27,6 +32,7 @@ const GlobalStyles = createGlobalStyle`
       }
     h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH1};
+        line-height: 68px;
     }
     h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
@@ -36,7 +42,14 @@ const GlobalStyles = createGlobalStyle`
     }
     h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
-        letter-spacing : 0.14px ;
+        line-height: 32px;
+    }
+    h5, .text-h5{
+      font-size:${({ theme }) => theme.fonts.baseFontSizeSm}; 
+      line-height: 32px;
+    }
+    .text-xl {
+      font-size:${({ theme }) => theme.fonts.baseFontXl}; 
     }
     .text-h4-light{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
@@ -44,9 +57,9 @@ const GlobalStyles = createGlobalStyle`
         font-weight:${({ theme }) => theme.fontWeight.light} ;
     }
     p{
-       font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
-       color: ${({ theme }) => theme.colors.textMedium};   
-       letter-spacing : 0.14px ; 
+       color: ${({ theme }) => theme.colors.textMedium};
+       font-weight: ${({ theme }) => theme.fontWeight.normal};
+       line-height: 24px;
     }
     label,caption{
         font-size:${({ theme }) => theme.fonts.baseFontSize};      
@@ -73,11 +86,7 @@ const GlobalStyles = createGlobalStyle`
     .section-heading {
       h1 .text-h1{
         color: ${({ theme }) => theme.colors.primaryColor};
-        margin-bottom: 16px;
-      }
-      p {
-        line-height: 32px;
-        letter-spacing: 0.19px;
+        margin-bottom: 24px;
       }
     }
 
@@ -129,9 +138,6 @@ const GlobalStyles = createGlobalStyle`
       h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
       }
-      p{
-       font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
-      }
     }
     @media (max-width: 768px) {
       h1, .text-h1{
@@ -168,6 +174,9 @@ const GlobalStyles = createGlobalStyle`
       }
       h3, .text-h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm}
+      }
+      h5, .text-h5{
+        font-size:${({ theme }) => theme.fonts.baseFontSize}; 
       }
     }
     .fs-24{

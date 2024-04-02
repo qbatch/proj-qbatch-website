@@ -4,6 +4,7 @@ import { media } from "../../../theme/media-mixins";
 
 const ButtonWrapper = styled(Button)`
   background-color: ${({ theme }) => theme.colors.highlightColor};
+  color: ${({ theme }) => theme.colors.bodyTextVariant};
   border-radius: 50px;
   font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   min-width: 162px;

@@ -16,7 +16,7 @@ const ProvenExperienceWrapper = styled.div`
     padding: 48px;
     background-color: ${({ theme }) => theme.colors.whiteColor};
     border-radius: 24px 24px 0 24px;
-    min-height: 363px;
+    min-height: 350px;
     .client-image {
       border-radius: 160px;
       height: 158px;
@@ -25,9 +25,7 @@ const ProvenExperienceWrapper = styled.div`
       object-position: center;
     }
     .testimonial-text {
-      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       font-weight: 300;
-      line-height: 32px;
       color: ${({ theme }) => theme.colors.bodyLight};
     }
     @media (max-width: 1399px) {
