@@ -15,6 +15,9 @@ const LanguagesWrapper = styled.div`
   }
   .languages-header {
     margin-bottom: 76px;
+    ${media.md`
+      margin-bottom: 40px;
+    `}
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 30px;
@@ -104,9 +107,15 @@ const LanguagesWrapper = styled.div`
     margin-bottom: 46px;
     div {
       min-height: 85px;
+      ${media.md`
+        min-height: 74px;
+      `}
     }
     img {
       margin-bottom: 20px;
+      ${media.md`
+        max-width: 85%;
+      `}
     }
     p {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
@@ -119,7 +128,25 @@ const LanguagesWrapper = styled.div`
       display: block;
     `}
     h3 {
-      margin-bottom: 52px;
+      margin-bottom: 0;
+    }
+    .languages-collapse {
+      .accordion-button {
+        padding: 12px 16px;
+        font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+        color: ${({ theme }) => theme.colors.bodyTextVariant};
+        
+        &:not(.collapsed) {
+          box-shadow: none;
+          background-color: transparent;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .accordion-body {
+        padding: 32px 16px 0;
+      }
     }
   }
   .languages-btn {
