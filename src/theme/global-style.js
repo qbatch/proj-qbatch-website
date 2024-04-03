@@ -142,6 +142,7 @@ const GlobalStyles = createGlobalStyle`
     @media (max-width: 768px) {
       h1, .text-h1{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
+        line-height: 40px;
       }
       h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
