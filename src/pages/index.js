@@ -19,8 +19,7 @@ import StartProject from '../components/PagesComponent/StartProject'
 
 const IndexPage = () => {
   const homeData = Queries()
-  const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
-  const seoData = seo
+  const { schema } = homeData.allStrapiHome.nodes[0] || {}
   const schemaData = schema
   function replaceUnderscoreWithAt(obj) {
     if (obj && typeof obj === 'object') {
@@ -85,7 +84,32 @@ const IndexPage = () => {
          eventBoothNo2='814'
         /> */}
       </Layout>
-      <SEO
+    </>
+  )
+}
+export const Head = () => {
+    const homeData = Queries()
+  const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
+  const seoData = seo
+  const schemaData = schema
+  function replaceUnderscoreWithAt(obj) {
+    if (obj && typeof obj === 'object') {
+      if (Array.isArray(obj)) {
+        return obj.map((item) => replaceUnderscoreWithAt(item))
+      } else {
+        const updatedObj = {}
+        for (const [key, value] of Object.entries(obj)) {
+          updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
+        }
+        return updatedObj
+      }
+    } else {
+      return obj
+    }
+  }
+  const transformedObject = replaceUnderscoreWithAt(schemaData)
+  return (
+    <SEO
         title={seoData.metaTitle}
         description={seoData.metaDescription}
         keywords={seoData.keywords}
@@ -101,7 +125,6 @@ const IndexPage = () => {
             </Script>
           ))}
       </SEO>
-    </>
   )
 }
 
