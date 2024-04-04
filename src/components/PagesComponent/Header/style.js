@@ -7,7 +7,7 @@ const HeaderWrapper = styled.header`
   background-color: ${({ theme }) => theme.colors.backgroundColor};
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 99999;
   box-sizing: border-box;
 
   .header-main {

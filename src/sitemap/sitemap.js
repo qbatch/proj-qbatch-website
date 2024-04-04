@@ -9,19 +9,19 @@ const Sitemap = () => {
         <Link to="/"><img src="/page-icon.svg" />Home</Link>
       </div>
       <div className="sitemap-link">
-        <Link to="/sitemap-services.xml"><img src="/folder-icon.svg" />Services</Link>
+        <Link to="/sitemap-services.html"><img src="/folder-icon.svg" />Services</Link>
       </div>
       <div className="sitemap-link">
-        <Link to="/sitemap-blog.xml"><img src="/folder-icon.svg" />Blog</Link>
+        <Link to="/sitemap-blog.html"><img src="/folder-icon.svg" />Blog</Link>
       </div>
       <div className="sitemap-link">
-        <Link to="/sitemap-authors.xml"><img src="/folder-icon.svg" />Authors</Link>
+        <Link to="/sitemap-authors.html"><img src="/folder-icon.svg" />Authors</Link>
       </div>
       <div className="sitemap-link">
-        <Link to="/sitemap-events.xml"><img src="/folder-icon.svg" />Events</Link>
+        <Link to="/sitemap-events.html"><img src="/folder-icon.svg" />Events</Link>
       </div>
       <div className="sitemap-link">
-        <Link to="/sitemap-pages.xml"><img src="/folder-icon.svg" />Pages</Link>
+        <Link to="/sitemap-pages.html"><img src="/folder-icon.svg" />Pages</Link>
       </div>
     </>
   );

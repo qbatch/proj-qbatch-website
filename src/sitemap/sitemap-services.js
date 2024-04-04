@@ -20,7 +20,7 @@ const ServicesSitemap = ({ data }) => {
 
   return (
     <>
-    <Link className="back-btn" to="/sitemap.xml"><img src="/back-arrow-sitemap.svg" />Back</Link>
+    <Link className="back-btn" to="/sitemap.html"><img src="/back-arrow-sitemap.svg" />Back</Link>
       {pages}
     </>
   );
