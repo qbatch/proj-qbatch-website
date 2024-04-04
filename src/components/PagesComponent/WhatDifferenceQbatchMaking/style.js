@@ -6,7 +6,7 @@ const QbatchMakingWrapper = styled.div`
   .container-padding {
     padding: 120px 0;
     ${media.sm`
-      padding: 60px 0;
+      padding: 40px 0;
     `}
   }
   .section-heading {
@@ -16,7 +16,7 @@ const QbatchMakingWrapper = styled.div`
       margin: auto;
     }
     ${media.xs`
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     `}
     .heading {
       margin-bottom: 24px;
@@ -38,6 +38,9 @@ const QbatchMakingWrapper = styled.div`
       &:last-child{
         margin-bottom: 0;
       }
+      ${media.xs`
+        margin-bottom: 16px;
+      `}
       p {
         ${media.xs`
           font-size: 12px;

@@ -72,6 +72,7 @@ const ProvenExperienceWrapper = styled.div`
       color: ${({ theme }) => theme.colors.textMedium};
       border-radius: 2px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+      font-weight:${({ theme }) => theme.fontWeight.light};
       white-space: nowrap;
     }
   }

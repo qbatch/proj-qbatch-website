@@ -6,7 +6,7 @@ const ProblumSolvingWrapper = styled.div`
   padding: 96px 0 96px;
   overflow: hidden;
   ${media.md`
-   padding: 100px 0;
+   padding: 60px 0;
   `}
 
   .quote {

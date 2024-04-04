@@ -57,7 +57,7 @@ const StartProjectWrapper = styled.div`
       padding-top: 0;
     `}
     ${media.xs`
-      padding-bottom: 60px;
+      padding-bottom: 40px;
     `}
     .testimonial-heading {
       margin-bottom: 29px;

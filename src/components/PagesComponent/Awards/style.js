@@ -74,7 +74,8 @@ position: relative;
           width:84px;
           height:84px ;
           ${media.xs`
-           height: 65px;
+            height: 65px;
+            width:65px;
           `}
         }
       }

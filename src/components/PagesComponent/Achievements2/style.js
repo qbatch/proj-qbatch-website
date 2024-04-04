@@ -11,7 +11,7 @@ const AchievementsWrapper = styled.div`
     text-align: center;
     position: relative;
     ${media.sm`
-      padding: 60px 0 0;
+      padding: 40px 0 8px;
     `}
     .achievements-inner-wrapper {
       position: relative;
@@ -50,7 +50,7 @@ const AchievementsWrapper = styled.div`
         width: 40%;
       `}
       ${media.xs`
-        margin-bottom: 40px;
+        margin-bottom: 32px;
         width: 100%;
       `}
       &:last-child::after {

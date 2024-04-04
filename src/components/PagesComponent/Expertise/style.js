@@ -20,6 +20,10 @@ const ExpertiseWrapper = styled.section`
     ${media.md`
       margin-right: 32px;
     `}
+    ${media.sm`
+      margin-bottom: 24px;
+      text-align: center;
+    `}
   }
   .skill-section {
     position: relative;
@@ -34,6 +38,7 @@ const ExpertiseWrapper = styled.section`
       color: ${({ theme }) => theme.colors.bodyLight};
       border-radius: 2px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+      font-weight:${({ theme }) => theme.fontWeight.light} ;
     }
     &::after {
       content: "";

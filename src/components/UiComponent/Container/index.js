@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 
 const Container = styled.div`
-  padding: 0 144px;
+  padding: 0 96px;
   height:100%;
   ${media.lg`
   padding: 0 80px;

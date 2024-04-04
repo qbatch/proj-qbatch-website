@@ -28,6 +28,9 @@ const WhatWeDoWrapper = styled.div`
   .services-provided {
     .service {
       margin-top: 56px;
+      ${media.sm`
+        margin-top: 24px;
+    `}
       img {
         max-width: 60px;
       }
@@ -44,7 +47,6 @@ const WhatWeDoWrapper = styled.div`
         .paragraph {
           color: ${({ theme }) => theme.colors.textMedium};
           white-space: pre-line;
-          text-transform: capitalize;
           line-height: 24px;
           font-size: 16px;
           ${media.sm`
