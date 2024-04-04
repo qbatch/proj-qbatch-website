@@ -272,7 +272,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
-
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,
