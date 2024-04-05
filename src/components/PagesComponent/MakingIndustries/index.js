@@ -64,7 +64,7 @@ const Index = () => {
             <div className="arrow-section">
               {industries.map((title, i) => (
                   <div className="d-flex justify-content-between arrow-box-section" key={i}>
-                    <div className="d-flex gap-3 mb-3">
+                    <div className="d-flex gap-3 mb-sm-3 mb-2">
                       <title.img />
                       <h3 className="text-h4"> {title.title}</h3>
                     </div>

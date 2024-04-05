@@ -56,9 +56,9 @@ const Index = () => {
           <Row>
             <Col lg={5} md={12} sm={12} xs={12}>
               <h2 className="color-primary heading text-h1">Expertise to ace your next project</h2>
-              <div className="pt-lg-4 pb-lg-0 pb-5">
-                {/* <Button text="Explore More" /> */}
-              </div>
+              {/* <div className="pt-lg-4 pb-lg-0 pb-5">
+                <Button text="Explore More" />
+              </div> */}
             </Col>
             <Col lg={7} md={12} sm={12} xs={12}>
               {experties.map((list, i) => {

@@ -13,6 +13,7 @@ const DedicatedDeveloperWrapper = styled.div`
     ${media.sm`
     animation:none;
     background-size: cover;
+    height: auto;
     `}
       @keyframes shrink {
         0% {
@@ -30,6 +31,10 @@ const DedicatedDeveloperWrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: 100vh;
+    ${media.sm`
+      padding: 96px 0;
+      height: auto;
+    `}
     h1 {
       color: ${({ theme }) => theme.colors.whiteColor};
       text-align: center;

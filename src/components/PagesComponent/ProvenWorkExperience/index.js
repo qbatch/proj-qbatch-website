@@ -89,7 +89,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn }) => {
             <p className="paragraph">{paragraph}</p>
           </div>
           {!exploreBtn ?
-            <div className="mt-md-4 mt-0">
+            <div className="mt-md-4 mt-3">
               <Button onClick={() => navigate('/portfolio')} text="Explore More" />
             </div>
             :

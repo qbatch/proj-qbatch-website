@@ -53,7 +53,7 @@ const IndexPage = () => {
         <Expertise />
         <ProblumSolving
           text={
-            <p className="text-h2 quote">
+            <p className="text-h2 quote mb-0">
               We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
               you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
             </p>
