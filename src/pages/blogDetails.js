@@ -11,20 +11,21 @@ import  { Queries }  from "../constants/queries";
 const BlogDetails = ({ pageContext }) => {
   
     const path = pageContext?.title;
+    console.log(pageContext,"path")
     const blogQuery = Queries()
-    const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.seo.slug === `${path}`)
-  function progressBarScroll() {
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
-      height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
-      scrolled = (winScroll / height) * 100
-    document.getElementById('progressBar').style.width = scrolled + 5 + '%'
-  }
-  useEffect(() => {
-    window.addEventListener('scroll', progressBarScroll)
-    return () => {
-      window.removeEventListener('scroll', progressBarScroll)
-    }
-  }, [])
+    const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.slug === `${path}`)
+  // function progressBarScroll() {
+  //   let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+  //     height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+  //     scrolled = (winScroll / height) * 100
+  //   document.getElementById('progressBar').style.width = scrolled + 5 + '%'
+  // }
+  // useEffect(() => {
+  //   window.addEventListener('scroll', progressBarScroll)
+  //   return () => {
+  //     window.removeEventListener('scroll', progressBarScroll)
+  //   }
+  // }, [])
     if (!blogData) {
         return <PageNotFound />
       }
@@ -48,13 +49,13 @@ export const Head = ({ pageContext }) => {
   const { title } = pageContext;
   const blogQuery = Queries()
   const allStrapiArticleNodes = blogQuery.allStrapiArticle.nodes
-  const blogData = allStrapiArticleNodes.find((node) => node.seo.slug === `${path}`)
-  const blogSeoData = allStrapiArticleNodes.find((node) => node.seo.slug === `${path}`)
+  const blogData = allStrapiArticleNodes.find((node) => node.slug === `${path}`)
+  const blogSeoData = allStrapiArticleNodes.find((node) => node.slug === `${path}`)
   const seoData = blogSeoData?.seo
   const seoImage = blogData?.blogImg?.localFile.url
   return (
     <SEO
-      title={seoData?.metaTitle}
+      // title={seoData?.metaTitle}
       description={seoData?.metaDescription}
       keywords={blogData?.blogData}
       pathname={`/blog${title}`}

@@ -20,6 +20,7 @@
     "bootstrap": "^5.3.0",
     "dotenv": "^16.3.1",
     "gatsby": "^5.13.0",
+    "gatsby-plugin-draft": "^0.2.0",
     "gatsby-plugin-google-tagmanager": "^5.12.3",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",

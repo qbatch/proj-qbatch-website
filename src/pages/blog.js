@@ -18,19 +18,22 @@ const BlogPage = ({ pageContext }) => {
 
   const blogArticle = Queries()
   const blogData = blogArticle.allStrapiArticle.nodes;
-  const filteredData = blogData.filter((item) => item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()));
+  const filteredData = blogData?.filter((item) => item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()));
 
-  const uniqueCategories = blogData.reduce((acc, obj) => {
-    if (!acc.find((item) => item.category.categoryName === obj.category.categoryName)) {
+  const uniqueCategories = blogData?.reduce((acc, obj) => {
+    if (!acc.find((item) => item.category?.categoryName === obj.category?.categoryName)) {
       acc.push(obj)
     }
     return acc
   }, [])
 
-  uniqueCategories.sort((a, b) => (a.category === 'ALL' ? -1 : b.category === 'ALL' ? 1 : 0))
+  uniqueCategories?.sort((a, b) => (a.category === 'ALL' ? -1 : b.category === 'ALL' ? 1 : 0))
   function capitalizeFirstLetter(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1)
+    return str?.charAt(0).toUpperCase() + str?.slice(1)
   }
+
+  console.log(filteredData,"blogArticle")
+
   return (
     <Layout>
       <BlogBanner />
@@ -47,17 +50,17 @@ const BlogPage = ({ pageContext }) => {
               >
                 All
               </button>
-              {uniqueCategories.map((tabs) => {
+              {uniqueCategories?.map((tabs) => {
                 return (
                   <>
                     <button
-                      className={`tabs-buttons ${activeTab === tabs.category.categoryName ? 'active' : ''}`}
+                      className={`tabs-buttons ${activeTab === tabs.category?.categoryName ? 'active' : ''}`}
                       onClick={() => {
-                        setActiveTab(tabs.category.categoryName)
+                        setActiveTab(tabs.category?.categoryName)
                         navigate(`/blog/${tabs.category.slug}`)
                       }}
                     >
-                      {capitalizeFirstLetter(tabs.category.categoryName)}
+                      {capitalizeFirstLetter(tabs.category?.categoryName)}
                     </button>
                   </>
                 )
@@ -65,9 +68,9 @@ const BlogPage = ({ pageContext }) => {
             </div>
             <div>
               {location.pathname === '/blog/' ? (
-                <BlogAll data={filteredData} />
+              filteredData &&  <BlogAll data={filteredData} />
               ) : (
-                <BlogCards heading={activeTab} data={filteredData} />
+               filteredData && <BlogCards heading={activeTab} data={filteredData} /> 
               )}
             </div>
           </div>
@@ -90,7 +93,7 @@ export const Head = () => {
   const seoData = categoryPath ? categoryFilter[0]?.seo : blogSeo.allStrapiBlog.nodes[0]?.seo
   return (
     <SEO
-      title={seoData.metaTitle}
+      // title={seoData.metaTitle}
       description={seoData.metaDescription}
       keywords={seoData.keywords}
       language={seoData.language}

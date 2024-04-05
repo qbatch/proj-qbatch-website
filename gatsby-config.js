@@ -54,6 +54,7 @@ const strapiConfig = {
     {
       singularName: 'article',
       queryParams: {
+      publicationState: process.env.GATSBY_IS_PREVIEW === "true" ? "live" : "preview",
         populate: '*',
       },
     },
@@ -270,7 +271,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
-
+    'gatsby-plugin-draft',
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,

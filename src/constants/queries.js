@@ -24,6 +24,7 @@ export const Queries = () => {
                blogDescription
              }
            }
+           slug
            user {
              username
              name
