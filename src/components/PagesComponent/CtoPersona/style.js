@@ -71,7 +71,7 @@ const PersonaWrapper = styled.div`
     ${media.sm`
             min-height: 320px;
         `}
-    h4 {
+    h3 {
       line-height: 32px;
       min-height: 64px;
       @media screen and (max-width: 1540px) {

@@ -15,7 +15,7 @@ const GrowingTechWrapper = styled.div`
     padding: 96px 20px;
   `}
 
-  h1 {
+  h2 {
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 900px;
     margin-bottom: 52px;

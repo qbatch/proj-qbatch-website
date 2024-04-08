@@ -10,6 +10,13 @@ const ChooseCtoWrapper = styled.div`
     letter-spacing: 0.3px;
     margin-bottom: 24px;
   }
+  .sub-heading{
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+    margin-bottom: 16px;
+    display: block;
+    color:  ${({ theme }) => theme.colors.textMedium};
+  }
   h2 {
     max-width: 550px;
     line-height: 52px;

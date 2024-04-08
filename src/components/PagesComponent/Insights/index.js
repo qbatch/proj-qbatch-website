@@ -103,7 +103,7 @@ const Index = () => {
                 <div className="inner">
                   <img className="card-img" src={card.blogImg?.localFile.url} alt={card.blogTitle} />
                   <div className="inner-content">
-                    <h6 className="heading">{card.blogTitle}</h6>
+                    <h3 className="heading">{card.blogTitle}</h3>
                     <PrimaryButton
                       borderbottom
                       text="Explore More"

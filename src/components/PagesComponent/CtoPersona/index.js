@@ -79,7 +79,7 @@ const persona = [
               return (
                 <Col lg={4} md={6} sm={12}>
                   <div className="persona-box" key={index}>
-                    <h4>{persona.title}</h4>
+                    <h3 className="text-h4">{persona.title}</h3>
                     <ul className="persona-list">
                       {persona.list.map((service, index) => (
                         <li data-icon="-" key={index}>

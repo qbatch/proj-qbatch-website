@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <GrowingTechWrapper>
       <Container>
-        <h1>Hesitant about growing the tech side of your business?</h1>
+        <h2 className="text-h1">Hesitant about growing the tech side of your business?</h2>
         <Button onClick={() => navigate('/contact')} text="Get Unbiased Consultation" className="secondary-btn" />
       </Container>
     </GrowingTechWrapper>
