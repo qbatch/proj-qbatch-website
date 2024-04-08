@@ -17,7 +17,7 @@ const BlogPage = ({ pageContext }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const blogArticle = Queries()
-  const blogData = blogArticle.allStrapiArticle.nodes;
+  const blogData = blogArticle.allStrapiArticles.nodes;
   const filteredData = blogData?.filter((item) => item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()));
 
   const uniqueCategories = blogData?.reduce((acc, obj) => {
@@ -31,9 +31,6 @@ const BlogPage = ({ pageContext }) => {
   function capitalizeFirstLetter(str) {
     return str?.charAt(0).toUpperCase() + str?.slice(1)
   }
-
-  console.log(filteredData,"blogArticle")
-
   return (
     <Layout>
       <BlogBanner />
@@ -94,10 +91,10 @@ export const Head = () => {
   return (
     <SEO
       // title={seoData.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      robots={seoData.metaRobots}
+      description={seoData?.metaDescription}
+      keywords={seoData?.keywords}
+      language={seoData?.language}
+      robots={seoData?.metaRobots}
       pathname={location.pathname}
     />
   )

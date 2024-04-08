@@ -35,6 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
             seo {
               slug
             }
+            slug
             category {
               categoryName
               slug

@@ -11,21 +11,20 @@ import  { Queries }  from "../constants/queries";
 const BlogDetails = ({ pageContext }) => {
   
     const path = pageContext?.title;
-    console.log(pageContext,"path")
     const blogQuery = Queries()
     const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.slug === `${path}`)
-  // function progressBarScroll() {
-  //   let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
-  //     height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
-  //     scrolled = (winScroll / height) * 100
-  //   document.getElementById('progressBar').style.width = scrolled + 5 + '%'
-  // }
-  // useEffect(() => {
-  //   window.addEventListener('scroll', progressBarScroll)
-  //   return () => {
-  //     window.removeEventListener('scroll', progressBarScroll)
-  //   }
-  // }, [])
+  function progressBarScroll() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+      height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+      scrolled = (winScroll / height) * 100
+    document.getElementById('progressBar').style.width = scrolled + 5 + '%'
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', progressBarScroll)
+    return () => {
+      window.removeEventListener('scroll', progressBarScroll)
+    }
+  }, [])
     if (!blogData) {
         return <PageNotFound />
       }

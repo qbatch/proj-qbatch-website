@@ -15,7 +15,6 @@ const Index = (props) => {
 
   const BlogPost = ({ card, ind }) => {
     const customDate = new Date(card.publishedAt)
-    console.log(card.slug,"card")
     return (
       <Col md={6}>
         <div className="inner" key={ind}>

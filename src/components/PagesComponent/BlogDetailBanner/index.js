@@ -14,10 +14,10 @@ const Index = ({ data }) => {
     const customCrumbs = [
       { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
       { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
-      { pathname: `/blog/${data?.category?.slug}`, crumbLabel: data?.category.categoryName, crumbSeparator: '> ' },
-      { pathname: `/blog${data?.seo.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
+      { pathname: `/blog/${data?.category?.slug}`, crumbLabel: data?.category?.categoryName, crumbSeparator: '> ' },
+      { pathname: `/blog${data?.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
     ]
-
+    
   return (
     <BlogDetailsWrapper>
       <Container>
@@ -55,7 +55,7 @@ const Index = ({ data }) => {
               ))}
             </div>
             <div className="author-name">
-              <span>{data?.user.name}</span>
+              <span>{data?.user?.name}</span>
             </div>
           </div>
         </div>
