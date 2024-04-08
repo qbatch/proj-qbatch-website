@@ -54,7 +54,7 @@ export const Head = ({ pageContext }) => {
   const seoImage = blogData?.blogImg?.localFile.url
   return (
     <SEO
-      // title={seoData?.metaTitle}
+      title={seoData?.metaTitle}
       description={seoData?.metaDescription}
       keywords={blogData?.blogData}
       pathname={`/blog${title}`}
