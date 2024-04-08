@@ -93,5 +93,9 @@ const StartProjectWrapper = styled.div`
   .collapse-radio {
     margin-bottom: 11px;
   }
+  .error-msg {
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+    color: ${({ theme }) => theme.colors.dangerColor};
+  }
 `
 export default StartProjectWrapper;
