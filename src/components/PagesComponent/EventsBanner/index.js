@@ -82,7 +82,7 @@ const Index = ({ eventLogo1, eventName1, eventBoothNo1, eventDate1, eventLogo2, 
               <ArrowRight />
             </button>
           </div>
-          <img className='flag' src='/us-flag.svg' />
+          <img className='flag' src='/us-flag.webp' />
         </div>
       </div>
 

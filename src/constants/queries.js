@@ -15,7 +15,7 @@ export const Queries = () => {
            }
          }
        }
-       allStrapiArticle {
+         allStrapiArticle {
          nodes {
            updatedAt
            blogTitle
@@ -24,6 +24,7 @@ export const Queries = () => {
                blogDescription
              }
            }
+           slug
            user {
              username
              name

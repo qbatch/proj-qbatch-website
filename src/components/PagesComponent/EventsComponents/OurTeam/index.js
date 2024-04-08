@@ -12,7 +12,7 @@ const OurTeam = () => {
           <Row>
             <Col md={6}>
               <div className='inner-box-wrapper'>
-                <img className='boss-img' src="/ceo.svg" alt='CTO' />
+                <img className='boss-img' src="/ceo.webp" alt='CTO' />
                 <div className='inner-box'>
                   <div className='inner-box-header'>
                     <h3 className='name'>Ibrahim Zahoor</h3>
@@ -27,7 +27,7 @@ const OurTeam = () => {
             </Col>
             <Col md={6}>
               <div className='inner-box-wrapper'>
-                <img className='boss-img' src="/cto.svg" alt='CTO' />
+                <img className='boss-img' src="/cto.webp" alt='CTO' />
                 <div className='inner-box'>
                   <div className='inner-box-header'>
                     <h3 className='name'>Hassan Akram</h3>

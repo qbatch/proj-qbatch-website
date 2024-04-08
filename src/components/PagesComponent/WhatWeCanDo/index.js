@@ -28,9 +28,10 @@ const Index = () => {
                 <Col xl={4} md={6} sm={12} key={i}>
                   <div className={i !== 5 ? "service" : ""}>
                     {i === 5 ? (
-                      <div className="services-btn">
-                        {/* <Button text="View All Services" /> */}
-                      </div>
+                      // <div className="services-btn">
+                      //   <Button text="View All Services" />
+                      // </div>
+                      ""
                     ) : (
                       <div className="d-flex align-items-start">
                         <div className="mt-2">

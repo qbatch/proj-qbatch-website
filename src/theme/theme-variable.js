@@ -1,5 +1,6 @@
-const fsxl = "56px";
-const fsh1 = "64px";
+const fsNumber = "72px";
+const fsxl = "64px";
+const fsh1 = "56px";
 const fsh2 = "40px";
 const fsh3 = "32px";
 const fslg = "24px";
@@ -39,6 +40,7 @@ const theme = {
     baseFontSizeMediumSmal: fsx,
     baseFontSizeXs: fsXxs,
     baseFontXl: fsxl,
+    baseFontNumber: fsNumber
   },
   fontWeight: {
     light: 300,

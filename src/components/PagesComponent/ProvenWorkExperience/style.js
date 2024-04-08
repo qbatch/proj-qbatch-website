@@ -10,8 +10,6 @@ const ProvenExperienceWrapper = styled.div`
     }
     .paragraph {
       margin-bottom: 0;
-      color: ${({ theme }) => theme.colors.bodyText};
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     }
 
     ${media.sm`
@@ -74,6 +72,7 @@ const ProvenExperienceWrapper = styled.div`
       color: ${({ theme }) => theme.colors.textMedium};
       border-radius: 2px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+      font-weight:${({ theme }) => theme.fontWeight.light};
       white-space: nowrap;
     }
   }

@@ -36,7 +36,7 @@ const Index = (props) => {
                       </defs>
                       <text>
                         <textPath href="#circle">
-                          Launch Your Idea! . Launch Your Idea! . Launch Your Idea! . Launch Your I.kKdFCP
+                         . Launch Your Idea! . Launch Your Idea! . Launch Your Idea! . Launch Your Idea! .
                           .creative-content .creative-quotedea! .
                         </textPath>
                       </text>

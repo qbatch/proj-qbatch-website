@@ -8,11 +8,13 @@ const siteMetadata = {
   language: `en-us`,
   defaultImage: `https://cms.qbatch.com/uploads/Your_Idea_820_03532d7cf6.jpg`,
 };
+
   env = require('dotenv').config({
     path: require('path').join(__dirname, '.env'),
   })
 
 const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken, GOOGLE_TAG_ID: googleTagId } = process.env
+
 const strapiConfig = {
   apiURL,
   accessToken,
@@ -54,6 +56,7 @@ const strapiConfig = {
     {
       singularName: 'article',
       queryParams: {
+      publicationState: process.env.GATSBY_IS_PREVIEW === "true" ? "preview" : "preview",
         populate: '*',
       },
     },
@@ -270,7 +273,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
-
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,

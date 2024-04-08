@@ -28,7 +28,7 @@ const Index = ({ innerPage, page, mainHeading }) => {
             <div className="achievements-col">
                 <span className="heading">
                   3
-                    <span className="color-danger fw-light ms-2">/</span>
+                    <span className="color-danger fw-light mx-2">/</span>
                     4
                 </span>
                 <p>Customers stay for future projects</p>

@@ -13,6 +13,7 @@ const DedicatedDeveloperWrapper = styled.div`
     ${media.sm`
     animation:none;
     background-size: cover;
+    height: auto;
     `}
       @keyframes shrink {
         0% {
@@ -30,6 +31,10 @@ const DedicatedDeveloperWrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: 100vh;
+    ${media.sm`
+      padding: 96px 0;
+      height: auto;
+    `}
     h1 {
       color: ${({ theme }) => theme.colors.whiteColor};
       text-align: center;
@@ -41,14 +46,14 @@ const DedicatedDeveloperWrapper = styled.div`
         padding-left: 8px;
       }
     }
-    p {
-      color: ${({ theme }) => theme.colors.whiteColor};
+    h2 {
+      color: ${({ theme }) => theme.colors.dividerColor};
       letter-spacing: 0px;
       text-align: center;
-      max-width: 933px;
+      max-width: 810px;
       padding: 24px 0px;
       margin: 0 auto;
-      margin-bottom: 44px;
+      margin-bottom: 24px;
     }
   }
 `

@@ -45,7 +45,7 @@ const index = ({ data }) => {
               </div>
               <div className="d-flex align-items-center justify-content-between flex-wrap gap-4">
                 <div className="author-name">
-                  <span> <img/> {item.user.name}</span>
+                  <span> <img/> {item.user?.name}</span>
                   <span>{moment(item.publishedAt).format('DD MMMM, YYYY')}</span>
                 </div>
                 <Button

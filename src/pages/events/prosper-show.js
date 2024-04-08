@@ -5,7 +5,7 @@ import EventsForm from '../../components/PagesComponent/EventsComponents/EventsF
 import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import SoftwareSolutions from '../../components/PagesComponent/EventsComponents/SoftwareSolutions';
-// import BusinessExperience from '../../components/PagesComponent/EventsComponents/BusinessExperiences';
+import BusinessExperience from '../../components/PagesComponent/EventsComponents/BusinessExperiences';
 import OurTeam from '../../components/PagesComponent/EventsComponents/OurTeam';
 import WhatToExpect from '../../components/PagesComponent/EventsComponents/WhatToExpectBoxes';
 import PreviousEvents from '../../components/PagesComponent/EventsComponents/PreviousEvents';
@@ -23,7 +23,7 @@ const WLevent = () => {
   return (
     <Layout>
       <EventsBanner
-       backgroundImage='/prosper-event-banner-img.svg'
+       backgroundImage='/prosper-event-banner-img.webp'
        eventName="Prosper Show"
        eventLogo={EventImg}
        boothNumber="814"
@@ -39,17 +39,17 @@ const WLevent = () => {
         eventName="Prosper Show"
       />
       <SoftwareSolutions/>
-      {/* <BusinessExperience
+      <BusinessExperience
         dark
         sectionBackground="/experience-bg-2.svg"
         backgroundIcons="/business-experience-bg-icons.svg"
-      /> */}
+      />
       <OurTeam/>
       <WhatToExpect
         paragraph="Prosper Show is a unique networking and educational platform for established marketplace sellers focused on maximizing profits, outdoing competition, and increasing brand footprint. Team Qbatch looks forward to meeting you there — don't miss this chance to take your business to the next level!"
         innerContentData={innerContentDataBox}
       />
-      {/* <PreviousEvents/> */}
+      <PreviousEvents/>
       <CalendarSchedule
       eventName="Prosper Show 2024"
         widgetUrl="https://calendly.com/qbatch/prosper-show-2024?month=2024-03"
