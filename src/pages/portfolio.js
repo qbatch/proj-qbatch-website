@@ -48,7 +48,7 @@ export const Head = () => {
       language={seoData.language}
       robots={seoData.metaRobots}
       pathname={seoData.slug}
-      image={seoData.metaimage[0].localFile.url}
+      image={seoData.metaimage[0].localFile?.url}
     />
   )
 }

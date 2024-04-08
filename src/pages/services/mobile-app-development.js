@@ -20,7 +20,7 @@ import Banner from "../../components/PagesComponent/PageBanner";
 import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
 import DedicatedMobileDevelopers from "../../components/PagesComponent/DedicatedMobileDevelopers";
 import MultiplePlatformSolutions from "../../components/PagesComponent/MultiplePlatformSolutions";
-import BannerImage from "../../../static/mobile-app-banner.png";
+import BannerImage from "../../../static/mobile-app-banner.webp";
 
 import {
   lostToLaunchedItems,

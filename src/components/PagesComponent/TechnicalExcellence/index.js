@@ -19,7 +19,7 @@ const Index = (props) => {
           <Col lg={6}>
             <div className="technical-paragraph">
               {title && (
-                <h4>
+                <h3>
                   Do you know?{" "}
                   <a
                     href="https://www.deloitte.com/an/en/our-thinking/insights/topics/leadership/digital-transformation-topics-for-corporate-technology-leadership.html"
@@ -29,7 +29,7 @@ const Index = (props) => {
                   </a>{" "}
                   company leaders are not sure if technology is well integrated
                   into their systems or not. Are you sure about yours?
-                </h4>
+                </h3>
               )}
               <p>{paragraph1}</p>
               <p>{paragraph2}</p>

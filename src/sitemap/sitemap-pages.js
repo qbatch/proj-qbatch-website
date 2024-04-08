@@ -16,7 +16,8 @@ const SitemapPages = ({ data }) => {
     "/sitemap-authors.xml", 
     "/authors/",
     "/dev-404-page",
-    "/404.html"
+    "/404.html",
+    "/blogDetails"
   ];
 
   const pages = allSitePage.nodes.map((node) => {
@@ -34,7 +35,7 @@ const SitemapPages = ({ data }) => {
 
   return (
     <>
-     <Link className="back-btn" to="/sitemap.xml"><img src="/back-arrow-sitemap.svg" />Back</Link>
+     <Link className="back-btn" to="/sitemap.html"><img src="/back-arrow-sitemap.svg" />Back</Link>
       {pages}
     </>
   );

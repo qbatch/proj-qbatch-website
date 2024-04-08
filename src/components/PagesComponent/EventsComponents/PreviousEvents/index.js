@@ -38,7 +38,7 @@ const PreviousEvents = () => {
             <img src="/gallery-img-1.jpg" alt="Image 1" />
           </div>
           <div className='slide'>
-            <img src="/gallery-img-2.jpg" alt="Image 2" />
+            <img src="/gallery-img-2.webp" alt="Image 2" />
           </div>
           <div className='slide'>
             <img src="/gallery-img-3.jpg" alt="Image 3" />

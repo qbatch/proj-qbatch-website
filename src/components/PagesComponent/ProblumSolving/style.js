@@ -6,18 +6,18 @@ const ProblumSolvingWrapper = styled.div`
   padding: 96px 0 96px;
   overflow: hidden;
   ${media.md`
-   padding: 100px 0;
+   padding: 60px 0;
   `}
 
   .quote {
     color: ${({ theme }) => theme.colors.dividerColor};
-    font-weight: 400;
     line-height: 52px;
     position: relative;
     z-index: 2;
     letter-spacing: 0.4px;
     b {
       color: ${({ theme }) => theme.colors.whiteColor};
+      font-weight:${({ theme }) => theme.fontWeight.bold} ;
       letter-spacing: 0;
       text-transform: capitalize;
     }

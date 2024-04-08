@@ -3,27 +3,27 @@ const path = require('path')
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   createPage({
-    path: "/sitemap.xml",
+    path: "/sitemap.html",
     component: require.resolve("./src/sitemap/sitemap.js"),
   });
   createPage({
-    path: "/sitemap-services.xml",
+    path: "/sitemap-services.html",
     component: require.resolve("./src/sitemap/sitemap-services.js"),
   });
   createPage({
-    path: "/sitemap-blog.xml",
+    path: "/sitemap-blog.html",
     component: require.resolve("./src/sitemap/sitemap-blog.js"),
   });
   createPage({
-    path: "/sitemap-pages.xml",
+    path: "/sitemap-pages.html",
     component: require.resolve("./src/sitemap/sitemap-pages.js"),
   });
   createPage({
-    path: "/sitemap-authors.xml",
+    path: "/sitemap-authors.html",
     component: require.resolve("./src/sitemap/sitemap-authors.js"),
   });
   createPage({
-    path: "/sitemap-events.xml",
+    path: "/sitemap-events.html",
     component: require.resolve("./src/sitemap/sitemap-events.js"),
   });
 

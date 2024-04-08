@@ -32,14 +32,14 @@ const Index = () => {
             <div className="leaders-cards-wrapper">
               <LeaderCard
                 title="Ibrahim Zahoor"
-                profile="/ceo.svg"
+                profile="/ceo.webp"
                 designation="CEO & Co-Founder"
                 socialLink="https://qbatch.com/events/white-label-world-expo/#event-form"
                 aboutText="“With a wealth of experience streamlining crucial E-commerce business processes, I offer a reliable approach to simplify complex tasks and operations.”"
               />
               <LeaderCard
                 title="Hassan Akram"
-                profile="/cto.svg"
+                profile="/cto.webp"
                 designation="CTO & Co-Founder"
                 socialLink="https://qbatch.com/events/white-label-world-expo/#event-form"
                 aboutText="“Having faced challenging technical situations, I thrive

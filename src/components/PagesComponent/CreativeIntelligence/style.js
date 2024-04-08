@@ -77,6 +77,7 @@ const CreativeIntelligenceWrapper = styled.div`
     }
     .signatures {
       text-align: right;
+      margin-top: 24px;
     }
   }
 `;

@@ -25,7 +25,7 @@ const StartProjectWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   }
   .project-form {
-    margin-top: 50px;
+    margin-top: 72px;
     ${media.xs`
       margin-top: 20px;
     `}
@@ -57,18 +57,14 @@ const StartProjectWrapper = styled.div`
       padding-top: 0;
     `}
     ${media.xs`
-      padding-bottom: 60px;
+      padding-bottom: 40px;
     `}
     .testimonial-heading {
       margin-bottom: 29px;
     }
     .testimonial-paragraph {
-      margin-bottom: 24px;
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-      color:${({ theme }) => theme.colors.textMedium};
-      font-weight: 300;
+      margin-bottom: 32px;
       letter-spacing: 0.7px;
-      line-height: 32px;
       max-width: 545px;
     }
   }
