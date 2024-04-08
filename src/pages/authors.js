@@ -15,7 +15,7 @@ const Author = ({ pageContext, location }) => {
   const slug = state && state.slug;
   const blogQuery = Queries();
   const recommendedArticles = blogQuery.allStrapiUser.nodes.filter((x) => x.username === title)[0]?.recommendeds;
-  const data = blogQuery.allStrapiArticle.nodes.filter((x) => x.user.username === title);
+  const data = blogQuery.allStrapiArticle.nodes.filter((x) => x.user?.username === title);
 
   if (!recommendedArticles) {
     return <PageNotFound />

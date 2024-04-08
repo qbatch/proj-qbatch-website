@@ -26,6 +26,7 @@ const CheckBoxWrapper = styled.div`
     transform: translateY(-0.075em);
     display: grid;
     place-content: center;
+    margin-top: 6px;
   }
   .form-check-input:focus {
     box-shadow: none;

@@ -230,12 +230,12 @@ function App({ data, path }) {
                         className="avatar-image"
                         width="72px"
                         height="72px"
-                        src={data?.user.image?.localFile.url || '/avatar.svg'}
+                        src={data?.user?.image?.localFile?.url || '/avatar.svg'}
                         alt="no-avartar"
                       />
-                      <span>{data?.user.name}</span>
+                      <span>{data?.user?.name}</span>
                     </div>
-                    <span className="title">{data?.user.description}</span>
+                    <span className="title">{data?.user?.description}</span>
                     <div className="d-flex justify-content-between mt-32">
                     <ul className="d-flex social-link ps-0">
                       {data?.user?.Socials.map((social, index) => (
@@ -257,7 +257,7 @@ function App({ data, path }) {
                           className="pointer"
                           alt="no-arrow"
                           onClick={() => {
-                            navigate(`/authors/${data?.user.username}`, {
+                            navigate(`/authors/${data?.user?.username}`, {
                               state: { slug: data.seo.slug },
                             })
                           }}

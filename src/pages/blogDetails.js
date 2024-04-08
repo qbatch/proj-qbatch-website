@@ -12,7 +12,7 @@ const BlogDetails = ({ pageContext }) => {
   
     const path = pageContext?.title;
     const blogQuery = Queries()
-    const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.seo.slug === `${path}`)
+    const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.slug === `${path}`)
   function progressBarScroll() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
       height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
@@ -48,8 +48,8 @@ export const Head = ({ pageContext }) => {
   const { title } = pageContext;
   const blogQuery = Queries()
   const allStrapiArticleNodes = blogQuery.allStrapiArticle.nodes
-  const blogData = allStrapiArticleNodes.find((node) => node.seo.slug === `${path}`)
-  const blogSeoData = allStrapiArticleNodes.find((node) => node.seo.slug === `${path}`)
+  const blogData = allStrapiArticleNodes.find((node) => node.slug === `${path}`)
+  const blogSeoData = allStrapiArticleNodes.find((node) => node.slug === `${path}`)
   const seoData = blogSeoData?.seo
   const seoImage = blogData?.blogImg?.localFile.url
   return (

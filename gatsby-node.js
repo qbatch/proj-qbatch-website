@@ -35,6 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
             seo {
               slug
             }
+            slug
             category {
               categoryName
               slug
@@ -68,10 +69,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
   strapiBlogPosts.forEach(({ node }) => {
   createPage({
-    path: `/blog${node.seo?.slug}`,
+    path: `/blog/${node.slug}/`,
     component: path.resolve('./src/pages/blogDetails.js'),
     context: {
-      title: node.seo?.slug,
+      title: node.slug,
     },
   })
   

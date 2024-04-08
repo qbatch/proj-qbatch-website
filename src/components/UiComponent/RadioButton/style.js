@@ -10,8 +10,12 @@ const RadioWrapper = styled.div`
       background-color: ${({ theme }) => theme.colors.primaryColor};
       border-color: ${({ theme }) => theme.colors.primaryColor};
     };
+    &:valid:checked {
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+      border-color: ${({ theme }) => theme.colors.primaryColor};
+    }
     &:focus{
-        box-shadow:none;
+      box-shadow:none;
     }
   }
 `;
