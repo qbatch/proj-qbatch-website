@@ -386,5 +386,8 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 }
+.Toastify__toast-container {
+  z-index: 99999;
+}
 `
 export default GlobalStyles

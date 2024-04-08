@@ -23,6 +23,7 @@ const Index = ({ page }) => {
   const [open, setOpen] = useState(false);
   const [modal, setModal] = useState("");
   const [serviceOpen, setServiceOpen] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
   const [serviceSelect, setServiceSelect] = useState([]);
 
@@ -38,28 +39,37 @@ const Index = ({ page }) => {
   });
 
   const toggleCheckbox = (name) => {
-    setFormData({
-      ...formData,
-      [name]: !formData.terms,
-    });
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: !prevFormData[name],
+    }));
   };
 
   const handleInputChange = (event) => {
     const { name, value, type, checked } = event.target;
-    if (type === "checkbox") {
-      if (checked) {
-        setFormData({ ...formData, services: [...formData.services, value] });
+    let isValid = true;
+  
+    if (name === "name") {
+      const nameRegex = /^[a-zA-Z\s]*$/;
+      isValid = nameRegex.test(value);
+    }
+
+    if (isValid || type === "checkbox") {
+      if (type === "checkbox") {
+        if (checked) {
+          setFormData({ ...formData, services: [...formData.services, value] });
+        } else {
+          setFormData({
+            ...formData,
+            services: formData.services.filter((service) => service !== value),
+          });
+        }
       } else {
         setFormData({
           ...formData,
-          services: formData.services.filter((service) => service !== value),
+          [name]: value,
         });
       }
-    } else {
-      setFormData({
-        ...formData,
-        [name]: value,
-      });
     }
   };
 
@@ -72,6 +82,13 @@ const Index = ({ page }) => {
       e.stopPropagation();
     }
     setValidated(true);
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailRegex.test(formData.email)) {
+      setErrorMsg("")
+    } else {
+      setErrorMsg("Please enter valid Email")
+    }
 
     const templateParams = {
       from_name: formData.name,
@@ -107,7 +124,6 @@ const Index = ({ page }) => {
           .then(
             (result) => {
               console.log('Message sent!', result);
-            
             },
             (error) => {
               console.log('Something went wrong, please try again later', error);
@@ -171,6 +187,7 @@ const Index = ({ page }) => {
                 onChange={handleInputChange}
                 required={true}
               />
+              {errorMsg && <span className="error-msg">{errorMsg}</span>}
               <Collapse
                 title="Select Collaboration Model"
                 onClick={() => setOpen(!open)}
@@ -279,6 +296,7 @@ const Index = ({ page }) => {
                   base="5px"
                   onChange={() => toggleCheckbox('terms')}
                   required={true}
+                  checked={formData.terms}
                   label={
                     <>
                       I understand and agree to the
@@ -297,6 +315,7 @@ const Index = ({ page }) => {
                   label="I agree to receive marketing and promotion related emails."
                   name="promotion"
                   base="19px"
+                  checked={formData.promotion}
                   onChange={() => toggleCheckbox('promotion')}
                 />
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
