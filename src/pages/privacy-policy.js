@@ -42,7 +42,7 @@ export const Head = () => {
 
   return (
     <SEO
-      title={seoData.metaTitle}
+      title={seoData?.metaTitle}
       description={seoData.metaDescription}
       keywords={keywords}
       language={seoData.language}

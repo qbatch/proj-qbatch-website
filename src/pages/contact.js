@@ -32,7 +32,7 @@ export const Head = () => {
    const seoData = blogQuery.allStrapiContactUs.nodes[0]?.seo
   return (
     <SEO
-      title={seoData.metaTitle}
+      title={seoData?.metaTitle}
       description={seoData.metaDescription}
       keywords={seoData.keywords}
       language={seoData.language}
