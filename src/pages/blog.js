@@ -17,10 +17,14 @@ const BlogPage = ({ pageContext }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const blogArticle = Queries()
-  const blogData = blogArticle.allStrapiArticles.nodes;
-  const filteredData = blogData?.filter((item) => item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()));
 
-  const uniqueCategories = blogData?.reduce((acc, obj) => {
+  const blogData = blogArticle.allStrapiArticle.nodes;
+  const stagingEnv = process.env.GATSBY_ENV !== "staging"
+
+  const draftData = blogData.filter((item)=> item.publishedAt !== null);
+  const filteredData = stagingEnv ? draftData : blogData?.filter((item) => item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()));
+
+  const uniqueCategories = (stagingEnv ? draftData : blogData)?.reduce((acc, obj) => {
     if (!acc.find((item) => item.category?.categoryName === obj.category?.categoryName)) {
       acc.push(obj)
     }
@@ -31,6 +35,7 @@ const BlogPage = ({ pageContext }) => {
   function capitalizeFirstLetter(str) {
     return str?.charAt(0).toUpperCase() + str?.slice(1)
   }
+  
   return (
     <Layout>
       <BlogBanner />

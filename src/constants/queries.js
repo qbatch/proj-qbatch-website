@@ -15,57 +15,7 @@ export const Queries = () => {
            }
          }
        }
-       allStrapiArticles {
-         nodes {
-           updatedAt
-           blogTitle
-           blogDescription {
-             data {
-               blogDescription
-             }
-           }
-           slug
-           user {
-             username
-             name
-             description
-             image {
-               localFile {
-                 url
-               }
-             }
-              Socials {
-               socialLink
-               socialPlatform
-              }
-           }
-           category {
-             categoryName
-             slug
-           }
-           blogTags {
-             strapi_json_value
-           }
-           blogImg {
-             localFile {
-               url
-             }
-           }
-           id
-           publishedAt
-           favorite
-           bannerBlog
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-           }
-         }
-       }
-         allStrapiArticle(filter: {publishedAt: {eq: null}}) {
+         allStrapiArticle {
          nodes {
            updatedAt
            blogTitle
