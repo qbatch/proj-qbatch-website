@@ -9,7 +9,7 @@ import BlogCardsWrapper from "./style";
 const Index = (props) => {
   const { heading, isBtn, isSlice, blogInner, data, isFavorite, upperHeading } = props;
   const categoryData = data?.filter(
-    (item) => item.category.categoryName === heading
+    (item) => item.category?.categoryName === heading
   );
   const editorPicksData = data?.filter((item) => item.favorite === true);
 
@@ -31,7 +31,7 @@ const Index = (props) => {
             <p
               className="inner-title pointer"
               onClick={() => {
-                navigate(`/blog${card.seo.slug}`, {
+                navigate(`/blog/${card.slug}/`, {
                   state: { blogId: card.id },
                 })
               }}
@@ -52,7 +52,7 @@ const Index = (props) => {
               text="Explore More"
               fontSize="16px"
               onClick={() => {
-                navigate(`/blog${card.seo.slug}`, {
+                navigate(`/blog/${card.slug}/`, {
                   state: { blogId: card.id },
                 })
               }}
