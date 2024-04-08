@@ -1,3 +1,5 @@
+const { resolve } = require('path');
+
 const siteMetadata = {
   robots: `index,folow`,
   title: ``,
@@ -274,6 +276,22 @@ module.exports = {
     'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        excludes: [
+          '/services/style/',
+          '/authors/',
+          '/blogDetails/',
+          '/sitemap.html',
+          '/sitemap-services.html',
+          '/sitemap-blog.html',
+          '/sitemap-pages.html',
+          '/sitemap-authors.html',
+          '/sitemap-events.html',
+        ]
+      }
+    },
     {
       resolve: `gatsby-source-strapi`,
       options: strapiConfig,
