@@ -28,7 +28,7 @@ const TechnicalExcellenceWrapper = styled.div`
     a {
       text-decoration: underline;
     }
-    h4 {
+    h3 {
       font-weight: ${({ theme }) => theme.fontWeight.normal};
       line-height: 32px;
       letter-spacing: 0.5px;
