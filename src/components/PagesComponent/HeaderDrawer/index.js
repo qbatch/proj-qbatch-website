@@ -9,11 +9,12 @@ import Container from "../../UiComponent/Container";
 import SocialIcons from "../../UiComponent/SocialIcons";
 
 import DrawerWrapper from "./style";
+import { useLocation } from "@reach/router";
 
 const servicesItems = [
   {
     menu: 'Enterprise Software Development Solutions',
-    to: '/services/enterprise-software-development',
+    to: '/services/enterprise-software-development/',
   },
   {
     menu: 'E-commerce Automation Services',
@@ -21,27 +22,27 @@ const servicesItems = [
   },
   {
     menu: 'Web App Development',
-    to: '/services/web-app-development',
+    to: '/services/web-app-development/',
   },
   {
     menu: 'Mobile App Development',
-    to: '/services/mobile-app-development',
+    to: '/services/mobile-app-development/',
   },
   {
     menu: 'CTO as a Service',
-    to: '/services/cto-as-a-service',
+    to: '/services/cto-as-a-service/',
   },
   {
     menu: 'Product Design & Development',
-    to: '/services/product-design-development',
+    to: '/services/product-design-development/',
   },
   {
     menu: 'Web & data Scraping Services',
-    to: '/services/web-and-data-scraping',
+    to: '/services/web-and-data-scraping/',
   },
   {
     menu: 'DevOps and Cloud Computing',
-    to: '/services/devops',
+    to: '/services/devops/',
   },
   {
     menu: 'Low-code/ No-code Platform Development',
@@ -225,7 +226,7 @@ const howWeWorkMenu = [
 const companyMenu = [
   {
     menu: "About Us",
-    to: "/about",
+    to: "/about/",
   },
   {
     menu: "Careers",
@@ -284,6 +285,7 @@ const dropdownData = [
 
 const Index = (props) => {
   const { openDrawer, setOpenDrawer } = props;
+  const location = useLocation();
 
   const [activeState, setActiveState] = useState("services");
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -322,7 +324,7 @@ const Index = (props) => {
               >
                 {!item.header ? (
                   item.menu.map((data, ind) => (
-                    <Link to={data.to} className="dropdown-item" key={ind}>
+                    <Link to={data.to} className="dropdown-item" key={ind} onClick={()=> location.pathname === data.to && setOpenDrawer(false)}>
                       {data.menu}
                     </Link>
                   ))
