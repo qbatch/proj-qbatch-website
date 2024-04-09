@@ -25,7 +25,6 @@ const SEO = (props) => {
     image,
   }
   const staging=  process.env.GATSBY_ENV
-  console.log(staging,"staging")
   const meta=[
         {
           name: `description`,
@@ -120,7 +119,7 @@ const SEO = (props) => {
       }}
       titleTemplate={seo.title}
        title={seo.title}
-       meta={staging ? [{
+       meta={staging === "staging" ? [{
               name: `robots`,
               content: "noindex,nofollow",
             }]
