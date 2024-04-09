@@ -11,6 +11,7 @@ import HeaderWrapper from "./style";
 const headerMenu = [
   {
     name: "Services",
+    to: "/services",
   },
   {
     name: "Industries",

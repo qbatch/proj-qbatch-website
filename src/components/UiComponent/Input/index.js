@@ -14,6 +14,8 @@ function TextControlsExample(props) {
     name,
     value,
     required,
+    pattern,
+    isInvalid
   } = props;
 
   return (
@@ -27,6 +29,8 @@ function TextControlsExample(props) {
           placeholder={placeholder}
           onChange={onChange}
           required={required}
+          pattern={pattern}
+          isInvalid={isInvalid}
         />
       </Form.Group>
     </Input>

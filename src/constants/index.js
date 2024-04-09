@@ -1005,42 +1005,111 @@ const ctoContribute = [
 const devOpsFaq = [
   {
     id: 1,
-    title: 'How are Qbatch developers different?',
+    title: 'What are the DevOps consulting services you offer?',
     content: (
-      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-      strategic technology leadership, guidance, and expertise.</p>
+      <div className="faq-content">
+      <p>As a DevOps consulting company, Qbatch offers the following services:</p>
+       <ul>
+          <li>DevOps Consulting Services</li>
+          <li>DevOps Automation Services</li>
+          <li>CI/CD Services</li>
+          <li>DevOps and Cloud Computing</li>
+          <li>DevSecOps Services</li>
+            <li>Infrastructure as Code Services</li>
+          <li>Virtualization</li>
+        </ul>
+        </div>
     )
   },
   {
     id: 2,
-    title: 'How to hire top remote developers through Qbatch?',
+    title: 'What are the benefits of DevOps implementation',
     content: (
-      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-      strategic technology leadership, guidance, and expertise.</p>
+      <div className="faq-content">
+      <p>Following are significant benefits of DevOps automation services:</p>
+      <ul>
+        <li>Eliminates siloed communication between developers and operations</li>
+        <li>Build robust and market-driven enterprise infrastructure</li>
+        <li>Keeps stakeholders aligned on new changes and goals</li>
+        <li>Assure secure and automated software updates</li>
+        <li>You take the driver’s seat, and DevOps do the work.</li>
+        <li>Cut on costs big time and reduce overheads</li>
+        <li>Complete management from conceptualization to deployment</li>
+        </ul>
+      </div>
     )
   },
   {
     id: 3,
-    title: 'How much does it cost to hire software developers on Qbatch?',
+    title: 'How can DevOps improve the efficiency and productivity of my development and operations teams?',
     content: (
-      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-      strategic technology leadership, guidance, and expertise.</p>
+       <div className="faq-content">
+      <p>DevOps specialists help automate and streamline time-consuming and repetitive processes in the development lifecycle including build,
+         test, and deployment pipelines, enabling quicker and quality  software releases and delivery. DevOps automation services allow teams to
+          free up and spend time and effort on more productive tasks such as innovation, research and development, and problem-solving. 	</p>
+      </div>
     )
   },
   {
     id: 4,
-    title: 'Why should I use web scraping services?',
+    title: 'What sets your DevOps services apart from other providers in the market?	',
     content: (
-      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-      strategic technology leadership, guidance, and expertise.</p>
+        <div className="faq-content">
+      <p>Following are reasons that set Qbatch’s DevOps services apart from other providers in the market:</p>
+      <ul>
+        <li>DevOps DNA</li>
+        <li>Relevant Delivery Experience</li>
+        <li>Dedicated DevOps Team</li>
+        <li>Homogenous Approach</li>
+        <li>Fool-Proof Security and Control</li>
+        <li>Strongly Agile & Transparent</li>
+        <li>Stakeholder Visibility</li>
+        <li>Proactive Communication</li>
+        <li>Flexible Business Models</li>
+        <li>Great Value for Money</li>
+        </ul>
+      </div>
     )
   },
   {
     id: 5,
-    title: 'Do you offer flexible hiring models, such as full-time, part-time, or freelance developers?',
+    title: 'Do you offer customized DevOps solutions tailored to the specific needs of my organization?	',
     content: (
-      <p>CTO as a Service is when a business hires a technical person or a technical team to benefit from their
-      strategic technology leadership, guidance, and expertise.</p>
+      <div className="faq-content">
+      <p>Yes, we offer custom DevOps solutions tailored to your organization’s needs in below-mentioned verticals:</p>
+      <ul>
+        <li>Kubernetes Services</li>
+        <li>Professional Infrastructure as Code Services</li>
+        <li>Azure DevOps Services</li>
+        <li>DevSecOps Services</li>
+        <li>AWS DevOps Services</li>
+        <li>GCP DevOps Services</li>
+        <li>ChatOps Solutions</li>
+        <li>GitOps Services</li>
+        <li>DataOps Services</li>
+        </ul>
+      </div>
+    )
+  },
+   {
+    id: 6,
+    title: 'What tools and technologies do you use to support your DevOps services?	',
+    content: (
+      <div className="faq-content">
+      <p>We use these DevOps tools and technologies to build your business infrastructure:</p>
+      <ul>
+        <li>AWS</li>
+        <li>Jenkins</li>
+        <li>Docker</li>
+        <li>Ansible</li>
+        <li>Puppet</li>
+        <li>Chef</li>
+        <li>Git</li>
+        <li>Kubernetes</li>
+        <li>Nagios</li>
+        <li>Terraform</li>
+        </ul>
+      </div>
     )
   },
 ]
