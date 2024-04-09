@@ -112,7 +112,6 @@ const SEO = (props) => {
       ]
  
   
-
   return (
     <>
     <Helmet
@@ -121,7 +120,7 @@ const SEO = (props) => {
       }}
       titleTemplate={seo.title}
        title={seo.title}
-       meta={!staging ? [{
+       meta={staging ? [{
               name: `robots`,
               content: "noindex,nofollow",
             }]
