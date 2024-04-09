@@ -83,12 +83,13 @@ const Index = ({ page }) => {
     }
     setValidated(true);
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emailRegex.test(formData.email)) {
-      setErrorMsg("")
-    } else {
-      setErrorMsg("Please enter valid Email")
+    const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    if (!emailRegex.test(formData.email)) {
+      setErrorMsg("Please enter a valid email address.");
+      return;
     }
+
+    setErrorMsg("");
 
     const templateParams = {
       from_name: formData.name,
@@ -186,6 +187,8 @@ const Index = ({ page }) => {
                 type="email"
                 onChange={handleInputChange}
                 required={true}
+                pattern="/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/"
+                isInvalid={errorMsg !== ""}
               />
               {errorMsg && <span className="error-msg">{errorMsg}</span>}
               <Collapse
