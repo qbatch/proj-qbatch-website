@@ -95,7 +95,7 @@ export const Head = () => {
   const seoData = categoryPath ? categoryFilter[0]?.seo : blogSeo.allStrapiBlog.nodes[0]?.seo
   return (
     <SEO
-      title={seoData.metaTitle}
+      title={seoData?.metaTitle}
       description={seoData?.metaDescription}
       keywords={seoData?.keywords}
       language={seoData?.language}

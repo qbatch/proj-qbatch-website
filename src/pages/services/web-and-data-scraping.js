@@ -74,7 +74,7 @@ export const Head = () => {
   const seoData = eCommerceData.allStrapiWebAndDataScraping.nodes[0].seo[0]
   return (
     <SEO
-      title={seoData.metaTitle}
+      title={seoData?.metaTitle}
       description={seoData.metaDescription}
       keywords={seoData.keywords}
       language={seoData.language}

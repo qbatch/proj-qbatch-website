@@ -69,7 +69,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   strapiBlogPosts.forEach(({ node }) => {
   createPage({
-    path: `/blog/${node.slug}/`,
+    path: `/blog/${node?.slug}/`,
     component: path.resolve('./src/pages/blogDetails.js'),
     context: {
       title: node.slug,

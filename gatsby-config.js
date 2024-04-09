@@ -299,7 +299,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        sitemap: `${siteMetadata.siteUrl}/sitemap-index.xml`,
+        sitemap: `${siteMetadata.siteUrl}/sitemap-0.xml`,
         exclude: [
           '/blogDetails',
         ],
