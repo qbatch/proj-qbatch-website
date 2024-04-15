@@ -300,6 +300,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         sitemap: `${siteMetadata.siteUrl}/sitemap-0.xml`,
+        host: '',
         exclude: [
           '/blogDetails',
         ],
