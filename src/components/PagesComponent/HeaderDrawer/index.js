@@ -230,7 +230,7 @@ const companyMenu = [
   },
   {
     menu: "Careers",
-    to: "",
+    to: "/about/#freshteam-widget",
   },
   {
     menu: "Events & PR",

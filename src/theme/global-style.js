@@ -395,5 +395,8 @@ const GlobalStyles = createGlobalStyle`
 .icon-arrow-left{
   fill:#000!important;
 }
+.job-details-content{
+  margin-top:0px!important;
+}
 `
 export default GlobalStyles
