@@ -18,7 +18,9 @@ const ResponsiveStyleWrapper = styled.div`
   `
   }
 }
-
+.mobile-app-container{
+  margin:0px !important;
+}
 
 `;
 export default ResponsiveStyleWrapper;

@@ -23,6 +23,7 @@ const strapiConfig = {
   collectionTypes: [
     'contact',
     'book-meeting',
+    'requirement',
     {
       singularName: 'awards-and-recognition',
       queryParams: {
@@ -221,6 +222,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'requirement',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'prosper-show',
       queryParams: {
         populate: {
@@ -254,6 +265,7 @@ const strapiConfig = {
   singleTypes: [
     'home',
     'about-us',
+    'requirement',
     'mobile-app',
     'cto-service',
     'web-app',

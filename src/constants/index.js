@@ -2001,6 +2001,73 @@ const mobileAppFaq = [
     ),
   },
 ]
+const hireDeveloper = [
+  {
+    id: 1,
+    title: 'How are Qbatch developers different?',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch’s developers for hire show performance instead of making promises. They believe in a value system:</span>
+        <ul>
+          <li>Proven coding practices</li>
+          <li>Founder’s mentality</li>
+          <li>Empathetic & collaborative</li>
+          <li>On-the-go support</li>
+          <li>Best Quality-price ratio</li>
+          <li>Trustworthy & transparent</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'How to hire top remote developers through Qbatch?',
+    content: (
+      <div className="faq-content hire-developer-faq">
+        <span>You can follow this simple 4-step process to hire your developers at Qbatch:</span>
+        <ol>
+          <b><li>Tell us your requirements</li></b>
+          <span>We carefully understand your needs, goals, and dynamics.</span>
+          <b><li>Meet A-grade developers</li></b>
+          <span>We screen the most suitable developer profiles and present them to you within 24 hours, </span>
+          <b><li>Find the right fit</li></b>
+          <span>Meet the devs and find your best match. We take care of the rest!</span>
+          <b><li>Begin your trial</li></b>
+          <span>Start building with a no-risk1-week  trial period. </span>
+          <p>Or directly schedule a meeting at <a href="https://calendly.com/qbatch/meeting" >here</a></p>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'How are Qbatch developers different?',
+    content: (
+      <div className="faq-content">
+        <span>How much does it cost to hire software developers on Qbatch?</span>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'What kinds of software developers are available for hire through Qbatch?',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch offers a wide range of senior-level dedicated software developers covering 200+ languages and frameworks on a full-time, part-time, and hourly basis.</span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'Do you offer flexible hiring models, such as full-time, part-time, or freelance developers?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch, offers flexible and affordable hiring models such as full-time, part-time, or hourly-based developers for both startups and large companies.</span>
+      </div>
+    ),
+  },
+];
+
 const enterPrisFaq = [
   {
     id: 1,
@@ -2602,6 +2669,7 @@ export {
   developmentServicesData,
   mobileAppFaq,
   enterPrisFaq,
+  hireDeveloper,
   choiceEnterpriseData,
   customEnterpriseData,
   cycleProductData,
