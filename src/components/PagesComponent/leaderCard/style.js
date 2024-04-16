@@ -9,7 +9,7 @@ const LeaderCardWrapper = styled.div`
     position: relative;
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
     box-shadow: 2px 2px 12px 0px #00000029;
-    padding: 160px 36px 36px;
+    padding: 300px 36px 36px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,8 +17,8 @@ const LeaderCardWrapper = styled.div`
     .img {
       margin-bottom: 16px;
       position: absolute;
-      top: -130px;
-}
+      top: -190px;
+      }
     }
     .inner-box {
       text-align: center;

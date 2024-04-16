@@ -57,8 +57,7 @@ const menu2Data = [
   },
   {
     name: 'Qbatch Career',
-    to: 'https://careers.qbatch.com/jobs',
-    external: true, // Indicating this link is external
+    to: '/about/#freshteam-widgets',
   },
 ]
 

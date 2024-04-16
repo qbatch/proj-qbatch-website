@@ -5,6 +5,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../../../../node_modules/video-react/dist/video-react.css";
 import emailjs from '@emailjs/browser';
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 import Container from "../../UiComponent/Container";
 import Input from "../../UiComponent/Input";
@@ -17,9 +19,9 @@ import TestimonialCarousel from "../../UiComponent/TestimonialSlider";
 import StartProjectWrapper from "./style";
 
 const Index = ({ page }) => {
-  const [submitted, setSubmitted] = useState(false);
   const [validated, setValidated] = useState(false);
-
+  const [phone, setPhone] = useState("");
+  const [phoneValid, setPhoneValid] = useState(true);
   const [open, setOpen] = useState(false);
   const [modal, setModal] = useState("");
   const [serviceOpen, setServiceOpen] = useState(false);
@@ -45,6 +47,22 @@ const Index = ({ page }) => {
     }));
   };
 
+  const handlePhoneChange = (phoneNumber) => {
+    setPhone(phoneNumber);
+    setFormData({
+      ...formData,
+      number: phoneNumber
+    });
+    const phoneUtil = require("google-libphonenumber").PhoneNumberUtil.getInstance();
+    try {
+      const parsedPhoneNumber = phoneUtil.parse("+" + phoneNumber);
+      const isValid = phoneUtil.isValidNumber(parsedPhoneNumber);
+      setPhoneValid(isValid);
+    } catch (error) {
+      setPhoneValid(false);
+    }
+  };
+
   const handleInputChange = (event) => {
     const { name, value, type, checked } = event.target;
     let isValid = true;
@@ -52,6 +70,11 @@ const Index = ({ page }) => {
     if (name === "name") {
       const nameRegex = /^[a-zA-Z\s]*$/;
       isValid = nameRegex.test(value);
+    }
+    
+    const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    if (emailRegex.test(formData.email)) {
+      setErrorMsg("");
     }
 
     if (isValid || type === "checkbox") {
@@ -74,7 +97,6 @@ const Index = ({ page }) => {
   };
 
   const handleSubmit = async (e) => {
-    setSubmitted(true);
     e.preventDefault();
     const validForm = e.currentTarget;
     if (validForm.checkValidity() === false) {
@@ -83,9 +105,17 @@ const Index = ({ page }) => {
     }
     setValidated(true);
 
+    if (phone.length === 0) {
+      setPhoneValid(false);
+    }
+
     const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
     if (!emailRegex.test(formData.email)) {
       setErrorMsg("Please enter a valid email address.");
+      return;
+    }
+
+    if (!phoneValid) {
       return;
     }
 
@@ -141,6 +171,7 @@ const Index = ({ page }) => {
             terms: false,
             promotion: false,
           });
+          setPhone("+1")
         } else {
           toast.error("Something went wrong", {
             position: "top-right",
@@ -172,14 +203,20 @@ const Index = ({ page }) => {
                 onChange={handleInputChange}
                 required={true}
               />
-              <Input
+              <PhoneInput
+                country={"us"}
+                enableSearch={true}
+                value={phone}
                 placeholder="Contact Number"
-                name="number"
-                type="number"
-                value={formData.number}
-                onChange={handleInputChange}
-                required={true}
+                onChange={handlePhoneChange}
+                inputProps={{
+                  required: true,
+                }}
+                isValid={phoneValid}
               />
+              {!phoneValid && (
+                <span className="error-msg">Please enter a valid phone number.</span>
+              )}
               <Input
                 placeholder="Email Address"
                 value={formData.email}
