@@ -87,9 +87,13 @@ const CtoBannerWrapper = styled.div`
     padding: 143px 0 50px;
     background-position:right;
     justify-content:start;
+       &.change-background-size{
+      background-size:50%;
+    }
     .container-wrapper {
     align-items: center;
     display: flex;
+ 
 }
     .mobile-view-banner {
       display:none;
