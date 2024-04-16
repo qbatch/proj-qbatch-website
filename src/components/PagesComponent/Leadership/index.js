@@ -32,14 +32,14 @@ const Index = () => {
             <div className="leaders-cards-wrapper">
               <LeaderCard
                 title="Ibrahim Zahoor"
-                profile="/ceo.webp"
+                profile="/ceo.png"
                 designation="CEO & Co-Founder"
                 socialLink="https://www.linkedin.com/in/ibrahimzahoor/"
                 aboutText="“With a wealth of experience streamlining crucial E-commerce business processes, I offer a reliable approach to simplify complex tasks and operations.”"
               />
               <LeaderCard
                 title="Hassan Akram"
-                profile="/cto.webp"
+                profile="/cto.png"
                 designation="CTO & Co-Founder"
                 socialLink="https://www.linkedin.com/in/hassanakram/"
                 aboutText="“Having faced challenging technical situations, I thrive
