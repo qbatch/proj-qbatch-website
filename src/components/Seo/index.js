@@ -25,6 +25,7 @@ const SEO = (props) => {
     image,
   }
   const staging=  process.env.GATSBY_ENV
+
   const meta=[
         {
           name: `description`,
