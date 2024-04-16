@@ -32,17 +32,24 @@ import {
 const MobileApp = () => {
   return (
     <Layout>
-      <Banner
+      {/* <Banner
         subheading="Mobile App Development"
         heading="Deliver Powerful Mobile App Experiences"
         paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
-        buttonText="Kickstart Your Transformation Journey"
-        imgSrc={BannerImage}        
+        buttonText="Kickstart Your Transformation Journey"     
         mobileViewBanner={BannerImage}        
         col1lg={12}
         className="d-flex align-items-center"
-        wrapperClass="mobile-app-banner"
-      />
+      /> */}
+           <Banner
+          subheading="Mobile App Development"
+          heading="Deliver Powerful Mobile App Experiences"
+          paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
+          buttonText="Kickstart Your Transformation Journey"
+          wrapperClass="cto-banner change-background-size"
+          blogInner={BannerImage}
+          mobileViewBanner={BannerImage}
+        />
       <TechnicalExcellence
         heading="Robots won’t use your mobile apps, Humans will!"
         title={false}
@@ -109,7 +116,7 @@ const MobileApp = () => {
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
       <Achievements innerPage={true} />
       <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
-      <Collaboration heading="text-h2" />
+      <Collaboration heading="Collaboration Models For Everlasting Partnerships" />
       <PeopleFirst
         peopleFirstData={peopleFirstData}
         paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies."
