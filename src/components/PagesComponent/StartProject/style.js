@@ -97,5 +97,58 @@ const StartProjectWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.dangerColor};
   }
+  .react-tel-input  {
+    margin-bottom: 8px;
+    .form-control {
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      padding-left: 36px;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      height: 60px;
+      width: 100%;
+      border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+      &:focus {
+        box-shadow: none;
+      }
+      &::placeholder {
+        color: ${({ theme }) => theme.colors.bodyLight};
+      }
+      &:invalid {
+        border-color: #dc3545;
+      }
+      &:valid {
+        background-image: none;
+        border-color: ${({ theme }) => theme.colors.dividerColor};
+        &:focus {
+          box-shadow: none;
+          border-color: ${({ theme }) => theme.colors.dividerColor};
+        }
+      }
+      &.invalid-number {
+        border-color: #dc3545;
+        &:focus {
+          border: none;
+          background-color: transparent;
+          border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+        }
+      }
+    }
+    .flag-dropdown {
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      .selected-flag {
+        padding: 0;
+        border-radius: 0;
+        &.open, &:hover {
+          background-color: transparent;
+        }
+      }
+      .search-box {
+        width: 90%;
+      }
+    }
+  }
 `
 export default StartProjectWrapper;

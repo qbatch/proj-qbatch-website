@@ -23,7 +23,7 @@ function Example(props) {
     <CollpaseWrapper faqSection={faqSection}>
       <>
         <div className="collpase-select d-flex justify-content-between">
-          <span className="title" onClick={onClick}>{title}</span>
+          <h3 className="title" onClick={onClick}>{title}</h3>
 
           {open ? openIcon : closeIcon}
         </div>

@@ -11,7 +11,7 @@ const RadioWrapper = styled.div`
       border-color: ${({ theme }) => theme.colors.primaryColor};
     };
     &:valid:checked {
-      background-color: ${({ theme }) => theme.colors.primaryColor};
+      background-color: ${({ theme }) => theme.colors.primaryColor} !important;
       border-color: ${({ theme }) => theme.colors.primaryColor};
     }
     &:focus{
