@@ -5,7 +5,6 @@ import { css } from "styled-components";
    sm: "767px",
    md: "991px",
    lg: "1199px",
-   standard: "1279px",
    customBrakePoint: "1360px",
    xl: "1399px"
  };

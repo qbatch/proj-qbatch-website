@@ -14,8 +14,6 @@ function TextControlsExample(props) {
     name,
     value,
     required,
-    textArea,
-    error,
     pattern,
     isInvalid
   } = props;
@@ -23,7 +21,7 @@ function TextControlsExample(props) {
   return (
     <Input height={height} base={base || ""}>
       <Form.Group className="bottom-space">
-        {textArea ? <Form.Control as="textarea" placeholder={placeholder} /> : <Form.Control
+        <Form.Control
           as={as}
           type={type}
           name={name}
@@ -33,8 +31,7 @@ function TextControlsExample(props) {
           required={required}
           pattern={pattern}
           isInvalid={isInvalid}
-        />}
-        {error ? <p className="error-text">{error}</p> : null}
+        />
       </Form.Group>
     </Input>
   );
