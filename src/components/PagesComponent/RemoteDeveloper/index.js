@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../../components/UiComponent/Container";
-import { RemoteDeveloperData } from '../../constants/index'
+import Container from "../../../components/UiComponent/Container";
+import { RemoteDeveloperData } from '../../../constants/index'
 import { RemoteDeveloperStyleWrapper } from "./style";
 
 const RemoteDeveloper = () => {

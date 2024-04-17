@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../../components/UiComponent/Container";
-import Button from "../../components/UiComponent/Button";
-import { AffordableHiringData } from '../../constants/index';
+import Container from "../../UiComponent/Container";
+import Button from "../../UiComponent/Button";
+import { AffordableHiringData } from '../../../constants/index';
 import { AffordableHiringWrapper } from "./style";
 
 const AffordableHiring = () => {

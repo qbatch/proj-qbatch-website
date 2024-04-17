@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../../components/UiComponent/Container";
-import { hassleData } from '../../constants/index'
+import Container from "../../../components/UiComponent/Container";
+import { hassleData } from '../../../constants/index'
 import { HiringHassleWrapper } from "./style";
 
 const HiringHassle = () => {

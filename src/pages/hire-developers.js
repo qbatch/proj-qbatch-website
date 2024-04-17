@@ -1,26 +1,22 @@
 import React from "react";
-import Layout from "../../components/Layout/layout";
-import Banner from "../../components/PagesComponent/PageBanner";
-import AboutUs from "../../../static/About-Us-02.svg";
-import { HireDeveloperStyleWrapper } from "./style";
-import RemoteDeveloper from "./remote-developer";
-import HiringHassle from "./hiring-hassle";
-import PerfectDev from "./perfect-dev";
-import SoftwareDevelopers from "./software-developers";
-import ReasonToHire from "./reason-to-hire";
-import FourStepsProcess from "./four-steps-process";
-import AffordableHiring from "./affordable-hiring";
-import HireTrustedDevelopers from "./Hire-Trusted-Developers";
-import ShareYourRequirements from "./share-your-requirements";
-import FaqSection from '../../components/PagesComponent/Faq'
-import StartProject from "../../components/PagesComponent/StartProject";
+import Layout from "../components/Layout/layout";
+import Banner from "../components/PagesComponent/PageBanner";
+import RemoteDeveloper from "../components/PagesComponent/RemoteDeveloper";
+import HiringHassle from "../components/PagesComponent/HiringHassle";
+import PerfectDev from "../components/PagesComponent/PerfectDev";
+import SoftwareDevelopers from "../components/PagesComponent/SoftwareDevelopers";
+import ReasonToHire from "../components/PagesComponent/ReasonToHire";
+import FourStepsProcess from "../components/PagesComponent/FourStepsProcess";
+import AffordableHiring from "../components/PagesComponent/AffordableHiring";
+import HireTrustedDevelopers from "../components/PagesComponent/HireTrustedDevelopers";
+import ShareYourRequirements from "../components/PagesComponent/ShareYourRequirements";
+import FaqSection from '../components/PagesComponent/Faq'
+import StartProject from "../components/PagesComponent/StartProject";
 import {
   hireDeveloper,
-} from '../../constants'
-
+} from '../constants'
 const index = () => {
   return (
-    <HireDeveloperStyleWrapper>
       <Layout>
         <Banner
           subheading="Dedicated Developers For Your Next Project"
@@ -30,7 +26,7 @@ const index = () => {
           wrapperClass="hire-developer-banner"
           col1lg={12}
           className="d-flex align-items-center justify-content-start"
-          blogInner={AboutUs}
+          blogInner="/About-Us-02.svg"
         />
         <RemoteDeveloper />
         <HiringHassle />
@@ -44,7 +40,6 @@ const index = () => {
         <FaqSection faqQuestion={hireDeveloper} />
         <StartProject />
       </Layout>
-    </HireDeveloperStyleWrapper>
   );
 };
 

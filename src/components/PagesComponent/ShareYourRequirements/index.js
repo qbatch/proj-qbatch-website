@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Container from "../../components/UiComponent/Container";
-import Input from "../../components/UiComponent/Input";
-import { tileData, titleData, trackerLabelData } from '../../constants/index'
+import Container from "../../../components/UiComponent/Container";
+import Input from "../../../components/UiComponent/Input";
+import { tileData, titleData, trackerLabelData } from '../../../constants/index'
 import { ShareYourRequirementsWrapper } from "./style";
 
 const ShareYourRequirements = () => {

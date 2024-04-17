@@ -2,8 +2,8 @@ import React from "react";
 
 import { CgScrollH } from "react-icons/cg";
 
-import Container from "../../components/UiComponent/Container";
-import Qbatch from "../../../static/logo-qbatch.svg";
+import Container from "../../../components/UiComponent/Container";
+import Qbatch from "../../../../static/logo-qbatch.svg";
 import { SoftwareDevelopersWrapper } from "./style";
 
 const SoftwareDevelopers = () => {

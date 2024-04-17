@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../../components/UiComponent/Container";
+import Container from "../../UiComponent/Container";
 import { HireTrustedDevelopersWrapper } from "./style";
 
 const HireTrustedDevelopers = () => {

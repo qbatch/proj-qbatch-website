@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Container from "../../components/UiComponent/Container";
+import Container from "../../UiComponent/Container";
 
-import { FourStepsProcessData } from '../../constants/index'
+import { FourStepsProcessData } from '../../../constants/index'
 
 import { FourStepsProcessWrapper } from "./style";
 

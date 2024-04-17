@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../../components/UiComponent/Container";
-import Button from "../../components/UiComponent/Button";
-import { cardsData } from '../../constants/index'
+import Container from "../../../components/UiComponent/Container";
+import Button from "../../../components/UiComponent/Button";
+import { cardsData } from '../../../constants/index'
 import { ReasonToHireWrapper } from "./style";
 
 const ReasonToHire = () => {
