@@ -1,34 +1,12 @@
 import React, { useState } from "react";
 import Container from "../../components/UiComponent/Container";
-import CountNum from '../../../static/arrow-line.svg'
+
+import { FourStepsProcessData } from '../../constants/index'
+
 import { FourStepsProcessWrapper } from "./style";
 
 const FourStepsProcess = () => {
-  const FourStepsProcessData = [
-    {
-      img: CountNum,
-      number:1,
-      heading: "Tell us your requirements",
-      text: "We carefully understand your needs, goals, and dynamics.",
-    },
-    {
-      img: CountNum,
-      number:2,
-      heading: "Meet A-grade developers",
-      text: "We screen the most suitable developer profiles & present them to you within 24 hours.",
-    },
-    {
-      img: CountNum,
-      number:3,
-      heading: "Find the right fit",
-      text: "Meet the devs and find your best match. We take care of the rest!",
-    },
-    {
-      number:4,
-      heading: "Begin your trial",
-      text: "Start building with a no-risk 1-week trial period.",
-    },
-  ];
+
 
   return (
     <FourStepsProcessWrapper>

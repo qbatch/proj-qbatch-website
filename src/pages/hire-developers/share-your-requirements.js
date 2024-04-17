@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Container from "../../components/UiComponent/Container";
-import BarIcon from "../../../static/bar-icon.svg";
-import ArrowLeft from "../../../static/arrow-left.svg";
-import ArrowRight from "../../../static/arrow-right.svg";
-import ArrowLeftBlue from "../../../static/arrow-blue-left.svg";
-import CheckIcon from "../../../static/check-icon.svg";
-import Skype from "../../../static/skype-icon.svg";
-import whatsApp from "../../../static/whats-app-icon.svg";
-import Linkdin from "../../../static/linkdin-icon.svg";
-import Calendly from "../../../static/calendly-icon.svg";
-import { ShareYourRequirementsWrapper } from "./style";
 import Input from "../../components/UiComponent/Input";
+import { tileData, titleData, trackerLabelData } from '../../constants/index'
+import { ShareYourRequirementsWrapper } from "./style";
 
 const ShareYourRequirements = () => {
   const [className, setClassName] = useState(null);
@@ -18,202 +12,7 @@ const ShareYourRequirements = () => {
   const [stepperText, setStepperText] = useState([]);
   const [userDetails, setUserDetails] = useState('');
   const [error, setError] = useState(false);
-  const data = [
-    [
-      {
-        text: "Full-time",
-      },
-      {
-        text: "Part-time",
-      },
-      {
-        text: "On hourly basis",
-      },
-      {
-        text: "Not sure",
-      },
-    ],
-    [
-      {
-        text: "Junior developer",
-      },
-      {
-        text: "Senior developer",
-      },
-      {
-        text: "Software architect or lead developer",
-      },
-      {
-        text: "CTO or VP of engineering",
-      },
-    ],
-    [
-      {
-        text: "Less than a week",
-      },
-      {
-        text: "1-4 weeks",
-      },
-      {
-        text: "4 weeks or longer",
-      },
-      {
-        text: "Not sure",
-      },
-    ],
-    [
-      {
-        text: "Within 48 hrs",
-      },
-      {
-        text: "1-2 weeks",
-      },
-      {
-        text: "1 month",
-      },
-      {
-        text: "1 quarter",
-      },
-    ],
-    [
-      {
-        text: "I have a rough idea of what I want to build.",
-      },
-      {
-        text: "I have a clear idea of what I want, but I’ve not penned down any specific requirements.",
-      },
-      {
-        text: "I have clearly written requirements or wireframes.",
-      },
-    ],
-    [
-      {
-        text: "1 dev",
-      },
-      {
-        text: "Small dedicated team",
-      },
-      {
-        text: "Large dedicated team",
-      },
-      {
-        text: "Not sure",
-      },
-    ],
-    [
-      {
-        text: "I don’t have any experience.",
-      },
-      {
-        text: "I have limited experience.",
-      },
-      {
-        text: "I have good experience in managing teams using Agile and other development methodologies.",
-      },
-      {
-        text: "I’m a VP/ Executive Director/ CTO/ Product Manager. ",
-      },
-    ],
-    [
-      {
-        text: "$50-100/ hour",
-      },
-      {
-        text: "$100-500/ hours",
-      },
-      {
-        text: "Greater than $500",
-      },
-      {
-        text: "I don’t intend to share.",
-      },
-    ],
-    [
-      {
-        text: "YES, get me my devs!",
-      },
-      {
-        text: "Nope",
-      },
-      {
-        text: "Not sure. ",
-      },
-    ],
-  ];
-  const titleData = [
-    {
-      text: "Let’s begin the survey ",
-    },
-    {
-      text: "What type of hire are you looking for?",
-    },
-    {
-      text: "What level of expertise do you require?",
-    },
-    {
-      text: "For how long do you require the resource?",
-    },
-    {
-      text: "How urgent do you need to hire the developer?",
-    },
-    {
-      text: "Do you know your product/ project requirements?",
-    },
-    {
-      text: "How many developers do you want to hire?",
-    },
-    {
-      text: "Do you have any experience managing developers?",
-    },
-    {
-      text: "What’s your budget?",
-    },
-    {
-      text: "Are you open to hiring dedicated software developers?",
-    },
-  ];
-  const trackerLabelData = [
-    {
-      text: "Let’s begin the survey ",
-      label: "",
-    },
-    {
-      text: "What type of hire are you looking for?",
-      label: "",
-    },
-    {
-      text: "What level of expertise do you require?",
-      label: "",
-    },
-    {
-      text: "For how long do you require the resource?",
-      label: "",
-    },
-    {
-      text: "How urgent do you need to hire the developer?",
-      label: "",
-    },
-    {
-      text: "Do you know your product/ project requirements?",
-      label: "",
-    },
-    {
-      text: "How many developers do you want to hire?",
-      label: "",
-    },
-    {
-      text: "Do you have any experience managing developers?",
-      label: "",
-    },
-    {
-      text: "What’s your budget?",
-      label: "",
-    },
-    {
-      text: "Are you open to hiring dedicated software developers?",
-      label: "",
-    },
-  ];
+
 
   const handleItemClick = (index, item) => {
     setClassName(index);
@@ -240,9 +39,9 @@ const ShareYourRequirements = () => {
     }
   };
   useEffect(() => {
-    if (stepperText?.length === 10) { temp() }
+    if (stepperText?.length === 10) { stepperApi() }
   }, [stepperText])
-  const temp = async () => {
+  const stepperApi = async () => {
     fetch("https://cms.qbatch.com/api/requirements", {
       method: "POST",
       headers: {
@@ -263,6 +62,10 @@ const ShareYourRequirements = () => {
         }
       }),
     }).then((response) => response.json())
+    toast.success("Requirements sent successfully...", {
+      position: "top-right",
+      autoClose: 5000,
+    });
       // .then((data) => console.log(data, "data"))
   }
 
@@ -285,16 +88,16 @@ const ShareYourRequirements = () => {
             <span>Or you can directly reach us at</span>
             <div className="social-links-wrapper">
               <a href="skype:qbatch?chat" target="_blank">
-                <img src={Skype} alt="Skype" />
+                <img src="/skype-icon.svg" alt="Skype" />
               </a>
               <a href="https://wa.me/17373772428" target="_blank">
-                <img src={whatsApp} alt="WhatsApp" />
+                <img src='/whats-app-icon.svg' alt="WhatsApp" />
               </a>
               <a href="https://www.linkedin.com/company/qbatch/" target="_blank">
-                <img src={Linkdin} alt="Skype" />
+                <img src="/linkdin-icon.svg" alt="Skype" />
               </a>
               <a href="https://calendly.com/qbatch/meeting" target="_blank">
-                <img src={Calendly} alt="Skype" />
+                <img src="/calendly-icon.svg" alt="Skype" />
               </a>
             </div>
           </div>
@@ -314,7 +117,7 @@ const ShareYourRequirements = () => {
                     {step <= index ? (
                       <span>{item.label}</span>
                     ) : (
-                      <img src={CheckIcon} alt="CheckIcon" />
+                      <img src="/check-icon.svg" alt="CheckIcon" />
                     )}
                     <p></p>
                   </div>
@@ -357,13 +160,13 @@ const ShareYourRequirements = () => {
                   </div>
                 )
                 : (<div className="bars-wrapper">
-                  {data[step - 1]?.map((item, index) => (
+                  {tileData[step - 1]?.map((item, index) => (
                     <div
                       key={index}
                       onClick={() => handleItemClick(index, item)}
                       className="bar-item"
                     >
-                      <img src={BarIcon} alt="BarIcon" />
+                      <img src="/bar-icon.svg" alt="BarIcon" />
                       <p>{item.text}</p>
                     </div>
                   ))}
@@ -372,18 +175,18 @@ const ShareYourRequirements = () => {
                 {stepperText.length >= 1 ? (
                   <img
                     onClick={handlePreviousStep}
-                    src={ArrowLeftBlue}
+                    src='/arrow-blue-left.svg'
                     alt="ArrowLeftBlue"
                   />
                 ) : (
                   <img
-                    src={ArrowLeft}
+                    src="/arrow-left.svg"
                     onClick={handlePreviousStep}
                     alt="ArrowLeft"
                   />
                 )}
 
-                {step === 0 ? <img src={ArrowRight} onClick={() => {
+                {step === 0 ? <img src='/arrow-right.svg' onClick={() => {
                   const {
                     name,
                     email,
@@ -395,12 +198,13 @@ const ShareYourRequirements = () => {
                   } else {
                     setError(true)
                   }
-                }} alt="ArrowRight" /> : <img src={ArrowRight} alt="ArrowRight" />}
+                }} alt="ArrowRight" /> : <img src='/arrow-right.svg' alt="ArrowRight" />}
               </div>
             </div>
           </div>
         )}
       </Container>
+      <ToastContainer />
     </ShareYourRequirementsWrapper>
   );
 };

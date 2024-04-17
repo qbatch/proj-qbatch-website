@@ -1,37 +1,10 @@
 import React from "react";
 import Container from "../../components/UiComponent/Container";
 import Button from "../../components/UiComponent/Button";
-import CheckIcon from "../../../static/checked-mark.svg";
+import { cardsData } from '../../constants/index'
 import { ReasonToHireWrapper } from "./style";
 
 const ReasonToHire = () => {
-  const cardsData = [
-    {
-     img:CheckIcon,
-      text: 'Proven Coding Practices',
-      className:'text-wrapper'
-    },
-    {
-     img:CheckIcon,
-      text: 'No Hidden Costs',
-    },
-    {
-     img:CheckIcon,
-      text: 'No Sudden Replacements'
-    },
-    {
-     img:CheckIcon,
-      text: 'Best Quality-Price Ratio'
-    },
-    {
-     img:CheckIcon,
-      text: 'Leaders’ Mentality'
-    },
-    {
-     img:CheckIcon,
-      text: 'Trustworthy & Transparent'
-    },
-  ]
   return (
     <ReasonToHireWrapper>
       <Container>

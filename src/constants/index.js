@@ -2631,7 +2631,357 @@ const cycleProductData = [
     description: "After a rigorous series of QA audits, automated tests, TTD, and code reviews, we bring your product to fruition with continued support featuring continuous integration and delivery and needed improvements to keep your product relevant in the raging technology marathon."
   },
 ]
+const AffordableHiringData = [
+  {
+    heading: "Full-time Developer",
+    hours: "160 Hours/ Month",
+    dayHours: "8 hrs/ day - 5 days/ week",
+    billing: "Monthly billing or as needed",
+    hiringPeried: "Hiring Period: 2-3 days",
+    demand: "Availability: Dedicated, On-demand",
+  },
+  {
+    heading: "Part-time Developer",
+    hours: "80 Hours/Month",
+    dayHours: "4 hours/ day, 5 days/ week",
+    billing: "Monthly billing or as needed",
+    hiringPeried: "Hiring period: 1-2 days",
+    demand: "Availability: As required",
+  },
+  {
+    heading: "Hourly Developer",
+    hours: "On-Demand",
+    billing: "Monthly billing or as needed",
+    hiringPeried: "Hiring period: 40-48 hrs",
+    demand: "Availability: Retainer-based support and availability",
+  },
+]
+const FourStepsProcessData = [
+  {
+    img: '/arrow-line.svg',
+    number:1,
+    heading: "Tell us your requirements",
+    text: "We carefully understand your needs, goals, and dynamics.",
+  },
+  {
+    img: '/arrow-line.svg',
+    number:2,
+    heading: "Meet A-grade developers",
+    text: "We screen the most suitable developer profiles & present them to you within 24 hours.",
+  },
+  {
+    img: '/arrow-line.svg',
+    number:3,
+    heading: "Find the right fit",
+    text: "Meet the devs and find your best match. We take care of the rest!",
+  },
+  {
+    number:4,
+    heading: "Begin your trial",
+    text: "Start building with a no-risk 1-week trial period.",
+  },
+]
+const hassleData = [
+  {
+    img: '/stopwatch.svg',
+    number: 10,
+    sign: "X",
+    heading: "Faster Onboarding",
+  },
+  {
+    img: '/fast-time.svg',
+    number:60,
+    sign: "X",
+    heading: "Less Time Hiring",
+  },
+  {
+    img: '/cost-01.svg',
+    number: 50,
+    sign: "%",
+    heading: "Cost Optimization",
+  },
+  {
+    img: '/retention-01.svg',
+    number: 98,
+    sign: "%",
+    heading: "Retention Rate",
+  },
+  {
+    img:  '/dev-match-time-1.svg',
+    number: 48,
+    sign: "hr",
+    heading: "Dev Match Time",
+  },
+]
+const DevData = [
+  {
+    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src='/left-img.svg' /></>,
+    heading:'Dev replacement guarantee',
+    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+  },
+  {
+    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/right-img.svg" /></>,
+    heading:'Comprehensive weekly reports',
+    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+  },
+  {
+    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/left-img.svg" /></>,
+    heading:'On-the-go support',
+    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+  },
+  {
+    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/devs-img.png" /></>,
+    heading:'Total product mindset',
+    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+  },
+]
+const cardsData = [
+  {
+   img:'/checked-mark.svg',
+    text: 'Proven Coding Practices',
+    className:'text-wrapper'
+  },
+  {
+   img:'/checked-mark.svg',
+    text: 'No Hidden Costs',
+  },
+  {
+   img:'/checked-mark.svg',
+    text: 'No Sudden Replacements'
+  },
+  {
+   img:'/checked-mark.svg',
+    text: 'Best Quality-Price Ratio'
+  },
+  {
+   img:'/checked-mark.svg',
+    text: 'Leaders’ Mentality'
+  },
+  {
+   img:'/checked-mark.svg',
+    text: 'Trustworthy & Transparent'
+  },
+]
+const RemoteDeveloperData = [
+  {
+    img: <img src='/ruining-product-health.svg' alt="Product" />,
+    text: <h2>Talent shortage is ruining your product's health.</h2>,
+  },
+  {
+    img: <img src='/scaling-team-inescapable-hassle.svg' alt="ScaleImage" />,
+    text: <h2>Managing and scaling your team is an inescapable hassle.</h2>,
+  },
+  {
+    img: <img src='/hiring-senior-devs-qa-engineers.svg' alt="Developer" />,
+    text: <h2>Hiring senior devs and QA engineers takes forever.</h2>,
+  },
+  {
+    img: <img src='/different-timezone-hindering-growth.svg' alt="GrouthImage" />,
+    text: (
+      <h2>
+        Clash of cultures, poor communication, and different timezones are
+        hindering your growth.
+      </h2>
+    ),
+  },
+]
+const tileData = [
+  [
+    {
+      text: "Full-time",
+    },
+    {
+      text: "Part-time",
+    },
+    {
+      text: "On hourly basis",
+    },
+    {
+      text: "Not sure",
+    },
+  ],
+  [
+    {
+      text: "Junior developer",
+    },
+    {
+      text: "Senior developer",
+    },
+    {
+      text: "Software architect or lead developer",
+    },
+    {
+      text: "CTO or VP of engineering",
+    },
+  ],
+  [
+    {
+      text: "Less than a week",
+    },
+    {
+      text: "1-4 weeks",
+    },
+    {
+      text: "4 weeks or longer",
+    },
+    {
+      text: "Not sure",
+    },
+  ],
+  [
+    {
+      text: "Within 48 hrs",
+    },
+    {
+      text: "1-2 weeks",
+    },
+    {
+      text: "1 month",
+    },
+    {
+      text: "1 quarter",
+    },
+  ],
+  [
+    {
+      text: "I have a rough idea of what I want to build.",
+    },
+    {
+      text: "I have a clear idea of what I want, but I’ve not penned down any specific requirements.",
+    },
+    {
+      text: "I have clearly written requirements or wireframes.",
+    },
+  ],
+  [
+    {
+      text: "1 dev",
+    },
+    {
+      text: "Small dedicated team",
+    },
+    {
+      text: "Large dedicated team",
+    },
+    {
+      text: "Not sure",
+    },
+  ],
+  [
+    {
+      text: "I don’t have any experience.",
+    },
+    {
+      text: "I have limited experience.",
+    },
+    {
+      text: "I have good experience in managing teams using Agile and other development methodologies.",
+    },
+    {
+      text: "I’m a VP/ Executive Director/ CTO/ Product Manager. ",
+    },
+  ],
+  [
+    {
+      text: "$50-100/ hour",
+    },
+    {
+      text: "$100-500/ hours",
+    },
+    {
+      text: "Greater than $500",
+    },
+    {
+      text: "I don’t intend to share.",
+    },
+  ],
+  [
+    {
+      text: "YES, get me my devs!",
+    },
+    {
+      text: "Nope",
+    },
+    {
+      text: "Not sure. ",
+    },
+  ],
+]
+const titleData = [
+  {
+    text: "Let’s begin the survey ",
+  },
+  {
+    text: "What type of hire are you looking for?",
+  },
+  {
+    text: "What level of expertise do you require?",
+  },
+  {
+    text: "For how long do you require the resource?",
+  },
+  {
+    text: "How urgent do you need to hire the developer?",
+  },
+  {
+    text: "Do you know your product/ project requirements?",
+  },
+  {
+    text: "How many developers do you want to hire?",
+  },
+  {
+    text: "Do you have any experience managing developers?",
+  },
+  {
+    text: "What’s your budget?",
+  },
+  {
+    text: "Are you open to hiring dedicated software developers?",
+  },
+]
 
+const trackerLabelData = [
+  {
+    text: "Let’s begin the survey ",
+    label: "",
+  },
+  {
+    text: "What type of hire are you looking for?",
+    label: "",
+  },
+  {
+    text: "What level of expertise do you require?",
+    label: "",
+  },
+  {
+    text: "For how long do you require the resource?",
+    label: "",
+  },
+  {
+    text: "How urgent do you need to hire the developer?",
+    label: "",
+  },
+  {
+    text: "Do you know your product/ project requirements?",
+    label: "",
+  },
+  {
+    text: "How many developers do you want to hire?",
+    label: "",
+  },
+  {
+    text: "Do you have any experience managing developers?",
+    label: "",
+  },
+  {
+    text: "What’s your budget?",
+    label: "",
+  },
+  {
+    text: "Are you open to hiring dedicated software developers?",
+    label: "",
+  },
+];
 export {
   dedicationWork,
   homeTiles,
@@ -2685,4 +3035,13 @@ export {
   whyChooseQbatchData,
   productDevlopmentServices,
   devOpsFaq,
+  AffordableHiringData,
+  FourStepsProcessData,
+  hassleData,
+  DevData,
+  cardsData,
+  RemoteDeveloperData,
+  titleData,
+  tileData,
+  trackerLabelData
 }

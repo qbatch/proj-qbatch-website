@@ -1,35 +1,10 @@
 import React from "react";
 import Container from "../../components/UiComponent/Container";
-import Dev from "../../../static/devs-img.png";
-import Devs from "../../../static/right-img.svg";
-import Devss from "../../../static/left-img.svg";
 import Button from "../../components/UiComponent/Button";
+import { DevData } from '../../constants/index'
 import { PerfectDevStyleWrapper } from "./style";
 
 const PerfectDev = () => {
-
-  const DevData = [
-    {
-      img: <><img className="responsive-image" src={Dev} /> <img className="image-wrapper" src={Devss} /></>,
-      heading:'Dev replacement guarantee',
-      text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
-    },
-    {
-      img: <><img className="responsive-image" src={Dev} /> <img className="image-wrapper" src={Devs} /></>,
-      heading:'Comprehensive weekly reports',
-      text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
-    },
-    {
-      img: <><img className="responsive-image" src={Dev} /> <img className="image-wrapper" src={Devss} /></>,
-      heading:'On-the-go support',
-      text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
-    },
-    {
-      img: <><img className="responsive-image" src={Dev} /> <img className="image-wrapper" src={Dev} /></>,
-      heading:'Total product mindset',
-      text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
-    },
-  ]
 
   return (
     <PerfectDevStyleWrapper>
