@@ -221,6 +221,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'requirement',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'prosper-show',
       queryParams: {
         populate: {
