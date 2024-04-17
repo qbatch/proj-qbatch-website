@@ -23,7 +23,6 @@ const strapiConfig = {
   collectionTypes: [
     'contact',
     'book-meeting',
-    'requirement',
     {
       singularName: 'awards-and-recognition',
       queryParams: {
@@ -265,7 +264,6 @@ const strapiConfig = {
   singleTypes: [
     'home',
     'about-us',
-    'requirement',
     'mobile-app',
     'cto-service',
     'web-app',

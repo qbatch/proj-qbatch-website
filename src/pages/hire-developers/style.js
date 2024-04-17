@@ -17,7 +17,7 @@ const HireDeveloperStyleWrapper = styled.div`
   }
 `;
 const RemoteDeveloperStyleWrapper = styled.div`
-  padding-bottom: 160px;
+  padding-bottom: 96px;
   ${media.md`
   padding-bottom:72px ;
   
@@ -51,7 +51,6 @@ const RemoteDeveloperStyleWrapper = styled.div`
     `}
   }
   .card-item {
-    max-width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,6 +67,8 @@ const RemoteDeveloperStyleWrapper = styled.div`
       font-style: normal;
       font-weight: 700;
       line-height: 32px;
+      min-height:160px
+
     }
   }
 `;
@@ -724,9 +725,9 @@ const HireTrustedDevelopersWrapper = styled.div`
       display: flex;
       justify-content: space-between;
       ${media.lg`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  `}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        `}
       ul {
         padding-top: 40px;
         display: flex;
@@ -846,6 +847,7 @@ const ShareYourRequirementsWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     height: ${(props) => (props.height ? `${props.height}` : "60px")};
     letter-spacing: 0.19px;
+    background-color:transparent;
     &::placeholder {
       color: ${({ theme }) => theme.colors.bodyLight};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
@@ -990,7 +992,7 @@ const ShareYourRequirementsWrapper = styled.div`
             background-color: ${({ theme }) => theme.colors.bodyLight};
           }
           p {
-            height: 56px;
+            height: 48px;
             width: 2px;
             background-color: ${({ theme }) => theme.colors.bodyLight};
           }

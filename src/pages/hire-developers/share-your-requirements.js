@@ -228,9 +228,16 @@ const ShareYourRequirements = () => {
   }
   const handlePreviousStep = () => {
     setStep(step > 0 ? step - 1 : 0);
+    setError(null)
     setStepperText((prev) => {
       return prev.slice(0, -1);
     });
+    if(step===0){
+      setError(true)
+    }
+    else{
+      setError(false)
+    }
   };
   useEffect(() => {
     if (stepperText?.length === 10) { temp() }
@@ -337,14 +344,15 @@ const ShareYourRequirements = () => {
                         const userName = e.target.value;
                         setUserDetails({ ...userDetails, name: userName });
                       }}
+                      value={userDetails.name}
                       placeholder="Full Name"
                       type="text"
-                      error={error && !userDetails?.name ? 'enter your name' : null}
+                      error={error && !userDetails?.name ? 'Enter your name' : null}
                     />
-                    <Input error={error && !userDetails?.companyName ? 'enter your company name' : null} onChange={(e) => setUserDetails({ ...userDetails, companyName: e.target.value })} placeholder="Company Name" type="text" />
-                    <Input error={error && !userDetails?.email ? 'enter your email' : error && !checkValidDate(userDetails?.email) ? 'Please Enter valid email': null} onChange={(e) => setUserDetails({ ...userDetails, email: e.target.value })} placeholder="Email Address" type="email" />
-                    <Input onChange={(e) => setUserDetails({ ...userDetails, designation: e.target.value })} placeholder="Designation" type="text" />
-                    <textarea onChange={(e) => setUserDetails({ ...userDetails, tellUsAboutYourProject: e.target.value })} placeholder="Tell us about your project" type="text" row="3" />
+                    <Input value={userDetails.companyName} error={error && !userDetails?.companyName ? 'Enter your company name' : null} onChange={(e) => setUserDetails({ ...userDetails, companyName: e.target.value })} placeholder="Company Name" type="text" />
+                    <Input value={userDetails.email} error={error && !userDetails?.email ? 'Enter your email' : error && !checkValidDate(userDetails?.email) ? 'Please Enter valid email': null} onChange={(e) => setUserDetails({ ...userDetails, email: e.target.value })} placeholder="Email Address" type="email" />
+                    <Input value={userDetails.designation} onChange={(e) => setUserDetails({ ...userDetails, designation: e.target.value })} placeholder="Designation" type="text" />
+                    <textarea value={userDetails.tellUsAboutYourProject} onChange={(e) => setUserDetails({ ...userDetails, tellUsAboutYourProject: e.target.value })} placeholder="Tell us about your project" type="text" row="3" />
 
                   </div>
                 )
@@ -380,10 +388,8 @@ const ShareYourRequirements = () => {
                     name,
                     email,
                     companyName,
-                    designation,
-                    tellUsAboutYourProject
                   } = userDetails || {}
-                  if (name && email && companyName && designation && tellUsAboutYourProject) {
+                  if (name && email && companyName) {
                     setStepperText([userDetails?.name]);
                     setStep(step + 1);
                   } else {
