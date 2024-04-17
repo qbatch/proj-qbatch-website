@@ -796,54 +796,54 @@ const revenueData = [
 
 const servicesSliderData = [
   {
-    image: "/service-slider-placeholder.svg",
+    image: "/artificial-intelligence.svg",
     title: "Artificial Intelligence (AI)",
     content: "We bring extensive expertise in predictive modeling, data mining, computer vision, and natural language processing. AI helps us streamline overall business workflows for you, reducing overall human effort."
   },
   {
-    image: "/service-slider-placeholder.svg",
+    image: "/robotic-process-automation.svg",
     title: "Robotic Process Automation (RPA)",
     content: "We help automate your operations processes using software robots that simulate human actions and interact with software and digital systems to save time and avoid manual operations."
   },
   {
-    image: "/service-slider-placeholder.svg",
+    image: "/internet-of-things.svg",
     title: "Internet of Things (IoT)",
     content: "We create tailored IoT solutions catered to your unique business needs across industries. We focus on multi-device integration to ensure high-performing and responsive technology integration."
   },
   {
-    image: "/service-slider-placeholder.svg",
+    image: "/virtual-reality.svg",
     title: "Augmented Reality/ Virtual Reality (AR/VR)",
     content: "We deliver niche-specific AR/VR solutions for immersive experiences via AR-powered events, training sessions, navigation, and 2D/3D projections for businesses and folks globally."
   },
   {
-    image: "/service-slider-placeholder.svg",
+    image: "/machine-learning.svg",
     title: "Machine Learning (ML))",
     content: "We leverage powerful cloud-based platforms to accelerate ML tools and perform predictive analysis, data pre-processing, model training and tuning, and orchestration."
   }
 ]
 const devOpsSliderData = [
   {
-    image: "/service-slider-placeholder.svg",
+    image: "/analysis-and-planning.svg",
     title: "Analysis and Planning",
     content: "We examine your enterprise’s existing processes and technical infrastructure, building an exhaustive strategy for automating the infrastructure."
   },
   {
-    image: "/service-slider-placeholder.svg",
+    image: "/automation.svg",
     title: "Automation",
     content: "We perform configuration and provisioning on testing, deployment, and production settings and automize the entire infrastructure."
   },
   {
-    image: "/service-slider-placeholder.svg",
+    image: "/continuous-deployment.svg",
     title: "Continuous Integration",
     content: "We integrate code changes into a repository, merge automated releases, and run tests every time a change is made for version stability and control."
   },
     {
-    image: "/service-slider-placeholder.svg",
+    image: "/continuous-integration.svg",
     title: "Continuous Deployment",
     content: "We deploy upgraded environments to the infrastructure and execute new developments throughout the CI/CD pipeline, avoiding any delays or bugs."
   },
    {
-    image: "/service-slider-placeholder.svg",
+    image: "/security-protocols.svg",
     title: "Security Protocols",
     content: "We stay laser-focused to protect your end product from bugs and errors. Thus we only trust risk-free and stringent security practices and tools to perform automated testing and assure compliance."
   }
@@ -2390,32 +2390,32 @@ const whyDevOpsData = [
    desc: "Quickly adapt to market demands, and build lasting user experiences. "
   },
   {
-    icon: "/lead-the-market.svg",
+    icon: "/scale-easily.svg",
    title: "Scale easily",
    desc: "Leverage DevOps automation services without risking your enterprise operations."
   },
   {
-    icon: "/lead-the-market.svg",
+    icon: "/reduce-expenditure.svg",
    title: "Reduce expenditure",
    desc: "Automated testing and bug tracking eliminate possible technical debts thus adding value for money."
   },
   {
-    icon: "/lead-the-market.svg",
+    icon: "/build-a-close-knit-team.svg",
    title: "Build a close-knit team",
    desc: "Create an agile and connected culture bringing development, and operation guys together."
   },
   {
-    icon: "/lead-the-market.svg",
+    icon: "/deploy-continuously.svg",
    title: "Deploy continuously",
    desc: "Streamline the delivery pipeline by continuously deploying into multiple SDLC environments."
   },
   {
-   icon: "/lead-the-market.svg",
+   icon: "/iterate-frequently.svg",
    title: "Iterate and release frequently",
    desc: "Deliver helpful features through frequent automation and optimization."
   },
   {
-   icon: "/lead-the-market.svg",
+   icon: "/increase-consistency.svg",
    title: "Increase consistency",
    desc: "Foster consistency across development, testing, production environments, and hybrid cloud."
   },

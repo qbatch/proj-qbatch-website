@@ -100,9 +100,6 @@ const ChoiceEnterpriseWrapper = styled.div`
       margin-bottom: 24px;
       padding-bottom: 24px;
     }
-    img{
-      background-color: ${({ theme }) => theme.colors.dangerColor};
-    }
   }
 `;
 
