@@ -282,6 +282,17 @@ const CtoBannerWrapper = styled.div`
       padding: 100px 0;
     }
   `}
+    &.hire-developer-banner {
+    &:before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: #0000002e;
+      top: 0;
+      left: 0;
+      content: "";
+    }
+  }
 `
 
 export default CtoBannerWrapper;
