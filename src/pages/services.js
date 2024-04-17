@@ -53,10 +53,11 @@ const DevOps = () => {
         }
         buttonText="Get Expert Advice"
         wrapperClass="services-banner"
-        col1lg={10}
-        col2lg={2}
+        col1lg={8}
+        col2lg={4}
         headingMaxWidth={'800px'}
         paragraphMaxWidth={'770px'}
+        imgSrc='/services-banner-img.svg'
       />
       <Achievements
         showFourColumns
