@@ -3,7 +3,6 @@ import { Row, Col, Form } from "react-bootstrap";
 import { Link } from "gatsby";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "../../../../node_modules/video-react/dist/video-react.css";
 import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'

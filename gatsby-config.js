@@ -273,7 +273,6 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
     {
@@ -329,15 +328,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-recaptcha`,
-      options: {
-        async: false,
-        defer: false,
-        args: `?onload=onloadCallback&render=explicit`,
-      },
-    },
-
     {
       resolve: 'gatsby-source-filesystem',
       options: {
