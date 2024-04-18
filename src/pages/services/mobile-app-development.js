@@ -52,7 +52,6 @@ const MobileApp = () => {
           blogInner={BannerImage}
           mobileViewBanner={BannerImage}
           customCrumbs={[
-            { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
             { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
             { pathname: '/services/mobile-app-development/', crumbLabel: 'Mobile App Development' },
           ]}

@@ -59,7 +59,6 @@ const DevOps = () => {
         paragraphMaxWidth={'770px'}
         imgSrc='/services-banner-img.svg'
         customCrumbs={[
-          { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
         ]}
       />

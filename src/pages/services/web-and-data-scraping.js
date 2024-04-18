@@ -37,7 +37,6 @@ const Ecommerce = () => {
         mobileViewBanner={WebScrapping}
         blogInner={WebScrapping}
         customCrumbs={[
-          { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
           { pathname: '/services/web-and-data-scraping/', crumbLabel: 'Web Data Scraping And Extraction' },
         ]}

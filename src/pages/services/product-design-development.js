@@ -46,7 +46,6 @@ const ProductDesign = () => {
         className="d-flex align-items-center justify-content-start"
         wrapperClass="product-design-banner"
         customCrumbs={[
-          { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
           { pathname: '/services/product-design-development/', crumbLabel: 'Software Product Development' },
         ]}

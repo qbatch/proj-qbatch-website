@@ -46,7 +46,6 @@ const Enterprise = () => {
           className="d-flex align-items-center"
           wrapperClass="enterprise-banner"
           customCrumbs={[
-            { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
             { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
             { pathname: `/services/enterprise-software-development/`, crumbLabel: 'Enterprise Software Development', crumbSeparator: '>' },
           ]}

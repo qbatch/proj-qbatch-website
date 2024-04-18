@@ -35,7 +35,6 @@ const Ecommerce = () => {
         mobileViewBanner={EcommerceBanner}
         blogInner={EcommerceBanner}
         customCrumbs={[
-          { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
           { pathname: '/services/e-commerce-automation/', crumbLabel: 'Business Process Automation' },
         ]}

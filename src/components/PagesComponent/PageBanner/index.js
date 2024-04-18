@@ -9,6 +9,8 @@ import CtoBannerWrapper from "./style";
 const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor,customCrumbs }) => {
   const defaultCol1lg = 7;
   const defaultCol2lg = 5;
+  const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
+  const crumbs = [defaultHomeCrumb, ...customCrumbs];
 
   return (
     <CtoBannerWrapper className={wrapperClass} blogInner={blogInner}>
@@ -16,17 +18,17 @@ const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
         <Row>
         {customCrumbs && (
             <div className="breadcrumb">
-              <ul className="d-flex gap-2 ps-0">
-                {customCrumbs.map((crumb, index) => (
-                  <li key={index}>
-                    <Link className="pointer" to={crumb.pathname}>
-                      <span>{crumb.crumbLabel}</span>
-                      {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="d-flex gap-2 ps-0">
+              {crumbs.map((crumb, index) => (
+                <li key={index}>
+                  <Link className="pointer" to={crumb.pathname}>
+                    <span>{crumb.crumbLabel}</span>
+                    {index < crumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           )}
           <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
             <div className="banner-main">
