@@ -14,6 +14,17 @@ const CtoBannerWrapper = styled.div`
      min-height:calc(100vh - 700px);
   `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  .breadcrumb {
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+    color: ${({ theme }) => theme.colors.whiteColor};
+    margin: 4px 0 16px 10px;
+    a {
+      color: ${({ theme }) => theme.colors.whiteColor};
+    }
+    ${media.xs`
+      margin: 0 0 12px;
+  `}
+  }
   .banner-main {
     position:relative;
     z-index:1;

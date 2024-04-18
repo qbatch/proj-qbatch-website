@@ -7,6 +7,8 @@ import Layout from "../../components/Layout/layout";
 import StartProject from "../../components/PagesComponent/StartProject";
 import WhatCanHelp from "../../components/PagesComponent/WhatCanYouHelp/index";
 import BusinessMangement from "../../components/PagesComponent/BusinessMangement/index";
+import DevelopmentStages from "../../components/PagesComponent/DevelopmentStages";
+import LostToLaunched from '../../components/PagesComponent/DevelopmentStages'
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
 import IdeasAndInvestments from "../../components/PagesComponent/IdeasAndInvestments";
 import FaqSection from "../../components/PagesComponent/Faq";
@@ -32,6 +34,10 @@ const Ecommerce = () => {
         className="d-flex align-items-center justify-content-start"
         mobileViewBanner={EcommerceBanner}
         blogInner={EcommerceBanner}
+        customCrumbs={[
+          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+          { pathname: '/services/e-commerce-automation/', crumbLabel: 'Business Process Automation' },
+        ]}
       />
       <WhatCanHelp />
       <Slider

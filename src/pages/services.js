@@ -58,6 +58,9 @@ const DevOps = () => {
         headingMaxWidth={'800px'}
         paragraphMaxWidth={'770px'}
         imgSrc='/services-banner-img.svg'
+        customCrumbs={[
+          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+        ]}
       />
       <Achievements
         showFourColumns

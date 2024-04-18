@@ -31,6 +31,10 @@ const CtoService = () => {
         col1lg={7}
         className="d-flex align-items-center"
         wrapperClass="cto-banner"
+        customCrumbs={[
+          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+          { pathname: '/services/cto-as-a-service/', crumbLabel: 'CTO As A Service' },
+        ]}
       />
       <HireCto
         list={ctoList}

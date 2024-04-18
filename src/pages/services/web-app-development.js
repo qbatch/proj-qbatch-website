@@ -6,6 +6,7 @@ import Layout from "../../components/Layout/layout";
 import Slider from '../../components/UiComponent/Slider'
 import Achievements from "../../components/PagesComponent/Achievements";
 import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
+import AppDevelopment from "../../components/PagesComponent/AppDevelopmentService";
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
 import StartProject from "../../components/PagesComponent/StartProject";
@@ -14,15 +15,20 @@ import FullCycle from "../../components/PagesComponent/FullCicle";
 import Collaboration from "../../components/PagesComponent/Collaboration";
 import FaqSection from "../../components/PagesComponent/Faq";
 import PeopleFirst from "../../components/PagesComponent/PeopleFirst";
+import YouCanTrust from "../../components/PagesComponent/YouCanTrust";
 import { webAppFaq } from "../../constants";
+import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
 import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
+import WebExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import WebappImage from '../../../static/web-app-dev.svg'
 import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData } from '../../constants'
+import ResponsiveStyleWrapper from "./style";
 
 const webapp = () => {
 
   return (
     <Layout>
+      <ResponsiveStyleWrapper>
         <Banner
           subheading="Web Application Development Company"
           heading="If You Think Web Apps Are Old-Fashioned. Think Again"
@@ -48,6 +54,7 @@ const webapp = () => {
           data={webExpertiseData}
           className="explore-slider"
         />
+        <AppDevelopment />
         <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
         <DesiredResult
           heading="Is your web app failing to bring the desired result? That could be serious!"
@@ -72,6 +79,7 @@ const webapp = () => {
         />
         <FaqSection faqQuestion={webAppFaq} />
         <StartProject />
+      </ResponsiveStyleWrapper>
     </Layout>
   )
 };

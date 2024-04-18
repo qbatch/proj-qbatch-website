@@ -44,6 +44,10 @@ const DevOps = () => {
         headingMaxWidth={'890px'}
         paragraphMaxWidth={'770px'}
         imgSrc="/devops-banner-img.svg"
+        customCrumbs={[
+          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+          { pathname: '/services/devops/', crumbLabel: 'DevOps And Cloud Computing' },
+        ]}
       />
       <AwsPartner />
       <DevOpsSupremacy/>
