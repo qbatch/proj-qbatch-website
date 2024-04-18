@@ -11,10 +11,11 @@ import HeaderWrapper from "./style";
 const headerMenu = [
   {
     name: "Services",
+    to: "/services",
   },
   {
     name: "Industries",
-    to: "#industries",
+    to: "/#industries",
   },
   {
     name: "Portfolio",
@@ -63,7 +64,7 @@ const Index = () => {
                 {headerMenu.map((menu, ind) => (
                   <li key={ind}>
                     <Link to={menu.to} activeClassName="active">
-                      <span onClick={menu.name === 'Services' ? () => setOpenDrawer(true) : ''}>{menu.name}</span>
+                      <span>{menu.name}</span>
                     </Link>
                   </li>
                 ))}

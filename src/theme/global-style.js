@@ -389,5 +389,14 @@ const GlobalStyles = createGlobalStyle`
 .Toastify__toast-container {
   z-index: 99999;
 }
+.text-color,.brand-color,.back-to-jobs{
+  color:#000!important
+}
+.icon-arrow-left{
+  fill:#000!important;
+}
+.job-details-content{
+  margin-top:0px!important;
+}
 `
 export default GlobalStyles

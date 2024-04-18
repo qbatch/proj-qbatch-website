@@ -59,6 +59,59 @@ export const Queries = () => {
              metaTitle
              slug
              metaRobots
+               structuredData {
+                strapi_json_value {
+                  _context
+                  _type
+                    image {
+                  _type
+                  height
+                  url
+                  width
+                }
+                   author {
+              url
+              name
+              _type
+              sameAs
+              alumniOf {
+                Name
+                _type
+              }
+              jobTitle
+              knowsAbout
+              description
+              honorificSuffix
+            }
+             headline
+            keywords
+               publisher {
+              url
+              logo {
+                _type
+                height
+                url
+                width
+              }
+            }
+            description
+             datePublished
+            dateModified
+             mainEntityOfPage {
+              _id
+              _type
+              breadcrumb {
+                _type
+                itemListElement {
+                  _type
+                  item
+                  name
+                  position
+                }
+              }
+             }
+                }
+              }
              metaDescription
              language
              keywords

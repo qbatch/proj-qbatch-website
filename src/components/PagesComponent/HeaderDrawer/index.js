@@ -221,6 +221,10 @@ const howWeWorkMenu = [
     menu: "Discovery Phase",
     to: "",
   },
+  {
+    menu: 'Hire-developer',
+    to: '/hire-developers',
+  },
 ];
 
 const companyMenu = [
@@ -230,7 +234,7 @@ const companyMenu = [
   },
   {
     menu: "Careers",
-    to: "",
+    to: "/about/#freshteam-widget",
   },
   {
     menu: "Events & PR",
