@@ -68,16 +68,6 @@ const StartProjectWrapper = styled.div`
       max-width: 545px;
     }
   }
-  .video-box {
-    margin-top: 37px;
-    .video-react-control-bar {
-      border-top-left-radius: 18px;
-      border-top-right-radius: 18px;
-    }
-    .video-react {
-      border-radius: 18px;
-    }
-  }
   .zero-height {
     height: 0;
     transition: height 1s ease-out;

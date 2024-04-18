@@ -68,8 +68,8 @@ const ProvenExperienceWrapper = styled.div`
     gap: 8px;
     div {
       padding: 3px 7px;
-      border: 1px solid ${({ theme }) => theme.colors.bodyLight};
-      color: ${({ theme }) => theme.colors.textMedium};
+      border: 1px solid ${({ theme }) => theme.colors.bodyTextVariant};
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
       border-radius: 2px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
       font-weight:${({ theme }) => theme.fontWeight.light};

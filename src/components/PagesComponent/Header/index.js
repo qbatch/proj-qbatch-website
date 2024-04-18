@@ -1,5 +1,6 @@
 import React, { useState, } from "react";
 import {Link} from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from 'gatsby'
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
@@ -56,7 +57,7 @@ const Index = () => {
                 <img src={Logo} alt="no-logo" />
               </Link>
               <Link to="/">
-                <img src='/qbatch-logo.svg' alt="no-logo" />
+                <img  src='/qbatch-logo.svg' width="113px" height="35px" alt="no-logo" />
               </Link>
             </div>
             <nav className="header-menu">

@@ -59,7 +59,16 @@ const strapiConfig = {
       singularName: 'article',
       queryParams: {
       publicationState: process.env.GATSBY_ENV === "staging" ? "preview" : "live",
-        populate: '*',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+          schema: {
+            populate: '*',
+          },
+        },
+      },
       },
     },
     {
@@ -212,6 +221,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'requirement',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'prosper-show',
       queryParams: {
         populate: {
@@ -273,7 +292,6 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-recaptcha',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
     {
@@ -329,15 +347,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-recaptcha`,
-      options: {
-        async: false,
-        defer: false,
-        args: `?onload=onloadCallback&render=explicit`,
-      },
-    },
-
     {
       resolve: 'gatsby-source-filesystem',
       options: {

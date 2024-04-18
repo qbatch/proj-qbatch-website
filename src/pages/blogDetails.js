@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import { Script } from 'gatsby'
 import PageNotFound from '../pages/404';
 import Layout from "../components/Layout/layout";
 import BlogDetailBanner from "../components/PagesComponent/BlogDetailBanner";
@@ -13,6 +13,23 @@ const BlogDetails = ({ pageContext }) => {
     const path = pageContext?.title;
     const blogQuery = Queries()
     const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.slug === `${path}`)
+     const schemaData= blogQuery.allStrapiArticle.nodes.find(x => x?.seo?.structuredData !== null).seo.structuredData.strapi_json_value[0]
+       function replaceUnderscoreWithAt(obj) {
+    if (obj && typeof obj === 'object') {
+      if (Array.isArray(obj)) {
+        return obj.map((item) => replaceUnderscoreWithAt(item))
+      } else {
+        const updatedObj = {}
+        for (const [key, value] of Object.entries(obj)) {
+          updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
+        }
+        return updatedObj
+      }
+    } else {
+      return obj
+    }
+  }
+   const transformedObject = replaceUnderscoreWithAt(schemaData)
   function progressBarScroll() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
       height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
@@ -28,6 +45,7 @@ const BlogDetails = ({ pageContext }) => {
     if (!blogData) {
         return <PageNotFound />
       }
+  const schemaAsString = JSON.stringify(transformedObject, null, 2);
   return (
     <Layout pageTitle="My Blog Posts">
       <ContentWrapper>
@@ -39,6 +57,7 @@ const BlogDetails = ({ pageContext }) => {
       </ContentWrapper>
       <BlogDetailBanner data={blogData} />
       <BlogDetailsContent data={blogData} path={path} />
+       {blogData.seo?.structuredData ? <Script type="application/ld+json">{schemaAsString}</Script>: null  } 
     </Layout>
   )
 }

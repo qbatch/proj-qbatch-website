@@ -49,11 +49,11 @@ const menuData = [
 const menu2Data = [
   {
     name: 'About Us',
-    to: '/about',
+    to: '/about/',
   },
   {
     name: 'Contact Us',
-    to: '/contact',
+    to: '/contact/',
   },
   {
     name: 'Qbatch Career',

@@ -15,7 +15,7 @@ const Index = ({ data }) => {
       { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
       { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
       { pathname: `/blog/${data?.category?.slug}`, crumbLabel: data?.category?.categoryName, crumbSeparator: '> ' },
-      { pathname: `/blog${data?.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
+      { pathname: `/blog/${data?.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
     ]
     
   return (

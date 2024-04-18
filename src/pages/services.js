@@ -14,20 +14,21 @@ import CreativeIntelligence from "../components/PagesComponent/CreativeIntellige
 import Collaboration from '../components/PagesComponent/Collaboration';
 import FaqSection from "../components/PagesComponent/Faq";
 import StartProject from "../components/PagesComponent/StartProject";
-import DummyImg from "../assets/images/simple-four-step-process_tell-us-your-requirements.svg"
+import AgileImg from "../assets/images/agile.svg";
+import ScrumImg from "../assets/images/scrum.svg"
 import Achievements from '../components/PagesComponent/Achievements2';
 
 import { servicesSliderData, lostToLaunchedItems } from "../constants";
 
 const adaptiveSoftwareData = [
   {
-    img: DummyImg,
+    img: AgileImg,
     title: "Agile",
     description:
       "We employ an iterative and incremental SDLC, breaking large projects into manageable series of steps to achieve control and adaptability, delivering top-quality and error-free software.",
   },
   {
-    img: DummyImg,
+    img: ScrumImg,
     title: "Scrum",
     description:
       "We rely on the self-organizing framework, Scrum, to promote transparency and collaboration. It simplifies project delivery allowing our teams to self-manage and adapt to changing requirements.",
@@ -52,10 +53,11 @@ const DevOps = () => {
         }
         buttonText="Get Expert Advice"
         wrapperClass="services-banner"
-        col1lg={10}
-        col2lg={2}
+        col1lg={8}
+        col2lg={4}
         headingMaxWidth={'800px'}
         paragraphMaxWidth={'770px'}
+        imgSrc='/services-banner-img.svg'
       />
       <Achievements
         showFourColumns

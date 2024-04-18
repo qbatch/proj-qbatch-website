@@ -30,6 +30,7 @@ position: relative;
   .boss-img{
     margin-top: -190px;
     margin-bottom: 16px;
+    height:350px;
   }
   .inner-box{
     text-align: center;
