@@ -29,6 +29,8 @@ import {
   revenueData,
 } from "../../constants";
 
+import ResponsiveStyleWrapper from "./style";
+
 const MobileApp = () => {
   return (
     <Layout>

@@ -13,6 +13,10 @@ const FaqWrapper = styled.div`
      margin-top: 70px;
     `}
   }
+  .hire-developer-faq p {
+    font-size: 16px;
+    margin-top: 8px;
+}
   .faq-content {
     color: ${({ theme }) => theme.colors.textMedium};
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
