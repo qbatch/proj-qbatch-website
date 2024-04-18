@@ -33,6 +33,7 @@ padding: 96px 0;
     position: relative;
     height: 100%;
     cursor:pointer;
+    transition: background-color 0.5s ease-in-out;
     ${media.sm`
       padding: 24px;
       padding-bottom: 48px;
@@ -42,9 +43,6 @@ padding: 96px 0;
       align-items: center;
       gap: 16px;
       margin-bottom: 20px;
-      img{
-        background-color: ${({ theme }) => theme.colors.dangerColor};
-      }
       .heading{
         font-weight: ${({ theme }) => theme.fontWeight.bold};
       }
