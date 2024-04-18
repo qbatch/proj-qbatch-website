@@ -18,7 +18,7 @@ const LeaderCardWrapper = styled.div`
       margin-bottom: 16px;
       position: absolute;
       top: -120px;
-      max-width: 70%;
+      max-width: 316px;
       }
     }
     .inner-box {
