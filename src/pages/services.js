@@ -60,7 +60,7 @@ const DevOps = () => {
         imgSrc='/services-banner-img.svg'
         customCrumbs={[
           { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
-          { pathname: '/services', crumbLabel: 'Services', crumbSeparator: '>' },
+          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
         ]}
       />
       <Achievements
