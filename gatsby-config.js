@@ -59,7 +59,7 @@ const strapiConfig = {
       singularName: 'article',
       queryParams: {
       publicationState: process.env.GATSBY_ENV === "staging" ? "preview" : "live",
-            queryParams: {
+      queryParams: {
         populate: {
           seo: {
             populate: '*',

@@ -99,7 +99,7 @@ const CtoBannerWrapper = styled.div`
     background-position:right;
     justify-content:start;
        &.change-background-size{
-      background-size:50%;
+      background-size:53%;
     }
     .container-wrapper {
     align-items: center;
