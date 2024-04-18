@@ -5,6 +5,17 @@ const SliderWrapper = styled.div`
   ${media.sm`
     padding: 40px 0;
   `}
+ 
+&.enterprise-software {
+  ${media.sm`
+  .make-responsive {
+  img {
+    width: 200px;
+}
+  }
+  `
+  }
+}
   &.devops-slider{
     .paragraph{
       max-width: 608px;

@@ -39,10 +39,11 @@ const DevOps = () => {
         buttonText="Kick-Start My DevOps Journey"
         wrapperClass="dev-ops-banner"
         className="inner-container"
-        col1lg={10}
-        col2lg={2}
+        col1lg={7}
+        col2lg={5}
         headingMaxWidth={'890px'}
         paragraphMaxWidth={'770px'}
+        imgSrc="/devops-banner-img.svg"
       />
       <AwsPartner />
       <DevOpsSupremacy/>
