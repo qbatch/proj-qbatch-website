@@ -4,7 +4,6 @@ import Layout from "../../components/Layout/layout";
 import SEO from "../../components/Seo";
 import Banner from "../../components/PagesComponent/PageBanner";
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
-import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
 import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
 import Collaboration from "../../components/PagesComponent/Collaboration";
@@ -13,8 +12,6 @@ import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
 import FaqSection from "../../components/PagesComponent/Faq";
 import StartProject from "../../components/PagesComponent/StartProject";
 import ChoiseYourEnterprise from "../../components/PagesComponent/ChoiceYourEnterprise";
-import SecretSauce from "../../components/PagesComponent/SecretSauce";
-import SofwareDevelopmentExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import DoYouKnow from "../../components/PagesComponent/DedicatedMobileDevelopers";
 import BannerImage from "../../../static/enterprise-banner.png";
 import Slider from '../../components/UiComponent/Slider'

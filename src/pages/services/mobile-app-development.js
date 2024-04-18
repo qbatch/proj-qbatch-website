@@ -2,7 +2,6 @@ import React from "react";
 import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
-import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
 import Achievements from "../../components/PagesComponent/Achievements";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
@@ -12,9 +11,7 @@ import { peopleFirstData } from "../../constants";
 import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
 import FaqSection from "../../components/PagesComponent/Faq";
 import StartProject from "../../components/PagesComponent/StartProject";
-import AppDevelopmentServices from "../../components/PagesComponent/TechnicalGuidance";
 import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
-import SecretSauce from "../../components/PagesComponent/SecretSauce";
 import Slider from '../../components/UiComponent/Slider'
 import Banner from "../../components/PagesComponent/PageBanner";
 import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
