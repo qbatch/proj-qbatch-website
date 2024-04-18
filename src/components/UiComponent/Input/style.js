@@ -39,6 +39,12 @@ const Input = styled.div`
       border-color: ${({ theme }) => theme.colors.dividerColor};
     }
   }
+  .error-text {
+    color: ${({ theme }) => theme.colors.dangerColor};
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    text-align: left;
+    line-height:24px;
+}
    
 `;
 export default Input;
