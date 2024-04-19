@@ -8,12 +8,23 @@ const CtoBannerWrapper = styled.div`
   background-position: 100% 100%;
   background-repeat: no-repeat;
   padding: 132px 0 98px 0;
-  min-height:calc(100vh - 70px);
+  height:calc(100vh - 70px);
   margin: auto;
   ${media.lg`
      min-height:calc(100vh - 700px);
   `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  .breadcrumb {
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+    color: ${({ theme }) => theme.colors.whiteColor};
+    margin: 4px 0 16px 10px;
+    a {
+      color: ${({ theme }) => theme.colors.whiteColor};
+    }
+    ${media.xs`
+      margin: 0 0 12px;
+  `}
+  }
   .banner-main {
     position:relative;
     z-index:1;
@@ -24,7 +35,7 @@ const CtoBannerWrapper = styled.div`
       font-size: 20px;
       font-weight: 700;
       padding-bottom: 10px;
-      color: ${({ theme }) => theme.colors.bodyLight};
+      color: ${({ theme }) => theme.colors.dividerColor};
       letter-spacing: 0;
       ${media.lg`
         font-size: 16px;
@@ -282,6 +293,17 @@ const CtoBannerWrapper = styled.div`
       padding: 100px 0;
     }
   `}
+    &.hire-developer-banner {
+    &:before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: #0000002e;
+      top: 0;
+      left: 0;
+      content: "";
+    }
+  }
 `
 
 export default CtoBannerWrapper;

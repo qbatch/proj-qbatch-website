@@ -34,6 +34,10 @@ const Ecommerce = () => {
         className="d-flex align-items-center justify-content-start"
         mobileViewBanner={EcommerceBanner}
         blogInner={EcommerceBanner}
+        customCrumbs={[
+          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+          { pathname: '/services/e-commerce-automation/', crumbLabel: 'Business Process Automation' },
+        ]}
       />
       <WhatCanHelp />
       <Slider

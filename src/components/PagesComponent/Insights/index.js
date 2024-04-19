@@ -18,6 +18,7 @@ const Index = () => {
   const [totalSlides, setTotalSlides] = useState(0);
    const blogArticle = Queries()
    const blogData = blogArticle.allStrapiArticle.nodes
+   const ctoBlogData = blogData.filter((item)=> item.category?.categoryName === "CTO as a Service")
   // Data for the cards
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const Index = () => {
     {
       breakpoint: 1200, // Adjust the breakpoint as needed
       settings: {
-        slidesToShow: 3, // Number of slides to show on larger screens
+        slidesToShow: 2, // Number of slides to show on larger screens
       },
     },
     {
@@ -48,8 +49,8 @@ const Index = () => {
     },
   ];
   const settings = {
-    slidesToShow: 4, // Default number of slides to show
-    slidesToScroll: 1,
+    slidesToShow: 2, // Default number of slides to show
+    slidesToScroll: 2,
     arrows: false,
     infinite: true,
     autoplay: false,
@@ -98,7 +99,7 @@ const Index = () => {
             </div>
           </div>
           <Slider ref={sliderRef} {...settings}>
-            {blogData.map((card, index) => (
+            {ctoBlogData.map((card, index) => (
               <div className="insight-card" key={index}>
                 <div className="inner">
                   <img className="card-img" src={card.blogImg?.localFile.url} alt={card.blogTitle} />

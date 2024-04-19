@@ -29,6 +29,8 @@ import {
   revenueData,
 } from "../../constants";
 
+import ResponsiveStyleWrapper from "./style";
+
 const MobileApp = () => {
   return (
     <Layout>
@@ -49,6 +51,10 @@ const MobileApp = () => {
           wrapperClass="cto-banner change-background-size"
           blogInner={BannerImage}
           mobileViewBanner={BannerImage}
+          customCrumbs={[
+            { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+            { pathname: '/services/mobile-app-development/', crumbLabel: 'Mobile App Development' },
+          ]}
         />
       <TechnicalExcellence
         heading="Robots won’t use your mobile apps, Humans will!"

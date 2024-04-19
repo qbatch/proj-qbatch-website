@@ -28,8 +28,9 @@ position: relative;
   padding: 32px;
   margin-top: 220px;
   .boss-img{
-    margin-top: -190px;
+    margin-top: -194px;
     margin-bottom: 16px;
+    height:320px;
   }
   .inner-box{
     text-align: center;
