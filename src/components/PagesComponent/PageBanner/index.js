@@ -10,7 +10,7 @@ const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
   const defaultCol1lg = 7;
   const defaultCol2lg = 5;
   const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
-  const crumbs = [defaultHomeCrumb, ...customCrumbs];
+ const crumbs = customCrumbs && customCrumbs.length > 0 ? [defaultHomeCrumb, ...customCrumbs] : [defaultHomeCrumb];
 
   return (
     <CtoBannerWrapper className={wrapperClass} blogInner={blogInner}>
