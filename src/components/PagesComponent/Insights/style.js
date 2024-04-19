@@ -29,6 +29,7 @@ const InsightsWrapepr = styled.div`
       .slick-track {
         display: flex;
         gap: 24px;
+        justify-content:center;
       }
     }
   }
