@@ -17,9 +17,11 @@ const ChooseCtoWrapper = styled.div`
     display: block;
     color:  ${({ theme }) => theme.colors.textMedium};
   }
-  h2 {
+  .heading {
     max-width: 550px;
     line-height: 52px;
+    font-weight: 700;
+    display: block;
     ${media.sm`
         line-height: 32px;
       `}

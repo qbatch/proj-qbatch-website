@@ -30,8 +30,8 @@ const Index = (props) => {
                   <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-sm-5 mb-sm-5 mb-4">
                     <img width={width || ''} height={height || ''} src={data.image} alt={data.title} />
                     <div class="slider-data">
-                      <div className="title">{data.title}</div>
-                      <div className="content">{data.content}</div>
+                      <h3 className="title">{data.title}</h3>
+                      <p className="content">{data.content}</p>
                       {data.list && (
                         <ul>
                           {data.list.map((list) => (

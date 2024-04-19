@@ -27,8 +27,9 @@ const Index = () => {
         
         <Row>
           <Col md={12} lg={6}>
-            <h2 className="color-primary">
-            <span className="sub-heading">Why Choose Our CTO as a Service?</span>We want you to become a pioneer before the world calls you a laggard.</h2>
+            <h2>
+            <span className="sub-heading">Why Choose Our CTO as a Service?</span></h2>
+            <span className="text-h2 color-primary heading">We want you to become a pioneer before the world calls you a laggard.</span>
           </Col>
           <Col md={12} lg={6}>
             <p>
