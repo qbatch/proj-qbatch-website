@@ -64,7 +64,6 @@ const CtoService = () => {
       <CtoPersona />
       <Slider
         heading="More Than Just “Technical Guidance” Explore Our Enterprise-level"
-        paragraph="CTO Services"
         data={guidanceData}
         width="350px"
       />

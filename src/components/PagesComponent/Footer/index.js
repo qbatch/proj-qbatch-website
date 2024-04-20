@@ -49,7 +49,7 @@ const menuData = [
 const menu2Data = [
   {
     name: 'About Us',
-    to: '/about',
+    to: '/about/',
   },
   {
     name: 'Contact Us',
