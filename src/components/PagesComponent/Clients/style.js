@@ -44,7 +44,7 @@ position: relative;
         }
       }
   .awards-main {
-    padding: 120px 0;
+    padding: 96px 0;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};
