@@ -62,6 +62,7 @@ const FourStepsProcessWrapper = styled.div`
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         border: 1px solid ${({ theme }) => theme.colors.primaryColor};
         border-radius: 54px;
+        background-color:${({ theme }) => theme.colors.whiteColor};
         margin-bottom: 16px;
         display: flex;
         justify-content: center;

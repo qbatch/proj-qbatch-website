@@ -53,6 +53,7 @@ const ShareYourRequirementsWrapper = styled.div`
     padding: 72px;
     border-radius: 24px 24px 0px 24px;
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    background-color:${({ theme }) => theme.colors.whiteColor};
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     margin: auto;
     align-items: baseline;

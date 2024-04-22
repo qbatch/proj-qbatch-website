@@ -79,7 +79,10 @@ const SoftwareDevelopersWrapper = styled.div`
           }
         }
       }
-      & .second-column {
+      .column-ui-wrapper.second-column p{
+        font-weight:600;
+      }
+      .second-column {
         border-radius: 12px 12px 0px 12px;
         border: 2px solid ${({ theme }) => theme.colors.primaryColor};
         margin-top: -36px;

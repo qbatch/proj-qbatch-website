@@ -91,8 +91,8 @@ const HireTrustedDevelopersWrapper = styled.div`
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
       padding: 48px;
       ${media.md`
-    padding: 24px;
-    
+        padding: 24px;
+        background-color:${({ theme }) => theme.colors.whiteColor};
     `}
     }
 
