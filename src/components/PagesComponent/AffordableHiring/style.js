@@ -36,6 +36,7 @@ const AffordableHiringWrapper = styled.div`
       grid-row-gap: 24px;
       border-radius: 24px 24px 0px 24px;
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+      background-color:${({ theme }) => theme.colors.whiteColor};
       h3 {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
         font-weight: 600;
