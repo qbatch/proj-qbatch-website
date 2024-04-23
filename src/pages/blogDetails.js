@@ -12,8 +12,9 @@ const BlogDetails = ({ pageContext }) => {
   
     const path = pageContext?.title;
     const blogQuery = Queries()
+ const schemaData = blogQuery.allStrapiArticle.nodes
+  .filter(x => x.slug === `${path}`)[0]?.seo?.structuredData?.strapi_json_value[0];
     const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.slug === `${path}`)
-     const schemaData= blogQuery.allStrapiArticle.nodes.find(x => x?.seo?.structuredData !== null).seo.structuredData.strapi_json_value[0]
        function replaceUnderscoreWithAt(obj) {
     if (obj && typeof obj === 'object') {
       if (Array.isArray(obj)) {
@@ -57,7 +58,7 @@ const BlogDetails = ({ pageContext }) => {
       </ContentWrapper>
       <BlogDetailBanner data={blogData} />
       <BlogDetailsContent data={blogData} path={path} />
-       {blogData.seo?.structuredData ? <Script type="application/ld+json">{schemaAsString}</Script>: null  } 
+      {blogData?.seo?.structuredData && <Script type="application/ld+json">{schemaAsString}</Script> }  
     </Layout>
   )
 }
