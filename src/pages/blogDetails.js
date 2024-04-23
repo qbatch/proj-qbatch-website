@@ -58,7 +58,7 @@ const BlogDetails = ({ pageContext }) => {
       </ContentWrapper>
       <BlogDetailBanner data={blogData} />
       <BlogDetailsContent data={blogData} path={path} />
-      {blogData.seo.structuredData && <Script type="application/ld+json">{schemaAsString}</Script> }  
+      {blogData?.seo?.structuredData && <Script type="application/ld+json">{schemaAsString}</Script> }  
     </Layout>
   )
 }
