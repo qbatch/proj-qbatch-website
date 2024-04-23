@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const HireTrustedDevelopersWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    ${media.sm`
+  padding: 40px 0px;
+  `}
   h2 {
     margin-bottom: 16px;
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -25,6 +28,7 @@ const HireTrustedDevelopersWrapper = styled.div`
     .card-ui-wrapper {
       border-radius: 24px 24px 0px 24px;
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+      background-color: ${({ theme }) => theme.colors.whiteColor};
       padding: 48px;
       ${media.md`
     padding: 24px;
@@ -89,10 +93,10 @@ const HireTrustedDevelopersWrapper = styled.div`
   .card-ui-wrapper {
       border-radius: 24px 24px 0px 24px;
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+      background-color: ${({ theme }) => theme.colors.whiteColor};
       padding: 48px;
       ${media.md`
         padding: 24px;
-        background-color:${({ theme }) => theme.colors.whiteColor};
     `}
     }
 

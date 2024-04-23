@@ -2685,13 +2685,13 @@ const hassleData = [
   {
     img: '/stopwatch.svg',
     number: 10,
-    sign: "X",
+    sign: "x",
     heading: "Faster Onboarding",
   },
   {
     img: '/fast-time.svg',
     number:60,
-    sign: "X",
+    sign: "%",
     heading: "Less Time Hiring",
   },
   {

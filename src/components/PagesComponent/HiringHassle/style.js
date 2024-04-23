@@ -4,7 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const HiringHassleWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-
+${media.sm`
+padding: 40px 0px;
+`}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
     text-align: center;
@@ -32,6 +34,7 @@ const HiringHassleWrapper = styled.div`
     `}
     ${media.sm`
     grid-template-columns: 1fr 1fr;
+    padding-top:24px;
     `}
     ${media.xs`
     grid-template-columns: 1fr;
@@ -71,7 +74,7 @@ const HiringHassleWrapper = styled.div`
         grid-gap: 16px;
         p {
           display: flex;
-          grid-gap: 8px;
+          grid-gap: 4px;
           span {
             color: ${({ theme }) => theme.colors.gardientColor};
             text-align: center;
@@ -84,7 +87,7 @@ const HiringHassleWrapper = styled.div`
               `}
             &:nth-child(2) {
               color: ${({ theme }) => theme.colors.dangerColor};
-              font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
+              font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
               font-style: normal;
               font-weight: 300;
               ${media.sm`

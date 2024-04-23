@@ -4,6 +4,10 @@ import { media } from "../../../theme/media-mixins";
 const PerfectDevStyleWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  ${media.sm`
+  padding: 24px 0px;
+  
+  `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 24px;
@@ -59,7 +63,7 @@ const PerfectDevStyleWrapper = styled.div`
         `};
       }
       &:nth-child(3) {
-        top: -120px;
+        top: -77px;
         ${media.sm`
           flex-direction: column;
           `}
@@ -71,7 +75,7 @@ const PerfectDevStyleWrapper = styled.div`
         flex-direction: row-reverse;
         position: relative;
         left: 200px;
-        top: -56px;
+        top: -28px;
         ${media.standard`
           left: 0;
           top:0;
@@ -85,7 +89,7 @@ const PerfectDevStyleWrapper = styled.div`
         flex-direction: row-reverse;
         position: relative;
         left: 200px;
-        top: -170px;
+        top: -100px;
         ${media.standard`
           left: 0;
           top:0;
