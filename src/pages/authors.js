@@ -42,7 +42,6 @@ export const Head = () => {
   if (!seoData) {
     return <PageNotFound />
   }
-
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -50,7 +49,7 @@ export const Head = () => {
       keywords={seoData?.keywords}
       language={seoData?.language}
       robots={seoData?.metaRobots}
-      pathname={`/authors/${url}/`}
+      pathname={`/authors${seoData.slug}`}
     />
   )
 };
