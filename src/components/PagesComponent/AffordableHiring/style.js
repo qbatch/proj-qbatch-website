@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const AffordableHiringWrapper = styled.div`
   padding: 120px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    ${media.sm`
+  padding: 40px 0px;
+  `}
   h2 {
     margin-bottom: 16px;
     color: ${({ theme }) => theme.colors.primaryColor};

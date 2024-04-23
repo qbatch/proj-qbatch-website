@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const SoftwareDevelopersWrapper = styled.div`
   padding: 96px 0px;
+  ${media.sm`
+  padding: 40px 0px;
+  `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 16px;
@@ -22,7 +25,7 @@ const SoftwareDevelopersWrapper = styled.div`
     ${media.xl`
         display: block;
         position: absolute;
-        top: 24px;
+        top: 8px;
         right: 20px;
         font-size: 28px;
         animation:SlideAnimation infinite alternate 1.5s ease;
