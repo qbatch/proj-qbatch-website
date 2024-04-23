@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 const ValueSystemWrapper = styled.div`
-  padding: 120px 0;
+  padding: 96px 0;
   ${media.sm`
     padding: 40px 0;
   `}
@@ -40,10 +40,10 @@ const ValueSystemWrapper = styled.div`
       padding-left: 16px;
       padding-top: 12px;
       h3 {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
       }
       p {
-        line-height: 32px;
+        line-height: 24px;
       }
     }
     &:nth-child(3n) {
