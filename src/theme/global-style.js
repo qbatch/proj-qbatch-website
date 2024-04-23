@@ -398,5 +398,8 @@ const GlobalStyles = createGlobalStyle`
 .job-details-content{
   margin-top:0px!important;
 }
+.flex-1{
+  flex:1;
+}
 `
 export default GlobalStyles
