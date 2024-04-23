@@ -13,6 +13,10 @@ const headerMenu = [
     name: "Services",
     to: "/services",
   },
+    {
+    name: "Hire Developers",
+    to: "/hire-developers",
+  },
   {
     name: "Industries",
     to: "/#industries",
