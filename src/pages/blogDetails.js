@@ -12,7 +12,8 @@ const BlogDetails = ({ pageContext }) => {
   
     const path = pageContext?.title;
     const blogQuery = Queries()
-    const schemaData = blogQuery.allStrapiArticle.nodes.filter( x => x.slug ===  `${path}` )[0].seo.structuredData.strapi_json_value[0];
+ const schemaData = blogQuery.allStrapiArticle.nodes
+  .filter(x => x.slug === `${path}`)[0]?.seo?.structuredData?.strapi_json_value[0];
     const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.slug === `${path}`)
        function replaceUnderscoreWithAt(obj) {
     if (obj && typeof obj === 'object') {
