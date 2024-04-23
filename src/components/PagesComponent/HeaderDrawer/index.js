@@ -220,7 +220,11 @@ const howWeWorkMenu = [
   {
     menu: "Discovery Phase",
     to: "",
-  }
+  },
+  {
+    menu: 'Hire-developer',
+    to: '/hire-developers',
+  },
 ];
 
 const companyMenu = [

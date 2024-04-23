@@ -39,14 +39,12 @@ const HeaderWrapper = styled.header`
         margin-bottom: 0;
         li {
           padding-left: 24px;
-          padding-right:24px;
           ${media.lg`
             padding-left: 20px;
           `}
           a {
             color: ${({ theme }) => theme.colors.textMedium};
-            font-weight: 300;
-            line-height:24px;
+            font-weight: ${({ theme }) => theme.fontWeight.normal};
             &:hover {
               color: ${({ theme }) => theme.colors.primaryColor};
               font-weight: ${({ theme }) => theme.fontWeight.medium};
@@ -85,6 +83,38 @@ const HeaderWrapper = styled.header`
               border-bottom: 2px solid ${({ theme }) => theme.colors.dangerColor};
               transition: all 0.3s ease-out;
             }
+          }
+          &:first-child {
+            min-width: 112px;
+            ${media.lg`
+              min-width: 96px;
+            `}
+          }
+          &:nth-child(2) {
+            /* min-width: 167px; */
+            min-width: 116px;
+            
+            ${media.lg`
+              min-width: 151px;
+            `}
+          }
+          &:nth-child(3) {
+            min-width: 122px;
+            ${media.lg`
+              min-width: 106px;
+            `}
+          }
+          &:nth-child(4) {
+            min-width: 110px;
+            ${media.lg`
+              min-width: 92px;
+            `}
+          }
+          &:last-child {
+            min-width: 88px;
+            ${media.lg`
+              min-width: 70px;
+            `}
           }
           &::after {
             position: absolute;
