@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const GrowthPartnerWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  padding: 120px 0;
+  padding: 96px 0;
   ${media.sm`
       padding: 40px 0;
     `}
@@ -16,14 +16,14 @@ const GrowthPartnerWrapper = styled.div`
     }
     .main-heading {
       color: ${({ theme }) => theme.colors.primaryColor};
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       span {
         display: block;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
       }
     }
     .paragraph {
-      line-height: 32px;
+      line-height: 24px;
       font-weight: 400;
       max-width: 600px;
       letter-spacing: 0.2px;
@@ -65,7 +65,10 @@ const GrowthPartnerWrapper = styled.div`
   .content-right {
     .content {
       padding-left: 96px;
-      padding-top: 128px;
+      padding-top: 80px;
+      &.mission{
+        padding-top:64px;
+      }
       ${media.md`
         padding-left: 0;
         padding-top: 16px;

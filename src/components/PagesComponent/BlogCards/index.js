@@ -16,8 +16,8 @@ const Index = (props) => {
   const BlogPost = ({ card, ind }) => {
     const customDate = new Date(card.publishedAt)
     return (
-      <Col md={6}>
-        <div className="inner" key={ind}>
+      <Col md={6} className="d-flex flex-column">
+        <div className="inner flex-1" key={ind}>
           <div className="card-img">
             <img src={card.blogImg?.localFile.url} alt={card.blogTitle} />
             <div className="d-flex align-items-center justify-content-between">

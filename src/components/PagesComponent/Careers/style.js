@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins" 
 
 const CareerWrapper = styled.div`
- padding: 120px 0;
+ padding: 96px 0;
  ${media.sm`
   padding: 40px 0;
  `}
@@ -13,8 +13,8 @@ const CareerWrapper = styled.div`
     }
   }
   .paragraph{
-    line-height: 32px;
-    padding-top: 32px;
+    line-height: 24px;
+    padding-top: 28px;
     padding-right: 32px;
     margin-bottom: 4px;
   }

@@ -7,6 +7,9 @@ const RemoteDeveloperStyleWrapper = styled.div`
   padding-bottom:72px ;
   
   `}
+  ${media.sm`
+    padding-bottom: 16px;
+    `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .content-wrapper {
     max-width: 930px;
@@ -14,6 +17,10 @@ const RemoteDeveloperStyleWrapper = styled.div`
     margin: auto;
     padding-top: 96px;
     padding-bottom: 72px;
+    ${media.sm`
+    padding-top: 40px;
+    padding-bottom: 40px;
+    `}
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
     }
@@ -29,6 +36,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
     `}
     ${media.sm`
     grid-template-columns: 1fr 1fr;
+    grid-gap:0px;
     `}
     ${media.xs`
     grid-template-columns: 1fr;
