@@ -13,13 +13,20 @@ const GrowthPartnerWrapper = styled.div`
     }
     .heading {
       margin-bottom: 8px;
+      font-weight:700;
     }
     .main-heading {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
+      font-weight:700;
       span {
+        font-weight:500;
         display: block;
         margin-bottom: 24px;
+        ${media.sm`
+        margin-bottom:12px;
+        `}
+
       }
     }
     .paragraph {
@@ -68,11 +75,16 @@ const GrowthPartnerWrapper = styled.div`
       padding-top: 80px;
       &.mission{
         padding-top:64px;
+        ${media.sm`
+        padding-left: 0;
+        padding-top: 24px;
+        `}
       }
       ${media.md`
         padding-left: 0;
-        padding-top: 16px;
+        padding-top: 24px;
         `}
+        
       .paragraph {
         max-width: 595px;
       }

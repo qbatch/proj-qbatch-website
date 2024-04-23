@@ -15,7 +15,7 @@ const Index = () => (
           <p>
             As a close-knit team, we strive to create products that facilitate millions of people every
             day. We heavily focus on building high-potential teams that believe in deriving real and
-            lasting human experiences.
+            lasting human experience.
             </p>
         </div>
         <div className="banner-button">

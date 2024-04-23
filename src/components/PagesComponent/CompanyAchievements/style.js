@@ -16,9 +16,14 @@ ${media.sm`
   .main-heading{
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 72px;
+    font-weight:700;
+    ${media.sm`
+    margin-bottom: 24px;
+    `}
     span {
       display: block;
       margin-bottom: 24px;
+      font-weight:500;
     }
   }
   .achievements-col{
@@ -26,8 +31,14 @@ ${media.sm`
     padding: 44px 12px;
     border-right: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor};
+    ${media.sm`
+    padding: 16px 12px;
+    `}
     h1{
       margin-bottom: 0;
+    }
+    h3{
+      font-weight:700;
     }
     p{
       max-width: 221px;
@@ -36,12 +47,23 @@ ${media.sm`
       padding-top: 8px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       letter-spacing: 1.3px;
-      text-transform: capitalize;
     }
+    ${media.sm`
+    &:nth-child(2) {
+      border-right:none;
+    }
+    &:nth-child(6) {
+      border-right:none;
+    }
+    
+    `}
     &:nth-child(4n){
       border-right: none;
     }
-    &:nth-last-child(-n+4) {
+    &:nth-child(7) {
+      border-bottom: none;
+    }
+    &:nth-child(8) {
       border-bottom: none;
     }
 

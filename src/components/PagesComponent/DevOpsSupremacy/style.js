@@ -32,6 +32,8 @@ border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
     span:first-child{
       min-width:50px; 
       display: inline-block;
+      text-transform:none;
+      font-weight: 500;
     }
     .counter-symbol{
       color: ${({ theme }) => theme.colors.dangerColor};
