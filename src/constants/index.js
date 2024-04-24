@@ -38,9 +38,9 @@ const companyCounter = [
   { id: 2, count: 300, desc: 'Partnerships Achieved', symbol: '+' },
   { id: 3, count: 150, desc: 'Projects Delivered', symbol: '+' },
   { id: 4, count: 15, desc: 'SaaS-Based Platforms Developed', symbol: '+' },
-  { id: 5, count: 30000, desc: 'Hrs Of Productivity Unlocked!', symbol: '+' },
+  { id: 5, count: 30000, desc: 'Hrs of Productivity Unlocked!', symbol: '+' },
   { id: 6, count: 100, desc: 'Industry Experts', symbol: '+' },
-  { id: 7, count: 10, desc: 'Years Of Excellency', symbol: '' },
+  { id: 7, count: 10, desc: 'Years of Excellency', symbol: '' },
   { id: 8, count: 3, desc: 'Global Offices', symbol: '' },
 ]
 const peopleFirstData = [
@@ -2685,13 +2685,13 @@ const hassleData = [
   {
     img: '/stopwatch.svg',
     number: 10,
-    sign: "X",
+    sign: "x",
     heading: "Faster Onboarding",
   },
   {
     img: '/fast-time.svg',
     number:60,
-    sign: "X",
+    sign: "%",
     heading: "Less Time Hiring",
   },
   {
