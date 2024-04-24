@@ -54,9 +54,6 @@ const Index = ({ data }) => {
                 <span key={ind}>{tag}</span>
               ))}
             </div>
-            <div className="author-name">
-              <span>{data?.user?.name}</span>
-            </div>
           </div>
         </div>
       </Container>
