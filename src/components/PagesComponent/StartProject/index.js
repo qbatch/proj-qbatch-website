@@ -7,7 +7,7 @@ import "../../../../node_modules/video-react/dist/video-react.css";
 import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-
+import ReCAPTCHA from "react-google-recaptcha";
 import Container from "../../UiComponent/Container";
 import Input from "../../UiComponent/Input";
 import Collapse from "../../UiComponent/Collapse";
@@ -183,6 +183,9 @@ const Index = ({ page }) => {
       }
     }
   };  
+  function onChange(value) {
+  console.log("Captcha value:", value);
+}
   return (
     <StartProjectWrapper>
       <Container>
@@ -359,12 +362,11 @@ const Index = ({ page }) => {
                   onChange={() => toggleCheckbox('promotion')}
                 />
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
-                  {/* <ReCaptcha
+                  <ReCAPTCHA
                     action="homepage"
-                    siteKey="6Lc47vwoAAAAAPn5GzX7tbV_mwo92EogNVvNeR0l"
-                    onVerify={(token) => submit(token)}
-                    submitted={submitted}
-                  /> */}
+                    sitekey="6LdIx8QpAAAAANMYWJl6mHb5hUZFYEH4Svdg-kGs"
+                    onChange={onChange}
+                  />
                   <Button text="Submit" btnType="submit" className="pt-md-0 pt-3" />
                 </div>
               </div>
