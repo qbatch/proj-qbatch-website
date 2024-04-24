@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const FourStepsProcessWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  ${media.sm`
+  padding: 40px 0px;
+  `}
   h2 {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
     font-weight: 700;
@@ -62,6 +65,7 @@ const FourStepsProcessWrapper = styled.div`
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         border: 1px solid ${({ theme }) => theme.colors.primaryColor};
         border-radius: 54px;
+        background-color:${({ theme }) => theme.colors.whiteColor};
         margin-bottom: 16px;
         display: flex;
         justify-content: center;

@@ -195,7 +195,10 @@ function App({ data, path }) {
                                     ))}
                                   </div>
                                   <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-                                    <span>{card?.user?.username}</span>
+                                    <div className="d-flex gap-2">
+                                      <img src={card?.user?.image.localFile.url || '/avatar.svg'} width="24px" height="24px" alt="no-user" />
+                                      <span>{card?.user?.name}</span>
+                                      </div>
                                     <div className="timer">
                                       <img src="/timer-blue.svg" alt="timer" />
                                       <span>

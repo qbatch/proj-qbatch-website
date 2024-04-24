@@ -220,7 +220,7 @@ const howWeWorkMenu = [
   {
     menu: "Discovery Phase",
     to: "",
-  },
+  }
 ];
 
 const companyMenu = [
