@@ -221,10 +221,6 @@ const howWeWorkMenu = [
     menu: "Discovery Phase",
     to: "",
   },
-  {
-    menu: 'Hire-developer',
-    to: '/hire-developers',
-  },
 ];
 
 const companyMenu = [
@@ -248,33 +244,7 @@ const dropdownData = [
     state: "services",
     menu: servicesItems,
   },
-  // {
-  //   title: "Hire Developers",
-  //   state: "hireDevelopers",
-  //   header: true,
-  //   subMenu: [
-  //     {
-  //       heading: "Frameworks",
-  //       menu1: frameworksMenu,
-  //       menu2: frameworksMenu2,
-  //     },
-  //     {
-  //       heading: "Trending",
-  //       menu1: trendingMenu,
-  //       menu2: trendingMenu2,
-  //     },
-  //     {
-  //       heading: "DevOps",
-  //       menu1: devOpsmenu,
-  //       menu2: [],
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Industries",
-  //   state: "industries",
-  //   menu: industriesMenu,
-  // },
+
   {
     title: "How We Work",
     state: "howWeWork",
