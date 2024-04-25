@@ -1,6 +1,8 @@
 import React from "react";
+import { Script } from 'gatsby'
 import Banner from '../../components/PagesComponent/PageBanner'
 import { Queries } from '../../constants/queries'
+import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import SEO from "../../components/Seo";
 import Slider from '../../components/UiComponent/Slider'
 import Layout from "../../components/Layout/layout";
@@ -24,6 +26,7 @@ import { automationData } from "../../constants";
 const Ecommerce = () => {
   return (
     <Layout>
+    
       <Banner
         subheading="Custom E-Commerce Software Solutions"
         heading="Bigger Returns Require Bold Transformation"
@@ -72,6 +75,7 @@ const Ecommerce = () => {
       <FaqSection faqQuestion={ecomFaqQuestion} />
       <QuotationSection />
       <StartProject />
+
     </Layout>
   )
 };
@@ -79,7 +83,7 @@ const Ecommerce = () => {
 export const Head = () => {
   const eCommerceData = Queries()
   const seoData = eCommerceData.allStrapiEcommerce.nodes[0]?.seo
-  
+  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -89,7 +93,12 @@ export const Head = () => {
       robots={seoData.metaRobots}
       image={seoData.metaimage[0].localFile.url}
       pathname={`/services${seoData.slug}`}
-    />
+    >
+      {schemaData &&   <Script  type="application/ld+json">
+              {JSON.stringify(schemaData)}
+            </Script> }
+       
+      </SEO>
   )
 }
 

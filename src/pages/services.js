@@ -1,8 +1,8 @@
 import React from 'react';
-
+import { Script } from 'gatsby'
 import SEO from "../components/Seo";
 import { Queries } from '../constants/queries'
-
+import {replaceUnderscoreWithAt} from '../constants/Utils'
 import Layout from '../components/Layout/layout';
 import Banner from "../components/PagesComponent/PageBanner";
 import Slider from '../components/UiComponent/Slider';
@@ -118,6 +118,7 @@ const DevOps = () => {
 export const Head = () => {
   const serviceData = Queries()
   const seoData = serviceData?.allStrapiDevelopementService?.nodes[0]?.seo
+  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -127,7 +128,11 @@ export const Head = () => {
       robots={seoData?.metaRobots}
       image={seoData.metaimage[0].localFile.url}
       pathname={`/${seoData.slug}/`}
-    />
+    >
+       {schemaData &&   <Script  type="application/ld+json">
+              {JSON.stringify(schemaData)}
+            </Script> }
+            </SEO>
   )
 }
 
