@@ -307,13 +307,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        name: `blogDetails`,
-        path: `${__dirname}/src/blogDetails`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         excludes: [
@@ -378,8 +371,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'blog',
-        path: `${__dirname}/blog/`,
+        name: 'static',
+        path: `${__dirname}/static/`,
       },
     },
 
