@@ -260,6 +260,16 @@ const strapiConfig = {
         },
       },
     },
+    {
+      singularName: 'hire-developer',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
   ],
   singleTypes: [
     'home',
@@ -279,7 +289,8 @@ const strapiConfig = {
     'privacy-policy',
     'web-and-data-scraping',
     'terms-and-condition',
-    'prosper-show'
+    'prosper-show',
+    'hire-developer'
   ],
   queryLimit: 1000,
 }

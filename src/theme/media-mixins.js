@@ -7,6 +7,7 @@ import { css } from "styled-components";
    lg: "1199px",
    standard: "1279px",
    customBrakePoint: "1360px",
+   mobile:'575px',
    xl: "1399px"
  };
 
