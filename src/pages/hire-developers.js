@@ -1,5 +1,8 @@
 import React from "react";
+
 import Layout from "../components/Layout/layout";
+import SEO from "../components/Seo";
+import { Queries } from '../constants/queries'
 import Banner from "../components/PagesComponent/PageBanner";
 import RemoteDeveloper from "../components/PagesComponent/RemoteDeveloper";
 import HiringHassle from "../components/PagesComponent/HiringHassle";
@@ -42,4 +45,21 @@ const Index = () => {
       </Layout>
   );
 };
+
+export const Head = () => {
+  const hireDeveloperData = Queries()
+  const seoData = hireDeveloperData.allStrapiHireDeveloper.nodes[0]?.seo
+  return (
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData?.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+      image={seoData.metaimage[0].localFile?.url}
+    />
+  )
+}
+
 export default Index;
