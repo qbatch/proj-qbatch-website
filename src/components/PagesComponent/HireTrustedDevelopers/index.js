@@ -48,7 +48,7 @@ const HireTrustedDevelopers = () => {
         </div>
         <div className="data-list-overlay-wrapper">
           <div className="card-ui-wrapper">
-            <h3>Based on role/expertise</h3>
+            <h3>Based on trending technology</h3>
             <div className="data-list-wrapper">
               <ul>
                 <li>Angular</li>
@@ -95,7 +95,7 @@ const HireTrustedDevelopers = () => {
             </div>
           </div>
           <div className="card-ui-wrapper">
-            <h3>Based on role/expertise</h3>
+            <h3>Based on tech stack and languages</h3>
             <div className="data-list-wrapper">
               <ul>
                 <li>Blockchain</li>

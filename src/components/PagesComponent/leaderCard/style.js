@@ -14,11 +14,13 @@ const LeaderCardWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 435px;
     .img {
       margin-bottom: 16px;
       position: absolute;
-      top: -190px;
-      height:320px;
+      width:240px;
+      height:280px;
+      top: -130px;
       }
     }
     .inner-box {
@@ -43,6 +45,7 @@ const LeaderCardWrapper = styled.div`
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       line-height: 24px;
       text-align: center;
+      min-height: 120px;
     }
 `;
 export { LeaderCardWrapper };

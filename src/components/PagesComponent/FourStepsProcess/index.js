@@ -15,9 +15,9 @@ const FourStepsProcess = () => {
         <div className="process-card-overlay">
           {FourStepsProcessData.map((item, index) => (
             <div key={index} className="process-card-wrapper">
-              <h3>{item.number}</h3>
+              <p className="num-icon">{item.number}</p>
              {item.img ? <img src={item.img} alt={item.img} /> : null}
-              <h4>{item.heading}</h4>
+              <h3>{item.heading}</h3>
               <p>{item.text}</p>
             </div>
           ))}

@@ -2041,10 +2041,10 @@ const hireDeveloper = [
   },
   {
     id: 3,
-    title: 'How are Qbatch developers different?',
+    title: 'How much does it cost to hire software developers on Qbatch?',
     content: (
       <div className="faq-content">
-        <span>How much does it cost to hire software developers on Qbatch?</span>
+        <span>The cost to hire software developers at Qbatch ranges from $50 to $250 per hour.</span>
       </div>
     ),
   },

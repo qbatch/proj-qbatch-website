@@ -71,12 +71,13 @@ ${media.sm`
   grid-gap:24px;
   padding-top:120px;
   ${media.md`
-  flex-wrap:wrap;
-  grid-row-gap:150px;
-  padding-top:220px;
   `}
   ${media.sm`
   grid-row-gap:220px;
+  flex-wrap:wrap;
+  grid-row-gap:150px;
+  padding-top:150px;
+
   `}
 }
 .leader{
