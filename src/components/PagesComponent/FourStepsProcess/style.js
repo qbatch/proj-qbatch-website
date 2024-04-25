@@ -55,7 +55,7 @@ const FourStepsProcessWrapper = styled.div`
         display: none;
       `}
     }
-      h3 {
+      .num-icon {
         width: 96px;
         height: 96px;
         font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
@@ -71,7 +71,7 @@ const FourStepsProcessWrapper = styled.div`
         justify-content: center;
         align-items: center;
       }
-      h4 {
+      h3 {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         font-weight: 700;
         color: ${({ theme }) => theme.colors.bodyTextVariant};
