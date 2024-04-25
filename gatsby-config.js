@@ -298,8 +298,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        name: `blogDetails`,
-        path: `${__dirname}/src/blogDetails`,
+        name: `blog`,
+        path: `${__dirname}/src/markdown`,
       },
     },
     {
@@ -315,9 +315,6 @@ module.exports = {
                 site_url: siteUrl
               }
             }
-            strapiArticle {
-              slug
-            }
           }
         `,
         feeds: [
@@ -326,8 +323,9 @@ module.exports = {
               return allMarkdownRemark.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt ,
-                  url: site.siteMetadata.siteUrl + '/blog/' + strapiArticle.slug ,
-                  guid: site.siteMetadata.siteUrl + '/blog/' +  strapiArticle.slug,
+                  url: site.siteMetadata.siteUrl,
+                  guid: site.siteMetadata.siteUrl,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
             },
@@ -418,8 +416,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'blog',
-        path: `${__dirname}/blog/`,
+        name: `images`,
+        path: `${__dirname}/static`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/src/markdown`,
       },
     },
 

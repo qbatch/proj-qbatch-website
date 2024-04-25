@@ -1,31 +1,10 @@
-const path = require('path')
+const path = require('path');
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  createPage({
-    path: "/sitemap.html",
-    component: require.resolve("./src/sitemap/sitemap.js"),
-  });
-  createPage({
-    path: "/sitemap-services.html",
-    component: require.resolve("./src/sitemap/sitemap-services.js"),
-  });
-  createPage({
-    path: "/sitemap-blog.html",
-    component: require.resolve("./src/sitemap/sitemap-blog.js"),
-  });
-  createPage({
-    path: "/sitemap-pages.html",
-    component: require.resolve("./src/sitemap/sitemap-pages.js"),
-  });
-  createPage({
-    path: "/sitemap-authors.html",
-    component: require.resolve("./src/sitemap/sitemap-authors.js"),
-  });
-  createPage({
-    path: "/sitemap-events.html",
-    component: require.resolve("./src/sitemap/sitemap-events.js"),
-  });
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions;
+
+  // Your previous logic for creating static pages
+  // ...
 
   const result = await graphql(`
     query {
@@ -59,40 +38,73 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
-  const strapiBlogPosts = result.data.allStrapiArticle.edges
+  const strapiBlogPosts = result.data.allStrapiArticle.edges;
+
+  strapiBlogPosts.forEach(async ({ node }) => {
+    await createPage({
+      path: `/blog/${node?.slug}/`,
+      component: path.resolve('./src/pages/blogDetails.js'),
+      context: {
+        title: node.slug,
+      },
+    });
+
+    await createPage({
+      path: `/blog/${node.category?.slug}`,
+      component: path.resolve('./src/pages/blog.js'),
+      context: {
+        title: node.category?.categoryName,
+      },
+    });
+
+    await createPage({
+      path: `/authors/${node.user?.username}`,
+      component: path.resolve('./src/pages/authors.js'),
+      context: {
+        title: node.user?.username,
+        name: node.user?.name,
+        description: node.user?.description,
+        img: node.user?.image,
+        socials: node.user?.Socials,
+      },
+    });
+  });
+
+  // Your logic for creating MarkdownRemark pages
+  const bookTemplate = path.resolve(`src/templates/bookTemplates.js`);
+
+  const result1 = await graphql(`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  if (result1.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
+  }
 
   strapiBlogPosts.forEach(({ node }) => {
-  createPage({
-    path: `/blog/${node?.slug}/`,
-    component: path.resolve('./src/pages/blogDetails.js'),
-    context: {
-      title: node.slug,
-    },
-  })
-  
-  createPage({
-    path: `/blog/${node.category?.slug}`,
-    component: path.resolve('./src/pages/blog.js'),
-    context: {
-      title: node.category?.categoryName,
-    },
-  })
-  createPage({
-    path: `/authors/${node.user?.username}`,
-    component: path.resolve('./src/pages/authors.js'),
-    context: {
-      title: node.user?.username,
-      name: node.user?.name,
-      description: node.user?.description,
-      img: node.user?.image,
-      socials: node.user?.Socials,
-    },
-  })
-  
-})};
+    createPage({
+      path: `/blog/${node?.slug}/`,
+      component: path.resolve('./src/pages/blogDetails.js'),
+         context: {
+        title: node.slug,
+      },
+    });
+  });
+};
