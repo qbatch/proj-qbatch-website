@@ -195,7 +195,22 @@ function App({ data, path }) {
                                     ))}
                                   </div>
                                   <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-                                    <span>{card?.user?.username}</span>
+                                  <div className=" pointer gap-3" 
+                                  onClick={() => {
+                                      navigate(`/authors/${card?.user?.username}`, {
+                                        state: { slug: card.seo.slug },
+                                      });
+                                    }}>
+                                  <span>
+                                      <img
+                                        src={card?.user?.image?.localFile?.url || "/avatar.svg"}
+                                        width="24px"
+                                        height="24px"
+                                        alt="no-user"
+                                      />
+                                    </span>
+                                    <span>   {card?.user?.username || "No User"}</span>
+                                </div>
                                     <div className="timer">
                                       <img src="/timer-blue.svg" alt="timer" />
                                       <span>
