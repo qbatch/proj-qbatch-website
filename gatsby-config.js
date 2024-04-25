@@ -307,64 +307,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        name: `blogDetails`,
-        path: `${__dirname}/src/blogDetails`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-            strapiArticle {
-              slug
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark,strapiArticle } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt ,
-                  url: site.siteMetadata.siteUrl + '/blog/' + strapiArticle.slug ,
-                  guid: site.siteMetadata.siteUrl + '/blog/' +  strapiArticle.slug,
-                })
-              })
-            },
-            query: `
-              {
-                allMarkdownRemark {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      frontmatter {
-                        title
-                      }
-                    }
-                  }
-                }
-              }
-              
-            `,
-            output: "/rss.xml",
-            title: "Qbatch's RSS Feed",
-          },
-        ],
-      },
-    },
-    {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         excludes: [
@@ -429,8 +371,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'blog',
-        path: `${__dirname}/blog/`,
+        name: 'static',
+        path: `${__dirname}/static/`,
       },
     },
 

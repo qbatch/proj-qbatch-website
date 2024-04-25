@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 export const Queries = () => {
    const data = useStaticQuery(graphql`
-     query BlogQuery {
+    query BlogQuery {
        allStrapiBlog {
          nodes {
            seo {
@@ -15,7 +15,7 @@ export const Queries = () => {
            }
          }
        }
-         allStrapiArticle {
+      allStrapiArticle {
          nodes {
            updatedAt
            blogTitle

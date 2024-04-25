@@ -235,8 +235,7 @@ function App({ data, path }) {
                                       <span>
                                         <ReadingTime
                                           description={
-                                            card?.blogDescription?.data
-                                              .blogDescription
+                                            card?.blogDescription?.data?.blogDescription
                                           }
                                         />{" "}
                                         Minutes Read
