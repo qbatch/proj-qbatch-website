@@ -11,7 +11,7 @@ const ReasonToHireWrapper = styled.div`
   background-size: cover;
   padding: 96px;
   ${media.sm`
-  padding: 96px 0px;
+  padding: 40px 0px;
     `}
   h2 {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};

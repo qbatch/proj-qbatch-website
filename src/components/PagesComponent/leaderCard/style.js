@@ -28,6 +28,8 @@ const LeaderCardWrapper = styled.div`
       margin-bottom: 16px;
       .name {
         color: ${({ theme }) => theme.colors.primaryColor};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        font-weight: 700;
       }
     }
     .social {

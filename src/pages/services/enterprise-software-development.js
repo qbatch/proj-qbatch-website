@@ -1,4 +1,6 @@
 import React from "react";
+import { Script } from 'gatsby'
+import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
 import SEO from "../../components/Seo";
@@ -123,6 +125,7 @@ export const Head = () => {
   const enterpriseData = Queries()
 
   const seoData = enterpriseData.allStrapiEnterprise.nodes[0]?.seo
+  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
 
   return (
     <SEO
@@ -133,7 +136,11 @@ export const Head = () => {
       image={seoData.metaimage[0].localFile.url}
       robots={seoData.metaRobots}
       pathname={`/services${seoData.slug}`}
-    />
+    >
+      {schemaData &&   <Script  type="application/ld+json">
+      {JSON.stringify(schemaData)}
+    </Script> }
+    </SEO>
   )
 }
 

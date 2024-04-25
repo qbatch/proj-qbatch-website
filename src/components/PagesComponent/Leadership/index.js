@@ -16,14 +16,13 @@ const Index = () => {
             <div className="content-wrapper">
               <h2 className="heading">Leadership you can Trust</h2>
               <p className="paragraph">
-                We partner with visionaries like you to assist your business’
-                technological transformation on a massive scale
+              We partner with visionaries like you to assist your business’ 
+              technological transformation on a massive scale
               </p>
               <ul className="list">
                 <li>With Logic, Innovation, And Emotion</li>
                 <li>
-                  Beyond traditional problem-solving technique and old-fashioned
-                  promises.
+                Beyond traditional problem-solving technique and old-fashioned promises.
                 </li>
               </ul>
             </div>
@@ -42,9 +41,7 @@ const Index = () => {
                 profile="/cto.png"
                 designation="CTO & Co-Founder"
                 socialLink="https://www.linkedin.com/in/hassanakram/"
-                aboutText="“Having faced challenging technical situations, I thrive
-                  on problem-solving, automating difficult tasks, and
-                  creating impactful products.”"
+                aboutText="“Having faced challenging technical situations, I thrive on problem-solving, automating difficult tasks, and creating impactful products.”"
               />
             </div>
           </Col>
