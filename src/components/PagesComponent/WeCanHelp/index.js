@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from 'gatsby'
 
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
@@ -14,7 +15,7 @@ const Index = () => {
             Can’t get the hang of latest tools & technology? We know, deciding &
             making the right investments is difficult.
           </h2>
-          <Button text="We Can Help" className="secondary-btn" />
+          <Button text="We Can Help" onClick={() => navigate('/contact')} className="secondary-btn" />
           <span>No, we, won’t charge you.</span>
         </div>
       </Container>
