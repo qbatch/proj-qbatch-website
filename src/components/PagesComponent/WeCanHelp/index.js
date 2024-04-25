@@ -1,6 +1,5 @@
 import React from "react";
 import { navigate } from 'gatsby'
-
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 

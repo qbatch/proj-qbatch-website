@@ -10,6 +10,10 @@ const CareerWrapper = styled.div`
     span {
       display: block;
       margin-bottom: 20px;
+      font-weight:500;
+      ${media.sm`
+      margin-bottom:12px;
+      `}
     }
   }
   .paragraph{
@@ -17,9 +21,15 @@ const CareerWrapper = styled.div`
     padding-top: 28px;
     padding-right: 32px;
     margin-bottom: 4px;
+    ${media.sm`
+      padding-top:16px;
+      `}
   }
   .cards-wrapper{
     padding-top: 20px;
+    ${media.sm`
+    padding-top: 12px;
+    `}
   }
   .inner-card{
     margin-top: 70px;
@@ -87,6 +97,24 @@ const CareerWrapper = styled.div`
     font-size:  ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.bodyText};
   }
+  }
+  #freshteam-widget{
+    ${media.sm`
+    .role-title{
+      margin-bottom:12px !important;
+      h5{
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        span.mobile-role-count {
+        text-align: right;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+      }
+    }`}
   }
 `
 

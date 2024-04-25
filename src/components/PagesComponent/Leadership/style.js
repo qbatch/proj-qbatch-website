@@ -10,8 +10,11 @@ ${media.sm`
 .content-wrapper{
   .heading{
     padding-bottom: 24px;
-    padding-right: 64px;
+    padding-right: 83px;
+    font-weight: 700;
+    font-size: ${({theme}) => theme.fonts.baseFontSizeH2};
     font-style:italic;
+    text-transform:uppercase;
     ${media.sm`
      padding-bottom: 12px;
     `}

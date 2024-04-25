@@ -8,9 +8,11 @@ const BannerWrapper = styled.div`
   background-repeat: no-repeat;
   padding: 194px 0;
 
+
   ${media.sm`
     padding: 40px 0;
     background-position: bottom left;
+    background-size: contain;
   `}
   .banner-headings {
     ${media.md`
@@ -21,7 +23,7 @@ const BannerWrapper = styled.div`
     }
     p {
     color: ${({ theme }) => theme.colors.whiteColor};
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     max-width: 749px;
     margin-top: 32px;
     letter-spacing:0px;
@@ -29,6 +31,12 @@ const BannerWrapper = styled.div`
     line-height: 32px;
   }
   }
+  .banner-button {
+    ${media.sm`
+    display: flex;
+    justify-content: center;
+  `}
+}
 `
 const H1 = styled.h1`
     font-size: ${({ theme }) => theme.fonts.fsh1};

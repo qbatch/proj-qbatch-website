@@ -21,6 +21,10 @@ position: relative;
         display: flex;
         flex-wrap: wrap;
         margin-left: -20px;
+        ${media.sm`
+        justify-content:space-around;
+        grid-gap:8px;
+        `}
         ${media.lg`
          margin-left: 0;
         `}
