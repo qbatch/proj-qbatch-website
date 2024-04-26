@@ -51,7 +51,7 @@ const MobileApp = () => {
           paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
           buttonText="Kickstart Your Transformation Journey"
           wrapperClass="cto-banner"
-          blogInner={BannerImage}
+          imgSrc={BannerImage}
           mobileViewBanner={BannerImage}
           customCrumbs={[
             { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
