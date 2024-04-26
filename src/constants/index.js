@@ -2963,22 +2963,21 @@ const hassleData = [
 ]
 const DevData = [
   {
-    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src='/left-img.svg' /></>,
+    img:<img className="image-wrapper" src='/left-arrow.svg' />,
     heading:'Dev replacement guarantee',
     text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
   },
   {
-    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/right-img.svg" /></>,
+    img: <img className="image-wrapper" src="/right-arrow.svg" />,
     heading:'Comprehensive weekly reports',
     text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
   },
   {
-    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/left-img.svg" /></>,
+    img: <img className="image-wrapper" src='/left-arrow.svg' />,
     heading:'On-the-go support',
     text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
   },
   {
-    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/devs-img.png" /></>,
     heading:'Total product mindset',
     text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
   },

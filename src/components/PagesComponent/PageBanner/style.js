@@ -18,6 +18,7 @@ const CtoBannerWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.whiteColor};
     margin: 4px 0 16px 10px;
+    position:relative;
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
     }

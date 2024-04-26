@@ -11,6 +11,7 @@ const PerfectDev = () => {
         <Container>
         <h2>Become Invincible With Your Perfect Devs </h2>
         <p>We offer convenience, flexibility,  and transparency. How?</p>
+        <div className="perfect-devs-overlay-wrapper">
         <div className="perfect-devs-overlay">
           {DevData.map((item,index) => (
             <div key={index} className="perfect-devs-wrapper">
@@ -24,6 +25,7 @@ const PerfectDev = () => {
           </div>
           ))}
           <Button className="get-a-query-btn" text="Get a Query" />
+        </div>
         </div>
     </Container>
       </PerfectDevStyleWrapper>
