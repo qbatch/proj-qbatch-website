@@ -156,9 +156,9 @@ function App({ data, path }) {
                   <div
                     id="contentContainer"
                     className="paragraph"
-                    // dangerouslySetInnerHTML={{
-                    //   __html: data?.blogDescription?.data.blogDescription,
-                    // }}
+                    dangerouslySetInnerHTML={{
+                      __html: data?.blogDescription?.data?.blogDescription,
+                    }}
                   />
                 </div>
                 <div className="social-links d-flex gap-4">
