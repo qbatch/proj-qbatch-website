@@ -7,7 +7,7 @@ const Index = (props) => {
   const { data, align, heading, paragraph, width, height, seconedHeading, maxWidth, className } = props
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -28,7 +28,7 @@ const Index = (props) => {
               {data.map((data, i) => {
                 return (
                   <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-sm-5 mb-sm-5 mb-4">
-                    <img width={width || ''} height={height || ''} src={data.image} alt={data.title} />
+                    <img width={width || ''} height={height || ''} src={data.image} />
                     <div class="slider-data">
                       <h3 className="title">{data.title}</h3>
                       <p className="content">{data.content}</p>
