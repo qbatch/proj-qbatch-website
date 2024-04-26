@@ -30,8 +30,8 @@ const SEO = (props) => {
        {staging  === "staging" ?
        <>
        <meta name="robots" content=" noindex,nofollow" />
-        <title>{seo.title}</title>
-        </>
+       <title>{seo.title}</title>
+       </>
         :
         <>
       <link rel="canonical" href={seo.url} />
