@@ -33,6 +33,7 @@ const ContentWrapper = styled.div`
         h3 {
           font-size: 22px;
           margin-bottom: 16px;
+          text-transform:none;
           span {
             font-family: 'Inter Tight', sans-serif;
             font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
@@ -43,6 +44,7 @@ const ContentWrapper = styled.div`
         h2 {
           font-size: 26px;
           margin: 48px 0 15px;
+          text-transform:none;
         }
         p {
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
