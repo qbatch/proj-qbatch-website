@@ -60,7 +60,8 @@ const RemoteDeveloperStyleWrapper = styled.div`
       font-style: normal;
       font-weight: 700;
       line-height: 32px;
-      min-height:160px
+      min-height:160px;
+      text-transform:none;
 
     }
   }

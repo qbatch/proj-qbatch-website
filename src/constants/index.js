@@ -2970,16 +2970,16 @@ const DevData = [
   {
     img: <img className="image-wrapper" src="/right-arrow.svg" />,
     heading:'Comprehensive weekly reports',
-    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+    text:' You’ll receive a detailed list of all the tasks your dedicated development team or developer has completed including the total time ensuring transparency and individual-level performance.'
   },
   {
     img: <img className="image-wrapper" src='/left-arrow.svg' />,
     heading:'On-the-go support',
-    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+    text:' Our miraculous developers carefully cater to your feedback and change requests on your preferred channels of communication. Because the greatness must not halt!'
   },
   {
     heading:'Total product mindset',
-    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+    text:'Our software developers for hire own your product and take care of your trust. The founder’s mentality helps them deliver practical and sustainable results.'
   },
 ]
 const cardsData = [
@@ -3041,7 +3041,7 @@ const tileData = [
       text: "Part-time",
     },
     {
-      text: "On hourly basis",
+      text: "On Hourly Basis",
     },
     {
       text: "Not sure",
@@ -3049,16 +3049,16 @@ const tileData = [
   ],
   [
     {
-      text: "Junior developer",
+      text: "Junior Developer",
     },
     {
-      text: "Senior developer",
+      text: "Senior Developer",
     },
     {
-      text: "Software architect or lead developer",
+      text: "Software Architect or Lead Developer",
     },
     {
-      text: "CTO or VP of engineering",
+      text: "CTO or VP of Engineering",
     },
   ],
   [

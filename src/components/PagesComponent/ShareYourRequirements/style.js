@@ -71,6 +71,9 @@ const ShareYourRequirementsWrapper = styled.div`
       ${media.sm`
       max-width: 100%;
       `}
+      h3{
+        text-transform:none;
+      }
       p.label-text-wrap{
         text-align: left;
         font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};

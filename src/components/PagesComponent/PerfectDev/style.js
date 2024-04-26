@@ -68,7 +68,7 @@ const PerfectDevStyleWrapper = styled.div`
         margin-left: 110px;
         img{
           position: absolute;
-          right: -80px;
+          right: -110px;
           top: 90px;
       }
       ${media.sm`
