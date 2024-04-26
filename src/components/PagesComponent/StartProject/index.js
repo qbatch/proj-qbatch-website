@@ -364,7 +364,7 @@ const Index = ({ page }) => {
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
                   <ReCAPTCHA
                     action="homepage"
-                    sitekey="6LdIx8QpAAAAANMYWJl6mHb5hUZFYEH4Svdg-kGs"
+                    sitekey="6Lfk4ccpAAAAACNM0F3KftvczXlCnhQ_Lt15ggzQ"
                     onChange={onChange}
                   />
                   <Button text="Submit" btnType="submit" className="pt-md-0 pt-3" />
