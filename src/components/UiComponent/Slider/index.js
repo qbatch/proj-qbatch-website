@@ -7,7 +7,7 @@ const Index = (props) => {
   const { data, align, heading, paragraph, width, height, seconedHeading, maxWidth, className } = props
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
