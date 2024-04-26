@@ -1146,6 +1146,11 @@ export const Queries = () => {
            username
            recommendeds {
              blogTitle
+             blogDescription {
+               data {
+                 blogDescription
+               }
+             }
              user {
                username
                name
