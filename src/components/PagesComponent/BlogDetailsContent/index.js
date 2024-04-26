@@ -157,7 +157,7 @@ function App({ data, path }) {
                     id="contentContainer"
                     className="paragraph"
                     dangerouslySetInnerHTML={{
-                      __html: data?.blogDescription?.data.blogDescription,
+                      __html: data?.blogDescription?.data?.blogDescription,
                     }}
                   />
                 </div>
