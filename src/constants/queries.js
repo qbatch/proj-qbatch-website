@@ -19,6 +19,11 @@ export const Queries = () => {
          nodes {
            updatedAt
            blogTitle
+           blogDescription {
+             data {
+               blogDescription
+             }
+           }
            slug
            user {
              username
