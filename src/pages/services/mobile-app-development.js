@@ -22,7 +22,7 @@ import Banner from "../../components/PagesComponent/PageBanner";
 import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
 import DedicatedMobileDevelopers from "../../components/PagesComponent/DedicatedMobileDevelopers";
 import MultiplePlatformSolutions from "../../components/PagesComponent/MultiplePlatformSolutions";
-import BannerImage from "../../../static/mobile-app-banner.webp";
+import BannerImage from "../../../static/mobile-app-banner.svg";
 
 import {
   lostToLaunchedItems,
@@ -51,7 +51,7 @@ const MobileApp = () => {
           paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
           buttonText="Kickstart Your Transformation Journey"
           wrapperClass="cto-banner change-background-size"
-          blogInner={BannerImage}
+          imgSrc={BannerImage}
           mobileViewBanner={BannerImage}
           customCrumbs={[
             { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
