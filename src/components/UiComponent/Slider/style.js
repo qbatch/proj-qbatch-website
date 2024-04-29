@@ -29,6 +29,7 @@ const SliderWrapper = styled.div`
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
+      text-transform:none;
     }
     p {
       max-width: ${(props) => (props.maxWidth ? props.maxWidth : '')};
