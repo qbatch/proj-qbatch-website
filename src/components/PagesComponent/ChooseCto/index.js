@@ -32,10 +32,10 @@ const Index = () => {
             <span className="text-h2 color-primary heading">We want you to become a pioneer before the world calls you a laggard.</span>
           </Col>
           <Col md={12} lg={6}>
-            <p>
-              Big brains and the right technical expertise are two key ingredients to achieving your long-term and
-              mission-critical business goals. We can help you figure out what you’ve been missing in your technology
-              adoption and transformation journey.{" "}
+            <p className="upper-text-wrapper">
+            Achieving your long-term and mission-critical business goals requires a combination of big
+             brains and the right technical expertise. We can help you find the missing parts in your 
+             technology adoption and transformation journey. How?
             </p>
             <div className="service-list">
               <Row>

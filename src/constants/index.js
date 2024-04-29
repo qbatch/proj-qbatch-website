@@ -2558,7 +2558,7 @@ const ctoList = [
   },
   {
     img: '/hire-a-cto_gain-the-trust.svg',
-    description: 'Got a powerful idea but cannot cope with a tech part?',
+    description: 'Got an MVP but not sure how to gain the trust of investors?',
   },
   {
     img: '/hire-a-cto_mature-startup.svg',
@@ -3426,6 +3426,49 @@ const dataColumn4 = [
     text: "Depends",
   },
 ];
+const personal = [
+  {
+    title: "Digital Business Leader",
+    list: [
+      "For consumer-goods companies",
+      "Pushes tech strategy and budgeting",
+      "Leads innovation-driven investments",
+      "Translates market needs into products",
+      "Understands tech trends and execution",
+      "Innovates enterprise architecture",
+    ],
+  },
+  {
+    title: "Business Enabler ",
+    list: [
+      "Prevents business unit obsoletion",
+      "Facilitates responsive IT delivery",
+      "Guides tech adoption decisions",
+      "Collaborates with engineering teams",
+      "Analyzes risks in new tech deployments",
+    ],
+  },
+  {
+    title: "Change Agent",
+    list: [
+      "Drives technology adoption and sustenance",
+      "Guides IT leadership company-wide",
+      "Leads IT teams in innovation",
+      "Advocates for agile and DevOps",
+      "Introduces business innovation sources",
+    ],
+  },
+  {
+    title: "IT Chief Operating Officer",
+    list: [
+      "For single or similar product companies",
+      "Manages day-to-day IT services",
+      "Handles IT purchasing and compliance",
+      "Manages internal and external IT incidents",
+      "Ensures system modernization",
+    ],
+  },
+];
 export {
   dedicationWork,
   homeTiles,
@@ -3495,5 +3538,6 @@ export {
   dataColumn4,
   extensionFaq,
   extensionSliderItems,
-  extensionLanguages
+  extensionLanguages,
+  personal
 }
