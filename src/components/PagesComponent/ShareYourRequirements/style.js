@@ -14,6 +14,7 @@ const ShareYourRequirementsWrapper = styled.div`
     text-align: center;
     margin: auto;
     margin-bottom: 24px;
+    text-transform:none;
   }
   textarea {
     padding: 12px 0px;

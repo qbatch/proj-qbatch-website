@@ -12,6 +12,11 @@ const HireTrustedDevelopersWrapper = styled.div`
     color: ${({ theme }) => theme.colors.primaryColor};
     text-align: left;
     max-width: 334px;
+    text-transform:none;
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
+    span{
+      color: ${({ theme }) => theme.colors.dangerColor};
+    }
     ${media.sm`
     max-width: 100%;
     `}
