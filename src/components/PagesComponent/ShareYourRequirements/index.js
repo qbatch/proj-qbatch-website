@@ -132,7 +132,7 @@ const ShareYourRequirements = () => {
               {titleData?.map((item, index) =>
                 step === index ? <h3 key={index}>{item.text}</h3> : null
               )}
-              {step === 8 ? (
+              {step === 9 ? (
                 <p className="label-text-wrap">
                   💡 Remote resources are more driven, more productive, and work
                   longer hours than in-house employees. (Source: Harvard
