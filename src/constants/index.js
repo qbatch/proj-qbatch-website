@@ -2445,36 +2445,36 @@ const enterPrisFaq = [
     ),
   },
 ]
-const guidanceData = [
+const technicalGuidanceData = [
   {
-    image: '/vertical-aligmnet.svg',
+    img: '/vertical-aligmnet.svg',
     title: 'Vision and Future Alignment',
-    content: 'Build a roadmap that elevates your technical strategy, objectives, and operations to achieve a holistic digital footprint powering associated people, processes, and possibilities with our CTO consulting services. Let’s turn your vision into victory.',
+    text: 'Build a roadmap that elevates your technical strategy, objectives, and operations to achieve a holistic dig/vertical-aligmnet.svgital footprint powering associated people, processes, and possibilities with our CTO consulting services. Let’s turn your vision into victory.'
   },
   {
-    image: '/leading-and-scaling-teams.svg',
-    title: 'Leading and Scaling  Teams',
-    content: 'Your development team decides and shapes the future of the entire business. Thus we keep the bar high when it comes to tech leadership and management. Enjoy proficient team management, process optimization, and daily reporting with our CTO services.',
+    img: '/leading-and-scaling-teams.svg',
+    title: 'Leading and Scaling Teams',
+    text: 'Your development team decides and shapes the future of the entire business. Thus we keep the bar high when it comes to tech leadership and management. Enjoy proficient team management, process optimization, and daily reporting with our CTO services.'
   },
   {
-    image: '/strategic-procurement-and-cost-optimization.svg',
-    title: 'Strategic Procurement and Cost Optimization',
-    content: 'Technology expenses can quickly escalate if the"build vs. buy" analysis goes wrong with suppliers and vendors. Our CTO advisory services develop a problem-solution fit by running iterations and finding critical areas that truly require investment. ',
+    img: '/strategic-procurement-and-cost-optimization.svg',
+    title: 'Strategic Procurement & Cost Optimization',
+    text: 'Technology expenses can quickly escalate if the"build vs. buy" analysis goes wrong with suppliers and vendors. Our CTO advisory services develop a problem-solution fit by running iterations and finding critical areas that truly require investment.'
   },
   {
-    image: '/technical-audit.svg',
+    img: '/technical-audits.svg',
     title: 'Technical Audits, Due Diligence, and Change Management',
-    content: 'We dive deeper into the technical risks associated with your business processes and strategy, conduct audits, prepare you for due diligence, and prescribe rock-solid change management roadmaps toward total digital transformation and delivery across the company.',
+    text: 'We dive deeper into the technical risks associated with your business processes and strategy, conduct audits, prepare you for due diligence, and prescribe rock-solid change management roadmaps toward total digital transformation and delivery across the company.'
   },
   {
-    image: '/system-engineering-and-design.svg',
+    img: '/system-engineering-and-design.svg',
     title: 'System Engineering and Design',
-    content: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise systems',
+    text: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise system'
   },
   {
-    image: '/technical-audit.svg',
+    img: '/technical-audit.svg',
     title: 'Technology Integration and Analysis',
-    content: 'Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.',
+    text: 'Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.'
   },
 ]
 
@@ -3497,7 +3497,7 @@ export {
   lostToLaunched,
   faqQuestion,
   ecomFaqQuestion,
-  guidanceData,
+  technicalGuidanceData,
   youCanTrustData,
   lostToLaunchedItems,
   languagesData,
