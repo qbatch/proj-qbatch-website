@@ -4,9 +4,11 @@ import { css } from "styled-components";
    xs: "480px",
    sm: "767px",
    md: "991px",
+   customElementsBreakPoint:'1120px',
    lg: "1199px",
    standard: "1279px",
    customBrakePoint: "1360px",
+   mobile:'575px',
    xl: "1399px"
  };
 

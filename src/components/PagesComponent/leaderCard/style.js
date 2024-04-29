@@ -9,16 +9,18 @@ const LeaderCardWrapper = styled.div`
     position: relative;
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
     box-shadow: 2px 2px 12px 0px #00000029;
-    padding: 160px 36px 36px;
+    padding: 167px 36px 36px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 435px;
     .img {
       margin-bottom: 16px;
       position: absolute;
-      top: -190px;
-      height:320px;
+      width:240px;
+      height:280px;
+      top: -130px;
       }
     }
     .inner-box {
@@ -28,6 +30,8 @@ const LeaderCardWrapper = styled.div`
       margin-bottom: 16px;
       .name {
         color: ${({ theme }) => theme.colors.primaryColor};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        font-weight: 700;
       }
     }
     .social {
@@ -41,6 +45,7 @@ const LeaderCardWrapper = styled.div`
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       line-height: 24px;
       text-align: center;
+      min-height: 120px;
     }
 `;
 export { LeaderCardWrapper };

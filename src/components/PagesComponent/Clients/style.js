@@ -21,6 +21,10 @@ position: relative;
         display: flex;
         flex-wrap: wrap;
         margin-left: -20px;
+        ${media.sm`
+        justify-content:space-around;
+        grid-gap:8px;
+        `}
         ${media.lg`
          margin-left: 0;
         `}
@@ -44,7 +48,7 @@ position: relative;
         }
       }
   .awards-main {
-    padding: 120px 0;
+    padding: 96px 0;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-color: ${({ theme }) => theme.colors.onGradient};

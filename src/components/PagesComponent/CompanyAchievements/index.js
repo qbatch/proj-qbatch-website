@@ -21,7 +21,7 @@ const Index = () => {
   return (
     <AchievementsWrapper>
       <Container>
-        <h2 className="main-heading"><span className="underline-heading text-h4">Together </span>We can achieve more — Beyond these numbers</h2>
+        <h2 className="main-heading"><span className="underline-heading text-h4">Together </span>Together, we can achieve more — beyond these numbers.</h2>
         <div className="counter-wrapper">
           <Row>
             {companyCounter.map((data, ind) => (

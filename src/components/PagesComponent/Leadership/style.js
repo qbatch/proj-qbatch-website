@@ -2,24 +2,27 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const LeadershipWrapper = styled.div`
-padding: 120px 0;
+padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
   padding: 40px 0;
 `}
 .content-wrapper{
   .heading{
-    padding-bottom: 20px;
-    padding-right: 64px;
+    padding-bottom: 24px;
+    padding-right: 83px;
+    font-weight: 700;
+    font-size: ${({theme}) => theme.fonts.baseFontSizeH2};
+    font-style:italic;
+    text-transform:uppercase;
     ${media.sm`
      padding-bottom: 12px;
     `}
   }
   .paragraph{
     font-weight: ${({ theme }) => theme.fontWeight.normal};
-    line-height: 32px;
+    line-height: 24px;
     max-width: 454px;
-    padding-top: 10px;
   }
   .list{
     list-style-type: none;
@@ -30,7 +33,7 @@ ${media.sm`
     li{
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       color: ${({ theme }) => theme.colors.bodyText};
-      line-height: 32px;
+      line-height: 24px;
       display: flex;
       max-width: 360px;
       &:before{
@@ -67,9 +70,14 @@ ${media.sm`
   align-items:center;
   grid-gap:24px;
   padding-top:120px;
+  ${media.md`
+  `}
   ${media.sm`
+  grid-row-gap:220px;
   flex-wrap:wrap;
   grid-row-gap:150px;
+  padding-top:150px;
+
   `}
 }
 .leader{

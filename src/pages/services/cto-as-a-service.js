@@ -1,4 +1,6 @@
 import React from "react";
+import { Script } from 'gatsby'
+import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import SEO from "../../components/Seo";
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
@@ -6,7 +8,7 @@ import StartProject from "../../components/PagesComponent/StartProject";
 import Banner from "../../components/PagesComponent/PageBanner";
 import HireCto from "../../components/PagesComponent/HireCto/index";
 import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
-import CtoPersona from "../../components/PagesComponent/CtoPersona";
+import CtoPersonal from "../../components/PagesComponent/CtoPersonal";
 import GrowingTechSide from "../../components/PagesComponent/GrowingTechSide";
 import ChooseCto from "../../components/PagesComponent/ChooseCto";
 import CtoServiceModel from "../../components/PagesComponent/CtoServiceModel";
@@ -17,6 +19,7 @@ import Slider from '../../components/UiComponent/Slider'
 import { sliderItems, faqQuestion } from "../../constants";
 import { guidanceData, ctoList } from "../../constants";
 import CtoBannerImage from "../../../static/cto-banner.png";
+import ExploreOurEnterpriseLevel from "../../components/PagesComponent/ExploreOurEnterpriseLevel";
 
 const CtoService = () => {
   return (
@@ -39,10 +42,10 @@ const CtoService = () => {
       <HireCto
         list={ctoList}
         btnText="Stuck in a different situation?"
-        heading="Do you really need to hire a CTO? Find for yourself"
+        heading="Do you really need to hire a CTO? Find for yourself..."
       />
       <TechnicalExcellence
-        heading="We are Your Right-Hand Men Towards Total Technical Excellence"
+        heading="Your Right-hand Towards Total Technical Excellence"
         title={true}
         paragraph1={
           <>
@@ -61,12 +64,8 @@ const CtoService = () => {
         technology roadmaps for your dear business to thrive on a larger
         scale."
       />
-      <CtoPersona />
-      <Slider
-        heading="More Than Just “Technical Guidance” Explore Our Enterprise-level"
-        data={guidanceData}
-        width="350px"
-      />
+      <CtoPersonal />
+      <ExploreOurEnterpriseLevel/>
       <Slider
         heading="Stuck at any of these development stages? We can help."
         paragraph="Optimize your idea at each step with our technological process and business-critical insight."
@@ -88,6 +87,7 @@ const CtoService = () => {
 export const Head = () => {
   const ctoData = Queries()
   const seoData = ctoData.allStrapiCtoService.nodes[0]?.seo
+  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -97,7 +97,11 @@ export const Head = () => {
       robots={seoData.metaRobots}
       image={seoData.metaimage[0].localFile.url}
       pathname={`/services${seoData.slug}`}
-    />
+    >
+         {schemaData &&   <Script  type="application/ld+json">
+              {JSON.stringify(schemaData)}
+            </Script> }
+      </SEO>
   )
 }
 

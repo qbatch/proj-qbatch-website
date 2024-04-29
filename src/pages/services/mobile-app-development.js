@@ -1,4 +1,6 @@
 import React from "react";
+import { Script } from 'gatsby'
+import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
@@ -20,7 +22,7 @@ import Banner from "../../components/PagesComponent/PageBanner";
 import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
 import DedicatedMobileDevelopers from "../../components/PagesComponent/DedicatedMobileDevelopers";
 import MultiplePlatformSolutions from "../../components/PagesComponent/MultiplePlatformSolutions";
-import BannerImage from "../../../static/mobile-app-banner.webp";
+import BannerImage from "../../../static/mobile-app-banner.svg";
 
 import {
   lostToLaunchedItems,
@@ -48,8 +50,8 @@ const MobileApp = () => {
           heading="Deliver Powerful Mobile App Experiences"
           paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
           buttonText="Kickstart Your Transformation Journey"
-          wrapperClass="cto-banner change-background-size"
-          blogInner={BannerImage}
+          wrapperClass="cto-banner"
+          imgSrc={BannerImage}
           mobileViewBanner={BannerImage}
           customCrumbs={[
             { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
@@ -145,6 +147,7 @@ export const Head = () => {
     const mobileAppData = Queries()
 
   const seoData = mobileAppData.allStrapiMobileApp.nodes[0]?.seo
+  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -154,7 +157,11 @@ export const Head = () => {
       robots={seoData.metaRobots}
       image={seoData.metaimage[0].localFile.url}
       pathname={`/services${seoData.slug}`}
-    />
+    >
+         {schemaData &&   <Script  type="application/ld+json">
+              {JSON.stringify(schemaData)}
+            </Script> }
+      </SEO>
   )
 }
 

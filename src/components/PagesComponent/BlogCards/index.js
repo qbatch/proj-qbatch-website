@@ -16,8 +16,8 @@ const Index = (props) => {
   const BlogPost = ({ card, ind }) => {
     const customDate = new Date(card.publishedAt)
     return (
-      <Col md={6}>
-        <div className="inner" key={ind}>
+      <Col md={6} className="d-flex flex-column">
+        <div className="inner flex-1" key={ind}>
           <div className="card-img">
             <img src={card.blogImg?.localFile.url} alt={card.blogTitle} />
             <div className="d-flex align-items-center justify-content-between">
@@ -38,9 +38,17 @@ const Index = (props) => {
             >
               {card.blogTitle}
             </p>
-            <div className="blog-badge">{card.blogTags?.strapi_json_value[0]}</div>
+           {card.blogTags && <div className="blog-badge">{card.blogTags?.strapi_json_value[0]}</div> } 
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-              <span>{card?.user?.name}</span>
+              <div className="d-flex gap-2 pointer" 
+                   onClick={() => {
+                            navigate(`/authors/${card?.user?.username}`, {
+                              state: { slug: card.seo.slug },
+                            })
+                          }}>
+              <img src={card?.user?.image.localFile.url || '/avatar.svg'} width="24px" height="24px" alt="no-user" />
+              <span>{card?.user?.name || "No User"}</span>
+              </div>
               <div className="timer">
                 <img src="/timer-blue.svg" alt="timer" />
                 <span>

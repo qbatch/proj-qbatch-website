@@ -1,4 +1,6 @@
 import React from "react";
+import SEO from "../components/Seo";
+import { Queries } from '../constants/queries'
 import Layout from "../components/Layout/layout";
 import Banner from "../components/PagesComponent/PageBanner";
 import RemoteDeveloper from "../components/PagesComponent/RemoteDeveloper";
@@ -15,7 +17,7 @@ import StartProject from "../components/PagesComponent/StartProject";
 import {
   hireDeveloper,
 } from '../constants'
-const index = () => {
+const Index = () => {
   return (
       <Layout>
         <Banner
@@ -27,6 +29,9 @@ const index = () => {
           col1lg={12}
           className="d-flex align-items-center justify-content-start"
           blogInner="/About-Us-02.svg"
+          customCrumbs={[
+            { pathname: '/hire-developers/', crumbLabel: 'Hire-Developers', crumbSeparator: '>' },
+          ]}
         />
         <RemoteDeveloper />
         <HiringHassle />
@@ -42,5 +47,20 @@ const index = () => {
       </Layout>
   );
 };
+export const Head = () => {
+  const hireDeveloperData = Queries()
+  const seoData = hireDeveloperData.allStrapiHireDeveloper.nodes[0]?.seo
+  return (
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData?.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      pathname={seoData.slug}
+      image={seoData.metaimage[0].localFile?.url}
+    />
+  )
+}
 
-export default index;
+export default Index;

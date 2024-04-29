@@ -30,3 +30,18 @@ export const ReadingTime = ({ description }) => {
   
     return <span>{readingTime}</span>;
   };
+ export const  replaceUnderscoreWithAt = (obj) =>{
+    if (obj && typeof obj === 'object') {
+      if (Array.isArray(obj)) {
+        return obj.map((item) => replaceUnderscoreWithAt(item))
+      } else {
+        const updatedObj = {}
+        for (const [key, value] of Object.entries(obj)) {
+          updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
+        }
+        return updatedObj
+      }
+    } else {
+      return obj
+    }
+  }

@@ -11,6 +11,7 @@ const ShareYourRequirements = () => {
   const [step, setStep] = useState(0);
   const [stepperText, setStepperText] = useState([]);
   const [userDetails, setUserDetails] = useState('');
+  const [inputValue, setInputValue] = useState('');
   const [error, setError] = useState(false);
 
 
@@ -19,8 +20,8 @@ const ShareYourRequirements = () => {
     setStep(step + 1);
     setStepperText((prev) => [...prev, item?.text]);
   };
-  const checkValidDate = (inputEmail) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const checkvValidate = (inputEmail) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const isValidEmail = emailRegex.test(inputEmail);
 
     return isValidEmail;
@@ -68,7 +69,6 @@ const ShareYourRequirements = () => {
     });
       // .then((data) => console.log(data, "data"))
   }
-
   return (
     <ShareYourRequirementsWrapper>
       <Container>
@@ -132,7 +132,7 @@ const ShareYourRequirements = () => {
               {titleData?.map((item, index) =>
                 step === index ? <h3 key={index}>{item.text}</h3> : null
               )}
-              {step === 8 ? (
+              {step === 9 ? (
                 <p className="label-text-wrap">
                   💡 Remote resources are more driven, more productive, and work
                   longer hours than in-house employees. (Source: Harvard
@@ -145,7 +145,7 @@ const ShareYourRequirements = () => {
                     <Input
                       onChange={(e) => {
                         const userName = e.target.value;
-                        setUserDetails({ ...userDetails, name: userName });
+                        setUserDetails({ ...userDetails, name: userName?.replace(/[^a-zA-Z]/g, '') });
                       }}
                       value={userDetails.name}
                       placeholder="Full Name"
@@ -153,7 +153,7 @@ const ShareYourRequirements = () => {
                       error={error && !userDetails?.name ? 'Enter your name' : null}
                     />
                     <Input value={userDetails.companyName} error={error && !userDetails?.companyName ? 'Enter your company name' : null} onChange={(e) => setUserDetails({ ...userDetails, companyName: e.target.value })} placeholder="Company Name" type="text" />
-                    <Input value={userDetails.email} error={error && !userDetails?.email ? 'Enter your email' : error && !checkValidDate(userDetails?.email) ? 'Please Enter valid email': null} onChange={(e) => setUserDetails({ ...userDetails, email: e.target.value })} placeholder="Email Address" type="email" />
+                    <Input value={userDetails.email} error={error && !userDetails?.email ? 'Enter your email' : error && !checkvValidate(userDetails?.email) ? 'Please Enter valid email': null} onChange={(e) => setUserDetails({ ...userDetails, email: e.target.value })} placeholder="Email Address" type="email" />
                     <Input value={userDetails.designation} onChange={(e) => setUserDetails({ ...userDetails, designation: e.target.value })} placeholder="Designation" type="text" />
                     <textarea value={userDetails.tellUsAboutYourProject} onChange={(e) => setUserDetails({ ...userDetails, tellUsAboutYourProject: e.target.value })} placeholder="Tell us about your project" type="text" row="3" />
 
@@ -192,7 +192,7 @@ const ShareYourRequirements = () => {
                     email,
                     companyName,
                   } = userDetails || {}
-                  if (name && email && companyName) {
+                  if (name && checkvValidate(email) && email && companyName) {
                     setStepperText([userDetails?.name]);
                     setStep(step + 1);
                   } else {

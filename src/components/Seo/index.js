@@ -28,7 +28,10 @@ const SEO = (props) => {
   return (
     <>
        {staging  === "staging" ?
+       <>
        <meta name="robots" content=" noindex,nofollow" />
+       <title>{seo.title}</title>
+       </>
         :
         <>
       <link rel="canonical" href={seo.url} />
@@ -49,7 +52,6 @@ const SEO = (props) => {
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       {seo.image && <meta property="og:image" content={seo.image} key="og:image" /> }
-      <link rel="canonical" href={seo.url} />
       <meta name="keywords" content={seo.keywords} />
       <meta http-equiv="content-language" content={seo.language} />
       </>

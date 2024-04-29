@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { Link } from 'gatsby';
+import { Link ,navigate} from 'gatsby';
 
 import Container from "../../UiComponent/Container";
 import PrimaryButton from '../../UiComponent/PrimaryButton';
@@ -49,7 +49,7 @@ const menuData = [
 const menu2Data = [
   {
     name: 'About Us',
-    to: '/about',
+    to: '/about/',
   },
   {
     name: 'Contact Us',
@@ -160,7 +160,7 @@ const Index = () => {
                 <span className="text-h4 fw-bold">We’re excited to work together!</span>
                 <span>Need guidance on a revamp or a new project launch?</span>
                 <div className="email-input">
-                  <PrimaryButton color="#fff" borderbottom text="Let’s Get Started" />
+                  <PrimaryButton color="#fff" onClick={() => navigate('/contact')} borderbottom text="Let’s Get Started" />
                 </div>
               </div>
             </Col>

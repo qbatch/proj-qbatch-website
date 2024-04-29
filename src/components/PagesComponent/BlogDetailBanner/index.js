@@ -15,7 +15,7 @@ const Index = ({ data }) => {
       { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
       { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
       { pathname: `/blog/${data?.category?.slug}`, crumbLabel: data?.category?.categoryName, crumbSeparator: '> ' },
-      { pathname: `/blog${data?.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
+    { pathname: `/blog/${data?.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
     ]
     
   return (
@@ -53,9 +53,6 @@ const Index = ({ data }) => {
               {data?.blogTags?.strapi_json_value.map((tag, ind) => (
                 <span key={ind}>{tag}</span>
               ))}
-            </div>
-            <div className="author-name">
-              <span>{data?.user?.name}</span>
             </div>
           </div>
         </div>

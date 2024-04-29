@@ -38,7 +38,7 @@ position: relative;
   .inner-box-header{
     margin-bottom: 16px;
     .name{
-      color:${({ theme }) => theme.colors.primaryColor} ;
+      color:${({ theme }) => theme.colors.primaryColor};
     }
   }
   .social{

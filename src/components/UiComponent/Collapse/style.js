@@ -28,6 +28,7 @@ const CollpaseWrapper = styled.div`
       cursor: pointer;
       line-height: 32px;
       margin-bottom: 8px;
+      text-transform:none;
     }
     svg {
       min-width: 24px;
