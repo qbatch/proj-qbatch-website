@@ -3094,7 +3094,7 @@ const tileData = [
       text: "I have a rough idea of what I want to build.",
     },
     {
-      text: "I have a clear idea of what I want, but I’ve not penned down any specific requirements.",
+      text: "I have a clear idea of what I want, but I’ve not noted any specific requirements.",
     },
     {
       text: "I have clearly written requirements or wireframes.",
