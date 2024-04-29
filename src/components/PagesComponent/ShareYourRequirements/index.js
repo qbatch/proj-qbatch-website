@@ -76,9 +76,7 @@ const ShareYourRequirements = () => {
           Share your requirements and find the right dev match within 48 hours.
         </h2>
         <p className="heading-label-text">
-          Answer 9 quick questions to help us better understand your needs and
-          offer personalized recommendations. No sign-up required.
-        </p>
+          Answer 9 quick questions to help us better understand your needs and offer personalized recommendations. No sign-up required.        </p>
         {step === 10 ? (
           <div className="congratulations-overlay-wrapper">
             <h3>Congratulations!</h3>

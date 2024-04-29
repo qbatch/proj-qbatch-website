@@ -55,11 +55,11 @@ const RemoteDeveloperStyleWrapper = styled.div`
     h2 {
       margin: 0;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-size: ${({ theme }) => theme.fonts.BaseCustomFontSize};
       text-align: center;
       font-style: normal;
       font-weight: 700;
-      line-height: 32px;
+      line-height: 24px;
       min-height:160px;
       text-transform:none;
 

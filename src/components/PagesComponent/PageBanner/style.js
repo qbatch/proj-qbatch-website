@@ -35,7 +35,7 @@ const CtoBannerWrapper = styled.div`
     .banner-sub-heading {
       font-size: 20px;
       font-weight: 700;
-      padding-bottom: 10px;
+      padding-bottom: 12px;
       color: ${({ theme }) => theme.colors.dividerColor};
       letter-spacing: 0;
       text-transform:none;

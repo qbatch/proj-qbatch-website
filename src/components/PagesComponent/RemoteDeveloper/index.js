@@ -10,7 +10,7 @@ const RemoteDeveloper = () => {
         <Container>
         <div className="content-wrapper">
           <h2>
-            We realize onboarding Remote Developers is nothing less than a
+            Onboarding Remote Developers is nothing less than a
             headache.
           </h2>
         </div>

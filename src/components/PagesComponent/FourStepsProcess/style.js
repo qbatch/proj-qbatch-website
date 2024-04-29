@@ -14,6 +14,7 @@ const FourStepsProcessWrapper = styled.div`
     line-height: 52px;
     text-align: center;
     margin-bottom: 72px;
+    text-transform:none;
   }
   .process-card-overlay {
     display: grid;
