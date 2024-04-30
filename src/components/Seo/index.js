@@ -31,6 +31,7 @@ const SEO = (props) => {
        <>
        <meta name="robots" content=" noindex,nofollow" />
        <title>{seo.title}</title>
+       <meta name="description" content={seo.description} />
        </>
         :
         <>
