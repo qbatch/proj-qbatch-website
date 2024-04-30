@@ -279,6 +279,23 @@ export const Queries = () => {
            }
          }
        }
+       allStrapiExtensionDevelopment {
+         nodes {
+           seo {
+             keywords
+             language
+             metaDescription
+             metaRobots
+             metaTitle
+             slug
+             metaimage {
+               localFile {
+                 url
+               }
+             }
+           }
+         }
+       }
        allStrapiCtoService {
          nodes {
            seo {
