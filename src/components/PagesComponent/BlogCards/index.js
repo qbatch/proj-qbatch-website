@@ -52,7 +52,7 @@ const Index = (props) => {
               <div className="timer">
                 <img src="/timer-blue.svg" alt="timer" />
                 <span>
-                  <ReadingTime description={card.blogDescription?.data.blogDescription} /> Minutes Read
+                  <ReadingTime description={card.blogDescription?.data?.blogDescription} /> Minutes Read
                 </span>
               </div>
             </div>

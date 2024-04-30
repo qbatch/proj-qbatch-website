@@ -63,6 +63,9 @@ const CtoBannerWrapper = styled.div`
       line-height: 32px;
       font-size: 24px;
       color: ${({ theme }) => theme.colors.whiteColor};
+      a{
+        color: ${({ theme }) => theme.colors.textColor};
+      }
       ${media.lg`
         margin: 0 auto;
         margin-bottom: 32px;
