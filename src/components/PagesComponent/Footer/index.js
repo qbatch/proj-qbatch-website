@@ -1,188 +1,116 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { Link ,navigate} from 'gatsby';
+import { Link } from 'gatsby';
 
 import Container from "../../UiComponent/Container";
-import PrimaryButton from '../../UiComponent/PrimaryButton';
-import SocialIcons from "../../UiComponent/SocialIcons";
+import Button from "../../UiComponent/Button";
+import { discoverQbatchMenu, footerServicesItems, industrieshMenu, footerContactData, footerBottomMenu, footerSocialLinks } from "../../../constants";
 
 import FooterWrapper from "./style";
 
-const contactData = [
-  {
-    title: "1309 Coffeen Avenue STE 1200 Sheridan,",
-    icon: "/address-icon.svg",
-  },
-  {
-    title: "Wyoming 82801, USA.",
-    icon: "",
-  },
-  {
-    title: "contact@qbatch.com",
-    icon: "/mail-icon.svg",
-  },
-  {
-    title: "+1 737-377-2428",
-    icon: "/phone-icon.svg",
-  },
-];
-
-const menuData = [
-  {
-    name: "Services",
-    to: "#",
-  },
-  {
-    name: "Portfolio",
-    to: "/portfolio",
-  },
-  {
-    name: "Industry",
-    to: "#",
-  },
-  {
-    name: "Discover Phase",
-    to: "#",
-  },
-];
-
-const menu2Data = [
-  {
-    name: 'About Us',
-    to: '/about/',
-  },
-  {
-    name: 'Contact Us',
-    to: '/contact',
-  },
-  {
-    name: 'Qbatch Career',
-    to: '/about/#freshteam-widgets',
-  },
-]
-
-const bottomMenu = [
-  {
-    name: "Subscribe to our Newsletter",
-    to: "/",
-  },
-  {
-    name: "Terms & Conditions",
-    to: "/terms-and-conditions/",
-  },
-  {
-    name: "Privacy Policy",
-    to: "/privacy-policy/",
-  },
-];
-const socialLinks = [
-  {
-    img: '/facebook',
-    to: 'https://www.facebook.com/qbatch/',
-  },
-  {
-    img: '/instagram',
-    to: 'https://www.instagram.com/qbatch/',
-  },
-  {
-    img: '/linkedin',
-    to: 'https://www.linkedin.com/company/qbatch/',
-  },
-  {
-    img: '/twitter',
-    to: 'https://twitter.com/qbatchofficial',
-  },
-  {
-    img: '/behance',
-    to: 'https://www.behance.net/qbatch',
-  },
-  {
-    img: '/youtube',
-    to: 'https://www.youtube.com/@qbatch',
-  },
-]
-
 const Index = () => {
-  const renderMenuLink = (menu) => {
-    if (menu.external) {
-      return (
-        <a href={menu.to} target="_blank" rel="noopener noreferrer">{menu.name}</a>
-      );
-    } else {
-      return (
-        menu.to === '/about' ? <a href={menu.to}>{menu.name}</a> :
-        <Link to={menu.to}>{menu.name}</Link>
-      );
-    }
-  };
-
   return (
     <FooterWrapper>
-      <Container>
-        <div className="footer-section">
+      <div className="newsletter-section">
+        <Container>
+          <Row className="align-items-center">
+            <Col lg={6}>
+              <div className="stories-inbox">
+                <img src='/inbox-icon.svg' alt="inbox" />
+                <h3>Get top stories delivered to your inbox </h3>
+              </div>
+            </Col>
+            <Col lg={6}>
+              <div className="footer-email">
+                <div className="email-input">
+                  <img src="/user-email-icon.svg" alt="email" />
+                  <input type="email" placeholder="Email Address" />
+                </div>
+                <Button text='Subscribe' className="secondary-btn" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="footer-section">
+        <Container>
           <Row>
-            <Col md={2} xs={6}>
+            <Col lg={3} xs={6}>
               <div className="footer-menu">
+                <h5>Discover Qbatch</h5>
                 <ul>
-                  {menuData.map((menu, ind) => (
+                  {discoverQbatchMenu.map((menu, ind) => (
                     <li key={ind}>
-                      {' '}
-                      <Link to={menu.to}>{menu.name}</Link>{' '}
+                      <Link to={menu.to}>{menu.name}</Link>
                     </li>
                   ))}
                 </ul>
               </div>
             </Col>
-            <Col md={2} xs={6}>
+            <Col lg={3} xs={6}>
               <div className="footer-menu">
+                <h5>Services</h5>
                 <ul>
-                  {menu2Data.map((menu, ind) => (
+                  {footerServicesItems.map((menu, ind) => (
                     <li key={ind}>
-                      {' '}
-                      {renderMenuLink(menu)}
+                      <Link to={menu.to}>{menu.menu}</Link>
                     </li>
                   ))}
                 </ul>
               </div>
             </Col>
-            <Col md={4}>
+            <Col lg={3} xs={6}>
+              <div className="footer-menu">
+                <h5>Industries</h5>
+                <ul>
+                  {industrieshMenu.map((menu, ind) => (
+                    <li key={ind}>
+                      {menu.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Col>
+            <Col lg={3} xs={6}>
               <div className="footer-contact">
-                {contactData.map((data, ind) => (
+                {footerContactData.map((data, ind) => (
                   <div key={ind}>
                     {data.icon && <img src={data.icon} alt="contact" width="16px" height="16px" />}
-                    <span className={!data.icon && 'address'}>{data.title}</span>
+                    <span className={!data.icon && 'address'}>{data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" />}</span>
                   </div>
                 ))}
               </div>
             </Col>
-            <Col md={4}>
-              <div className="footer-email">
-                <span className="text-h4 fw-bold">We’re excited to work together!</span>
-                <span>Need guidance on a revamp or a new project launch?</span>
-                <div className="email-input">
-                  <PrimaryButton color="#fff" onClick={() => navigate('/contact')} borderbottom text="Let’s Get Started" />
-                </div>
-              </div>
-            </Col>
           </Row>
-        </div>
-        <div className="social-section d-flex align-items-center flex-wrap">
-          <div className="d-flex align-items-center flex-wrap follow-section">
-            <span className="follow-us">Follow Us at</span>
-            <SocialIcons socialIcons={socialLinks} />
-          </div>
-          <div className="footer-menu footer-menu-bottom">
-            <ul>
-              {bottomMenu.map((menu, ind) => (
-                <li key={ind} className="mb-0">
-                  {' '}
-                  <Link to={menu.to}> {menu.name}</Link>{' '}
-                </li>
+        </Container>
+      </div>
+      <div className="social-section">
+        <Container>
+          <div className="d-flex align-items-center flex-wrap manage-contant">
+            <div className="footer-menu footer-menu-bottom">
+              <ul>
+                {footerBottomMenu.map((menu, ind) => (
+                  <li key={ind} className="mb-0">
+                    <Link to={menu.to}> {menu.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="reserved-rights">
+              <span>© 2024 qbatch. All rights reserved.</span>
+            </div>
+            <div className="d-flex align-items-center gap-3 flex-wrap follow-section">
+              {footerSocialLinks?.map((item, ind) => (
+                <a href={item.to} target="_blank" rel="noreferrer">
+                  <div key={ind}>
+                    <img src={`${item.img}-icon.svg`} alt={item.img} width="24px" height="24px" />
+                  </div>
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </FooterWrapper>
   )
 };

@@ -3426,6 +3426,198 @@ const dataColumn4 = [
     text: "Depends",
   },
 ];
+
+const discoverQbatchMenu = [
+  {
+    name: 'About Us',
+    to: '/about/',
+  },
+  {
+    name: 'Portfolio',
+    to: '/portfolio/',
+  },
+  {
+    name: 'Career',
+    to: '/about/#freshteam-widgets',
+  },
+  {
+    name: 'Blogs',
+    to: '/blog',
+  },
+  {
+    name: 'Contact Us',
+    to: '/contact',
+  },
+];
+
+const servicesItems = [
+  {
+    menu: 'Enterprise Software Development Solutions',
+    to: '/services/enterprise-software-development/',
+  },
+  {
+    menu: 'E-commerce Automation Services',
+    to: '/services/e-commerce-automation/',
+  },
+  {
+    menu: 'Web App Development',
+    to: '/services/web-app-development/',
+  },
+  {
+    menu: 'Mobile App Development',
+    to: '/services/mobile-app-development/',
+  },
+  {
+    menu: 'CTO as a Service',
+    to: '/services/cto-as-a-service/',
+  },
+  {
+    menu: 'Product Design & Development',
+    to: '/services/product-design-development/',
+  },
+  {
+    menu: 'Web & data Scraping Services',
+    to: '/services/web-and-data-scraping/',
+  },
+  {
+    menu: 'DevOps and Cloud Computing',
+    to: '/services/devops/',
+  },
+  {
+    menu: 'Low-code/ No-code Platform Development',
+    to: '',
+  },
+  {
+    menu: 'UX/UI Design',
+    to: '',
+  },
+];
+
+const footerServicesItems = [
+  {
+    menu: 'Enterprise App Development',
+    to: '/services/enterprise-software-development/',
+  },
+  {
+    menu: 'E-commerce Automation',
+    to: '/services/e-commerce-automation/',
+  },
+  {
+    menu: 'Web App Development',
+    to: '/services/web-app-development/',
+  },
+  {
+    menu: 'Mobile App Development',
+    to: '/services/mobile-app-development/',
+  },
+  {
+    menu: 'CTO as a Service',
+    to: '/services/cto-as-a-service/',
+  },
+  {
+    menu: 'Product Design & Development',
+    to: '/services/product-design-development/',
+  },
+  {
+    menu: 'DevOps and Cloud Computing',
+    to: '/services/devops/',
+  },
+];
+
+const industrieshMenu = [
+  {
+    name: 'E-Commerce',
+    to: '#',
+  },
+  {
+    name: 'Logistics & Supply Chain',
+    to: '#',
+  },
+  {
+    name: 'FinTech',
+    to: '#',
+  },
+  {
+    name: 'Healthcare',
+    to: '#',
+  },
+  {
+    name: 'EdTech',
+    to: '#',
+  },
+  {
+    name: 'Retail and Consumer Goods',
+    to: '#',
+  },
+  {
+    name: 'Travel & Transportation',
+    to: '#',
+  },
+];
+
+const footerContactData = [
+  {
+    title: "+1 737-377-2428",
+    icon: "/phone-icon.svg",
+  },
+  {
+    title: "contact@qbatch.com",
+    icon: "/mail-icon.svg",
+  },
+  {
+    title: "1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801, USA.",
+    icon: "/address-icon.svg",
+    flag: "/usa-flag-small.svg"
+  },
+  {
+    title: "Qbatch, Asia Centre, 8 Main Boulevard Gulberg, Babar Block Garden Town, Lahore, Punjab",
+    icon: "",
+    flag: "/pakistan-flag-small.svg"
+  },
+];
+
+const footerBottomMenu = [
+  // {
+  //   name: "Subscribe to our Newsletter",
+  //   to: "/",
+  // },
+  {
+    name: "Terms & Conditions",
+    to: "/terms-and-conditions/",
+  },
+  {
+    name: "Privacy Policy",
+    to: "/privacy-policy/",
+  },
+];
+
+const footerSocialLinks = [
+  {
+    img: '/facebook-filled',
+    to: 'https://www.facebook.com/qbatch/',
+  },
+  {
+    img: '/instagram-filled',
+    to: 'https://www.instagram.com/qbatch/',
+  },
+  {
+    img: '/linkedin-filled',
+    to: 'https://www.linkedin.com/company/qbatch/',
+  },
+  {
+    img: '/twitter-filled',
+    to: 'https://twitter.com/qbatchofficial',
+  },
+  {
+    img: '/behance-filled',
+    to: 'https://www.behance.net/qbatch',
+  },
+  {
+    img: '/youtube-filled',
+    to: 'https://www.youtube.com/@qbatch',
+  },
+]
+
 const personal = [
   {
     title: "Digital Business Leader",
@@ -3536,6 +3728,13 @@ export {
   dataColumn2,
   dataColumn3,
   dataColumn4,
+  discoverQbatchMenu,
+  servicesItems,
+  industrieshMenu,
+  footerContactData,
+  footerBottomMenu,
+  footerServicesItems,
+  footerSocialLinks,
   extensionFaq,
   extensionSliderItems,
   extensionLanguages,

@@ -183,9 +183,6 @@ const Index = ({ page }) => {
       }
     }
   };  
-  function onChange(value) {
-  console.log("Captcha value:", value);
-}
   return (
     <StartProjectWrapper>
       <Container>
@@ -364,8 +361,7 @@ const Index = ({ page }) => {
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
                   <ReCAPTCHA
                     action="homepage"
-                    sitekey="6LdIx8QpAAAAANMYWJl6mHb5hUZFYEH4Svdg-kGs"
-                    onChange={onChange}
+                    sitekey="6Ldf5ccpAAAAAFVIXJMisNHYO1IKp2gPVUltgzq1"
                   />
                   <Button text="Submit" btnType="submit" className="pt-md-0 pt-3" />
                 </div>
