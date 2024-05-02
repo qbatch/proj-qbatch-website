@@ -17,7 +17,8 @@ const CtoBannerWrapper = styled.div`
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.whiteColor};
-    margin: 4px 0 16px 10px;
+    margin: 0px 0 12px 10px;
+    position:relative;
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
     }
@@ -34,17 +35,17 @@ const CtoBannerWrapper = styled.div`
     .banner-sub-heading {
       font-size: 20px;
       font-weight: 700;
-      padding-bottom: 10px;
+      padding-bottom: 12px;
       color: ${({ theme }) => theme.colors.dividerColor};
       letter-spacing: 0;
+      text-transform:none;
       ${media.lg`
         font-size: 16px;
       `}
     }
     .text-h1 {
       color: ${({ theme }) => theme.colors.whiteColor};
-      margin-bottom: 34px;
-      margin-top: 3px;
+      margin-bottom: 24px;
       max-width: 723px;
       i{
         color: ${({ theme }) => theme.colors.textColor};
@@ -59,9 +60,9 @@ const CtoBannerWrapper = styled.div`
     }
     p {
       max-width: 680px;
-      margin-bottom: 40px;
+      margin-bottom: 48px;
       line-height: 32px;
-      font-size: 24px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       color: ${({ theme }) => theme.colors.whiteColor};
       a{
         color: ${({ theme }) => theme.colors.textColor};
@@ -101,9 +102,6 @@ const CtoBannerWrapper = styled.div`
     padding: 143px 0 50px;
     background-position:right;
     justify-content:start;
-       &.change-background-size{
-      background-size:50%;
-    }
     .container-wrapper {
     align-items: center;
     display: flex;

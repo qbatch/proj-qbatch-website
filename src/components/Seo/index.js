@@ -30,8 +30,16 @@ const SEO = (props) => {
        {staging  === "staging" ?
        <>
        <meta name="robots" content=" noindex,nofollow" />
-        <title>{seo.title}</title>
-        </>
+       <title>{seo.title}</title>
+       <meta name="description" content={seo.description} />
+       <meta property="og:url" content={seo.url} key="og:url" />
+      <meta property="og:title" content={seo.title} key="og:title" />
+      <meta property="og:description" content={seo.description} key="og:description" />
+      <meta property="og:type" content="WebPage" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+       </>
         :
         <>
       <link rel="canonical" href={seo.url} />

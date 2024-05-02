@@ -14,6 +14,7 @@ const ShareYourRequirementsWrapper = styled.div`
     text-align: center;
     margin: auto;
     margin-bottom: 24px;
+    text-transform:none;
   }
   textarea {
     padding: 12px 0px;
@@ -71,6 +72,9 @@ const ShareYourRequirementsWrapper = styled.div`
       ${media.sm`
       max-width: 100%;
       `}
+      h3{
+        text-transform:none;
+      }
       p.label-text-wrap{
         text-align: left;
         font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};

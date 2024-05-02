@@ -2445,36 +2445,36 @@ const enterPrisFaq = [
     ),
   },
 ]
-const guidanceData = [
+const technicalGuidanceData = [
   {
-    image: '/vertical-aligmnet.svg',
+    img: '/vertical-aligmnet.svg',
     title: 'Vision and Future Alignment',
-    content: 'Build a roadmap that elevates your technical strategy, objectives, and operations to achieve a holistic digital footprint powering associated people, processes, and possibilities with our CTO consulting services. Let’s turn your vision into victory.',
+    text: 'Build a roadmap that elevates your technical strategy, objectives, and operations to achieve a holistic dig/vertical-aligmnet.svgital footprint powering associated people, processes, and possibilities with our CTO consulting services. Let’s turn your vision into victory.'
   },
   {
-    image: '/leading-and-scaling-teams.svg',
-    title: 'Leading and Scaling  Teams',
-    content: 'Your development team decides and shapes the future of the entire business. Thus we keep the bar high when it comes to tech leadership and management. Enjoy proficient team management, process optimization, and daily reporting with our CTO services.',
+    img: '/leading-and-scaling-teams.svg',
+    title: 'Leading and Scaling Teams',
+    text: 'Your development team decides and shapes the future of the entire business. Thus we keep the bar high when it comes to tech leadership and management. Enjoy proficient team management, process optimization, and daily reporting with our CTO services.'
   },
   {
-    image: '/strategic-procurement-and-cost-optimization.svg',
-    title: 'Strategic Procurement and Cost Optimization',
-    content: 'Technology expenses can quickly escalate if the"build vs. buy" analysis goes wrong with suppliers and vendors. Our CTO advisory services develop a problem-solution fit by running iterations and finding critical areas that truly require investment. ',
+    img: '/strategic-procurement-and-cost-optimization.svg',
+    title: 'Strategic Procurement & Cost Optimization',
+    text: 'Technology expenses can quickly escalate if the"build vs. buy" analysis goes wrong with suppliers and vendors. Our CTO advisory services develop a problem-solution fit by running iterations and finding critical areas that truly require investment.'
   },
   {
-    image: '/technical-audit.svg',
+    img: '/technical-audits.svg',
     title: 'Technical Audits, Due Diligence, and Change Management',
-    content: 'We dive deeper into the technical risks associated with your business processes and strategy, conduct audits, prepare you for due diligence, and prescribe rock-solid change management roadmaps toward total digital transformation and delivery across the company.',
+    text: 'We dive deeper into the technical risks associated with your business processes and strategy, conduct audits, prepare you for due diligence, and prescribe rock-solid change management roadmaps toward total digital transformation and delivery across the company.'
   },
   {
-    image: '/system-engineering-and-design.svg',
+    img: '/system-engineering-and-design.svg',
     title: 'System Engineering and Design',
-    content: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise systems',
+    text: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise system'
   },
   {
-    image: '/technical-audit.svg',
+    img: '/technical-audit.svg',
     title: 'Technology Integration and Analysis',
-    content: 'Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.',
+    text: 'Discover whether your business requires technical fixing or a total overhaul to assure zero downtime, accessibility, and enterprise-wide information exchanges. Eliminate software bloat and build technical resilience with our impeccable CaaS providers.'
   },
 ]
 
@@ -2558,7 +2558,7 @@ const ctoList = [
   },
   {
     img: '/hire-a-cto_gain-the-trust.svg',
-    description: 'Got a powerful idea but cannot cope with a tech part?',
+    description: 'Got an MVP but not sure how to gain the trust of investors?',
   },
   {
     img: '/hire-a-cto_mature-startup.svg',
@@ -2963,24 +2963,23 @@ const hassleData = [
 ]
 const DevData = [
   {
-    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src='/left-img.svg' /></>,
+    img:<img className="image-wrapper" src='/left-arrow.svg' />,
     heading:'Dev replacement guarantee',
     text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
   },
   {
-    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/right-img.svg" /></>,
+    img: <img className="image-wrapper" src="/right-arrow.svg" />,
     heading:'Comprehensive weekly reports',
-    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+    text:' You’ll receive a detailed list of all the tasks your dedicated development team or developer has completed including the total time ensuring transparency and individual-level performance.'
   },
   {
-    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/left-img.svg" /></>,
+    img: <img className="image-wrapper" src='/left-arrow.svg' />,
     heading:'On-the-go support',
-    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+    text:' Our miraculous developers carefully cater to your feedback and change requests on your preferred channels of communication. Because the greatness must not halt!'
   },
   {
-    img: <><img className="responsive-image" src="/devs-img.png" /> <img className="image-wrapper" src="/devs-img.png" /></>,
     heading:'Total product mindset',
-    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+    text:'Our software developers for hire own your product and take care of your trust. The founder’s mentality helps them deliver practical and sustainable results.'
   },
 ]
 const cardsData = [
@@ -3042,7 +3041,7 @@ const tileData = [
       text: "Part-time",
     },
     {
-      text: "On hourly basis",
+      text: "On Hourly Basis",
     },
     {
       text: "Not sure",
@@ -3050,16 +3049,16 @@ const tileData = [
   ],
   [
     {
-      text: "Junior developer",
+      text: "Junior Developer",
     },
     {
-      text: "Senior developer",
+      text: "Senior Developer",
     },
     {
-      text: "Software architect or lead developer",
+      text: "Software Architect or Lead Developer",
     },
     {
-      text: "CTO or VP of engineering",
+      text: "CTO or VP of Engineering",
     },
   ],
   [
@@ -3095,7 +3094,7 @@ const tileData = [
       text: "I have a rough idea of what I want to build.",
     },
     {
-      text: "I have a clear idea of what I want, but I’ve not penned down any specific requirements.",
+      text: "I have a clear idea of what I want, but I’ve not noted any specific requirements.",
     },
     {
       text: "I have clearly written requirements or wireframes.",
@@ -3619,6 +3618,49 @@ const footerSocialLinks = [
   },
 ]
 
+const personal = [
+  {
+    title: "Digital Business Leader",
+    list: [
+      "For consumer-goods companies",
+      "Pushes tech strategy and budgeting",
+      "Leads innovation-driven investments",
+      "Translates market needs into products",
+      "Understands tech trends and execution",
+      "Innovates enterprise architecture",
+    ],
+  },
+  {
+    title: "Business Enabler ",
+    list: [
+      "Prevents business unit obsoletion",
+      "Facilitates responsive IT delivery",
+      "Guides tech adoption decisions",
+      "Collaborates with engineering teams",
+      "Analyzes risks in new tech deployments",
+    ],
+  },
+  {
+    title: "Change Agent",
+    list: [
+      "Drives technology adoption and sustenance",
+      "Guides IT leadership company-wide",
+      "Leads IT teams in innovation",
+      "Advocates for agile and DevOps",
+      "Introduces business innovation sources",
+    ],
+  },
+  {
+    title: "IT Chief Operating Officer",
+    list: [
+      "For single or similar product companies",
+      "Manages day-to-day IT services",
+      "Handles IT purchasing and compliance",
+      "Manages internal and external IT incidents",
+      "Ensures system modernization",
+    ],
+  },
+];
 export {
   dedicationWork,
   homeTiles,
@@ -3647,7 +3689,7 @@ export {
   lostToLaunched,
   faqQuestion,
   ecomFaqQuestion,
-  guidanceData,
+  technicalGuidanceData,
   youCanTrustData,
   lostToLaunchedItems,
   languagesData,
@@ -3695,5 +3737,6 @@ export {
   footerSocialLinks,
   extensionFaq,
   extensionSliderItems,
-  extensionLanguages
+  extensionLanguages,
+  personal
 }

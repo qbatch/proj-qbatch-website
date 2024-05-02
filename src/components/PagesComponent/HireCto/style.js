@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const HireCtoWrapper = styled.div`
-  padding: 97px 0;
+  padding: 96px 0;
   ${media.sm`
      padding: 40px 0px;
   `}
   .heading{
-    max-width: 720px;
+    max-width: 100%;
     margin: auto;
     line-height: 52px;
   }
@@ -51,7 +51,7 @@ const HireCtoWrapper = styled.div`
   .list-group {
     text-align: left;
     max-width: 930px;
-    margin: 50px auto 72px auto;
+    margin:72px auto;
     .list-group-item {
       border: 0px;
       background-color: transparent;

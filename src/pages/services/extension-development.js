@@ -30,7 +30,6 @@ const CtoService = () => {
           </>
         }
         buttonText="Let’s Get Started"
-        mobileViewBanner={BannerImage}
         imgSrc={BannerImage}
         col1lg={7}
         className="d-flex align-items-center"
@@ -92,8 +91,8 @@ const CtoService = () => {
 };
 
 export const Head = () => {
-  const ctoData = Queries()
-  const seoData = ctoData.allStrapiCtoService.nodes[0]?.seo
+  const extensionDevData = Queries()
+  const seoData = extensionDevData.allStrapiExtensionDevelopment.nodes[0]?.seo
   return (
     <SEO
       title={seoData?.metaTitle}
