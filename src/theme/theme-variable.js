@@ -29,6 +29,7 @@ const theme = {
     disableColor: '#889095',
     highlightColor: '#FD3',
     textColor: '#FFDD33',
+    footerBgColor: '#001B35'
   },
   fonts: {
     baseFontSizeH1: fsh1,
