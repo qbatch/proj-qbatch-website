@@ -86,7 +86,7 @@ const DevOps = () => {
        wrapperClass="text-left"
        isButton={true}
        btnText="Start Risk-Free DevOps Journey"
-       caption="Gartner"
+       caption="- Gartner"
        btnSpacingTop={72}
        btnAlign="center"
       />

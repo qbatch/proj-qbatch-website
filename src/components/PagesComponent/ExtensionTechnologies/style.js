@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const LanguagesWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  padding: 96px 0;
+  padding: 120px 0;
   ${media.sm`
     padding: 40px 0;
     text-align: center;
@@ -14,7 +14,7 @@ const LanguagesWrapper = styled.div`
     `}
   }
   .languages-header {
-    margin-bottom: 96px;
+    margin-bottom: 76px;
     ${media.md`
       margin-bottom: 40px;
     `}
@@ -154,7 +154,7 @@ const LanguagesWrapper = styled.div`
     justify-content: center;
   }
   .framework-item {
-    min-height: 160px;
+    min-height: 700px;
   }
 `;
 

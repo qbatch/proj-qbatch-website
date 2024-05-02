@@ -19,6 +19,12 @@ const counterData2 = [
   { id: 2, count: 200, desc: 'Tech Stacks', symbol: '+' },
   { id: 3, count: 98, desc: 'Customer Happiness \n Index', symbol: '%' },
 ]
+const counterData3 = [
+  { id: 1, count: 10, desc: 'Extensions Developed Successfully', symbol: '+' },
+  { id: 2, count: 30000, desc: 'Active Users', symbol: '+' },
+  { id: 3, count: 4.3, desc: 'Rating', symbol: '+' },
+  { id: 4, count: 1000, desc: 'Downloads', symbol: '+' },
+]
 const dedicationWork = [
   { id: 1, count: 11000, desc: 'Web pages scraped so far', symbol: '+' },
   { id: 2, count: 70, desc: 'Companies served', symbol: '+' },
@@ -232,6 +238,50 @@ const sliderItems = [
     content:
       'We won’t leave you at the very climax of your development stage like the rest. You will have all the intellectual property rights and our long-term support on a retainer basis as needed.',
     list: ['Knowledge & Documentation Transfer', 'Intellectual Property Rights', 'Ad-hoc Support & Maintenance'],
+  },
+]
+const extensionSliderItems = [
+  {
+    image: '/for-multi-platform-and-secure-extensions.png',
+    title: 'For Multi-Platform and Secure Extensions',
+    content:
+      'Our browser extension developers offer cross-browser solutions employing modern technologies to ensure robust browsing experiences. ',
+  },
+  {
+    image: '/chrome-browser-extension-development.png',
+    title: 'Chrome Browser Extension Development',
+    content:
+      'Being the absolute favorite browser of above 2.50 billion online surfers, Chrome browser extensions are a worthwhile investment to achieve a leading position in the browser market. Our Google Chrome extension developers can help you build custom plugins and add-ons for your business.',
+  },
+  {
+    image: '/brave-browser-extension-development.png',
+    title: 'Brave Browser Extension Development',
+    content:
+      'Keeping in regard the growing user base of the Brave browser, our seasoned developers create super compatible and high-performing browser extensions to help you elevate your digital presence outdoing your competition in the dense Brave browser landscape.',
+  },
+  {
+    image: '/safari-browser-extension-development.png',
+    title: 'Safari Browser Extension Development',
+    content:
+      'As Safari is extensively used on Apple systems, Qbatch’s Safari browser extension development is a win-win if you to deliver unique browser performance, custom features, and user-friendly designs to impress Apple users. ',
+  },
+  {
+    image: '/firefox-browser-extension-development.png',
+    title: 'Firefox Browser Extension Development',
+    content:
+      'Create secure Firefox browser extensions and reach a broader audience offering vast experience using HTML, CSS, and JavaScript. Leverage our strong understanding of the extension framework and knack for user privacy to build foolproof and top-grade Firefox extension solutions.',
+  },
+  {
+    image: '/opera-browser-extension-development.png',
+    title: 'Opera Browser Extension Development',
+    content:
+      'Let’s ensure seamless integration, superior user engagement, and top-notch security on the Opera browser with our expert developers. We employ hands-on experience to unlock the full potential of Opera browser extensions and empower your audiences online.',
+  },
+  {
+    image: '/edge-browser-extension-development.png',
+    title: 'EDGE Browser Extension Development',
+    content:
+      'With a growing user base and recent Chromium integration, Edge extension development is a wise choice if your product runs on a contemporary Windows-based system. Our browser extension developers guide you from ideation to deployment for immaculate browsing experiences. ',
   },
 ]
 
@@ -650,6 +700,55 @@ const languagesData = [
       },
     ], 
     title: 'Others',
+  },
+]
+const extensionLanguages = [
+  {
+    content: [
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/fastApi.svg",
+        desc: "Fast API"
+      },
+    ],    
+    title: 'Backend',
+  },
+  {
+    content: [
+      {
+        img: "/react-seeklogo.svg",
+        desc: "React JS"
+      },
+    ],  
+    title: 'Frontend',
+  },
+  {
+    content: [
+      {
+        img: "/amazon-web-service.svg",
+        desc: "Amazon Web Service"
+      },
+      {
+        img: "/google-platform.svg",
+        desc: "Google Cloud Platform"
+      },
+      {
+        img: "/digital-ocean.svg",
+        desc: "Digital Ocean"
+      },
+    ], 
+    title: 'Infrastructure',
   },
 ]
 const projects = [
@@ -1113,7 +1212,156 @@ const devOpsFaq = [
     )
   },
 ]
-
+const extensionFaq = [
+  {
+    id: 1,
+    title: 'Can you develop a browser extension for multiple browsers?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Yes, we can develop browser extensions for multiple browsers using cross-browser extension frameworks like WebExtensions supported by browsers such as Firefox, Chrome, Edge, and Opera.
+        </span>
+      </div>
+    )
+  },
+  {
+    id: 2,
+    title: 'Do you provide post-development support for browser extensions?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Yes, team Qbatch provides post-development support for browser extensions on a retainer basis.
+        </span>
+      </div>
+    )
+  },
+  {
+    id: 3,
+    title: 'What is the pricing model for browser extension development?',
+    content: (
+      <div className="faq-content">
+        <span>
+        The pricing model may vary based on project complexity, yet we provide transparent and flexible pricing plans, ensuring value for your investment.
+        </span>
+      </div>
+    )
+  },
+  {
+    id: 4,
+    title: 'Do you Offer Maintenance Services after the completion of Browser Extension development?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Yes, team Qbatch offers Maintenance Services after the Browser Extension development completion as required.
+        </span>
+      </div>
+    )
+  },
+  {
+    id: 5,
+    title: 'Do you provide the source code ownership for Chrome extensions?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Yes, we ensure complete ownership transfer of Chrome extensions making you the sole owner by documenting ownership details, including source code, and address licensing in our agreements.
+        </span>
+      </div>
+    )
+  },
+  {
+    id: 6,
+    title: 'What is the average cost of hiring Chrome extension development services?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Chrome extension development cost varies widely based on complexity, features, and developer expertise. Simple extensions may cost a few thousand dollars, while complex ones could range from several thousand to tens of thousands. Discuss your project with developers for accurate, tailored quotes.
+        </span>
+      </div>
+    )
+  },
+  {
+    id: 7,
+    title: 'Can I hire a Chrome extension developer for pre-existing extensions?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Yes, you can hire a Chrome extension developer for pre-existing extensions. Qbatch’s Chrome extension developers easily handle tasks like adding features, fixing bugs, or updating extensions.
+        </span>
+      </div>
+    )
+  },
+  {
+    id: 8,
+    title: 'What technologies do you use to build my Chrome Extension?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Below are the technologies we use to build your Chrome extension:
+        </span>
+        <span>Back-end</span>
+        <ul>
+          <li>Python</li>
+          <li>Django</li>
+          <li>Node JS</li>
+          <li>FastAPI</li>
+        </ul>
+        <span>Front-end</span>
+        <ul>
+          <li>React</li>
+        </ul>
+        <span>Infrastructure</span>
+        <ul>
+          <li>Amazon Web Services</li>
+          <li>Google Cloud Platform</li>
+          <li>Digital Ocean</li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    id: 9,
+    title: 'Where do I hire the best remote Chrome Extension developers?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Qbatch is a trustable choice to hire remote Chrome extension developers for custom-made and high-performing browsing experiences.
+        </span>
+      </div>
+    )
+  },
+  {
+    id: 9,
+    title: 'Why is Qbatch the best choice for hiring Chrome Extension developers?',
+    content: (
+      <div className="faq-content">
+        <span>
+        This is why Qbatch is the best choice for hiring Chrome Extension developers:
+        </span>
+        <ul>
+          <li>High-security</li>
+          <li>Easy-to-Approach Features</li>
+          <li>Ad-Free Browsing</li>
+          <li>Smooth Browsing Experience</li>
+          <li>Return on Marketing Investment</li>
+          <li>Streamlined Project Management</li>
+          <li>Organized and Decluttered Workflow</li>
+          <li>Muti-Channel Product Distribution</li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    id: 10,
+    title: 'How much does it cost to hire a full-time Chrome Extension developer?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Hiring a full-time Chrome Extension developer depends upon experience and skill. A junior Chrome Extension developer may have monthly rates of $2,000 to $5,000, while experienced Chrome Extension developer developers in higher-cost regions may charge $5,000 to $10,000 or more.
+        </span>
+      </div>
+    )
+  },
+]
 const faqQuestion = [
   {
     id: 1,
@@ -3381,6 +3629,7 @@ export {
   peopleFirstData,
   counterData,
   counterData2,
+  counterData3,
   productDesignCounterData,
   weDoData,
   data,
@@ -3443,5 +3692,8 @@ export {
   footerContactData,
   footerBottomMenu,
   footerServicesItems,
-  footerSocialLinks
+  footerSocialLinks,
+  extensionFaq,
+  extensionSliderItems,
+  extensionLanguages
 }
