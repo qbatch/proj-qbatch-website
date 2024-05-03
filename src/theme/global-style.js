@@ -237,7 +237,7 @@ const GlobalStyles = createGlobalStyle`
         border:1px solid  ${({ theme }) => theme.colors.dividerColor};
         padding: 36px;
         margin-bottom:24px;
-        background: url('/inner-banner-bg.svg');
+        background: url('/author-box-bg.svg');
         background-size: cover;
         .author-img{
           img {
