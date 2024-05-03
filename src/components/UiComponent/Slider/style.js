@@ -15,6 +15,11 @@ const SliderWrapper = styled.div`
     max-width: 1020px;
     margin: 0 auto;
   }
+  &.extension-dev-slider{
+    .title{
+      text-transform: none;
+    }
+  }
   ${media.sm`
         .make-responsive {
       flex-direction: column;

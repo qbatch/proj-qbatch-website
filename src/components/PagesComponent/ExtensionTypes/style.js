@@ -7,6 +7,7 @@ padding: 96px 0;
   text-align: center;
   max-width: 768px;
   margin: auto;
+  text-transform: none;
 }
 .paragraph{
   padding-bottom: 56px;
@@ -18,8 +19,8 @@ padding: 96px 0;
   padding: 32px;
   border-bottom: 1px solid #D2D9DC;
   height: 100%;
-  .inner-header{
-    padding-bottom: 12px;
+  .inner-heading{
+    text-transform: none;
   }
 }
 `

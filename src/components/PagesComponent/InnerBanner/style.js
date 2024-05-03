@@ -33,6 +33,15 @@ const InnerBannerWrapper = styled.div`
       margin-top: 30px !important;
     `}
   }
+
+  &.extension-dev-inner-banner{
+    .caption{
+      text-transform: none;
+    }
+    .heading{
+      text-transform: none;
+    }
+  }
 `
 
 export default InnerBannerWrapper;
