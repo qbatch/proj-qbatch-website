@@ -46,9 +46,11 @@ const Index = (props) => {
               })}
             </Slider>
           </div>
-         <div className='d-block'>
-          <Button text={btnText} btnType="submit" className={btnClass} />
-         </div>
+          {btnText && (  // Render button only if btnText is provided
+            <div className='d-block pt-5'>
+              <Button text={btnText} btnType="submit" className={btnClass} />
+            </div>
+          )}
         </SliderWrapper>
       </Container>
       <Divider />

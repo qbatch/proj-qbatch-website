@@ -59,7 +59,7 @@ const CtoService = () => {
         align='center'
         className='extension-dev-slider'
         btnText="Let’s Get Started"
-        btnClass="m-auto"
+        btnClass="m-auto mt-5"
       />
       <ProcessBehind />
       <ExtensionTypes />
