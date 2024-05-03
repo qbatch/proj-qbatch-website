@@ -26,6 +26,7 @@ const Index = ({ page }) => {
   const [modal, setModal] = useState("");
   const [serviceOpen, setServiceOpen] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
+  const [recaptchaCompleted, setRecaptchaCompleted] = useState(false);
 
   const [serviceSelect, setServiceSelect] = useState([]);
 
@@ -116,6 +117,14 @@ const Index = ({ page }) => {
     }
 
     if (!phoneValid) {
+      return;
+    }
+
+    if (!recaptchaCompleted) {
+      toast.error("Please complete the reCAPTCHA.", {
+        position: "top-right",
+        autoClose: 5000,
+      });
       return;
     }
 
@@ -362,6 +371,7 @@ const Index = ({ page }) => {
                   <ReCAPTCHA
                     action="homepage"
                     sitekey="6Ldf5ccpAAAAAFVIXJMisNHYO1IKp2gPVUltgzq1"
+                    onChange={() => setRecaptchaCompleted(true)}
                   />
                   <Button text="Submit" btnType="submit" className="pt-md-0 pt-3" />
                 </div>
