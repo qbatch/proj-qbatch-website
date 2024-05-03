@@ -33,13 +33,13 @@ const CtoService = () => {
         imgSrc={BannerImage}
         col1lg={7}
         className="d-flex align-items-center"
-        wrapperClass="cto-banner"
+        wrapperClass="extension-dev-banner"
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
           { pathname: '/services/extension-development/', crumbLabel: 'Browser Extension Development' },
         ]}
       />
-      <ExtensionDevInfo/>
+      <ExtensionDevInfo />
       <ExtensionInnerBanner
         heading="So, Why Invest in a Browser Extension?"
         paragraph="Businesses will continue to use browsers as a critical part of their everyday work. Thus, creating safer, simpler, and cost-effective user-browser interactions without any cybersecurity threats is crucial."
@@ -57,23 +57,26 @@ const CtoService = () => {
         data={extensionSliderItems}
         width="390px"
         align='center'
+        className='extension-dev-slider'
+        btnText="Let’s Get Started"
+        btnClass="m-auto mt-5"
       />
       <ProcessBehind />
-      <ExtensionTypes/>
+      <ExtensionTypes />
       <InnerBanner
         heading="Build On-Demand Extensions"
         caption="Didn’t find your type? Share your idea and we’ll build the right fit for your enterprise."
         headingMaxWidth="900px"
         headingSize="ms-0"
         wrapperClass="text-left"
+        className="extension-dev-inner-banner"
         isButton={true}
         btnText="Schedule a Call"
         btnSpacingTop={72}
         btnAlign="left"
       />
-      <Languages/>
-      <ExperienceDriven/>
-      <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
+
+      <ProvenWorkExperience heading="Our Featured Projects in Chrome Browser Extensions Development" headerClass="text-center w-100" btnClass="d-none"/>
       <InnerBanner
         heading="Customize your user-browsing experiences with our powerful browser extensions"
         headingMaxWidth="900px"
@@ -84,6 +87,8 @@ const CtoService = () => {
         btnSpacingTop={72}
         btnAlign="left"
       />
+      <Languages />
+      <ExperienceDriven/>
       <FaqSection faqQuestion={extensionFaq} />
       <StartProject />
     </Layout>

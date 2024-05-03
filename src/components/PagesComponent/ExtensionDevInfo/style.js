@@ -17,6 +17,7 @@ padding: 96px 0;
     height: 100%;
     h3{
       margin-bottom: 12px;
+      text-transform: none;
     }
     a{
       font-weight: ${({ theme }) => theme.fontWeight.bold};

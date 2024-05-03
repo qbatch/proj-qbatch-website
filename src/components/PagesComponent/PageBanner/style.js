@@ -14,6 +14,11 @@ const CtoBannerWrapper = styled.div`
      min-height:calc(100vh - 700px);
   `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  &.extension-dev-banner{
+    h2{
+      text-transform: none;
+    }
+  }
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.whiteColor};

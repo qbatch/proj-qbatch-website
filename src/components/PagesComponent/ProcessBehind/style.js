@@ -11,7 +11,6 @@ const ProcessWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     margin-bottom: 16px;
     display: block;
-    color:  ${({ theme }) => theme.colors.textMedium};
   }
   .heading {
     max-width: 550px;

@@ -3,8 +3,9 @@ import Slider from 'react-slick'
 import Container from '../Container'
 import Divider from '../Divider'
 import SliderWrapper from './style'
+import Button from "../../UiComponent/Button"
 const Index = (props) => {
-  const { data, align, heading, paragraph, width, height, seconedHeading, maxWidth, className } = props
+  const { data, align, heading, paragraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText } = props
   const settings = {
     dots: true,
     infinite: false,
@@ -45,6 +46,11 @@ const Index = (props) => {
               })}
             </Slider>
           </div>
+          {btnText && (
+            <div className='d-block pt-5'>
+              <Button text={btnText} btnType="submit" className={btnClass} />
+            </div>
+          )}
         </SliderWrapper>
       </Container>
       <Divider />
