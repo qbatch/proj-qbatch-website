@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Row, Col, Form } from "react-bootstrap";
 import { Link } from "gatsby";
 import { ToastContainer, toast } from "react-toastify";
@@ -19,6 +19,7 @@ import TestimonialCarousel from "../../UiComponent/TestimonialSlider";
 import StartProjectWrapper from "./style";
 
 const Index = ({ page }) => {
+  const recaptchaRef = useRef(null);
   const [validated, setValidated] = useState(false);
   const [phone, setPhone] = useState("");
   const [phoneValid, setPhoneValid] = useState(true);
@@ -181,6 +182,9 @@ const Index = ({ page }) => {
             promotion: false,
           });
           setPhone("+1")
+          if (recaptchaRef.current) {
+            recaptchaRef.current.reset();
+          }
         } else {
           toast.error("Something went wrong", {
             position: "top-right",
@@ -372,6 +376,7 @@ const Index = ({ page }) => {
                     action="homepage"
                     sitekey="6Ldf5ccpAAAAAFVIXJMisNHYO1IKp2gPVUltgzq1"
                     onChange={() => setRecaptchaCompleted(true)}
+                    ref={recaptchaRef}
                   />
                   <Button text="Submit" btnType="submit" className="pt-md-0 pt-3" />
                 </div>
