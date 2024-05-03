@@ -185,6 +185,7 @@ const Index = ({ page }) => {
           if (recaptchaRef.current) {
             recaptchaRef.current.reset();
           }
+          setRecaptchaCompleted(false);
         } else {
           toast.error("Something went wrong", {
             position: "top-right",
