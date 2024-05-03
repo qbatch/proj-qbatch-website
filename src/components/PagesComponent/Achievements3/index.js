@@ -22,7 +22,7 @@ const Index = ({ headingClass, page, mainHeading,textClass }) => {
             {displayedCounterData.map((data, ind) => (
               <Col  lg={3} sm={6} xs={12} key={ind} className="achievements-col">
                 <span className="text-h1 inner-heading">
-                  {parseFloat(data.count.toFixed(1)).toLocaleString()} {/* Round to 1 decimal place and add comma */}
+                  {parseFloat(data.count.toFixed(1)).toLocaleString()}
                   {data.symbol && (
                     <span className="color-danger fw-light ms-2">{data.symbol}</span>
                   )}

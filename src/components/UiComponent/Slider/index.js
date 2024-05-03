@@ -46,7 +46,7 @@ const Index = (props) => {
               })}
             </Slider>
           </div>
-          {btnText && (  // Render button only if btnText is provided
+          {btnText && (
             <div className='d-block pt-5'>
               <Button text={btnText} btnType="submit" className={btnClass} />
             </div>
