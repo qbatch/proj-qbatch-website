@@ -126,6 +126,7 @@ const FooterWrapper = styled.div`
         transition: color 0.5s ease-out;
         position: relative;
         letter-spacing: 0.14px;
+        font-weight:${({ theme }) => theme.fontWeight.medium};
         cursor: pointer;
           &::before {
           content: "";
