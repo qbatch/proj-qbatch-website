@@ -70,7 +70,7 @@ const IndexPage = () => {
           paragraph="We always present problems with tangible solutions."
         />
         <Awards maxCols={8} />
-        <Collaboration />
+        <Collaboration largeHeading={true} />
         <CreativeIntelligence />
         <StartProject />
         {/* <EventsBanner

@@ -38,7 +38,7 @@ const Index = () => {
   return (
     <StoriesWrapper>
       <Container>
-        <h2 className="color-primary heading text-h1">Our Success Stories</h2>
+        <h2 className="color-primary heading">Our Success Stories</h2>
         <p className="desc">
           Our Success Stories Innovators from across the industry have trusted
           Qbatch to build high-impact products

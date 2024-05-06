@@ -36,9 +36,11 @@ const GlobalStyles = createGlobalStyle`
     }
     h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
+        line-height: 52px;
     }
     h3, .text-h3{
-        font-size:${({ theme }) => theme.fonts.baseFontSizeH3}
+        font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
+        line-height: 40px;
     }
     h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 

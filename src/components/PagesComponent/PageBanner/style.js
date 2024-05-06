@@ -110,7 +110,11 @@ const CtoBannerWrapper = styled.div`
     .container-wrapper {
     align-items: center;
     display: flex;
- 
+    .banner-main {
+      .text-h1 {
+        max-width: 515px;
+      }
+    }
 }
     .mobile-view-banner {
       display:none;

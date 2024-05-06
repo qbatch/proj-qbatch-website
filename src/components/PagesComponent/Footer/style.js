@@ -120,13 +120,13 @@ const FooterWrapper = styled.div`
     }
     li {
       margin-bottom: 16px;
+      font-weight:${({ theme }) => theme.fontWeight.medium};
       a {
         color: ${({ theme }) => theme.colors.bodyLight};
         text-decoration: none;
         transition: color 0.5s ease-out;
         position: relative;
         letter-spacing: 0.14px;
-        font-weight:${({ theme }) => theme.fontWeight.medium};
         cursor: pointer;
           &::before {
           content: "";
