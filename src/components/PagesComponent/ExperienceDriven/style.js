@@ -15,6 +15,7 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   text-align: center;
   margin: auto;
   padding-bottom: 120px;
+  text-transform: none;
 }
 .inner-box{
   padding-bottom: 72px;

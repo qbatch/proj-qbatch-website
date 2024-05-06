@@ -20,43 +20,43 @@ const index = () => {
           <Col xl={3} xs={6}>
             <div className='inner-box'>
               <img src='/easy-to-approach-features.svg' alt='hight-security' />
-              <p>High-security</p>
+              <p>Easy-to-Approach Features</p>
             </div>
           </Col>
           <Col xl={3} xs={6}>
             <div className='inner-box'>
               <img src='/ad-free-browsing.svg' alt='hight-security' />
-              <p>High-security</p>
+              <p>Ad-Free Browsing</p>
             </div>
           </Col>
           <Col xl={3} xs={6}>
             <div className='inner-box'>
               <img src='/smooth-browsing-experience.svg' alt='hight-security' />
-              <p>High-security</p>
+              <p>Smooth Browsing Experience</p>
             </div>
           </Col>
           <Col xl={3} xs={6}>
             <div className='inner-box'>
               <img src='/return-on-marketing-investment.svg' alt='hight-security' />
-              <p>High-security</p>
+              <p>Return on Marketing Investment</p>
             </div>
           </Col>
           <Col xl={3} xs={6}>
             <div className='inner-box'>
               <img src='/streamlined-project-management.svg' alt='hight-security' />
-              <p>High-security</p>
+              <p>Streamlined Project Management</p>
             </div>
           </Col>
           <Col xl={3} xs={6}>
             <div className='inner-box'>
               <img src='/organized-and-decluttered-workflow.svg' alt='hight-security' />
-              <p>High-security</p>
+              <p>Organized and Decluttered Workflow</p>
             </div>
           </Col>
           <Col xl={3} xs={6}>
             <div className='inner-box'>
               <img src='/multi-channel-product-distribution.svg' alt='hight-security' />
-              <p>High-security</p>
+              <p>Muti-Channel Product Distribution</p>
             </div>
           </Col>
         </Row>
