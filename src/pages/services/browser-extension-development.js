@@ -43,7 +43,7 @@ const BrowserExtension = () => {
       />
       <ExtensionDevInfo />
       <ExtensionInnerBanner
-        heading="So, Why Invest in a Browser Extension?"
+        heading="So, why invest in a browser extension?"
         paragraph="Businesses will continue to use browsers as a critical part of their everyday work. Thus, creating safer, simpler, and cost-effective user-browser interactions without any cybersecurity threats is crucial."
         headingMaxWidth="900px"
         headingSize="ms-0"

@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const ExtensionDevInfoWrapper = styled.div`
 padding: 96px 0;
+${media.md`
+  padding: 56px 0;
+`}
 .wrapper{
   max-width: 932px;
   margin: auto;
@@ -18,6 +22,7 @@ padding: 96px 0;
     h3{
       margin-bottom: 12px;
       text-transform: none;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
     }
     a{
       font-weight: ${({ theme }) => theme.fontWeight.bold};
@@ -26,6 +31,15 @@ padding: 96px 0;
     }
   }
 }
+
+${media.md`
+  padding: 56px 0;
+  .wrapper{
+    .heading{
+      margin-bottom: 24px;
+    }
+  }
+`}
 `
 
 export default ExtensionDevInfoWrapper;

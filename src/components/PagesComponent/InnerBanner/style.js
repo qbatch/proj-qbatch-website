@@ -15,7 +15,7 @@ const InnerBannerWrapper = styled.div`
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-    font-weight: ${({ theme }) => theme.fontWeight.light};
+    font-weight: ${({ theme }) => theme.fontWeight.normal};
     margin-top: 48px;
     display: block;
   }

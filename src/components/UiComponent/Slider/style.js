@@ -15,11 +15,6 @@ const SliderWrapper = styled.div`
     max-width: 1020px;
     margin: 0 auto;
   }
-  &.extension-dev-slider{
-    .title{
-      text-transform: none;
-    }
-  }
   ${media.sm`
         .make-responsive {
       flex-direction: column;
@@ -75,6 +70,13 @@ const SliderWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         margin-bottom: 8px;
       }
+    }
+  }
+
+  &.extension-dev-slider{
+    .title{
+      text-transform: none;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
     }
   }
   .slick-dots {

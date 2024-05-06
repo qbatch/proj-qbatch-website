@@ -61,6 +61,9 @@ const FooterWrapper = styled.div`
     ${media.sm`
      padding: 30px 0;
     `}
+    span{
+      font-weight: ${({ theme }) => theme.fontWeight.medium};
+    }
     .footer-contact {
       padding-top: 6px;
       ${media.sm`
