@@ -229,6 +229,10 @@ const GlobalStyles = createGlobalStyle`
       }
         .add-border-radius{
           border-radius: 12px 12px 0px 12px;
+          @media (max-width: 575px){
+            width: 100%;
+            height: 210px;
+          }
        } 
 
       }
@@ -389,8 +393,8 @@ const GlobalStyles = createGlobalStyle`
 .Toastify__toast-container {
   z-index: 99999;
 }
-.text-color,.brand-color,.back-to-jobs{
-  color:#000!important
+.brand-color,.back-to-jobs{
+  color:#000!important;
 }
 .icon-arrow-left{
   fill:#000!important;
