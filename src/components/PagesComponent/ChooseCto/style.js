@@ -31,6 +31,12 @@ const ChooseCtoWrapper = styled.div`
     max-width: 567px;
     line-height: 32px;
   }
+  p.upper-text-wrapper{
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    line-height:24px;
+    font-weight:700;
+    max-width:692px;
+  }
   .service-list {
     margin-top: 24px;
     ul {
@@ -40,6 +46,7 @@ const ChooseCtoWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         padding-bottom: 8px;
         line-height: 24px;
+        font-weight:400;
         &:last-child{
           padding-bottom: 0;
           ${media.md`

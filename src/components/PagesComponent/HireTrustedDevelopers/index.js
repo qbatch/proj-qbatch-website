@@ -8,7 +8,7 @@ const HireTrustedDevelopers = () => {
       <Container>
         <div className="trusted-developer-wrapper">
           <h2>
-            Hire Trusted Developers with Command of 200+ languages and
+            Hire Trusted Developers with Command of <span>200+</span> languages and
             frameworks
           </h2>
           <div className="card-ui-wrapper">

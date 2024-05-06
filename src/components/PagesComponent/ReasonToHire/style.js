@@ -22,6 +22,7 @@ const ReasonToHireWrapper = styled.div`
     max-width: 930px;
     margin: auto;
     margin-bottom: 48px;
+    text-transform:none;
   }
   .cards-wrapper {
     display: flex;

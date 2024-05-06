@@ -8,7 +8,8 @@ const CtoServiceWrapper = styled.div`
   `}
  h2{
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 72px;
+  font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
   line-height: 52px;
   ${media.sm`
         line-height: 32px;
@@ -55,7 +56,7 @@ const CtoServiceWrapper = styled.div`
       font-weight: 600;    
       line-height: 40px;
       letter-spacing: 0.7px;
-      padding-bottom: 4px;
+      padding-bottom: 8px;
     }
     p{
       font-weight: 400;

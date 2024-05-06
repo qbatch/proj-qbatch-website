@@ -237,36 +237,40 @@ const GlobalStyles = createGlobalStyle`
         border:1px solid  ${({ theme }) => theme.colors.dividerColor};
         padding: 36px;
         margin-bottom:24px;
-        div{
-          &:nth-child(1) {
-            min-width: 162px;
-        }
-        }
-        img{
-          width:72px;
-          height:72px;
+        background: url('/author-box-bg.svg');
+        background-size: cover;
+        .author-img{
+          img {
+            width:72px;
+            height:72px;
+          }
         }
         @media(max-width:991px){
           flex-wrap:wrap;
         }
         .username{
           font-size:${({ theme }) => theme.fonts.baseFontSize};
-          color:${({ theme }) => theme.colors.primaryColor};
-          white-space:nowrap;
+          color:${({ theme }) => theme.colors.whiteColor};
+          font-weight: ${({ theme }) => theme.fontWeight.medium};
+          line-height: 16px;
+          margin-bottom: 8px;
+          white-space: nowrap;
+          display: block;
         }
         .caption{
           font-size:${({ theme }) => theme.fonts.baseFontSizeXs};
-          color:${({ theme }) => theme.colors.textMedium};
+          color:${({ theme }) => theme.colors.whiteColor};
+          line-height: 14px;
+          margin-bottom: 6px;
+          display: block;
         }
         .paragraph{
-          font-size:${({ theme }) => theme.fonts.baseFontSize};
-          color:${({ theme }) => theme.colors.bodyTextVariant};
-          line-height:24px;
+          font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+          color:${({ theme }) => theme.colors.whiteColor};
+          line-height: 24px;
         }
       }
     .paragraph{
-   
-
       &.quotes-block{
         display: block;
       }
