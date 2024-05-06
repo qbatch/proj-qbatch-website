@@ -1,4 +1,6 @@
 import React from "react";
+import { Script } from 'gatsby'
+import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import SEO from "../../components/Seo";
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
@@ -76,7 +78,7 @@ const CtoService = () => {
         btnAlign="left"
       />
 
-      <ProvenWorkExperience heading="Our Featured Projects in Chrome Browser Extensions Development" headerClass="text-center w-100" btnClass="d-none"/>
+      <ProvenWorkExperience heading="Our Featured Projects in Chrome Browser Extensions Development" headerClass="text-center w-100" btnClass="d-none" />
       <InnerBanner
         heading="Customize your user-browsing experiences with our powerful browser extensions"
         headingMaxWidth="900px"
@@ -88,7 +90,7 @@ const CtoService = () => {
         btnAlign="left"
       />
       <Languages />
-      <ExperienceDriven/>
+      <ExperienceDriven />
       <FaqSection faqQuestion={extensionFaq} />
       <StartProject />
     </Layout>
@@ -98,6 +100,8 @@ const CtoService = () => {
 export const Head = () => {
   const extensionDevData = Queries()
   const seoData = extensionDevData.allStrapiExtensionDevelopment.nodes[0]?.seo
+  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
+
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -107,7 +111,11 @@ export const Head = () => {
       robots={seoData.metaRobots}
       image={seoData.metaimage[0].localFile.url}
       pathname={`/services${seoData.slug}`}
-    />
+    >
+      {schemaData && <Script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+      </Script>}
+    </SEO>
   )
 }
 
