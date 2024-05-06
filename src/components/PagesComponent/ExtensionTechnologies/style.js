@@ -107,6 +107,8 @@ const LanguagesWrapper = styled.div`
     margin-bottom: 46px;
     div {
       min-height: 85px;
+      display: flex;
+      align-items: center;
       ${media.md`
         min-height: 74px;
       `}

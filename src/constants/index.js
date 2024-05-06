@@ -1330,7 +1330,7 @@ const extensionFaq = [
     )
   },
   {
-    id: 9,
+    id: 10,
     title: 'Why is Qbatch the best choice for hiring Chrome Extension developers?',
     content: (
       <div className="faq-content">
@@ -1351,7 +1351,7 @@ const extensionFaq = [
     )
   },
   {
-    id: 10,
+    id: 11,
     title: 'How much does it cost to hire a full-time Chrome Extension developer?',
     content: (
       <div className="faq-content">
