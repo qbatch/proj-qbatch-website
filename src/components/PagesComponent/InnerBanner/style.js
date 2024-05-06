@@ -22,7 +22,7 @@ const InnerBannerWrapper = styled.div`
   .heading {
     color: ${({ theme }) => theme.colors.whiteColor};
     margin: auto;
-    text-transform: capitalize;
+    text-transform: none;
     .inner-heading {
       color: ${({ theme }) => theme.colors.dividerColor};
       display: block;
