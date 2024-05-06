@@ -33,7 +33,7 @@ const Index = (props) => {
     <InnerBannerWrapper className={className}>
       <Container>
         <div className={wrapperClass}>
-          <h2 style={headingStyle} className={`text-h2 heading ${headingSize}`}>
+          <h2 style={headingStyle} className={` ${headingSize} text-h2 heading`}>
             {heading} {span && <span className="inner-heading">{span}</span>}
             {caption && <span className="caption">{caption}</span> }
             {isButton && (
