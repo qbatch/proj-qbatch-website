@@ -10,7 +10,7 @@ import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button"
 import LanguagesWrapper from "./style";
 
-const Index = ({ heading = 'Technologies We Use For Browser Extension Development'}) => {
+const Index = ({ heading = 'Technologies We Use For Browser Extension Development' }) => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -75,7 +75,9 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
                         <Col md={3}>
                           <div className="framework-logo">
                             <div>
-                              {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                              <div className="logo-wrapper">
+                                {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                              </div>
                             </div>
                             <p>{data.desc}</p>
                           </div>
@@ -99,7 +101,9 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
                           <Col md={4} sm={6} xs={6}>
                             <div className="framework-logo">
                               <div>
-                                {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                                <div className="logo-wrapper">
+                                  {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                                </div>
                               </div>
                               <p>{data.desc}</p>
                             </div>
