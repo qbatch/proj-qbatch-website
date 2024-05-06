@@ -18,7 +18,7 @@ import ExtensionTypes from '../../components/PagesComponent/ExtensionTypes'
 import { extensionSliderItems, extensionFaq } from "../../constants";
 import BannerImage from "../../../static/extension-banner.svg";
 
-const CtoService = () => {
+const BrowserExtension = () => {
   return (
     <Layout>
       <Banner
@@ -111,4 +111,4 @@ export const Head = () => {
   )
 }
 
-export default CtoService;
+export default BrowserExtension;

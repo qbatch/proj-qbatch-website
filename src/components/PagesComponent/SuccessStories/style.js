@@ -7,13 +7,15 @@ const StoriesWrapper = styled.div`
     padding: 60px 0;
   `}
   .heading {
-    margin-bottom: 28px;
+    margin-bottom: 16px;
   }
   .desc {
     letter-spacing: 0.2px;
+    line-height: 24px;
+    margin-bottom: 0;
   }
   .wrapper {
-    margin-top: 76px;
+    margin-top: 96px;
 
     .column {
       margin-bottom: 24px;
@@ -100,6 +102,7 @@ const StoriesWrapper = styled.div`
           }
           .logo {
             margin-bottom: 32px;
+            height: 48px;
           }
           button {
             position: absolute;
@@ -110,16 +113,17 @@ const StoriesWrapper = styled.div`
             `}
           }
           h3 {
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             letter-spacing: 0.3px;
-            font-weight: ${({ theme }) => theme.fontWeight.light};
+            font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+            color: ${({ theme }) => theme.colors.midGray};
           }
 
           .paragraph {
             color: ${({ theme }) => theme.colors.textMedium};
             font-size: ${({ theme }) => theme.fonts.baseFontSize};
             line-height: 24px;
-            margin-bottom: 30px;
+            margin-bottom: 32px;
             letter-spacing: 0;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -136,12 +140,12 @@ const StoriesWrapper = styled.div`
             margin-bottom: 16px;
 
             span {
-              color: #7f8f97;
-              font-weight: 400;
-              border: 1px solid #7f8f97;
-              padding: 4px 7px;
+              color: ${({ theme }) => theme.colors.bodyLight};
+              font-weight: ${({ theme }) => theme.fontWeight.light};
+              border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+              padding: 4px 8px;
               border-radius: 2px;
-              letter-spacing: 0.2px
+              letter-spacing: 0.2px;
             }
           }
           &:hover {
