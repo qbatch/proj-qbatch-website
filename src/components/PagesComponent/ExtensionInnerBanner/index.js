@@ -33,7 +33,7 @@ const Index = (props) => {
     <ExtensionInnerBannerWrapper className={className}>
       <Container>
         <Row className="g-5 align-items-center justify-content-between">
-          <Col xl={5} lg={0}>
+          <Col xl={5} lg={0} className="d-xl-flex d-none">
             <img className="banner-inner-img d-xl-block d-none" src="/extension-inner-banner.png" />
           </Col>
           <Col xl={6}>

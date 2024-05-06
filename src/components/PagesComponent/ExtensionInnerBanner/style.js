@@ -7,14 +7,14 @@ const ExtensionInnerBannerWrapper = styled.div`
   background-position: top;
   padding: 96px 203px;
   ${media.md`
-    padding: 96px 120px 120px;
+    padding: 56px 120px 62px;
   `}
   ${media.sm`
     padding: 40px 40px;
   `}
   .paragraph {
     color: ${({ theme }) => theme.colors.whiteColor};
-    font-weight: ${({ theme }) => theme.fontWeight.light};
+    font-weight: ${({ theme }) => theme.fontWeight.normal};
     margin-top: 24px;
     display: block;
   }
