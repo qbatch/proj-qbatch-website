@@ -46,9 +46,9 @@ const BrowserExtension = () => {
         <ExtensionInnerBanner
           heading="So, why invest in a browser extension?"
           paragraph="Businesses will continue to use browsers as a critical part of their everyday work. Thus, creating safer, simpler, and cost-effective user-browser interactions without any cybersecurity threats is crucial."
-          headingMaxWidth="900px"
+          headingMaxWidth="572px"
           headingSize="ms-0"
-          wrapperClass="text-left"
+          wrapperClass="text-left extension-banner-inner"
           isButton={true}
           btnText="Get Free Consultation"
           btnSpacingTop={72}
