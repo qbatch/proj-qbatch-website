@@ -2469,7 +2469,7 @@ const technicalGuidanceData = [
   {
     img: '/system-engineering-and-design.svg',
     title: 'System Engineering and Design',
-    text: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise system'
+    text: 'You cannot fully grasp the technical aspects of a software product if you lack technical depth and knowledge. Leverage our CTO expertise and insight to demonstrate, develop, and design low-risk and hi-tech enterprise system.'
   },
   {
     img: '/technical-audit.svg',
