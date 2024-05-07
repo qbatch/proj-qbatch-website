@@ -5,8 +5,8 @@ import CongratulationsBg from "../../../../static/share-your-requirements.svg";
 const ShareYourRequirementsWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    ${media.sm`
-  padding: 40px 0px;
+    ${media.xs`
+      padding: 56px 0px;
   `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};

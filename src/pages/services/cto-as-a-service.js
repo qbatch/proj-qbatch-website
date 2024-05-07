@@ -26,7 +26,7 @@ const CtoService = () => {
     <Layout>
       <Banner
         subheading="CTO as a Service"
-        heading="Rethink and Rebuild Your Technical Process"
+        heading="Rethink and Rebuild Your Technical Prowess"
         paragraph="Neglecting a tiny detail can lead to huge technical debts. Get high-impact technical guidance and confidently deal with time and money-critical situations toward greater business growth."
         buttonText="Get Free CTO Consultation"
         mobileViewBanner={CtoBannerImage}
@@ -49,26 +49,25 @@ const CtoService = () => {
         title={true}
         paragraph1={
           <>
-            Digital adoption brings different challenges to each business. And our highly experienced technical
-            leadership knows how to keep your boat afloat in the rising technological waves. Besides, spending on
-            digital transformation is expected to reach
+            Digital adoption brings different challenges to each business.
+             And our highly experienced technical leadership knows how to keep your boat afloat in
+            the rising technological waves. Besides, spending on digital transformation is expected to reach
             <a
               href="https://statista.com/statistics/870924/worldwide-digital-transformation-market-size/"
               target="blank"
+              className="label-text-ancer"
             >
               $3.4 trillion by 2026
             </a>
           </>
         }
-        paragraph2="Thus, we take no risks and work heartily on building high-margin
-        technology roadmaps for your dear business to thrive on a larger
-        scale."
+        paragraph2="Thus, we take no risks and work heartily on building high-margin technology roadmaps for your dear business to thrive on a larger scale. "
       />
       <CtoPersonal />
       <ExploreOurEnterpriseLevel/>
       <Slider
         heading="Stuck at any of these development stages? We can help."
-        paragraph="Optimize your idea at each step with our technological process and business-critical insight."
+        paragraph="Optimize your idea at each step with our technological prowess and business-critical insight."
         data={sliderItems}
         width="350px"
         align='center'

@@ -36,7 +36,7 @@ const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
               </h1>}
               <h2 className="text-h1" style={{ maxWidth: headingMaxWidth }}>{heading}</h2>
               <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
-              <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0 mx-auto" />
+              <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0" />
             </div>
           </Col>
           {imgSrc && (

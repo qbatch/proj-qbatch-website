@@ -3,8 +3,8 @@ import { media } from "../../../theme/media-mixins";
 
 const PersonaWrapper = styled.div`
   padding: 99px 0 67px;
-  ${media.sm`
-     padding: 40px 0px;
+  ${media.xs`
+     padding: 56px 0px;
   `}
   .row {
     --bs-gutter-y: 20px;
@@ -17,36 +17,35 @@ const PersonaWrapper = styled.div`
       line-height: 51px;
       max-width: 321px;
       margin-bottom: 24px;
+      text-transform:none;
       ${media.sm`
        line-height: 32px;
       `}
     }
     .description {
-      max-width: 335px;
+      max-width: 446px;
       line-height: 32px;
       letter-spacing: 0px;
       margin-right: -4px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+      font-weight:600;
       ${media.sm`
            max-width:100%;
+        `}
+      ${media.xs`
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      line-height:24px;
         `}
 
       a {
         position: relative;
         margin-right: -5px;
         color: ${({ theme }) => theme.colors.primaryColor};
-        &::after {
-          content: "";
-          width: 100%;
-          height: 1px;
-          position: absolute;
-          bottom: 0px;
-          background-color: ${({ theme }) => theme.colors.primaryColor};
-          left: 0px;
-        }
+        text-decoration:none;
       }
     }
   }
-  .persona-box {
+  .personal-box {
     background-color: ${({ theme }) => theme.colors.whiteColor};
     border-radius: 24px 24px 0px 24px;
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
@@ -74,13 +73,15 @@ const PersonaWrapper = styled.div`
     h3 {
       line-height: 32px;
       min-height: 64px;
+      font-weight:700;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       @media screen and (max-width: 1540px) {
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         min-height: 32px;
         line-height: 24px;
       }
     }
-    .persona-list {
+    .personal-list {
       padding-left: 0px;
       padding-top: 8px;
       li {

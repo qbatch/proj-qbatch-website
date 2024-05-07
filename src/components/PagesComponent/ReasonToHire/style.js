@@ -23,6 +23,10 @@ const ReasonToHireWrapper = styled.div`
     margin: auto;
     margin-bottom: 48px;
     text-transform:none;
+    ${media.xs`
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    line-height:32px;
+    `}
   }
   .cards-wrapper {
     display: flex;
@@ -49,12 +53,18 @@ const ReasonToHireWrapper = styled.div`
         margin-top: 16px;
         border-left: 1px solid ${({ theme }) => theme.colors.bodyLight};
         padding: 0px 20px;
+        ${media.xs`
+        border-left:none;
+        `}
         &.text-wrapper {
           border-left: 0px !important;
           ${media.xl`
           border-left: 1px solid ${({ theme }) =>
       theme.colors.bodyLight} !important;
           `}
+          ${media.xs`
+            border-left:none !important;
+        `}
         }
       }
     }

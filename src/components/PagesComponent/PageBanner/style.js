@@ -33,15 +33,12 @@ const CtoBannerWrapper = styled.div`
       color: ${({ theme }) => theme.colors.whiteColor};
     }
     ${media.xs`
-      margin: 0 0 12px;
+      display: none;
   `}
   }
   .banner-main {
     position:relative;
     z-index:1;
-    ${media.md`
-     text-align: center;
-    `}
     .banner-sub-heading {
       font-size: 20px;
       font-weight: 700;
@@ -57,6 +54,7 @@ const CtoBannerWrapper = styled.div`
       color: ${({ theme }) => theme.colors.whiteColor};
       margin-bottom: 24px;
       max-width: 723px;
+      text-transform:none;
       i{
         color: ${({ theme }) => theme.colors.textColor};
       }
@@ -112,6 +110,13 @@ const CtoBannerWrapper = styled.div`
     padding: 143px 0 50px;
     background-position:right;
     justify-content:start;
+       &.change-background-size{
+      background-size:50%;
+    }
+    ${media.xs`
+    height:auto;
+    padding: 42px 24px 377px !important;
+    `}
     .container-wrapper {
     align-items: center;
     display: flex;
@@ -130,12 +135,11 @@ const CtoBannerWrapper = styled.div`
   ${media.md`
     background-image: none;
     position: relative;
-    height:calc(100vh - 200px);
     justify-content:center;
     display: flex;
     z-index: 2;
     .mobile-view-banner {
-      max-width: 400px;
+    max-width: 400px;
     height: auto;
     position: absolute;
     right: 8px;
@@ -312,14 +316,24 @@ const CtoBannerWrapper = styled.div`
     }
   `}
     &.hire-developer-banner {
-    &:before {
+      ${media.xs`
+      padding:42px 24px 337px;
+      min-height:auto;
+      height: auto;
+      `}
+      &:before {
       width: 100%;
       height: 100%;
       position: absolute;
-      background: #0000002e;
+      background:  ${({ theme }) => theme.colors.secondaryColor};
       top: 0;
       left: 0;
       content: "";
+      opacity: 0.7;
+      display:none;
+      ${media.sm`
+      display: block;
+      `}
     }
   }
 `

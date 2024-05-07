@@ -1,6 +1,7 @@
 const fsNumber = "72px";
 const fsxl = "64px";
 const fsh1 = "56px";
+const fsh  = "48px";
 const fsh2 = "40px";
 const fsh3 = "32px";
 const fslg = "24px";
@@ -36,6 +37,7 @@ const theme = {
   fonts: {
     baseFontSizeH1: fsh1,
     baseFontSizeH2: fsh2,
+    baseFontSizeHeading: fsh,
     baseFontSizeH3: fsh3,
     baseFontSizeLg: fslg,
     baseFontSizeSm: fssm,
