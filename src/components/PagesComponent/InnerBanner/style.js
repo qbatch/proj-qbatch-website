@@ -12,6 +12,14 @@ const InnerBannerWrapper = styled.div`
   ${media.sm`
     padding: 40px 40px;
   `}
+  &.mvp-wrapper{
+    .heading{
+      .caption{
+        margin-top: 24px;
+      margin-bottom: 72px;
+      }
+    }
+  }
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};

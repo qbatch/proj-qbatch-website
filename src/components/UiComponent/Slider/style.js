@@ -5,6 +5,33 @@ const SliderWrapper = styled.div`
   ${media.sm`
     padding: 40px 0;
   `}
+  
+  &.mvp-slider{
+    .upper-heading h2{
+      margin-bottom: 16px;
+    }
+    .paragraph{
+      display: block;
+      margin: auto;
+    }
+    .inner-heading-paragraph{
+    display: block;
+    color: ${({ theme }) => theme.colors.bodyTextVariant};
+    padding-bottom:16px;
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+  }
+  .title{
+    .upper-text{
+       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+       font-weight: ${({ theme }) => theme.fontWeight.bold};
+    }
+    .lower-text{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+      color: ${({ theme }) => theme.colors.primaryColor};
+    }
+  }
+  }
   &.devops-slider{
     .paragraph{
       max-width: 608px;
