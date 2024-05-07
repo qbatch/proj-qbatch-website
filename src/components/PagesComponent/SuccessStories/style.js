@@ -4,10 +4,14 @@ import { media } from "../../../theme/media-mixins";
 const StoriesWrapper = styled.div`
   padding: 120px 0;
   ${media.sm`
-    padding: 60px 0;
+    padding: 56px 0;
   `}
   .heading {
     margin-bottom: 16px;
+    ${media.sm`
+      margin-bottom: 12px;
+      line-height: 32px;
+  `}
   }
   .desc {
     letter-spacing: 0.2px;
@@ -16,7 +20,9 @@ const StoriesWrapper = styled.div`
   }
   .wrapper {
     margin-top: 96px;
-
+    ${media.sm`
+      margin-top: 56px;
+    `}
     .column {
       margin-bottom: 24px;
       
