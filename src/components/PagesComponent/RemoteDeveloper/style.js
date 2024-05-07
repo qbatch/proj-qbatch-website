@@ -5,7 +5,6 @@ const RemoteDeveloperStyleWrapper = styled.div`
   padding-bottom: 96px;
   ${media.md`
   padding-bottom:72px ;
-  
   `}
   ${media.sm`
     padding-bottom: 16px;
@@ -17,9 +16,9 @@ const RemoteDeveloperStyleWrapper = styled.div`
     margin: auto;
     padding-top: 96px;
     padding-bottom: 72px;
-    ${media.sm`
-    padding-top: 40px;
-    padding-bottom: 40px;
+    ${media.xs`
+    padding-top: 56px;
+    padding-bottom: 48px;
     `}
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
@@ -55,7 +54,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
     h2 {
       margin: 0;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
-      font-size: ${({ theme }) => theme.fonts.BaseCustomFontSize};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       text-align: center;
       font-style: normal;
       font-weight: 700;

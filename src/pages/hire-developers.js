@@ -21,7 +21,7 @@ const Index = () => {
   return (
       <Layout>
         <Banner
-          subheading="Dedicated Developers"
+          subheading="Hire Dedicated Developers"
           heading="Hire Deeply Vetted, Developers In 48 Hours"
           paragraph="Leverage our tried-and-tested developers with command over 200+ technologies and 300+ successful product launches. We mitigate spill time and stay accountable for every detail and deadline."
           buttonText="Start 1-Week Trail"

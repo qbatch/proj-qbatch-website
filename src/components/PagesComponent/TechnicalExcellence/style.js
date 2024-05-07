@@ -7,6 +7,9 @@ const TechnicalExcellenceWrapper = styled.div`
   ${media.sm`
      padding: 60px 0px;
   `}
+  ${media.xs`
+     padding: 56px 0px;
+  `}
   .technical-heading {
     color: ${({ theme }) => theme.colors.primaryColor};
     max-width: 650px;
@@ -30,14 +33,24 @@ const TechnicalExcellenceWrapper = styled.div`
     `}
     a {
       text-decoration: underline;
+      &.label-text-ancer{
+        font-weight: 600;
+        text-decoration: none;
+        color: ${({ theme }) => theme.colors.primaryColor};
+      }
     }
     h3 {
-      font-weight: ${({ theme }) => theme.fontWeight.normal};
+      font-weight:300;
       line-height: 32px;
       letter-spacing: 0.5px;
       margin-bottom: 24px;
       text-transform: none;
+      color:${({ theme }) => theme.colors.bodyTextVariant};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+      ${media.xs`
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      line-height:24px;
+      `}
     }
     p {
       margin-bottom: 32px;

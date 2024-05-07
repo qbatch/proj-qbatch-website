@@ -4,8 +4,8 @@ import { media } from "../../../theme/media-mixins";
 const HireTrustedDevelopersWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    ${media.sm`
-  padding: 40px 0px;
+    ${media.xs`
+  padding: 56px 0px;
   `}
   h2 {
     margin-bottom: 16px;
@@ -14,6 +14,15 @@ const HireTrustedDevelopersWrapper = styled.div`
     max-width: 334px;
     text-transform:none;
     font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
+    span{
+      color: ${({ theme }) => theme.colors.dangerColor};
+    }
+    text-transform:none;
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
+    ${media.xs`
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    line-height:32px;
+    `}
     span{
       color: ${({ theme }) => theme.colors.dangerColor};
     }
@@ -39,15 +48,18 @@ const HireTrustedDevelopersWrapper = styled.div`
     padding: 24px;
     
     `}
-    }
-
-    .card-ui-wrapper h3 {
+      ${media.xs`
+    margin-top: 48px;
+    `}
+    h3 {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       font-weight: 700;
       line-height: 32px;
       text-align: left;
       margin: 0px;
       color: ${({ theme }) => theme.colors.primaryColor};
+      text-transform:none;
+    }
     }
     .data-list-wrapper {
       display: flex;
@@ -103,15 +115,15 @@ const HireTrustedDevelopersWrapper = styled.div`
       ${media.md`
         padding: 24px;
     `}
-    }
-
-    .card-ui-wrapper h3 {
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-      font-weight: 700;
-      line-height: 32px;
-      text-align: left;
-      margin: 0px;
-      color: ${({ theme }) => theme.colors.primaryColor};
+    h3 {
+       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+       font-weight: 700;
+       line-height: 32px;
+       text-align: left;
+       margin: 0px;
+       color: ${({ theme }) => theme.colors.primaryColor};
+       text-transform:none;
+     }
     }
     .data-list-wrapper {
       display: grid;
@@ -131,8 +143,8 @@ const HireTrustedDevelopersWrapper = styled.div`
         flex-direction: column;
         grid-row-gap: 9px;
         ${media.customBrakePoint`
-    flex-wrap:wrap;
-  `}
+          flex-wrap:wrap;
+        `}
         li {
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
           font-weight: 400;

@@ -4,18 +4,25 @@ import { media } from "../../../theme/media-mixins";
 const ExploreOurEnterpriseLevelWrapper = styled.div`
 padding: 96px 0px;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
+${media.xs`
+padding: 56px 0px;
+`}
 .title-wrapper {
     max-width: 818px;
     h1 {
-    font-size: 40px;
     line-height: 52px;
     color: ${({ theme }) => theme.colors.primaryColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
     font-weight: 700;
+    text-transform: none;
     span{
       color: ${({ theme }) => theme.colors.dangerColor};
 
     }
+    ${media.xs`
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    line-height:32px;
+    `}
 }
 }
 .card-overlay-wrapper {

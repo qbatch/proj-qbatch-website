@@ -4,9 +4,8 @@ import { media } from "../../../theme/media-mixins";
 const PerfectDevStyleWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  ${media.sm`
-  padding: 24px 0px;
-  
+  ${media.xs`
+  padding: 56px 0px;
   `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -20,7 +19,7 @@ const PerfectDevStyleWrapper = styled.div`
     color: ${({ theme }) => theme.colors.textMedium};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
   }
   .get-a-query-btn {
@@ -49,6 +48,9 @@ const PerfectDevStyleWrapper = styled.div`
       padding: 0px 24px;
       grid-row-gap: 24px;
       padding-top:24px ;
+    `}
+    ${media.xs`
+      padding-top:48px ;
     `}
     .perfect-devs-wrapper {
       display: flex;
@@ -117,6 +119,10 @@ const PerfectDevStyleWrapper = styled.div`
           letter-spacing: 0.64px;
           text-transform: capitalize;
           margin-bottom: 0px;
+          ${media.xs`
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+          line-height:24px;
+          `}
         }
         p {
           color: ${({ theme }) => theme.colors.textMedium};

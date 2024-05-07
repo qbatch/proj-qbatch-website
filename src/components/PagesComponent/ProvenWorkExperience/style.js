@@ -15,6 +15,7 @@ const ProvenExperienceWrapper = styled.div`
     }
     .paragraph {
       margin-bottom: 0;
+      font-weight: 400;
     }
 
     ${media.sm`

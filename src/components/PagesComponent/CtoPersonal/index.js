@@ -34,9 +34,9 @@ const Index = () => {
             {personal?.map((personal, index) => {
               return (
                 <Col lg={4} md={6} sm={12}>
-                  <div className="persona-box" key={index}>
+                  <div className="personal-box" key={index}>
                     <h3 className="text-h4">{personal.title}</h3>
-                    <ul className="persona-list">
+                    <ul className="personal-list">
                       {personal.list.map((service, index) => (
                         <li data-icon="-" key={index}>
                           <span>

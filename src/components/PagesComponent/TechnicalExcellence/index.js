@@ -20,7 +20,7 @@ const Index = (props) => {
             <div className="technical-paragraph">
               {title && (
                 <h3>
-                  Do you know?{" "}
+                  Do You know?
                   <a
                     href="https://www.deloitte.com/an/en/our-thinking/insights/topics/leadership/digital-transformation-topics-for-corporate-technology-leadership.html"
                     target="blank"

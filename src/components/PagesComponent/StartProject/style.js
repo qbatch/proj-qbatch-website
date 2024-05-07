@@ -16,6 +16,7 @@ const StartProjectWrapper = styled.div`
   .subtitle {
     letter-spacing: 0.19px;
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    font-weight:400;
   }
   .mt-40 {
     margin-top: 40px;
