@@ -148,6 +148,7 @@ const GlobalStyles = createGlobalStyle`
       }
       h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
+        line-height: 32px;
       }
       h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};     
@@ -169,6 +170,7 @@ const GlobalStyles = createGlobalStyle`
       }
       h2 .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 32px;
       }
       h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSize};     

@@ -115,6 +115,9 @@ const CtoBannerWrapper = styled.div`
     .container-wrapper {
     align-items: center;
     display: flex;
+    ${media.md`
+      justify-content: center;
+    `}
     .banner-main {
       .text-h1 {
         max-width: 515px;
@@ -127,7 +130,7 @@ const CtoBannerWrapper = styled.div`
   ${media.md`
     background-image: none;
     position: relative;
-    height:calc(100vh - 65px);
+    height:calc(100vh - 200px);
     justify-content:center;
     display: flex;
     z-index: 2;
