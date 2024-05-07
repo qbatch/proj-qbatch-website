@@ -101,7 +101,7 @@ const Enterprise = () => {
         />
         <LanguagesAndFrameworks />
         <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
-        <Collaboration heading="text-h2" />
+        <Collaboration />
         <PeopleFirst
           peopleFirstData={peopleFirstData}
           paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies."
