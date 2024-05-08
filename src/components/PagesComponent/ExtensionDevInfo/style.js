@@ -19,10 +19,11 @@ ${media.md`
     border: 1px solid rgba(210, 217, 220, 1);
     border-radius: 24px 24px 0 24px;
     height: 100%;
-    h3{
+    .inner-text{
       margin-bottom: 12px;
       text-transform: none;
       font-weight: ${({ theme }) => theme.fontWeight.bold};
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
     }
     a{
       font-weight: ${({ theme }) => theme.fontWeight.bold};

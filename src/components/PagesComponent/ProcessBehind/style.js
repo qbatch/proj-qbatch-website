@@ -9,7 +9,7 @@ const ProcessWrapper = styled.div`
   .sub-heading{
     font-weight: ${({ theme }) => theme.fontWeight.bold};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-    margin-bottom: 16px;
+    margin-bottom: 4px;
     display: block;
   }
   .heading {
@@ -26,6 +26,9 @@ const ProcessWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 32px;
+    ${media.md`
+      gap: 20px;
+    `}
   }
   .process-img{
     max-height: 390px;

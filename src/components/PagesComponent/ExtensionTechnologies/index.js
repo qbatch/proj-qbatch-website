@@ -46,7 +46,7 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
       <div>
         <Container>
           <div className="languages-header text-center">
-            <h2>{heading}</h2>
+            <h3 className="text-h2">{heading}</h3>
           </div>
 
           <Row className="desktop-data">
