@@ -3012,23 +3012,23 @@ const cardsData = [
 const RemoteDeveloperData = [
   {
     img: <img src='/ruining-product-health.svg' alt="Product" />,
-    text: <h2>Talent shortage is ruining your product's health.</h2>,
+    text: <h3>Talent shortage is ruining your product's health.</h3>,
   },
   {
     img: <img src='/scaling-team-inescapable-hassle.svg' alt="ScaleImage" />,
-    text: <h2>Managing and scaling your team is an inescapable hassle.</h2>,
+    text: <h3>Managing and scaling your team is an inescapable hassle.</h3>,
   },
   {
     img: <img src='/hiring-senior-devs-qa-engineers.svg' alt="Developer" />,
-    text: <h2>Hiring senior devs and QA engineers takes forever.</h2>,
+    text: <h3>Hiring senior devs and QA engineers takes forever.</h3>,
   },
   {
     img: <img src='/different-timezone-hindering-growth.svg' alt="GrouthImage" />,
     text: (
-      <h2>
+      <h3>
         Clash of cultures, poor communication, and different timezones are
         hindering your growth.
-      </h2>
+      </h3>
     ),
   },
 ]
