@@ -6,35 +6,35 @@ import { Col, Row } from 'react-bootstrap';
 const ExtensionType = () => {
   const extensionTypes = [
     {
-      title: 'Password<br>Manager',
+      title: 'Password<br class="d-md-block d-none">Manager',
       description: 'Store encrypted passwords online and access them using a single master password across browsers.'
     },
     {
-      title: 'To-Do<br>and Note',
+      title: 'To-Do<br class="d-md-block d-none">and Note',
       description: 'Get more done in less time with a to-do list and notes extension.'
     },
     {
-      title: 'Amazon Seller<br>Management',
+      title: 'Amazon Seller<br class="d-md-block d-none">Management',
       description: 'Sell and distribute your products and request customer reviews as needed.'
     },
     {
-      title: 'Screen Shots and Video<br>Extensions',
+      title: 'Screen Shots and Video<br class="d-md-block d-none">Extensions',
       description: 'Capture screenshots and record screencasts for easy uploading anywhere.'
     },
     {
-      title: 'Instant Chat<br> Extension',
+      title: 'Instant Chat<br class="d-md-block d-none"> Extension',
       description: 'Turn visitors into buyers by integrating live meetings and email messages in a single live chat tool.'
     },
     {
-      title: 'Content Manager/<br>Aggregator',
+      title: 'Content Manager/<br class="d-md-block d-none">Aggregator',
       description: 'Build powerful and structured content to enrich your store with custom fields.'
     },
     {
-      title: 'Virtual Class<br>Manager',
+      title: 'Virtual Class<br class="d-md-block d-none">Manager',
       description: 'Manage learners’ performance, lesson plans, attendance, grade assessments, reports, and schedules.'
     },
     {
-      title: 'eSignature<br> Manager',
+      title: 'eSignature<br class="d-md-block d-none"> Manager',
       description: 'Digitally sign your documents securely and get things done instantly.'
     }
   ];

@@ -26,25 +26,26 @@ const Index = () => {
 
           <Row className="g-5">
             <Col xl={6}>
-              <h2>
-                <span className="sub-heading">The Process Behind</span></h2>
-              <span className="text-h2 color-primary heading">We Develop Browser Extensions Using 3 Building Blocks</span>
+
+              <span className="sub-heading">The Process Behind</span>
+              <h2><span className="text-h2 color-primary heading">We Develop Browser Extensions Using 3 Building Blocks</span></h2>
+
               <p className="text-h5">At Qbatch, we ace browser extension development with fine UX/UI design and expert JavaScript developers for complex functionality implementation. Choose us for design precision and technical excellence in every extension.</p>
             </Col>
             <Col xl={6}>
               <div className="process-behind-wrapper flex-md-row flex-column">
                 <img className="process-img" src={'/process-behind.png'} />
-                <div className="process-behind-content-wrapper text-md-start text-center">
+                <div className="process-behind-content-wrapper text-start">
                   <div className="inner-box">
-                    <h4>User Interface</h4>
+                    <h3 className="text-h4">User Interface</h3>
                     <p>Our product designers create intuitive designs and interfaces for nice human experiences.</p>
                   </div>
                   <div className="inner-box">
-                    <h4>Content Scripts</h4>
+                    <h3 className="text-h4">Content Scripts</h3>
                     <p>JavaScript files that run in the context of web pages for data assessment and extraction.</p>
                   </div>
                   <div className="inner-box">
-                    <h4>Background Scripts</h4>
+                    <h3 className="text-h4">Background Scripts</h3>
                     <p>For monitoring and responding to events in the browser such as closing a tab, navigating to a new page, or removing a bookmark.</p>
                   </div>
                 </div>
