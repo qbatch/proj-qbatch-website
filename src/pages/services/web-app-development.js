@@ -72,7 +72,7 @@ const webapp = () => {
           data={lostToLaunchedItems}
         />
         <LanguagesAndFrameworks />
-        <Collaboration heading="text-h2" />
+        <Collaboration />
         <ProvenWorkExperience heading="Success Stories" paragraph="They imagined it, we brought it to the world!" />
         <PeopleFirst
           peopleFirstData={peopleFirstData}

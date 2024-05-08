@@ -191,6 +191,12 @@ const FooterWrapper = styled.div`
       }
     }
   }
+  .error-msg {
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+    color: ${({ theme }) => theme.colors.dangerColor};
+    position: absolute;
+    bottom: -30px;
+  }
 `;
 
 export default FooterWrapper;

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from 'gatsby';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button";
@@ -9,6 +12,78 @@ import { discoverQbatchMenu, footerServicesItems, industrieshMenu, footerContact
 import FooterWrapper from "./style";
 
 const Index = () => {
+  const [errorMsg, setErrorMsg] = useState('');
+  const [formData, setFormData] = useState({ email: '' });
+  const [subscribedEmails, setSubscribedEmails] = useState([]);
+
+  const fetchSubscribedEmails = async () => {
+    try {
+      const response = await axios.get("https://cms.qbatch.com/api/subscribeds");
+      setSubscribedEmails(response.data);
+    } catch (error) {
+      console.error("Error fetching subscribed emails:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchSubscribedEmails();
+  }, []);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+    ...formData,
+    [name]: value,
+    });
+  };
+
+  const handleSubmit = async ()=> {
+    if (formData.email === '') {
+      setErrorMsg('Please Enter Email Address');
+      return;
+    }
+
+    const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    if (!emailRegex.test(formData.email)) {
+      setErrorMsg("Please enter a valid email address.");
+      return;
+    }
+
+    const emailExists = subscribedEmails?.data?.some(item => item.attributes.email === formData.email);
+    if (emailExists) {
+      setErrorMsg("Email is already subscribed.");
+      return;
+    }
+   
+    try {
+      const response = await fetch("https://cms.qbatch.com/api/subscribeds", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ data: formData }),
+      });
+      if (response.ok) {
+        toast.success("Subscribed Successfully...", {
+          position: "top-right",
+          autoClose: 5000,
+        });
+        setFormData({
+          email: '',
+        });
+        setErrorMsg('');
+        fetchSubscribedEmails();
+      } else {
+        toast.error("Something went wrong", {
+          position: "top-right",
+          autoClose: 5000,
+        });
+      }
+    } catch (error) {
+      console.error("Error", error);
+    }
+  };
+
   return (
     <FooterWrapper>
       <div className="newsletter-section">
@@ -21,12 +96,15 @@ const Index = () => {
               </div>
             </Col>
             <Col lg={6}>
-              <div className="footer-email">
-                <div className="email-input">
-                  <img src="/user-email-icon.svg" alt="email" />
-                  <input type="email" placeholder="Email Address" />
+              <div className="position-relative">
+                <div className="footer-email">
+                  <div className="email-input">
+                    <img src="/user-email-icon.svg" alt="email" />
+                    <input type="email" value={formData.email} name="email" placeholder="Email Address" onChange={handleInputChange} />
+                  </div>
+                  <Button text='Subscribe' className="secondary-btn" onClick={handleSubmit} />
                 </div>
-                <Button text='Subscribe' className="secondary-btn" />
+                <span className="error-msg">{errorMsg}</span>
               </div>
             </Col>
           </Row>
@@ -111,6 +189,7 @@ const Index = () => {
           </div>
         </Container>
       </div>
+      <ToastContainer />
     </FooterWrapper>
   )
 };

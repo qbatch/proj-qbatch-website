@@ -7,10 +7,9 @@ import { Col, Row, Accordion } from "react-bootstrap";
 
 import { extensionLanguages } from "../../../constants";
 import Container from "../../UiComponent/Container";
-import Button from "../../UiComponent/Button"
 import LanguagesWrapper from "./style";
 
-const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-tested Web Application Development tools and technologies to build a cross-platform and secure application:',paragraphMaxWidth, showBtn  }) => {
+const Index = ({ heading = 'Technologies We Use For Browser Extension Development'}) => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -46,9 +45,8 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
     <LanguagesWrapper id="scene-trigger2" ref={scrollRef2} className="stage-slider-main2">
       <div>
         <Container>
-          <div className="languages-header">
+          <div className="languages-header text-center">
             <h2>{heading}</h2>
-            <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
           </div>
 
           <Row className="desktop-data">
@@ -73,7 +71,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                   <div key={index} className="framework-item">
                     <Row>
                       {item.content.map((data) => (
-                        <Col md={4}>
+                        <Col md={3}>
                           <div className="framework-logo">
                             <div>
                               {data.img === '' ? '' : <img src={data.img} alt="project" />}
@@ -113,13 +111,6 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
               ))}
             </Accordion>
           </div>
-          {!showBtn ? 
-            <div className="languages-btn">
-              <Button onClick={() => navigate('/contact')} text="Discover the Right Toolkit for Your Project" />
-            </div>
-            :
-            ''
-          }
         </Container>
       </div>
     </LanguagesWrapper>
