@@ -5,7 +5,7 @@ const GrowingTechWrapper = styled.div`
   background: url("/growing-bg.svg");
   background-size: cover;
   background-position: right;
-  padding: 120px 203px 173px;
+  padding:98px 203px;
   ${media.md`
     padding: 96px 120px 120px;
   `}

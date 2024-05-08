@@ -14,6 +14,9 @@ const HireTrustedDevelopersWrapper = styled.div`
     max-width: 334px;
     text-transform:none;
     font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
+    ${media.xs`
+    margin-bottom:0px !important;
+    `}
     span{
       color: ${({ theme }) => theme.colors.dangerColor};
     }

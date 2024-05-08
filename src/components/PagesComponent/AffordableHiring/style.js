@@ -32,6 +32,9 @@ const AffordableHiringWrapper = styled.div`
     ${media.sm`
     grid-template-columns: 1fr;
     `}
+    ${media.xs`
+    padding-top: 48px;
+    `}
   .card-items {
       display: flex;
       flex-direction: column;

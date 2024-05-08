@@ -41,6 +41,9 @@ const SoftwareDevelopersWrapper = styled.div`
       padding: 72px 0px 96px;
       position: relative;
       justify-content: center;
+      ${media.xs`
+      padding:0px;
+      `}
       ${media.xl`
       justify-content: flex-start;
       `}
