@@ -22,6 +22,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
     `}
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
+      text-transform:none;
     }
   }
   .card-overlay-wrapper {
@@ -40,6 +41,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
     ${media.xs`
     grid-template-columns: 1fr;
     justify-content:center;
+    grid-row-gap: 16px;
     `}
   }
   .card-item {
@@ -59,8 +61,13 @@ const RemoteDeveloperStyleWrapper = styled.div`
       font-style: normal;
       font-weight: 700;
       line-height: 24px;
-      min-height:160px;
+      max-height: 160px;
+      text-transform: none;
+      min-height: 69px;
       text-transform:none;
+      ${media.xs`
+      max-height: 100%;
+      `}
 
     }
   }

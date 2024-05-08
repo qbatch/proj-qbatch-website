@@ -316,6 +316,8 @@ const CtoBannerWrapper = styled.div`
     }
   `}
     &.hire-developer-banner {
+      background-size:cover;
+      background-position:center;
       ${media.xs`
       padding:42px 24px 337px;
       min-height:auto;

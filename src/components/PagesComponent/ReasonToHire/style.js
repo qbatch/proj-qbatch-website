@@ -9,7 +9,7 @@ const ReasonToHireWrapper = styled.div`
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 96px;
+  padding: 98px;
   ${media.sm`
   padding: 40px 0px;
     `}

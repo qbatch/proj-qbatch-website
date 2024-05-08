@@ -20,6 +20,13 @@ const SliderWrapper = styled.div`
       flex-direction: column;
     }
     `}
+    ${media.xs`
+    .make-responsive {
+      img{
+        width:fit-content;
+      }
+    }
+    `}
     @media(max-width:575px){
       .slick-next{
         right:0px

@@ -42,7 +42,7 @@ const ShareYourRequirementsWrapper = styled.div`
     color: ${({ theme }) => theme.colors.textMedium};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
     text-align: center;
     max-width: 930px;
@@ -50,6 +50,9 @@ const ShareYourRequirementsWrapper = styled.div`
   }
   .heading-label-text {
     margin-bottom: 72px;
+    ${media.xs`
+    margin-bottom: 48px;
+    `}
   }
   .stepper-wrapper {
     display: flex;
