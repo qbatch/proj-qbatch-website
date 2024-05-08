@@ -3506,6 +3506,87 @@ const dataColumn4 = [
     text: "Depends",
   },
 ];
+
+const mvpBoxes1 = [
+  {
+    title: 'Ambitious, Small-scale Startups',
+    description: 'Releasing a high-potential product to the market but need to test it first?'
+  },
+  {
+    title: 'Serial Entrepreneurs',
+    description: 'Got a side project idea to test with limited time and investment?'
+  },
+  {
+    title: 'Enterprise Side Project',
+    description: 'Need to test an idea with real users before pushing to full-fledge development? '
+  },
+  {
+    title: 'Non-tech Founders',
+    description: "Require technical help for simpler development under limited resources?"
+  },
+];
+const mvpBoxes2 = [
+  {
+    title: 'Core Team',
+    description: 'We assemble a small, super team of Product owners and expert MVP developers to get you started.'
+  },
+  {
+    title: 'Lean-er Startup',
+    description: 'Like a Lean Startup, build, validate, measure, and improve toward calculated success.'
+  },
+  {
+    title: 'Launch Early',
+    description: 'Expect a robust & legendary Ford Model T — laying a foundation for scalable product development.'
+  },
+  {
+    title: 'Weekly Reports',
+    description: 'No secrets, you get every detail from progress to declines ensuring transparency & productivity. '
+  },
+  {
+    title: 'Trustable Expertise',
+    description: "We've nailed MVP launches before, and we're ready to do it again!"
+  },
+  {
+    title: 'Fair Fee',
+    description: 'We understand. The budget’s tight. That’s why the payment structure is predictable and pre-defined.'
+  },
+  {
+    title: 'Close Collaboration',
+    description: 'Control your MVP from the get-go, set deadlines, and tell us your goals. You command, we obey.'
+  },
+];
+const mvpDevService= [
+  {
+    title: 'Idea Validation',
+    image: '/idea-validation.svg',
+    description: 'Our development process starts with concept validation, an exhaustive phase encompassing elements like customer feedback, surveys, and meticulous questioning that leave no stone unturned.',
+  },
+  {
+    title: 'Clickable Prototype Development',
+    image: '/clickable-prototype-development.svg',
+    description: 'As an MVP development company, we create clickable prototypes for both web and mobile applications to help you easily understand UI functionality, providing a view of expected visual experiences.',
+  },
+  {
+    title: 'Full-Fledged MVP Development',
+    image: '/full-fledged-mvp-development.svg',
+    description: 'We offer MVP development services to deliver a well-designed, fully functional, and feature-packed MVP to assess its effectiveness in solving problems of your target audience in a real environment.',
+  },
+  {
+    title: 'Single Feature MVP',
+    image: '/single-feature-mvp.svg',
+    description: "A single-feature MVP serves as a testing ground for your main hypothesis. User feedback gathered from this iteration enables business-critical reforms in decisions toward your product's growth and scope.",
+  },
+  {
+    title: 'Pilot MVP Development',
+    image: '/pilot-mvp-development.svg',
+    description: 'Make your MVP a pilot product to demonstrate usability, scalability, and market viability rather than a single feature product. Let’s launch a pilot MVP within 3 months under Qbatch’s expertise.',
+  },
+  {
+    title: 'MVP Consulting',
+    image: '/mvp-consulting.svg',
+    description: 'Build your idea, define market-friendly features, and select the optimal tech stack for building a powerful MVP app. You can trust our MVP software consultants for honest business advice.',
+  },
+];
 export {
   dedicationWork,
   homeTiles,
@@ -3577,5 +3658,8 @@ export {
   extensionSliderItems,
   extensionLanguages,
   bewareFriend,
-  mvpSliderItems
+  mvpSliderItems,
+  mvpBoxes1,
+  mvpBoxes2,
+  mvpDevService
 }

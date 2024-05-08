@@ -20,6 +20,21 @@ const InnerBannerWrapper = styled.div`
       }
     }
   }
+  &.build-mvp-app{
+    text-align: center;
+    .heading{
+      text-transform: none;
+    }
+    .caption{
+      margin-top: 24px;
+      margin-bottom: 72px;
+      max-width: 931px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
+      text-transform: none;
+    }
+  }
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};

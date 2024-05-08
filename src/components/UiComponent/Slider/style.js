@@ -32,11 +32,11 @@ const SliderWrapper = styled.div`
     }
   }
   }
-  &.devops-slider{
     .paragraph{
       max-width: 608px;
       margin: auto;
     }
+  &.devops-slider{
   }
   .slider-width {
     max-width: 1020px;
