@@ -30,7 +30,7 @@ const Index = () => {
           className="d-flex align-items-center justify-content-start"
           blogInner="/About-Us-02.svg"
           customCrumbs={[
-            { pathname: '/hire-developers/', crumbLabel: 'Hire-Developers', crumbSeparator: '>' },
+            { pathname: '/hire-developers/', crumbLabel: 'Hire Developers', crumbSeparator: '>' },
           ]}
         />
         <RemoteDeveloper />

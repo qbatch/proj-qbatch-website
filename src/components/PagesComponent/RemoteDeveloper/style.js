@@ -53,7 +53,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
     ${media.xs`
         margin: auto;
     `}
-    h2 {
+    h3 {
       margin: 0;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};

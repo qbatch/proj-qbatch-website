@@ -42,7 +42,7 @@ const ReasonToHireWrapper = styled.div`
       ${media.xs`
           max-width:100%;
           `}
-      p {
+      h3 {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         font-weight: 300;
         color: ${({ theme }) => theme.colors.dividerColor};
