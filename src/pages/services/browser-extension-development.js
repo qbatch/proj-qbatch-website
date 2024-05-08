@@ -15,7 +15,7 @@ import ProcessBehind from "../../components/PagesComponent/ProcessBehind";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
 import FaqSection from "../../components/PagesComponent/Faq";
 import Slider from '../../components/UiComponent/Slider'
-import Languages from "../../components/PagesComponent/LanguagesAndFrameworks";
+import Languages from "../../components/PagesComponent/ExtensionTechnologies";
 import ExtensionTypes from '../../components/PagesComponent/ExtensionTypes'
 import { extensionSliderItems, extensionFaq } from "../../constants";
 import BannerImage from "../../../static/extension-banner.svg";
