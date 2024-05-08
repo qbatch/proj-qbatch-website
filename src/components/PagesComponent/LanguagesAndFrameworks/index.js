@@ -117,12 +117,10 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
               ))}
             </Accordion>
           </div>
-          {!showBtn ? 
+          {!showBtn && 
             <div className="languages-btn">
               <Button onClick={() => navigate('/contact')} text="Discover the Right Toolkit for Your Project" />
             </div>
-            :
-            ''
           }
         </Container>
       </div>
