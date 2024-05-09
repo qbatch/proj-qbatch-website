@@ -28,12 +28,10 @@ import {
   mvpDevService
 } from "../../constants";
 
-
-
-const mvp = () => {
+const MvpDev = () => {
   return (
     <Layout>
-      <MvpBanner
+      <MvpDevBanner
         subheading="MVP Development Company"
         heading={<>Plan, Test, & Launch YOUR MVP in less than <span>3 months</span></>}
         paragraph="Hundreds of startups, enterprises, and entrepreneurs have trusted us for launching good MVPs in the toughest sectors. We’ve done it before, we can do it again!"
@@ -134,4 +132,4 @@ export const Head = () => {
   )
 }
 
-export default mvp;
+export default MvpDev;
