@@ -9,7 +9,7 @@ import { extensionLanguages } from "../../../constants";
 import Container from "../../UiComponent/Container";
 import LanguagesWrapper from "./style";
 
-const Index = ({ heading = 'Technologies We Use For Browser Extension Development'}) => {
+const Index = ({ heading = 'Technologies We Use For Browser Extension Development' }) => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -46,7 +46,7 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
       <div>
         <Container>
           <div className="languages-header text-center">
-            <h3 className="text-h2">{heading}</h3>
+            <h2 className="text-h2 heading">{heading}</h2>
           </div>
 
           <Row className="desktop-data">
@@ -91,11 +91,11 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
               {extensionLanguages.map((item, ind) => (
                 <div key={ind}>
                   <Accordion.Item eventKey={ind}>
-                    <Accordion.Header>{item.title}</Accordion.Header>
+                    <Accordion.Header as="h3">{item.title}</Accordion.Header>
                     <Accordion.Body>
                       <Row>
-                        {item.content.map((data) => (
-                          <Col md={4} sm={6} xs={6}>
+                        {item.content.map((data, index) => (
+                          <Col key={index} md={4} sm={6} xs={6}>
                             <div className="framework-logo">
                               <div>
                                 {data.img === '' ? '' : <img src={data.img} alt="project" />}
@@ -110,6 +110,7 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
                 </div>
               ))}
             </Accordion>
+
           </div>
         </Container>
       </div>
