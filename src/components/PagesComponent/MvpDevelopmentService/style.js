@@ -1,9 +1,16 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const MvpDevelopmentServiceWrapper = styled.div`
 padding: 96px 0;
+${media.lg`
+  padding: 56px 0;
+`}
 .heading{
   margin-bottom: 80px;
+  ${media.lg`
+  margin-bottom: 32px;
+`}
 }
 .service-box{
   border:1px solid ${({ theme }) => theme.colors.dividerColor};
@@ -11,6 +18,9 @@ padding: 96px 0;
   padding: 48px;
   background-color: ${({ theme }) => theme.colors.whiteColor};
   height: 100%;
+  ${media.lg`
+  padding: 32px;
+`}
   .service-box-header{
     display: flex;
     align-items: center;
@@ -19,6 +29,11 @@ padding: 96px 0;
     img{
       height: 60px;
       width: 60px;
+    }
+    h4{
+      ${media.lg`
+        line-height: 24px;
+      `}
     }
   }
 }

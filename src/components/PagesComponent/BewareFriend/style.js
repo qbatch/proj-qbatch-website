@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const BewareFriendWrapper = styled.section`
   .base-space {
-    padding: 96px 0 96px;
+    padding: 96px 0;
     ${media.sm`
       padding: 40px 0;
     `}
@@ -21,7 +21,7 @@ const BewareFriendWrapper = styled.section`
       margin-right: 32px;
     `}
     ${media.sm`
-      margin-bottom: 24px;
+      margin-bottom: 32px;
       text-align: center;
     `}
   }
@@ -45,6 +45,9 @@ const BewareFriendWrapper = styled.section`
     .title {
       margin-bottom: 9px;
       letter-spacing: 0;
+      ${media.lg`
+        line-height: 24px;
+      `}
     }
     .paragraph{
       margin-bottom: 0;

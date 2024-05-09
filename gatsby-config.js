@@ -267,6 +267,16 @@ const strapiConfig = {
         },
       },
     },
+    {
+      singularName: 'mvp-dev',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
   ],
   singleTypes: [
     'home',

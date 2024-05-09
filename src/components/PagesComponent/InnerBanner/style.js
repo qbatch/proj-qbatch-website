@@ -33,6 +33,9 @@ const InnerBannerWrapper = styled.div`
       margin-right: auto;
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       text-transform: none;
+      ${media.lg`
+        margin-bottom: 32px;
+      `}
     }
   }
   .caption {

@@ -4,9 +4,15 @@ import { media } from "../../../theme/media-mixins";
 const MvpTypesWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+${media.lg`
+  padding: 56px 0;
+`}
 .heading{
   margin-bottom: 72px;
   text-align: center;
+  ${media.lg`
+    margin-bottom: 56px;
+  `}
 }
 
 .inner-paragraph{

@@ -1,8 +1,9 @@
 import React from 'react';
+
 import { Script } from 'gatsby'
 import { replaceUnderscoreWithAt } from '../../constants/Utils'
-import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
+import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
 
 
@@ -27,14 +28,29 @@ import {
   mvpDevService
 } from "../../constants";
 import MvpTypes from '../../components/PagesComponent/MvpTypes';
+import MvpBanner from '../../components/PagesComponent/MvpBanner';
 
 
 
 const mvp = () => {
   return (
     <Layout>
-      <MvpTestedApproch/>
-      <IdeaValidtion/>
+      <MvpBanner
+        subheading="MVP Development Company"
+        heading={<>Plan, Test, & Launch YOUR MVP in less than <span>3 months</span></>}
+        paragraph="Hundreds of startups, enterprises, and entrepreneurs have trusted us for launching good MVPs in the toughest sectors. We’ve done it before, we can do it again!"
+        buttonText="Get Free Consultation"
+        col1lg={7}
+        col2lg={5}
+        className="d-flex align-items-center justify-content-start"
+        wrapperClass="product-design-banner"
+        customCrumbs={[
+          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+          { pathname: '/services/product-design-development/', crumbLabel: 'Software Product Development' },
+        ]}
+      />
+      <MvpTestedApproch />
+      <IdeaValidtion />
       <MvpBoxes
         boxData={mvpBoxes1}
         heading="Who Does it Help?"
@@ -100,19 +116,18 @@ const mvp = () => {
 };
 
 export const Head = () => {
-  const mobileAppData = Queries()
-
-  const seoData = mobileAppData.allStrapiMobileApp.nodes[0]?.seo
+  const mvpDevData = Queries()
+  const seoData = mvpDevData?.allStrapiMvpDev?.nodes[0]?.seo
   const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
   return (
     <SEO
       title={seoData?.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      robots={seoData.metaRobots}
-      image={seoData.metaimage[0].localFile.url}
-      pathname={`/services${seoData.slug}`}
+      description={seoData?.metaDescription}
+      keywords={seoData?.keywords}
+      language={seoData?.language}
+      robots={seoData?.metaRobots}
+      image={seoData?.metaimage[0].localFile.url}
+      pathname={`/services/${seoData?.slug}/`}
     >
       {schemaData && <Script type="application/ld+json">
         {JSON.stringify(schemaData)}

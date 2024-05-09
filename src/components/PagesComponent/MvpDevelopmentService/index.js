@@ -14,7 +14,7 @@ const Index = ({ heading, serviceData }) => {
               <div className='service-box'>
                 <div className='service-box-header'>
                   <img src={service.image} alt='box-icon' />
-                  <h4 className='text-h4'>{service.title}</h4>
+                  <h3 className='text-h4'>{service.title}</h3>
                 </div>
                 <p className='inner-paragraph'>{service.description}</p>
               </div>

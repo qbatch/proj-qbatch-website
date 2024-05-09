@@ -8,7 +8,7 @@ const index = ({ boxData, heading, paragraph }) => {
     <MvpBoxesWrapper>
        <Container>
         <h2 className='heading'>{heading}</h2>
-        <p className='paragraph'>{paragraph}</p>
+        {paragraph && <p className='paragraph'>{paragraph}</p>}
         <Row>
           {boxData.map((data, index) => (
             <Col key={index} xl={3} md={6}>
