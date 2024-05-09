@@ -6,6 +6,9 @@ import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
 
 
+import MvpDevelopmentService from '../../components/PagesComponent/MvpDevelopmentService';
+import MvpTestedApproch from '../../components/PagesComponent/MvpTestedApproch';
+import IdeaValidtion from '../../components/PagesComponent/IdeaValidation';
 import MvpBoxes from '../../components/PagesComponent/MvpBoxes';
 import Slider from '../../components/UiComponent/Slider'
 import BewareFriend from '../../components/PagesComponent/BewareFriend';
@@ -24,8 +27,6 @@ import {
   mvpDevService
 } from "../../constants";
 import MvpTypes from '../../components/PagesComponent/MvpTypes';
-import MvpDevelopmentService from '../../components/PagesComponent/MvpDevelopmentService';
-import MvpTestedApproch from '../../components/PagesComponent/MvpTestedApproch';
 
 
 
@@ -33,6 +34,7 @@ const mvp = () => {
   return (
     <Layout>
       <MvpTestedApproch/>
+      <IdeaValidtion/>
       <MvpBoxes
         boxData={mvpBoxes1}
         heading="Who Does it Help?"
