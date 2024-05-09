@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby'
-import { navigate } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import { Row, Col } from "react-bootstrap";
 
 import Container from '../../UiComponent/Container';
