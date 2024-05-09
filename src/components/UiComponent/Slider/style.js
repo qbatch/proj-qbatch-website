@@ -5,11 +5,38 @@ const SliderWrapper = styled.div`
   ${media.xs`
     padding: 56px 0;
   `}
-  &.devops-slider{
+  
+  &.mvp-slider{
+    .upper-heading h2{
+      margin-bottom: 16px;
+    }
+    .paragraph{
+      display: block;
+      margin: auto;
+    }
+    .inner-heading-paragraph{
+    display: block;
+    color: ${({ theme }) => theme.colors.bodyTextVariant};
+    padding-bottom:16px;
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+  }
+  .title{
+    .upper-text{
+       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+       font-weight: ${({ theme }) => theme.fontWeight.bold};
+    }
+    .lower-text{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+      color: ${({ theme }) => theme.colors.primaryColor};
+    }
+  }
+  }
     .paragraph{
       max-width: 608px;
       margin: auto;
     }
+  &.devops-slider{
   }
   .slider-width {
     max-width: 1020px;

@@ -240,6 +240,85 @@ const sliderItems = [
     list: ['Knowledge & Documentation Transfer', 'Intellectual Property Rights', 'Ad-hoc Support & Maintenance'],
   },
 ]
+const bewareFriend = [
+  {
+    img: '/do-you-really-understand-your-target-audience.svg',
+    title: "Do you really understand your target audience?",
+    paragraph: "Startups often assume they understand their market audience but in reality, they don’t. This can result in a product your users don’t want. Continuous research and user feedback may help.",
+  },
+  {
+    img: '/wrong-selection-of-features.svg',
+    title: "Wrong selection of features",
+    paragraph: "The desire to showcase multiple functionalities can cause delays, increased costs, and unnecessary complexity. Prioritization is key; focus on core features and leave other features for later iterations.",
+  },
+  {
+    img: '/perfectionism-is-a-trap.svg',
+    title: "Perfectionism is a trap",
+    paragraph: "Aiming for a masterpiece from the start can lead to longer development cycles and undue resource allocation. Remember, the MVP's purpose is to show concept value, not perfection.",
+  },
+  {
+    img: '/taking-minimum-for-gimmick.svg',
+    title: 'Taking "minimum" for "gimmick"',
+    paragraph: 'Do you interpret "minimum" in "minimum viable product" as an invitation to create a subpar solution? MVP is your first step to making an image through good quality, not a stunt to attract market audiences.',
+  },
+];
+const mvpSliderItems = [
+  {
+    image: '/discovery-phase-mvp.svg',
+    title: (
+      <>
+        <span className="d-block upper-text mb-2">1-2 weeks</span>
+        <span className="lower-text">Discovery Phase</span>
+      </>
+    ),
+    content:
+      'Before securing your idea and investment, we test and validate your unproven concept according to the market situation. ',
+  },
+  {
+    image: '/design.svg',
+    title: (
+      <>
+        <span className="d-block upper-text mb-2">1-2 weeks</span>
+        <span className="lower-text">Design</span>
+      </>
+    ),
+    content:
+      'We create market-smart initial wireframes, UI props, and branding elements to set the design direction of your young app.',
+  },
+  {
+    image: '/mvp-development.svg',
+    title: (
+      <>
+        <span className="d-block upper-text mb-2">6 - 8 weeks</span>
+        <span className="lower-text">MVP Development (no-code & custom)</span>
+      </>
+    ),
+    content:
+      'We finalize crucial features and functionality to reduce time to market and make the product necessarily and publicly useful. ',
+  },
+  {
+    image: '/release.svg',
+    title: (
+      <>
+        <span className="d-block upper-text mb-2">1-2 weeks</span>
+        <span className="lower-text">Release</span>
+      </>
+    ),
+    content:
+      'We’ll make sure your MVP launch is ready to impress its end-users leaving a lasting impact in the congested market competition.',
+  },
+  {
+    image: '/maintenance-and-support.svg',
+    title: (
+      <>
+        <span className="d-block upper-text mb-2">Retainer-based</span>
+        <span className="lower-text">Maintenance & Support</span>
+      </>
+    ),
+    content:
+      'It may take a few weeks to deploy and make your product available to the general masses. We continue our support to growing your product.',
+  },
+];
 const extensionSliderItems = [
   {
     image: '/for-multi-platform-and-secure-extensions.png',
@@ -3427,6 +3506,86 @@ const dataColumn4 = [
   },
 ];
 
+const mvpBoxes1 = [
+  {
+    title: 'Ambitious, Small-scale Startups',
+    description: 'Releasing a high-potential product to the market but need to test it first?'
+  },
+  {
+    title: 'Serial Entrepreneurs',
+    description: 'Got a side project idea to test with limited time and investment?'
+  },
+  {
+    title: 'Enterprise Side Project',
+    description: 'Need to test an idea with real users before pushing to full-fledge development? '
+  },
+  {
+    title: 'Non-tech Founders',
+    description: "Require technical help for simpler development under limited resources?"
+  },
+];
+const mvpBoxes2 = [
+  {
+    title: 'Core Team',
+    description: 'We assemble a small, super team of Product owners and expert MVP developers to get you started.'
+  },
+  {
+    title: 'Lean-er Startup',
+    description: 'Like a Lean Startup, build, validate, measure, and improve toward calculated success.'
+  },
+  {
+    title: 'Launch Early',
+    description: 'Expect a robust & legendary Ford Model T — laying a foundation for scalable product development.'
+  },
+  {
+    title: 'Weekly Reports',
+    description: 'No secrets, you get every detail from progress to declines ensuring transparency & productivity. '
+  },
+  {
+    title: 'Trustable Expertise',
+    description: "We've nailed MVP launches before, and we're ready to do it again!"
+  },
+  {
+    title: 'Fair Fee',
+    description: 'We understand. The budget’s tight. That’s why the payment structure is predictable and pre-defined.'
+  },
+  {
+    title: 'Close Collaboration',
+    description: 'Control your MVP from the get-go, set deadlines, and tell us your goals. You command, we obey.'
+  },
+];
+const mvpDevService= [
+  {
+    title: 'Idea Validation',
+    image: '/idea-validation.svg',
+    description: 'Our development process starts with concept validation, an exhaustive phase encompassing elements like customer feedback, surveys, and meticulous questioning that leave no stone unturned.',
+  },
+  {
+    title: 'Clickable Prototype Development',
+    image: '/clickable-prototype-development.svg',
+    description: 'As an MVP development company, we create clickable prototypes for both web and mobile applications to help you easily understand UI functionality, providing a view of expected visual experiences.',
+  },
+  {
+    title: 'Full-Fledged MVP Development',
+    image: '/full-fledged-mvp-development.svg',
+    description: 'We offer MVP development services to deliver a well-designed, fully functional, and feature-packed MVP to assess its effectiveness in solving problems of your target audience in a real environment.',
+  },
+  {
+    title: 'Single Feature MVP',
+    image: '/single-feature-mvp.svg',
+    description: "A single-feature MVP serves as a testing ground for your main hypothesis. User feedback gathered from this iteration enables business-critical reforms in decisions toward your product's growth and scope.",
+  },
+  {
+    title: 'Pilot MVP Development',
+    image: '/pilot-mvp-development.svg',
+    description: 'Make your MVP a pilot product to demonstrate usability, scalability, and market viability rather than a single feature product. Let’s launch a pilot MVP within 3 months under Qbatch’s expertise.',
+  },
+  {
+    title: 'MVP Consulting',
+    image: '/mvp-consulting.svg',
+    description: 'Build your idea, define market-friendly features, and select the optimal tech stack for building a powerful MVP app. You can trust our MVP software consultants for honest business advice.',
+  }
+];
 const discoverQbatchMenu = [
   {
     name: 'About Us',
@@ -3738,5 +3897,10 @@ export {
   extensionFaq,
   extensionSliderItems,
   extensionLanguages,
+  bewareFriend,
+  mvpSliderItems,
+  mvpBoxes1,
+  mvpBoxes2,
+  mvpDevService,
   personal
 }
