@@ -3,8 +3,8 @@ import { media } from "../../../theme/media-mixins";
 
 const ChooseCtoWrapper = styled.div`
   padding: 96px 0 94px;
-  ${media.sm`
-     padding: 40px 0px;
+  ${media.xs`
+     padding: 56px 0px;
   `}
   h3 {
     letter-spacing: 0.3px;
@@ -31,6 +31,13 @@ const ChooseCtoWrapper = styled.div`
     max-width: 567px;
     line-height: 32px;
   }
+  p.upper-text-wrapper{
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    line-height:24px;
+    font-weight:700;
+    max-width:692px;
+    color: ${({ theme }) => theme.colors.bodyTextVariant};
+  }
   .service-list {
     margin-top: 24px;
     ul {
@@ -40,6 +47,7 @@ const ChooseCtoWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         padding-bottom: 8px;
         line-height: 24px;
+        font-weight:400;
         &:last-child{
           padding-bottom: 0;
           ${media.md`

@@ -268,6 +268,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'extension-development',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'mvp-dev',
       queryParams: {
         populate: {
@@ -297,7 +307,8 @@ const strapiConfig = {
     'web-and-data-scraping',
     'terms-and-condition',
     'prosper-show',
-    'hire-developer'
+    'hire-developer',
+    'extension-development'
   ],
   queryLimit: 1000,
 }

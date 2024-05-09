@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const CollpaseWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
@@ -28,6 +29,11 @@ const CollpaseWrapper = styled.div`
       cursor: pointer;
       line-height: 32px;
       margin-bottom: 8px;
+      text-transform:none;
+      ${media.xs`
+        font-size: ${(props, theme) => (props.faqSection ? "16px" : "")};
+        line-height:24px;
+      `}
     }
     svg {
       min-width: 24px;

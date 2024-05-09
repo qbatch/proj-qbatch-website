@@ -3,8 +3,8 @@ import { media } from "../../../theme/media-mixins";
 
 const SoftwareDevelopersWrapper = styled.div`
   padding: 96px 0px;
-  ${media.sm`
-  padding: 40px 0px;
+  ${media.xs`
+    padding: 56px 0px;
   `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -17,7 +17,7 @@ const SoftwareDevelopersWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     font-style: normal;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
   }
   .scroll-icon-wrapper {
@@ -41,6 +41,9 @@ const SoftwareDevelopersWrapper = styled.div`
       padding: 72px 0px 96px;
       position: relative;
       justify-content: center;
+      ${media.xs`
+      padding:0px;
+      `}
       ${media.xl`
       justify-content: flex-start;
       `}

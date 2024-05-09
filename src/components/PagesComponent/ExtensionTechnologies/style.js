@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const LanguagesWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  padding: 120px 0;
+  padding: 96px 0;
   ${media.sm`
     padding: 40px 0;
     text-align: center;
@@ -14,7 +14,7 @@ const LanguagesWrapper = styled.div`
     `}
   }
   .languages-header {
-    margin-bottom: 76px;
+    margin-bottom: 96px;
     ${media.md`
       margin-bottom: 40px;
     `}
@@ -105,8 +105,10 @@ const LanguagesWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 46px;
-    div {
+    .logo-wrapper {
       min-height: 85px;
+      display:flex;
+      align-items: center;
       ${media.md`
         min-height: 74px;
       `}
@@ -154,7 +156,7 @@ const LanguagesWrapper = styled.div`
     justify-content: center;
   }
   .framework-item {
-    min-height: 700px;
+    min-height: 160px;
   }
 `;
 

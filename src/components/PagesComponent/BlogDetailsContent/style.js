@@ -106,7 +106,7 @@ const ContentWrapper = styled.div`
 
     border: 1px solid ${({ theme }) => theme.colors.disableColor};
     margin-left: 40px;
-    ${media.sm`
+    ${media.lg`
       margin-left: 0;
     `}
     .avatar-box {
@@ -149,11 +149,14 @@ const ContentWrapper = styled.div`
     margin: 32px 0;
   }
   .might-section {
-    margin-top: 72px;
+    margin-top: 16px;
+    .might-heading {
+      color:  ${({ theme }) => theme.colors.primaryColor};
+    }
   }
   .side-scroll {
     position: sticky;
-    margin: 100px 0 100px 12px;
+    margin: 100px 0 750px 12px;
     border-radius: 8px 8px 0 8px;
     top: 20%;
     left: 0;
@@ -236,8 +239,8 @@ const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    ${media.sm`
-      margin-left: 0;
+    ${media.lg`
+      margin: 32px 0 32px;
     `}
     h2 {
       color: ${({ theme }) => theme.colors.dividerColor};

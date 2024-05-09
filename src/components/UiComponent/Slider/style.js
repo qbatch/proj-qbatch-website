@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 const SliderWrapper = styled.div`
   padding: 96px 0;
-  ${media.sm`
-    padding: 40px 0;
+  ${media.xs`
+    padding: 56px 0;
   `}
   
   &.mvp-slider{
@@ -47,6 +47,13 @@ const SliderWrapper = styled.div`
       flex-direction: column;
     }
     `}
+    ${media.xs`
+    .make-responsive {
+      img{
+        width:fit-content;
+      }
+    }
+    `}
     @media(max-width:575px){
       .slick-next{
         right:0px
@@ -56,10 +63,12 @@ const SliderWrapper = styled.div`
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
+      text-transform:none;
     }
     p {
       max-width: ${(props) => (props.maxWidth ? props.maxWidth : '')};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      font-weight:400;
       ${media.sm`
         max-width: 100%;
     `}
@@ -72,7 +81,7 @@ const SliderWrapper = styled.div`
     .title {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       color: ${({ theme }) => theme.colors.bodyTextVariant};
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 16px;
     }
     .content {
@@ -95,7 +104,15 @@ const SliderWrapper = styled.div`
         color: ${({ theme }) => theme.colors.textMedium};
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         margin-bottom: 8px;
+        text-align:left;
       }
+    }
+  }
+
+  &.extension-dev-slider{
+    .title{
+      text-transform: none;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
     }
   }
   .slick-dots {

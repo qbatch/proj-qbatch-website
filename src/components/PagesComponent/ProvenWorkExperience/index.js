@@ -36,7 +36,7 @@ const responsiveTitle = {
   },
 };
 
-const Index = ({ heading, paragraph, componentName, exploreBtn }) => {
+const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, headerClass }) => {
   const [currentInd, setCurrentInd] = useState(1);
 
   const carousel1Ref = useRef(null);
@@ -84,13 +84,13 @@ const Index = ({ heading, paragraph, componentName, exploreBtn }) => {
     <ProvenExperienceWrapper>
       <Container>
         <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
-          <div>
+          <div className={headerClass}>
             <h2 className={`heading ${componentName === 'index' && 'text-h1'}`}>{heading}</h2>
             <p className="paragraph">{paragraph}</p>
           </div>
           {!exploreBtn ?
             <div className="mt-md-4 mt-3">
-              <Button onClick={() => navigate('/portfolio')} text="Explore More" />
+              <Button className={btnClass} onClick={() => navigate('/portfolio')} text="Explore More" />
             </div>
             :
             ''

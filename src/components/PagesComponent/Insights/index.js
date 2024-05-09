@@ -49,8 +49,8 @@ const Index = () => {
     },
   ];
   const settings = {
-    slidesToShow: 2, // Default number of slides to show
-    slidesToScroll: 2,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     arrows: false,
     infinite: true,
     autoplay: false,

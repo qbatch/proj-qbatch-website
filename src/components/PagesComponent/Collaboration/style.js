@@ -6,6 +6,8 @@ const CollaborationWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .heading{ 
     margin-bottom: 24px;
+    max-width: 670px;
+    margin: 0 auto 24px;
   }
   ${media.sm`
       padding:40px 0;
@@ -27,7 +29,7 @@ const CollaborationWrapper = styled.div`
           `}
       }
       p {
-        max-width: 700px;
+        max-width: 650px;
         margin: 0 auto;
       }
     }
@@ -83,6 +85,7 @@ const CollaborationWrapper = styled.div`
           letter-spacing: 0.4px;
           text-transform: inherit;
           font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+          color: ${({ theme }) => theme.colors.midGray};
           ${media.sm`
           line-height:28px;
           margin-bottom:8px;

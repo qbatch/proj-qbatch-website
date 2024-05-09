@@ -32,11 +32,11 @@ const Index = (props) => {
   return (
     <ExtensionInnerBannerWrapper className={className}>
       <Container>
-        <Row className="g-5 align-items-center justify-content-between">
-          <Col xl={5} lg={0}>
+        <Row className="g-0 align-items-center justify-content-between">
+          <Col xl={4} lg={0} className="d-xl-flex d-none">
             <img className="banner-inner-img d-xl-block d-none" src="/extension-inner-banner.png" />
           </Col>
-          <Col xl={6}>
+          <Col xl={7}>
           <div className={wrapperClass}>
           <h2 style={headingStyle} className={`text-h2 heading ${headingSize}`}>
             {heading} {span && <span className="inner-heading">{span}</span>}

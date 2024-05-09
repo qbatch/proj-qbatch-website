@@ -50,7 +50,7 @@ const MobileApp = () => {
           heading="Deliver Powerful Mobile App Experiences"
           paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
           buttonText="Kickstart Your Transformation Journey"
-          wrapperClass="cto-banner change-background-size"
+          wrapperClass="cto-banner"
           imgSrc={BannerImage}
           mobileViewBanner={BannerImage}
           customCrumbs={[
@@ -135,7 +135,7 @@ const MobileApp = () => {
         isButton={true}
         className="desired-result"
         btnText="Get Free Price Estimate"
-        align='d-flex justify-content-end'
+        align='d-flex justify-content-center'
       />
       <FaqSection faqQuestion={mobileAppFaq} />
       <StartProject />

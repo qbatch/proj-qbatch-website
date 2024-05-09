@@ -24,6 +24,13 @@ const BlogCardsWrapper = styled.div`
       height: 240px;
       padding: 32px;
       position: relative;
+      ${media.mobile`
+        padding: 16px;
+        height: 210px;
+      `}
+      ${media.xs`
+         height: 200px;
+      `}
       img {
         position: absolute;
         left: 0;
@@ -34,6 +41,13 @@ const BlogCardsWrapper = styled.div`
         object-position: center;
         border-radius: 16px 16px 0 0;
         z-index: -1;
+        ${media.mobile`
+          object-fit: fill;
+          height: 210px;
+        `}
+        ${media.xs`
+          height: 200px;
+        `}
       }
     }
     .hours {
@@ -135,6 +149,9 @@ const BlogCardsWrapper = styled.div`
         }
       }
     }
+  }
+  &.might-wrapper {
+    padding-top: 32px;
   }
 `;
 

@@ -5,7 +5,7 @@ const HiringHassleWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
-padding: 40px 0px;
+padding: 56px 0px;
 `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -18,7 +18,7 @@ padding: 40px 0px;
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     text-align: center;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
   }
   .hiring-hassle-overlay {
@@ -34,7 +34,7 @@ padding: 40px 0px;
     `}
     ${media.sm`
     grid-template-columns: 1fr 1fr;
-    padding-top:24px;
+    padding-top:48px;
     `}
     ${media.xs`
     grid-template-columns: 1fr;
@@ -58,15 +58,11 @@ padding: 40px 0px;
       `}
       p {
         color: ${({ theme }) => theme.colors.primaryColor};
-        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 32px;
-        max-width: 115px;
         text-align: left;
-        ${media.xs`
-        max-width: 100%;
-      `}
       }
       .hiring-hassle-card-tem {
         display: flex;
@@ -78,7 +74,7 @@ padding: 40px 0px;
           span {
             color: ${({ theme }) => theme.colors.gardientColor};
             text-align: center;
-            font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
+            font-size: ${({ theme }) => theme.fonts.baseFontSizeHeading};
             font-style: normal;
             font-weight: 600;
             text-transform: capitalize;
@@ -87,9 +83,9 @@ padding: 40px 0px;
               `}
             &:nth-child(2) {
               color: ${({ theme }) => theme.colors.dangerColor};
-              font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+              font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
               font-style: normal;
-              font-weight: 300;
+              font-weight: 500;
               ${media.sm`
                 line-height: 16px;
               `}

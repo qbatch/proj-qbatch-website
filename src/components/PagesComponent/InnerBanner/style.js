@@ -41,14 +41,14 @@ const InnerBannerWrapper = styled.div`
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-    font-weight: ${({ theme }) => theme.fontWeight.light};
+    font-weight: ${({ theme }) => theme.fontWeight.normal};
     margin-top: 48px;
     display: block;
   }
   .heading {
     color: ${({ theme }) => theme.colors.whiteColor};
     margin: auto;
-    text-transform: capitalize;
+    text-transform: none;
     .inner-heading {
       color: ${({ theme }) => theme.colors.dividerColor};
       display: block;
@@ -58,6 +58,15 @@ const InnerBannerWrapper = styled.div`
     ${media.xs`
       margin-top: 30px !important;
     `}
+  }
+
+  &.extension-dev-inner-banner{
+    .caption{
+      text-transform: none;
+    }
+    .heading{
+      text-transform: none;
+    }
   }
 `
 

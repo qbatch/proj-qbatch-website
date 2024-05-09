@@ -2,14 +2,22 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const HireCtoWrapper = styled.div`
-  padding: 97px 0;
+  padding: 96px 0;
   ${media.sm`
      padding: 40px 0px;
+     `
+}
+  ${media.xs`
+     padding: 56px 0px;
   `}
   .heading{
-    max-width: 720px;
+    max-width: 100%;
     margin: auto;
     line-height: 52px;
+    text-transform:none;
+    ${media.xs`
+    line-height: 32px;
+    `}
   }
   &.product-design{
     .list-group-item{
@@ -51,7 +59,10 @@ const HireCtoWrapper = styled.div`
   .list-group {
     text-align: left;
     max-width: 930px;
-    margin: 50px auto 72px auto;
+    margin:72px auto;
+    ${media.xs`
+    margin:48px auto;
+    `}
     .list-group-item {
       border: 0px;
       background-color: transparent;
@@ -66,14 +77,17 @@ const HireCtoWrapper = styled.div`
         object-fit: contain
       }
       span {
-        color: ${({ theme }) => theme.colors.textMedium};
+        color:${({ theme }) => theme.colors.bodyTextVariant};
         margin-top: 1px;
         font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        font-weight:600;
+        line-height:32px;
         ${media.md`
             font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         `}
         ${media.sm`
             font-size: ${({ theme }) => theme.fonts.baseFontSize};
+            line-height:24px;
         `}
       }
       &:last-child {

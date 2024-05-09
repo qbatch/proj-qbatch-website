@@ -6,35 +6,35 @@ import { Col, Row } from 'react-bootstrap';
 const ExtensionType = () => {
   const extensionTypes = [
     {
-      title: 'Password Manager',
+      title: 'Password<br class="d-md-block d-none">Manager',
       description: 'Store encrypted passwords online and access them using a single master password across browsers.'
     },
     {
-      title: 'To-Do and Note',
+      title: 'To-Do<br class="d-md-block d-none">and Note',
       description: 'Get more done in less time with a to-do list and notes extension.'
     },
     {
-      title: 'Amazon Seller Management',
+      title: 'Amazon Seller<br class="d-md-block d-none">Management',
       description: 'Sell and distribute your products and request customer reviews as needed.'
     },
     {
-      title: 'Screen Shots and Video Extensions',
+      title: 'Screen Shots and Video<br class="d-md-block d-none">Extensions',
       description: 'Capture screenshots and record screencasts for easy uploading anywhere.'
     },
     {
-      title: 'Instant Chat Extension',
+      title: 'Instant Chat<br class="d-md-block d-none"> Extension',
       description: 'Turn visitors into buyers by integrating live meetings and email messages in a single live chat tool.'
     },
     {
-      title: 'Content Manager/Aggregator',
+      title: 'Content Manager/<br class="d-md-block d-none">Aggregator',
       description: 'Build powerful and structured content to enrich your store with custom fields.'
     },
     {
-      title: 'Virtual Class Manager',
+      title: 'Virtual Class<br class="d-md-block d-none">Manager',
       description: 'Manage learners’ performance, lesson plans, attendance, grade assessments, reports, and schedules.'
     },
     {
-      title: 'eSignature Manager',
+      title: 'eSignature<br class="d-md-block d-none"> Manager',
       description: 'Digitally sign your documents securely and get things done instantly.'
     }
   ];
@@ -48,7 +48,7 @@ const ExtensionType = () => {
           {extensionTypes.map((extension, index) => (
             <Col key={index} xl={3} md={6}>
               <div className='inner-box'>
-                <h3 className='text-h4 inner-heading'>{extension.title}</h3>
+                <h3 className='text-h4 inner-heading' dangerouslySetInnerHTML={{ __html: extension.title }} />
                 <p>{extension.description}</p>
               </div>
             </Col>

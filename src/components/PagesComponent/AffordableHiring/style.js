@@ -4,8 +4,8 @@ import { media } from "../../../theme/media-mixins";
 const AffordableHiringWrapper = styled.div`
   padding: 120px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    ${media.sm`
-  padding: 40px 0px;
+    ${media.xs`
+  padding: 56px 0px;
   `}
   h2 {
     margin-bottom: 16px;
@@ -18,7 +18,7 @@ const AffordableHiringWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     font-style: normal;
     text-align: left;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
   }
   .cards-overlay-wrapper {
@@ -32,6 +32,9 @@ const AffordableHiringWrapper = styled.div`
     ${media.sm`
     grid-template-columns: 1fr;
     `}
+    ${media.xs`
+    padding-top: 48px;
+    `}
   .card-items {
       display: flex;
       flex-direction: column;
@@ -40,6 +43,9 @@ const AffordableHiringWrapper = styled.div`
       border-radius: 24px 24px 0px 24px;
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
       background-color:${({ theme }) => theme.colors.whiteColor};
+      ${media.xs`
+      grid-row-gap: 8px;
+      `}
       h3 {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
         font-weight: 600;
@@ -48,6 +54,10 @@ const AffordableHiringWrapper = styled.div`
         letter-spacing: 0.02em;
         text-align: left;
         max-width: 204px;
+        ${media.xs`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height:16px;
+        `}
       }
       .item-content {
         p {
@@ -57,6 +67,10 @@ const AffordableHiringWrapper = styled.div`
           text-align: left;
           color: ${({ theme }) => theme.colors.primaryColor};
           margin-bottom: 8px;
+          ${media.xs`
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        line-height:16px;
+        `}
         }
         ul {
           padding: 0px;

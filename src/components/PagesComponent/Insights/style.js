@@ -18,7 +18,7 @@ const InsightsWrapepr = styled.div`
     p {
       font-size: 16px;
       line-height: 24px;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 0;
       padding-right: 30px;
     }
@@ -93,7 +93,7 @@ const InsightsWrapepr = styled.div`
     .card-img {
       height: 224px;
       width: 100%;
-      object-fit: cover;
+      object-fit: fill;
       object-position: center;
     }
     .inner-content {

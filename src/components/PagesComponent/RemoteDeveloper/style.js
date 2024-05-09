@@ -5,7 +5,6 @@ const RemoteDeveloperStyleWrapper = styled.div`
   padding-bottom: 96px;
   ${media.md`
   padding-bottom:72px ;
-  
   `}
   ${media.sm`
     padding-bottom: 16px;
@@ -17,12 +16,13 @@ const RemoteDeveloperStyleWrapper = styled.div`
     margin: auto;
     padding-top: 96px;
     padding-bottom: 72px;
-    ${media.sm`
-    padding-top: 40px;
-    padding-bottom: 40px;
+    ${media.xs`
+    padding-top: 56px;
+    padding-bottom: 48px;
     `}
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
+      text-transform:none;
     }
   }
   .card-overlay-wrapper {
@@ -41,6 +41,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
     ${media.xs`
     grid-template-columns: 1fr;
     justify-content:center;
+    grid-row-gap: 16px;
     `}
   }
   .card-item {
@@ -52,15 +53,21 @@ const RemoteDeveloperStyleWrapper = styled.div`
     ${media.xs`
         margin: auto;
     `}
-    h2 {
+    h3 {
       margin: 0;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
       text-align: center;
       font-style: normal;
       font-weight: 700;
-      line-height: 32px;
-      min-height:160px
+      line-height: 24px;
+      max-height: 160px;
+      text-transform: none;
+      min-height: 69px;
+      text-transform:none;
+      ${media.xs`
+      max-height: 100%;
+      `}
 
     }
   }
