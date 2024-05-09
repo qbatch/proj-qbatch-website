@@ -161,7 +161,7 @@ function App({ data, path }) {
                     }}
                   />
                 </div>
-                <div className="social-links d-flex gap-4">
+                <div className="social-links d-flex gap-4 align-items-center">
                   <span className="title">Share</span>
                   <SocialIcons socialIcons={socialIcons} />
                 </div>
