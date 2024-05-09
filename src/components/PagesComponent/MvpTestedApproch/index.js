@@ -1,7 +1,9 @@
 import React from 'react';
-import MvpTestedApprochWrapper from './style';
-import Container from '../../UiComponent/Container';
 import { Col, Row } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
+
+import MvpTestedApprochWrapper from './style';
 
 const MvpTestedApproch = () => {
   return (

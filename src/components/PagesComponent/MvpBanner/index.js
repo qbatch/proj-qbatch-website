@@ -1,10 +1,12 @@
 import React from 'react';
-import MvpBannerWrapper from './style';
-import Container from '../../UiComponent/Container';
 import { Link } from 'gatsby'
 import { navigate } from 'gatsby'
 import { Row, Col } from "react-bootstrap";
+
+import Container from '../../UiComponent/Container';
 import Button from "../../UiComponent/HomeButton";
+
+import MvpBannerWrapper from './style';
 
 const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;

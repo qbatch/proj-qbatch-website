@@ -1,8 +1,10 @@
 import React from 'react';
-import IdeaValidtionWrapper from './style';
+import { Col, Row } from 'react-bootstrap';
+
 import Container from '../../UiComponent/Container';
 import Button from "../../../components/UiComponent/Button";
-import { Col, Row } from 'react-bootstrap';
+
+import IdeaValidtionWrapper from './style';
 
 
 const index = () => {

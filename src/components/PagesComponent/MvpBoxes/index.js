@@ -1,7 +1,9 @@
 import React from 'react';
-import MvpBoxesWrapper from './style';
-import Container from '../../UiComponent/Container';
 import { Col, Row } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
+
+import MvpBoxesWrapper from './style';
 
 const index = ({ boxData, heading, paragraph }) => {
   return (

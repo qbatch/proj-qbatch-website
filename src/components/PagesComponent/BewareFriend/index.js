@@ -1,9 +1,10 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+
 import Container from "../../UiComponent/Container";
+import { bewareFriend } from "../../../constants"
 
 import BewareFriendWrapper from "./style";
-import { bewareFriend } from "../../../constants"
 
 const BewareFriend = () => {
   

@@ -1,7 +1,9 @@
 import React from 'react';
-import GuaranteeBannerWrapper from './style';
+
 import Container from '../../UiComponent/Container';
 import Button from "../../UiComponent/Button";
+
+import GuaranteeBannerWrapper from './style';
 
 const GuaranteeBanner = () => {
   return (

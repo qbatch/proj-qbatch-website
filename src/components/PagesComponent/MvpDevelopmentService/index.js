@@ -1,7 +1,9 @@
 import React from 'react';
-import MvpDevelopmentServiceWrapper from './style';
-import Container from '../../UiComponent/Container';
 import { Col, Row } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
+
+import MvpDevelopmentServiceWrapper from './style';
 
 const Index = ({ heading, serviceData }) => {
   return (

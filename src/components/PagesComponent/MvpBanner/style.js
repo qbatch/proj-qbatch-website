@@ -134,4 +134,4 @@ position: relative;
   }
 `
 
-export default MvpBannerWrapper
+export default MvpBannerWrapper;

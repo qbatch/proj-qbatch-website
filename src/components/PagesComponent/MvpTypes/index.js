@@ -1,7 +1,9 @@
 import React from 'react';
-import MvpTypesWrapper from './style';
-import Container from '../../UiComponent/Container';
 import { Col, Row } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
+
+import MvpTypesWrapper from './style';
 
 const MvpTypes = () => {
   return (

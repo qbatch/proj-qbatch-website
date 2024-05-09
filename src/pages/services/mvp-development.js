@@ -1,12 +1,12 @@
 import React from 'react';
-
 import { Script } from 'gatsby'
+
 import { replaceUnderscoreWithAt } from '../../constants/Utils'
 import SEO from "../../components/Seo";
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
-
-
+import MvpTypes from '../../components/PagesComponent/MvpTypes';
+import MvpBanner from '../../components/PagesComponent/MvpBanner';
 import MvpDevelopmentService from '../../components/PagesComponent/MvpDevelopmentService';
 import MvpTestedApproch from '../../components/PagesComponent/MvpTestedApproch';
 import IdeaValidtion from '../../components/PagesComponent/IdeaValidation';
@@ -27,8 +27,6 @@ import {
   mvpBoxes2,
   mvpDevService
 } from "../../constants";
-import MvpTypes from '../../components/PagesComponent/MvpTypes';
-import MvpBanner from '../../components/PagesComponent/MvpBanner';
 
 
 
@@ -46,7 +44,7 @@ const mvp = () => {
         wrapperClass="product-design-banner"
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
-          { pathname: '/services/product-design-development/', crumbLabel: 'Software Product Development' },
+          { pathname: '/services/mvp-development/', crumbLabel: 'Software Product Development' },
         ]}
       />
       <MvpTestedApproch />
