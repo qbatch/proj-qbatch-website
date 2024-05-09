@@ -135,7 +135,7 @@ const MobileApp = () => {
         isButton={true}
         className="desired-result"
         btnText="Get Free Price Estimate"
-        align='d-flex justify-content-end'
+        align='d-flex justify-content-center'
       />
       <FaqSection faqQuestion={mobileAppFaq} />
       <StartProject />

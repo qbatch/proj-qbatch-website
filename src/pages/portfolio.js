@@ -27,6 +27,9 @@ const Portfolio = () => {
         mobileViewBanner={EcommerceBanner}
         blogInner={EcommerceBanner}
         wrapperClass="cto-banner"
+        customCrumbs={[
+          { pathname: '/portfolio/', crumbLabel: 'Portfolio', crumbSeparator: '>' },
+        ]}
       />
       <SuccessStories />
       <Divider margin="0px" />

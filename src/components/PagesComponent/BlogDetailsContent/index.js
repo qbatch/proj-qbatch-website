@@ -123,32 +123,31 @@ function App({ data, path }) {
 
   return (
     <ContentWrapper>
-      <div className="d-lg-flex">
-        <div className={`side-scroll`}>
-          <span className="table-content-header">Table of Content</span>
-          <div className="side-scroll-content">
-            <ol>
-              {headings.map((list, index) => (
-                <React.Fragment key={index}>
-                  <li>
-                    <a
-                      href={`#${list.title
-                        .trim()
-                        .toLowerCase()
-                        .replace(/[^\w\s-]/g, "")
-                        .replace(/\s+/g, "-")}`}
-                      className="title"
-                    >
-                      {list.title}
-                    </a>
-                  </li>
-                </React.Fragment>
-              ))}
-            </ol>
+      <div className="content-section content">
+        <div className="d-lg-flex position-relative">
+          <div className={`side-scroll`}>
+            <span className="table-content-header">Table of Content</span>
+            <div className="side-scroll-content">
+              <ol>
+                {headings.map((list, index) => (
+                  <React.Fragment key={index}>
+                    <li>
+                      <a
+                        href={`#${list.title
+                          .trim()
+                          .toLowerCase()
+                          .replace(/[^\w\s-]/g, "")
+                          .replace(/\s+/g, "-")}`}
+                        className="title"
+                      >
+                        {list.title}
+                      </a>
+                    </li>
+                  </React.Fragment>
+                ))}
+              </ol>
+            </div>
           </div>
-        </div>
-
-        <div className="content-section content">
           <Container className="ps-lg-5">
             <Row>
               <Col xl={8} sm={12}>
@@ -168,9 +167,93 @@ function App({ data, path }) {
                 <div className="divider">
                   <hr />
                 </div>
+              </Col>
+              <Col xl={4} sm={12}>
+                <ContentWrapper>
+                  <div
+                    className="author-name"
+                    onClick={() => {
+                      navigate(`/authors/${data?.user?.username}`, {
+                        state: { slug: data.seo.slug },
+                      });
+                    }}
+                  >
+                    <div className="avatar-box d-flex flex-wrap align-items-center">
+                      <img
+                        className="avatar-image"
+                        width="72px"
+                        height="72px"
+                        src={data?.user?.image?.localFile?.url || "/avatar.svg"}
+                        alt="no-avartar"
+                      />
+                      <span>{data?.user?.name}</span>
+                    </div>
+                    <span className="title">{data?.user?.description}</span>
+                    <div className="d-flex justify-content-between mt-32">
+                      <ul className="d-flex social-link ps-0">
+                        {data?.user?.Socials.map((social, index) => (
+                          <li key={index}>
+                            <a
+                              href={social.socialLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {social.socialPlatform === "linkedin" && (
+                                <img src="/linkedin.svg" alt="LinkedIn" />
+                              )}
+                              {social.socialPlatform === "twitter" && (
+                                <img src="/twitter.svg" alt="Twitter" />
+                              )}
+                              {social.socialPlatform === "medium" && (
+                                <img src="/medium.svg" alt="Medium" />
+                              )}
+                              {social.socialPlatform === "instagram" && (
+                                <img src="/instagram.svg" alt="Instagram" />
+                              )}
+                              {social.socialPlatform === "facebook" && (
+                                <img src="/facebook.svg" alt="Facebook" />
+                              )}
+                              {social.socialPlatform === "reddit" && (
+                                <img src="/reddit.svg" alt="Reddit" />
+                              )}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                      <div>
+                        <img
+                          src="/author-name-arrow.svg"
+                          className="pointer"
+                          alt="no-arrow"
+                          onClick={() => {
+                            navigate(`/authors/${data?.user?.username}`, {
+                              state: { slug: data.seo.slug },
+                            });
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="subsribe-button">
+                    <h2>
+                      Get the top stories like these delivered to your inbox
+                    </h2>
+                    <div className="subscribe-email">
+                      <img src="/email.svg" alt="email" />
+                      <input type="email" placeholder="Email Address" />
+                    </div>
+                    <div>
+                      <Button className="secondary-btn" text="We Can Help" />
+                    </div>
+                  </div>
+                </ContentWrapper>
+              </Col>
+            </Row>
+            <Row>
+              <Col xl={8} sm={12}>
                 <div className="might-section">
-                  <h3>You might also like…</h3>
-                  <BlogCardsWrapper>
+                  <h3 className="might-heading">You might also like…</h3>
+                  <BlogCardsWrapper className="might-wrapper">
                     <Row>
                       {blogLikedData
                         .slice(0, 2)
@@ -259,86 +342,6 @@ function App({ data, path }) {
                     </Row>
                   </BlogCardsWrapper>
                 </div>
-              </Col>
-              <Col xl={4} sm={12}>
-                <ContentWrapper>
-                  <div
-                    className="author-name"
-                    onClick={() => {
-                      navigate(`/authors/${data?.user?.username}`, {
-                        state: { slug: data.seo.slug },
-                      });
-                    }}
-                  >
-                    <div className="avatar-box d-flex flex-wrap align-items-center">
-                      <img
-                        className="avatar-image"
-                        width="72px"
-                        height="72px"
-                        src={data?.user?.image?.localFile?.url || "/avatar.svg"}
-                        alt="no-avartar"
-                      />
-                      <span>{data?.user?.name}</span>
-                    </div>
-                    <span className="title">{data?.user?.description}</span>
-                    <div className="d-flex justify-content-between mt-32">
-                      <ul className="d-flex social-link ps-0">
-                        {data?.user?.Socials.map((social, index) => (
-                          <li key={index}>
-                            <a
-                              href={social.socialLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {social.socialPlatform === "linkedin" && (
-                                <img src="/linkedin.svg" alt="LinkedIn" />
-                              )}
-                              {social.socialPlatform === "twitter" && (
-                                <img src="/twitter.svg" alt="Twitter" />
-                              )}
-                              {social.socialPlatform === "medium" && (
-                                <img src="/medium.svg" alt="Medium" />
-                              )}
-                              {social.socialPlatform === "instagram" && (
-                                <img src="/instagram.svg" alt="Instagram" />
-                              )}
-                              {social.socialPlatform === "facebook" && (
-                                <img src="/facebook.svg" alt="Facebook" />
-                              )}
-                              {social.socialPlatform === "reddit" && (
-                                <img src="/reddit.svg" alt="Reddit" />
-                              )}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                      <div>
-                        <img
-                          src="/author-name-arrow.svg"
-                          className="pointer"
-                          alt="no-arrow"
-                          onClick={() => {
-                            navigate(`/authors/${data?.user?.username}`, {
-                              state: { slug: data.seo.slug },
-                            });
-                          }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="subsribe-button">
-                    <h2>
-                      Get the top stories like these delivered to your inbox
-                    </h2>
-                    <div className="subscribe-email">
-                      <img src="/email.svg" alt="email" />
-                      <input type="email" placeholder="Email Address" />
-                    </div>
-                    <div>
-                      <Button className="secondary-btn" text="We Can Help" />
-                    </div>
-                  </div>
-                </ContentWrapper>
               </Col>
             </Row>
           </Container>
