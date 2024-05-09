@@ -2,30 +2,31 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const ExtensionInnerBannerWrapper = styled.div`
-  background: url('/inner-banner-bg.svg');
-  background-size: cover;
-  background-position: top;
-  padding: 96px 203px;
+background-color:  ${({ theme }) => theme.colors.secondaryColor};
   ${media.md`
-    padding: 96px 120px 120px;
+    padding: 56px 120px 62px;
   `}
   ${media.sm`
     padding: 40px 40px;
   `}
   .paragraph {
     color: ${({ theme }) => theme.colors.whiteColor};
-    font-weight: ${({ theme }) => theme.fontWeight.light};
+    font-weight: ${({ theme }) => theme.fontWeight.normal};
     margin-top: 24px;
     display: block;
+    max-width: 572px;
   }
   .heading {
     color: ${({ theme }) => theme.colors.whiteColor};
     margin: auto;
-    text-transform: capitalize;
+    text-transform: none;
     .inner-heading {
       color: ${({ theme }) => theme.colors.dividerColor};
       display: block;
     }
+  }
+  .extension-banner-inner{
+    padding: 96px 0;
   }
   .banner-inner-img{
     object-fit: contain;

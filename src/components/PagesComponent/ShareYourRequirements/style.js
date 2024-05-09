@@ -5,8 +5,8 @@ import CongratulationsBg from "../../../../static/share-your-requirements.svg";
 const ShareYourRequirementsWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    ${media.sm`
-  padding: 40px 0px;
+    ${media.xs`
+      padding: 56px 0px;
   `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
@@ -14,6 +14,7 @@ const ShareYourRequirementsWrapper = styled.div`
     text-align: center;
     margin: auto;
     margin-bottom: 24px;
+    text-transform:none;
   }
   textarea {
     padding: 12px 0px;
@@ -41,7 +42,7 @@ const ShareYourRequirementsWrapper = styled.div`
     color: ${({ theme }) => theme.colors.textMedium};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
     text-align: center;
     max-width: 930px;
@@ -49,6 +50,9 @@ const ShareYourRequirementsWrapper = styled.div`
   }
   .heading-label-text {
     margin-bottom: 72px;
+    ${media.xs`
+    margin-bottom: 48px;
+    `}
   }
   .stepper-wrapper {
     display: flex;
@@ -71,6 +75,9 @@ const ShareYourRequirementsWrapper = styled.div`
       ${media.sm`
       max-width: 100%;
       `}
+      h3{
+        text-transform:none;
+      }
       p.label-text-wrap{
         text-align: left;
         font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};

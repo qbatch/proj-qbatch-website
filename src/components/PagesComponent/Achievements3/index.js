@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import CountUp from 'react-countup'
+import CountUp from 'react-countup';
 
 import Container from "../../UiComponent/Container";
 import AchievementsWrapper from './style'
@@ -22,7 +22,7 @@ const Index = ({ headingClass, page, mainHeading,textClass }) => {
             {displayedCounterData.map((data, ind) => (
               <Col  lg={3} sm={6} xs={12} key={ind} className="achievements-col">
                 <span className="text-h1 inner-heading">
-                  <CountUp end={data.count} duration={3} />
+                  {parseFloat(data.count.toFixed(1)).toLocaleString()}
                   {data.symbol && (
                     <span className="color-danger fw-light ms-2">{data.symbol}</span>
                   )}

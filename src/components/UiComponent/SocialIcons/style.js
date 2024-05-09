@@ -8,7 +8,6 @@ const SocialWrapper = styled.div`
         justify-content: center;
         width: 100%;
         margin-left: 0;
-        margin-top: 10px;
       `}
     div {
       cursor: pointer;

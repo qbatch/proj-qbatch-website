@@ -4,6 +4,7 @@ import { media } from '../../../theme/media-mixins'
 const Container = styled.div`
   padding: 0 96px;
   height:100%;
+  width: 100%;
   ${media.lg`
   padding: 0 80px;
   `}
@@ -17,7 +18,7 @@ const Container = styled.div`
   `}
 
   ${media.xs`
-    padding: 0 20px;
+    padding: 0 24px;
   `}
   @media(min-width:1600px) {
     max-width: 1600px;

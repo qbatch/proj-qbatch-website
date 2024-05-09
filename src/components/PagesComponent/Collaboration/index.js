@@ -7,7 +7,7 @@ import TimeIcon from "../../../assets/images/icons/time-clock.svg";
 import FixedScopeIcon from "../../../assets/images/icons/fixed-scope.svg";
 import DevTeamIcon from "../../../assets/images/icons/dev-team.svg";
 
-const Index = ({ headingClass, paragraph, expertiseData, heading }) => {
+const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading }) => {
   const experties = expertiseData || [
     {
       img: TimeIcon,
@@ -34,7 +34,7 @@ const Index = ({ headingClass, paragraph, expertiseData, heading }) => {
       <Container>
         <div className="collaboration-inn">
           <div className="section-heading">
-            <h2 className={`heading text-h1 ${headingClass}`}>{heading || 'Collaboration Models For Everlasting Partnerships'}</h2>
+            <h2 className={`heading ${largeHeading && 'text-h1'} ${headingClass}`}>{heading || 'Collaboration Models For Everlasting Partnerships'}</h2>
             <p>
               {paragraph ||
                 'Our unique "Happy Paths" approach is a predictive and transparent way to implement your idea. Choose what suits you best'}

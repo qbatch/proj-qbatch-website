@@ -35,13 +35,14 @@ const Index = (props) => {
         <div className={wrapperClass}>
           <h2 style={headingStyle} className={`text-h2 heading ${headingSize}`}>
             {heading} {span && <span className="inner-heading">{span}</span>}
-            {caption && <span className="caption">{caption}</span> }
+          </h2>
+
+          {caption && <span className="caption">{caption}</span> }
             {isButton && (
             <div style={buttonStyle} className={`idea-btn d-flex justify-content-${btnAlign}`}>
               <Button text={btnText} onClick={() => navigate('/contact')} className="secondary-btn" />
             </div>
           )}
-          </h2>
         </div>
       </Container>
     </InnerBannerWrapper>

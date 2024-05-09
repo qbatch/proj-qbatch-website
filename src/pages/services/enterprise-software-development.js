@@ -101,7 +101,7 @@ const Enterprise = () => {
         />
         <LanguagesAndFrameworks />
         <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
-        <Collaboration heading="text-h2" />
+        <Collaboration />
         <PeopleFirst
           peopleFirstData={peopleFirstData}
           paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies."
@@ -111,7 +111,7 @@ const Enterprise = () => {
           heading="Got a unique mobile app idea? Learn more about development time and cost estimation!"
           isButton={true}
           className="desired-result"
-          align="d-flex justify-content-end"
+          align="d-flex justify-content-center"
           btnText="Get Free Price Estimate"
         />
         <FaqSection faqQuestion={enterPrisFaq} />

@@ -36,9 +36,11 @@ const GlobalStyles = createGlobalStyle`
     }
     h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeH2};
+        line-height: 52px;
     }
     h3, .text-h3{
-        font-size:${({ theme }) => theme.fonts.baseFontSizeH3}
+        font-size:${({ theme }) => theme.fonts.baseFontSizeH3};
+        line-height: 40px;
     }
     h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg}; 
@@ -146,6 +148,7 @@ const GlobalStyles = createGlobalStyle`
       }
       h2, .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
+        line-height: 32px;
       }
       h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};     
@@ -167,6 +170,7 @@ const GlobalStyles = createGlobalStyle`
       }
       h2 .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 32px;
       }
       h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSize};     
@@ -229,6 +233,10 @@ const GlobalStyles = createGlobalStyle`
       }
         .add-border-radius{
           border-radius: 12px 12px 0px 12px;
+          @media (max-width: 575px){
+            width: 100%;
+            height: 210px;
+          }
        } 
 
       }
@@ -237,36 +245,40 @@ const GlobalStyles = createGlobalStyle`
         border:1px solid  ${({ theme }) => theme.colors.dividerColor};
         padding: 36px;
         margin-bottom:24px;
-        div{
-          &:nth-child(1) {
-            min-width: 162px;
-        }
-        }
-        img{
-          width:72px;
-          height:72px;
+        background: url('/author-box-bg.svg');
+        background-size: cover;
+        .author-img{
+          img {
+            width:72px;
+            height:72px;
+          }
         }
         @media(max-width:991px){
           flex-wrap:wrap;
         }
         .username{
           font-size:${({ theme }) => theme.fonts.baseFontSize};
-          color:${({ theme }) => theme.colors.primaryColor};
-          white-space:nowrap;
+          color:${({ theme }) => theme.colors.whiteColor};
+          font-weight: ${({ theme }) => theme.fontWeight.medium};
+          line-height: 16px;
+          margin-bottom: 8px;
+          white-space: nowrap;
+          display: block;
         }
         .caption{
           font-size:${({ theme }) => theme.fonts.baseFontSizeXs};
-          color:${({ theme }) => theme.colors.textMedium};
+          color:${({ theme }) => theme.colors.whiteColor};
+          line-height: 14px;
+          margin-bottom: 6px;
+          display: block;
         }
         .paragraph{
-          font-size:${({ theme }) => theme.fonts.baseFontSize};
-          color:${({ theme }) => theme.colors.bodyTextVariant};
-          line-height:24px;
+          font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+          color:${({ theme }) => theme.colors.whiteColor};
+          line-height: 24px;
         }
       }
     .paragraph{
-   
-
       &.quotes-block{
         display: block;
       }
@@ -389,8 +401,8 @@ const GlobalStyles = createGlobalStyle`
 .Toastify__toast-container {
   z-index: 99999;
 }
-.text-color,.brand-color,.back-to-jobs{
-  color:#000!important
+.brand-color,.back-to-jobs{
+  color:#000!important;
 }
 .icon-arrow-left{
   fill:#000!important;

@@ -2,57 +2,15 @@ import React, { useState, useEffect } from "react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
 
 import { NavDropdown, Row, Col, Dropdown } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
 import SocialIcons from "../../UiComponent/SocialIcons";
+import { servicesItems } from "../../../constants";
 
 import DrawerWrapper from "./style";
-import { useLocation } from "@reach/router";
-
-const servicesItems = [
-  {
-    menu: 'Enterprise Software Development Solutions',
-    to: '/services/enterprise-software-development/',
-  },
-  {
-    menu: 'E-commerce Automation Services',
-    to: '/services/e-commerce-automation/',
-  },
-  {
-    menu: 'Web App Development',
-    to: '/services/web-app-development/',
-  },
-  {
-    menu: 'Mobile App Development',
-    to: '/services/mobile-app-development/',
-  },
-  {
-    menu: 'CTO as a Service',
-    to: '/services/cto-as-a-service/',
-  },
-  {
-    menu: 'Product Design & Development',
-    to: '/services/product-design-development/',
-  },
-  {
-    menu: 'Web & data Scraping Services',
-    to: '/services/web-and-data-scraping/',
-  },
-  {
-    menu: 'DevOps and Cloud Computing',
-    to: '/services/devops/',
-  },
-  {
-    menu: 'Low-code/ No-code Platform Development',
-    to: '',
-  },
-  {
-    menu: 'UX/UI Design',
-    to: '',
-  },
-]
 
 const frameworksMenu = [
   {

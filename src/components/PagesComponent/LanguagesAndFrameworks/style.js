@@ -105,8 +105,10 @@ const LanguagesWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 46px;
-    div {
+    .logo-wrapper{
       min-height: 85px;
+      display: flex;
+      align-items: center;
       ${media.md`
         min-height: 74px;
       `}
@@ -154,7 +156,7 @@ const LanguagesWrapper = styled.div`
     justify-content: center;
   }
   .framework-item {
-    min-height: 160px;
+    min-height: 700px;
   }
 `;
 

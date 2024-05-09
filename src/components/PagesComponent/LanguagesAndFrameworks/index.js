@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Row, Accordion } from "react-bootstrap";
 
-import { extensionLanguages } from "../../../constants";
+import { languagesData } from "../../../constants";
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button"
 import LanguagesWrapper from "./style";
 
-const Index = ({ heading = 'Technologies We Use For Browser Extension Development'}) => {
+const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-tested Web Application Development tools and technologies to build a cross-platform and secure application:',paragraphMaxWidth, showBtn  }) => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -46,15 +46,16 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
     <LanguagesWrapper id="scene-trigger2" ref={scrollRef2} className="stage-slider-main2">
       <div>
         <Container>
-          <div className="languages-header text-center">
+          <div className="languages-header">
             <h2>{heading}</h2>
+            <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
           </div>
 
           <Row className="desktop-data">
             <Col lg={3}>
               <div className="pagination fixed-slider-pagination">
                 <ul>
-                  {extensionLanguages?.map((item, index) => (
+                  {languagesData?.map((item, index) => (
                     <li
                       key={index}
                       className={`pagination-item ${activeIndex === index ? 'active' : ''}`}
@@ -68,14 +69,16 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
             </Col>
             <Col lg={9} md={12}>
               <Slider {...sliderSettings} ref={sliderRef2}>
-                {extensionLanguages?.map((item, index) => (
+                {languagesData?.map((item, index) => (
                   <div key={index} className="framework-item">
                     <Row>
                       {item.content.map((data) => (
-                        <Col md={3}>
+                        <Col md={4}>
                           <div className="framework-logo">
                             <div>
-                              {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                              <div className="logo-wrapper">
+                                {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                              </div>
                             </div>
                             <p>{data.desc}</p>
                           </div>
@@ -89,7 +92,7 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
           </Row>
           <div className="small-screen-data">
             <Accordion defaultActiveKey="0" className="languages-collapse d-flex flex-column gap-2">
-              {extensionLanguages.map((item, ind) => (
+              {languagesData.map((item, ind) => (
                 <div key={ind}>
                   <Accordion.Item eventKey={ind}>
                     <Accordion.Header>{item.title}</Accordion.Header>
@@ -99,7 +102,9 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
                           <Col md={4} sm={6} xs={6}>
                             <div className="framework-logo">
                               <div>
-                                {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                                <div className="logo-wrapper">
+                                  {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                                </div>
                               </div>
                               <p>{data.desc}</p>
                             </div>
@@ -112,6 +117,11 @@ const Index = ({ heading = 'Technologies We Use For Browser Extension Developmen
               ))}
             </Accordion>
           </div>
+          {!showBtn && 
+            <div className="languages-btn">
+              <Button onClick={() => navigate('/contact')} text="Discover the Right Toolkit for Your Project" />
+            </div>
+          }
         </Container>
       </div>
     </LanguagesWrapper>

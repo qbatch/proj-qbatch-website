@@ -1,10 +1,12 @@
 const fsNumber = "72px";
 const fsxl = "64px";
 const fsh1 = "56px";
+const fsh  = "48px";
 const fsh2 = "40px";
 const fsh3 = "32px";
 const fslg = "24px";
 const fssm = "20px";
+const fcs = "18px"
 const fsxs = "16px";
 const fsx = "14px";
 const fsXxs = "12px";
@@ -29,14 +31,18 @@ const theme = {
     disableColor: '#889095',
     highlightColor: '#FD3',
     textColor: '#FFDD33',
+    footerBgColor: '#001B35',
+    midGray: '#434343'
   },
   fonts: {
     baseFontSizeH1: fsh1,
     baseFontSizeH2: fsh2,
+    baseFontSizeHeading: fsh,
     baseFontSizeH3: fsh3,
     baseFontSizeLg: fslg,
     baseFontSizeSm: fssm,
     baseFontSize: fsxs,
+    BaseCustomFontSize:fcs,
     baseFontSizeMediumSmal: fsx,
     baseFontSizeXs: fsXxs,
     baseFontXl: fsxl,

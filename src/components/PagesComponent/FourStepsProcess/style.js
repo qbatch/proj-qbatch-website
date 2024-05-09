@@ -4,8 +4,8 @@ import { media } from "../../../theme/media-mixins";
 const FourStepsProcessWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  ${media.sm`
-  padding: 40px 0px;
+  ${media.xs`
+  padding: 56px 0px;
   `}
   h2 {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
@@ -14,6 +14,12 @@ const FourStepsProcessWrapper = styled.div`
     line-height: 52px;
     text-align: center;
     margin-bottom: 72px;
+    text-transform:none;
+    ${media.xs`
+    margin-bottom:48px;
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    line-height:32px;
+    `}
   }
   .process-card-overlay {
     display: grid;
@@ -77,6 +83,11 @@ const FourStepsProcessWrapper = styled.div`
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         line-height: 29.04px;
         text-align: center;
+        text-transform:none;
+        ${media.xs`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height:16px;
+        `}
       }
       p {
         font-size: ${({ theme }) => theme.fonts.baseFontSize};

@@ -19,15 +19,19 @@ const InnerBannerWrapper = styled.div`
     position: absolute;
     top: 48px;
     left: 48px;
+    ${media.mobile`
+      top: 32px;
+      left: 32px;
+    `}
   }
   .blog-wrapper{
     padding: 48px;
+    ${media.mobile`
+      padding: 32px;
+    `}
   }
   ${media.sm`
       height: auto;
-    `}
-  ${media.xs`
-      padding: 32px;
     `}
     .full-flex {
     flex: 1;

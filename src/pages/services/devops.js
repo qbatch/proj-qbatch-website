@@ -33,8 +33,8 @@ const DevOps = () => {
         heading="Beyond Silo Mentality, Towards Shared Responsibility"
         paragraph={
           <span className='banner-paragraph'>
-            Let’s go beyond misaligned goals, patchy processes, and communication gaps, and deliver high-quality apps without worrying about the underlying infrastructure with our <i className="text-color">DevOps services and solutions.</i> <br /><br />
-            No more <i className="text-color">"throw it over the wall"</i> mentality only clear communication and continuous value.
+            Let’s go beyond misaligned goals, patchy processes, and communication gaps, and deliver high-quality apps without worrying about the underlying infrastructure with our <i className="text-color fw-semibold">DevOps services and solutions.</i> <br /><br />
+            No more <i className="text-color fw-semibold">"throw it over the wall"</i> mentality only clear communication and continuous value.
           </span>
         }
         buttonText="Kick-Start My DevOps Journey"

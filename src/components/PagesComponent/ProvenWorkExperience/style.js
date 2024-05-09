@@ -4,12 +4,18 @@ import { media } from "../../../theme/media-mixins";
 const ProvenExperienceWrapper = styled.div`
   .section-heading {
     padding: 96px 0 96px;
+    .extension-slider{
+      .heading{
+        text-transform: none;
+      }
+    }
     .heading {
       padding-bottom: 24px;
       text-transform: capitalize;
     }
     .paragraph {
       margin-bottom: 0;
+      font-weight: 400;
     }
 
     ${media.sm`
