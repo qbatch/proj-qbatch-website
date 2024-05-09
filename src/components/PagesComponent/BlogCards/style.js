@@ -150,6 +150,9 @@ const BlogCardsWrapper = styled.div`
       }
     }
   }
+  &.might-wrapper {
+    padding-top: 32px;
+  }
 `;
 
 export default BlogCardsWrapper;

@@ -72,8 +72,8 @@ const StoriesWrapper = styled.div`
           width: 51%;
           position: relative;
           ${media.sm`
-              width: 100%;
-              min-height: 450px;
+            width: 100%;
+            min-height: auto;
           `}
           .content {
             opacity: 1;
@@ -81,6 +81,10 @@ const StoriesWrapper = styled.div`
             margin-bottom: 24px;
             ${media.md`
               padding: 48px 32px 48px 32px;
+            `}
+            ${media.sm`
+              padding: 40px 32px 40px 32px;
+              margin-bottom: 0;
             `}
           }
           &.close-column-inner {

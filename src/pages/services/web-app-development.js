@@ -41,6 +41,10 @@ const webapp = () => {
           className="d-flex align-items-center justify-content-start"
           blogInner={WebappImage}
           mobileViewBanner={WebappImage}
+          customCrumbs={[
+            { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+            { pathname: '/services/web-app-development/', crumbLabel: 'Web App Development' },
+          ]}
         />
         <Achievements innerPage={true} />
         <Slider

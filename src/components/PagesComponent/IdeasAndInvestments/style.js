@@ -40,8 +40,12 @@ const IdeasWrapper = styled.div`
     `}
   }
   &.desired-result {
+    background: url('/inner-banner-bg2.svg');
+    background-size: cover;
     .heading {
-      max-width: 800px;
+      max-width: 850px;
+      margin: 0 auto 72px;
+      text-align: center;
     }
   }
   &.enterprise {
