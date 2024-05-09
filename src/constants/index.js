@@ -3484,8 +3484,8 @@ const servicesItems = [
     to: '/services/devops/',
   },
   {
-    menu: 'Low-code/ No-code Platform Development',
-    to: '',
+    menu: 'Browser Extension Development',
+    to: '/services/browser-extension-development/',
   },
   {
     menu: 'UX/UI Design',
