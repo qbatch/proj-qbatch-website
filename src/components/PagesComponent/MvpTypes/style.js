@@ -10,6 +10,7 @@ ${media.lg`
 .heading{
   margin-bottom: 72px;
   text-align: center;
+  text-transform: none;
   ${media.lg`
     margin-bottom: 56px;
   `}
@@ -28,6 +29,7 @@ ${media.lg`
   .list-heading{
     color: ${({ theme }) => theme.colors.primaryColor};
     font-weight: ${({ theme }) => theme.fontWeight.bold};
+    text-transform: none;
   }
   .list-paragraph{
     margin-bottom: 16px;

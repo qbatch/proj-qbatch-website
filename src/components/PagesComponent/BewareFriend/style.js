@@ -16,7 +16,7 @@ const BewareFriendWrapper = styled.section`
   .heading {
     max-width: 440px;
     margin-bottom: 51px;
-    text-transform: inherit;
+    text-transform: none;
     ${media.md`
       margin-right: 32px;
     `}
@@ -43,7 +43,7 @@ const BewareFriendWrapper = styled.section`
     }
     }
     .title {
-      margin-bottom: 9px;
+      margin: 9px 0 8px;
       letter-spacing: 0;
       ${media.lg`
         line-height: 24px;

@@ -12,6 +12,7 @@ ${media.lg`
   text-align: center;
   max-width: 768px;
   margin: auto;
+  text-transform: none;
 }
 .paragraph{
   padding-bottom: 56px;
@@ -29,8 +30,8 @@ ${media.lg`
   ${media.lg`
     padding: 16px 0;
   `}
-  .inner-header{
-    padding-bottom: 12px;
+  .inner-heading{
+    text-transform: none;
   }
 }
 `

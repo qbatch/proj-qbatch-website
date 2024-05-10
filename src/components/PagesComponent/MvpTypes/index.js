@@ -22,7 +22,7 @@ const MvpTypes = () => {
             </div>
             <div className='type-list'>
               <h4 className='list-heading'>Flintstone MVP or Manual-first MVP</h4>
-              <p className='list-paragraph'>A single web page describing the product or service without really building a tangible product to gauge interest and validate demand through user sign-ups.</p>
+              <p className='list-paragraph'>A fully functional product to the outside world while, in reality, all back-office tasks get manually handled by humans to test the market and understand user choices and pain points.</p>
             </div>
             <div className='type-list'>
               <h4 className='list-heading'>Concierge MVP</h4>
