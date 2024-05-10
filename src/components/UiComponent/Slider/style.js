@@ -272,6 +272,7 @@ const SliderWrapper = styled.div`
       }
     }
   }
+}
 `
 
 export default SliderWrapper;
