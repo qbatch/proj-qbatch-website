@@ -52,6 +52,7 @@ const FooterWrapper = styled.div`
         `}
         ${media.xs`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+          line-height:24px;
         `}
       }
     }

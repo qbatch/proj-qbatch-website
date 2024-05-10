@@ -33,6 +33,9 @@ const BannerWrapper = styled.div`
     ${media.md`
       text-align: center;
     `}
+    ${media.sm`
+      text-align: left;
+    `}
     span {
       display: block;
     }
@@ -49,7 +52,7 @@ const BannerWrapper = styled.div`
   .banner-button {
     ${media.sm`
     display: flex;
-    justify-content: center;
+    justify-content: left;
   `}
 }
 `

@@ -8,7 +8,7 @@ h2{
   text-transform: none;
 }
 ${media.sm`
-    padding: 40px 0;
+    padding: 56px 0;
 `}
   .counter-wrapper{
       padding-bottom: 10px;

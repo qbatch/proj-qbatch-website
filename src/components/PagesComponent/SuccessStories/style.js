@@ -127,6 +127,9 @@ const StoriesWrapper = styled.div`
             letter-spacing: 0.3px;
             font-weight: ${({ theme }) => theme.fontWeight.semiBold};
             color: ${({ theme }) => theme.colors.midGray};
+            ${media.sm`
+                margin-bottom:8px;
+            `}
           }
 
           .paragraph {

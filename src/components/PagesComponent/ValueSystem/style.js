@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 const ValueSystemWrapper = styled.div`
   padding: 96px 0;
   ${media.sm`
-    padding: 40px 0;
+    padding: 56px 0;
   `}
   .heading {
     font-weight: ${({ theme }) => theme.fontWeight.normal};
@@ -31,7 +31,7 @@ const ValueSystemWrapper = styled.div`
   .col-wrapper {
     padding-top: 76px;
     ${media.sm`
-     padding-top: 26px;
+     padding-top: 48px;
     `}
     .value-col {
       padding: 36px 4.2% 20px;

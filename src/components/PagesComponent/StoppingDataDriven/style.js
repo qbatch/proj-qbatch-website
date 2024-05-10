@@ -3,8 +3,20 @@ import { media } from '../../../theme/media-mixins'
 
 const StoppingDataDriven = styled.div`
   padding: 100px 0px;
+  ${media.sm`
+  padding: 56px 0px;
+  `}
   .heading-box {
     margin-bottom: 42px;
+    ${media.sm`
+    margin-bottom: 48px;
+  `}
+  }
+  .button-wrapper{
+    margin: 48px 0px;
+    ${media.sm`
+      margin: 24px 0px 0px;
+      `}
   }
   .images-box {
     .d-flex {
@@ -20,6 +32,9 @@ const StoppingDataDriven = styled.div`
       margin-bottom: 23px;
       text-transform: none;
       letter-spacing: 0.48px;
+      ${media.sm`
+      line-height:24px;
+      `}
     }
   }
   a {
@@ -31,6 +46,9 @@ const StoppingDataDriven = styled.div`
   p{
     letter-spacing:0;
     margin-top:70px;
+    ${media.sm`
+    margin-top:32px;
+    `}
   }
 `
 export default StoppingDataDriven

@@ -5,7 +5,7 @@ import CongratulationsBg from "../../../../static/share-your-requirements.svg";
 const ShareYourRequirementsWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    ${media.xs`
+    ${media.sm`
       padding: 56px 0px;
   `}
   h2 {
@@ -15,6 +15,9 @@ const ShareYourRequirementsWrapper = styled.div`
     margin: auto;
     margin-bottom: 24px;
     text-transform:none;
+    ${media.sm`
+      margin-bottom: 12px;
+    `}
   }
   textarea {
     padding: 12px 0px;

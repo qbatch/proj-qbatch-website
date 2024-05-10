@@ -77,7 +77,7 @@ const Index = () => {
                           {item.image.map((img) => (
                             <Col md={6}>
                               <div className="marketplace-logo">
-                                {img === "" ? "" :
+                                {img === "" ? null :
                                   <img src={img} width='200px' alt="project" />
                                 }
                               </div>

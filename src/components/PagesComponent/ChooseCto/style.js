@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const ChooseCtoWrapper = styled.div`
   padding: 96px 0 94px;
-  ${media.xs`
+  ${media.sm`
      padding: 56px 0px;
   `}
   h3 {
@@ -16,6 +16,9 @@ const ChooseCtoWrapper = styled.div`
     margin-bottom: 16px;
     display: block;
     color:  ${({ theme }) => theme.colors.textMedium};
+    ${media.sm`
+    margin-bottom:12px;
+    `}
   }
   .heading {
     max-width: 550px;

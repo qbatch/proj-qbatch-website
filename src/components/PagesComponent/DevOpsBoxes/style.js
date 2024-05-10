@@ -6,7 +6,7 @@ padding: 96px 0;
 background: url('/devOps-boxes-bg.svg');
 border-bottom: 2px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
-    padding:40px 0;
+    padding:56px 0;
   `}
 & > div{
   max-width: 80%;

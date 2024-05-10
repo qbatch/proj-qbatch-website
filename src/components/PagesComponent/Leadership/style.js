@@ -5,7 +5,7 @@ const LeadershipWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
-  padding: 40px 0;
+  padding: 56px 0;
 `}
 .content-wrapper{
   .heading{
@@ -17,6 +17,7 @@ ${media.sm`
     text-transform:uppercase;
     ${media.sm`
      padding-bottom: 12px;
+     line-height:48px;
     `}
   }
   .paragraph{

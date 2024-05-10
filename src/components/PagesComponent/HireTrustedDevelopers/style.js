@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const HireTrustedDevelopersWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    ${media.xs`
+    ${media.sm`
   padding: 56px 0px;
   `}
   h2 {
@@ -22,7 +22,7 @@ const HireTrustedDevelopersWrapper = styled.div`
     }
     text-transform:none;
     font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
-    ${media.xs`
+    ${media.sm`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
     line-height:32px;
     `}
@@ -46,12 +46,12 @@ const HireTrustedDevelopersWrapper = styled.div`
       border-radius: 24px 24px 0px 24px;
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
       background-color: ${({ theme }) => theme.colors.whiteColor};
-      padding: 48px;
+      padding: 40px;
       ${media.md`
     padding: 24px;
     
     `}
-      ${media.xs`
+      ${media.sm`
     margin-top: 48px;
     `}
     h3 {
@@ -133,14 +133,14 @@ const HireTrustedDevelopersWrapper = styled.div`
       grid-template-columns: repeat(auto-fill, 164px);
       grid-gap:16px;
       ${media.lg`
-  display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr;
-  `}
+      display: grid !important;
+      grid-template-columns: 1fr 1fr 1fr;
+      `}
       ${media.md`
-  display: grid !important;
-  grid-template-columns: 1fr 1fr;
-  `} 
-  ul {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      `} 
+      ul {
         padding-top: 40px;
         display: flex;
         flex-direction: column;

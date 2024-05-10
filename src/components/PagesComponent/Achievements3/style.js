@@ -43,7 +43,7 @@ const AchievementsWrapper = styled.div`
       h2 {
         margin-bottom: 96px;
         ${media.sm`
-          margin-bottom: 40px;
+          margin-bottom: 48px;
         `}
       }
     }

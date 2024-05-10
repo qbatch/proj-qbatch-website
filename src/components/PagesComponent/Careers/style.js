@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins"
 const CareerWrapper = styled.div`
  padding: 96px 0;
  ${media.sm`
-  padding: 40px 0;
+  padding: 56px 0;
  `}
   .heading{
     span {
@@ -23,6 +23,8 @@ const CareerWrapper = styled.div`
     margin-bottom: 4px;
     ${media.sm`
       padding-top:16px;
+      padding-bottom:48px;
+      margin-bottom:0px;
       `}
   }
   .cards-wrapper{

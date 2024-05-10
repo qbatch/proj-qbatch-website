@@ -7,7 +7,7 @@ const CrewWrapper = styled.div`
   padding: 120px 0;
   text-align: center;
   ${media.sm`
-    padding: 60px 0;
+    padding: 56px 0;
   `}
   .crew-heading {
     display: flex;

@@ -3,6 +3,9 @@ import { media } from '../../../theme/media-mixins'
 
 const AssistantWrapper = styled.div`
   padding: 98px 0px;
+  ${media.sm`
+  padding: 56px 0px;
+  `}
   .images-box {
     padding: 0 70px;
     ${media.sm`
@@ -24,6 +27,9 @@ const AssistantWrapper = styled.div`
       gap: 8px;
       flex-wrap: wrap;
       margin-bottom: 24px;
+      ${media.sm`
+      margin-bottom: 12px;
+      `}
       span {
         border: 1px solid ${({ theme }) => theme.colors.dividerColor};
         color: ${({ theme }) => theme.colors.bodyLight};
@@ -35,6 +41,9 @@ const AssistantWrapper = styled.div`
     .paragraph {
       color: ${({ theme }) => theme.colors.textMedium};
       line-height: 32px;
+      ${media.sm`
+     line-height:24px;
+      `}
     }
     p {
       font-size: 16px;
@@ -44,6 +53,9 @@ const AssistantWrapper = styled.div`
     }
     .scraper-box {
       padding: 72px 0px;
+      ${media.sm`
+      padding: 48px 0px;
+      `}
       .caption {
         color: ${({ theme }) => theme.colors.textMedium};
       }

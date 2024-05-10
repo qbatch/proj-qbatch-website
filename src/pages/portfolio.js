@@ -26,10 +26,7 @@ const Portfolio = () => {
         className="container-wrapper"
         mobileViewBanner={EcommerceBanner}
         blogInner={EcommerceBanner}
-        wrapperClass="cto-banner"
-        customCrumbs={[
-          { pathname: '/portfolio/', crumbLabel: 'Portfolio', crumbSeparator: '>' },
-        ]}
+        wrapperClass="cto-banner portfolio-banner"
       />
       <SuccessStories />
       <Divider margin="0px" />

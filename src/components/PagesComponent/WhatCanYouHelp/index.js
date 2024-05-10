@@ -24,7 +24,7 @@ const Index = () => {
   return (
     <HelpWrapper>
       <Container>
-        <h2 className="text-h2 color-primary">What Can You  Help Me With?</h2>
+        <h2 className="text-h2 color-primary">What Can You Help Me With?</h2>
         <Row className="add-top-space">
           {helpingCard.map((card, index) => {
             const { title, img,caption } = card

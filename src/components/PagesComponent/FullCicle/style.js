@@ -8,15 +8,23 @@ const FullCycleWrapper = styled.div`
     max-width: 811px;
     padding-bottom: 17px;
     line-height: 52px;
+    ${media.sm`
+    padding-bottom: 4px;
+    line-height:32px;
+  `}
   }
   .paragraph {
     max-width: 751px;
     margin-bottom: 64px;
     line-height: 32px;
     letter-spacing: 0;
+    ${media.sm`
+      margin-bottom: 48px;
+      line-height:24px;
+  `}
   }
   ${media.sm`
-    padding: 60px 0;
+    padding: 56px 0;
   `}
   .hover-box {
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
@@ -24,6 +32,7 @@ const FullCycleWrapper = styled.div`
     padding: 32px 32px 3px 32px;
     ${media.sm`
       padding: 30px 0 10px;
+      line-height:24px;
     `}
 
     cursor: pointer;

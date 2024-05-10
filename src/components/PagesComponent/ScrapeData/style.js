@@ -2,22 +2,25 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const ScrapeData = styled.div`
-  padding: 50px 80px;
-  @media (max-width: 1200px) {
-    padding: 50px 0px;
-  }
+  padding: 96px 80px;
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   ${media.sm`
+  padding: 56px 0px;
    .arrow-img{
     display: none;
    }
   `}
   .data-process-section {
     margin-bottom: 122px;
-
+    ${media.sm`
+    margin-bottom: 48px;
+    `}
     .heading-box {
       text-align: center;
       margin-bottom: 71px;
+      ${media.sm`
+        margin-bottom: 48px;
+        `}
       h2 {
         color: ${({ theme }) => theme.colors.whiteColor};
       }
@@ -67,6 +70,9 @@ const ScrapeData = styled.div`
       @media (max-width: 1550px) {
         gap: 14px;
       }
+      ${media.sm`
+      margin: 16px 0 0px;
+        `}
     }
     .techies-box {
       display: flex;

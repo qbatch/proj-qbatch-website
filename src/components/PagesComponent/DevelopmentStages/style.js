@@ -18,6 +18,9 @@ const StagesWrapper = styled.div`
   }
   &.stage-slider-main2 {
     padding: 120px 0 62px;
+    ${media.sm`
+    padding: 56px 0px;
+    `}
     .stages-header {
       margin-bottom: 54px;
     }
@@ -200,6 +203,9 @@ const StagesWrapper = styled.div`
        display: flex;
        justify-content: center;
       `}
+      ${media.sm`
+    padding-bottom: 24px;
+    `}
     }
     .fixed-slider-pagination {
       padding-left: 182px;

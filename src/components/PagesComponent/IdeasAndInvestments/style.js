@@ -5,14 +5,12 @@ const IdeasWrapper = styled.div`
   background: url('/inner-banner-bg.svg');
   background-size: cover;
   padding: 120px 203px;
+  background-position: right;
   ${media.md`
     padding: 96px 120px 120px;
   `}
   ${media.sm`
-    padding: 96px 40px;
-  `}
-  ${media.xs`
-    padding: 96px 20px;
+    padding: 56px 24px;
   `}
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};
@@ -37,7 +35,10 @@ const IdeasWrapper = styled.div`
     }
     ${media.sm`
       margin-bottom: 32px;
-    `}
+      `}
+      ${media.sm`
+      margin-bottom: 0px;
+  `}
   }
   &.desired-result {
     background: url('/inner-banner-bg2.svg');

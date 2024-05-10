@@ -4,8 +4,20 @@ import { media } from '../../../theme/media-mixins'
 const AssistantWrapper = styled.div`
   padding: 95px 0px;
   padding-bottom: 16px;
+  ${media.sm`
+  padding: 56px 0px;
+  `}
   .heading-box {
     margin-bottom: 71px;
+    ${media.sm`
+    margin-bottom: 40px;
+  `}
+  }
+  .button-wrapper{
+    margin:48px 0px;
+    ${media.sm`
+    margin:0px;
+    `}
   }
   .images-box {
     .assistent-box {
@@ -35,9 +47,6 @@ const AssistantWrapper = styled.div`
     }
     p {
       font-size: 16px;
-      ${media.md`
-            font-size: 12px;
-      `}
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;

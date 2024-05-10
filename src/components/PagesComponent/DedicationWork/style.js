@@ -10,7 +10,7 @@ const AchievementsWrapper = styled.div`
     text-align: center;
     position: relative;
     ${media.sm`
-      padding: 60px 0 0;
+      padding: 56px 0 0;
     `}
     .achievements-inner-wrapper {
       position: relative;
@@ -31,12 +31,15 @@ const AchievementsWrapper = styled.div`
     }
     .heading {
       margin-bottom: 94px;
+      ${media.sm`
+      margin-bottom:48px;
+      `}
     }
 
     .achievements-col {
       position: relative;
       ${media.sm`
-        margin-bottom: 40px;
+        margin-bottom: 56px;
       `}
       &::after {
         position: absolute;

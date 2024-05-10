@@ -64,7 +64,7 @@ position: relative;
       background-position: -33px bottom;
     `}
     ${media.sm`
-      padding: 40px 0;
+      padding: 56px 0;
       background-size: 100%;
       background-repeat: no-repeat;
     `}
@@ -92,6 +92,7 @@ position: relative;
         font-size:24px;
         line-height:32px;
         text-align:center;
+        margin-bottom:48px;
       `}
     }
   }

@@ -12,6 +12,9 @@ const ProvenExperienceWrapper = styled.div`
     .heading {
       padding-bottom: 24px;
       text-transform: capitalize;
+      ${media.sm`
+      padding-bottom: 12px;
+      `}
     }
     .paragraph {
       margin-bottom: 0;
@@ -19,10 +22,7 @@ const ProvenExperienceWrapper = styled.div`
     }
 
     ${media.sm`
-      padding: 60px 0;
-    `}
-    ${media.xs`
-      padding: 40px 0 20px;
+      padding: 56px 0  24px;
     `}
   }
   .carousel-padding {
@@ -59,10 +59,7 @@ const ProvenExperienceWrapper = styled.div`
       padding: 0 0 96px 60px;
     `}
       ${media.sm`
-      padding: 0 0 40px 40px;
-    `}
-     ${media.xs`
-      padding: 0 0 40px 20px;
+      padding: 0 40px 56px ;
     `}
   }
   .section-slider {

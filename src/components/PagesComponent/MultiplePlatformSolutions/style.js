@@ -5,7 +5,7 @@ const MultiPlatformWrapper = styled.div`
   padding: 120px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 60px 0;
+    padding: 56px 0;
   `}
   .platform-heading {
     h2 {
@@ -17,7 +17,8 @@ const MultiPlatformWrapper = styled.div`
         max-width: 100%;
       `}
       ${media.sm`
-        line-height: 38px;
+        line-height: 32px;
+        margin-bottom:12px;
       `}
     }
     h3 {
@@ -32,6 +33,10 @@ const MultiPlatformWrapper = styled.div`
         max-width: 100%;
         margin-bottom: 72px;
       `};
+      ${media.sm`
+        margin-bottom: 48px;
+        line-height:24px;
+  `}
     }
   }
   .platform-list {
@@ -44,12 +49,19 @@ const MultiPlatformWrapper = styled.div`
       line-height: 48px;
       margin-bottom: 16px;
       letter-spacing: 0;
+      ${media.sm`
+      margin-bottom: 8px;
+      line-height: 24px;
+    `}
     }
     p {
       line-height: 32px;
       max-width: 690px;
       margin-bottom: 32px;
       letter-spacing: 0;
+      ${media.sm`
+        line-height:24px;
+        `}  
     }
   }
 `

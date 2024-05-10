@@ -18,10 +18,7 @@ const MarketplaceSellersWrapper = styled.div`
     padding: 96px 120px;
   `}
   ${media.sm`
-    padding: 96px 40px;
-  `}
-  ${media.xs`
-    padding: 96px 20px;
+    padding: 56px 24px;
   `}
 
   .heading {

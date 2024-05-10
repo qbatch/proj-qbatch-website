@@ -5,7 +5,7 @@ const ManagementWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   padding: 122px 0;
   ${media.sm`
-    padding: 60px 0;
+    padding: 56px 0;
   `}
   .text-h2 {
     color: ${({ theme }) => theme.colors.whiteColor};
@@ -16,6 +16,10 @@ const ManagementWrapper = styled.div`
     ${media.sm`
      margin: 0 auto 40px;
     line-height: 42px;
+  `}
+  ${media.sm`
+  line-height: 32px;
+  margin-bottom:48px;
   `}
   }
   .hover-box {
@@ -41,6 +45,7 @@ const ManagementWrapper = styled.div`
       line-height: 32px;
       ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        line-height:24px;
       `}
     }
     &:hover {

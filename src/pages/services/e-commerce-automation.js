@@ -48,6 +48,7 @@ const Ecommerce = () => {
         paragraph="To help you stand your ground in the ever-growing e-commerce district!"
         data={ecomSliderItems}
         align="center"
+        className="five-step-slider"
       />
       <BusinessMangement />
       <TrippleYourRevenue />
@@ -63,6 +64,7 @@ const Ecommerce = () => {
         paragraph="This is your hint to bury your conventional e-commerce ways and"
         data={automationData}
         align="center"
+        className="automation-section"
       />
       <IdeasAndInvestments heading="100+ businesses trusted us with their ideas and investments," span="will you?" />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />

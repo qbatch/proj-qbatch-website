@@ -43,7 +43,6 @@ const Enterprise = () => {
           prise? Get ready to build a market-ready solution inspired by the latest technology and insight with team Qbatch."
           buttonText="Explore Services"
           imgSrc={BannerImage}
-          mobileViewBanner={BannerImage}
           col1lg={12}
           className="d-flex align-items-center"
           wrapperClass="enterprise-banner"
@@ -67,6 +66,7 @@ const Enterprise = () => {
           heading="Custom Enterprise Software Development Services"
           paragraph="Don’t hamper your growth by second-guessing your choices and hire Qbatch as your partner enterprise app development company to help your enterprise-level projects with the following services:"
           data={customEnterpriseData}
+          className="custom-interprise-services"
         />
         <DesiredResult
           heading="Kickoff Enterprise Transformation toward a scalable and human-driven future."
@@ -98,6 +98,7 @@ const Enterprise = () => {
           paragraph="Our Mobile App Development Process Enroute Successs"
           data={lostToLaunchedItems}
           align="center"
+          className="lost-to-launched"
         />
         <LanguagesAndFrameworks />
         <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />

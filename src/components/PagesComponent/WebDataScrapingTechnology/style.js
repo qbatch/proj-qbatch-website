@@ -4,12 +4,15 @@ import { media } from '../../../theme/media-mixins'
 const AssistantWrapper = styled.div`
   padding: 99px 60px;
   ${media.sm`
-             padding: 99px 0px;
+    padding: 56px 0px;
       `}
   .heading-box {
     margin-bottom: 76px;
+    ${media.sm`
+      margin-bottom: 48px;
+      `}
     h2 {
-      margin-bottom: 28px;
+      margin-bottom: 12px;
     }
   }
   .images-box {
