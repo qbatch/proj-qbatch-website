@@ -51,13 +51,13 @@ const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
                 <div className='img-wrapper'>
                   <img src='/2.svg' />
                 </div>
-                <p className='inner-paragraph'>We work on your must-have MVP features prioritizing quality, speed, and budget.</p>
+                <p className='inner-paragraph'>Our 8+ years of experience helps us decide what to build first and what to build later.</p>
               </div>
               <div className='list-item'>
                 <div className='img-wrapper'>
                   <img src='/3.svg' />
                 </div>
-                <p className='inner-paragraph'>We work on your must-have MVP features prioritizing quality, speed, and budget.</p>
+                <p className='inner-paragraph'>We don’t take your trust for granted. We stay longer to help you succeed today and forever.</p>
               </div>
             </div>
           </Col>
