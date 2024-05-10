@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const DeveOpsServiceWrapper = styled.div `
 padding: 96px 0;
  ${media.sm`
-    padding:40px 0;
+    padding:56px 0;
   `}
 .section-main{
   max-width: 690px;
@@ -16,11 +16,14 @@ padding: 96px 0;
 .section-main-subtitle{
   font-weight: ${({ theme }) => theme.fontWeight.normal};
   font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-  margin: 24px 0;
+  margin: 0 0 16px;
 }
 .section-main-paragraph{
   color: ${({ theme }) => theme.colors.textMedium};
   font-size: ${({ theme }) => theme.fonts.baseFontSize};
+  ${media.sm`
+    margin-bottom:48px
+  `}
 }
 .row{
   --bs-gutter-y: 1.5rem;

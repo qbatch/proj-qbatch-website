@@ -5,11 +5,14 @@ const DevOpsToolsWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
-    padding:40px 0;
+    padding:56px 0;
   `}
 .heading{
   text-align: center;
   margin-bottom: 72px;
+  ${media.sm`
+    margin-bottom: 48px;
+  `}
 }
 .dev-ops-tools{
   display: flex;

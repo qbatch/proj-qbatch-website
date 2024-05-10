@@ -35,7 +35,7 @@ const Index = () => {
           <p className="text-center">
             Could you relate or do we need to put more effort? In either case, we’d love to help!
           </p>
-          <div className="d-flex justify-content-center my-5">
+          <div className="d-flex justify-content-center button-wrapper">
             <Button text="Get Free Consultation" onClick={()=>navigate('/contact')} />
           </div>
         </Container>

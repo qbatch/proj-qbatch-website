@@ -5,7 +5,7 @@ const PeopleFirstWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   padding: 120px 0 112px;
   ${media.sm`
-    padding: 40px 0;
+    padding: 56px 0;
 `}
   .section-btn {
     display: none;
@@ -20,6 +20,9 @@ const PeopleFirstWrapper = styled.div`
       max-width: 811px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       font-weight: ${({ theme }) => theme.fontWeight.light};
+      ${media.sm`
+      line-height: 32px;
+    `}
     }
   }
   .row > .achievements-col:nth-last-child(-n + 4) {
@@ -35,6 +38,7 @@ const PeopleFirstWrapper = styled.div`
     line-height: 52px;
     ${media.sm`
       line-height: 32px;
+      margin-bottom:12px;
     `}
   }
   .paragraph {
@@ -76,10 +80,16 @@ const PeopleFirstWrapper = styled.div`
      }
      &:nth-child(5){
       border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor};
+      ${media.sm`
+      border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor} !important;
+      `}
      }
      &:nth-child(6){
       border-right: 0;
       border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor};
+      ${media.sm`
+      border-bottom:  1px solid ${({ theme }) => theme.colors.dividerColor} !important;
+      `}
     }
     `}
     ${media.sm`

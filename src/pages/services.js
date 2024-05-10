@@ -58,6 +58,7 @@ const DevOps = () => {
         headingMaxWidth={'800px'}
         paragraphMaxWidth={'770px'}
         imgSrc='/services-banner-img.svg'
+        mobileViewBanner='/services-banner-img.svg'
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
         ]}
@@ -94,7 +95,7 @@ const DevOps = () => {
         height="192"
         data={lostToLaunchedItems}
         align="center"
-        className="competency-slider"
+        className="lost-to-launched"
       />
       <ProvenWorkExperience heading="Products that Empowered Millions" exploreBtn={true}/>
       <InnerBanner

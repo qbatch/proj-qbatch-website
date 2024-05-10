@@ -13,7 +13,20 @@ const CtoBannerWrapper = styled.div`
   ${media.lg`
      min-height:calc(100vh - 700px);
   `}
+  ${media.sm`
+  padding: 56px 0 !important;
+  height:auto;
+  min-height:auto;
+  `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  &.portfolio-banner{
+    .banner-main{
+      .text-h1{
+        margin-right:0;
+        margin-left:0;
+      }
+    }
+  }
   &.extension-dev-banner{
     h2{
       text-transform: none;
@@ -32,7 +45,7 @@ const CtoBannerWrapper = styled.div`
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
     }
-    ${media.xs`
+    ${media.sm`
       display: none;
   `}
   }
@@ -40,14 +53,16 @@ const CtoBannerWrapper = styled.div`
     position:relative;
     z-index:1;
     .banner-sub-heading {
-      font-size: 20px;
+      font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
       font-weight: 700;
       padding-bottom: 12px;
+      margin-bottom:0px;
       color: ${({ theme }) => theme.colors.dividerColor};
       letter-spacing: 0;
       text-transform:none;
       ${media.lg`
         font-size: 16px;
+        line-height:24px;
       `}
     }
     .text-h1 {
@@ -113,10 +128,6 @@ const CtoBannerWrapper = styled.div`
        &.change-background-size{
       background-size:50%;
     }
-    ${media.xs`
-    height:auto;
-    padding: 42px 24px 377px !important;
-    `}
     .container-wrapper {
     align-items: center;
     display: flex;
@@ -129,25 +140,12 @@ const CtoBannerWrapper = styled.div`
       }
     }
 }
-    .mobile-view-banner {
-      display:none;
-    }
   ${media.md`
     background-image: none;
     position: relative;
     justify-content:center;
     display: flex;
     z-index: 2;
-    .mobile-view-banner {
-    max-width: 400px;
-    height: auto;
-    position: absolute;
-    right: 8px;
-    z-index: -1;
-    bottom: 0;
-    object-fit: cover;
-    display: block;
-}
 `}
     .banner-img {
       margin-top: -48px;
@@ -214,22 +212,6 @@ const CtoBannerWrapper = styled.div`
       object-fit: contain;
       object-position: bottom;
     }
-    .mobile-view-banner {
-      display:none;
-    }
-    ${media.md`
-    .mobile-view-banner {
-    max-width: 400px;
-    height: auto;
-    position: absolute;
-    right: 8px;
-    z-index: 0;
-    bottom: 0;
-    object-fit: cover;
-    display: block;
-}
-    
-    `}
     h1 {
       max-width: 756px;
     }
@@ -261,41 +243,17 @@ const CtoBannerWrapper = styled.div`
       object-fit: contain;
       object-position: bottom;
     }
-    .mobile-view-banner {
-      display:none;
-    }
-    ${media.md`
-    .mobile-view-banner {
-      max-width: 400px;
-      height: auto;
-      position: absolute;
-      right: 8px;
-      z-index: 0;
-      bottom: 0;
-      object-fit: cover;
-      display: block;
-    }
-    `}
     h1 {
       max-width: 904px;
     }
   }
   &.web-data-scraping {
     padding: 212px 0 189px;
-    .mobile-view-banner {
-      display:none;
-    }
+    ${media.sm`
+    padding: 56px 0;
+    `}
     ${media.md`
     background-image: none;
-    .mobile-view-banner {
-      height: auto;
-      position: absolute;
-      right: 8px;
-      z-index: 0;
-      bottom: 0;
-      object-fit: cover;
-      display: block;
-    }
     `}
     .banner-img {
       position: absolute;
@@ -310,33 +268,23 @@ const CtoBannerWrapper = styled.div`
       max-width: 904px;
     }
   }
+  img.mobile-view-banner {
+    display: none;
+    ${media.sm`
+    display: block;
+    `}
+}
   ${media.md`
     &.enterprise-banner,&.mobile-app-banner,&.product-design-banner,&.cto-banner{
       padding: 100px 0;
     }
   `}
     &.hire-developer-banner {
-      background-size:cover;
-      background-position:center;
-      ${media.xs`
-      padding:42px 24px 337px;
+      ${media.sm`
       min-height:auto;
       height: auto;
+      background-image:none ;
       `}
-      &:before {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background:  ${({ theme }) => theme.colors.secondaryColor};
-      top: 0;
-      left: 0;
-      content: "";
-      opacity: 0.7;
-      display:none;
-      ${media.sm`
-      display: block;
-      `}
-    }
   }
 `
 

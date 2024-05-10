@@ -4,14 +4,14 @@ import { media } from "../../../theme/media-mixins";
 const StartProjectWrapper = styled.div`
   padding: 96px 0;
   ${media.sm`
-      padding: 60px 0;
-    `}
-    ${media.xs`
-      padding: 40px 0;
+      padding: 56px 0;
     `}
   h2 {
     margin-bottom: 24px;
     text-transform: inherit;
+    ${media.sm`
+      margin-bottom: 12px;
+    `}
   }
   .subtitle {
     letter-spacing: 0.19px;
@@ -60,6 +60,11 @@ const StartProjectWrapper = styled.div`
     ${media.xs`
       padding-bottom: 40px;
     `}
+    h3{
+      ${media.sm`
+      margin-bottom:12px;
+      `}
+    }
     .testimonial-heading {
       margin-bottom: 29px;
     }

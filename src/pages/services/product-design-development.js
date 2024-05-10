@@ -65,7 +65,7 @@ const ProductDesign = () => {
         heading="So, how can we help?"
         listData={productDesignData}
         desc1="Qbatch being a trusted product development services company doesn’t make false promises but believes in a value system: "
-        className="helpSection"
+        className="helpSection so-how-can-help-mb"
       />
       <Slider
         heading="Explore Our Full-Cycle Product Development Services"
@@ -73,6 +73,7 @@ const ProductDesign = () => {
         data={productDevlopmentServices}
         width="350px"
         align="center"
+        className="lost-to-launched"
       />
       <DesiredResult
         heading="Simply describe your idea and we will take care of the rest from team management and development to the successful product launch."

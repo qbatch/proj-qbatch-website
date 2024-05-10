@@ -5,7 +5,7 @@ const LanguagesWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   padding: 96px 0;
   ${media.sm`
-    padding: 40px 0;
+    padding: 56px 0;
     text-align: center;
   `}
   .desktop-data {
@@ -22,6 +22,9 @@ const LanguagesWrapper = styled.div`
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 30px;
       letter-spacing: 0;
+      ${media.xs`
+      margin-bottom: 48px;
+  `}
     }
     p {
       font-size: ${({ theme }) => theme.fonts.baseFontSize};

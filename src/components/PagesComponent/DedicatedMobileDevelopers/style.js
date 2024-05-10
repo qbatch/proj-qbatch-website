@@ -7,7 +7,7 @@ const DedicatedMobileWrapper = styled.div`
   padding: 120px 0;
   text-align: center;
   ${media.sm`
-    padding: 60px 0;
+    padding: 56px 0;
   `}
   .dedicated-heading {
     h2 {
@@ -41,7 +41,7 @@ const DedicatedMobileWrapper = styled.div`
     font-weight: 300;
     margin: 0 35px;
     ${media.md`
-        margin: 0 16px 22px;
+        margin: 0 16px;
   `}
 
     &::after {
@@ -73,6 +73,10 @@ const DedicatedMobileWrapper = styled.div`
         max-width: 760px;
         margin: 0 auto;
         margin-bottom: 72px;
+        ${media.sm`
+        margin-bottom: 0px;
+        line-height:32px;
+        `}
       }
     }
   }

@@ -30,7 +30,7 @@ const CollpaseWrapper = styled.div`
       line-height: 32px;
       margin-bottom: 8px;
       text-transform:none;
-      ${media.xs`
+      ${media.sm`
         font-size: ${(props, theme) => (props.faqSection ? "16px" : "")};
         line-height:24px;
       `}

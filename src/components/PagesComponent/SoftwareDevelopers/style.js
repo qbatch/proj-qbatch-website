@@ -3,13 +3,16 @@ import { media } from "../../../theme/media-mixins";
 
 const SoftwareDevelopersWrapper = styled.div`
   padding: 96px 0px;
-  ${media.xs`
+  ${media.sm`
     padding: 56px 0px;
   `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 16px;
     text-align: center;
+    ${media.sm`
+    margin-bottom: 12px;
+    `}
   }
   p {
     margin: 0;

@@ -3,10 +3,19 @@ import { media } from '../../../theme/media-mixins'
 
 const AssistantWrapper = styled.div`
   padding: 95px 0px;
+  ${media.sm`
+  padding:56px 0px;
+  `}
   .heading-box {
     margin-bottom: 71px;
+    ${media.sm`
+    margin-bottom: 48px;
+  `}
     h2{
       margin-bottom:24px;
+      ${media.sm`
+        margin-bottom: 8px;
+      `}
     }
     p {
       font-size: 16px;

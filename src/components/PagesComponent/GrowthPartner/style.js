@@ -5,7 +5,7 @@ const GrowthPartnerWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   padding: 96px 0;
   ${media.sm`
-      padding: 40px 0;
+      padding: 56px 0;
     `}
   .growth-wrapper {
     .underline-heading {
@@ -19,6 +19,9 @@ const GrowthPartnerWrapper = styled.div`
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
       font-weight:700;
+      ${media.sm`
+      margin-bottom: 12px;
+      `}
       span {
         font-weight:500;
         display: block;
@@ -35,7 +38,7 @@ const GrowthPartnerWrapper = styled.div`
       max-width: 600px;
       letter-spacing: 0.2px;
       &:last-child {
-        padding-top: 16px;
+        margin-bottom:48px;
       }
       ${media.md`
       max-width: 100%;

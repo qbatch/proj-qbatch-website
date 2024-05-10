@@ -8,9 +8,12 @@ const CollaborationWrapper = styled.div`
     margin-bottom: 24px;
     max-width: 670px;
     margin: 0 auto 24px;
+    ${media.sm`
+    margin: 0 auto 12px;
+  `}
   }
   ${media.sm`
-      padding:40px 0;
+    padding:56px 0;
   `}
   .collaboration-inn {
     max-width: 930px;
@@ -19,8 +22,7 @@ const CollaborationWrapper = styled.div`
       margin-bottom: 72px;
       text-align:center;
       ${media.sm`
-      text-align:left;
-      margin-bottom:32px;
+      margin-bottom:48px;
       `}
       h1 {
         margin-bottom: 24px;
@@ -89,6 +91,7 @@ const CollaborationWrapper = styled.div`
           ${media.sm`
           line-height:28px;
           margin-bottom:8px;
+          display:block;
         `}
         ${media.xs`
           font-size:18px;
@@ -98,6 +101,9 @@ const CollaborationWrapper = styled.div`
         p {
           max-width: 585px;
           margin-bottom: 0;
+          ${media.sm`
+          line-height:24px;
+        `}
         }
         .badges-gap {
           gap: 7px;

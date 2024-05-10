@@ -10,10 +10,7 @@ const QuotationSection = styled.div`
     padding: 96px 120px 120px;
   `}
   ${media.sm`
-    padding: 96px 40px;
-  `}
-  ${media.xs`
-    padding: 96px 20px;
+    padding: 56px 24px;
   `}
 
   .heading {
@@ -25,6 +22,9 @@ const QuotationSection = styled.div`
     ${media.sm`
       margin-bottom: 16px;
     `}
+    ${media.sm`
+    line-height: 32px;
+  `}
   }
   .paragraph {
     font-size: 24px;
@@ -48,6 +48,12 @@ const QuotationSection = styled.div`
     ${media.lg`
         justify-content:flex-end;
         margin-left:0px;
+  `}
+  ${media.sm`
+  justify-content:center;
+  img{
+    width:32px;
+  }
   `}
   }
 `

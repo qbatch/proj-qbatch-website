@@ -23,7 +23,7 @@ const AchievementsWrapper = styled.div`
     text-align: center;
     position: relative;
     ${media.sm`
-      padding: 60px 0 0;
+      padding: 56px 0;
     `}
     .achievements-inner-wrapper {
       position: relative;
@@ -31,7 +31,7 @@ const AchievementsWrapper = styled.div`
       h2 {
         margin-bottom: 96px;
         ${media.sm`
-          margin-bottom: 40px;
+          margin-bottom: 48px;
         `}
       }
     }
@@ -71,6 +71,9 @@ const AchievementsWrapper = styled.div`
       }
       .description{
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm}; 
+        ${media.xs`
+        line-height:24px;
+        `}
       }
       .heading {
         font-size: ${({ theme }) => theme.fonts.baseFontNumber};

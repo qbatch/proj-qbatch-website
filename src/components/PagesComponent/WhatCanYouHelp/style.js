@@ -5,10 +5,13 @@ const HelpWrapper = styled.div`
   padding: 122px 0 98px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 60px 0;
+    padding: 56px 0;
   `}
   .add-top-space {
     margin-top: 74px;
+    ${media.sm `
+    margin-top:40px;
+    `}
   }
   h2 {
     ${media.sm`
@@ -37,7 +40,8 @@ const Card = styled.div`
       min-height: 64px;
       ${media.sm`
         min-height: auto;
-        line-height: 28px;
+        line-height: 24px;
+        margin-bottom:8px;
       `}
     }
     p {

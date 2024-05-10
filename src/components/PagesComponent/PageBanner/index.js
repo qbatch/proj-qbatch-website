@@ -45,7 +45,6 @@ const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
             </Col>
           )}
         </Row>
-        <img className="mobile-view-banner" src={mobileViewBanner} />
       </Container>
     </CtoBannerWrapper>
   )

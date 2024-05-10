@@ -298,7 +298,7 @@ const ContentWrapper = styled.div`
   `}
   ${media.sm`
     .side-scroll{
-      margin: 80px 3rem 52px;
+      margin: 56px 48px;
       position: relative;
     }
     .content-section{

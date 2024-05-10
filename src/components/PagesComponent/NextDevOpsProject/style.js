@@ -5,12 +5,12 @@ const NextDevOpsProjectWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
-    padding:40px 0;
+    padding:56px 0;
   `}
 .heading{
   margin-bottom: 96px;
   ${media.sm`
-     margin-bottom:40px;
+     margin-bottom:48px;
   `}
 }
 .boxes{
@@ -30,7 +30,7 @@ ${media.sm`
     gap: 24px;
     margin-bottom: 72px;
     ${media.sm`
-   margin-bottom: 12px;
+   margin-bottom: 0px;
   `}
     img{
       height: 114px;

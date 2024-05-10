@@ -10,7 +10,7 @@ const InnerBannerWrapper = styled.div`
     padding: 96px 120px 120px;
   `}
   ${media.sm`
-    padding: 40px 40px;
+    padding:56px 24px;
   `}
   &.mvp-wrapper{
     .heading{

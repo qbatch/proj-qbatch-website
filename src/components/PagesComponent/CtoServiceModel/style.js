@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const CtoServiceWrapper = styled.div`
  padding: 96px 0;
- ${media.xs`
+ ${media.sm`
      padding: 56px 0px;
   `}
  h2{
@@ -16,7 +16,7 @@ const CtoServiceWrapper = styled.div`
       margin-right: 0;
       font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
     `}
-    ${media.xs`
+    ${media.sm`
       margin-bottom: 48px;
     `}
  }
@@ -61,8 +61,10 @@ const CtoServiceWrapper = styled.div`
       line-height: 40px;
       letter-spacing: 0.7px;
       padding-bottom: 8px;
-      padding-bottom: 8px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg}; 
+      ${media.sm`
+      padding-bottom: 0px;
+      `}
     }
     p{
       font-weight: 400;

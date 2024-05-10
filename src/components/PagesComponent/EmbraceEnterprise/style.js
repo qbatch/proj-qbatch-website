@@ -11,6 +11,9 @@ ${media.sm`
   color:  ${({ theme }) => theme.colors.primaryColor};
   max-width: 570px;
   margin-bottom: 24px;
+  ${media.sm`
+  margin-bottom: 48px;
+  `}
 }
 .content-wrapper{
   max-width: 570px;
@@ -19,11 +22,17 @@ ${media.sm`
   font-weight: ${({ theme }) => theme.fontWeight.normal};
   margin-bottom: 16px;
   text-transform:initial;
+  ${media.sm`
+  line-height:24px;
+  `}
 }
 .paragraph{
   font-size: ${({ theme }) => theme.fonts.baseFontSize};
   line-height: 24px;
   margin-bottom: 72px;
+  ${media.sm`
+  margin-bottom: 16px;
+  `}
 }
 `
 

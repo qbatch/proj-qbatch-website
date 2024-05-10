@@ -3,6 +3,9 @@ import { media } from '../../../theme/media-mixins'
 
 const AssistantWrapper = styled.div`
   padding: 95px 0px;
+  ${media.sm`
+  padding: 56px 0px;
+  `}
   .heading-box {
     margin-bottom: 71px;
   }
@@ -41,6 +44,11 @@ const AssistantWrapper = styled.div`
             font-size: 14px;
       `}
     }
+  }
+  .col-md-7{
+    ${media.sm`
+    padding-top:48px;
+    `}
   }
 `
 export default AssistantWrapper

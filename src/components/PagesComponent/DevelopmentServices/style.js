@@ -3,12 +3,15 @@ import { media } from "../../../theme/media-mixins";
 
 const DevelopmentServicesWrapper = styled.div `
 padding: 96px 0;
-${media.sm`
-  padding: 40px 0;
-`}
+  ${media.sm`
+    padding: 56px 0px;
+  `}
 .section-main-heading{
   max-width: 340px;
   font-weight: ${({ theme }) => theme.fontWeight.bold};
+  ${media.sm`
+    margin-bottom:24px;
+  `}
   i{
     color: ${({ theme }) => theme.colors.primaryColor};
   }
@@ -33,6 +36,9 @@ ${media.sm`
       align-items: center;
       gap: 16px;
       margin-bottom: 20px;
+      ${media.sm`
+      margin-bottom: 12px;
+      `}
       .heading{
         font-weight: ${({ theme }) => theme.fontWeight.bold};
       }

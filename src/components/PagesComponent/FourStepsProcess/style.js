@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const FourStepsProcessWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  ${media.xs`
+  ${media.sm`
   padding: 56px 0px;
   `}
   h2 {
@@ -15,7 +15,7 @@ const FourStepsProcessWrapper = styled.div`
     text-align: center;
     margin-bottom: 72px;
     text-transform:none;
-    ${media.xs`
+    ${media.sm`
     margin-bottom:48px;
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
     line-height:32px;
@@ -84,7 +84,7 @@ const FourStepsProcessWrapper = styled.div`
         line-height: 29.04px;
         text-align: center;
         text-transform:none;
-        ${media.xs`
+        ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         line-height:16px;
         `}
