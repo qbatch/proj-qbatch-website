@@ -9,6 +9,10 @@ ${media.lg`
 `}
 .heading{
   margin-bottom: 24px;
+  text-transform: none;
+}
+.inner-heading{
+  font-weight:  ${({ theme }) => theme.fontWeight.bold};
 }
 .paragraph{
   max-width: 692px;

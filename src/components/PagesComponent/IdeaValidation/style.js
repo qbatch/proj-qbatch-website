@@ -35,6 +35,8 @@ ${media.lg`
   `}
   .heading{
     margin-bottom: 24px;
+    text-transform: none;
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
   }
 }
 .steps-wrapper{

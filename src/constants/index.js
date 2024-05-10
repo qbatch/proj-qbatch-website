@@ -2328,6 +2328,132 @@ const mobileAppFaq = [
     ),
   },
 ]
+const mvpDevFaq = [
+  {
+    id: 1,
+    title: 'What is MVP development, and why is it important for startups?',
+    content: (
+      <div className="faq-content">
+        <span>
+        MVP in software development stands for Minimum Viable Product, a product with essential features designed to attract early adopters and validate a product idea in the development cycle by gathering valuable user feedback.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'How long should it take to build an MVP?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Building an MVP can take from a few weeks to 2-4 months, depending on complexity, features, design intricacies, available resources, and team efficiency. A focused approach and core features can expedite the timeline, but prioritizing quality is crucial. 
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'What are the key benefits of using MVP consulting services?',
+    content: (
+      <div className="faq-content">
+        <span>
+        These are the key benefits of MVP consulting services:
+        </span>
+        <ul>
+          <li>Validates business assumptions with minimal resources and time.</li>
+          <li>Enables quick testing of the business concept in the market.</li>
+          <li>Gathers valuable feedback from early adopters.</li>
+          <li>Well-executed MVP can attract investors.</li>
+          <li>Functions as a tool to acquire early customers and build a user base.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'How does agile software development fit into the MVP process?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Both Agile and MVP focus on delivering value to users, with Agile emphasizing continuous value delivery and MVP targeting early adopters for validation.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What is the best approach to building an MVP?',
+    content: (
+      <div className="faq-content">
+        <span>
+        The best approach to building an MVP is to start small, focus on the core value, and iterate based on real user feedback. This approach allows for efficient use of resources while ensuring the product aligns closely with user needs and expectations. Here are key steps:
+        </span>
+        <ol>
+          <li>Identify core value proposition that solves the problems of your end users.</li>
+          <li>Prioritize essential features under your budget</li>
+          <li>User-centric design assuring usability and navigation</li>
+          <li>Rapid iterative development to ensure continuous feedback integration</li>
+          <li>Real-world testing and validation for continuous improvements</li>
+          <li>Make minimum viable launch and introduce your product to the market</li>
+          <li>Iterative improvement based on ongoing user feedback and market trends </li>
+          <li>Prioritize additional features for subsequent releases</li>
+          <li>Strategic scaling based on the validated feedback and growing user demands.</li>
+          <li>Analytics and metrics to track user behavior and make informed decisions for future development.</li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'Can you handle both web and mobile app MVP development?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Yes, team Qbatch got hands-on experience in both web and mobile app MVP development projects.
+
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How much does MVP development cost?',
+    content: (
+      <div className="faq-content">
+        <span>
+        MVP development may cost around $15,000 to $150,000 or more. This majorly depends on factors like features, resources, and team allocation. Having a detailed account of your idea and how you plan to validate it can help you determine the cost estimate for your MVP project.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: 'Why choose Qbatch for MVP development?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Below are the reasons to trust Qbatch for MVP development:
+        </span>
+        <span>
+          <b>Core Team</b>
+          <p>We assemble a small, super team of Product owners and expert MVP developers to get you started. </p>
+          <b>Launch Early</b>
+          <p>WExpect a robust and legendary Ford Model T — laying a foundation for scalable product development. </p>
+          <b>Lean-er Startup</b>
+          <p>Like a Lean Startup, build, validate, measure, and improve toward calculated success </p>
+          <b>Fair Fee </b>
+          <p>We understand. The budget’s tight. That’s why the payment structure is predictable and pre-defined.</p>
+          <b>Weekly Reports</b>
+          <p>No secrets, you get every detail from progress to declines ensuring transparency and productivity. </p>
+          <b>Close Collaboration</b>
+          <p>Control your MVP from the get-go, set deadlines, and tell us your goals. You command, we obey. </p>
+          <b>Trustable Expertise</b>
+          <p>We've nailed MVP launches before, and we're ready to do it again!</p>
+          </span>
+      </div>
+    ),
+  },
+]
 const hireDeveloper = [
   {
     id: 1,
@@ -3902,5 +4028,6 @@ export {
   mvpBoxes1,
   mvpBoxes2,
   mvpDevService,
-  personal
+  personal,
+  mvpDevFaq
 }

@@ -8,6 +8,7 @@ ${media.lg`
 `}
 .heading{
   margin-bottom: 80px;
+  text-transform: none;
   ${media.lg`
   margin-bottom: 32px;
 `}

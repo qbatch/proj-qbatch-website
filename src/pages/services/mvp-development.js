@@ -21,7 +21,7 @@ import FaqSection from "../../components/PagesComponent/Faq";
 import StartProject from "../../components/PagesComponent/StartProject";
 
 import {
-  mobileAppFaq,
+  mvpDevFaq,
   mvpSliderItems,
   mvpBoxes1,
   mvpBoxes2,
@@ -35,7 +35,7 @@ const MvpDev = () => {
         subheading="MVP Development Company"
         heading={<>Plan, Test, & Launch YOUR MVP in less than <span>3 months</span></>}
         paragraph="Hundreds of startups, enterprises, and entrepreneurs have trusted us for launching good MVPs in the toughest sectors. We’ve done it before, we can do it again!"
-        buttonText="Get Free Consultation"
+        buttonText="Let’s Get Started"
         col1lg={7}
         col2lg={5}
         className="d-flex align-items-center justify-content-start"
@@ -87,8 +87,6 @@ const MvpDev = () => {
         width="390px"
         align='center'
         className='mvp-slider m-auto'
-        btnText="Let’s Get Started"
-        btnClass="m-auto mt-5"
       />
       <BewareFriend />
       <GuaranteeBanner />
@@ -105,7 +103,7 @@ const MvpDev = () => {
         isButton
         btnText="Launch My Idea"
       />
-      <FaqSection faqQuestion={mobileAppFaq} />
+      <FaqSection faqQuestion={mvpDevFaq} />
       <StartProject />
     </Layout>
   );
