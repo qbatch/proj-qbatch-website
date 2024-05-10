@@ -41,17 +41,18 @@ const SliderWrapper = styled.div`
     }
     `}
     .title{
-        .upper-text{
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-          font-weight: ${({ theme }) => theme.fontWeight.bold};
-          text-transform: none;
-        }
-        .lower-text{
-          font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-          font-weight: ${({ theme }) => theme.fontWeight.semiBold};
-          color: ${({ theme }) => theme.colors.primaryColor};
-          text-transform: none;
-        }
+    .upper-text{
+       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+       font-weight: ${({ theme }) => theme.fontWeight.bold};
+       text-transform: none;
+    }
+    .lower-text{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+      color: ${({ theme }) => theme.colors.primaryColor};
+      text-transform: none;
+
+    }
   }
 }
   &.developers-trust-slider{
