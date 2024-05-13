@@ -8,7 +8,7 @@ const CtoBannerWrapper = styled.div`
   background-position: 100% 100%;
   background-repeat: no-repeat;
   padding: 132px 0 98px 0;
-  height:calc(100vh - 70px);
+  min-height:calc(100vh - 70px);
   margin: auto;
   ${media.lg`
      min-height:calc(100vh - 700px);
