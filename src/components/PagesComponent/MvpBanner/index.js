@@ -16,6 +16,8 @@ const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
     <MvpBannerWrapper className={wrapperClass} blogInner={blogInner}>
       <Container className={className}>
         <Row className='align-items-center h-100'>
+          <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
+
           {customCrumbs && (
             <div className="breadcrumb d-lg-block d-none">
               <ul className="d-flex gap-2 ps-0">
@@ -30,16 +32,15 @@ const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
               </ul>
             </div>
           )}
-          <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
             <div className="banner-main">
               <h1 className="banner-sub-heading text-h4" style={{ color: subheadingColor }}> {subheading}
               </h1>
-              <h2 className="text-h2" style={{ maxWidth: headingMaxWidth }}>{heading}</h2>
+              <h2 className="text-h2 heading" style={{ maxWidth: headingMaxWidth }}>{heading}</h2>
               <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
               <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0 mx-auto" />
             </div>
           </Col>
-          <Col lg={col2lg || defaultCol2lg} className="d-flex justify-content-center p-0 pt-lg-0 pt-5">
+          <Col lg={col2lg || defaultCol2lg} className="d-flex justify-content-center p-0 pt-lg-0 pt-4">
             <div className='banner-list'>
               <div className='list-item'>
                 <div className='img-wrapper'>

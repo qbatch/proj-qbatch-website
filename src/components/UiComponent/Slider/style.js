@@ -76,6 +76,7 @@ const SliderWrapper = styled.div`
       max-width: 608px;
       margin: auto;
     }
+}
   &.devops-slider{
   }
   &.competency-slider{
@@ -200,6 +201,12 @@ const SliderWrapper = styled.div`
       }
     }
   .upper-heading {
+    .inner-heading-paragraph{
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
+      margin-bottom:16px;
+      display: block;
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
+    }
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
@@ -209,6 +216,7 @@ const SliderWrapper = styled.div`
       max-width: ${(props) => (props.maxWidth ? props.maxWidth : '')};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       font-weight:400;
+      margin: auto;
       ${media.sm`
         max-width: 100%;
     `}
@@ -286,7 +294,6 @@ const SliderWrapper = styled.div`
       }
     }
   }
-}
 `
 
 export default SliderWrapper;

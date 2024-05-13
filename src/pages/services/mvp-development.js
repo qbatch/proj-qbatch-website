@@ -94,7 +94,7 @@ const MvpDev = () => {
         heading="Featured Projects"
         exploreBtn
       />
-      <Collaboration />
+      <Collaboration button/>
       <InnerBanner
         className="mvp-wrapper"
         heading="Still not sure about your idea?"
