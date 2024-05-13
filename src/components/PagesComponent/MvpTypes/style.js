@@ -12,7 +12,7 @@ ${media.lg`
   text-align: center;
   text-transform: none;
   ${media.lg`
-    margin-bottom: 56px;
+    margin-bottom: 32px;
   `}
 }
 
@@ -22,6 +22,9 @@ ${media.lg`
   }
 .first-box{
   margin-bottom: 56px;
+  ${media.lg`
+    margin-bottom: 32px;
+  `}
 }
 .type-list{
   margin-bottom: 24px;

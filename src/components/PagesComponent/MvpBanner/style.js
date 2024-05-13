@@ -12,6 +12,9 @@ position: relative;
   margin: auto;
   display: flex;
   align-items: center;
+  .heading{
+    text-transform: none;
+  }
   p{
     font-size: 20px;
     line-height: 32px;
@@ -21,13 +24,13 @@ position: relative;
   }
   ${media.lg`
      min-height:calc(100vh - 700px);
-     padding: 96px 0 56px;
+     padding: 56px 0;
   `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.whiteColor};
-    margin: 4px 0 16px 10px;
+    margin: 4px 0 16px;
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
     }

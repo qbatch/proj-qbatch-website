@@ -3753,6 +3753,10 @@ const servicesItems = [
     to: '/services/mobile-app-development/',
   },
   {
+    menu: 'MVP Development',
+    to: '/services/mvp-development/',
+  },
+  {
     menu: 'CTO as a Service',
     to: '/services/cto-as-a-service/',
   },
@@ -3771,10 +3775,6 @@ const servicesItems = [
   {
     menu: 'Browser Extension Development',
     to: '/services/browser-extension-development/',
-  },
-  {
-    menu: 'UX/UI Design',
-    to: '',
   },
 ];
 
