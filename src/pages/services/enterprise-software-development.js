@@ -70,7 +70,9 @@ const Enterprise = () => {
         />
         <DesiredResult
           heading="Kickoff Enterprise Transformation toward a scalable and human-driven future."
+          headingSize="text-h2"
           isButton={true}
+          align="justify-content-start"
           className="enterprise"
           btnText="Let’s Transform"
         />

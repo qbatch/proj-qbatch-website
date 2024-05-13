@@ -21,7 +21,7 @@ const BlogCardsWrapper = styled.div`
     border-radius: 16px 16px 0px 16px;
     margin-bottom: 24px;
     .card-img {
-      height: 240px;
+      aspect-ratio: 3/1.6;
       padding: 32px;
       position: relative;
       ${media.mobile`
@@ -35,7 +35,7 @@ const BlogCardsWrapper = styled.div`
         position: absolute;
         left: 0;
         top: 0;
-        height: 240px;
+        aspect-ratio: 3/1.6;
         width: 100%;
         object-fit: cover;
         object-position: center;

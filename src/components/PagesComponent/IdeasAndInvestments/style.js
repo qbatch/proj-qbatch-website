@@ -51,6 +51,7 @@ const IdeasWrapper = styled.div`
   &.enterprise {
     .heading {
       max-width: 100%;
+      margin-bottom: 48px;
     }
     .idea-btn {
       display: flex;
