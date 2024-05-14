@@ -33,6 +33,7 @@ const MarketplaceSellersWrapper = styled.div`
     font-size: 24px;
     max-width: 931px;
     font-weight: 300;
+    line-height:32px;
     margin-bottom: 78px;
     letter-spacing: 0.69px;
     color: ${({ theme }) => theme.colors.whiteColor};

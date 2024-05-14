@@ -12,6 +12,7 @@ const ManagementWrapper = styled.div`
     line-height: 52px;
     max-width: 1100px;
     margin: 0 auto 72px;
+    font-weight:700;
     text-align: center;
     ${media.sm`
      margin: 0 auto 40px;
@@ -34,7 +35,7 @@ const ManagementWrapper = styled.div`
     h4 {
       color: ${({ theme }) => theme.colors.dividerColor};
       margin-bottom: 0;
-      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      font-weight:400;
     }
     .description {
       height: 0;

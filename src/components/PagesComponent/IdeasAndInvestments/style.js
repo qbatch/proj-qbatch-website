@@ -30,8 +30,7 @@ const IdeasWrapper = styled.div`
     text-transform: capitalize;
     margin-bottom: 16px;
     .inner-heading {
-      color: ${({ theme }) => theme.colors.dividerColor};
-      display: block;
+      color: ${({ theme }) => theme.colors.textColor};
     }
     ${media.sm`
       margin-bottom: 32px;
