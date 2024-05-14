@@ -268,7 +268,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">1-2 weeks</span>
-        <span className="lower-text">Discovery Phase</span>
+        <span className="lower-text"> Discovery Phase</span>
       </>
     ),
     content:
@@ -279,7 +279,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">1-2 weeks</span>
-        <span className="lower-text">Design</span>
+        <span className="lower-text"> Design</span>
       </>
     ),
     content:
@@ -290,7 +290,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">6 - 8 weeks</span>
-        <span className="lower-text">MVP Development (no-code & custom)</span>
+        <span className="lower-text"> MVP Development (no-code & custom)</span>
       </>
     ),
     content:
@@ -301,7 +301,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">1-2 weeks</span>
-        <span className="lower-text">Release</span>
+        <span className="lower-text"> Release</span>
       </>
     ),
     content:
@@ -312,7 +312,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">Retainer-based</span>
-        <span className="lower-text">Maintenance & Support</span>
+        <span className="lower-text"> Maintenance & Support</span>
       </>
     ),
     content:
@@ -3713,7 +3713,7 @@ const mvpBoxes1 = [
     description: 'Releasing a high-potential product to the market but need to test it first?'
   },
   {
-    title: 'Serial Entrepreneurs',
+    title: 'Serial\nEntrepreneurs',
     description: 'Got a side project idea to test with limited time and investment?'
   },
   {
@@ -3721,7 +3721,7 @@ const mvpBoxes1 = [
     description: 'Need to test an idea with real users before pushing to full-fledge development? '
   },
   {
-    title: 'Non-tech Founders',
+    title: 'Non-tech\nFounders',
     description: "Require technical help for simpler development under limited resources?"
   },
 ];

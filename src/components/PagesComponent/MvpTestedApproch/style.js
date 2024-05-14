@@ -13,10 +13,12 @@ ${media.lg`
 }
 .inner-heading{
   font-weight:  ${({ theme }) => theme.fontWeight.bold};
+  margin-bottom: 16px;
 }
 .paragraph{
   max-width: 692px;
   margin-bottom: 24px;
+  font-weight:  ${({ theme }) => theme.fontWeight.normal};
 }
 .inner-wrapper{
   display: flex;

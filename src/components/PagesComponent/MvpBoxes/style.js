@@ -32,6 +32,7 @@ ${media.lg`
   `}
   .inner-heading{
     text-transform: none;
+    white-space: pre-wrap;
   }
 }
 `

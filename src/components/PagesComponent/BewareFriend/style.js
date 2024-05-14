@@ -43,7 +43,7 @@ const BewareFriendWrapper = styled.section`
     }
     }
     .title {
-      margin: 9px 0 8px;
+      margin: 9px 0 16px;
       letter-spacing: 0;
       ${media.lg`
         line-height: 24px;

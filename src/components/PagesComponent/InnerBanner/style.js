@@ -12,14 +12,6 @@ const InnerBannerWrapper = styled.div`
   ${media.sm`
     padding:56px 24px;
   `}
-  &.mvp-wrapper{
-    .heading{
-      .caption{
-        margin-top: 24px;
-      margin-bottom: 72px;
-      }
-    }
-  }
   &.build-mvp-app{
     text-align: center;
     .heading{
@@ -60,6 +52,13 @@ const InnerBannerWrapper = styled.div`
     `}
   }
 
+  &.mvp-wrapper{
+      .caption{
+        font-weight: ${({ theme }) => theme.fontWeight.light};
+        margin-top: 24px;
+      margin-bottom: 72px;
+      }
+  }
   &.extension-dev-inner-banner{
     .caption{
       text-transform: none;
