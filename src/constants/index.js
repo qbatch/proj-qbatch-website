@@ -3717,7 +3717,7 @@ const mvpBoxes1 = [
     description: 'Got a side project idea to test with limited time and investment?'
   },
   {
-    title: 'Enterprise Side Project',
+    title: 'Enterprise Side\nProject',
     description: 'Need to test an idea with real users before pushing to full-fledge development? '
   },
   {
