@@ -32,7 +32,7 @@ const MvpDev = () => {
   return (
     <Layout>
       <MvpBanner
-        subheading="MVP Development Company"
+        subheading="MVP Development Service"
         heading={<>Plan, Test, & Launch YOUR MVP in less than <span>3 months</span></>}
         paragraph="Hundreds of startups, enterprises, and entrepreneurs have trusted us for launching good MVPs in the toughest sectors. We’ve done it before, we can do it again!"
         buttonText="Let’s Get Started"
@@ -42,7 +42,7 @@ const MvpDev = () => {
         wrapperClass="product-design-banner"
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
-          { pathname: '/services/mvp-development/', crumbLabel: 'Software Product Development' },
+          { pathname: '/services/mvp-development/', crumbLabel: 'MVP Development Service' },
         ]}
       />
       <MvpTestedApproch />

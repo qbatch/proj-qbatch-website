@@ -7,7 +7,7 @@ position: relative;
   background-image: ${(props) => `url(${props.blogInner ? props.blogInner : ''})`};
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  padding: 96px 0;
+  padding: 160px 0;
   min-height:calc(100vh - 70px);
   margin: auto;
   display: flex;
