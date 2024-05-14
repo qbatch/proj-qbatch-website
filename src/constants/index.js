@@ -268,7 +268,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">1-2 weeks</span>
-        <h4 className="lower-text">Discovery Phase</h4>
+        <span className="lower-text"> Discovery Phase</span>
       </>
     ),
     content:
@@ -279,7 +279,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">1-2 weeks</span>
-        <h4 className="lower-text">Design</h4>
+        <span className="lower-text"> Design</span>
       </>
     ),
     content:
@@ -290,7 +290,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">6 - 8 weeks</span>
-        <h4 className="lower-text">MVP Development (no-code & custom)</h4>
+        <span className="lower-text"> MVP Development (no-code & custom)</span>
       </>
     ),
     content:
@@ -301,7 +301,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">1-2 weeks</span>
-        <h4 className="lower-text">Release</h4>
+        <span className="lower-text"> Release</span>
       </>
     ),
     content:
@@ -312,7 +312,7 @@ const mvpSliderItems = [
     title: (
       <>
         <span className="d-block upper-text mb-2">Retainer-based</span>
-        <span className="lower-text">Maintenance & Support</span>
+        <span className="lower-text"> Maintenance & Support</span>
       </>
     ),
     content:
