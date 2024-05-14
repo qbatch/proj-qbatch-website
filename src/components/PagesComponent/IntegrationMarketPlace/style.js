@@ -91,11 +91,11 @@ const LanguagesWrapper = styled.div`
         }
       }
       &.active {
-        font-size: 24px;
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         font-weight: 700;
         color: ${({ theme }) => theme.colors.primaryColor};
         ${media.lg`
-          font-size: 20px;
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
           line-height: 24px;
         `}
         &:before {

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const RevenueWrapper = styled.div`
-  padding: 120px 0 96px;
+  padding: 96px 0 96px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
     padding: 56px 0;
@@ -19,7 +19,7 @@ const RevenueWrapper = styled.div`
       span{
         font-style: italic;
         color: #000;
-        font-weight:400;
+        font-weight:${({ theme }) => theme.fontWeight.normal};
       }
       ${media.sm`
         line-height: 32px;
@@ -51,7 +51,7 @@ const RevenueWrapper = styled.div`
         letter-spacing: 0;
         margin-bottom: 0px;
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        font-weight:400;
+        font-weight:${({ theme }) => theme.fontWeight.normal};
         ${media.sm`
          line-height:20px;
         `}

@@ -389,7 +389,7 @@ const ecomSliderItems = [
   {
     image: '/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg',
     title: 'Full-Cycle Technical Support',
-    content: 'We stay in touch withyou for technical supporton a long-term basis oras required.',
+    content: 'We stay in touch with you for technical support on a long-term basis or as required.',
   },
 ]
 const lostToLaunchedItems = [
@@ -3710,7 +3710,7 @@ const dataColumn4 = [
 const mvpBoxes1 = [
   {
     title: 'Ambitious, Small-scale Startups',
-    description: 'Releasing a high-potential productto the market but need to test itfirst?'
+    description: 'Releasing a high-potential product to the market but need to test it first?'
   },
   {
     title: 'Serial Entrepreneurs',
