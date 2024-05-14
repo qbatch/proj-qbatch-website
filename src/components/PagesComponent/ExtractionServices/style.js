@@ -12,9 +12,14 @@ const AssistantWrapper = styled.div`
   .images-box {
     .assistent-box {
       border-bottom: 1px solid #d2d9dc;
-      min-height: 170px;
       margin-top: 24px;
       margin-bottom: 24px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
       .d-flex {
         margin-bottom: 24px;
         ${media.md`
@@ -26,9 +31,10 @@ const AssistantWrapper = styled.div`
       }
       h4 {
         letter-spacing: 0px;
-        font-size: 20px;
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
         ${media.md`
-            font-size: 16px;
+          font-size: 16px;
+          line-height: 24px;
       `}
       }
     }
@@ -39,15 +45,12 @@ const AssistantWrapper = styled.div`
       font-style: italic;
     }
     p {
-      font-size: 16px;
-      ${media.md`
-            font-size: 14px;
-      `}
+      margin-bottom: 24px;
     }
   }
   .col-md-7{
     ${media.sm`
-    padding-top:48px;
+      padding-top:32px;
     `}
   }
 `

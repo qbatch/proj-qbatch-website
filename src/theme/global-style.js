@@ -14,12 +14,10 @@ const GlobalStyles = createGlobalStyle`
     h1,h2 {
         font-weight:700;
         color:${({ theme }) => theme.colors.bodyTextVariant};
-        text-transform: capitalize;
     }
     h3,h4,h5,h6 {
       font-weight:600;
       color:${({ theme }) => theme.colors.bodyTextVariant};
-      text-transform: capitalize;
     }
     a{
         color:${({ theme }) => theme.colors.primaryColor};
@@ -151,7 +149,8 @@ const GlobalStyles = createGlobalStyle`
         line-height: 32px;
       }
       h4, .text-h4{
-        font-size:${({ theme }) => theme.fonts.baseFontSizeSm};     
+        font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 24px;     
       }
       .text-h4-light{
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};

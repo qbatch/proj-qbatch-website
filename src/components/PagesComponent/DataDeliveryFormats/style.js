@@ -2,14 +2,21 @@ import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 
 const AssistantWrapper = styled.div`
-  padding: 95px 0px;
+  padding: 96px 0px;
   ${media.sm`
-  padding: 56px 0px;
+    padding: 56px 0;
   `}
   .heading-box {
     margin-bottom: 71px;
   }
   .images-box {
+    .row > div {
+      display: flex;
+      flex-direction: column;
+    }
+    .row > div > div {
+      flex: 1;
+    }
     h2 {
       margin-bottom: 24px;
       ${media.sm`
@@ -17,7 +24,8 @@ const AssistantWrapper = styled.div`
       `}
     }
     h4 {
-      margin-top: 82px;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
+      margin-top: 72px;
       margin-bottom: 16px;
       ${media.sm`
       margin-bottom: 8px;
@@ -30,24 +38,26 @@ const AssistantWrapper = styled.div`
       font-style: italic;
     }
     p {
-      font-size:16px;
-      line-height: 29px;
-      margin-bottom: 52px;
-      ${media.sm`
-      margin-bottom: 48px;
-      `}
+      margin-bottom: 40px;
+      max-width: 910px;
     }
     .add-border-gap {
-      margin-bottom: 33px;
+      margin-bottom: 30px;
     }
     .add-image-space {
       padding-top: 31px;
       ${media.sm`
-        padding-top: 16px;
+        padding-top: 32px;
         display:flex;
         justify-content:flex-start;
         align-items:flex-start !important;
       `}
+    }
+    .delivery-data {
+      p {
+        margin-bottom: 24px;
+        flex: 1;
+      }
     }
   }
 `

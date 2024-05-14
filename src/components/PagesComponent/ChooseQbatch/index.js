@@ -1,7 +1,10 @@
 import React from 'react'
-import ChoseQbatchWrapper from './style'
+import { Col, Row } from 'react-bootstrap'
+
 import Container from '../../UiComponent/Container'
 import Divider from '../../UiComponent/Divider'
+
+import ChoseQbatchWrapper from './style'
 
 const Index = () => {
   const dataDrivenData = [
@@ -15,11 +18,11 @@ const Index = () => {
     },
     {
       img: '/cross-sector.svg',
-      title: 'Cross-Sector Expertise',
+      title: 'Cross-Sector \n Expertise',
     },
     {
       img: '/founders-mentality.svg',
-      title: '100% Founders Mentality',
+      title: '100% Founders \n Mentality',
     },
     {
       img: '/dependable-engineering.svg',
@@ -31,12 +34,12 @@ const Index = () => {
     },
     {
       img: '/technical-excellence-scraping.svg',
-      title: 'Technical Excellence',
+      title: 'Technical \n Excellence',
     },
 
     {
       img: '/efficient-talent-pool-scraping.svg',
-      title: 'Efficient Talent Pool',
+      title: 'Efficient Talent \n Pool',
     },
 
     {
@@ -53,11 +56,11 @@ const Index = () => {
     },
     {
       img: '/flexible-business-models.svg',
-      title: 'Flexible Business Models',
+      title: 'Flexible Business \n Models',
     },
     {
       img: '/great-value-for-money.svg',
-      title: 'Great Value for Money',
+      title: 'Great Value \n for Money',
     },
   ]
   return (
@@ -71,17 +74,18 @@ const Index = () => {
               tools: 
             </p>
           </div>
-
-          <div className="images-box">
+          <Row className="images-box">
             {dataDrivenData.map((list) => {
               return (
-                <div className="d-flex flex-column flex-wrap gap-3 align-items-center mb-5">
-                  <img src={list.img} alt={list.title} />
-                  <h6>{list.title}</h6>
-                </div>
+                <Col md={2} sm={4} xs={6}>
+                  <div className="d-flex flex-column flex-wrap gap-3 align-items-center mb-4">
+                    <img src={list.img} alt={list.title} />
+                    <p>{list.title}</p>
+                  </div>
+                </Col>
               )
             })}
-          </div>
+          </Row>
         </Container>
       </ChoseQbatchWrapper>
       <Divider />

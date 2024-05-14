@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const ScrapeData = styled.div`
-  padding: 96px 80px;
+  padding: 96px 0 24px;
+  ${media.sm`
+    padding: 56px 0 24px;
+  `}
   background-color: ${({ theme }) => theme.colors.secondaryColor};
   ${media.sm`
   padding: 56px 0px;
@@ -11,7 +14,7 @@ const ScrapeData = styled.div`
    }
   `}
   .data-process-section {
-    margin-bottom: 122px;
+    margin-bottom: 120px;
     ${media.sm`
     margin-bottom: 48px;
     `}
@@ -41,6 +44,8 @@ const ScrapeData = styled.div`
       align-items: center;
       .index {
         background-color: ${({ theme }) => theme.colors.primaryColor};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
         width: 40px;
         height: 40px;
         color: ${({ theme }) => theme.colors.whiteColor};
@@ -60,6 +65,9 @@ const ScrapeData = styled.div`
     .heading-box {
       text-align: center;
       margin-bottom: 57px;
+      ${media.sm`
+        margin-bottom: 32px;
+      `}
       h2 {
         color: ${({ theme }) => theme.colors.whiteColor};
       }
@@ -80,6 +88,8 @@ const ScrapeData = styled.div`
       align-items: center;
       .index {
         background-color: ${({ theme }) => theme.colors.primaryColor};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
         width: 40px;
         height: 40px;
         color: ${({ theme }) => theme.colors.whiteColor};

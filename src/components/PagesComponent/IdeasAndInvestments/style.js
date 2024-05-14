@@ -27,7 +27,6 @@ const IdeasWrapper = styled.div`
   .heading {
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 1038px;
-    text-transform: capitalize;
     margin-bottom: 16px;
     .inner-heading {
       color: ${({ theme }) => theme.colors.dividerColor};
@@ -58,6 +57,24 @@ const IdeasWrapper = styled.div`
       display: flex;
       justify-content: flex-end;
       width: 100%;
+    }
+  }
+  &.data-scraping-component {
+    padding: 96px 203px;
+    ${media.md`
+      padding: 96px 120px;
+    `}
+    ${media.sm`
+      padding: 96px 40px;
+    `}
+    ${media.xs`
+      padding: 96px 20px;
+    `}
+    .heading {
+      max-width: 1170px;
+    }
+    button {
+      margin-top: 72px;
     }
   }
 `
