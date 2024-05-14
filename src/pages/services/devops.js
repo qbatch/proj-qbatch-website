@@ -23,10 +23,12 @@ import WhyDevOps from '../../components/PagesComponent/ChoiceYourEnterprise'
 import DevOpsBoxes from '../../components/PagesComponent/DevOpsBoxes';
 import DevOpsTools from '../../components/PagesComponent/DevOpsTools';
 import NextDevOpsProject from '../../components/PagesComponent/NextDevOpsProject';
+import Header2 from '../../components/PagesComponent/Header2';
 
 const DevOps = () => {
   return (
     <Layout>
+      <Header2/>
       <Banner
         subheading="Trusted DevOps Service Providers"
         subheadingColor={'#D2D9DC'}
