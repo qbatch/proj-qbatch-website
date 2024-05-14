@@ -27,12 +27,13 @@ const DataDriven = styled.div`
       margin-top: 26px;
       text-align: center;
     }
+    p {
+      margin: 24px 0 0;
+    }
   }
   a {
-    margin-top: 50px;
-    text-decoration: underline;
-    font-size: 20px;
-    font-style: italic;
+    margin-top: 48px;
+    display: block;
   }
 `
 export default DataDriven;

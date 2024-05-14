@@ -3,8 +3,20 @@ import { media } from '../../../theme/media-mixins'
 
 const AchievementsWrapper = styled.div`
   position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(246, 247, 250, 0.7) 0%, rgba(246, 247, 250, 0.6) 100%);
+  }
   .achievements-main {
     padding: 96px 0 96px;
+    background-image: url('/achievements-bg.svg');
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-size: cover;
     text-align: center;
@@ -30,7 +42,7 @@ const AchievementsWrapper = styled.div`
       }
     }
     .heading {
-      margin-bottom: 94px;
+      margin-bottom: 76px;
       ${media.sm`
       margin-bottom:48px;
       `}
@@ -57,9 +69,9 @@ const AchievementsWrapper = styled.div`
         width: 0px;
       }
       .heading {
-        font-size: ${({ theme }) => theme.fonts.baseFontXl};
-        font-weight: 600;
-        color: ${({ theme }) => theme.colors.bodyTextVariant};
+        font-size: ${({ theme }) => theme.fonts.baseFontNumber};
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
+        color: ${({ theme }) => theme.colors.midGray};
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};
         `}
@@ -69,10 +81,11 @@ const AchievementsWrapper = styled.div`
       }
       p {
         margin-bottom: 0;
-        margin-top: 14px;
+        margin-top: 24px;
         line-height: 32px;
         white-space: pre-line;
         text-transform: capitalize;
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
         `}

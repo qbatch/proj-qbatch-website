@@ -86,7 +86,7 @@ const CtoBannerWrapper = styled.div`
       margin-bottom: 48px;
       line-height: 32px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-      color: ${({ theme }) => theme.colors.whiteColor};
+      color: ${({ theme }) => theme.colors.dividerColor};
       a{
         color: ${({ theme }) => theme.colors.textColor};
       }
@@ -266,6 +266,15 @@ const CtoBannerWrapper = styled.div`
     }
     h1 {
       max-width: 904px;
+      margin-bottom: 0;
+    }
+    h2 {
+      white-space: pre-line;
+    }
+    .text-h1 {
+      ${media.md`
+        margin: 0 0 24px;
+      `}
     }
   }
   img.mobile-view-banner {

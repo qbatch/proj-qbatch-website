@@ -37,14 +37,14 @@ const Index = () => {
                   <Col md={4}>
                     <div className="d-flex flex-column justify-content-center align-items-center">
                       <img width="100px" src={list.img} alt={list.title} />
-                      <h4>{list.title}</h4>
+                      <p>{list.title}</p>
                     </div>
                   </Col>
                 )
               })}
             </Row>
           </div>
-          <div className="text-center mt-4">
+          <div className="text-center">
             <Link target="blank" to="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights">
               Mckinsey Global Institute
             </Link>

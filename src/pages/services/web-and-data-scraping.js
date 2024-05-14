@@ -26,11 +26,12 @@ import WebScrapping from '../../../static/web-and-data-scraping.svg'
 import WebScrappingBackground from '../../../static/web-scraping-bg.svg'
 
 const Ecommerce = () => {
+  let heading = 'Get Data \n The Way You Want'
   return (
     <Layout>
       <Banner
         subheading="Web & data Scraping Services"
-        heading="Get DataThe Way You Want"
+        heading={heading}
         paragraph="Top-tier proxy networks, powerful web scrapers, and a world-class data team scraping - to help you build no-fail data pipelines with confidence."
         buttonText="Get Free Estimates"
         wrapperClass="web-data-scraping"
@@ -49,12 +50,12 @@ const Ecommerce = () => {
       <YourPersonalAssistant />
       <ExtractionServices />
       <DesiredResult
-        heading="Do you know? Companies with potent data-driven cultures grow around 30% Outpacing Their Competitors By $1.8 Trillion Annually."
+        heading="Do you know? Companies with potent data-driven cultures grow around 30% outpacing their competitors by $1.8 trillion annually."
         isButton={true}
         caption="(Forrester)"
-        btnText="Tell Me How To Become Data-Driven"
+        btnText="Go Data-Driven"
         headingSize="text-h2"
-        align="d-flex justify-content-center"
+        className="data-scraping-component"
       />
       <DomainSpecificData />
       <ScrapeData />
@@ -65,6 +66,7 @@ const Ecommerce = () => {
         heading="Scrape powerful data at scale — no coding, no servers, no expensive software required. We do it all for you!"
         btnText="Hire Dedicated Web Scrapers"
         backgroundImage={WebScrappingBackground}
+        wrapperClass="web-scraping-component"
       />
       <FeaturedProjects />
       <ChooseQbatch />

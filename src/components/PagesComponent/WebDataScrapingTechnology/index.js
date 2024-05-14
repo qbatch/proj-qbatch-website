@@ -48,7 +48,7 @@ const Index = () => {
               return (
                 <div className="d-flex flex-column gap-3">
                   <img src={list.img} alt={list.title} />
-                  <h4>{list.title}</h4>
+                  <p>{list.title}</p>
                 </div>
               )
             })}

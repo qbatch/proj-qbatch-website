@@ -28,20 +28,18 @@ const Index = () => {
       <AssistantWrapper>
         <Container>
           <div className="images-box">
-            <Row className="justify-content-between">
-              <Col md={4}>
-                <h2 className="color-primary">Data Delivery & Formats</h2>
-                <p>
-                  We make effort to transmit data in a format that is effortless and easily accessible for our clients.
-                  Our experts can transform data into formats like - XLS, CVS, JSON, PDF, TXT, Image & more. Keeping
-                  your convenience in mind we provide you with simple & clean data that is insightful and easily
-                  sortable to get any information faster, smoother and reliable.
-                </p>
-              </Col>
-              <Col md={6}>
-                {dataDrivenData.map((list) => {
-                  return (
-                    <div className="d-flex flex-column">
+            <h2 className="color-primary">Data Delivery & Formats</h2>
+            <p>
+              We make effort to transmit data in a format that is effortless and easily accessible for our clients.
+              Our experts can transform data into formats like - XLS, CVS, JSON, PDF, TXT, Image & more. Keeping
+              your convenience in mind we provide you with simple & clean data that is insightful and easily
+              sortable to get any information faster, smoother and reliable.
+            </p>
+            <Row>
+              {dataDrivenData.map((list) => {
+                return (
+                  <Col md={6}>
+                    <div className="d-flex flex-column delivery-data">
                       <div className="d-flex flex-column justfiy-content-center align-items-center add-image-space">
                         <img src={list.img} alt={list.title} />
                       </div>
@@ -50,11 +48,11 @@ const Index = () => {
                       <div className="d-flex justify-content-end add-border-gap">
                         <Button text="Contact Sales" />
                       </div>
-                      <Divider />
                     </div>
-                  )
-                })}
-              </Col>
+                    <Divider />
+                  </Col>
+                )
+              })}
             </Row>
           </div>
         </Container>
