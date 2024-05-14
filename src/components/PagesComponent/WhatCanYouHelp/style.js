@@ -32,7 +32,7 @@ const Card = styled.div`
     width: 100%;
   }
   .title-box {
-    padding: 24px 47px;
+    padding: 24px;
 
     h3 {
       line-height: 32px;

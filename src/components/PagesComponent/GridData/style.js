@@ -39,8 +39,9 @@ const RevenueWrapper = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-radius: 24px 24px 0px 24px;
     padding: 24px;
-    min-height: 448px;
+    min-height: 259px;
     margin-bottom: 24px;
+    flex:1;
     ${media.sm`
       min-height: auto;
       padding-bottom: 48px;

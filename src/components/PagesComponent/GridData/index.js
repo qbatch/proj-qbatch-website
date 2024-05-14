@@ -1,6 +1,6 @@
 import React from "react";
 
-import { revenueData } from "../../../constants";
+import { automationData } from "../../../constants";
 import Container from "../../UiComponent/Container";
 
 import RevenueWrapper from "./style";
@@ -16,8 +16,8 @@ const Index = () => {
               1% mindset<span> (and oh, that 1%)</span></h2>
             </div>
             <Row>
-          {revenueData?.map((item, index) => (
-            <Col xl={3} md={4}>
+          {automationData?.map((item, index) => (
+            <Col lg={4} xl={3} md={6} xs={12}  className='d-flex flex-column'>
               <div className="revenue-box">
                 <div key={index} className="revenue-data">
                   <div className="revenue-img">

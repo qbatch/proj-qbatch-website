@@ -11,6 +11,7 @@ import WhatCanHelp from "../../components/PagesComponent/WhatCanYouHelp/index";
 import BusinessMangement from "../../components/PagesComponent/BusinessMangement/index";
 import GridData from '../../components/PagesComponent/GridData'
 import DevelopmentStages from "../../components/PagesComponent/DevelopmentStages";
+import IntegrationMarketPlace from "../../components/PagesComponent/IntegrationMarketPlace";
 import LostToLaunched from '../../components/PagesComponent/DevelopmentStages'
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
 import IdeasAndInvestments from "../../components/PagesComponent/IdeasAndInvestments";
@@ -63,7 +64,8 @@ const Ecommerce = () => {
       <GridData />
       <IdeasAndInvestments heading="100+ businesses trusted us with their ideas and investments," span="will you?" />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
-      <MarketplaceIntegrations />
+      {/* <MarketplaceIntegrations /> */}
+      <IntegrationMarketPlace heading="Integrations for Your Marketplace" paragraph="We are made of 50% people skills and 50% tools to ensure constant performance and security featuring uncompromising quality and speed. " paragraphMaxWidth={'754px'} showBtn={true}  />
       <MarketplaceSellers
         heading="Saving Marketplace Sellers from doing too much work."
         paragraph="Shrug off non-value-adding, repetitive tasks through modern technology and genius domain savvies. "
