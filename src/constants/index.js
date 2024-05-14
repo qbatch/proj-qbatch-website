@@ -389,7 +389,7 @@ const ecomSliderItems = [
   {
     image: '/5 Step E-Commerce Automation_Full-Cycle Technical Report 1.svg',
     title: 'Full-Cycle Technical Support',
-    content: 'We stay in touch with you for technical support on a long-term basis or as required.',
+    content: 'We stay in touch with you for technical support on a long-term basis or as required.',
   },
 ]
 const lostToLaunchedItems = [
@@ -475,33 +475,108 @@ const productDevlopmentServices = [
       'After a rigorous series of QA audits, automated tests, TTD, and code reviews, we bring your product to fruition with continued support featuring continuous integration and delivery and needed improvements to keep your product relevant in the raging technology marathon.',
   },
 ]
-
 const marketPlaceData = [
   {
-    image: ['/amazon.svg', '/walmart.svg', '/ebay.svg', '/etsy.svg', '', '', ''],
+    content: [
+      {
+        img: "/amazon.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/walmart.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/ebay.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/etsy.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "",
+        desc: "Nest JS"
+      },
+      {
+        img: "",
+        desc: "Python"
+      },
+      {
+        img: "",
+        desc: "Django"
+      },
+    ],    
     title: 'Marketplace',
   },
   {
-    image: ['/shopify.svg', '/woo-commerce.png', '/amazon-vendor.png', '/kindle.svg', '', '', ''],
+    content: [
+      {
+        img: "/shopify.svg",
+      },
+      {
+        img: "/woo-commerce.png",
+      },
+      {
+        img: "/amazon-vendor.png",
+      },
+      {
+        img: "/typescript.svg",
+      },
+      {
+        img: "/kindle.svg",
+      },
+      {
+        img: "",
+      },
+      {
+        img: "",
+      },
+      {
+        img: "",
+      },
+    ],  
     title: 'Platform',
   },
   {
-    image: [
-      '/amazon-seller.webp',
-      '/amazon-shipping.png',
-      '/amazon-product.png',
-      '/amazon-business.png',
-      '/ebay.svg',
-      '/walmart.svg',
-      '',
-    ],
+    content: [
+      {
+        img: "/amazon-seller.webp",
+      },
+      {
+        img: "/woo-commerce.png",
+      },
+      {
+        img: "/amazon-product.png",
+      },
+      {
+        img: "/amazon-business.png",
+      },
+      {
+        img: "/ebay.svg",
+      },
+      {
+        img: "/walmart.svg",
+      },
+      {
+        img: "",
+      },
+    ], 
     title: 'API’s',
   },
   {
-    image: ['/keepa.svg', '/rainforest-api.svg'],
+    content: [
+      {
+        img: "/keepa.svg",
+      },
+      {
+        img: "/rainforest-api.svg",
+      },
+    ], 
     title: '3rd Party API’s',
-  },
+  }
 ]
+
 const languagesData = [
   {
     content: [
@@ -816,11 +891,11 @@ const extensionLanguages = [
     content: [
       {
         img: "/amazon-web-service.svg",
-        desc: "Amazon Web Service"
+        desc: "Amazon WebService"
       },
       {
         img: "/google-platform.svg",
-        desc: "Google Cloud Platform"
+        desc: "Google CloudPlatform"
       },
       {
         img: "/digital-ocean.svg",
@@ -3635,7 +3710,7 @@ const dataColumn4 = [
 const mvpBoxes1 = [
   {
     title: 'Ambitious, Small-scale Startups',
-    description: 'Releasing a high-potential product to the market but need to test it first?'
+    description: 'Releasing a high-potential product to the market but need to test it first?'
   },
   {
     title: 'Serial Entrepreneurs',

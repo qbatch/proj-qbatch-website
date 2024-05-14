@@ -79,6 +79,8 @@ const ProvenExperienceWrapper = styled.div`
       color: ${({ theme }) => theme.colors.primaryColor};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
       margin: 0;
+      font-weight:300;
+      line-height:16px;
     }
   }
   .bottom-slider {

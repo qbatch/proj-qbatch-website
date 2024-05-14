@@ -23,7 +23,7 @@ const Card = styled.div`
   border-radius: 24px 24px 0px 24px;
   background-color: ${({ theme }) => theme.colors.whiteColor};
   border: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  min-height: 534px;
+  min-height: 490px;
   margin-bottom:24px;
   ${media.sm`
     min-height: auto;
@@ -32,12 +32,14 @@ const Card = styled.div`
     width: 100%;
   }
   .title-box {
-    padding: 24px 47px;
+    padding: 24px;
 
     h3 {
       line-height: 32px;
       margin-bottom: 18px;
-      min-height: 64px;
+      min-height: 20px;
+      font-weight: 700;
+      color:${({ theme }) => theme.colors.bodyTextVariant}
       ${media.sm`
         min-height: auto;
         line-height: 24px;

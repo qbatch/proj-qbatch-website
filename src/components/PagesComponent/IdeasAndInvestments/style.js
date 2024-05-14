@@ -29,8 +29,7 @@ const IdeasWrapper = styled.div`
     max-width: 1038px;
     margin-bottom: 16px;
     .inner-heading {
-      color: ${({ theme }) => theme.colors.dividerColor};
-      display: block;
+      color: ${({ theme }) => theme.colors.textColor};
     }
     ${media.sm`
       margin-bottom: 32px;

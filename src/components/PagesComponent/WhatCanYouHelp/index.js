@@ -33,7 +33,7 @@ const Index = () => {
                 <Card>
                   <img src={img} alt="no-svg" />
                   <div className="title-box">
-                  <h3 className="color-primary text-h4">{title}</h3>
+                  <h3 className="text-h5">{title}</h3>
                   <p>{caption}</p>
                   </div>
                 </Card>

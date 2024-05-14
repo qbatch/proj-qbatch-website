@@ -59,9 +59,9 @@ const StagesWrapper = styled.div`
     li {
       margin-bottom: ${(props) => (props.marketplace ? `${props.marketplace}` : '24px')};
       padding-left: 20px;
-      color: ${({ theme }) => theme.colors.bodyTextVariant};
+      color: ${({ theme }) => theme.colors.textMedium};
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 32px;
       position: relative;
       &:last-child {

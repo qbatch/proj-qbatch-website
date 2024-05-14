@@ -12,6 +12,7 @@ const ManagementWrapper = styled.div`
     line-height: 52px;
     max-width: 1100px;
     margin: 0 auto 72px;
+    font-weight:700;
     text-align: center;
     ${media.sm`
      margin: 0 auto 40px;
@@ -25,16 +26,27 @@ const ManagementWrapper = styled.div`
   .hover-box {
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     color: ${({ theme }) => theme.colors.whiteColor};
-    padding: 48px 32px 24px 32px;
+    padding: 48px 24px 24px 24px;
+    ${media.customElementsBreakPoint`
+    padding: 48px 16px 24px 16px;
+    `}
+
     ${media.sm`
       padding: 30px 0 10px;
     `}
+    
+    .align-items-center{
+      gap:16px;
+    }
 
     cursor: pointer;
     h4 {
       color: ${({ theme }) => theme.colors.dividerColor};
       margin-bottom: 0;
-      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      font-weight:400;
+      ${media.xl`
+        font-size:16px;
+    `}
     }
     .description {
       height: 0;
@@ -52,6 +64,9 @@ const ManagementWrapper = styled.div`
       .description {
         height: 136px;
         opacity: 1;
+        ${media.sm`
+        height: auto;
+      `}
         ${media.sm`
         height: auto;
       `}

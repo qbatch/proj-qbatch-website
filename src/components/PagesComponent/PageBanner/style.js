@@ -68,7 +68,7 @@ const CtoBannerWrapper = styled.div`
     .text-h1 {
       color: ${({ theme }) => theme.colors.whiteColor};
       margin-bottom: 24px;
-      max-width: 723px;
+      max-width: 716px;
       text-transform:none;
       i{
         color: ${({ theme }) => theme.colors.textColor};
@@ -82,7 +82,7 @@ const CtoBannerWrapper = styled.div`
       }
     }
     p {
-      max-width: 680px;
+      max-width: 750px;
       margin-bottom: 48px;
       line-height: 32px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};

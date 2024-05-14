@@ -2,17 +2,25 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const RevenueWrapper = styled.div`
-  padding: 120px 0 96px;
+  padding: 96px 0 96px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
     padding: 56px 0;
   `}
   .revenue-heading {
-    max-width: 360px;
+    max-width: 614px;
     h2 {
       line-height: 52px;
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
+      font-size:${({ theme }) => theme.colors.baseFontSizeH2};
+      line-height:52px;
+      text-transform:none;
+      span{
+        font-style: italic;
+        color: #000;
+        font-weight:${({ theme }) => theme.fontWeight.normal};
+      }
       ${media.sm`
         line-height: 32px;
       `}
@@ -30,21 +38,20 @@ const RevenueWrapper = styled.div`
   .revenue-box {
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-radius: 24px 24px 0px 24px;
-    padding: 48px 48px 0;
-    min-height: 448px;
+    padding: 24px;
+    min-height: 259px;
     margin-bottom: 24px;
+    flex:1;
     ${media.sm`
       min-height: auto;
       padding-bottom: 48px;
     `}
     .revenue-data {
-      h3 {
-        margin-bottom: 16px;
-        font-weight: ${({ theme }) => theme.fontWeight.semiBold};
-        letter-spacing: 0.6px
-      }
       p {
         letter-spacing: 0;
+        margin-bottom: 0px;
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        font-weight:${({ theme }) => theme.fontWeight.normal};
         ${media.sm`
          line-height:20px;
         `}
