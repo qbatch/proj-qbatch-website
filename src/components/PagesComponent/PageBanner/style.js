@@ -289,6 +289,7 @@ const CtoBannerWrapper = styled.div`
     }
   `}
     &.hire-developer-banner {
+      background-size:cover;
       ${media.sm`
       min-height:auto;
       height: auto;
