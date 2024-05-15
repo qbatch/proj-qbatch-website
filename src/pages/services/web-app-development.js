@@ -25,6 +25,8 @@ import WebExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import WebappImage from '../../../static/web-app-dev.svg'
 import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData } from '../../constants'
 import ResponsiveStyleWrapper from "./style";
+import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSlider";
+import AdvancedWebExplore from "../../components/PagesComponent/ExploreOurAdvancedWeb";
 
 const webapp = () => {
 
@@ -47,26 +49,16 @@ const webapp = () => {
           ]}
         />
         <Achievements innerPage={true} />
-        <Slider
-          heading="We Are Developers You Can Trust For Your Web App"
-          paragraph="A web app is more than APIs and design, it’s following the human-to-human approach and building what the world needs."
-          data={youCanTrustData}
-          className="developers-trust-slider"
-        />
+        <SliderComponent />
         <FullCycle />
         <SolutionToChoose />
-        <Slider
-          heading="Explore Our Advanced Web Application Expertise"
-          paragraph="From legacy system modernization to developing high-performing microservices, team Qbatch has delivered 300+ custom solutions for several businesses globally."
-          data={webExpertiseData}
-          className="explore-slider"
-        />
+        <AdvancedWebExplore />
         <AppDevelopment />
         <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
         <DesiredResult
           heading="Is your web app failing to bring the desired result? That could be serious!"
           isButton={true}
-          className="desired-result"
+          className="desired-result desire-result-wrapper"
           btnText="Get Started Risk-Free"
           align="d-flex justify-content-end"
         />

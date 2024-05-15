@@ -2,12 +2,22 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins" 
 
 const FullCycleWrapper = styled.div`
-  padding: 120px 0;
+  padding: 96px 0;
+  ${media.sm`
+  padding: 56px 0;
+  `}
+  .heading-container{
+    max-width: 505px;
+    margin: auto;
+    text-align: center;
+  }
   .main-heading {
     color: ${({ theme }) => theme.colors.primaryColor};
     max-width: 811px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     line-height: 52px;
+    text-align:center;
+    margin:auto;
     ${media.sm`
     padding-bottom: 4px;
     line-height:32px;
@@ -15,12 +25,13 @@ const FullCycleWrapper = styled.div`
   }
   .paragraph {
     max-width: 751px;
-    margin-bottom: 64px;
-    line-height: 32px;
+    line-height: 24px;
     letter-spacing: 0;
+    text-align:center;
+    margin:auto;
+    margin-bottom: 72px;
     ${media.sm`
       margin-bottom: 48px;
-      line-height:24px;
   `}
   }
   ${media.sm`
