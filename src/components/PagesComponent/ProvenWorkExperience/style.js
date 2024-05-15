@@ -40,6 +40,7 @@ const ProvenExperienceWrapper = styled.div`
       letter-spacing: 0.2px;
       margin-top: 32px;
       margin-bottom: 5px;
+      color: ${({ theme }) => theme.colors.midGray};
       ${media.xs`
         margin-top: 20px;
       `}
@@ -71,8 +72,8 @@ const ProvenExperienceWrapper = styled.div`
     gap: 8px;
     div {
       padding: 3px 7px;
-      border: 1px solid ${({ theme }) => theme.colors.bodyLight};
-      color: ${({ theme }) => theme.colors.textMedium};
+      border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+      color: ${({ theme }) => theme.colors.bodyLight};
       border-radius: 2px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
       font-weight:${({ theme }) => theme.fontWeight.light};

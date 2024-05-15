@@ -1,9 +1,11 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import SeemToWorkWrapper from "./style";
-import Container from "../../UiComponent/Container";
 import CountUp from 'react-countup'
+
+import Container from "../../UiComponent/Container";
 import { productDesignCounterData } from "../../../constants";
+
+import SeemToWorkWrapper from "./style";
 
 const index = () => {
   const numCols = 4;

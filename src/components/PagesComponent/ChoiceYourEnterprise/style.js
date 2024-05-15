@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const ChoiceEnterpriseWrapper = styled.div`
-  padding: 120px 0;
+  padding: 96px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
     padding:56px 0;
@@ -52,21 +52,19 @@ const ChoiceEnterpriseWrapper = styled.div`
     }
     `}
     h4 {
-      line-height: 48px;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 16px;
       letter-spacing: 0;
       ${media.sm`
-      line-height: 24px;
-      margin-bottom:8px;
+        margin-bottom:8px;
       `}
     }
     p {
       line-height: 24px;
       max-width: 572px;
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
-      margin-bottom: 32px;
+      margin-bottom: 24px;
       letter-spacing: 0;
-      min-height: 96px;
       ${media.md`
         max-width: 100%;
       `}
@@ -107,9 +105,15 @@ const ChoiceEnterpriseWrapper = styled.div`
     }
   }
 &.so-how-can-help-mb{
+  padding: 96px 0 46px;
   ${media.sm`
     padding: 56px 0 0px;
     `}
+    .choice-heading {
+      p {
+        max-width: 780px;
+      }
+    }
 }
   &.why-dev-ops{
 

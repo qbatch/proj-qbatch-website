@@ -10,6 +10,9 @@ const AssistantWrapper = styled.div`
     margin-bottom: 71px;
   }
   .images-box {
+    h2 {
+      margin-bottom: 24px;
+    }
     .assistent-box {
       border-bottom: 1px solid #d2d9dc;
       margin-top: 24px;
@@ -25,9 +28,6 @@ const AssistantWrapper = styled.div`
         ${media.md`
             padding: 0  ;
       `}
-      }
-      h2 {
-        margin-bottom: 24px;
       }
       h4 {
         letter-spacing: 0px;

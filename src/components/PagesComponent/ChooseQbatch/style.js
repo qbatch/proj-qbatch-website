@@ -22,7 +22,7 @@ const ChoseQbatchWrapper = styled.div`
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          gap:58px;
+          gap: 48px;
           ${media.mobile`
             gap:0;
           `}

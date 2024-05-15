@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const DevelopmentProcessWrapper = styled.div`
-padding: 120px 0;
+padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
 padding: 56px 0px;
@@ -28,7 +28,7 @@ padding: 56px 0px;
       display: flex;
       gap: 32px;
       align-items: center;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
       ${media.customBrakePoint`
       flex-direction:column;
       `}
@@ -47,13 +47,6 @@ padding: 56px 0px;
       padding-bottom: 8px;
       ${media.sm`
       padding-bottom: 0px;
-      `}
-    }
-    p{
-      line-height: 32px;
-      color: ${({ theme }) => theme.colors.textMedium};
-      ${media.sm`
-     line-height:20px;
       `}
     }
   }
