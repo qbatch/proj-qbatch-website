@@ -290,6 +290,8 @@ const CtoBannerWrapper = styled.div`
   `}
     &.hire-developer-banner {
       background-size:cover;
+      display:flex;
+      align-items:center;
       ${media.sm`
       min-height:auto;
       height: auto;
