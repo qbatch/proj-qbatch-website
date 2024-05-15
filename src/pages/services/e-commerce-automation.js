@@ -41,7 +41,7 @@ const Ecommerce = () => {
         blogInner={EcommerceBanner}
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
-          { pathname: '/services/e-commerce-automation/', crumbLabel: 'Business Process Automation' },
+          { pathname: '/services/e-commerce-automation/', crumbLabel: 'eCommerce Automation Solutions' },
         ]}
       />
       <WhatCanHelp />
@@ -54,14 +54,8 @@ const Ecommerce = () => {
       />
       <BusinessMangement />
       <TrippleYourRevenue />
-      {/* <Automation
-        data={automationData}
-        heading="Automation is 99% software but, 1% mindset "
-        span="(and oh, that 1%)"
-        desc="This is your hint to bury your conventional e-commerce ways and"
-        className="automation-section"
-      /> */}
-      <GridData />
+      <GridData maxWidth='600px' height={'114px'} data={automationData} paragraph='This is your hint to bury your conventional e-commerce ways and' heading={<>Automation is 99% software but,
+              1% mindset<span> (and oh, that 1%)</span></>} />
       <IdeasAndInvestments heading="100+ businesses trusted us with their ideas and investments," span="will you?" />
       <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
       {/* <MarketplaceIntegrations /> */}

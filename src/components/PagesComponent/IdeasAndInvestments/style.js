@@ -52,6 +52,9 @@ const IdeasWrapper = styled.div`
     .heading {
       max-width: 100%;
       margin-bottom: 48px;
+      text-transform:capitalize;
+      max-width: 986px;
+      line-height: 68px;
     }
     .idea-btn {
       display: flex;

@@ -8,6 +8,7 @@ const CtoBannerWrapper = styled.div`
   background-position: 100% 100%;
   background-repeat: no-repeat;
   padding: 132px 0 98px 0;
+
   min-height:calc(100vh - 70px);
   margin: auto;
   ${media.lg`
@@ -122,9 +123,11 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.cto-banner {
-    padding: 143px 0 50px;
+    padding: 96px 0 96px;
     background-position:right;
     justify-content:start;
+    display: flex;
+    align-items: center;
        &.change-background-size{
       background-size:50%;
     }

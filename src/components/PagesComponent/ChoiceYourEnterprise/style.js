@@ -26,7 +26,7 @@ const ChoiceEnterpriseWrapper = styled.div`
     }
     p {
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
-      line-height: 32px;
+      line-height: 24px;
       letter-spacing: 0.7px;
       max-width: 950px;
       margin: 0 auto;
@@ -52,9 +52,11 @@ const ChoiceEnterpriseWrapper = styled.div`
     }
     `}
     h4 {
+      line-height: 32px;
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 16px;
       letter-spacing: 0;
+      font-weight:700;ß
       ${media.sm`
         margin-bottom:8px;
       `}
