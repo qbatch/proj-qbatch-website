@@ -15,7 +15,7 @@ const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
   return (
     <MvpBannerWrapper className={wrapperClass} blogInner={blogInner}>
       <Container className={className}>
-        <Row className='align-items-center h-100'>
+        <Row className='align-items-center h-100 w-100'>
           <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
 
           {customCrumbs && (

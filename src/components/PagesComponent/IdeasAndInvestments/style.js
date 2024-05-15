@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const IdeasWrapper = styled.div`
   background: url('/inner-banner-bg.svg');
   background-size: cover;
-  padding: 120px 203px;
+  padding: 96px 203px;
   background-position: right;
   ${media.md`
     padding: 96px 120px 120px;
@@ -18,10 +18,11 @@ const IdeasWrapper = styled.div`
   }
   &.productDesign {
     .heading {
-      max-width: 1170px;
+      max-width: 1140px;
+      margin-bottom: 72px;
     }
     button {
-      margin-left: auto;
+      margin-right: auto;
     }
   }
   .heading {

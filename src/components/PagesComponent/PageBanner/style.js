@@ -170,11 +170,12 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.product-design-banner {
-    padding: 143px 0 144px;
     ${media.md`
     background-image:none;
-    
     `}
+    .text-h1 {
+      white-space: pre-wrap;
+    }
     .banner-img {
       object-fit: contain;
     }
@@ -194,7 +195,7 @@ const CtoBannerWrapper = styled.div`
     
     `}
     p {
-      max-width: 724px;
+      max-width: 750px;
     }
   }
   &.mobile-app-banner {
@@ -258,6 +259,11 @@ const CtoBannerWrapper = styled.div`
     ${media.md`
     background-image: none;
     `}
+    .banner-main {
+      p {
+        max-width: 680px;
+      }
+    }
     .banner-img {
       position: absolute;
       right: 0;
@@ -292,6 +298,9 @@ const CtoBannerWrapper = styled.div`
     }
   `}
     &.hire-developer-banner {
+      background-size:cover;
+      display:flex;
+      align-items:center;
       ${media.sm`
       min-height:auto;
       height: auto;

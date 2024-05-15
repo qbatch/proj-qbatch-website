@@ -5,12 +5,22 @@ const MarketplaceSellersWrapper = styled.div`
   background-image: ${(props) =>
     props.backgroundImage ? `url(${props.backgroundImage})` : 'url(/growing-bg.svg)'};
   background-size: cover;
-  padding: 120px 203px;
+  padding: 96px 203px;
   &.productDesign {
     .text-h2.heading {
-      font-size: 68px;
-      ${media.md`
-       font-size: 32px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeH1};
+      line-height: 68px;
+      ${media.lg`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
+        line-height: 52px;
+      `}
+      ${media.sm`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
+        line-height: 40px;
+      `}
+      ${media.xs`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        line-height: 32px;
       `}
     }
   }
@@ -34,7 +44,7 @@ const MarketplaceSellersWrapper = styled.div`
     max-width: 931px;
     font-weight: 300;
     line-height:32px;
-    margin-bottom: 78px;
+    margin-bottom: 72px;
     letter-spacing: 0.69px;
     color: ${({ theme }) => theme.colors.whiteColor};
     ${media.sm`

@@ -53,12 +53,12 @@ const ChoiceEnterpriseWrapper = styled.div`
     `}
     h4 {
       line-height: 32px;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 16px;
       letter-spacing: 0;
       font-weight:700;ß
       ${media.sm`
-      line-height: 24px;
-      margin-bottom:8px;
+        margin-bottom:8px;
       `}
     }
     p {
@@ -107,9 +107,15 @@ const ChoiceEnterpriseWrapper = styled.div`
     }
   }
 &.so-how-can-help-mb{
+  padding: 96px 0 46px;
   ${media.sm`
     padding: 56px 0 0px;
     `}
+    .choice-heading {
+      p {
+        max-width: 780px;
+      }
+    }
 }
   &.why-dev-ops{
 

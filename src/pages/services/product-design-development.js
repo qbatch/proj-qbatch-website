@@ -32,11 +32,12 @@ import WhyChooseQbatch from '../../components/PagesComponent/WhyChooseQbatch'
 import SeemToWork from '../../components/PagesComponent/SeemToWork'
 
 const ProductDesign = () => {
+  const heading = 'Transpire,\nTransform, Transcend.'
   return (
     <Layout pageTitle="Product Design and Development">
       <Banner
         subheading="Software Product Development"
-        heading="Transpire, Transform, Transcend."
+        heading={heading}
         paragraph="As product specialists, we’ve helped 100+ startups, scaleups, and
           and enterprises build resilient and modern products. Our software
           product development services exceed user expectations, encour-
@@ -73,20 +74,21 @@ const ProductDesign = () => {
         data={productDevlopmentServices}
         width="350px"
         align="center"
-        className="lost-to-launched"
+        className="lost-to-launched product-design"
       />
       <DesiredResult
         heading="Simply describe your idea and we will take care of the rest from team management and development to the successful product launch."
         isButton={true}
         className="productDesign"
         btnText="Build Your Product"
+        headingSize="text-h2"
       />
 
       <PeopleFirst
         peopleFirstData={softwareProductData}
         paragraph="We as a software product development company can build these for you and more on demand"
         heading="Did we mention your next ‘Software Project’ below?"
-        // btnText="Got an Idea"
+        btnText="Got an Idea"
         wrapperClass="productDesignPage"
       />
 
