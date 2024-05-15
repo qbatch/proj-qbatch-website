@@ -38,7 +38,7 @@ const MvpDev = () => {
         buttonText="Let’s Get Started"
         col1lg={7}
         col2lg={5}
-        className="d-flex align-items-center justify-content-start"
+        className="d-flex align-items-center justify-content-between"
         wrapperClass="product-design-banner"
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },

@@ -71,7 +71,7 @@ position: relative;
       }
     }
     p {
-      max-width: 680px;
+      max-width: 620px;
       margin-bottom: 40px;
       color: ${({ theme }) => theme.colors.whiteColor};
       a{
