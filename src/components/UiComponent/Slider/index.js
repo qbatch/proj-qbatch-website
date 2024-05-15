@@ -53,7 +53,7 @@ const Index = (props) => {
           )}
         </SliderWrapper>
       </Container>
-      {/* <Divider /> */}
+      <Divider />
     </>
   )
 }

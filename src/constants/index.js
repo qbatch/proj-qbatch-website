@@ -3034,43 +3034,35 @@ const productDesignData = [
  ]
  const developmentExpertiseData = [
    {
-     image: '/data-warehouse.svg',
-     title: 'Data Warehousing',
+    image: '/data-warehouse.svg',
      content: 'Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.',
    },
    {
      image: '/crm-development.svg',
-     title: 'CRM Development',
      content: 'Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!',
    },
    {
      image: '/modernization-services.svg',
-     title: 'IT Modernization Services',
      content: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
    },
    {
      image: '/cms-development.svg',
-     title: 'CMS Development',
      content: 'Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.',
    },
    {
      image: '/scm-development.svg',
-     title: 'SCM Development',
      content: 'Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.',
    },
    {
      image: '/ehr-development.svg',
-     title: 'EHR Development',
      content: 'Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.',
    },
    {
      image: '/bi-service.svg',
-     title: 'BI Services',
      content: 'Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.',
    },
    {
      image: '/hrm-development.svg',
-     title: 'HRM Software Development',
      content: 'Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.',
    },
  ]

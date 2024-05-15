@@ -25,7 +25,6 @@ const MarketplaceSellersWrapper = styled.div`
     color: ${({ theme }) => theme.colors.whiteColor};
     max-width: 1038px;
     margin-bottom: 20px;
-    text-transform: capitalize;
     ${media.sm`
       margin-bottom: 16px;
     `}

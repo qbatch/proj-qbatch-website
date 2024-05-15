@@ -13,6 +13,7 @@ import Collaboration from "../../components/PagesComponent/Collaboration";
 import PeopleFirst from "../../components/PagesComponent/PeopleFirst";
 import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
 import FaqSection from "../../components/PagesComponent/Faq";
+import GridData from '../../components/PagesComponent/GridData'
 import StartProject from "../../components/PagesComponent/StartProject";
 import ChoiseYourEnterprise from "../../components/PagesComponent/ChoiceYourEnterprise";
 import SecretSauce from "../../components/PagesComponent/SecretSauce";
@@ -38,7 +39,7 @@ const Enterprise = () => {
       <ResponsiveStyleWrapper>
         <Banner
           subheading="Enterprise App Development Company"
-          heading="Your “Great Transformation” Journey Begins Here"
+          heading="Your Great Transformation Journey Begins Here"
           paragraph="Worried about the challenges that come with a growing enter-
           prise? Get ready to build a market-ready solution inspired by the latest technology and insight with team Qbatch."
           buttonText="Explore Services"
@@ -67,6 +68,7 @@ const Enterprise = () => {
           paragraph="Don’t hamper your growth by second-guessing your choices and hire Qbatch as your partner enterprise app development company to help your enterprise-level projects with the following services:"
           data={customEnterpriseData}
           className="custom-interprise-services"
+          align="center"
         />
         <DesiredResult
           heading="Kickoff Enterprise Transformation toward a scalable and human-driven future."
@@ -76,14 +78,15 @@ const Enterprise = () => {
           className="enterprise"
           btnText="Let’s Transform"
         />
-        <Slider
+        <GridData enterprise data={developmentExpertiseData} textAlign='text-center' heading='Enterprise Software Development Expertise' paragraph='Here, choose the right enterprise software solution for your business and we’ll provide you with experience-driven software architecture, flexible reconfiguration, and complete process control.' />
+        {/* <Slider
           heading="Enterprise Software Development Expertise"
           paragraph="Here, choose the right enterprise software solution for your business and we’ll provide you with experience-driven software architecture, flexible reconfiguration, and complete process control."
           data={developmentExpertiseData}
           align="center"
           width="350px"
           className="enterprise-software"
-        />
+        /> */}
         <ChoiseYourEnterprise
           heading="Technological Capacity To Bring That Change!"
           listData={technologicalCapacityData}

@@ -43,8 +43,8 @@ const PeopleFirstWrapper = styled.div`
   }
   .paragraph {
     max-width: 720px;
-    color: #2d2f31;
-    line-height: 32px;
+    color: #667176;
+    line-height: 24px;
     letter-spacing: 0;
     ${media.sm`
       line-height: 24px;
