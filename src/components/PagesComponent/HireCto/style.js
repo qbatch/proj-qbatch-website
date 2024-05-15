@@ -4,10 +4,6 @@ import { media } from "../../../theme/media-mixins";
 const HireCtoWrapper = styled.div`
   padding: 96px 0;
   ${media.sm`
-     padding: 40px 0px;
-     `
-}
-  ${media.xs`
      padding: 56px 0px;
   `}
   .heading{
@@ -15,7 +11,7 @@ const HireCtoWrapper = styled.div`
     margin: auto;
     line-height: 52px;
     text-transform:none;
-    ${media.xs`
+    ${media.sm`
     line-height: 32px;
     `}
   }
@@ -40,9 +36,17 @@ const HireCtoWrapper = styled.div`
       margin-bottom: 74px;
       line-height: 32px;
       letter-spacing: 0;
+      ${media.sm`
+        margin-bottom:8px;
+      
+      `}
     }
     button{
       margin-bottom: 24px;
+      ${media.sm`
+        margin-bottom:0;
+      
+      `}
     }
     .list-group{
       max-width: 1170px;
@@ -60,8 +64,8 @@ const HireCtoWrapper = styled.div`
     text-align: left;
     max-width: 930px;
     margin:72px auto;
-    ${media.xs`
-    margin:48px auto;
+    ${media.sm`
+    margin:48px auto 24px;
     `}
     .list-group-item {
       border: 0px;

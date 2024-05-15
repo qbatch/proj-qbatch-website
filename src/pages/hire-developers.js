@@ -28,7 +28,7 @@ const Index = () => {
           wrapperClass="hire-developer-banner"
           col1lg={12}
           className="d-flex align-items-center justify-content-start"
-          blogInner="/About-Us-02.svg"
+          blogInner="/hire-developer-banner.png"
           customCrumbs={[
             { pathname: '/hire-developers/', crumbLabel: 'Hire Developers', crumbSeparator: '>' },
           ]}

@@ -49,7 +49,7 @@ const Index = () => {
     <>
       <AssistantWrapper>
         <Container>
-          <h2 className="color-primary">Qbatch’s Featured Projects in Data Scraping </h2>
+          <h2 className="color-primary mb-0">Qbatch’s Featured Projects in Data Scraping </h2>
 
           <div className="images-box">
             <Row>

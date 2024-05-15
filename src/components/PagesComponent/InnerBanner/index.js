@@ -18,7 +18,8 @@ const Index = (props) => {
     caption,
     headingMaxWidth,
     wrapperClass,
-    btnSpacingTop = 24
+    btnSpacingTop = 24,
+    captionClass
   } = props;
 
   const headingStyle = {
@@ -33,11 +34,11 @@ const Index = (props) => {
     <InnerBannerWrapper className={className}>
       <Container>
         <div className={wrapperClass}>
-          <h2 style={headingStyle} className={`text-h2 heading ${headingSize}`}>
+          <h2 style={headingStyle} className={` ${headingSize} heading`}>
             {heading} {span && <span className="inner-heading">{span}</span>}
           </h2>
 
-          {caption && <span className="caption">{caption}</span> }
+          {caption && <span className={` ${captionClass} caption`}>{caption}</span> }
             {isButton && (
             <div style={buttonStyle} className={`idea-btn d-flex justify-content-${btnAlign}`}>
               <Button text={btnText} onClick={() => navigate('/contact')} className="secondary-btn" />

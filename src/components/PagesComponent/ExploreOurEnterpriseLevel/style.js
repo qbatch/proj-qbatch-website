@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const ExploreOurEnterpriseLevelWrapper = styled.div`
 padding: 96px 0px;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
-${media.xs`
+${media.sm`
 padding: 56px 0px;
 `}
 .title-wrapper {
@@ -19,9 +19,10 @@ padding: 56px 0px;
       color: ${({ theme }) => theme.colors.dangerColor};
 
     }
-    ${media.xs`
+    ${media.sm`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
     line-height:32px;
+    margin-bottom:16px;
     `}
 }
 }
@@ -51,6 +52,9 @@ padding: 56px 0px;
     flex-direction: column;
     align-items: flex-start;
     grid-row-gap: 10px;
+    ${media.sm`
+    max-width:100%;
+    `}
     h2{
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
     color:${({ theme }) => theme.colors.bodyTextVariant};

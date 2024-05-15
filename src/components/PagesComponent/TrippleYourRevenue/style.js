@@ -5,11 +5,8 @@ const RevenueWrapper = styled.div`
   padding: 120px 0 96px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 60px 0;
+    padding: 56px 0;
   `}
-  p {
-    line-height: 32px;
-  }
   .revenue-heading {
     max-width: 360px;
     h2 {
@@ -18,6 +15,10 @@ const RevenueWrapper = styled.div`
       margin-bottom: 24px;
       ${media.sm`
         line-height: 32px;
+      `}
+      ${media.sm`
+        line-height: 32px;
+        margin-bottom: 12px;
       `}
     }
     ${media.sm`
@@ -44,6 +45,9 @@ const RevenueWrapper = styled.div`
       }
       p {
         letter-spacing: 0;
+        ${media.sm`
+         line-height:20px;
+        `}
       }
       ${media.sm`
         text-align: center;
@@ -57,6 +61,11 @@ const RevenueWrapper = styled.div`
       }
       .revenue-desc {
         margin-top: 40px;
+        h3{
+          ${media.sm`
+        margin-bottom: 8px;
+      `}
+        }
       }
     }
   }

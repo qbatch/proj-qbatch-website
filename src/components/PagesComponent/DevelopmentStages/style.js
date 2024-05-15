@@ -18,6 +18,9 @@ const StagesWrapper = styled.div`
   }
   &.stage-slider-main2 {
     padding: 120px 0 62px;
+    ${media.sm`
+    padding: 56px 0px;
+    `}
     .stages-header {
       margin-bottom: 54px;
     }
@@ -56,9 +59,9 @@ const StagesWrapper = styled.div`
     li {
       margin-bottom: ${(props) => (props.marketplace ? `${props.marketplace}` : '24px')};
       padding-left: 20px;
-      color: ${({ theme }) => theme.colors.bodyTextVariant};
+      color: ${({ theme }) => theme.colors.textMedium};
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 32px;
       position: relative;
       &:last-child {
@@ -200,6 +203,9 @@ const StagesWrapper = styled.div`
        display: flex;
        justify-content: center;
       `}
+      ${media.sm`
+    padding-bottom: 24px;
+    `}
     }
     .fixed-slider-pagination {
       padding-left: 182px;

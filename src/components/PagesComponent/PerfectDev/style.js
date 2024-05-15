@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const PerfectDevStyleWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  ${media.xs`
+  ${media.sm`
   padding: 56px 0px;
   `}
   h2 {
@@ -49,7 +49,7 @@ const PerfectDevStyleWrapper = styled.div`
       grid-row-gap: 24px;
       padding-top:24px ;
     `}
-    ${media.xs`
+    ${media.sm`
       padding-top:48px ;
     `}
     .perfect-devs-wrapper {
@@ -110,6 +110,9 @@ const PerfectDevStyleWrapper = styled.div`
         ${media.md`
          max-width:100%;
         `}
+        ${media.sm`
+        grid-row-gap: 8px;
+        `}
         h3 {
           color: ${({ theme }) => theme.colors.bodyTextVariant};
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
@@ -119,7 +122,7 @@ const PerfectDevStyleWrapper = styled.div`
           letter-spacing: 0.64px;
           text-transform: capitalize;
           margin-bottom: 0px;
-          ${media.xs`
+          ${media.sm`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
           line-height:24px;
           `}

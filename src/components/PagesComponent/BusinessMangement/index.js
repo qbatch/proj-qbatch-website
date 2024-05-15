@@ -11,7 +11,7 @@ import ManagementWrapper from './style'
 const Index = () => {
   const ProjectBox = ({ title, img, description }) => (
     <div className="hover-box">
-      <div className="d-flex gap-4 align-items-center pb-4">
+      <div className="d-flex align-items-center pb-4">
         <img src={img} alt="no-project" />
         <h4>{title}</h4>
       </div>
@@ -23,12 +23,12 @@ const Index = () => {
       <Container>
         <h3 className="text-h2">Custom e-commerce business management software solutions for your next big project.</h3>
         <Row>
-          <Col lg={6} md={6} sm={12}>
+          <Col xl={6} lg={6} md={12} sm={12}>
             {[...projects].slice(0, 5).map((project, index) => {
               return <ProjectBox {...project} />
             })}
           </Col>
-          <Col lg={6} md={6} sm={12}>
+          <Col xl={6} lg={6} md={12} sm={12}>
             {[...projects].slice(5, 10).map((project, index) => {
               return <ProjectBox {...project} />
             })}

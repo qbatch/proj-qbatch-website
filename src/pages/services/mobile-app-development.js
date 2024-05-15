@@ -100,6 +100,7 @@ const MobileApp = () => {
                 commitment to our clients that we are resolving the problem."
         maxWidth="697px"
         data={revenueData}
+        className="our-secret-sauce"
       />
       <CrewNotVendors />
       <MultiplePlatformSolutions />
@@ -114,12 +115,14 @@ const MobileApp = () => {
         paragraph="ExploreTime-tested Web Application Development tools and technologies to build a cross-platform and secure application:"
         data={developmentServicesData}
         width="350px"
+        className="full-suite-of-custom"
       />
       <Slider
         heading="Lost to Launched"
         paragraph="Our Mobile App Development Process Enroute Successs"
         data={lostToLaunchedItems}
         align="center"
+        className="lost-to-launched-mb"
       />
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
       <Achievements innerPage={true} />

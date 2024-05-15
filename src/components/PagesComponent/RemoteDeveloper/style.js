@@ -7,7 +7,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
   padding-bottom:72px ;
   `}
   ${media.sm`
-    padding-bottom: 16px;
+    padding-bottom: 56px;
     `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .content-wrapper {
@@ -16,7 +16,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
     margin: auto;
     padding-top: 96px;
     padding-bottom: 72px;
-    ${media.xs`
+    ${media.sm`
     padding-top: 56px;
     padding-bottom: 48px;
     `}
@@ -50,7 +50,7 @@ const RemoteDeveloperStyleWrapper = styled.div`
     justify-content: center;
     align-items: center;
     grid-row-gap: 24px;
-    ${media.xs`
+    ${media.sm`
         margin: auto;
     `}
     h3 {
@@ -65,8 +65,8 @@ const RemoteDeveloperStyleWrapper = styled.div`
       text-transform: none;
       min-height: 69px;
       text-transform:none;
-      ${media.xs`
-      max-height: 100%;
+      ${media.sm`
+      min-height:80px;
       `}
 
     }

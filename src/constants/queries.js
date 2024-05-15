@@ -608,6 +608,110 @@ export const Queries = () => {
           }
         }
       }
+       allStrapiMvpDev {
+        nodes {
+          seo {
+            metaTitle
+            metaRobots
+            slug
+            metaDescription
+            language
+            structuredData {
+              _context
+              _type
+              address {
+                _type
+                addressCountry
+                addressLocality
+                addressRegion
+                postalCode
+                streetAddress
+                telephone
+              }
+              image {
+                _type
+                url
+              }
+              headline
+              alternateName
+              areaServed
+              email
+              description
+              founder {
+                url
+                name
+                sameAs
+                knowsLanguage
+                jobTitle
+                image
+                gender
+                email
+                description
+                _type
+              }
+              breadcrumb {
+                _type
+                itemListElement {
+                  _type
+                  item
+                  name
+                  position
+                }
+              }
+              mainEntity {
+                _type
+                provider {
+                  _type
+                  logo
+                  name
+                  url
+                }
+                areaServed {
+                  _type
+                  name
+                }
+                description
+                serviceType
+                serviceOutput
+                serviceArea {
+                  _type
+                  name
+                }
+                hasOfferCatalog {
+                  _type
+                  itemListElement {
+                    _type
+                    itemOffered {
+                      _type
+                      areaServed {
+                        _type
+                        name
+                      }
+                      description
+                      name
+                      serviceArea {
+                        _type
+                        name
+                      }
+                    }
+                  }
+                  name
+                }
+                serviceAudience {
+                  _type
+                  audienceType
+                }
+              }
+            }
+            keywords
+            metaimage {
+              localFile {
+                url
+              }
+            }
+          }
+        }
+      }
        allStrapiEcommerce {
          nodes {
            seo {

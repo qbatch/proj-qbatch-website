@@ -4,8 +4,14 @@ import { media } from "../../../theme/media-mixins";
 const SeemToWorkWrapper = styled.div`
   padding: 120px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  ${media.sm`  
+    padding: 56px 0;
+  `}
   .heading {
     padding-bottom: 72px;
+    ${media.sm`  
+    padding-bottom: 48px;
+  `}
   }
   .row:has(.work-col) {
     max-width: 1050px;

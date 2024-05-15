@@ -51,6 +51,7 @@ const webapp = () => {
           heading="We Are Developers You Can Trust For Your Web App"
           paragraph="A web app is more than APIs and design, it’s following the human-to-human approach and building what the world needs."
           data={youCanTrustData}
+          className="developers-trust-slider"
         />
         <FullCycle />
         <SolutionToChoose />
@@ -74,6 +75,7 @@ const webapp = () => {
           heading="Lost to Launched"
           paragraph="Web Application Development Process"
           data={lostToLaunchedItems}
+          className="lost-to-launched"
         />
         <LanguagesAndFrameworks />
         <Collaboration />

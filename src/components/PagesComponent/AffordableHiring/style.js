@@ -4,13 +4,16 @@ import { media } from "../../../theme/media-mixins";
 const AffordableHiringWrapper = styled.div`
   padding: 120px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-    ${media.xs`
+    ${media.sm`
   padding: 56px 0px;
   `}
   h2 {
     margin-bottom: 16px;
     color: ${({ theme }) => theme.colors.primaryColor};
     text-align: left;
+    ${media.sm`
+    margin-bottom: 12px;
+    `}
   }
   p {
     margin: 0;
@@ -43,7 +46,7 @@ const AffordableHiringWrapper = styled.div`
       border-radius: 24px 24px 0px 24px;
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
       background-color:${({ theme }) => theme.colors.whiteColor};
-      ${media.xs`
+      ${media.sm`
       grid-row-gap: 8px;
       `}
       h3 {
@@ -54,7 +57,7 @@ const AffordableHiringWrapper = styled.div`
         letter-spacing: 0.02em;
         text-align: left;
         max-width: 204px;
-        ${media.xs`
+        ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         line-height:16px;
         `}
@@ -67,7 +70,7 @@ const AffordableHiringWrapper = styled.div`
           text-align: left;
           color: ${({ theme }) => theme.colors.primaryColor};
           margin-bottom: 8px;
-          ${media.xs`
+          ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         line-height:16px;
         `}

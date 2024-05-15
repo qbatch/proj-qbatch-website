@@ -4,7 +4,10 @@ import { media } from "../../../theme/media-mixins";
 const BlogBannerWrapper = styled.div`
   padding: 120px 0 112px;
   text-align: center;
-
+${media.sm`
+padding:56px 0px;
+text-align: left;
+`}
   .blog-banner {
     max-width: 690px;
     margin: 0 auto;
@@ -15,6 +18,9 @@ const BlogBannerWrapper = styled.div`
       ${media.lg`
       line-height: 52px;
     `}
+    ${media.sm`
+    margin-bottom: 12px;
+    `}
     ${media.xs`
       line-height: 32px;
     `}
@@ -24,6 +30,9 @@ const BlogBannerWrapper = styled.div`
       font-weight: ${({ theme }) => theme.fontWeight.semiBold};
       line-height: 40px;
       letter-spacing: 0.7px;
+      ${media.sm`
+      line-height:32px;
+      `}
     }
   }
 `;

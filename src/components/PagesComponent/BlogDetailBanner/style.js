@@ -10,12 +10,16 @@ const BlogDetailsWrapper = styled.div`
   background-position: right;
   background-size: cover;
   ${media.sm`
-    padding: 96px 0;
+    padding: 56px 0;
+    height:auto;
   `}
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.whiteColor};
     margin: 4px 0 11px 52px;
+    ${media.sm`
+    display:none;
+    `}
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
     }

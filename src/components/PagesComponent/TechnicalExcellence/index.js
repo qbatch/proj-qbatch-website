@@ -20,12 +20,12 @@ const Index = (props) => {
             <div className="technical-paragraph">
               {title && (
                 <h3>
-                  Do You know?
+                  Do You know? 
                   <a
                     href="https://www.deloitte.com/an/en/our-thinking/insights/topics/leadership/digital-transformation-topics-for-corporate-technology-leadership.html"
                     target="blank"
                   >
-                    3 in 10
+                     3 in 10
                   </a>{" "}
                   company leaders are not sure if technology is well integrated
                   into their systems or not. Are you sure about yours?

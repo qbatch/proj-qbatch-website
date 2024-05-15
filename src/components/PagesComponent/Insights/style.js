@@ -4,15 +4,19 @@ import { media } from "../../../theme/media-mixins";
 const InsightsWrapepr = styled.div`
   padding: 94px 0 91px;
   ${media.sm`
-     padding: 40px 0px;
+     padding: 56px 0px;
   `}
   .carousel-header {
     margin-bottom: 72px;
+    ${media.sm`
+      margin-bottom: 48px;
+  `}
     h2 {
       line-height: 52px;
       margin-bottom: 29px;
-      ${media.xs`
+      ${media.sm`
       line-height:24px;
+      margin-bottom:12px ;
       `}
     }
     p {

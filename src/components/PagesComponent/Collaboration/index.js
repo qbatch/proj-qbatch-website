@@ -1,13 +1,14 @@
 import React from "react";
 import CollaborationWrapper from "./style";
 import { BsArrowRight } from "react-icons/bs";
+import Button from "../../../components/UiComponent/Button";
 
 import Container from "../../UiComponent/Container";
 import TimeIcon from "../../../assets/images/icons/time-clock.svg";
 import FixedScopeIcon from "../../../assets/images/icons/fixed-scope.svg";
 import DevTeamIcon from "../../../assets/images/icons/dev-team.svg";
 
-const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading }) => {
+const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading, button }) => {
   const experties = expertiseData || [
     {
       img: TimeIcon,
@@ -49,13 +50,13 @@ const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading }
                       <list.img />
                     </div>
                     <div>
-                      {headingClass === 'services-light' ? 
-                      <span className="title fw-normal">{list.title}</span>
-                      :
-                      <span className="title text-h4">{list.title}</span>
+                      {headingClass === 'services-light' ?
+                        <span className="title fw-normal">{list.title}</span>
+                        :
+                        <span className="title text-h4">{list.title}</span>
                       }
                       <p>{list.description}</p>
-                      
+
                     </div>
                   </div>
                   {/* <div className="arrow-box">
@@ -66,6 +67,11 @@ const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading }
             })}
           </div>
         </div>
+        {button &&
+          <div className='d-flex justify-content-center pt-5'>
+            <Button className="mt-5" onClick={() => navigate('/contact')} text="Start Your Project" />
+          </div>
+        }
       </Container>
     </CollaborationWrapper>
   )

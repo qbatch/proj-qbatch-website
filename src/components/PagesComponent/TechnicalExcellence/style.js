@@ -5,9 +5,6 @@ const TechnicalExcellenceWrapper = styled.div`
   padding: 96px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-     padding: 60px 0px;
-  `}
-  ${media.xs`
      padding: 56px 0px;
   `}
   .technical-heading {
@@ -18,6 +15,7 @@ const TechnicalExcellenceWrapper = styled.div`
     ${media.sm`
       line-height: 32px;
       text-align: center;
+      margin-bottom:3px;
     `}
   }
   .technical-paragraph {
@@ -33,6 +31,7 @@ const TechnicalExcellenceWrapper = styled.div`
     `}
     a {
       text-decoration: underline;
+      padding-left:3px;
       &.label-text-ancer{
         font-weight: 600;
         text-decoration: none;
@@ -47,7 +46,7 @@ const TechnicalExcellenceWrapper = styled.div`
       text-transform: none;
       color:${({ theme }) => theme.colors.bodyTextVariant};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-      ${media.xs`
+      ${media.sm`
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       line-height:24px;
       `}

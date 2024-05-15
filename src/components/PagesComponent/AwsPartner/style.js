@@ -10,7 +10,7 @@ const AwsPartnerWrapper = styled.div`
       max-width: 800px;
       margin: 0 auto;
       margin-top: -60px;
-      z-index: 99;
+      z-index: 98;
       position: relative;
       img{
             margin-bottom:16px;

@@ -4,9 +4,15 @@ import { media } from "../../../theme/media-mixins";
 const DevelopmentProcessWrapper = styled.div`
 padding: 120px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+${media.sm`
+padding: 56px 0px;
+`}
 .heading{
   max-width: 811px;
   padding-bottom: 72px;
+  ${media.sm`
+  padding-bottom: 48px;
+`}
 }
 .row{
     --bs-gutter-y: 24px;
@@ -39,10 +45,16 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     h4{
       color: ${({ theme }) => theme.colors.primaryColor};
       padding-bottom: 8px;
+      ${media.sm`
+      padding-bottom: 0px;
+      `}
     }
     p{
       line-height: 32px;
       color: ${({ theme }) => theme.colors.textMedium};
+      ${media.sm`
+     line-height:20px;
+      `}
     }
   }
 

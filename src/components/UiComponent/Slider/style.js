@@ -2,13 +2,201 @@ import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 const SliderWrapper = styled.div`
   padding: 96px 0;
-  ${media.xs`
+  ${media.sm`
     padding: 56px 0;
   `}
+  &.five-step-slider{
+    ${media.sm`
+    .upper-heading{
+      h2{
+        margin-bottom:12px;
+      }
+    }
+    `}
+  }
+  &.our-secret-sauce{
+    ${media.sm`
+   .upper-heading{
+      h2{
+        margin-bottom:12px;
+      }
+    }
+    `}
+  }
+  &.explore-slider{
+  ${media.sm`
+   .upper-heading{
+      h2{
+        margin-bottom:12px;
+      }
+    }
+    `}
+  }
+  &.full-suite-of-custom{
+  ${media.sm`
+   .upper-heading{
+      h2{
+        margin-bottom:12px;
+      }
+    }
+    `}
+    .title{
+    .upper-text{
+       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+       font-weight: ${({ theme }) => theme.fontWeight.bold};
+       text-transform: none;
+    }
+    .lower-text{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+      color: ${({ theme }) => theme.colors.primaryColor};
+      text-transform: none;
+
+    }
+  }
+}
+&.mvp-slider{
+  .slider-data{
+    .title{
+    margin-bottom: 8px;
+    }
+  }
+  .title{
+    .upper-text{
+       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+       font-weight: ${({ theme }) => theme.fontWeight.bold};
+       text-transform: none;
+    }
+    .lower-text{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+      color: ${({ theme }) => theme.colors.primaryColor};
+      text-transform: none;
+
+    }
+}
+}
+  &.developers-trust-slider{
+    ${media.sm`
+    .upper-heading{
+      h2{
+        margin-bottom:12px;
+      }
+    }
+    `}
+  }
   &.devops-slider{
+    ${media.sm`
+    .upper-heading{
+      h2{
+        margin-bottom:12px;
+      }
+    }
+    `}
     .paragraph{
       max-width: 608px;
       margin: auto;
+    }
+}
+  &.devops-slider{
+  }
+  &.competency-slider{
+    ${media.sm`
+      .make-responsive{
+        margin:0px;
+        margin-top:0px !important;
+      }
+      `}
+    .upper-heading{
+    ${media.sm`
+      p{
+        margin:0px;
+      }
+      `}
+      h2{
+        ${media.sm`
+            margin-bottom:48px;
+          `}
+      }
+    }
+  }
+  &.custom-interprise-services{
+    ${media.sm`
+    .upper-heading{
+      margin-bottom:48px;
+      h2{
+        margin-bottom:12px;
+      }
+      p{
+        margin: 0px;
+      }
+    }
+    
+      `}
+  }
+  &.lost-to-launched-mb{
+    p.paragraph {
+    margin: 0px;
+}
+      .make-responsive {
+        flex-direction: column;
+        margin-top: 0px !important;
+        grid-row-gap:0px !important;
+    }
+  }
+  &.enterprise-software{
+    .upper-heading{
+      h2{
+        margin-bottom:12px;
+      }
+    ${media.sm`
+    .paragraph{
+        margin-bottom:48px;
+      }
+      `}
+    }
+  }
+  &.automation-section{
+    .upper-heading{
+      h2{
+        margin-bottom:12px;
+      }
+    ${media.sm`
+    .paragraph{
+        margin-bottom:48px;
+      }
+      `}
+    }
+  }
+  &.lost-to-launched{
+    ${media.sm`
+    .make-responsive{
+        margin:0px !important;
+      }
+        &.cto-slider-wrapper{
+    ${media.sm`
+     .make-responsive{
+      margin-bottom:24px !important;
+    }
+    `}
+  }
+    `}
+    .upper-heading{
+    ${media.sm`
+    .paragraph{
+        margin-bottom:48px;
+      }
+      `}
+    }
+  }
+  &.lost-to-launched{
+    .upper-heading{
+      margin-bottom:48px;
+      h2{
+        ${media.sm`
+            margin-bottom:12px;
+          `}
+      }
     }
   }
   .slider-width {
@@ -18,6 +206,7 @@ const SliderWrapper = styled.div`
   ${media.sm`
         .make-responsive {
       flex-direction: column;
+      margin-top:24px !important;
     }
     `}
     ${media.xs`
@@ -33,6 +222,12 @@ const SliderWrapper = styled.div`
       }
     }
   .upper-heading {
+    .inner-heading-paragraph{
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
+      margin-bottom:16px;
+      display: block;
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
+    }
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
@@ -42,6 +237,7 @@ const SliderWrapper = styled.div`
       max-width: ${(props) => (props.maxWidth ? props.maxWidth : '')};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       font-weight:400;
+      margin: auto;
       ${media.sm`
         max-width: 100%;
     `}
@@ -56,6 +252,9 @@ const SliderWrapper = styled.div`
       color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-weight: 700;
       margin-bottom: 16px;
+      ${media.sm`
+      line-height:32px;
+      `}
     }
     .content {
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
@@ -100,6 +299,7 @@ const SliderWrapper = styled.div`
             height: 8px;
             border-radius: 50px;
             opacity: 1;
+            color:transparent;
           }
         }
       }

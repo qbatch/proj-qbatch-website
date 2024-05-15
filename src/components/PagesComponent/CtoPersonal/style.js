@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const PersonaWrapper = styled.div`
   padding: 99px 0 67px;
-  ${media.xs`
+  ${media.sm`
      padding: 56px 0px;
   `}
   .row {
@@ -18,8 +18,11 @@ const PersonaWrapper = styled.div`
       max-width: 321px;
       margin-bottom: 24px;
       text-transform:none;
+
       ${media.sm`
        line-height: 32px;
+       max-width: 100%;
+      margin-bottom: 12px;
       `}
     }
     .description {
@@ -32,7 +35,7 @@ const PersonaWrapper = styled.div`
       ${media.sm`
            max-width:100%;
         `}
-      ${media.xs`
+      ${media.sm`
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       line-height:24px;
         `}

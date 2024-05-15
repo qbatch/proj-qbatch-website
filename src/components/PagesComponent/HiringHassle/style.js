@@ -5,12 +5,15 @@ const HiringHassleWrapper = styled.div`
   padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
-padding: 56px 0px;
-`}
+  padding: 56px 0px;
+  `}
   h2 {
     color: ${({ theme }) => theme.colors.primaryColor};
     text-align: center;
     margin-bottom: 16px;
+    ${media.sm`
+    margin-bottom: 12px;
+    `}
   }
   p {
     margin: 0;
@@ -36,7 +39,7 @@ padding: 56px 0px;
     grid-template-columns: 1fr 1fr;
     padding-top:48px;
     `}
-    ${media.xs`
+    ${media.sm`
     grid-template-columns: 1fr;
     `}
   .hiring-hassle-cards {
@@ -50,7 +53,7 @@ padding: 56px 0px;
       box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.16);
       padding: 32px;
       grid-row-gap: 14px;
-      ${media.xs`
+      ${media.sm`
       flex-direction: row;
       justify-content: space-between;
       align-items: center;

@@ -6,7 +6,7 @@ const QbatchMakingWrapper = styled.div`
   .container-padding {
     padding: 120px 0;
     ${media.sm`
-      padding: 40px 0;
+      padding: 56px 0;
     `}
   }
   .section-heading {
@@ -15,11 +15,14 @@ const QbatchMakingWrapper = styled.div`
       max-width: 469px;
       margin: auto;
     }
-    ${media.xs`
-      margin-bottom: 32px;
+    ${media.sm`
+      margin-bottom:12px;
     `}
     .heading {
       margin-bottom: 24px;
+      ${media.sm`
+      margin-bottom:0px;
+    `}
     }
     p {
       ${media.xs`
@@ -29,6 +32,9 @@ const QbatchMakingWrapper = styled.div`
   }
   .challenges-section {
     margin-top: 24px;
+    ${media.sm`
+    margin-top: 48px;
+    `}
     p {
       margin-bottom: 0;
     }
@@ -44,6 +50,7 @@ const QbatchMakingWrapper = styled.div`
       p {
         ${media.xs`
           font-size: 12px;
+          line-height:16px;
         `}
       }
     }

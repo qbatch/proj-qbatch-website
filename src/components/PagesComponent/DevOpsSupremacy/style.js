@@ -4,7 +4,7 @@ const DevOpsSupremacyWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
  ${media.sm`
-   padding:40px 0px;
+   padding:56px 0px;
   `}
 .wrapper{
   max-width: 450px;
@@ -12,16 +12,25 @@ border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
 .heading{
   color:  ${({ theme }) => theme.colors.primaryColor};
   margin-bottom: 24px;
+  ${media.sm`
+    margin-bottom:12px; 
+  `}
 }
 .paragraph{
   font-size: ${({ theme }) => theme.fonts.baseFontSize};
   line-height: 24px;
+  ${media.sm`
+    margin-bottom:48px; 
+  `}
 }
 .counter-text-wrapper{
   display: flex;
   align-items: start;
   gap: 16px;
   padding-bottom: 32px;
+  ${media.sm`
+    padding-bottom: 0; 
+  `}
   .counter-text{
     font-size: 48px;
     line-height: 68px;

@@ -11,7 +11,7 @@ const AchievementsWrapper = styled.div`
     text-align: center;
     position: relative;
     ${media.sm`
-      padding: 40px 0 8px;
+      padding: 56px 0px;
     `}
     .achievements-inner-wrapper {
       position: relative;

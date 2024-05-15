@@ -44,6 +44,7 @@ const FooterWrapper = styled.div`
         color: ${({ theme }) => theme.colors.whiteColor};
         font-weight: ${({ theme }) => theme.fontWeight.bold};
         max-width: 375px;
+        text-transform: capitalize;
         ${media.lg`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         `}
@@ -52,6 +53,7 @@ const FooterWrapper = styled.div`
         `}
         ${media.xs`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+          line-height:24px;
         `}
       }
     }

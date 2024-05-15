@@ -10,8 +10,26 @@ const InnerBannerWrapper = styled.div`
     padding: 96px 120px 120px;
   `}
   ${media.sm`
-    padding: 40px 40px;
+    padding:56px 24px;
   `}
+  &.build-mvp-app{
+    text-align: center;
+    .heading{
+      text-transform: none;
+    }
+    .caption{
+      margin-top: 24px;
+      margin-bottom: 72px;
+      max-width: 931px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
+      text-transform: none;
+      ${media.lg`
+        margin-bottom: 32px;
+      `}
+    }
+  }
   .caption {
     color: ${({ theme }) => theme.colors.whiteColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
@@ -34,6 +52,13 @@ const InnerBannerWrapper = styled.div`
     `}
   }
 
+  &.mvp-wrapper{
+      .caption{
+        font-weight: ${({ theme }) => theme.fontWeight.light};
+        margin-top: 24px;
+      margin-bottom: 72px;
+      }
+  }
   &.extension-dev-inner-banner{
     .caption{
       text-transform: none;
