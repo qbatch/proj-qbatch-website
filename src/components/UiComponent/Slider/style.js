@@ -198,6 +198,13 @@ const SliderWrapper = styled.div`
           `}
       }
     }
+    &.product-design {
+      .upper-heading{
+        p {
+          max-width: 930px;
+        }
+      }
+    }
   }
   .slider-width {
     max-width: 1020px;

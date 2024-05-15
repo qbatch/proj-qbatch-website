@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const WhyChooseQbatchWrapper = styled.div`
-  padding: 120px 0;
+  padding: 96px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
     padding: 56px 0;
@@ -10,7 +10,7 @@ const WhyChooseQbatchWrapper = styled.div`
   .heading {
     max-width: 820px;
     margin: auto;
-    padding-bottom: 72px;
+    padding-bottom: 48px;
     ${media.sm`
     padding: 0 0 48px;
   `}
@@ -29,12 +29,8 @@ const WhyChooseQbatchWrapper = styled.div`
         padding-bottom: 24px;
       }
       .paragraph {
-        line-height: 32px;
-        font-weight: ${({ theme }) => theme.fontWeight.bold};
         max-width: 320px;
-        font-weight:600;
         margin: auto;
-        color: ${({ theme }) => theme.colors.bodyTextVariant};
       }
       ${media.xs`
     padding: 24px 24px;
