@@ -5,7 +5,7 @@ import Divider from '../Divider'
 import SliderWrapper from './style'
 import Button from "../../UiComponent/Button"
 const Index = (props) => {
-  const { data, align, heading, paragraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText } = props
+  const { data, align, heading, paragraph, subParagraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText } = props
   const settings = {
     dots: true,
     infinite: false,
@@ -23,6 +23,7 @@ const Index = (props) => {
             <h2>{heading}</h2>
             {seconedHeading && <h4>{seconedHeading}</h4>}
             <p className='paragraph'>{paragraph}</p>
+            {subParagraph ? <p className='paragraph sub-paragraph'>{subParagraph}</p> : null}
           </div>
           <div className="slider-width">
             <Slider {...settings}>

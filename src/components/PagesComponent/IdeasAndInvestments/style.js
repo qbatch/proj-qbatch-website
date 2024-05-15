@@ -39,6 +39,7 @@ const IdeasWrapper = styled.div`
       margin-bottom: 0px;
   `}
   }
+
   &.desired-result {
     background: url('/inner-banner-bg2.svg');
     background-size: cover;
@@ -46,6 +47,24 @@ const IdeasWrapper = styled.div`
       max-width: 850px;
       margin: 0 auto 72px;
       text-align: center;
+    }
+  }
+  &.desire-result-wrapper{
+    padding:109px 96px;
+    ${media.sm`
+    padding: 56px 24px;
+    `}
+    .container{
+      max-width:100%;
+    }
+    .heading{
+      margin:0;
+      max-width:988px;
+      text-align:left;
+      margin-bottom:48px;
+    }
+    .idea-btn.d-flex.justify-content-end{
+      justify-content:flex-start !important;
     }
   }
   &.enterprise {

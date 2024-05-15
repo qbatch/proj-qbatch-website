@@ -35,6 +35,8 @@ const PeopleFirstWrapper = styled.div`
   }
   .paragraph {
     max-width: 720px;
+    color: #2d2f31;
+    line-height: 24px;
     letter-spacing: 0;
     ${media.sm`
       line-height: 24px;
@@ -60,6 +62,8 @@ const PeopleFirstWrapper = styled.div`
       ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
       `}
+      max-width: 270px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     }
     &:nth-child(4n) {
       border-right: none;
