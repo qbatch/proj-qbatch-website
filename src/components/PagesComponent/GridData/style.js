@@ -35,6 +35,9 @@ const RevenueWrapper = styled.div`
         color: ${({ theme }) => theme.colors.textMedium};
         line-height:24px;
         margin-bottom:72px;
+        ${media.sm`
+          margin-bottom: 32px;
+        `}
       } 
     ${media.sm`
       max-width: 100%;
@@ -77,10 +80,17 @@ const RevenueWrapper = styled.div`
       }
       .revenue-desc {
         margin-top: 40px;
+        ${media.sm`
+          margin-top: 32px;
+        `}
         h3{
           ${media.sm`
         margin-bottom: 8px;
       `}
+        }
+        h4 {
+          margin-bottom: 16px;
+          font-weight:${({ theme }) => theme.fontWeight.bold};
         }
       }
     }

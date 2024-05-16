@@ -56,7 +56,7 @@ const ChoiceEnterpriseWrapper = styled.div`
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 16px;
       letter-spacing: 0;
-      font-weight:700;ß
+      font-weight:700;
       ${media.sm`
         margin-bottom:8px;
       `}

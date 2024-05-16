@@ -10,6 +10,9 @@ padding: 56px 0px;
   --bs-gutter-x: 71px;
   --bs-gutter-y: 71px;
   align-items: center;
+  ${media.sm`
+    --bs-gutter-y: 32px;
+  `}
 }
   .img-wrapper{
     display: flex;
@@ -50,6 +53,7 @@ padding: 56px 0px;
     letter-spacing: 0.32px;
     max-width: 573px;
     margin-bottom: 0;
+    text-transform: capitalize;
     ${media.sm`
     padding-bottom:0px;
     line-height:32px;

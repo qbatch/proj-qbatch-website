@@ -19,8 +19,13 @@ const HireCtoWrapper = styled.div`
     .list-group-item{
       gap: 16px;
       span{
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         letter-spacing: 0.7px;
-        line-height: 30.6px;
+        line-height: 32px;
+        ${media.md`
+          font-size: ${({ theme }) => theme.fonts.baseFontSize};
+          line-height: 24px;
+        `}
       }
     }
     img{
@@ -33,6 +38,7 @@ const HireCtoWrapper = styled.div`
       margin-bottom: 72px;
       line-height: 32px;
       letter-spacing: 0;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
       ${media.sm`
         margin-bottom:8px;
       

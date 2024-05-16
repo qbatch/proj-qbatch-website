@@ -23,6 +23,7 @@ const Index = ({data,heading,paragraph,textAlign,enterprise,maxWidth,height}) =>
                     <img src={item.image} alt="logo" />
                   </div>
                   <div className="revenue-desc d-flex flex-column justify-content-center h-100">
+                    {item.title && <h4>{item.title}</h4>}
                     <p>{item.content}</p>
                   </div>
                 </div>

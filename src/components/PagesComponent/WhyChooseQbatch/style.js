@@ -12,7 +12,7 @@ const WhyChooseQbatchWrapper = styled.div`
     margin: auto;
     padding-bottom: 48px;
     ${media.sm`
-    padding: 0 0 48px;
+    padding: 0 0 32px;
   `}
   }
   .wrapper {
@@ -33,7 +33,7 @@ const WhyChooseQbatchWrapper = styled.div`
         margin: auto;
       }
       ${media.xs`
-    padding: 24px 24px;
+        padding: 8px 16px;
       .paragraph{
         line-height: 24px;
       }

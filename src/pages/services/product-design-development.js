@@ -86,7 +86,7 @@ const ProductDesign = () => {
 
       <PeopleFirst
         peopleFirstData={softwareProductData}
-        paragraph="We as a software product development company can build these for you and more on demand"
+        paragraph="We as a software product development company can build these for you and more on demand:"
         heading="Did we mention your next ‘Software Project’ below?"
         btnText="Got an Idea"
         wrapperClass="productDesignPage"
