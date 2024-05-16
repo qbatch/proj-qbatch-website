@@ -50,7 +50,7 @@ const webapp = () => {
         />
         <Achievements innerPage={true} />
         <SliderComponent />
-        <FullCycle />
+        <FullCycle className="web-app-development-page" />
         <SolutionToChoose />
         <AdvancedWebExplore />
         <AppDevelopment />

@@ -7,10 +7,10 @@ import {fullCycle} from '../../../constants'
 
 import FullCycleWrapper from './style'
 
-const Index = () => {
+const Index = ({className}) => {
 
   return (
-    <FullCycleWrapper>
+    <FullCycleWrapper className={className}>
       <Container>
         <h2 className='main-heading'>Full-Cycle Web Application Development Services</h2>
         <p className='paragraph'>Explore the best web app solutions that escalate your performance and position in the highly saturated market.</p>
