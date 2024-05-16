@@ -1,9 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Script } from 'gatsby'
 import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
 import Achievements from "../../components/PagesComponent/Achievements";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
@@ -21,6 +22,7 @@ import DedicatedMobileDevelopers from "../../components/PagesComponent/Dedicated
 import MultiplePlatformSolutions from "../../components/PagesComponent/MultiplePlatformSolutions";
 import BannerImage from "../../../static/mobile-app-banner.svg";
 
+
 import {
   lostToLaunchedItems,
   mobileAppFaq,
@@ -30,9 +32,10 @@ import {
 
 
 const MobileApp = () => {
-  window.scrollTo(...([0, 0]))
   return (
+
     <Layout>
+      <ScrollToTop />
     <Banner
           subheading="Mobile App Development"
           heading="Deliver Powerful Mobile App Experiences"

@@ -6,6 +6,7 @@ import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
 import Slider from '../../components/UiComponent/Slider'
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import Achievements from "../../components/PagesComponent/Achievements";
 import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
 import AppDevelopment from "../../components/PagesComponent/AppDevelopmentService";
@@ -32,6 +33,7 @@ const webapp = () => {
 
   return (
     <Layout>
+            <ScrollToTop />
       <ResponsiveStyleWrapper>
         <Banner
           subheading="Web Application Development Company"
