@@ -57,7 +57,6 @@ const RevenueWrapper = styled.div`
       padding-bottom: 48px;
     `}
     .revenue-data {
-
       p {
         letter-spacing: 0;
         margin-bottom: 0px;
