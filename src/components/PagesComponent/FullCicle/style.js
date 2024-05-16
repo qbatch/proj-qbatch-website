@@ -6,6 +6,9 @@ const FullCycleWrapper = styled.div`
   ${media.sm`
   padding: 56px 0;
   `}
+  &.web-app-development-page{
+    border-top:1px solid ${({ theme }) => theme.colors.dividerColor};
+  }
   .heading-container{
     max-width: 505px;
     margin: auto;

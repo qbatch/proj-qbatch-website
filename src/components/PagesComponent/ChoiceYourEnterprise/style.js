@@ -56,7 +56,7 @@ const ChoiceEnterpriseWrapper = styled.div`
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 16px;
       letter-spacing: 0;
-      font-weight:700;ß
+      font-weight:700;
       ${media.sm`
         margin-bottom:8px;
       `}
@@ -116,6 +116,9 @@ const ChoiceEnterpriseWrapper = styled.div`
         max-width: 780px;
       }
     }
+  ${media.sm`
+    padding: 56px 0 0px;
+    `}
 }
   &.why-dev-ops{
 
