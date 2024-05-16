@@ -160,7 +160,7 @@ const LanguagesWrapper = styled.div`
     justify-content: center;
   }
   .framework-item {
-    min-height: 470px;
+    min-height: 600px;
   }
 `;
 

@@ -76,7 +76,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                           <div className="framework-logo">
                             <div>
                               <div className="logo-wrapper">
-                                {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                                {data.img === '' ? '' : <img src={data.img} width={data.img === '/typescript.svg' ? '80px' :'150Saving Marketplace Sellers from doing too much work.px'}alt="project" />}
                               </div>
                             </div>
                           </div>
