@@ -5,6 +5,27 @@ const SliderWrapper = styled.div`
   ${media.sm`
     padding: 56px 0;
   `}
+  &.web-app-development-wrapper {
+    padding: 96px 0 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    ${media.sm`
+    padding: 56px 0 42px;
+  `}
+  ${media.lg`
+    display:block;
+    flex-wrap:initial; 
+      `}
+  .sub-paragraph{
+    margin-top: 24px;
+  }
+    &.upper-heading {
+    max-width: 573px;
+}
+    .slider-width {
+    max-width: 692px;
+}
+}
   &.five-step-slider{
     ${media.sm`
     .upper-heading{
@@ -123,7 +144,7 @@ const SliderWrapper = styled.div`
   &.custom-interprise-services{
     ${media.sm`
     .upper-heading{
-      margin-bottom:48px;
+      margin-bottom:24px;
       h2{
         margin-bottom:12px;
       }
@@ -196,6 +217,13 @@ const SliderWrapper = styled.div`
         ${media.sm`
             margin-bottom:12px;
           `}
+      }
+    }
+    &.product-design {
+      .upper-heading{
+        p {
+          max-width: 930px;
+        }
       }
     }
   }

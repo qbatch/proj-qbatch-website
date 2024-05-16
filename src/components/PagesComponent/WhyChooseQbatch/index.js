@@ -1,8 +1,11 @@
 import React from 'react';
-import WhyChooseQbatchWrapper from './style';
+import { Row, Col } from 'react-bootstrap';
+
 import Container from '../../UiComponent/Container';
 import { whyChooseQbatchData } from '../../../constants';
-import { Row, Col } from 'react-bootstrap';
+
+import WhyChooseQbatchWrapper from './style';
+
 
 const style = () => {
   return (
@@ -16,7 +19,7 @@ const style = () => {
             {whyChooseQbatchData.map((data, ind) => (
               <Col lg={4} md={4} xs={6} key={ind} className="achievements-col">
                 <img src={data.icon} alt={data.symbol} className="icon" />
-                <p className="text-h4 paragraph">{data.desc}</p>
+                <p className="text-h5 paragraph">{data.desc}</p>
               </Col>
             ))}
           </Row>

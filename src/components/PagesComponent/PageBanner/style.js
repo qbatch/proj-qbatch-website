@@ -7,7 +7,10 @@ const CtoBannerWrapper = styled.div`
   background-image: ${(props) => `url(${props.blogInner ? props.blogInner : ''})`};
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  padding: 132px 0 98px 0;
+  padding: 96px 0 96px 0;
+  display: flex;
+  align-items: center;
+
   min-height:calc(100vh - 70px);
   margin: auto;
   ${media.lg`
@@ -17,6 +20,7 @@ const CtoBannerWrapper = styled.div`
   padding: 56px 0 !important;
   height:auto;
   min-height:auto;
+  background-image: none;
   `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   &.portfolio-banner{
@@ -28,6 +32,7 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.extension-dev-banner{
+    background-position: 90% 50%;
     h2{
       text-transform: none;
     }
@@ -74,8 +79,7 @@ const CtoBannerWrapper = styled.div`
         color: ${({ theme }) => theme.colors.textColor};
       }
       ${media.md`
-      margin: auto;
-      margin-bottom: 24px;
+        margin-bottom: 24px;
       `}
       span {
         color: ${({ theme }) => theme.colors.dangerColor};
@@ -106,6 +110,7 @@ const CtoBannerWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 100px 0;
+    background-position: 90% 50%;
     & > div{
       width: 100%;
     }
@@ -122,9 +127,15 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.cto-banner {
-    padding: 143px 0 50px;
+    padding: 96px 0 96px;
     background-position:right;
     justify-content:start;
+    display: flex;
+    align-items: center;
+    background-position: 90% 40%;
+    &.mobile-app-dev {
+      background-position: 90% 65%;
+    }
        &.change-background-size{
       background-size:50%;
     }
@@ -167,11 +178,12 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.product-design-banner {
-    padding: 143px 0 144px;
     ${media.md`
     background-image:none;
-    
     `}
+    .text-h1 {
+      white-space: pre-wrap;
+    }
     .banner-img {
       object-fit: contain;
     }
@@ -191,7 +203,7 @@ const CtoBannerWrapper = styled.div`
     
     `}
     p {
-      max-width: 724px;
+      max-width: 750px;
     }
   }
   &.mobile-app-banner {
@@ -217,7 +229,6 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.enterprise-banner {
-    padding: 143px 0px 120px;
     position:relative;
     justify-content:flex-start;
     z-index:1;
@@ -248,13 +259,21 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.web-data-scraping {
+<<<<<<< HEAD
     padding: 212px 0 189px;
+=======
+>>>>>>> 4c52af2a38eeff91ef667fbadaadfe075528cd5c
     ${media.sm`
     padding: 56px 0;
     `}
     ${media.md`
     background-image: none;
     `}
+    .banner-main {
+      p {
+        max-width: 680px;
+      }
+    }
     .banner-img {
       position: absolute;
       right: 0;

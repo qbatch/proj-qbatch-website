@@ -73,16 +73,16 @@ const whyChooseQbatchData = [
 const softwareProductData = [
   { id: 1, icon: '/sass-platform.svg', desc: 'SaaS Platforms' },
   { id: 2, icon: '/minimam-value.svg', desc: 'Minimum Viable Product' },
-  { id: 3, icon: '/e-platform.svg', desc: 'E-learning Platforms' },
-  { id: 4, icon: '/online-marketplaces.svg', desc: 'Online Marketplaces' },
+  { id: 3, icon: '/e-platform.svg', desc: 'E-learning\nPlatforms' },
+  { id: 4, icon: '/online-marketplaces.svg', desc: 'Online\nMarketplaces' },
   { id: 5, icon: '/data-visulations.svg', desc: 'Data Visualization Dashboards' },
   { id: 6, icon: '/content-management.svg', desc: 'Content Management Platforms' },
-  { id: 7, icon: '/location-based.svg', desc: 'Location-based Apps' },
+  { id: 7, icon: '/location-based.svg', desc: 'Location-based\nApps' },
   { id: 8, icon: '/warehouse-management.svg', desc: 'Warehouse Management Systems' },
   { id: 9, icon: '/online-streaming.svg', desc: 'Online Streaming Platforms' },
   { id: 10, icon: '/booking-apps.svg', desc: 'Booking Apps' },
   { id: 11, icon: '/on-demand-services.svg', desc: 'On-demand services platforms' },
-  { id: 12, icon: '/sap-enterprises.svg', desc: 'SAP Enterprises Tools' },
+  { id: 12, icon: '/sap-enterprises.svg', desc: 'SAP Enterprises\nTools' },
 ]
 const developmentProcessData = [
   {
@@ -3034,9 +3034,9 @@ const productDesignData = [
  ]
  const developmentExpertiseData = [
    {
-     image: '/data-warehouse.svg',
-     title: 'Data Warehousing',
-     content: 'Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.',
+    image: '/data-warehouse.svg',
+    title: 'Data Warehousing',
+    content: 'Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.',
    },
    {
      image: '/crm-development.svg',

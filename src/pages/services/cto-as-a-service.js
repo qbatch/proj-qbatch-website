@@ -14,6 +14,7 @@ import ChooseCto from "../../components/PagesComponent/ChooseCto";
 import CtoServiceModel from "../../components/PagesComponent/CtoServiceModel";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
 import Insights from "../../components/PagesComponent/Insights";
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import FaqSection from "../../components/PagesComponent/Faq";
 import Slider from '../../components/UiComponent/Slider'
 import { sliderItems, faqQuestion } from "../../constants";
@@ -24,12 +25,13 @@ import ExploreOurEnterpriseLevel from "../../components/PagesComponent/ExploreOu
 const CtoService = () => {
   return (
     <Layout>
+      <ScrollToTop />
       <Banner
         subheading="CTO as a Service"
         heading="Rethink and Rebuild Your Technical Prowess"
         paragraph="Neglecting a tiny detail can lead to huge technical debts. Get high-impact technical guidance and confidently deal with time and money-critical situations toward greater business growth."
         buttonText="Get Free CTO Consultation"
-        mobileViewBanner={CtoBannerImage}
+        blogInner={CtoBannerImage}
         col1lg={7}
         className="d-flex align-items-center"
         wrapperClass="cto-banner"

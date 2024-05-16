@@ -19,39 +19,34 @@ const HireCtoWrapper = styled.div`
     .list-group-item{
       gap: 16px;
       span{
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         letter-spacing: 0.7px;
-        line-height: 30.6px;
+        line-height: 32px;
+        ${media.md`
+          font-size: ${({ theme }) => theme.fonts.baseFontSize};
+          line-height: 24px;
+        `}
       }
     }
     img{
       margin-right: 0 !important;
     }
     .heading{
-      max-width: 820px;
-      ${media.sm`
-        line-height: 32px;
-      `}
+      max-width: 800px;
     }
     .paragraph{
-      margin-bottom: 74px;
+      margin-bottom: 72px;
       line-height: 32px;
       letter-spacing: 0;
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
       ${media.sm`
         margin-bottom:8px;
-      
-      `}
-    }
-    button{
-      margin-bottom: 24px;
-      ${media.sm`
-        margin-bottom:0;
       
       `}
     }
     .list-group{
       max-width: 1170px;
       .list-group-item{
-        padding: 24px 0;
         .service-icon{
           height: 24px;
           width: 24px;
@@ -63,9 +58,9 @@ const HireCtoWrapper = styled.div`
   .list-group {
     text-align: left;
     max-width: 930px;
-    margin:72px auto;
+    margin: 48px auto 32px;
     ${media.sm`
-    margin:48px auto 24px;
+      margin:24px auto 24px;
     `}
     .list-group-item {
       border: 0px;
@@ -81,17 +76,12 @@ const HireCtoWrapper = styled.div`
         object-fit: contain
       }
       span {
-        color:${({ theme }) => theme.colors.bodyTextVariant};
-        margin-top: 1px;
-        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+        color:${({ theme }) => theme.colors.textMedium};
         font-weight:600;
         line-height:32px;
-        ${media.md`
-            font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-        `}
         ${media.sm`
-            font-size: ${({ theme }) => theme.fonts.baseFontSize};
-            line-height:24px;
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+          line-height:24px;
         `}
       }
       &:last-child {
