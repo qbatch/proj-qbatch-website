@@ -4,9 +4,10 @@ import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import Layout from '../../components/Layout/layout'
 import SEO from '../../components/Seo'
-import Banner from '../../components/PagesComponent/PageBanner'
-import HireCto from '../../components/PagesComponent/HireCto'
-import Slider from '../../components/UiComponent/Slider'
+import Banner from '../../components/PagesComponent/PageBanner';
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
+import HireCto from '../../components/PagesComponent/HireCto';
+import Slider from '../../components/UiComponent/Slider';
 import TheySayWeSay from '../../components/PagesComponent/TheySayWeSay'
 import DesiredResult from '../../components/PagesComponent/IdeasAndInvestments'
 import PeopleFirst from '../../components/PagesComponent/PeopleFirst'
@@ -35,6 +36,7 @@ const ProductDesign = () => {
   const heading = 'Transpire,\nTransform, Transcend.'
   return (
     <Layout pageTitle="Product Design and Development">
+      <ScrollToTop />
       <Banner
         subheading="Software Product Development"
         heading={heading}
