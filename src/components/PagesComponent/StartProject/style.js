@@ -3,6 +3,9 @@ import { media } from "../../../theme/media-mixins";
 
 const StartProjectWrapper = styled.div`
   padding: 96px 0;
+  .heading{
+    font-weight:700;
+  }
   ${media.sm`
       padding: 56px 0;
     `}

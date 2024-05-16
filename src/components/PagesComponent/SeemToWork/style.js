@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const SeemToWorkWrapper = styled.div`
-  padding: 120px 0;
+  padding: 96px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`  
     padding: 56px 0;
@@ -10,7 +10,7 @@ const SeemToWorkWrapper = styled.div`
   .heading {
     padding-bottom: 72px;
     ${media.sm`  
-    padding-bottom: 48px;
+    padding-bottom: 32px;
   `}
   }
   .row:has(.work-col) {
@@ -30,9 +30,8 @@ const SeemToWorkWrapper = styled.div`
       border-bottom: none;
     }
     p {
-      max-width: 200px;
-      margin: auto;
-      line-height: 32px;
+      max-width: 185px;
+      margin: 16px auto 0;
     }
     .inner-counter {
       display: flex;

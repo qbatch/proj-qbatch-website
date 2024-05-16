@@ -122,9 +122,11 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.cto-banner {
-    padding: 143px 0 50px;
+    padding: 96px 0 96px;
     background-position:right;
     justify-content:start;
+    display: flex;
+    align-items: center;
        &.change-background-size{
       background-size:50%;
     }
@@ -167,11 +169,12 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.product-design-banner {
-    padding: 143px 0 144px;
     ${media.md`
     background-image:none;
-    
     `}
+    .text-h1 {
+      white-space: pre-wrap;
+    }
     .banner-img {
       object-fit: contain;
     }
@@ -191,7 +194,7 @@ const CtoBannerWrapper = styled.div`
     
     `}
     p {
-      max-width: 724px;
+      max-width: 750px;
     }
   }
   &.mobile-app-banner {
@@ -255,6 +258,11 @@ const CtoBannerWrapper = styled.div`
     ${media.md`
     background-image: none;
     `}
+    .banner-main {
+      p {
+        max-width: 680px;
+      }
+    }
     .banner-img {
       position: absolute;
       right: 0;

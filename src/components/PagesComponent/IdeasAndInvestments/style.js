@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const IdeasWrapper = styled.div`
   background: url('/inner-banner-bg.svg');
   background-size: cover;
-  padding: 120px 203px;
+  padding: 96px 203px;
   background-position: right;
   ${media.md`
     padding: 96px 120px 120px;
@@ -18,10 +18,11 @@ const IdeasWrapper = styled.div`
   }
   &.productDesign {
     .heading {
-      max-width: 1170px;
+      max-width: 1140px;
+      margin-bottom: 72px;
     }
     button {
-      margin-left: auto;
+      margin-right: auto;
     }
   }
   .heading {
@@ -38,6 +39,7 @@ const IdeasWrapper = styled.div`
       margin-bottom: 0px;
   `}
   }
+
   &.desired-result {
     background: url('/inner-banner-bg2.svg');
     background-size: cover;
@@ -47,10 +49,31 @@ const IdeasWrapper = styled.div`
       text-align: center;
     }
   }
+  &.desire-result-wrapper{
+    padding:109px 96px;
+    ${media.sm`
+    padding: 56px 24px;
+    `}
+    .container{
+      max-width:100%;
+    }
+    .heading{
+      margin:0;
+      max-width:988px;
+      text-align:left;
+      margin-bottom:48px;
+    }
+    .idea-btn.d-flex.justify-content-end{
+      justify-content:flex-start !important;
+    }
+  }
   &.enterprise {
     .heading {
       max-width: 100%;
       margin-bottom: 48px;
+      text-transform:capitalize;
+      max-width: 986px;
+      line-height: 68px;
     }
     .idea-btn {
       display: flex;

@@ -72,7 +72,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                   <div key={index} className="framework-item">
                     <Row>
                       {item.content.map((data) => (
-                        <Col md={4}>
+                        <Col md={6}>
                           <div className="framework-logo">
                             <div>
                               <div className="logo-wrapper">

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 const TheySayWeSayWrapper = styled.div`
-padding: 120px 0;
+padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
 padding: 56px 0px;
@@ -45,10 +45,11 @@ padding: 56px 0px;
   }
   .sub-heading{
     color: ${({ theme }) => theme.colors.gradientColor};
-    padding-bottom: 26px;
+    padding-bottom: 24px;
     line-height: 40px;
     letter-spacing: 0.32px;
     max-width: 573px;
+    margin-bottom: 0;
     ${media.sm`
     padding-bottom:0px;
     line-height:32px;

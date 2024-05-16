@@ -8,7 +8,7 @@ const RevenueWrapper = styled.div`
     padding: 56px 0;
   `}
   .revenue-heading {
-    max-width: 614px;
+    max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}` : '')};
     h2 {
       line-height: 52px;
       color: ${({ theme }) => theme.colors.primaryColor};
@@ -21,6 +21,7 @@ const RevenueWrapper = styled.div`
         color: #000;
         font-weight:${({ theme }) => theme.fontWeight.normal};
       }
+  
       ${media.sm`
         line-height: 32px;
       `}
@@ -29,6 +30,12 @@ const RevenueWrapper = styled.div`
         margin-bottom: 12px;
       `}
     }
+    .paragraph{
+        font-size:${({ theme }) => theme.colors.baseFontSize};
+        color: ${({ theme }) => theme.colors.textMedium};
+        line-height:24px;
+        margin-bottom:72px;
+      } 
     ${media.sm`
       max-width: 100%;
       margin-bottom: 60px;
@@ -47,6 +54,10 @@ const RevenueWrapper = styled.div`
       padding-bottom: 48px;
     `}
     .revenue-data {
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8c5f1dc771b9595b0c5322ad40cc5c1a92a8f81
       p {
         letter-spacing: 0;
         margin-bottom: 0px;
@@ -61,6 +72,10 @@ const RevenueWrapper = styled.div`
         padding-left: 0;
       `}
       .revenue-img {
+<<<<<<< HEAD
+=======
+        height: ${(props) => (props.height ? `${props.height}` : 'auto')};
+>>>>>>> f8c5f1dc771b9595b0c5322ad40cc5c1a92a8f81
         ${media.sm`
           display: flex;
           justify-content: center;

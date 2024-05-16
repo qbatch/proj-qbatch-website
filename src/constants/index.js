@@ -73,16 +73,16 @@ const whyChooseQbatchData = [
 const softwareProductData = [
   { id: 1, icon: '/sass-platform.svg', desc: 'SaaS Platforms' },
   { id: 2, icon: '/minimam-value.svg', desc: 'Minimum Viable Product' },
-  { id: 3, icon: '/e-platform.svg', desc: 'E-learning Platforms' },
-  { id: 4, icon: '/online-marketplaces.svg', desc: 'Online Marketplaces' },
+  { id: 3, icon: '/e-platform.svg', desc: 'E-learning\nPlatforms' },
+  { id: 4, icon: '/online-marketplaces.svg', desc: 'Online\nMarketplaces' },
   { id: 5, icon: '/data-visulations.svg', desc: 'Data Visualization Dashboards' },
   { id: 6, icon: '/content-management.svg', desc: 'Content Management Platforms' },
-  { id: 7, icon: '/location-based.svg', desc: 'Location-based Apps' },
+  { id: 7, icon: '/location-based.svg', desc: 'Location-based\nApps' },
   { id: 8, icon: '/warehouse-management.svg', desc: 'Warehouse Management Systems' },
   { id: 9, icon: '/online-streaming.svg', desc: 'Online Streaming Platforms' },
   { id: 10, icon: '/booking-apps.svg', desc: 'Booking Apps' },
   { id: 11, icon: '/on-demand-services.svg', desc: 'On-demand services platforms' },
-  { id: 12, icon: '/sap-enterprises.svg', desc: 'SAP Enterprises Tools' },
+  { id: 12, icon: '/sap-enterprises.svg', desc: 'SAP Enterprises\nTools' },
 ]
 const developmentProcessData = [
   {
@@ -3034,43 +3034,35 @@ const productDesignData = [
  ]
  const developmentExpertiseData = [
    {
-     image: '/data-warehouse.svg',
-     title: 'Data Warehousing',
+    image: '/data-warehouse.svg',
      content: 'Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.',
    },
    {
      image: '/crm-development.svg',
-     title: 'CRM Development',
      content: 'Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!',
    },
    {
      image: '/modernization-services.svg',
-     title: 'IT Modernization Services',
      content: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
    },
    {
      image: '/cms-development.svg',
-     title: 'CMS Development',
      content: 'Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.',
    },
    {
      image: '/scm-development.svg',
-     title: 'SCM Development',
      content: 'Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.',
    },
    {
      image: '/ehr-development.svg',
-     title: 'EHR Development',
      content: 'Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.',
    },
    {
      image: '/bi-service.svg',
-     title: 'BI Services',
      content: 'Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.',
    },
    {
      image: '/hrm-development.svg',
-     title: 'HRM Software Development',
      content: 'Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.',
    },
  ]
