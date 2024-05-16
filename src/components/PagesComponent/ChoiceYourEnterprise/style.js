@@ -107,11 +107,6 @@ const ChoiceEnterpriseWrapper = styled.div`
     }
   }
 &.so-how-can-help-mb{
-<<<<<<< HEAD
-  ${media.sm`
-    padding: 56px 0 0px;
-    `}
-=======
   padding: 96px 0 46px;
   ${media.sm`
     padding: 56px 0 0px;
@@ -121,7 +116,6 @@ const ChoiceEnterpriseWrapper = styled.div`
         max-width: 780px;
       }
     }
->>>>>>> f8c5f1dc771b9595b0c5322ad40cc5c1a92a8f81
 }
   &.why-dev-ops{
 

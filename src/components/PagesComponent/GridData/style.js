@@ -54,10 +54,6 @@ const RevenueWrapper = styled.div`
       padding-bottom: 48px;
     `}
     .revenue-data {
-<<<<<<< HEAD
-=======
-
->>>>>>> f8c5f1dc771b9595b0c5322ad40cc5c1a92a8f81
       p {
         letter-spacing: 0;
         margin-bottom: 0px;
@@ -72,10 +68,7 @@ const RevenueWrapper = styled.div`
         padding-left: 0;
       `}
       .revenue-img {
-<<<<<<< HEAD
-=======
         height: ${(props) => (props.height ? `${props.height}` : 'auto')};
->>>>>>> f8c5f1dc771b9595b0c5322ad40cc5c1a92a8f81
         ${media.sm`
           display: flex;
           justify-content: center;

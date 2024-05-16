@@ -27,17 +27,11 @@ const FullCycleWrapper = styled.div`
     max-width: 751px;
     line-height: 24px;
     letter-spacing: 0;
-<<<<<<< HEAD
-    ${media.sm`
-      margin-bottom: 48px;
-      line-height:24px;
-=======
     text-align:center;
     margin:auto;
     margin-bottom: 72px;
     ${media.sm`
       margin-bottom: 48px;
->>>>>>> f8c5f1dc771b9595b0c5322ad40cc5c1a92a8f81
   `}
   }
   ${media.sm`

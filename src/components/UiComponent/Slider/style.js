@@ -219,8 +219,6 @@ const SliderWrapper = styled.div`
           `}
       }
     }
-<<<<<<< HEAD
-=======
     &.product-design {
       .upper-heading{
         p {
@@ -228,7 +226,6 @@ const SliderWrapper = styled.div`
         }
       }
     }
->>>>>>> f8c5f1dc771b9595b0c5322ad40cc5c1a92a8f81
   }
   .slider-width {
     max-width: 1020px;
