@@ -47,6 +47,10 @@ const IdeasWrapper = styled.div`
       max-width: 850px;
       margin: 0 auto 72px;
       text-align: center;
+      text-transform: capitalize;
+      ${media.sm`
+        margin-bottom: 32px;
+      `}
     }
   }
   &.desire-result-wrapper{
@@ -74,6 +78,12 @@ const IdeasWrapper = styled.div`
       text-transform:capitalize;
       max-width: 986px;
       line-height: 68px;
+      ${media.md`
+        line-height: 40px;
+      `}
+      ${media.sm`
+        line-height: 32px;
+      `}
     }
     .idea-btn {
       display: flex;

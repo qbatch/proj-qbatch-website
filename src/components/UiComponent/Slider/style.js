@@ -144,7 +144,7 @@ const SliderWrapper = styled.div`
   &.custom-interprise-services{
     ${media.sm`
     .upper-heading{
-      margin-bottom:48px;
+      margin-bottom:24px;
       h2{
         margin-bottom:12px;
       }

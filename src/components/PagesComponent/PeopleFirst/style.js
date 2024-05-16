@@ -15,6 +15,9 @@ const PeopleFirstWrapper = styled.div`
       margin-top: 72px !important;
       display: flex;
       margin: auto;
+      ${media.sm`
+        margin-top: 48px !important;
+      `}
     }
     .sub-heading {
       max-width: 811px;
@@ -25,6 +28,9 @@ const PeopleFirstWrapper = styled.div`
   }
   .counter-wrapper {
     padding-top: 56px;
+    ${media.sm`
+      padding: 32px 0 0;
+  `}
   }
   .main-heading {
     color: ${({ theme }) => theme.colors.primaryColor};

@@ -35,7 +35,7 @@ const BrowserExtension = () => {
             </>
           }
           buttonText="Let’s Get Started"
-          imgSrc={BannerImage}
+          blogInner={BannerImage}
           col1lg={7}
           className="d-flex align-items-center"
           wrapperClass="extension-dev-banner"

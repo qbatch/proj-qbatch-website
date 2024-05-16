@@ -29,6 +29,9 @@ padding: 56px 0px;
       gap: 32px;
       align-items: center;
       margin-bottom: 32px;
+      ${media.sm`
+        margin-bottom: 16px;
+      `}
       ${media.customBrakePoint`
       flex-direction:column;
       `}

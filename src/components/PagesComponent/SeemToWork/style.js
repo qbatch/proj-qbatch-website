@@ -10,7 +10,7 @@ const SeemToWorkWrapper = styled.div`
   .heading {
     padding-bottom: 72px;
     ${media.sm`  
-    padding-bottom: 32px;
+    padding-bottom: 16px;
   `}
   }
   .row:has(.work-col) {

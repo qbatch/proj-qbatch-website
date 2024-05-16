@@ -41,7 +41,7 @@ const MobileApp = () => {
           heading="Deliver Powerful Mobile App Experiences"
           paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
           buttonText="Kickstart Your Transformation Journey"
-          wrapperClass="cto-banner"
+          wrapperClass="cto-banner mobile-app-dev"
           blogInner={BannerImage}
           mobileViewBanner={BannerImage}
           customCrumbs={[
