@@ -259,10 +259,6 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.web-data-scraping {
-<<<<<<< HEAD
-    padding: 212px 0 189px;
-=======
->>>>>>> 4c52af2a38eeff91ef667fbadaadfe075528cd5c
     ${media.sm`
     padding: 56px 0;
     `}

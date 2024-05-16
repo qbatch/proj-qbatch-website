@@ -56,15 +56,9 @@ const ChoiceEnterpriseWrapper = styled.div`
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 16px;
       letter-spacing: 0;
-<<<<<<< HEAD
-      ${media.sm`
-      line-height: 24px;
-      margin-bottom:8px;
-=======
       font-weight:700;
       ${media.sm`
         margin-bottom:8px;
->>>>>>> 4c52af2a38eeff91ef667fbadaadfe075528cd5c
       `}
     }
     p {
