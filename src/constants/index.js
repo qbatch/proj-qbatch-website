@@ -3887,31 +3887,31 @@ const footerServicesItems = [
 const industrieshMenu = [
   {
     name: 'E-Commerce',
-    to: '#',
+    to: '',
   },
   {
     name: 'Logistics & Supply Chain',
-    to: '#',
+    to: '',
   },
   {
     name: 'FinTech',
-    to: '#',
+    to: '',
   },
   {
     name: 'Healthcare',
-    to: '#',
+    to: '',
   },
   {
     name: 'EdTech',
-    to: '#',
+    to: '',
   },
   {
     name: 'Retail and Consumer Goods',
-    to: '#',
+    to: '',
   },
   {
     name: 'Travel & Transportation',
-    to: '#',
+    to: '',
   },
 ];
 
