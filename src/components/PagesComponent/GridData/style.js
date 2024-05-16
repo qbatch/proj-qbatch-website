@@ -28,11 +28,10 @@ const RevenueWrapper = styled.div`
       ${media.sm`
         line-height: 32px;
         margin-bottom: 12px;
+        
       `}
     }
     .paragraph{
-        font-size:${({ theme }) => theme.colors.baseFontSize};
-        color: ${({ theme }) => theme.colors.textMedium};
         line-height:24px;
         margin-bottom:72px;
         ${media.sm`
@@ -41,8 +40,8 @@ const RevenueWrapper = styled.div`
       } 
     ${media.sm`
       max-width: 100%;
-      margin-bottom: 60px;
       text-align: center;
+      margin-bottom: 60px;
     `}
   }
   .revenue-box {
