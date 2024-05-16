@@ -27,6 +27,7 @@ import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData
 import ResponsiveStyleWrapper from "./style";
 
 const webapp = () => {
+  window.scrollTo(...[0,0])
 
   return (
     <Layout>

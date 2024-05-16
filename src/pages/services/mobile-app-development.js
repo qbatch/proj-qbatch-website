@@ -34,6 +34,7 @@ import {
 import ResponsiveStyleWrapper from "./style";
 
 const MobileApp = () => {
+  window.scrollTo(...[0,0])
   return (
     <Layout>
       {/* <Banner
