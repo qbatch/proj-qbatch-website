@@ -9,6 +9,9 @@ button{
   margin-bottom: 56px;
   `}
 }
+hr{
+  display:none;
+}
 
 `;
 export { SliderComponentWrapper }

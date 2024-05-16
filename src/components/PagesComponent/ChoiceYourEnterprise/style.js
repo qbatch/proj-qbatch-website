@@ -116,6 +116,9 @@ const ChoiceEnterpriseWrapper = styled.div`
         max-width: 780px;
       }
     }
+  ${media.sm`
+    padding: 56px 0 0px;
+    `}
 }
   &.why-dev-ops{
 
