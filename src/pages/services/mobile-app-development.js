@@ -4,7 +4,6 @@ import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
-import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
 import Achievements from "../../components/PagesComponent/Achievements";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
@@ -14,9 +13,7 @@ import { peopleFirstData } from "../../constants";
 import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
 import FaqSection from "../../components/PagesComponent/Faq";
 import StartProject from "../../components/PagesComponent/StartProject";
-import AppDevelopmentServices from "../../components/PagesComponent/TechnicalGuidance";
 import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
-import SecretSauce from "../../components/PagesComponent/SecretSauce";
 import Slider from '../../components/UiComponent/Slider'
 import Banner from "../../components/PagesComponent/PageBanner";
 import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
@@ -31,27 +28,18 @@ import {
   revenueData,
 } from "../../constants";
 
-import ResponsiveStyleWrapper from "./style";
 
 const MobileApp = () => {
+  window.scrollTo(...([0, 0]))
   return (
     <Layout>
-      {/* <Banner
-        subheading="Mobile App Development"
-        heading="Deliver Powerful Mobile App Experiences"
-        paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
-        buttonText="Kickstart Your Transformation Journey"     
-        mobileViewBanner={BannerImage}        
-        col1lg={12}
-        className="d-flex align-items-center"
-      /> */}
-           <Banner
+    <Banner
           subheading="Mobile App Development"
           heading="Deliver Powerful Mobile App Experiences"
           paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
           buttonText="Kickstart Your Transformation Journey"
           wrapperClass="cto-banner"
-          imgSrc={BannerImage}
+          blogInner={BannerImage}
           mobileViewBanner={BannerImage}
           customCrumbs={[
             { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
@@ -84,14 +72,6 @@ const MobileApp = () => {
         is bold enough to take on challenges and launch ground-breaking and
         goal-driven mobile apps for you."
       />
-      {/* <SecretSauce
-        heading="Our Secret Sauce?"
-        heading2="100% Communication & Transparency"
-        desc="“We’re looking into the problem, we will update you as soon as
-                we have promising information” — not a statement but a
-                commitment to our clients that we are resolving the problem."
-        data={revenueData}
-      /> */}
       <Slider
         heading="Our Secret Sauce?"
         seconedHeading="100% Communication & Transparency"
