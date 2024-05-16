@@ -8,6 +8,7 @@ import Layout from '../../components/Layout/layout'
 import StartProject from '../../components/PagesComponent/StartProject'
 import WebDataScrapingTechnology from '../../components/PagesComponent/WebDataScrapingTechnology'
 import ScrapeData from '../../components/PagesComponent/ScrapeData'
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import YourPersonalAssistant from '../../components/PagesComponent/YourPersonalAssistant'
 import DataDeliveryFormats from '../../components/PagesComponent/DataDeliveryFormats'
 import DomainSpecificData from '../../components/PagesComponent/DomainSpecificData'
@@ -29,6 +30,7 @@ const Ecommerce = () => {
   let heading = 'Get Data \n The Way You Want'
   return (
     <Layout>
+      <ScrollToTop />
       <Banner
         subheading="Web & data Scraping Services"
         heading={heading}

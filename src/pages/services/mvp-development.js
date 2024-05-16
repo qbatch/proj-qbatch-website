@@ -5,6 +5,7 @@ import { replaceUnderscoreWithAt } from '../../constants/Utils'
 import SEO from "../../components/Seo";
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import MvpTypes from '../../components/PagesComponent/MvpTypes';
 import MvpBanner from '../../components/PagesComponent/MvpBanner';
 import MvpDevelopmentService from '../../components/PagesComponent/MvpDevelopmentService';
@@ -31,6 +32,7 @@ import {
 const MvpDev = () => {
   return (
     <Layout>
+      <ScrollToTop />
       <MvpBanner
         subheading="MVP Development Service"
         heading={<>Plan, Test, & Launch YOUR MVP in less than <span>3 months</span></>}

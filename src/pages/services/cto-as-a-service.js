@@ -22,7 +22,6 @@ import CtoBannerImage from "../../../static/cto-banner.png";
 import ExploreOurEnterpriseLevel from "../../components/PagesComponent/ExploreOurEnterpriseLevel";
 
 const CtoService = () => {
-  window.scrollTo(...([0, 0]))
   return (
     <Layout>
       <Banner

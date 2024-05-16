@@ -5,6 +5,7 @@ import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
 import SEO from "../../components/Seo";
 import Banner from "../../components/PagesComponent/PageBanner";
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
 import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
 import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
@@ -36,6 +37,7 @@ import ResponsiveStyleWrapper from "./style";
 const Enterprise = () => {
   return (
     <Layout>
+      <ScrollToTop />
       <ResponsiveStyleWrapper>
         <Banner
           subheading="Enterprise App Development Company"
