@@ -25,7 +25,7 @@ import WebExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import WebappImage from '../../../static/web-app-dev.svg'
 import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData } from '../../constants'
 import AdvancedWebExplore from "../../components/PagesComponent/ExploreOurAdvancedWeb";
-import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSlider";
+import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSectionSlider";
 import ResponsiveStyleWrapper from "./style";
 
 const webapp = () => {
