@@ -24,9 +24,9 @@ import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAnd
 import WebExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import WebappImage from '../../../static/web-app-dev.svg'
 import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData } from '../../constants'
-import ResponsiveStyleWrapper from "./style";
-import SliderComponent from "../../components/PagesComponent/webAppDevelopmentTrustSlider";
 import AdvancedWebExplore from "../../components/PagesComponent/ExploreOurAdvancedWeb";
+import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSlider";
+import ResponsiveStyleWrapper from "./style";
 
 const webapp = () => {
 
