@@ -28,6 +28,7 @@ const RevenueWrapper = styled.div`
       ${media.sm`
         line-height: 32px;
         margin-bottom: 12px;
+        
       `}
     }
     .paragraph{
@@ -40,6 +41,7 @@ const RevenueWrapper = styled.div`
     ${media.sm`
       max-width: 100%;
       text-align: center;
+      margin-bottom: 60px;
     `}
   }
   .revenue-box {
