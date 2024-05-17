@@ -94,13 +94,6 @@ const MobileApp = () => {
         isList={true}
         btnText="Get Your Devs"
       />
-      {/* <Slider
-        heading="Full Suite of Custom Mobile App Development Services"
-        paragraph="ExploreTime-tested Web Application Development tools and technologies to build a cross-platform and secure application:"
-        data={developmentServicesData}
-        width="350px"
-        className="full-suite-of-custom"
-      /> */}
       <CustomMobileAppSlider />
       <Slider
         heading="Lost to Launched"
