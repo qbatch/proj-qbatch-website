@@ -52,7 +52,7 @@ const QbatchMakingWrapper = styled.div`
    `}
    ${media.xs`
      h3{
-      font-size: 18px;
+      font-size: 16px;
      }
    `}
   }
