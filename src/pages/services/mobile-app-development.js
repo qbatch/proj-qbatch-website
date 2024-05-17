@@ -26,9 +26,9 @@ import BannerImage from "../../../static/mobile-app-banner.svg";
 import {
   lostToLaunchedItems,
   mobileAppFaq,
-  developmentServicesData,
   revenueData,
 } from "../../constants";
+import CustomMobileAppSlider from "../../components/PagesComponent/CustomMobileAppSlider";
 
 
 const MobileApp = () => {
@@ -39,7 +39,9 @@ const MobileApp = () => {
     <Banner
           subheading="Mobile App Development"
           heading="Deliver Powerful Mobile App Experiences"
-          paragraph="We build dynamic and future-ready mobile apps for startups and large-scale enterprises across devices and operating systems."
+          paragraph="We build dynamic and future-ready mobile apps for startups
+          and large-scale enterprises across devices and operating 
+          systems."
           buttonText="Kickstart Your Transformation Journey"
           wrapperClass="cto-banner mobile-app-dev"
           blogInner={BannerImage}
@@ -55,25 +57,24 @@ const MobileApp = () => {
         className="mobile-apps"
         paragraph1={
           <>
-            Worried that robots and machines will take over? Above{' '}
+            Worried that robots and machines will take over? Above
             <a href="https://www.insiderintelligence.com/insights/mobile-users-smartphone-usage/" target="blank">
-              6,378 billion{' '}
+              6,378 billion 
             </a>
-            smartphone users made{' '}
+            smartphone users made
             <a
               href="https://www.statista.com/statistics/271644/worldwide-free-and-paid-mobile-app-store-downloads/"
               target="blank"
             >
               257 billion
-            </a>{' '}
-            app downloads in 2023 alone across the globe. So, even if they have to order a robot, they’d do it through a
-            mobile app, right?!
+            </a>
+            app downloads in 2022 alone across the globe. So, even if they have to order a robot, they’d do it through a mobile app, right?! 
           </>
         }
-        paragraph2="The competition is crazy and so are
-        we. Team Qbatch as your next mobile app development services company
-        is bold enough to take on challenges and launch ground-breaking and
-        goal-driven mobile apps for you."
+        paragraph2="The competition is crazy and so are 
+         we. Team Qbatch as your next mobile
+         app development services company is bold enough to take on challenges and
+         launch ground-breaking and goal-driven mobile apps for you."
       />
       <Slider
         heading="Our Secret Sauce?"
@@ -83,7 +84,7 @@ const MobileApp = () => {
                 commitment to our clients that we are resolving the problem."
         maxWidth="697px"
         data={revenueData}
-        className="our-secret-sauce"
+        className="our-secret-sauce our-secret-slider"
       />
       <CrewNotVendors />
       <MultiplePlatformSolutions />
@@ -93,13 +94,14 @@ const MobileApp = () => {
         isList={true}
         btnText="Get Your Devs"
       />
-      <Slider
+      {/* <Slider
         heading="Full Suite of Custom Mobile App Development Services"
         paragraph="ExploreTime-tested Web Application Development tools and technologies to build a cross-platform and secure application:"
         data={developmentServicesData}
         width="350px"
         className="full-suite-of-custom"
-      />
+      /> */}
+      <CustomMobileAppSlider />
       <Slider
         heading="Lost to Launched"
         paragraph="Our Mobile App Development Process Enroute Successs"
