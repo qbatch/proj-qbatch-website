@@ -41,7 +41,7 @@ const BrowserExtension = () => {
           wrapperClass="extension-dev-banner"
           customCrumbs={[
             { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
-            { pathname: '/services/extension-development/', crumbLabel: 'Browser Extension Development' },
+            { pathname: '/services/browser-extension-development/', crumbLabel: 'Browser Extension Development' },
           ]}
         />
         <ExtensionDevInfo />
