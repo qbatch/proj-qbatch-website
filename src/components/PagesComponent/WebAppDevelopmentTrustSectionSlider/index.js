@@ -8,7 +8,6 @@ import Container from '../../UiComponent/Container'
 
 const SliderComponent = () => {
   return (
-    <Container>
     <SliderComponentWrapper>
       <SliderWrapper
           heading="We Are Developers You Can Trust For Your Web App"
@@ -20,7 +19,6 @@ const SliderComponent = () => {
         />
         <Button text="Get Started Risk-Free" />
     </SliderComponentWrapper>
-    </Container>
   )
 }
 

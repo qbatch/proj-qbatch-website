@@ -30,6 +30,7 @@ const AchievementsWrapper = styled.div`
       z-index: 2;
       h2 {
         margin-bottom: 96px;
+        color: ${({ theme }) => theme.colors.primaryColor};
         ${media.sm`
           margin-bottom: 48px;
         `}
