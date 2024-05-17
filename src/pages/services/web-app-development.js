@@ -37,7 +37,7 @@ const webapp = () => {
       <ResponsiveStyleWrapper>
         <Banner
           subheading="Web Application Development Company"
-          heading="If You Think Web Apps Are Old-Fashioned. Think Again"
+          heading="If you Think Web Apps are Old-Fashioned. Think Again"
           paragraph="88% of consumers use computers to research products and services before making a purchase. Don’t leave your potential customers confused, instead amuse them with a stunning web appearance! "
           buttonText="Kickstart Your Transformation Journey"
           wrapperClass="cto-banner"
