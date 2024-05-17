@@ -6,14 +6,14 @@ import { ThemeProvider } from "styled-components";
 import Theme from '../../theme/theme-variable'
 import GlobalStyle from "../../theme/global-style";
 
-import Header from '../PagesComponent/Header'
+import Header from '../PagesComponent/Header2'
 import Footer from '../PagesComponent/Footer'
 
 const Layout = ({children }) => {
 
   return (
       <ThemeProvider theme={Theme}>
-        <Header />
+        <Header/>
          <Helmet>
             <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&display=swap" rel="stylesheet" />
         </Helmet>
