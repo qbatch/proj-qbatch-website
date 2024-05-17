@@ -64,18 +64,18 @@ const Header2 = () => {
     },
     {
       label: "Based on Role", subItems: [
-        { label: "Ruby on Rails", link: "/" },
-        { label: "JavaScript", link: "/" },
-        { label: "Node.js", link: "/" },
-        { label: "React Native", link: "/" },
-        { label: "React", link: "/" },
-        { label: "React.js", link: "/" },
-        { label: "React/Node", link: "/" },
-        { label: "Python", link: "/" },
-        { label: "AWS", link: "/" },
-        { label: "Amazon SP-API", link: "/" },
-        { label: "Laravel", link: "/" },
-        { label: "Go (Golang)", link: "/" }
+        { label: "CTO-as-a-Service", link: "/" },
+        { label: "Project Managers", link: "/" },
+        { label: "Front-End", link: "/" },
+        { label: "Product Designers", link: "/" },
+        { label: "UI/UX designers", link: "/" },
+        { label: "Back-End", link: "/" },
+        { label: "QA engineers", link: "/" },
+        { label: "Cloud", link: "/" },
+        { label: "Full-Stack", link: "/" },
+        { label: "Business Analysts", link: "/" },
+        { label: "DevOps", link: "/" },
+        { label: "Docker", link: "/" }
       ]
     },
     {
@@ -182,7 +182,7 @@ const Header2 = () => {
                     <ul>
                       {servicesMenu.map((item, index) => (
                         <li key={index}>
-                          <Link to={item.link}>{item.label}</Link>
+                          <Link to={item.link} onClick={item.link === "/" ? (e) => e.preventDefault() : undefined}>{item.label}</Link>
                         </li>
                       ))}
                     </ul>
@@ -203,7 +203,7 @@ const Header2 = () => {
                           <ul>
                             {category.subItems.map((item, idx) => (
                               <li key={idx}>
-                                <Link to={item.link}>{item.label}</Link>
+                                <Link to={item.link} onClick={item.link === "/" ? (e) => e.preventDefault() : undefined}>{item.label}</Link>
                               </li>
                             ))}
                           </ul>
@@ -214,7 +214,7 @@ const Header2 = () => {
                 </div>
               </li>
               <li>
-                <div className='link-wrapper'>
+                <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/">Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}><img src='/mega-menu-arrow.svg' /></button>
                 </div>
@@ -223,7 +223,7 @@ const Header2 = () => {
                     <ul>
                       {industriesMenu.map((item, index) => (
                         <li key={index}>
-                          <Link to={item.link}>{item.label}</Link>
+                          <Link to={item.link} onClick={item.link === "/" ? (e) => e.preventDefault() : undefined}>{item.label}</Link>
                         </li>
                       ))}
                     </ul>
@@ -231,7 +231,7 @@ const Header2 = () => {
                 </div>
               </li>
               <li>
-                <div className='link-wrapper'>
+                <div className={`link-wrapper ${isPortfolioMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/">Portfolio</Link>
                   <button onClick={togglePortfolioMenu} className={isPortfolioMenuOpen ? 'open' : 'close'}><img src='/mega-menu-arrow.svg' /></button>
                 </div>
@@ -240,7 +240,7 @@ const Header2 = () => {
                     <ul>
                       {portfolioMenu.map((item, index) => (
                         <li key={index}>
-                          <Link to={item.link}>{item.label}</Link>
+                          <Link to={item.link} onClick={item.link === "/" ? (e) => e.preventDefault() : undefined}>{item.label}</Link>
                         </li>
                       ))}
                     </ul>
@@ -248,7 +248,7 @@ const Header2 = () => {
                 </div>
               </li>
               <li>
-                <div className='link-wrapper'>
+                <div className={`link-wrapper ${isHowWeWorkMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/">How we Work</Link>
                   <button onClick={toggleHowWeWorkMenu} className={isHowWeWorkMenuOpen ? 'open' : 'close'}><img src='/mega-menu-arrow.svg' /></button>
                 </div>
@@ -257,7 +257,7 @@ const Header2 = () => {
                     <ul>
                       {howWeWorkMenu.map((item, index) => (
                         <li key={index}>
-                          <Link to={item.link}>{item.label}</Link>
+                          <Link to={item.link} onClick={item.link === "/" ? (e) => e.preventDefault() : undefined}>{item.label}</Link>
                         </li>
                       ))}
                     </ul>
@@ -265,7 +265,7 @@ const Header2 = () => {
                 </div>
               </li>
               <li>
-                <div className='link-wrapper'>
+                <div className={`link-wrapper ${isCompanyMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/">Company</Link>
                   <button onClick={toggleCompanyMenu} className={isCompanyMenuOpen ? 'open' : 'close'}><img src='/mega-menu-arrow.svg' /></button>
                 </div>
@@ -274,7 +274,7 @@ const Header2 = () => {
                     <ul>
                       {companyMenu.map((item, index) => (
                         <li key={index}>
-                          <Link to={item.link}>{item.label}</Link>
+                          <Link to={item.link} onClick={item.link === "/" ? (e) => e.preventDefault() : undefined}>{item.label}</Link>
                         </li>
                       ))}
                     </ul>
@@ -282,8 +282,8 @@ const Header2 = () => {
                 </div>
               </li>
               <li>
-                <div className='link-wrapper'>
-                  <Link to="/">Blog</Link>
+                <div className="link-wrapper">
+                  <Link to="/blog">Blog</Link>
                 </div>
               </li>
             </ul>

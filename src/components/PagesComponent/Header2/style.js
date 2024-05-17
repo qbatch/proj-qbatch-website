@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const Header2Wrapper = styled.div`
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 99999;
@@ -71,6 +71,7 @@ const Header2Wrapper = styled.div`
           right: 0;
           visibility: hidden;
           opacity: 0;
+          z-index: -1;
           transform: translateY(-70%); 
           transition: visibility 0s, opacity 0.6s ease-in-out, transform 0.3s ease-out; 
           .menu-heading{
@@ -163,6 +164,9 @@ const Header2Wrapper = styled.div`
             opacity: 1;
             transform: translateY(0); 
             transition: visibility 0s, opacity 0.6s ease-in-out, transform 0.3s ease-out;
+            box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.13);
+            -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.13);
+            -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.13);
           }
         }
         .mega-menu {
@@ -172,7 +176,8 @@ const Header2Wrapper = styled.div`
           .mega-menu {
             transition: visibility 0.5s, opacity 0.3s ease-in-out, transform 0.6s ease-in; 
             opacity: 0;
-            transform: translateY(0%); 
+            transform: translateY(-70%); 
+            
           }
         }
       }
