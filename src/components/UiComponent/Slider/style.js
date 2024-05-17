@@ -142,18 +142,18 @@ const SliderWrapper = styled.div`
     }
   }
   &.custom-interprise-services{
-    ${media.sm`
-    .upper-heading{
-      margin-bottom:24px;
-      h2{
-        margin-bottom:12px;
-      }
-      p{
-        margin: 0px;
-      }
-    }
-    
+    .upper-heading {
+      margin-bottom: 32px;
+      ${media.sm`
+        margin-bottom:24px;
+        h2{
+          margin-bottom:12px;
+        }
+        p{
+          margin: 0px;
+        }
       `}
+    }
   }
   &.lost-to-launched-mb{
     p.paragraph {
@@ -204,15 +204,16 @@ const SliderWrapper = styled.div`
     `}
     .upper-heading{
     ${media.sm`
-    .paragraph{
-        margin-bottom:48px;
-      }
+        margin-bottom: 20px;
       `}
     }
   }
   &.lost-to-launched{
     .upper-heading{
-      margin-bottom:48px;
+      margin-bottom:32px;
+      ${media.sm`
+        margin-bottom: 20px;
+      `}
       h2{
         ${media.sm`
             margin-bottom:12px;

@@ -29,7 +29,7 @@ const Index = (props) => {
             <Slider {...settings}>
               {data.map((data, i) => {
                 return (
-                  <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-sm-5 mb-sm-5 mb-4">
+                  <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-0 mb-4">
                     <img width={width || ''} height={height || ''} src={data.image} />
                     <div class="slider-data">
                       <h3 className="title text-h4">{data.title}</h3>
