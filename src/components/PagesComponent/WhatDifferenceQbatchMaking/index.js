@@ -15,15 +15,15 @@ const Index = ({ heading, innerPage, paragraph }) => {
             {paragraph && <p>{paragraph}</p>}
           </div>
           <Row>
-            <Col md={5} sm={6}>
+            <Col xs={5}>
               <div className="text-center text-sm-end">
-                <h3 className="color-danger">Your Challenges</h3>
+                <h3 className="color-danger text-h3">Your Challenges</h3>
               </div>
             </Col>
-            <Col md={2} className="d-sm-none d-md-block"></Col>
-            <Col md={5} sm={6}>
+            <Col xs={2} className="d-block"></Col>
+            <Col xs={5}>
               <div className="text-center text-sm-start">
-                <h3 className="color-primary">We Solve Them</h3>
+                <h3 className="color-primary text-h3">We Solve Them</h3>
               </div>
             </Col>
           </Row>

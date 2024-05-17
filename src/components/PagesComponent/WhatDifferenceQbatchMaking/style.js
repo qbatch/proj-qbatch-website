@@ -11,6 +11,9 @@ const QbatchMakingWrapper = styled.div`
   }
   .section-heading {
     margin-bottom: 72px;
+    ${media.lg`
+      margin-bottom: 56px
+    `}
     p{
       max-width: 469px;
       margin: auto;
@@ -30,10 +33,33 @@ const QbatchMakingWrapper = styled.div`
       `}
     }
   }
+  .row{
+   ${media.lg`
+     h3{
+      font-size: 28px;
+     }
+   `}
+   ${media.md`
+     h3{
+      font-size: 24px;
+     }
+   `}
+   ${media.sm`
+   margin-top: 32px;
+     h3{
+      font-size: 20px;
+     }
+   `}
+   ${media.xs`
+     h3{
+      font-size: 18px;
+     }
+   `}
+  }
   .challenges-section {
     margin-top: 24px;
     ${media.sm`
-    margin-top: 48px;
+    margin-top: 32px;
     `}
     p {
       margin-bottom: 0;
