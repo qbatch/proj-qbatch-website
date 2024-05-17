@@ -434,9 +434,6 @@ const GlobalStyles = createGlobalStyle`
           span {
             background-color: transparent !important;
             color: ${({ theme }) => theme.colors.whiteColor} !important;
-            strong {
-              font-weight: ${({ theme }) => theme.fontWeight.normal};
-            }
           }
           td {
             padding: 11px 24px !important;
