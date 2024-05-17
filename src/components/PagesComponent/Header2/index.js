@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby';
 import { navigate } from 'gatsby';
+import { Col, Row } from 'react-bootstrap';
+
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 import Header2Wrapper from './style';
-import { Col, Row } from 'react-bootstrap';
 
 const Header2 = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -31,7 +32,6 @@ const Header2 = () => {
 
   const Logo = data.allStrapiHeader.nodes[0].logo.logo.localFile.url;
 
-  // Define arrays for menu items
   const servicesMenu = [
     { label: "Enterprise Software Development", link: "/services/enterprise-software-development/" },
     { label: "E-commerce Automation Services", link: "/services/e-commerce-automation/" },
@@ -155,9 +155,6 @@ const Header2 = () => {
   const toggleCompanyMenu = () => {
     setCompanyMenuOpen(!isCompanyMenuOpen);
   };
-
-
-
 
   return (
     <Header2Wrapper>
