@@ -19,7 +19,7 @@ const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
           <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
 
           {customCrumbs && (
-            <div className="breadcrumb d-lg-block d-none">
+            <div className="breadcrumb d-block">
               <ul className="d-flex gap-2 ps-0">
                 {crumbs.map((crumb, index) => (
                   <li key={index}>

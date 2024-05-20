@@ -35,6 +35,14 @@ const Header2Wrapper = styled.div`
       & > li {
         padding: 28px 0;
         .link-wrapper{
+          a.active{
+              font-weight:  ${({ theme }) => theme.fontWeight.normal};
+              color: ${({ theme }) => theme.colors.primaryColor} ;
+              &::after{
+                width: 16px;
+                visibility: visible;
+              }
+          }
           button{
             display: none;
           }
@@ -133,6 +141,7 @@ const Header2Wrapper = styled.div`
                 visibility: hidden;
                 transition: 0.3s ease-in;
               }
+              &.active,
               &:hover{
                 a{
                   font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
@@ -240,6 +249,27 @@ const Header2Wrapper = styled.div`
         border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
         a{
           color: ${({ theme }) => theme.colors.textMedium} ;
+          &::before{
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 0px;
+            background-color: ${({ theme }) => theme.colors.dividerColor};
+            border: none;
+            visibility: hidden;
+            transition: 0.3s ease-in;
+            margin-bottom: 4px;
+          }
+          &.active{
+            font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
+            color: ${({ theme }) => theme.colors.primaryColor} ;
+            &::before{
+              background-color: ${({ theme }) => theme.colors.dangerColor};
+              visibility: visible;
+              width: 12px;
+              margin-right: 8px;
+            }
+          }
         }
         button{
           margin-left: auto;
@@ -252,26 +282,16 @@ const Header2Wrapper = styled.div`
             }
           }
         }
-        &::before{
-          content: '';
-          display: inline-block;
-          height: 2px;
-          width: 0px;
-          background-color: ${({ theme }) => theme.colors.dividerColor};
-          border: none;
-          visibility: hidden;
-          transition: 0.3s ease-in;
-        }
         &.open{
           a{
             font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
             color: ${({ theme }) => theme.colors.primaryColor} ;
-          }
-          &::before{
-            background-color: ${({ theme }) => theme.colors.dangerColor};
-            visibility: visible;
-            width: 12px;
-            margin-right: 8px;
+            &::before{
+              background-color: ${({ theme }) => theme.colors.dangerColor};
+              visibility: visible;
+              width: 12px;
+              margin-right: 8px;
+            }
           }
         }
       }
@@ -301,6 +321,29 @@ const Header2Wrapper = styled.div`
               }
               a{
                 color:  ${({ theme }) => theme.colors.bodyLight};
+              }
+              &::before{
+                content: '';
+                display: inline-block;
+                height: 2px;
+                width: 0px;
+                background-color: ${({ theme }) => theme.colors.dividerColor};
+                border: none;
+                visibility: hidden;
+                transition: 0.3s ease-in;
+                margin-bottom: 4px;
+              }
+              &.active{
+                a{
+                  font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
+                  color: ${({ theme }) => theme.colors.primaryColor} ;
+                }
+                &::before{
+                  background-color: ${({ theme }) => theme.colors.dangerColor};
+                  visibility: visible;
+                  width: 12px;
+                  margin-right: 8px;
+                }
               }
             }
           }

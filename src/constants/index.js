@@ -3919,20 +3919,24 @@ const footerContactData = [
   {
     title: "+1 737-377-2428",
     icon: "/phone-icon.svg",
+    link: "tel: +17373772428"
   },
   {
     title: "contact@qbatch.com",
     icon: "/mail-icon.svg",
+    link: "mailto: 'contact@qbatch.com"
   },
   {
     title: "1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801, USA.",
     icon: "/address-icon.svg",
-    flag: "/usa-flag-small.svg"
+    flag: "/usa-flag-small.svg",
+    link: "https://maps.app.goo.gl/uLoY8xJc1TTTHPCg9"
   },
   {
     title: "Qbatch, Asia Centre, 8 Main Boulevard Gulberg, Babar Block Garden Town, Lahore, Punjab",
     icon: "",
-    flag: "/pakistan-flag-small.svg"
+    flag: "/pakistan-flag-small.svg",
+    link: "https://maps.app.goo.gl/15ZXkY5H28za3rtGA"
   },
 ];
 

@@ -20,6 +20,18 @@ const FooterWrapper = styled.div`
      font-size: 14px;
     `}
   }
+  a{
+    color: ${({ theme }) => theme.colors.bodyLight};
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    transition: color 0.5s ease-out;
+    ${media.xs`
+     font-size: 14px;
+    `}
+    &:hover{
+      color: ${({ theme }) => theme.colors.whiteColor};
+    }
+  }
   .newsletter-section {
     display: flex;
     align-items: center;

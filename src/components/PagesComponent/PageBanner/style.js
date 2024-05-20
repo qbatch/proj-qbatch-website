@@ -17,7 +17,7 @@ const CtoBannerWrapper = styled.div`
      min-height:calc(100vh - 700px);
   `}
   ${media.sm`
-  padding: 56px 0 !important;
+  padding: 96px 0 56px!important;
   height:auto;
   min-height:auto;
   background-image: none;
@@ -36,11 +36,6 @@ const CtoBannerWrapper = styled.div`
     h2{
       text-transform: none;
     }
-    ${media.md`
-      .breadcrumb{
-        display: none;
-      }
-    `}
   }
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
@@ -50,9 +45,21 @@ const CtoBannerWrapper = styled.div`
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
     }
+    ${media.md`
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 16px 60px;
+      background: #000f1c;
+      margin-left: 0;
+      z-index: 99;
+    `}
     ${media.sm`
-      display: none;
-  `}
+      padding: 16px 40px;
+    `}
+    ${media.xs`
+      padding: 16px 24px;
+    `}
   }
   .banner-main {
     position:relative;
