@@ -1,15 +1,12 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useCallback, useMemo } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-
+import { Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { navigate } from 'gatsby';
 
-import { Row, Col } from "react-bootstrap";
-
 import Button from "../../../components/UiComponent/Button";
 import Container from "../../UiComponent/Container";
-
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
@@ -78,7 +75,20 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
       }
     `)
 
-    const portfolioData = data.allStrapiOurProject.nodes;
+    const portfolioData = useMemo(() => data.allStrapiOurProject.nodes.filter(x => x.imgOpen), [data]);
+
+    const handlePrevClick = useCallback(() => {
+      handleButtonClickPre();
+      setCurrentInd((prev) => (prev === 1 ? 1 : prev - 1));
+    }, [handleButtonClickPre]);
+
+    const handleNextClick = useCallback(() => {
+      const maxIndex = portfolioData.length;
+      if (currentInd !== maxIndex) {
+        handleButtonClickNext();
+      }
+      setCurrentInd((prev) => (prev === maxIndex ? prev : prev + 1));
+    }, [handleButtonClickNext, currentInd, portfolioData.length]);
     
   return (
     <ProvenExperienceWrapper>
@@ -113,7 +123,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                     .filter((x) => x.imgOpen)
                     .map((item, ind) => (
                       <div className="project-title" key={ind}>
-                        <img src={item.projectLogo?.localFile?.url} alt="logo" width="190px" height="52px" />
+                        <img src={item.projectLogo?.localFile?.url} alt="logo" width="190px" height="52px" loading="lazy" />
                         <h3>{item.projectName}</h3>
                         <span>{item.projectCategory}</span>
                         <div className="project-tags d-flex">
@@ -127,7 +137,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                 <div className="carousel-button-group d-flex align-items-center">
                   <ArrowLeftIcon
                     onClick={() => {
-                      handleButtonClickPre()
+                      handlePrevClick()
                       setCurrentInd(currentInd === 1 ? 1 : currentInd - 1)
                     }}
                   />
@@ -145,7 +155,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                   <ArrowRightIcon
                     onClick={() => {
                       if ( currentInd !== portfolioData.filter((x)=> x.imgOpen).length) {
-                        handleButtonClickNext()
+                        handleNextClick()
                       };
                       setCurrentInd(currentInd === portfolioData.filter((x)=> x.imgOpen).length ? currentInd : currentInd + 1)
                     }}
@@ -168,7 +178,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                     .filter((x) => x.imgOpen)
                     .map((item, ind) => (
                       <div key={ind}>
-                        <img src={item.projectImg?.localFile?.url} alt="project" />
+                        <img src={item.projectImg?.localFile?.url} alt="project" loading="lazy" />
                       </div>
                     ))}
                   <div></div>
