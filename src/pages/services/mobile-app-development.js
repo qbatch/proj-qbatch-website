@@ -28,7 +28,7 @@ import {
   mobileAppFaq,
   revenueData,
 } from "../../constants";
-import SectionMobileApp from "../../components/PagesComponent/CustomMobileAppSlider";
+import SectionMobileApp from "../../components/PagesComponent/SectionMobileAppSlider";
 
 
 const MobileApp = () => {
@@ -58,15 +58,16 @@ const MobileApp = () => {
         paragraph1={
           <>
             Worried that robots and machines will take over? Above
-            <a href="https://www.insiderintelligence.com/insights/mobile-users-smartphone-usage/" target="blank">
+            <a className="amount-link-text" href="https://www.insiderintelligence.com/insights/mobile-users-smartphone-usage/" target="blank">
               6,378 billion 
             </a>
-            smartphone users made
+             smartphone users made
             <a
+              className="amount-link-text"
               href="https://www.statista.com/statistics/271644/worldwide-free-and-paid-mobile-app-store-downloads/"
               target="blank"
             >
-              257 billion
+              257 billion 
             </a>
             app downloads in 2022 alone across the globe. So, even if they have to order a robot, they’d do it through a mobile app, right?! 
           </>
@@ -84,7 +85,7 @@ const MobileApp = () => {
                 commitment to our clients that we are resolving the problem."
         maxWidth="697px"
         data={revenueData}
-        className="our-secret-sauce our-secret-slider"
+        className="our-secret-sauce our-secret-slider "
       />
       <CrewNotVendors />
       <MultiplePlatformSolutions />
@@ -103,7 +104,7 @@ const MobileApp = () => {
         className="lost-to-launched-mb"
       />
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
-      <Achievements innerPage={true} />
+      <Achievements mainHeading="And it just seems to work" labelText="Here's what stats and our clients have to say:" innerPage={true} />
       <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
       <Collaboration heading="Collaboration Models For Everlasting Partnerships" />
       <PeopleFirst

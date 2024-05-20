@@ -32,6 +32,9 @@ const TechnicalExcellenceWrapper = styled.div`
     a {
       text-decoration: underline;
       padding-left:3px;
+      &.amount-link-text{
+        margin-right:4px;
+      }
       &.label-text-ancer{
         font-weight: 600;
         text-decoration: none;

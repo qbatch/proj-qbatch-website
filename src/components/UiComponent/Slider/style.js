@@ -42,6 +42,9 @@ const SliderWrapper = styled.div`
       margin-bottom:16px;
     }
   }
+  .paragraph{
+    margin-bottom:40px;
+  }
   }
   &.our-secret-sauce{
     ${media.sm`
@@ -168,7 +171,6 @@ const SliderWrapper = styled.div`
     margin: 0px;
 }
       .make-responsive {
-        flex-direction: column;
         margin-top: 0px !important;
         grid-row-gap:0px !important;
     }
