@@ -8,9 +8,9 @@ const FaqWrapper = styled.div`
      padding: 56px 0px;
   `}
   .faq-section{
-    margin-top:106px;
+    margin-top:96px;
     ${media.sm `
-     margin-top: 70px;
+     margin-top: 48px;
     `}
   }
   .hire-developer-faq p {

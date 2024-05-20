@@ -4,6 +4,7 @@ import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import SEO from "../../components/Seo";
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import StartProject from "../../components/PagesComponent/StartProject";
 import ExtensionDevInfo from "../../components/PagesComponent/ExtensionDevInfo"
 import Banner from "../../components/PagesComponent/PageBanner";
@@ -24,6 +25,7 @@ const BrowserExtension = () => {
   return (
     <div className="overflow-hidden">
       <Layout>
+        <ScrollToTop />
         <Banner
           subheading="Browser Extension Development"
           heading="Building Custom Extensions for Every Browser"
@@ -33,13 +35,13 @@ const BrowserExtension = () => {
             </>
           }
           buttonText="Let’s Get Started"
-          imgSrc={BannerImage}
+          blogInner={BannerImage}
           col1lg={7}
           className="d-flex align-items-center"
           wrapperClass="extension-dev-banner"
           customCrumbs={[
             { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
-            { pathname: '/services/extension-development/', crumbLabel: 'Browser Extension Development' },
+            { pathname: '/services/browser-extension-development/', crumbLabel: 'Browser Extension Development' },
           ]}
         />
         <ExtensionDevInfo />

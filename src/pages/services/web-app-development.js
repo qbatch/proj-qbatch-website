@@ -6,6 +6,7 @@ import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
 import Layout from "../../components/Layout/layout";
 import Slider from '../../components/UiComponent/Slider'
+import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import Achievements from "../../components/PagesComponent/Achievements";
 import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
 import AppDevelopment from "../../components/PagesComponent/AppDevelopmentService";
@@ -24,16 +25,19 @@ import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAnd
 import WebExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import WebappImage from '../../../static/web-app-dev.svg'
 import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData } from '../../constants'
+import AdvancedWebExplore from "../../components/PagesComponent/ExploreOurAdvancedWeb";
+import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSectionSlider";
 import ResponsiveStyleWrapper from "./style";
 
 const webapp = () => {
 
   return (
     <Layout>
+            <ScrollToTop />
       <ResponsiveStyleWrapper>
         <Banner
           subheading="Web Application Development Company"
-          heading="If You Think Web Apps Are Old-Fashioned. Think Again"
+          heading="If you Think Web Apps are Old-Fashioned. Think Again"
           paragraph="88% of consumers use computers to research products and services before making a purchase. Don’t leave your potential customers confused, instead amuse them with a stunning web appearance! "
           buttonText="Kickstart Your Transformation Journey"
           wrapperClass="cto-banner"
@@ -47,26 +51,16 @@ const webapp = () => {
           ]}
         />
         <Achievements innerPage={true} />
-        <Slider
-          heading="We Are Developers You Can Trust For Your Web App"
-          paragraph="A web app is more than APIs and design, it’s following the human-to-human approach and building what the world needs."
-          data={youCanTrustData}
-          className="developers-trust-slider"
-        />
-        <FullCycle />
+        <SliderComponent />
+        <FullCycle className="web-app-development-page" />
         <SolutionToChoose />
-        <Slider
-          heading="Explore Our Advanced Web Application Expertise"
-          paragraph="From legacy system modernization to developing high-performing microservices, team Qbatch has delivered 300+ custom solutions for several businesses globally."
-          data={webExpertiseData}
-          className="explore-slider"
-        />
+        <AdvancedWebExplore />
         <AppDevelopment />
         <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
         <DesiredResult
           heading="Is your web app failing to bring the desired result? That could be serious!"
           isButton={true}
-          className="desired-result"
+          className="desired-result desire-result-wrapper"
           btnText="Get Started Risk-Free"
           align="d-flex justify-content-end"
         />

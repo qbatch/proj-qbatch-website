@@ -55,9 +55,9 @@ const DevOps = () => {
         wrapperClass="services-banner"
         col1lg={8}
         col2lg={4}
-        headingMaxWidth={'800px'}
-        paragraphMaxWidth={'770px'}
-        imgSrc='/services-banner-img.svg'
+        headingMaxWidth={'720px'}
+        paragraphMaxWidth={'580px'}
+        blogInner='/services-banner-img.svg'
         mobileViewBanner='/services-banner-img.svg'
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },

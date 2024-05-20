@@ -19,6 +19,7 @@ const QuotationSection = styled.div`
     margin-bottom: 48px;
     line-height: 52px;
     letter-spacing: 0.1px;
+    font-weight:700;
     ${media.sm`
       margin-bottom: 16px;
     `}

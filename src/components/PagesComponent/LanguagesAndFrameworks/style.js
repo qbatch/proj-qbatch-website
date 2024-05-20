@@ -157,6 +157,10 @@ const LanguagesWrapper = styled.div`
   .languages-btn {
     display: flex;
     justify-content: center;
+    margin-top:16px;
+    ${media.sm`
+    margin-top:32px;
+    `}
   }
   .framework-item {
     min-height: 700px;

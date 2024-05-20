@@ -154,7 +154,7 @@ const Index = () => {
                 {footerContactData.map((data, ind) => (
                   <div key={ind}>
                     {data.icon && <img src={data.icon} alt="contact" width="16px" height="16px" />}
-                    <span className={!data.icon && 'address'}>{data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" />}</span>
+                    <a href={data.link} target="_blank" className={!data.icon && 'address'}>{data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" />}</a>
                   </div>
                 ))}
               </div>

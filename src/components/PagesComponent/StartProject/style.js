@@ -2,7 +2,16 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const StartProjectWrapper = styled.div`
-  padding: 96px 0;
+  padding: 96px 0 44px;
+  .heading{
+    font-weight:700;
+  }
+  h1{
+    margin-bottom: 24px;
+    ${media.sm`
+    margin-bottom:8px;
+    `}
+  }
   ${media.sm`
       padding: 56px 0;
     `}
@@ -17,6 +26,7 @@ const StartProjectWrapper = styled.div`
     letter-spacing: 0.19px;
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     font-weight:400;
+    margin-bottom:0;
   }
   .mt-40 {
     margin-top: 40px;
@@ -26,7 +36,7 @@ const StartProjectWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   }
   .project-form {
-    margin-top: 72px;
+    margin-top: 77px;
     ${media.xs`
       margin-top: 20px;
     `}
@@ -113,6 +123,7 @@ const StartProjectWrapper = styled.div`
       border-radius: 0;
       height: 60px;
       width: 100%;
+      line-height:24px;
       border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
       &:focus {
         box-shadow: none;

@@ -39,7 +39,7 @@ const LanguagesWrapper = styled.div`
    
     ul {
       padding-left: 0;
-      width: 150px;
+      width: 184px;
     }
     li {
       margin-bottom: 32px;
@@ -160,7 +160,7 @@ const LanguagesWrapper = styled.div`
     justify-content: center;
   }
   .framework-item {
-    min-height: 470px;
+    min-height: 600px;
   }
 `;
 

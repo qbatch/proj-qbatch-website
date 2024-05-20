@@ -29,6 +29,10 @@ const AchievementsWrapper = styled.div`
       position: relative;
       z-index: 2;
       h2 {
+        margin-bottom: 24px;
+        color: ${({ theme }) => theme.colors.primaryColor};
+      }
+      p{
         margin-bottom: 96px;
         ${media.sm`
           margin-bottom: 48px;
@@ -38,7 +42,7 @@ const AchievementsWrapper = styled.div`
     .row-wrapper {
       padding-top: 2px;
       .achievements-col {
-        padding: 32px 0 28px;
+        padding: 32px 0 28px;      
       }
       h1 {
         margin-bottom: 16px;
@@ -54,6 +58,9 @@ const AchievementsWrapper = styled.div`
       ${media.sm`
         margin-bottom: 40px;
       `}
+      span.text-h1{
+        font-weight:700;
+      }
       &::after {
         position: absolute;
         content: '';

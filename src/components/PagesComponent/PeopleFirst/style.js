@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const PeopleFirstWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  padding: 120px 0 112px;
+  padding: 96px 0;
   ${media.sm`
     padding: 56px 0;
 `}
@@ -12,39 +12,37 @@ const PeopleFirstWrapper = styled.div`
   }
   &.productDesignPage {
     .section-btn {
-      margin-top: 74px !important;
+      margin-top: 72px !important;
       display: flex;
       margin: auto;
+      ${media.sm`
+        margin-top: 48px !important;
+      `}
     }
     .sub-heading {
       max-width: 811px;
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-      font-weight: ${({ theme }) => theme.fontWeight.light};
-      ${media.sm`
-      line-height: 32px;
-    `}
     }
   }
   .row > .achievements-col:nth-last-child(-n + 4) {
     border-bottom: none;
   }
   .counter-wrapper {
-    padding-top: 58px;
-    padding-bottom: 10px;
+    padding-top: 56px;
+    ${media.sm`
+      padding: 32px 0 0;
+  `}
   }
   .main-heading {
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 24px;
-    line-height: 52px;
     ${media.sm`
-      line-height: 32px;
       margin-bottom:12px;
     `}
   }
   .paragraph {
     max-width: 720px;
     color: #2d2f31;
-    line-height: 32px;
+    line-height: 24px;
     letter-spacing: 0;
     ${media.sm`
       line-height: 24px;
@@ -64,8 +62,14 @@ const PeopleFirstWrapper = styled.div`
     p {
       margin: 0 auto;
       padding-top: 8px;
+      max-width: 200px;
+      white-space: pre-wrap;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      ${media.sm`
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      `}
       max-width: 270px;
-      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     }
     &:nth-child(4n) {
       border-right: none;

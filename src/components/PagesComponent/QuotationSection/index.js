@@ -14,7 +14,9 @@ const Index = () => {
           inefficiency.”
         </h4>
         <p className="paragraph">— Bill Gates </p>
-        <div className="start-project">Start Your Project <img src="/arrow-down.svg" alt="no-arrow" /> </div>
+        <div className='d-flex align-items-center justify-content-center'>
+        <Button text='Start Your Project' className="secondary-btn" />
+        </div>
       </Container>
     </QuotationSection>
   )
