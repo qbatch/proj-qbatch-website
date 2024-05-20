@@ -28,7 +28,7 @@ import {
   mobileAppFaq,
   revenueData,
 } from "../../constants";
-import CustomMobileAppSlider from "../../components/PagesComponent/CustomMobileAppSlider";
+import SectionMobileApp from "../../components/PagesComponent/CustomMobileAppSlider";
 
 
 const MobileApp = () => {
@@ -94,7 +94,7 @@ const MobileApp = () => {
         isList={true}
         btnText="Get Your Devs"
       />
-      <CustomMobileAppSlider />
+      <SectionMobileApp />
       <Slider
         heading="Lost to Launched"
         paragraph="Our Mobile App Development Process Enroute Successs"

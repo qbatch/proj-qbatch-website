@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const CustomMobileAppSliderWrapper = styled.div`
+const SectionMobileAppWrapper = styled.div`
 padding:96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
@@ -57,4 +57,4 @@ margin: 0;
     }
 }
 `
-export { CustomMobileAppSliderWrapper }
+export { SectionMobileAppWrapper }

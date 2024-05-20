@@ -1,11 +1,11 @@
 import React from 'react'
 import Container from '../../UiComponent/Container'
 import { developmentServicesData } from '../../../constants'
-import { CustomMobileAppSliderWrapper } from './style'
+import { SectionMobileAppWrapper } from './style'
 
-const CustomMobileAppSlider = () => {
+const SectionMobileApp = () => {
   return (
-    <CustomMobileAppSliderWrapper>
+    <SectionMobileAppWrapper>
       <Container>
       <h2>Full Suite of Custom Mobile App Development Services</h2>
       <p>ExploreTime-tested Web Application Development tools and technologies to build a cross-platform and secure application:</p>
@@ -19,8 +19,8 @@ const CustomMobileAppSlider = () => {
         ))}
       </ul>
       </Container>
-    </CustomMobileAppSliderWrapper>
+    </SectionMobileAppWrapper>
   )
 }
 
-export default CustomMobileAppSlider
+export default SectionMobileApp
