@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Container from "../../UiComponent/Container";
-import Button from "../../UiComponent/Button";
+// import Button from "../../UiComponent/Button";
 
 import AwardsWrapper from "./style";
 
@@ -50,7 +50,7 @@ const displayedAwards = maxCols ? awardsData.slice(0, maxCols) : awardsData;
                 {displayedAwards.map((data, ind) => (
                   <Col md={3} sm={3} xs={6} key={ind}>
                     <a href={data.awards.link} target="blank">
-                      <img src={data.awards.logo.localFile?.url} alt={`Award ${ind + 1}`} />
+                      <img src={data.awards.logo.localFile?.url} alt={`Award ${ind + 1}`} loading="lazy" />
                     </a>
                   </Col>
                 ))}

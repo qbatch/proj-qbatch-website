@@ -1,13 +1,13 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useCallback } from "react";
 import { Row, Col, Form } from "react-bootstrap";
 import { Link } from "gatsby";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "../../../../node_modules/video-react/dist/video-react.css";
 import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import ReCAPTCHA from "react-google-recaptcha";
+
 import Container from "../../UiComponent/Container";
 import Input from "../../UiComponent/Input";
 import Collapse from "../../UiComponent/Collapse";
@@ -42,12 +42,12 @@ const Index = ({ page }) => {
     promotion: false,
   });
 
-  const toggleCheckbox = (name) => {
+  const toggleCheckbox = useCallback((name) => {
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: !prevFormData[name],
     }));
-  };
+  }, []);
 
   const handlePhoneChange = (phoneNumber) => {
     setPhone(phoneNumber);
@@ -98,7 +98,7 @@ const Index = ({ page }) => {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = useCallback(async (e) => {
     e.preventDefault();
     const validForm = e.currentTarget;
     if (validForm.checkValidity() === false) {
@@ -196,7 +196,8 @@ const Index = ({ page }) => {
         console.error("Error", error);
       }
     }
-  };  
+  }, [formData, phoneValid, recaptchaCompleted]);  
+
   return (
     <StartProjectWrapper>
       <Container>
@@ -375,7 +376,7 @@ const Index = ({ page }) => {
                 <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
                   <ReCAPTCHA
                     action="homepage"
-                    sitekey="6Ldf5ccpAAAAAFVIXJMisNHYO1IKp2gPVUltgzq1"
+                    sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY}
                     onChange={() => setRecaptchaCompleted(true)}
                     ref={recaptchaRef}
                   />

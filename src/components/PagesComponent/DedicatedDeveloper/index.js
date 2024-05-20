@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import Button from "../../UiComponent/HomeButton/index";
-import Container from "../../UiComponent/Container";
-import { Typewriter } from "react-simple-typewriter";
 import { init } from "ityped";
 import { navigate } from "gatsby";
+
+import Button from "../../UiComponent/HomeButton/index";
+import Container from "../../UiComponent/Container";
+
 import { DedicatedDeveloperWrapper } from "./style";
 
 const Index = () => {
