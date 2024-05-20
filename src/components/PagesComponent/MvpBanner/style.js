@@ -37,21 +37,20 @@ position: relative;
       color: ${({ theme }) => theme.colors.whiteColor};
     }
     ${media.md`
-      /* position: absolute;
+      position: absolute;
       top: 0;
       left: 0;
       padding: 16px 60px;
       background: #000f1c;
       margin-left: 0;
-      z-index: 99; */
-      display: none;
+      z-index: 99;
     `}
-    /* ${media.sm`
+    ${media.sm`
       padding: 16px 40px;
     `}
     ${media.xs`
       padding: 16px 24px;
-    `} */
+    `}
   }
   .banner-main {
     position:relative;
