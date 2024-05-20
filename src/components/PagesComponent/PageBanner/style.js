@@ -46,22 +46,20 @@ const CtoBannerWrapper = styled.div`
       color: ${({ theme }) => theme.colors.whiteColor};
     }
     ${media.md`
-      /* position: absolute;
+      position: absolute;
       top: 0;
       left: 0;
       padding: 16px 60px;
-      background: #001A33;
-      margin-left: 0;
-      z-index: 99; */
-      display: none;
-    `}
-    /* ${media.sm`
-      padding: 16px 40px;
       background: #000f1c;
+      margin-left: 0;
+      z-index: 99;
+    `}
+    ${media.sm`
+      padding: 16px 40px;
     `}
     ${media.xs`
       padding: 16px 24px;
-    `} */
+    `}
   }
   .banner-main {
     position:relative;
