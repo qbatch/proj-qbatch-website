@@ -15,7 +15,7 @@ ${media.sm`
   }
   p{
     margin: 0;
-    font-size: ${({ theme }) => theme.fonts.baseFontSize};;
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
   }
 }
 ul {
@@ -41,7 +41,7 @@ ul {
     li{
       max-width: 262px;
       padding: 24px;
-      border: 1px solid ${({ theme }) => theme.colors.dividerColor};;
+      border: 1px solid ${({ theme }) => theme.colors.dividerColor};
       border-radius: 24px;
       border-bottom-right-radius: 0px;
       ${media.sm`
@@ -50,6 +50,9 @@ ul {
       img{
         width: 80px;
         margin-bottom: 16px;
+      }
+      p{
+        font-size:${({ theme }) => theme.fonts.baseFontSize};
       }
     }
 }
