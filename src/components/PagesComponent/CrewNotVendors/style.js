@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const CrewWrapper = styled.div`
   background: url("/solution-bg.svg");
   background-size: cover;
-  padding: 120px 0;
+  padding: 96px 0;
   text-align: center;
   ${media.sm`
     padding: 56px 0;
@@ -20,7 +20,6 @@ const CrewWrapper = styled.div`
       span {
         &:first-child {
           color: ${({ theme }) => theme.colors.whiteColor};
-          font-style:italic;
         }
         &:nth-child(2) {
           color: ${({ theme }) => theme.colors.dividerColor};

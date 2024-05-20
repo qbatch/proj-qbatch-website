@@ -107,6 +107,7 @@ const ProblumSolvingWrapper = styled.div`
     .heading-break {
       max-width: 90%;
       margin: 0;
+      text-transform:capitalize;
     }
     .circle-bg {
       margin-left: 145px;

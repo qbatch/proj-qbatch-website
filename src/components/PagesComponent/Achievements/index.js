@@ -7,7 +7,7 @@ import AchievementsWrapper from './style'
 
 import { counterData } from "../../../constants";
 
-const Index = ({ innerPage, page, mainHeading }) => {
+const Index = ({ innerPage, page, mainHeading, labelText }) => {
   const numCols = page === "contact" ? 3 : 4;
   const displayedCounterData = page === "contact" ? counterData : counterData.slice(0, 3);
   const heading = mainHeading || "Achievements Through The Years...";
@@ -19,6 +19,7 @@ const Index = ({ innerPage, page, mainHeading }) => {
           <h2 className={innerPage ? "" : "text-h1 color-primary"}>
             {heading}
           </h2>
+          <p>{labelText}</p>
           <Row>
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">

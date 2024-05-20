@@ -9,7 +9,7 @@ const Index = () => {
       <Container>
         <div className="crew-heading">
           <h2 className="text-h1">
-            We are your <span>“Crew”,</span> not <span>Vendors</span>
+            We Are Your <span>“Crew”,</span> Not <span>Vendors</span>
           </h2>
         </div>
       </Container>
