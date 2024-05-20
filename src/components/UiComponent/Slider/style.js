@@ -35,6 +35,14 @@ const SliderWrapper = styled.div`
     }
     `}
   }
+  &.our-secret-slider{
+  .upper-heading{
+    text-align:center;
+    h4{
+      margin-bottom:16px;
+    }
+  }
+  }
   &.our-secret-sauce{
     ${media.sm`
    .upper-heading{

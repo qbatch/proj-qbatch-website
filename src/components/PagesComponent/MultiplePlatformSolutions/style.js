@@ -25,7 +25,7 @@ const MultiPlatformWrapper = styled.div`
       font-weight: ${({ theme }) => theme.fontWeight.light};
       max-width: 420px;
       text-transform: none;
-      line-height: 32px;
+      line-height: 24px;
       letter-spacing: 0.7px;
       font-size: 16px;
       color: #5F737C;
@@ -46,7 +46,7 @@ const MultiPlatformWrapper = styled.div`
       margin-bottom: 0;
     }
     h4 {
-      line-height: 48px;
+      line-height: 32px;
       margin-bottom: 16px;
       letter-spacing: 0;
       ${media.sm`
@@ -55,7 +55,7 @@ const MultiPlatformWrapper = styled.div`
     `}
     }
     p {
-      line-height: 32px;
+      line-height: 24px;
       max-width: 690px;
       margin-bottom: 32px;
       letter-spacing: 0;
