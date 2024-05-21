@@ -16,7 +16,11 @@ const AwsPartnerWrapper = styled.div`
             margin-bottom:16px;
       }
        ${media.sm`
-       padding:24px;
+       padding:20px;
+       img{
+       height: 52px;
+       margin-bottom: 0;
+       }
   ` }
 
 `
