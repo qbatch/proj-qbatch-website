@@ -32,12 +32,12 @@ const Index = () => {
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({
-    ...formData,
-    [name]: value,
+      ...formData,
+      [name]: value,
     });
   };
 
-  const handleSubmit = async ()=> {
+  const handleSubmit = async () => {
     if (formData.email === '') {
       setErrorMsg('Please Enter Email Address');
       return;
@@ -54,7 +54,7 @@ const Index = () => {
       setErrorMsg("Email is already subscribed.");
       return;
     }
-   
+
     try {
       const response = await fetch("https://cms.qbatch.com/api/subscribeds", {
         method: "POST",
@@ -154,11 +154,20 @@ const Index = () => {
                 {footerContactData.map((data, ind) => (
                   <div key={ind}>
                     {data.icon && <img src={data.icon} alt="contact" width="16px" height="16px" />}
-                    <a href={data.link} target="_blank" className={!data.icon && 'address'}>{data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" />}</a>
+                    {data.link ? (
+                      <a href={data.link} target="_blank" rel="noopener noreferrer" className={!data.icon && 'address'}>
+                        {data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" />}
+                      </a>
+                    ) : (
+                      <span className={!data.icon && 'address'}>
+                        {data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" />}
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>
             </Col>
+
           </Row>
         </Container>
       </div>
