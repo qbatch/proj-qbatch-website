@@ -5,27 +5,49 @@ const BlogDetailsWrapper = styled.div`
   background-image: url('/blog-details-banner.svg');
   width: 100%;
   height: 497px;
-  padding: 96px 67px;
+  padding: 142px 67px 96px;
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  position: relative;
   ${media.sm`
     padding: 56px 0;
     height:auto;
   `}
+  .breadcrumb-wrapper{
+    margin: auto;
+    position: absolute;
+    z-index: 99;
+      top: 4px;
+      left: 0;
+      background: #001A33;
+      padding: 0;
+      width: 100%;
+  }
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.whiteColor};
-    margin: 4px 0 11px 52px;
-    ${media.sm`
-    display:none;
-    `}
+    margin: 0 0 12px 0;
+    padding: 16px 96px;
+    max-width: 1600px;
+    margin: auto;
+    overflow: scroll;
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
+      white-space: nowrap
     }
+    ${media.lg`
+      padding: 16px 80px;
+    `}
+    ${media.md`
+      padding: 16px 60px;
+    `}
+    ${media.sm`
+      padding: 16px 40px;
+    `}
     ${media.xs`
-      margin: 0 0 12px;
-  `}
+      padding: 16px 24px;
+    `}
   }
   .details-flex {
     ${media.sm`

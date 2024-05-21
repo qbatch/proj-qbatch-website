@@ -47,7 +47,7 @@ const Header2Wrapper = styled.div`
             display: none;
           }
 
-        a{
+        a, span{
           color: ${({ theme }) => theme.colors.bodyLight} ;
           font-weight:  ${({ theme }) => theme.fontWeight.light};
           transition: 0.3s;
@@ -72,7 +72,7 @@ const Header2Wrapper = styled.div`
           background-size: cover;
           background-position: top left;
           border-radius: 0 0 8px 8px;
-          padding: 44px 0;
+          padding: 44px 0 20px;
           z-index: 90;
           top: 80px; 
           left: 0;
@@ -89,6 +89,7 @@ const Header2Wrapper = styled.div`
             line-height: 32px;
           }
           &.multi-menu{
+            padding-bottom: 44px;
             ul{
               margin-top: 20px;
               column-count: 2;
@@ -127,7 +128,7 @@ const Header2Wrapper = styled.div`
               align-items: center;
               transition: 0.3s ease-in;
               padding-bottom: 28px;
-                a{
+                a, span{
                   color: ${({ theme }) => theme.colors.textMedium} ;
                   font-weight:  ${({ theme }) => theme.fontWeight.normal};
                 }
@@ -143,7 +144,7 @@ const Header2Wrapper = styled.div`
               }
               &.active,
               &:hover{
-                a{
+                a, span{
                   font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
                   color: ${({ theme }) => theme.colors.primaryColor} ;
                 }
@@ -159,7 +160,7 @@ const Header2Wrapper = styled.div`
         }
         &:hover {
           .link-wrapper{
-            a{
+            a, span{
               font-weight:  ${({ theme }) => theme.fontWeight.normal};
               color: ${({ theme }) => theme.colors.primaryColor} ;
               &::after{
