@@ -3,9 +3,9 @@ import { Row, Col } from "react-bootstrap";
 import CountUp from 'react-countup'
 
 import Container from "../../UiComponent/Container";
-import AchievementsWrapper from './style'
-
 import { counterData } from "../../../constants";
+
+import AchievementsWrapper from './style'
 
 const Index = ({ innerPage, page, mainHeading, labelText }) => {
   const numCols = page === "contact" ? 3 : 4;

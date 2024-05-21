@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 
-import Button from "../../UiComponent/Button";
+// import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 
 import FullStack from "../../../assets/images/full-stack-development.svg";
@@ -10,7 +10,7 @@ import UIUX from "../../../assets/images/uiux-design.svg";
 import SupplyChain from "../../../assets/images/supply-chain.svg";
 import Cloud from "../../../assets/images/cloud-devop.svg";
 import PRAService from "../../../assets/images/rpa-service.svg";
-import ArrowDownward from "../../../assets/images/arrow_downward.svg";
+// import ArrowDownward from "../../../assets/images/arrow_downward.svg";
 
 import ExpertiseWrapper from "./style";
 

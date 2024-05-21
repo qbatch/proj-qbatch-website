@@ -1,16 +1,14 @@
 import React from "react";
-import WhatWeDoWrapper from "./style";
-
 import { Row, Col } from "react-bootstrap";
 
-import Button from "../../../components/UiComponent/Button"
+// import Button from "../../../components/UiComponent/Button"
 import Divider from '../../../components/UiComponent/Divider'
 import Container from '../../../components/UiComponent/Container'
-
 import { weDoData } from "../../../constants";
 
+import WhatWeDoWrapper from "./style";
+
 const Index = () => {
-  
   return (
     <WhatWeDoWrapper>
       <Container>
@@ -35,7 +33,7 @@ const Index = () => {
                     ) : (
                       <div className="d-flex align-items-start">
                         <div className="mt-2">
-                          <img src={data.icon} alt="no-icon" width="60px" height="60px" />
+                          <img src={data.icon} alt="no-icon" width="60px" height="60px" loading="lazy" />
                         </div>
                         <div className="do-title">
                           <h3 className="text-h4 heading">{data.title}</h3>

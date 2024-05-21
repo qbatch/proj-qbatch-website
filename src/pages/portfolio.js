@@ -27,6 +27,7 @@ const Portfolio = () => {
         mobileViewBanner={EcommerceBanner}
         blogInner={EcommerceBanner}
         wrapperClass="cto-banner portfolio-banner"
+        isH1
       />
       <SuccessStories />
       <Divider margin="0px" />

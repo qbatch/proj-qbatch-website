@@ -8,30 +8,32 @@ import { ReadingTime, TimeAgo } from "../../../constants/Utils";
 import moment from "moment"
 import { Queries } from '../../../constants/queries'
 const Index = ({ data }) => {
-   const location = useLocation()
+  const location = useLocation()
 
   const title = data?.blogTitle;
-    const customCrumbs = [
-      { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
-      { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
-      { pathname: `/blog/${data?.category?.slug}`, crumbLabel: data?.category?.categoryName, crumbSeparator: '> ' },
+  const customCrumbs = [
+    { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
+    { pathname: '/blog', crumbLabel: 'Blog', crumbSeparator: '>' },
+    { pathname: `/blog/${data?.category?.slug}`, crumbLabel: data?.category?.categoryName, crumbSeparator: '> ' },
     { pathname: `/blog/${data?.slug}`, crumbLabel: data?.blogTitle, crumbSeparator: '>' },
-    ]
-    
+  ]
+
   return (
     <BlogDetailsWrapper>
       <Container>
-        <div className="breadcrumb">
-          <ul className="d-flex gap-2 ps-0">
-            {customCrumbs.map((crumb, index) => (
-              <li key={index}>
-                <Link className="pointer" to={crumb.pathname}>
-                  <span>{crumb.crumbLabel}</span>
-                  {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="breadcrumb-wrapper">
+          <div className="breadcrumb">
+            <ul className="d-flex gap-2 ps-0">
+              {customCrumbs.map((crumb, index) => (
+                <li key={index}>
+                  <Link className="pointer" to={crumb.pathname}>
+                    <span>{crumb.crumbLabel}</span>
+                    {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="d-flex align-items-start details-flex gap-4">
           <img src="/back-arrow.svg" alt="no-arrow" className="pointer" onClick={() => navigate('/blog')} />

@@ -4,8 +4,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-// import { Player, BigPlayButton, LoadingSpinner } from "video-react";
-
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
@@ -73,7 +71,7 @@ const Index = () => {
         <Carousel responsive={responsive} arrows={false} ref={carousel1Ref} swipeable={false} draggable={false}>
           {testimonialsData.map((item, ind) => (
             <div className="testimonial-wrapper" key={ind}>
-              <img className="client-image" src={item.clientImg?.localFile.url} alt="client" width="158" />
+              <img className="client-image" src={item.clientImg?.localFile.url} alt="client" width="158" loading="lazy" />
               <p className="testimonial-text">{item.feedback}</p>
             </div>
           ))}

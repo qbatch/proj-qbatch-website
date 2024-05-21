@@ -19,7 +19,7 @@ const AuthorBanner = (props) => {
           <div>
             <div className="d-flex gap-4">
               <div className="details-flex">
-                <h2 className="title">{title || 'No Author Name'}</h2>
+                <h1 className="title text-h2">{title || 'No Author Name'}</h1>
                 <span className="position">Content Manager</span>
                 <div className="social-icons">
                   <ul className="d-flex social-link social-icons ps-0">

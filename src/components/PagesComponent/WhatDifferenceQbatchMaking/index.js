@@ -1,9 +1,11 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { BiChevronRight } from "react-icons/bi";
+
 import Container from "../../UiComponent/Container";
-import QbatchMakingWrapper from "./style";
 import { data } from "../../../constants/index";
+
+import QbatchMakingWrapper from "./style";
 
 const Index = ({ heading, innerPage, paragraph }) => {
   return (
@@ -37,11 +39,11 @@ const Index = ({ heading, innerPage, paragraph }) => {
                 </Col>
                 <Col xs={2}>
                   <div className="d-flex align-items-center justify-content-center gap-md-3 gap-1 challenges-icons">
-                    <img src={item.icon1} alt="icon" width="32px" height="32px" />
+                    <img src={item.icon1} alt="icon" width="32px" height="32px" loading="lazy" />
                     <div className="gradient-arrow">
                       <BiChevronRight size={25} />
                     </div>
-                    <img src={item.icon2} alt="icon" width="32px" height="32px" />
+                    <img src={item.icon2} alt="icon" width="32px" height="32px" loading="lazy" />
                   </div>
                 </Col>
                 <Col xs={5}>

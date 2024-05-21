@@ -42,7 +42,7 @@ const DedicatedDeveloperWrapper = styled.div`
       line-height: 32px;
       `}
       span {
-        color: ${({ theme }) => theme.colors.highlightColor};
+        color: ${({ theme }) => theme.colors.highlightColor} !important;
         padding-left: 8px;
       }
     }
