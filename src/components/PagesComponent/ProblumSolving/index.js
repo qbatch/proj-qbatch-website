@@ -1,10 +1,8 @@
 import React from "react";
-import {Link} from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import { Row, Col } from "react-bootstrap";
-import { navigate } from 'gatsby';
 
 import Container from "../../UiComponent/Container";
-
 import ArrowDownward from "../../../assets/images/arrow_downward.svg";
 
 import ProblumSolvingWrapper from "./style";

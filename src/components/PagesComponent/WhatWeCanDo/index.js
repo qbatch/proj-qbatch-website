@@ -1,16 +1,14 @@
 import React from "react";
-import WhatWeDoWrapper from "./style";
-
 import { Row, Col } from "react-bootstrap";
 
 // import Button from "../../../components/UiComponent/Button"
 import Divider from '../../../components/UiComponent/Divider'
 import Container from '../../../components/UiComponent/Container'
-
 import { weDoData } from "../../../constants";
 
+import WhatWeDoWrapper from "./style";
+
 const Index = () => {
-  
   return (
     <WhatWeDoWrapper>
       <Container>

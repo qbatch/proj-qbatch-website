@@ -1,9 +1,8 @@
 import React, { useState, useRef, useCallback, useMemo } from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, navigate } from "gatsby";
 import { Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { navigate } from 'gatsby';
 
 import Button from "../../../components/UiComponent/Button";
 import Container from "../../UiComponent/Container";

@@ -1,10 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { BsArrowRight } from "react-icons/bs";
-import ArrowDown  from '../../../assets/images/arrow_downward.svg'
 
 import Container from "../../UiComponent/Container";
-
 import Ecommerce from "../../../assets/images/e-commerce.svg";
 import Logictics from "../../../assets/images/logictics.svg";
 import FinTech from "../../../assets/images/fin-tech.svg";
@@ -12,6 +9,7 @@ import HealthCare from "../../../assets/images/health-care.svg";
 import EdTech from "../../../assets/images/edtech.svg";
 import RetailGoods from "../../../assets/images/retail.svg";
 import Traval from "../../../assets/images/traval.svg";
+import ArrowDown  from '../../../assets/images/arrow_downward.svg'
 
 import MakingIndustriesWrapper from "./style";
 
