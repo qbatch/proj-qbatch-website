@@ -1,12 +1,13 @@
 import React from "react";
-import CollaborationWrapper from "./style";
 import { BsArrowRight } from "react-icons/bs";
-import Button from "../../../components/UiComponent/Button";
 
+import Button from "../../../components/UiComponent/Button";
 import Container from "../../UiComponent/Container";
 import TimeIcon from "../../../assets/images/icons/time-clock.svg";
 import FixedScopeIcon from "../../../assets/images/icons/fixed-scope.svg";
 import DevTeamIcon from "../../../assets/images/icons/dev-team.svg";
+
+import CollaborationWrapper from "./style";
 
 const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading, button }) => {
   const experties = expertiseData || [

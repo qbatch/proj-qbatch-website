@@ -1,8 +1,10 @@
-import React, { Suspense, lazy } from 'react'
-import { Script } from 'gatsby'
-import { Queries } from '../constants/queries'
-import Layout from '../components/Layout/layout'
-import SEO from '../components/Seo'
+import React, { Suspense, lazy } from 'react';
+import { Script } from 'gatsby';
+
+import { Queries } from '../constants/queries';
+import Layout from '../components/Layout/layout';
+import SEO from '../components/Seo';
+import { replaceUnderscoreWithAt } from '../constants/Utils';
 // import EventsBanner from '../components/PagesComponent/EventsBanner'
 const DedicatedDevelopment = lazy(() => import('../components/PagesComponent/DedicatedDeveloper'));
 const Achievements = lazy(() => import('../components/PagesComponent/Achievements'));
@@ -21,31 +23,10 @@ const IndexPage = () => {
   const homeData = Queries()
   const { schema } = homeData.allStrapiHome.nodes[0] || {}
   const schemaData = schema
-  function replaceUnderscoreWithAt(obj) {
-    if (obj && typeof obj === 'object') {
-      if (Array.isArray(obj)) {
-        return obj.map((item) => replaceUnderscoreWithAt(item))
-      } else {
-        const updatedObj = {}
-        for (const [key, value] of Object.entries(obj)) {
-          updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
-        }
-        return updatedObj
-      }
-    } else {
-      return obj
-    }
-  }
-  const transformedObject = replaceUnderscoreWithAt(schemaData)
+  const transformedObject = replaceUnderscoreWithAt(schemaData);
+
   return (
     <>
-      <Script type="application/ld+json">
-        {transformedObject
-          .filter((x) => !x.visibilityIn)
-          .map((data, i) => (
-              JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)
-          ))}
-      </Script>
       <Layout>
         <Suspense fallback={<div>Loading...</div>}>
           <DedicatedDevelopment />
@@ -86,47 +67,40 @@ const IndexPage = () => {
           /> */}
         </Suspense>
       </Layout>
+      <Script type="application/ld+json">
+        {transformedObject
+          .filter((x) => !x.visibilityIn)
+          .map((data, i) => (
+              JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)
+          ))}
+      </Script>
     </>
   )
 }
 export const Head = () => {
-    const homeData = Queries()
+  const homeData = Queries()
   const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
   const seoData = seo
   const schemaData = schema
-  function replaceUnderscoreWithAt(obj) {
-    if (obj && typeof obj === 'object') {
-      if (Array.isArray(obj)) {
-        return obj.map((item) => replaceUnderscoreWithAt(item))
-      } else {
-        const updatedObj = {}
-        for (const [key, value] of Object.entries(obj)) {
-          updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
-        }
-        return updatedObj
-      }
-    } else {
-      return obj
-    }
-  }
-  const transformedObject = replaceUnderscoreWithAt(schemaData)
+  const transformedObject = replaceUnderscoreWithAt(schemaData);
+
   return (
     <SEO
-        title={seoData?.metaTitle}
-        description={seoData.metaDescription}
-        keywords={seoData.keywords}
-        language={seoData.language}
-        robots={seoData.metaRobots}
-        image={seoData.metaimage[0]?.localFile?.url}
-      >
-        {transformedObject
-          .filter((x) => x.visibilityIn)
-          .map((data, i) => (
-            <Script key={i} type="application/ld+json">
-              {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
-            </Script>
-          ))}
-      </SEO>
+      title={seoData?.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      image={seoData.metaimage[0]?.localFile?.url}
+    >
+      {transformedObject
+        .filter((x) => x.visibilityIn)
+        .map((data, i) => (
+          <Script key={i} type="application/ld+json">
+            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
+          </Script>
+        ))}
+    </SEO>
   )
 }
 

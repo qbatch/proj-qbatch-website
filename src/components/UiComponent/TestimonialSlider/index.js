@@ -4,8 +4,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-// import { Player, BigPlayButton, LoadingSpinner } from "video-react";
-
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 

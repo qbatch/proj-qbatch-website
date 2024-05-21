@@ -1,9 +1,11 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { BiChevronRight } from "react-icons/bi";
+
 import Container from "../../UiComponent/Container";
-import QbatchMakingWrapper from "./style";
 import { data } from "../../../constants/index";
+
+import QbatchMakingWrapper from "./style";
 
 const Index = ({ heading, innerPage, paragraph }) => {
   return (

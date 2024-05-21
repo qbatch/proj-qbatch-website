@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import { init } from "ityped";
+import React from "react";
 import { navigate } from "gatsby";
+import { Typewriter } from 'react-simple-typewriter'
 
 import Button from "../../UiComponent/HomeButton/index";
 import Container from "../../UiComponent/Container";
@@ -8,34 +8,21 @@ import Container from "../../UiComponent/Container";
 import { DedicatedDeveloperWrapper } from "./style";
 
 const Index = () => {
-  const textRef = useRef();
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: false,
-      backSpeed: 2000,
-      typeSpeed: 100,
-      backSpeed: 50,
-      startDelay: 500,
-      backDelay: 500,
-      showCursor: true,
-      cursorChar: "|",
-      strings: [
-        "Startups",
-        "Entrepreneurs",
-        "Enterprise Owners",
-        "Risk-takers",
-        "Innovators",
-      ],
-    });
-  }, []);
-
   return (
     <DedicatedDeveloperWrapper>
       <Container>
         <div className="title-portion">
           <h1>
             Software Development & Consultancy <br /> for {' '}
-            <span ref={textRef}/>
+            <Typewriter
+              words={['Startups', 'Entrepreneurs', 'Enterprise Owners', 'Risk-takers', 'Innovators']}
+              loop='infinite'
+              cursor
+              cursorStyle='|'
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1500}
+            />
           </h1>
           <h2 className="text-h5 fw-normal">
             200+ enterprises have already garnered great financial results and

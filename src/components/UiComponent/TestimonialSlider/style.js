@@ -47,18 +47,6 @@ const ProvenExperienceWrapper = styled.div`
        flex-wrap: wrap;
        text-align: center;
     `}
-    /* .video-react{
-      padding-top : 372px !important;
-      ${media.md`
-      padding-top: 200px !important;
-      `}
-      ${media.sm`
-        height: 340px;
-      `}
-      ${media.xs`
-        height: 270px;
-      `}
-    } */
   }
   .testimonial-title {
     display: flex;
