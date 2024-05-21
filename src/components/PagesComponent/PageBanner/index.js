@@ -6,7 +6,7 @@ import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/HomeButton";
 import CtoBannerWrapper from "./style";
 
-const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
+const CtoBanner = ({isH1=false, heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;
   const defaultCol2lg = 5;
   const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
@@ -36,7 +36,15 @@ const CtoBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
             <div className="banner-main">
               {subheading && <h1 className="banner-sub-heading text-h4" style={{ color: subheadingColor }}> {subheading}
               </h1>}
-              <h2 className="text-h1" style={{ maxWidth: headingMaxWidth }}>{heading}</h2>
+              {isH1 ? (
+                <h1 className="text-h1" style={{ maxWidth: headingMaxWidth }}>
+                  {heading}
+                </h1>
+              ) : (
+                <h2 className="text-h1" style={{ maxWidth: headingMaxWidth }}>
+                  {heading}
+                </h2>
+              )}
               <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
               <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0" />
             </div>
