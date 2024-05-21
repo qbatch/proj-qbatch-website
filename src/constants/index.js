@@ -3930,7 +3930,7 @@ const footerContactData = [
     title: "1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801, USA.",
     icon: "/address-icon.svg",
     flag: "/usa-flag-small.svg",
-    link: "https://maps.app.goo.gl/uLoY8xJc1TTTHPCg9"
+    link: ""
   },
   {
     title: "Qbatch, Asia Centre, 8 Main Boulevard Gulberg, Babar Block Garden Town, Lahore, Punjab",
