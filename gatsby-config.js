@@ -354,8 +354,8 @@ module.exports = {
                   title: node.blogTitle,
                   description: node.blogDescription.data.blogDescription,
                   date: node.publishedAt,
-                  url: `${site.siteMetadata.siteUrl}/article/${node.slug}`,
-                  guid: `${site.siteMetadata.siteUrl}/article/${node.slug}`,
+                  url: `${site.siteMetadata.siteUrl}/blog/${node.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}/blog/${node.slug}`,
                   custom_elements: [{ 'content:encoded': node.blogDescription.data.blogDescription }],
                 };
               });
@@ -386,8 +386,7 @@ module.exports = {
             output: '/rss.xml',
             title: 'All Categories RSS Feed',
           },
-          
-          ...['software-development', 'cto', 'ecommerce', 'web-and-data-scraping', 'enterprise-development'].map(categorySlug => {
+          ...['software-development', 'cto', 'ecommerce', 'web-and-data-scraping', 'enterprise-development', 'trending'].map(categorySlug => {
             const categoryName = categorySlug.replace(/-/g, ' ').toUpperCase();
             return {
               serialize: ({ query: { site, allStrapiArticle } }) => {
@@ -398,8 +397,8 @@ module.exports = {
                       title: node.blogTitle,
                       description: node.blogDescription.data.blogDescription,
                       date: node.publishedAt,
-                      url: `${site.siteMetadata.siteUrl}/article/${node.slug}`,
-                      guid: `${site.siteMetadata.siteUrl}/article/${node.slug}`,
+                      url: `${site.siteMetadata.siteUrl}/blog/${node.slug}`,
+                      guid: `${site.siteMetadata.siteUrl}/blog/${node.slug}`,
                       custom_elements: [{ 'content:encoded': node.blogDescription.data.blogDescription }],
                     };
                   });
