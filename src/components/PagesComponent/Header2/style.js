@@ -195,7 +195,7 @@ const Header2Wrapper = styled.div`
       ${media.xl`
         gap: 32px;
           & > li{
-            a{
+            a, span{
               font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
             }
             .mega-menu{
@@ -210,7 +210,7 @@ const Header2Wrapper = styled.div`
       ${media.lg`
         gap: 24px;
          & > li{
-            a{
+            a, span{
               font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
             }
           }
@@ -248,7 +248,7 @@ const Header2Wrapper = styled.div`
         padding-bottom: 8px;
         margin-top: 32px;
         border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
-        a{
+        a, span{
           color: ${({ theme }) => theme.colors.textMedium} ;
           &::before{
             content: '';
@@ -284,7 +284,7 @@ const Header2Wrapper = styled.div`
           }
         }
         &.open{
-          a{
+          a, span{
             font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
             color: ${({ theme }) => theme.colors.primaryColor} ;
             &::before{
@@ -320,7 +320,7 @@ const Header2Wrapper = styled.div`
               &:last-child{
                 padding-bottom: 0;
               }
-              a{
+              a, span{
                 color:  ${({ theme }) => theme.colors.bodyLight};
               }
               &::before{
@@ -335,7 +335,7 @@ const Header2Wrapper = styled.div`
                 margin-bottom: 4px;
               }
               &.active{
-                a{
+                a, span{
                   font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
                   color: ${({ theme }) => theme.colors.primaryColor} ;
                 }
@@ -364,7 +364,7 @@ const Header2Wrapper = styled.div`
         column-count: 2;
         li{
           padding-bottom: 12px;
-          a{
+          a, span{
             font-size:  ${({ theme }) => theme.fonts.baseFontSize};
             font-weight:  ${({ theme }) => theme.fontWeight.normal};
             color:  ${({ theme }) => theme.colors.bodyLight};
