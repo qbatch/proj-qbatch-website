@@ -386,6 +386,7 @@ module.exports = {
             output: '/rss.xml',
             title: 'All Categories RSS Feed',
           },
+          
           ...['software-development', 'cto', 'ecommerce', 'web-and-data-scraping', 'enterprise-development'].map(categorySlug => {
             const categoryName = categorySlug.replace(/-/g, ' ').toUpperCase();
             return {
