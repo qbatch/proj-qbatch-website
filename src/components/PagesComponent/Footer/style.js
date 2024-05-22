@@ -11,6 +11,9 @@ const FooterWrapper = styled.div`
   ${media.md`
     background-size: cover;
   `}
+  ${media.sm`
+    background-image: none;
+  `}
   span,
   li {
     color: ${({ theme }) => theme.colors.bodyLight};

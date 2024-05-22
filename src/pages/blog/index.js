@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { useLocation } from '@reach/router'
-import Layout from "../components/Layout/layout";
-import {navigate } from 'gatsby'
-import SEO from "../components/Seo";
-import BlogBanner from "../components/PagesComponent/BlogBanner";
-import SearchInput from "../components/UiComponent/SearchInput";
-import BlogAll from "../components/PagesComponent/BlogAll";
-import BlogCards from "../components/PagesComponent/BlogCards";
-import Container from "../components/UiComponent/Container";
-import  { Queries }  from "../constants/queries";
+import { useLocation } from '@reach/router';
+import {navigate } from 'gatsby';
+
+import Layout from "../../components/Layout/layout";
+import SEO from "../../components/Seo";
+import BlogBanner from "../../components/PagesComponent/BlogBanner";
+import SearchInput from "../../components/UiComponent/SearchInput";
+import BlogAll from "../../components/PagesComponent/BlogAll";
+import BlogCards from "../../components/PagesComponent/BlogCards";
+import Container from "../../components/UiComponent/Container";
+import  { Queries }  from "../../constants/queries";
 
 const BlogPage = ({ pageContext }) => {
   const location = useLocation()
@@ -106,4 +107,3 @@ export const Head = () => {
 }
 
 export default BlogPage;
-
