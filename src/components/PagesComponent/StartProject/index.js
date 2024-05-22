@@ -355,7 +355,7 @@ const Index = ({ page }) => {
                   label={
                     <>
                       I understand and agree to the
-                      <Link className="ms-1" to="/terms-and-conditions">
+                      <Link className="ms-1 terms-link" to="/terms-and-conditions">
                         Terms & Conditions
                       </Link>
                     </>

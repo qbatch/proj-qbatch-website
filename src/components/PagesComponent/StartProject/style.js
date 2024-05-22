@@ -157,5 +157,9 @@ const StartProjectWrapper = styled.div`
       }
     }
   }
+  .terms-link {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 `
 export default StartProjectWrapper;
