@@ -18,20 +18,22 @@ const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
         <Row className='align-items-center h-100 w-100'>
           <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
 
-          {customCrumbs && (
-            <div className="breadcrumb d-block">
-              <ul className="d-flex gap-2 ps-0">
-                {crumbs.map((crumb, index) => (
-                  <li key={index}>
-                    <Link className="pointer" to={crumb.pathname}>
-                      <span>{crumb.crumbLabel}</span>
-                      {index < crumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+            {customCrumbs && (
+              <div className='breadcrumb-wrapper'>
+                <div className="breadcrumb d-block">
+                  <ul className="d-flex gap-2 ps-0">
+                    {crumbs.map((crumb, index) => (
+                      <li key={index}>
+                        <Link className="pointer" to={crumb.pathname}>
+                          <span>{crumb.crumbLabel}</span>
+                          {index < crumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
             <div className="banner-main">
               <h1 className="banner-sub-heading text-h4" style={{ color: subheadingColor }}> {subheading}
               </h1>
