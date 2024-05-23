@@ -165,6 +165,13 @@ const CtoBannerWrapper = styled.div`
     @media (max-width: 1480px) {
       padding: 143px 0 140px;
     }
+    &.cto-wrapper {
+      .banner-main {
+        .text-h1 {
+          max-width: 1100px;
+        }
+      }
+  }
   }
   &.product-design-banner {
     ${media.md`

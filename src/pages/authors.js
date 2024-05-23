@@ -23,8 +23,8 @@ const Author = ({ pageContext, location }) => {
   return (
     <Layout>
       <AuthorBanner title={name} slug={slug} authorImage={img?.localFile?.url} description={description} socials={socials} customCrumbs={[
-        { pathname: '/author/', crumbLabel: 'Author', crumbSeparator: '>' },
-        { pathname: `/author/${title}/`, crumbLabel: name, crumbSeparator: '>' },
+        { pathname: `/authors/${title}/`, crumbLabel: 'Author', crumbSeparator: '>' },
+        { pathname: `/authors/${title}/`, crumbLabel: name, crumbSeparator: '>' },
       ]} />
       <Container>
         <BlogCards upperHeading={`Recent Stories by ${name}`} data={data} />
