@@ -1,10 +1,11 @@
 import React from "react";
-import { navigate, Link } from 'gatsby'
+import { navigate } from 'gatsby'
+
 import Container from "../../UiComponent/Container";
-import Button from '../../UiComponent/HomeButton/index'
+import Button from '../../UiComponent/HomeButton/index';
+import Breadcrumb from "../Breadcrumb";
 
 import { BannerWrapper, H1 } from "./style"
-import Breadcrumb from "../Breadcrumb";
 
 const Index = ({ customCrumbs }) => {
   const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };

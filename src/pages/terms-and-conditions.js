@@ -1,8 +1,6 @@
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { Queries } from '../constants/queries'
-import styled from "styled-components";
-import { media } from '../theme/media-mixins';
 
 import Layout from "../components/Layout/layout";
 import StaticPage from "../components/PagesComponent/StaticPage";

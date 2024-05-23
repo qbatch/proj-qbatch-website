@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
 import { Queries } from "../constants/queries";
-import styled from "styled-components";
 
-import { media } from '../theme/media-mixins';
 import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import StartProject from "../components/PagesComponent/StartProject";
