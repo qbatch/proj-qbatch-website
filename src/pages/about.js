@@ -13,15 +13,19 @@ import Awards from "../components/PagesComponent/Awards";
 import Clients from "../components/PagesComponent/Careers";
 
 const About = () => (
-  
+
   <Layout>
-    <CompanyBanner />
+    <CompanyBanner
+      customCrumbs={[
+        { pathname: '/about/', crumbLabel: 'About Us', crumbSeparator: '>' },
+      ]}
+    />
     <GrowthPartner />
     <CompanyAchievements />
     <OurClients />
     <Leadership />
     <ValueSystem />
-    <Awards  maxCols={8}/>
+    <Awards maxCols={8} />
     <Clients />
   </Layout>
 );

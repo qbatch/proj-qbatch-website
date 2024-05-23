@@ -8,6 +8,7 @@ const BlogDetailsWrapper = styled.div`
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  position: relative;
   ${media.sm`
     padding: 96px 0;
   `}

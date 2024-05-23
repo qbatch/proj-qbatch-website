@@ -1,14 +1,19 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import { Link } from 'gatsby'
+
 import Container from '../../UiComponent/Container';
 import BlogDetailsWrapper from './style';
+import Breadcrumb from '../Breadcrumb';
 
 const AuthorBanner = (props) => {
-  const { title, description, authorImage, socials } = props;
-
+  const { title, description, authorImage, socials, customCrumbs } = props;
+  const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
+  const crumbs = customCrumbs && customCrumbs.length > 0 ? [defaultHomeCrumb, ...customCrumbs] : [defaultHomeCrumb];
   return (
     <BlogDetailsWrapper>
       <Container>
+        <Breadcrumb crumbs={crumbs} />
         <div className='d-flex gap-5 align-items-start justify-content-left'>
           <div>
             <div className="image-box">

@@ -4,9 +4,11 @@ import CheckBoxWrapper from "./style";
 
 function CheckReverseExample(props) {
   const { label, onChange, checked, className, value, height, name, width, margin, fontSize, base, required } = props;
+  const id = `${name}-checkbox`;
+
   return (
     <CheckBoxWrapper width={width} height={height} margin={margin || ""} fontSize={fontSize} base={base || ""}>
-      <Form.Group>
+      <Form.Group controlId={id}>
         <Form.Check
           className={className}
           label={label} 

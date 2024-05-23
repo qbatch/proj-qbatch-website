@@ -4,7 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const QbatchMakingWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .container-padding {
-    padding: 120px 0;
+    padding: 96px 0;
     ${media.sm`
       padding: 56px 0;
     `}

@@ -10,7 +10,7 @@ import BlogCards from '../components/PagesComponent/BlogCards'
 import Container from '../components/UiComponent/Container'
 
 const Author = ({ pageContext, location }) => {
-  const { title, name, description, img, socials} = pageContext;
+  const { title, name, description, img, socials } = pageContext;
   const { state } = location;
   const slug = state && state.slug;
   const blogQuery = Queries();
@@ -22,7 +22,10 @@ const Author = ({ pageContext, location }) => {
   }
   return (
     <Layout>
-      <AuthorBanner title={name} slug={slug} authorImage={img?.localFile?.url} description={description} socials={socials} />
+      <AuthorBanner title={name} slug={slug} authorImage={img?.localFile?.url} description={description} socials={socials} customCrumbs={[
+        { pathname: '/author/', crumbLabel: 'Author', crumbSeparator: '>' },
+        { pathname: `/author/${title}/`, crumbLabel: name, crumbSeparator: '>' },
+      ]} />
       <Container>
         <BlogCards upperHeading={`Recent Stories by ${name}`} data={data} />
         <BlogCards upperHeading={'Recommended Articles'} data={recommendedArticles} />

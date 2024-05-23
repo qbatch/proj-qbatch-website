@@ -3,11 +3,15 @@ import React from "react";
 import Container from "../../UiComponent/Container";
 
 import BlogBannerWrapper from "./style";
+import Breadcrumb from "../Breadcrumb";
 
-const index = () => {
+const index = ({ customCrumbs }) => {
+  const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
+  const crumbs = customCrumbs && customCrumbs.length > 0 ? [defaultHomeCrumb, ...customCrumbs] : [defaultHomeCrumb];
   return (
     <BlogBannerWrapper>
       <Container>
+        <Breadcrumb crumbs={crumbs}/>
         <div className="blog-banner">
           <h1>Powerful stories for leaders and learners</h1>
           <h2 className="text-h3">

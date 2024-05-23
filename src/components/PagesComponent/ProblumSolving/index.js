@@ -16,11 +16,11 @@ const Index = (props) => {
         <Row className="align-items-center">
           <Col md={8}>{text}</Col>
           <Col md={4}>
-            <Link to="/contact">
+            <Link to="/contact" aria-label="Launch Your Idea">
               <div className="box-center pt-lg-0 pt-4">
                 <div className="circle-bg">
                   <div className="circle-box">
-                    <svg className="text-svg" viewBox="0 0 100 100" width="80" height="80">
+                    <svg className="text-svg" viewBox="0 0 100 100" width="80" height="80" aria-hidden="true">
                       <defs>
                         <circle id="myCircle" cx="0" cy="0" r="50" />
                         <path

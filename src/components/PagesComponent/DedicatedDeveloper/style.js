@@ -11,9 +11,10 @@ const DedicatedDeveloperWrapper = styled.div`
     background-repeat: no-repeat;
     animation: shrink 5s infinite alternate;
     ${media.sm`
-    animation:none;
-    background-size: cover;
-    height: auto;
+      background-image: none;
+      animation: none;
+      background-size: cover;
+      height: auto;
     `}
       @keyframes shrink {
         0% {

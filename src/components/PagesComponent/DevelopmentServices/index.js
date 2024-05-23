@@ -66,7 +66,7 @@ const servicesData = [
     title: 'MVP Development',
     description: 'Tired of monitoring internal and external E-commerce operations manually? Let’s automate routine operations and slow business workflows including chatbots, sales forecasting, order entry, and fulfillment. No more manual work — less effort and great results only!',
     buttonText: 'Explore More',
-    buttonLink: '/contact', 
+    buttonLink: '/services/mvp-development/', 
   },
   {
     img: BoxImg8,
@@ -87,7 +87,7 @@ const servicesData = [
     title: 'Browser Extension Development',
     description: 'Your “I wish this site had that feature” wish comes true with our highly customizable and fast-performing browser extensions, plug-ins, toolbars, and add-ons. We leverage modern technologies for robust browser extensions for Chrome, Safari, Edge, Firefox, and Brave.',
     buttonText: 'Explore More',
-    buttonLink: '/contact', 
+    buttonLink: '/services/browser-extension-development/', 
   },
   {
     img: BoxImg11,

@@ -11,11 +11,15 @@ const siteMetadata = {
   defaultImage: `https://cms.qbatch.com/uploads/Your_Idea_820_03532d7cf6.jpg`,
 };
 
-  env = require('dotenv').config({
-    path: require('path').join(__dirname, '.env'),
-  })
+const env = require('dotenv').config({
+  path: require('path').join(__dirname, '.env'),
+});
 
-const { STRAPI_API_URL: apiURL, STRAPI_TOKEN: accessToken, GOOGLE_TAG_ID: googleTagId } = process.env
+const {
+  STRAPI_API_URL: apiURL,
+  STRAPI_TOKEN: accessToken,
+  GOOGLE_TAG_ID: googleTagId,
+} = process.env;
 
 const strapiConfig = {
   apiURL,
@@ -58,14 +62,14 @@ const strapiConfig = {
     {
       singularName: 'article',
       queryParams: {
-      publicationState: process.env.GATSBY_ENV === "staging" ? "preview" : "live",
-      queryParams: {
-        populate: {
-          seo: {
-            populate: '*',
-          }
+        publicationState: process.env.GATSBY_ENV === "staging" ? "preview" : "live",
+        queryParams: {
+          populate: {
+            seo: {
+              populate: '*',
+            }
+          },
         },
-      },
       },
     },
     {
@@ -325,6 +329,112 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
     {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+            allStrapiArticle {
+              distinct(field: category___slug)
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allStrapiArticle } }) => {
+              return allStrapiArticle.nodes.map(node => {
+                return {
+                  title: node.blogTitle,
+                  description: node.blogDescription.data.blogDescription,
+                  date: node.publishedAt,
+                  url: `${site.siteMetadata.siteUrl}/blog/${node.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}/blog/${node.slug}`,
+                  custom_elements: [{ 'content:encoded': node.blogDescription.data.blogDescription }],
+                };
+              });
+            },
+            query: `
+              {
+                allStrapiArticle(sort: { fields: publishedAt, order: DESC }) {
+                  nodes {
+                    blogTitle
+                    blogDescription {
+                      data {
+                        blogDescription
+                      }
+                    }
+                    slug
+                    publishedAt
+                    seo {
+                      metaDescription
+                    }
+                    category {
+                      categoryName
+                      slug
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'All Categories RSS Feed',
+          },
+          ...['software-development', 'cto', 'ecommerce', 'web-and-data-scraping', 'enterprise-development', 'trending'].map(categorySlug => {
+            const categoryName = categorySlug.replace(/-/g, ' ').toUpperCase();
+            return {
+              serialize: ({ query: { site, allStrapiArticle } }) => {
+                return allStrapiArticle.nodes
+                  .filter(node => node.category && node.category.slug === categorySlug)
+                  .map(node => {
+                    return {
+                      title: node.blogTitle,
+                      description: node.blogDescription.data.blogDescription,
+                      date: node.publishedAt,
+                      url: `${site.siteMetadata.siteUrl}/blog/${node.slug}`,
+                      guid: `${site.siteMetadata.siteUrl}/blog/${node.slug}`,
+                      custom_elements: [{ 'content:encoded': node.blogDescription.data.blogDescription }],
+                    };
+                  });
+              },
+              query: `
+                {
+                  allStrapiArticle(filter: { category: { slug: { eq: "${categorySlug}" } } }, sort: { fields: publishedAt, order: DESC }) {
+                    nodes {
+                      blogTitle
+                      blogDescription {
+                        data {
+                          blogDescription
+                        }
+                      }
+                      slug
+                      publishedAt
+                      seo {
+                        metaDescription
+                      }
+                      category {
+                        categoryName
+                        slug
+                      }
+                    }
+                  }
+                }
+              `,
+              output: `/rss/${categorySlug}.xml`,
+              title: `${categoryName} RSS Feed`,
+            };
+          }),
+        ],
+      },
+    },
+    
+    {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         excludes: [
@@ -337,8 +447,8 @@ module.exports = {
           '/sitemap-pages.html',
           '/sitemap-authors.html',
           '/sitemap-events.html',
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-source-strapi`,
@@ -385,7 +495,6 @@ module.exports = {
         args: `?onload=onloadCallback&render=explicit`,
       },
     },
-
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -393,7 +502,6 @@ module.exports = {
         path: `${__dirname}/static/`,
       },
     },
-
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -416,4 +524,4 @@ module.exports = {
       },
     },
   ],
-}
+};
