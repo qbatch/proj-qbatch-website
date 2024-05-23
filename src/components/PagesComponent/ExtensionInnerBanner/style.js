@@ -27,6 +27,9 @@ background-color:  ${({ theme }) => theme.colors.secondaryColor};
   }
   .extension-banner-inner{
     padding: 96px 0;
+    ${media.sm`
+      padding: 20px 0;
+    `}
   }
   .banner-inner-img{
     object-fit: contain;
