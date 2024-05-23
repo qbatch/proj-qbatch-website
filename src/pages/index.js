@@ -67,7 +67,7 @@ const IndexPage = () => {
           /> */}
         </Suspense>
       </Layout>
-      <Script type="application/ld+json">
+      <Script type="application/ld+json" async>
         {transformedObject
           .filter((x) => !x.visibilityIn)
           .map((data, i) => (
@@ -96,7 +96,7 @@ export const Head = () => {
       {transformedObject
         .filter((x) => x.visibilityIn)
         .map((data, i) => (
-          <Script key={i} type="application/ld+json">
+          <Script key={i} type="application/ld+json" async>
             {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
           </Script>
         ))}

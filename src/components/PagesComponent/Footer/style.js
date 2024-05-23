@@ -130,7 +130,7 @@ const FooterWrapper = styled.div`
     }
   }
   .footer-menu {
-    h5 {
+    h4 {
       color: ${({ theme }) => theme.colors.whiteColor};
       font-weight: ${({ theme }) => theme.fontWeight.medium};
       margin-bottom: 24px;
