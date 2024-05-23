@@ -1,12 +1,13 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import { Queries } from '../constants/queries'
-
+import styled from "styled-components";
+import { media } from '../theme/media-mixins';
 
 import Layout from "../components/Layout/layout";
 import StaticPage from "../components/PagesComponent/StaticPage";
 import SEO from '../components/Seo'
-
+import Breadcrumb from "../components/PagesComponent/Breadcrumb";
 
 const PrivacyPolicy = () => {
   const data = useStaticQuery(graphql`
@@ -19,11 +20,16 @@ const PrivacyPolicy = () => {
     }
   `);
   const privacyData = data.allStrapiPrivacyPolicyContentTextnode.nodes[0];
+  const crumbs = [
+    { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
+    { pathname: '/privacy-policy/', crumbLabel: 'Privacy Policy' }
+  ];
 
   return (
-     <Layout>
-        <StaticPage data={privacyData} />
-     </Layout>
+    <Layout>
+        <Breadcrumb crumbs={crumbs} wrapperClass="inner-page"/>
+      <StaticPage data={privacyData} />
+    </Layout>
   );
 };
 
@@ -33,10 +39,10 @@ export const Head = () => {
   const seoData = privacyPolicySeo?.allStrapiPrivacyPolicy?.nodes?.[0]?.seo;
 
   if (!seoData) {
-    return null; 
+    return null;
   }
 
-  const metaRobots = seoData.metaRobots || ''; 
+  const metaRobots = seoData.metaRobots || '';
   const keywords = seoData.keywords || [];
   const metaimage = seoData.metaimage?.localFile?.url || '';
 

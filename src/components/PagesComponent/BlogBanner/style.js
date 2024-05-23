@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogBannerWrapper = styled.div`
-  padding: 120px 0 112px;
+  padding: 156px 0 112px;
   text-align: center;
+  position: relative;
 ${media.sm`
-padding:56px 0px;
+padding:86px 0px;
 text-align: left;
 `}
   .blog-banner {

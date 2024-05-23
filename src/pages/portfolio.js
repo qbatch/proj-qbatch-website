@@ -28,6 +28,9 @@ const Portfolio = () => {
         blogInner={EcommerceBanner}
         wrapperClass="cto-banner portfolio-banner"
         isH1
+        customCrumbs={[
+          { pathname: '/portfolio/', crumbLabel: 'Portfolio', crumbSeparator: '>' },
+        ]}
       />
       <SuccessStories />
       <Divider margin="0px" />

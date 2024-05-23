@@ -39,7 +39,11 @@ const BlogPage = ({ pageContext }) => {
 
   return (
     <Layout>
-      <BlogBanner />
+      <BlogBanner 
+         customCrumbs={[
+          { pathname: '/blog/', crumbLabel: 'Blog', crumbSeparator: '>' },
+        ]}
+      />
       <Container>
         <div className="position-relative">
           <div className="tabs d-flex flex-column gap-2">

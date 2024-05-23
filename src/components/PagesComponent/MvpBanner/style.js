@@ -27,31 +27,6 @@ position: relative;
      padding: 90px 0 56px;
   `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  .breadcrumb {
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-    color: ${({ theme }) => theme.colors.whiteColor};
-    margin: 0px 0 12px 0px;
-    position:relative;
-    width: 100%;
-    a {
-      color: ${({ theme }) => theme.colors.whiteColor};
-    }
-    ${media.md`
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 16px 60px;
-      background: #000f1c;
-      margin-left: 0;
-      z-index: 99;
-    `}
-    ${media.sm`
-      padding: 16px 40px;
-    `}
-    ${media.xs`
-      padding: 16px 24px;
-    `}
-  }
   .banner-main {
     position:relative;
     z-index:1;
