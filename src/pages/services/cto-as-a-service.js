@@ -34,7 +34,7 @@ const CtoService = () => {
         blogInner={CtoBannerImage}
         col1lg={7}
         className="d-flex align-items-center"
-        wrapperClass="cto-banner"
+        wrapperClass="cto-banner cto-wrapper"
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
           { pathname: '/services/cto-as-a-service/', crumbLabel: 'CTO As A Service' },

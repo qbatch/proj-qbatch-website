@@ -1,5 +1,3 @@
-const { resolve } = require('path');
-
 const siteMetadata = {
   robots: `index,folow`,
   title: ``,
@@ -323,10 +321,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-recaptcha',
-    'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-feed`,
@@ -485,14 +480,6 @@ module.exports = {
           { userAgent: 'psbot', disallow: '' },
           { userAgent: 'yahoo-blogs/v3.9', disallow: '' },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-recaptcha`,
-      options: {
-        async: false,
-        defer: false,
-        args: `?onload=onloadCallback&render=explicit`,
       },
     },
     {

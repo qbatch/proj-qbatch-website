@@ -12,7 +12,7 @@ import Breadcrumb from '../components/PagesComponent/Breadcrumb';
 const ContactUs = () => {
   const crumbs = [
     { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
-    { pathname: '/privacy-policy/', crumbLabel: 'Privacy Policy' }
+    { pathname: '/contact/', crumbLabel: 'Contact Us' }
   ];
   useEffect(() => {
     setTimeout(() => {
