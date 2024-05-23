@@ -86,16 +86,16 @@ const ShareYourRequirements = () => {
             <span>Or you can directly reach us at</span>
             <div className="social-links-wrapper">
               <a href="skype:qbatch?chat" target="_blank">
-                <img src="/skype-icon.svg" alt="Skype" />
+                <img src="/skype-icon.svg" alt="Skype" loading="lazy" />
               </a>
               <a href="https://wa.me/17373772428" target="_blank">
-                <img src='/whats-app-icon.svg' alt="WhatsApp" />
+                <img src='/whats-app-icon.svg' alt="WhatsApp" loading="lazy" />
               </a>
               <a href="https://www.linkedin.com/company/qbatch/" target="_blank">
-                <img src="/linkdin-icon.svg" alt="Skype" />
+                <img src="/linkdin-icon.svg" alt="Skype" loading="lazy" />
               </a>
               <a href="https://calendly.com/qbatch/meeting" target="_blank">
-                <img src="/calendly-icon.svg" alt="Skype" />
+                <img src="/calendly-icon.svg" alt="Skype" loading="lazy" />
               </a>
             </div>
           </div>
@@ -115,7 +115,7 @@ const ShareYourRequirements = () => {
                     {step <= index ? (
                       <span>{item.label}</span>
                     ) : (
-                      <img src="/check-icon.svg" alt="CheckIcon" />
+                      <img src="/check-icon.svg" alt="CheckIcon" loading="lazy" />
                     )}
                     <p></p>
                   </div>
@@ -164,7 +164,7 @@ const ShareYourRequirements = () => {
                       onClick={() => handleItemClick(index, item)}
                       className="bar-item"
                     >
-                      <img src="/bar-icon.svg" alt="BarIcon" />
+                      <img src="/bar-icon.svg" alt="BarIcon" loading="lazy" />
                       <p>{item.text}</p>
                     </div>
                   ))}
@@ -175,16 +175,18 @@ const ShareYourRequirements = () => {
                     onClick={handlePreviousStep}
                     src='/arrow-blue-left.svg'
                     alt="ArrowLeftBlue"
+                    loading="lazy"
                   />
                 ) : (
                   <img
                     src="/arrow-left.svg"
                     onClick={handlePreviousStep}
                     alt="ArrowLeft"
+                    loading="lazy"
                   />
                 )}
 
-                {step === 0 ? <img src='/arrow-right.svg' onClick={() => {
+                {step === 0 ? <img src='/arrow-right.svg' loading="lazy" onClick={() => {
                   const {
                     name,
                     email,
@@ -196,7 +198,7 @@ const ShareYourRequirements = () => {
                   } else {
                     setError(true)
                   }
-                }} alt="ArrowRight" /> : <img src='/arrow-right.svg' alt="ArrowRight" />}
+                }} alt="ArrowRight" /> : <img src='/arrow-right.svg' alt="ArrowRight" loading="lazy" />}
               </div>
             </div>
           </div>
