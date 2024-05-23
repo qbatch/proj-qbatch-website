@@ -91,7 +91,7 @@ const Index = () => {
           <Row className="align-items-center">
             <Col lg={6}>
               <div className="stories-inbox">
-                <img src='/inbox-icon.svg' alt="inbox" />
+                <img src='/inbox-icon.svg' alt="inbox"  loading="lazy"/>
                 <h3>Get top stories delivered to your inbox </h3>
               </div>
             </Col>
@@ -99,7 +99,7 @@ const Index = () => {
               <div className="position-relative">
                 <div className="footer-email">
                   <div className="email-input">
-                    <img src="/user-email-icon.svg" alt="email" />
+                    <img src="/user-email-icon.svg" alt="email" loading="lazy" />
                     <input type="email" value={formData.email} name="email" placeholder="Email Address" onChange={handleInputChange} />
                   </div>
                   <Button text='Subscribe' className="secondary-btn" onClick={handleSubmit} />
@@ -115,7 +115,7 @@ const Index = () => {
           <Row>
             <Col lg={3} xs={6}>
               <div className="footer-menu">
-                <h5>Discover Qbatch</h5>
+                <h4 className="text-h5">Discover Qbatch</h4>
                 <ul>
                   {discoverQbatchMenu.map((menu, ind) => (
                     <li key={ind}>
@@ -127,7 +127,7 @@ const Index = () => {
             </Col>
             <Col lg={3} xs={6}>
               <div className="footer-menu">
-                <h5>Services</h5>
+                <h4 className="text-h5">Services</h4>
                 <ul>
                   {footerServicesItems.map((menu, ind) => (
                     <li key={ind}>
@@ -139,7 +139,7 @@ const Index = () => {
             </Col>
             <Col lg={3} xs={6}>
               <div className="footer-menu">
-                <h5>Industries</h5>
+                <h4 className="text-h5">Industries</h4>
                 <ul>
                   {industrieshMenu.map((menu, ind) => (
                     <li key={ind}>
@@ -156,11 +156,11 @@ const Index = () => {
                     {data.icon && <img src={data.icon} alt="contact" width="16px" height="16px" />}
                     {data.link ? (
                       <a href={data.link} target="_blank" rel="noopener noreferrer" className={!data.icon && 'address'}>
-                        {data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" />}
+                        {data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" loading="lazy" />}
                       </a>
                     ) : (
                       <span className={!data.icon && 'address'}>
-                        {data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" />}
+                        {data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" loading="lazy" />}
                       </span>
                     )}
                   </div>
@@ -190,7 +190,7 @@ const Index = () => {
               {footerSocialLinks?.map((item, ind) => (
                 <a href={item.to} target="_blank" rel="noreferrer">
                   <div key={ind}>
-                    <img src={`${item.img}-icon.svg`} alt={item.img} width="24px" height="24px" />
+                    <img src={`${item.img}-icon.svg`} alt={item.img} width="24px" height="24px" loading="lazy" />
                   </div>
                 </a>
               ))}

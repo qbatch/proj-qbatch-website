@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
 import { Link, useStaticQuery, graphql, navigate } from 'gatsby';
 import { useLocation } from '@reach/router';
-
 import { Col, Row } from 'react-bootstrap';
 
 import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
+
 import Header2Wrapper from './style';
 
 const Header2 = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
-
   const data = useStaticQuery(graphql`
     query Header {
       allStrapiHeader {
@@ -31,8 +25,8 @@ const Header2 = () => {
     }
   `);
 
-  const location = useLocation(); // Get the current location
-  const currentPath = location.pathname; // Extract the current path
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   const Logo = data.allStrapiHeader.nodes[0].logo.logo.localFile.url;
 
@@ -168,10 +162,10 @@ const Header2 = () => {
         <div className='header-wrapper'>
           <div className='header-logo'>
             <Link to="/" className="d-none">
-              <img src={Logo} alt="no-logo" />
+              <img src={Logo} alt="no-logo" loading='lazy' />
             </Link>
             <Link to="/">
-              <img src='/qbatch-logo.svg' alt="no-logo" />
+              <img src='/qbatch-logo.svg' alt="no-logo" loading='lazy' />
             </Link>
           </div>
           <div className={`menu ${isMainMenuOpen ? 'open' : 'close'}`}>
@@ -180,7 +174,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isServicesMenuOpen ? 'open' : 'close'}`}>
                   <Link to='/services' className={currentPath.startsWith('/services') ? 'active' : ''}>Services</Link>
                   <button onClick={toggleServicesMenu} className={isServicesMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
                   </button>
                 </div>
                 <div className={`mega-menu ${isServicesMenuOpen ? 'open' : 'close'}`}>
@@ -199,7 +193,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/hire-developers" className={currentPath.startsWith('/hire-developers') ? 'active' : ''}>Hire Developers</Link>
                   <button onClick={toggleHireDevelopersMenu} className={isHireDevelopersMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
                   </button>
                 </div>
                 <div className={`mega-menu multi-menu ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
@@ -225,7 +219,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
                   <span to="/" className={currentPath === '/industries' ? 'active' : ''}>Industries</span>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
                   </button>
                 </div>
                 <div className={`mega-menu ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
@@ -244,7 +238,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isPortfolioMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/portfolio" className={currentPath.startsWith('/portfolio') ? 'active' : ''}>Portfolio</Link>
                   <button onClick={togglePortfolioMenu} className={isPortfolioMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
                   </button>
                 </div>
                 <div className={`mega-menu ${isPortfolioMenuOpen ? 'open' : 'close'}`}>
@@ -263,7 +257,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isHowWeWorkMenuOpen ? 'open' : 'close'}`}>
                   <span to="/" className={currentPath.startsWith('/how-we-work') ? 'active' : ''}>How we Work</span>
                   <button onClick={toggleHowWeWorkMenu} className={isHowWeWorkMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
                   </button>
                 </div>
                 <div className={`mega-menu ${isHowWeWorkMenuOpen ? 'open' : 'close'}`}>
@@ -287,7 +281,7 @@ const Header2 = () => {
                     Company
                   </Link>
                   <button onClick={toggleCompanyMenu} className={isCompanyMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
                   </button>
                 </div>
                 <div className={`mega-menu ${isCompanyMenuOpen ? 'open' : 'close'}`}>
