@@ -29,7 +29,7 @@ const SoftwareDevelopers = () => {
             ))}
           </div>
           <div className="column-ui-wrapper second-column">
-          <img src={Qbatch} />
+          <img src={Qbatch} alt="Qbatch" loading="lazy" />
             {dataColumn2.map((item, index) => (
                 <p key={index} className="item-wrapper">{item.text}</p>
             ))}
