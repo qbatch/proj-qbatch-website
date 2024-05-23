@@ -7,6 +7,7 @@ import { navigate } from "gatsby";
 import { ReadingTime, TimeAgo } from "../../../constants/Utils";
 import moment from "moment"
 import { Queries } from '../../../constants/queries'
+import Breadcrumb from "../Breadcrumb";
 const Index = ({ data }) => {
   const location = useLocation()
 
@@ -21,20 +22,7 @@ const Index = ({ data }) => {
   return (
     <BlogDetailsWrapper>
       <Container>
-        <div className="breadcrumb-wrapper">
-          <div className="breadcrumb">
-            <ul className="d-flex gap-2 ps-0">
-              {customCrumbs.map((crumb, index) => (
-                <li key={index}>
-                  <Link className="pointer" to={crumb.pathname}>
-                    <span>{crumb.crumbLabel}</span>
-                    {index < customCrumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+       <Breadcrumb crumbs={customCrumbs} />
         <div className="d-flex align-items-start details-flex gap-4">
           <img src="/back-arrow.svg" alt="no-arrow" className="pointer" onClick={() => navigate('/blog')} />
           <div>

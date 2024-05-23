@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 
 import Container from '../../UiComponent/Container';
 import BlogDetailsWrapper from './style';
+import Breadcrumb from '../Breadcrumb';
 
 const AuthorBanner = (props) => {
   const { title, description, authorImage, socials, customCrumbs } = props;
@@ -12,20 +13,7 @@ const AuthorBanner = (props) => {
   return (
     <BlogDetailsWrapper>
       <Container>
-      <div className="breadcrumb-wrapper">
-          <div className="breadcrumb">
-            <ul className="d-flex gap-2 ps-0">
-              {crumbs.map((crumb, index) => (
-                <li key={index}>
-                  <Link className="pointer" to={crumb.pathname}>
-                    <span>{crumb.crumbLabel}</span>
-                    {index < crumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <Breadcrumb crumbs={crumbs} />
         <div className='d-flex gap-5 align-items-start justify-content-left'>
           <div>
             <div className="image-box">

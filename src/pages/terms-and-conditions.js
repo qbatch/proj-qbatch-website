@@ -7,38 +7,7 @@ import { media } from '../theme/media-mixins';
 import Layout from "../components/Layout/layout";
 import StaticPage from "../components/PagesComponent/StaticPage";
 import SEO from '../components/Seo'
-
-const BreadcrumbWrapper = styled.div`
-  margin: auto;
-  width: 100%;
-  background: #001A33;
-  padding: 0;
-  .breadcrumb {
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-    color: ${({ theme }) => theme.colors.whiteColor};
-    margin: 0 0 12px 0;
-    padding: 16px 96px;
-    max-width: 1600px;
-    margin: auto;
-    overflow: scroll;
-    a {
-      color: ${({ theme }) => theme.colors.whiteColor};
-      white-space: nowrap;
-    }
-    ${media.lg`
-      padding: 16px 80px;
-    `}
-    ${media.md`
-      padding: 16px 60px;
-    `}
-    ${media.sm`
-      padding: 16px 40px;
-    `}
-    ${media.xs`
-      padding: 16px 24px;
-    `}
-  }
-`;
+import Breadcrumb from "../components/PagesComponent/Breadcrumb";
 
 const TermsAndConditions = () => {
   const data = useStaticQuery(graphql`
@@ -51,28 +20,14 @@ const TermsAndConditions = () => {
     }
   `);
   const termsData = data.allStrapiTermsAndConditionContentTextnode.nodes[0];
+  const crumbs = [
+    { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
+    { pathname: '/terms-and-conditions/', crumbLabel: 'Terms and Conditions' }
+  ];
 
   return (
     <Layout>
-
-      <BreadcrumbWrapper>
-        <div className="breadcrumb">
-          <ul className="d-flex gap-2 ps-0">
-            <li>
-              <Link className="pointer" to="/">
-                <span>Home</span>
-                <span className="ps-1">{'>'}</span>
-              </Link>
-            </li>
-            <li>
-              <Link className="pointer" to={`/terms-and-conditions/`}>
-                <span>Terms and Conditions</span>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </BreadcrumbWrapper>
-
+       <Breadcrumb crumbs={crumbs} wrapperClass="inner-page"/>
       <StaticPage data={termsData} />
     </Layout>
   );

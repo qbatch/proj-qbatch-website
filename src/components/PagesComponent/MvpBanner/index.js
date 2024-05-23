@@ -6,6 +6,7 @@ import Container from '../../UiComponent/Container';
 import Button from "../../UiComponent/HomeButton";
 
 import MvpBannerWrapper from './style';
+import Breadcrumb from '../Breadcrumb';
 
 const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;
@@ -19,20 +20,7 @@ const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
           <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
 
             {customCrumbs && (
-              <div className='breadcrumb-wrapper'>
-                <div className="breadcrumb d-block">
-                  <ul className="d-flex gap-2 ps-0">
-                    {crumbs.map((crumb, index) => (
-                      <li key={index}>
-                        <Link className="pointer" to={crumb.pathname}>
-                          <span>{crumb.crumbLabel}</span>
-                          {index < crumbs.length - 1 && <span className="ps-1">{crumb.crumbSeparator}</span>}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              <Breadcrumb crumbs={crumbs} />
             )}
             <div className="banner-main">
               <h1 className="banner-sub-heading text-h4" style={{ color: subheadingColor }}> {subheading}
