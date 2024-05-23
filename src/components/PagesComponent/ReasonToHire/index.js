@@ -14,7 +14,7 @@ const ReasonToHire = () => {
         <div className="cards-wrapper">
            {cardsData.map((item,index) => (
           <div className="card-items">
-            <img src={item.img} />
+            <img src={item.img} alt={item.img} />
               <h3 className={item.className} key={index}>{item.text}</h3>
           </div>
            ))}
