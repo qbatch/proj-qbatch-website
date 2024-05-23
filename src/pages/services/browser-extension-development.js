@@ -23,7 +23,6 @@ import BannerImage from "../../../static/extension-banner.svg";
 
 const BrowserExtension = () => {
   return (
-    <div className="overflow-hidden">
       <Layout>
         <ScrollToTop />
         <Banner
@@ -97,7 +96,6 @@ const BrowserExtension = () => {
         <FaqSection faqQuestion={extensionFaq} />
         <StartProject />
       </Layout>
-    </div>
   )
 };
 

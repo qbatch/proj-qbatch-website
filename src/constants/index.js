@@ -3243,17 +3243,17 @@ const hassleData = [
 ]
 const DevData = [
   {
-    img:<img className="image-wrapper" src='/left-arrow.svg' alt="left-arrow" />,
+    img:<img className="image-wrapper" src='/left-arrow.svg' loading="lazy" alt="left-arrow" />,
     heading:'Dev replacement guarantee',
     text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
   },
   {
-    img: <img className="image-wrapper" src="/right-arrow.svg" alt="right-arrow" />,
+    img: <img className="image-wrapper" src="/right-arrow.svg" loading="lazy" alt="right-arrow" />,
     heading:'Comprehensive weekly reports',
     text:' You’ll receive a detailed list of all the tasks your dedicated development team or developer has completed including the total time ensuring transparency and individual-level performance.'
   },
   {
-    img: <img className="image-wrapper" src='/left-arrow.svg' alt="left-arrow" />,
+    img: <img className="image-wrapper" src='/left-arrow.svg' loading="lazy" alt="left-arrow" />,
     heading:'On-the-go support',
     text:' Our miraculous developers carefully cater to your feedback and change requests on your preferred channels of communication. Because the greatness must not halt!'
   },
