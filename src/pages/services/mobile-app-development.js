@@ -1,5 +1,4 @@
-import React,{useEffect} from "react";
-import { Script } from 'gatsby'
+import React from "react";
 import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import SEO from "../../components/Seo";
@@ -140,9 +139,9 @@ export const Head = () => {
       image={seoData.metaimage[0].localFile.url}
       pathname={`/services${seoData.slug}`}
     >
-         {schemaData &&   <Script  type="application/ld+json">
+         {schemaData &&   <script  type="application/ld+json">
               {JSON.stringify(schemaData)}
-            </Script> }
+            </script> }
       </SEO>
   )
 }
