@@ -1,33 +1,8 @@
-const path = require('path')
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  createPage({
-    path: "/sitemap.html",
-    component: require.resolve("./src/sitemap/sitemap.js"),
-  });
-  createPage({
-    path: "/sitemap-services.html",
-    component: require.resolve("./src/sitemap/sitemap-services.js"),
-  });
-  createPage({
-    path: "/sitemap-blog.html",
-    component: require.resolve("./src/sitemap/sitemap-blog.js"),
-  });
-  createPage({
-    path: "/sitemap-pages.html",
-    component: require.resolve("./src/sitemap/sitemap-pages.js"),
-  });
-  createPage({
-    path: "/sitemap-authors.html",
-    component: require.resolve("./src/sitemap/sitemap-authors.js"),
-  });
-  createPage({
-    path: "/sitemap-events.html",
-    component: require.resolve("./src/sitemap/sitemap-events.js"),
-  });
-
+const createBlogPages = async (graphql, actions) => {
+  const { createPage } = actions;
   const result = await graphql(`
     query {
       allStrapiArticle {
@@ -53,59 +28,86 @@ exports.createPages = async ({ graphql, actions }) => {
               Socials {
                 socialLink
                 socialPlatform
-               }
+              }
             }
             id
           }
         }
       }
     }
-  `)
+  `);
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
-  const strapiBlogPosts = result.data.allStrapiArticle.edges
+  const strapiBlogPosts = result.data.allStrapiArticle.edges;
 
   strapiBlogPosts.forEach(({ node }) => {
-  createPage({
-    path: `/blog/${node?.slug}/`,
-    component: path.resolve('./src/pages/blogDetails.js'),
-    context: {
-      title: node.slug,
-    },
-  })
-  
-  createPage({
-    path: `/blog/${node.category?.slug}`,
-    component: path.resolve('./src/pages/blog/index.js'),
-    context: {
-      title: node.category?.categoryName,
-    },
-  })
-  createPage({
-    path: `/authors/${node.user?.username}`,
-    component: path.resolve('./src/pages/authors.js'),
-    context: {
-      title: node.user?.username,
-      name: node.user?.name,
-      description: node.user?.description,
-      img: node.user?.image,
-      socials: node.user?.Socials,
-    },
-  })
-  
-})};
+    createPage({
+      path: `/blog/${node?.slug}/`,
+      component: path.resolve('./src/pages/blogDetails.js'),
+      context: {
+        title: node.slug,
+      },
+    });
+
+    createPage({
+      path: `/blog/${node.category?.slug}`,
+      component: path.resolve('./src/pages/blog/index.js'),
+      context: {
+        title: node.category?.categoryName,
+      },
+    });
+
+    createPage({
+      path: `/authors/${node.user?.username}`,
+      component: path.resolve('./src/pages/authors.js'),
+      context: {
+        title: node.user?.username,
+        name: node.user?.name,
+        description: node.user?.description,
+        img: node.user?.image,
+        socials: node.user?.Socials,
+      },
+    });
+  });
+};
+
+const createSitemapPages = (actions) => {
+  const { createPage } = actions;
+
+  const sitemapPages = [
+    { path: "/sitemap.html", component: "./src/sitemap/sitemap.js" },
+    { path: "/sitemap-services.html", component: "./src/sitemap/sitemap-services.js" },
+    { path: "/sitemap-blog.html", component: "./src/sitemap/sitemap-blog.js" },
+    { path: "/sitemap-pages.html", component: "./src/sitemap/sitemap-pages.js" },
+    { path: "/sitemap-authors.html", component: "./src/sitemap/sitemap-authors.js" },
+    { path: "/sitemap-events.html", component: "./src/sitemap/sitemap-events.js" },
+  ];
+
+  sitemapPages.forEach(({ path, component }) => {
+    createPage({
+      path,
+      component: require.resolve(component),
+    });
+  });
+};
+
+exports.createPages = async ({ graphql, actions }) => {
+  await createBlogPages(graphql, actions);
+  createSitemapPages(actions);
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+  const { createNodeField } = actions;
+
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = createFilePath({ node, getNode });
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
       value,
-    })
+    });
   }
-}
+};

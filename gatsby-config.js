@@ -323,6 +323,8 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-plugin-feed`,
       options: {
