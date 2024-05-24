@@ -156,7 +156,7 @@ const ContentWrapper = styled.div`
   }
   .side-scroll {
     position: sticky;
-    margin: 100px 0 750px 12px;
+    margin: 0 0 705px 12px;
     border-radius: 8px 8px 0 8px;
     top: 20%;
     left: 0;
@@ -303,6 +303,11 @@ const ContentWrapper = styled.div`
     }
     .content-section{
       padding-top: 0;
+    }
+  `}
+  ${media.xs`
+    .side-scroll{
+      margin: 56px 32px;
     }
   `}
 `
