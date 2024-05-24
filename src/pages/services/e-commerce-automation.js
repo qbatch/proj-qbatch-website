@@ -1,5 +1,4 @@
 import React from "react";
-import { Script } from 'gatsby'
 import Banner from '../../components/PagesComponent/PageBanner'
 import { Queries } from '../../constants/queries'
 import {replaceUnderscoreWithAt} from '../../constants/Utils'
@@ -87,9 +86,9 @@ export const Head = () => {
       image={seoData.metaimage[0].localFile.url}
       pathname={`/services${seoData.slug}`}
     >
-      {schemaData &&   <Script  type="application/ld+json">
+      {schemaData &&   <script  type="application/ld+json">
               {JSON.stringify(schemaData)}
-            </Script> }
+            </script> }
        
       </SEO>
   )
