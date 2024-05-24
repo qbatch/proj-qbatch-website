@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from 'react';
-import { Script } from 'gatsby';
 import { Queries } from '../constants/queries';
 import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';

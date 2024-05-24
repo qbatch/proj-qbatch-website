@@ -1,5 +1,4 @@
 import React from "react";
-import { Script } from 'gatsby'
 import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
@@ -145,9 +144,9 @@ export const Head = () => {
       robots={seoData.metaRobots}
       pathname={`/services${seoData.slug}`}
     >
-      {schemaData &&   <Script  type="application/ld+json">
+      {schemaData &&   <script  type="application/ld+json">
       {JSON.stringify(schemaData)}
-    </Script> }
+    </script> }
     </SEO>
   )
 }

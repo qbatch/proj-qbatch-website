@@ -130,9 +130,9 @@ export const Head = () => {
       image={seoData.metaimage[0].localFile.url}
       pathname={`/${seoData.slug}/`}
     >
-       {schemaData &&   <Script  type="application/ld+json">
+       {schemaData &&   <script  type="application/ld+json">
               {JSON.stringify(schemaData)}
-            </Script> }
+            </script> }
             </SEO>
   )
 }

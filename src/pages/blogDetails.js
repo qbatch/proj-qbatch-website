@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Script } from 'gatsby'
 import PageNotFound from '../pages/404';
 import Layout from "../components/Layout/layout";
 import BlogDetailBanner from "../components/PagesComponent/BlogDetailBanner";
@@ -58,7 +57,7 @@ const BlogDetails = ({ pageContext }) => {
       </ContentWrapper>
       <BlogDetailBanner data={blogData} />
       <BlogDetailsContent data={blogData} path={path} />
-      {blogData?.seo?.structuredData && <Script type="application/ld+json">{schemaAsString}</Script> }  
+      {blogData?.seo?.structuredData && <script type="application/ld+json">{schemaAsString}</script> }  
     </Layout>
   )
 }
