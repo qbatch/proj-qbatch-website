@@ -45,6 +45,11 @@ const DedicatedDeveloperWrapper = styled.div`
       span {
         color: ${({ theme }) => theme.colors.highlightColor} !important;
         padding-left: 8px;
+        ${media.xs`
+          &:last-child {
+            display: inline-block;
+          }
+        `}
       }
     }
     h2 {
