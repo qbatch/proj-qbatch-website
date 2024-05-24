@@ -1,11 +1,10 @@
 import React, { Suspense, lazy } from 'react';
 import { Script } from 'gatsby';
-
 import { Queries } from '../constants/queries';
 import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';
 import { replaceUnderscoreWithAt } from '../constants/Utils';
-// import EventsBanner from '../components/PagesComponent/EventsBanner'
+
 const DedicatedDevelopment = lazy(() => import('../components/PagesComponent/DedicatedDeveloper'));
 const Achievements = lazy(() => import('../components/PagesComponent/Achievements'));
 const WhatWeCanDo = lazy(() => import('../components/PagesComponent/WhatWeCanDo'));
@@ -20,9 +19,9 @@ const CreativeIntelligence = lazy(() => import('../components/PagesComponent/Cre
 const StartProject = lazy(() => import('../components/PagesComponent/StartProject'));
 
 const IndexPage = () => {
-  const homeData = Queries()
-  const { schema } = homeData.allStrapiHome.nodes[0] || {}
-  const schemaData = schema
+  const homeData = Queries();
+  const { schema } = homeData.allStrapiHome.nodes[0] || {};
+  const schemaData = schema;
   const transformedObject = replaceUnderscoreWithAt(schemaData);
 
   return (
@@ -55,33 +54,17 @@ const IndexPage = () => {
           <Collaboration largeHeading={true} />
           <CreativeIntelligence />
           <StartProject />
-          {/* <EventsBanner
-          eventLogo1='/white-label.svg'
-          eventName1='White Label World Expo'
-          eventDate1='February 27 - 28, 2024'
-          eventBoothNo1='WL1546'
-          eventLogo2='/prosper-show.svg'
-          eventName2='Prosper Show'
-          eventDate2='March 4 - 6, 2024'
-          eventBoothNo2='814'
-          /> */}
         </Suspense>
       </Layout>
-      <Script type="application/ld+json" async>
-        {transformedObject
-          .filter((x) => !x.visibilityIn)
-          .map((data, i) => (
-              JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)
-          ))}
-      </Script>
     </>
-  )
-}
+  );
+};
+
 export const Head = () => {
-  const homeData = Queries()
-  const { seo, schema } = homeData.allStrapiHome.nodes[0] || {}
-  const seoData = seo
-  const schemaData = schema
+  const homeData = Queries();
+  const { seo, schema } = homeData.allStrapiHome.nodes[0] || {};
+  const seoData = seo;
+  const schemaData = schema;
   const transformedObject = replaceUnderscoreWithAt(schemaData);
 
   return (
@@ -96,12 +79,12 @@ export const Head = () => {
       {transformedObject
         .filter((x) => x.visibilityIn)
         .map((data, i) => (
-          <Script key={i} type="application/ld+json" async>
+          <script key={i} type="application/ld+json">
             {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
-          </Script>
+          </script>
         ))}
     </SEO>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
