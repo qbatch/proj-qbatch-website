@@ -57,11 +57,6 @@ const ProvenExperienceWrapper = styled.div`
     .inner-text {
       padding-left: 16px;
     }
-    h4 {
-      font-weight: 700;
-      line-height: 28px;
-      margin: 0;
-    }
     p {
       color: ${({ theme }) => theme.colors.primaryColor};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};

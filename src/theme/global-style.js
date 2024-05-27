@@ -159,7 +159,8 @@ const GlobalStyles = createGlobalStyle`
        font-size:${({ theme }) => theme.fonts.baseFontSize};       
       }
       h3, .text-h3{
-        font-size:${({ theme }) => theme.fonts.baseFontSizeLg}
+        font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
+        line-height: 32px;
       }
     }
     @media (max-width: 480px) {
@@ -178,7 +179,8 @@ const GlobalStyles = createGlobalStyle`
        font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};       
       }
       h3, .text-h3{
-        font-size:${({ theme }) => theme.fonts.baseFontSizeSm}
+        font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 24px;
       }
       h5, .text-h5{
         font-size:${({ theme }) => theme.fonts.baseFontSize}; 
