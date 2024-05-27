@@ -424,7 +424,7 @@ const GlobalStyles = createGlobalStyle`
   box-shadow: 2px 2px 12px 0px #00000029;
   border: 1px solid ${({ theme }) => theme.colors.primaryColor};
   border-radius: 12px;
-  overflow: hidden;
+  overflow: auto;
   table {
     width: 100%;
     tbody {
