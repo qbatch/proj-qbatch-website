@@ -34,11 +34,10 @@ const ExpertiseWrapper = styled.section`
     }
     .skill-badge {
       border: 1px solid ${({ theme }) => theme.colors.bodyLight};
+      color: ${({ theme }) => theme.colors.textMedium};
       padding: 3px 8px;
-      color: ${({ theme }) => theme.colors.bodyLight};
       border-radius: 2px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-      font-weight:${({ theme }) => theme.fontWeight.light} ;
     }
     &::after {
       content: "";

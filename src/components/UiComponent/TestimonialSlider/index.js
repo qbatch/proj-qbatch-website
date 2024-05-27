@@ -81,7 +81,7 @@ const Index = () => {
             {testimonialsData.map((item, ind) => (
               <div className="testimonial-title" key={ind}>
                 <div className="inner-text">
-                  <h3 className="text-h4 mb-0">{item.clientName}</h3>
+                  <h4 className="mb-0">{item.clientName}</h4>
                   <p>{item.agencyName}</p>
                 </div>
               </div>

@@ -9,7 +9,6 @@ import MobileApp from "../../../assets/images/mobile-development.svg";
 import UIUX from "../../../assets/images/uiux-design.svg";
 import SupplyChain from "../../../assets/images/supply-chain.svg";
 import Cloud from "../../../assets/images/cloud-devop.svg";
-import PRAService from "../../../assets/images/rpa-service.svg";
 // import ArrowDownward from "../../../assets/images/arrow_downward.svg";
 
 import ExpertiseWrapper from "./style";
@@ -43,7 +42,7 @@ const Index = () => {
       badge: ["AWS ", "Docker", "Kubernetes", "Teraform"],
     },
     {
-      img: PRAService,
+      img: '/rpa-service.png',
       title: "RPA Services",
       badge: ["Pupeeteer", "Selenium", "Scraping"],
     },
@@ -65,9 +64,13 @@ const Index = () => {
                 return (
                   <div className="d-flex skill-section justify-content-between skill" key={i}>
                     <div className="d-flex add-gap w-100 align-items-center">
-                      <div>
-                        <list.img />
-                      </div>
+                      {list.title === 'RPA Services' ? 
+                        <img src={list.img} alt="RPA" loading="lazy" width={60} height={60} />
+                        :
+                        <div>
+                          <list.img />
+                        </div>
+                      }
                       <div className="w-100">
                         <h3 className="title text-h4">{list.title}</h3>
                         <div className="badges-gap d-flex flex-wrap">
