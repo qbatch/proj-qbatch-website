@@ -72,11 +72,10 @@ const ProvenExperienceWrapper = styled.div`
     gap: 8px;
     div {
       padding: 3px 7px;
-      border: 1px solid ${({ theme }) => theme.colors.dividerColor};
-      color: ${({ theme }) => theme.colors.bodyLight};
+      border: 1px solid ${({ theme }) => theme.colors.bodyLight};
+      color: ${({ theme }) => theme.colors.textMedium};
       border-radius: 2px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-      font-weight:${({ theme }) => theme.fontWeight.light};
       white-space: nowrap;
     }
   }
@@ -120,7 +119,7 @@ const ProvenExperienceWrapper = styled.div`
       cursor: pointer;
     }
     span {
-      color: ${({ theme }) => theme.colors.disableColor};
+      color: ${({ theme }) => theme.colors.textMedium};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       display: flex;
       align-items: center;
@@ -130,7 +129,6 @@ const ProvenExperienceWrapper = styled.div`
       }
       &:nth-child(2) {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-        font-weight: ${({ theme }) => theme.fontWeight.light};
       }
     }
   }

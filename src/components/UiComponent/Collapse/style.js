@@ -21,7 +21,7 @@ const CollpaseWrapper = styled.div`
     align-items: center;
     margin-top: 32px;
     .title {
-      color: ${(props, theme) => (props.faqSection ? `#2D2F31` : "#7C8EA1")};
+      color: ${(props, theme) => (props.faqSection ? `#2D2F31` : "#667176")};
       font-weight: ${(props, theme) => (props.faqSection ? `700` : "")};
       max-width: ${(props, theme) => (props.faqSection ? `850px` : "")};
       font-size: ${(props, theme) => (props.faqSection ? "20px" : "")};

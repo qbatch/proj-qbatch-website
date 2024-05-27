@@ -48,8 +48,7 @@ const Header2Wrapper = styled.div`
           }
 
         a, span{
-          color: ${({ theme }) => theme.colors.bodyLight} ;
-          font-weight:  ${({ theme }) => theme.fontWeight.light};
+          color: ${({ theme }) => theme.colors.textMedium};
           transition: 0.3s;
           position: relative;
           &::after{

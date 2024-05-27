@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import CountUp from 'react-countup'
 
@@ -12,6 +12,17 @@ const Index = ({ innerPage, page, mainHeading, labelText }) => {
   const displayedCounterData = page === "contact" ? counterData : counterData.slice(0, 3);
   const heading = mainHeading || "Achievements Through The Years...";
 
+  const [width, setWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <AchievementsWrapper>
       <div className="achievements-main">
@@ -24,7 +35,11 @@ const Index = ({ innerPage, page, mainHeading, labelText }) => {
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">
                 <span className={page === "contact" ?  "text-h1" : "heading"}>
+                {width >= 480 ?
                   <CountUp end={data.count} duration={3} />
+                  :
+                  <span>{data.count}</span>
+                }
                   {data.symbol && (
                     <span className="color-danger fw-light ms-2">{data.symbol}</span>
                   )}
