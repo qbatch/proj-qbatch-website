@@ -26,7 +26,7 @@ const Header2 = () => {
   `);
 
   const location = useLocation();
-  const currentPath = location.pathname;
+  const currentPath = location.pathname + location.hash;
 
   const Logo = data.allStrapiHeader.nodes[0].logo.logo.localFile.url;
 
@@ -102,12 +102,6 @@ const Header2 = () => {
     { label: "Retail and Consumer Goods", link: "" }
   ];
 
-  const portfolioMenu = [
-    { label: "Valued Clients", link: "" },
-    { label: "Tech stacks", link: "" },
-    { label: "Case studies", link: "" }
-  ];
-
   const howWeWorkMenu = [
     { label: "Process", link: "" },
     { label: "Discovery Phase", link: "" }
@@ -115,7 +109,7 @@ const Header2 = () => {
 
   const companyMenu = [
     { label: "About Us", link: "/about/" },
-    { label: "Qbatch Careers", link: "/about/#freshteam-widgets" },
+    { label: "Qbatch Careers", link: "/about/#career" },
     { label: "Events and PR", link: "/" }
   ];
 
@@ -123,9 +117,9 @@ const Header2 = () => {
   const [isMainMenuOpen, setMainMenuOpen] = useState(false);
   const [isHireDevelopersMenuOpen, setHireDevelopersMenuOpen] = useState(false);
   const [isIndustriesMenuOpen, setIndustriesMenuOpen] = useState(false);
-  const [isPortfolioMenuOpen, setPortfolioMenuOpen] = useState(false);
   const [isHowWeWorkMenuOpen, setHowWeWorkMenuOpen] = useState(false);
   const [isCompanyMenuOpen, setCompanyMenuOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
 
   const toggleServicesMenu = () => {
     setServicesMenuOpen(!isServicesMenuOpen);
@@ -142,9 +136,6 @@ const Header2 = () => {
     setIndustriesMenuOpen(!isIndustriesMenuOpen);
   };
 
-  const togglePortfolioMenu = () => {
-    setPortfolioMenuOpen(!isPortfolioMenuOpen);
-  };
 
   const toggleHowWeWorkMenu = () => {
     setHowWeWorkMenuOpen(!isHowWeWorkMenuOpen);
@@ -154,7 +145,11 @@ const Header2 = () => {
     setCompanyMenuOpen(!isCompanyMenuOpen);
   };
 
-  const companyMenuPaths = ["/about/", "/about/#freshteam-widgets", "/events"];
+  const companyMenuPaths = ["/about/", "/about/#career", "/events"];
+
+  const handleMenuClick = (menuLabel) => {
+    setActiveMenu(menuLabel);
+  };
 
   return (
     <Header2Wrapper>
@@ -235,22 +230,8 @@ const Header2 = () => {
                 </div>
               </li>
               <li>
-                <div className={`link-wrapper ${isPortfolioMenuOpen ? 'open' : 'close'}`}>
+                <div className="link-wrapper">
                   <Link to="/portfolio" className={currentPath.startsWith('/portfolio') ? 'active' : ''}>Portfolio</Link>
-                  <button onClick={togglePortfolioMenu} className={isPortfolioMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
-                  </button>
-                </div>
-                <div className={`mega-menu ${isPortfolioMenuOpen ? 'open' : 'close'}`}>
-                  <Container>
-                    <ul>
-                      {portfolioMenu.map((item, index) => (
-                        <li key={index} className={currentPath === item.link ? 'active' : ''}>
-                          <span to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : undefined}>{item.label}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </Container>
                 </div>
               </li>
               <li>
@@ -287,13 +268,16 @@ const Header2 = () => {
                 <div className={`mega-menu ${isCompanyMenuOpen ? 'open' : 'close'}`}>
                   <Container>
                     <ul>
-                      {companyMenu.map((item, index) => (
-                        <li key={index} className={currentPath === item.link ? 'active' : ''}>
-                          <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : undefined}>
-                            {item.label}
-                          </Link>
-                        </li>
-                      ))}
+                      {companyMenu.map((item, index) => {
+                        const isActive = currentPath === item.link || (item.link === "/about/#career" && currentPath === "/about/#career");
+                        return (
+                          <li key={index} className={isActive ? 'active' : ''}>
+                            <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : undefined}>
+                              {item.label}
+                            </Link>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </Container>
                 </div>
