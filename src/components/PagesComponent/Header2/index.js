@@ -212,7 +212,7 @@ const Header2 = () => {
               </li>
               <li>
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
-                  <span to="/" className={currentPath === '/industries' ? 'active' : ''}>Industries</span>
+                  <Link to="/#industries" className={currentPath === '/#industries' ? 'active' : ''}>Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
                   </button>
