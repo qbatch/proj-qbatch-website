@@ -16,7 +16,7 @@ const Input = styled.div`
     height: ${(props) => (props.height ? `${props.height}` : "60px")};
     letter-spacing: 0.19px;
     &::placeholder {
-      color: ${({ theme }) => theme.colors.bodyLight};
+      color: ${({ theme }) => theme.colors.bodyText};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       text-transform:capitalize;
     }
