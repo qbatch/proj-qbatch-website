@@ -502,7 +502,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: './src/assets/images/qbatch-favicon.png',
+        icon: './src/assets/images/fav-icon.svg',
       },
     },
     {

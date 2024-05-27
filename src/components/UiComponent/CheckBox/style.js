@@ -3,7 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const CheckBoxWrapper = styled.div`
   .form-check-label {
-    color: ${({ theme }) => theme.colors.textMedium};
+    color: ${({ theme }) => theme.colors.bodyText};
     font-size: ${(props, theme) => (props.fontSize ? `${props.fontSize}` : "16px")};
     margin-left: ${(props) => (props.margin ? `${props.margin}` : "8px")};
     letter-spacing: 0.1px;

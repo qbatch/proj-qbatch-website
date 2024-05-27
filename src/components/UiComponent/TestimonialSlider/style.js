@@ -25,8 +25,7 @@ const ProvenExperienceWrapper = styled.div`
       object-position: center;
     }
     .testimonial-text {
-      font-weight: 300;
-      color: ${({ theme }) => theme.colors.bodyLight};
+      color: ${({ theme }) => theme.colors.bodyText};
     }
     @media (max-width: 1399px) {
       padding: 32px;
@@ -58,16 +57,10 @@ const ProvenExperienceWrapper = styled.div`
     .inner-text {
       padding-left: 16px;
     }
-    h4 {
-      font-weight: 700;
-      line-height: 28px;
-      margin: 0;
-    }
     p {
       color: ${({ theme }) => theme.colors.primaryColor};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
       margin: 0;
-      font-weight:300;
       line-height:16px;
     }
   }

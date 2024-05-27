@@ -22,7 +22,7 @@ const Index = () => {
   return (
     <CareerWrapper>
       <Container>
-        <Row className="justify-content-between">
+        <Row className="justify-content-between" id="career">
           <Col xl={4} lg={8}>
             <h2 className="heading"><span className="underline-heading text-h4">Join Us!</span> Careers</h2>
             <p className="paragraph">
