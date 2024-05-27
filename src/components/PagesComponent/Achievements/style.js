@@ -58,6 +58,11 @@ const AchievementsWrapper = styled.div`
       ${media.sm`
         margin-bottom: 40px;
       `}
+      ${media.xs`
+        &:last-child {
+          margin-bottom: 0;
+        }
+      `}
       span.text-h1{
         font-weight:700;
       }
