@@ -299,49 +299,10 @@ export const Queries = () => {
              language
              keywords
              structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
+              name
               description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
+              slogan
               mainEntity {
-                _type
                 provider {
                   _type
                   logo
@@ -352,37 +313,36 @@ export const Queries = () => {
                   _type
                   name
                 }
-                description
                 serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
                 serviceAudience {
                   _type
                   audienceType
                 }
+                serviceOutput
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
+                  _type
+                  height
+                  url
+                  width
+                }
+                name
+                sameAs
+                url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
               }
             }
              metaimage {
@@ -395,6 +355,7 @@ export const Queries = () => {
        }
        allStrapiDevelopementService {
         nodes {
+<<<<<<< HEAD
           schema {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               _context
@@ -429,6 +390,52 @@ export const Queries = () => {
                 _type
                 location
                 logo {
+=======
+          seo {
+            metaTitle
+            metaRobots
+            slug
+            metaDescription
+            language
+            keywords
+            structuredData {
+              name
+              description
+              slogan
+              mainEntity {
+                provider {
+>>>>>>> 47e41bdfc05a2e1f88a4ffd1eb51234ef8b053b1
+                  _type
+                  height
+                  url
+                  width
+                }
+<<<<<<< HEAD
+                name
+                sameAs
+                url
+=======
+                areaServed {
+                  _type
+                  name
+                }
+                serviceType
+                serviceAudience {
+                  _type
+                  audienceType
+                }
+                serviceOutput
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
                   _type
                   height
                   url
@@ -437,6 +444,12 @@ export const Queries = () => {
                 name
                 sameAs
                 url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
+>>>>>>> 47e41bdfc05a2e1f88a4ffd1eb51234ef8b053b1
               }
               serviceType
               audience {
@@ -475,49 +488,10 @@ export const Queries = () => {
             metaDescription
             language
             structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
+              name
               description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
+              slogan
               mainEntity {
-                _type
                 provider {
                   _type
                   logo
@@ -528,37 +502,36 @@ export const Queries = () => {
                   _type
                   name
                 }
-                description
                 serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
                 serviceAudience {
                   _type
                   audienceType
                 }
+                serviceOutput
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
+                  _type
+                  height
+                  url
+                  width
+                }
+                name
+                sameAs
+                url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
               }
             }
             keywords
@@ -578,93 +551,53 @@ export const Queries = () => {
             slug
             metaDescription
             language
-            structuredData {
-              _context
+                structuredData {
+          name
+          description
+          slogan
+          mainEntity {
+            provider {
               _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
-              description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
-              mainEntity {
-                _type
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                description
-                serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-              }
+              logo
+              name
+              url
             }
+            areaServed {
+              _type
+              name
+            }
+            serviceType
+            serviceAudience {
+              _type
+              audienceType
+            }
+            serviceOutput
+          }
+          contactPoint {
+            _type
+            contactOption
+            contactType
+            telephone
+          }
+          brand {
+            _type
+            location
+            logo {
+              _type
+              height
+              url
+              width
+            }
+            name
+            sameAs
+            url
+          }
+          potentialAction {
+            _type
+            query_input
+            target
+          }
+        }
             keywords
             metaimage {
               localFile {
@@ -684,49 +617,10 @@ export const Queries = () => {
              language
              keywords
              structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
+              name
               description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
+              slogan
               mainEntity {
-                _type
                 provider {
                   _type
                   logo
@@ -737,37 +631,36 @@ export const Queries = () => {
                   _type
                   name
                 }
-                description
                 serviceType
+                serviceAudience {
+                  _type
+                  audienceType
+                }
                 serviceOutput
-                serviceArea {
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
                   _type
-                  name
+                  height
+                  url
+                  width
                 }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
-                   serviceAudience {
-              _type
-              audienceType
-            }
+                name
+                sameAs
+                url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
               }
             }
 
@@ -789,49 +682,10 @@ export const Queries = () => {
              language
              keywords
              structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
+              name
               description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
+              slogan
               mainEntity {
-                _type
                 provider {
                   _type
                   logo
@@ -842,37 +696,36 @@ export const Queries = () => {
                   _type
                   name
                 }
-                description
                 serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
                 serviceAudience {
                   _type
                   audienceType
                 }
+                serviceOutput
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
+                  _type
+                  height
+                  url
+                  width
+                }
+                name
+                sameAs
+                url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
               }
             }
              metaimage {
@@ -893,49 +746,10 @@ export const Queries = () => {
              language
              keywords
              structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
+              name
               description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
+              slogan
               mainEntity {
-                _type
                 provider {
                   _type
                   logo
@@ -946,37 +760,36 @@ export const Queries = () => {
                   _type
                   name
                 }
-                description
                 serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
                 serviceAudience {
                   _type
                   audienceType
                 }
+                serviceOutput
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
+                  _type
+                  height
+                  url
+                  width
+                }
+                name
+                sameAs
+                url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
               }
             }
              metaimage {
@@ -1031,49 +844,10 @@ export const Queries = () => {
              language
              keywords
              structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
+              name
               description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
+              slogan
               mainEntity {
-                _type
                 provider {
                   _type
                   logo
@@ -1084,37 +858,36 @@ export const Queries = () => {
                   _type
                   name
                 }
-                description
                 serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
                 serviceAudience {
                   _type
                   audienceType
                 }
+                serviceOutput
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
+                  _type
+                  height
+                  url
+                  width
+                }
+                name
+                sameAs
+                url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
               }
             }
              metaimage {
@@ -1135,49 +908,10 @@ export const Queries = () => {
              language
              keywords
              structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
+              name
               description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
+              slogan
               mainEntity {
-                _type
                 provider {
                   _type
                   logo
@@ -1188,37 +922,36 @@ export const Queries = () => {
                   _type
                   name
                 }
-                description
                 serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
                 serviceAudience {
                   _type
                   audienceType
                 }
+                serviceOutput
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
+                  _type
+                  height
+                  url
+                  width
+                }
+                name
+                sameAs
+                url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
               }
             }
              metaimage {
@@ -1292,49 +1025,10 @@ export const Queries = () => {
              language
              keywords
              structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
+              name
               description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
+              slogan
               mainEntity {
-                _type
                 provider {
                   _type
                   logo
@@ -1345,37 +1039,36 @@ export const Queries = () => {
                   _type
                   name
                 }
-                description
                 serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
                 serviceAudience {
                   _type
                   audienceType
                 }
+                serviceOutput
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
+                  _type
+                  height
+                  url
+                  width
+                }
+                name
+                sameAs
+                url
+              }
+              potentialAction {
+                _type
+                query_input
+                target
               }
             }
              metaimage {
