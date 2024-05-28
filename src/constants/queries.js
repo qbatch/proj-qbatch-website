@@ -355,7 +355,6 @@ export const Queries = () => {
        }
        allStrapiDevelopementService {
         nodes {
-<<<<<<< HEAD
           schema {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               _context
@@ -390,52 +389,6 @@ export const Queries = () => {
                 _type
                 location
                 logo {
-=======
-          seo {
-            metaTitle
-            metaRobots
-            slug
-            metaDescription
-            language
-            keywords
-            structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
->>>>>>> 47e41bdfc05a2e1f88a4ffd1eb51234ef8b053b1
-                  _type
-                  height
-                  url
-                  width
-                }
-<<<<<<< HEAD
-                name
-                sameAs
-                url
-=======
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
                   _type
                   height
                   url
@@ -444,12 +397,6 @@ export const Queries = () => {
                 name
                 sameAs
                 url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
->>>>>>> 47e41bdfc05a2e1f88a4ffd1eb51234ef8b053b1
               }
               serviceType
               audience {
