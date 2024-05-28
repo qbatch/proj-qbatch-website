@@ -132,8 +132,7 @@ export const Head = () => {
   const enterpriseData = Queries()
 
   const seoData = enterpriseData.allStrapiEnterprise.nodes[0]?.seo
-  const schemaData = enterpriseData?.allStrapiEnterprise?.nodes[0]?.schema;
-  const transformedObject = replaceUnderscoreWithAt(schemaData);
+  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
 
   return (
     <SEO
@@ -145,13 +144,9 @@ export const Head = () => {
       robots={seoData.metaRobots}
       pathname={`/services${seoData.slug}`}
     >
-           {transformedObject
-        .filter((x) => x.visibilityIn)
-        .map((data, i) => (
-          <script key={i} type="application/ld+json">
-            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
-          </script>
-        ))}
+      {schemaData &&   <script  type="application/ld+json">
+      {JSON.stringify(schemaData)}
+    </script> }
     </SEO>
   )
 }
