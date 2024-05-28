@@ -116,6 +116,9 @@ const strapiConfig = {
           seo: {
             populate: '*',
           },
+          schema: {
+            populate: '*',
+          },
         },
       },
     },
@@ -510,6 +513,32 @@ module.exports = {
       options: {
         id: googleTagId,
         includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          '/*': [
+            'Cache-Control: public, max-age=0, must-revalidate',
+          ],
+          '/static/*': [
+            'Cache-Control: public, max-age=31536000, immutable',
+          ],
+          '/sw.js': [
+            'Cache-Control: public, max-age=0, must-revalidate',
+          ],
+        },
+        mergeCachingHeaders: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Inter+Tight\:300,400,500,600,700`,
+        ],
+        display: 'swap',
       },
     },
   ],

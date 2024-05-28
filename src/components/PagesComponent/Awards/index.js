@@ -50,7 +50,7 @@ const displayedAwards = maxCols ? awardsData.slice(0, maxCols) : awardsData;
                 {displayedAwards.map((data, ind) => (
                   <Col md={3} sm={3} xs={6} key={ind}>
                     <a href={data.awards.link} target="blank">
-                      <img src={data.awards.logo.localFile?.url} alt={`Award ${ind + 1}`} loading="lazy" />
+                      <img src={data.awards.logo.localFile?.url} alt={`Award ${ind + 1}`} loading="lazy" width={84} height={84} />
                     </a>
                   </Col>
                 ))}
