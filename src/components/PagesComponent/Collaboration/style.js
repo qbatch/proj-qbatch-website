@@ -76,7 +76,7 @@ const CollaborationWrapper = styled.div`
           ${media.xs`
           min-width:30px;
           align-self: start;
-          svg{
+          img{
             height:30px;
           }
           `}

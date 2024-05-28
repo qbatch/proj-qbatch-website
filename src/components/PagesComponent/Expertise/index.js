@@ -37,7 +37,7 @@ const Index = () => {
       badge: ["AWS ", "Docker", "Kubernetes", "Teraform"],
     },
     {
-      img: '/rpa-service.png',
+      img: '/rpa-service.svg',
       title: "RPA Services",
       badge: ["Pupeeteer", "Selenium", "Scraping"],
     },
@@ -59,7 +59,7 @@ const Index = () => {
                 return (
                   <div className="d-flex skill-section justify-content-between skill" key={i}>
                     <div className="d-flex add-gap w-100 align-items-center">
-                      <img src={list.img} alt="RPA" loading="lazy" width={60} height={60} />
+                      <img src={list.img} alt={list.title} loading="lazy" width={60} height={60} />
                       <div className="w-100">
                         <h3 className="title text-h4">{list.title}</h3>
                         <div className="badges-gap d-flex flex-wrap">

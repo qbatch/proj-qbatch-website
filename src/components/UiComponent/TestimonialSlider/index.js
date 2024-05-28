@@ -33,7 +33,7 @@ const responsiveTitle = {
 
 const Index = () => {
   const [currentInd, setCurrentInd] = useState(1);
-  const [loadedIndexes, setLoadedIndexes] = useState([0, 1, 2]);
+  const [loadedIndexes, setLoadedIndexes] = useState([0]);
 
   const carousel1Ref = useRef(null);
   const carousel2Ref = useRef(null);
