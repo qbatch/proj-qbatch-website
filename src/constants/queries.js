@@ -847,34 +847,34 @@ export const Queries = () => {
        }
        allStrapiEnterprise {
          nodes {
-          schema {
-            childStrapiComponentSchemaSchemaStructureddataJsonnode {
-              _context
-              _type
+           seo {
+             metaTitle
+             slug
+             metaRobots
+             metaDescription
+             language
+             keywords
+             structuredData {
               name
               description
-              provider {
-                _type
-                brand {
+              slogan
+              mainEntity {
+                provider {
+                  _type
+                  logo
+                  name
+                  url
+                }
+                areaServed {
                   _type
                   name
                 }
-                contactPoint {
+                serviceType
+                serviceAudience {
                   _type
-                  areaServed
-                  availableLanguage
-                  contactType
-                  telephone
+                  audienceType
                 }
-                logo
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
+                serviceOutput
               }
               contactPoint {
                 _type
@@ -895,26 +895,12 @@ export const Queries = () => {
                 sameAs
                 url
               }
-              serviceType
-              audience {
+              potentialAction {
                 _type
-                audienceType
+                query_input
+                target
               }
-              serviceOutput
-              slogan
-              additionalType
-              category
             }
-            visibilityIn
-            title
-          }
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
              metaimage {
                localFile {
                  url
