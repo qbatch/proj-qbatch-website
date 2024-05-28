@@ -128,7 +128,6 @@ export const Queries = () => {
                _id
                _type
                alternateName
-               areaServed
                email
                description
                address {
@@ -179,12 +178,6 @@ export const Queries = () => {
                legalName
                mainEntityOfPage
                name
-               logo {
-                 url
-                 height
-                 _type
-                 width
-               }
                openingHoursSpecification {
                  _type
                  closes
@@ -402,6 +395,62 @@ export const Queries = () => {
        }
        allStrapiDevelopementService {
         nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              _context
+              _type
+              name
+              description
+              provider {
+                _type
+                brand {
+                  _type
+                  name
+                }
+                contactPoint {
+                  _type
+                  areaServed
+                  availableLanguage
+                  contactType
+                  telephone
+                }
+                logo
+                name
+                sameAs
+                url
+              }
+              contactPoint {
+                _type
+                contactOption
+                contactType
+                telephone
+              }
+              brand {
+                _type
+                location
+                logo {
+                  _type
+                  height
+                  url
+                  width
+                }
+                name
+                sameAs
+                url
+              }
+              serviceType
+              audience {
+                _type
+                audienceType
+              }
+              serviceOutput
+              slogan
+              additionalType
+              category
+            }
+            visibilityIn
+            title
+          }
           seo {
             metaTitle
             metaRobots
@@ -409,93 +458,6 @@ export const Queries = () => {
             metaDescription
             language
             keywords
-            structuredData {
-              _context
-              _type
-              address {
-                _type
-                addressCountry
-                addressLocality
-                addressRegion
-                postalCode
-                streetAddress
-                telephone
-              }
-              image {
-                _type
-                url
-              }
-              headline
-              alternateName
-              areaServed
-              email
-              description
-              founder {
-                url
-                name
-                sameAs
-                knowsLanguage
-                jobTitle
-                image
-                gender
-                email
-                description
-                _type
-              }
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
-              mainEntity {
-                _type
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                description
-                serviceType
-                serviceOutput
-                serviceArea {
-                  _type
-                  name
-                }
-                hasOfferCatalog {
-                  _type
-                  itemListElement {
-                    _type
-                    itemOffered {
-                      _type
-                      areaServed {
-                        _type
-                        name
-                      }
-                      description
-                      name
-                      serviceArea {
-                        _type
-                        name
-                      }
-                    }
-                  }
-                  name
-                }
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-              }
-            }
             metaimage {
               localFile {
                 url
