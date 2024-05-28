@@ -2,14 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
-import Ecommerce from "../../../assets/images/e-commerce.svg";
-import Logictics from "../../../assets/images/logictics.svg";
-import FinTech from "../../../assets/images/fin-tech.svg";
-import HealthCare from "../../../assets/images/health-care.svg";
-import EdTech from "../../../assets/images/edtech.svg";
-import RetailGoods from "../../../assets/images/retail.svg";
-import Traval from "../../../assets/images/traval.svg";
-import ArrowDown  from '../../../assets/images/arrow_downward.svg'
+// import ArrowDown  from '../../../assets/images/arrow_downward.svg'
 
 import MakingIndustriesWrapper from "./style";
 
@@ -18,31 +11,31 @@ const Index = () => {
   const industries = [
     {
       title: "E-Commerce",
-      img: Ecommerce,
+      img: '/e-commerce.svg',
     },
     {
       title: "Logistics and Supply Chain",
-      img: Logictics,
+      img: '/logictics.svg',
     },
     {
       title: "FinTech",
-      img: FinTech,
+      img: '/fin-tech.svg',
     },
     {
       title: "Healthcare",
-      img: HealthCare,
+      img: '/health-care.svg',
     },
     {
       title: "EdTech",
-      img: EdTech,
+      img: '/edtech.svg',
     },
     {
       title: "Retail and Consumer Goods",
-      img: RetailGoods,
+      img: '/retail.svg',
     },
     {
       title: "Travel and Transportation",
-      img: Traval,
+      img: '/traval.svg',
     },
   ];
   
@@ -63,7 +56,7 @@ const Index = () => {
               {industries.map((title, i) => (
                   <div className="d-flex justify-content-between arrow-box-section" key={i}>
                     <div className="d-flex gap-3 mb-sm-3 mb-2">
-                      <title.img />
+                      <img src={title.img} alt={title.title} loading="lazy" />
                       <h3 className="text-h4"> {title.title}</h3>
                     </div>
                     <div className="arrow-box">

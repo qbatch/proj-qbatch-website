@@ -157,10 +157,10 @@ const Header2 = () => {
         <div className='header-wrapper'>
           <div className='header-logo'>
             <Link to="/" className="d-none">
-              <img src={Logo} alt="no-logo" loading='lazy' />
+              <img src={Logo} alt="Qbatch" loading='lazy' width={100} height={32} />
             </Link>
             <Link to="/">
-              <img src='/qbatch-logo.svg' alt="no-logo" loading='lazy' />
+              <img src='/qbatch-logo.svg' alt="Qbatch" loading='lazy' width={100} height={32} />
             </Link>
           </div>
           <div className={`menu ${isMainMenuOpen ? 'open' : 'close'}`}>
@@ -169,7 +169,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isServicesMenuOpen ? 'open' : 'close'}`}>
                   <Link to='/services' className={currentPath.startsWith('/services') ? 'active' : ''}>Services</Link>
                   <button onClick={toggleServicesMenu} className={isServicesMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
                 </div>
                 <div className={`mega-menu ${isServicesMenuOpen ? 'open' : 'close'}`}>
@@ -188,7 +188,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/hire-developers" className={currentPath.startsWith('/hire-developers') ? 'active' : ''}>Hire Developers</Link>
                   <button onClick={toggleHireDevelopersMenu} className={isHireDevelopersMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
                 </div>
                 <div className={`mega-menu multi-menu ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
@@ -214,7 +214,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/#industries" className={currentPath === '/#industries' ? 'active' : ''}>Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
                 </div>
                 <div className={`mega-menu ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
@@ -238,7 +238,7 @@ const Header2 = () => {
                 <div className={`link-wrapper ${isHowWeWorkMenuOpen ? 'open' : 'close'}`}>
                   <span to="/" className={currentPath.startsWith('/how-we-work') ? 'active' : ''}>How we Work</span>
                   <button onClick={toggleHowWeWorkMenu} className={isHowWeWorkMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
                 </div>
                 <div className={`mega-menu ${isHowWeWorkMenuOpen ? 'open' : 'close'}`}>
@@ -262,7 +262,7 @@ const Header2 = () => {
                     Company
                   </Link>
                   <button onClick={toggleCompanyMenu} className={isCompanyMenuOpen ? 'open' : 'close'}>
-                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' />
+                    <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
                 </div>
                 <div className={`mega-menu ${isCompanyMenuOpen ? 'open' : 'close'}`}>
