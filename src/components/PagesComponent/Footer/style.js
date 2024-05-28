@@ -50,9 +50,11 @@ const FooterWrapper = styled.div`
       img {
         ${media.lg`
           width: 120px;
+          height: 78px;
         `}
         ${media.xs`
           width: 80px;
+          height: 52px;
         `}
       }
       h3 {

@@ -4,11 +4,6 @@ import { Row, Col } from "react-bootstrap";
 // import Button from "../../UiComponent/Button";
 import Container from "../../UiComponent/Container";
 
-import FullStack from "../../../assets/images/full-stack-development.svg";
-import MobileApp from "../../../assets/images/mobile-development.svg";
-import UIUX from "../../../assets/images/uiux-design.svg";
-import SupplyChain from "../../../assets/images/supply-chain.svg";
-import Cloud from "../../../assets/images/cloud-devop.svg";
 // import ArrowDownward from "../../../assets/images/arrow_downward.svg";
 
 import ExpertiseWrapper from "./style";
@@ -17,27 +12,27 @@ const Index = () => {
   
   const experties = [
     {
-      img: FullStack,
+      img: '/full-stack-development.svg',
       title: "Full Stack Web Development",
       badge: ["Chip/Label ", "Ruby On Rails", "Django"],
     },
     {
-      img: MobileApp,
+      img: '/mobile-development.svg',
       title: "Mobile App Development",
       badge: ["React Native ", "Flutter"],
     },
     {
-      img: UIUX,
+      img: '/uiux-design.svg',
       title: "Product, UX & UI Design",
       badge: ["Research ", "Wireframe", "User Interface", "Prototyping", "Figma"],
     },
     {
-      img: SupplyChain,
+      img: '/supply-chain.svg',
       title: "Supply Chain  & Logistics Management",
       badge: ["MERN Stack ", "Python", "Meteor Js", "Server less", "Ruby on Rails"],
     },
     {
-      img: Cloud,
+      img: '/cloud-devop.svg',
       title: "Cloud & DevOps",
       badge: ["AWS ", "Docker", "Kubernetes", "Teraform"],
     },
@@ -64,13 +59,7 @@ const Index = () => {
                 return (
                   <div className="d-flex skill-section justify-content-between skill" key={i}>
                     <div className="d-flex add-gap w-100 align-items-center">
-                      {list.title === 'RPA Services' ? 
-                        <img src={list.img} alt="RPA" loading="lazy" width={60} height={60} />
-                        :
-                        <div>
-                          <list.img />
-                        </div>
-                      }
+                      <img src={list.img} alt="RPA" loading="lazy" width={60} height={60} />
                       <div className="w-100">
                         <h3 className="title text-h4">{list.title}</h3>
                         <div className="badges-gap d-flex flex-wrap">
