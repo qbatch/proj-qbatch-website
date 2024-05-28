@@ -505,7 +505,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: './src/assets/images/fav-icon.svg',
+        icon: './src/assets/images/fav-icon.png',
       },
     },
     {
