@@ -17,6 +17,7 @@ const StaticPageWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     line-height: 24px;
   }
+  
   ul {
     list-style: disc;
     padding-left: 32px;
