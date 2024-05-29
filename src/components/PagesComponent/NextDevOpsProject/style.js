@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const NextDevOpsProjectWrapper = styled.div`
-padding: 96px 0;
+padding: 96px 0 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
     padding:56px 0;
@@ -30,13 +30,14 @@ ${media.sm`
     gap: 24px;
     margin-bottom: 72px;
     ${media.sm`
-   margin-bottom: 0px;
+    margin-bottom: 0px;
+    width: 50%;
   `}
     img{
       height: 114px;
     }
     span{
-      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       color: ${({ theme }) => theme.colors.textMedium};
       min-height:50px;
       ${media.sm`

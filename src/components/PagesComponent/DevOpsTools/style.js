@@ -37,7 +37,7 @@ ${media.sm`
       width: auto;
     }
     span{
-      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       color: ${({ theme }) => theme.colors.textMedium};;
     }
   }

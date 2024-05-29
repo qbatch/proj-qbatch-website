@@ -12,11 +12,13 @@ padding: 96px 0;
 .section-main-heading{
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   color: ${({ theme }) => theme.colors.primaryColor};
+  margin-bottom: 24px;
 }
 .section-main-subtitle{
   font-weight: ${({ theme }) => theme.fontWeight.normal};
   font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   margin: 0 0 16px;
+  line-height: 32px;
 }
 .section-main-paragraph{
   color: ${({ theme }) => theme.colors.textMedium};

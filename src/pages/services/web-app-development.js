@@ -54,7 +54,6 @@ const webapp = () => {
         <FullCycle className="web-app-development-page" />
         <SolutionToChoose />
         <AdvancedWebExplore />
-        <AppDevelopment />
         <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
         <DesiredResult
           heading="Is your web app failing to bring the desired result? That could be serious!"

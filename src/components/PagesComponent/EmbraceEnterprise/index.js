@@ -17,10 +17,13 @@ const EmbraceEnterprise = () => {
             <div className='content-wrapper'>
               <h4 className='sub-heading'>Your recipe to technical viability, strong business footprint, and reputation.</h4>
               <p className='paragraph'>DevOps transformations require full-time iterations for frequent version releases responding to user demands and market situations. Enterprises are rapidly adopting the powerful DevOps culture for cloud-native systems and high-end tools to ensure fault-tolerant software delivery pipelines and release cycles.</p>
-              <Button text="Get Free Consultation" onClick={() => navigate('/contact')}/>
             </div>
           </Col>
         </Row>
+        <div className='d-flex justify-content-center'>
+          <Button text="Get Free Consultation" onClick={() => navigate('/contact')} />
+
+        </div>
       </Container>
     </EmbraceEnterpriseWrapper>
   );
