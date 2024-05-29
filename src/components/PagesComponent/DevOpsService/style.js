@@ -19,6 +19,7 @@ padding: 96px 0;
   font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   margin: 0 0 16px;
   line-height: 32px;
+  color: ${({ theme }) => theme.colors.bodyTextVariant};
 }
 .section-main-paragraph{
   color: ${({ theme }) => theme.colors.textMedium};

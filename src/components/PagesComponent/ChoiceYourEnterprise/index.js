@@ -22,7 +22,7 @@ const index = (props) => {
               <div className="d-flex align-items-start gap-4 choice-list" key={ind}>
                 <img src={item.icon} alt={item.title} />
                 <div>
-                  <h4>{item.title}</h4>
+                  <h3 className="text-h4">{item.title}</h3>
                   <p>{item.desc}</p>
                 </div>
               </div>
