@@ -429,6 +429,7 @@ const GlobalStyles = createGlobalStyle`
   overflow: auto;
   table {
     width: 100%;
+    min-width: 600px;
     tbody {
       tr {
         &:first-child {
