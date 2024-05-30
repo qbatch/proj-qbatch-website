@@ -1,33 +1,30 @@
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
+// import { BsArrowRight } from "react-icons/bs";
 
 import Button from "../../../components/UiComponent/Button";
 import Container from "../../UiComponent/Container";
-import TimeIcon from "../../../assets/images/icons/time-clock.svg";
-import FixedScopeIcon from "../../../assets/images/icons/fixed-scope.svg";
-import DevTeamIcon from "../../../assets/images/icons/dev-team.svg";
 
 import CollaborationWrapper from "./style";
 
 const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading, button }) => {
   const experties = expertiseData || [
     {
-      img: TimeIcon,
+      img: '/time-clock.svg',
       title: "Time and Material",
       description:
-        "We empower you to choose our Time and Material model where you only pay for the time and quality resources spent on the project.",
+        "Only pay for the time and quality resources spent on the project.",
     },
     {
-      img: FixedScopeIcon,
+      img: '/fixed-scope.svg',
       title: "Fixed Scope Product Development",
       description:
-        "Pull down barriers like compromised quality and slow project delivery with our Fixed Scope Product Development model under a fixed budget.",
+        "Pull down barriers like compromised quality and slow project delivery under a fixed budget.",
     },
     {
-      img: DevTeamIcon,
+      img: '/dev-team.svg',
       title: "Hire Dedicated Development Team ",
       description:
-        "Leverage your global footprint in the rising techno-verse with Qbatch’s self-driven, smart, and skilled team of software developers.",
+        "Leverage your global footprint with Qbatch’s self-driven team of software developers.",
     },
   ];
 
@@ -48,7 +45,7 @@ const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading, 
                 <div className="d-flex skill-section align-items-center justify-content-between" key={index}>
                   <div className="d-flex add-gap">
                     <div className="list-icon">
-                      <list.img />
+                      <img src={list.img} alt={list.title} loading="lazy" width={72} height={72} />
                     </div>
                     <div>
                       {headingClass === 'services-light' ?

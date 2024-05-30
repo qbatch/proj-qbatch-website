@@ -51,7 +51,7 @@ const ChoiceEnterpriseWrapper = styled.div`
       margin-bottom:24px;
     }
     `}
-    h4 {
+    h3 {
       line-height: 32px;
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 16px;

@@ -4,6 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const DevOpsBoxesWrapper = styled.div`
 padding: 96px 0;
 background: url('/devOps-boxes-bg.svg');
+background-position: center;
 border-bottom: 2px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
     padding:56px 0;
@@ -25,15 +26,16 @@ ${media.sm`
   .box-text{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 36px;
     justify-content: center;
     text-align: center;
     font-size: 48px;
     span{
       font-size:  ${({ theme }) => theme.fonts.baseFontSizeSm};
       font-weight:  ${({ theme }) => theme.fontWeight.normal};
-      max-width: 270px;
+      max-width: 260px;
       margin: auto;
+      line-height: 32px;
     }
   }
 }

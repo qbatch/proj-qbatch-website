@@ -55,6 +55,13 @@ const IndexPage = () => {
           <StartProject />
         </Suspense>
       </Layout>
+      <script type="application/ld+json">
+        {transformedObject
+          .filter((x) => !x.visibilityIn)
+          .map((data, i) => (
+              JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)
+          ))}
+      </script>
     </>
   );
 };

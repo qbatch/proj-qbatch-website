@@ -50,7 +50,7 @@ const Index = () => {
           <Col lg={8}>
             <div className='section-main'>
               <h2 className='text-h2 section-main-heading'>Explore Qbatch’s DevOps Services</h2>
-              <h3 className='section-main-subtitle'>Accelerate Business Agility and Automation Through Continuous Improvements</h3>
+              <p className='section-main-subtitle'>Accelerate Business Agility and Automation Through Continuous Improvements</p>
               <p className='section-main-paragraph'>Qbatch’s DevOps experts offer a hard-earned domain experience to help your idea move freely and continuously from development to deployment stages featuring task automation, environment standardization, and performance tracking. </p>
             </div>
           </Col>
@@ -59,7 +59,7 @@ const Index = () => {
               <div className='dev-service-box'>
                 <div className='box-header'>
                   <img src={service.img} alt='icon' />
-                  <h4 className='text-h4 box-heading'>{service.title}</h4>
+                  <h3 className='text-h4 box-heading'>{service.title}</h3>
                 </div>
                 <div className="box-body">
                   <p className='paragraph'>{service.description}</p>

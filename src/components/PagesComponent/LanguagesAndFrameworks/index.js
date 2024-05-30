@@ -95,7 +95,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
               {languagesData.map((item, ind) => (
                 <div key={ind}>
                   <Accordion.Item eventKey={ind}>
-                    <Accordion.Header>{item.title}</Accordion.Header>
+                    <Accordion.Header as="h3">{item.title}</Accordion.Header>
                     <Accordion.Body>
                       <Row>
                         {item.content.map((data) => (

@@ -60,7 +60,7 @@ const DevOps = () => {
       <DevOpsService/>
       <InnerBanner
        heading="Do you know 83% of developers release code faster with DevOps?"
-       headingMaxWidth="930"
+       headingMaxWidth="930px"
        wrapperClass="text-center"
        isButton={true}
        btnText="Hire Your DevOps Team"
@@ -92,7 +92,7 @@ const DevOps = () => {
       <ProvenWorkExperience exploreBtn heading="Products that Empowered Millions"/>
       <Collaboration />
        <InnerBanner
-       heading="Minimize development costs and timelines with DevOps Engineering Services.”"
+       heading="Minimize development costs and timelines with DevOps Engineering Services."
        headingMaxWidth="1042px"
        wrapperClass="text-center"
        isButton={true}

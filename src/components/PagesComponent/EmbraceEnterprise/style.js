@@ -19,7 +19,7 @@ ${media.sm`
   max-width: 570px;
 }
 .sub-heading{
-  font-weight: ${({ theme }) => theme.fontWeight.normal};
+  font-weight: ${({ theme }) => theme.fontWeight.semiBold};
   margin-bottom: 16px;
   text-transform:initial;
   ${media.sm`
