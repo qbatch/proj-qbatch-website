@@ -46,7 +46,7 @@ const createBlogPages = async (graphql, actions) => {
   strapiBlogPosts.forEach(({ node }) => {
     createPage({
       path: `/blog/${node?.slug}/`,
-      component: path.resolve('./src/pages/blogDetails.js'),
+      component: path.resolve('./src/pages/blog/blogDetails.js'),
       context: {
         title: node.slug,
       },
@@ -97,17 +97,4 @@ const createSitemapPages = (actions) => {
 exports.createPages = async ({ graphql, actions }) => {
   await createBlogPages(graphql, actions);
   createSitemapPages(actions);
-};
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === 'MarkdownRemark') {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: 'slug',
-      node,
-      value,
-    });
-  }
 };

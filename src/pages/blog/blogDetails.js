@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import PageNotFound from '../pages/404';
-import Layout from "../components/Layout/layout";
-import BlogDetailBanner from "../components/PagesComponent/BlogDetailBanner";
-import BlogDetailsContent from "../components/PagesComponent/BlogDetailsContent";
-import SEO from "../components/Seo";
-import ContentWrapper from "../components/PagesComponent/BlogDetailsContent/style";
-import  { Queries }  from "../constants/queries";
+import PageNotFound from '../404';
+import Layout from "../../components/Layout/layout";
+import BlogDetailBanner from "../../components/PagesComponent/BlogDetailBanner";
+import BlogDetailsContent from "../../components/PagesComponent/BlogDetailsContent";
+import SEO from "../../components/Seo";
+import ContentWrapper from "../../components/PagesComponent/BlogDetailsContent/style";
+import  { Queries }  from "../../constants/queries";
 
 const BlogDetails = ({ pageContext }) => {
   
