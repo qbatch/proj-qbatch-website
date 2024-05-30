@@ -533,14 +533,5 @@ module.exports = {
         mergeCachingHeaders: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Inter+Tight\:300,400,500,600,700`,
-        ],
-        display: 'swap',
-      },
-    },
   ],
 };
