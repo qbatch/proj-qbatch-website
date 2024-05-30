@@ -12,7 +12,6 @@ const siteMetadata = {
 const env = require('dotenv').config({
   path: require('path').join(__dirname, '.env'),
 });
-console.log(`${__dirname}/src`, "direct");
 
 const {
   STRAPI_API_URL: apiURL,
