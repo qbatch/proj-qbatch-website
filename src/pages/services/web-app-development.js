@@ -8,7 +8,6 @@ import Slider from '../../components/UiComponent/Slider'
 import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import Achievements from "../../components/PagesComponent/Achievements";
 import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
-import AppDevelopment from "../../components/PagesComponent/AppDevelopmentService";
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
 import StartProject from "../../components/PagesComponent/StartProject";
