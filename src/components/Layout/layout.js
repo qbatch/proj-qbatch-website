@@ -9,18 +9,19 @@ import GlobalStyle from "../../theme/global-style";
 import Header from '../PagesComponent/Header2'
 import Footer from '../PagesComponent/Footer'
 
-const Layout = ({children }) => {
+const Layout = ({ children }) => {
 
   return (
-      <ThemeProvider theme={Theme}>
-        <Header/>
-         <Helmet>
-            <html lang='en-US' />
-        </Helmet>
-        <GlobalStyle />
-        {children}
-        <Footer />
-      </ThemeProvider>
+    <ThemeProvider theme={Theme}>
+      <Header />
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&display=swap" rel="stylesheet" />
+        <html lang='en-US' />
+      </Helmet>
+      <GlobalStyle />
+      {children}
+      <Footer />
+    </ThemeProvider>
   );
 }
 

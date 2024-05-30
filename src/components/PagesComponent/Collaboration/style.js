@@ -6,7 +6,7 @@ const CollaborationWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .heading{ 
     margin-bottom: 24px;
-    max-width: 460px;
+    max-width: 650px;
     margin: 0 auto 24px;
     ${media.sm`
     margin: 0 auto 12px;
