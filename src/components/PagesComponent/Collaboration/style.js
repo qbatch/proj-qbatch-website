@@ -6,7 +6,7 @@ const CollaborationWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   .heading{ 
     margin-bottom: 24px;
-    max-width: 100%;
+    max-width: 460px;
     margin: 0 auto 24px;
     ${media.sm`
     margin: 0 auto 12px;
@@ -76,7 +76,7 @@ const CollaborationWrapper = styled.div`
           ${media.xs`
           min-width:30px;
           align-self: start;
-          svg{
+          img{
             height:30px;
           }
           `}

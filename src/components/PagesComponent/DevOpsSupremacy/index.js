@@ -14,7 +14,7 @@ const DevOpsSupremacy = () => {
             <h2 className='heading text-h2'>
             Is DevOps Relevant to Your Business?
             </h2>
-            <p className='paragraph'>Industry leaders believe that responding quickly to emerging market needs and innovating faster is a cornerstone to growing a better and stronger business. DevOps practices can help you get there. </p>
+            <p className='paragraph mb-lg-0'>Industry leaders believe that responding quickly to emerging market needs and innovating faster is a cornerstone to growing a better and stronger business. DevOps practices can help you get there. </p>
             </div>
           </Col>
           <Col lg={6}>

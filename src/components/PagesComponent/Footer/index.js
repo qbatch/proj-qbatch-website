@@ -91,7 +91,7 @@ const Index = () => {
           <Row className="align-items-center">
             <Col lg={6}>
               <div className="stories-inbox">
-                <img src='/inbox-icon.svg' alt="inbox"  loading="lazy"/>
+                <img src='/inbox-icon.svg' alt="inbox" loading="lazy" width={186} height={120} />
                 <h3>Get top stories delivered to your inbox </h3>
               </div>
             </Col>
@@ -99,7 +99,7 @@ const Index = () => {
               <div className="position-relative">
                 <div className="footer-email">
                   <div className="email-input">
-                    <img src="/user-email-icon.svg" alt="email" loading="lazy" />
+                    <img src="/user-email-icon.svg" alt="email" loading="lazy" width={20} height={20} />
                     <input type="email" value={formData.email} name="email" placeholder="Email Address" onChange={handleInputChange} />
                   </div>
                   <Button text='Subscribe' className="secondary-btn" onClick={handleSubmit} />

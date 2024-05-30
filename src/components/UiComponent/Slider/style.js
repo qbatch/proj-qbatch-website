@@ -128,6 +128,7 @@ const SliderWrapper = styled.div`
     .paragraph{
       max-width: 608px;
       margin: auto;
+      margin-bottom: 72px;
     }
 }
   &.devops-slider{

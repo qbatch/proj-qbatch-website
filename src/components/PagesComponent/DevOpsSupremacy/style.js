@@ -53,7 +53,7 @@ border-bottom: 1px solid  ${({ theme }) => theme.colors.dividerColor};
   }
   .counter-paragraph{
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-    color: ${({ theme }) => theme.fonts.bodyTextVariant};
+    color: ${({ theme }) => theme.colors.bodyTextVariant};
     line-height: 32px;
     max-width: 450px;
   }
