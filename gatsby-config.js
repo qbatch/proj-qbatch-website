@@ -12,6 +12,7 @@ const siteMetadata = {
 const env = require('dotenv').config({
   path: require('path').join(__dirname, '.env'),
 });
+console.log(`${__dirname}/src`, "direct");
 
 const {
   STRAPI_API_URL: apiURL,
@@ -325,6 +326,7 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
