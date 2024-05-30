@@ -1,7 +1,59 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
 export const Queries = () => {
-   const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
+   fragment SchemaFields on STRAPI__COMPONENT_SCHEMA_SCHEMA_STRUCTUREDDATA_JSONNODE {
+    _context
+    _type
+    name
+    description
+    provider {
+      _type
+      brand {
+        _type
+        name
+      }
+      contactPoint {
+        _type
+        areaServed
+        availableLanguage
+        contactType
+        telephone
+      }
+      logo
+      name
+      sameAs
+      url
+    }
+    contactPoint {
+      _type
+      contactOption
+      contactType
+      telephone
+    }
+    brand {
+      _type
+      location
+      logo {
+        _type
+        height
+        url
+        width
+      }
+      name
+      sameAs
+      url
+    }
+    serviceType
+    audience {
+      _type
+      audienceType
+    }
+    serviceOutput
+    slogan
+    additionalType
+    category
+  }
     query BlogQuery {
        allStrapiBlog {
          nodes {
@@ -274,6 +326,11 @@ export const Queries = () => {
        }
        allStrapiExtensionDevelopment {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
            seo {
              keywords
              language
@@ -291,6 +348,11 @@ export const Queries = () => {
        }
        allStrapiCtoService {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
            seo {
              metaTitle
              slug
@@ -357,56 +419,7 @@ export const Queries = () => {
         nodes {
           schema {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
-              _context
-              _type
-              name
-              description
-              provider {
-                _type
-                brand {
-                  _type
-                  name
-                }
-                contactPoint {
-                  _type
-                  areaServed
-                  availableLanguage
-                  contactType
-                  telephone
-                }
-                logo
-                name
-                sameAs
-                url
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              serviceType
-              audience {
-                _type
-                audienceType
-              }
-              serviceOutput
-              slogan
-              additionalType
-              category
+              ...SchemaFields
             }
             visibilityIn
             title
@@ -428,6 +441,11 @@ export const Queries = () => {
       }
        allStrapiDevop {
         nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
           seo {
             metaTitle
             metaRobots
@@ -492,6 +510,11 @@ export const Queries = () => {
       }
        allStrapiMvpDev {
         nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
           seo {
             metaTitle
             metaRobots
@@ -556,6 +579,11 @@ export const Queries = () => {
       }
        allStrapiEcommerce {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
            seo {
              metaTitle
              slug
@@ -621,6 +649,11 @@ export const Queries = () => {
        }
        allStrapiWebApp {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
            seo {
              metaTitle
              slug
@@ -685,6 +718,11 @@ export const Queries = () => {
        }
        allStrapiProductDesign {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
            seo {
              metaTitle
              slug
@@ -783,6 +821,11 @@ export const Queries = () => {
        }
        allStrapiMobileApp {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
            seo {
              metaTitle
              slug
@@ -847,6 +890,11 @@ export const Queries = () => {
        }
        allStrapiEnterprise {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
            seo {
              metaTitle
              slug
@@ -964,6 +1012,11 @@ export const Queries = () => {
        }
        allStrapiWebAndDataScraping {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+          }
            seo {
              metaTitle
              slug
@@ -1081,7 +1134,6 @@ export const Queries = () => {
       }
      }
    `)
-    
-    return data;
-  }
-  
+
+  return data;
+}
