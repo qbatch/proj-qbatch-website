@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import ReCAPTCHA from "react-google-recaptcha";
+import { PhoneNumberUtil } from 'google-libphonenumber';
 
 import Container from "../../UiComponent/Container";
 import Input from "../../UiComponent/Input";
@@ -17,6 +18,8 @@ import Button from "../../UiComponent/Button";
 import TestimonialCarousel from "../../UiComponent/TestimonialSlider";
 
 import StartProjectWrapper from "./style";
+
+const phoneUtil = PhoneNumberUtil.getInstance();
 
 const Index = ({ page }) => {
   const recaptchaRef = useRef(null);
@@ -55,7 +58,6 @@ const Index = ({ page }) => {
       ...formData,
       number: phoneNumber
     });
-    const phoneUtil = require("google-libphonenumber").PhoneNumberUtil.getInstance();
     try {
       const parsedPhoneNumber = phoneUtil.parse("+" + phoneNumber);
       const isValid = phoneUtil.isValidNumber(parsedPhoneNumber);
