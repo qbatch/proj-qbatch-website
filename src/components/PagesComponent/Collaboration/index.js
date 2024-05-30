@@ -12,19 +12,19 @@ const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading, 
       img: '/time-clock.svg',
       title: "Time and Material",
       description:
-        "We empower you to choose our Time and Material model where you only pay for the time and quality resources spent on the project.",
+        "Only pay for the time and quality resources spent on the project.",
     },
     {
       img: '/fixed-scope.svg',
       title: "Fixed Scope Product Development",
       description:
-        "Pull down barriers like compromised quality and slow project delivery with our Fixed Scope Product Development model under a fixed budget.",
+        "Pull down barriers like compromised quality and slow project delivery under a fixed budget.",
     },
     {
       img: '/dev-team.svg',
       title: "Hire Dedicated Development Team ",
       description:
-        "Leverage your global footprint in the rising techno-verse with Qbatch’s self-driven, smart, and skilled team of software developers.",
+        "Leverage your global footprint with Qbatch’s self-driven team of software developers.",
     },
   ];
 
