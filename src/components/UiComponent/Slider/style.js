@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 const SliderWrapper = styled.div`
-  padding: 96px 0;
+  padding: 96px 0 110px;
   ${media.sm`
     padding: 56px 0;
   `}
