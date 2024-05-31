@@ -21,6 +21,7 @@ import QuotationSection from "../../components/PagesComponent/QuotationSection";
 import MarketplaceIntegrations from "../../components/PagesComponent/MarketplaceIntegrations";
 import TrippleYourRevenue from "../../components/PagesComponent/TrippleYourRevenue";
 import Automation from "../../components/PagesComponent/TechnicalGuidance";
+import EcomLogos from "../../components/PagesComponent/EcomLogoSection";
 import EcommerceBanner from '../../../static/e-commerce-banner.svg'
 import { automationData } from "../../constants";
 
@@ -43,6 +44,7 @@ const Ecommerce = () => {
           { pathname: '/services/e-commerce-automation/', crumbLabel: 'eCommerce Automation Solutions' },
         ]}
       />
+      <EcomLogos />
       <WhatCanHelp />
       <Slider
         heading="Our 5-Step E-commerce Automation Process"
