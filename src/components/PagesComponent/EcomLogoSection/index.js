@@ -21,9 +21,6 @@ const Index = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
         }
       },
     ]
