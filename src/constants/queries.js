@@ -330,6 +330,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
            seo {
              keywords
@@ -352,6 +354,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
            seo {
              metaTitle
@@ -445,6 +449,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
           seo {
             metaTitle
@@ -514,6 +520,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
           seo {
             metaTitle
@@ -583,6 +591,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
            seo {
              metaTitle
@@ -653,6 +663,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
            seo {
              metaTitle
@@ -722,6 +734,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
            seo {
              metaTitle
@@ -825,6 +839,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
            seo {
              metaTitle
@@ -894,6 +910,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
            seo {
              metaTitle
@@ -1016,6 +1034,8 @@ export const Queries = () => {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
               ...SchemaFields
             }
+            visibilityIn
+            title
           }
            seo {
              metaTitle

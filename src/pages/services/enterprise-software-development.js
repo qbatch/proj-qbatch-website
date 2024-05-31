@@ -130,7 +130,7 @@ const Enterprise = () => {
 
 export const Head = () => {
   const enterpriseData = Queries()
-  const seoData = enterpriseData.allStrapiEnterprise.nodes[0]?.seo
+  const seoData = enterpriseData.allStrapiEnterprise.nodes[0]?.seo;
   const schemaData = enterpriseData?.allStrapiEnterprise?.nodes[0]?.schema;
   const transformedObject = replaceUnderscoreWithAt(schemaData);
 
