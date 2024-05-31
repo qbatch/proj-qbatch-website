@@ -106,6 +106,9 @@ const strapiConfig = {
           seo: {
             populate: '*',
           },
+          schema: {
+            populate: '*',
+          },
         },
       },
     },
@@ -129,6 +132,9 @@ const strapiConfig = {
           seo: {
             populate: '*',
           },
+          schema: {
+            populate: '*',
+          },
         },
       },
     },
@@ -137,6 +143,9 @@ const strapiConfig = {
       queryParams: {
         populate: {
           seo: {
+            populate: '*',
+          },
+          schema: {
             populate: '*',
           },
         },
@@ -149,6 +158,9 @@ const strapiConfig = {
           seo: {
             populate: '*',
           },
+          schema: {
+            populate: '*',
+          },
         },
       },
     },
@@ -157,6 +169,9 @@ const strapiConfig = {
       queryParams: {
         populate: {
           seo: {
+            populate: '*',
+          },
+          schema: {
             populate: '*',
           },
         },
@@ -169,6 +184,9 @@ const strapiConfig = {
           seo: {
             populate: '*',
           },
+          schema: {
+            populate: '*',
+          },
         },
       },
     },
@@ -179,6 +197,9 @@ const strapiConfig = {
           seo: {
             populate: '*',
           },
+          schema: {
+            populate: '*',
+          },
         },
       },
     },
@@ -187,6 +208,9 @@ const strapiConfig = {
       queryParams: {
         populate: {
           seo: {
+            populate: '*',
+          },
+          schema: {
             populate: '*',
           },
         },
@@ -279,6 +303,9 @@ const strapiConfig = {
           seo: {
             populate: '*',
           },
+          schema: {
+            populate: '*',
+          },
         },
       },
     },
@@ -287,6 +314,9 @@ const strapiConfig = {
       queryParams: {
         populate: {
           seo: {
+            populate: '*',
+          },
+          schema: {
             populate: '*',
           },
         },
@@ -434,7 +464,7 @@ module.exports = {
         ],
       },
     },
-    
+
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {

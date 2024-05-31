@@ -112,7 +112,8 @@ const MvpDev = () => {
 export const Head = () => {
   const mvpDevData = Queries()
   const seoData = mvpDevData?.allStrapiMvpDev?.nodes[0]?.seo
-  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
+  const schemaData = mvpDevData?.allStrapiMvpDev?.nodes[0]?.schema;
+  const transformedObject = replaceUnderscoreWithAt(schemaData);
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -123,9 +124,13 @@ export const Head = () => {
       image={seoData?.metaimage[0].localFile.url}
       pathname={`/services/${seoData?.slug}/`}
     >
-      {schemaData && <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
-      </script>}
+       {transformedObject
+        .filter((x) => x.visibilityIn)
+        .map((data, i) => (
+          <script key={i} type="application/ld+json">
+            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
+          </script>
+        ))}
     </SEO>
   )
 }
