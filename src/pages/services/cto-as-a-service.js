@@ -1,6 +1,5 @@
 import React from "react";
-import {replaceUnderscoreWithAt} from '../../constants/Utils'
-import SEO from "../../components/Seo";
+import SeoComponent from "../../utils/seo"
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
 import StartProject from "../../components/PagesComponent/StartProject";
@@ -88,25 +87,8 @@ export const Head = () => {
   const ctoData = Queries()
   const seoData = ctoData.allStrapiCtoService.nodes[0]?.seo;
   const schemaData = ctoData?.allStrapiCtoService?.nodes[0]?.schema;
-  const transformedObject = replaceUnderscoreWithAt(schemaData);
   return (
-    <SEO
-      title={seoData?.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      robots={seoData.metaRobots}
-      image={seoData.metaimage[0].localFile.url}
-      pathname={`/services${seoData.slug}`}
-    >
-         {transformedObject
-        .filter((x) => x.visibilityIn)
-        .map((data, i) => (
-          <script key={i} type="application/ld+json">
-            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
-          </script>
-        ))}
-      </SEO>
+    <SeoComponent seoData={seoData} schemaData={schemaData} />
   )
 }
 
