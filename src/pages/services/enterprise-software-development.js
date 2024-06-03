@@ -1,8 +1,7 @@
 import React from "react";
-import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
-import SEO from "../../components/Seo";
+import SeoComponent from "../../utils/seo"
 import Banner from "../../components/PagesComponent/PageBanner";
 import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
@@ -132,26 +131,9 @@ export const Head = () => {
   const enterpriseData = Queries()
   const seoData = enterpriseData.allStrapiEnterprise.nodes[0]?.seo;
   const schemaData = enterpriseData?.allStrapiEnterprise?.nodes[0]?.schema;
-  const transformedObject = replaceUnderscoreWithAt(schemaData);
 
   return (
-    <SEO
-      title={seoData?.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      image={seoData.metaimage[0].localFile.url}
-      robots={seoData.metaRobots}
-      pathname={`/services${seoData.slug}`}
-    >
-     {transformedObject
-        .filter((x) => x.visibilityIn)
-        .map((data, i) => (
-          <script key={i} type="application/ld+json">
-            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
-          </script>
-        ))}
-    </SEO>
+    <SeoComponent seoData={seoData} schemaData={schemaData} />
   )
 }
 

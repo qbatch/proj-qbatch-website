@@ -54,16 +54,94 @@ export const Queries = () => {
     additionalType
     category
   }
+
+
+  fragment SeoFields on STRAPI__COMPONENT_SEO_SEO{
+    keywords
+    language
+    metaDescription
+    metaRobots
+    metaTitle
+    slug
+    metaimage {
+      localFile {
+        url
+      }
+    }
+  }
+
+
+  fragment PageSeoFields on STRAPI__COMPONENT_SEO_SEO{
+    metaTitle
+    slug
+    metaRobots
+    metaDescription
+    language
+    keywords
+    structuredData {
+    name
+    description
+    slogan
+    mainEntity {
+      provider {
+        _type
+        logo
+        name
+        url
+      }
+      areaServed {
+        _type
+        name
+      }
+      serviceType
+      serviceAudience {
+        _type
+        audienceType
+      }
+      serviceOutput
+    }
+    contactPoint {
+      _type
+      contactOption
+      contactType
+      telephone
+    }
+    brand {
+      _type
+      location
+      logo {
+        _type
+        height
+        url
+        width
+      }
+      name
+      sameAs
+      url
+    }
+    potentialAction {
+      _type
+      query_input
+      target
+    }
+    }
+    metaimage {
+      localFile {
+        url
+      }
+    }
+  }
+
     query BlogQuery {
        allStrapiBlog {
          nodes {
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
+            metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
            }
          }
        }
@@ -259,68 +337,28 @@ export const Queries = () => {
        allStrapiPortfolio {
          nodes {
            seo {
-             metaTitle
-             metaRobots
-             metaDescription
-             language
-             keywords
-             slug
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
        allStrapiTermsAndCondition {
         nodes {
           seo {
-            metaTitle
-            metaRobots
-            metaDescription
-            language
-            keywords
-            slug
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
        allStrapiPrivacyPolicy {
         nodes {
           seo {
-            metaTitle
-            metaRobots
-            metaDescription
-            language
-            keywords
-            slug
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
        allStrapiAboutUs {
          nodes {
            seo {
-             keywords
-             language
-             metaDescription
-             metaRobots
-             metaTitle
-             slug
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
@@ -334,17 +372,7 @@ export const Queries = () => {
             title
           }
            seo {
-             keywords
-             language
-             metaDescription
-             metaRobots
-             metaTitle
-             slug
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            ...SeoFields
            }
          }
        }
@@ -358,64 +386,7 @@ export const Queries = () => {
             title
           }
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            ...PageSeoFields
            }
          }
        }
@@ -429,17 +400,7 @@ export const Queries = () => {
             title
           }
           seo {
-            metaTitle
-            metaRobots
-            slug
-            metaDescription
-            language
-            keywords
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
@@ -453,64 +414,7 @@ export const Queries = () => {
             title
           }
           seo {
-            metaTitle
-            metaRobots
-            slug
-            metaDescription
-            language
-            structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-            keywords
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...PageSeoFields
           }
         }
       }
@@ -524,64 +428,7 @@ export const Queries = () => {
             title
           }
           seo {
-            metaTitle
-            metaRobots
-            slug
-            metaDescription
-            language
-                structuredData {
-          name
-          description
-          slogan
-          mainEntity {
-            provider {
-              _type
-              logo
-              name
-              url
-            }
-            areaServed {
-              _type
-              name
-            }
-            serviceType
-            serviceAudience {
-              _type
-              audienceType
-            }
-            serviceOutput
-          }
-          contactPoint {
-            _type
-            contactOption
-            contactType
-            telephone
-          }
-          brand {
-            _type
-            location
-            logo {
-              _type
-              height
-              url
-              width
-            }
-            name
-            sameAs
-            url
-          }
-          potentialAction {
-            _type
-            query_input
-            target
-          }
-        }
-            keywords
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...PageSeoFields
           }
         }
       }
@@ -595,65 +442,7 @@ export const Queries = () => {
             title
           }
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            ...PageSeoFields
            }
          }
        }
@@ -667,64 +456,7 @@ export const Queries = () => {
             title
           }
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...PageSeoFields
            }
          }
        }
@@ -738,98 +470,21 @@ export const Queries = () => {
             title
           }
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            ...PageSeoFields
            }
          }
        }
        allStrapiProsperShow {
          nodes {
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
        allStrapiWhiteLabelExpo {
          nodes {
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
@@ -843,64 +498,7 @@ export const Queries = () => {
             title
           }
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            ...PageSeoFields
            }
          }
        }
@@ -914,64 +512,7 @@ export const Queries = () => {
             title
           }
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            ...PageSeoFields
            }
          }
        }
@@ -1038,98 +579,21 @@ export const Queries = () => {
             title
           }
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            ...PageSeoFields
            }
          }
        }
        allStrapiContactUs {
          nodes {
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
        allStrapiHireDeveloper {
         nodes {
           seo {
-            metaTitle
-            slug
-            metaRobots
-            metaDescription
-            language
-            keywords
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
@@ -1138,17 +602,7 @@ export const Queries = () => {
           categoryName
           slug
           seo {
-            metaTitle
-            metaDescription
-            language
-            slug
-            keywords
-            metaRobots
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
