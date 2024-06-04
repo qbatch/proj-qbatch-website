@@ -65,7 +65,10 @@ const strapiConfig = {
           populate: {
             seo: {
               populate: '*',
-            }
+            },
+            schema: {
+              populate: '*',
+            },
           },
         },
       },
