@@ -145,109 +145,113 @@ export const Queries = () => {
            }
          }
        }
-      allStrapiArticle {
-         nodes {
-           updatedAt
-           blogTitle
-           blogDescription {
-             data {
-               blogDescription
-             }
-           }
-           slug
-           user {
-             username
-             name
-             description
-             image {
-               localFile {
+       allStrapiArticle {
+        nodes {
+         schema {
+           title
+           visibilityIn
+           childStrapiComponentSchemaSchemaStructureddataJsonnode {
+             strapi_json_value {
+               _context
+               _type
+               image {
+                 _type
+                 height
                  url
+                 width
+               }
+               author {
+                 url
+                 name
+                 _type
+                 sameAs
+                 alumniOf {
+                   Name
+                   _type
+                 }
+                 jobTitle
+                 knowsAbout
+                 description
+                 honorificSuffix
+               }
+               headline
+               keywords
+               publisher {
+                 url
+                 logo {
+                   _type
+                   height
+                   url
+                   width
+                 }
+               }
+               description
+               datePublished
+               dateModified
+               mainEntityOfPage {
+                 _id
+                 _type
+                 breadcrumb {
+                   _type
+                   itemListElement {
+                     _type
+                     item
+                     name
+                     position
+                   }
+                 }
                }
              }
-              Socials {
-               socialLink
-               socialPlatform
-              }
-           }
-           category {
-             categoryName
-             slug
-           }
-           blogTags {
-             strapi_json_value
-           }
-           blogImg {
-             localFile {
-               url
-             }
-           }
-           id
-           publishedAt
-           favorite
-           bannerBlog
-           seo {
-             metaTitle
-             slug
-             metaRobots
-               structuredData {
-                strapi_json_value {
-                  _context
-                  _type
-                    image {
-                  _type
-                  height
-                  url
-                  width
-                }
-                   author {
-              url
-              name
-              _type
-              sameAs
-              alumniOf {
-                Name
-                _type
-              }
-              jobTitle
-              knowsAbout
-              description
-              honorificSuffix
-            }
-             headline
-            keywords
-               publisher {
-              url
-              logo {
-                _type
-                height
-                url
-                width
-              }
-            }
-            description
-             datePublished
-            dateModified
-             mainEntityOfPage {
-              _id
-              _type
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
-             }
-                }
-              }
-             metaDescription
-             language
-             keywords
            }
          }
-       }
+          updatedAt
+          blogTitle
+          blogDescription {
+            data {
+              blogDescription
+            }
+          }
+          slug
+          user {
+            username
+            name
+            description
+            image {
+              localFile {
+                url
+              }
+            }
+             Socials {
+              socialLink
+              socialPlatform
+             }
+          }
+          category {
+            categoryName
+            slug
+          }
+          blogTags {
+            strapi_json_value
+          }
+          blogImg {
+            localFile {
+              url
+            }
+          }
+          id
+          publishedAt
+          favorite
+          bannerBlog
+          seo {
+            metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
+          }
+        }
+      }
        allStrapiHome {
          nodes {
            schema {

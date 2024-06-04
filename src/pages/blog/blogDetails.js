@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import PageNotFound from '../404';
 import Layout from "../../components/Layout/layout";
+import { replaceUnderscoreWithAt } from '../../constants/Utils'
 import BlogDetailBanner from "../../components/PagesComponent/BlogDetailBanner";
 import BlogDetailsContent from "../../components/PagesComponent/BlogDetailsContent";
 import SEO from "../../components/Seo";
@@ -11,25 +12,8 @@ const BlogDetails = ({ pageContext }) => {
   
     const path = pageContext?.title;
     const blogQuery = Queries()
- const schemaData = blogQuery.allStrapiArticle.nodes
-  .filter(x => x.slug === `${path}`)[0]?.seo?.structuredData?.strapi_json_value[0];
     const blogData = blogQuery.allStrapiArticle.nodes.find((x) => x.slug === `${path}`)
-       function replaceUnderscoreWithAt(obj) {
-    if (obj && typeof obj === 'object') {
-      if (Array.isArray(obj)) {
-        return obj.map((item) => replaceUnderscoreWithAt(item))
-      } else {
-        const updatedObj = {}
-        for (const [key, value] of Object.entries(obj)) {
-          updatedObj[key.replace(/^_/, '@')] = replaceUnderscoreWithAt(value)
-        }
-        return updatedObj
-      }
-    } else {
-      return obj
-    }
-  }
-   const transformedObject = replaceUnderscoreWithAt(schemaData)
+       
   function progressBarScroll() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
       height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
@@ -45,7 +29,6 @@ const BlogDetails = ({ pageContext }) => {
     if (!blogData) {
         return <PageNotFound />
       }
-  const schemaAsString = JSON.stringify(transformedObject, null, 2);
   return (
     <Layout pageTitle="My Blog Posts">
       <ContentWrapper>
@@ -57,28 +40,45 @@ const BlogDetails = ({ pageContext }) => {
       </ContentWrapper>
       <BlogDetailBanner data={blogData} />
       <BlogDetailsContent data={blogData} path={path} />
-      {blogData?.seo?.structuredData && <script type="application/ld+json">{schemaAsString}</script> }  
     </Layout>
   )
 }
 
 export const Head = ({ pageContext }) => {
   const path = pageContext?.title
-  const { title } = pageContext;
   const blogQuery = Queries()
   const allStrapiArticleNodes = blogQuery.allStrapiArticle.nodes
-  const blogData = allStrapiArticleNodes.find((node) => node.slug === `${path}`)
-  const blogSeoData = allStrapiArticleNodes.find((node) => node.slug === `${path}`)
-  const seoData = blogSeoData?.seo
-  const seoImage = blogData?.blogImg?.localFile.url
+  const currentArticle = allStrapiArticleNodes.find((node) => node.slug === path)
+
+  if (!currentArticle) {
+    return null;
+  }
+
+  const { schema: articleSchema } = currentArticle;
+  const seoData = currentArticle.seo;
+  const seoImage = currentArticle.blogImg?.localFile.url;
+
+  const transformedSchemaData = articleSchema.map(schemaItem => ({
+    ...schemaItem.childStrapiComponentSchemaSchemaStructureddataJsonnode.strapi_json_value,
+    visibilityIn: schemaItem.visibilityIn
+  }));
+
   return (
     <SEO
       title={seoData?.metaTitle}
       description={seoData?.metaDescription}
       keywords={seoData?.keywords}
-      pathname={`/blog/${title}/`}
+      pathname={`/blog/${path}/`}
       image={seoImage}
-    />
+    >
+      {transformedSchemaData
+        .filter((x) => x.visibilityIn)
+        .map((data, i) => (
+          <script key={i} type="application/ld+json">
+            {JSON.stringify(data)}
+          </script>
+        ))}
+    </SEO>
   )
 }
 
