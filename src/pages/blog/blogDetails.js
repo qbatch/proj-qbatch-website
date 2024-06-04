@@ -82,6 +82,4 @@ export const Head = ({ pageContext }) => {
   )
 }
 
-
-
 export default BlogDetails;
