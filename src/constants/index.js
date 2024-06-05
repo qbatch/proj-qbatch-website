@@ -1070,7 +1070,7 @@ const servicesSliderData = [
   },
   {
     image: "/machine-learning.svg",
-    title: "Machine Learning (ML))",
+    title: "Machine Learning (ML)",
     content: "We leverage powerful cloud-based platforms to accelerate ML tools and perform predictive analysis, data pre-processing, model training and tuning, and orchestration."
   }
 ]

@@ -29,13 +29,17 @@ ${media.sm`
     text-align: center;
     gap: 24px;
     margin-bottom: 72px;
-    ${media.sm`
-    margin-bottom: 0px;
-    width: 50%;
-  `}
+
     img{
       height: 114px;
     }
+    ${media.sm`
+    margin-bottom: 0px;
+    width: 40%;
+    img{
+      height: 72px;
+    }
+  `}
     span{
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       color: ${({ theme }) => theme.colors.textMedium};

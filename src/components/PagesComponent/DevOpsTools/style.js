@@ -30,6 +30,7 @@ ${media.sm`
     width: 100%;
     margin-bottom: 72px;
     ${media.sm`
+        width: 38%;
         margin-bottom: 12px;
   `}
     img{
