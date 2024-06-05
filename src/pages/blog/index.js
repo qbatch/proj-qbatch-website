@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from '@reach/router';
-import {navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 
 import Layout from "../../components/Layout/layout";
 import SEO from "../../components/Seo";
@@ -9,6 +9,7 @@ import SearchInput from "../../components/UiComponent/SearchInput";
 import BlogAll from "../../components/PagesComponent/BlogAll";
 import BlogCards from "../../components/PagesComponent/BlogCards";
 import Container from "../../components/UiComponent/Container";
+import Button from "../../components/UiComponent/Button";
 import  { Queries }  from "../../constants/queries";
 
 const BlogPage = ({ pageContext }) => {
@@ -16,6 +17,7 @@ const BlogPage = ({ pageContext }) => {
   const { title } = pageContext;
   const [activeTab, setActiveTab] = useState(title);
   const [searchTerm, setSearchTerm] = useState('');
+  const [categoryManu, setCategoryMenu] = useState(false);
 
   const blogArticle = Queries()
 
@@ -44,48 +46,63 @@ const BlogPage = ({ pageContext }) => {
           { pathname: '/blog/', crumbLabel: 'Blog', crumbSeparator: '>' },
         ]}
       />
-      <Container>
-        <div className="position-relative">
-          <div className="tabs d-flex flex-column gap-2">
-            <div className="d-flex gap-2 flex-wrap">
-              <button
-                className={`tabs-buttons ${location.pathname === '/blog/' ? 'active' : ''}`}
-                onClick={() => {
-                  setActiveTab('all')
-                  navigate('/blog/')
-                }}
-              >
-                All
-              </button>
-              {uniqueCategories?.map((tabs) => {
-                return (
-                  <>
-                    <button
-                      className={`tabs-buttons ${activeTab === tabs.category?.categoryName ? 'active' : ''}`}
-                      onClick={() => {
-                        setActiveTab(tabs.category?.categoryName)
-                        navigate(`/blog/${tabs.category.slug}`)
-                      }}
-                    >
-                      {capitalizeFirstLetter(tabs.category?.categoryName)}
-                    </button>
-                  </>
-                )
-              })}
-            </div>
-            <div>
-              {location.pathname === '/blog/' ? (
-              filteredData &&  <BlogAll data={filteredData} />
-              ) : (
-               filteredData && <BlogCards heading={activeTab} data={filteredData} /> 
-              )}
+        <Container>
+          <div className="position-relative">
+            <div className="tabs">
+              <div className="d-flex gap-2 flex-wrap">
+                <button
+                  className={`tabs-buttons ${location.pathname === '/blog/' ? 'active' : ''}`}
+                  onClick={() => {
+                    setActiveTab('all')
+                    navigate('/blog/')
+                  }}
+                >
+                  All
+                </button>
+                {uniqueCategories?.slice(0,5).map((tabs) => {
+                  return (
+                    <>
+                      <button
+                        className={`tabs-buttons ${activeTab === tabs.category?.categoryName ? 'active' : ''}`}
+                        onClick={() => {
+                          setActiveTab(tabs.category?.categoryName)
+                          navigate(`/blog/${tabs.category.slug}`)
+                        }}
+                      >
+                        {capitalizeFirstLetter(tabs.category?.categoryName)}
+                      </button>
+                    </>
+                  )
+                })}
+                <div className="position-relative">
+                  <Button text="View all categories" className="categories-btn" onClick={()=> setCategoryMenu(true)} />
+                  <div className={`category-menu ${categoryManu ? 'open' : 'close'}`}>
+                    <ul>
+                      {uniqueCategories.map((tabs, index) => (
+                        <li key={index} className={location.pathname === '/blog/' ? 'active' : ''} onClick={() => {
+                          setActiveTab(tabs.category?.categoryName)
+                          navigate(`/blog/${tabs.category.slug}`)
+                        }}>
+                          {capitalizeFirstLetter(tabs.category?.categoryName)}
+                        </li>
+                      ))}
+                    </ul>
+                </div>
+                </div>
+              </div>
+              <div className="position-absolute end-0 top-0">
+                <SearchInput onChange={(e) => setSearchTerm(e.target.value)} />
+              </div>
             </div>
           </div>
-          <div className="position-absolute end-0 top-0">
-            <SearchInput onChange={(e) => setSearchTerm(e.target.value)} />
-          </div>
+        </Container>
+        <div>
+          {location.pathname === '/blog/' ? (
+          filteredData &&  <BlogAll data={filteredData} />
+          ) : (
+            filteredData && <Container><BlogCards heading={activeTab} data={filteredData} /></Container>
+          )}
         </div>
-      </Container>
     </Layout>
   )
 }

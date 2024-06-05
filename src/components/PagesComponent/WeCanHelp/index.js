@@ -10,7 +10,7 @@ const Index = () => {
     <WeCanHelpWrapper>
       <Container>
         <div className="help-heading">
-          <h2 className="text-h3">
+          <h2>
             Can’t get the hang of latest tools & technology? We know, deciding &
             making the right investments is difficult.
           </h2>

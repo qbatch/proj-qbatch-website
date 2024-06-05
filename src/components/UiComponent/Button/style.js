@@ -134,6 +134,34 @@ const ButtonWrapper = styled(Button)`
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
   `}
   }
+  &.categories-btn {
+    border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+    color: ${({ theme }) => theme.colors.primaryColor};
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+    padding: 8px 8px 8px 16px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    ${media.xs`
+      padding: 2px 3px 2px 16px;
+    `}
+    .button-icon {
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      svg {
+        fill: ${({ theme }) => theme.colors.dangerColor};
+        left: 2px;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 0;
+      }
+    }
+  }
 `;
 
 export default ButtonWrapper;

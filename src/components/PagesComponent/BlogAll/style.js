@@ -2,18 +2,28 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogAllWrapprt = styled.div`
-  padding: 72px 0 120px;
-  max-width: 931px;
-  margin: 0 auto;
-
+  padding: 56px 0 0;
+  .latest-heading {
+    color: ${({ theme }) => theme.colors.primaryColor};
+    margin-bottom: 32px;
+  }
 `
 const InnerBannerWrapper = styled.div`
-  border-radius: 24px 24px 0;
-  border: 1px solid  ${({ theme }) => theme.colors.dividerColor};
   position: relative;
   overflow: hidden;
   .blog-image{
-    aspect-ratio: 4/2;
+    max-width: 761px;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px 24px 0 24px;
+    object-fit: cover;
+    object-position: left;
+    ${media.md`
+      max-width: 100%;
+    `}
+  }
+  .blog-badge {
+    margin-bottom: 36px;
   }
   .blog-badge-main{
     position: absolute;
@@ -25,9 +35,12 @@ const InnerBannerWrapper = styled.div`
     `}
   }
   .blog-wrapper{
-    padding: 48px;
+    padding: 48px 0px 48px 22px;
+    ${media.md`
+      padding: 48px 0 0;
+    `}
     ${media.mobile`
-      padding: 32px;
+      padding: 32px 0 0;
     `}
   }
   ${media.sm`
@@ -42,10 +55,8 @@ const InnerBannerWrapper = styled.div`
   .blog-title {
     h2 {
       color: ${({ theme }) => theme.colors.bodyTextVariant};
-      line-height: 52px;
-      ${media.sm`
-          line-height: 32px;
-        `}
+      margin-bottom: 24px;
+      cursor: pointer;
     }
     .banner-desc {
       display: -webkit-box;
@@ -53,7 +64,10 @@ const InnerBannerWrapper = styled.div`
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin-bottom: 32px;
+      margin-bottom: 72px;
+      ${media.sm`
+        margin-bottom: 32px;
+      `}
       h1,
       h2,
       h3,
@@ -64,7 +78,7 @@ const InnerBannerWrapper = styled.div`
       }
       p {
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        color: ${({ theme }) => theme.colors.textMedium};
+        color: ${({ theme }) => theme.colors.bodyLight};
         line-height: 24px;
       }
       span {
@@ -75,27 +89,23 @@ const InnerBannerWrapper = styled.div`
     }
   }
   .timer {
-    margin-bottom: 34px;
     display: flex;
     align-items: center;
-    div{
-      margin-left: 12px;
-    }
-    span {
-      color: ${({ theme }) => theme.colors.bodyTextVariant};
-    }
+    gap: 8px;
+    color: ${({ theme }) => theme.colors.bodyLight};
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+    line-height: 16px;
     img{
       filter: brightness(0) saturate(100%) invert(23%) sepia(65%) saturate(1901%) hue-rotate(190deg) brightness(97%) contrast(106%);
     }
   }
   .author-name {
-    color: ${({ theme }) => theme.colors.bodyTextVariant};
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    ${media.xs`
+    color: ${({ theme }) => theme.colors.bodyLight};
+    span {
+      display: flex;
+      align-items: center;
       gap: 16px;
-    `}
+    }
   }
 `
 
