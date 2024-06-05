@@ -82,12 +82,12 @@ const Index = () => {
               {dataDrivenData.map((list) => {
                 return (
                   <Col md={6}>
-                    <div className="d-flex flex-column assistent-box">
-                      <div className="d-flex gap-3 align-items-center">
-                        <img src={list.img} alt={list.title} />
+                    <div className="assistent-box">
+                      <img src={list.img} alt={list.title} />
+                      <div>
                         <h4>{list.title}</h4>
+                        <p> {list.description}</p>
                       </div>
-                      <p> {list.description}</p>
                     </div>
                   </Col>
                 )

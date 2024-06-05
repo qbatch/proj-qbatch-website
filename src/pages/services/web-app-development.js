@@ -52,6 +52,7 @@ const webapp = () => {
         <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
         <DesiredResult
           heading="Is your web app failing to bring the desired result? That could be serious!"
+          headingSize="text-h2"
           isButton={true}
           className="desired-result desire-result-wrapper"
           btnText="Get Started Risk-Free"

@@ -31,6 +31,13 @@ const AssistantWrapper = styled.div`
       border-bottom: 1px solid #d2d9dc;
       margin-top: 24px;
       margin-bottom: 24px;
+      display: flex;
+      gap: 24px;
+       img{
+        height: 50px;
+        width: 50px;
+        aspect-ratio: 2/2;
+      }
       ${media.sm`
         margin-bottom: 0;
       `}

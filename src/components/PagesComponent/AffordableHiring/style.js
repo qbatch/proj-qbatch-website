@@ -81,7 +81,7 @@ const AffordableHiringWrapper = styled.div`
             position: relative;
             padding-left: 16px;
             color: ${({ theme }) => theme.colors.textMedium};
-            line-height:24px;
+            line-height:32px;
             &::after {
               content: "";
               width: 6px;

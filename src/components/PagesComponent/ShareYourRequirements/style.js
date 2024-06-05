@@ -88,7 +88,9 @@ const ShareYourRequirementsWrapper = styled.div`
       }
       .arrow-wrapper {
         display: flex;
+        gap: 24px;
         justify-content: end;
+        align-items: center;
         margin-top: 48px;
         img {
           cursor: pointer;

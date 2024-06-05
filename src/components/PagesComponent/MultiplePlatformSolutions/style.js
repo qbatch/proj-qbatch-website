@@ -21,12 +21,11 @@ const MultiPlatformWrapper = styled.div`
         margin-bottom:12px;
       `}
     }
-    h3 {
-      font-weight: ${({ theme }) => theme.fontWeight.light};
+    p {
+      font-weight: ${({ theme }) => theme.fontWeight.normal};
       max-width: 420px;
       text-transform: none;
       line-height: 24px;
-      letter-spacing: 0.7px;
       font-size: 16px;
       color: #5F737C;
        ${media.md`

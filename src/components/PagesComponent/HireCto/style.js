@@ -58,7 +58,7 @@ const HireCtoWrapper = styled.div`
   .list-group {
     text-align: left;
     max-width: 930px;
-    margin: 48px auto 32px;
+    margin: 48px auto 72px;
     ${media.sm`
       margin:24px auto 24px;
     `}
@@ -76,7 +76,8 @@ const HireCtoWrapper = styled.div`
         object-fit: contain
       }
       span {
-        color:${({ theme }) => theme.colors.textMedium};
+        color:${({ theme }) => theme.colors.midGray};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
         font-weight:600;
         line-height:32px;
         ${media.sm`

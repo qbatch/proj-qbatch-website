@@ -37,9 +37,6 @@ const GrowthPartnerWrapper = styled.div`
       font-weight: 400;
       max-width: 600px;
       letter-spacing: 0.2px;
-      &:last-child {
-        margin-bottom:48px;
-      }
       ${media.md`
       max-width: 100%;
       `}
@@ -75,14 +72,6 @@ const GrowthPartnerWrapper = styled.div`
   .content-right {
     .content {
       padding-left: 96px;
-      padding-top: 80px;
-      &.mission{
-        padding-top:64px;
-        ${media.sm`
-        padding-left: 0;
-        padding-top: 24px;
-        `}
-      }
       ${media.md`
         padding-left: 0;
         padding-top: 24px;
@@ -90,12 +79,20 @@ const GrowthPartnerWrapper = styled.div`
         
       .paragraph {
         max-width: 595px;
+        margin-bottom: 0;
       }
     }
     .content-wrapper {
       justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      height: 100%;
       ${media.md`
         justify-content: start;
+        align-items: start;
+        gap: 24px;
         `}
     }
   }

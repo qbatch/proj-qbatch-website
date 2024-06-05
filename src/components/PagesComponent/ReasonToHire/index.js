@@ -19,7 +19,7 @@ const ReasonToHire = () => {
           </div>
            ))}
         </div>
-        <Button className="hire-developers-btn" text="Hire Your Developers" />
+        <Button className="hire-developers-btn secondary-btn" text="Hire Your Developers" />
       </Container>
     </ReasonToHireWrapper>
   );
