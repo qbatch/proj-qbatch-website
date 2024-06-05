@@ -8,7 +8,7 @@ const AdvancedWebExplore = () => {
     <AdvancedWebExploreWrapper>
       <Container>
         <div className='title-overlay-wrapper'>
-          <h2>Explore Our Advanced Web Application Expertise</h2>
+          <h2 className='text-h2'>Explore Our Advanced Web Application Expertise</h2>
           <p>From legacy system modernization to developing high-performing microservices, team Qbatch has delivered 300+ custom solutions for several businesses globally. </p>
         </div>
         <ul>

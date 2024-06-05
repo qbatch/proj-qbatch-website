@@ -9,6 +9,15 @@ const SliderWrapper = styled.div`
     padding: 96px 0 72px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    align-items: center;
+
+    .upper-heading{
+      max-width: 580px;
+      ${media.lg`
+        margin-bottom: 56px;
+      `}
+    }
     ${media.sm`
     padding: 56px 0 42px;
   `}

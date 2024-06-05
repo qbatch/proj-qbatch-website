@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <RevenueWrapper>
       <Container>
-        <Row>
+        <Row className="g-4">
           <Col xl={4} md={6}>
             <div className="revenue-heading">
               <h2>To all the sellers, it’s time to triple your revenue!</h2>

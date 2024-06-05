@@ -17,10 +17,10 @@ const Index = () => {
                 Mission-Critical Mobile App Development Solutions For Multiple
                 Platforms
               </h2>
-              <h3 className="text-h5">
+              <p>
                 We offer multi-disciplinary mobile app development services that
                 are not limited to
-              </h3>
+              </p>
             </div>
           </Col>
           <Col lg={7}>

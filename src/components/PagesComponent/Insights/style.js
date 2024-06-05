@@ -94,6 +94,12 @@ const InsightsWrapepr = styled.div`
     border-radius: 16px 16px 0px 16px;
     overflow: hidden;
     min-height: 400px;
+    .badge{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+      border: 1px solid ${({ theme }) => theme.colors.primaryColor};
+      color: ${({ theme }) => theme.colors.primaryColor};
+      font-weight: ${({ theme }) => theme.fontWeight.light};
+    }
     .card-img {
       height: 224px;
       width: 100%;
@@ -124,6 +130,9 @@ const InsightsWrapepr = styled.div`
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
+        color: #000;
+        line-height: 28px;
         margin-bottom: 20px;
         min-height: 51px;
         display: -webkit-box;

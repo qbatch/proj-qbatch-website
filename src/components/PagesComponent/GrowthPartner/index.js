@@ -40,7 +40,7 @@ const Index = () => {
             <p className="paragraph">We are working every day and night to become your pedestal where
              innovation grows and flows freely into a worry less future. </p>
           </div>
-          <div className="content mission">
+          <div className="content">
             <h2 className="heading">Our Mission</h2>
             <p className="paragraph">We are on a mission to help you modernize without 
             fretting about financial and operational bottlenecks through intelligently designed

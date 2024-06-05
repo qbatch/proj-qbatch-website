@@ -48,7 +48,7 @@ const Index = () => {
           <div className="images-box">
             <Row className="justify-content-between">
               <Col md={4}>
-                <h2 className="color-primary">Explore Our Web Data Extraction Services</h2>
+                <h2 className="color-primary">Explore Our Web Data Extraction Services1212</h2>
                 <p>
                   Over the years, our web scraping company has facilitated several enterprises to turn scattered,
                   all-over-the-place data into purpose-driven insights toward business sustenance and eminence.
@@ -57,13 +57,13 @@ const Index = () => {
               <Col md={7}>
                 {dataDrivenData.map((list) => {
                   return (
-                      <div className="d-flex flex-column assistent-box">
-                        <div className="d-flex gap-3">
-                          <img src={list.img} alt={list.title} />
-                          <h4>{list.title}</h4>
-                        </div>
+                    <div className="assistent-box">
+                      <img src={list.img} alt={list.title} />
+                      <div>
+                        <h4>{list.title}</h4>
                         <p> {list.description}</p>
                       </div>
+                    </div>
                   )
                 })}
               </Col>

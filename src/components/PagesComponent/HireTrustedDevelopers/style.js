@@ -130,7 +130,7 @@ const HireTrustedDevelopersWrapper = styled.div`
     }
     .data-list-wrapper {
       display: grid;
-      grid-template-columns: repeat(auto-fill, 164px);
+      grid-template-columns: auto auto auto auto;
       grid-gap:16px;
       ${media.lg`
       display: grid !important;
