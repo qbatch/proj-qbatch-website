@@ -76,7 +76,7 @@ const BlogPage = ({ pageContext }) => {
                     </button>
                   );
                 })}
-                {uniqueCategories.length > 5 && (
+                {uniqueCategories.length > 6 && (
                   <div className="position-relative">
                     <Button text="View all categories" className="categories-btn" onClick={() => setCategoryMenu(!categoryMenu)} />
                     <div className={`category-menu ${categoryMenu ? 'open' : 'close'}`}>
