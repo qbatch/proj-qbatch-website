@@ -48,7 +48,7 @@ const Index = () => {
           <div className="images-box">
             <Row className="justify-content-between">
               <Col md={4}>
-                <h2 className="color-primary">Explore Our Web Data Extraction Services1212</h2>
+                <h2 className="color-primary">Explore Our Web Data Extraction Services</h2>
                 <p>
                   Over the years, our web scraping company has facilitated several enterprises to turn scattered,
                   all-over-the-place data into purpose-driven insights toward business sustenance and eminence.

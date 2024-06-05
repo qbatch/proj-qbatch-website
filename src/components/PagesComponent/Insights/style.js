@@ -131,7 +131,7 @@ const InsightsWrapepr = styled.div`
         margin-bottom: 10px;
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         font-weight: ${({ theme }) => theme.fontWeight.bold};
-        color: #000;
+        color: ${({ theme }) => theme.colors.bodyTextVariant};
         line-height: 28px;
         margin-bottom: 20px;
         min-height: 51px;

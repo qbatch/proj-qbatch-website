@@ -26,7 +26,6 @@ const Index = () => {
     }
   }, []);
 
-  // Responsive settings for the slider
   const responsiveSettings = [
     {
       breakpoint: 1400,
@@ -59,13 +58,13 @@ const Index = () => {
   ];
 
   const settings = {
-    slidesToShow: 3, // Default number of slides to show
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     infinite: true,
     autoplay: false,
     afterChange: (index) => setCurrentSlide(index),
-    responsive: responsiveSettings, // Apply responsive settings
+    responsive: responsiveSettings,
   };
 
   const handlePrevClick = () => {
@@ -80,7 +79,6 @@ const Index = () => {
     }
   };
 
-  // Function to format slide numbers with leading zeros
   const formatSlideNumber = (number) => {
     return number < 10 ? `0${number}` : `${number}`;
   };
