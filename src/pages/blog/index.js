@@ -11,7 +11,6 @@ import BlogCards from "../../components/PagesComponent/BlogCards";
 import Container from "../../components/UiComponent/Container";
 import Button from "../../components/UiComponent/Button";
 import { Queries } from "../../constants/queries";
-import BlogWrapper from "./style";
 
 const BlogPage = ({ pageContext }) => {
   const location = useLocation();
@@ -49,7 +48,6 @@ const BlogPage = ({ pageContext }) => {
         ]}
       />
       <Container>
-        <BlogWrapper>
           <div className="position-relative">
             <div className="tabs">
               <div className="d-flex gap-2 flex-wrap categories-wrapper">
@@ -103,7 +101,6 @@ const BlogPage = ({ pageContext }) => {
               </div>
             </div>
           </div>
-        </BlogWrapper>
       </Container>
       <div>
         {location.pathname === '/blog/' ? (
