@@ -1,5 +1,5 @@
 const siteMetadata = {
-  robots: `index,folow`,
+  robots: `index,follow`,
   title: ``,
   description: ``,
   keywords: ``,
