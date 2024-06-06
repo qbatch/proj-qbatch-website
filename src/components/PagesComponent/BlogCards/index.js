@@ -44,7 +44,7 @@ const Index = (props) => {
                     state: { slug: card.seo.slug },
                   })
                 }}>
-              <img src={card?.user?.image.localFile.url || '/avatar.svg'} width="24px" height="24px" alt="no-user" />
+              <img className="avatar-sm-img" src={card?.user?.image.localFile.url || '/avatar.svg'} width="24px" height="24px" alt="no-user" />
               <span>{card?.user?.name || "No User"}</span>
               </div>
               <div className="timer">
