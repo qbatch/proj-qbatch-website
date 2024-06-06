@@ -33,7 +33,7 @@ const index = ({ data }) => {
                   )}
                   <div className="blog-title">
                     <h2 onClick={() => {
-                        navigate(`/blog${item.seo.slug}`, {
+                        navigate(`/blog/${item.seo.slug}/`, {
                           state: { blogId: item.id },
                         });
                       }}>{item.blogTitle}</h2>
@@ -49,7 +49,7 @@ const index = ({ data }) => {
                     <div
                       className="author-name pointer"
                       onClick={() => {
-                        navigate(`/authors/${item?.user?.username}`, {
+                        navigate(`/authors/${item?.user?.username}/`, {
                           state: { slug: item.seo.slug },
                         });
                       }}
@@ -61,6 +61,7 @@ const index = ({ data }) => {
                           width="24px"
                           height="24px"
                           alt="no-user"
+                          className="avatar-sm-img"
                         />{" "}
                         {item.user?.name || "No User"}
                       </span>

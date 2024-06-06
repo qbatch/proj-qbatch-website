@@ -528,5 +528,9 @@ const GlobalStyles = createGlobalStyle`
   }
  }
 }
+
+.avatar-sm-img{
+      border-radius: 6px 6px 0 6px;
+    }
 `
 export default GlobalStyles
