@@ -78,6 +78,7 @@ const CollaborationWrapper = styled.div`
           align-self: start;
           img{
             height:30px;
+            width:30px;
           }
           `}
         }

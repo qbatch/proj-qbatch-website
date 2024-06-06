@@ -35,9 +35,16 @@ const AchievementsWrapper = styled.div`
     .achievements-inner-wrapper {
       position: relative;
       z-index: 2;
+      ${media.xs`
+        .heading{
+          text-align: center !important;
+        }
+        `}
+
       .achievements-col {
         ${media.xs`
-          text-align: left !important;
+          text-align: center !important;
+          margin-top:24px;
         `}
       }
       h2 {
