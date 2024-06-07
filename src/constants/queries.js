@@ -7,6 +7,15 @@ export const Queries = () => {
     _type
     name
     description
+    mainEntity {
+      name
+      _type
+      acceptedAnswer {
+        text
+        _type
+      
+      }
+    }
     provider {
       _type
       brand {
