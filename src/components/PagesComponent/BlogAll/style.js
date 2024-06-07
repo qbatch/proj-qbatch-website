@@ -11,6 +11,10 @@ const BlogAllWrapprt = styled.div`
 const InnerBannerWrapper = styled.div`
   position: relative;
   overflow: hidden;
+  ${media.md`
+       border: 1px solid #D2D9DC;
+       border-radius: 16px 16px 0px 16px;
+    `}
   .blog-image{
     max-width: 761px;
     width: 100%;
@@ -37,10 +41,10 @@ const InnerBannerWrapper = styled.div`
   .blog-wrapper{
     padding: 48px 0px 48px 22px;
     ${media.md`
-      padding: 48px 0 0;
+      padding: 49px 24px 24px;
     `}
     ${media.mobile`
-      padding: 32px 0 0;
+       padding: 49px 24px 24px;
     `}
   }
   ${media.sm`
