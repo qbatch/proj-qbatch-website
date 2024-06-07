@@ -57,13 +57,13 @@ const Index = () => {
               <Col md={7}>
                 {dataDrivenData.map((list) => {
                   return (
-                      <div className="d-flex flex-column assistent-box">
-                        <div className="d-flex gap-3">
-                          <img src={list.img} alt={list.title} />
-                          <h4>{list.title}</h4>
-                        </div>
+                    <div className="assistent-box">
+                      <img src={list.img} alt={list.title} />
+                      <div>
+                        <h4>{list.title}</h4>
                         <p> {list.description}</p>
                       </div>
+                    </div>
                   )
                 })}
               </Col>

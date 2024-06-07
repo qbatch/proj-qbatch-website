@@ -12,14 +12,18 @@ const DedicatedMobileWrapper = styled.div`
   .dedicated-heading {
     h2 {
       color: ${({ theme }) => theme.colors.whiteColor};
-      margin-bottom: 16px;
+      margin-bottom: 32px;
+      ${media.md`
+        margin-bottom: 16px;
+      `}
     }
     h3 {
       color: ${({ theme }) => theme.colors.dividerColor};
       line-height: 52px;
-      margin-bottom: 32px;
+      margin-bottom: 48px;
       ${media.sm`
        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+       margin-bottom: 24px;
       `}
     }
   }
@@ -38,7 +42,7 @@ const DedicatedMobileWrapper = styled.div`
   .list-heading {
     position: relative;
     color: ${({ theme }) => theme.colors.textColor};
-    font-weight: 300;
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
     margin: 0 35px;
     ${media.md`
         margin: 0 16px;

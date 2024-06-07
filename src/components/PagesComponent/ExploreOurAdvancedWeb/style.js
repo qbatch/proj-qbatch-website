@@ -11,7 +11,6 @@ ${media.sm`
   h2{
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 24px;
-    line-height: 52px;
   }
   p{
     margin: 0;
@@ -44,8 +43,12 @@ ul {
       border: 1px solid ${({ theme }) => theme.colors.dividerColor};
       border-radius: 24px;
       border-bottom-right-radius: 0px;
+      display:flex;
+      flex-direction: column;
       ${media.sm`
         max-width: 100%;
+        align-items: center;
+        text-align: center;
     `}
       img{
         width: 80px;

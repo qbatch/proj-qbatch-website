@@ -1,7 +1,6 @@
 import React from "react";
-import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
-import SEO from "../../components/Seo";
+import SeoComponent from "../../utils/seo"
 import Layout from "../../components/Layout/layout";
 import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
@@ -35,21 +34,21 @@ const MobileApp = () => {
 
     <Layout>
       <ScrollToTop />
-    <Banner
-          subheading="Mobile App Development"
-          heading="Deliver Powerful Mobile App Experiences"
-          paragraph="We build dynamic and future-ready mobile apps for startups
+      <Banner
+        subheading="Mobile App Development"
+        heading="Deliver Powerful Mobile App Experiences"
+        paragraph="We build dynamic and future-ready mobile apps for startups
           and large-scale enterprises across devices and operating 
           systems."
-          buttonText="Kickstart Your Transformation Journey"
-          wrapperClass="cto-banner mobile-app-dev"
-          blogInner={BannerImage}
-          mobileViewBanner={BannerImage}
-          customCrumbs={[
-            { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
-            { pathname: '/services/mobile-app-development/', crumbLabel: 'Mobile App Development' },
-          ]}
-        />
+        buttonText="Kickstart Your Transformation Journey"
+        wrapperClass="cto-banner mobile-app-dev"
+        blogInner={BannerImage}
+        mobileViewBanner={BannerImage}
+        customCrumbs={[
+          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
+          { pathname: '/services/mobile-app-development/', crumbLabel: 'Mobile App Development' },
+        ]}
+      />
       <TechnicalExcellence
         heading="Robots won’t use your mobile apps, Humans will!"
         title={false}
@@ -58,17 +57,17 @@ const MobileApp = () => {
           <>
             Worried that robots and machines will take over? Above
             <a className="amount-link-text" href="https://www.insiderintelligence.com/insights/mobile-users-smartphone-usage/" target="blank">
-              6,378 billion 
+              6,378 billion
             </a>
-             smartphone users made
+            smartphone users made
             <a
               className="amount-link-text"
               href="https://www.statista.com/statistics/271644/worldwide-free-and-paid-mobile-app-store-downloads/"
               target="blank"
             >
-              257 billion 
+              257 billion
             </a>
-            app downloads in 2022 alone across the globe. So, even if they have to order a robot, they’d do it through a mobile app, right?! 
+            app downloads in 2022 alone across the globe. So, even if they have to order a robot, they’d do it through a mobile app, right?!
           </>
         }
         paragraph2="The competition is crazy and so are 
@@ -125,24 +124,11 @@ const MobileApp = () => {
 };
 
 export const Head = () => {
-    const mobileAppData = Queries()
-
+  const mobileAppData = Queries()
   const seoData = mobileAppData.allStrapiMobileApp.nodes[0]?.seo
-  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
+  const schemaData = mobileAppData?.allStrapiMobileApp?.nodes[0]?.schema;
   return (
-    <SEO
-      title={seoData?.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      robots={seoData.metaRobots}
-      image={seoData.metaimage[0].localFile.url}
-      pathname={`/services${seoData.slug}`}
-    >
-         {schemaData &&   <script  type="application/ld+json">
-              {JSON.stringify(schemaData)}
-            </script> }
-      </SEO>
+    <SeoComponent seoData={seoData} schemaData={schemaData} />
   )
 }
 

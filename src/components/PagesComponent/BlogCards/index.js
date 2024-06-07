@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { navigate } from "gatsby";
+
 import PrimaryButton from "../../UiComponent/PrimaryButton";
-import { TimeAgo, ReadingTime } from "../../../constants/Utils";
+import { ReadingTime } from "../../../constants/Utils";
+import Button from "../../UiComponent/Button";
 
 import BlogCardsWrapper from "./style";
 
 const Index = (props) => {
-  const { heading, isBtn, isSlice, blogInner, data, isFavorite, upperHeading } = props;
+  const { heading, isBtn, isSlice, blogInner, data, isFavorite, upperHeading, padding, isLoadMoreBtn } = props;
+  const [loadMore, setLoadMore] = useState(false);
+
   const categoryData = data?.filter(
     (item) => item.category?.categoryName === heading
   );
@@ -16,18 +20,13 @@ const Index = (props) => {
   const BlogPost = ({ card, ind }) => {
     const customDate = new Date(card.publishedAt)
     return (
-      <Col md={6} className="d-flex flex-column">
+      <Col lg={4} md={6} className="d-flex flex-column card-main">
         <div className="inner flex-1" key={ind}>
           <div className="card-img">
             <img src={card.blogImg?.localFile.url} alt={card.blogTitle} />
-            <div className="d-flex align-items-center justify-content-between">
-              <div className="blog-badge">Blog</div>
-              <span className="hours">
-                <TimeAgo customDate={customDate} />
-              </span>
-            </div>
           </div>
           <div className="inner-content">
+            {card.blogTags && <div className="blog-badge">{card.blogTags?.strapi_json_value[0]}</div> } 
             <p
               className="inner-title pointer"
               onClick={() => {
@@ -38,15 +37,14 @@ const Index = (props) => {
             >
               {card.blogTitle}
             </p>
-           {card.blogTags && <div className="blog-badge">{card.blogTags?.strapi_json_value[0]}</div> } 
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-              <div className="d-flex gap-2 pointer" 
-                   onClick={() => {
-                            navigate(`/authors/${card?.user?.username}`, {
-                              state: { slug: card.seo.slug },
-                            })
-                          }}>
-              <img src={card?.user?.image.localFile.url || '/avatar.svg'} width="24px" height="24px" alt="no-user" />
+              <div className="d-flex align-items-center gap-2 pointer" 
+                onClick={() => {
+                  navigate(`/authors/${card?.user?.username}`, {
+                    state: { slug: card.seo.slug },
+                  })
+                }}>
+              <img className="avatar-sm-img" src={card?.user?.image.localFile.url || '/avatar.svg'} width="24px" height="24px" alt="no-user" />
               <span>{card?.user?.name || "No User"}</span>
               </div>
               <div className="timer">
@@ -56,15 +54,6 @@ const Index = (props) => {
                 </span>
               </div>
             </div>
-            <PrimaryButton
-              text="Explore More"
-              fontSize="16px"
-              onClick={() => {
-                navigate(`/blog/${card.slug}/`, {
-                  state: { blogId: card.id },
-                })
-              }}
-            />
           </div>
         </div>
       </Col>
@@ -73,7 +62,7 @@ const Index = (props) => {
 
   return (
   <>
-    <BlogCardsWrapper blogInner={blogInner}>
+    <BlogCardsWrapper padding={padding}>
       <div className="d-flex align-items-center justify-content-between blog-heading">
         {upperHeading && <h2>{props.upperHeading}</h2>}
         <h2>{heading}</h2>
@@ -85,12 +74,12 @@ const Index = (props) => {
         <Row>
           {data &&
           (isFavorite
-            ? editorPicksData
+            ? editorPicksData.slice(0,3)
             : isSlice
             ? (heading && !blogInner ? categoryData : data)?.slice(Math.max((heading && !blogInner ? categoryData : data)?.length - 4, 0))
             : heading && !blogInner
             ? categoryData
-            : data
+            : loadMore ? data : data.slice(0,6)
           )
             .slice(0)
             .reverse()
@@ -98,9 +87,17 @@ const Index = (props) => {
             .map((card, ind) => {
               return <BlogPost card={card} ind={ind} />
             })} 
-      
         </Row>
       )}
+      {isLoadMoreBtn && 
+        <div className="d-flex justify-content-center load-more-btn">
+          {loadMore ?
+            <Button text="Show Less" onClick={()=> setLoadMore(false)} />
+            :
+            <Button text="Load More" onClick={()=> setLoadMore(true)} />
+          }
+        </div>
+      }
     </BlogCardsWrapper>
     </>
   )

@@ -2,7 +2,7 @@ import React from 'react';
 import { Script } from 'gatsby'
 import SEO from "../components/Seo";
 import { Queries } from '../constants/queries'
-import {replaceUnderscoreWithAt} from '../constants/Utils'
+import { replaceUnderscoreWithAt } from '../constants/Utils'
 import Layout from '../components/Layout/layout';
 import Banner from "../components/PagesComponent/PageBanner";
 import Slider from '../components/UiComponent/Slider';
@@ -14,21 +14,19 @@ import CreativeIntelligence from "../components/PagesComponent/CreativeIntellige
 import Collaboration from '../components/PagesComponent/Collaboration';
 import FaqSection from "../components/PagesComponent/Faq";
 import StartProject from "../components/PagesComponent/StartProject";
-import AgileImg from "../assets/images/agile.svg";
-import ScrumImg from "../assets/images/scrum.svg"
 import Achievements from '../components/PagesComponent/Achievements2';
 
 import { servicesSliderData, lostToLaunchedItems } from "../constants";
 
 const adaptiveSoftwareData = [
   {
-    img: AgileImg,
+    img: '/agile.svg',
     title: "Agile",
     description:
       "We employ an iterative and incremental SDLC, breaking large projects into manageable series of steps to achieve control and adaptability, delivering top-quality and error-free software.",
   },
   {
-    img: ScrumImg,
+    img: "/scrum.svg",
     title: "Scrum",
     description:
       "We rely on the self-organizing framework, Scrum, to promote transparency and collaboration. It simplifies project delivery allowing our teams to self-manage and adapt to changing requirements.",
@@ -66,16 +64,16 @@ const DevOps = () => {
       <Achievements
         showFourColumns
       />
-      <DevelopmentServices/>
+      <DevelopmentServices />
       <InnerBanner
-       heading="Sharp Minds. Stable Code. Crash-Free Launch"
-       headingMaxWidth="500px"
-       wrapperClass="text-center"
-       className="your-custom-class"
-       isButton={true}
-       btnText="Build Your Team Now"
-       btnSpacingTop={72}
-       btnAlign="center"
+        heading="Sharp Minds. Stable Code. Crash-Free Launch"
+        headingMaxWidth="500px"
+        wrapperClass="text-center"
+        className="your-custom-class"
+        isButton={true}
+        btnText="Build Your Team Now"
+        btnSpacingTop={72}
+        btnAlign="center"
       />
       <Slider
         heading="Explore Our Technological Competency"
@@ -83,7 +81,7 @@ const DevOps = () => {
         align="center"
         className="competency-slider"
       />
-      <Collaboration 
+      <Collaboration
         expertiseData={adaptiveSoftwareData}
         heading="Adaptive Software Development Methodologies We Support"
         paragraph="Over 300 software projects are enjoying sky-high business results with our genius usage of modern software development practices. We value your investments. "
@@ -97,20 +95,20 @@ const DevOps = () => {
         align="center"
         className="lost-to-launched"
       />
-      <ProvenWorkExperience heading="Products that Empowered Millions" exploreBtn={true}/>
+      <ProvenWorkExperience heading="Products that Empowered Millions" exploreBtn={true} />
       <InnerBanner
-       heading="Is your current project not bringing results? 
+        heading="Is your current project not bringing results? 
        Then bring THAT change!"
-       headingMaxWidth="894px"
-       wrapperClass="text-center"
-       className="your-custom-class"
-       isButton={true}
-       btnText="Let’s Go!"
-       btnSpacingTop={72}
-       btnAlign="center"
+        headingMaxWidth="894px"
+        wrapperClass="text-center"
+        className="your-custom-class"
+        isButton={true}
+        btnText="Let’s Go!"
+        btnSpacingTop={72}
+        btnAlign="center"
       />
       <Collaboration headingClass="services-light" />
-      <CreativeIntelligence/>
+      <CreativeIntelligence />
       <StartProject />
     </Layout>
   );
@@ -121,7 +119,7 @@ export const Head = () => {
   const seoData = serviceData?.allStrapiDevelopementService?.nodes[0]?.seo;
   const schemaData = serviceData?.allStrapiDevelopementService?.nodes[0]?.schema;
   const transformedObject = replaceUnderscoreWithAt(schemaData);
-  
+
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -132,14 +130,25 @@ export const Head = () => {
       image={seoData.metaimage[0].localFile.url}
       pathname={`/${seoData.slug}/`}
     >
-    {transformedObject
+      {transformedObject
         .filter((x) => x.visibilityIn)
         .map((data, i) => (
           <script key={i} type="application/ld+json">
-            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
+              {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
           </script>
         ))}
-      </SEO>
+        <script type="application/ld+json">
+          {JSON.stringify(
+            {
+              "potentialAction": {
+                "name": "Book a Demo",
+                "@type": "Action",
+                "target": "https://qbatch.com/contact/"
+              }
+              }
+            )}
+          </script>
+    </SEO>
   )
 }
 

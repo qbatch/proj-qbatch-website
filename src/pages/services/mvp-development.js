@@ -1,6 +1,5 @@
 import React from 'react';
-import { replaceUnderscoreWithAt } from '../../constants/Utils'
-import SEO from "../../components/Seo";
+import SeoComponent from "../../utils/seo"
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
 import ScrollToTop from '../../components/PagesComponent/ScrollTop';
@@ -112,21 +111,9 @@ const MvpDev = () => {
 export const Head = () => {
   const mvpDevData = Queries()
   const seoData = mvpDevData?.allStrapiMvpDev?.nodes[0]?.seo
-  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
+  const schemaData = mvpDevData?.allStrapiMvpDev?.nodes[0]?.schema;
   return (
-    <SEO
-      title={seoData?.metaTitle}
-      description={seoData?.metaDescription}
-      keywords={seoData?.keywords}
-      language={seoData?.language}
-      robots={seoData?.metaRobots}
-      image={seoData?.metaimage[0].localFile.url}
-      pathname={`/services/${seoData?.slug}/`}
-    >
-      {schemaData && <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
-      </script>}
-    </SEO>
+    <SeoComponent seoData={seoData} schemaData={schemaData} />
   )
 }
 

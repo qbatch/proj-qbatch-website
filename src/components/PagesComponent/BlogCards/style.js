@@ -2,18 +2,27 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogCardsWrapper = styled.div`
-  padding: ${( props ) => (props.blogInner ? "96px 0 76px" : "74px 0 96px")};
-  max-width: 931px;
-  margin: 0 auto;
+  padding: ${( props ) => (props.padding ? props.padding : "96px 0")};
   ${media.sm`
-    padding: 60px 0;
+    padding: ${( props ) => (props.padding ? "0" : "56px 0")};
   `}
   .blog-heading {
     margin-bottom: 48px;
+    ${media.xs`
+      margin-bottom: 32px;
+    `}
     h2 {
       color: ${({ theme }) => theme.colors.primaryColor};
-      line-height: 52px;
       margin-bottom: 0;
+    }
+  }
+  .card-main {
+    &:last-child {
+      ${media.xs`
+        .inner {
+          margin-bottom: 0;
+        }
+      `}
     }
   }
   .inner {
@@ -62,8 +71,9 @@ const BlogCardsWrapper = styled.div`
       .inner-title {
         font-weight: ${({ theme }) => theme.fontWeight.bold};
         color: ${({ theme }) => theme.colors.bodyTextVariant};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         line-height: 32px;
-        margin-bottom: 24px;
+        margin: 24px 0;
         letter-spacing: 0;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -84,7 +94,6 @@ const BlogCardsWrapper = styled.div`
         }
       }
       .read-time {
-        margin: 26px 0 36px;
         color: ${({ theme }) => theme.colors.textMedium};
       }
       .btn {
@@ -152,6 +161,12 @@ const BlogCardsWrapper = styled.div`
   }
   &.might-wrapper {
     padding-top: 32px;
+  }
+  .load-more-btn {
+    margin: 34px 0 64px;
+    ${media.xs`
+      margin: 34px 0 56px;
+    `}
   }
 `;
 

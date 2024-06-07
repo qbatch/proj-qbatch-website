@@ -1,8 +1,7 @@
 import React from "react";
-import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import Banner from '../../components/PagesComponent/PageBanner'
 import { Queries } from '../../constants/queries'
-import SEO from "../../components/Seo";
+import SeoComponent from "../../utils/seo"
 import Layout from "../../components/Layout/layout";
 import Slider from '../../components/UiComponent/Slider'
 import ScrollToTop from '../../components/PagesComponent/ScrollTop';
@@ -16,13 +15,10 @@ import FullCycle from "../../components/PagesComponent/FullCicle";
 import Collaboration from "../../components/PagesComponent/Collaboration";
 import FaqSection from "../../components/PagesComponent/Faq";
 import PeopleFirst from "../../components/PagesComponent/PeopleFirst";
-import YouCanTrust from "../../components/PagesComponent/YouCanTrust";
 import { webAppFaq } from "../../constants";
-import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
 import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
-import WebExpertise from "../../components/PagesComponent/TechnicalGuidance";
 import WebappImage from '../../../static/web-app-dev.svg'
-import { lostToLaunchedItems, webExpertiseData, peopleFirstData, youCanTrustData } from '../../constants'
+import { lostToLaunchedItems, peopleFirstData } from '../../constants'
 import AdvancedWebExplore from "../../components/PagesComponent/ExploreOurAdvancedWeb";
 import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSectionSlider";
 import ResponsiveStyleWrapper from "./style";
@@ -56,6 +52,7 @@ const webapp = () => {
         <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
         <DesiredResult
           heading="Is your web app failing to bring the desired result? That could be serious!"
+          headingSize="text-h2"
           isButton={true}
           className="desired-result desire-result-wrapper"
           btnText="Get Started Risk-Free"
@@ -84,23 +81,11 @@ const webapp = () => {
 };
 export const Head = () => {
   const webAppData = Queries();
-
   const seoData = webAppData.allStrapiWebApp.nodes[0]?.seo
-  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
+  const schemaData = webAppData?.allStrapiWebApp?.nodes[0]?.schema;
+  
   return (
-    <SEO
-      title={seoData?.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      robots={seoData.metaRobots}
-      image={seoData.metaimage[0].localFile.url}
-      pathname={`/services${seoData.slug}`}
-    >
-         {schemaData &&   <script  type="application/ld+json">
-              {JSON.stringify(schemaData)}
-            </script> }
-      </SEO>
+    <SeoComponent seoData={seoData} schemaData={schemaData} />
   )
 }
 export default webapp;

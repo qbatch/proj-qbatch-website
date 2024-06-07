@@ -1,123 +1,266 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
 export const Queries = () => {
-   const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
+   fragment SchemaFields on STRAPI__COMPONENT_SCHEMA_SCHEMA_STRUCTUREDDATA_JSONNODE {
+    _context
+    _type
+    name
+    description
+    mainEntity {
+      name
+      _type
+      acceptedAnswer {
+        text
+        _type
+      
+      }
+    }
+    provider {
+      _type
+      brand {
+        _type
+        name
+      }
+      contactPoint {
+        _type
+        areaServed
+        availableLanguage
+        contactType
+        telephone
+      }
+      logo
+      name
+      sameAs
+      url
+    }
+    contactPoint {
+      _type
+      contactOption
+      contactType
+      telephone
+    }
+    brand {
+      _type
+      location
+      logo {
+        _type
+        height
+        url
+        width
+      }
+      name
+      sameAs
+      url
+    }
+    serviceType
+    audience {
+      _type
+      audienceType
+    }
+    serviceOutput
+    slogan
+    additionalType
+    category
+  }
+
+
+  fragment SeoFields on STRAPI__COMPONENT_SEO_SEO{
+    keywords
+    language
+    metaDescription
+    metaRobots
+    metaTitle
+    slug
+    metaimage {
+      localFile {
+        url
+      }
+    }
+  }
+
+
+  fragment PageSeoFields on STRAPI__COMPONENT_SEO_SEO{
+    metaTitle
+    slug
+    metaRobots
+    metaDescription
+    language
+    keywords
+    structuredData {
+    name
+    description
+    slogan
+    mainEntity {
+      provider {
+        _type
+        logo
+        name
+        url
+      }
+      areaServed {
+        _type
+        name
+      }
+      serviceType
+      serviceAudience {
+        _type
+        audienceType
+      }
+      serviceOutput
+    }
+    contactPoint {
+      _type
+      contactOption
+      contactType
+      telephone
+    }
+    brand {
+      _type
+      location
+      logo {
+        _type
+        height
+        url
+        width
+      }
+      name
+      sameAs
+      url
+    }
+    potentialAction {
+      _type
+      query_input
+      target
+    }
+    }
+    metaimage {
+      localFile {
+        url
+      }
+    }
+  }
+
     query BlogQuery {
        allStrapiBlog {
          nodes {
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
+            metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
            }
          }
        }
-      allStrapiArticle {
-         nodes {
-           updatedAt
-           blogTitle
-           blogDescription {
-             data {
-               blogDescription
-             }
-           }
-           slug
-           user {
-             username
-             name
-             description
-             image {
-               localFile {
+       allStrapiArticle {
+        nodes {
+         schema {
+           title
+           visibilityIn
+           childStrapiComponentSchemaSchemaStructureddataJsonnode {
+             strapi_json_value {
+               _context
+               _type
+               image {
+                 _type
+                 height
                  url
+                 width
+               }
+               author {
+                 url
+                 name
+                 _type
+                 sameAs
+                 alumniOf {
+                   Name
+                   _type
+                 }
+                 jobTitle
+                 knowsAbout
+                 description
+                 honorificSuffix
+               }
+               headline
+               keywords
+               publisher {
+                 url
+                 logo {
+                   _type
+                   height
+                   url
+                   width
+                 }
+               }
+               description
+               datePublished
+               dateModified
+               mainEntityOfPage {
+                 _id
+                 _type
+                 breadcrumb {
+                   _type
+                   itemListElement {
+                     _type
+                     item
+                     name
+                     position
+                   }
+                 }
                }
              }
-              Socials {
-               socialLink
-               socialPlatform
-              }
-           }
-           category {
-             categoryName
-             slug
-           }
-           blogTags {
-             strapi_json_value
-           }
-           blogImg {
-             localFile {
-               url
-             }
-           }
-           id
-           publishedAt
-           favorite
-           bannerBlog
-           seo {
-             metaTitle
-             slug
-             metaRobots
-               structuredData {
-                strapi_json_value {
-                  _context
-                  _type
-                    image {
-                  _type
-                  height
-                  url
-                  width
-                }
-                   author {
-              url
-              name
-              _type
-              sameAs
-              alumniOf {
-                Name
-                _type
-              }
-              jobTitle
-              knowsAbout
-              description
-              honorificSuffix
-            }
-             headline
-            keywords
-               publisher {
-              url
-              logo {
-                _type
-                height
-                url
-                width
-              }
-            }
-            description
-             datePublished
-            dateModified
-             mainEntityOfPage {
-              _id
-              _type
-              breadcrumb {
-                _type
-                itemListElement {
-                  _type
-                  item
-                  name
-                  position
-                }
-              }
-             }
-                }
-              }
-             metaDescription
-             language
-             keywords
            }
          }
-       }
+          updatedAt
+          blogTitle
+          blogDescription {
+            data {
+              blogDescription
+            }
+          }
+          slug
+          user {
+            username
+            name
+            description
+            image {
+              localFile {
+                url
+              }
+            }
+             Socials {
+              socialLink
+              socialPlatform
+             }
+          }
+          category {
+            categoryName
+            slug
+          }
+          blogTags {
+            strapi_json_value
+          }
+          blogImg {
+            localFile {
+              url
+            }
+          }
+          id
+          publishedAt
+          favorite
+          bannerBlog
+          seo {
+            metaTitle
+            slug
+            metaRobots
+            metaDescription
+            language
+            keywords
+          }
+        }
+      }
        allStrapiHome {
          nodes {
            schema {
@@ -207,149 +350,56 @@ export const Queries = () => {
        allStrapiPortfolio {
          nodes {
            seo {
-             metaTitle
-             metaRobots
-             metaDescription
-             language
-             keywords
-             slug
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
        allStrapiTermsAndCondition {
         nodes {
           seo {
-            metaTitle
-            metaRobots
-            metaDescription
-            language
-            keywords
-            slug
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
        allStrapiPrivacyPolicy {
         nodes {
           seo {
-            metaTitle
-            metaRobots
-            metaDescription
-            language
-            keywords
-            slug
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
        allStrapiAboutUs {
          nodes {
            seo {
-             keywords
-             language
-             metaDescription
-             metaRobots
-             metaTitle
-             slug
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
        allStrapiExtensionDevelopment {
          nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+            visibilityIn
+            title
+          }
            seo {
-             keywords
-             language
-             metaDescription
-             metaRobots
-             metaTitle
-             slug
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            ...SeoFields
            }
          }
        }
        allStrapiCtoService {
          nodes {
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
             }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            visibilityIn
+            title
+          }
+           seo {
+            ...PageSeoFields
            }
          }
        }
@@ -357,555 +407,125 @@ export const Queries = () => {
         nodes {
           schema {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {
-              _context
-              _type
-              name
-              description
-              provider {
-                _type
-                brand {
-                  _type
-                  name
-                }
-                contactPoint {
-                  _type
-                  areaServed
-                  availableLanguage
-                  contactType
-                  telephone
-                }
-                logo
-                name
-                sameAs
-                url
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              serviceType
-              audience {
-                _type
-                audienceType
-              }
-              serviceOutput
-              slogan
-              additionalType
-              category
+              ...SchemaFields
             }
             visibilityIn
             title
           }
           seo {
-            metaTitle
-            metaRobots
-            slug
-            metaDescription
-            language
-            keywords
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
        allStrapiDevop {
         nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+            visibilityIn
+            title
+          }
           seo {
-            metaTitle
-            metaRobots
-            slug
-            metaDescription
-            language
-            structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
-            }
-            keywords
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...PageSeoFields
           }
         }
       }
        allStrapiMvpDev {
         nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+            visibilityIn
+            title
+          }
           seo {
-            metaTitle
-            metaRobots
-            slug
-            metaDescription
-            language
-                structuredData {
-          name
-          description
-          slogan
-          mainEntity {
-            provider {
-              _type
-              logo
-              name
-              url
-            }
-            areaServed {
-              _type
-              name
-            }
-            serviceType
-            serviceAudience {
-              _type
-              audienceType
-            }
-            serviceOutput
-          }
-          contactPoint {
-            _type
-            contactOption
-            contactType
-            telephone
-          }
-          brand {
-            _type
-            location
-            logo {
-              _type
-              height
-              url
-              width
-            }
-            name
-            sameAs
-            url
-          }
-          potentialAction {
-            _type
-            query_input
-            target
-          }
-        }
-            keywords
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...PageSeoFields
           }
         }
       }
        allStrapiEcommerce {
          nodes {
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
             }
-
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            visibilityIn
+            title
+          }
+           seo {
+            ...PageSeoFields
            }
          }
        }
        allStrapiWebApp {
          nodes {
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
             }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            visibilityIn
+            title
+          }
+           seo {
+             ...PageSeoFields
            }
          }
        }
        allStrapiProductDesign {
          nodes {
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
             }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            visibilityIn
+            title
+          }
+           seo {
+            ...PageSeoFields
            }
          }
        }
        allStrapiProsperShow {
          nodes {
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
        allStrapiWhiteLabelExpo {
          nodes {
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
        allStrapiMobileApp {
          nodes {
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
             }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            visibilityIn
+            title
+          }
+           seo {
+            ...PageSeoFields
            }
          }
        }
        allStrapiEnterprise {
          nodes {
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
             }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            visibilityIn
+            title
+          }
+           seo {
+            ...PageSeoFields
            }
          }
        }
@@ -964,99 +584,29 @@ export const Queries = () => {
        }
        allStrapiWebAndDataScraping {
          nodes {
-           seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             structuredData {
-              name
-              description
-              slogan
-              mainEntity {
-                provider {
-                  _type
-                  logo
-                  name
-                  url
-                }
-                areaServed {
-                  _type
-                  name
-                }
-                serviceType
-                serviceAudience {
-                  _type
-                  audienceType
-                }
-                serviceOutput
-              }
-              contactPoint {
-                _type
-                contactOption
-                contactType
-                telephone
-              }
-              brand {
-                _type
-                location
-                logo {
-                  _type
-                  height
-                  url
-                  width
-                }
-                name
-                sameAs
-                url
-              }
-              potentialAction {
-                _type
-                query_input
-                target
-              }
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
             }
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+            visibilityIn
+            title
+          }
+           seo {
+            ...PageSeoFields
            }
          }
        }
        allStrapiContactUs {
          nodes {
            seo {
-             metaTitle
-             slug
-             metaRobots
-             metaDescription
-             language
-             keywords
-             metaimage {
-               localFile {
-                 url
-               }
-             }
+             ...SeoFields
            }
          }
        }
        allStrapiHireDeveloper {
         nodes {
           seo {
-            metaTitle
-            slug
-            metaRobots
-            metaDescription
-            language
-            keywords
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
@@ -1065,23 +615,12 @@ export const Queries = () => {
           categoryName
           slug
           seo {
-            metaTitle
-            metaDescription
-            language
-            slug
-            keywords
-            metaRobots
-            metaimage {
-              localFile {
-                url
-              }
-            }
+            ...SeoFields
           }
         }
       }
      }
    `)
-    
-    return data;
-  }
-  
+
+  return data;
+}

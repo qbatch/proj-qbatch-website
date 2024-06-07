@@ -14,7 +14,7 @@ const Index = (props) => {
       <Container>
         <div className="dedicated-heading">
           <h2 className="text-h1">{heading}</h2>
-          <h3 className="text-h4">{desc}</h3>
+          <h3 className="text-h3">{desc}</h3>
         </div>
         {isList && (
           <div className="dedicated-list">

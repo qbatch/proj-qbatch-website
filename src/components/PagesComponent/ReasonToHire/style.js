@@ -86,7 +86,6 @@ const ReasonToHireWrapper = styled.div`
     }
   }
   .hire-developers-btn {
-    color: ${({ theme }) => theme.colors.whiteColor};
     margin: 72px auto 0px;
   }
 `;

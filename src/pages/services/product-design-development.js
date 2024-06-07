@@ -1,8 +1,7 @@
 import * as React from 'react'
-import {replaceUnderscoreWithAt} from '../../constants/Utils'
 import { Queries } from '../../constants/queries'
 import Layout from '../../components/Layout/layout'
-import SEO from '../../components/Seo'
+import SeoComponent from "../../utils/seo"
 import Banner from '../../components/PagesComponent/PageBanner';
 import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import HireCto from '../../components/PagesComponent/HireCto';
@@ -118,22 +117,9 @@ export const Head = () => {
   const productDesignData = Queries()
 
   const seoData = productDesignData.allStrapiProductDesign.nodes[0]?.seo
-  const schemaData = replaceUnderscoreWithAt(seoData?.structuredData)
-
+  const schemaData = productDesignData?.allStrapiProductDesign?.nodes[0]?.schema;
   return (
-    <SEO
-      title={seoData?.metaTitle}
-      description={seoData.metaDescription}
-      keywords={seoData.keywords}
-      language={seoData.language}
-      robots={seoData.metaRobots}
-      image={seoData.metaimage[0].localFile.url}
-      pathname={`/services${seoData.slug}`}
-    >
-         {schemaData &&   <script  type="application/ld+json">
-              {JSON.stringify(schemaData)}
-            </script> }
-      </SEO>
+    <SeoComponent seoData={seoData} schemaData={schemaData} />
   )
 }
 

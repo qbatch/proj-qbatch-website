@@ -30,9 +30,8 @@ const RevenueWrapper = styled.div`
   .revenue-box {
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-radius: 24px 24px 0px 24px;
-    padding: 48px 48px 0;
-    min-height: 448px;
-    margin-bottom: 24px;
+    padding: 48px;
+    height: 100%;
     ${media.sm`
       min-height: auto;
       padding-bottom: 48px;
@@ -45,6 +44,7 @@ const RevenueWrapper = styled.div`
       }
       p {
         letter-spacing: 0;
+        margin-bottom: 0;
         ${media.sm`
          line-height:20px;
         `}

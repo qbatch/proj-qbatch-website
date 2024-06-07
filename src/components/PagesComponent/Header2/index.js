@@ -124,6 +124,7 @@ const Header2 = () => {
   const toggleServicesMenu = () => {
     setServicesMenuOpen(!isServicesMenuOpen);
   };
+
   const toggleMainMenu = () => {
     setMainMenuOpen(!isMainMenuOpen);
   };
@@ -135,7 +136,6 @@ const Header2 = () => {
   const toggleIndustriesMenu = () => {
     setIndustriesMenuOpen(!isIndustriesMenuOpen);
   };
-
 
   const toggleHowWeWorkMenu = () => {
     setHowWeWorkMenuOpen(!isHowWeWorkMenuOpen);
@@ -149,6 +149,7 @@ const Header2 = () => {
 
   const handleMenuClick = (menuLabel) => {
     setActiveMenu(menuLabel);
+    setMainMenuOpen(false); // Close the main menu when a link is clicked
   };
 
   return (
@@ -167,7 +168,7 @@ const Header2 = () => {
             <ul>
               <li>
                 <div className={`link-wrapper ${isServicesMenuOpen ? 'open' : 'close'}`}>
-                  <Link to='/services' className={currentPath.startsWith('/services') ? 'active' : ''}>Services</Link>
+                  <Link to='/services' className={currentPath.startsWith('/services') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Services</Link>
                   <button onClick={toggleServicesMenu} className={isServicesMenuOpen ? 'open' : 'close'}>
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
@@ -177,7 +178,7 @@ const Header2 = () => {
                     <ul>
                       {servicesMenu.map((item, index) => (
                         <li key={index} className={currentPath === item.link ? 'active' : ''} >
-                          <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : undefined}>{item.label}</Link>
+                          <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>{item.label}</Link>
                         </li>
                       ))}
                     </ul>
@@ -186,7 +187,7 @@ const Header2 = () => {
               </li>
               <li>
                 <div className={`link-wrapper ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
-                  <Link to="/hire-developers" className={currentPath.startsWith('/hire-developers') ? 'active' : ''}>Hire Developers</Link>
+                  <Link to="/hire-developers" className={currentPath.startsWith('/hire-developers') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Hire Developers</Link>
                   <button onClick={toggleHireDevelopersMenu} className={isHireDevelopersMenuOpen ? 'open' : 'close'}>
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
@@ -200,7 +201,7 @@ const Header2 = () => {
                           <ul>
                             {category.subItems.map((item, idx) => (
                               <li key={idx} className={currentPath === item.link ? 'active' : ''}>
-                                <span to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : undefined}>{item.label}</span>
+                                <span to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>{item.label}</span>
                               </li>
                             ))}
                           </ul>
@@ -212,7 +213,7 @@ const Header2 = () => {
               </li>
               <li>
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
-                  <Link to="/#industries" className={currentPath === '/#industries' ? 'active' : ''}>Industries</Link>
+                  <Link to="/#industries" className={currentPath === '/#industries' ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
@@ -222,7 +223,7 @@ const Header2 = () => {
                     <ul>
                       {industriesMenu.map((item, index) => (
                         <li key={index} className={currentPath === item.link ? 'active' : ''}>
-                          <span to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : undefined}>{item.label}</span>
+                          <span to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>{item.label}</span>
                         </li>
                       ))}
                     </ul>
@@ -231,12 +232,12 @@ const Header2 = () => {
               </li>
               <li>
                 <div className="link-wrapper">
-                  <Link to="/portfolio" className={currentPath.startsWith('/portfolio') ? 'active' : ''}>Portfolio</Link>
+                  <Link to="/portfolio" className={currentPath.startsWith('/portfolio') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Portfolio</Link>
                 </div>
               </li>
               <li>
                 <div className={`link-wrapper ${isHowWeWorkMenuOpen ? 'open' : 'close'}`}>
-                  <span to="/" className={currentPath.startsWith('/how-we-work') ? 'active' : ''}>How we Work</span>
+                  <span to="/" className={currentPath.startsWith('/how-we-work') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>How we Work</span>
                   <button onClick={toggleHowWeWorkMenu} className={isHowWeWorkMenuOpen ? 'open' : 'close'}>
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
@@ -246,7 +247,7 @@ const Header2 = () => {
                     <ul>
                       {howWeWorkMenu.map((item, index) => (
                         <li key={index} className={currentPath === item.link ? 'active' : ''} >
-                          <span to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : undefined}>{item.label}</span>
+                          <span to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>{item.label}</span>
                         </li>
                       ))}
                     </ul>
@@ -258,6 +259,7 @@ const Header2 = () => {
                   <Link
                     to="/"
                     className={companyMenuPaths.includes(currentPath) || currentPath.startsWith('/company') ? 'active' : ''}
+                    onClick={() => setMainMenuOpen(false)}
                   >
                     Company
                   </Link>
@@ -272,7 +274,7 @@ const Header2 = () => {
                         const isActive = currentPath === item.link || (item.link === "/about/#career" && currentPath === "/about/#career");
                         return (
                           <li key={index} className={isActive ? 'active' : ''}>
-                            <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : undefined}>
+                            <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>
                               {item.label}
                             </Link>
                           </li>
@@ -284,7 +286,7 @@ const Header2 = () => {
               </li>
               <li>
                 <div className="link-wrapper">
-                  <Link to="/blog" className={currentPath.startsWith('/blog') ? 'active' : ''}>Blog</Link>
+                  <Link to="/blog" className={currentPath.startsWith('/blog') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Blog</Link>
                 </div>
               </li>
             </ul>
