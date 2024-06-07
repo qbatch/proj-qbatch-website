@@ -139,14 +139,11 @@ const ButtonWrapper = styled(Button)`
     color: ${({ theme }) => theme.colors.primaryColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSize};
     font-weight: ${({ theme }) => theme.fontWeight.semiBold};
-    padding: 8px 8px 8px 16px;
+    padding: 10px 8px 9px 16px;
     border-radius: 24px;
     display: flex;
     align-items: center;
     gap: 16px;
-    ${media.xs`
-      padding: 2px 3px 2px 16px;
-    `}
     .button-icon {
       width: 24px;
       height: 24px;
