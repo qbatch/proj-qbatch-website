@@ -111,10 +111,14 @@ const BlogPage = ({ pageContext }) => {
         </div>
       </Container>
       <div>
-        {location.pathname === '/blog/' ? (
-          filteredData && <BlogAll data={filteredData} />
+        {searchTerm ? (
+          <Container><BlogCards heading={activeTab} data={filteredData} /></Container>
         ) : (
-          filteredData && <Container><BlogCards heading={activeTab} data={filteredData} /></Container>
+          location.pathname === '/blog/' ? (
+            filteredData && <BlogAll data={filteredData} />
+          ) : (
+            filteredData && <Container><BlogCards heading={activeTab} data={filteredData} /></Container>
+          )
         )}
       </div>
     </Layout>
