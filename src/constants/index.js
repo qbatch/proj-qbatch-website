@@ -3969,7 +3969,7 @@ const footerSocialLinks = [
   },
   {
     img: '/twitter-filled',
-    to: 'https://twitter.com/qbatchofficial',
+    to: 'https://x.com/qbatchofficial',
   },
   {
     img: '/behance-filled',
