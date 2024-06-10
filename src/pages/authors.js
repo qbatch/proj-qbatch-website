@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from '@reach/router'
 
 import { Queries } from '../constants/queries';
+import Divider from "../components/UiComponent/Divider"
 import SEO from '../components/Seo';
 import Layout from '../components/Layout/layout';
 import PageNotFound from '../pages/404';
@@ -26,8 +27,11 @@ const Author = ({ pageContext, location }) => {
         { pathname: `/authors/${title}/`, crumbLabel: 'Author', crumbSeparator: '>' },
         { pathname: `/authors/${title}/`, crumbLabel: name, crumbSeparator: '>' },
       ]} />
+      <Container className='blog-cards-container'>
+        <BlogCards isLoadMoreBtn={true} upperHeading={`Recent Stories by ${name}`} data={data} />
+      </Container>
+      <Divider/>
       <Container>
-        <BlogCards upperHeading={`Recent Stories by ${name}`} data={data} />
         <BlogCards upperHeading={'Recommended Articles'} data={recommendedArticles} />
       </Container>
     </Layout>

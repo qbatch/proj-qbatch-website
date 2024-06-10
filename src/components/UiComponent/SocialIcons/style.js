@@ -11,50 +11,31 @@ const SocialWrapper = styled.div`
       `}
     div {
       cursor: pointer;
-      width: 24px;
-      height: 24px;
+      max-width: 40px;
+      max-height: 40px;
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
-      transition: background-color 0.5s ease-out, background-image 0.5s ease-out;
-      img {
-        filter: invert(61%) sepia(8%) saturate(960%) hue-rotate(170deg) brightness(90%) contrast(81%);
-        transition: filter 0.5s ease-out;
+      img{
+        max-width: 40px;
+        max-height: 40px;
+        width: 100%;
+        height: 100%;
       }
-      &:hover {
-        img {
-          filter: brightness(0) invert(1);
+    }
+
+    ${media.lg`
+    gap: 8px;
+    justify-content: space-between;
+        div{
+          height: 28px;
+          width: 28px;
+          img{
+            height: 28px;
+            width: 28px;
+          }
         }
-      }
-    }
-    &__facebook {
-      ${bgMixin('rgba(53, 121, 234, 1)')};
-    }
-    &__instagram {
-      &:hover {
-        background-image: radial-gradient(
-          circle at 30% 107%,
-          #fdf497 0%,
-          #fdf497 5%,
-          #fd5949 45%,
-          #d6249f 60%,
-          #285aeb 90%
-        );
-      }
-    }
-    &__linkedin {
-      ${bgMixin('rgba(0, 122, 185, 1)')};
-    }
-    &__twitter {
-      ${bgMixin('rgba(0, 166, 222, 1)')};
-    }
-    &__behance {
-      ${bgMixin('rgba(65, 118, 250, 1)')};
-    }
-    &__youtube {
-      ${bgMixin('rgba(255, 0, 0, 1)')};
-    }
-    &__reddit {
-      ${bgMixin('rgb(255, 69, 0)')};
-    }
+      `}
   }
 `
 

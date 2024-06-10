@@ -10,9 +10,13 @@ const BlogBannerWrapper = styled.div`
   background-size: cover;
   position: relative;
   margin-bottom: 48px;
-  ${media.sm`
-    padding: 56px 0;
+  ${media.md`
+    background: none;
+    background-color: ${({ theme }) => theme.colors.secondaryColor};
   `}
+  ${media.sm`
+    padding: 96px 0 56px;
+    `}
   .blog-banner {
     h1 {
       color: ${({ theme }) => theme.colors.whiteColor};

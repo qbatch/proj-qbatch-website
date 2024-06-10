@@ -137,17 +137,6 @@ export const Head = () => {
               {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
           </script>
         ))}
-        <script type="application/ld+json">
-          {JSON.stringify(
-            {
-              "potentialAction": {
-                "name": "Book a Demo",
-                "@type": "Action",
-                "target": "https://qbatch.com/contact/"
-              }
-              }
-            )}
-          </script>
     </SEO>
   )
 }
