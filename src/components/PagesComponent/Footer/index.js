@@ -184,7 +184,7 @@ const Index = () => {
               </ul>
             </div>
             <div className="reserved-rights">
-              <span>© 2024 qbatch. All rights reserved.</span>
+              <span>© Copyright 2024 Qbatch</span>
             </div>
             <div className="d-flex align-items-center gap-3 flex-wrap follow-section">
               {footerSocialLinks?.map((item, ind) => (
