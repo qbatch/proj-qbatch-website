@@ -3,12 +3,14 @@ import { media } from "../../../theme/media-mixins";
 
 const ContentWrapper = styled.div`
   .row {
-    max-width: 1193px;
     margin: 0 auto;
   }
   .content-section {
     padding-top: 96px;
     scroll-behavior: smooth;
+    ${media.lg`
+      padding-top: 56px;
+    `}
     .inner-content {
       &.small-space {
         padding: 75px 0px;
@@ -29,10 +31,9 @@ const ContentWrapper = styled.div`
             top: -100px;
           }
         }
-        h1,
         h3 {
           font-size: 22px;
-          margin-bottom: 16px;
+          margin-bottom: 8px;
           text-transform:none;
           span {
             font-family: 'Inter Tight', sans-serif;
@@ -43,18 +44,20 @@ const ContentWrapper = styled.div`
         }
         h2 {
           font-size: 26px;
-          margin: 48px 0 15px;
+          line-height: 32px;
+          margin: 24px 0;
           text-transform:none;
+          color: ${({ theme }) => theme.colors.primaryColor};
         }
         p {
           font-size: ${({ theme }) => theme.fonts.baseFontSize};
           color: ${({ theme }) => theme.colors.bodyTextVariant};
+          font-weight: ${({ theme }) => theme.fontWeight.light};
           line-height: 24px;
           letter-spacing: 0px;
-          margin-bottom: 20px;
+          margin-bottom: 24px;
           img {
             border-radius: 24px 24px 0 24px;
-            margin: 40px 0;
           }
           span {
             color: ${({ theme }) => theme.colors.bodyTextVariant};
@@ -66,6 +69,10 @@ const ContentWrapper = styled.div`
           margin-bottom: 20px;
           li{
             margin-bottom: 16px;
+            font-size: ${({ theme }) => theme.fonts.baseFontSize};
+            color: ${({ theme }) => theme.colors.bodyTextVariant};
+            font-weight: ${({ theme }) => theme.fontWeight.light};
+            line-height: 24px;
           }
         }
         .table {
@@ -88,7 +95,6 @@ const ContentWrapper = styled.div`
         color: ${({ theme }) => theme.colors.primaryColor};
       }
       .social-link {
-        margin-bottom: 16px;
         margin-top: -2px;
         li {
           padding: 0 10px;
@@ -100,14 +106,62 @@ const ContentWrapper = styled.div`
   .can-help-button {
     margin-top: 51px;
   }
+
+  .subscribe-button {
+    height: auto;
+    padding: 24px;
+    margin-bottom: 60px;
+    border-radius: 24px 24px 0 24px;
+    background-color: ${({ theme }) => theme.colors.whiteColor};
+    border: 1px solid  ${({ theme }) => theme.colors.dividerColor};
+    p{
+      margin-bottom: 24px;
+    }
+    button{
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      }
+    ${media.lg`
+      margin: 32px 0 32px;
+    `}
+    h2 {
+      color: ${({ theme }) => theme.colors.dividerColor};
+      line-height: 52px;
+      margin-bottom: 0;
+    }
+    .subscribe-email {
+      display: flex;
+      gap: 12px;
+      background-color: ${({ theme }) => theme.colors.whiteColor};
+      border: 1px solid  ${({ theme }) => theme.colors.dividerColor};
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom:24px;
+      width: 100%;
+      input {
+        border: none;
+        color: ${({ theme }) => theme.colors.textMedium};
+        width: 100%;
+        &::placeholder {
+          color: ${({ theme }) => theme.colors.bodyLight};
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
   .author-name {
+    background-color: ${({ theme }) => theme.colors.whiteColor};
     padding: 32px;
     border-radius: 24px 24px 0px 24px;
-
-    border: 1px solid ${({ theme }) => theme.colors.disableColor};
-    margin-left: 40px;
+    border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    margin-bottom: 24px;
+    @media(max-width: 1499px){
+      padding: 24px;
+    }
     ${media.lg`
       margin-left: 0;
+      padding: 32px;
     `}
     .avatar-box {
       gap: 23px;
@@ -124,6 +178,10 @@ const ContentWrapper = styled.div`
         width: 150px;
       }
     }
+    .socials-wrapper{
+      border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+      margin-bottom: 16px;
+    }
     .title {
       line-height: 23px;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
@@ -136,6 +194,8 @@ const ContentWrapper = styled.div`
     }
     .social-link {
       gap: 20px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
       li img{
         cursor:pointer;
       }
@@ -144,9 +204,31 @@ const ContentWrapper = styled.div`
       margin-top: 32px;
     }
   }
-
+  .sidebar-socials{
+    background-color: ${({ theme }) => theme.colors.whiteColor};
+    border-radius: 24px 24px 0px 24px;
+    border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    padding: 16px;
+    span{
+      color: ${({ theme }) => theme.colors.primaryColor};
+      font-weight:  ${({ theme }) => theme.fontWeight.bold};
+      margin-bottom: 16px;
+      display: block;
+    }
+    
+    ${media.md`
+    width: max-content;
+    white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      span{
+        margin-bottom: 0;
+      }
+    `}
+  }
   .divider {
-    margin: 32px 0;
+    margin: 48px 0 32px;
   }
   .might-section {
     margin-top: 16px;
@@ -156,31 +238,38 @@ const ContentWrapper = styled.div`
   }
   .side-scroll {
     position: sticky;
-    margin: 0 0 705px 12px;
     border-radius: 8px 8px 0 8px;
-    top: 20%;
+    top: 90px;
     left: 0;
-    height: 100%;
-    max-width: 300px;
     width:100%;
-    background-color:  ${({ theme }) => theme.colors.whiteColor};
-      box-shadow: 0 3px 15px rgba(0,0,0,0.16);
-    .table-content-header{
-      background-color: ${({ theme }) => theme.colors.onGradient};
-      color: ${({ theme }) => theme.colors.gardientColor};
-      width: 100%;
-      padding: 8px 16px;
-      display: block;
+    margin-bottom: 40px;
+    .table-content{
+      background-color: ${({ theme }) => theme.colors.whiteColor};
+      border: 1px solid  ${({ theme }) => theme.colors.dividerColor};
+      border-radius: 10px 10px 0 10px;
+      overflow: hidden;
+      padding: 16px;
+      margin-bottom: 24px;
     }
     .side-scroll-content{
-      padding: 8px 16px 0 0;
+      span{
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
+        padding-bottom: 16px;
+        display: block;
+      }
       li{
         font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+        &:last-child{
+          a{
+            padding-bottom: 0;
+          }
+        }
       }
     }
     a {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-      line-break: 18px;
+      line-height: 18px;
       color: ${({ theme }) => theme.colors.textMedium};
       text-decoration: none;
       display: block;
@@ -189,6 +278,27 @@ const ContentWrapper = styled.div`
         max-width: 250px;
         padding-bottom: 12px;
         line-height: 18px;
+        display: flex;
+        align-items:start;
+        gap: 5px;
+        &:before{
+          content: '';
+          display:block;
+          margin-top: 9px;
+          height: 1.3px;
+          min-width: 0px;
+          display: inline-block;
+          background-color: ${({ theme }) => theme.colors.primaryColor};
+          transition: 0.3s;
+        }
+        &.active,
+        &:hover{
+          font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+          color:  ${({ theme }) => theme.colors.primaryColor};
+          &::before{
+            min-width: 9px;
+          }
+        }
       }
       /* &.active {
         color: ${({ theme }) => theme.colors.primaryColor};
@@ -225,49 +335,6 @@ const ContentWrapper = styled.div`
     }
   }
 
-  .subsribe-button {
-    background-image: url('/email-bg.svg');
-    height: auto;
-    background-repeat: no-repeat;
-    margin-left: 40px;
-    padding: 48px;
-    margin-top: 62px;
-    background-position: right;
-    background-size: cover;
-    margin-bottom: 60px;
-    border-radius: 24px 24px 0 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    ${media.lg`
-      margin: 32px 0 32px;
-    `}
-    h2 {
-      color: ${({ theme }) => theme.colors.dividerColor};
-      line-height: 52px;
-      margin-bottom: 0;
-    }
-    .subscribe-email {
-      display: flex;
-      gap: 12px;
-      background-color: ${({ theme }) => theme.colors.whiteColor};
-      padding: 16px;
-      border-radius: 8px;
-      margin: 56px 0 48px;
-      width: 100%;
-      input {
-        border: none;
-        color: ${({ theme }) => theme.colors.textMedium};
-        width: 100%;
-        &::placeholder {
-          color: ${({ theme }) => theme.colors.bodyLight};
-        }
-        &:focus {
-          outline: none;
-        }
-      }
-    }
-  }
   .scroll-propgress {
     position: fixed;
     top: 81px;
@@ -287,28 +354,5 @@ const ContentWrapper = styled.div`
     width: 5%;
   }
 
-  ${media.md`
-    .side-scroll{
-      margin: 80px 60px 52px;
-      position: relative;
-    }
-    .content-section{
-      padding-top: 0;
-    }
-  `}
-  ${media.sm`
-    .side-scroll{
-      margin: 56px 48px;
-      position: relative;
-    }
-    .content-section{
-      padding-top: 0;
-    }
-  `}
-  ${media.xs`
-    .side-scroll{
-      margin: 56px 32px;
-    }
-  `}
 `
 export default ContentWrapper;

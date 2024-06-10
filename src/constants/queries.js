@@ -7,15 +7,6 @@ export const Queries = () => {
     _type
     name
     description
-    mainEntity {
-      name
-      _type
-      acceptedAnswer {
-        text
-        _type
-      
-      }
-    }
     provider {
       _type
       brand {
@@ -91,24 +82,6 @@ export const Queries = () => {
     name
     description
     slogan
-    mainEntity {
-      provider {
-        _type
-        logo
-        name
-        url
-      }
-      areaServed {
-        _type
-        name
-      }
-      serviceType
-      serviceAudience {
-        _type
-        audienceType
-      }
-      serviceOutput
-    }
     contactPoint {
       _type
       contactOption
@@ -273,15 +246,6 @@ export const Queries = () => {
                alternateName
                email
                description
-               address {
-                 _type
-                 addressCountry
-                 addressLocality
-                 addressRegion
-                 postalCode
-                 streetAddress
-                 telephone
-               }
                brand {
                  _type
                  location

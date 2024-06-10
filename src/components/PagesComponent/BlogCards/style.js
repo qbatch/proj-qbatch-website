@@ -16,6 +16,10 @@ const BlogCardsWrapper = styled.div`
       margin-bottom: 0;
     }
   }
+  .blog-title{
+    margin-bottom: 32px;
+    cursor: pointer;
+  }
   .card-main {
     &:last-child {
       ${media.xs`
@@ -64,7 +68,7 @@ const BlogCardsWrapper = styled.div`
       color: ${({ theme }) => theme.colors.bodyLight};
     }
     .inner-content {
-      padding: 32px 32px 30px;
+      padding: 32px 16px;
       ${media.sm`
        padding: 20px;
       `}

@@ -2,13 +2,9 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogDetailsWrapper = styled.div`
-  background-image: url('/blog-details-banner.svg');
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
   width: 100%;
-  height: 497px;
-  padding: 142px 67px 96px;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
+  padding: 98px 67px 48px;
   position: relative;
   ${media.sm`
     padding: 56px 0;
@@ -28,20 +24,19 @@ const BlogDetailsWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    color: ${({ theme }) => theme.colors.whiteColor};
+    color: ${({ theme }) => theme.colors.dividerColor};
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
   }
   .published-time {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-
+    color: ${({ theme }) => theme.colors.bodyLight};
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     span {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
-      color: ${({ theme }) => theme.colors.whiteColor};
+      color: ${({ theme }) => theme.colors.dividerColor};
     }
-    color: ${({ theme }) => theme.colors.whiteColor};
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
   }
   .gap-72 {
     gap: 72px;
@@ -50,7 +45,7 @@ const BlogDetailsWrapper = styled.div`
   .chips {
     display: flex;
     gap: 8px;
-    margin-bottom: 33px;
+    margin-bottom: 24px;
     span {
       background-color: ${({ theme }) => theme.colors.whiteColor};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};

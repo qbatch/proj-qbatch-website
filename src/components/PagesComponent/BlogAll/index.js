@@ -11,6 +11,10 @@ import StartAProject from "../../PagesComponent/StartProject";
 
 import { BlogAllWrapprt, InnerBannerWrapper } from "./style";
 
+const stripHtmlTags = (html) => {
+  return html.replace(/<[^>]*>?/gm, '');
+};
+
 const index = ({ data }) => {
   return (
     <BlogAllWrapprt>
@@ -38,11 +42,7 @@ const index = ({ data }) => {
                         });
                       }}>{item.blogTitle}</h2>
                     <div className="banner-desc">
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: item.blogDescription?.data.blogDescription,
-                        }}
-                      />
+                    <p>{stripHtmlTags(item.blogDescription?.data.blogDescription)}</p>
                     </div>
                   </div>
                   <div className="d-flex justify-content-between flex-wrap gap-3">
