@@ -6,6 +6,13 @@ const BlogCardsWrapper = styled.div`
   ${media.sm`
     padding: ${( props ) => (props.padding ? "0" : "56px 0")};
   `}
+  .no-data-text{
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+    color: #c3c2c2;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
   .blog-heading {
     margin-bottom: 48px;
     ${media.xs`

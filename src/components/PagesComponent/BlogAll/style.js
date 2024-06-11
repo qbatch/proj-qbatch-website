@@ -7,6 +7,9 @@ const BlogAllWrapprt = styled.div`
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 32px;
   }
+  ${media.md`
+    padding-top: 40px;
+  `}
 `
 const InnerBannerWrapper = styled.div`
   position: relative;
