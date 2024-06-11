@@ -49,8 +49,8 @@ const BlogPage = ({ pageContext }) => {
       />
       <Container>
         <div className="position-relative">
-          <div className="tabs">
-            <div className="d-flex gap-2 flex-wrap categories-wrapper">
+          <div className="tabs d-flex gap-3 flex-column">
+            <div className="d-flex gap-2 flex-wrap categories-wrapper order-lg-1 order-2 ">
               <div className="d-lg-flex d-none gap-2 flex-wrap">
                 <button
                   className={`tabs-buttons ${location.pathname === '/blog/' ? 'active' : ''}`}
@@ -104,7 +104,7 @@ const BlogPage = ({ pageContext }) => {
                 </div>
               </div>
             </div>
-            <div className="position-absolute end-0 top-0">
+            <div className="search-input-wrapper order-lg-2 order-1">
               <SearchInput onChange={(e) => setSearchTerm(e.target.value)} />
             </div>
           </div>

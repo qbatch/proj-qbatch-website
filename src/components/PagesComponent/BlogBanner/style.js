@@ -22,9 +22,12 @@ const BlogBannerWrapper = styled.div`
       color: ${({ theme }) => theme.colors.whiteColor};
       margin-bottom: 16px;
     }
-    h2 {
+    p {
       color: ${({ theme }) => theme.colors.dividerColor};
       font-weight: ${({ theme }) => theme.fontWeight.normal};
+      ${media.sm`
+        line-height: 24px;
+      `}
     }
   }
 `;

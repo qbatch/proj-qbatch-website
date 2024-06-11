@@ -32,7 +32,8 @@ const ContentWrapper = styled.div`
           }
         }
         h3 {
-          font-size: 22px;
+          font-size: 20px;
+          line-height: 32px;
           margin-bottom: 8px;
           text-transform:none;
           span {
@@ -43,7 +44,7 @@ const ContentWrapper = styled.div`
           }
         }
         h2 {
-          font-size: 26px;
+          font-size: 24px;
           line-height: 32px;
           margin: 24px 0;
           text-transform:none;
@@ -66,9 +67,8 @@ const ContentWrapper = styled.div`
           }
         }
         ul, ol{
-          margin-bottom: 20px;
+          margin-bottom: 16px;
           li{
-            margin-bottom: 16px;
             font-size: ${({ theme }) => theme.fonts.baseFontSize};
             color: ${({ theme }) => theme.colors.bodyTextVariant};
             font-weight: ${({ theme }) => theme.fontWeight.light};
@@ -106,11 +106,9 @@ const ContentWrapper = styled.div`
   .can-help-button {
     margin-top: 51px;
   }
-
   .subscribe-button {
     height: auto;
     padding: 24px;
-    margin-bottom: 60px;
     border-radius: 24px 24px 0 24px;
     background-color: ${({ theme }) => theme.colors.whiteColor};
     border: 1px solid  ${({ theme }) => theme.colors.dividerColor};
