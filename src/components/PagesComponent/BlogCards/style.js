@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogCardsWrapper = styled.div`
-  padding: ${( props ) => (props.padding ? props.padding : "96px 0")};
+  padding: ${( props ) => (props.padding ? props.padding : "56px 0")};
   ${media.sm`
     padding: ${( props ) => (props.padding ? "0" : "56px 0")};
   `}

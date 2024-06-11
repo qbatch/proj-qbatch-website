@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { media } from "../theme/media-mixins";
 
 const GlobalStyles = createGlobalStyle`
     body{
@@ -528,7 +529,14 @@ const GlobalStyles = createGlobalStyle`
   }
  }
 }
-
+.search-input-wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  ${media.md`
+    position: relative;
+  `}
+}
 .avatar-sm-img{
       border-radius: 6px 6px 0 6px;
     }

@@ -6,6 +6,10 @@ const SearchWrapper = styled.div`
     position: relative;
     height: 50px;
     width: 64px;
+    ${media.md`
+      width: 100%;
+      display: flex;
+    `}
   }
 
   .mglass {
@@ -32,6 +36,11 @@ const SearchWrapper = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    ${media.md`
+      right: 0;
+      border-radius: 0 32px 32px 0;
+      border-left: 0;
+    `}
   }
 
   .search:focus + .searchbutton {
@@ -63,6 +72,19 @@ const SearchWrapper = styled.div`
     -moz-transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
+    ${media.md`
+      position: relative;
+      width: 100%;
+      z-index: 0;
+      padding-left: 24px;
+      &.expandright{
+        left: 0;
+        right: 0;
+        border-right:  1px solid ${({ theme }) => theme.colors.dividerColor};
+        border-left:  1px solid ${({ theme }) => theme.colors.dividerColor};
+        border-radius: 32px;
+      }
+    `}
   }
 
   .search:focus {
