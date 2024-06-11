@@ -66,7 +66,7 @@ const Index = (props) => {
           {isBtn && <PrimaryButton text="Explore More" />}
         </div>
         {data?.length === 0 ? (
-          'No Data Found'
+          <span className="text-h2 no-data-text">No Data Found</span>
         ) : (
           <Row>
             {data &&
