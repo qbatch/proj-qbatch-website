@@ -33,8 +33,15 @@ const CtoBannerWrapper = styled.div`
   }
   &.extension-dev-banner{
     background-position: 90% 50%;
+    .row{
+      width: 100%;
+    }
+    .banner-main p{
+      max-width: 605px;
+    }
     h2{
       text-transform: none;
+      max-width: 520px;
     }
   }
   .banner-main {
