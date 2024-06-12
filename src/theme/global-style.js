@@ -203,6 +203,8 @@ const GlobalStyles = createGlobalStyle`
     padding: 12px 20px;
     height: 48px;
         white-space: nowrap;
+        display: flex;
+        align-items: center;
     &.active{
       background-color: rgb(0, 84, 166);
     color: rgb(255, 255, 255);

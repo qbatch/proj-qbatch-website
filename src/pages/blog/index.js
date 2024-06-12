@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from '@reach/router';
-import { navigate } from 'gatsby';
+import { navigate, Link } from 'gatsby';
 
 import Layout from "../../components/Layout/layout";
 import SEO from "../../components/Seo";
@@ -25,7 +25,12 @@ const BlogPage = ({ pageContext }) => {
   const stagingEnv = process.env.GATSBY_ENV !== "staging";
 
   const draftData = blogData.filter((item) => item.publishedAt !== null);
-  const filteredData = stagingEnv ? draftData : blogData?.filter((item) => item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()));
+
+  const searchFilter = (data) => data.filter((item) => 
+    item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const filteredData = searchFilter(stagingEnv ? draftData : blogData);
 
   const uniqueCategories = (stagingEnv ? draftData : blogData)?.reduce((acc, obj) => {
     if (!acc.find((item) => item.category?.categoryName === obj.category?.categoryName)) {
@@ -63,16 +68,14 @@ const BlogPage = ({ pageContext }) => {
                 </button>
                 {uniqueCategories?.slice(0, 5).map((tabs) => {
                   return (
-                    <button
+                    <Link
+                      to={`/blog/${tabs.category?.slug}`}
                       key={tabs.category?.categoryName}
                       className={`tabs-buttons ${activeTab === tabs.category?.categoryName ? 'active' : ''}`}
-                      onClick={() => {
-                        setActiveTab(tabs.category?.categoryName);
-                        navigate(`/blog/${tabs.category.slug}`);
-                      }}
+                      
                     >
                       {capitalizeFirstLetter(tabs.category?.categoryName)}
-                    </button>
+                    </Link>
                   );
                 })}
               </div>
