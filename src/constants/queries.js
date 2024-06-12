@@ -7,6 +7,14 @@ export const Queries = () => {
     _type
     name
     description
+    mainEntity {
+      acceptedAnswer {
+        _type
+        text
+      }
+      _type
+      name
+    }
     itemListElement{
       item
       name
