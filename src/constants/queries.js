@@ -7,6 +7,12 @@ export const Queries = () => {
     _type
     name
     description
+    itemListElement{
+      item
+      name
+      _type
+      position
+    }
     provider {
       _type
       brand {
