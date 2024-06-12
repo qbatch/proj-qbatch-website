@@ -474,7 +474,7 @@ module.exports = {
         excludes: [
           '/services/style/',
           '/authors/',
-          '/blogDetails/',
+          '/blog/blogDetails/',
           '/sitemap.html',
           '/sitemap-services.html',
           '/sitemap-blog.html',
