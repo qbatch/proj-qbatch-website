@@ -144,6 +144,7 @@ const ButtonWrapper = styled(Button)`
     display: flex;
     align-items: center;
     gap: 16px;
+    height: 47px;
     .button-icon {
       width: 24px;
       height: 24px;

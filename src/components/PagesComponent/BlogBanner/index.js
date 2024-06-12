@@ -14,10 +14,10 @@ const index = ({ customCrumbs }) => {
         <Breadcrumb crumbs={crumbs}/>
         <div className="blog-banner">
           <h1 className="text-h2">Powerful stories for leaders and learners</h1>
-          <h2 className="text-h5">
+          <p className="text-h5">
             The world of technology is changing — read it, know it, and embrace
             it!
-          </h2>
+          </p>
         </div>
       </Container>
     </BlogBannerWrapper>

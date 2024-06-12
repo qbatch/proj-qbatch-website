@@ -37,7 +37,7 @@ const BlogDetailsWrapper = styled.div`
     margin-bottom: 0;
   }
   .paragraph {
-    font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
     color: ${({ theme }) => theme.colors.dividerColor};
     font-weight: 400;
     line-height: 24px;

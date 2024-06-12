@@ -2,10 +2,17 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogCardsWrapper = styled.div`
-  padding: ${( props ) => (props.padding ? props.padding : "96px 0")};
+  padding: ${( props ) => (props.padding ? props.padding : "56px 0")};
   ${media.sm`
     padding: ${( props ) => (props.padding ? "0" : "56px 0")};
   `}
+  .no-data-text{
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+    color: #c3c2c2;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
   .blog-heading {
     margin-bottom: 48px;
     ${media.xs`
@@ -15,6 +22,10 @@ const BlogCardsWrapper = styled.div`
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 0;
     }
+  }
+  .blog-title{
+    margin-bottom: 32px;
+    cursor: pointer;
   }
   .card-main {
     &:last-child {
@@ -64,7 +75,7 @@ const BlogCardsWrapper = styled.div`
       color: ${({ theme }) => theme.colors.bodyLight};
     }
     .inner-content {
-      padding: 32px 32px 30px;
+      padding: 32px 16px;
       ${media.sm`
        padding: 20px;
       `}

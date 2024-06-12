@@ -22,12 +22,18 @@ const Index = ({ data }) => {
   return (
     <BlogDetailsWrapper>
       <Container>
-       <Breadcrumb crumbs={customCrumbs} />
+        <Breadcrumb crumbs={customCrumbs} />
         <div className="d-flex align-items-start details-flex gap-4">
           <img src="/back-arrow.svg" alt="no-arrow" className="pointer" onClick={() => navigate('/blog')} />
           <div>
+
+            <div className="chips">
+              {data?.blogTags?.strapi_json_value.map((tag, ind) => (
+                <span key={ind}>{tag}</span>
+              ))}
+            </div>
             <h1 className="title text-h2">{title}</h1>
-            <div className="d-flex gap-72">
+            <div className="d-flex gap-72 mb-0">
               <div className="read-time">
                 <img src="/clock.svg" alt="no-time" />
                 <span>
@@ -35,14 +41,9 @@ const Index = ({ data }) => {
                 </span>
               </div>
               <div className="published-time">
-                <span className="publish">Modified Date:</span>
-                {moment(data?.updatedAt).format('DD/MM/YYYY')}
+               Modified Date:
+               <span className="publish"> {moment(data?.updatedAt).format('DD/MM/YYYY')}</span>
               </div>
-            </div>
-            <div className="chips">
-              {data?.blogTags?.strapi_json_value.map((tag, ind) => (
-                <span key={ind}>{tag}</span>
-              ))}
             </div>
           </div>
         </div>

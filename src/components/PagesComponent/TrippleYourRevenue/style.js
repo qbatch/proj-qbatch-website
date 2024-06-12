@@ -30,6 +30,7 @@ const RevenueWrapper = styled.div`
   .revenue-box {
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-radius: 24px 24px 0px 24px;
+    background-color: ${({ theme }) => theme.colors.whiteColor};
     padding: 48px;
     height: 100%;
     ${media.sm`

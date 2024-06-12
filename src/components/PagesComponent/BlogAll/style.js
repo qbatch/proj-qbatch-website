@@ -7,6 +7,9 @@ const BlogAllWrapprt = styled.div`
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 32px;
   }
+  ${media.md`
+    padding-top: 40px;
+  `}
 `
 const InnerBannerWrapper = styled.div`
   position: relative;
@@ -24,10 +27,15 @@ const InnerBannerWrapper = styled.div`
     object-position: left;
     ${media.md`
       max-width: 100%;
+      border-radius: 24px 24px 0 0;
+      height: 200px;
     `}
   }
   .blog-badge {
     margin-bottom: 36px;
+    ${media.md`
+      margin-bottom: 24px;
+    `}
   }
   .blog-badge-main{
     position: absolute;
@@ -41,10 +49,10 @@ const InnerBannerWrapper = styled.div`
   .blog-wrapper{
     padding: 48px 0px 48px 22px;
     ${media.md`
-      padding: 49px 24px 24px;
+      padding: 24px;
     `}
     ${media.mobile`
-       padding: 49px 24px 24px;
+       padding: 24px;
     `}
   }
   ${media.sm`
