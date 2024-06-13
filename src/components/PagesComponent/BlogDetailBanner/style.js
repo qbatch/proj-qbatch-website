@@ -18,7 +18,7 @@ const BlogDetailsWrapper = styled.div`
   .title {
     color: ${({ theme }) => theme.colors.whiteColor};
     margin-bottom: 26px;
-    max-width: 650px;
+    max-width: 890px;
   }
   .read-time {
     display: flex;
