@@ -1,22 +1,22 @@
 import React from 'react';
 import { Script } from 'gatsby'
-import SEO from "../components/Seo";
-import { Queries } from '../constants/queries'
-import { replaceUnderscoreWithAt } from '../constants/Utils'
-import Layout from '../components/Layout/layout';
-import Banner from "../components/PagesComponent/PageBanner";
-import Slider from '../components/UiComponent/Slider';
-import DevelopmentServices from "../components/PagesComponent/DevelopmentServices"
-import Languages from "../components/PagesComponent/LanguagesAndFrameworks"
-import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
-import InnerBanner from '../components/PagesComponent/InnerBanner';
-import CreativeIntelligence from "../components/PagesComponent/CreativeIntelligence";
-import Collaboration from '../components/PagesComponent/Collaboration';
-import FaqSection from "../components/PagesComponent/Faq";
-import StartProject from "../components/PagesComponent/StartProject";
-import Achievements from '../components/PagesComponent/Achievements2';
+import SEO from "../../components/Seo";
+import { Queries } from '../../constants/queries'
+import { replaceUnderscoreWithAt } from '../../constants/Utils'
+import Layout from '../../components/Layout/layout';
+import Banner from "../../components/PagesComponent/PageBanner";
+import Slider from '../../components/UiComponent/Slider';
+import DevelopmentServices from "../../components/PagesComponent/DevelopmentServices"
+import Languages from "../../components/PagesComponent/LanguagesAndFrameworks"
+import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import InnerBanner from '../../components/PagesComponent/InnerBanner';
+import CreativeIntelligence from "../../components/PagesComponent/CreativeIntelligence";
+import Collaboration from '../../components/PagesComponent/Collaboration';
+import FaqSection from "../../components/PagesComponent/Faq";
+import StartProject from "../../components/PagesComponent/StartProject";
+import Achievements from '../../components/PagesComponent/Achievements2';
 
-import { servicesSliderData, lostToLaunchedItems } from "../constants";
+import { servicesSliderData, lostToLaunchedItems } from "../../constants";
 
 const adaptiveSoftwareData = [
   {
@@ -33,7 +33,7 @@ const adaptiveSoftwareData = [
   },
 ];
 
-const DevOps = () => {
+const Index = () => {
   return (
     <Layout>
       <Banner
@@ -141,4 +141,4 @@ export const Head = () => {
   )
 }
 
-export default DevOps;
+export default Index;
