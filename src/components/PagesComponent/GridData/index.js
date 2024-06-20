@@ -5,11 +5,11 @@ import Container from "../../UiComponent/Container";
 import RevenueWrapper from "./style";
 import { Col, Row } from "react-bootstrap";
 
-const Index = ({data,heading,paragraph,textAlign,enterprise,maxWidth,height}) => {
+const Index = ({data,heading,paragraph,textAlign,enterprise,maxWidth,height, margin}) => {
   return (
-    <RevenueWrapper maxWidth={maxWidth} height={height}>
+    <RevenueWrapper height={height}>
       <Container>
-            <div className={`revenue-heading ${textAlign || ''}`}>
+            <div  style={{maxWidth: maxWidth, margin: margin}}  className={`revenue-heading ${textAlign || ''}`}>
               <h2>{heading}</h2>
                {paragraph &&   <p className='paragraph'>{paragraph}</p>}
              

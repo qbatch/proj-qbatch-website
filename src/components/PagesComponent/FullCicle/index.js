@@ -2,21 +2,19 @@ import React from 'react'
 import {Row,Col} from 'react-bootstrap'
 
 import Container from '../../UiComponent/Container'
-import Button from '../../UiComponent/Button'
-import {fullCycle} from '../../../constants'
 
 import FullCycleWrapper from './style'
 
-const Index = ({className}) => {
+const Index = ({className, heading, paragraph, data }) => {
 
   return (
     <FullCycleWrapper className={className}>
       <Container>
-        <h2 className='main-heading'>Full-Cycle Web Application Development Services</h2>
-        <p className='paragraph'>Explore the best web app solutions that escalate your performance and position in the highly saturated market.</p>
+        <h2 className='main-heading'>{heading}</h2>
+        <p className='paragraph'>{paragraph}</p>
         <Row>
           <Col lg={6} md={12} sm={12} >
-            {fullCycle.slice(0, 4).map((project, index) => {
+            {data.slice(0, 4).map((project, index) => {
               const { title, img, description } = project
               return (
                 <div className="hover-box">
@@ -30,7 +28,7 @@ const Index = ({className}) => {
             })}
           </Col>
           <Col lg={6} md={12} sm={12}>
-            {fullCycle.slice(4, 8).map((project, index) => {
+            {data.slice(4, 8).map((project, index) => {
               const { title, img, description } = project
               return (
                 <div className="hover-box">

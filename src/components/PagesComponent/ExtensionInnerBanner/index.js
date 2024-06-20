@@ -18,7 +18,8 @@ const Index = (props) => {
     paragraph,
     headingMaxWidth,
     wrapperClass,
-    btnSpacingTop = 24
+    btnSpacingTop = 24,
+    bannerImg
   } = props;
 
   const headingStyle = {
@@ -34,9 +35,9 @@ const Index = (props) => {
       <Container>
         <Row className="g-0 align-items-center justify-content-between">
           <Col xl={4} lg={0} className="d-xl-flex d-none">
-            <img className="banner-inner-img d-xl-block d-none" src="/extension-inner-banner.png" />
+            <img className="banner-inner-img d-xl-block d-none" src={bannerImg} />
           </Col>
-          <Col xl={7}>
+          <Col xl={8}>
           <div className={wrapperClass}>
           <h2 style={headingStyle} className={`text-h2 heading ${headingSize}`}>
             {heading} {span && <span className="inner-heading">{span}</span>}

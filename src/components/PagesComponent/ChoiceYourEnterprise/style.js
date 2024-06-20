@@ -140,6 +140,18 @@ const ChoiceEnterpriseWrapper = styled.div`
       padding-bottom: 24px;
     }
   }
+  &.our-saas{
+    .choice-btn{
+      margin-top: 32px;
+    }
+  }
+  &.advance-saas-wrapper{
+    .choice-list{
+      h3{
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      }
+    }
+  }
 `;
 
 export default ChoiceEnterpriseWrapper;
