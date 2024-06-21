@@ -21,14 +21,12 @@ import WebappImage from '../../../static/web-app-dev.svg'
 import { lostToLaunchedItems, peopleFirstData } from '../../constants'
 import AdvancedWebExplore from "../../components/PagesComponent/ExploreOurAdvancedWeb";
 import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSectionSlider";
-import ResponsiveStyleWrapper from "./style";
 
 const webapp = () => {
 
   return (
     <Layout>
-            <ScrollToTop />
-      <ResponsiveStyleWrapper>
+        <ScrollToTop />
         <Banner
           subheading="Web Application Development Company"
           heading="If you Think Web Apps are Old-Fashioned. Think Again"
@@ -75,7 +73,6 @@ const webapp = () => {
         />
         <FaqSection faqQuestion={webAppFaq} />
         <StartProject />
-      </ResponsiveStyleWrapper>
     </Layout>
   )
 };
