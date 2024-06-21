@@ -6,7 +6,6 @@ const SitemapPages = ({ data }) => {
 
   const excludedPaths = [
     "/blog/", 
-    "/services/", 
     "/events/", 
     "/sitemap.xml", 
     "/sitemap-services.xml" , 

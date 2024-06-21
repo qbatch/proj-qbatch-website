@@ -30,13 +30,11 @@ import {
   peopleFirstData,
   productDevlopmentServices,
 } from '../../constants'
-import ResponsiveStyleWrapper from "./style";
 
 const Enterprise = () => {
   return (
     <Layout>
       <ScrollToTop />
-      <ResponsiveStyleWrapper>
         <Banner
           subheading="Enterprise App Development Company"
           heading="Your Great Transformation Journey Begins Here"
@@ -122,7 +120,6 @@ const Enterprise = () => {
         />
         <FaqSection faqQuestion={enterPrisFaq} />
         <StartProject />
-      </ResponsiveStyleWrapper>
     </Layout>
   )
 };
