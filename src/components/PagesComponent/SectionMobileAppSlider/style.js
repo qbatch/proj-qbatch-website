@@ -40,6 +40,7 @@ ul{
     flex-direction: column;
     align-items: flex-start;
     grid-row-gap: 16px;
+    background-color:  ${({ theme }) => theme.colors.whiteColor};
     h3{
       font-size:  ${({ theme }) => theme.fonts.baseFontSizeLg};
       font-weight: 700;
