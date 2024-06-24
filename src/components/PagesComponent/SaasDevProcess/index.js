@@ -1,6 +1,8 @@
 import React from 'react';
-import SaasDevProcessWrapper from './style';
+
 import Container from '../../UiComponent/Container';
+
+import SaasDevProcessWrapper from './style';
 
 const SaasDevProcess = () => {
   return (

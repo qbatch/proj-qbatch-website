@@ -1131,6 +1131,130 @@ const fullCycle = [
       'Figure out the latest technologies, modern designs, data security approaches, and innovative architectures to future-proof your enterprise from looming market trends. Respond to changing market risks with our competent yet reliable custom web app development consultancy.',
   },
 ]
+const SaasDevelop = [
+  {
+    img: '/ecommerce-and-retail-solutions.svg',
+    title: 'E-commerce and retail solutions',
+    description:
+      (
+        <ul>
+          <li>Online storefronts.</li>
+          <li>Shopping cart and checkout systems.</li>
+          <li>Inventory management, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/customer-relationship-management.svg',
+    title: 'Customer relationship management (CRM)',
+    description:
+      (
+        <ul>
+          <li>Sales automation.</li>
+          <li>Customer support and service.</li>
+          <li>Marketing automation, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/fleet-management-apps.svg',
+    title: 'Fleet management apps',
+    description:
+      (
+        <ul>
+          <li>Vehicle tracking and telematics.</li>
+          <li>Maintenance scheduling and management.</li>
+          <li>Route planning and optimization, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/financial-services-and-fintech.svg',
+    title: 'Financial services and fintech',
+    description:
+      (
+        <ul>
+          <li>Payment processing.</li>
+          <li>Loan processing.</li>
+          <li>Claim processing.</li>
+          <li>Cryptocurrency wallets, and more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/healthcare-and-life-sciences.svg',
+    title: 'Healthcare and life sciences',
+    description:
+      (
+        <ul>
+          <li>Electronic health records (EHR).</li>
+          <li>Telemedicine platforms.</li>
+          <li>Clinical trial management, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/productivity-and-collaboration-tools.svg',
+    title: 'Productivity and collaboration tools',
+    description:
+     (
+      <ul>
+        <li>Document creation and editing.</li>
+        <li>Project management.</li>
+        <li>Communication platforms.</li>
+        <li>Time management and tracking, and more.</li>
+      </ul>
+     ),
+  },
+  {
+    img: '/health-and-wellness-services.svg',
+    title: 'Health and wellness services',
+    description:
+      (
+        <ul>
+          <li>Personal wellness and fitness apps.</li>
+          <li>Mental health apps.</li>
+          <li>Nutrition tracking, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/enterprise-resource-planning.svg',
+    title: 'Enterprise resource planning (ERP)',
+    description:
+      (
+        <ul>
+          <li>Corporate finance management.</li>
+          <li>Procurement and supply chain management.</li>
+          <li>HR management, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/ondemand-service-marketplaces.svg',
+    title: 'On-demand service marketplaces',
+    description:
+      (
+        <ul>
+          <li>Car-pooling and transportation services.</li>
+          <li>Food delivery services.</li>
+          <li>Home services, gig economy platforms, and more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/cybersecurity-and-identity-management.svg',
+    title: 'Cybersecurity and identity management',
+    description:
+      (
+        <ul>
+          <li>Network security.</li>
+          <li>Identity and access management (IAM).</li>
+          <li>Threat detection and response, and many more.</li>
+        </ul>
+      ),
+  },
+]
 const ecomLogos = ["/blue-ware.svg", "/ecom-circle-logo.svg", "/north-ware.svg", "/one-app.svg", "/keurig-logo.svg", "/sales-support-logo.svg"]
 
 const revenueData = [
@@ -4528,6 +4652,7 @@ export {
   ecomLogos,
   projects,
   fullCycle,
+  SaasDevelop,
   marketPlaceData,
   webAppFaq,
   revenueData,

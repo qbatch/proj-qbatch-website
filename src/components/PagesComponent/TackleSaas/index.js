@@ -1,9 +1,10 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
-import TackleSaasWrapper from './style';
 import Container from '../../UiComponent/Container';
 import Button from "../../UiComponent/Button";
+
+import TackleSaasWrapper from './style';
 
 const tackleSaas = () => {
   return (

@@ -1,8 +1,10 @@
 import React from 'react';
-import QuickResponseWrapper from './style';
-import Container from '../../UiComponent/Container';
 import { Col, Row } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
 import Button from "../../UiComponent/Button";
+
+import QuickResponseWrapper from './style';
 
 const serviceOptions = [
   {

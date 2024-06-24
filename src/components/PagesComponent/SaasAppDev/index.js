@@ -1,7 +1,10 @@
 import React from 'react';
-import SaasAppDevWrapper from './style';
-import Container from '../../UiComponent/Container';
 import { Row, Col } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
+
+import SaasAppDevWrapper from './style';
+
 const SaasAppDev = ({ heading }) => {
   return (
     <SaasAppDevWrapper>
