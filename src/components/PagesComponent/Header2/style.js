@@ -171,6 +171,7 @@ const Header2Wrapper = styled.div`
           .mega-menu {
             visibility: visible;
             opacity: 1;
+            z-index: 1;
             transform: translateY(0); 
             transition: visibility 0s, opacity 0.6s ease-in-out, transform 0.3s ease-out;
             box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.13);
@@ -183,9 +184,10 @@ const Header2Wrapper = styled.div`
         }
         &:not(:hover) {
           .mega-menu {
-            transition: visibility 0.5s, opacity 0.3s ease-in-out, transform 0.6s ease-in; 
+            transition: visibility 0.5s, opacity 0.3s ease-in-out, transform 0.6s ease-in, z-index 0s; 
             opacity: 0;
             transform: translateY(-70%); 
+            z-index: -1;
             
           }
         }
