@@ -29,7 +29,7 @@ background-color:  ${({ theme }) => theme.colors.secondaryColor};
     padding: 96px;
     padding-right: 0;
     ${media.sm`
-      padding: 20px 0;
+      padding: 20px 0 !important;
     `}
   }
   .banner-inner-img{
@@ -60,6 +60,11 @@ background-color:  ${({ theme }) => theme.colors.secondaryColor};
         padding: 64px 0 64px 96px;
       }
     }
+    ${media.lg`
+       ul{
+        column-count: 1;
+       }
+    `}
   }
 
 `

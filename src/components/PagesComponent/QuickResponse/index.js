@@ -38,7 +38,7 @@ const QuickResponse = () => {
         <h2 className='heading text-h2'>
           Choose Your Service Option for a Quick Response
         </h2>
-        <Row>
+        <Row className='g-4'>
           {serviceOptions.map((service, index) => (
             <Col lg={4} key={index}>
               <div className='quick-response-box'>

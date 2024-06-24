@@ -78,7 +78,7 @@ const RevenueWrapper = styled.div`
         `}
       }
       .revenue-desc {
-        margin-top: 40px;
+        margin-top: 32px;
         ${media.sm`
           margin-top: 32px;
         `}

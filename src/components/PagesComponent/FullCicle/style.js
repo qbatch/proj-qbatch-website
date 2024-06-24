@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { media } from "../../../theme/media-mixins" 
+import { media } from "../../../theme/media-mixins"
 
 const FullCycleWrapper = styled.div`
   padding: 96px 0;
@@ -92,6 +92,10 @@ const FullCycleWrapper = styled.div`
     }
     .title{
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+      ${media.md`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 24px;
+      `}
     }
   }
 `

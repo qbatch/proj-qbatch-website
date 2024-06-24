@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const QuickResponseWrapper = styled.div`
 padding: 96px 0;
@@ -29,6 +30,14 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
     padding: 32px 24px;
   }
 }
+${media.lg`
+  padding: 56px 0;
+  .quick-response-box{
+    .quick-response-inner{
+      padding: 16px 0;
+    }
+  }
+`}
 `
 
 export default QuickResponseWrapper;

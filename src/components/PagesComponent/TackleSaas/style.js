@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../theme/media-mixins";
 
 const TackleSaasWrapper = styled.div`
 padding: 96px 0;
@@ -16,6 +17,13 @@ img{
   font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   line-height: 32px;
 }
+${media.md`
+  padding: 48px 0;
+  .paragraph{
+     font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+     line-height: 20px;
+  }
+`}
 `
 
 export default TackleSaasWrapper;

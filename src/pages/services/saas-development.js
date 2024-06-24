@@ -1,4 +1,6 @@
 import React from 'react';
+import SeoComponent from "../../utils/seo"
+import { Queries } from '../../constants/queries'
 import Layout from '../../components/Layout/layout';
 import Banner from "../../components/PagesComponent/PageBanner";
 import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
@@ -10,13 +12,14 @@ import SaasAppDev from '../../components/PagesComponent/SaasAppDev';
 import GridData from '../../components/PagesComponent/GridData'
 import TackleSaas from '../../components/PagesComponent/TackleSaas';
 import Slider from '../../components/UiComponent/Slider';
-import ChooseYourEnterprise from '../../components/PagesComponent/ChoiceYourEnterprise'
+import Languages from '../../components/PagesComponent/SaasLanguages';
 import FullCycle from "../../components/PagesComponent/FullCicle";
 import Collaboration from '../../components/PagesComponent/Collaboration'
 
-import { OurSaasData, AdvanceSaasData, saasFaq, devOpsSliderData, SaasProduct, productDesignData, fullCycle } from "../../constants";
+import { OurSaasData, AdvanceSaasData, saasFaq, SaasSliderData, SaasProduct, fullCycle, SaaslanguagesData } from "../../constants";
 import QuickResponse from '../../components/PagesComponent/QuickResponse';
 import SaasArchitecture from '../../components/PagesComponent/SaasArchitecture';
+import SaasDevProcess from '../../components/PagesComponent/SaasDevProcess';
 
 const SaasDevelopment = () => {
   return (
@@ -86,7 +89,7 @@ const SaasDevelopment = () => {
             growth-focused businesses have boosted revenue with our scalable SaaS solutions.
           </span>
         }
-        data={devOpsSliderData}
+        data={SaasSliderData}
         align="center"
         className="saas-slider"
         width="334"
@@ -98,12 +101,13 @@ const SaasDevelopment = () => {
         headingMaxWidth="811px"
         className="saas-inner-banner"
         headingSize="ms-0"
-        wrapperClass="text-left extension-banner-inner"
+        wrapperClass="text-lg-start text-center extension-banner-inner"
         isButton={true}
         btnText="Get in touch with your SaaS experts"
         btnSpacingTop={32}
         btnAlign="left"
       />
+      <SaasDevProcess/>
       <SaasArchitecture/>
       <FullCycle
         className="saas-app-development"
@@ -134,6 +138,7 @@ const SaasDevelopment = () => {
         btnSpacingTop={64}
         btnAlign="end"
       />
+      <Languages languagesData={SaaslanguagesData} heading="Teck Stack and Frameworks for Your SaaS Product" showBtn={false}/>
       <FaqSection faqQuestion={saasFaq} />
       <SaasInnerBanner
         bannerImg="/hire-dedicated-saas-dev.svg"
@@ -142,7 +147,7 @@ const SaasDevelopment = () => {
         headingMaxWidth="811px"
         className="saas-inner-banner"
         headingSize="ms-0"
-        wrapperClass="text-left extension-banner-inner"
+        wrapperClass="text-lg-start text-center extension-banner-inner"
         isButton={true}
         btnText="Get in touch with your SaaS experts"
         btnSpacingTop={32}
@@ -154,5 +159,13 @@ const SaasDevelopment = () => {
     </Layout>
   );
 };
+export const Head = () => {
+  const saasDevData = Queries()
+  const seoData = saasDevData?.allStrapiSaasDev?.nodes[0]?.seo
+  const schemaData = saasDevData?.allStrapiSaasDev?.nodes[0]?.schema;
+  return (
+    <SeoComponent seoData={seoData} schemaData={schemaData} />
+  )
+}
 
 export default SaasDevelopment;

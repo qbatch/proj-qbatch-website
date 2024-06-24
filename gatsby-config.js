@@ -325,6 +325,19 @@ const strapiConfig = {
         },
       },
     },
+    {
+      singularName: 'saas-dev',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+          schema: {
+            populate: '*',
+          },
+        },
+      },
+    },
   ],
   singleTypes: [
     'home',

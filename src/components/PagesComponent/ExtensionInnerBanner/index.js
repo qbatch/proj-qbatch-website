@@ -34,8 +34,8 @@ const Index = (props) => {
     <ExtensionInnerBannerWrapper className={className}>
       <Container>
         <Row className="g-0 align-items-center justify-content-between">
-          <Col xl={4} lg={0} className="d-xl-flex d-none">
-            <img className="banner-inner-img d-xl-block d-none" src={bannerImg} />
+          <Col xl={4} lg={12} className="">
+            <img className="banner-inner-img mb-lg-0 mb-4" src={bannerImg} />
           </Col>
           <Col xl={8}>
           <div className={wrapperClass}>
