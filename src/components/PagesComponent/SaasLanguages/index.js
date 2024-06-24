@@ -4,8 +4,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Row, Accordion } from "react-bootstrap";
+
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/Button";
+
 import LanguagesWrapper from "./style";
 
 const Index = ({ heading, paragraph, paragraphMaxWidth, showBtn, languagesData }) => {

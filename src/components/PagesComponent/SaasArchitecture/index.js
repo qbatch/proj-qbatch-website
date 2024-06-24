@@ -1,9 +1,10 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
-import SaasArchitectureWrapper from './style';
 import Button from "../../UiComponent/Button"
 import Container from '../../UiComponent/Container';
+
+import SaasArchitectureWrapper from './style';
 
 const SaasArchitecture = () => {
   const backendArchitectures = [

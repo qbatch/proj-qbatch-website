@@ -50,6 +50,7 @@ const webapp = () => {
           heading="Full-Cycle Web Application Development Services"
           paragraph="Explore the best web app solutions that escalate your performance and position in the highly saturated market."
           data={fullCycle}
+          sliceIndex={4}
         />
         <SolutionToChoose />
         <AdvancedWebExplore />

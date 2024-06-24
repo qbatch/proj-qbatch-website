@@ -16,7 +16,7 @@ import Languages from '../../components/PagesComponent/SaasLanguages';
 import FullCycle from "../../components/PagesComponent/FullCicle";
 import Collaboration from '../../components/PagesComponent/Collaboration'
 
-import { OurSaasData, AdvanceSaasData, saasFaq, SaasSliderData, SaasProduct, fullCycle, SaaslanguagesData } from "../../constants";
+import { OurSaasData, AdvanceSaasData, saasFaq, SaasSliderData, SaasProduct, SaasDevelop, SaaslanguagesData } from "../../constants";
 import QuickResponse from '../../components/PagesComponent/QuickResponse';
 import SaasArchitecture from '../../components/PagesComponent/SaasArchitecture';
 import SaasDevProcess from '../../components/PagesComponent/SaasDevProcess';
@@ -113,7 +113,8 @@ const SaasDevelopment = () => {
         className="saas-app-development"
         heading="Types of SaaS Applications We Develop "
         paragraph="Our portfolio of 150+ projects includes solutions that successfully enable versatile interactions and valuable results on the B2C, B2B, B2CB2B, P2P, or corporate levels"
-        data={fullCycle}
+        data={SaasDevelop}
+        sliceIndex={5}
       />
       <Collaboration />
       <SaasInnerBanner
