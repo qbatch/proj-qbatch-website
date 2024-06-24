@@ -208,6 +208,15 @@ export const Queries = () => {
             }
           }
           slug
+          contributor {
+            name
+            username
+            image{
+              localFile{
+                url
+              }
+            }
+          }
           user {
             username
             name
@@ -410,6 +419,20 @@ export const Queries = () => {
         }
       }
        allStrapiMvpDev {
+        nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+            visibilityIn
+            title
+          }
+          seo {
+            ...PageSeoFields
+          }
+        }
+      }
+       allStrapiSaasDev {
         nodes {
           schema {
             childStrapiComponentSchemaSchemaStructureddataJsonnode {

@@ -32,7 +32,7 @@ const responsiveTitle = {
   },
 };
 
-const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, headerClass }) => {
+const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, headerClass, paragraphWidth }) => {
   const [currentInd, setCurrentInd] = useState(1);
 
   const carousel1Ref = useRef(null);
@@ -95,7 +95,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
         <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
           <div className={headerClass}>
             <h2 className={`heading ${componentName === 'index' && 'text-h1'}`}>{heading}</h2>
-            <p className="paragraph">{paragraph}</p>
+            <p style={{maxWidth: paragraphWidth}} className="paragraph">{paragraph}</p>
           </div>
           {!exploreBtn ?
             <div className="mt-md-4 mt-3">

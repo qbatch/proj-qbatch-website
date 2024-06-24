@@ -21,7 +21,7 @@ import StartProjectWrapper from "./style";
 
 const phoneUtil = PhoneNumberUtil.getInstance();
 
-const Index = ({ page }) => {
+const Index = ({ page, heading }) => {
   const recaptchaRef = useRef(null);
   const [validated, setValidated] = useState(false);
   const [phone, setPhone] = useState("");
@@ -44,6 +44,8 @@ const Index = ({ page }) => {
     terms: false,
     promotion: false,
   });
+
+  const headingText = heading || "Start a Project";
 
   const toggleCheckbox = useCallback((name) => {
     setFormData((prevFormData) => ({
@@ -203,14 +205,15 @@ const Index = ({ page }) => {
   return (
     <StartProjectWrapper>
       <Container>
-        <Row className="justify-content-between">
-          <Col xxl={5} lg={5} className="order-2 order-lg-1">
-            {page === 'contact' ? (
-              <h1 className=" text-h2 color-primary">Start a Project</h1>
+      {page === 'contact' ? (
+              <h1 className=" text-h2 color-primary">{headingText}</h1>
             ) : (
-              <h2 className="color-primary">Start a Project</h2>
+              <h2 className="color-primary">{headingText}</h2>
             )}
             <p className="subtitle">Work with the most friendly yet focused developers!</p>
+        <Row className="justify-content-between">
+          <Col xxl={5} lg={5} className="order-2 order-lg-1">
+            
             <Form className="project-form" noValidate validated={validated} onSubmit={handleSubmit}>
               <Input
                 placeholder="Full Name"
