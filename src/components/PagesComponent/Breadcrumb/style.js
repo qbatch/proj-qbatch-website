@@ -20,7 +20,6 @@ const BreadcrumbWrapper = styled.div`
     padding: 16px 96px;
     max-width: 1600px;
     margin: auto;
-    overflow: scroll;
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
       white-space: nowrap;
@@ -33,6 +32,7 @@ const BreadcrumbWrapper = styled.div`
     `}
     ${media.sm`
       padding: 16px 40px;
+      overflow-x: scroll;
     `}
     ${media.xs`
       padding: 16px 24px;
