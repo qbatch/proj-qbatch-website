@@ -192,7 +192,7 @@ const Header2 = () => {
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
                 </div>
-                <div className={`mega-menu multi-menu ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
+                {/* <div className={`mega-menu multi-menu ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
                   <Container>
                     <Row className='g-lg-5'>
                       {hireDevelopersMenu.map((category, index) => (
@@ -209,7 +209,7 @@ const Header2 = () => {
                       ))}
                     </Row>
                   </Container>
-                </div>
+                </div> */}
               </li>
               <li>
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
