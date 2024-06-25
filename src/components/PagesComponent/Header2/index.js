@@ -40,7 +40,8 @@ const Header2 = () => {
     { label: "Product Design & Development", link: "/services/product-design-development/" },
     { label: "Web & data Scraping Services", link: "/services/web-and-data-scraping/" },
     { label: "DevOps and Cloud Computing", link: "/services/devops/" },
-    { label: "Browser Extension Development", link: "/services/browser-extension-development/" }
+    { label: "Browser Extension Development", link: "/services/browser-extension-development/" },
+    { label: "SaaS Application Development", link: "/services/saas-development/" },
   ];
 
   const hireDevelopersMenu = [

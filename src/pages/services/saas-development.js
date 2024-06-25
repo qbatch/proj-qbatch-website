@@ -17,6 +17,7 @@ import FullCycle from "../../components/PagesComponent/FullCicle";
 import Collaboration from '../../components/PagesComponent/Collaboration'
 
 import { OurSaasData, AdvanceSaasData, saasFaq, SaasSliderData, SaasProduct, SaasDevelop, SaaslanguagesData } from "../../constants";
+import BannerImg from "../../../static/saas-banner.svg"
 import QuickResponse from '../../components/PagesComponent/QuickResponse';
 import SaasArchitecture from '../../components/PagesComponent/SaasArchitecture';
 import SaasDevProcess from '../../components/PagesComponent/SaasDevProcess';
@@ -33,6 +34,7 @@ const SaasDevelopment = () => {
             SaaS businesses hustle to attract and retain customers, master technology, set fair prices, ensure high security, and outwork a busy market. The fix? We test your idea and build a fully functional and scalable SaaS product beyond market constraints.
           </span>
         }
+        imgSrc={BannerImg}
         buttonText="Discuss Your Project"
         wrapperClass="saas-dev"
         className="inner-container"
