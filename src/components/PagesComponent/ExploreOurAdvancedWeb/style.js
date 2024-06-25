@@ -45,6 +45,7 @@ ul {
       border-bottom-right-radius: 0px;
       display:flex;
       flex-direction: column;
+      background-color: ${({ theme }) => theme.colors.whiteColor};
       ${media.sm`
         max-width: 100%;
         align-items: center;
