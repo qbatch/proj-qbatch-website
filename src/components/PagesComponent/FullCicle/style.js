@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { media } from "../../../theme/media-mixins" 
+import { media } from "../../../theme/media-mixins"
 
 const FullCycleWrapper = styled.div`
   padding: 96px 0;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
   ${media.sm`
   padding: 56px 0;
   `}
@@ -81,6 +82,21 @@ const FullCycleWrapper = styled.div`
   .add-space {
     margin-left: 27px;
     margin-top: 73px;
+  }
+  &.saas-app-development{
+    .paragraph{
+      max-width: 1081px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      line-height: 32px;
+      margin-bottom: 72px;
+    }
+    .title{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+      ${media.md`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 24px;
+      `}
+    }
   }
 `
 export default FullCycleWrapper;

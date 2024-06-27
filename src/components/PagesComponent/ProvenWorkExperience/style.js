@@ -21,6 +21,13 @@ const ProvenExperienceWrapper = styled.div`
       font-weight: 400;
     }
 
+    .saas-dev-experience{
+      margin-bottom: 56px;
+      p{
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 32px;
+      }
+    }
     ${media.sm`
       padding: 56px 0  24px;
     `}

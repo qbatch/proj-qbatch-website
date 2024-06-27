@@ -142,6 +142,17 @@ const SliderWrapper = styled.div`
 }
   &.devops-slider{
   }
+
+  &.saas-slider{
+    .upper-heading{
+      margin-bottom: 116px;
+      .paragraph{
+        max-width: 1081px;
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 32px;
+      }
+    }
+  }
   &.competency-slider{
     ${media.sm`
       .make-responsive{
