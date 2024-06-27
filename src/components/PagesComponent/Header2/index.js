@@ -192,7 +192,7 @@ const Header2 = () => {
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
                 </div>
-                <div className={`mega-menu multi-menu ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
+                {/* <div className={`mega-menu multi-menu ${isHireDevelopersMenuOpen ? 'open' : 'close'}`}>
                   <Container>
                     <Row className='g-lg-5'>
                       {hireDevelopersMenu.map((category, index) => (
@@ -209,9 +209,9 @@ const Header2 = () => {
                       ))}
                     </Row>
                   </Container>
-                </div>
+                </div> */}
               </li>
-              <li>
+              {/* <li>
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/#industries" className={currentPath === '/#industries' ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
@@ -229,13 +229,13 @@ const Header2 = () => {
                     </ul>
                   </Container>
                 </div>
-              </li>
+              </li> */}
               <li>
                 <div className="link-wrapper">
                   <Link to="/portfolio" className={currentPath.startsWith('/portfolio') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Portfolio</Link>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <div className={`link-wrapper ${isHowWeWorkMenuOpen ? 'open' : 'close'}`}>
                   <span to="/" className={currentPath.startsWith('/how-we-work') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>How we Work</span>
                   <button onClick={toggleHowWeWorkMenu} className={isHowWeWorkMenuOpen ? 'open' : 'close'}>
@@ -253,7 +253,7 @@ const Header2 = () => {
                     </ul>
                   </Container>
                 </div>
-              </li>
+              </li> */}
               <li>
                 <div className={`link-wrapper ${isCompanyMenuOpen ? 'open' : 'close'}`}>
                   <Link

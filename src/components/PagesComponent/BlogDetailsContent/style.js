@@ -201,6 +201,37 @@ const ContentWrapper = styled.div`
     .mt-32 {
       margin-top: 32px;
     }
+    .contributors-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .inner-heading{
+        color: ${({ theme }) => theme.colors.primaryColor};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+        font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+      }
+    }
+    .contributors{
+      display: flex;
+      a{
+        img{
+          height: 24px;
+          width: 24px;
+          border-radius: 100px;
+          position: relative;
+          left: -5px;
+          border: 1px solid ${({ theme }) => theme.colors.whiteColor};
+          background-color: ${({ theme }) => theme.colors.dividerColor};
+          object-fit: cover;
+        }
+        &:first-child{
+         img{
+          margin-left: 0;
+          left: 0;
+         }
+        }
+      }
+    }
   }
   .sidebar-socials{
     background-color: ${({ theme }) => theme.colors.whiteColor};
