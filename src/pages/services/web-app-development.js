@@ -21,6 +21,7 @@ import WebappImage from '../../../static/web-app-dev.svg'
 import { lostToLaunchedItems, peopleFirstData } from '../../constants'
 import AdvancedWebExplore from "../../components/PagesComponent/ExploreOurAdvancedWeb";
 import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSectionSlider";
+import { fullCycle } from '../../constants'
 
 const webapp = () => {
 
@@ -44,7 +45,13 @@ const webapp = () => {
         />
         <Achievements innerPage={true} />
         <SliderComponent />
-        <FullCycle className="web-app-development-page" />
+        <FullCycle
+          className="web-app-development-page"
+          heading="Full-Cycle Web Application Development Services"
+          paragraph="Explore the best web app solutions that escalate your performance and position in the highly saturated market."
+          data={fullCycle}
+          sliceIndex={4}
+        />
         <SolutionToChoose />
         <AdvancedWebExplore />
         <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
@@ -80,7 +87,7 @@ export const Head = () => {
   const webAppData = Queries();
   const seoData = webAppData.allStrapiWebApp.nodes[0]?.seo
   const schemaData = webAppData?.allStrapiWebApp?.nodes[0]?.schema;
-  
+
   return (
     <SeoComponent seoData={seoData} schemaData={schemaData} />
   )

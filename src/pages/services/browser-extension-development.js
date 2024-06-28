@@ -52,6 +52,7 @@ const BrowserExtension = () => {
           btnText="Get Free Consultation"
           btnSpacingTop={72}
           btnAlign="left"
+          bannerImg="/extension-inner-banner.png"
         />
         <Achievements mainHeading="Achievements Through The Years" innerPage page="contact" />
         <Slider

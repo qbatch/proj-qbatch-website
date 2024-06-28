@@ -31,7 +31,7 @@ const dedicationWork = [
   { id: 3, count: 99.9, desc: 'Data Reliability', symbol: '%' },
 ]
 const productDesignCounterData = [
-  { id: 1, count: 150, desc: "Full Stack Developers", symbol: "+"},
+  { id: 1, count: 150, desc: "Full Stack Developers", symbol: "+" },
   { id: 2, count: 150, desc: "Solutions Delivered Successfully", symbol: "+" },
   { id: 3, count: 98, desc: "Customer Happiness Index", symbol: "%" },
   { id: 4, desc: "Customers stay for future projects", symbol: "" },
@@ -51,13 +51,13 @@ const companyCounter = [
 ]
 const peopleFirstData = [
   { id: 1, icon: '/people-first-icon-1.svg', desc: "E-commerce" },
-  { id: 2, icon: '/people-first-icon-2.svg', desc: "Logistics & Supply Chain"},
-  { id: 3, icon: '/people-first-icon-3.svg', desc: "FinTech"},
-  { id: 4, icon: '/people-first-icon-4.svg', desc: "Healthcare"},
-  { id: 5, icon: '/people-first-icon-5.svg', desc: "EdTech"},
-  { id: 6, icon: '/people-first-icon-6.svg', desc: "Retail & Consumer Goods"},
-  { id: 7, icon: '/people-first-icon-7.svg', desc: "Travel & Transportation",},
-  { id: 8, icon: '/iot.svg', desc: "IoT",}
+  { id: 2, icon: '/people-first-icon-2.svg', desc: "Logistics & Supply Chain" },
+  { id: 3, icon: '/people-first-icon-3.svg', desc: "FinTech" },
+  { id: 4, icon: '/people-first-icon-4.svg', desc: "Healthcare" },
+  { id: 5, icon: '/people-first-icon-5.svg', desc: "EdTech" },
+  { id: 6, icon: '/people-first-icon-6.svg', desc: "Retail & Consumer Goods" },
+  { id: 7, icon: '/people-first-icon-7.svg', desc: "Travel & Transportation", },
+  { id: 8, icon: '/iot.svg', desc: "IoT", }
 ];
 const whyChooseQbatchData = [
   { id: 1, icon: '/technical-excellence.svg', desc: 'Technical Excellence' },
@@ -506,7 +506,7 @@ const marketPlaceData = [
         img: "",
         desc: "Django"
       },
-    ],    
+    ],
     title: 'Marketplace',
   },
   {
@@ -535,7 +535,7 @@ const marketPlaceData = [
       {
         img: "",
       },
-    ],  
+    ],
     title: 'Platform',
   },
   {
@@ -561,7 +561,7 @@ const marketPlaceData = [
       {
         img: "",
       },
-    ], 
+    ],
     title: 'API’s',
   },
   {
@@ -572,7 +572,7 @@ const marketPlaceData = [
       {
         img: "/rainforest-api.svg",
       },
-    ], 
+    ],
     title: '3rd Party API’s',
   }
 ]
@@ -612,7 +612,7 @@ const languagesData = [
         img: "/express-js.svg",
         desc: "Express JS"
       },
-    ],    
+    ],
     title: 'Backend',
   },
   {
@@ -665,7 +665,7 @@ const languagesData = [
         img: "/css3-seeklogo.svg",
         desc: "CSS 3"
       },
-    ],  
+    ],
     title: 'Frontend',
   },
   {
@@ -682,7 +682,7 @@ const languagesData = [
         img: "/adobe-photoshop-seeklogo.svg",
         desc: "Adobe Photoshop"
       },
-    ], 
+    ],
     title: 'Design',
   },
   {
@@ -735,7 +735,7 @@ const languagesData = [
         img: "/spark-seeklogo.svg",
         desc: "Apache Spark"
       },
-    ], 
+    ],
     title: 'Database',
   },
   {
@@ -756,8 +756,8 @@ const languagesData = [
         img: "/rspec.svg",
         desc: "RSpec"
       },
-      
-    ], 
+
+    ],
     title: 'Testing',
   },
   {
@@ -802,7 +802,7 @@ const languagesData = [
         img: "/chef-logo.svg",
         desc: "Chef"
       },
-    ], 
+    ],
     title: 'DevOps',
   },
   {
@@ -827,7 +827,7 @@ const languagesData = [
         img: "/docker.svg",
         desc: "Docker"
       },
-    ], 
+    ],
     title: 'Cloud/Platform',
   },
   {
@@ -852,8 +852,122 @@ const languagesData = [
         img: "/betty-block.svg",
         desc: "Betty Block"
       },
-    ], 
+    ],
     title: 'Others',
+  },
+]
+const SaaslanguagesData = [
+  {
+    content: [
+      {
+        img: "/ruby-on-rails.svg",
+        desc: "Ruby On Rails"
+      },
+      {
+        img: "/node-js.svg",
+        desc: "Node Js"
+      },
+      {
+        img: "/python.svg",
+        desc: "Python"
+      },
+      {
+        img: "/php.svg",
+        desc: "PHP"
+      },
+    ],
+    title: 'Backend',
+  },
+  {
+    content: [
+      {
+        img: "/javascript-seeklogo.svg",
+        desc: "Java Script"
+      },
+      {
+        img: "/react-seeklogo.svg",
+        desc: "React JS"
+      },
+      {
+        img: "/angular-seeklogo.svg",
+        desc: "Angular"
+      },
+      {
+        img: "/vue-js.svg",
+        desc: "Vue JS"
+      },
+      {
+        img: "/swift.svg",
+        desc: "Swift",
+      },
+      {
+        img: "/kotlin.svg",
+        desc: "Kotlin",
+      },
+      {
+        img: "/flutter.svg",
+        desc: "Flutter",
+      }
+    ],
+    title: 'Frontend',
+  },
+  {
+    content: [
+      {
+        img: "/postgresql-seeklogo.svg",
+        desc: "PostgreSQL"
+      },
+      {
+        img: "/my-sql.svg",
+        desc: "MySQL"
+      },
+      {
+        img: "/redis.svg",
+        desc: "Redis"
+      },
+      {
+        img: "/elasticsearch-seeklogo.svg",
+        desc: "Elasticsearch"
+      },
+      {
+        img: "/heroku.svg",
+        desc: "Heroku"
+      },
+      {
+        img: "/aws-logo.svg",
+        desc: "AWS"
+      },
+      {
+        img: "/gcp-seeklogo.svg",
+        desc: "GCP"
+      },
+      {
+        img: "/azure-logo.svg",
+        desc: "Microsoft Azure"
+      },
+      {
+        img: "/digital-ocean.svg",
+        desc: "Digital Ocean"
+      },
+    ],
+    title: 'Database',
+  },
+  {
+    content: [
+      {
+        img: "/aws-logo.svg",
+        desc: "AWS"
+      },
+      {
+        img: "/gcp-seeklogo.svg",
+        desc: "GCP"
+      },
+      {
+        img: "/azure-logo.svg",
+        desc: "Microsoft Azure"
+      },
+    ],
+    title: 'Cloud/Platform',
   },
 ]
 const extensionLanguages = [
@@ -875,7 +989,7 @@ const extensionLanguages = [
         img: "/fastApi.svg",
         desc: "Fast API"
       },
-    ],    
+    ],
     title: 'Backend',
   },
   {
@@ -884,7 +998,7 @@ const extensionLanguages = [
         img: "/react-seeklogo.svg",
         desc: "React JS"
       },
-    ],  
+    ],
     title: 'Frontend',
   },
   {
@@ -901,7 +1015,7 @@ const extensionLanguages = [
         img: "/digital-ocean.svg",
         desc: "Digital Ocean"
       },
-    ], 
+    ],
     title: 'Infrastructure',
   },
 ]
@@ -948,19 +1062,19 @@ const projects = [
     description:
       'Eliminate time-consuming tasks such as manual data entry and analysis with our automated warehouse management system that ensures SKU-level traceability, web and mobile-based tracking, automatic product purchases, and stock-level maintenance.',
   },
-    {
+  {
     img: '/Custom E-Commerce Business management_️Marketing Campaigns and Optimization.svg',
     title: '️️️️Marketing Campaigns and Optimization',
     description:
       'Automate audience segmentation, personalization, and decision-making based on behaviors and patterns to increase the likelihood of more conversions with our dynamic e-commerce marketing management software solution.',
   },
-      {
+  {
     img: '/Custom E-Commerce Business management_Amazon SP-API -Advertising API Integration.svg',
     title: '️️️️Amazon SP-API /Advertising API Integration',
     description:
       'Experience smooth transformation from Amazon MWS to SP-API and effortlessly automate data for improved selling efficiency, better insights, and smarter decision-making. Let’s take advantage of intuitive APIs for uncompromised CX and scalability',
   },
-        {
+  {
     img: '/Custom E-Commerce Business management_E-commerce Customer Service.svg',
     title: '️️️️E-commerce Customer Service',
     description:
@@ -1010,14 +1124,138 @@ const fullCycle = [
     description:
       'Set up some rock-solid software architecture and APIs across domains with our backend expertise in Cloud, DevOps, PHP, Python, JS, .NET, Java, and RoR to easily accommodate large and advanced data structures bolstering attack-proof security. ',
   },
-    {
+  {
     img: '/fullCycle-8.svg',
     title: '️️️Web App Reengineering and Consultancy ',
     description:
       'Figure out the latest technologies, modern designs, data security approaches, and innovative architectures to future-proof your enterprise from looming market trends. Respond to changing market risks with our competent yet reliable custom web app development consultancy.',
   },
 ]
-const ecomLogos = ["/blue-ware.svg","/ecom-circle-logo.svg","/north-ware.svg","/one-app.svg","/keurig-logo.svg","/sales-support-logo.svg"]
+const SaasDevelop = [
+  {
+    img: '/ecommerce-and-retail-solutions.svg',
+    title: 'E-commerce and retail solutions',
+    description:
+      (
+        <ul>
+          <li>Online storefronts.</li>
+          <li>Shopping cart and checkout systems.</li>
+          <li>Inventory management, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/customer-relationship-management.svg',
+    title: 'Customer relationship management (CRM)',
+    description:
+      (
+        <ul>
+          <li>Sales automation.</li>
+          <li>Customer support and service.</li>
+          <li>Marketing automation, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/fleet-management-apps.svg',
+    title: 'Fleet management apps',
+    description:
+      (
+        <ul>
+          <li>Vehicle tracking and telematics.</li>
+          <li>Maintenance scheduling and management.</li>
+          <li>Route planning and optimization, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/financial-services-and-fintech.svg',
+    title: 'Financial services and fintech',
+    description:
+      (
+        <ul>
+          <li>Payment processing.</li>
+          <li>Loan processing.</li>
+          <li>Claim processing.</li>
+          <li>Cryptocurrency wallets, and more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/healthcare-and-life-sciences.svg',
+    title: 'Healthcare and life sciences',
+    description:
+      (
+        <ul>
+          <li>Electronic health records (EHR).</li>
+          <li>Telemedicine platforms.</li>
+          <li>Clinical trial management, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/productivity-and-collaboration-tools.svg',
+    title: 'Productivity and collaboration tools',
+    description:
+     (
+      <ul>
+        <li>Document creation and editing.</li>
+        <li>Project management.</li>
+        <li>Communication platforms.</li>
+        <li>Time management and tracking, and more.</li>
+      </ul>
+     ),
+  },
+  {
+    img: '/health-and-wellness-services.svg',
+    title: 'Health and wellness services',
+    description:
+      (
+        <ul>
+          <li>Personal wellness and fitness apps.</li>
+          <li>Mental health apps.</li>
+          <li>Nutrition tracking, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/enterprise-resource-planning.svg',
+    title: 'Enterprise resource planning (ERP)',
+    description:
+      (
+        <ul>
+          <li>Corporate finance management.</li>
+          <li>Procurement and supply chain management.</li>
+          <li>HR management, and many more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/ondemand-service-marketplaces.svg',
+    title: 'On-demand service marketplaces',
+    description:
+      (
+        <ul>
+          <li>Car-pooling and transportation services.</li>
+          <li>Food delivery services.</li>
+          <li>Home services, gig economy platforms, and more.</li>
+        </ul>
+      ),
+  },
+  {
+    img: '/cybersecurity-and-identity-management.svg',
+    title: 'Cybersecurity and identity management',
+    description:
+      (
+        <ul>
+          <li>Network security.</li>
+          <li>Identity and access management (IAM).</li>
+          <li>Threat detection and response, and many more.</li>
+        </ul>
+      ),
+  },
+]
+const ecomLogos = ["/blue-ware.svg", "/ecom-circle-logo.svg", "/north-ware.svg", "/one-app.svg", "/keurig-logo.svg", "/sales-support-logo.svg"]
 
 const revenueData = [
   {
@@ -1090,15 +1328,42 @@ const devOpsSliderData = [
     title: "Continuous Integration",
     content: "We integrate code changes into a repository, merge automated releases, and run tests every time a change is made for version stability and control."
   },
-    {
+  {
     image: "/continuous-integration.svg",
     title: "Continuous Deployment",
     content: "We deploy upgraded environments to the infrastructure and execute new developments throughout the CI/CD pipeline, avoiding any delays or bugs."
   },
-   {
+  {
     image: "/security-protocols.svg",
     title: "Security Protocols",
     content: "We stay laser-focused to protect your end product from bugs and errors. Thus we only trust risk-free and stringent security practices and tools to perform automated testing and assure compliance."
+  }
+]
+const SaasSliderData = [
+  {
+    image: "/transparency-is-key.svg",
+    title: "Transparency is Key",
+    content: "We sign a Statement of Work outlining the budget, deliverables, and schedule. You receive weekly updates with demos to track progress."
+  },
+  {
+    image: "/knowledgeable-support.svg",
+    title: "Knowledgeable Support",
+    content: "Our team ensures clarity, avoids technical jargon, and reduces your need for technical staff."
+  },
+  {
+    image: "/global-expertise-local-adaptation.svg",
+    title: "Global Expertise, Local Adaptation",
+    content: "Our team adapts to your requirements, offering virtual collaboration or skilled developers for round-the-clock operation."
+  },
+  {
+    image: "/budget-peace.svg",
+    title: "Budget Peace",
+    content: "Detailed project plans and cost breakdowns prevent overestimation, maintaining budget control."
+  },
+  {
+    image: "/security-first.svg",
+    title: "Security First",
+    content: "Our robust security protocols safeguard your intellectual property with encryption technologies, ensuring confidentiality."
   }
 ]
 
@@ -1261,17 +1526,17 @@ const devOpsFaq = [
     title: 'What are the DevOps consulting services you offer?',
     content: (
       <div className="faq-content">
-      <p>As a DevOps consulting company, Qbatch offers the following services:</p>
-       <ul>
+        <p>As a DevOps consulting company, Qbatch offers the following services:</p>
+        <ul>
           <li>DevOps Consulting Services</li>
           <li>DevOps Automation Services</li>
           <li>CI/CD Services</li>
           <li>DevOps and Cloud Computing</li>
           <li>DevSecOps Services</li>
-            <li>Infrastructure as Code Services</li>
+          <li>Infrastructure as Code Services</li>
           <li>Virtualization</li>
         </ul>
-        </div>
+      </div>
     )
   },
   {
@@ -1279,15 +1544,15 @@ const devOpsFaq = [
     title: 'What are the benefits of DevOps implementation',
     content: (
       <div className="faq-content">
-      <p>Following are significant benefits of DevOps automation services:</p>
-      <ul>
-        <li>Eliminates siloed communication between developers and operations</li>
-        <li>Build robust and market-driven enterprise infrastructure</li>
-        <li>Keeps stakeholders aligned on new changes and goals</li>
-        <li>Assure secure and automated software updates</li>
-        <li>You take the driver’s seat, and DevOps do the work.</li>
-        <li>Cut on costs big time and reduce overheads</li>
-        <li>Complete management from conceptualization to deployment</li>
+        <p>Following are significant benefits of DevOps automation services:</p>
+        <ul>
+          <li>Eliminates siloed communication between developers and operations</li>
+          <li>Build robust and market-driven enterprise infrastructure</li>
+          <li>Keeps stakeholders aligned on new changes and goals</li>
+          <li>Assure secure and automated software updates</li>
+          <li>You take the driver’s seat, and DevOps do the work.</li>
+          <li>Cut on costs big time and reduce overheads</li>
+          <li>Complete management from conceptualization to deployment</li>
         </ul>
       </div>
     )
@@ -1296,9 +1561,9 @@ const devOpsFaq = [
     id: 3,
     title: 'How can DevOps improve the efficiency and productivity of my development and operations teams?',
     content: (
-       <div className="faq-content">
-      <p>DevOps specialists help automate and streamline time-consuming and repetitive processes in the development lifecycle including build,
-         test, and deployment pipelines, enabling quicker and quality  software releases and delivery. DevOps automation services allow teams to
+      <div className="faq-content">
+        <p>DevOps specialists help automate and streamline time-consuming and repetitive processes in the development lifecycle including build,
+          test, and deployment pipelines, enabling quicker and quality  software releases and delivery. DevOps automation services allow teams to
           free up and spend time and effort on more productive tasks such as innovation, research and development, and problem-solving. 	</p>
       </div>
     )
@@ -1307,19 +1572,19 @@ const devOpsFaq = [
     id: 4,
     title: 'What sets your DevOps services apart from other providers in the market?	',
     content: (
-        <div className="faq-content">
-      <p>Following are reasons that set Qbatch’s DevOps services apart from other providers in the market:</p>
-      <ul>
-        <li>DevOps DNA</li>
-        <li>Relevant Delivery Experience</li>
-        <li>Dedicated DevOps Team</li>
-        <li>Homogenous Approach</li>
-        <li>Fool-Proof Security and Control</li>
-        <li>Strongly Agile & Transparent</li>
-        <li>Stakeholder Visibility</li>
-        <li>Proactive Communication</li>
-        <li>Flexible Business Models</li>
-        <li>Great Value for Money</li>
+      <div className="faq-content">
+        <p>Following are reasons that set Qbatch’s DevOps services apart from other providers in the market:</p>
+        <ul>
+          <li>DevOps DNA</li>
+          <li>Relevant Delivery Experience</li>
+          <li>Dedicated DevOps Team</li>
+          <li>Homogenous Approach</li>
+          <li>Fool-Proof Security and Control</li>
+          <li>Strongly Agile & Transparent</li>
+          <li>Stakeholder Visibility</li>
+          <li>Proactive Communication</li>
+          <li>Flexible Business Models</li>
+          <li>Great Value for Money</li>
         </ul>
       </div>
     )
@@ -1329,43 +1594,282 @@ const devOpsFaq = [
     title: 'Do you offer customized DevOps solutions tailored to the specific needs of my organization?	',
     content: (
       <div className="faq-content">
-      <p>Yes, we offer custom DevOps solutions tailored to your organization’s needs in below-mentioned verticals:</p>
-      <ul>
-        <li>Kubernetes Services</li>
-        <li>Professional Infrastructure as Code Services</li>
-        <li>Azure DevOps Services</li>
-        <li>DevSecOps Services</li>
-        <li>AWS DevOps Services</li>
-        <li>GCP DevOps Services</li>
-        <li>ChatOps Solutions</li>
-        <li>GitOps Services</li>
-        <li>DataOps Services</li>
+        <p>Yes, we offer custom DevOps solutions tailored to your organization’s needs in below-mentioned verticals:</p>
+        <ul>
+          <li>Kubernetes Services</li>
+          <li>Professional Infrastructure as Code Services</li>
+          <li>Azure DevOps Services</li>
+          <li>DevSecOps Services</li>
+          <li>AWS DevOps Services</li>
+          <li>GCP DevOps Services</li>
+          <li>ChatOps Solutions</li>
+          <li>GitOps Services</li>
+          <li>DataOps Services</li>
         </ul>
       </div>
     )
   },
-   {
+  {
     id: 6,
     title: 'What tools and technologies do you use to support your DevOps services?	',
     content: (
       <div className="faq-content">
-      <p>We use these DevOps tools and technologies to build your business infrastructure:</p>
-      <ul>
-        <li>AWS</li>
-        <li>Jenkins</li>
-        <li>Docker</li>
-        <li>Ansible</li>
-        <li>Puppet</li>
-        <li>Chef</li>
-        <li>Git</li>
-        <li>Kubernetes</li>
-        <li>Nagios</li>
-        <li>Terraform</li>
+        <p>We use these DevOps tools and technologies to build your business infrastructure:</p>
+        <ul>
+          <li>AWS</li>
+          <li>Jenkins</li>
+          <li>Docker</li>
+          <li>Ansible</li>
+          <li>Puppet</li>
+          <li>Chef</li>
+          <li>Git</li>
+          <li>Kubernetes</li>
+          <li>Nagios</li>
+          <li>Terraform</li>
         </ul>
       </div>
     )
   },
 ]
+
+const saasFaq = [
+  {
+    id: 1,
+    title: 'What is SaaS development, and how can it benefit my business?',
+    content: (
+      <div className="faq-content">
+        <p>SaaS development offers many cost-effective, scalable, and flexible benefits for your business:</p>
+        <span>
+          <b>Cost-friendly</b><br />
+          <p>Save on upfront costs, maintenance, and upgrades with a pay-as-you-go pricing model.</p>
+        </span>
+        <span>
+          <b>Better time management</b><br />
+          <p>Instant installation, vendor-managed maintenance, and upgrades eliminate downtime.</p>
+        </span>
+        <span>
+          <b>Scalability and Accessibility</b><br />
+          <p>Easily adjust usage plans, and access software from anywhere with an internet connection.</p>
+        </span>
+        <span>
+          <b>High compatibility</b><br />
+          <p>Automatic updates ensure users always have the latest version, eliminating compatibility issues.</p>
+        </span>
+        <span>
+          <b>Guaranteed service</b><br />
+          <p>Enjoy guaranteed uptime, automated backups, and data integrity assurance.</p>
+        </span>
+        <span>
+          <b>Top-notch security</b><br />
+          <p>Multiple geographically separated data centers ensure continuity of service and data safety.</p>
+        </span>
+        <span>
+          <b>High adoption rates</b><br />
+          <p>Web-based delivery results in rapid adoption due to familiar internet-based interfaces.</p>
+        </span>
+        <span>
+          <b>Try before buying</b><br />
+          <p>Free trials allow your business to test the solution's viability and compatibility before investing.</p>
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'How does your SaaS development process work?',
+    content: (<div className="faq-content">
+      <p>This is how the SaaS development process works:</p>
+      <ol>
+        <li>
+          <b>Discovery & Strategy</b><br />
+          <p>In-depth analysis of your business goals and target audience.</p>
+        </li>
+        <li>
+          <b>Design & Prototyping</b><br />
+          <p>User-centered design for intuitive and engaging applications.</p>
+        </li>
+        <li>
+          <b>Development & Deployment</b><br />
+          <p>Secure and scalable development using cutting-edge technologies.</p>
+        </li>
+        <li>
+          <b>Integration & Maintenance</b><br />
+          <p>Seamless integration with existing systems and ongoing support.</p>
+        </li>
+        <li>
+          <b>Testing</b><br />
+          <p>We continuously test, monitor, gather feedback, and improve with each iteration.</p>
+        </li>
+        <li>
+          <b>Operations and Support</b><br />
+          <p>After initial feedback during MVP validation, we plan for future improvements.</p>
+        </li>
+      </ol>
+    </div>),
+  },
+  {
+    id: 3,
+    title: 'Do you provide ongoing support and maintenance for your SaaS products?',
+    content: (<div className="faq-content">
+      <p>Yes, we provide ongoing support and maintenance for your SaaS products beyond type and scope.</p>
+    </div>),
+  },
+  {
+    id: 4,
+    title: 'What are the cost factors involved in SaaS development and deployment?',
+    content: (<div className="faq-content">
+      <p>SaaS development and deployment cost factors include:</p>
+      <li>
+        <b>Development</b><br />
+        <p>Initial costs involve planning, design, coding, and testing. Variability depends on complexity, features, hourly rates or fixed project costs.</p>
+      </li>
+      <li>
+        <b>Infrastructure</b><br />
+        <p>Hosting, storage, and processing infrastructure costs encompass cloud hosting fees, database expenses, server maintenance, and scalability requirements.</p>
+        </li>
+        <li>
+        <b>Third-party Services</b><br />
+        <p>Integration of external services like payment gateways or analytics platforms may incur subscription, transaction, or licensing fees.</p>
+        </li>
+        <li>
+        <b>Tech stack</b><br />
+        <p>Cutting-edge languages or frameworks can be pricier.</p>
+        </li>
+        <li>
+        <b>Team structure</b><br />
+        <p>In-house development is expensive, while outsourcing offers cost savings but might require extra management.</p>
+        </li>
+        <li>
+        <b>Design and UX</b><br />
+        <p>Investing in a user-friendly interface adds cost but improves user adoption.</p>
+        </li>
+        <li>
+        <b>Scalability and security</b><br />
+        <p>Building for growth and robust security involves additional costs for infrastructure and expertise.</p>
+        </li>
+        <li>
+        <b>Deployment & maintenance</b><br />
+        <p>Ongoing costs include server setup, maintenance, and updates.</p>
+        </li>
+        <li>
+        <b>Compliance</b><br />
+        <p>Meeting data privacy regulations can incur costs for audits and security measures.</p>
+        </li>
+      
+    </div>),
+  },
+  {
+    id: 5,
+    title: 'What industries have you served with your SaaS development expertise?',
+    content: (<div className="faq-content">
+      <p>Qbatch has served these industries with its SaaS development expertise:</p>
+      <ul>
+        <li>E-commerce</li>
+        <li>Customer Relationship Management (CRM)</li>
+        <li>Marketing Automation</li>
+        <li>Finance</li>
+        <li>Retail, Logistic, and Fleet Management</li>
+        <li>Healthcare</li>
+        <li>Human Resources (HR)</li>
+        <li>Project Management</li>
+        <li>Education & Learning Management</li>
+      </ul>
+    </div>),
+  },
+  {
+    id: 6,
+    title: 'How can SaaS development benefit my business in terms of cost and scalability?',
+    content: (<div className="faq-content">
+      <p>SaaS development benefits businesses in terms of cost and scalability in multiple ways:</p>
+      <ul>
+        <li>Paying a predictable subscription fee for software licenses and hardware reduces IT overhead costs.</li>
+        <li>SaaS apps allow adjustments to subscription plans without disruptions easily scaling your business growth</li>
+        <li>Accelerated development processes enable quicker feature deployment, ensuring faster time-to-market and agility in responding to market needs.</li>
+        <li>SaaS providers handle maintenance, updates, and troubleshooting, reducing IT maintenance costs and freeing resources.</li>
+        <li>Cloud-based access enables flexible and remote usage, facilitating collaboration and access to business tools from anywhere.</li>
+      </ul>
+    </div>),
+  },
+  {
+    id: 7,
+    title: 'What technologies and programming languages do you use for SaaS development',
+    content: (<div className="faq-content">
+      <p>We use these technologies and programming languages for SaaS development:</p>
+      <p><b>Languages</b><br/>
+      Python, Java, JavaScript (Node.js), PHP, C#</p>
+      <p><b>Front-End Development</b><br/>
+      HTML5, CSS3, JavaScript frameworks (React, Angular, Vue.js)</p>
+      <p><b>Back-End Development</b><br/>
+      Django (Python), Spring (Java), Express.js (Node.js), Laravel (PHP), ASP.NET (C#)</p>
+      <p><b>Databases</b><br/>
+      SQL databases (MySQL, PostgreSQL) or NoSQL databases (MongoDB) </p>
+      <p><b>Cloud Platforms</b><br/>
+      AWS, Google Cloud Platform (GCP), Microsoft Azure</p>
+    </div>),
+  },
+  {
+    id: 8,
+    title: 'Can you explain the SaaS development lifecycle and the key stages involved?',
+    content: (<div className="faq-content">
+      <p>The SaaS development lifecycle and the key stages involved</p>
+      <p><b>Discovery & Strategy</b><br/>
+      In-depth analysis of your business goals and target audience.</p>
+      <p><b>Design & Prototyping</b><br/>
+      User-centered design for intuitive and engaging applications.</p>
+      <p><b>Development & Deployment</b><br/>
+      Secure and scalable development using cutting-edge technologies.</p>
+      <p><b>Integration & Maintenance</b><br/>
+      Seamless integration with existing systems and ongoing support.</p>
+      <p><b>Testing</b><br/>
+      We continuously test, monitor, gather feedback, and improve with each iteration.</p>
+      <p><b>Operations and Support</b><br/>
+      After initial feedback during MVP validation, we plan for future improvements.</p>
+    </div>),
+  },
+  {
+    id: 9,
+    title: 'What is your user experience (UX) design approach in SaaS development?',
+    content: (<div className="faq-content">
+      <p>Our UX design ensures a clear hierarchy and logical flow, enabling users to complete main tasks. We prioritize user needs with clear menus, buttons, and intuitive interfaces, ensuring device accessibility. We iterate based on user research and feedback to keep your SaaS application users happy and engaged.</p>
+    </div>),
+  },
+  {
+    id: 10,
+    title: 'What steps do you take to ensure the performance and scalability of SaaS applications?',
+    content: (<div className="faq-content">
+      <p>We consider these steps to ensure the performance and scalability of SaaS applications:</p>
+      <ul>
+        <li>Scalable tech stack, cloud platforms & databases to handle growth.</li>
+        <li>Monitoring and alerting for proactive issue identification.</li>
+        <li>Conduct performance testing throughout development.</li>
+        <li>Optimize code and database queries for efficiency.</li>
+        <li>Implement caching mechanisms to reduce server load.</li>
+        <li>Use auto-scaling cloud infrastructure for hosting.</li>
+        <li>Monitor application performance and scale resources as needed.</li>
+        <li>Design architecture with scalability in mind, such as using microservices.</li>
+        <li>Regularly review and optimize application architecture for performance.</li>
+      </ul>
+    </div>),
+  },
+  {
+    id: 11,
+    title: 'Why should you custom-build your SaaS platform?',
+    content: (<div className="faq-content">
+      <p>This is why you should custom-build your SaaS platform:</p>
+      <ul>
+        <li>Tailored to your specific business needs and workflows.</li>
+        <li>Greater flexibility and control over features and functionality.</li>
+        <li>Scalable architecture that grows with your business.</li>
+        <li>Enhanced security measures tailored to your requirements.</li>
+        <li>Integration with existing systems and tools for seamless operation.</li>
+        <li>Potential cost savings compared to off-the-shelf solutions in the long run.</li>
+        <li>Ability to differentiate your brand and offerings in the market.</li>
+        <li>Direct access to support and maintenance from the development team.</li>
+      </ul>
+    </div>),
+  },
+]
+
 const extensionFaq = [
   {
     id: 1,
@@ -1373,7 +1877,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Yes, we can develop browser extensions for multiple browsers using cross-browser extension frameworks like WebExtensions supported by browsers such as Firefox, Chrome, Edge, and Opera.
+          Yes, we can develop browser extensions for multiple browsers using cross-browser extension frameworks like WebExtensions supported by browsers such as Firefox, Chrome, Edge, and Opera.
         </span>
       </div>
     )
@@ -1384,7 +1888,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Yes, team Qbatch provides post-development support for browser extensions on a retainer basis.
+          Yes, team Qbatch provides post-development support for browser extensions on a retainer basis.
         </span>
       </div>
     )
@@ -1395,7 +1899,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        The pricing model may vary based on project complexity, yet we provide transparent and flexible pricing plans, ensuring value for your investment.
+          The pricing model may vary based on project complexity, yet we provide transparent and flexible pricing plans, ensuring value for your investment.
         </span>
       </div>
     )
@@ -1406,7 +1910,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Yes, team Qbatch offers Maintenance Services after the Browser Extension development completion as required.
+          Yes, team Qbatch offers Maintenance Services after the Browser Extension development completion as required.
         </span>
       </div>
     )
@@ -1417,7 +1921,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Yes, we ensure complete ownership transfer of Chrome extensions making you the sole owner by documenting ownership details, including source code, and address licensing in our agreements.
+          Yes, we ensure complete ownership transfer of Chrome extensions making you the sole owner by documenting ownership details, including source code, and address licensing in our agreements.
         </span>
       </div>
     )
@@ -1428,7 +1932,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Chrome extension development cost varies widely based on complexity, features, and developer expertise. Simple extensions may cost a few thousand dollars, while complex ones could range from several thousand to tens of thousands. Discuss your project with developers for accurate, tailored quotes.
+          Chrome extension development cost varies widely based on complexity, features, and developer expertise. Simple extensions may cost a few thousand dollars, while complex ones could range from several thousand to tens of thousands. Discuss your project with developers for accurate, tailored quotes.
         </span>
       </div>
     )
@@ -1439,7 +1943,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Yes, you can hire a Chrome extension developer for pre-existing extensions. Qbatch’s Chrome extension developers easily handle tasks like adding features, fixing bugs, or updating extensions.
+          Yes, you can hire a Chrome extension developer for pre-existing extensions. Qbatch’s Chrome extension developers easily handle tasks like adding features, fixing bugs, or updating extensions.
         </span>
       </div>
     )
@@ -1450,7 +1954,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Below are the technologies we use to build your Chrome extension:
+          Below are the technologies we use to build your Chrome extension:
         </span>
         <span>Back-end</span>
         <ul>
@@ -1478,7 +1982,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Qbatch is a trustable choice to hire remote Chrome extension developers for custom-made and high-performing browsing experiences.
+          Qbatch is a trustable choice to hire remote Chrome extension developers for custom-made and high-performing browsing experiences.
         </span>
       </div>
     )
@@ -1489,7 +1993,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        This is why Qbatch is the best choice for hiring Chrome Extension developers:
+          This is why Qbatch is the best choice for hiring Chrome Extension developers:
         </span>
         <ul>
           <li>High-security</li>
@@ -1510,7 +2014,7 @@ const extensionFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Hiring a full-time Chrome Extension developer depends upon experience and skill. A junior Chrome Extension developer may have monthly rates of $2,000 to $5,000, while experienced Chrome Extension developer developers in higher-cost regions may charge $5,000 to $10,000 or more.
+          Hiring a full-time Chrome Extension developer depends upon experience and skill. A junior Chrome Extension developer may have monthly rates of $2,000 to $5,000, while experienced Chrome Extension developer developers in higher-cost regions may charge $5,000 to $10,000 or more.
         </span>
       </div>
     )
@@ -2100,7 +2604,7 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        A web application development company builds small-scale and large-scale web applications for startups, scaleups, and businesses.
+          A web application development company builds small-scale and large-scale web applications for startups, scaleups, and businesses.
         </span>
       </div>
     ),
@@ -2131,17 +2635,17 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        A custom web application development company offers these services:
+          A custom web application development company offers these services:
         </span>
         <ul>
-         <li>Web App Reengineering and Consultancy</li>
-         <li>Backend Development Services</li>
-         <li>Front-end Development Services</li>
-         <li>API development and integration</li>
-         <li>Enterprise Web App Development</li>
-         <li>Web Portal Development</li>
-         <li>Progressive Web App Development Services</li>
-         <li>SaaS Web Development</li>
+          <li>Web App Reengineering and Consultancy</li>
+          <li>Backend Development Services</li>
+          <li>Front-end Development Services</li>
+          <li>API development and integration</li>
+          <li>Enterprise Web App Development</li>
+          <li>Web Portal Development</li>
+          <li>Progressive Web App Development Services</li>
+          <li>SaaS Web Development</li>
         </ul>
       </div>
     ),
@@ -2152,7 +2656,7 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Typically, a web application development process includes these steps:
+          Typically, a web application development process includes these steps:
         </span>
         <ul>
           <li>PROJECT MAPPING</li>
@@ -2177,7 +2681,7 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-         The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
+          The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
         </span>
       </div>
     ),
@@ -2188,7 +2692,7 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-         The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
+          The timeline of developing a web app majorly depends on the project’s scope, complexity, and resources involved. A simple web app with minimum viable features may take around 4 - 6 weeks to build while a wide-scope web app featuring advanced specs may take around 6 - 12 months or longer.
         </span>
         <ul>
           <li>Javascript</li>
@@ -2218,7 +2722,7 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Yes, a web application development company definitely helps with website maintenance and updates. With custom web application development being the primary focus, web development specialists also offer retainer-based maintenance and support services for websites. Following are ways a company helps with ongoing website maintenance and updates:
+          Yes, a web application development company definitely helps with website maintenance and updates. With custom web application development being the primary focus, web development specialists also offer retainer-based maintenance and support services for websites. Following are ways a company helps with ongoing website maintenance and updates:
         </span>
         <ul>
           <li>Regular software and content updates</li>
@@ -2241,7 +2745,7 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        There are no standard answers to how much a web application development may cost. But web app scope, region, complexity, and resources involved largely predict the costs of a web app development project. As per a rough estimate, a basic web app may cost $20,000 – $50,000, proof of concept (PoC) for startups may cost  $50,000 – $70,000, while mid-complexity web apps or modern MVPs may cost  $50,000 – $150,000.
+          There are no standard answers to how much a web application development may cost. But web app scope, region, complexity, and resources involved largely predict the costs of a web app development project. As per a rough estimate, a basic web app may cost $20,000 – $50,000, proof of concept (PoC) for startups may cost  $50,000 – $70,000, while mid-complexity web apps or modern MVPs may cost  $50,000 – $150,000.
 
         </span>
       </div>
@@ -2253,7 +2757,7 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Yes, web app development agencies offer ongoing support besides full-cycle web app development services which include regular updates, security optimization, performance audits, responsiveness, analytics, UX improvements, consultation, innovation support, and more.
+          Yes, web app development agencies offer ongoing support besides full-cycle web app development services which include regular updates, security optimization, performance audits, responsiveness, analytics, UX improvements, consultation, innovation support, and more.
         </span>
         <ul>
           <li>Global collaboration and communication</li>
@@ -2277,18 +2781,18 @@ const webAppFaq = [
     content: (
       <div className="faq-content">
         <span>
-        These are the benefits of hiring a web application development company:
-        <ul>
-          <li>Save time and money</li>
-          <li>Reliable and experience-driven website</li>
-          <li>Pleasing design experiences</li>
-          <li>Builds 100 stable code</li>
-          <li>Strongly agile approach</li>
-          <li>Responsive and fast website</li>
-          <li>Access to latest tech stack</li>
-          <li>Look trustworthy</li>
-          <li>SEO Optimized</li>
-        </ul>
+          These are the benefits of hiring a web application development company:
+          <ul>
+            <li>Save time and money</li>
+            <li>Reliable and experience-driven website</li>
+            <li>Pleasing design experiences</li>
+            <li>Builds 100 stable code</li>
+            <li>Strongly agile approach</li>
+            <li>Responsive and fast website</li>
+            <li>Access to latest tech stack</li>
+            <li>Look trustworthy</li>
+            <li>SEO Optimized</li>
+          </ul>
         </span>
       </div>
     ),
@@ -2410,7 +2914,7 @@ const mvpDevFaq = [
     content: (
       <div className="faq-content">
         <span>
-        MVP in software development stands for Minimum Viable Product, a product with essential features designed to attract early adopters and validate a product idea in the development cycle by gathering valuable user feedback.
+          MVP in software development stands for Minimum Viable Product, a product with essential features designed to attract early adopters and validate a product idea in the development cycle by gathering valuable user feedback.
         </span>
       </div>
     ),
@@ -2421,7 +2925,7 @@ const mvpDevFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Building an MVP can take from a few weeks to 2-4 months, depending on complexity, features, design intricacies, available resources, and team efficiency. A focused approach and core features can expedite the timeline, but prioritizing quality is crucial. 
+          Building an MVP can take from a few weeks to 2-4 months, depending on complexity, features, design intricacies, available resources, and team efficiency. A focused approach and core features can expedite the timeline, but prioritizing quality is crucial.
         </span>
       </div>
     ),
@@ -2432,7 +2936,7 @@ const mvpDevFaq = [
     content: (
       <div className="faq-content">
         <span>
-        These are the key benefits of MVP consulting services:
+          These are the key benefits of MVP consulting services:
         </span>
         <ul>
           <li>Validates business assumptions with minimal resources and time.</li>
@@ -2450,7 +2954,7 @@ const mvpDevFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Both Agile and MVP focus on delivering value to users, with Agile emphasizing continuous value delivery and MVP targeting early adopters for validation.
+          Both Agile and MVP focus on delivering value to users, with Agile emphasizing continuous value delivery and MVP targeting early adopters for validation.
         </span>
       </div>
     ),
@@ -2461,7 +2965,7 @@ const mvpDevFaq = [
     content: (
       <div className="faq-content">
         <span>
-        The best approach to building an MVP is to start small, focus on the core value, and iterate based on real user feedback. This approach allows for efficient use of resources while ensuring the product aligns closely with user needs and expectations. Here are key steps:
+          The best approach to building an MVP is to start small, focus on the core value, and iterate based on real user feedback. This approach allows for efficient use of resources while ensuring the product aligns closely with user needs and expectations. Here are key steps:
         </span>
         <ol>
           <li>Identify core value proposition that solves the problems of your end users.</li>
@@ -2484,7 +2988,7 @@ const mvpDevFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Yes, team Qbatch got hands-on experience in both web and mobile app MVP development projects.
+          Yes, team Qbatch got hands-on experience in both web and mobile app MVP development projects.
 
         </span>
       </div>
@@ -2496,7 +3000,7 @@ const mvpDevFaq = [
     content: (
       <div className="faq-content">
         <span>
-        MVP development may cost around $15,000 to $150,000 or more. This majorly depends on factors like features, resources, and team allocation. Having a detailed account of your idea and how you plan to validate it can help you determine the cost estimate for your MVP project.
+          MVP development may cost around $15,000 to $150,000 or more. This majorly depends on factors like features, resources, and team allocation. Having a detailed account of your idea and how you plan to validate it can help you determine the cost estimate for your MVP project.
         </span>
       </div>
     ),
@@ -2507,7 +3011,7 @@ const mvpDevFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Below are the reasons to trust Qbatch for MVP development:
+          Below are the reasons to trust Qbatch for MVP development:
         </span>
         <span>
           <b>Core Team</b>
@@ -2524,7 +3028,7 @@ const mvpDevFaq = [
           <p>Control your MVP from the get-go, set deadlines, and tell us your goals. You command, we obey. </p>
           <b>Trustable Expertise</b>
           <p>We've nailed MVP launches before, and we're ready to do it again!</p>
-          </span>
+        </span>
       </div>
     ),
   },
@@ -2881,73 +3385,136 @@ const productDesignlist = [
 ]
 const technologicalCapacityData = [
   {
-   icon: "/ai-ml.svg",
-   title: "AI & ML",
-   desc: "Garner greater operational intelligence, reduced costs, and top-grade automation to ensure that much-anticipated transition."
+    icon: "/ai-ml.svg",
+    title: "AI & ML",
+    desc: "Garner greater operational intelligence, reduced costs, and top-grade automation to ensure that much-anticipated transition."
   },
   {
-   icon: "/iot-icon.svg",
-   title: "IoT",
-   desc: "Integrate your smart sensors and devices and monitor through a central console and capture insightful data for improved enterprise-level connectivity."
+    icon: "/iot-icon.svg",
+    title: "IoT",
+    desc: "Integrate your smart sensors and devices and monitor through a central console and capture insightful data for improved enterprise-level connectivity."
   },
   {
-   icon: "/blockchain.svg",
-   title: "Blockchain",
-   desc: "Be in the vanguard of your enterprise and its processes with higher-level data control and automation beyond third-party interference."
+    icon: "/blockchain.svg",
+    title: "Blockchain",
+    desc: "Be in the vanguard of your enterprise and its processes with higher-level data control and automation beyond third-party interference."
   },
   {
-   icon: "/data-science.svg",
-   title: "Data Science",
-   desc: "Dealing with tons of data? No worries, our expertise in Big Data can help you streamline your data streams for smarter and market-relevant decision-making."
+    icon: "/data-science.svg",
+    title: "Data Science",
+    desc: "Dealing with tons of data? No worries, our expertise in Big Data can help you streamline your data streams for smarter and market-relevant decision-making."
   },
   {
-   icon: "/cloud-computing.svg",
-   title: "Cloud Computing",
-   desc: "A flexible and interconnected business requires robust cloud computing services for flawless execution of the latest technologies like AWS, Azure, and Google Cloud."
+    icon: "/cloud-computing.svg",
+    title: "Cloud Computing",
+    desc: "A flexible and interconnected business requires robust cloud computing services for flawless execution of the latest technologies like AWS, Azure, and Google Cloud."
   },
   {
-   icon: "/no-code.svg",
-   title: "Low-Code/No-Code",
-   desc: "Build your enterprise software using no-code/ low-code platforms for managing visual elements like drag-and-drop and pull-down menu interfaces."
+    icon: "/no-code.svg",
+    title: "Low-Code/No-Code",
+    desc: "Build your enterprise software using no-code/ low-code platforms for managing visual elements like drag-and-drop and pull-down menu interfaces."
   },
- ]
+]
 const whyDevOpsData = [
   {
-   icon: "/lead-the-market.svg",
-   title: "Lead the market",
-   desc: "Quickly adapt to market demands, and build lasting user experiences. "
+    icon: "/lead-the-market.svg",
+    title: "Lead the market",
+    desc: "Quickly adapt to market demands, and build lasting user experiences. "
   },
   {
     icon: "/scale-easily.svg",
-   title: "Scale easily",
-   desc: "Leverage DevOps automation services without risking your enterprise operations."
+    title: "Scale easily",
+    desc: "Leverage DevOps automation services without risking your enterprise operations."
   },
   {
     icon: "/reduce-expenditure.svg",
-   title: "Reduce expenditure",
-   desc: "Automated testing and bug tracking eliminate possible technical debts thus adding value for money."
+    title: "Reduce expenditure",
+    desc: "Automated testing and bug tracking eliminate possible technical debts thus adding value for money."
   },
   {
     icon: "/build-a-close-knit-team.svg",
-   title: "Build a close-knit team",
-   desc: "Create an agile and connected culture bringing development, and operation guys together."
+    title: "Build a close-knit team",
+    desc: "Create an agile and connected culture bringing development, and operation guys together."
   },
   {
     icon: "/deploy-continuously.svg",
-   title: "Deploy continuously",
-   desc: "Streamline the delivery pipeline by continuously deploying into multiple SDLC environments."
+    title: "Deploy continuously",
+    desc: "Streamline the delivery pipeline by continuously deploying into multiple SDLC environments."
   },
   {
-   icon: "/iterate-frequently.svg",
-   title: "Iterate and release frequently",
-   desc: "Deliver helpful features through frequent automation and optimization."
+    icon: "/iterate-frequently.svg",
+    title: "Iterate and release frequently",
+    desc: "Deliver helpful features through frequent automation and optimization."
   },
   {
-   icon: "/increase-consistency.svg",
-   title: "Increase consistency",
-   desc: "Foster consistency across development, testing, production environments, and hybrid cloud."
+    icon: "/increase-consistency.svg",
+    title: "Increase consistency",
+    desc: "Foster consistency across development, testing, production environments, and hybrid cloud."
   },
- ]
+]
+const OurSaasData = [
+  {
+    icon: "/b2b-saas-application-development.svg",
+    title: "B2B SaaS Application Development",
+    desc: "Build business-specific SaaS web, mobile, and desktop apps that maximize your ROI and effectively reach your end users."
+  },
+  {
+    icon: "/mvp-saas-product-development.svg",
+    title: "MVP SaaS Product Development",
+    desc: "Design and build customer-driven MVP SaaS products to test the market ensuring bulk adoption and retention."
+  },
+  {
+    icon: "/saas-cloud-development-and-migration.svg",
+    title: "SaaS Cloud Development & Migration",
+    desc: "Migrate your existing application to the cloud or move your SaaS solution to a different cloud provider for hi-tech performance and profitability."
+  },
+  {
+    icon: "/verifying-and-prioritizing-ideas-1.svg",
+    title: "SaaS DevOps & Testing",
+    desc: "We adhere to strict security standards and employ a comprehensive testing strategy to ensure your SaaS application's quality, security, and reliability."
+  },
+  {
+    icon: "/saas-support-and-maintenance.svg",
+    title: "SaaS Support and Maintenance",
+    desc: "We provide ongoing support and maintenance for your SaaS solution, which includes bug fixes, feature updates, and performance optimization."
+  },
+  {
+    icon: "/saas-evolution-and-innovation.svg",
+    title: "SaaS Evolution & Innovation",
+    desc: "Our SaaS experts help your SaaS application evolve by introducing in-demand features like video streaming, chatbots, AI, and advanced analytics."
+  },
+  {
+    icon: "/saas-application-consulting.svg",
+    title: "SaaS Application Consulting",
+    desc: "Our consultants provide technical and strategic guidance throughout the SaaS development lifecycle helping you achieve your business goals."
+  },
+]
+const AdvanceSaasData = [
+  {
+    title: "Mixed-Tenant and Multi-Tenant Architecture",
+    desc: "Design and implement robust SaaS architectures to meet your security and compliance requirements."
+  },
+  {
+    title: "SaaS Optimization Services",
+    desc: "Re-engineer and optimize your existing SaaS product to improve usability, performance, and user adoption."
+  },
+  {
+    title: "SaaS API Development",
+    desc: "Our back-end SaaS solution developers build secure, scalable, and high-performing APIs that provide fast, secure data storage for your SaaS solution."
+  },
+  {
+    title: "CI/CD Implementation",
+    desc: "Streamline CI/CD development pipelines enabling frequent improvements, smooth testing, and deployment processes."
+  },
+  {
+    title: "SaaS Build & Deployment Systems",
+    desc: "Leverage Docker and Kubernetes to automate and accelerate your SaaS web and mobile app development, deployment, scaling, and management processes. "
+  },
+  {
+    title: "SaaS Third-party Integrations",
+    desc: "Connect your SaaS app with third-party solutions from external data sources to payment gateways. "
+  },
+]
 const productDesignData = [
   {
     icon: '/verifying-and-prioritizing-ideas.svg',
@@ -2990,90 +3557,132 @@ const productDesignData = [
     desc: 'Our “Shift-left” approach and DevOps mindset motivate our product developers to follow the best coding practices – delivering quality-driven, secure, and adaptive software.',
   },
 ]
- const choiceEnterpriseData = [
+const choiceEnterpriseData = [
   {
-   icon: "/business-needs.svg",
-   title: "Business Needs",
-   desc: "Does the current software or process understand your organization’s needs and provides intended solutions?"
+    icon: "/business-needs.svg",
+    title: "Business Needs",
+    desc: "Does the current software or process understand your organization’s needs and provides intended solutions?"
   },
   {
-   icon: "/user-expectations.svg",
-   title: "User Expectations",
-   desc: "Are your users/customers happy with the current software functionality, interface, and design? Does it offer easy-to-use features or are they just making the user journey difficult?"
+    icon: "/user-expectations.svg",
+    title: "User Expectations",
+    desc: "Are your users/customers happy with the current software functionality, interface, and design? Does it offer easy-to-use features or are they just making the user journey difficult?"
   },
   {
-   icon: "/operational-efficiency.svg",
-   title: "Operational Efficiency",
-   desc: "Do you plan to improve and automate organizational workflows with minimal occurrence of errors and reduced workloads assuring more productivity?"
+    icon: "/operational-efficiency.svg",
+    title: "Operational Efficiency",
+    desc: "Do you plan to improve and automate organizational workflows with minimal occurrence of errors and reduced workloads assuring more productivity?"
   },
   {
-   icon: "/budget-constraints.svg",
-   title: "Budget Constraints",
-   desc: "Does the expected ROI associated with the new software outweigh its costs? It is necessary to take expert advice from enterprise software consultants for realistic budgeting."
+    icon: "/budget-constraints.svg",
+    title: "Budget Constraints",
+    desc: "Does the expected ROI associated with the new software outweigh its costs? It is necessary to take expert advice from enterprise software consultants for realistic budgeting."
   },
   {
-   icon: "/technology-selection.svg",
-   title: "Technology Selection",
-   desc: "Are you choosing the right technology for your organization and its members? Did you train them? Are you investing to maintain and support that technology?"
+    icon: "/technology-selection.svg",
+    title: "Technology Selection",
+    desc: "Are you choosing the right technology for your organization and its members? Did you train them? Are you investing to maintain and support that technology?"
   },
   {
-   icon: "/existing-systems.svg",
-   title: "Existing Systems",
-   desc: "Do you plan to integrate the new software with old systems and applications for better data communication?"
+    icon: "/existing-systems.svg",
+    title: "Existing Systems",
+    desc: "Do you plan to integrate the new software with old systems and applications for better data communication?"
   },
   {
-   icon: "/security-and-compliance.svg",
-   title: "Security and Compliance",
-   desc: "Does your custom enterprise software comply with security standards and practices to protect sensitive data?"
+    icon: "/security-and-compliance.svg",
+    title: "Security and Compliance",
+    desc: "Does your custom enterprise software comply with security standards and practices to protect sensitive data?"
   },
   {
-   icon: "/Enterprise-timeline.svg",
-   title: "Timeline",
-   desc: "Are you mindful of the elements that may impact business applications development timelines, such as resource availability and technical roadblocks?"
+    icon: "/Enterprise-timeline.svg",
+    title: "Timeline",
+    desc: "Are you mindful of the elements that may impact business applications development timelines, such as resource availability and technical roadblocks?"
   },
- ]
- const developmentExpertiseData = [
-   {
+]
+const developmentExpertiseData = [
+  {
     image: '/data-warehouse.svg',
     title: 'Data Warehousing',
     content: 'Offering end-to-end data warehousing services which include detailed consulting, mission-driven development, careful deployment, and long-term support.',
-   },
-   {
-     image: '/crm-development.svg',
-     title: 'CRM Development',
-     content: 'Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!',
-   },
-   {
-     image: '/modernization-services.svg',
-     title: 'IT Modernization Services',
-     content: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
-   },
-   {
-     image: '/cms-development.svg',
-     title: 'CMS Development',
-     content: 'Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.',
-   },
-   {
-     image: '/scm-development.svg',
-     title: 'SCM Development',
-     content: 'Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.',
-   },
-   {
-     image: '/ehr-development.svg',
-     title: 'EHR Development',
-     content: 'Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.',
-   },
-   {
-     image: '/bi-service.svg',
-     title: 'BI Services',
-     content: 'Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.',
-   },
-   {
-     image: '/hrm-development.svg',
-     title: 'HRM Software Development',
-     content: 'Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.',
-   },
- ]
+  },
+  {
+    image: '/crm-development.svg',
+    title: 'CRM Development',
+    content: 'Keep track of customer activities, trends, and behavior from a highly navigable dashboard. From custom CRM development cost analysis to roadmaps, we cover it all!',
+  },
+  {
+    image: '/modernization-services.svg',
+    title: 'IT Modernization Services',
+    content: 'We as a custom enterprise software development company provide the most needed advice related to your IT modernization strategy, software re-engineering, and migration.',
+  },
+  {
+    image: '/cms-development.svg',
+    title: 'CMS Development',
+    content: 'Create and manage your daily content generation and management chores with our enterprise-grade CMS development services.',
+  },
+  {
+    image: '/scm-development.svg',
+    title: 'SCM Development',
+    content: 'Build durable supply chains that deliver unswerving business growth with our supply chain development including inventory management and risk management.',
+  },
+  {
+    image: '/ehr-development.svg',
+    title: 'EHR Development',
+    content: 'Better manage your patients’ medical history, provide remote care, and automate other medical operations under budget with our custom healthcare software development services.',
+  },
+  {
+    image: '/bi-service.svg',
+    title: 'BI Services',
+    content: 'Bring business intelligence to your everyday enterprise workflow processes and overall infrastructure with more automation and smart analytics.',
+  },
+  {
+    image: '/hrm-development.svg',
+    title: 'HRM Software Development',
+    content: 'Hiring and retaining the best talent requires a highly-functional and modern HRM software solution as well as dealing with the daily needs of human resource departments.',
+  },
+]
+const SaasProduct = [
+  {
+    image: '/multi-payment-system.svg',
+    title: 'Multi-Payment System',
+    content: 'Embed payments and financial services offer and accept multiple payment options hassle-free within your platform.',
+  },
+  {
+    image: '/user-management.svg',
+    title: 'User Management',
+    content: 'Manage, identify, and authorize teams and individual profiles within your SaaS application with customized access based on subscriptions or needs.',
+  },
+  {
+    image: '/interactive-dashboards.svg',
+    title: 'Interactive Dashboards',
+    content: 'Explore and analyze your data with interactive dashboards based on simple line charts or multicomponent visuals. ',
+  },
+  {
+    image: '/rise-of-self-service.svg',
+    title: 'Rise of Self-Service',
+    content: 'Allow your users to independently complete tasks or access information without needing direct support empowering them to create controlled experiences and get things done efficiently.',
+  },
+  {
+    image: '/role-based-access-control.svg',
+    title: 'Role-Based Access Control',
+    content: 'Give privileges and access to different user roles. Allow admins to regulate user permissions effectively.',
+  },
+  {
+    image: '/reporting-and-analytics.svg',
+    title: 'Reporting and Analytics',
+    content: 'Track business performance defining key metrics and KPIs, and gain helpful insights with comprehensive reporting tools.',
+  },
+  {
+    image: '/single-sign-on.svg',
+    title: 'Single sign-on',
+    content: 'Customize your product with on-demand features whether integration with third-party services, advanced data visualization tools, or AI-powered analytics. ',
+  },
+  {
+    image: '/on-demand.svg',
+    title: 'On-demand ',
+    content: 'Customize your product with on-demand features whether integration with third-party services, advanced data visualization tools, or AI-powered analytics. ',
+  },
+]
 const customEnterpriseData = [
   {
     image: '/interprise-application.svg',
@@ -3187,24 +3796,24 @@ const AffordableHiringData = [
 const FourStepsProcessData = [
   {
     img: '/arrow-line.svg',
-    number:1,
+    number: 1,
     heading: "Tell us your requirements",
     text: "We carefully understand your needs, goals, and dynamics.",
   },
   {
     img: '/arrow-line.svg',
-    number:2,
+    number: 2,
     heading: "Meet A-grade developers",
     text: "We screen the most suitable developer profiles & present them to you within 24 hours.",
   },
   {
     img: '/arrow-line.svg',
-    number:3,
+    number: 3,
     heading: "Find the right fit",
     text: "Meet the devs and find your best match. We take care of the rest!",
   },
   {
-    number:4,
+    number: 4,
     heading: "Begin your trial",
     text: "Start building with a no-risk 1-week trial period.",
   },
@@ -3218,7 +3827,7 @@ const hassleData = [
   },
   {
     img: '/fast-time.svg',
-    number:60,
+    number: 60,
     sign: "%",
     heading: "Less Time Hiring",
   },
@@ -3235,7 +3844,7 @@ const hassleData = [
     heading: "Retention Rate",
   },
   {
-    img:  '/dev-match-time-1.svg',
+    img: '/dev-match-time-1.svg',
     number: 48,
     sign: "hr",
     heading: "Dev Match Time",
@@ -3243,49 +3852,49 @@ const hassleData = [
 ]
 const DevData = [
   {
-    img:<img className="image-wrapper" src='/left-arrow.svg' loading="lazy" alt="left-arrow" />,
-    heading:'Dev replacement guarantee',
-    text:' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
+    img: <img className="image-wrapper" src='/left-arrow.svg' loading="lazy" alt="left-arrow" />,
+    heading: 'Dev replacement guarantee',
+    text: ' Developers missing deadlines? We will provide you with additional resources without changing your project deadline or cost. Our retention rate is high, but just in case.'
   },
   {
     img: <img className="image-wrapper" src="/right-arrow.svg" loading="lazy" alt="right-arrow" />,
-    heading:'Comprehensive weekly reports',
-    text:' You’ll receive a detailed list of all the tasks your dedicated development team or developer has completed including the total time ensuring transparency and individual-level performance.'
+    heading: 'Comprehensive weekly reports',
+    text: ' You’ll receive a detailed list of all the tasks your dedicated development team or developer has completed including the total time ensuring transparency and individual-level performance.'
   },
   {
     img: <img className="image-wrapper" src='/left-arrow.svg' loading="lazy" alt="left-arrow" />,
-    heading:'On-the-go support',
-    text:' Our miraculous developers carefully cater to your feedback and change requests on your preferred channels of communication. Because the greatness must not halt!'
+    heading: 'On-the-go support',
+    text: ' Our miraculous developers carefully cater to your feedback and change requests on your preferred channels of communication. Because the greatness must not halt!'
   },
   {
-    heading:'Total product mindset',
-    text:'Our software developers for hire own your product and take care of your trust. The founder’s mentality helps them deliver practical and sustainable results.'
+    heading: 'Total product mindset',
+    text: 'Our software developers for hire own your product and take care of your trust. The founder’s mentality helps them deliver practical and sustainable results.'
   },
 ]
 const cardsData = [
   {
-   img:'/checked-mark.svg',
+    img: '/checked-mark.svg',
     text: 'Proven Coding Practices',
-    className:'text-wrapper'
+    className: 'text-wrapper'
   },
   {
-   img:'/checked-mark.svg',
+    img: '/checked-mark.svg',
     text: 'No Hidden Costs',
   },
   {
-   img:'/checked-mark.svg',
+    img: '/checked-mark.svg',
     text: 'No Sudden Replacements'
   },
   {
-   img:'/checked-mark.svg',
+    img: '/checked-mark.svg',
     text: 'Best Quality-Price Ratio'
   },
   {
-   img:'/checked-mark.svg',
+    img: '/checked-mark.svg',
     text: 'Leaders’ Mentality'
   },
   {
-   img:'/checked-mark.svg',
+    img: '/checked-mark.svg',
     text: 'Trustworthy & Transparent'
   },
 ]
@@ -3755,7 +4364,7 @@ const mvpBoxes2 = [
     description: 'Control your MVP from the get-go, set deadlines, and tell us your goals. You command, we obey.'
   },
 ];
-const mvpDevService= [
+const mvpDevService = [
   {
     title: 'Idea Validation',
     image: '/idea-validation.svg',
@@ -4043,11 +4652,13 @@ export {
   ecomLogos,
   projects,
   fullCycle,
+  SaasDevelop,
   marketPlaceData,
   webAppFaq,
   revenueData,
   servicesSliderData,
   devOpsSliderData,
+  SaasSliderData,
   automationData,
   lostToLaunched,
   faqQuestion,
@@ -4056,6 +4667,7 @@ export {
   youCanTrustData,
   lostToLaunchedItems,
   languagesData,
+  SaaslanguagesData,
   webExpertiseData,
   dedicatedTiles,
   multiPlatformData,
@@ -4067,6 +4679,7 @@ export {
   customEnterpriseData,
   cycleProductData,
   developmentExpertiseData,
+  SaasProduct,
   technologicalCapacityData,
   whyDevOpsData,
   productDesignData,
@@ -4078,6 +4691,7 @@ export {
   whyChooseQbatchData,
   productDevlopmentServices,
   devOpsFaq,
+  saasFaq,
   AffordableHiringData,
   FourStepsProcessData,
   hassleData,
@@ -4107,5 +4721,7 @@ export {
   mvpBoxes2,
   mvpDevService,
   personal,
-  mvpDevFaq
+  mvpDevFaq,
+  OurSaasData,
+  AdvanceSaasData
 }
