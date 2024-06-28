@@ -5,11 +5,6 @@ const Container = styled.div`
   padding: 0 96px;
   height:100%;
   width: 100%;
-  &.blog-cards-container{
-    div{
-      padding-bottom: 0;
-    }
-  }
   ${media.lg`
   padding: 0 80px;
   `}

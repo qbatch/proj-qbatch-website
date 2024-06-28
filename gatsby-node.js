@@ -11,6 +11,20 @@ const createBlogPages = async (graphql, actions) => {
               slug
             }
             slug
+            contributor {
+              name
+              username
+              description
+              image {
+                localFile {
+                  url
+                }
+              }
+              Socials {
+                socialLink
+                socialPlatform
+              }
+            }
             category {
               categoryName
               slug
@@ -33,6 +47,24 @@ const createBlogPages = async (graphql, actions) => {
           }
         }
       }
+      allStrapiUser {
+        edges{
+          node {
+            username
+            name
+            description
+            image {
+              localFile {
+                url
+              }
+            }
+            Socials {
+              socialLink
+              socialPlatform
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -41,6 +73,7 @@ const createBlogPages = async (graphql, actions) => {
   }
 
   const strapiBlogPosts = result.data.allStrapiArticle.edges;
+  const strapiUsers = result.data.allStrapiUser.edges;
 
   strapiBlogPosts.forEach(({ node }) => {
     createPage({
@@ -58,16 +91,18 @@ const createBlogPages = async (graphql, actions) => {
         title: node.category?.categoryName,
       },
     });
+  });
 
+  strapiUsers.forEach(({ node }) => {
     createPage({
-      path: `/authors/${node.user?.username}`,
+      path: `/authors/${node.username}/`,
       component: path.resolve('./src/pages/authors.js'),
       context: {
-        title: node.user?.username,
-        name: node.user?.name,
-        description: node.user?.description,
-        img: node.user?.image,
-        socials: node.user?.Socials,
+        username: node.username,
+        name: node.name,
+        description: node.description,
+        img: node.image,
+        socials: node.Socials,
       },
     });
   });

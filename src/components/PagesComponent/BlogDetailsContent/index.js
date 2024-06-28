@@ -140,7 +140,7 @@ function App({ data, path }) {
       to: `https://www.linkedin.com/shareArticle?url=https://qbatch.com/blog/${path}`,
     },
   ];
-
+  
   return (
     <ContentWrapper>
       <div className="content-section content">
@@ -268,6 +268,22 @@ function App({ data, path }) {
                               />
                             </div>
                           </div>
+                          <div className="contributors-wrapper">
+                            <span className="inner-heading">Contributors:</span>
+                            <div className="contributors">
+                              {data?.contributor?.map((contributor, index) => (
+                                <a href={`/authors/${contributor.username}`} key={index} title={contributor.username} 
+                                  onClick={() => {
+                                    navigate(`/authors/${contributor.username}`, {
+                                      state: { slug: data.seo.slug },
+                                    })
+                                  }}
+                                >
+                                  <img src={contributor.image?.localFile.url} />
+                                </a>
+                              ))}
+                            </div>
+                          </div>
                         </div>
                       </Col>
                       <Col xs={12}>
@@ -293,74 +309,74 @@ function App({ data, path }) {
 
             <Row className="justify-content-center">
               <Col xxl={6} sm={12}>
-              <div className="might-section">
-              <h3 className="might-heading text-h2">You might also like…</h3>
-              <BlogCardsWrapper className="might-wrapper">
-                <Row>
-                  {blogLikedData.slice(0, 2).reverse().map((card, ind) => {
-                    const customDate = new Date(card?.publishedAt);
-                    return (
-                      <Col xl={6} lg={6} md={6} key={ind}>
-                        <div className="inner">
-                          <div className="card-img">
-                            <img
-                              src={card.blogImg?.localFile.url}
-                              alt={card.blogTitle}
-                            />
-                          </div>
-                          <div className="inner-content">
-
-                            {data?.blogTags && (
-                              <div className="d-flex gap-2">
-                                {data?.blogTags?.strapi_json_value.map((tag, ind) => (
-                                  <div className="blog-badge mb-4" key={ind}>
-                                    <span>{tag}</span>
-                                  </div>
-                                ))}
+                <div className="might-section">
+                  <h3 className="might-heading text-h2">You might also like…</h3>
+                  <BlogCardsWrapper className="might-wrapper">
+                    <Row>
+                      {blogLikedData.slice(0, 2).reverse().map((card, ind) => {
+                        const customDate = new Date(card?.publishedAt);
+                        return (
+                          <Col xl={6} lg={6} md={6} key={ind}>
+                            <div className="inner">
+                              <div className="card-img">
+                                <img
+                                  src={card.blogImg?.localFile.url}
+                                  alt={card.blogTitle}
+                                />
                               </div>
-                            )}
-                            <p onClick={() => {
-                              navigate(`/blog${card.seo.slug}`, {
-                                state: { blogId: card.id },
-                              });
-                            }}
-                              className="blog-title mb-4">
-                              {card.blogTitle}
-                            </p>
-                            <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
-                              <div
-                                className="d-flex align-items-center gap-2 pointer"
-                                onClick={() => {
-                                  navigate(`/authors/${card?.user?.username}`, {
-                                    state: { slug: card.seo.slug },
+                              <div className="inner-content">
+
+                                {data?.blogTags && (
+                                  <div className="d-flex gap-2">
+                                    {data?.blogTags?.strapi_json_value.map((tag, ind) => (
+                                      <div className="blog-badge mb-4" key={ind}>
+                                        <span>{tag}</span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                )}
+                                <p onClick={() => {
+                                  navigate(`/blog${card.seo.slug}`, {
+                                    state: { blogId: card.id },
                                   });
                                 }}
-                              >
-                                <img
-                                  src={card?.user?.image.localFile.url || "/avatar.svg"}
-                                  width="24px"
-                                  height="24px"
-                                  alt="no-user"
-                                  className="avatar-sm-img"
-                                />
-                                <span>{card?.user?.name || "No User"}</span>
-                              </div>
-                              <div className="timer">
-                                <img src="/timer-blue.svg" alt="timer" />
-                                <span>
-                                  <ReadingTime description={card?.blogDescription?.data?.blogDescription} />{" "}
-                                  Minutes Read
-                                </span>
+                                  className="blog-title mb-4">
+                                  {card.blogTitle}
+                                </p>
+                                <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
+                                  <div
+                                    className="d-flex align-items-center gap-2 pointer"
+                                    onClick={() => {
+                                      navigate(`/authors/${card?.user?.username}`, {
+                                        state: { slug: card.seo.slug },
+                                      });
+                                    }}
+                                  >
+                                    <img
+                                      src={card?.user?.image.localFile.url || "/avatar.svg"}
+                                      width="24px"
+                                      height="24px"
+                                      alt="no-user"
+                                      className="avatar-sm-img"
+                                    />
+                                    <span>{card?.user?.name || "No User"}</span>
+                                  </div>
+                                  <div className="timer">
+                                    <img src="/timer-blue.svg" alt="timer" />
+                                    <span>
+                                      <ReadingTime description={card?.blogDescription?.data?.blogDescription} />{" "}
+                                      Minutes Read
+                                    </span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </Col>
-                    );
-                  })}
-                </Row>
-              </BlogCardsWrapper>
-            </div>
+                          </Col>
+                        );
+                      })}
+                    </Row>
+                  </BlogCardsWrapper>
+                </div>
               </Col>
             </Row>
           </div>

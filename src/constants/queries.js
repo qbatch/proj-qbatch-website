@@ -211,10 +211,15 @@ export const Queries = () => {
           contributor {
             name
             username
+            description
             image{
               localFile{
                 url
               }
+            }
+            Socials {
+              socialLink
+              socialPlatform
             }
           }
           user {
@@ -246,7 +251,6 @@ export const Queries = () => {
           id
           publishedAt
           favorite
-          bannerBlog
           seo {
             metaTitle
             slug
@@ -565,7 +569,6 @@ export const Queries = () => {
              id
              publishedAt
              favorite
-             bannerBlog
              seo {
                metaTitle
                slug
