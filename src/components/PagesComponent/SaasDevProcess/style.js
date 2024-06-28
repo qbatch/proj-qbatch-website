@@ -6,6 +6,7 @@ position: relative;
 padding: 96px 0;
 overflow: hidden;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
+
 .heading{
   max-width: 502px;
   .underline{

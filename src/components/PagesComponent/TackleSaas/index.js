@@ -11,12 +11,12 @@ const tackleSaas = () => {
     <TackleSaasWrapper>
       <Container>
         <Row className='g-5 align-items-center'>
-          <Col lg={6}>
+          <Col lg={6} className='order-md-1 order-2'>
             <div className='d-flex justify-content-center'>
               <img src='/tackle-saas-challenges.svg' alt='tackle-saas-challenges' />
             </div>
           </Col>
-          <Col lg={6}>
+          <Col lg={6} className='order-md-2 order-1'>
             <h2 className='heading text-h2'>
               Tackle SaaS challenges head-on with Qbatch’s expertise-driven
               SaaS development — from discovery to support.

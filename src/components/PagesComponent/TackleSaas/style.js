@@ -21,7 +21,7 @@ ${media.md`
   padding: 48px 0;
   .paragraph{
      font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
-     line-height: 20px;
+     line-height: 24px;
   }
 `}
 `

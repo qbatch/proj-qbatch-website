@@ -146,10 +146,22 @@ const SliderWrapper = styled.div`
   &.saas-slider{
     .upper-heading{
       margin-bottom: 116px;
+      ${media.md`
+        margin-bottom: 20px;
+      `}
+      h2{
+        ${media.md`
+          margin-bottom: 12px;
+        `}
+      }
       .paragraph{
         max-width: 1081px;
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         line-height: 32px;
+        ${media.md`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+          line-height:24px;
+        `}
       }
     }
   }

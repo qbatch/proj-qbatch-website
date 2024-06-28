@@ -165,6 +165,14 @@ const LanguagesWrapper = styled.div`
   .framework-item {
     min-height: 700px;
   }
+  &.saas-languages{
+    .framework-item{
+      min-height: 570px;
+    }
+    .slick-list{
+      height: 570px;
+    }
+  }
 `;
 
 export default LanguagesWrapper;

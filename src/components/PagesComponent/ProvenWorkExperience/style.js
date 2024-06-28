@@ -27,6 +27,13 @@ const ProvenExperienceWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
         line-height: 32px;
       }
+      ${media.md`
+        margin-bottom:0;
+        p{
+          line-height: 24px;
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+        }
+      `}
     }
     ${media.sm`
       padding: 56px 0  24px;

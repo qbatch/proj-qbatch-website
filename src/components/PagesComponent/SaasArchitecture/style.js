@@ -7,12 +7,19 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
 .heading{
   margin-bottom: 24px;
   max-width: 411px;
+  ${media.md`
+    text-align: center;
+    margin-bottom: 12px;
+  `}
 }
 .paragraph{
   margin-bottom: 40px;
   font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   line-height: 32px;
   max-width: 453px;
+  ${media.md`
+    text-align: center;
+  `}
 }
 .inner-box{
   border: 1px solid ${({ theme }) => theme.colors.dividerColor} ;

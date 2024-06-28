@@ -84,11 +84,23 @@ const FullCycleWrapper = styled.div`
     margin-top: 73px;
   }
   &.saas-app-development{
+    .main-heading{
+      ${media.md`
+        text-align: left;
+        margin-bottom: 12px;
+      `}
+    }
     .paragraph{
       max-width: 1081px;
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       line-height: 32px;
       margin-bottom: 72px;
+      ${media.md`
+        margin-bottom: 32px;
+        text-align: left;
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+        line-height: 24px;
+      `}
     }
     .title{
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
