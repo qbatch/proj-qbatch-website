@@ -43,29 +43,23 @@ const Author = ({ pageContext }) => {
         ]}
       />
       <Container className="blog-cards-container">
-        {articlesData.length > 0 ? (
+        {articlesData.length > 0 && (
           <BlogCards isLoadMoreBtn={true} upperHeading={`Authored Stories by ${name || username}`} data={articlesData} />
-        ) : (
-          <p className='py-4'>No articles found for this author.</p>
         )}
       </Container>
       <Divider />
       <Container className="blog-cards-container">
-        {contributedArticlesData.length > 0 ? (
+        {contributedArticlesData.length > 0 && (
           <BlogCards isLoadMoreBtn={true} padding="56px 0" upperHeading={`Contributed Stories by ${name || username}`} data={contributedArticlesData} />
-        ) : (
-          <p className='py-4'>No contributed articles found for this author.</p>
         )}
       </Container>
       <Divider />
       <Container>
-        {userNode.recommendeds?.length > 0 ? (
+        {userNode.recommendeds?.length > 0 && (
           <BlogCards upperHeading={'Recommended Articles'} data={userNode.recommendeds.map(article => ({
             ...article,
             slug: article.seo?.slug ? article.seo.slug.replace(/^\/+|\/+$/g, '') : ''
           }))} />
-        ) : (
-          <p className='py-4'>No recommended articles found for this author.</p>
         )}
       </Container>
     </Layout>

@@ -3,6 +3,22 @@ import { media } from "../../../theme/media-mixins";
 
 const ExtensionInnerBannerWrapper = styled.div`
 background-color:  ${({ theme }) => theme.colors.secondaryColor};
+&.saas-list-banner{
+  li{
+    position: relative;
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    &:before{
+      content: '';
+      display: block;
+      width: 8px;
+      height: 2px;
+      margin-top: 20px;
+      background-color: ${({ theme }) => theme.colors.dividerColor} ;
+    }
+  }
+}
   ${media.md`
     padding: 56px 120px 62px;
   `}

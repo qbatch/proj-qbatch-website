@@ -34,7 +34,9 @@ const SaasArchitecture = () => {
           <Col lg={5}>
             <h2 className='heading text-h2'>Architecture Patterns We Execute</h2>
             <p className='paragraph'>Adept in all prevalent front- and back-end architecture patterns, Qbatch’s software engineers help you evaluate and design functional and non-functional requirements for your SaaS system based on microservices or single-page applications (SPA).</p>
-            <Button text="Need Technical Guidance?" btnType="submit" />
+            <div className='d-flex justify-content-md-start justify-content-center'>
+              <Button text="Need Technical Guidance?" btnType="submit" />
+            </div>
           </Col>
           <Col lg={7}>
             <div className='d-flex flex-lg-row flex-column gap-4'>

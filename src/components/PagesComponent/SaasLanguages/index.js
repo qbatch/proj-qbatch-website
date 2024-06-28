@@ -10,7 +10,7 @@ import Button from "../../UiComponent/Button";
 
 import LanguagesWrapper from "./style";
 
-const Index = ({ heading, paragraph, paragraphMaxWidth, showBtn, languagesData }) => {
+const Index = ({ heading, paragraph, paragraphMaxWidth, showBtn, languagesData, wrapperClass }) => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -43,7 +43,7 @@ const Index = ({ heading, paragraph, paragraphMaxWidth, showBtn, languagesData }
   };
 
   return (
-    <LanguagesWrapper id="scene-trigger2" ref={scrollRef2} className="stage-slider-main2">
+    <LanguagesWrapper id="scene-trigger2" ref={scrollRef2} className={`stage-slider-main2 ${wrapperClass}`}>
       <div>
         <Container>
           <div className="languages-header">

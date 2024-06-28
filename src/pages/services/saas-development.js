@@ -42,7 +42,6 @@ const SaasDevelopment = () => {
         col2lg={5}
         headingMaxWidth={'660px'}
         paragraphMaxWidth={'690px'}
-        // imgSrc="/devops-banner-img.svg"
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
           { pathname: '/services/saas-development/', crumbLabel: 'Saas Development' },
@@ -114,7 +113,7 @@ const SaasDevelopment = () => {
       <FullCycle
         className="saas-app-development"
         heading="Types of SaaS Applications We Develop "
-        paragraph="Our portfolio of 150+ projects includes solutions that successfully enable versatile interactions and valuable results on the B2C, B2B, B2CB2B, P2P, or corporate levels"
+        paragraph="Our portfolio of 150+ projects includes solutions that successfully enable versatile interactions and valuable results on the B2C, B2B, B2CB2B, P2P, or corporate levels."
         data={SaasDevelop}
         sliceIndex={5}
       />
@@ -124,16 +123,16 @@ const SaasDevelopment = () => {
         heading="Why Trust Qbatch for an Award-winning SaaS Product? "
         paragraph={
           <ul>
-            <li>- Clean and crisp product design</li>
-            <li>- Faster sprint releases</li>
-            <li>- Competitive costs</li>
-            <li>- Secure SaaS product development environment</li>
-            <li>- 99% application availability</li>
-            <li>- Accelerated time-to-market</li>
+            <li>Clean and crisp product design</li>
+            <li>Faster sprint releases</li>
+            <li>Competitive costs</li>
+            <li>99% application availability</li>
+            <li>Accelerated time-to-market</li>
+            <li>Secure SaaS product development environment</li>
           </ul>
         }
         headingMaxWidth="811px"
-        className="saas-inner-banner why-trust"
+        className="saas-inner-banner why-trust saas-list-banner"
         headingSize="ms-0"
         wrapperClass="text-left extension-banner-inner"
         isButton={true}
@@ -141,7 +140,7 @@ const SaasDevelopment = () => {
         btnSpacingTop={64}
         btnAlign="end"
       />
-      <Languages languagesData={SaaslanguagesData} heading="Teck Stack and Frameworks for Your SaaS Product" showBtn={false}/>
+      <Languages showBtn wrapperClass="saas-languages" languagesData={SaaslanguagesData} heading="Teck Stack and Frameworks for Your SaaS Product"/>
       <FaqSection faqQuestion={saasFaq} />
       <SaasInnerBanner
         bannerImg="/hire-dedicated-saas-dev.svg"

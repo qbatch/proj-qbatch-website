@@ -140,7 +140,7 @@ function App({ data, path }) {
       to: `https://www.linkedin.com/shareArticle?url=https://qbatch.com/blog/${path}`,
     },
   ];
-  
+
   return (
     <ContentWrapper>
       <div className="content-section content">
@@ -207,11 +207,6 @@ function App({ data, path }) {
                       <Col xs={12}>
                         <div
                           className="author-name"
-                          onClick={() => {
-                            navigate(`/authors/${data?.user?.username}`, {
-                              state: { slug: data.seo.slug },
-                            });
-                          }}
                         >
                           <div className="avatar-box d-flex flex-wrap align-items-center">
                             <img
@@ -221,7 +216,14 @@ function App({ data, path }) {
                               src={data?.user?.image?.localFile?.url || "/avatar.svg"}
                               alt="no-avatar"
                             />
-                            <span>{data?.user?.name}</span>
+                            <span
+                              onClick={() => {
+                                navigate(`/authors/${data?.user?.username}`, {
+                                  state: { slug: data.seo.slug },
+                                });
+                              }}
+                            >{data?.user?.name}
+                            </span>
                           </div>
                           <span className="title">{data?.user?.description}</span>
                           <div className="d-flex justify-content-between mt-32 socials-wrapper">
@@ -272,7 +274,7 @@ function App({ data, path }) {
                             <span className="inner-heading">Contributors:</span>
                             <div className="contributors">
                               {data?.contributor?.map((contributor, index) => (
-                                <a href={`/authors/${contributor.username}`} key={index} title={contributor.username} 
+                                <a href={`/authors/${contributor.username}`} key={index} title={contributor.username}
                                   onClick={() => {
                                     navigate(`/authors/${contributor.username}`, {
                                       state: { slug: data.seo.slug },

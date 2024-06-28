@@ -11,7 +11,7 @@ const Index = ({ className, heading, paragraph, data, sliceIndex }) => {
   return (
     <FullCycleWrapper className={className}>
       <Container>
-        <h2 className='main-heading'>{heading}</h2>
+        <h2 className='main-heading text-h2'>{heading}</h2>
         <p className='paragraph'>{paragraph}</p>
         <Row>
           <Col lg={6} md={12} sm={12}>

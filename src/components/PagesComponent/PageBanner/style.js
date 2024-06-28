@@ -23,6 +23,11 @@ const CtoBannerWrapper = styled.div`
   background-image: none;
   `}
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  &.saas-dev{
+    .row{
+      align-items: center;
+    }
+  }
   &.portfolio-banner{
     .banner-main{
       .text-h1{

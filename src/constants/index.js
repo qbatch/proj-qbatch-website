@@ -3675,7 +3675,7 @@ const SaasProduct = [
   {
     image: '/single-sign-on.svg',
     title: 'Single sign-on',
-    content: 'Customize your product with on-demand features whether integration with third-party services, advanced data visualization tools, or AI-powered analytics. ',
+    content: 'Provide your users with a quick and secure login and access experience across multiple apps, services, or data with a suite of credentials.    ',
   },
   {
     image: '/on-demand.svg',
