@@ -140,7 +140,7 @@ function App({ data, path }) {
       to: `https://www.linkedin.com/shareArticle?url=https://qbatch.com/blog/${path}`,
     },
   ];
-  console.log(data.contributor)
+  
   return (
     <ContentWrapper>
       <div className="content-section content">

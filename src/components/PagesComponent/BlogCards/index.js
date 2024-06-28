@@ -86,7 +86,7 @@ const Index = (props) => {
                 })}
           </Row>
         )}
-        {isLoadMoreBtn && data.length > 3 && // Conditionally render Load More and Show Less buttons
+        {isLoadMoreBtn && data.length > 3 && 
           <div className="d-flex justify-content-center load-more-btn">
             {loadMore ?
               <Button text="Show Less" onClick={() => setLoadMore(false)} />
