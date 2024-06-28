@@ -40,7 +40,8 @@ const Header2 = () => {
     { label: "Product Design & Development", link: "/services/product-design-development/" },
     { label: "Web & data Scraping Services", link: "/services/web-and-data-scraping/" },
     { label: "DevOps and Cloud Computing", link: "/services/devops/" },
-    { label: "Browser Extension Development", link: "/services/browser-extension-development/" }
+    { label: "Browser Extension Development", link: "/services/browser-extension-development/" },
+    { label: "SaaS Application Development", link: "/services/saas-development/" },
   ];
 
   const hireDevelopersMenu = [
@@ -211,7 +212,7 @@ const Header2 = () => {
                   </Container>
                 </div> */}
               </li>
-              <li>
+              {/* <li>
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/#industries" className={currentPath === '/#industries' ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
@@ -229,13 +230,13 @@ const Header2 = () => {
                     </ul>
                   </Container>
                 </div>
-              </li>
+              </li> */}
               <li>
                 <div className="link-wrapper">
                   <Link to="/portfolio" className={currentPath.startsWith('/portfolio') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Portfolio</Link>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <div className={`link-wrapper ${isHowWeWorkMenuOpen ? 'open' : 'close'}`}>
                   <span to="/" className={currentPath.startsWith('/how-we-work') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>How we Work</span>
                   <button onClick={toggleHowWeWorkMenu} className={isHowWeWorkMenuOpen ? 'open' : 'close'}>
@@ -253,7 +254,7 @@ const Header2 = () => {
                     </ul>
                   </Container>
                 </div>
-              </li>
+              </li> */}
               <li>
                 <div className={`link-wrapper ${isCompanyMenuOpen ? 'open' : 'close'}`}>
                   <Link
