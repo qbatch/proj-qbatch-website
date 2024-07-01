@@ -169,7 +169,7 @@ const ContentWrapper = styled.div`
         object-fit: cover;
         background: ${({ theme }) => theme.colors.dividerColor};
       }
-      span {
+      span a {
         font-size: 20px;
         color: ${({ theme }) => theme.colors.primaryColor};
         line-height: 32px;
