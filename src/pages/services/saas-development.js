@@ -94,6 +94,7 @@ const SaasDevelopment = () => {
         align="center"
         className="saas-slider"
         width="334"
+        dividerClass="d-none"
       />
       <SaasInnerBanner
         bannerImg="/saas-inner-banner-1.svg"

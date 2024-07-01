@@ -98,13 +98,13 @@ function App({ data, path }) {
       const extractedHeadings = Array.from(h2Elements).map((h2) => ({
         title: h2.textContent,
       }));
-  
+
       const anchorElements = tempDiv.querySelectorAll("a");
       anchorElements.forEach((anchor) => {
         const href = anchor.getAttribute("href");
         const rel = anchor.getAttribute("rel");
-  
-        if (href && (href.startsWith("http://qbatch.com/") || href.startsWith("https://qbatch.com/"))) {} 
+
+        if (href && (href.startsWith("http://qbatch.com/") || href.startsWith("https://qbatch.com/"))) { }
         else {
           if (rel) {
             if (!rel.includes("nofollow")) {
@@ -115,9 +115,9 @@ function App({ data, path }) {
           }
         }
       });
-  
+
       data.blogDescription.data.blogDescription = tempDiv.innerHTML;
-  
+
       setHeadings(extractedHeadings);
     };
 
@@ -235,13 +235,10 @@ function App({ data, path }) {
                               src={data?.user?.image?.localFile?.url || "/avatar.svg"}
                               alt="no-avatar"
                             />
-                            <span
-                              onClick={() => {
-                                navigate(`/authors/${data?.user?.username}`, {
-                                  state: { slug: data.seo.slug },
-                                });
-                              }}
-                            >{data?.user?.name}
+                            <span className="avatar-name">
+                              <a href={`/authors/${data?.user?.username}`}>
+                                {data?.user?.name}
+                              </a>
                             </span>
                           </div>
                           <span className="title">{data?.user?.description}</span>
@@ -277,29 +274,20 @@ function App({ data, path }) {
                               ))}
                             </ul>
                             <div>
-                              <img
-                                src="/author-name-arrow.svg"
-                                className="pointer"
-                                alt="no-arrow"
-                                onClick={() => {
-                                  navigate(`/authors/${data?.user?.username}`, {
-                                    state: { slug: data.seo.slug },
-                                  });
-                                }}
-                              />
+                              <a href={`/authors/${data?.user?.username}`}>
+                                <img
+                                  src="/author-name-arrow.svg"
+                                  className="pointer"
+                                  alt="no-arrow"
+                                />
+                              </a>
                             </div>
                           </div>
                           <div className="contributors-wrapper">
                             <span className="inner-heading">Contributors:</span>
                             <div className="contributors">
                               {data?.contributor?.map((contributor, index) => (
-                                <a href={`/authors/${contributor.username}`} key={index} title={contributor.username}
-                                  onClick={() => {
-                                    navigate(`/authors/${contributor.username}`, {
-                                      state: { slug: data.seo.slug },
-                                    })
-                                  }}
-                                >
+                                <a href={`/authors/${contributor.username}`} key={index} title={contributor.username}>
                                   <img src={contributor.image?.localFile.url} />
                                 </a>
                               ))}

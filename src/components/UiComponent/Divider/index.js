@@ -13,8 +13,8 @@ const Divider = styled.hr`
 `;
 
 const Index = (props) => {
-  const { margin } = props;
-  return <Divider margin={margin} />;
+  const { margin, className } = props;
+  return <Divider className={className} margin={margin} />;
 };
 
  export default Index;
