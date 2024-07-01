@@ -98,7 +98,26 @@ function App({ data, path }) {
       const extractedHeadings = Array.from(h2Elements).map((h2) => ({
         title: h2.textContent,
       }));
-
+  
+      const anchorElements = tempDiv.querySelectorAll("a");
+      anchorElements.forEach((anchor) => {
+        const href = anchor.getAttribute("href");
+        const rel = anchor.getAttribute("rel");
+  
+        if (href && (href.startsWith("http://qbatch.com/") || href.startsWith("https://qbatch.com/"))) {} 
+        else {
+          if (rel) {
+            if (!rel.includes("nofollow")) {
+              anchor.setAttribute("rel", `${rel} nofollow`);
+            }
+          } else {
+            anchor.setAttribute("rel", "nofollow");
+          }
+        }
+      });
+  
+      data.blogDescription.data.blogDescription = tempDiv.innerHTML;
+  
       setHeadings(extractedHeadings);
     };
 
