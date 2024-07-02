@@ -8,6 +8,7 @@ import Button from "../../../components/UiComponent/Button";
 import BlogCardsWrapper from "../BlogCards/style";
 import { Queries } from "../../../constants/queries";
 import { ReadingTime, TimeAgo } from "../../../constants/Utils";
+import Divider from "../../../components/UiComponent/Divider";
 import ContentWrapper from "./style";
 
 function App({ data, path }) {
@@ -283,16 +284,21 @@ function App({ data, path }) {
                               </a>
                             </div>
                           </div>
-                          <div className="contributors-wrapper">
-                            <span className="inner-heading">Contributors:</span>
-                            <div className="contributors">
-                              {data?.contributor?.map((contributor, index) => (
-                                <a href={`/authors/${contributor.username}`} key={index} title={contributor.username}>
-                                  <img src={contributor.image?.localFile.url} />
-                                </a>
-                              ))}
+                          {data?.contributor?.length > 0 &&
+                            <div className="mt-3">
+                              <Divider />
+                              <div className="contributors-wrapper mt-2">
+                                <span className="inner-heading">Contributors:</span>
+                                <div className="contributors">
+                                  {data?.contributor?.map((contributor, index) => (
+                                    <a href={`/authors/${contributor.username}`} key={index} title={contributor.username}>
+                                      <img src={contributor.image?.localFile.url} />
+                                    </a>
+                                  ))}
+                                </div>
+                              </div>
                             </div>
-                          </div>
+                          }
                         </div>
                       </Col>
                       <Col xs={12}>

@@ -30,7 +30,7 @@ const BlogPage = ({ pageContext }) => {
     item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const filteredData = searchFilter(stagingEnv ? draftData : blogData).reverse(); 
+  const filteredData = searchFilter(stagingEnv ? draftData : blogData)
   console.log("filtered data", filteredData);
 
   const uniqueCategories = (stagingEnv ? draftData : blogData)?.reduce((acc, obj) => {
