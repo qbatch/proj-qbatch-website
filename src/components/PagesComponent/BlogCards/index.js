@@ -69,30 +69,30 @@ const Index = (props) => {
           <span className="text-h2 no-data-text">No Data Found</span>
         ) : (
           <Row>
-            {data &&
-              (isFavorite
-                ? editorPicksData.slice(0, 3)
-                : isSlice
-                  ? (heading && !blogInner ? categoryData : data)?.slice(Math.max((heading && !blogInner ? categoryData : data)?.length - 4, 0))
-                  : heading && !blogInner
-                    ? categoryData
-                    : loadMore ? data : data.slice(0, 6)
-              )
-                .slice(0)
-                .reverse()
-                .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
-                .map((card, ind) => {
-                  return <BlogPost card={card} ind={ind} />
-                })}
+            {data && (() => {
+              let displayData = isFavorite ? editorPicksData : 
+              (heading && !blogInner) ? categoryData : data;
+              
+              displayData = [...displayData].reverse();
+              
+              if (isSlice) {
+                displayData = displayData.slice(0, 3);
+              } else if (!loadMore) {
+                displayData = displayData.slice(0, 6);
+              }
+              
+              return displayData.map((card, ind) => (
+                <BlogPost key={card.id || ind} card={card} ind={ind} />
+              ));
+            })()}
           </Row>
         )}
         {isLoadMoreBtn && data.length > 3 && 
           <div className="d-flex justify-content-center load-more-btn">
-            {loadMore ?
-              <Button text="Show Less" onClick={() => setLoadMore(false)} />
-              :
-              <Button text="Load More" onClick={() => setLoadMore(true)} />
-            }
+            <Button 
+              text={loadMore ? "Show Less" : "Load More"} 
+              onClick={() => setLoadMore(!loadMore)} 
+            />
           </div>
         }
       </BlogCardsWrapper>

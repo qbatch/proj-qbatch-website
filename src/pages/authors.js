@@ -47,21 +47,22 @@ const Author = ({ pageContext }) => {
           <BlogCards isLoadMoreBtn={true} upperHeading={`Authored Stories by ${name || username}`} data={articlesData} />
         )}
       </Container>
-      <Divider />
+      {articlesData.length > 0 && <Divider />}
       <Container className="blog-cards-container">
         {contributedArticlesData.length > 0 && (
           <BlogCards isLoadMoreBtn={true} padding="56px 0" upperHeading={`Contributed Stories by ${name || username}`} data={contributedArticlesData} />
         )}
       </Container>
-      <Divider />
-      <Container>
-        {userNode.recommendeds?.length > 0 && (
-          <BlogCards upperHeading={'Recommended Articles'} data={userNode.recommendeds.map(article => ({
-            ...article,
-            slug: article.seo?.slug ? article.seo.slug.replace(/^\/+|\/+$/g, '') : ''
-          }))} />
-        )}
-      </Container>
+      {articlesData.length > 0 &&
+        <Container>
+          {userNode.recommendeds?.length > 0 && (
+            <BlogCards upperHeading={'Recommended Articles'} data={userNode.recommendeds.map(article => ({
+              ...article,
+              slug: article.seo?.slug ? article.seo.slug.replace(/^\/+|\/+$/g, '') : ''
+            }))} />
+          )}
+        </Container>
+      }
     </Layout>
   );
 };

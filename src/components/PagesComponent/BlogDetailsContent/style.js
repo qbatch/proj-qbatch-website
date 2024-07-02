@@ -176,10 +176,6 @@ const ContentWrapper = styled.div`
         width: 150px;
       }
     }
-    .socials-wrapper{
-      border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-      margin-bottom: 16px;
-    }
     .title {
       line-height: 23px;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
@@ -196,6 +192,13 @@ const ContentWrapper = styled.div`
       margin-bottom: 16px;
       li img{
         cursor:pointer;
+      }
+    }
+    .socials-wrapper{
+      .social-link {
+        gap: 20px;
+        padding-bottom: 0;
+        margin-bottom: 0;
       }
     }
     .mt-32 {
