@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const BlogCardsWrapper = styled.div`
-  padding: ${( props ) => (props.padding ? props.padding : "56px 0")};
+  padding: 56px 0;
   ${media.sm`
     padding: ${( props ) => (props.padding ? "0" : "56px 0")};
   `}
@@ -174,7 +174,7 @@ const BlogCardsWrapper = styled.div`
     padding-top: 32px;
   }
   .load-more-btn {
-    margin: 34px 0 64px;
+    margin-top: 34px;
     ${media.xs`
       margin: 34px 0 56px;
     `}

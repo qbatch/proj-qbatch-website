@@ -208,6 +208,20 @@ export const Queries = () => {
             }
           }
           slug
+          contributor {
+            name
+            username
+            description
+            image{
+              localFile{
+                url
+              }
+            }
+            Socials {
+              socialLink
+              socialPlatform
+            }
+          }
           user {
             username
             name
@@ -237,7 +251,6 @@ export const Queries = () => {
           id
           publishedAt
           favorite
-          bannerBlog
           seo {
             metaTitle
             slug
@@ -423,6 +436,20 @@ export const Queries = () => {
           }
         }
       }
+       allStrapiSaasDev {
+        nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+            visibilityIn
+            title
+          }
+          seo {
+            ...PageSeoFields
+          }
+        }
+      }
        allStrapiEcommerce {
          nodes {
           schema {
@@ -542,7 +569,6 @@ export const Queries = () => {
              id
              publishedAt
              favorite
-             bannerBlog
              seo {
                metaTitle
                slug

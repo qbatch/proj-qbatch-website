@@ -1,6 +1,4 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import { Link } from 'gatsby'
 
 import Container from '../../UiComponent/Container';
 import BlogDetailsWrapper from './style';

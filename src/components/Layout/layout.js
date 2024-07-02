@@ -13,12 +13,12 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={Theme}>
-      <Header />
-      <Helmet>
+       <Helmet>
         <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&display=swap" rel="stylesheet" />
         <html lang='en-US' />
       </Helmet>
       <GlobalStyle />
+      <Header />
       {children}
       <Footer />
     </ThemeProvider>

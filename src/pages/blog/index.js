@@ -30,7 +30,7 @@ const BlogPage = ({ pageContext }) => {
     item.blogTitle.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const filteredData = searchFilter(stagingEnv ? draftData : blogData).reverse(); 
+  const filteredData = searchFilter(stagingEnv ? draftData : blogData);
 
   const uniqueCategories = (stagingEnv ? draftData : blogData)?.reduce((acc, obj) => {
     if (!acc.find((item) => item.category?.categoryName === obj.category?.categoryName)) {

@@ -63,7 +63,7 @@ const RevenueWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         font-weight:${({ theme }) => theme.fontWeight.normal};
         ${media.sm`
-         line-height:20px;
+         line-height:24px;
         `}
       }
       ${media.sm`
@@ -78,7 +78,7 @@ const RevenueWrapper = styled.div`
         `}
       }
       .revenue-desc {
-        margin-top: 40px;
+        margin-top: 32px;
         ${media.sm`
           margin-top: 32px;
         `}

@@ -11,57 +11,67 @@ import BlogCards from '../components/PagesComponent/BlogCards';
 import Container from '../components/UiComponent/Container';
 
 const Author = ({ pageContext }) => {
-  const location = useLocation();
-  const { title, name, description, img, socials } = pageContext;
-  const { state } = location;
-  const slug = state && state.slug;
+  const { username, name, description, img, socials } = pageContext;
   const blogQuery = Queries();
-  const userNode = blogQuery.allStrapiUser.nodes.find((x) => x.username === title);
-  const recommendedArticles = userNode?.recommendeds || [];
-  const data = blogQuery.allStrapiArticle.nodes.filter((x) => x.user?.username === title);
 
-  const recommendedWithSlug = recommendedArticles.map(article => ({
-    ...article,
-    slug: article.seo?.slug || ''
-  }));
-  const sanitizedRecommendedArticles = recommendedWithSlug.map(article => ({
-    ...article,
-    slug: article.slug ? article.slug.replace(/^\/+|\/+$/g, '') : '' 
-  }));
+  const userNode = blogQuery.allStrapiUser.nodes.find((x) => x.username === username);
+  const authoredArticles = blogQuery.allStrapiArticle.nodes.filter((x) => x.user?.username === username);
+  const contributedArticles = blogQuery.allStrapiArticle.nodes.filter(article => {
+    return article.contributor.some(contrib => contrib.username === username);
+  });
 
-  if (!recommendedArticles.length) {
+  console.log('contributes', contributedArticles)
+
+  if (!userNode) {
     return <PageNotFound />;
   }
+
+  const articlesData = [...authoredArticles];
+  const contributedArticlesData = [...contributedArticles];
 
   return (
     <Layout>
       <AuthorBanner
-        title={name}
-        slug={slug}
+        title={name || username}
+        slug={username}
         authorImage={img?.localFile?.url}
         description={description}
         socials={socials}
         customCrumbs={[
-          { pathname: `/authors/${title}/`, crumbLabel: 'Author', crumbSeparator: '>' },
-          { pathname: `/authors/${title}/`, crumbLabel: name, crumbSeparator: '>' },
+          { pathname: `/authors/${username}/`, crumbLabel: 'Author', crumbSeparator: '>' },
+          { pathname: `/authors/${username}/`, crumbLabel: name || username, crumbSeparator: '>' },
         ]}
       />
       <Container className="blog-cards-container">
-        <BlogCards isLoadMoreBtn={true} upperHeading={`Recent Stories by ${name}`} data={data} />
+        {articlesData.length > 0 && (
+          <BlogCards isLoadMoreBtn={true} upperHeading={`Authored Stories by ${name || username}`} data={articlesData} />
+        )}
       </Container>
-      <Divider />
-      <Container>
-        <BlogCards upperHeading={'Recommended Articles'} data={sanitizedRecommendedArticles} />
+      {articlesData.length > 0 && <Divider />}
+      <Container className="blog-cards-container">
+        {contributedArticlesData.length > 0 && (
+          <BlogCards isLoadMoreBtn={true} padding="56px 0" upperHeading={`Contributed Stories by ${name || username}`} data={contributedArticlesData} />
+        )}
       </Container>
+      {articlesData.length > 0 &&
+        <Container>
+          {userNode.recommendeds?.length > 0 && (
+            <BlogCards upperHeading={'Recommended Articles'} data={userNode.recommendeds.map(article => ({
+              ...article,
+              slug: article.seo?.slug ? article.seo.slug.replace(/^\/+|\/+$/g, '') : ''
+            }))} />
+          )}
+        </Container>
+      }
     </Layout>
   );
 };
 
 export const Head = () => {
   const location = useLocation();
-  const authorName = location?.pathname.split('/')[2];
+  const username = location?.pathname.split('/')[2];
   const blogSeo = Queries();
-  const seoData = blogSeo.allStrapiUser.nodes.find((x) => x.username === authorName)?.seo;
+  const seoData = blogSeo.allStrapiUser.nodes.find((x) => x.username === username)?.seo;
 
   if (!seoData) {
     return <PageNotFound />;
@@ -74,7 +84,7 @@ export const Head = () => {
       keywords={seoData?.keywords}
       language={seoData?.language}
       robots={seoData?.metaRobots}
-      pathname={`/authors/${authorName}/`}
+      pathname={`/authors/${username}/`}
     />
   );
 };
