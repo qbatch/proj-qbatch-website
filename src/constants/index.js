@@ -868,12 +868,28 @@ const SaaslanguagesData = [
         desc: "Node Js"
       },
       {
+        img: "/flask.svg",
+        desc: "Flask"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
+      },
+      {
+        img: "/nest-js.svg",
+        desc: "Nest JS"
+      },
+      {
         img: "/python.svg",
         desc: "Python"
       },
       {
-        img: "/php.svg",
-        desc: "PHP"
+        img: "/django.svg",
+        desc: "Django"
+      },
+      {
+        img: "/express-js.svg",
+        desc: "Express JS"
       },
     ],
     title: 'Backend',
@@ -881,33 +897,53 @@ const SaaslanguagesData = [
   {
     content: [
       {
-        img: "/javascript-seeklogo.svg",
-        desc: "Java Script"
+        img: "/vue-js.svg",
+        desc: "Vue JS"
+      },
+      {
+        img: "/next-js.svg",
+        desc: "Next JS"
       },
       {
         img: "/react-seeklogo.svg",
         desc: "React JS"
       },
       {
+        img: "/typescript.svg",
+        desc: "Type Script"
+      },
+      {
+        img: "/javascript-seeklogo.svg",
+        desc: "Java Script"
+      },
+      {
         img: "/angular-seeklogo.svg",
         desc: "Angular"
       },
       {
-        img: "/vue-js.svg",
-        desc: "Vue JS"
+        img: "/electron-seeklogo.svg",
+        desc: "Electron"
       },
       {
-        img: "/swift.svg",
-        desc: "Swift",
+        img: "/gatsby-monogram.svg",
+        desc: "Gatsby JS"
       },
       {
-        img: "/kotlin.svg",
-        desc: "Kotlin",
+        img: "/redux-seeklogo.svg",
+        desc: "Redux"
       },
       {
-        img: "/flutter.svg",
-        desc: "Flutter",
-      }
+        img: "/webpack-seeklogo.svg",
+        desc: "Webpack"
+      },
+      {
+        img: "/html5-logo.svg",
+        desc: "HTML 5"
+      },
+      {
+        img: "/css3-seeklogo.svg",
+        desc: "CSS 3"
+      },
     ],
     title: 'Frontend',
   },
@@ -918,36 +954,48 @@ const SaaslanguagesData = [
         desc: "PostgreSQL"
       },
       {
+        img: "/neo4j-seeklogo.svg",
+        desc: "Neo4j"
+      },
+      {
+        img: "/mongodb-seeklogo.svg",
+        desc: "MongoDB"
+      },
+      {
+        img: "/cassandra-seeklogo.svg",
+        desc: "Cassandra"
+      },
+      {
+        img: "/sql-server-seeklogo.svg",
+        desc: "SQL Server"
+      },
+      {
         img: "/my-sql.svg",
         desc: "MySQL"
+      },
+      {
+        img: "/maria-db.svg",
+        desc: "MariaDB"
+      },
+      {
+        img: "/aws-dynamodb-seeklogo.svg",
+        desc: "DynamoDB"
       },
       {
         img: "/redis.svg",
         desc: "Redis"
       },
       {
+        img: "/sqlite.svg",
+        desc: "SQLite"
+      },
+      {
         img: "/elasticsearch-seeklogo.svg",
         desc: "Elasticsearch"
       },
       {
-        img: "/heroku.svg",
-        desc: "Heroku"
-      },
-      {
-        img: "/aws-logo.svg",
-        desc: "AWS"
-      },
-      {
-        img: "/gcp-seeklogo.svg",
-        desc: "GCP"
-      },
-      {
-        img: "/azure-logo.svg",
-        desc: "Microsoft Azure"
-      },
-      {
-        img: "/digital-ocean.svg",
-        desc: "Digital Ocean"
+        img: "/spark-seeklogo.svg",
+        desc: "Apache Spark"
       },
     ],
     title: 'Database',
@@ -955,16 +1003,24 @@ const SaaslanguagesData = [
   {
     content: [
       {
-        img: "/aws-logo.svg",
-        desc: "AWS"
-      },
-      {
         img: "/gcp-seeklogo.svg",
         desc: "GCP"
       },
       {
         img: "/azure-logo.svg",
         desc: "Microsoft Azure"
+      },
+      {
+        img: "/aws-logo.svg",
+        desc: "AWS"
+      },
+      {
+        img: "/kubernetes.svg",
+        desc: "Kubernetes"
+      },
+      {
+        img: "/docker.svg",
+        desc: "Docker"
       },
     ],
     title: 'Cloud/Platform',

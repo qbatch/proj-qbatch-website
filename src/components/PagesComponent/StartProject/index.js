@@ -21,7 +21,7 @@ import StartProjectWrapper from "./style";
 
 const phoneUtil = PhoneNumberUtil.getInstance();
 
-const Index = ({ page, heading }) => {
+const Index = ({ page, heading, id }) => {
   const recaptchaRef = useRef(null);
   const [validated, setValidated] = useState(false);
   const [phone, setPhone] = useState("");
@@ -203,7 +203,7 @@ const Index = ({ page, heading }) => {
   }, [formData, phoneValid, recaptchaCompleted]);  
 
   return (
-    <StartProjectWrapper>
+    <StartProjectWrapper id={id}>
       <Container>
       {page === 'contact' ? (
               <h1 className=" text-h2 color-primary">{headingText}</h1>

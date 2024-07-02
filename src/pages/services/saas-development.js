@@ -23,6 +23,13 @@ import SaasArchitecture from '../../components/PagesComponent/SaasArchitecture';
 import SaasDevProcess from '../../components/PagesComponent/SaasDevProcess';
 
 const SaasDevelopment = () => {
+  const scrollToStartProject = () => {
+    const element = document.getElementById('start-project');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Layout>
       <Banner
@@ -80,7 +87,7 @@ const SaasDevelopment = () => {
         maxWidth={977}
         heading='Features Your SaaS Product May Require'
         paragraph="Want to improve your SaaS with custom features? From MVPs to enterprise solutions, we use top-tier tools to create your envisioned features quickly. Here's what we can implement" />
-        <QuickResponse/>
+        <QuickResponse onRedirect={scrollToStartProject} />
       <Slider
         heading="Streamlined Collaboration, Clear Results — With Qbatch"
         paragraph={
@@ -158,6 +165,7 @@ const SaasDevelopment = () => {
       />
       <StartProject
         heading="Get a free quote for your SaaS development project"
+        id="start-project"
       />
     </Layout>
   );

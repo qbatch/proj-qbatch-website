@@ -167,7 +167,7 @@ const LanguagesWrapper = styled.div`
   }
   &.saas-languages{
     .framework-item{
-      min-height: 570px;
+      min-height: 680px;
     }
     .slick-list{
       height: 570px;

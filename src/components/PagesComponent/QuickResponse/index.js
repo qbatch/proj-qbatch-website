@@ -33,7 +33,7 @@ const serviceOptions = [
   }
 ];
 
-const QuickResponse = () => {
+const QuickResponse = ({ onRedirect }) => {
   return (
     <QuickResponseWrapper>
       <Container>
@@ -52,7 +52,7 @@ const QuickResponse = () => {
                   <p className='inner-paragraph'>{service.paragraph}</p>
                 </div>
                 <div className='d-flex justify-content-end'>
-                  <Button text={service.buttonText} onClick={() => navigate(service.link)} className="primary-btn" />
+                  <Button text={service.buttonText} onClick={onRedirect} className="primary-btn" />
                 </div>
               </div>
             </Col>
