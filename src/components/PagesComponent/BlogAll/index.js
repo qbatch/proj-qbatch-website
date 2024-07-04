@@ -80,7 +80,7 @@ const index = ({ data }) => {
             </InnerBannerWrapper>
           ))}
       </Container>
-      <Divider margin="64px 0" />
+      <Divider margin="64px 0 8px" />
       <Container>
         <BlogCards
           heading="Popular Blogs"
@@ -91,7 +91,7 @@ const index = ({ data }) => {
           isFavorite={true}
         />
       </Container>
-      <Divider margin="64px 0" />
+      <Divider margin="0 0 8px" />
       <Container>
         <BlogCards
           heading="All Blogs"
