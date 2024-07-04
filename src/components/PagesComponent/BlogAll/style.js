@@ -28,14 +28,15 @@ const InnerBannerWrapper = styled.div`
     ${media.md`
       max-width: 100%;
       border-radius: 24px 24px 0 0;
+      height: 300px;
+    `}
+    ${media.xs`
       height: 200px;
     `}
   }
   .blog-badge {
-    margin-bottom: 36px;
-    ${media.md`
-      margin-bottom: 24px;
-    `}
+    margin-bottom: 16px;
+    max-width: max-content;
   }
   .blog-badge-main{
     position: absolute;
@@ -47,7 +48,11 @@ const InnerBannerWrapper = styled.div`
     `}
   }
   .blog-wrapper{
-    padding: 48px 0px 48px 22px;
+    padding: 28px 0px 28px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     ${media.md`
       padding: 24px;
     `}
@@ -72,14 +77,11 @@ const InnerBannerWrapper = styled.div`
     }
     .banner-desc {
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin-bottom: 72px;
-      ${media.sm`
-        margin-bottom: 32px;
-      `}
+      margin-bottom: 24px;
       h1,
       h2,
       h3,

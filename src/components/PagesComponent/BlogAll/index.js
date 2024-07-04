@@ -37,7 +37,7 @@ const index = ({ data }) => {
                     )}
                     <div className="blog-title">
                       <Link to={`/blog/${item.seo.slug}/`} state={{ blogId: item.id }}>
-                        <h2>{item.blogTitle}</h2>
+                        <h2 className="text-h3">{item.blogTitle}</h2>
                       </Link>
                       <div className="banner-desc">
                         <p>{stripHtmlTags(item.blogDescription?.data.blogDescription)}</p>
