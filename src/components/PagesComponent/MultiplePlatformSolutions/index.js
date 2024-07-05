@@ -2,29 +2,26 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 import Container from "../../UiComponent/Container";
-import { multiPlatformData } from "../../../constants";
 
 import MultiPlatformWrapper from "./style";
 
-const Index = () => {
+const Index = ({data, heading, paragraph, wrapperClass}) => {
   return (
-    <MultiPlatformWrapper>
+    <MultiPlatformWrapper className={wrapperClass}>
       <Container>
         <Row>
           <Col lg={5}>
             <div className="platform-heading">
               <h2>
-                Mission-Critical Mobile App Development Solutions For Multiple
-                Platforms
+                {heading}
               </h2>
               <p>
-                We offer multi-disciplinary mobile app development services that
-                are not limited to
+                {paragraph}
               </p>
             </div>
           </Col>
           <Col lg={7}>
-            {multiPlatformData.map((item, ind) => (
+            {data.map((item, ind) => (
               <div
                 className="d-flex align-items-start gap-3 platform-list"
                 key={ind}

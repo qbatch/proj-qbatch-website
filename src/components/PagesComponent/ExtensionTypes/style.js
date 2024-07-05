@@ -23,6 +23,9 @@ ${media.md`
     padding-bottom: 20px;
   `}
 }
+.inner-button{
+  margin-top: 72px;
+}
 .inner-box{
   padding: 32px;
   border-bottom: 1px solid #D2D9DC;
@@ -34,6 +37,28 @@ ${media.md`
     text-transform: none;
   }
 }
+&.edu-learning{
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  .heading{
+    text-align: left;
+    margin-right: auto;
+    margin: unset;
+    max-width: 100%;
+  }
+  .paragraph{
+    text-align: left;
+    margin-right: auto;
+    margin: unset;
+    max-width: 100%;
+  }
+}
+&.power-integrate{
+    border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    .heading{
+      max-width: 100%;
+    }
+}
+
 `
 
 export default ExtensionTypeWrapper;
