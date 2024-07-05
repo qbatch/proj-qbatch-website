@@ -237,7 +237,7 @@ function App({ data, path }) {
                               alt="no-avatar"
                             />
                             <span className="avatar-name">
-                              <a href={`/authors/${data?.user?.username}`}>
+                              <a href={`/authors/${data?.user?.username}/`}>
                                 {data?.user?.name}
                               </a>
                             </span>
@@ -275,7 +275,7 @@ function App({ data, path }) {
                               ))}
                             </ul>
                             <div>
-                              <a href={`/authors/${data?.user?.username}`}>
+                              <a href={`/authors/${data?.user?.username}/`}>
                                 <img
                                   src="/author-name-arrow.svg"
                                   className="pointer"
@@ -351,7 +351,7 @@ function App({ data, path }) {
                                   </div>
                                 )}
                                 <p onClick={() => {
-                                  navigate(`/blog${card.seo.slug}`, {
+                                  navigate(`/blog/${card.seo.slug}`, {
                                     state: { blogId: card.id },
                                   });
                                 }}
