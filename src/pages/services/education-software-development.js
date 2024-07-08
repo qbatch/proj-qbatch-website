@@ -22,7 +22,7 @@ import MvpDevelopmentService from '../../components/PagesComponent/MvpDevelopmen
 import { EduCommitment, EdTechData, educationFaq, EducationSlider, SaasDevelop, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations } from "../../constants";
 import BannerImg from "../../../static/education-app-development-banner.svg"
 
-const SaasDevelopment = () => {
+const EduDevelopment = () => {
 
   return (
     <Layout>
@@ -149,4 +149,4 @@ export const Head = () => {
   )
 }
 
-export default SaasDevelopment;
+export default EduDevelopment;
