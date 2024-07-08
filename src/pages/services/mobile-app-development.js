@@ -25,6 +25,7 @@ import {
   lostToLaunchedItems,
   mobileAppFaq,
   revenueData,
+  multiPlatformData
 } from "../../constants";
 import SectionMobileApp from "../../components/PagesComponent/SectionMobileAppSlider";
 
@@ -86,7 +87,12 @@ const MobileApp = () => {
         className="our-secret-sauce our-secret-slider "
       />
       <CrewNotVendors />
-      <MultiplePlatformSolutions />
+      <MultiplePlatformSolutions 
+      data={multiPlatformData}
+      heading="Mission-Critical Mobile App Development Solutions For Multiple Platforms"
+      paragraph="We offer multi-disciplinary mobile app development services that
+      are not limited to"
+      />
       <DedicatedMobileDevelopers
         heading="Hire Dedicated Mobile App Developers"
         desc="For building stunning mobile apps"

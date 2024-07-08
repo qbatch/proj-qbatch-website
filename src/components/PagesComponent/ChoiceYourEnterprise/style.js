@@ -152,6 +152,16 @@ const ChoiceEnterpriseWrapper = styled.div`
       }
     }
   }
+  &.ed-tech-potential{
+    .choice-heading{
+      max-width: 1212px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .choice-list h3{
+      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+    }
+  }
 `;
 
 export default ChoiceEnterpriseWrapper;

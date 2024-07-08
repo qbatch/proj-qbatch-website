@@ -7,8 +7,14 @@ ${media.lg`
   padding: 56px 0;
 `}
 .heading{
-  margin-bottom: 80px;
   text-transform: none;
+}
+.paragraph{
+  margin-top:24px;
+  text-align: center;
+}
+.header{
+  margin-bottom: 80px;
   ${media.lg`
   margin-bottom: 32px;
 `}
@@ -36,6 +42,11 @@ ${media.lg`
         line-height: 24px;
       `}
     }
+  }
+}
+&.edu-commitment{
+  .service-box{
+    padding: 32px;
   }
 }
 `

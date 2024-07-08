@@ -5,11 +5,14 @@ import Container from '../../UiComponent/Container';
 
 import MvpDevelopmentServiceWrapper from './style';
 
-const Index = ({ heading, serviceData }) => {
+const Index = ({ heading, serviceData, className, paragraph }) => {
   return (
-    <MvpDevelopmentServiceWrapper>
+    <MvpDevelopmentServiceWrapper className={className}>
       <Container>
-        <h2 className='heading text-h2 text-center'>{heading}</h2>
+        <div className='header'>
+          <h2 className='heading text-h2 text-center'>{heading}</h2>
+          <p className='paragraph'>{paragraph}</p>
+        </div>
         <Row className='g-4'>
           {serviceData.map((service, index) => (
             <Col lg={4} key={index}>

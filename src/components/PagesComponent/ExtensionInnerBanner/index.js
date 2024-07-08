@@ -14,16 +14,21 @@ const Index = (props) => {
     className,
     btnText,
     headingSize,
+    paragraphSize,
     btnAlign,
     paragraph,
     headingMaxWidth,
     wrapperClass,
+    paragraphMaxWidth,
     btnSpacingTop = 24,
     bannerImg
   } = props;
 
   const headingStyle = {
     maxWidth: headingMaxWidth || 'none',
+  };
+  const paragraphStyle = {
+    maxWidth: paragraphMaxWidth || 'none',
   };
 
   const buttonStyle = {
@@ -42,7 +47,7 @@ const Index = (props) => {
           <h2 style={headingStyle} className={`text-h2 heading ${headingSize}`}>
             {heading} {span && <span className="inner-heading">{span}</span>}
           </h2>
-            {paragraph && <p className="paragraph">{paragraph}</p> }
+            {paragraph && <p style={paragraphStyle}  className={`paragraph ${paragraphSize}`}>{paragraph}</p> }
             {isButton && (
             <div style={buttonStyle} className={`idea-btn d-flex justify-content-${btnAlign}`}>
               <Button text={btnText} onClick={() => navigate('/contact')} className="secondary-btn" />
