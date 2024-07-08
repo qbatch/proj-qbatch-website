@@ -2,13 +2,12 @@ import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 
 const AssistantWrapper = styled.div`
-  padding: 95px 0px;
-  padding-bottom: 16px;
+  padding: 96px 0px;
   ${media.sm`
   padding: 56px 0px;
   `}
   .heading-box {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     ${media.sm`
     margin-bottom: 40px;
   `}
@@ -47,9 +46,11 @@ const AssistantWrapper = styled.div`
             padding: 0  ;
       `}
       }
-      h4 {
+      h3 {
         letter-spacing: 0px;
         font-weight: ${({ theme }) => theme.fontWeight.bold};
+        margin-bottom: 24px;
+        margin-top: 8px;
         ${media.md`
           font-size: 16px;
           line-height: 24px;
@@ -69,6 +70,7 @@ const AssistantWrapper = styled.div`
       overflow: hidden;
       text-overflow: ellipsis;
       margin-bottom: 24px;
+      max-width: 372px;
     }
   }
 `

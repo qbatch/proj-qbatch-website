@@ -57,6 +57,11 @@ ${media.md`
     .heading{
       max-width: 100%;
     }
+    ${media.md`
+      .inner-button{
+        margin-top: 40px;
+      }
+    `}
 }
 
 `

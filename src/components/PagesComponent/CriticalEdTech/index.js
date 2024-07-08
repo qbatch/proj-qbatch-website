@@ -24,7 +24,7 @@ const Index = ({data, heading}) => {
                     <div className="assistent-box">
                       <img src={list.img} alt={list.title} />
                       <div>
-                        <h4>{list.title}</h4>
+                        <h3 className='text-h4'>{list.title}</h3>
                         <p> {list.description}</p>
                       </div>
                     </div>
@@ -32,10 +32,6 @@ const Index = ({data, heading}) => {
                 )
               })}
             </Row>
-          </div>
-
-          <div className="d-flex justify-content-center button-wrapper">
-            <Button text="Scrape Your Data" onClick={() => navigate('/contact')} />
           </div>
         </Container>
       </AssistantWrapper>

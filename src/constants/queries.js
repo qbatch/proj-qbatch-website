@@ -450,6 +450,20 @@ export const Queries = () => {
           }
         }
       }
+       allStrapiEducationDev {
+        nodes {
+          schema {
+            childStrapiComponentSchemaSchemaStructureddataJsonnode {
+              ...SchemaFields
+            }
+            visibilityIn
+            title
+          }
+          seo {
+            ...PageSeoFields
+          }
+        }
+      }
        allStrapiEcommerce {
          nodes {
           schema {

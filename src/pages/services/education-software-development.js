@@ -19,7 +19,7 @@ import ExtensionType from "../../components/PagesComponent/ExtensionTypes";
 import MvpDevelopmentService from '../../components/PagesComponent/MvpDevelopmentService';
 
 
-import { EduCommitment, EdTechData, saasFaq, EducationSlider, SaasDevelop, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations } from "../../constants";
+import { EduCommitment, EdTechData, educationFaq, EducationSlider, SaasDevelop, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations } from "../../constants";
 import BannerImg from "../../../static/education-app-development-banner.svg"
 
 const SaasDevelopment = () => {
@@ -41,8 +41,8 @@ const SaasDevelopment = () => {
         className="inner-container"
         col1lg={7}
         col2lg={5}
-        headingMaxWidth={'660px'}
-        paragraphMaxWidth={'690px'}
+        headingMaxWidth={'700px'}
+        paragraphMaxWidth={'718px'}
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
           { pathname: '/services/saas-development/', crumbLabel: 'Saas Development' },
@@ -126,22 +126,13 @@ const SaasDevelopment = () => {
         data={GridData}
         heading="Why trust Qbatch for your business-critical EdTech project?"
       />
+      <Collaboration />
       <ProvenWorkExperience
         headerClass="saas-dev-experience"
-        exploreBtn
-        heading="Explore our SaaS Portfolio"
-        paragraph="Our firsthand experience in launching superior SaaS products has moved us beyond blind coding and toward holistic product ownership, ensuring excellence at every turn."
+        heading="Our EdTech Success Stories"
         paragraphWidth="1280px"
       />
-      <FullCycle
-        className="saas-app-development"
-        heading="Types of SaaS Applications We Develop "
-        paragraph="Our portfolio of 150+ projects includes solutions that successfully enable versatile interactions and valuable results on the B2C, B2B, B2CB2B, P2P, or corporate levels."
-        data={SaasDevelop}
-        sliceIndex={5}
-      />
-      <Collaboration />
-      <FaqSection faqQuestion={saasFaq} />
+      <FaqSection faqQuestion={educationFaq} />
       <StartProject
         heading="Get a free quote for your SaaS development project"
         id="start-project"
@@ -151,8 +142,8 @@ const SaasDevelopment = () => {
 };
 export const Head = () => {
   const saasDevData = Queries()
-  const seoData = saasDevData?.allStrapiSaasDev?.nodes[0]?.seo
-  const schemaData = saasDevData?.allStrapiSaasDev?.nodes[0]?.schema;
+  const seoData = saasDevData?.allStrapiEducationDev?.nodes[0]?.seo
+  const schemaData = saasDevData?.allStrapiEducationDev?.nodes[0]?.schema;
   return (
     <SeoComponent seoData={seoData} schemaData={schemaData} />
   )

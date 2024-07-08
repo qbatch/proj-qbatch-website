@@ -28,7 +28,7 @@ const Index = ({data, heading, paragraph, wrapperClass}) => {
               >
                 <img src={item.icon} alt="mobile app" />
                 <div>
-                  <h4>{item.title}</h4>
+                  <h3 className="text-h4">{item.title}</h3>
                   <p>{item.desc}</p>
                 </div>
               </div>
