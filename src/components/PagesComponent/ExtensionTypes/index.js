@@ -4,8 +4,8 @@ import Container from '../../UiComponent/Container';
 import { Col, Row } from 'react-bootstrap';
 import Button from "../../UiComponent/Button"
 
-const ExtensionType = ({ data, heading, paragraph, wrapperClass, btnClass, btnText }) => {
-
+const ExtensionType = ({ data, heading, paragraph, wrapperClass, btnClass, btnText, buttonLink }) => {
+const btnLink = buttonLink || '/contact';
   return (
     <ExtensionTypeWrapper className={wrapperClass}>
       <Container>
@@ -23,7 +23,7 @@ const ExtensionType = ({ data, heading, paragraph, wrapperClass, btnClass, btnTe
         </Row>
         {btnText && (
           <div className='d-flex justify-content-center'>
-            <Button text={btnText} onClick={() => navigate('/contact')}  className={`inner-button ${{btnClass}}`} />
+            <Button text={btnText} onClick={() => navigate({btnLink})}  className={`inner-button ${{btnClass}}`} />
           </div>
         )}
       </Container>

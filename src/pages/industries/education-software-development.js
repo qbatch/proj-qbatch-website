@@ -98,6 +98,7 @@ const EduDevelopment = () => {
         data={EduIntigrations}
         wrapperClass="power-integrate"
         btnText="Need Technical Guidance?"
+        buttonLink="/#start-project"
       />
       <MvpDevelopmentService
         heading="Our Commitment to Responsible Education Software Development"
@@ -121,6 +122,7 @@ const EduDevelopment = () => {
         btnAlign="left"
       />
       <MultiplePlatformSolutions
+      wrapperClass="multiple-platforms"
         data={EduTech}
         heading="Technology For Your Educational App"
         paragraph="We help you adapt to the shifting eLearning environment using the latest and proven technologies."

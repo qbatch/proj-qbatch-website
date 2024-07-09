@@ -63,6 +63,13 @@ const MultiPlatformWrapper = styled.div`
         `}  
     }
   }
+  &.multiple-platforms{
+    .platform-list{
+      h3{
+        margin: 8px  0 16px;
+      }
+    }
+  }
 `
 
 export default MultiPlatformWrapper;
