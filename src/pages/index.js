@@ -1,4 +1,4 @@
-import React, { lazy, useState, useEffect } from 'react';
+import React, { lazy } from 'react';
 import { Queries } from '../constants/queries';
 import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';
@@ -16,7 +16,6 @@ const Collaboration = lazy(() => import('../components/PagesComponent/Collaborat
 const Awards = lazy(() => import('../components/PagesComponent/Awards'));
 const CreativeIntelligence = lazy(() => import('../components/PagesComponent/CreativeIntelligence'));
 const StartProject = lazy(() => import('../components/PagesComponent/StartProject'));
-import Loading from '../components/PagesComponent/Loading';
 
 const IndexPage = () => {
   const homeData = Queries();
@@ -24,54 +23,36 @@ const IndexPage = () => {
   const schemaData = schema;
   const transformedObject = replaceUnderscoreWithAt(schemaData);
 
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      setIsLoading(false);
-    };
-    
-    if (document.readyState === 'complete') {
-      handleLoad();
-    } else {
-      window.addEventListener('load', handleLoad);
-      return () => window.removeEventListener('load', handleLoad);
-    }
-  }, []);
-
   return (
     <>
-    {isLoading ? <Loading />
-    :
       <Layout>
-          <DedicatedDevelopment />
-          <Achievements page="home" />
-          <WhatWeCanDo />
-          <Expertise />
-          <ProblumSolving
-            text={
-              <p className="text-h2 quote mb-0">
-                We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
-                you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
-              </p>
-            }
-          />
-          <ProvenWorkExperience
-            heading="Proven Work Experience"
-            paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."
-            componentName="index"
-          />
-          <HappilyMaking />
-          <WhatDifferenceQbatchMaking
-            heading="What Difference is Qbatch Making?"
-            paragraph="We always present problems with tangible solutions."
-          />
-          <Awards maxCols={8} />
-          <Collaboration largeHeading={true} />
-          <CreativeIntelligence />
-          <StartProject />
+        <DedicatedDevelopment />
+        <Achievements page="home" />
+        <WhatWeCanDo />
+        <Expertise />
+        <ProblumSolving
+          text={
+            <p className="text-h2 quote mb-0">
+              We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
+              you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
+            </p>
+          }
+        />
+        <ProvenWorkExperience
+          heading="Proven Work Experience"
+          paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."
+          componentName="index"
+        />
+        <HappilyMaking />
+        <WhatDifferenceQbatchMaking
+          heading="What Difference is Qbatch Making?"
+          paragraph="We always present problems with tangible solutions."
+        />
+        <Awards maxCols={8} />
+        <Collaboration largeHeading={true} />
+        <CreativeIntelligence />
+        <StartProject />
       </Layout>
-    }
       <script type="application/ld+json">
         {transformedObject
           .filter((x) => !x.visibilityIn)
