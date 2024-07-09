@@ -10,7 +10,7 @@ const Index = ({ heading, serviceData, className, paragraph }) => {
     <MvpDevelopmentServiceWrapper className={className}>
       <Container>
         <div className='header'>
-          <h2 className='heading text-h2 text-center'>{heading}</h2>
+          <h2 className='heading text-h2 text-lg-center text-start'>{heading}</h2>
           <p className='paragraph'>{paragraph}</p>
         </div>
         <Row className='g-4'>

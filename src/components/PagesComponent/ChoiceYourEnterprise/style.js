@@ -52,7 +52,6 @@ const ChoiceEnterpriseWrapper = styled.div`
     }
     `}
     h3 {
-      line-height: 32px;
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 16px;
       letter-spacing: 0;
@@ -160,6 +159,11 @@ const ChoiceEnterpriseWrapper = styled.div`
     }
     .choice-list h3{
       font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+    }
+  }
+  &.edu-for-all{
+    p{
+      max-width: 1000px;
     }
   }
 `;

@@ -23,7 +23,7 @@ const ExtensionType = ({ data, heading, paragraph, wrapperClass, btnClass, btnTe
         </Row>
         {btnText && (
           <div className='d-flex justify-content-center'>
-            <Button text={btnText} onClick={() => navigate('/contact')} btnType="submit" className={`inner-button ${{btnClass}}`} />
+            <Button text={btnText} onClick={() => navigate('/contact')}  className={`inner-button ${{btnClass}}`} />
           </div>
         )}
       </Container>

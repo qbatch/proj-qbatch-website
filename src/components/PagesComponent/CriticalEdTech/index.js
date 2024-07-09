@@ -12,7 +12,7 @@ const Index = ({data, heading}) => {
     <>
       <AssistantWrapper>
         <Container>
-          <div className="text-center heading-box">
+          <div className="text-lg-center text-start heading-box">
             <h2 className="color-primary">{heading}</h2>
           </div>
 
