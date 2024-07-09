@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import { Queries } from '../constants/queries';
 import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';
@@ -26,34 +26,32 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        <Suspense fallback={<div>Loading...</div>}>
-          <DedicatedDevelopment />
-          <Achievements page="home" />
-          <WhatWeCanDo />
-          <Expertise />
-          <ProblumSolving
-            text={
-              <p className="text-h2 quote mb-0">
-                We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
-                you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
-              </p>
-            }
-          />
-          <ProvenWorkExperience
-            heading="Proven Work Experience"
-            paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."
-            componentName="index"
-          />
-          <HappilyMaking />
-          <WhatDifferenceQbatchMaking
-            heading="What Difference is Qbatch Making?"
-            paragraph="We always present problems with tangible solutions."
-          />
-          <Awards maxCols={8} />
-          <Collaboration largeHeading={true} />
-          <CreativeIntelligence />
-          <StartProject />
-        </Suspense>
+        <DedicatedDevelopment />
+        <Achievements page="home" />
+        <WhatWeCanDo />
+        <Expertise />
+        <ProblumSolving
+          text={
+            <p className="text-h2 quote mb-0">
+              We go beyond traditional problem-solving techniques and old-fashioned promises to assist visionaries like
+              you to transform on a massive scale<br></br> — <b>with logic, innovation, and emotion.</b>
+            </p>
+          }
+        />
+        <ProvenWorkExperience
+          heading="Proven Work Experience"
+          paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."
+          componentName="index"
+        />
+        <HappilyMaking />
+        <WhatDifferenceQbatchMaking
+          heading="What Difference is Qbatch Making?"
+          paragraph="We always present problems with tangible solutions."
+        />
+        <Awards maxCols={8} />
+        <Collaboration largeHeading={true} />
+        <CreativeIntelligence />
+        <StartProject />
       </Layout>
       <script type="application/ld+json">
         {transformedObject

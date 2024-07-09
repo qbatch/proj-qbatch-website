@@ -552,7 +552,23 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
+        name: 'Qbatch',
+        short_name: 'Qbatch',
+        start_url: '/',
+        display: 'standalone',
         icon: './src/assets/images/fav-icon.png',
+        icons: [
+          {
+            src: './src/assets/images/fav-icon16.png',
+            sizes: '16x16',
+            type: 'image/png',
+          },
+          {
+            src: './src/assets/images/fav-icon.png',
+            sizes: '32x32',
+            type: 'image/png',
+          },
+        ]
       },
     },
     {
