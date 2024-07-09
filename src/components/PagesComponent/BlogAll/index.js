@@ -37,7 +37,7 @@ const index = ({ data }) => {
                     )}
                     <div className="blog-title">
                       <Link to={`/blog/${item.seo.slug}/`} state={{ blogId: item.id }}>
-                        <h2>{item.blogTitle}</h2>
+                        <h2 className="text-h3">{item.blogTitle}</h2>
                       </Link>
                       <div className="banner-desc">
                         <p>{stripHtmlTags(item.blogDescription?.data.blogDescription)}</p>
@@ -80,7 +80,7 @@ const index = ({ data }) => {
             </InnerBannerWrapper>
           ))}
       </Container>
-      <Divider margin="64px 0" />
+      <Divider margin="64px 0 8px" />
       <Container>
         <BlogCards
           heading="Popular Blogs"
@@ -91,7 +91,7 @@ const index = ({ data }) => {
           isFavorite={true}
         />
       </Container>
-      <Divider margin="64px 0" />
+      <Divider margin="0 0 8px" />
       <Container>
         <BlogCards
           heading="All Blogs"
