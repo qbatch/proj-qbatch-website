@@ -44,8 +44,8 @@ const EduDevelopment = () => {
         headingMaxWidth={'700px'}
         paragraphMaxWidth={'718px'}
         customCrumbs={[
-          { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
-          { pathname: '/services/saas-development/', crumbLabel: 'Saas Development' },
+          { pathname: '/industries/', crumbLabel: 'Industries', crumbSeparator: '>' },
+          { pathname: '/industries/education-software-development/', crumbLabel: 'Education Software Development' },
         ]}
       />
 
@@ -98,7 +98,7 @@ const EduDevelopment = () => {
         data={EduIntigrations}
         wrapperClass="power-integrate"
         btnText="Need Technical Guidance?"
-        buttonLink="/#start-project"
+        buttonLink="/industries/education-software-development/#start-project"
       />
       <MvpDevelopmentService
         heading="Our Commitment to Responsible Education Software Development"
