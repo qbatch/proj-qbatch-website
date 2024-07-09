@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy, useState, useEffect } from 'react';
 import { Queries } from '../constants/queries';
 import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';
@@ -16,6 +16,7 @@ const Collaboration = lazy(() => import('../components/PagesComponent/Collaborat
 const Awards = lazy(() => import('../components/PagesComponent/Awards'));
 const CreativeIntelligence = lazy(() => import('../components/PagesComponent/CreativeIntelligence'));
 const StartProject = lazy(() => import('../components/PagesComponent/StartProject'));
+import Loading from '../components/PagesComponent/Loading';
 
 const IndexPage = () => {
   const homeData = Queries();
@@ -23,10 +24,26 @@ const IndexPage = () => {
   const schemaData = schema;
   const transformedObject = replaceUnderscoreWithAt(schemaData);
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsLoading(false);
+    };
+    
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
+    }
+  }, []);
+
   return (
     <>
+    {isLoading ? <Loading />
+    :
       <Layout>
-        <Suspense fallback={<div>Loading...</div>}>
           <DedicatedDevelopment />
           <Achievements page="home" />
           <WhatWeCanDo />
@@ -53,8 +70,8 @@ const IndexPage = () => {
           <Collaboration largeHeading={true} />
           <CreativeIntelligence />
           <StartProject />
-        </Suspense>
       </Layout>
+    }
       <script type="application/ld+json">
         {transformedObject
           .filter((x) => !x.visibilityIn)
