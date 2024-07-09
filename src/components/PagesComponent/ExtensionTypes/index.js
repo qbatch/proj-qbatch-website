@@ -1,7 +1,9 @@
 import React from 'react';
+import { navigate } from 'gatsby';
+import { Col, Row } from 'react-bootstrap';
+
 import ExtensionTypeWrapper from './style';
 import Container from '../../UiComponent/Container';
-import { Col, Row } from 'react-bootstrap';
 import Button from "../../UiComponent/Button"
 
 const ExtensionType = ({ data, heading, paragraph, wrapperClass, btnClass, btnText, buttonLink }) => {
@@ -23,7 +25,7 @@ const btnLink = buttonLink || '/contact';
         </Row>
         {btnText && (
           <div className='d-flex justify-content-center'>
-            <Button text={btnText} onClick={() => navigate({btnLink})}  className={`inner-button ${{btnClass}}`} />
+            <Button text={btnText} onClick={() => navigate(btnLink)}   className={`inner-button ${{btnClass}}`} />
           </div>
         )}
       </Container>
