@@ -7,9 +7,10 @@ import ChoiceEnterpriseWrapper from "./style";
 import { Col, Row } from "react-bootstrap";
 
 const index = (props) => {
-  const { heading, desc1, desc2, listData, isBtn, className, btnText, lg, headingClass } = props;
+  const { heading, desc1, desc2, listData, isBtn, className, btnText, lg, headingClass,btnLink } = props;
   const buttonText = btnText || "Got Something in Mind?";
   const gridLg = lg || "6";
+  const Link = btnLink || '/contact'
   return (
     <ChoiceEnterpriseWrapper className={className}>
       <Container>
@@ -32,7 +33,7 @@ const index = (props) => {
           ))}
           {isBtn && (
             <div className="choice-btn">
-              <Button text={buttonText} onClick={() => navigate('/contact')} />
+              <Button text={buttonText} onClick={() => navigate(`${Link}`)} />
             </div>
           )}
         </Row>

@@ -32,6 +32,9 @@ ${media.md`
   height: 100%;
   ${media.md`
     padding: 24px 0;
+    p{
+      margin-bottom: 0;
+    }
   `}
   .inner-heading{
     text-transform: none;
@@ -63,7 +66,19 @@ ${media.md`
       }
     `}
 }
-
+&.edu-learning{
+  .inner-box{
+    .inner-heading{
+      max-width: 192px;
+    }
+  }
+}
+&.power-integrate{
+  .inner-box{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
 `
 
 export default ExtensionTypeWrapper;

@@ -84,9 +84,12 @@ const EduDevelopment = () => {
       <OurSaasDev
         heading="Education For All, Right?"
         desc1="We help you deliver life-changing learning experiences to your learners with our customized solutions for the education industry."
-        className="our-saas"
+        className="edu-for-all"
         listData={EduForAll}
         btnText="Get Your Custom EdTech Solution"
+        isBtn
+        buttonText="Get Your Custom EdTech Solution"
+        btnLink='/industries/education-software-development/#start-project'
       />
 
       <ExtensionType
@@ -134,7 +137,7 @@ const EduDevelopment = () => {
       />
       <FaqSection faqQuestion={educationFaq} />
       <StartProject
-        heading="Get a free quote for your SaaS development project"
+        heading="Start a Project"
         id="start-project"
       />
     </Layout>

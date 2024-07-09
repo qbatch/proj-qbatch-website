@@ -12,6 +12,10 @@ ${media.lg`
 .paragraph{
   margin-top:24px;
   text-align: center;
+  ${media.md`
+    text-align: left;
+    margin-top: 16px;
+  `}
 }
 .header{
   margin-bottom: 80px;
@@ -47,6 +51,12 @@ ${media.lg`
 &.edu-commitment{
   .service-box{
     padding: 32px;
+    ${media.md`
+      padding: 16px 20px;
+      .service-box-header{
+        margin-bottom: 20px;
+      }
+    `}
   }
 }
 `

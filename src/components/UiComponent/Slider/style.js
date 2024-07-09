@@ -278,7 +278,7 @@ const SliderWrapper = styled.div`
   ${media.sm`
         .make-responsive {
       flex-direction: column;
-      margin-top:24px !important;
+      margin-top:24px;
     }
     `}
     ${media.xs`

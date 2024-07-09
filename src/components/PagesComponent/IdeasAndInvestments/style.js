@@ -110,6 +110,9 @@ const IdeasWrapper = styled.div`
   }
 
   &.edu-dev-component{
+    background: url('/edu-inner-banner-bg.svg');
+    background-size: cover;
+    background-position: top;
     .heading{
       margin-bottom: 24px;
     }
@@ -118,6 +121,16 @@ const IdeasWrapper = styled.div`
       display: block;
        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     }
+    ${media.md`
+      text-align: center;
+      .idea-btn{
+        display: flex;
+        justify-content: center;
+      }
+      span.caption{
+        margin-bottom: 40px;
+      }
+    `}
   }
 `
 
