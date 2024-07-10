@@ -1253,14 +1253,14 @@ const SaasDevelop = [
     img: '/productivity-and-collaboration-tools.svg',
     title: 'Productivity and collaboration tools',
     description:
-     (
-      <ul>
-        <li>Document creation and editing.</li>
-        <li>Project management.</li>
-        <li>Communication platforms.</li>
-        <li>Time management and tracking, and more.</li>
-      </ul>
-     ),
+      (
+        <ul>
+          <li>Document creation and editing.</li>
+          <li>Project management.</li>
+          <li>Communication platforms.</li>
+          <li>Time management and tracking, and more.</li>
+        </ul>
+      ),
   },
   {
     img: '/health-and-wellness-services.svg',
@@ -1421,6 +1421,68 @@ const SaasSliderData = [
     title: "Security First",
     content: "Our robust security protocols safeguard your intellectual property with encryption technologies, ensuring confidentiality."
   }
+]
+const EducationSlider = [
+  {
+    image: "/education-software-development.svg",
+    title: "Education Software Development",
+    content: "We offer multi-device access to different populations and create user-friendly designs with our custom EdTech solutions. Whether you need bespoke educational apps or SaaS platforms, we create tailored solutions for any difficulty and purpose."
+  },
+  {
+    image: "/edtech-transformation.svg",
+    title: "EdTech Transformation",
+    content: "Upgrade your low-performing educational systems and meet modern standards with our EdTech solutions and tools. Our educational software developers help revitalize your legacy education systems with enhanced security, usability, and interoperability."
+  },
+  {
+    image: "/digitalization-automation-optimization.svg",
+    title: "Digitalization, Automation, and Optimization",
+    content: "Automate your conventional learning management system and eliminate redundant manual processes. Hire our LMS developers to transition your e-learning system to the cloud for improved scalability and accessibility."
+  },
+  {
+    image: "/tutoring-and-training-platform-development.svg",
+    title: "Tutoring and Training Platform Development",
+    content: "Build and improve your tutoring and business training by developing premium platforms offering online courses and programs featuring robust AI-driven chatbots. Connect learners with skilled tutors and trainers for maximum and effective learning."
+  },
+  {
+    image: "/custom-lms-lcms-lxp-and-elearning-portals.svg",
+    title: "Custom LMS, LCMS, LXP, and eLearning Portals",
+    content: "Build, upgrade, and manage your learning management from fee and salary management to billing library management, combining the power of diverse content formats (LMS, MOOCs, and LXPs) and leveraging our on-premises or cloud-based systems."
+  },
+  {
+    image: "/mobile-learning-app-development.svg",
+    title: "Mobile Learning App Development",
+    content: "Integrate microlearning, gamification, AR tools, blended learning, and offline support with our mobile education app development services. Build bite-sized modules to simplify complex topics and develop fully functional m-learning apps for any device. "
+  },
+  {
+    image: "/school-management-and0-student-information-software.svg",
+    title: "School Management and Student Information Software (SIS)",
+    content: "Empower your school by building a highly efficient SIS, simplifying student data management, task automation, and communication. Our data-driven school app development streamlines enrollment, classroom management, attendance, and finances."
+  },
+  {
+    image: "/content-authoring-software-development.svg",
+    title: "Content Authoring Software Development",
+    content: "Ensure academic integrity by building a highly vigilant and feature-rich proctoring app that verifies users, monitors screens, restricts browsers, and uses AI to detect suspicious behavior. Real-time alerts and detailed reports keep exams secure and trustworthy."
+  },
+  {
+    image: "/virtual-classroom-app-development.svg",
+    title: "Virtual Classroom App Development",
+    content: "Foster learning from anywhere by developing a virtual classroom app. Deliver multi-device compatibility, automatic backup & cloud storage for recorded lessons and files, video conferencing, document sharing, and interactive whiteboards."
+  },
+  {
+    image: "/proctoring-software-development.svg",
+    title: "Proctoring Software Development",
+    content: "Ensure academic integrity by building a highly vigilant and feature-rich proctoring app that verifies users, monitors screens, restricts browsers, and uses AI to detect suspicious behavior. Real-time alerts and detailed reports keep exams secure and trustworthy."
+  },
+  {
+    image: "/self-education-software.svg",
+    title: "Self-Education Software",
+    content: "Combine offline and online methods to let your students or employees take control of their learning journey. Easily track progress, access comprehensive online resources, and get on-demand teacher assistance, promoting an independent learning experience."
+  },
+  {
+    image: "/quiz-exam-and-assessment-platform-development.svg",
+    title: "Quiz, Exam, and Assessment Platform Development",
+    content: "Optimize educational and business assessments with versatile creation tools, secure delivery, automated scoring, and feedback systems. Moreover, time limits and anti-cheating mechanisms ensure fair assessment and screening processe"
+  },
 ]
 
 const automationData = [
@@ -1782,36 +1844,36 @@ const saasFaq = [
       <li>
         <b>Infrastructure</b><br />
         <p>Hosting, storage, and processing infrastructure costs encompass cloud hosting fees, database expenses, server maintenance, and scalability requirements.</p>
-        </li>
-        <li>
+      </li>
+      <li>
         <b>Third-party Services</b><br />
         <p>Integration of external services like payment gateways or analytics platforms may incur subscription, transaction, or licensing fees.</p>
-        </li>
-        <li>
+      </li>
+      <li>
         <b>Tech stack</b><br />
         <p>Cutting-edge languages or frameworks can be pricier.</p>
-        </li>
-        <li>
+      </li>
+      <li>
         <b>Team structure</b><br />
         <p>In-house development is expensive, while outsourcing offers cost savings but might require extra management.</p>
-        </li>
-        <li>
+      </li>
+      <li>
         <b>Design and UX</b><br />
         <p>Investing in a user-friendly interface adds cost but improves user adoption.</p>
-        </li>
-        <li>
+      </li>
+      <li>
         <b>Scalability and security</b><br />
         <p>Building for growth and robust security involves additional costs for infrastructure and expertise.</p>
-        </li>
-        <li>
+      </li>
+      <li>
         <b>Deployment & maintenance</b><br />
         <p>Ongoing costs include server setup, maintenance, and updates.</p>
-        </li>
-        <li>
+      </li>
+      <li>
         <b>Compliance</b><br />
         <p>Meeting data privacy regulations can incur costs for audits and security measures.</p>
-        </li>
-      
+      </li>
+
     </div>),
   },
   {
@@ -1851,16 +1913,16 @@ const saasFaq = [
     title: 'What technologies and programming languages do you use for SaaS development',
     content: (<div className="faq-content">
       <p>We use these technologies and programming languages for SaaS development:</p>
-      <p><b>Languages</b><br/>
-      Python, Java, JavaScript (Node.js), PHP, C#</p>
-      <p><b>Front-End Development</b><br/>
-      HTML5, CSS3, JavaScript frameworks (React, Angular, Vue.js)</p>
-      <p><b>Back-End Development</b><br/>
-      Django (Python), Spring (Java), Express.js (Node.js), Laravel (PHP), ASP.NET (C#)</p>
-      <p><b>Databases</b><br/>
-      SQL databases (MySQL, PostgreSQL) or NoSQL databases (MongoDB) </p>
-      <p><b>Cloud Platforms</b><br/>
-      AWS, Google Cloud Platform (GCP), Microsoft Azure</p>
+      <p><b>Languages</b><br />
+        Python, Java, JavaScript (Node.js), PHP, C#</p>
+      <p><b>Front-End Development</b><br />
+        HTML5, CSS3, JavaScript frameworks (React, Angular, Vue.js)</p>
+      <p><b>Back-End Development</b><br />
+        Django (Python), Spring (Java), Express.js (Node.js), Laravel (PHP), ASP.NET (C#)</p>
+      <p><b>Databases</b><br />
+        SQL databases (MySQL, PostgreSQL) or NoSQL databases (MongoDB) </p>
+      <p><b>Cloud Platforms</b><br />
+        AWS, Google Cloud Platform (GCP), Microsoft Azure</p>
     </div>),
   },
   {
@@ -1868,18 +1930,18 @@ const saasFaq = [
     title: 'Can you explain the SaaS development lifecycle and the key stages involved?',
     content: (<div className="faq-content">
       <p>The SaaS development lifecycle and the key stages involved</p>
-      <p><b>Discovery & Strategy</b><br/>
-      In-depth analysis of your business goals and target audience.</p>
-      <p><b>Design & Prototyping</b><br/>
-      User-centered design for intuitive and engaging applications.</p>
-      <p><b>Development & Deployment</b><br/>
-      Secure and scalable development using cutting-edge technologies.</p>
-      <p><b>Integration & Maintenance</b><br/>
-      Seamless integration with existing systems and ongoing support.</p>
-      <p><b>Testing</b><br/>
-      We continuously test, monitor, gather feedback, and improve with each iteration.</p>
-      <p><b>Operations and Support</b><br/>
-      After initial feedback during MVP validation, we plan for future improvements.</p>
+      <p><b>Discovery & Strategy</b><br />
+        In-depth analysis of your business goals and target audience.</p>
+      <p><b>Design & Prototyping</b><br />
+        User-centered design for intuitive and engaging applications.</p>
+      <p><b>Development & Deployment</b><br />
+        Secure and scalable development using cutting-edge technologies.</p>
+      <p><b>Integration & Maintenance</b><br />
+        Seamless integration with existing systems and ongoing support.</p>
+      <p><b>Testing</b><br />
+        We continuously test, monitor, gather feedback, and improve with each iteration.</p>
+      <p><b>Operations and Support</b><br />
+        After initial feedback during MVP validation, we plan for future improvements.</p>
     </div>),
   },
   {
@@ -1923,6 +1985,87 @@ const saasFaq = [
         <li>Direct access to support and maintenance from the development team.</li>
       </ul>
     </div>),
+  },
+]
+const educationFaq = [
+  {
+    id: 1,
+    title: 'What types of education software do you develop?',
+    content: (
+      <p>We develop various education software, including Learning Management Systems (LMS), Student Information Systems (SIS), eLearning platforms, virtual classrooms, assessment and testing software, language learning apps, and more.
+      </p>
+    ),
+  },
+  {
+    id: 2,
+    title: 'What are the key features of your education software development services?',
+    content: (
+      <p>Our key features include personalized learning experiences, interactive content creation, seamless integration with existing systems, robust analytics and reporting, mobile compatibility, and secure data management.
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    title: 'What technologies and programming languages do you use in education software development?',
+    content: (
+      <p>We leverage Ruby on Rails, Node.js, Python, JavaScript, React, Angular, Vue, Swift, Kotlin, Java, PostgreSQL, MySQL, and more to develop cutting-edge education software.
+      </p>
+    ),
+  },
+  {
+    id: 4,
+    title: 'What sets your education software development company apart from the competition?',
+    content: (
+      <p>Our focus on user-centric design, innovation, scalability, and security sets us apart. We prioritize collaboration with clients to understand their unique needs and deliver tailored solutions that drive educational excellence.
+      </p>
+    ),
+  },
+  {
+    id: 5,
+    title: 'How do you ensure the security and privacy of educational data?',
+    content: (
+      <p>We implement industry-leading security measures to safeguard educational data, including encryption, access controls, regular security audits, and compliance with data privacy regulations such as GDPR and FERPA.
+      </p>
+    ),
+  },
+  {
+    id: 6,
+    title: 'Do you specialize in any particular areas within the education industry?',
+    content: (
+      <p>We develop custom solutions for various educational sectors, including K-12 schools, higher education institutions, corporate training, language learning, and vocational training.</p>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How do you ensure the educational software is user-friendly for teachers and students?',
+    content: (
+      <p>We conduct thorough user research and usability testing to ensure intuitive interfaces and seamless user experiences. Our iterative design process involves continuous feedback from teachers and students to optimize usability.
+      </p>
+    ),
+  },
+  {
+    id: 8,
+    title: 'What technologies and methodologies do you employ in your educational software development process?',
+    content: (
+      <p>We follow agile development methodologies, incorporating Scrum, Agile,  and Kanban practices. Our development process includes requirements gathering, prototyping, iterative development, testing, and deployment using modern technologies and tools.
+      </p>
+    ),
+  },
+  {
+    id: 9,
+    title: 'Can you customize the educational software to meet our specific requirements and preferences',
+    content: (
+      <p>We offer fully customizable solutions tailored to your unique requirements and preferences. Our team collaborates closely with you to understand your needs and deliver bespoke solutions that align with your goals.
+      </p>
+    ),
+  },
+  {
+    id: 10,
+    title: 'Can you provide ongoing support and maintenance for the educational software post-launch?',
+    content: (
+      <p>Yes, we offer comprehensive support and maintenance services post-launch to ensure your educational software's smooth operation and continuous improvement. Our dedicated support team can address any issues and implement updates as needed.
+      </p>
+    ),
   },
 ]
 
@@ -3545,6 +3688,109 @@ const OurSaasData = [
     desc: "Our consultants provide technical and strategic guidance throughout the SaaS development lifecycle helping you achieve your business goals."
   },
 ]
+const EdTechData = [
+  {
+    icon: "/traditional-vs-modern-education.svg",
+    title: "Traditional vs. modern education",
+    desc: "Traditional education methods neglect individual needs. Implementing personalized learning experiences based on interests and behavior can promote effective education."
+  },
+  {
+    icon: "/ai-vs-ethical-ai.svg",
+    title: "AI vs. ethical AI",
+    desc: "AI in education raises privacy concerns, such as accessing and breaching sensitive data. Integrating risk management processes (ModelOps) ensures ethical and compliant AI."
+  },
+  {
+    icon: "/inaccessibility-vs-flexible-learning.svg",
+    title: "Inaccessibility vs. flexible learning",
+    desc: "Limited offline access due to demographic barriers results in poor performance and upskilling. Try HyFlex environments for flexible in-person or remote learning."
+  },
+  {
+    icon: "/poor-content-quality-vs-active-content-filtering.svg",
+    title: "Poor content quality vs. active content filtering",
+    desc: "Low-quality content on EdTech apps can hinder achievement and motivation. Develop content quality standards and implement active content filtering."
+  },
+  {
+    icon: "/lack-of-engagement-vs-immersive-learning.svg",
+    title: "Lack of engagement vs. immersive learning",
+    desc: "Maintaining student engagement in a digital learning environment takes time and effort. Use AI/ VR, gamification, and cloud for interactive and efficient e-learning platforms."
+  },
+  {
+    icon: "/technical-failures-vs-technical-competency.svg",
+    title: "Technical failures vs. technical competency",
+    desc: "Hardware and software malfunctions disrupt learning causing data loss. Develop robust backup and rapid recovery procedures to fail-proof your e-education system."
+  },
+]
+const EduForAll = [
+  {
+    icon: "/verifying-and-prioritizing-ideas1.svg",
+    title: "Educational Institutions",
+    desc: "Streamline workflows, personalize learning, and enhance teaching with custom LMS, SIS, and interactive eLearning platforms."
+  },
+  {
+    icon: "/fostering-ownership1.svg",
+    title: "K-12 Schools",
+    desc: "Foster a dynamic learning environment with engaging content aligned with curriculum standards."
+  },
+  {
+    icon: "/product-thinking-dna1.svg",
+    title: "EdTech Startups",
+    desc: "We bring your innovative learning ideas to life and enhance talent through custom eLearning programs for onboarding and professional development."
+  },
+  {
+    icon: "/human-centeric-product-design1.svg",
+    title: "Non-Profits and Training Organizations",
+    desc: "Reach a wider audience and amplify your impact with custom eLearning software for courses, authoring tools, and learning portals."
+  },
+]
+const GridData = [
+  {
+    img: '/total-process-transparency1.svg',
+    title: 'Total Process Transparency',
+    description:
+      'We offer full and clear insight into how processes execute identifying loopholes, rework, and bottlenecks.',
+  },
+  {
+    img: '/cross-sector-expertise-1.svg',
+    title: 'Cross-Sector Expertise',
+    description: 'Soft-skill-based leadership qualities to build teams, solve problems, and achieve goals',
+  },
+  {
+    img: '/founders-mentality1.svg',
+    title: "100% Founder's Mentality",
+    description: 'Based on the insurgent mission, immersive vision, and obsession to stay on top.',
+  },
+  {
+    img: '/pay-as-you-go-model.svg',
+    title: 'Pay-as-you-go Model',
+    description: 'Only pay for the services, resources, and time you take, nothing more, nothing less.',
+  },
+  {
+    img: '/dependable-engineering-craftsmanship.svg',
+    title: 'Dependable Engineering Craftsmanship',
+    description:
+      'Building statement products with quality —  no corners cut, each step perfected.',
+  },
+  {
+    img: '/no-biases-only-neutral-feedback.svg',
+    title: 'No Biases, Only Neutral Feedback',
+    description: 'Objective and unbiased evaluation of your software without any interest or preconceived notions.',
+  },
+  {
+    img: '/technology-leadership.svg',
+    title: 'Technology Leadership',
+    description: 'Oversaw a team of technical experts to ensure the seamless functioning of a tech-driven infrastructure.',
+  },
+  {
+    img: '/highly-solution-oriented-mindset.svg',
+    title: 'Highly Solution-Oriented Mindset',
+    description: 'We won’t relax until we find the answer to your business problem.',
+  },
+  {
+    img: '/spectacular-price-quality-ratio.svg',
+    title: 'Spectacular Price-Quality Ratio',
+    description: 'Get exceptional product quality and value at a very reasonable price.',
+  },
+]
 const AdvanceSaasData = [
   {
     title: "Mixed-Tenant and Multi-Tenant Architecture",
@@ -4689,6 +4935,172 @@ const personal = [
     ],
   },
 ];
+const extensionTypes = [
+  {
+    title: 'Password<br class="d-md-block d-none">Manager',
+    description: 'Store encrypted passwords online and access them using a single master password across browsers.'
+  },
+  {
+    title: 'To-Do<br class="d-md-block d-none">and Note',
+    description: 'Get more done in less time with a to-do list and notes extension.'
+  },
+  {
+    title: 'Amazon Seller<br class="d-md-block d-none">Management',
+    description: 'Sell and distribute your products and request customer reviews as needed.'
+  },
+  {
+    title: 'Screen Shots and Video<br class="d-md-block d-none">Extensions',
+    description: 'Capture screenshots and record screencasts for easy uploading anywhere.'
+  },
+  {
+    title: 'Instant Chat<br class="d-md-block d-none"> Extension',
+    description: 'Turn visitors into buyers by integrating live meetings and email messages in a single live chat tool.'
+  },
+  {
+    title: 'Content Manager/<br class="d-md-block d-none">Aggregator',
+    description: 'Build powerful and structured content to enrich your store with custom fields.'
+  },
+  {
+    title: 'Virtual Class<br class="d-md-block d-none">Manager',
+    description: 'Manage learners’ performance, lesson plans, attendance, grade assessments, reports, and schedules.'
+  },
+  {
+    title: 'eSignature<br class="d-md-block d-none"> Manager',
+    description: 'Digitally sign your documents securely and get things done instantly.'
+  }
+];
+const EduFeatures = [
+  {
+    title: 'Assessment Tools',
+    description: 'Quiz and Test Builders Advanced Analytics and Reporting Proctoring Systems'
+  },
+  {
+    title: 'Integration and Compatibility',
+    description: 'Artificial Intelligence Integration Cross-Platform Compatibility Payment Gateway Integration'
+  },
+  {
+    title: 'Engagement and Gamification',
+    description: 'Gamification Elements Interactive Graphics Integrated Leaderboards'
+  },
+  {
+    title: 'Content Creation and Management',
+    description: 'Multimedia Content Creation Content Management & Filtering Options Multi-lingual Support'
+  },
+  {
+    title: 'Communication and Collaboration',
+    description: 'Conferencing Capabilities Live Communication Tools Chat Support Virtual Classrooms'
+  },
+  {
+    title: 'Learning Features',
+    description: 'Blended Learning Collaborative Learning Features Lecture Scheduling Voice Interface for Accessibility Online & Offline Modes'
+  },
+  {
+    title: 'Security and Administration',
+    description: 'Robust Data Security Admin Setup and Security Measures.'
+  },
+  {
+    title: 'Tracking and Monitoring',
+    description: 'Progress Tracking Dashboard Data Analytics Insights'
+  }
+];
+const EduIntigrations = [
+  {
+    title: 'Corporate Systems',
+    description: 'Integrate web analytics, social media, and communication platforms for a holistic learning experience.'
+  },
+  {
+    title: 'CRM & Student Management',
+    description: 'Manage leads, students, teachers, and communication effortlessly through CRM integration.'
+  },
+  {
+    title: 'Monetization & Payments',
+    description: 'Accept payments and easily monetize your courses using popular e-commerce plugins and payment gateways.'
+  },
+  {
+    title: 'Salesforce Integration',
+    description: 'Enhance your platform with integrations like Salesforce, a powerful all-in-one platform.'
+  },
+];
+const EduCommitment = [
+  {
+    title: 'Universal Access',
+    image: '/universal-access.svg',
+    description: 'Our edtech solutions cater to learners of all abilities, adhering to global accessibility standards.',
+  },
+  {
+    title: 'Engaging & Motivational',
+    image: '/engaging-and-motivational.svg',
+    description: 'Interactive features spark curiosity and minimize distractions, keeping students engaged.',
+  },
+  {
+    title: 'Healthy Class Environment',
+    image: '/healthy-class-environment.svg',
+    description: 'Foster emotional well-being with one-on-one support options and responsive classroom management tools.',
+  },
+  {
+    title: 'Improved Staff Management',
+    image: '/improved-staff-management.svg',
+    description: "Simplify onboarding and training processes for educators and staff to avoid chaos and mismanagement.",
+  },
+  {
+    title: 'Simplified Workflows',
+    image: '/simplified-workflow.svg',
+    description: 'Seamless integration with existing tools facilitates effortless management and automates tasks.',
+  },
+  {
+    title: 'Data-Driven Decisions',
+    image: '/data-driven-decisions1.svg',
+    description: 'Gain valuable insights through analytics to track progress, optimize programs, and make informed choices.',
+  },
+  {
+    title: 'Security and Privacy',
+    image: '/security-and-privacy.svg',
+    description: 'Prioritize data protection with tried-and-true security measures (like blockchain) and transparent data practices.',
+  },
+  {
+    title: 'Reliability & Usability',
+    image: '/reliability-and-usability.svg',
+    description: 'Rigorous testing ensures a smooth learning experience with user-friendly interfaces.',
+  },
+  {
+    title: 'Continuous Improvement',
+    image: '/continuous-improvement.svg',
+    description: 'We prioritize ongoing updates, feature enhancements, and support to maximize the value of our solutions.',
+  },
+  {
+    title: 'Compliance',
+    image: '/compliance.svg',
+    description: "We adhere to all relevant regulations for educational software, like FERPA.",
+  },
+  {
+    title: 'Scalability',
+    image: '/scalability.svg',
+    description: 'Our solutions adapt to accommodate growth and evolving educational needs.',
+  },
+  {
+    title: 'Ease of Use & Integration',
+    image: '/ease-of-use-and-integration.svg',
+    description: 'Intuitive interfaces and integrations help learners and educators to leverage the software effectively.',
+  },
+];
+const EduTech = [
+  {
+    icon: "/ar-vr.svg",
+    title: "AR/VR",
+    desc: "Imagine exploring the human body in VR or dissecting a virtual frog in AR. These immersive experiences can greatly enhance learning.",
+  },
+  {
+    icon: "/ai-ml1.svg",
+    title: "AI/ML",
+    desc: "Personalized learning paths, automated feedback, and intelligent tutoring systems can be powered by AI and Machine Learning.",
+  },
+  {
+    icon: "/nlp.svg",
+    title: "Natural Language Processing (NLP)",
+    desc: 'NLP can enable voice-activated learning, chatbots for answering student queries, and sentiment analysis to gauge student understanding.',
+  },
+];
+
 export {
   dedicationWork,
   homeTiles,
@@ -4748,6 +5160,7 @@ export {
   productDevlopmentServices,
   devOpsFaq,
   saasFaq,
+  educationFaq,
   AffordableHiringData,
   FourStepsProcessData,
   hassleData,
@@ -4779,5 +5192,14 @@ export {
   personal,
   mvpDevFaq,
   OurSaasData,
-  AdvanceSaasData
+  EduForAll,
+  GridData,
+  AdvanceSaasData,
+  extensionTypes,
+  EdTechData,
+  EducationSlider,
+  EduFeatures,
+  EduIntigrations,
+  EduCommitment,
+  EduTech
 }

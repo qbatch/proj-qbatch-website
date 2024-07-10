@@ -44,7 +44,7 @@ const MultiPlatformWrapper = styled.div`
     &:last-child {
       margin-bottom: 0;
     }
-    h4 {
+    h3 {
       line-height: 32px;
       margin-bottom: 16px;
       letter-spacing: 0;
@@ -61,6 +61,13 @@ const MultiPlatformWrapper = styled.div`
       ${media.sm`
         line-height:24px;
         `}  
+    }
+  }
+  &.multiple-platforms{
+    .platform-list{
+      h3{
+        margin: 8px  0 16px;
+      }
     }
   }
 `

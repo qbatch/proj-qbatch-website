@@ -16,7 +16,7 @@ import FaqSection from "../../components/PagesComponent/Faq";
 import Slider from '../../components/UiComponent/Slider'
 import Languages from "../../components/PagesComponent/ExtensionTechnologies";
 import ExtensionTypes from '../../components/PagesComponent/ExtensionTypes'
-import { extensionSliderItems, extensionFaq } from "../../constants";
+import { extensionSliderItems, extensionFaq, extensionTypes } from "../../constants";
 import BannerImage from "../../../static/extension-banner.svg";
 
 const BrowserExtension = () => {
@@ -65,7 +65,11 @@ const BrowserExtension = () => {
           btnClass="m-auto mt-5"
         />
         <ProcessBehind />
-        <ExtensionTypes />
+        <ExtensionTypes 
+          heading="Types of Browser Extensions We Can Develop For Your Business"
+          paragraph="Business models that revolve around browser extension development have proven their commercial effectiveness for easy product distribution among users. Types of extensions we can build for you:"
+          data={extensionTypes}
+        />
         <InnerBanner
           heading="Build On-Demand Extensions"
           caption="Didn’t find your type? Share your idea and we’ll build the right fit for your enterprise."

@@ -82,7 +82,13 @@ background-color:  ${({ theme }) => theme.colors.secondaryColor};
        }
     `}
   }
-
+  &.edu-inner-banner{
+    .idea-btn{
+      ${media.md`
+        justify-content: center;
+      `}
+    }
+  }
 `
 
 export default ExtensionInnerBannerWrapper;

@@ -338,6 +338,19 @@ const strapiConfig = {
         },
       },
     },
+    {
+      singularName: 'education-dev',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+          schema: {
+            populate: '*',
+          },
+        },
+      },
+    },
   ],
   singleTypes: [
     'home',

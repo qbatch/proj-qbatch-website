@@ -39,7 +39,6 @@ const IdeasWrapper = styled.div`
       margin-bottom: 0px;
   `}
   }
-
   &.desired-result {
     background: url('/inner-banner-bg2.svg');
     background-size: cover;
@@ -108,6 +107,30 @@ const IdeasWrapper = styled.div`
     button {
       margin-top: 72px;
     }
+  }
+
+  &.edu-dev-component{
+    background: url('/edu-inner-banner-bg.svg');
+    background-size: cover;
+    background-position: top;
+    .heading{
+      margin-bottom: 24px;
+    }
+    span.caption{
+      margin-bottom: 72px;
+      display: block;
+       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+    }
+    ${media.md`
+      text-align: center;
+      .idea-btn{
+        display: flex;
+        justify-content: center;
+      }
+      span.caption{
+        margin-bottom: 40px;
+      }
+    `}
   }
 `
 
