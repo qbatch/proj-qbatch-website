@@ -145,7 +145,7 @@ const SliderWrapper = styled.div`
 
   &.saas-slider{
     .upper-heading{
-      margin-bottom: 116px;
+      margin-bottom: 48px;
       ${media.md`
         margin-bottom: 20px;
       `}

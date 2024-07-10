@@ -49,6 +49,9 @@ ${media.lg`
   }
 }
 &.edu-commitment{
+  .inner-paragraph{
+    margin-bottom: 0;
+  }
   .service-box{
     padding: 32px;
     ${media.md`
