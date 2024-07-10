@@ -50,7 +50,7 @@ const Author = ({ pageContext }) => {
       {articlesData.length > 0 && <Divider />}
       <Container className="blog-cards-container">
         {contributedArticlesData.length > 0 && (
-          <BlogCards isLoadMoreBtn={true} padding="56px 0" upperHeading={`Contributed Stories by ${name || username}`} data={contributedArticlesData} />
+          <BlogCards isLoadMoreBtn={true} upperHeading={`Contributed Stories by ${name || username}`} data={contributedArticlesData} />
         )}
       </Container>
       {articlesData.length > 0 &&
