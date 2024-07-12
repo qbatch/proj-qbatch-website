@@ -57,6 +57,7 @@
     "react-visibility-sensor": "^5.1.1",
     "sharp": "^0.33.4",
     "slick-carousel": "^1.8.1",
+    "strapi-plugin-netlify-deployments": "^2.0.2",
     "styled-components": "^6.0.6"
   },
   "devDependencies": {
