@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useStaticQuery, graphql, navigate } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { useLocation } from '@reach/router';
 import { Col, Row } from 'react-bootstrap';
 
@@ -9,26 +9,8 @@ import Container from "../../UiComponent/Container";
 import Header2Wrapper from './style';
 
 const Header2 = () => {
-  const data = useStaticQuery(graphql`
-    query Header {
-      allStrapiHeader {
-        nodes {
-          logo {
-            logo {
-              localFile {
-                url
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
   const location = useLocation();
   const currentPath = location.pathname + location.hash;
-
-  const Logo = data.allStrapiHeader.nodes[0].logo.logo.localFile.url;
 
   const servicesMenu = [
     { label: "Enterprise Software Development", link: "/services/enterprise-software-development/" },
@@ -120,7 +102,6 @@ const Header2 = () => {
   const [isIndustriesMenuOpen, setIndustriesMenuOpen] = useState(false);
   const [isHowWeWorkMenuOpen, setHowWeWorkMenuOpen] = useState(false);
   const [isCompanyMenuOpen, setCompanyMenuOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(null);
 
   const toggleServicesMenu = () => {
     setServicesMenuOpen(!isServicesMenuOpen);
@@ -148,19 +129,11 @@ const Header2 = () => {
 
   const companyMenuPaths = ["/about/", "/about/#career", "/events"];
 
-  const handleMenuClick = (menuLabel) => {
-    setActiveMenu(menuLabel);
-    setMainMenuOpen(false); // Close the main menu when a link is clicked
-  };
-
   return (
     <Header2Wrapper>
       <Container>
         <div className='header-wrapper'>
           <div className='header-logo'>
-            <Link to="/" className="d-none">
-              <img src={Logo} alt="Qbatch" loading='lazy' width={100} height={32} />
-            </Link>
             <Link to="/">
               <img src='/qbatch-logo.svg' alt="Qbatch" loading='lazy' width={100} height={32} />
             </Link>

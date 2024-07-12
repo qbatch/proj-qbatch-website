@@ -53,6 +53,7 @@ const createBlogPages = async (graphql, actions) => {
             username
             name
             description
+            designation
             image {
               localFile {
                 url
@@ -103,6 +104,7 @@ const createBlogPages = async (graphql, actions) => {
         description: node.description,
         img: node.image,
         socials: node.Socials,
+        designation: node.designation
       },
     });
   });

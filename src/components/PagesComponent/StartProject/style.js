@@ -62,7 +62,7 @@ const StartProjectWrapper = styled.div`
     }
   }
   .testimonials {
-    padding-top: 168px;
+    padding-top: 110px;
     ${media.md`
       padding-bottom: 80px;
       padding-top: 0;

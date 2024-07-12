@@ -5,7 +5,7 @@ import BlogDetailsWrapper from './style';
 import Breadcrumb from '../Breadcrumb';
 
 const AuthorBanner = (props) => {
-  const { title, description, authorImage, socials, customCrumbs } = props;
+  const { title, description, authorImage, socials, customCrumbs, designation } = props;
   const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
   const crumbs = customCrumbs && customCrumbs.length > 0 ? [defaultHomeCrumb, ...customCrumbs] : [defaultHomeCrumb];
   return (
@@ -24,7 +24,7 @@ const AuthorBanner = (props) => {
           <div>
             <div className="d-flex gap-4 justify-content-lg-start  justify-content-center">
               <div className="details-flex">
-                <span className="position mb-1 d-block">Content Manager</span>
+                <span className="position mb-1 d-block">{designation}</span>
                 <h1 className="title text-h2 mt-lg-0 mt-4">{title || 'No Author Name'}</h1>
 
                 <p className="paragraph">{description || 'No Description'}</p>

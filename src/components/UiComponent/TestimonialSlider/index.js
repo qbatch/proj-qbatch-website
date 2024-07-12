@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -59,35 +59,45 @@ const Index = () => {
           agencyName
           clientImg {
             localFile {
-              url
+              childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+              }
             }
           }
         }
       }
     }
-    `);
-    const testimonialsData = data.allStrapiTestimonial.nodes;
+  `);
+  const testimonialsData = data.allStrapiTestimonial.nodes;
 
-    useEffect(() => {
-      const newLoadedIndexes = new Set(loadedIndexes);
-      newLoadedIndexes.add(currentInd - 1);
-      newLoadedIndexes.add(currentInd);
-      newLoadedIndexes.add(currentInd + 1);
-      setLoadedIndexes(Array.from(newLoadedIndexes));
-    }, [currentInd]);
+  useEffect(() => {
+    const newLoadedIndexes = new Set(loadedIndexes);
+    newLoadedIndexes.add(currentInd - 1);
+    newLoadedIndexes.add(currentInd);
+    newLoadedIndexes.add(currentInd + 1);
+    setLoadedIndexes(Array.from(newLoadedIndexes));
+  }, [currentInd]);
 
   return (
     <ProvenExperienceWrapper>
       <div className="section-slider">
         <Carousel responsive={responsive} arrows={false} ref={carousel1Ref} swipeable={false} draggable={false}>
-          {testimonialsData.map((item, ind) => (
-            loadedIndexes.includes(ind) && (
-              <div className="testimonial-wrapper" key={ind}>
-                <img className="client-image" src={item.clientImg?.localFile.url} alt="client" width="158" loading="lazy" />
-                <p className="testimonial-text">{item.feedback}</p>
-              </div>
+          {testimonialsData.map((item, ind) => {
+            const testimonialImage = getImage(item.clientImg?.localFile?.childImageSharp?.gatsbyImageData);
+            return (
+              loadedIndexes.includes(ind) && (
+                <div className="testimonial-wrapper" key={ind}>
+                  <GatsbyImage 
+                    image={testimonialImage} 
+                    alt={`Client ${ind + 1}`} 
+                    className="client-image"
+                    loading="lazy" 
+                  />
+                  <p className="testimonial-text">{item.feedback}</p>
+                </div>
+              )
             )
-          ))}
+          })}
         </Carousel>
         <div className="bottom-slider">
           <Carousel responsive={responsiveTitle} arrows={false} ref={carousel2Ref} swipeable={false} draggable={false}>
@@ -124,7 +134,7 @@ const Index = () => {
         </div>
       </div>
     </ProvenExperienceWrapper>
-  )
+  );
 };
 
 export default Index;

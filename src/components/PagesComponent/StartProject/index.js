@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useRef, useCallback, lazy } from "react";
 import { Row, Col, Form } from "react-bootstrap";
 import { Link } from "gatsby";
 import { ToastContainer, toast } from "react-toastify";
@@ -15,7 +15,7 @@ import Collapse from "../../UiComponent/Collapse";
 import RadioButton from "../../UiComponent/RadioButton";
 import CheckBox from "../../UiComponent/CheckBox";
 import Button from "../../UiComponent/Button";
-import TestimonialCarousel from "../../UiComponent/TestimonialSlider";
+const TestimonialCarousel = lazy(() => import('../../UiComponent/TestimonialSlider'));
 
 import StartProjectWrapper from "./style";
 
