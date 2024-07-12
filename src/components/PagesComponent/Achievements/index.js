@@ -12,15 +12,15 @@ const Index = ({ innerPage, page, mainHeading, labelText }) => {
   const displayedCounterData = page === "contact" ? counterData : counterData.slice(0, 3);
   const heading = mainHeading || "Achievements Through The Years...";
 
-  const [width, setWidth] = useState(
-    typeof window !== 'undefined' ? window.innerWidth : 0
-  );
+  const [width, setWidth] = useState(0);
 
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWidth(window.innerWidth);
+      const handleResize = () => setWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
   }, []);
 
   return (
@@ -35,7 +35,7 @@ const Index = ({ innerPage, page, mainHeading, labelText }) => {
             {displayedCounterData.map((data, ind) => (
               <Col md={numCols} sm={numCols} xs={12} key={ind} className="achievements-col">
                 <span className={page === "contact" ?  "text-h1" : "heading"}>
-                {width >= 480 ?
+                {typeof window !== 'undefined' && width >= 480 ?
                   <CountUp end={data.count} duration={3} />
                   :
                   <span>{data.count}</span>

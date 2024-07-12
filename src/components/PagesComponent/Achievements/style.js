@@ -59,6 +59,7 @@ const AchievementsWrapper = styled.div`
         margin-bottom: 40px;
       `}
       ${media.xs`
+        margin-bottom: 32px;
         &:last-child {
           margin-bottom: 0;
         }
@@ -85,6 +86,7 @@ const AchievementsWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm}; 
         ${media.xs`
         line-height:24px;
+        font-size: ${({ theme }) => theme.fonts.baseFontSize}; 
         `}
       }
       .heading {
@@ -96,6 +98,9 @@ const AchievementsWrapper = styled.div`
         `}
         ${media.sm`
           font-size: ${({ theme }) => theme.fonts.baseFontSizeH2};
+        `}
+        ${media.xs`
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeH3};
         `}
       }
       p {

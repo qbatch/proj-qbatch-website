@@ -542,14 +542,5 @@ const GlobalStyles = createGlobalStyle`
 .avatar-sm-img{
       border-radius: 6px 6px 0 6px;
     }
-.no-article {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h5 {
-    color: ${({ theme }) => theme.colors.labelColor};
-  }
-}
 `
 export default GlobalStyles
