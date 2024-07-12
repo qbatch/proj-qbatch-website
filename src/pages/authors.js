@@ -11,7 +11,7 @@ import BlogCards from '../components/PagesComponent/BlogCards';
 import Container from '../components/UiComponent/Container';
 
 const Author = ({ pageContext }) => {
-  const { username, name, description, img, socials } = pageContext;
+  const { username, name, description, img, socials, designation } = pageContext;
   const blogQuery = Queries();
 
   const userNode = blogQuery.allStrapiUser.nodes.find((x) => x.username === username);
@@ -37,6 +37,7 @@ const Author = ({ pageContext }) => {
         authorImage={img?.localFile?.url}
         description={description}
         socials={socials}
+        designation={designation}
         customCrumbs={[
           { pathname: `/authors/${username}/`, crumbLabel: 'Author', crumbSeparator: '>' },
           { pathname: `/authors/${username}/`, crumbLabel: name || username, crumbSeparator: '>' },

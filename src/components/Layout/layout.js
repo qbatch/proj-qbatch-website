@@ -16,7 +16,6 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={Theme}>
        <Helmet>
-        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;600;700&display=swap" rel="stylesheet" />
         <link rel="icon" href="/fav-icon.png" type="image/png" />
         <link rel="shortcut icon" href="/fav-icon.png" type="image/png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/fav-icon16.png" />

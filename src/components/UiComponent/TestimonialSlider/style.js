@@ -20,7 +20,7 @@ const ProvenExperienceWrapper = styled.div`
     .client-image {
       border-radius: 160px;
       height: 158px;
-      width: 158px;
+      min-width: 158px;
       object-fit: cover;
       object-position: center;
     }

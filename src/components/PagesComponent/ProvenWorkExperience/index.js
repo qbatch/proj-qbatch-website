@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback, useMemo } from "react";
 import { useStaticQuery, graphql, navigate } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -12,7 +13,6 @@ import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 import ProvenExperienceWrapper from "./style";
 
 const responsive = {
-
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 768 },
     items: 1,
@@ -48,47 +48,58 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
     carousel2Ref.current.next();
   };
 
-    const data = useStaticQuery(graphql`
-      query portfolioQuery {
-        allStrapiOurProject {
-          nodes {
-            projectName
-            projectDesc
-            projectCategory
-            imgOpen
-            projectTags {
-              strapi_json_value
-            }
-            projectImg {
-              localFile {
-                url
+  const data = useStaticQuery(graphql`
+    query portfolioQuery {
+      allStrapiOurProject {
+        nodes {
+          projectName
+          projectDesc
+          projectCategory
+          imgOpen
+          projectTags {
+            strapi_json_value
+          }
+          projectImg {
+            localFile {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
-            projectLogo {
-              localFile {
-                url
+          }
+          projectLogo {
+            localFile {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 190
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
           }
         }
       }
-    `)
+    }
+  `);
 
-    const portfolioData = useMemo(() => data.allStrapiOurProject.nodes.filter(x => x.imgOpen), [data]);
+  const portfolioData = useMemo(() => data.allStrapiOurProject.nodes.filter(x => x.imgOpen), [data]);
 
-    const handlePrevClick = useCallback(() => {
-      handleButtonClickPre();
-      setCurrentInd((prev) => (prev === 1 ? 1 : prev - 1));
-    }, [handleButtonClickPre]);
+  const handlePrevClick = useCallback(() => {
+    handleButtonClickPre();
+    setCurrentInd((prev) => (prev === 1 ? 1 : prev - 1));
+  }, [handleButtonClickPre]);
 
-    const handleNextClick = useCallback(() => {
-      const maxIndex = portfolioData.length;
-      if (currentInd !== maxIndex) {
-        handleButtonClickNext();
-      }
-      setCurrentInd((prev) => (prev === maxIndex ? prev : prev + 1));
-    }, [handleButtonClickNext, currentInd, portfolioData.length]);
-    
+  const handleNextClick = useCallback(() => {
+    const maxIndex = portfolioData.length;
+    if (currentInd !== maxIndex) {
+      handleButtonClickNext();
+    }
+    setCurrentInd((prev) => (prev === maxIndex ? prev : prev + 1));
+  }, [handleButtonClickNext, currentInd, portfolioData.length]);
+  
   return (
     <ProvenExperienceWrapper>
       <Container>
@@ -118,11 +129,11 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                   swipeable={false}
                   draggable={false}
                 >
-                  {portfolioData
-                    .filter((x) => x.imgOpen)
-                    .map((item, ind) => (
+                  {portfolioData.map((item, ind) => {
+                    const logoImage = getImage(item.projectLogo?.localFile?.childImageSharp?.gatsbyImageData);
+                    return (
                       <div className="project-title" key={ind}>
-                        <img src={item.projectLogo?.localFile?.url} alt="logo" width="190px" height="52px" loading="lazy" />
+                        <GatsbyImage image={logoImage} alt="logo" loading="lazy" width={190} height={52} />
                         <h3>{item.projectName}</h3>
                         <span>{item.projectCategory}</span>
                         <div className="project-tags d-flex">
@@ -131,14 +142,12 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                           ))}
                         </div>
                       </div>
-                    ))}
+                    );
+                  })}
                 </Carousel>
                 <div className="carousel-button-group d-flex align-items-center">
                   <ArrowLeftIcon
-                    onClick={() => {
-                      handlePrevClick()
-                      setCurrentInd(currentInd === 1 ? 1 : currentInd - 1)
-                    }}
+                    onClick={handlePrevClick}
                   />
                   <span>
                     <span className="fw-bold">
@@ -147,17 +156,12 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                     </span>
                     <span>/</span>
                     <span>
-                      {portfolioData.filter((x) => x.imgOpen).length < 10 && 0}
-                      {portfolioData.filter((x) => x.imgOpen).length}
+                      {portfolioData.length < 10 && 0}
+                      {portfolioData.length}
                     </span>
                   </span>
                   <ArrowRightIcon
-                    onClick={() => {
-                      if ( currentInd !== portfolioData.filter((x)=> x.imgOpen).length) {
-                        handleNextClick()
-                      };
-                      setCurrentInd(currentInd === portfolioData.filter((x)=> x.imgOpen).length ? currentInd : currentInd + 1)
-                    }}
+                    onClick={handleNextClick}
                   />
                 </div>
               </div>
@@ -173,14 +177,14 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                   draggable={false}
                   itemClass="qb-carousel-item"
                 >
-                  {portfolioData
-                    .filter((x) => x.imgOpen)
-                    .map((item, ind) => (
+                  {portfolioData.map((item, ind) => {
+                    const projectImage = getImage(item.projectImg?.localFile?.childImageSharp?.gatsbyImageData);
+                    return (
                       <div key={ind}>
-                        <img src={item.projectImg?.localFile?.url} alt="project" loading="lazy" width="100%" height="100%" />
+                        <GatsbyImage image={projectImage} alt="project" loading="lazy" width="100%" height="100%" />
                       </div>
-                    ))}
-                  <div></div>
+                    );
+                  })}
                 </Carousel>
               </div>
             </Col>
@@ -188,7 +192,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
         </div>
       </div>
     </ProvenExperienceWrapper>
-  )
+  );
 };
 
 export default Index;
