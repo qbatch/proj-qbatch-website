@@ -387,14 +387,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     `gatsby-transformer-remark`,
-    'gatsby-plugin-offline',
     `gatsby-plugin-styled-components`,
-    {
-      resolve: 'gatsby-plugin-brotli',
-      options: {
-        extensions: ['css', 'html', 'js', 'svg'],
-      },
-    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
