@@ -376,12 +376,6 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-brotli',
-      options: {
-        extensions: ['css', 'html', 'js', 'svg'],
-      },
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
