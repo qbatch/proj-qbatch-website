@@ -37,7 +37,7 @@ const Index = (props) => {
             <div className="d-flex align-items-center justify-content-between flex-wrap gap-3 read-time">
               <div className="d-flex align-items-center gap-2 pointer"
                 onClick={() => {
-                  navigate(`/authors/${card?.user?.username}`, {
+                  navigate(`/authors/${card?.user?.username}/`, {
                     state: { slug: card.seo.slug },
                   })
                 }}>
