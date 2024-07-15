@@ -291,7 +291,7 @@ function App({ data, path }) {
                                 <span className="inner-heading">Contributors:</span>
                                 <div className="contributors">
                                   {data?.contributor?.map((contributor, index) => (
-                                    <a href={`/authors/${contributor.username}`} key={index} title={contributor.username}>
+                                    <a href={`/authors/${contributor.username}/`} key={index} title={contributor.username}>
                                       <img src={contributor.image?.localFile.url} />
                                     </a>
                                   ))}
@@ -362,7 +362,7 @@ function App({ data, path }) {
                                   <div
                                     className="d-flex align-items-center gap-2 pointer"
                                     onClick={() => {
-                                      navigate(`/authors/${card?.user?.username}`, {
+                                      navigate(`/authors/${card?.user?.username}/`, {
                                         state: { slug: card.seo.slug },
                                       });
                                     }}
