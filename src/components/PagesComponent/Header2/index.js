@@ -76,13 +76,13 @@ const Header2 = () => {
   ];
 
   const industriesMenu = [
-    { label: "Logistics and Supply Chain", link: "" },
-    { label: "E-commerce", link: "" },
-    { label: "FinTech", link: "" },
-    { label: "Healthcare", link: "" },
-    { label: "EdTech", link: "" },
-    { label: "Travel and Transportation", link: "" },
-    { label: "Retail and Consumer Goods", link: "" }
+    // { label: "Logistics and Supply Chain", link: "" },
+    // { label: "E-commerce", link: "" },
+    // { label: "FinTech", link: "" },
+    // { label: "Healthcare", link: "" },
+    { label: "EdTech", link: "/industries/education-software-development/" },
+    // { label: "Travel and Transportation", link: "" },
+    // { label: "Retail and Consumer Goods", link: "" }
   ];
 
   const howWeWorkMenu = [
@@ -185,7 +185,7 @@ const Header2 = () => {
                   </Container>
                 </div> */}
               </li>
-              {/* <li>
+              <li>
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
                   <Link to="/#industries" className={currentPath === '/#industries' ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
@@ -203,7 +203,7 @@ const Header2 = () => {
                     </ul>
                   </Container>
                 </div>
-              </li> */}
+              </li>
               <li>
                 <div className="link-wrapper">
                   <Link to="/portfolio" className={currentPath.startsWith('/portfolio') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Portfolio</Link>
