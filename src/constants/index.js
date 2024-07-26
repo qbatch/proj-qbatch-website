@@ -4796,34 +4796,34 @@ const footerServicesItems = [
 ];
 
 const industrieshMenu = [
-  // {
-  //   name: 'E-Commerce',
-  //   to: '#',
-  // },
-  // {
-  //   name: 'Logistics & Supply Chain',
-  //   to: '#',
-  // },
-  // {
-  //   name: 'FinTech',
-  //   to: '#',
-  // },
-  // {
-  //   name: 'Healthcare',
-  //   to: '#',
-  // },
+  {
+    name: 'E-Commerce',
+    to: '#',
+  },
+  {
+    name: 'Logistics & Supply Chain',
+    to: '#',
+  },
+  {
+    name: 'FinTech',
+    to: '#',
+  },
+  {
+    name: 'Healthcare',
+    to: '#',
+  },
   {
     name: 'EdTech',
-    to: '/industries/education-software-development/ ',
+    to: '/industries/education-software-development/',
   },
-  // {
-  //   name: 'Retail and Consumer Goods',
-  //   to: '#',
-  // },
-  // {
-  //   name: 'Travel & Transportation',
-  //   to: '#',
-  // },
+  {
+    name: 'Retail and Consumer Goods',
+    to: '#',
+  },
+  {
+    name: 'Travel & Transportation',
+    to: '#',
+  },
 ];
 
 const footerContactData = [
