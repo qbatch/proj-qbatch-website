@@ -197,7 +197,7 @@ const Header2 = () => {
                     <ul>
                       {industriesMenu.map((item, index) => (
                         <li key={index} className={currentPath === item.link ? 'active' : ''}>
-                          <span to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>{item.label}</span>
+                          <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>{item.label}</Link>
                         </li>
                       ))}
                     </ul>
