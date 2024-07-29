@@ -1,22 +1,22 @@
-import React from "react";
+import React, { lazy } from "react";
 import SEO from "../components/Seo";
 import { Queries } from '../constants/queries'
-import Layout from "../components/Layout/layout";
-import Banner from "../components/PagesComponent/PageBanner";
-import RemoteDeveloper from "../components/PagesComponent/RemoteDeveloper";
-import HiringHassle from "../components/PagesComponent/HiringHassle";
-import PerfectDev from "../components/PagesComponent/PerfectDev";
-import SoftwareDevelopers from "../components/PagesComponent/SoftwareDevelopers";
-import ReasonToHire from "../components/PagesComponent/ReasonToHire";
-import FourStepsProcess from "../components/PagesComponent/FourStepsProcess";
-import AffordableHiring from "../components/PagesComponent/AffordableHiring";
-import HireTrustedDevelopers from "../components/PagesComponent/HireTrustedDevelopers";
-import ShareYourRequirements from "../components/PagesComponent/ShareYourRequirements";
-import FaqSection from '../components/PagesComponent/Faq'
-import StartProject from "../components/PagesComponent/StartProject";
 import {
   hireDeveloper,
 } from '../constants'
+const Layout = lazy(() => import( "../components/Layout/layout"));
+const Banner = lazy(() => import( "../components/PagesComponent/PageBanner"));
+const RemoteDeveloper = lazy(() => import( "../components/PagesComponent/RemoteDeveloper"));
+const HiringHassle = lazy(() => import( "../components/PagesComponent/HiringHassle"));
+const PerfectDev = lazy(() => import( "../components/PagesComponent/PerfectDev"));
+const SoftwareDevelopers = lazy(() => import( "../components/PagesComponent/SoftwareDevelopers"));
+const ReasonToHire = lazy(() => import( "../components/PagesComponent/ReasonToHire"));
+const FourStepsProcess = lazy(() => import( "../components/PagesComponent/FourStepsProcess"));
+const AffordableHiring = lazy(() => import( "../components/PagesComponent/AffordableHiring"));
+const HireTrustedDevelopers = lazy(() => import( "../components/PagesComponent/HireTrustedDevelopers"));
+const ShareYourRequirements = lazy(() => import( "../components/PagesComponent/ShareYourRequirements"));
+const FaqSection = lazy(() => import( '../components/PagesComponent/Faq'));
+const StartProject = lazy(() => import( "../components/PagesComponent/StartProject"));
 const Index = () => {
   return (
       <Layout>
