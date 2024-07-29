@@ -1,7 +1,10 @@
-import React from "react";
-import Container from "../../../components/UiComponent/Container";
+import React, { lazy } from "react";
+
 import { hassleData } from '../../../constants/index'
+
 import { HiringHassleWrapper } from "./style";
+
+const Container = lazy(() => import("../../../components/UiComponent/Container"));
 
 const HiringHassle = () => {
 

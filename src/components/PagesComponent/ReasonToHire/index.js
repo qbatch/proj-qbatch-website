@@ -1,8 +1,11 @@
-import React from "react";
-import Container from "../../../components/UiComponent/Container";
-import Button from "../../../components/UiComponent/Button";
+import React, { lazy } from "react";
+
 import { cardsData } from '../../../constants/index'
+
 import { ReasonToHireWrapper } from "./style";
+
+const Container = lazy(() => import("../../../components/UiComponent/Container"));
+const Button = lazy(() => import("../../../components/UiComponent/Button"));
 
 const ReasonToHire = () => {
   return (

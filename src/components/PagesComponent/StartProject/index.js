@@ -9,15 +9,15 @@ import 'react-phone-input-2/lib/style.css'
 import ReCAPTCHA from "react-google-recaptcha";
 import { PhoneNumberUtil } from 'google-libphonenumber';
 
-import Container from "../../UiComponent/Container";
-import Input from "../../UiComponent/Input";
-import Collapse from "../../UiComponent/Collapse";
-import RadioButton from "../../UiComponent/RadioButton";
-import CheckBox from "../../UiComponent/CheckBox";
-import Button from "../../UiComponent/Button";
-const TestimonialCarousel = lazy(() => import('../../UiComponent/TestimonialSlider'));
-
 import StartProjectWrapper from "./style";
+
+const Container = lazy(() => import("../../UiComponent/Container"));
+const Input = lazy(() => import("../../UiComponent/Input"));
+const Collapse = lazy(() => import("../../UiComponent/Collapse"));
+const RadioButton = lazy(() => import("../../UiComponent/RadioButton"));
+const CheckBox = lazy(() => import("../../UiComponent/CheckBox"));
+const Button = lazy(() => import("../../UiComponent/Button"));
+const TestimonialCarousel = lazy(() => import('../../UiComponent/TestimonialSlider'));
 
 const phoneUtil = PhoneNumberUtil.getInstance();
 

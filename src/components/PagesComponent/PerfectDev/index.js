@@ -1,8 +1,11 @@
-import React from "react";
-import Container from "../../../components/UiComponent/Container";
-import Button from "../../../components/UiComponent/Button";
-import { DevData } from '../../../constants/index'
-import { PerfectDevStyleWrapper } from "./style";
+import React, { lazy } from "react";
+
+import { DevData } from '../../../constants/index';
+
+import { PerfectDevStyleWrapper } from  "./style";
+
+const Container = lazy(() => import("../../../components/UiComponent/Container"));
+const Button = lazy(() => import("../../../components/UiComponent/Button"));
 
 const PerfectDev = () => {
 
