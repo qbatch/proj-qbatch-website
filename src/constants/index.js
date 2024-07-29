@@ -4202,19 +4202,19 @@ const cardsData = [
 ]
 const RemoteDeveloperData = [
   {
-    img: <img src='/ruining-product-health.svg' loading="lazy" alt="Product" />,
+    img: <img src='/ruining-product-health.svg' width={100} height={100} loading="lazy" alt="Product" />,
     text: <h3>Talent shortage is ruining your product's health.</h3>,
   },
   {
-    img: <img src='/scaling-team-inescapable-hassle.svg' loading="lazy" alt="ScaleImage" />,
+    img: <img src='/scaling-team-inescapable-hassle.svg' width={100} height={100} loading="lazy" alt="ScaleImage" />,
     text: <h3>Managing and scaling your team is an inescapable hassle.</h3>,
   },
   {
-    img: <img src='/hiring-senior-devs-qa-engineers.svg' loading="lazy" alt="Developer" />,
+    img: <img src='/hiring-senior-devs-qa-engineers.svg' width={100} height={100} loading="lazy" alt="Developer" />,
     text: <h3>Hiring senior devs and QA engineers takes forever.</h3>,
   },
   {
-    img: <img src='/different-timezone-hindering-growth.svg' loading="lazy" alt="GrouthImage" />,
+    img: <img src='/different-timezone-hindering-growth.svg' width={100} height={100} loading="lazy" alt="GrouthImage" />,
     text: (
       <h3>
         Clash of cultures, poor communication, and different timezones are

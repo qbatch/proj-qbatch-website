@@ -19,7 +19,7 @@ const HiringHassle = () => {
           {hassleData.map((item, index) => (
             <div key={index} className="hiring-hassle-cards">
               <div className="hiring-hassle-card-tem">
-                <img src={item.img} alt={item.img} loading="lazy" />
+                <img src={item.img} width={48} height={48} alt={item.img} loading="lazy" />
                 <p>
                   <span>{item.number}</span>
                   <span>{item.sign}</span>
