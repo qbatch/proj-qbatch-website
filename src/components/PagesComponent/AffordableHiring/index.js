@@ -1,8 +1,11 @@
-import React from "react";
-import Container from "../../UiComponent/Container";
-import Button from "../../UiComponent/Button";
+import React, { lazy } from "react";
+
 import { AffordableHiringData } from '../../../constants/index';
+
 import { AffordableHiringWrapper } from "./style";
+
+const Container = lazy(() => import("../../UiComponent/Container"));
+const Button = lazy(() => import("../../UiComponent/Button"));
 
 const AffordableHiring = () => {
 

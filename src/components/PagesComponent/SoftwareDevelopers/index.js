@@ -1,11 +1,13 @@
-import React from "react";
+import React, { lazy } from "react";
 
 import { CgScrollH } from "react-icons/cg";
-
-import Container from "../../../components/UiComponent/Container";
 import Qbatch from "../../../../static/logo-qbatch.svg";
-import {   dataColumn1, dataColumn2, dataColumn3, dataColumn4 } from '../../../constants/index'
+
+import { dataColumn1, dataColumn2, dataColumn3, dataColumn4 } from '../../../constants/index';
+
 import { SoftwareDevelopersWrapper } from "./style";
+
+const Container = lazy(() => import(  "../../../components/UiComponent/Container"));
 
 const SoftwareDevelopers = () => {
 

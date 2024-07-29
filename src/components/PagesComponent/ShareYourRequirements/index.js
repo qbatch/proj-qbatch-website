@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Container from "../../../components/UiComponent/Container";
-import Input from "../../../components/UiComponent/Input";
+
 import { tileData, titleData, trackerLabelData } from '../../../constants/index'
+
 import { ShareYourRequirementsWrapper } from "./style";
+
+const Container = lazy(() => import("../../../components/UiComponent/Container"));
+const Input = lazy(() => import("../../../components/UiComponent/Input"));
 
 const ShareYourRequirements = () => {
   const [className, setClassName] = useState(null);
