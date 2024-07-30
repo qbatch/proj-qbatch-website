@@ -1,26 +1,28 @@
-import React from 'react';
+import React, { lazy } from 'react';
+
 import SeoComponent from "../../utils/seo"
 import { Queries } from '../../constants/queries'
-import Layout from '../../components/Layout/layout';
-import Banner from "../../components/PagesComponent/PageBanner";
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
-import EdTechPotential from '../../components/PagesComponent/ChoiceYourEnterprise'
-import FaqSection from "../../components/PagesComponent/Faq";
-import SaasInnerBanner from '../../components/PagesComponent/ExtensionInnerBanner';
-import StartProject from "../../components/PagesComponent/StartProject";
-import OurSaasDev from '../../components/PagesComponent/ChoiceYourEnterprise'
-import Slider from '../../components/UiComponent/Slider';
-import DesiredResult from '../../components/PagesComponent/IdeasAndInvestments'
-import FullCycle from "../../components/PagesComponent/FullCicle";
-import Collaboration from '../../components/PagesComponent/Collaboration'
-import CriticalEdTech from '../../components/PagesComponent/CriticalEdTech'
-import MultiplePlatformSolutions from "../../components/PagesComponent/MultiplePlatformSolutions";
-import ExtensionType from "../../components/PagesComponent/ExtensionTypes";
-import MvpDevelopmentService from '../../components/PagesComponent/MvpDevelopmentService';
 
 
 import { EduCommitment, EdTechData, educationFaq, EducationSlider, SaasDevelop, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations } from "../../constants";
 import BannerImg from "../../../static/education-app-development-banner.svg"
+
+const Layout = lazy(() => import('../../components/Layout/layout'));
+const Banner = lazy(() => import("../../components/PagesComponent/PageBanner"));
+const ProvenWorkExperience = lazy(() => import("../../components/PagesComponent/ProvenWorkExperience"));
+const EdTechPotential = lazy(() => import('../../components/PagesComponent/ChoiceYourEnterprise'));
+const FaqSection = lazy(() => import("../../components/PagesComponent/Faq"));
+const SaasInnerBanner = lazy(() => import('../../components/PagesComponent/ExtensionInnerBanner'));
+const StartProject = lazy(() => import("../../components/PagesComponent/StartProject"));
+const OurSaasDev = lazy(() => import('../../components/PagesComponent/ChoiceYourEnterprise'));
+const Slider = lazy(() => import('../../components/UiComponent/Slider'));
+const DesiredResult = lazy(() => import('../../components/PagesComponent/IdeasAndInvestments'));
+const FullCycle = lazy(() => import("../../components/PagesComponent/FullCicle"));
+const Collaboration = lazy(() => import('../../components/PagesComponent/Collaboration'));
+const CriticalEdTech = lazy(() => import('../../components/PagesComponent/CriticalEdTech'));
+const MultiplePlatformSolutions = lazy(() => import("../../components/PagesComponent/MultiplePlatformSolutions"));
+const ExtensionType = lazy(() => import("../../components/PagesComponent/ExtensionTypes"));
+const MvpDevelopmentService = lazy(() => import('../../components/PagesComponent/MvpDevelopmentService'));
 
 const EduDevelopment = () => {
 

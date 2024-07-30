@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Col, Row } from 'react-bootstrap';
 
-import Container from '../../UiComponent/Container';
-
 import MvpDevelopmentServiceWrapper from './style';
+
+const Container = lazy(() => import('../../UiComponent/Container'));
 
 const Index = ({ heading, serviceData, className, paragraph }) => {
   return (
@@ -18,7 +18,7 @@ const Index = ({ heading, serviceData, className, paragraph }) => {
             <Col lg={4} key={index}>
               <div className='service-box'>
                 <div className='service-box-header'>
-                  <img src={service.image} alt='box-icon' />
+                  <img src={service.image} alt='box-icon' title='box-icon' loading='lazy' />
                   <h3 className='text-h4'>{service.title}</h3>
                 </div>
                 <p className='inner-paragraph'>{service.description}</p>
