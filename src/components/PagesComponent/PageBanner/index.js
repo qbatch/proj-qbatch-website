@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React, { lazy, Suspense } from "react";
 import { navigate } from 'gatsby'
 import { Row, Col } from "react-bootstrap";
 
