@@ -180,7 +180,7 @@ const SliderWrapper = styled.div`
       `}
       h2{
         ${media.sm`
-            margin-bottom:48px;
+            margin-bottom:32px;
           `}
       }
     }
@@ -285,6 +285,7 @@ const SliderWrapper = styled.div`
     .make-responsive {
       img{
         width:fit-content;
+        height: fit-content;
       }
     }
     `}

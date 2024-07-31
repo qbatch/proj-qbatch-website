@@ -1,9 +1,8 @@
 import React from 'react';
-import { navigate } from 'gatsby'; // Assuming you're using Gatsby for routing
-
-import DevelopmentServicesWrapper from './style';
-import Container from '../../UiComponent/Container';
+import { navigate } from 'gatsby';
 import { Col, Row } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
 import PrimaryButton from '../../UiComponent/PrimaryButton';
 
 import BoxImg1 from '../../../../static/dev-service-box-img-1.svg';
@@ -17,6 +16,9 @@ import BoxImg8 from '../../../../static/dev-service-box-img-8.svg';
 import BoxImg9 from '../../../../static/dev-service-box-img-9.svg';
 import BoxImg10 from '../../../../static/dev-service-box-img-10.svg';
 import BoxImg11 from '../../../../static/dev-service-box-img-11.svg';
+
+import DevelopmentServicesWrapper from './style';
+
 
 const servicesData = [
   {
@@ -110,7 +112,7 @@ const Index = () => {
             <Col lg={4} key={index}>
               <div className='dev-service-box'>
                 <div className='box-header'>
-                  <img src={service.img} alt='icon' />
+                  <img src={service.img} alt='icon' loading='lazy' />
                   <h3 className='text-h4 box-heading'>{service.title}</h3>
                 </div>
                 <div className="box-body">
