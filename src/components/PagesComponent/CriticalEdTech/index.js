@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { Row, Col } from 'react-bootstrap'
-import { navigate } from 'gatsby'
+
 import AssistantWrapper from './style'
-import Container from '../../UiComponent/Container'
-import Divider from '../../UiComponent/Divider'
-import Button from '../../UiComponent/Button'
+
+const Container  = lazy(() => import('../../UiComponent/Container'));
+const Divider  = lazy(() => import('../../UiComponent/Divider'));
 
 const Index = ({data, heading}) => {
 
@@ -22,7 +22,7 @@ const Index = ({data, heading}) => {
                 return (
                   <Col md={4}>
                     <div className="assistent-box">
-                      <img src={list.img} alt={list.title} />
+                      <img src={list.img} alt={list.title} title={list.title} loading='lazy' />
                       <div>
                         <h3 className='text-h4'>{list.title}</h3>
                         <p> {list.description}</p>

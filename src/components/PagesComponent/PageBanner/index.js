@@ -1,11 +1,13 @@
-import React, { Suspense } from "react";
+import React, { lazy } from "react";
 import { navigate } from 'gatsby'
 import { Row, Col } from "react-bootstrap";
-import Container from "../../UiComponent/Container";
-import Button from "../../UiComponent/HomeButton";
-import Breadcrumb from "../Breadcrumb";
 
-import CtoBannerWrapper from "./style";
+import CtoBannerWrapper from"./style";
+
+const Container = lazy(() => import("../../UiComponent/Container"));
+const Button = lazy(() => import("../../UiComponent/HomeButton"));
+const Breadcrumb = lazy(() => import("../Breadcrumb"));
+
 
 const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;

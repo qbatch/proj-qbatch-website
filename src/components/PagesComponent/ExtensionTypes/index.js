@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { navigate } from 'gatsby';
 import { Col, Row } from 'react-bootstrap';
 
 import ExtensionTypeWrapper from './style';
-import Container from '../../UiComponent/Container';
-import Button from "../../UiComponent/Button"
+const Container = lazy(() => import('../../UiComponent/Container'));
+const Button = lazy(() => import("../../UiComponent/Button"));
 
 const ExtensionType = ({ data, heading, paragraph, wrapperClass, btnClass, btnText, buttonLink }) => {
 const btnLink = buttonLink || '/contact';

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { lazy } from "react";
 import { navigate } from 'gatsby'
 import { Col, Container, Row } from "react-bootstrap";
 
-import Button from "../../UiComponent/Button";
-
 import ExtensionInnerBannerWrapper from "./style";
+
+const Button  = lazy(() => import("../../UiComponent/Button"));
 
 const Index = (props) => {
   const {
@@ -40,7 +40,7 @@ const Index = (props) => {
       <Container>
         <Row className="g-0 align-items-center justify-content-between">
           <Col xl={4} lg={12} className="">
-            <img className="banner-inner-img mb-lg-0 mb-4" src={bannerImg} />
+            <img className="banner-inner-img mb-lg-0 mb-4" src={bannerImg} loading="lazy" />
           </Col>
           <Col xl={8}>
           <div className={wrapperClass}>

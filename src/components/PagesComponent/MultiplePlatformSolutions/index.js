@@ -1,9 +1,9 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Row, Col } from "react-bootstrap";
 
-import Container from "../../UiComponent/Container";
-
 import MultiPlatformWrapper from "./style";
+
+const Container = lazy(() => import("../../UiComponent/Container"));
 
 const Index = ({data, heading, paragraph, wrapperClass}) => {
   return (
@@ -26,7 +26,7 @@ const Index = ({data, heading, paragraph, wrapperClass}) => {
                 className="d-flex align-items-start gap-3 platform-list"
                 key={ind}
               >
-                <img src={item.icon} alt="mobile app" />
+                <img src={item.icon} alt="mobile app" title="mobile app" loading="lazy" />
                 <div>
                   <h3 className="text-h4">{item.title}</h3>
                   <p>{item.desc}</p>

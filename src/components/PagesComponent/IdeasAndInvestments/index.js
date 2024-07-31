@@ -1,10 +1,10 @@
-import React from "react";
+import React, { lazy } from "react";
 import { navigate } from 'gatsby'
 import { Container } from "react-bootstrap";
 
-import Button from "../../UiComponent/Button";
-
 import IdeasWrapper from "./style";
+
+const Button  = lazy(() => import("../../UiComponent/Button"));
 
 const Index = (props) => {
   const { heading, span, isButton, className, btnText, headingSize, align, caption } = props
