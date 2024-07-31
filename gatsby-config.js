@@ -396,6 +396,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-zopfli',
+      options: {
+        extensions: ['css', 'html', 'js', 'svg']
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `

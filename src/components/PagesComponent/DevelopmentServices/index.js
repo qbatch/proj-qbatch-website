@@ -112,7 +112,7 @@ const Index = () => {
             <Col lg={4} key={index}>
               <div className='dev-service-box'>
                 <div className='box-header'>
-                  <img src={service.img} alt='icon' loading='lazy' />
+                  <img src={service.img} alt='icon' loading='lazy' width='60px' height='60px' />
                   <h3 className='text-h4 box-heading'>{service.title}</h3>
                 </div>
                 <div className="box-body">
