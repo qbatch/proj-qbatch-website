@@ -96,6 +96,10 @@ const CtoBannerWrapper = styled.div`
         line-height: 24px;
         margin-left:0px;
       `}
+      ${media.xs`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+        line-height: 18px;
+      `}
     }
   }
   &.services-banner{

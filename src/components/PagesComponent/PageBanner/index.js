@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from 'gatsby'
+import React, { Suspense } from "react";
 import { navigate } from 'gatsby'
 import { Row, Col } from "react-bootstrap";
 import Container from "../../UiComponent/Container";
 import Button from "../../UiComponent/HomeButton";
-import CtoBannerWrapper from "./style";
 import Breadcrumb from "../Breadcrumb";
+
+import CtoBannerWrapper from "./style";
 
 const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;
@@ -33,13 +33,15 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wr
                   {heading}
                 </h2>
               )}
-              <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
+              <Suspense fallback={<div>Loading...</div>}>
+                <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
+              </Suspense>
               <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0" />
             </div>
           </Col>
           {imgSrc && (
             <Col lg={col2lg || defaultCol2lg} md={0} sm={0} xs={0} className="d-lg-flex d-none justify-content-end p-0">
-              <img className="banner-img" src={imgSrc} alt="CTO Banner" />
+              <img className="banner-img" src={imgSrc} alt="CTO Banner" loading="lazy" />
             </Col>
           )}
         </Row>

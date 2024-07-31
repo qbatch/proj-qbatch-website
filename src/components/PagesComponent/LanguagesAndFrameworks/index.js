@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { navigate } from 'gatsby'
+import { navigate } from 'gatsby';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,7 +7,8 @@ import { Col, Row, Accordion } from "react-bootstrap";
 
 import { languagesData } from "../../../constants";
 import Container from "../../UiComponent/Container";
-import Button from "../../UiComponent/Button"
+import Button from "../../UiComponent/Button";
+
 import LanguagesWrapper from "./style";
 
 const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-tested Web Application Development tools and technologies to build a cross-platform and secure application:',paragraphMaxWidth, showBtn  }) => {
@@ -77,7 +78,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                           <div className="framework-logo">
                             <div>
                               <div className="logo-wrapper">
-                                {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                                {data.img === '' ? '' : <img src={data.img} alt="project" loading="lazy" />}
                               </div>
                             </div>
                             <p>{data.desc}</p>
@@ -103,7 +104,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                             <div className="framework-logo">
                               <div>
                                 <div className="logo-wrapper">
-                                  {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                                  {data.img === '' ? '' : <img src={data.img} alt="project" loading="lazy" />}
                                 </div>
                               </div>
                               <p>{data.desc}</p>
