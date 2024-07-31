@@ -9,7 +9,6 @@ const ContactForm = lazy(() => import('./contactForm'));
 
 import StartProjectWrapper from "./style";
 
-
 const Index = ({ page, heading, id }) => {
   const headingText = heading || "Start a Project";
 

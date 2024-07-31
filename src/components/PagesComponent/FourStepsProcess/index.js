@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import Container from "../../UiComponent/Container";
+import React, { lazy } from "react";
 
 import { FourStepsProcessData } from '../../../constants/index'
 
 import { FourStepsProcessWrapper } from "./style";
+
+const Container = lazy(() => import("../../UiComponent/Container"));
 
 const FourStepsProcess = () => {
 
