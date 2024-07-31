@@ -1,10 +1,10 @@
-import React from "react";
+import React, { lazy } from "react";
 // import { BsArrowRight } from "react-icons/bs";
 
-import Button from "../../../components/UiComponent/Button";
-import Container from "../../UiComponent/Container";
-
 import CollaborationWrapper from "./style";
+
+const Button  = lazy(() => import("../../../components/UiComponent/Button"));
+const Container  = lazy(() => import("../../UiComponent/Container"));
 
 const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading, button }) => {
   const experties = expertiseData || [

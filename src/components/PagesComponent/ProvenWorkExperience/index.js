@@ -1,16 +1,17 @@
-import React, { useState, useRef, useCallback, useMemo } from "react";
+import React, { useState, useRef, useCallback, useMemo, lazy } from "react";
 import { useStaticQuery, graphql, navigate } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import Button from "../../../components/UiComponent/Button";
-import Container from "../../UiComponent/Container";
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
 import ProvenExperienceWrapper from "./style";
+
+const Button  = lazy(() => import("../../../components/UiComponent/Button"));
+const Container  = lazy(() => import("../../UiComponent/Container"));
 
 const responsive = {
   superLargeDesktop: {
