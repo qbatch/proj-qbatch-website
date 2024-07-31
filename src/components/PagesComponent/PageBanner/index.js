@@ -8,6 +8,7 @@ const Container = lazy(() => import("../../UiComponent/Container"));
 const Button = lazy(() => import("../../UiComponent/HomeButton"));
 const Breadcrumb = lazy(() => import("../Breadcrumb"));
 
+
 const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;
   const defaultCol2lg = 5;
@@ -34,13 +35,15 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wr
                   {heading}
                 </h2>
               )}
-              <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
+              <Suspense fallback={<div>Loading...</div>}>
+                <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
+              </Suspense>
               <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0" />
             </div>
           </Col>
           {imgSrc && (
             <Col lg={col2lg || defaultCol2lg} md={0} sm={0} xs={0} className="d-lg-flex d-none justify-content-end p-0">
-              <img className="banner-img" src={imgSrc} alt="CTO Banner" />
+              <img className="banner-img" src={imgSrc} alt="CTO Banner" loading="lazy" />
             </Col>
           )}
         </Row>

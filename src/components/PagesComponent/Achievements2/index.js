@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CountUp from 'react-countup'
 
 import Container from "../../UiComponent/Container";
-import AchievementsWrapper from './style'
-
 import { counterData2 } from "../../../constants";
 
-const Index = ({ innerPage, page, mainHeading }) => {
-  const heading = mainHeading || "Achievements Through The Years...";
+import AchievementsWrapper from './style'
 
+const Index = () => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+   if (typeof window !== 'undefined') {
+     setWidth(window.innerWidth);
+     const handleResize = () => setWidth(window.innerWidth);
+     window.addEventListener('resize', handleResize);
+     return () => window.removeEventListener('resize', handleResize);
+   }
+ }, []);
+ 
   return (
     <AchievementsWrapper>
       <div className="achievements-main">
@@ -17,7 +26,11 @@ const Index = ({ innerPage, page, mainHeading }) => {
             {counterData2.map((data, ind) => (
               <div key={ind} className="achievements-col">
                 <span className="heading">
+                {typeof window !== 'undefined' && width >= 480 ?
                   <CountUp end={data.count} duration={3} />
+                  :
+                  <span>{data.count}</span>
+                }
                   {data.symbol && (
                     <span className="color-danger fw-light ms-2">{data.symbol}</span>
                   )}

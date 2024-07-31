@@ -1,12 +1,11 @@
-import React, { lazy } from 'react'
-import Slider from 'react-slick'
-import { navigate } from 'gatsby';
+import React from 'react';
+import Slider from 'react-slick';
+
+import Container from '../Container';
+import Divider from '../Divider';
+import Button from "../../UiComponent/Button";
 
 import SliderWrapper from './style'
-
-const Button  = lazy(() => import("../../UiComponent/Button"));
-const Container  = lazy(() => import('../Container'));
-const Divider  = lazy(() => import('../Divider'));
 
 const Index = (props) => {
   const { data, align, heading, paragraph, subParagraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText,dividerClass } = props
@@ -19,6 +18,7 @@ const Index = (props) => {
     speed: 2000,
     autoplaySpeed: 9000,
   }
+  
   return (
     <>
       <Container>
@@ -33,8 +33,8 @@ const Index = (props) => {
             <Slider {...settings}>
               {data.map((data, i) => {
                 return (
-                  <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-0 mb-4">
-                    <img width={width || ''} height={height || ''} src={data.image} loading='lazy' />
+                  <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-0 mb-4" key={i}>
+                    <img width={width || ''} height={height || ''} src={data.image} alt={data.title} loading='lazy' />
                     <div class="slider-data">
                       <h3 className="title text-h4">{data.title}</h3>
                       <p className="content">{data.content}</p>
