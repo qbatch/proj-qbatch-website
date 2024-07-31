@@ -31,9 +31,11 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wr
                   {heading}
                 </h1>
               ) : (
-                <h2 className="text-h1" style={{ maxWidth: headingMaxWidth }}>
-                  {heading}
-                </h2>
+                <Suspense fallback={<div>Loading...</div>}>
+                  <h2 className="text-h1" style={{ maxWidth: headingMaxWidth }}>
+                    {heading}
+                  </h2>
+                </Suspense>
               )}
               <Suspense fallback={<div>Loading...</div>}>
                 <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>

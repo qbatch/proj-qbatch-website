@@ -76,11 +76,11 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                       {item.content.map((data) => (
                         <Col md={4}>
                           <div className="framework-logo">
-                            <div>
+                            {data.img !== "" &&
                               <div className="logo-wrapper">
-                                {data.img === '' ? '' : <img src={data.img} alt="project" loading="lazy" />}
+                                <img src={data.img} alt="project" loading="lazy" />
                               </div>
-                            </div>
+                            }
                             <p>{data.desc}</p>
                           </div>
                         </Col>
@@ -102,11 +102,11 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                         {item.content.map((data) => (
                           <Col md={4} sm={6} xs={6}>
                             <div className="framework-logo">
-                              <div>
-                                <div className="logo-wrapper">
-                                  {data.img === '' ? '' : <img src={data.img} alt="project" loading="lazy" />}
-                                </div>
+                            {data.img !== "" &&
+                              <div className="logo-wrapper">
+                                <img src={data.img} alt="project" loading="lazy" />
                               </div>
+                            }
                               <p>{data.desc}</p>
                             </div>
                           </Col>
