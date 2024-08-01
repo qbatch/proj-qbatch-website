@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, lazy } from "react";
 import { navigate } from 'gatsby'
 import Slider from "react-slick";
 import VisibilitySensor from "react-visibility-sensor";
@@ -6,10 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Row } from "react-bootstrap";
 
-import Button from "../../UiComponent/Button";
-import Container from "../../UiComponent/Container";
-
 import StagesWrapper from "./style";
+
+const Container = lazy(() => import("../../UiComponent/Container"));
 
 const DevelopmentStages = (props) => {
   const {
@@ -178,7 +177,7 @@ const DevelopmentStages = (props) => {
                               item.image.map((img) => (
                                 <Col md={6}>
                                   <div className="mb-5">
-                                    <img src={img} alt="project" />
+                                    <img src={img} alt="project" title="project" loading="lazy" />
                                   </div>
                                 </Col>
                               ))
@@ -239,14 +238,14 @@ const DevelopmentStages = (props) => {
                     item.image.map((img) => (
                       <Col md={12}>
                         <div className="mb-5">
-                          <img src={img} alt="project" />
+                          <img src={img} alt="project" title="project" loading="lazy" />
                         </div>
                       </Col>
                     ))
                   ) : (
                     <>
                       <Col md={5}>
-                        <img src={item.image} alt="project" />
+                        <img src={item.image} alt="project" title="project" loading="lazy" />
                       </Col>
                       <Col md={7} className="slider-column-text">
                         <div className="content">
