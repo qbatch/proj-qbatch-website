@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { lazy, useState } from "react";
 import { useLocation } from '@reach/router';
 import { navigate, Link } from 'gatsby';
 
-import Layout from "../../components/Layout/layout";
-import SEO from "../../components/Seo";
-import BlogBanner from "../../components/PagesComponent/BlogBanner";
-import SearchInput from "../../components/UiComponent/SearchInput";
-import BlogAll from "../../components/PagesComponent/BlogAll";
-import BlogCards from "../../components/PagesComponent/BlogCards";
-import Container from "../../components/UiComponent/Container";
-import Button from "../../components/UiComponent/Button";
 import { Queries } from "../../constants/queries";
+import SEO from "../../components/Seo";
+
+const Layout  = lazy(() => import("../../components/Layout/layout"));
+const BlogBanner  = lazy(() => import("../../components/PagesComponent/BlogBanner"));
+const SearchInput  = lazy(() => import("../../components/UiComponent/SearchInput"));
+const BlogAll  = lazy(() => import("../../components/PagesComponent/BlogAll"));
+const BlogCards  = lazy(() => import("../../components/PagesComponent/BlogCards"));
+const Container  = lazy(() => import("../../components/UiComponent/Container"));
+const Button  = lazy(() => import("../../components/UiComponent/Button"));
 
 const BlogPage = ({ pageContext }) => {
   const location = useLocation();
