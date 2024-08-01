@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import Slider from 'react-slick';
 
-import Container from '../Container';
-import Divider from '../Divider';
-import Button from "../../UiComponent/Button";
-
 import SliderWrapper from './style'
+
+const Container = lazy(() => import('../Container'));
+const Divider = lazy(() => import('../Divider'));
+const Button = lazy(() => import("../../UiComponent/Button"));
+
 
 const Index = (props) => {
   const { data, align, heading, paragraph, subParagraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText,dividerClass } = props
@@ -34,7 +35,7 @@ const Index = (props) => {
               {data.map((data, i) => {
                 return (
                   <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-0 mb-4" key={i}>
-                    <img width={width || ''} height={height || ''} src={data.image} alt={data.title} loading='lazy' />
+                    <img width={width || ''} height={height || ''} src={data.image} alt={data.title} title={data.title} loading='lazy' />
                     <div class="slider-data">
                       <h3 className="title text-h4">{data.title}</h3>
                       <p className="content">{data.content}</p>

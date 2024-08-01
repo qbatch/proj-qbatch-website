@@ -45,7 +45,7 @@ const Index = ({ headingClass, paragraph, expertiseData, heading, largeHeading, 
                 <div className="d-flex skill-section align-items-center justify-content-between" key={index}>
                   <div className="d-flex add-gap">
                     <div className="list-icon">
-                      <img src={list.img} alt={list.title} loading="lazy" width={72} height={72} />
+                      <img src={list.img} alt={list.title} title={list.title} loading="lazy" width={72} height={72} />
                     </div>
                     <div>
                       {headingClass === 'services-light' ?

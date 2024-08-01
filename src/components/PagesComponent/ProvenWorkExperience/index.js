@@ -182,7 +182,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                     const projectImage = getImage(item.projectImg?.localFile?.childImageSharp?.gatsbyImageData);
                     return (
                       <div key={ind}>
-                        <GatsbyImage image={projectImage} alt="project" loading="lazy" width="100%" height="100%" />
+                        <GatsbyImage image={projectImage} alt="project" title="project" loading="lazy" width="100%" height="100%" />
                       </div>
                     );
                   })}
