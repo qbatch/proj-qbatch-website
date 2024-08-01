@@ -1,9 +1,9 @@
-import React from "react";
-
-import Container from "../../UiComponent/Container";
+import React, { lazy } from "react";
 
 import BlogBannerWrapper from "./style";
-import Breadcrumb from "../Breadcrumb";
+
+const Container = lazy(() => import("../../UiComponent/Container"));
+const Breadcrumb = lazy(() => import("../Breadcrumb"));
 
 const index = ({ customCrumbs }) => {
   const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
