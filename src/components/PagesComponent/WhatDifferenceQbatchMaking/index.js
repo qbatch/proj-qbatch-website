@@ -1,11 +1,11 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Row, Col } from "react-bootstrap";
 import { BiChevronRight } from "react-icons/bi";
 
-import Container from "../../UiComponent/Container";
 import { data } from "../../../constants/index";
 
 import QbatchMakingWrapper from "./style";
+const Container = lazy(() => import("../../UiComponent/Container"));
 
 const Index = ({ heading, innerPage, paragraph }) => {
   return (

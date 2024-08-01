@@ -1,11 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 import { navigate } from 'gatsby'
 
-import Button from "../../UiComponent/Button";
 import { dedicatedTiles } from "../../../constants";
-import Container from "../../UiComponent/Container";
 
 import DedicatedMobileWrapper from "./style";
+
+const Button = lazy(() => import("../../UiComponent/Button"));
+const Container = lazy(() => import("../../UiComponent/Container"));
 
 const Index = (props) => {
   const { heading, desc, isList, btnText, className } = props;
