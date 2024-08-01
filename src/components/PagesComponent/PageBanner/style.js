@@ -76,6 +76,10 @@ const CtoBannerWrapper = styled.div`
       ${media.md`
         margin-bottom: 24px;
       `}
+      ${media.xs`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 28px;
+      `}
       span {
         color: ${({ theme }) => theme.colors.dangerColor};
       }

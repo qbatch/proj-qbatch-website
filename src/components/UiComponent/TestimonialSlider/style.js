@@ -32,14 +32,16 @@ const ProvenExperienceWrapper = styled.div`
       gap: 32px;
       .client-image {
         height: 130px;
-        width: 130px;
+        min-width: 130px;
+        max-width: 130px;
       }
     }
     ${media.lg`
       padding: 32px 10px;
       .client-image{
         height: 120px;
-        width: 120px;
+        min-width: 120px;
+        max-width: 120px;
       }
     `}
     ${media.sm`

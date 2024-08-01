@@ -119,7 +119,7 @@ const LanguagesWrapper = styled.div`
     img {
       margin-bottom: 20px;
       ${media.md`
-        max-width: 85%;
+        max-width: 80%;
       `}
     }
     p {
@@ -134,6 +134,9 @@ const LanguagesWrapper = styled.div`
     `}
     h3 {
       margin-bottom: 0;
+    }
+    .logo-wrapper{
+      display: block;
     }
     .languages-collapse {
       .accordion-button {
