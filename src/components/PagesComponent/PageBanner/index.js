@@ -1,13 +1,12 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy } from "react";
 import { navigate } from 'gatsby'
 import { Row, Col } from "react-bootstrap";
-
-import CtoBannerWrapper from"./style";
 
 const Container = lazy(() => import("../../UiComponent/Container"));
 const Button = lazy(() => import("../../UiComponent/HomeButton"));
 const Breadcrumb = lazy(() => import("../Breadcrumb"));
 
+import CtoBannerWrapper from"./style";
 
 const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;
@@ -31,15 +30,11 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wr
                   {heading}
                 </h1>
               ) : (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <h2 className="text-h1" style={{ maxWidth: headingMaxWidth }}>
-                    {heading}
-                  </h2>
-                </Suspense>
+                <h2 className="text-h1" style={{ maxWidth: headingMaxWidth }}>
+                  {heading}
+                </h2>
               )}
-              <Suspense fallback={<div>Loading...</div>}>
                 <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
-              </Suspense>
               <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0" />
             </div>
           </Col>
