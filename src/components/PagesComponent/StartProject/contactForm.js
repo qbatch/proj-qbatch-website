@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState, lazy } from 'react';
+import React, { useCallback, useRef, useState, lazy, Suspense } from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
 import { Link } from "gatsby";
 import { toast } from "react-toastify";
@@ -6,7 +6,8 @@ import PhoneInput from 'react-phone-input-2'
 import emailjs from '@emailjs/browser';
 import 'react-phone-input-2/lib/style.css'
 import { PhoneNumberUtil } from 'google-libphonenumber';
-const ReCAPTCHA =  lazy(()=> import('react-google-recaptcha'));
+
+const ReCAPTCHA = lazy(()=> import('react-google-recaptcha'));
 
 import Input from "../../UiComponent/Input";
 import Collapse from "../../UiComponent/Collapse";
@@ -361,12 +362,14 @@ const ContactForm = () => {
           onChange={() => toggleCheckbox('promotion')}
         />
         <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
-          <ReCAPTCHA
-            action="homepage"
-            sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY}
-            onChange={() => setRecaptchaCompleted(true)}
-            ref={recaptchaRef}
-          />
+            <Suspense fallback={<div>Loading reCAPTCHA...</div>}>
+              <ReCAPTCHA
+                action="homepage"
+                sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY}
+                onChange={() => setRecaptchaCompleted(true)}
+                ref={recaptchaRef}
+              />
+            </Suspense>
           <Button text="Submit" btnType="submit" className="pt-md-0 pt-3" />
         </div>
       </div>

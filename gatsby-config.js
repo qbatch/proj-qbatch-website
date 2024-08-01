@@ -16,7 +16,6 @@ const env = require('dotenv').config({
 const {
   STRAPI_API_URL: apiURL,
   STRAPI_TOKEN: accessToken,
-  GOOGLE_TAG_ID: googleTagId,
 } = process.env;
 
 const strapiConfig = {
@@ -595,30 +594,6 @@ module.exports = {
             type: 'image/png',
           },
         ]
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: googleTagId,
-        enableWebVitalsTracking: true
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify',
-      options: {
-        headers: {
-          '/*': [
-            'Cache-Control: public, max-age=0, must-revalidate',
-          ],
-          '/static/*': [
-            'Cache-Control: public, max-age=31536000, immutable',
-          ],
-          '/sw.js': [
-            'Cache-Control: public, max-age=0, must-revalidate',
-          ],
-        },
-        mergeCachingHeaders: true,
       },
     },
   ],
