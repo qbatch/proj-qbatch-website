@@ -1,15 +1,16 @@
-import React from "react";
+import React, { lazy } from "react";
 import { navigate, Link } from "gatsby";
 import { Col, Row } from "react-bootstrap";
 
-import WeCanHelp from "../../PagesComponent/WeCanHelp";
-import BlogCards from "../../PagesComponent/BlogCards";
 import { ReadingTime } from "../../../constants/Utils";
-import Container from "../../UiComponent/Container";
-import Divider from "../../UiComponent/Divider";
-import StartAProject from "../../PagesComponent/StartProject";
-
 import { BlogAllWrapprt, InnerBannerWrapper } from "./style";
+
+const WeCanHelp = lazy(() => import("../../PagesComponent/WeCanHelp"));
+const BlogCards = lazy(() => import("../../PagesComponent/BlogCards"));
+const Container = lazy(() => import("../../UiComponent/Container"));
+const Divider = lazy(() => import("../../UiComponent/Divider"));
+const StartAProject = lazy(() => import("../../PagesComponent/StartProject"));
+
 
 const stripHtmlTags = (html) => {
   return html.replace(/<[^>]*>?/gm, '');
@@ -26,7 +27,7 @@ const index = ({ data }) => {
             <InnerBannerWrapper key={ind}>
               <Row>
                 <Col lg={7}>
-                  <img className="blog-image" src={item.blogImg?.localFile.url} />
+                  <img className="blog-image" src={item.blogImg?.localFile.url} title="blog-image" loading="lazy" alt='blog-image' />
                 </Col>
                 <Col lg={5}>
                   <div className="blog-wrapper">
@@ -59,13 +60,14 @@ const index = ({ data }) => {
                             width="24px"
                             height="24px"
                             alt="no-user"
+                            loading="lazy"
                             className="avatar-sm-img"
                           />{" "}
                           {item.user?.name || "No User"}
                         </span>
                       </div>
                       <div className="timer">
-                        <img src="/timer.svg" alt="timer" width={16} height={16} />
+                        <img src="/timer.svg" alt="timer" width={16} loading="lazy" title="timer" height={16} />
                         <div>
                           <ReadingTime
                             description={item.blogDescription?.data.blogDescription}
