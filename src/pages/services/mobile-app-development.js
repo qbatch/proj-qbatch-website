@@ -1,33 +1,33 @@
-import React from "react";
-import { Queries } from '../../constants/queries'
-import SeoComponent from "../../utils/seo"
-import Layout from "../../components/Layout/layout";
-import ScrollToTop from '../../components/PagesComponent/ScrollTop';
-import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
-import Achievements from "../../components/PagesComponent/Achievements";
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
-import Collaboration from "../../components/PagesComponent/Collaboration";
-import PeopleFirst from "../../components/PagesComponent/PeopleFirst";
-import { peopleFirstData } from "../../constants";
-import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
-import FaqSection from "../../components/PagesComponent/Faq";
-import StartProject from "../../components/PagesComponent/StartProject";
-import TechnicalExcellence from "../../components/PagesComponent/TechnicalExcellence";
-import Slider from '../../components/UiComponent/Slider'
-import Banner from "../../components/PagesComponent/PageBanner";
-import CrewNotVendors from "../../components/PagesComponent/CrewNotVendors";
-import DedicatedMobileDevelopers from "../../components/PagesComponent/DedicatedMobileDevelopers";
-import MultiplePlatformSolutions from "../../components/PagesComponent/MultiplePlatformSolutions";
+import React, { lazy } from "react";
 import BannerImage from "../../../static/mobile-app-banner.svg";
 
-
+import SeoComponent from "../../utils/seo"
+import { Queries } from '../../constants/queries'
+import Layout from "../../components/Layout/layout";
 import {
   lostToLaunchedItems,
   mobileAppFaq,
   revenueData,
   multiPlatformData
 } from "../../constants";
-import SectionMobileApp from "../../components/PagesComponent/SectionMobileAppSlider";
+import { peopleFirstData } from "../../constants";
+
+const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
+const WhatDifferenceQbatchMaking = lazy(() => import("../../components/PagesComponent/WhatDifferenceQbatchMaking"));
+const Achievements = lazy(() => import("../../components/PagesComponent/Achievements"));
+const ProvenWorkExperience = lazy(() => import("../../components/PagesComponent/ProvenWorkExperience"));
+const Collaboration = lazy(() => import("../../components/PagesComponent/Collaboration"));
+const PeopleFirst = lazy(() => import("../../components/PagesComponent/PeopleFirst"));
+const DesiredResult = lazy(() => import("../../components/PagesComponent/IdeasAndInvestments"));
+const FaqSection = lazy(() => import("../../components/PagesComponent/Faq"));
+const StartProject = lazy(() => import("../../components/PagesComponent/StartProject"));
+const TechnicalExcellence = lazy(() => import("../../components/PagesComponent/TechnicalExcellence"));
+const Slider = lazy(() => import('../../components/UiComponent/Slider'));
+const Banner = lazy(() => import("../../components/PagesComponent/PageBanner"));
+const CrewNotVendors = lazy(() => import("../../components/PagesComponent/CrewNotVendors"));
+const DedicatedMobileDevelopers = lazy(() => import("../../components/PagesComponent/DedicatedMobileDevelopers"));
+const MultiplePlatformSolutions = lazy(() => import("../../components/PagesComponent/MultiplePlatformSolutions"));
+const SectionMobileApp = lazy(() => import("../../components/PagesComponent/SectionMobileAppSlider"));
 
 
 const MobileApp = () => {
