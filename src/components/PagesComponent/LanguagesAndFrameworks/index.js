@@ -78,7 +78,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                           <div className="framework-logo">
                             {data.img !== "" &&
                               <div className="logo-wrapper">
-                                <img src={data.img} alt="project" loading="lazy" />
+                                <img src={data.img} alt="project" title="project" loading="lazy" />
                               </div>
                             }
                             <p>{data.desc}</p>
@@ -104,7 +104,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                             <div className="framework-logo">
                             {data.img !== "" &&
                               <div className="logo-wrapper">
-                                <img src={data.img} alt="project" loading="lazy" width='80%' height='80%' />
+                                <img src={data.img} alt="project" title="project" loading="lazy" width='80%' height='80%' />
                               </div>
                             }
                               <p>{data.desc}</p>
