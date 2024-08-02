@@ -21,6 +21,7 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
     text-align: center;
   `}
 }
+
 .inner-box{
   border: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
   background-color: ${({ theme }) => theme.colors.whiteColor} ;

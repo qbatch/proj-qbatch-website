@@ -637,6 +637,33 @@ export const Queries = () => {
           }
         }
       }
+      allStrapiOurProject {
+        nodes {
+          portfolio {
+            companySize
+            detail
+            duration
+            industry
+            mainHeading
+            subHeading
+            team
+            useCase
+            cover {
+              localFile {
+                url
+              }
+            }
+            projectDetails {
+              heading
+              paragraph
+              detailBox {
+                heading
+                paragraph
+              }
+            }
+          }
+        }
+      }
      }
    `)
 
