@@ -14,7 +14,7 @@ const MvpTestedApproch = () => {
         <Row>
           <Col lg={6}>
             <div className='inner-wrapper'>
-              <img className='inner-icon' src='/raise-funds-and-skimp-investments.svg' alt='icon'/>
+              <img className='inner-icon' src='/raise-funds-and-skimp-investments.svg' alt='raise-funds-and-skimp-investments' loading='lazy' title='raise-funds-and-skimp-investments'/>
               <div className='inner-content'>
                 <h3 className='text-h4 inner-heading'>Raise funds and skimp investments</h3>
                 <p className='inner-paragraph'>Today, venture capital demands more than just an idea; you must show that you’re serious about your game and have taken initial steps in product development; by building an MVP.</p>
@@ -23,7 +23,7 @@ const MvpTestedApproch = () => {
           </Col>
           <Col lg={6}>
             <div className='inner-wrapper'>
-              <img className='inner-icon' src='/get-feedback-and-build-your-idea.svg' alt='icon'/>
+              <img className='inner-icon' src='/get-feedback-and-build-your-idea.svg' title='get-feedback-and-build-your-idea' loading='lazy' alt='get-feedback-and-build-your-idea'/>
               <div className='inner-content'>
                 <h3 className='text-h4 inner-heading'>Get feedback and build your idea</h3>
                 <p className='inner-paragraph'>Solely relying on team insight and inferences won’t help. Go beyond customer research, test the idea with MVP, and get real feedback without risking the project budget.</p>
@@ -32,7 +32,7 @@ const MvpTestedApproch = () => {
           </Col>
           <Col lg={6}>
             <div className='inner-wrapper'>
-              <img className='inner-icon' src='/check-feasibility-and-scope.svg' alt='icon'/>
+              <img className='inner-icon' src='/check-feasibility-and-scope.svg' title='check-feasibility-and-scope' loading='lazy' alt='check-feasibility-and-scope'/>
               <div className='inner-content'>
                 <h3 className='text-h4 inner-heading'>Check feasibility and scope</h3>
                 <p className='inner-paragraph'>Before investing in a fully functional product, ensure technical viability i.e. test scalability, 3rd party integrations, and overall product infrastructure.</p>
@@ -41,7 +41,7 @@ const MvpTestedApproch = () => {
           </Col>
           <Col lg={6}>
             <div className='inner-wrapper'>
-              <img className='inner-icon' src='/launch-your-app-within-2-4-months.svg' alt='icon'/>
+              <img className='inner-icon' src='/launch-your-app-within-2-4-months.svg' title='launch-your-app-within-2-4-months' loading='lazy' alt='launch-your-app-within-2-4-months'/>
               <div className='inner-content'>
                 <h3 className='text-h4 inner-heading'>Launch your app within 2 - 4 -months</h3>
                 <p className='inner-paragraph'>Whether you’ve got a basic idea or an ambitious product plan, MVP provides validation via a testable app, improvable features, and the power to make quicker product releases in an already-tested market.</p>
@@ -50,7 +50,7 @@ const MvpTestedApproch = () => {
           </Col>
           <Col lg={6}>
             <div className='inner-wrapper'>
-              <img className='inner-icon' src='/build-investors-trust.svg' alt='icon'/>
+              <img className='inner-icon' src='/build-investors-trust.svg' alt='build-investors-trust' loading='lazy' title='build-investors-trust'/>
               <div className='inner-content'>
                 <h3 className='text-h4 inner-heading'>Build investors' trust</h3>
                 <p className='inner-paragraph'>MVPs are a fast-track way to capture investors’ interest and instill confidence to transform your idea into a full-blown, winning product.</p>
@@ -59,7 +59,7 @@ const MvpTestedApproch = () => {
           </Col>
           <Col lg={6}>
             <div className='inner-wrapper'>
-              <img className='inner-icon' src='/understand-end-users.svg' alt='icon'/>
+              <img className='inner-icon' src='/understand-end-users.svg' alt='understand-end-users' loading='lazy' title='understand-end-users'/>
               <div className='inner-content'>
                 <h3 className='text-h4 inner-heading'>Understand end users</h3>
                 <p className='inner-paragraph'>User feedback analysis gives a clear understanding of how to change the product features and functionality to meet user needs and preferences.</p>

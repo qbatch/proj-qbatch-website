@@ -1,12 +1,13 @@
-import React from 'react';
-import { Link, navigate } from 'gatsby'
+import React, { lazy } from 'react';
+import { navigate } from 'gatsby'
 import { Row, Col } from "react-bootstrap";
 
-import Container from '../../UiComponent/Container';
-import Button from "../../UiComponent/HomeButton";
 
 import MvpBannerWrapper from './style';
-import Breadcrumb from '../Breadcrumb';
+
+const Container  = lazy(() => import('../../UiComponent/Container'));
+const Button  = lazy(() => import("../../UiComponent/HomeButton"));
+const Breadcrumb  = lazy(() => import('../Breadcrumb'));
 
 const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;
@@ -34,19 +35,19 @@ const MvpBanner = ({ heading, subheading, paragraph, buttonText, imgSrc, wrapper
             <div className='banner-list'>
               <div className='list-item'>
                 <div className='img-wrapper'>
-                  <img className='one' src='/1.svg' />
+                  <img className='one' src='/1.svg' alt="1.svg" title="1.svg" loading='lazy' />
                 </div>
                 <p className='inner-paragraph'>We work on your must-have MVP features prioritizing quality, speed, and budget.</p>
               </div>
               <div className='list-item'>
                 <div className='img-wrapper'>
-                  <img src='/2.svg' />
+                  <img src='/2.svg' alt="2.svg" title="1.svg" loading='lazy' />
                 </div>
                 <p className='inner-paragraph'>Our 8+ years of experience helps us decide what to build first and what to build later.</p>
               </div>
               <div className='list-item'>
                 <div className='img-wrapper'>
-                  <img src='/3.svg' />
+                  <img src='/3.svg' alt="3.svg" title="1.svg" loading='lazy' />
                 </div>
                 <p className='inner-paragraph'>We don’t take your trust for granted. We stay longer to help you succeed today and forever.</p>
               </div>
