@@ -1,10 +1,10 @@
-import React from 'react'
-import Button from '../../UiComponent/Button'
-import SliderWrapper from '../../UiComponent/Slider'
-import { youCanTrustData } from '../../../constants'
-import { SliderComponentWrapper } from './style'
-import Container from '../../UiComponent/Container'
+import React from 'react';
 
+import Button from '../../UiComponent/Button';
+import SliderWrapper from '../../UiComponent/Slider';
+import { youCanTrustData } from '../../../constants';
+
+import { SliderComponentWrapper } from './style'
 
 const SliderComponent = () => {
   return (

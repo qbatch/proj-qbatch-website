@@ -20,7 +20,7 @@ const Index = ({data,heading,paragraph,textAlign,enterprise,maxWidth,height, mar
               <div className="revenue-box">
                 <div key={index} className="revenue-data">
                   <div className="revenue-img">
-                    <img src={item.image} alt="logo" title="logo" loading="lazy" />
+                    <img src={item.image} alt="logo" title="logo" loading="lazy" width='auto' height='auto' />
                   </div>
                   <div className="revenue-desc d-flex flex-column justify-content-center h-100">
                     {item.title && <h3 className="text-h4">{item.title}</h3>}

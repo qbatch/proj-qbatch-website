@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+
+import Container from '../../UiComponent/Container';
+import { webExpertiseData } from '../../../constants';
+
 import { AdvancedWebExploreWrapper } from './style'
-import Container from '../../UiComponent/Container'
-import { webExpertiseData } from '../../../constants'
 
 const AdvancedWebExplore = () => {
   return (
@@ -14,7 +16,7 @@ const AdvancedWebExplore = () => {
         <ul>
          {webExpertiseData.map((item, index) => (
           <li key={index}>
-            <img src={item.image} />
+            <img src={item.image} alt='logo' title='logo' loading='lazy' width={80} height={80} />
             <p>{item.title}</p>
           </li>
          ))}
