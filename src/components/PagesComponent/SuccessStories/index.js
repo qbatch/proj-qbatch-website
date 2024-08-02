@@ -46,9 +46,9 @@ const Index = () => {
         </p>
         <Row className="wrapper">
           {portfolioData.map((item, index) => (
-            <Col xl={item.imgOpen ? 8 : 4}>
-              <Link to={`/portfolio/${item.slug}/`}>
-                <div className="column" key={index}>
+            <Col key={index} xl={item.imgOpen ? 8 : 4}>
+              <Link to={item.slug ? `/portfolio/${item.slug}/` : "#"}>
+                <div className="column">
                   <div
                     className={`column-inner ${item.imgOpen ? "primary-boder" : ""
                       }`}
@@ -75,8 +75,8 @@ const Index = () => {
                         <h3>{item.projectName}</h3>
                         <p className="paragraph">{item.projectDesc}</p>
                         <div className="badge">
-                          {item.projectTags?.strapi_json_value.map((badge) => (
-                            <span>{badge}</span>
+                          {item.projectTags?.strapi_json_value.map((badge, badgeIndex) => (
+                            <span key={badgeIndex}>{badge}</span>
                           ))}
                         </div>
                       </div>
