@@ -8,10 +8,10 @@ import "react-multi-carousel/lib/styles.css";
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
-import ProvenExperienceWrapper from "./style";
-
 const Button  = lazy(() => import("../../../components/UiComponent/Button"));
 const Container  = lazy(() => import("../../UiComponent/Container"));
+
+import ProvenExperienceWrapper from "./style";
 
 const responsive = {
   superLargeDesktop: {

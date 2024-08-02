@@ -1,8 +1,9 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
-import Button from '../../UiComponent/Button'
-import QuotationSection from './style'
+import Button from '../../UiComponent/Button';
+
+import QuotationSection from './style';
 
 const Index = () => {
   return (
