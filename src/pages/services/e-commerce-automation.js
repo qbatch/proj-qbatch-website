@@ -1,33 +1,29 @@
-import React from "react";
-import Banner from '../../components/PagesComponent/PageBanner'
-import { Queries } from '../../constants/queries'
-import SeoComponent from "../../utils/seo"
-import Slider from '../../components/UiComponent/Slider'
+import React, { lazy } from "react";
+
+import { Queries } from '../../constants/queries';
+import SeoComponent from "../../utils/seo";
 import Layout from "../../components/Layout/layout";
-import StartProject from "../../components/PagesComponent/StartProject";
-import WhatCanHelp from "../../components/PagesComponent/WhatCanYouHelp/index";
-import BusinessMangement from "../../components/PagesComponent/BusinessMangement/index";
-import GridData from '../../components/PagesComponent/GridData'
-import DevelopmentStages from "../../components/PagesComponent/DevelopmentStages";
-import IntegrationMarketPlace from "../../components/PagesComponent/IntegrationMarketPlace";
-import LostToLaunched from '../../components/PagesComponent/DevelopmentStages'
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
-import IdeasAndInvestments from "../../components/PagesComponent/IdeasAndInvestments";
-import FaqSection from "../../components/PagesComponent/Faq";
-import { ecomSliderItems, ecomFaqQuestion } from "../../constants";
-import MarketplaceSellers from "../../components/PagesComponent/MarketplaceSellers";
-import QuotationSection from "../../components/PagesComponent/QuotationSection";
-import MarketplaceIntegrations from "../../components/PagesComponent/MarketplaceIntegrations";
-import TrippleYourRevenue from "../../components/PagesComponent/TrippleYourRevenue";
-import Automation from "../../components/PagesComponent/TechnicalGuidance";
-import EcomLogos from "../../components/PagesComponent/EcomLogoSection";
-import EcommerceBanner from '../../../static/e-commerce-banner.svg'
-import { automationData } from "../../constants";
+import { ecomSliderItems, ecomFaqQuestion, automationData } from "../../constants";
+import EcommerceBanner from '../../../static/e-commerce-banner.svg';
+
+const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
+const EcomLogos = lazy(() => import('../../components/PagesComponent/EcomLogoSection'));
+const WhatCanHelp = lazy(() => import('../../components/PagesComponent/WhatCanYouHelp/index'));
+const Slider = lazy(() => import('../../components/UiComponent/Slider'));
+const BusinessMangement = lazy(() => import('../../components/PagesComponent/BusinessMangement/index'));
+const TrippleYourRevenue = lazy(() => import('../../components/PagesComponent/TrippleYourRevenue'));
+const GridData = lazy(() => import('../../components/PagesComponent/GridData'));
+const IdeasAndInvestments = lazy(() => import('../../components/PagesComponent/IdeasAndInvestments'));
+const ProvenWorkExperience = lazy(() => import('../../components/PagesComponent/ProvenWorkExperience'));
+const IntegrationMarketPlace = lazy(() => import('../../components/PagesComponent/IntegrationMarketPlace'));
+const MarketplaceSellers = lazy(() => import('../../components/PagesComponent/MarketplaceSellers'));
+const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
+const QuotationSection = lazy(() => import('../../components/PagesComponent/QuotationSection'));
+const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
 
 const Ecommerce = () => {
   return (
     <Layout>
-    
       <Banner
         subheading="Custom E-Commerce Software Solutions"
         heading="Bigger Returns Require Bold Transformation"

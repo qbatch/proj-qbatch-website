@@ -2,9 +2,9 @@ import React, { lazy } from "react";
 import { navigate } from 'gatsby'
 import { Container } from "react-bootstrap";
 
-import IdeasWrapper from "./style";
-
 const Button  = lazy(() => import("../../UiComponent/Button"));
+
+import IdeasWrapper from "./style";
 
 const Index = (props) => {
   const { heading, span, isButton, className, btnText, headingSize, align, caption } = props
