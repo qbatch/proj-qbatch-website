@@ -1,10 +1,10 @@
 import React, { lazy } from "react";
 import { Row, Col } from "react-bootstrap";
 
-import PeopleFirstWrapper from "./style";
-
 const Button = lazy(() => import("../../UiComponent/Button"));
 const Container = lazy(() => import("../../UiComponent/Container"));
+
+import PeopleFirstWrapper from "./style";
 
 const Index = ({ peopleFirstData, heading, btnText, wrapperClass, paragraph }) => {
   return (

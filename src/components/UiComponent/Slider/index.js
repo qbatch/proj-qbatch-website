@@ -1,12 +1,11 @@
 import React, { lazy } from 'react';
 import Slider from 'react-slick';
 
-import SliderWrapper from './style'
-
 const Container = lazy(() => import('../Container'));
 const Divider = lazy(() => import('../Divider'));
 const Button = lazy(() => import("../../UiComponent/Button"));
 
+import SliderWrapper from './style';
 
 const Index = (props) => {
   const { data, align, heading, paragraph, subParagraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText,dividerClass } = props
