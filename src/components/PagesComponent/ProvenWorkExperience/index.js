@@ -134,7 +134,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                     const logoImage = getImage(item.projectLogo?.localFile?.childImageSharp?.gatsbyImageData);
                     return (
                       <div className="project-title" key={ind}>
-                        <GatsbyImage image={logoImage} alt="logo" loading="lazy" width={190} height={52} />
+                        <GatsbyImage image={logoImage} alt="logo" title="logo" loading="lazy" width={190} height={52} />
                         <h3>{item.projectName}</h3>
                         <span>{item.projectCategory}</span>
                         <div className="project-tags d-flex">

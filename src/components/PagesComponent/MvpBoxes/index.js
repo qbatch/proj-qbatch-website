@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Col, Row } from 'react-bootstrap';
 
-import Container from '../../UiComponent/Container';
-
 import MvpBoxesWrapper from './style';
+
+const Container = lazy(() => import('../../UiComponent/Container'));
 
 const index = ({ boxData, heading, paragraph }) => {
   return (

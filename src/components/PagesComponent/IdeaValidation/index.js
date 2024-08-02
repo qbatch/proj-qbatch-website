@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { lazy } from 'react';
+import { navigate } from 'gatsby';
 import { Col, Row } from 'react-bootstrap';
-
-import Container from '../../UiComponent/Container';
-import Button from "../../../components/UiComponent/Button";
 
 import IdeaValidtionWrapper from './style';
 
+const Container = lazy(() => import('../../UiComponent/Container'));
+const Button = lazy(() => import("../../../components/UiComponent/Button"));
 
 const index = () => {
   return (
@@ -23,7 +23,7 @@ const index = () => {
               <p className='step-paragraph'>Why and how the idea is good? This is validated through a theoretical framework.</p>
             </div>
           </Col>
-          <img className='steps-arrow d-lg-block d-none' src='/steps-arrow.svg' alt='arrow' />
+          <img className='steps-arrow d-lg-block d-none' src='/steps-arrow.svg' alt='steps-arrow' title='steps-arrow' />
           <Col lg={4} md={6}>
             <div className='steps-wrapper'>
               <span className='step-icon text-h2'>2</span>
@@ -31,7 +31,7 @@ const index = () => {
               <p className='step-paragraph'>A barebone design, interaction flow, and experience that proves the idea’s viability in the real world.</p>
             </div>
           </Col>
-          <img className='steps-arrow-2 d-lg-block d-none' src='/step-arrow-2.svg' alt='arrow' />
+          <img className='steps-arrow-2 d-lg-block d-none' src='/step-arrow-2.svg' alt='steps-arrow' title='steps-arrow' />
           <Col lg={4} md={6}>
             <div className='steps-wrapper'>
               <span className='step-icon text-h2'>3</span>
