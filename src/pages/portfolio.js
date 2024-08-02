@@ -33,7 +33,6 @@ const Portfolio = () => {
           { pathname: '/portfolio/', crumbLabel: 'Portfolio', crumbSeparator: '>' },
         ]}
       />
-      <ProjectImpact/>
       <SuccessStories />
       <Divider margin="0px" />
       <Collaboration headingClass='inner-heading' />

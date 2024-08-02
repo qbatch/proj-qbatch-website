@@ -1,7 +1,9 @@
 import React from 'react';
-import ProjectImpactWrapper from './style';
 import { Col, Row } from 'react-bootstrap';
+
 import Container from '../../UiComponent/Container';
+
+import ProjectImpactWrapper from './style';
 
 const ProjectImpact = ({ projectImpact }) => {
   return (

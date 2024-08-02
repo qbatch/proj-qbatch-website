@@ -1,7 +1,9 @@
 import React from 'react';
-import ProjectChallengesWrapper from './style';
-import Container from '../../UiComponent/Container';
 import { Col, Row } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
+
+import ProjectChallengesWrapper from './style';
 
 const ProjectChallenges = ({ projectDetails }) => {
   return (

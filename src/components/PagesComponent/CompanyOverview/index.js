@@ -1,7 +1,10 @@
 import React from 'react';
-import CompanyOverviewWrapper from './style';
 import { Col, Row } from 'react-bootstrap';
+
 import Container from '../../UiComponent/Container';
+
+import CompanyOverviewWrapper from './style';
+
 const companyOverview = ({companySize, team, industry, duration, useCase}) => {
   return (
     <CompanyOverviewWrapper>

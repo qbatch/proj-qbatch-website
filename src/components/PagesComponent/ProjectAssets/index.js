@@ -1,7 +1,9 @@
 import React from 'react';
-import Container from '../../UiComponent/Container';
-import ProjectAssetsWrapper from './style';
 import { Col, Row } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
+
+import ProjectAssetsWrapper from './style';
 
 const ProjectAssets = ({ projectData }) => {
   const { fontFamily, projectColors, projectIcons, projectInnerComponents } = projectData;
@@ -11,7 +13,6 @@ const ProjectAssets = ({ projectData }) => {
     { type: 'Primary', colors: projectColors?.primary.colors },
     { type: 'Secondary', colors: projectColors?.secondary.colors },
   ];
-
 
   return (
     <ProjectAssetsWrapper>

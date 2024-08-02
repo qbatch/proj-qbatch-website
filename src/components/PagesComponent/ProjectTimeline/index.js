@@ -1,7 +1,8 @@
 import React from 'react';
-import ProjectTimelineWrapper from './style';
+
 import Container from '../../UiComponent/Container';
 
+import ProjectTimelineWrapper from './style';
 
 const ProjectTimeline = ({steps, phases}) => {
   return (
