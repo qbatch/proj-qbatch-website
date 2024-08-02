@@ -1,8 +1,8 @@
 import React, { lazy } from 'react';
 
-import SeoComponent from "../../utils/seo"
+import SEO from '../../components/Seo';
 import { Queries } from '../../constants/queries'
-
+import { replaceUnderscoreWithAt } from '../../constants/Utils';
 
 import { EduCommitment, EdTechData, educationFaq, EducationSlider, SaasDevelop, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations } from "../../constants";
 import BannerImg from "../../../static/education-app-development-banner.svg"
@@ -17,7 +17,6 @@ const StartProject = lazy(() => import("../../components/PagesComponent/StartPro
 const OurSaasDev = lazy(() => import('../../components/PagesComponent/ChoiceYourEnterprise'));
 const Slider = lazy(() => import('../../components/UiComponent/Slider'));
 const DesiredResult = lazy(() => import('../../components/PagesComponent/IdeasAndInvestments'));
-const FullCycle = lazy(() => import("../../components/PagesComponent/FullCicle"));
 const Collaboration = lazy(() => import('../../components/PagesComponent/Collaboration'));
 const CriticalEdTech = lazy(() => import('../../components/PagesComponent/CriticalEdTech'));
 const MultiplePlatformSolutions = lazy(() => import("../../components/PagesComponent/MultiplePlatformSolutions"));
@@ -151,8 +150,26 @@ export const Head = () => {
   const saasDevData = Queries()
   const seoData = saasDevData?.allStrapiEducationDev?.nodes[0]?.seo
   const schemaData = saasDevData?.allStrapiEducationDev?.nodes[0]?.schema;
+  const transformedObject = replaceUnderscoreWithAt(schemaData);
+
   return (
-    <SeoComponent seoData={seoData} schemaData={schemaData} />
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      image={seoData.metaimage[0]?.localFile?.url}
+      pathname={`/industries${seoData.slug}`}
+    >
+      {transformedObject
+        .filter((x) => x.visibilityIn)
+        .map((data, i) => (
+          <script key={i} type="application/ld+json">
+            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
+          </script>
+        ))}
+    </SEO>
   )
 }
 
