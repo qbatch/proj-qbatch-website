@@ -8,6 +8,7 @@ import EcommerceBanner from '../../static/portfolio-banner-qbatch.svg'
 import Collaboration from "../components/PagesComponent/Collaboration";
 import StartProject from "../components/PagesComponent/StartProject";
 import SuccessStories from "../components/PagesComponent/SuccessStories";
+import ProjectImpact from '../components/PagesComponent/ProjectImpact';
 
 const Portfolio = () => {
   useEffect(()=>{
@@ -32,6 +33,7 @@ const Portfolio = () => {
           { pathname: '/portfolio/', crumbLabel: 'Portfolio', crumbSeparator: '>' },
         ]}
       />
+      <ProjectImpact/>
       <SuccessStories />
       <Divider margin="0px" />
       <Collaboration headingClass='inner-heading' />

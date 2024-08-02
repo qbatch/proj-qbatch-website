@@ -1,3 +1,5 @@
+const { populate } = require('dotenv');
+
 const siteMetadata = {
   robots: `index,follow`,
   title: ``,
@@ -53,7 +55,50 @@ const strapiConfig = {
     {
       singularName: 'our-project',
       queryParams: {
-        populate: '*',
+        populate: {
+          seo: {
+            populate: '*',
+          },
+          projectImg: true,
+          projectLogo: true,
+          projectCover: true,
+          projectImpact: true,
+          portfolio: {
+            populate: {
+              cover: true,
+              projectDetails: {
+                populate: {
+                  detailBox: '*',
+                },
+              },
+              projectImpact: {
+                populate: {
+                  imageBoxes: true
+                }
+              }
+            },
+          },
+          projectComponents: {
+            populate: {
+              projectIcons: true,
+              projectInnerComponents: true,
+              projectColors: {
+                populate: "*"
+              }
+            },
+          },
+          projectCover: true,
+          phaseTimeline: {
+            populate: {
+              phase: {
+                populate: "*"
+              },
+              timeline: {
+                populate: "*"
+              }
+            },
+          },
+        },
       },
     },
     {
