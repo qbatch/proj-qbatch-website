@@ -11,7 +11,6 @@ import ProjectImpact from '../../components/PagesComponent/ProjectImpact';
 import { ProjectQuote, ProjectCover } from '../../components/PagesComponent/ProjectQuote';
 import ProjectAssets from '../../components/PagesComponent/ProjectAssets';
 import ProjectTimeline from '../../components/PagesComponent/ProjectTimeline';
-import { Queries } from '../../constants/queries';
 
 const Portfolio = ({ pageContext }) => {
   const { portfolio } = pageContext;

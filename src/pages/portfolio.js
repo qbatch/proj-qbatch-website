@@ -8,7 +8,6 @@ import EcommerceBanner from '../../static/portfolio-banner-qbatch.svg'
 import Collaboration from "../components/PagesComponent/Collaboration";
 import StartProject from "../components/PagesComponent/StartProject";
 import SuccessStories from "../components/PagesComponent/SuccessStories";
-import ProjectImpact from '../components/PagesComponent/ProjectImpact';
 
 const Portfolio = () => {
   useEffect(()=>{
