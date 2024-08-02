@@ -1,11 +1,11 @@
 import React, { lazy, useState } from "react";
 
-import FaqWrapper from "./style";
-
 const Container  = lazy(() => import("../../UiComponent/Container"));
 const Collapse  = lazy(() => import("../../UiComponent/Collapse"));
 const Divider  = lazy(() => import('../../UiComponent/Divider'));
 const Button  = lazy(() => import("../../UiComponent/Button"));
+
+import FaqWrapper from "./style";
 
 const Index = (props) => {
   const { faqQuestion } = props;

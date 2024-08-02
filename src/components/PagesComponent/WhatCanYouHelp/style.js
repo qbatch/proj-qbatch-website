@@ -30,6 +30,11 @@ const Card = styled.div`
     `}
   img {
     width: 100%;
+    ${media.xs`
+      height: 210px;
+      object-fit: cover;
+      border-radius: 24px 24px 0 0;
+    `}
   }
   .title-box {
     padding: 24px;

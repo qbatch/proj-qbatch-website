@@ -1,10 +1,10 @@
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 
 import { revenueData } from "../../../constants";
 import Container from "../../UiComponent/Container";
 
 import RevenueWrapper from "./style";
-import { Col, Row } from "react-bootstrap";
 
 const Index = () => {
   return (
@@ -22,7 +22,7 @@ const Index = () => {
               <div className="revenue-box">
                 <div key={index} className="revenue-data">
                   <div className="revenue-img">
-                    <img src={item.image} alt="logo" />
+                    <img src={item.image} alt={item.title} title={item.title} loading="lazy" width='auto' height='auto' />
                   </div>
                   <div className="revenue-desc d-flex flex-column justify-content-center h-100">
                     <h4>{item.title}</h4>
