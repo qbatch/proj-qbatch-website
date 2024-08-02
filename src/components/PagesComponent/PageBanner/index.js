@@ -40,7 +40,7 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wr
           </Col>
           {imgSrc && (
             <Col lg={col2lg || defaultCol2lg} md={0} sm={0} xs={0} className="d-lg-flex d-none justify-content-end p-0">
-              <img className="banner-img" src={imgSrc} alt="CTO Banner" loading="lazy" />
+              <img className="banner-img" src={imgSrc} alt="CTO Banner" title="banners" loading="lazy" />
             </Col>
           )}
         </Row>

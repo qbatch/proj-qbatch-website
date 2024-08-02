@@ -12,7 +12,7 @@ const SectionMobileApp = () => {
       <ul>
         {developmentServicesData.map(( item, index )=> (
           <li>
-          <img src={item.image} />
+          <img src={item.image} title={item.image} alt={item.image} />
           <h3>{item.title}</h3>
           <p>{item.content}</p>
         </li>

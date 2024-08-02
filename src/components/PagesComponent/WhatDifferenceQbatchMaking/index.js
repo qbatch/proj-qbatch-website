@@ -5,6 +5,7 @@ import { BiChevronRight } from "react-icons/bi";
 import { data } from "../../../constants/index";
 
 import QbatchMakingWrapper from "./style";
+
 const Container = lazy(() => import("../../UiComponent/Container"));
 
 const Index = ({ heading, innerPage, paragraph }) => {
@@ -39,11 +40,11 @@ const Index = ({ heading, innerPage, paragraph }) => {
                 </Col>
                 <Col xs={2}>
                   <div className="d-flex align-items-center justify-content-center gap-md-3 gap-1 challenges-icons">
-                    <img src={item.icon1} alt="icon" width="32px" height="32px" loading="lazy" />
+                    <img src={item.icon1} alt="icon" title="icon" width="32px" height="32px" loading="lazy" />
                     <div className="gradient-arrow">
                       <BiChevronRight size={25} />
                     </div>
-                    <img src={item.icon2} alt="icon" width="32px" height="32px" loading="lazy" />
+                    <img src={item.icon2} alt="icon" title="icon" width="32px" height="32px" loading="lazy" />
                   </div>
                 </Col>
                 <Col xs={5}>
