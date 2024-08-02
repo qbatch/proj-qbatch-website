@@ -1,5 +1,3 @@
-const { populate } = require('dotenv');
-
 const siteMetadata = {
   robots: `index,follow`,
   title: ``,
