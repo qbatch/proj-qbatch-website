@@ -167,10 +167,6 @@ const GlobalStyles = createGlobalStyle`
       }
     }
     @media (max-width: 480px) {
-      h1, .text-h1{
-        font-size:${({ theme }) => theme.fonts.baseFontSizeLg};
-        line-height: 32px;
-      }
       h2 .text-h2{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
         line-height: 32px;
@@ -178,12 +174,9 @@ const GlobalStyles = createGlobalStyle`
       h4, .text-h4{
         font-size:${({ theme }) => theme.fonts.baseFontSize};     
       }
-      p{
-       font-size:${({ theme }) => theme.fonts.baseFontSizeMediumSmal};       
-      }
       h3, .text-h3{
         font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
-        line-height: 24px;
+        line-height: 32px;
       }
       h5, .text-h5{
         font-size:${({ theme }) => theme.fonts.baseFontSize}; 

@@ -7,7 +7,7 @@ const StartProjectWrapper = styled.div`
     font-weight:700;
   }
   h1{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     ${media.sm`
     margin-bottom:8px;
     `}
@@ -16,7 +16,7 @@ const StartProjectWrapper = styled.div`
       padding: 56px 0;
     `}
   h2 {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     text-transform: inherit;
     ${media.sm`
       margin-bottom: 12px;
@@ -36,7 +36,7 @@ const StartProjectWrapper = styled.div`
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
   }
   .project-form {
-    margin-top: 77px;
+    margin-top: 24px;
     ${media.xs`
       margin-top: 20px;
     `}
@@ -62,17 +62,16 @@ const StartProjectWrapper = styled.div`
     }
   }
   .testimonials {
-    padding-top: 110px;
     ${media.md`
       padding-bottom: 80px;
-      padding-top: 0;
     `}
     ${media.xs`
       padding-bottom: 40px;
     `}
     h3{
+      margin-bottom: 12px;
       ${media.sm`
-      margin-bottom:12px;
+        margin-bottom:12px;
       `}
     }
     .testimonial-heading {
