@@ -15,14 +15,14 @@ const Index = ({ page, heading, id }) => {
   return (
     <StartProjectWrapper id={id}>
       <Container>
-        {page === 'contact' ? (
-          <h1 className=" text-h2 color-primary">{headingText}</h1>
-          ) : (
-            <h2 className="color-primary">{headingText}</h2>
-          )}
-          <p className="subtitle">Work with the most friendly yet focused developers!</p>
         <Row className="justify-content-between">
           <Col xxl={5} lg={5} className="order-2 order-lg-1">
+            {page === 'contact' ? (
+              <h1 className=" text-h2 color-primary">{headingText}</h1>
+            ) : (
+              <h2 className="color-primary">{headingText}</h2>
+            )}
+            <p className="subtitle">Work with the most friendly yet focused developers!</p>
             <ContactForm />
           </Col>
           <Col xxl={5} lg={6} className="order-1 order-lg-2">

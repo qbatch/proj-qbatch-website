@@ -7,11 +7,23 @@ const weDoData = [
   { icon: "/transform-icon.svg", title: "Transform your enterprise", desc: "Stop chasing the trends and start building \n your enterprise differentiator." },
   { id: 6 },
 ];
+const weDoDataNew = [
+  { icon: "/lounch-icon.svg", title: "Develop \n an MVP", desc: "Launch foolproof MVPs that stand the test of time." },
+  { icon: "/expand-icon.svg", title: "Expand Your \n Team", desc: "Get the best returns on investment with our hi-tech industry experts." },
+  { icon: "/advice-icon.svg", title: "Get CTO’s \n advice", desc: "Know what the market leaders have to say to grow your technical footprint." },
+  { icon: "/create-design-icon.svg", title: "Create a \n design", desc: "We live and breathe design thinking. Take advantage!" },
+];
 const counterData = [
   { id: 1, count: 150, desc: 'Full Stack Developers', symbol: '+' },
   { id: 2, count: 300, desc: 'Solutions Delivered \n Successfully', symbol: '+' },
   { id: 3, count: 98, desc: 'Customer Happiness \n Index', symbol: '%' },
   { id: 4, count: 10, desc: 'Years of Excellency', symbol: '' },
+]
+const achievementsData = [
+  { id: 1, count: 10, desc: 'Years of driving growth', symbol: '+' },
+  { id: 2, count: 100, desc: 'Tech Experts', symbol: '+' },
+  { id: 3, count: 300, desc: 'Projects Delivered', symbol: '+' },
+  { id: 4, count: 98, desc: 'Customer Happiness Index', symbol: '%' },
 ]
 const counterData2 = [
   { id: 1, count: 150, desc: 'Full Stack Developers', symbol: '+' },
@@ -5101,6 +5113,27 @@ const EduTech = [
   },
 ];
 
+const collaborationData = [
+  {
+    img: '/time-and-material.svg',
+    title: "Time and Material",
+    description:
+      "We empower you to choose our Time and Material model where you only pay for the time and quality resources spent on the project.",
+  },
+  {
+    img: '/fixed-scope-new.svg',
+    title: "Fixed Scope Product Development",
+    description:
+      "Pull down barriers like compromised quality and slow project delivery with our Fixed Scope Product Development model under a fixed budget.",
+  },
+  {
+    img: '/dedicated-development.svg',
+    title: "Hire Dedicated Development Team",
+    description:
+      "Leverage your global footprint in the rising techno-verse with Qbatch’s self-driven, smart, and skilled team of software developers.",
+  },
+];
+
 export {
   dedicationWork,
   homeTiles,
@@ -5201,5 +5234,8 @@ export {
   EduFeatures,
   EduIntigrations,
   EduCommitment,
-  EduTech
+  EduTech,
+  weDoDataNew,
+  achievementsData,
+  collaborationData
 }

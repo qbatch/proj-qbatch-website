@@ -4,16 +4,12 @@ import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';
 import { replaceUnderscoreWithAt } from '../constants/Utils';
 
-const DedicatedDevelopment = lazy(() => import('../components/PagesComponent/DedicatedDeveloper'));
-const Achievements = lazy(() => import('../components/PagesComponent/Achievements'));
-const WhatWeCanDo = lazy(() => import('../components/PagesComponent/WhatWeCanDo'));
-const Expertise = lazy(() => import('../components/PagesComponent/Expertise'));
+const HomeBanner = lazy(() => import('../components/PagesComponent/HomeBanner'));
+const AchievementsNew = lazy(() => import('../components/PagesComponent/AchievementsNew'));
+const WhatCanWeDoNew = lazy(() => import('../components/PagesComponent/WhatCanWeDoNew'));
 const ProblumSolving = lazy(() => import('../components/PagesComponent/ProblumSolving'));
-const ProvenWorkExperience = lazy(() => import('../components/PagesComponent/ProvenWorkExperience'));
-const HappilyMaking = lazy(() => import('../components/PagesComponent/MakingIndustries'));
-const WhatDifferenceQbatchMaking = lazy(() => import('../components/PagesComponent/WhatDifferenceQbatchMaking'));
-const Collaboration = lazy(() => import('../components/PagesComponent/Collaboration'));
-const Awards = lazy(() => import('../components/PagesComponent/Awards'));
+const SuccessStories = lazy(() => import('../components/PagesComponent/SuccessStoriesNew'));
+const CollaborationNew = lazy(() => import('../components/PagesComponent/CollaborationNew'));
 const CreativeIntelligence = lazy(() => import('../components/PagesComponent/CreativeIntelligence'));
 const StartProject = lazy(() => import('../components/PagesComponent/StartProject'));
 
@@ -26,10 +22,9 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        <DedicatedDevelopment />
-        <Achievements page="home" />
-        <WhatWeCanDo />
-        <Expertise />
+        <HomeBanner />
+        <WhatCanWeDoNew />
+        <AchievementsNew />
         <ProblumSolving
           text={
             <p className="text-h2 quote mb-0">
@@ -38,18 +33,8 @@ const IndexPage = () => {
             </p>
           }
         />
-        <ProvenWorkExperience
-          heading="Proven Work Experience"
-          paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products."
-          componentName="index"
-        />
-        <HappilyMaking />
-        <WhatDifferenceQbatchMaking
-          heading="What Difference is Qbatch Making?"
-          paragraph="We always present problems with tangible solutions."
-        />
-        <Awards maxCols={8} />
-        <Collaboration largeHeading={true} />
+        <SuccessStories />
+        <CollaborationNew />
         <CreativeIntelligence />
         <StartProject />
       </Layout>
