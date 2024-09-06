@@ -388,6 +388,27 @@ const SliderWrapper = styled.div`
       }
     }
   }
+  &.we-work-slider {
+    .upper-heading {
+      p {
+        max-width: 820px;
+        margin: 0 auto;
+        span {
+          color: ${({ theme }) => theme.colors.primaryColor};
+          font-weight: ${({ theme }) => theme.fontWeight.bold};
+        }
+      }
+      .paragraph {
+        margin-bottom: 24px;
+      }
+      .sub-paragraph {
+        margin-bottom: 96px;
+        ${media.sm`
+          margin-bottom: 56px;
+        `}
+      }
+    }
+  }
 `
 
 export default SliderWrapper;

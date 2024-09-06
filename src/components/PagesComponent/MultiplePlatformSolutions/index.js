@@ -5,12 +5,12 @@ import MultiPlatformWrapper from "./style";
 
 const Container = lazy(() => import("../../UiComponent/Container"));
 
-const Index = ({data, heading, paragraph, wrapperClass}) => {
+const Index = ({data, heading, paragraph, wrapperClass, col1, col2, isSubText}) => {
   return (
     <MultiPlatformWrapper className={wrapperClass}>
       <Container>
         <Row>
-          <Col lg={5}>
+          <Col lg={col1 || 5}>
             <div className="platform-heading">
               <h2>
                 {heading}
@@ -20,7 +20,7 @@ const Index = ({data, heading, paragraph, wrapperClass}) => {
               </p>
             </div>
           </Col>
-          <Col lg={7}>
+          <Col lg={col2 || 7}>
             {data.map((item, ind) => (
               <div
                 className="d-flex align-items-start gap-3 platform-list"
@@ -33,6 +33,9 @@ const Index = ({data, heading, paragraph, wrapperClass}) => {
                 </div>
               </div>
             ))}
+            {isSubText &&
+              <p className="sub-text">The result? A technology solution that empowers you to <span>achieve your dreams.</span></p>
+            }
           </Col>
         </Row>
       </Container>

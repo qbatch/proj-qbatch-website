@@ -8,7 +8,7 @@ import Button from '../../UiComponent/Button';
 
 import SuccessStoriesNewWrapper from './style';
 
-const Index = () => {
+const Index = ({ data }) => {
   return (
     <SuccessStoriesNewWrapper>
       <Container>
@@ -17,45 +17,30 @@ const Index = () => {
             <h2 className='heading mb-3'>Success Stories</h2>
             <p className='mb-0'>Innovators from across the industry have trusted Qbatch to build high-impact products.</p>
           </div>
-          <div className="mt-md-0 mt-3">
+          <div className="mt-lg-0 mt-3">
             <Button onClick={() => navigate('/portfolio')} text="Explore More" />
           </div>
         </div>
         <Row>
-          <Col md={6} className='mb-md-0 mb-5'>
-            <Card>
-              <div className='position-relative card-img'>
-                <Card.Img variant="top" src="/block-dash.svg" loading='lazy' alt='block-dash' title='block-dash' />
-                <div className='arrow-div'>
-                  <img src='/arrow-black.svg' alt='arrow' title='arrow' />
+          {data.map((item, ind) => (
+            <Col md={6} className='mb-md-0 mb-5' key={ind}>
+              <Card>
+                <div className='position-relative card-img'>
+                  <Card.Img variant="top" src={item.img} loading='lazy' alt={item.category} title={item.category} />
+                  <div className='arrow-div'>
+                    <img src='/arrow-black.svg' alt='arrow' title='arrow' />
+                  </div>
                 </div>
-              </div>
-              <Card.Body>
-                <div className='d-flex align-items-center justify-content-between card-logo mb-3'>
-                  <img src='/block-dash-logo.svg' />
-                  <div>Blockchain</div>
-                </div>
-                <p className='card-desc mb-0'>The Future of Ownership: NFTs Are More Than Just a Fad</p>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6}>
-            <Card>
-              <div className='position-relative card-img'>
-                <Card.Img variant="top" src="/alfaris-group.svg" loading='lazy' alt='block-dash' title='block-dash' />
-                <div className='arrow-div'>
-                  <img src='/arrow-black.svg' alt='arrow' title='arrow' />
-                </div>
-              </div>
-              <Card.Body>
-                <div className='d-flex align-items-center justify-content-between card-logo mb-3'>
-                  <img src='/alfaris-group-logo.svg' />
-                  <div>Human Resources</div>
-                </div>
-                <p className='card-desc mb-0'>Empowering HR Excellence: Qbatch Enhances Al-Faris International School’s Operations with AIG HR</p>
-              </Card.Body>
-            </Card>
-          </Col>
+                <Card.Body>
+                  <div className='d-flex align-items-center justify-content-between card-logo mb-3'>
+                    <img src={item.logo} alt='logo' title='logo' loading='lazy' />
+                    <div>{item.category}</div>
+                  </div>
+                  <p className='card-desc mb-0'>{item.title}</p>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
     </SuccessStoriesNewWrapper>

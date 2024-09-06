@@ -21,7 +21,7 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wr
           {customCrumbs && (
             <Breadcrumb crumbs={crumbs} />
           )}
-          <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12}>
+          <Col lg={col1lg || defaultCol1lg} md={12} sm={12} xs={12} className="d-flex align-items-center">
             <div className="banner-main">
               {subheading && <h1 className="banner-sub-heading text-h4" style={{ color: subheadingColor }}> {subheading}
               </h1>}
@@ -39,7 +39,7 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wr
             </div>
           </Col>
           {imgSrc && (
-            <Col lg={col2lg || defaultCol2lg} md={0} sm={0} xs={0} className="d-lg-flex d-none justify-content-end p-0">
+            <Col lg={col2lg || defaultCol2lg} md={0} sm={0} xs={0} className="d-lg-flex d-none justify-content-end">
               <img className="banner-img" src={imgSrc} alt={subheading} title={subheading} loading="lazy" />
             </Col>
           )}

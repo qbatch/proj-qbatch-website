@@ -1,8 +1,10 @@
 import React, { lazy } from 'react';
+
 import { Queries } from '../constants/queries';
 import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';
 import { replaceUnderscoreWithAt } from '../constants/Utils';
+import { homeStoriesData } from '../constants';
 
 const HomeBanner = lazy(() => import('../components/PagesComponent/HomeBanner'));
 const AchievementsNew = lazy(() => import('../components/PagesComponent/AchievementsNew'));
@@ -33,7 +35,7 @@ const IndexPage = () => {
             </p>
           }
         />
-        <SuccessStories />
+        <SuccessStories data={homeStoriesData} />
         <CollaborationNew />
         <CreativeIntelligence />
         <StartProject />
