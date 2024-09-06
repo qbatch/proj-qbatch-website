@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const MultiPlatformWrapper = styled.div`
-  padding: 120px 0;
+  padding: 96px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 56px 0;
+    padding: 40px 0;
   `}
   .platform-heading {
     h2 {
@@ -63,10 +63,33 @@ const MultiPlatformWrapper = styled.div`
         `}  
     }
   }
+  .sub-text {
+    color: ${({ theme }) => theme.colors.primaryColor};
+    line-height: 24px;
+    margin-bottom: 0;
+    margin-top: -8px;
+    span {
+      color: ${({ theme }) => theme.colors.dangerColor};
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
+    }
+  }
   &.multiple-platforms{
     .platform-list{
       h3{
         margin: 8px  0 16px;
+      }
+    }
+  }
+  &.technology-thrives {
+    .platform-list {
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 16px;
+      }
+    }
+    .platform-heading {
+      p {
+        max-width: 600px;
       }
     }
   }

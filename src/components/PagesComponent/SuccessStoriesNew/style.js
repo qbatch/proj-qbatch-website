@@ -9,6 +9,9 @@ const SuccessStoriesNewWrapper = styled.div`
   `}
   .section-heading {
     margin-bottom: 56px;
+    ${media.md`
+      flex-direction: column;
+    `}
     ${media.sm`
       margin-bottom: 32px;
     `}
