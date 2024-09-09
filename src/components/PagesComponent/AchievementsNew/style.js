@@ -67,13 +67,17 @@ const AchievementsNewWrapper = styled.div`
           line-height: 68px;
         }
         h4 {
-          color: ${({ theme }) => theme.colors.dangerColor};
+          background: linear-gradient(90deg, #ED1C24 0%, #0054A6 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
           margin-bottom: 0;
         }
       }
       .count-desc {
         color: ${({ theme }) => theme.colors.textMedium};
         font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        font-weight: ${({ theme }) => theme.fontWeight.semiBold};
         text-align: center;
         margin-bottom: 0;
         line-height: 32px;

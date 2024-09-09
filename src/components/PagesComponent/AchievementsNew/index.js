@@ -4,6 +4,7 @@ import CountUp from 'react-countup';
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Marquee from "react-fast-marquee";
+import Slider from 'react-slick';
 
 import Container from '../../UiComponent/Container';
 import { achievementsData } from '../../../constants';
@@ -12,6 +13,16 @@ import AchievementsNewWrapper from './style';
 
 const Index = () => {
   const [width, setWidth] = useState(0);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 1000,
+  }
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -49,7 +60,7 @@ const Index = () => {
         <div className='achievements-box'>
           <h2 className='heading text-center'>Achievements Through The Years...</h2>
           <div className='white-box'>
-            <Row className='count-row'>
+            <Row className='count-row d-md-flex d-none'>
               {achievementsData.map((data, ind) => (
                 <Col lg={3} md={6} className='d-flex flex-column align-items-center counter-col' key={ind}>
                   <div className='d-flex align-items-center gap-2 count-data'>
@@ -63,6 +74,23 @@ const Index = () => {
                   <p className='count-desc'>{data.desc}</p>
                 </Col>
               ))}
+            </Row>
+            <Row className='count-row d-md-none d-flex'>
+              <Slider {...settings}>
+                {achievementsData.map((data, ind) => (
+                  <Col lg={3} md={6} className='d-flex flex-column align-items-center counter-col' key={ind}>
+                    <div className='d-flex align-items-center gap-2 count-data'>
+                      {typeof window !== 'undefined' && width >= 480 ?
+                        <CountUp end={data.count} duration={3} />
+                        :
+                        <span>{data.count}</span>
+                      }
+                      <h4 className='text-h2'>{data.symbol}</h4>
+                    </div>
+                    <p className='count-desc'>{data.desc}</p>
+                  </Col>
+                ))}
+              </Slider>
             </Row>
             <Row>
               <Col lg={6}>

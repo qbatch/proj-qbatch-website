@@ -73,6 +73,10 @@ const ButtonWrapper = styled(Button)`
         width: 16px;
         height: 16px;
         position: static;
+      }
+    }
+    &:hover {
+      svg {
         rotate: -30deg;
       }
     }
