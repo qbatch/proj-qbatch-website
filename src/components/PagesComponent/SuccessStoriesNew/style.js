@@ -15,6 +15,14 @@ const SuccessStoriesNewWrapper = styled.div`
     ${media.sm`
       margin-bottom: 32px;
     `}
+    p {
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      line-height: 32px;
+      ${media.sm`
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        line-height: 24px;
+      `}
+    }
   }
   .card {
     border: none;

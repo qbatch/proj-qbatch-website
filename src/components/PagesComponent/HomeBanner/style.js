@@ -34,11 +34,16 @@ const HomeBannerWrapper = styled.div`
       `}
     }
     p {
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       color: ${({ theme }) => theme.colors.newTextColor};
       margin-bottom: 40px;
-      max-width: 540px;
+      max-width: 660px;
+      line-height: 32px;
       ${media.lg`
         max-width: 440px;
+      `}
+      ${media.md`
+        max-width: 660px;
       `}
       ${media.xs`
         margin-bottom: 24px;
@@ -55,6 +60,9 @@ const HomeBannerWrapper = styled.div`
       display: none;
     `}
     img {
+      @media(max-width:1500px) {
+        width: 680px;
+      }
       @media(max-width:1400px) {
         width: 660px;
       }
