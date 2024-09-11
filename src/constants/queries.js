@@ -628,6 +628,13 @@ export const Queries = () => {
           }
         }
       }
+       allStrapiHealthcare {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiCategory {
         nodes {
           categoryName
