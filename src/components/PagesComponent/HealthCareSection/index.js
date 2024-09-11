@@ -1,7 +1,7 @@
 import React from 'react'
+import Container from '../../UiComponent/Container'
 import { HealthCareWrapper } from './style'
 import { cardData } from '../../../constants'
-import Container from '../../UiComponent/Container'
 
 const HealthCare = () => {
 
@@ -13,7 +13,7 @@ const HealthCare = () => {
         <div className='card-wrapper'>
           {cardData.map((item, index) => (
             <div key={index} className='card-item'>
-              <img src={item.image} />
+              <img src={item.image} alt={item.alt} />
               <p>{item.disc}</p>
             </div>
           ))}

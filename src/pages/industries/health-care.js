@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import Layout from '../../components/Layout/layout'
-import CtoBanner from '../../components/PagesComponent/PageBanner'
-import HealthCare from '../../components/PagesComponent/HealthCareSection'
-import EdTechPotential from '../../components/PagesComponent/EdTechPotential'
-import HealthcareAppDevelopment from '../../components/PagesComponent/HealthcareAppDevelopment'
-import HumanizingHealthcare from '../../components/PagesComponent/HumanizingHealthcare'
-import HealthcareIndustryLeaders from '../../components/PagesComponent/HealthcareIndustryLeaders'
-import InstitutionsBenefiting from '../../components/PagesComponent/InstitutionsBenefiting'
-import StartYourHealthTech from '../../components/PagesComponent/StartYourHealthTech'
-import WhyTrustQbatch from '../../components/PagesComponent/WhyTrustQbatch'
-import StartProject from "../../components/PagesComponent/StartProject";
-import SuccessStoriesHealthcarePortfolio from '../../components/PagesComponent/SuccessStoriesHealthcarePortfolio'
-import CollaborationModels from '../../components/PagesComponent/CollaborationModels'
-import FrequentlyAskedQuestionsHealthCare from '../../components/PagesComponent/FrequentlyAskedQuestionsHealthCare'
+import { FrequentlyAskedQuestionsHealthCareFaq, weWorkStoriesData } from '../../constants';
+
+const CtoBanner  = lazy(() => import('../../components/PagesComponent/PageBanner'))
+const FaqSection  = lazy(() => import('../../components/PagesComponent/Faq'))
+const HealthCare  = lazy(() => import('../../components/PagesComponent/HealthCareSection'))
+const EdTechPotential  = lazy(() => import('../../components/PagesComponent/EdTechPotential'))
+const HealthcareAppDevelopment  = lazy(() => import('../../components/PagesComponent/HealthcareAppDevelopment'))
+const HumanizingHealthcare  = lazy(() => import('../../components/PagesComponent/HumanizingHealthcare'))
+const HealthcareIndustryLeaders  = lazy(() => import('../../components/PagesComponent/HealthcareIndustryLeaders'))
+const InstitutionsBenefiting  = lazy(() => import('../../components/PagesComponent/InstitutionsBenefiting'))
+const StartYourHealthTech  = lazy(() => import('../../components/PagesComponent/StartYourHealthTech'))
+const WhyTrustQbatch  = lazy(() => import('../../components/PagesComponent/WhyTrustQbatch'))
+const StartProject  = lazy(() => import("../../components/PagesComponent/StartProject"));
+const SuccessStories = lazy(() => import('../../components/PagesComponent/SuccessStoriesNew'));
+const CollaborationNew = lazy(() => import('../../components/PagesComponent/CollaborationNew'));
+
 
 const HealthCareAppDevelopment = () => {
   return (
@@ -39,9 +42,9 @@ const HealthCareAppDevelopment = () => {
       <InstitutionsBenefiting />
       <StartYourHealthTech />
       <WhyTrustQbatch />
-      <SuccessStoriesHealthcarePortfolio />
-      <CollaborationModels />
-      <FrequentlyAskedQuestionsHealthCare />
+      <SuccessStories heading="Success Stories From Qbatch’s Healthcare Portfolio" data={weWorkStoriesData} />
+      <CollaborationNew />
+      <FaqSection className="health-care-faq" faqQuestion={FrequentlyAskedQuestionsHealthCareFaq} />
       <StartProject />
     
     </Layout>

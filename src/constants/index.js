@@ -5395,26 +5395,32 @@ const EduTech = [
 
 const cardData = [
   {
+    alt:'better-care',
     image: '/better-care.svg',
     disc: 'Data-driven decisions, better care'
   },
   {
+    alt:'un-matched',
     image: '/un-matched.svg',
     disc: 'Unmatched patient privacy and peace of mind'
   },
   {
+    alt:'engage',
     image: '/engage.svg',
     disc: 'Engage more patients and increase accessibility'
   },
   {
+    alt:'reduce',
     image: '/reduce.svg',
     disc: 'Reduce non-emergency clinic visits'
   },
   {
+    alt:'reduce-patient',
     image: '/reduce-patient.svg',
     disc: 'Reduce patient no-shows and cancellations.'
   },
   {
+    alt:'enhance',
     image: '/enhance.svg',
     disc: 'Enhance clinical workflows and streamline processes.'
   },
@@ -5466,7 +5472,7 @@ const EdTechPotentialData = [
 const HealthcareAppDevelopmentCards = [
   {
     imgSrc: '/patient.svg',
-    title: 'Patient-Centric Apps',  // Title for the category
+    title: 'Patient-Centric Apps', 
     listItems: [
       { text: 'Appointment scheduling apps' },
       { text: 'Fitness and wellness apps' },

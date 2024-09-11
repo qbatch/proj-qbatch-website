@@ -24,7 +24,7 @@ const InstitutionsBenefiting = () => {
         </ul>
       </div>
       <div className='item item-2'>
-        <img src="/institutions-benefiting.svg" />
+        <img src="/institutions-benefiting.svg" alt="institutions-benefiting" />
       </div>
     </div>
       </Container>

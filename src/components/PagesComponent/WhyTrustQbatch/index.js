@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from 'gatsby'
 import Container from '../../UiComponent/Container'
 import Button from '../../UiComponent/Button'
 import { WhyTrustQbatchWrapper } from './style'
@@ -38,7 +39,7 @@ const WhyTrustQbatch = () => {
                 ))}
               </ul>
             </div>
-            <Button text="Let’s Get Started" />
+            <Button onClick={() => navigate('/contact')}  text="Let’s Get Started" />
           </div>
         </div>
       </Container>

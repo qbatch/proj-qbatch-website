@@ -1,11 +1,11 @@
 import React from 'react'
-import { StartYourHealthTechWrapper } from './style'
+import { navigate } from 'gatsby'
 import Button from '../../UiComponent/Button'
 import Container from '../../UiComponent/Container'
+import { StartYourHealthTechWrapper } from './style'
 import { StartYourHealthTechData } from '../../../constants'
 
 const StartYourHealthTech = () => {
-
 
   return (
     <StartYourHealthTechWrapper>
@@ -22,7 +22,7 @@ const StartYourHealthTech = () => {
             ))}
           </div>
         </Container>
-          <Button text="Request Free Proposal" />
+          <Button onClick={() => navigate('/contact')}  text="Request Free Proposal" />
     </StartYourHealthTechWrapper>
   )
 }
