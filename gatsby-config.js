@@ -352,6 +352,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'how-we-work',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'extension-development',
       queryParams: {
         populate: {
@@ -425,7 +435,8 @@ const strapiConfig = {
     'prosper-show',
     'hire-developer',
     'healthcare',
-    'extension-development'
+    'extension-development',
+    'how-we-work'
   ],
   queryLimit: 1000,
 }
