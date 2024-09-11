@@ -16,6 +16,11 @@ const FaqWrapper = styled.div`
     ${media.sm`
      margin-top: 48px;
     `}
+    &.health-care-faq{
+      .collpase-select {
+    align-items: baseline;
+}
+    }
   }
   .hire-developer-faq p {
     font-size: 16px;

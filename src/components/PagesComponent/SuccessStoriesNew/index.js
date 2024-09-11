@@ -8,14 +8,14 @@ import Button from '../../UiComponent/Button';
 
 import SuccessStoriesNewWrapper from './style';
 
-const Index = ({ data }) => {
+const Index = ({ data, disc, heading }) => {
   return (
     <SuccessStoriesNewWrapper>
       <Container>
         <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
           <div>
-            <h2 className='heading mb-3'>Success Stories</h2>
-            <p className='mb-0'>Innovators from across the industry have trusted Qbatch to build high-impact products.</p>
+            <h2 className='heading mb-3'>{heading || 'Success Stories'}</h2>
+           {disc && <p className='mb-0'>Innovators from across the industry have trusted Qbatch to build high-impact products.</p>}
           </div>
           <div className="mt-lg-0 mt-3">
             <Button onClick={() => navigate('/portfolio')} text="Explore More" />

@@ -1,12 +1,10 @@
-import React, { lazy } from 'react';
-import Slider from 'react-slick';
-
-const Container = lazy(() => import('../Container'));
-const Divider = lazy(() => import('../Divider'));
-const Button = lazy(() => import("../../UiComponent/Button"));
-
-import SliderWrapper from './style';
-
+import React from 'react'
+import Slider from 'react-slick'
+import Container from '../Container'
+import Divider from '../Divider'
+import SliderWrapper from './style'
+import Button from "../../UiComponent/Button"
+import { navigate } from 'gatsby'
 const Index = (props) => {
   const { data, align, heading, paragraph, subParagraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText,dividerClass } = props
   const settings = {

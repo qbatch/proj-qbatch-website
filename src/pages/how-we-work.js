@@ -47,7 +47,7 @@ const Index = () => {
       />
       <ProvenProcess />
       <QuotationSection />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories disc data={weWorkStoriesData} />
       <StartProject />
     </Layout>
   )
