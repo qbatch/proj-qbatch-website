@@ -28,7 +28,7 @@ const Index = ({ page, heading, id }) => {
           <Col xxl={5} lg={6} className="order-1 order-lg-2">
             <div className="testimonials">
               <h3 className="color-primary text-h4 heading">Testimonials</h3>
-              <p className="testimonial-paragraph">Here's what our clients have to say</p>
+              <p className="testimonial-paragraph">Here's what our clients have to say!</p>
               <TestimonialCarousel />
             </div>
           </Col>

@@ -70,6 +70,11 @@ const ProvenProcessWrapper = styled.div`
     svg {
       cursor: pointer;
     }
+    .arrow-icon {
+      width: 10px;
+      height: 14px;
+      line-height: 0.8;
+    }
     span {
       color: ${({ theme }) => theme.colors.textMedium};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};

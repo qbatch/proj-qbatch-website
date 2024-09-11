@@ -58,6 +58,34 @@ const Index = () => {
     setCurrentInd((prev) => (prev === maxIndex ? prev : prev + 1));
   }, [handleButtonClickNext, currentInd, provenProcessData.length]);
 
+  const CarouselButtons = () => {
+    return (
+      <div className="carousel-button-group d-flex align-items-center">
+        <div className='arrow-icon'>
+          <ArrowLeftIcon
+            onClick={handlePrevClick}
+          />
+        </div>
+        <span>
+          <span className="fw-bold">
+            {currentInd < 10 && 0}
+            {currentInd}
+          </span>
+          <span>/</span>
+          <span>
+            {provenProcessData.length < 10 && 0}
+            {provenProcessData.length}
+          </span>
+        </span>
+        <div className='arrow-icon'>
+          <ArrowRightIcon
+            onClick={handleNextClick}
+          />
+        </div>
+      </div>
+    )
+  }
+
   return (
     <ProvenProcessWrapper>
       <Container>
@@ -66,24 +94,8 @@ const Index = () => {
             <h2>Tried and Proven Process.</h2>
             <p>We believe in a transparent, efficient, and collaborative approach to software development. Our process is designed to deliver high-quality solutions that meet our clients' unique needs. Here's a step-by-step look at how we work:</p>
           </div>
-          <div className="carousel-button-group d-flex align-items-center">
-            <ArrowLeftIcon
-              onClick={handlePrevClick}
-            />
-            <span>
-              <span className="fw-bold">
-                {currentInd < 10 && 0}
-                {currentInd}
-              </span>
-              <span>/</span>
-              <span>
-                {provenProcessData.length < 10 && 0}
-                {provenProcessData.length}
-              </span>
-            </span>
-            <ArrowRightIcon
-              onClick={handleNextClick}
-            />
+          <div className='d-sm-block d-none'>
+            <CarouselButtons />
           </div>
         </div>
       </Container>
@@ -115,6 +127,9 @@ const Index = () => {
             </div>
           ))}
         </Carousel>
+      </div>
+      <div className='d-sm-none d-flex justify-content-center mt-3'>
+        <CarouselButtons />
       </div>
     </ProvenProcessWrapper>
   )

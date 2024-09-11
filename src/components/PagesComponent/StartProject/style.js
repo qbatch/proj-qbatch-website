@@ -72,6 +72,7 @@ const StartProjectWrapper = styled.div`
       margin-bottom: 12px;
       ${media.sm`
         margin-bottom:12px;
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       `}
     }
     .testimonial-heading {

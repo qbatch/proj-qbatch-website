@@ -5,7 +5,7 @@ import Button from '../../UiComponent/Button';
 
 import QuotationSection from './style';
 
-const Index = () => {
+const Index = ({ onRedirect }) => {
   return (
     <QuotationSection>
       <Container>
@@ -16,7 +16,7 @@ const Index = () => {
         </h4>
         <p className="paragraph">— Bill Gates </p>
         <div className='d-flex align-items-center justify-content-center'>
-        <Button text='Start Your Project' className="secondary-btn" />
+        <Button text='Start Your Project' className="secondary-btn" onClick={onRedirect} />
         </div>
       </Container>
     </QuotationSection>
