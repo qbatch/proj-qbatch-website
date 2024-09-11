@@ -1,6 +1,9 @@
 import React, { lazy } from 'react'
 import Layout from '../../components/Layout/layout'
 import { FrequentlyAskedQuestionsHealthCareFaq, weWorkStoriesData } from '../../constants';
+import { Queries } from '../../constants/queries';
+import { replaceUnderscoreWithAt } from '../../constants/Utils';
+import SEO from '../../components/Seo';
 
 const CtoBanner  = lazy(() => import('../../components/PagesComponent/PageBanner'))
 const FaqSection  = lazy(() => import('../../components/PagesComponent/Faq'))
@@ -48,6 +51,33 @@ const HealthCareAppDevelopment = () => {
       <StartProject />
     
     </Layout>
+  )
+}
+
+export const Head = () => {
+  const saasDevData = Queries()
+  const seoData = saasDevData?.allStrapiHealthcare?.nodes[0]?.seo
+  // const schemaData = saasDevData?.allStrapiHealthcare?.nodes[0]?.schema;
+  // const transformedObject = replaceUnderscoreWithAt(schemaData);
+
+  return (
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      image={seoData.metaimage[0]?.localFile?.url}
+      pathname={`${seoData.slug}`}
+    >
+      {/* {transformedObject
+        .filter((x) => x.visibilityIn)
+        .map((data, i) => (
+          <script key={i} type="application/ld+json">
+            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
+          </script>
+        ))} */}
+    </SEO>
   )
 }
 

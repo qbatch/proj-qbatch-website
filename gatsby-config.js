@@ -342,6 +342,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'healthcare',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'extension-development',
       queryParams: {
         populate: {
@@ -414,6 +424,7 @@ const strapiConfig = {
     'terms-and-condition',
     'prosper-show',
     'hire-developer',
+    'healthcare',
     'extension-development'
   ],
   queryLimit: 1000,
