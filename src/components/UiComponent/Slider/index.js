@@ -4,6 +4,7 @@ import Container from '../Container'
 import Divider from '../Divider'
 import SliderWrapper from './style'
 import Button from "../../UiComponent/Button"
+import { navigate } from 'gatsby'
 const Index = (props) => {
   const { data, align, heading, paragraph, subParagraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText,dividerClass } = props
   const settings = {

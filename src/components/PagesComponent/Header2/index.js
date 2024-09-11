@@ -79,7 +79,7 @@ const Header2 = () => {
     // { label: "Logistics and Supply Chain", link: "" },
     // { label: "E-commerce", link: "" },
     // { label: "FinTech", link: "" },
-    // { label: "Healthcare", link: "" },
+    { label: "Healthcare", link: "/industries/health-care" },
     { label: "EdTech", link: "/industries/education-software-development/" },
     // { label: "Travel and Transportation", link: "" },
     // { label: "Retail and Consumer Goods", link: "" }

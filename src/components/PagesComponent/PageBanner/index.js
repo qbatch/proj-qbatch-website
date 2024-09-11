@@ -7,7 +7,7 @@ import Button from "../../UiComponent/HomeButton";
 import CtoBannerWrapper from "./style";
 import Breadcrumb from "../Breadcrumb";
 
-const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
+const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, gridClass, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
   const defaultCol1lg = 7;
   const defaultCol2lg = 5;
   const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
@@ -16,7 +16,7 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, imgSrc, wr
   return (
     <CtoBannerWrapper className={wrapperClass} blogInner={blogInner}>
       <Container className={className}>
-        <Row>
+        <Row className={gridClass}>
           {customCrumbs && (
             <Breadcrumb crumbs={crumbs} />
           )}

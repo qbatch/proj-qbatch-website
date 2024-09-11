@@ -7,7 +7,7 @@ import Button from "../../UiComponent/Button"
 import FaqWrapper from "./style";
 
 const Index = (props) => {
-  const { faqQuestion } = props;
+  const { faqQuestion, className } = props;
   const [openItems, setOpenItems] = useState([]);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -32,7 +32,7 @@ const Index = (props) => {
       <Container>
         <FaqWrapper>
           <h2 className="color-primary text-center">Frequently Asked Questions</h2>
-          <div className="faq-section">
+          <div className={`faq-section ${className}`}>
             {visibleFaqs.map((faq, index) => (
               <Collapse
                 key={faq.id}

@@ -35,6 +35,19 @@ const SliderWrapper = styled.div`
     max-width: 692px;
 }
 }
+&.humanizing-health-care-slider{
+  padding-top: 0px;
+  padding-bottom: 96px;
+  .upper-heading.text-left {
+    margin-bottom: 72px;
+}
+.title{
+  text-align:left;
+}
+.content{
+  text-align:left;
+}
+}
   &.five-step-slider{
     ${media.sm`
     .upper-heading{
