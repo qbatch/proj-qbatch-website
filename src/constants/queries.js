@@ -635,6 +635,13 @@ export const Queries = () => {
           }
         }
       }
+      allStrapiHowWeWork {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiCategory {
         nodes {
           categoryName
