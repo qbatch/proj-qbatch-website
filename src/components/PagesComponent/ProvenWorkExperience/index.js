@@ -1,14 +1,15 @@
-import React, { useState, useRef, useCallback, useMemo } from "react";
+import React, { useState, useRef, useCallback, useMemo, lazy } from "react";
 import { useStaticQuery, graphql, navigate } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import Button from "../../../components/UiComponent/Button";
-import Container from "../../UiComponent/Container";
 import ArrowLeftIcon from "../../../assets/images/icons/arrow-left-small.svg";
 import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
+
+const Button  = lazy(() => import("../../../components/UiComponent/Button"));
+const Container  = lazy(() => import("../../UiComponent/Container"));
 
 import ProvenExperienceWrapper from "./style";
 
@@ -133,7 +134,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                     const logoImage = getImage(item.projectLogo?.localFile?.childImageSharp?.gatsbyImageData);
                     return (
                       <div className="project-title" key={ind}>
-                        <GatsbyImage image={logoImage} alt="logo" loading="lazy" width={190} height={52} />
+                        <GatsbyImage image={logoImage} alt="logo" title="logo" loading="lazy" width={190} height={52} />
                         <h3>{item.projectName}</h3>
                         <span>{item.projectCategory}</span>
                         <div className="project-tags d-flex">
@@ -181,7 +182,7 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
                     const projectImage = getImage(item.projectImg?.localFile?.childImageSharp?.gatsbyImageData);
                     return (
                       <div key={ind}>
-                        <GatsbyImage image={projectImage} alt="project" loading="lazy" width="100%" height="100%" />
+                        <GatsbyImage image={projectImage} alt="project" title="project" loading="lazy" width="100%" height="100%" />
                       </div>
                     );
                   })}

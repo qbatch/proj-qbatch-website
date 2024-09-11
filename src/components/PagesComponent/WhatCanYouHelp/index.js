@@ -1,7 +1,9 @@
-import React from 'react'
-import { Row, Col } from 'react-bootstrap'
-import { HelpWrapper, Card } from './style'
-import Container from '../../UiComponent/Container'
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
+
+import Container from '../../UiComponent/Container';
+
+import { HelpWrapper, Card } from './style';
 
 const Index = () => {
   const helpingCard = [
@@ -20,18 +22,19 @@ const Index = () => {
       title: `Extract ${'&'} Integrate   Marketplace Data`,
       caption: 'Trace, analyze, and integrate competitor data, high/low-selling products, and market trends.',
     },
-  ]
+  ];
+
   return (
     <HelpWrapper>
       <Container>
         <h2 className="text-h2 color-primary">What Can You Help Me With?</h2>
         <Row className="add-top-space">
           {helpingCard.map((card, index) => {
-            const { title, img,caption } = card
+            const { title, img,caption } = card;
             return (
               <Col lg={4} md={6} sm={12} key={index}>
                 <Card>
-                  <img src={img} alt="no-svg" />
+                  <img src={img} alt={title} title={title} loading='lazy' width='100%' height='100%' />
                   <div className="title-box">
                   <h3 className="text-h5">{title}</h3>
                   <p>{caption}</p>

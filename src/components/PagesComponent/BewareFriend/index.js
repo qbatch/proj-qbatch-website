@@ -23,7 +23,7 @@ const BewareFriend = () => {
                   <div className="d-flex skill-section justify-content-between skill" key={i}>
                     <div className="d-flex add-gap w-100 align-items-start">
                       <div>
-                        <img src={list.img} alt={list.title}/>
+                        <img src={list.img} alt={list.title} title={list.title} loading="lazy"/>
                       </div>
                       <div className="w-100">
                         <h3 className="title text-h4">{list.title}</h3>

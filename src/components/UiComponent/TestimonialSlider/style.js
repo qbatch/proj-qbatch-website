@@ -9,56 +9,31 @@ const ProvenExperienceWrapper = styled.div`
     `}
   }
   .testimonial-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
-    padding: 48px;
-    background-color: ${({ theme }) => theme.colors.whiteColor};
+    padding: 36px 24px;
+    background: linear-gradient(180deg, #E8F4FF 0%, #E8F4FF 100%);
     border-radius: 24px 24px 0 24px;
-    min-height: 350px;
+    min-height: 372px;
     .client-image {
-      border-radius: 160px;
-      height: 158px;
-      min-width: 158px;
+      border-radius: 50%;
+      height: 84px;
+      width: 84px;
       object-fit: cover;
       object-position: center;
     }
     .testimonial-text {
-      color: ${({ theme }) => theme.colors.bodyText};
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      margin-top: 36px;
+      line-height: 32px;
     }
-    @media (max-width: 1399px) {
-      padding: 32px;
-      gap: 32px;
-      .client-image {
-        height: 130px;
-        width: 130px;
-      }
-    }
-    ${media.lg`
-      padding: 32px 10px;
-      .client-image{
-        height: 120px;
-        width: 120px;
-      }
-    `}
-    ${media.sm`
-       flex-wrap: wrap;
-       text-align: center;
-    `}
   }
   .testimonial-title {
-    display: flex;
-    align-items: center;
-    svg {
-      height: 40px;
-      width: 50px;
-    }
-    .inner-text {
-      padding-left: 16px;
+    h4 {
+      color: ${({ theme }) => theme.colors.primaryColor};
+      margin-bottom: 4px;
     }
     p {
-      color: ${({ theme }) => theme.colors.primaryColor};
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
       margin: 0;
       line-height:16px;

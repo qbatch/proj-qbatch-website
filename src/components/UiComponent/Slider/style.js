@@ -193,7 +193,7 @@ const SliderWrapper = styled.div`
       `}
       h2{
         ${media.sm`
-            margin-bottom:48px;
+            margin-bottom:32px;
           `}
       }
     }
@@ -298,6 +298,7 @@ const SliderWrapper = styled.div`
     .make-responsive {
       img{
         width:fit-content;
+        height: fit-content;
       }
     }
     `}
@@ -397,6 +398,27 @@ const SliderWrapper = styled.div`
           opacity: 1;
           color: transparent;
         }
+      }
+    }
+  }
+  &.we-work-slider {
+    .upper-heading {
+      p {
+        max-width: 820px;
+        margin: 0 auto;
+        span {
+          color: ${({ theme }) => theme.colors.primaryColor};
+          font-weight: ${({ theme }) => theme.fontWeight.bold};
+        }
+      }
+      .paragraph {
+        margin-bottom: 24px;
+      }
+      .sub-paragraph {
+        margin-bottom: 96px;
+        ${media.sm`
+          margin-bottom: 56px;
+        `}
       }
     }
   }

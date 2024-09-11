@@ -31,7 +31,7 @@ const Index = () => {
           <Slider {...settings} className="ecom-logo-slider">
             {ecomLogos.map((logo, ind) => (
               <div className="ecom-logos">
-                <img key={ind} src={logo} alt="logo" />
+                <img key={ind} src={logo} alt="logo" title="logo" loading="lazy" width='234px' height='56px' />
               </div>
             ))}
           </Slider>

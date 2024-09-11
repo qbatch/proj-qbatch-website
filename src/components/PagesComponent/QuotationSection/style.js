@@ -7,7 +7,7 @@ const QuotationSection = styled.div`
   color: ${({ theme }) => theme.colors.whiteColor};
   padding: 127px 171px 116px 202px;
   ${media.md`
-    padding: 96px 120px 120px;
+    padding: 96px;
   `}
   ${media.sm`
     padding: 56px 24px;

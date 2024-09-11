@@ -7,11 +7,23 @@ const weDoData = [
   { icon: "/transform-icon.svg", title: "Transform your enterprise", desc: "Stop chasing the trends and start building \n your enterprise differentiator." },
   { id: 6 },
 ];
+const weDoDataNew = [
+  { icon: "/lounch-icon.svg", title: "Develop \n an MVP", desc: "Launch foolproof MVPs that stand the test of time." },
+  { icon: "/expand-icon.svg", title: "Expand Your \n Team", desc: "Get the best returns on investment with our hi-tech industry experts." },
+  { icon: "/advice-icon.svg", title: "Get CTO’s \n advice", desc: "Know what the market leaders have to say to grow your technical footprint." },
+  { icon: "/create-design-icon.svg", title: "Create a \n design", desc: "We live and breathe design thinking. Take advantage!" },
+];
 const counterData = [
   { id: 1, count: 150, desc: 'Full Stack Developers', symbol: '+' },
   { id: 2, count: 300, desc: 'Solutions Delivered \n Successfully', symbol: '+' },
   { id: 3, count: 98, desc: 'Customer Happiness \n Index', symbol: '%' },
   { id: 4, count: 10, desc: 'Years of Excellency', symbol: '' },
+]
+const achievementsData = [
+  { id: 1, count: 10, desc: 'Years of driving growth', symbol: '+' },
+  { id: 2, count: 100, desc: 'Tech Experts', symbol: '+' },
+  { id: 3, count: 300, desc: 'Projects Delivered', symbol: '+' },
+  { id: 4, count: 98, desc: 'Customer Happiness Index', symbol: '%' },
 ]
 const counterData2 = [
   { id: 1, count: 150, desc: 'Full Stack Developers', symbol: '+' },
@@ -1338,6 +1350,59 @@ const revenueData = [
     image: '/warehousing.svg',
     title: 'Warehousing / 3PL / Prep Center',
     content: 'Go data-driven and eliminate inaccurate inventory management and substandard processes.',
+  },
+];
+
+const projectDiscoveryData = [
+  {
+    image: '/accurate-budget.svg',
+    title: 'Accurate Budget Estimates',
+    content: 'Achieve a more accurate project estimate based on your budget.',
+  },
+  {
+    image: '/optimized-development.svg',
+    title: 'Optimized Development Costs',
+    content: 'Optimize development costs to ensure the project stays within budget.',
+  },
+  {
+    image: '/clear-vision.svg',
+    title: 'Clear Vision',
+    content: 'Develop a comprehensive and clear vision of your ultimate goal.',
+  },
+  {
+    image: '/risk-minimization.svg',
+    title: 'Risk Minimization',
+    content: 'Minimize risks by identifying potential issues and details ahead of time.',
+  },
+  {
+    image: '/strong-relationship.svg',
+    title: 'Strong Relationships',
+    content: 'Establish and maintain good relationships with suppliers and customers throughout the process.',
+  },
+  {
+    image: '/customer-insight.svg',
+    title: 'Customer Insights',
+    content: 'Gain insights into what customers love, ensuring your product meets their needs.',
+  },
+  {
+    image: '/focused-mvp.svg',
+    title: 'Focused MVP Development',
+    content: 'Identify the best possible minimum viable product (MVP) to launch quickly and iteratively improve.',
+  },
+  {
+    image: '/refined-feature.svg',
+    title: 'Refined Feature Requirements',
+    content: 'Dial in essential feature requirements to ensure your product is both functional and appealing.',
+  },
+  {
+    image: '/refined-feature.svg',
+    title: 'Success Criteria',
+    content: 'Clearly define what success looks like for your project, providing a target for all stakeholders.',
+  },
+  {
+    image: '/planed-timelines.svg',
+    title: 'Planned Timelines and Teams',
+    content: 'Develop a detailed plan for timelines, teamwork, and tasks to ensure smooth project execution.',
   },
 ]
 
@@ -3720,6 +3785,18 @@ const multiPlatformData = [
     desc: 'Decrease time to market and costs by building high-value and secure mobile experiences with Qbatch’s cross-platform app development services. We use trusted cross-platform development technology i.e., React Native and Flutter to assure smooth and sustainable human interactions.',
   },
 ];
+const technologythrivesData = [
+  {
+    icon: "/expertise-key.svg",
+    title: "Expertise is key.",
+    desc: "Our team of business analysts, project managers, UX/UI designers, and software architects research and scope your project meticulously. This phase typically takes four to six weeks, depending on complexity.",
+  },
+  {
+    icon: "/discovery-web.svg",
+    title: "The discovery phase is crucial to our process.",
+    desc: "We gather and analyze data about your project, market, and audience. This deep understanding helps us identify the best solutions from both business and technical perspectives.",
+  },
+];
 const ctoList = [
   {
     img: '/hire-a-cto_powerful-idea.svg',
@@ -4417,19 +4494,19 @@ const cardsData = [
 ]
 const RemoteDeveloperData = [
   {
-    img: <img src='/ruining-product-health.svg' alt="Product" />,
+    img: <img src='/ruining-product-health.svg' width={100} height={100} loading="lazy" alt="Product" />,
     text: <h3>Talent shortage is ruining your product's health.</h3>,
   },
   {
-    img: <img src='/scaling-team-inescapable-hassle.svg' alt="ScaleImage" />,
+    img: <img src='/scaling-team-inescapable-hassle.svg' width={100} height={100} loading="lazy" alt="ScaleImage" />,
     text: <h3>Managing and scaling your team is an inescapable hassle.</h3>,
   },
   {
-    img: <img src='/hiring-senior-devs-qa-engineers.svg' alt="Developer" />,
+    img: <img src='/hiring-senior-devs-qa-engineers.svg' width={100} height={100} loading="lazy" alt="Developer" />,
     text: <h3>Hiring senior devs and QA engineers takes forever.</h3>,
   },
   {
-    img: <img src='/different-timezone-hindering-growth.svg' alt="GrouthImage" />,
+    img: <img src='/different-timezone-hindering-growth.svg' width={100} height={100} loading="lazy" alt="GrouthImage" />,
     text: (
       <h3>
         Clash of cultures, poor communication, and different timezones are
@@ -5607,6 +5684,107 @@ const HumanizingHealthcareSliderData = [
     content: 'Refine data entry and classification, ensuring complete and error-free research data collection with our healthcare software development services, complying with federal, state, and local regulations, our services facilitate informed clinical decisions and advance medical research.',
   },
 ];
+const collaborationData = [
+  {
+    img: '/time-and-material.svg',
+    title: "Time and Material",
+    description:
+      "We empower you to choose our Time and Material model where you only pay for the time and quality resources spent on the project.",
+  },
+  {
+    img: '/fixed-scope-new.svg',
+    title: "Fixed Scope Product Development",
+    description:
+      "Pull down barriers like compromised quality and slow project delivery with our Fixed Scope Product Development model under a fixed budget.",
+  },
+  {
+    img: '/dedicated-development.svg',
+    title: "Hire Dedicated Development Team",
+    description:
+      "Leverage your global footprint in the rising techno-verse with Qbatch’s self-driven, smart, and skilled team of software developers.",
+  },
+];
+
+const provenProcessData = [
+  {
+    img: '/discovery-planning.svg',
+    title: 'Discovery & Planning',
+    subTitle1: 'Understanding Your Needs',
+    desc1: 'We explore your business objectives, challenges, and goals. Focused workshops and brainstorming sessions help us lay the foundation for a successful project.',
+    subTitle2: 'Market and Competitor Analysis',
+    desc2: 'We analyze your current systems, market trends, and competitors. This helps us uncover hidden opportunities and potential roadblocks, and customize a unique strategy for your business goals.'
+  },
+  {
+    img: '/strategy-roadmap.svg',
+    title: 'Strategy & Roadmap',
+    subTitle1: 'Strategic Roadmap',
+    desc1: 'Based on our collaborative findings, we develop a strategic roadmap that outlines your project scope, timelines, and milestones. This roadmap serves as a guiding document that aligns well with your business goals.',
+    subTitle2: 'Tech Stack Selection',
+    desc2: 'Our team stays ahead of the curve, recommending the best-suited technologies and tools for scalability, security, and performance. We deliver innovative solutions that meet your specific requirements.'
+  },
+  {
+    img: '/design-prototyping.svg',
+    title: 'Design and Prototyping',
+    subTitle1: 'User-Centric Design',
+    desc1: 'Our core belief? Exceptional user experiences. We create intuitive, engaging, and visually appealing designs and prototypes developed early on to allow feedback and continuous improvement.',
+    subTitle2: 'Iterative Design Flow',
+    desc2: 'We believe in an iterative design approach. We actively involve you in the process, incorporating your feedback at each stage. This collaboration meets your expectations and also delights your users.'
+  },
+  {
+    img: '/quality-standards.svg',
+    title: 'Development & Testing: Quality is Our Standard',
+    subTitle1: 'Agile Development',
+    desc1: 'We leverage agile methodologies, allowing us to adapt to changes quickly and deliver incremental updates. This ensures we stay on track and meet your project timelines efficiently.',
+    subTitle2: 'Rigorous Testing',
+    desc2: 'Quality is paramount. We conduct extensive testing, including unit tests, integration tests, and user acceptance tests. This ensures your software is robust, reliable, and bug-free.'
+  },
+  {
+    img: '/quality-standards.svg',
+    title: 'Deployment & Support',
+    subTitle1: 'Seamless Deployment',
+    desc1: 'We handle the deployment process meticulously, following best practices to minimize downtime. Your software will be ready for launch, smooth and efficient.',
+    subTitle2: 'Ongoing Support',
+    desc2: 'Our commitment extends beyond deployment. We offer ongoing support and maintenance services to ensure your software remains up-to-date, secure, and optimized.'
+  },
+  {
+    img: '/continues-improvement.svg',
+    title: 'Continuous Improvement: Evolving with You',
+    subTitle1: 'Post-Launch Analysis',
+    desc1: "After launch, we monitor your software's performance and gather user feedback. This allows us to identify areas for improvement and make necessary adjustments to enhance the user experience and functionality.",
+    subTitle2: 'Scaling & Innovation',
+    desc2: "As your business grows, we'll help you scale your software and integrate new features. Our team is dedicated to continuous innovation, ensuring your software evolves with your business needs and technological advancements."
+  }
+];
+
+const homeStoriesData = [
+  {
+    img: '/block-dash.svg',
+    logo: '/block-dash-logo.svg',
+    category: 'Blockchain',
+    title: 'The Future of Ownership: NFTs Are More Than Just a Fad'
+  },
+  {
+    img: '/alfaris-group.svg',
+    logo: '/alfaris-group-logo.svg',
+    category: 'Human Resources',
+    title: 'Empowering HR Excellence: Qbatch Enhances Al-Faris International School’s Operations with AIG HR'
+  }
+];
+
+const weWorkStoriesData = [
+  {
+    img: '/sales-support-new.png',
+    logo: '/sales-support-new-logo.svg',
+    category: 'Supply Chain',
+    title: 'Sales.support Launches 1000+ Thriving Amazon Businesses Leveraging Qbatch’s Software Solutions'
+  },
+  {
+    img: '/saleha-img.svg',
+    logo: '/saleha_logo.svg',
+    category: 'Fin-Tech',
+    title: 'From Fragmented Finance to Streamlined Solutions: Sahelha & Qbatch Revolutionize Debt Crowdfunding'
+  }
+]
 
 export {
   dedicationWork,
@@ -5716,5 +5894,13 @@ export {
   listItem2,
   FrequentlyAskedQuestionsHealthCareFaq,
   HumanizingHealthcareSliderData,
-  StartYourHealthTechData
+  StartYourHealthTechData,
+  weDoDataNew,
+  achievementsData,
+  collaborationData,
+  technologythrivesData,
+  projectDiscoveryData,
+  provenProcessData,
+  homeStoriesData,
+  weWorkStoriesData
 }

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { lazy, useState } from "react";
 
-import Container from "../../UiComponent/Container";
-import Collapse from "../../UiComponent/Collapse";
-import Divider from '../../UiComponent/Divider';
-import Button from "../../UiComponent/Button"
+const Container  = lazy(() => import("../../UiComponent/Container"));
+const Collapse  = lazy(() => import("../../UiComponent/Collapse"));
+const Divider  = lazy(() => import('../../UiComponent/Divider'));
+const Button  = lazy(() => import("../../UiComponent/Button"));
+
 import FaqWrapper from "./style";
 
 const Index = (props) => {

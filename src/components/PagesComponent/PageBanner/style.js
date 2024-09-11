@@ -76,6 +76,10 @@ const CtoBannerWrapper = styled.div`
       ${media.md`
         margin-bottom: 24px;
       `}
+      ${media.xs`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+        line-height: 28px;
+      `}
       span {
         color: ${({ theme }) => theme.colors.dangerColor};
       }
@@ -95,6 +99,10 @@ const CtoBannerWrapper = styled.div`
         font-size: 16px;
         line-height: 24px;
         margin-left:0px;
+      `}
+      ${media.xs`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+        line-height: 18px;
       `}
     }
   }

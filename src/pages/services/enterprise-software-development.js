@@ -1,25 +1,8 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Queries } from '../../constants/queries'
-import Layout from "../../components/Layout/layout";
 import SeoComponent from "../../utils/seo"
-import Banner from "../../components/PagesComponent/PageBanner";
-import ScrollToTop from '../../components/PagesComponent/ScrollTop';
-import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
-import LostToLaunched from "../../components/PagesComponent/DevelopmentStages";
-import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
-import Collaboration from "../../components/PagesComponent/Collaboration";
-import PeopleFirst from "../../components/PagesComponent/PeopleFirst";
-import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
-import FaqSection from "../../components/PagesComponent/Faq";
-import GridData from '../../components/PagesComponent/GridData'
-import StartProject from "../../components/PagesComponent/StartProject";
-import ChoiseYourEnterprise from "../../components/PagesComponent/ChoiceYourEnterprise";
-import SecretSauce from "../../components/PagesComponent/SecretSauce";
-import SofwareDevelopmentExpertise from "../../components/PagesComponent/TechnicalGuidance";
-import DoYouKnow from "../../components/PagesComponent/DedicatedMobileDevelopers";
 import BannerImage from "../../../static/enterprise-banner.png";
-import Slider from '../../components/UiComponent/Slider'
+
 import {
   lostToLaunchedItems,
   enterPrisFaq,
@@ -29,7 +12,23 @@ import {
   technologicalCapacityData,
   peopleFirstData,
   productDevlopmentServices,
-} from '../../constants'
+} from '../../constants';
+
+const Layout = lazy(() => import("../../components/Layout/layout"));
+const Banner = lazy(() => import("../../components/PagesComponent/PageBanner"));
+const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
+const WhatDifferenceQbatchMaking = lazy(() => import("../../components/PagesComponent/WhatDifferenceQbatchMaking"));
+const LanguagesAndFrameworks = lazy(() => import("../../components/PagesComponent/LanguagesAndFrameworks"));
+const ProvenWorkExperience = lazy(() => import("../../components/PagesComponent/ProvenWorkExperience"));
+const Collaboration = lazy(() => import("../../components/PagesComponent/Collaboration"));
+const PeopleFirst = lazy(() => import("../../components/PagesComponent/PeopleFirst"));
+const DesiredResult = lazy(() => import("../../components/PagesComponent/IdeasAndInvestments"));
+const FaqSection = lazy(() => import("../../components/PagesComponent/Faq"));
+const GridData = lazy(() => import('../../components/PagesComponent/GridData'));
+const StartProject = lazy(() => import("../../components/PagesComponent/StartProject"));
+const ChoiseYourEnterprise = lazy(() => import("../../components/PagesComponent/ChoiceYourEnterprise"));
+const DoYouKnow  = lazy(() => import("../../components/PagesComponent/DedicatedMobileDevelopers"));
+const Slider = lazy(() => import('../../components/UiComponent/Slider'));
 
 const Enterprise = () => {
   return (

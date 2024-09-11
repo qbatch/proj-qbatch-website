@@ -3,6 +3,7 @@ import { navigate } from 'gatsby'
 import { Container } from "react-bootstrap";
 
 import Button from "../../UiComponent/Button";
+
 import  MarketplaceSellersWrapper from "./style";
 
 const Index = ({ heading, paragraph, btnText, wrapperClass, backgroundImage }) => {

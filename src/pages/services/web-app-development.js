@@ -1,30 +1,29 @@
-import React from "react";
-import Banner from '../../components/PagesComponent/PageBanner'
-import { Queries } from '../../constants/queries'
-import SeoComponent from "../../utils/seo"
+import React, { lazy } from "react";
+
+import { Queries } from '../../constants/queries';
+import SeoComponent from "../../utils/seo";
 import Layout from "../../components/Layout/layout";
-import Slider from '../../components/UiComponent/Slider'
-import ScrollToTop from '../../components/PagesComponent/ScrollTop';
-import Achievements from "../../components/PagesComponent/Achievements";
-import DesiredResult from "../../components/PagesComponent/IdeasAndInvestments";
-import WhatDifferenceQbatchMaking from "../../components/PagesComponent/WhatDifferenceQbatchMaking";
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
-import StartProject from "../../components/PagesComponent/StartProject";
-import SolutionToChoose from "../../components/PagesComponent/SolutionToChoose";
-import FullCycle from "../../components/PagesComponent/FullCicle";
-import Collaboration from "../../components/PagesComponent/Collaboration";
-import FaqSection from "../../components/PagesComponent/Faq";
-import PeopleFirst from "../../components/PagesComponent/PeopleFirst";
-import { webAppFaq } from "../../constants";
-import LanguagesAndFrameworks from "../../components/PagesComponent/LanguagesAndFrameworks";
 import WebappImage from '../../../static/web-app-dev.svg'
-import { lostToLaunchedItems, peopleFirstData } from '../../constants'
-import AdvancedWebExplore from "../../components/PagesComponent/ExploreOurAdvancedWeb";
-import SliderComponent from "../../components/PagesComponent/WebAppDevelopmentTrustSectionSlider";
-import { fullCycle } from '../../constants'
+import { webAppFaq, fullCycle, peopleFirstData, lostToLaunchedItems } from "../../constants";
+
+const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
+const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
+const Achievements = lazy(() => import('../../components/PagesComponent/Achievements'));
+const SliderComponent = lazy(() => import('../../components/PagesComponent/WebAppDevelopmentTrustSectionSlider'));
+const SolutionToChoose = lazy(() => import('../../components/PagesComponent/SolutionToChoose'));
+const FullCycle = lazy(() => import('../../components/PagesComponent/FullCicle'));
+const AdvancedWebExplore = lazy(() => import('../../components/PagesComponent/ExploreOurAdvancedWeb'));
+const WhatDifferenceQbatchMaking = lazy(() => import('../../components/PagesComponent/WhatDifferenceQbatchMaking'));
+const DesiredResult = lazy(() => import('../../components/PagesComponent/IdeasAndInvestments'));
+const Slider = lazy(() => import('../../components/UiComponent/Slider'));
+const LanguagesAndFrameworks = lazy(() => import('../../components/PagesComponent/LanguagesAndFrameworks'));
+const Collaboration = lazy(() => import('../../components/PagesComponent/Collaboration'));
+const ProvenWorkExperience = lazy(() => import('../../components/PagesComponent/ProvenWorkExperience'));
+const PeopleFirst = lazy(() => import('../../components/PagesComponent/PeopleFirst'));
+const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
+const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
 
 const webapp = () => {
-
   return (
     <Layout>
         <ScrollToTop />

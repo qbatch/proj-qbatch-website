@@ -16,7 +16,6 @@ const env = require('dotenv').config({
 const {
   STRAPI_API_URL: apiURL,
   STRAPI_TOKEN: accessToken,
-  GOOGLE_TAG_ID: googleTagId,
 } = process.env;
 
 const strapiConfig = {
@@ -54,7 +53,50 @@ const strapiConfig = {
     {
       singularName: 'our-project',
       queryParams: {
-        populate: '*',
+        populate: {
+          seo: {
+            populate: '*',
+          },
+          projectImg: true,
+          projectLogo: true,
+          projectCover: true,
+          projectImpact: true,
+          portfolio: {
+            populate: {
+              cover: true,
+              projectDetails: {
+                populate: {
+                  detailBox: '*',
+                },
+              },
+              projectImpact: {
+                populate: {
+                  imageBoxes: true
+                }
+              }
+            },
+          },
+          projectComponents: {
+            populate: {
+              projectIcons: true,
+              projectInnerComponents: true,
+              projectColors: {
+                populate: "*"
+              }
+            },
+          },
+          projectCover: true,
+          phaseTimeline: {
+            populate: {
+              phase: {
+                populate: "*"
+              },
+              timeline: {
+                populate: "*"
+              }
+            },
+          },
+        },
       },
     },
     {
@@ -396,6 +438,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-zopfli',
+      options: {
+        extensions: ['css', 'html', 'js', 'svg']
+      }
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
@@ -589,30 +637,6 @@ module.exports = {
             type: 'image/png',
           },
         ]
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: googleTagId,
-        includeInDevelopment: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify',
-      options: {
-        headers: {
-          '/*': [
-            'Cache-Control: public, max-age=0, must-revalidate',
-          ],
-          '/static/*': [
-            'Cache-Control: public, max-age=31536000, immutable',
-          ],
-          '/sw.js': [
-            'Cache-Control: public, max-age=0, must-revalidate',
-          ],
-        },
-        mergeCachingHeaders: true,
       },
     },
   ],

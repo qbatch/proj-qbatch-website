@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'react-bootstrap';
-import Container from '../../UiComponent/Container';
+
+const Container  = lazy(() => import('../../UiComponent/Container'));
+
 import FullCycleWrapper from './style';
 
 const Index = ({ className, heading, paragraph, data, sliceIndex }) => {
@@ -20,7 +22,7 @@ const Index = ({ className, heading, paragraph, data, sliceIndex }) => {
               return (
                 <div key={index} className="hover-box">
                   <div className="d-flex gap-4 align-items-center pb-4">
-                    <img src={img} alt={title} />
+                    <img src={img} alt={title} title={title} loading='lazy' width={40} height={40} />
                     <h3 className='text-h4 title'>{title}</h3>
                   </div>
                   <div className="description">{description}</div>
@@ -34,7 +36,7 @@ const Index = ({ className, heading, paragraph, data, sliceIndex }) => {
               return (
                 <div key={index} className="hover-box">
                   <div className="d-flex gap-4 align-items-center pb-4">
-                    <img src={img} alt={title} />
+                    <img src={img} alt={title} title={title} loading='lazy' width={40} height={40} />
                     <h3 className='text-h4 title'>{title}</h3>
                   </div>
                   <div className="description">{description}</div>

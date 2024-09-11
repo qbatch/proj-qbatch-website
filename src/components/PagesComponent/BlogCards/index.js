@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { navigate, Link } from "gatsby";
 
-import PrimaryButton from "../../UiComponent/PrimaryButton";
 import { ReadingTime } from "../../../constants/Utils";
+
+import PrimaryButton from "../../UiComponent/PrimaryButton";
 import Button from "../../UiComponent/Button";
 
 import BlogCardsWrapper from "./style";
@@ -23,7 +24,7 @@ const Index = (props) => {
       <Col lg={4} md={6} className="d-flex flex-column card-main">
         <div className="inner flex-1" key={ind}>
           <div className="card-img">
-            <img src={card.blogImg?.localFile.url} alt={card.blogTitle} />
+            <img src={card.blogImg?.localFile.url} alt={card.blogTitle} title={card.blogTitle} loading="lazy" />
           </div>
           <div className="inner-content">
             {card.blogTags && <div className="blog-badge">{card.blogTags?.strapi_json_value[0]}</div>}
@@ -45,7 +46,7 @@ const Index = (props) => {
                 <span>{card?.user?.name || "No User"}</span>
               </div>
               <div className="timer">
-                <img src="/timer-blue.svg" alt="timer" />
+                <img src="/timer-blue.svg" alt="timer" title="timer" loading="lazy" />
                 <span>
                   <ReadingTime description={card.blogDescription?.data?.blogDescription} /> Minutes Read
                 </span>

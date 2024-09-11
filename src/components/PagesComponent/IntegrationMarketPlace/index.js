@@ -7,7 +7,8 @@ import { Col, Row, Accordion } from "react-bootstrap";
 
 import { marketPlaceData } from "../../../constants";
 import Container from "../../UiComponent/Container";
-import Button from "../../UiComponent/Button"
+import Button from "../../UiComponent/Button";
+
 import LanguagesWrapper from "./style";
 
 const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-tested Web Application Development tools and technologies to build a cross-platform and secure application:',paragraphMaxWidth, showBtn  }) => {
@@ -76,7 +77,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                           <div className="framework-logo">
                             <div>
                               <div className="logo-wrapper">
-                                {data.img === '' ? '' : <img src={data.img} width={data.img === '/typescript.svg' ? '80px' :'150Saving Marketplace Sellers from doing too much work.px'}alt="project" />}
+                                {data.img === '' ? '' : <img src={data.img} width={data.img === '/typescript.svg' ? '80px' :'150px'} alt="project" title="project" loading="lazy" />}
                               </div>
                             </div>
                           </div>
@@ -101,7 +102,7 @@ const Index = ({ heading = 'Languages & Frameworks We Use', paragraph = 'Time-te
                             <div className="framework-logo">
                               <div>
                                 <div className="logo-wrapper">
-                                  {data.img === '' ? '' : <img src={data.img} alt="project" />}
+                                  {data.img === '' ? '' : <img src={data.img} alt="project" title="project" loading="lazy" />}
                                 </div>
                               </div>
                             </div>

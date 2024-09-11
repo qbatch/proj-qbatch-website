@@ -1,9 +1,9 @@
-import React from "react";
-
-import Container from "../../UiComponent/Container";
+import React, { lazy } from "react";
+import { Col, Row } from "react-bootstrap";
 
 import RevenueWrapper from "./style";
-import { Col, Row } from "react-bootstrap";
+
+const Container = lazy(() => import("../../UiComponent/Container"));
 
 const Index = ({data,heading,paragraph,textAlign,enterprise,maxWidth,height, margin}) => {
   return (
@@ -20,7 +20,7 @@ const Index = ({data,heading,paragraph,textAlign,enterprise,maxWidth,height, mar
               <div className="revenue-box">
                 <div key={index} className="revenue-data">
                   <div className="revenue-img">
-                    <img src={item.image} alt="logo" />
+                    <img src={item.image} alt="logo" title="logo" loading="lazy" width='auto' height='auto' />
                   </div>
                   <div className="revenue-desc d-flex flex-column justify-content-center h-100">
                     {item.title && <h3 className="text-h4">{item.title}</h3>}

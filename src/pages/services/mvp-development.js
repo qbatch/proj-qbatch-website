@@ -1,23 +1,7 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import SeoComponent from "../../utils/seo"
 import { Queries } from '../../constants/queries'
 import Layout from "../../components/Layout/layout";
-import ScrollToTop from '../../components/PagesComponent/ScrollTop';
-import MvpTypes from '../../components/PagesComponent/MvpTypes';
-import MvpBanner from '../../components/PagesComponent/MvpBanner';
-import MvpDevelopmentService from '../../components/PagesComponent/MvpDevelopmentService';
-import MvpTestedApproch from '../../components/PagesComponent/MvpTestedApproch';
-import IdeaValidtion from '../../components/PagesComponent/IdeaValidation';
-import MvpBoxes from '../../components/PagesComponent/MvpBoxes';
-import Slider from '../../components/UiComponent/Slider'
-import BewareFriend from '../../components/PagesComponent/BewareFriend';
-import GuaranteeBanner from '../../components/PagesComponent/GuaranteeBanner';
-import ProvenWorkExperience from '../../components/PagesComponent/ProvenWorkExperience'
-import Collaboration from "../../components/PagesComponent/Collaboration";
-import InnerBanner from '../../components/PagesComponent/InnerBanner';
-import FaqSection from "../../components/PagesComponent/Faq";
-import StartProject from "../../components/PagesComponent/StartProject";
-
 import {
   mvpDevFaq,
   mvpSliderItems,
@@ -25,6 +9,23 @@ import {
   mvpBoxes2,
   mvpDevService
 } from "../../constants";
+
+const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
+const MvpTypes = lazy(() => import('../../components/PagesComponent/MvpTypes'));
+const MvpBanner = lazy(() => import('../../components/PagesComponent/MvpBanner'));
+const MvpDevelopmentService = lazy(() => import('../../components/PagesComponent/MvpDevelopmentService'));
+const MvpTestedApproch = lazy(() => import('../../components/PagesComponent/MvpTestedApproch'));
+const IdeaValidtion = lazy(() => import('../../components/PagesComponent/IdeaValidation'));
+const MvpBoxes = lazy(() => import('../../components/PagesComponent/MvpBoxes'));
+const Slider = lazy(() => import('../../components/UiComponent/Slider'));
+const BewareFriend = lazy(() => import('../../components/PagesComponent/BewareFriend'));
+const GuaranteeBanner = lazy(() => import('../../components/PagesComponent/GuaranteeBanner'));
+const ProvenWorkExperience = lazy(() => import('../../components/PagesComponent/ProvenWorkExperience'));
+const Collaboration = lazy(() => import("../../components/PagesComponent/Collaboration"));
+const InnerBanner = lazy(() => import('../../components/PagesComponent/InnerBanner'));
+const FaqSection = lazy(() => import("../../components/PagesComponent/Faq"));
+const StartProject = lazy(() => import("../../components/PagesComponent/StartProject"));
+
 
 const MvpDev = () => {
   return (

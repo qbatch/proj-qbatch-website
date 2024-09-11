@@ -16,6 +16,7 @@ const Index = (props) => {
     speed: 2000,
     autoplaySpeed: 9000,
   }
+  
   return (
     <>
       <Container>
@@ -30,8 +31,8 @@ const Index = (props) => {
             <Slider {...settings}>
               {data.map((data, i) => {
                 return (
-                  <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-0 mb-4">
-                    <img width={width || ''} height={height || ''} src={data.image} />
+                  <div className="d-flex align-items-center justify-content-center make-responsive gap-sm-5 gap-3 mt-0 mb-4" key={i}>
+                    <img width={width || ''} height={height || ''} src={data.image} alt={data.title} title={data.title} loading='lazy' />
                     <div class="slider-data">
                       <h3 className="title text-h4">{data.title}</h3>
                       <p className="content">{data.content}</p>

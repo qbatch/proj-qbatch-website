@@ -1,20 +1,20 @@
-import React from 'react';
-import { Script } from 'gatsby'
-import SEO from "../../components/Seo";
+import React, { lazy } from 'react';
+
 import { Queries } from '../../constants/queries'
 import { replaceUnderscoreWithAt } from '../../constants/Utils'
+import SEO from "../../components/Seo";
 import Layout from '../../components/Layout/layout';
-import Banner from "../../components/PagesComponent/PageBanner";
-import Slider from '../../components/UiComponent/Slider';
-import DevelopmentServices from "../../components/PagesComponent/DevelopmentServices"
-import Languages from "../../components/PagesComponent/LanguagesAndFrameworks"
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
-import InnerBanner from '../../components/PagesComponent/InnerBanner';
-import CreativeIntelligence from "../../components/PagesComponent/CreativeIntelligence";
-import Collaboration from '../../components/PagesComponent/Collaboration';
-import FaqSection from "../../components/PagesComponent/Faq";
-import StartProject from "../../components/PagesComponent/StartProject";
-import Achievements from '../../components/PagesComponent/Achievements2';
+
+const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
+const Slider = lazy(() => import('../../components/UiComponent/Slider'));
+const DevelopmentServices = lazy(() => import('../../components/PagesComponent/DevelopmentServices'));
+const Languages = lazy(() => import('../../components/PagesComponent/LanguagesAndFrameworks'));
+const ProvenWorkExperience = lazy(() => import('../../components/PagesComponent/ProvenWorkExperience'));
+const InnerBanner = lazy(() => import('../../components/PagesComponent/InnerBanner'));
+const CreativeIntelligence = lazy(() => import('../../components/PagesComponent/CreativeIntelligence'));
+const Collaboration = lazy(() => import('../../components/PagesComponent/Collaboration'));
+const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
+const Achievements = lazy(() => import('../../components/PagesComponent/Achievements2'));
 
 import { servicesSliderData, lostToLaunchedItems } from "../../constants";
 
@@ -61,9 +61,7 @@ const Index = () => {
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
         ]}
       />
-      <Achievements
-        showFourColumns
-      />
+      <Achievements />
       <DevelopmentServices />
       <InnerBanner
         heading="Sharp Minds. Stable Code. Crash-Free Launch"
@@ -80,6 +78,8 @@ const Index = () => {
         data={servicesSliderData}
         align="center"
         className="competency-slider"
+        width="393px"
+        height="396px"
       />
       <Collaboration
         expertiseData={adaptiveSoftwareData}
@@ -133,7 +133,7 @@ export const Head = () => {
       {transformedObject
         .filter((x) => x.visibilityIn)
         .map((data, i) => (
-          <script key={i} type="application/ld+json">
+          <script key={i} async type="application/ld+json">
               {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
           </script>
         ))}

@@ -1,6 +1,8 @@
-import React from "react";
-import Container from "../../UiComponent/Container";
+import React, { lazy } from "react";
+
 import { HireTrustedDevelopersWrapper } from "./style";
+
+const Container  = lazy(() => import("../../UiComponent/Container"));
 
 const HireTrustedDevelopers = () => {
   return (
