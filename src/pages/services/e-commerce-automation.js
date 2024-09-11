@@ -22,6 +22,13 @@ const QuotationSection = lazy(() => import('../../components/PagesComponent/Quot
 const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
 
 const Ecommerce = () => {
+  const scrollToStartProject = () => {
+    const element = document.getElementById('start-project');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Layout>
       <Banner
@@ -62,8 +69,8 @@ const Ecommerce = () => {
         btnText="Take my worries away!"
       />
       <FaqSection faqQuestion={ecomFaqQuestion} />
-      <QuotationSection />
-      <StartProject />
+      <QuotationSection onRedirect={scrollToStartProject} />
+      <StartProject id="start-project" />
 
     </Layout>
   )
