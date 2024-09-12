@@ -5745,7 +5745,7 @@ const provenProcessData = [
     desc2: 'Quality is paramount. We conduct extensive testing, including unit tests, integration tests, and user acceptance tests. This ensures your software is robust, reliable, and bug-free.'
   },
   {
-    img: '/quality-standards.svg',
+    img: '/deployment-support.svg',
     title: 'Deployment & Support',
     subTitle1: 'Seamless Deployment',
     desc1: 'We handle the deployment process meticulously, following best practices to minimize downtime. Your software will be ready for launch, smooth and efficient.',
