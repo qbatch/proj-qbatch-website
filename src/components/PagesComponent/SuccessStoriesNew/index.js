@@ -17,7 +17,7 @@ const Index = ({ data, disc, heading }) => {
             <h2 className='heading mb-3'>{heading || 'Success Stories'}</h2>
            {disc && <p className='mb-0'>Innovators from across the industry have trusted Qbatch to build high-impact products.</p>}
           </div>
-          <div className="mt-lg-0 mt-3 for-web-view">
+          <div className="mt-lg-0 mt-3 d-md-block d-none">
             <Button onClick={() => navigate('/portfolio')} text="Explore More" />
           </div>
         </div>
@@ -42,9 +42,9 @@ const Index = ({ data, disc, heading }) => {
             </Col>
           ))}
         </Row>
-        <div className="mt-lg-0 mt-3 for-mobile-view">
-            <Button onClick={() => navigate('/portfolio')} text="Explore More" />
-          </div>
+        <div className="d-md-none d-flex justify-content-center">
+          <Button onClick={() => navigate('/portfolio')} text="Explore More" />
+        </div>
       </Container>
     </SuccessStoriesNewWrapper>
   )

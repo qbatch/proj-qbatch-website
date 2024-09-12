@@ -321,6 +321,13 @@ const CtoBannerWrapper = styled.div`
       background-image:none ;
       `}
   }
+  &.we-work-wrapper {
+    .banner-main {
+      p {
+        max-width: 629px;
+      }
+    }
+  }
 `
 
 export default CtoBannerWrapper;

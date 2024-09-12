@@ -40,6 +40,7 @@ const SuccessStoriesNewWrapper = styled.div`
   }
   .card {
     border: none;
+    background-color: transparent;
     .card-img {
       overflow: hidden;
       border-radius: 20px 20px 0 20px;
@@ -56,8 +57,16 @@ const SuccessStoriesNewWrapper = styled.div`
     .card-desc {
       color: ${({ theme }) => theme.colors.textMedium};
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
-      font-weight: ${({ theme }) => theme.fontWeight.bold};
+      font-weight: ${({ theme }) => theme.fontWeight.medium};
       line-height: 32px;
+      ${media.sm`
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        line-height: 24px;
+      `}
+      ${media.mobile`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+        line-height: 20px;
+      `}
     } 
     .card-logo {
       div {
