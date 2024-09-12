@@ -3,11 +3,11 @@ import { Row, Col } from "react-bootstrap";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import StartProjectWrapper from "./style";
+
 const Container = lazy(() => import("../../UiComponent/Container"));
 const TestimonialCarousel = lazy(() => import('../../UiComponent/TestimonialSlider'));
 const ContactForm = lazy(() => import('./contactForm'));
-
-import StartProjectWrapper from "./style";
 
 const Index = ({ page, heading, id }) => {
   const headingText = heading || "Start a Project";

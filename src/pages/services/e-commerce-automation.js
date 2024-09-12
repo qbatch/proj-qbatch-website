@@ -3,7 +3,7 @@ import React, { lazy } from "react";
 import { Queries } from '../../constants/queries';
 import SeoComponent from "../../utils/seo";
 import Layout from "../../components/Layout/layout";
-import { ecomSliderItems, ecomFaqQuestion, automationData } from "../../constants";
+import { ecomSliderItems, ecomFaqQuestion, automationData, helpingCardData } from "../../constants";
 import EcommerceBanner from '../../../static/e-commerce-banner.svg';
 
 const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
@@ -47,7 +47,7 @@ const Ecommerce = () => {
         ]}
       />
       <EcomLogos />
-      <WhatCanHelp />
+      <WhatCanHelp helpingCardData={helpingCardData} />
       <Slider
         heading="Our 5-Step E-commerce Automation Process"
         paragraph="To help you stand your ground in the ever-growing e-commerce district!"

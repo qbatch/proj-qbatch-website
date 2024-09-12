@@ -8,7 +8,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: bottom;
 ${media.sm`
-  padding: 115px 40px 99px;
+  padding:40px;
 
 `}
 h2{
@@ -27,7 +27,7 @@ ${media.md`
     line-height: 32px;
 `}
   ${media.mobile`
-    text-align:left;
+    text-align:center;
     `}
 ${media.xs`
   font-size: 20px;
@@ -37,6 +37,10 @@ ${media.xs`
 .expert-advice{
   color: #fff;
   margin-top: 32px;
+  ${media.mobile`
+    margin: auto;
+  margin-top: 32px;
+    `}
 }
 `;
 export { HealthcareIndustryLeadersWrapper }

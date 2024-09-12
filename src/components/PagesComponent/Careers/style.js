@@ -101,6 +101,18 @@ const CareerWrapper = styled.div`
   }
   }
   #freshteam-widget{
+    .content{
+      width:100%;
+      .job-role-list>ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: baseline;
+        grid-gap: 24px;
+        ${media.md`
+          grid-template-columns: 1fr;
+          `}
+      }
+    }
     ${media.sm`
     .role-title{
       margin-bottom:12px !important;

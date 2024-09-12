@@ -71,6 +71,7 @@ const StartProjectWrapper = styled.div`
     h3{
       margin-bottom: 12px;
       ${media.sm`
+        font-size:24px;
         margin-bottom:12px;
         font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
       `}

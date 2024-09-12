@@ -6,11 +6,11 @@ import { collaborationData } from '../../../constants';
 
 import CollaborationNewWrapper from './style';
 
-const Index = () => {
+const Index = ({borderBottom}) => {
   const heading = 'Collaboration Models \n For Everlasting Partnerships';
 
   return (
-    <CollaborationNewWrapper>
+    <CollaborationNewWrapper style={{borderBottom: borderBottom && '1px solid #D2D9DC'}}>
       <Container>
         <div className="section-heading text-center">
           <h2 className='heading'>{heading}</h2>

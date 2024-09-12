@@ -5,8 +5,8 @@ const StartYourHealthTechWrapper = styled.div`
 padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-  padding: 56px 0px;
-  `}
+    padding: 40px 0;
+    `}
     h2{
       font-size: 40px;
       font-weight: 700;
@@ -46,7 +46,7 @@ padding: 96px 0px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      max-width: 302px;
+      max-width: 100%;
       text-align: center;
       position:relative;
      

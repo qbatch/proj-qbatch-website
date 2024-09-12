@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const HealthCareWrapper = styled.div`
 padding: 96px 0px;
 border-bottom:1px solid ${({ theme }) => theme.colors.dividerColor};
+${media.sm`
+  padding: 40px 0px;
+`}
 h2{
 font-size: 40px;
 font-weight: 700;
@@ -61,7 +64,7 @@ ${media.lg`
 
   .card-item{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     grid-gap: 16px;
     max-width: 453px;
     padding: 24px 32px;

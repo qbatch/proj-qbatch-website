@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const HealthcareAppDevelopmentWrapper = styled.div`
 padding: 96px 0;
 border-bottom:1px solid ${({ theme }) => theme.colors.dividerColor};
+${media.sm`
+  padding: 40px 0px;
+`}
 h2{
 font-size: 40px;
 font-weight: 700;
@@ -55,9 +58,27 @@ ${media.lg`
       ${media.md`
         grid-template-columns: 1fr 1fr;
       `}
+      ${media.sm`
+        margin-top: 32px;
+      `}
       ${media.mobile`
         grid-template-columns: 1fr;
+        display: none;
       `}
+}
+.card-for-mobile{
+  display:none;
+  ${media.mobile`
+    margin-top: 32px;
+        display: block;
+        margin-bottom: 32px;
+      `}
+.card{
+  ${media.mobile`
+  min-height: 370px;
+      `}
+}
+
 }
 .card{
   width: 100%;
@@ -112,5 +133,34 @@ ${media.lg`
     }
   }
 }
+.slick-dots {
+  bottom: -44px;
+    li {
+      margin: 0px;
+      &.slick-active {
+        margin-right: 24px;
+        button {
+          &::before {
+            background-color: ${({ theme }) => theme.colors.primaryColor};
+            width: 32px;
+            height: 8px;
+            border-radius: 50px;
+            opacity: 1;
+            color:transparent;
+          }
+        }
+      }
+      button {
+        &::before {
+          background-color: ${({ theme }) => theme.colors.dividerColor};
+          height: 8px;
+          width: 8px;
+          border-radius: 50px;
+          opacity: 1;
+          color: transparent;
+        }
+      }
+    }
+  }
 `;
 export { HealthcareAppDevelopmentWrapper }
