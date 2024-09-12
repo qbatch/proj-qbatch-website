@@ -5790,7 +5790,130 @@ const weWorkStoriesData = [
     category: 'Fin-Tech',
     title: 'From Fragmented Finance to Streamlined Solutions: Sahelha & Qbatch Revolutionize Debt Crowdfunding'
   }
+];
+const helpingCardData = [
+  {
+    img: '/custom-software.svg',
+    title: 'Develop Custom Software Solutions',
+    caption: 'We build custom software solutions for sellers, retailers, 3PLs, and agencies.',
+  },
+  {
+    img: '/automate.svg',
+    title: 'Automate Manual Processes',
+    caption: 'No more wasting time on non-value-added tasks, only flawless processes and results.',
+  },
+  {
+    img: '/marketplace-data.svg',
+    title: 'Extract & Integrate Marketplace Data',
+    caption: 'Trace, analyze, and integrate competitor data, high/low-selling products, and market trends.',
+  },
+];
+const careerCardData = [
+  {
+    img: '/transparency-and-trust.svg',
+    title: 'Transparency and Trust',
+    caption: 'We believe in open communication and clear expectations. No guesswork, just clear goals.',
+  },
+  {
+    img: '/work-life-balance.svg',
+    title: 'Work-Life Balance',
+    caption: 'Your well-being matters. Enjoy a healthy work-life balance without sacrificing your career.',
+  },
+  {
+    img: '/empowerment-and-growth.svg',
+    title: 'Empowerment and Growth',
+    caption: 'Your ideas drive innovation. We invest in your professional development and foster a collaborative environment',
+  },
+];
+const MattersQbatchCardsData = [
+  {
+    heading: 'Transport Allowance',
+    text: 'We’ve got your commute covered!'
+  },
+  {
+    heading: 'Provident Fund',
+    text: 'Save for the future with our awesome fund.'
+  },
+  {
+    heading: 'Annual Increment',
+    text: 'Get rewarded yearly for your hard work!'
+  },
+  {
+    heading: 'Performance-Based Bonus',
+    text: 'hine bright and earn big!'
+  },
+  {
+    heading: 'Leave Benefits',
+    text: 'Plenty of time off to relax and recharge.'
+  },
+  {
+    heading: 'Internet Allowance',
+    text: 'Stay connected on us!'
+  },
+  {
+    heading: 'OPD Allowance',
+    text: "Health expenses? We've got you."
+  },
+  {
+    heading: 'Hybrid Work Model',
+    text: 'Enjoy the flexibility of working from home.'
+  },
+  {
+    heading: 'Health & Leisure',
+    text: 'Gym allowances to keep you fit and fab.'
+  },
+  {
+    heading: 'Car/Home Loan',
+    text: 'We help you achieve your big dreams.'
+  },
+  {
+    heading: 'General Loan',
+    text: 'Financial support when you need it.'
+  },
+  {
+    heading: 'Lunch Facility',
+    text: 'Delicious company-sponsored lunches!'
+  },
+  {
+    heading: 'Medical Insurance',
+    text: 'Stay healthy with our comprehensive coverage.'
+  },
+  {
+    heading: 'Maternity Coverage',
+    text: 'Support for new moms and their bundles of joy.'
+  },
+  {
+    heading: 'Company Events/Tour',
+    text: 'Join the fun with dinners, parties, and annual tours.'
+  },
+  {
+    heading: 'Sponsored Certifications',
+    text: 'Learn and grow with our sponsored certifications.'
+  },
+  {
+    heading: "Children's Education Support",
+    text: 'Support for your kids’ education.'
+  },
+  {
+    heading: 'Referral Incentive',
+    text: 'Refer a friend and earn rewards!'
+  },
+];
+const WhyTrustQbatchData1 = [
+  { text: '- Total Process Transparency' },
+  { text: '- Cross-Sector Expertise' },
+  { text: "- 100% Founder's Mentality" },
+  { text: '- Technology Leadership' },
+  { text: '- Spectacular Price-Quality Ratio' }
 ]
+
+const WhyTrustQbatchData2 = [
+  { text: '- Pay-as-you-go Model' },
+  { text: '- Dependable Engineering Craftsmanship' },
+  { text: "- No Biases, Only Neutral Feedback" },
+  { text: '- Highly Solution-Oriented Mindset' }
+]
+
 
 export {
   dedicationWork,
@@ -5908,5 +6031,10 @@ export {
   projectDiscoveryData,
   provenProcessData,
   homeStoriesData,
-  weWorkStoriesData
+  weWorkStoriesData,
+  helpingCardData,
+  careerCardData,
+  MattersQbatchCardsData,
+  WhyTrustQbatchData1,
+  WhyTrustQbatchData2
 }

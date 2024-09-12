@@ -7,9 +7,12 @@ const FaqWrapper = styled.div`
 
 .load-more-btn{
   margin-top: 72px;
+  ${media.sm`
+    margin-top: 32px;
+  `}
 }
   ${media.sm`
-     padding: 56px 0px;
+     padding: 40px 0px;
   `}
   .faq-section{
     margin-top:96px;

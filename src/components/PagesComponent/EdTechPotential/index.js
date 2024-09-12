@@ -7,7 +7,7 @@ const EdTechPotential = () => {
   return (
     <EdTechPotentialWrapper>
       <Container>
-        <h2>EdTech’s potential is vast but new. There are development challenges but also solutions.</h2>
+        <h2>Let’s build an accessible, efficient, and secure healthcare future with Qbatch’s technology solution.</h2>
         <div className='items-wrapper'>
           {EdTechPotentialData.map((item, index) => (
             <div key={index} className='item'>

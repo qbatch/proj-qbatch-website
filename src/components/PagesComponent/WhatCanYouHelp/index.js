@@ -1,51 +1,35 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-
 import Container from '../../UiComponent/Container';
-
 import { HelpWrapper, Card } from './style';
 
-const Index = () => {
-  const helpingCard = [
-    {
-      img: '/custom-software.svg',
-      title: 'Develop Custom Software Solutions',
-      caption: 'We build custom software solutions for sellers, retailers, 3PLs, and agencies.',
-    },
-    {
-      img: '/automate.svg',
-      title: 'Automate Manual Processes ',
-      caption: 'No more wasting time on non-value-added tasks, only flawless processes and results.',
-    },
-    {
-      img: '/marketplace-data.svg',
-      title: `Extract ${'&'} Integrate   Marketplace Data`,
-      caption: 'Trace, analyze, and integrate competitor data, high/low-selling products, and market trends.',
-    },
-  ];
-
+const HelpingCard = ({ img, title, caption }) => {
+  return (
+    <Card>
+      <img src={img} alt={title} title={title} loading='lazy' width='100%' height='100%' />
+      <div className="title-box">
+        <h3 className="text-h5">{title}</h3>
+        <p>{caption}</p>
+      </div>
+    </Card>
+  );
+};
+const WhatCanYouHelp = ({ helpingCardData, heading }) => {
   return (
     <HelpWrapper>
       <Container>
-        <h2 className="text-h2 color-primary">What Can You Help Me With?</h2>
+        <h2 className="text-h2 color-primary">{heading || 'What Can You Help Me With?'}</h2>
         <Row className="add-top-space">
-          {helpingCard.map((card, index) => {
-            const { title, img,caption } = card;
-            return (
-              <Col lg={4} md={6} sm={12} key={index}>
-                <Card>
-                  <img src={img} alt={title} title={title} loading='lazy' width='100%' height='100%' />
-                  <div className="title-box">
-                  <h3 className="text-h5">{title}</h3>
-                  <p>{caption}</p>
-                  </div>
-                </Card>
-              </Col>
-            )
-          })}
+          {helpingCardData.map((card, index) => (
+            <Col style={{paddingInline:'10.5px'}} lg={4} md={6} sm={12} key={index}>
+              <HelpingCard img={card.img} title={card.title} caption={card.caption} />
+            </Col>
+          ))}
         </Row>
       </Container>
     </HelpWrapper>
-  )
-}
-export default Index
+  );
+};
+
+export default WhatCanYouHelp;
+

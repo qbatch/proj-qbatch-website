@@ -24,6 +24,20 @@ const SuccessStoriesNewWrapper = styled.div`
       `}
     }
   }
+  .for-web-view{
+    display: block;
+    ${media.sm`
+    display: none;
+      `}
+  }
+  .for-mobile-view{
+    display: none;
+    ${media.sm`
+    display: block;
+    display:flex;
+    justify-content:center;
+      `}
+  }
   .card {
     border: none;
     .card-img {

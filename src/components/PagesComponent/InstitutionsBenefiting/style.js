@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const InstitutionsBenefitingWrapper = styled.div`
 padding: 96px 0;
 border-bottom:1px solid ${({ theme }) => theme.colors.dividerColor};
+${media.sm`
+padding: 40px 0;
+`}
 h2{
 font-size: 40px;
 font-weight: 700;
@@ -50,6 +53,9 @@ ${media.lg`
     ${media.lg`
       grid-template-columns: 2fr;
       `}
+      ${media.sm`
+    margin-top: 32px;
+        `}
 .item {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,6 +70,7 @@ ${media.lg`
       grid-row-gap: 24px;
       ${media.sm`
       padding-left:16px;
+      grid-row-gap: 8px;
         `}
       li{
         font-size: 20px;

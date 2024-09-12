@@ -23,7 +23,7 @@ const Index = () => {
     <CareerWrapper>
       <Container>
         <Row className="justify-content-between" id="career">
-          <Col xl={4} lg={8}>
+          <Col xl={12} lg={12}>
             <h2 className="heading"><span className="underline-heading text-h4">Join Us!</span> Careers</h2>
             <p className="paragraph">
               We believe our strength is derived from the brains and experiences of a like-minded community of experts.
@@ -31,7 +31,7 @@ const Index = () => {
               achieve big things while having fun!
             </p>
           </Col>
-          <Col xxl={8} xl={8}>
+          <Col xxl={12} xl={12}>
             <div className="cards-wrapper">
               {/* <div className="d-block">
                 <a href="https://careers.qbatch.com/jobs">

@@ -3,23 +3,9 @@ import { navigate } from 'gatsby'
 import Container from '../../UiComponent/Container'
 import Button from '../../UiComponent/Button'
 import { WhyTrustQbatchWrapper } from './style'
+import { WhyTrustQbatchData1, WhyTrustQbatchData2 } from '../../../constants'
 
 const WhyTrustQbatch = () => {
-  const WhyTrustQbatchData1 = [
-    { text: '- Total Process Transparency' },
-    { text: '- Cross-Sector Expertise' },
-    { text: "- 100% Founder's Mentality" },
-    { text: '- Technology Leadership' },
-    { text: '- Spectacular Price-Quality Ratio' }
-  ]
-  
-  const WhyTrustQbatchData2 = [
-    { text: '- Pay-as-you-go Model' },
-    { text: '- Dependable Engineering Craftsmanship' },
-    { text: "- No Biases, Only Neutral Feedback" },
-    { text: '- Highly Solution-Oriented Mindset' }
-  ]
-
   return (
     <WhyTrustQbatchWrapper>
       <Container>

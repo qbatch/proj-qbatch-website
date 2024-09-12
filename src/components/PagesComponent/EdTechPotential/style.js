@@ -4,8 +4,8 @@ import { media } from "../../../theme/media-mixins";
 const EdTechPotentialWrapper = styled.div`
 padding: 96px 0;
 border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-${media.lg`
-  padding: 56px 0;
+${media.sm`
+  padding: 40px 0px;
 `}
 h2{
 font-size: 40px;
@@ -32,6 +32,7 @@ ${media.lg`
     padding-top: 72px;
     ${media.sm`
         grid-gap:  32px 16px;
+        padding-top: 32px;
       `}
     ${media.mobile`
       grid-template-columns: 1fr;
@@ -61,7 +62,7 @@ ${media.lg`
           font-weight: 600;
           line-height: 32px;
           text-align: left;
-          color: ${({ theme }) => theme.colors.primaryColor};
+          color:#2D2F31;
           margin: 0;
           ${media.md`
         font-size: 16px;

@@ -5,12 +5,14 @@ const HelpWrapper = styled.div`
   padding: 122px 0 98px 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 56px 0;
+    padding: 40px 0;
   `}
   .add-top-space {
     margin-top: 74px;
-    ${media.sm `
-    margin-top:40px;
+  }
+  .add-top-space {
+    ${media.sm`
+    margin-top:32px;
     `}
   }
   h2 {
@@ -38,6 +40,7 @@ const Card = styled.div`
   }
   .title-box {
     padding: 24px;
+    min-height: 186px;
 
     h3 {
       line-height: 32px;

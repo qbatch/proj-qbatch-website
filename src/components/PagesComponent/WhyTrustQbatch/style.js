@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const WhyTrustQbatchWrapper = styled.div`
 background: #002548;
 padding: 72px 0;
+${media.sm`
+  padding: 40px 0;
+`}
 h2{
 font-size: 40px;
 font-weight: 700;
@@ -50,8 +53,9 @@ ${media.mobile`
     text-align: left;
     color: #D2D9DC;
     ${media.lg`
-  font-size: 16px;
-`}
+      font-size: 16px;
+      line-height: 28px;
+    `}
     }
   }
 }
@@ -59,9 +63,9 @@ ${media.mobile`
 button{
   margin-left: auto;
   color: #fff;
-  ${media.mobile`
-    /* margin-left: 0; */
-    `}
+  &:hover{
+    color: #fff;
+  }
 }
 `;
 
