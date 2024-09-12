@@ -32,6 +32,10 @@ const HealthCareAppDevelopment = () => {
         className="d-flex justify-between"
         imgSrc="/health.svg"
         gridClass="justify-content-between w-100 align-items-center"
+        customCrumbs={[
+          { pathname: '/home/', crumbLabel: 'Home', crumbSeparator: '>', pathname: '/#industries', crumbLabel: 'Industries',  },
+          {pathname: '/health-care/', crumbLabel: 'Healthcare Software Development', crumbSeparator: '>' },
+        ]}
       />
       <HealthCare />
       <EdTechPotential />
