@@ -69,7 +69,7 @@ const Index = () => {
                       :
                       <span>{data.count}</span>
                     }
-                    <h4 className='text-h2'>{data.symbol}</h4>
+                    <p className='text-h2'>{data.symbol}</p>
                   </div>
                   <p className='count-desc'>{data.desc}</p>
                 </Col>
@@ -85,7 +85,7 @@ const Index = () => {
                         :
                         <span>{data.count}</span>
                       }
-                      <h4 className='text-h2'>{data.symbol}</h4>
+                      <p className='text-h2'>{data.symbol}</p>
                     </div>
                     <p className='count-desc'>{data.desc}</p>
                   </Col>
