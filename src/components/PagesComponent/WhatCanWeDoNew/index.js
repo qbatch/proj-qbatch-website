@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Slider from 'react-slick';
+import { navigate } from 'gatsby';
 
 import Container from '../../UiComponent/Container';
 import Button from '../../UiComponent/Button';
@@ -51,7 +52,7 @@ const Index = () => {
           </Slider>
         </Row>
         <div className='mt-5 d-flex justify-content-sm-end justify-content-center'>
-          <Button text='View All Services' />
+          <Button text='View All Services' onClick={()=> navigate('/services')} />
         </div>
       </Container>
     </WhatCanYouDoWrapper>

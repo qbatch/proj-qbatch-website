@@ -19,7 +19,7 @@ const HomeBannerWrapper = styled.div`
   `}
   .banner-home {
     h1 {
-      color: ${({ theme }) => theme.colors.secondaryColor};
+      color: #153A6C;
       margin-bottom: 48px;
       max-width: 620px;
       ${media.lg`
