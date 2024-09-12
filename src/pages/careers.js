@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
 import Layout from '../components/Layout/layout'
+import { careerCardData } from '../constants'
 const CtoBanner = lazy(() => import('../components/PagesComponent/PageBanner'));
-const { careerCardData } = lazy(() => import('../constants'));
 const LifeAtQbatch = lazy(() => import('../components/PagesComponent/LifeAtQbatch'));
 const YourWellBeingMattersQbatch = lazy(() => import('../components/PagesComponent/YourWellBeingMattersQbatch'));
 const ShapeFutureQbatch = lazy(() => import('../components/PagesComponent/ShapeFutureQbatch'));
