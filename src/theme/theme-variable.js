@@ -32,7 +32,8 @@ const theme = {
     highlightColor: '#FD3',
     textColor: '#FFDD33',
     footerBgColor: '#001B35',
-    midGray: '#434343'
+    midGray: '#434343',
+    newTextColor: '#545454'
   },
   fonts: {
     baseFontSizeH1: fsh1,

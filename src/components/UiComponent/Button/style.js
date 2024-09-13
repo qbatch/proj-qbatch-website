@@ -59,6 +59,29 @@ const ButtonWrapper = styled(Button)`
     }
   }
 
+  &.banenr-btn {
+    border-radius: 40px;
+    height: 52px;
+    gap: 48px;
+    .button-icon {
+      width: 44px;
+      height: 44px;
+      div {
+        justify-content: center;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        position: static;
+      }
+    }
+    &:hover {
+      svg {
+        rotate: -30deg;
+      }
+    }
+  }
+
   .button-icon {
     width: 32px;
     height: 32px;

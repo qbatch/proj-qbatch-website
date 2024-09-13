@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { StoriesWrapper, ImageOpenStyle } from "./style";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 // import PrimaryButton from "../../UiComponent/PrimaryButton";
 import Container from "../../UiComponent/Container";
@@ -15,6 +15,7 @@ const Index = () => {
           projectDesc
           projectCategory
           imgOpen
+          slug
           projectTags {
             strapi_json_value
           }
@@ -45,50 +46,50 @@ const Index = () => {
         </p>
         <Row className="wrapper">
           {portfolioData.map((item, index) => (
-            <Col xl={item.imgOpen ? 8 : 4}>
-              <div className="column" key={index}>
-                <div
-                  className={`column-inner ${
-                    item.imgOpen ? "primary-boder" : ""
-                  }`}
-                >
-                  {item.imgOpen ? (
-                    <ImageOpenStyle src={item.projectImg.localFile?.url}></ImageOpenStyle>
-                  ) : (
-                    <div className="close-small-img">
-                      <ImageOpenStyle
-                        src={item.projectImg.localFile?.url}
-                        type="close"
-                      ></ImageOpenStyle>
-                    </div>
-                  )}
+            <Col key={index} xl={item.imgOpen ? 8 : 4}>
+              <Link to={item.slug ? `/portfolio/${item.slug}/` : "#"}>
+                <div className="column">
                   <div
-                    className={`column-inner-right ${
-                      item.imgOpen ? "" : "close-column-inner"
-                    }`}
+                    className={`column-inner ${item.imgOpen ? "primary-boder" : ""
+                      }`}
                   >
-                    <div className="close-image">
-                      <img src={item.projectImg.localFile?.url} alt="story" />
-                    </div>
-                    <div className="content">
-                      <img className="logo" src={item.projectLogo?.localFile?.url} alt="logo" />
-                      <h3>{item.projectName}</h3>
-                      <p className="paragraph">{item.projectDesc}</p>
-                      <div className="badge">
-                        {item.projectTags?.strapi_json_value.map((badge) => (
-                          <span>{badge}</span>
-                        ))}
+                    {item.imgOpen ? (
+                      <ImageOpenStyle src={item.projectImg.localFile?.url}></ImageOpenStyle>
+                    ) : (
+                      <div className="close-small-img">
+                        <ImageOpenStyle
+                          src={item.projectImg.localFile?.url}
+                          type="close"
+                        ></ImageOpenStyle>
                       </div>
+                    )}
+                    <div
+                      className={`column-inner-right ${item.imgOpen ? "" : "close-column-inner"
+                        }`}
+                    >
+                      <div className="close-image">
+                        <img src={item.projectImg.localFile?.url} alt="story" />
+                      </div>
+                      <div className="content">
+                        <img className="logo" src={item.projectLogo?.localFile?.url} alt="logo" />
+                        <h3>{item.projectName}</h3>
+                        <p className="paragraph">{item.projectDesc}</p>
+                        <div className="badge">
+                          {item.projectTags?.strapi_json_value.map((badge, badgeIndex) => (
+                            <span key={badgeIndex}>{badge}</span>
+                          ))}
+                        </div>
+                      </div>
+                      {/* <PrimaryButton text="View Details" /> */}
                     </div>
-                    {/* <PrimaryButton text="View Details" /> */}
                   </div>
                 </div>
-              </div>
+              </Link>
             </Col>
           ))}
         </Row>
       </Container>
-    </StoriesWrapper>
+    </StoriesWrapper >
   );
 };
 

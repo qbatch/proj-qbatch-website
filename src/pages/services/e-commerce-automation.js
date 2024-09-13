@@ -3,7 +3,7 @@ import React, { lazy } from "react";
 import { Queries } from '../../constants/queries';
 import SeoComponent from "../../utils/seo";
 import Layout from "../../components/Layout/layout";
-import { ecomSliderItems, ecomFaqQuestion, automationData } from "../../constants";
+import { ecomSliderItems, ecomFaqQuestion, automationData, helpingCardData } from "../../constants";
 import EcommerceBanner from '../../../static/e-commerce-banner.svg';
 
 const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
@@ -22,6 +22,13 @@ const QuotationSection = lazy(() => import('../../components/PagesComponent/Quot
 const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
 
 const Ecommerce = () => {
+  const scrollToStartProject = () => {
+    const element = document.getElementById('start-project');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Layout>
       <Banner
@@ -40,7 +47,7 @@ const Ecommerce = () => {
         ]}
       />
       <EcomLogos />
-      <WhatCanHelp />
+      <WhatCanHelp helpingCardData={helpingCardData} />
       <Slider
         heading="Our 5-Step E-commerce Automation Process"
         paragraph="To help you stand your ground in the ever-growing e-commerce district!"
@@ -62,8 +69,8 @@ const Ecommerce = () => {
         btnText="Take my worries away!"
       />
       <FaqSection faqQuestion={ecomFaqQuestion} />
-      <QuotationSection />
-      <StartProject />
+      <QuotationSection onRedirect={scrollToStartProject} />
+      <StartProject id="start-project" />
 
     </Layout>
   )

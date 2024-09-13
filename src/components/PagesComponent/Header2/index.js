@@ -79,7 +79,7 @@ const Header2 = () => {
     // { label: "Logistics and Supply Chain", link: "" },
     // { label: "E-commerce", link: "" },
     // { label: "FinTech", link: "" },
-    // { label: "Healthcare", link: "" },
+    { label: "Healthcare", link: "/industries/health-care" },
     { label: "EdTech", link: "/industries/education-software-development/" },
     // { label: "Travel and Transportation", link: "" },
     // { label: "Retail and Consumer Goods", link: "" }
@@ -93,7 +93,8 @@ const Header2 = () => {
   const companyMenu = [
     { label: "About Us", link: "/about/" },
     { label: "Qbatch Careers", link: "/about/#career" },
-    { label: "Events and PR", link: "" }
+    { label: "Events and PR", link: "" },
+    { label: "How we work", link: "/how-we-work" }
   ];
 
   const [isServicesMenuOpen, setServicesMenuOpen] = useState(false);

@@ -628,12 +628,53 @@ export const Queries = () => {
           }
         }
       }
+       allStrapiHealthcare {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
+      allStrapiHowWeWork {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiCategory {
         nodes {
           categoryName
           slug
           seo {
             ...SeoFields
+          }
+        }
+      }
+      allStrapiOurProject {
+        nodes {
+          portfolio {
+            companySize
+            detail
+            duration
+            industry
+            mainHeading
+            subHeading
+            team
+            useCase
+            cover {
+              localFile {
+                url
+              }
+            }
+            projectDetails {
+              heading
+              paragraph
+              detailBox {
+                heading
+                paragraph
+              }
+            }
           }
         }
       }

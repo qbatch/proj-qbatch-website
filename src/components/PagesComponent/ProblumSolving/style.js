@@ -21,6 +21,12 @@ const ProblumSolvingWrapper = styled.div`
       letter-spacing: 0;
       text-transform: capitalize;
     }
+    ${media.md`
+      line-height: 48px;
+    `}
+    ${media.sm`
+      line-height: 38px;
+    `}
   }
   ${media.sm`
         .box-center{

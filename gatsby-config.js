@@ -53,7 +53,50 @@ const strapiConfig = {
     {
       singularName: 'our-project',
       queryParams: {
-        populate: '*',
+        populate: {
+          seo: {
+            populate: '*',
+          },
+          projectImg: true,
+          projectLogo: true,
+          projectCover: true,
+          projectImpact: true,
+          portfolio: {
+            populate: {
+              cover: true,
+              projectDetails: {
+                populate: {
+                  detailBox: '*',
+                },
+              },
+              projectImpact: {
+                populate: {
+                  imageBoxes: true
+                }
+              }
+            },
+          },
+          projectComponents: {
+            populate: {
+              projectIcons: true,
+              projectInnerComponents: true,
+              projectColors: {
+                populate: "*"
+              }
+            },
+          },
+          projectCover: true,
+          phaseTimeline: {
+            populate: {
+              phase: {
+                populate: "*"
+              },
+              timeline: {
+                populate: "*"
+              }
+            },
+          },
+        },
       },
     },
     {
@@ -299,6 +342,26 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'healthcare',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'how-we-work',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'extension-development',
       queryParams: {
         populate: {
@@ -371,7 +434,9 @@ const strapiConfig = {
     'terms-and-condition',
     'prosper-show',
     'hire-developer',
-    'extension-development'
+    'healthcare',
+    'extension-development',
+    'how-we-work'
   ],
   queryLimit: 1000,
 }

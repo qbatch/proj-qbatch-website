@@ -66,6 +66,90 @@ const createBlogPages = async (graphql, actions) => {
           }
         }
       }
+       allStrapiOurProject {
+        nodes {
+          seo {
+            metaDescription
+            metaTitle
+            language
+            keywords
+            slug
+            metaRobots
+            metaimage {
+              localFile {
+                url
+              }
+            }
+          }
+          projectQuote
+          projectCover{
+            localFile {
+              url
+            }
+          }
+          projectImpact{
+              localFile{
+                url
+              }
+          }
+          portfolio {
+            companySize
+            detail
+            duration
+            industry
+            mainHeading
+            subHeading
+            team
+            useCase
+            cover {
+              localFile {
+                url
+              }
+            }
+            projectDetails {
+              heading
+              paragraph
+              detailBox {
+                heading
+                paragraph
+              }
+            }
+          }
+          phaseTimeline {
+            phase {
+              heading
+              subtitle
+            }
+            timeline {
+              timelineDuration
+            }
+          }
+          projectComponents {
+            fontFamily
+            projectColors {
+              primary {
+                colors
+              }
+              secondary {
+                colors
+              }
+              natural {
+                colors
+              }
+            }
+            projectIcons {
+              localFile {
+                url
+              }
+            }
+            projectInnerComponents{
+              localFile {
+                url
+              }
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -75,6 +159,7 @@ const createBlogPages = async (graphql, actions) => {
 
   const strapiBlogPosts = result.data.allStrapiArticle.edges;
   const strapiUsers = result.data.allStrapiUser.edges;
+  const strapiProjects = result.data.allStrapiOurProject.nodes;
 
   strapiBlogPosts.forEach(({ node }) => {
     createPage({
@@ -105,6 +190,22 @@ const createBlogPages = async (graphql, actions) => {
         img: node.image,
         socials: node.Socials,
         designation: node.designation
+      },
+    });
+  });
+  strapiProjects.forEach((node) => {
+    createPage({
+      path: `/portfolio/${node?.seo?.slug}/`,
+      component: path.resolve('./src/pages/portfolio/project.js'),
+      context: {
+        slug: node.seo?.slug,
+        portfolio: node.portfolio,
+        projectQuote: node.projectQuote,
+        projectCover: node?.projectCover?.localFile?.url,
+        projectImpact: node.projectImpact?.map(impact => impact.localFile.url),
+        projectComponents: node?.projectComponents,
+        phaseTimeline: node?.phaseTimeline,
+        seoData: node?.seo,
       },
     });
   });
