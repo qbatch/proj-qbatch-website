@@ -12,28 +12,17 @@ const CreativeIntelligenceWrapper = styled.div`
     background-size: cover;
   `}
   ${media.sm`
-      padding:70px 0 70px;
-      background-position: -144px 24px;
-    background-size: cover;
-    `}
-    @media screen and (max-width:700px){
-      background-position: -155px top;
-    background-size: cover;
-    }
-    ${media.xs`
-    background-position: -170px top;
-`}
-    @media screen and (max-width:358px){
-      background-position: -187px -19px;
-    }
+    padding: 40px 0 40px;
+    background-image: none;
+  `}
   .creative-content {
     max-width: 844px;
     margin: 0 auto;
     .creative-quote {
       min-width: 52px;
       padding-top: 6%;
-      ${media.xs`
-        min-width:35px;
+      ${media.mobile`
+       display: none;
     `}
     }
     .creative-content-inn {
@@ -78,6 +67,9 @@ const CreativeIntelligenceWrapper = styled.div`
     .signatures {
       text-align: right;
       margin-top: 24px;
+      ${media.xs`
+        margin-top: 16px;
+      `}
     }
   }
 `;

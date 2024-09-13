@@ -10,7 +10,10 @@ const QuotationSection = styled.div`
     padding: 96px;
   `}
   ${media.sm`
-    padding: 56px 24px;
+    padding: 40px 12px;
+    background: url('/quote-small-bg.svg');
+    background-size: cover;
+    background-position: center;
   `}
 
   .heading {
@@ -21,11 +24,13 @@ const QuotationSection = styled.div`
     letter-spacing: 0.1px;
     font-weight:700;
     ${media.sm`
-      margin-bottom: 16px;
+      margin-bottom: 24px;
+      line-height: 32px;
     `}
-    ${media.sm`
-    line-height: 32px;
-  `}
+    ${media.xs`
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      line-height: 28px;
+    `}
   }
   .paragraph {
     font-size: 24px;
@@ -34,8 +39,11 @@ const QuotationSection = styled.div`
     letter-spacing: 0.69px;
     color: ${({ theme }) => theme.colors.whiteColor};
     ${media.sm`
-    font-size: ${({ theme }) => theme.fonts.baseFontSize};
-    margin-bottom :40px;
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      margin-bottom: 40px;
+    `}
+    ${media.xs`
+      margin-bottom: 24px;
     `}
   }
   .start-project {
