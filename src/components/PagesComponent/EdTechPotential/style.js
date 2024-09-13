@@ -47,9 +47,6 @@ ${media.lg`
       align-items: flex-start;
       border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
       padding-bottom: 24px;
-      ${media.sm`
-        grid-gap: 16px;
-      `}
       .item-disc{
         display:flex;
         flex-direction:column;

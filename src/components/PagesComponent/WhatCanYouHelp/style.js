@@ -53,11 +53,19 @@ const Card = styled.div`
         line-height: 24px;
         margin-bottom:8px;
       `}
+      ${media.mobile`
+      font-size: 24px;
+        line-height: 32px;
+      `}
     }
     p {
       color: ${({ theme }) => theme.colors.textMedium};
       font-size: ${({ theme }) => theme.fonts.baseFontSize};
       line-height: 24px;
+      ${media.mobile`
+      font-size: 16px;
+        line-height: 24px;
+      `}
     }
   }
 `

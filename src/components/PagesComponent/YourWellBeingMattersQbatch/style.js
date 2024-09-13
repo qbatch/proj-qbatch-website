@@ -57,6 +57,10 @@ ${media.lg`
     text-align: left;
     color:#2D2F31;
     margin:0;
+    ${media.mobile`
+      font-size: 18px;
+      line-height: 24px;
+      `}
   }
   p{
     font-size: 16px;
@@ -65,6 +69,10 @@ ${media.lg`
     text-align: left;
     color:#5F737C;
     margin:0;
+    ${media.mobile`
+      font-size: 14px;
+      line-height: 20px;
+    `}
   }
 }
 }

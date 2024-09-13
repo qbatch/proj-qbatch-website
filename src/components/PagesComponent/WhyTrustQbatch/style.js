@@ -46,6 +46,9 @@ ${media.mobile`
       grid-template-columns: 1fr;
     `}
   ul{
+    /* ${media.mobile` */
+      padding: 0px;
+      /* `} */
     li{
     font-size: 20px;
     font-weight: 700;

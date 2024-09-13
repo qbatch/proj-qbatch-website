@@ -61,7 +61,7 @@ ${media.lg`
     grid-template-columns: 1fr 1fr;
     ${media.mobile`
       grid-template-columns: 1fr;
-      grid-row-gap:16px;
+      grid-row-gap:8px;
       
       `}
     ul{
@@ -71,6 +71,7 @@ ${media.lg`
       ${media.sm`
       padding-left:16px;
       grid-row-gap: 8px;
+      margin-bottom:0px;
         `}
       li{
         font-size: 20px;
@@ -81,6 +82,10 @@ ${media.lg`
         ${media.lg`
         font-size: 16px;
         line-height: 24px;
+      `}
+        ${media.sm`
+        font-size: 14px;
+        line-height: 20px;
       `}
       }
     }
