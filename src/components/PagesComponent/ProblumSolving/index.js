@@ -15,7 +15,7 @@ const Index = (props) => {
       <Container>
         <Row className="align-items-center">
           <Col md={8}>{text}</Col>
-          <Col md={4}>
+          <Col md={4} className="d-none d-md-block">
             <Link to="/contact" aria-label="Launch Your Idea">
               <div className="box-center pt-lg-0 pt-4">
                 <div className="circle-bg">

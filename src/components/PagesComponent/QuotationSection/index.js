@@ -15,8 +15,8 @@ const Index = ({ onRedirect }) => {
           inefficiency.”
         </h2>
         <p className="paragraph">— Bill Gates </p>
-        <div className='d-flex align-items-center justify-content-center'>
-        <Button text='Start Your Project' className="secondary-btn" onClick={onRedirect} />
+        <div className='d-flex align-items-center justify-content-sm-center justify-content-left'>
+          <Button text='Start Your Project' className="secondary-btn" onClick={onRedirect} />
         </div>
       </Container>
     </QuotationSection>
