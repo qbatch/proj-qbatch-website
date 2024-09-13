@@ -86,34 +86,10 @@ const Index = () => {
 
   return (
     <FooterWrapper>
-      <div className="newsletter-section">
-        <Container>
-          <Row className="align-items-center">
-            <Col lg={6}>
-              <div className="stories-inbox">
-                <img src='/inbox-icon.svg' alt="inbox" loading="lazy" width={186} height={120} />
-                <h3>Get top stories delivered to your inbox </h3>
-              </div>
-            </Col>
-            <Col lg={6}>
-              <div className="position-relative">
-                <div className="footer-email">
-                  <div className="email-input">
-                    <img src="/user-email-icon.svg" alt="email" loading="lazy" width={20} height={20} />
-                    <input type="email" value={formData.email} name="email" placeholder="Email Address" onChange={handleInputChange} />
-                  </div>
-                  <Button text='Subscribe' className="secondary-btn" onClick={handleSubmit} />
-                </div>
-                <span className="error-msg">{errorMsg}</span>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
       <div className="footer-section">
         <Container>
           <Row>
-            <Col lg={3} xs={6}>
+            <Col lg={2} xs={12}>
               <div className="footer-menu">
                 <h4 className="text-h5">Discover Qbatch</h4>
                 <ul>
@@ -125,7 +101,7 @@ const Index = () => {
                 </ul>
               </div>
             </Col>
-            <Col lg={3} xs={6}>
+            <Col lg={3} xs={12} className="d-none d-sm-block">
               <div className="footer-menu">
                 <h4 className="text-h5">Services</h4>
                 <ul>
@@ -137,7 +113,7 @@ const Index = () => {
                 </ul>
               </div>
             </Col>
-            <Col lg={3} xs={6}>
+            <Col lg={3} xs={12} className="d-none d-sm-block">
               <div className="footer-menu">
                 <h4 className="text-h5">Industries</h4>
                 <ul>
@@ -153,8 +129,9 @@ const Index = () => {
                 </ul>
               </div>
             </Col>
-            <Col lg={3} xs={6}>
+            <Col lg={4} xs={12}>
               <div className="footer-contact">
+                  <h4 className="text-h5">Contact Us</h4>
                 {footerContactData.map((data, ind) => (
                   <div key={ind}>
                     {data.icon && <img src={data.icon} alt="contact" width="16px" height="16px" />}
@@ -170,8 +147,22 @@ const Index = () => {
                   </div>
                 ))}
               </div>
+              <Row>
+              <Col lg={12}>
+              <div className="position-relative footer-last-sc">
+                <h3>Get top stories delivered to your inbox </h3>
+                <div className="footer-email">
+                  <div className="email-input">
+                    <img src="/user-email-icon.svg" alt="email" loading="lazy" width={20} height={20} />
+                    <input type="email" value={formData.email} name="email" placeholder="Email Address" onChange={handleInputChange} />
+                  </div>
+                  <Button text='Subscribe' className="secondary-btn" onClick={handleSubmit} />
+                </div>
+                <span className="error-msg">{errorMsg}</span>
+              </div>
             </Col>
-
+            </Row>
+            </Col>
           </Row>
         </Container>
       </div>
@@ -194,7 +185,7 @@ const Index = () => {
               {footerSocialLinks?.map((item, ind) => (
                 <a href={item.to} target="_blank" rel="noreferrer">
                   <div key={ind}>
-                    <img src={`${item.img}-icon.svg`} alt={item.img} width="24px" height="24px" loading="lazy" />
+                    <img src={item.img} alt={item.img} width="24px" height="24px" loading="lazy" />
                   </div>
                 </a>
               ))}
