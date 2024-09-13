@@ -39,10 +39,6 @@ ${media.lg`
     line-height: 24px;
 
       `}
-      ${media.sm`
-        font-size: 14px;
-        line-height: 20px;
-      `}
       ${media.mobile`
             text-align:left;
             `}
@@ -72,15 +68,18 @@ ${media.lg`
     background-color: #fff;
     border: 1px solid #D2D9DC;
     ${media.md`
-      padding: 12px;
+      padding: 16px;
       grid-gap: 8px;
+      `}
+    ${media.sm`
+      grid-gap: 16px;
       `}
       ${media.xs`
       align-items: center;
       `}
       img{
-        ${media.md`
-        width: 32px;
+        ${media.mobile`
+        width: 50px;
       `}
       }
     p{
@@ -100,14 +99,8 @@ ${media.lg`
         line-height: 24px;
       `}
       ${media.customElementsBreakPoint`
-        font-size: 12px;
-        line-height: 20px;
-      `}
-      ${media.sm`
-    font-size: 14px;
-      `}
-      ${media.mobile`
-    font-size: 12px;
+        font-size: 16px;
+        line-height: 24px;
       `}
     }
   }

@@ -102,6 +102,10 @@ padding: 96px 0px;
         color: ${({ theme }) => theme.colors.textMedium};
         line-height: 24px;
         text-align: center;
+        ${media.mobile`
+          font-size: 14px;
+          line-height: 18px;
+          `}
       }
     }
   }
