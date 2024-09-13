@@ -5159,27 +5159,27 @@ const footerBottomMenu = [
 
 const footerSocialLinks = [
   {
-    img: '/facebook-filled',
+    img: '/fb-icon.svg',
     to: 'https://www.facebook.com/qbatch/',
   },
   {
-    img: '/instagram-filled',
+    img: '/instagram-icon-2.svg',
     to: 'https://www.instagram.com/qbatch/',
   },
   {
-    img: '/linkedin-filled',
+    img: '/linkedin-icon-2.svg',
     to: 'https://www.linkedin.com/company/qbatch/',
   },
   {
-    img: '/twitter-filled',
+    img: '/twitter-icon-2.svg',
     to: 'https://x.com/qbatchofficial',
   },
   {
-    img: '/behance-filled',
+    img: '/behance-icon-2.svg',
     to: 'https://www.behance.net/qbatch',
   },
   {
-    img: '/youtube-filled',
+    img: '/youtube-icon-2.svg',
     to: 'https://www.youtube.com/@qbatch',
   },
 ]
