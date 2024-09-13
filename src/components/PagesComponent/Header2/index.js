@@ -92,7 +92,7 @@ const Header2 = () => {
 
   const companyMenu = [
     { label: "About Us", link: "/about/" },
-    { label: "Qbatch Careers", link: "/careers" },
+    { label: "Qbatch Careers", link: "/about/#career" },
     { label: "Events and PR", link: "" },
     { label: "How we work", link: "/how-we-work" }
   ];
