@@ -86,18 +86,6 @@ const Index = () => {
 
   return (
     <FooterWrapper>
-      {/* <div className="newsletter-section"> */}
-        {/* <Container> */}
-          {/* <Row className="align-items-center"> */}
-            {/* <Col lg={6}>
-              <div className="stories-inbox">
-                <img src='/inbox-icon.svg' alt="inbox" loading="lazy" width={186} height={120} />
-              </div>
-            </Col> */}
-           
-          {/* </Row> */}
-        {/* </Container> */}
-      {/* </div> */}
       <div className="footer-section">
         <Container>
           <Row>
