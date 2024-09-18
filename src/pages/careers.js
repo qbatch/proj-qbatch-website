@@ -23,7 +23,7 @@ const Career = () => {
         buttonText="See Open Positions"
         gridClass="justify-content-between w-100 align-items-center"
         customCrumbs={[
-          { pathname: '/home/', crumbLabel: 'Home', crumbSeparator: '>', pathname: '/career/', crumbLabel: 'Careers',  },
+          { pathname: '/home/', crumbLabel: 'Home', crumbSeparator: '>', pathname: '/careers/', crumbLabel: 'Careers',  },
         ]}
       />
       <WhatCanHelp className="new-cards" heading="Our Commitment to You" helpingCardData={careerCardData} />

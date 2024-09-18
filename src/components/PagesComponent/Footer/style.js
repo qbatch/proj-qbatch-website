@@ -120,6 +120,10 @@ const FooterWrapper = styled.div`
       grid-row-gap: 24px;
       margin-top:32px;
       `}
+    ${media.xs`
+      grid-row-gap: 0px;
+      margin-top:0px;
+      `}
     h3{
       font-size: 20px;
       font-weight: 700;

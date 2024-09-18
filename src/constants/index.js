@@ -5797,6 +5797,30 @@ const weWorkStoriesData = [
     logo: '/saleha_logo.svg',
     category: 'Fin-Tech',
     title: 'From Fragmented Finance to Streamlined Solutions: Sahelha & Qbatch Revolutionize Debt Crowdfunding'
+  },
+  {
+    img: '/alfaris-banner.svg',
+    logo: '/alfaris-logo.svg',
+    category: 'Human Resources',
+    title: 'Empowering HR Excellence: Qbatch Enhances Al-Faris International School’s Operations with AIG HR'
+  },
+  {
+    img: '/qikfinds-banner.svg',
+    logo: '/qikfinds-logo.svg',
+    category: 'E-Commerce',
+    title: 'Qikfinds: Automating Arbitrage for Bigger Profits'
+  },
+  {
+    img: '/ecom-circle-banner.svg',
+    logo: '/ecom-circle-logo-2.svg',
+    category: 'E-Commerce',
+    title: 'From Zero to 4,300 Sellers: Learn How Ecom Circles Revolutionized Drop-Shipping with Qbatch'
+  },
+  {
+    img: '/roney-banner.svg',
+    logo: '/roney-logo.svg',
+    category: 'Logistics',
+    title: 'How Roney Innovations Achieved 75% Error Reduction and Soared to Business Excellence?'
   }
 ];
 const helpingCardData = [
