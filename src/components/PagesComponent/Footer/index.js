@@ -107,7 +107,7 @@ const Index = () => {
                 <ul>
                   {footerServicesItems.map((menu, ind) => (
                     <li key={ind}>
-                      <Link to={menu.to}>{menu.menu}</Link>
+                     {menu.to !== '' ? <Link to={menu.to}>{menu.menu}</Link> : menu.menu}
                     </li>
                   ))}
                 </ul>
@@ -119,7 +119,7 @@ const Index = () => {
                 <ul>
                   {industrieshMenu.map((menu, ind) => (
                     <li key={ind}>
-                      {menu.name === 'EdTech' ?
+                      {menu.name === 'EdTech' || menu.name ===  'Healthcare' ?
                        <Link to={menu.to}>{menu.name}</Link>
                        :
                        menu.name
@@ -179,7 +179,7 @@ const Index = () => {
               </ul>
             </div>
             <div className="reserved-rights">
-              <span>© Copyright 2024 Qbatch</span>
+              <span>© {new Date().getFullYear()} qbatch. All rights reserved.</span>
             </div>
             <div className="d-flex align-items-center gap-3 flex-wrap follow-section">
               {footerSocialLinks?.map((item, ind) => (

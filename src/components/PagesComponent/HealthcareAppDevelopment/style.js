@@ -77,6 +77,18 @@ ${media.lg`
   ${media.mobile`
   min-height: 370px;
       `}
+      .heading-h3{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: ${({ theme }) => theme.colors.primaryColor};
+  margin: 0;
+  margin-top: 24px;
+  ${media.lg`
+    font-size: 20px;
+      `}
+  }
 }
 
 }

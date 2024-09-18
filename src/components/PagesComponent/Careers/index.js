@@ -4,7 +4,7 @@ import Container from "../../UiComponent/Container";
 
 import CareerWrapper from "./style";
 
-const Index = () => {
+const Index = ({id}) => {
    useEffect(() => {
     loadScripts();
     return () => {
@@ -20,7 +20,7 @@ const Index = () => {
   };
 
   return (
-    <CareerWrapper>
+    <CareerWrapper id={id}>
       <Container>
         <Row className="justify-content-between" id="career">
           <Col xl={12} lg={12}>

@@ -50,6 +50,9 @@ ${media.lg`
   display:flex;
   flex-direction:column;
   grid-row-gap:8px;
+  ${media.xs`
+    border-radius:28px 28px 0px 28px;
+    `}
   h3{
     font-size: 20px;
     font-weight: 700;

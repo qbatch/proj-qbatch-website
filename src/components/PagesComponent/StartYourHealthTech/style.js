@@ -112,6 +112,9 @@ padding: 96px 0px;
 button{
   margin: auto;
   margin-top: 72px;
+  ${media.mobile`
+  margin-top: 24px;
+    `}
 }
 `;
 
