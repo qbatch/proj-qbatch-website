@@ -5074,6 +5074,10 @@ const footerServicesItems = [
     to: '/services/mobile-app-development/',
   },
   {
+    menu: 'Low-code/ No-code Platform Development',
+    to: '',
+  },
+  {
     menu: 'CTO as a Service',
     to: '/services/cto-as-a-service/',
   },
@@ -5084,6 +5088,10 @@ const footerServicesItems = [
   {
     menu: 'DevOps and Cloud Computing',
     to: '/services/devops/',
+  },
+  {
+    menu: 'UX/UI Design',
+    to: '',
   },
 ];
 
@@ -5102,7 +5110,7 @@ const industrieshMenu = [
   },
   {
     name: 'Healthcare',
-    to: '#',
+    to: '/industries/health-care/',
   },
   {
     name: 'EdTech',
@@ -5672,7 +5680,7 @@ const HumanizingHealthcareSliderData = [
   {
     image: '/medical-equipment.svg',
     title: 'Medical Equipment Management Software Development',
-    content: 'Our multi-purpose medical equipment management solution ensures optimal uptime and maintenance for your medical devices. Manage and monitor your healthcare devices across your facility with efficient tracking and monitoring app functionality,',
+    content: 'Our multi-purpose medical equipment management solution ensures optimal uptime and maintenance for your medical devices. Manage and monitor your healthcare devices across your facility with efficient tracking and monitoring app functionality.',
   },
   {
     image: '/e-prescribing-software.svg',
@@ -5885,6 +5893,10 @@ const MattersQbatchCardsData = [
   {
     heading: 'Company Events/Tour',
     text: 'Join the fun with dinners, parties, and annual tours.'
+  },
+  {
+    heading: 'In-House Technical Trainings',
+    text: 'Boost your skills with monthly training sessions.'
   },
   {
     heading: 'Sponsored Certifications',

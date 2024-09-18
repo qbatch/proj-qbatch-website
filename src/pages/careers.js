@@ -16,6 +16,8 @@ const Career = () => {
         paragraph="At Qbatch, we're more than just a tech company — a community of innovators, dreamers, and creators. Your ideas matter, your creativity is celebrated, and your growth is our priority. "
         wrapperClass="hire-developer-banner"
         col1lg={7}
+        scroll
+        scrollId="#new-id"
         className="d-flex justify-between"
         imgSrc="/career-banner-image.svg"
         buttonText="See Open Positions"
@@ -28,7 +30,7 @@ const Career = () => {
       <LifeAtQbatch />
       <YourWellBeingMattersQbatch />
       <ShapeFutureQbatch />
-      <Clients />
+      <Clients id="new-id" />
     </Layout>
   )
 }

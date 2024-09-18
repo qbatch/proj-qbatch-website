@@ -6,10 +6,12 @@ const HomeBannerWrapper = styled.div`
   background-image: url('/home-banner-bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 180px 0 120px;
   position: relative;
   min-height: 796px;
   z-index: 1;
+  position: relative;
   ${media.lg`
     padding: 120px 0;
     min-height: auto;
@@ -54,12 +56,18 @@ const HomeBannerWrapper = styled.div`
   .banner-img {
     position: absolute;
     right: 0;
-    top: 98px;
+    top: -100px;
     z-index: -1;
+    @media(max-width:1400px) {
+      top: -60px;
+      }
+      ${media.lg`
+        top: -40px;
+      `}
     ${media.md`
       display: none;
     `}
-    img {
+    /* img {
       @media(max-width:1500px) {
         width: 680px;
       }
@@ -69,7 +77,7 @@ const HomeBannerWrapper = styled.div`
       ${media.lg`
         width: 500px;
       `}
-    }
+    } */
   }
 `
 

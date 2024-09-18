@@ -9,7 +9,10 @@ background-size: cover;
 background-position: bottom;
 ${media.sm`
   padding:40px;
-
+`}
+${media.mobile`
+  background-image: none;
+  background: #0A2545;
 `}
 h2{
 font-size: 40px;

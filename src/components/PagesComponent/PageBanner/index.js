@@ -8,7 +8,7 @@ const Breadcrumb = lazy(() => import("../Breadcrumb"));
 
 import CtoBannerWrapper from"./style";
 
-const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, gridClass, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, customCrumbs }) => {
+const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, gridClass, imgSrc, wrapperClass, blogInner, col1lg, col2lg, headingMaxWidth, className, mobileViewBanner, paragraphMaxWidth, subheadingColor, scrollId, customCrumbs }) => {
   const defaultCol1lg = 7;
   const defaultCol2lg = 5;
   const defaultHomeCrumb = { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' };
@@ -35,7 +35,7 @@ const CtoBanner = ({isH1, heading, subheading, paragraph, buttonText, gridClass,
                 </h2>
               )}
                 <p style={{ maxWidth: paragraphMaxWidth }}>{paragraph}</p>
-              <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0" />
+             {scrollId ? <a href={scrollId}><Button text={buttonText}className="mx-lg-0" /></a> : <Button text={buttonText} onClick={() => navigate('/contact')} className="mx-lg-0" /> }
             </div>
           </Col>
           {imgSrc && (

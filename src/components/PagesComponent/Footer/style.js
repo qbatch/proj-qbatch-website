@@ -197,6 +197,9 @@ const FooterWrapper = styled.div`
     }
   }
   .footer-menu-bottom {
+    ${media.mobile`
+      width: 100%;
+      `}
     ul {
       padding-top: 0;
       display: flex;
@@ -206,7 +209,7 @@ const FooterWrapper = styled.div`
         gap: 30px;
       `}
       ${media.sm`
-        gap: 16px;
+       justify-content:space-between
       `}
       ${media.xs`
         justify-content: center;
@@ -222,6 +225,7 @@ const FooterWrapper = styled.div`
       gap: 8px;
       ${media.mobile`
         justify-content: center;
+        gap: 24px;
       `}
     }
     .follow-section {
@@ -230,6 +234,9 @@ const FooterWrapper = styled.div`
       `}
     }
     .reserved-rights {
+      ${media.mobile`
+        order: 2
+      `}
       span {
         font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
         color: ${({ theme }) => theme.colors.dividerColor};

@@ -25,16 +25,18 @@ const Index = () => {
               />
             </div>
           </Col>
+          <Col lg={5}>
+            <div className="banner-img">
+              <img
+                src='/main-bg.gif'
+                alt='ships'
+                title='ships'
+                loading="lazy"
+              />
+            </div>
+          </Col>
         </Row>
       </Container>
-      <div className="banner-img">
-        <img
-          src='/ships-img.svg'
-          alt='ships'
-          title='ships'
-          loading="lazy"
-        />
-      </div>
     </HomeBannerWrapper>
   );
 };
