@@ -9,11 +9,9 @@ const SuccessStoriesNewWrapper = styled.div`
   `}
   .section-heading {
     margin-bottom: 56px;
-    ${media.md`
-      flex-direction: column;
-    `}
     ${media.sm`
       margin-bottom: 32px;
+      flex-direction: column;
     `}
     p {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
@@ -22,6 +20,30 @@ const SuccessStoriesNewWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         line-height: 24px;
       `}
+    }
+  }
+  .carousel-button-group {
+    gap: 12px;
+    svg {
+      cursor: pointer;
+    }
+    .arrow-icon {
+      width: 10px;
+      height: 14px;
+      line-height: 0.8;
+    }
+    span {
+      color: ${({ theme }) => theme.colors.textMedium};
+      font-size: ${({ theme }) => theme.fonts.baseFontSize};
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      &:first-child {
+        color: ${({ theme }) => theme.colors.primaryColor};
+      }
+      &:nth-child(2) {
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+      }
     }
   }
   .for-web-view{
