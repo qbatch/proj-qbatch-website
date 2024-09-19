@@ -10,6 +10,8 @@ const BannerWrapper = styled.div`
   position: relative;
   z-index: 1;
   ${media.sm`
+    background-color: #0A2545;
+    background-image:none;
   &::after{
     content: "";
     width: 100%;
@@ -35,6 +37,7 @@ const BannerWrapper = styled.div`
     `}
     ${media.sm`
       text-align: left;
+    padding-top: 28px;
     `}
     span {
       display: block;

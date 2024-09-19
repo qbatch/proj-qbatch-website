@@ -47,6 +47,10 @@ text-align: left;
 color:#FFFFFF;
 margin:0;
 margin-top:24px;
+${media.mobile`
+  font-size: 16px;
+  line-height: 24px;
+    `}
 }
 .expert-advice{
   color: #fff;
