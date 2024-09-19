@@ -1,5 +1,7 @@
 import React, { lazy } from 'react'
 import Layout from '../components/Layout/layout'
+import SEO from '../components/Seo';
+import { Queries } from '../constants/queries';
 import { careerCardData } from '../constants'
 const CtoBanner = lazy(() => import('../components/PagesComponent/PageBanner'));
 const LifeAtQbatch = lazy(() => import('../components/PagesComponent/LifeAtQbatch'));
@@ -32,6 +34,33 @@ const Career = () => {
       <ShapeFutureQbatch />
       <Clients id="new-id" />
     </Layout>
+  )
+}
+
+export const Head = () => {
+  const saasDevData = Queries()
+  const seoData = saasDevData?.allStrapiCareer?.nodes[0]?.seo
+  // const schemaData = saasDevData?.allStrapiHealthcare?.nodes[0]?.schema;
+  // const transformedObject = replaceUnderscoreWithAt(schemaData);
+
+  return (
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      image={seoData.metaimage[0]?.localFile?.url}
+      pathname={`${seoData.slug}`}
+    >
+      {/* {transformedObject
+        .filter((x) => x.visibilityIn)
+        .map((data, i) => (
+          <script key={i} type="application/ld+json">
+            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
+          </script>
+        ))} */}
+    </SEO>
   )
 }
 
