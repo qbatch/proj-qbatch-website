@@ -352,6 +352,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'career',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'how-we-work',
       queryParams: {
         populate: {

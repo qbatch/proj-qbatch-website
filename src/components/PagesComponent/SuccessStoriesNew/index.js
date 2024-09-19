@@ -49,9 +49,9 @@ const Index = ({ data, disc, heading }) => {
   return (
     <SuccessStoriesNewWrapper>
       <Container>
-        <div className="section-heading d-flex flex-wrap justify-content-between align-items-center">
+        <div className="section-heading d-flex justify-content-between align-items-center">
           <div>
-            <h2 className="heading mb-3">{heading || 'Success Stories'}</h2>
+            <h2 className="heading">{heading || 'Success Stories'}</h2>
             {disc && (
               <p className="mb-0">
                 Innovators from across the industry have trusted Qbatch to build high-impact products.
