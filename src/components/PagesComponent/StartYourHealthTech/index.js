@@ -3,14 +3,13 @@ import { navigate } from 'gatsby'
 import Button from '../../UiComponent/Button'
 import Container from '../../UiComponent/Container'
 import { StartYourHealthTechWrapper } from './style'
-import { StartYourHealthTechData } from '../../../constants'
 
-const StartYourHealthTech = () => {
+const StartYourHealthTech = ({heading, className, StartYourHealthTechData }) => {
 
   return (
-    <StartYourHealthTechWrapper>
+    <StartYourHealthTechWrapper className={className}>
         <Container>
-          <h2>Start Your HealthTech Journey Today!</h2>
+          <h2>{heading || 'Start Your HealthTech Journey Today!'}</h2>
           <div className="process-card-overlay">
             {StartYourHealthTechData.map((item, index) => (
               <div key={index} className="process-card-wrapper">

@@ -192,6 +192,57 @@ const data = [
     icon2: "/future-plan-icon2.svg",
   },
 ];
+const retailData = [
+  {
+    id: 1,
+    challenges: "Feeling overwhelmed?",
+    solve: "Our services streamline operations for retail peace of mind.",
+    icon1: "/1st-icon.svg",
+    icon2: "/2nd-icon.svg",
+  },
+  {
+    id: 2,
+    challenges: "Stuck in spreadsheets?",
+    solve: "Boost efficiency with powerful retail software.",
+    icon1: "/3rd-icon.svg",
+    icon2: "/4th-icon.svg",
+  },
+  {
+    id: 3,
+    challenges: "Losing money on wasted time?",
+    solve: "Streamline tasks and boost profits.",
+    icon1: "/5th-icon.svg",
+    icon2: "/6th-icon.svg",
+  },
+  {
+    id: 4,
+    challenges: "Customers a mystery?",
+    solve: "Gain insights for smarter decisions and business growth.",
+    icon1: "/7th-icon.svg",
+    icon2: "/8th-icon.svg",
+  },
+  {
+    id: 5,
+    challenges: "Inventory a nightmare?",
+    solve: "Take control with smart stock management.",
+    icon1: "/9th-icon.svg",
+    icon2: "/10th-icon.svg",
+  },
+  {
+    id: 6,
+    challenges: "Longing for effortless sales?",
+    solve: "Deliver seamless experiences and watch profits soar.",
+    icon1: "/11th-icon.svg",
+    icon2: "/12th-icon.svg",
+  },
+  {
+    id: 7,
+    challenges: "Drowning in manual tasks?",
+    solve: "Automate your operations and focus on what matters.",
+    icon1: "/13th-icon.svg",
+    icon2: "/14th-icon.svg",
+  },
+];
 
 const sliderItems = [
   {
@@ -3553,6 +3604,151 @@ const FrequentlyAskedQuestionsHealthCareFaq = [
     ),
   },
 ];
+const RetailSoftwareDevelopmentFaq = [
+  {
+    id: 1,
+    title: 'What custom software solutions do you offer for retail and consumer goods businesses?',
+    content: (
+      <div className="faq-content">
+        <span>We offer a range of custom software solutions tailored to the needs of retail and 
+            consumer goods businesses, including point-of-sale systems, inventory management 
+            software, e-commerce platforms, customer relationship management (CRM) systems, 
+            and mobile applications.</span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: ' How do your IT solutions cater to the specific needs of the retail industry?',
+    content: (
+      <div className="faq-content hire-developer-faq">
+        <span>Our IT solutions are designed with a deep understanding of the unique challenges and 
+          requirements of the retail industry. We prioritize features such as real-time inventory 
+          tracking, seamless integration with existing systems, scalability to accommodate growth,
+          and user-friendly interfaces for both staff and customers.</span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'Can you describe your process for developing custom retail software?',
+    content: (
+      <div className="faq-content">
+        <span>Our process typically involves initial consultation to understand the client's needs, 
+              followed by requirements gathering, design, development, testing, deployment, and 
+              ongoing support. We emphasize collaboration and feedback at every stage to ensure the 
+              final product meets expectations.</span>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'Do you provide software solutions for managing merchandising, inventory, and logistics?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, we offer comprehensive software solutions for managing merchandising, inventory,
+            and logistics, including features for tracking stock levels, managing supplier 
+            relationships, optimizing order fulfillment processes, and analyzing sales data.</span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What types of retail mobile applications do you develop?',
+    content: (
+      <div className="faq-content">
+        <span>We develop a variety of retail mobile applications, including e-commerce apps, loyalty 
+              program apps, in-store shopping assistants, mobile POS systems, and apps for managing 
+              inventory or sales on the go.</span>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'How do your CRM solutions enhance customer relationship management for retail businesses?',
+    content: (
+      <div className="faq-content">
+        <span>Our CRM solutions are designed to help retail businesses better understand and engage 
+              with their customers. This includes features for tracking customer interactions, 
+              segmenting customers based on behavior or demographics, personalizing marketing 
+              efforts, and fostering customer loyalty through rewards programs.</span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'Do you offer custom billing software for retail shops and boutiques?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, we offer custom billing software tailored to the specific needs of retail shops and 
+              boutiques. Our billing software typically includes features for processing transactions, 
+              generating invoices, managing discounts and promotions, and integrating with 
+              accounting systems.</span>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: "What technology platforms and methodologies do you specialize in for retail software development?",
+    content: (
+      <div className="faq-content">
+        <span>
+            We specialize in a variety of technology platforms and methodologies for retail software 
+            development, including cloud-based solutions, mobile development frameworks, e-
+            commerce platforms, and agile development methodologies.</span>
+      </div>
+    ),
+  },
+  {
+    id: 9,
+    title: 'How do you ensure the quality and reliability of your retail software through testing?',
+    content: (
+      <div className="faq-content">
+        <span>
+            We employ rigorous testing procedures throughout the development lifecycle to ensure 
+            the quality and reliability of our retail software. This includes performance testing, unit 
+            testing, regression testing, integration testing,  and user acceptance testing.</span>
+      </div>
+    ),
+  },
+  {
+    id: 10,
+    title: 'What customizable IT services do you provide specifically tailored to the retail industry?',
+    content: (
+      <div className="faq-content">
+        <span>
+            In addition to custom software development, we provide a range of IT services tailored 
+            to the retail industry, including IT consulting, infrastructure management, data 
+            analytics, cybersecurity solutions, and cloud migration services.</span>
+      </div>
+    ),
+  },
+  {
+    id: 11,
+    title: 'Can you discuss any successful projects or case studies in retail software development?',
+    content: (
+      <div className="faq-content">
+        <span>
+            We have successfully completed projects for retail clients ranging from small boutiques 
+            to large chains. These projects have included the development of custom e-commerce 
+            platforms, point-of-sale systems, inventory management software, and mobile 
+            applications.</span>
+      </div>
+    ),
+  },
+  {
+    id: 12,
+    title: 'Do you offer ongoing support and maintenance services for retail software products?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, we offer ongoing support and maintenance services to ensure the continued 
+              reliability and performance of our retail software products. This includes bug fixes, 
+              software updates, technical support, and proactive monitoring to address any issues that
+              may arise.</span>
+      </div>
+    ),
+  },
+];
 
 const enterPrisFaq = [
   {
@@ -4410,6 +4606,26 @@ const StartYourHealthTechData = [
     number: 4,
     heading: "Project Launch",
     text: "Once approved, we assemble your dedicated development team and kick off the project.",
+  },
+]
+const SimplifyYourRetailData = [
+  {
+    img: '/arrow-line.svg',
+    number: 1,
+    heading: "Discuss Your Needs",
+    text: "We'll discuss your business goals, budget, and timeline to find the perfect engagement model for your needs.",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 2,
+    heading: "Plan & Team Up",
+    text: "Based on your requirements and chosen engagement model, we'll craft a clear plan and assemble a dedicated team.",
+  },
+  {
+    img: '',
+    number: 3,
+    heading: "Get Going!",
+    text: "Our software engineers will start development. We'll track your progress and keep you informed throughout the process.",
   },
 ]
 const hassleData = [
@@ -5698,6 +5914,68 @@ const HumanizingHealthcareSliderData = [
     content: 'Refine data entry and classification, ensuring complete and error-free research data collection with our healthcare software development services, complying with federal, state, and local regulations, our services facilitate informed clinical decisions and advance medical research.',
   },
 ];
+const RetailSliderData = [
+  {
+    image: '/retail-analytics.svg',
+    title: 'Retail Analytics and Forecasting Software',
+    content: 'Avoid making wrong product and inventory stocking choices leveraging predictive analytics and accurately predicting sales and demand using intelligent machine learning algorithms.',
+  },
+  {
+    image: '/retail-business.svg',
+    title: 'Retail Business Intelligence (BI) and Reporting Tools',
+    content: 'Uncover hidden insights in sales, inventory, and customers and make data-driven decisions to fast-track stock, personalize marketing, and boost efficiency. Gain a competitive edge by building business-specific Retail BI and analytics software.',
+  },
+  {
+    image: '/robot-assisted.svg',
+    title: 'Robot-Assisted Warehouse Management',
+    content: 'We help you integrate warehouse robotics or collaborative robots (cobots) to streamline warehouse tasks like order picking, packing, and quality control. Let’s facilitate storage, automate operations, and improve supply chain processes.',
+  },
+  {
+    image: '/retail-merchandising.svg',
+    title: 'Retail Merchandising and Planning Software Development',
+    content: 'Manage assortment, planogram generation, product placement, inventory control, floor planning, and display analysis with our retail merchandising software. Increase floor space with data-driven layouts and assess displays for smarter decisions.',
+  },
+  {
+    image: '/product-catalog.svg',
+    title: 'Product Catalog Management Software Development',
+    content: 'Stop juggling spreadsheets! Our cloud-based retail and wholesale software collects product information ensuring a single source of truth that simplifies creation, pricing, categorization, and inventory management across all sales channels.',
+  },
+  {
+    image: '/aI-recommendation.svg',
+    title: 'AI Recommendation Engines Development',
+    content: 'Make unique and relevant product recommendations by developing a custom AI-powered recommendation engine, plugin, or extension to analyze user behavior, including view history, purchase history, and frequently bought items.',
+  },
+  {
+    image: '/custom-shopping.svg',
+    title: 'Custom Shopping Cart Development',
+    content: 'Develop custom shopping carts with tailored features like abandonment recovery, self-checkout, and open-source integration, providing your customers with complete control and superior buying experiences.',
+  },
+  {
+    image: '/mobile-wallets.svg',
+    title: 'Mobile Wallets and Contactless Payment Solutions',
+    content: 'Offer streamlined electronic transactions with mobile wallets and integrated contactless payment methods with our retail payment and billing solutions, facilitating secure and convenient contactless transactions, and catering to frictionless checkout experiences.',
+  },
+  {
+    image: '/omnichannel-retail.svg',
+    title: 'Omnichannel Retail Software Development',
+    content: 'Engage customers through multiple digital and physical touchpoints with a unified brand experience, synchronizing offline and online stores, and upgrading inventory management and customer interactions, leveraging our IT services for your retail biz.',
+  },
+  {
+    image: '/facial-recognition.svg',
+    title: 'Facial Recognition for Smart Retail Marketing and Security',
+    content: 'Our custom-built software for retail shops leverages facial recognition to deliver individual-level shopping experiences, identify loyal customers for targeted promotions, and improve security through suspect identification and crowd monitoring.',
+  },
+  {
+    image: '/retail-price.svg',
+    title: 'Retail Price Optimization Software Development',
+    content: 'Take the guesswork out of pricing with our retail price management software solution and study real-time data like competition, consumer behavior, and market conditions. The result? Maximum margins, optimal competitiveness, sales, and profitability.',
+  },
+  {
+    image: '/third-part-system.svg',
+    title: 'Third-party System Integrations',
+    content: 'Ensure seamless connectivity by integrating ERPs, CRMs, finance, logistics, and analytics systems, ensuring they work coherently to streamline operations and enhance operational efficiency.',
+  },
+];
 const collaborationData = [
   {
     img: '/time-and-material.svg',
@@ -5949,7 +6227,162 @@ const WhyTrustQbatchData2 = [
   { text: "- No Biases, Only Neutral Feedback" },
   { text: '- Highly Solution-Oriented Mindset' }
 ]
+const coreRetailData = [
+  {
+    heading: 'Inventory Management Systems',
+    content: [
+      { text: 'Real-time inventory tracking across all locations' },
+      { text: 'Automated reordering to maintain optimal stock levels' },
+      { text: 'Batch & serial number tracking for precise control' },
+      { text: 'Multi-warehouse management for seamless coordination' },
+      { text: 'Detailed reporting on stock levels, turnover, and suppliers' },
+    ]
+  },
+  {
+    heading: 'E-commerce Platforms',
+    content: [
+      { text: 'Customizable storefronts to reflect your unique brand' },
+      { text: 'Secure multi-payment gateways for secure transactions' },
+      { text: 'Mobile-optimized design for a smooth shopping experience' },
+      { text: 'Built-in SEO tools for improved search engine ranking' },
+      { text: 'Centralized order processing and fulfillment' },
+      { text: 'Customer accounts and loyalty programs to boost retention' },
+    ]
+  },
+  {
+    heading: 'Retail Point of Sale (POS) Systems',
+    content: [
+      { text: 'Fast and reliable checkout processing' },
+      { text: 'Integrated inventory management for accurate stock data' },
+      { text: 'Customer management tools for personalized service' },
+      { text: 'Comprehensive sales reporting for data-driven decisions' },
+      { text: 'Employee management to streamline staff operations' },
+      { text: 'Multi-store capability for centralized control' },
+    ]
+  },
+  {
+    heading: 'Retail Customer Relationship Management (CRM)',
+    content: [
+      { text: 'Detailed customer profiles for personalized interactions' },
+      { text: 'Marketing automation tools for targeted campaigns' },
+      { text: 'Integrated customer support features for efficient service' },
+      { text: 'Customer reward and loyalty software to drive repeat business' },
+      { text: 'Analytics and reporting to understand customer behavior' },
+    ]
+  },
+  {
+    heading: 'Retail ERP Systems',
+    content: [
+      { text: 'Retail ERP systems to integrate core business processes' },
+      { text: 'Customer management to manage customer interactions and sales' },
+      { text: 'Employee management to streamline HR processes and evaluation' },
+      { text: 'Financial resource management to handle budgeting and accounting' },
+      { text: 'Supply chain module for procurement and logistics management' },
+    ]
+  },
+  {
+    heading: 'Mobile Retail Solutions',
+    content: [
+      { text: 'Mobile commerce apps for convenient shopping on the go' },
+      { text: 'In-store navigation for a frictionless shopping experience' },
+      { text: 'Push notifications to engage customers with targeted promotions' },
+      { text: 'Mobile POS systems for flexible checkout options' },
+      { text: 'Customer loyalty apps to boost brand engagement' },
+    ]
+  }
+]; 
 
+const ImagineRetailExperienceData = [
+  {
+    img: '/thrill-your-customers.svg',
+    heading: 'Thrill your customers',
+    text: "Experiential retail? We're all about it! Let's create in-store experiences that have your customers raving and coming back for more."
+  },
+  {
+    img: '/embrace-social-power.svg',
+    heading: 'Embrace social power',
+    text: "Social commerce is booming. We'll help you leverage the power of social media platforms to turn likes into sales."
+  },
+  {
+    img: '/go-green.svg',
+    heading: 'Go green',
+    text: "Sustainability is more than a trend, it's the future. We'll equip you to meet the growing demand for eco-conscious brands."
+  },
+  {
+    img: '/cut-out-the-middleman!.svg',
+    heading: 'Cut out the middleman!',
+    text: "We'll help you establish a thriving direct-to-consumer sales channel, connecting directly with your audience."
+  },
+  {
+    img: '/the-voice-of-commerce.svg',
+    heading: 'The voice of commerce',
+    text: "Voice shopping is here to stay. We'll ensure your customers can seamlessly purchase and get unique recommendations with just their voice."
+  },
+]
+const InnovativeRetailSolutionsData = [
+  {
+    img: '/headless-commerce.svg',
+    heading: 'Headless Commerce',
+    text: "Embrace headless e-commerce approaches for flexible and humanized retail solutions that cater to your unique business needs."
+  },
+  {
+    img: '/cloud-first.svg',
+    heading: 'Cloud-first',
+    text: "Scalability, accessibility, and ironclad security – that's the cloud advantage. We'll leverage it to build your future-proof retail platform."
+  },
+  {
+    img: '/microservices.svg',
+    heading: 'Microservices',
+    text: "Modular and efficient – that's the microservices approach. We'll build a retail software system that runs like a dream."
+  }
+]
+const ExploreOurIndustrySpecificRetailPotentialData = [
+  {
+    img: '/large-retail-chains.svg',
+    heading: 'Large Retail Chains',
+    text: "Manage inventory, track sales, and assess customer data across locations."
+  },
+  {
+    img: '/e-commerce-businesses.svg',
+    heading: 'E-Commerce Businesses',
+    text: "Enhance online shopping experiences and streamline operations."
+  },
+  {
+    img: '/small-and-medium-retailers.svg',
+    heading: 'Small and Medium Retailers',
+    text: "Improve efficiency and customer engagement with tailored solutions."
+  },
+  {
+    img: '/omnichannel-retailers.svg',
+    heading: 'Omnichannel Retailers',
+    text: "Integrate online and offline channels for a consistent customer experience."
+  },
+  {
+    img: '/grocery-stores-&-supermarkets.svg',
+    heading: 'Grocery Stores & Supermarkets',
+    text: "Rectify inventory and supply chain management."
+  },
+  {
+    img: '/pharmacies-and-healthcare.svg',
+    heading: 'Pharmacies and Healthcare ',
+    text: "Manage prescriptions, inventory, and customer data effectively."
+  },
+  {
+    img: '/department-stores.svg',
+    heading: 'Department Stores',
+    text: "Enhance shopping experiences and operational efficiency."
+  },
+  {
+    img: '/franchis-retail-businesses.svg',
+    heading: 'Franchise Retail Businesses',
+    text: "Ensure consistency and efficiency across multiple locations."
+  },
+  {
+    img: '/commercial-centers.svg',
+    heading: 'Commercial Centers',
+    text: "Manage tenant operations and enhance customer experiences"
+  },
+]
 
 export {
   dedicationWork,
@@ -6072,5 +6505,13 @@ export {
   careerCardData,
   MattersQbatchCardsData,
   WhyTrustQbatchData1,
-  WhyTrustQbatchData2
+  WhyTrustQbatchData2,
+  retailData,
+  coreRetailData,
+  RetailSliderData,
+  ImagineRetailExperienceData,
+  InnovativeRetailSolutionsData,
+  ExploreOurIndustrySpecificRetailPotentialData,
+  SimplifyYourRetailData,
+  RetailSoftwareDevelopmentFaq
 }

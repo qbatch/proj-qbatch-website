@@ -83,6 +83,41 @@ p.content {
     `}
 }
 }
+&.retail-slider-wrapper{
+h2{
+  text-align:center;
+  margin-bottom:72px !important;
+    ${media.lg`
+    font-size: 32px;
+    font-weight: 700;
+      `}
+      ${media.sm`
+        font-size: 24px;
+        line-height: 32px;
+      `}
+  }
+  p.paragraph{
+    text-align:center;
+    ${media.lg`
+    font-size: 16px;
+    line-height: 24px;
+
+      `}
+      ${media.sm`
+        font-size: 14px;
+        line-height: 20px;
+      `}
+  }
+  .upper-heading.text-left {
+    margin-bottom: 72px;
+    ${media.sm`
+    margin-bottom:32px;
+      `}
+}
+p.content {
+    max-width: 553px;
+}
+}
   &.five-step-slider{
     ${media.sm`
     .upper-heading{
