@@ -28,7 +28,7 @@ const Index = () => {
           <Col lg={5}>
             <div className="banner-img">
               <img
-                src='/ships-img.svg'
+                src='/main-bg.gif'
                 alt='ships'
                 title='ships'
                 loading="lazy"

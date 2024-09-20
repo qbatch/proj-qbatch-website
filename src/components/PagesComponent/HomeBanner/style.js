@@ -56,12 +56,18 @@ const HomeBannerWrapper = styled.div`
   .banner-img {
     position: absolute;
     right: 0;
-    top: 98px;
+    top: -100px;
     z-index: -1;
+    @media(max-width:1400px) {
+      top: -60px;
+      }
+      ${media.lg`
+        top: -40px;
+      `}
     ${media.md`
       display: none;
     `}
-    img {
+    /* img {
       @media(max-width:1500px) {
         width: 680px;
       }
@@ -71,7 +77,7 @@ const HomeBannerWrapper = styled.div`
       ${media.lg`
         width: 500px;
       `}
-    }
+    } */
   }
 `
 
