@@ -1,6 +1,6 @@
 import React, { lazy } from 'react'
 import Layout from '../../components/Layout/layout'
-import { FrequentlyAskedQuestionsHealthCareFaq, weWorkStoriesData } from '../../constants';
+import { FrequentlyAskedQuestionsHealthCareFaq, StartYourHealthTechData, weWorkStoriesData } from '../../constants';
 import { Queries } from '../../constants/queries';
 import { replaceUnderscoreWithAt } from '../../constants/Utils';
 import SEO from '../../components/Seo';
@@ -43,7 +43,7 @@ const HealthCareAppDevelopment = () => {
       <HumanizingHealthcare />
       <HealthcareIndustryLeaders />
       <InstitutionsBenefiting />
-      <StartYourHealthTech />
+      <StartYourHealthTech StartYourHealthTechData={StartYourHealthTechData} />
       <WhyTrustQbatch />
       <SuccessStories heading="Success Stories From Qbatch’s Healthcare Portfolio" data={weWorkStoriesData} />
       <CollaborationNew borderBottom />

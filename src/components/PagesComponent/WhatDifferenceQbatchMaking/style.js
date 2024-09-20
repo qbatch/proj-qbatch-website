@@ -23,6 +23,11 @@ const QbatchMakingWrapper = styled.div`
     `}
     .heading {
       margin-bottom: 24px;
+      &.new-heading-retail{
+        ${media.sm`
+          text-align:left;
+        `}
+      }
       ${media.sm`
       margin-bottom:0px;
     `}

@@ -4,6 +4,20 @@ import { media } from "../../../theme/media-mixins";
 const StartYourHealthTechWrapper = styled.div`
 padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  &.simplify-your-retail{
+    .process-card-overlay {
+    display: grid;
+    grid-gap: 16px;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr 1fr;
+    ${media.md`
+    grid-template-columns: 1fr 1fr;
+    `}
+    ${media.sm`
+    grid-template-columns: 1fr;
+    `}
+    }
+  }
   ${media.sm`
     padding: 40px 0;
     `}
