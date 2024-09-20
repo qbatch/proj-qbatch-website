@@ -5074,6 +5074,10 @@ const footerServicesItems = [
     to: '/services/mobile-app-development/',
   },
   {
+    menu: 'Low-code/ No-code Platform Development',
+    to: '',
+  },
+  {
     menu: 'CTO as a Service',
     to: '/services/cto-as-a-service/',
   },
@@ -5084,6 +5088,10 @@ const footerServicesItems = [
   {
     menu: 'DevOps and Cloud Computing',
     to: '/services/devops/',
+  },
+  {
+    menu: 'UX/UI Design',
+    to: '',
   },
 ];
 
@@ -5102,7 +5110,7 @@ const industrieshMenu = [
   },
   {
     name: 'Healthcare',
-    to: '#',
+    to: '/industries/health-care/',
   },
   {
     name: 'EdTech',
@@ -5159,27 +5167,27 @@ const footerBottomMenu = [
 
 const footerSocialLinks = [
   {
-    img: '/facebook-filled',
+    img: '/fb-icon.svg',
     to: 'https://www.facebook.com/qbatch/',
   },
   {
-    img: '/instagram-filled',
+    img: '/instagram-icon-2.svg',
     to: 'https://www.instagram.com/qbatch/',
   },
   {
-    img: '/linkedin-filled',
+    img: '/linkedin-icon-2.svg',
     to: 'https://www.linkedin.com/company/qbatch/',
   },
   {
-    img: '/twitter-filled',
+    img: '/twitter-icon-2.svg',
     to: 'https://x.com/qbatchofficial',
   },
   {
-    img: '/behance-filled',
+    img: '/behance-icon-2.svg',
     to: 'https://www.behance.net/qbatch',
   },
   {
-    img: '/youtube-filled',
+    img: '/youtube-icon-2.svg',
     to: 'https://www.youtube.com/@qbatch',
   },
 ]
@@ -5672,7 +5680,7 @@ const HumanizingHealthcareSliderData = [
   {
     image: '/medical-equipment.svg',
     title: 'Medical Equipment Management Software Development',
-    content: 'Our multi-purpose medical equipment management solution ensures optimal uptime and maintenance for your medical devices. Manage and monitor your healthcare devices across your facility with efficient tracking and monitoring app functionality,',
+    content: 'Our multi-purpose medical equipment management solution ensures optimal uptime and maintenance for your medical devices. Manage and monitor your healthcare devices across your facility with efficient tracking and monitoring app functionality.',
   },
   {
     image: '/e-prescribing-software.svg',
@@ -5789,6 +5797,30 @@ const weWorkStoriesData = [
     logo: '/saleha_logo.svg',
     category: 'Fin-Tech',
     title: 'From Fragmented Finance to Streamlined Solutions: Sahelha & Qbatch Revolutionize Debt Crowdfunding'
+  },
+  {
+    img: '/alfaris-banner.svg',
+    logo: '/alfaris-logo.svg',
+    category: 'Human Resources',
+    title: 'Empowering HR Excellence: Qbatch Enhances Al-Faris International School’s Operations with AIG HR'
+  },
+  {
+    img: '/qikfinds-banner.svg',
+    logo: '/qikfinds-logo.svg',
+    category: 'E-Commerce',
+    title: 'Qikfinds: Automating Arbitrage for Bigger Profits'
+  },
+  {
+    img: '/ecom-circle-banner.svg',
+    logo: '/ecom-circle-logo-2.svg',
+    category: 'E-Commerce',
+    title: 'From Zero to 4,300 Sellers: Learn How Ecom Circles Revolutionized Drop-Shipping with Qbatch'
+  },
+  {
+    img: '/roney-banner.svg',
+    logo: '/roney-logo.svg',
+    category: 'Logistics',
+    title: 'How Roney Innovations Achieved 75% Error Reduction and Soared to Business Excellence?'
   }
 ];
 const helpingCardData = [
@@ -5885,6 +5917,10 @@ const MattersQbatchCardsData = [
   {
     heading: 'Company Events/Tour',
     text: 'Join the fun with dinners, parties, and annual tours.'
+  },
+  {
+    heading: 'In-House Technical Trainings',
+    text: 'Boost your skills with monthly training sessions.'
   },
   {
     heading: 'Sponsored Certifications',

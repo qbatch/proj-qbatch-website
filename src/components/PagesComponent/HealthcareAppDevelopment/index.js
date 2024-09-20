@@ -43,7 +43,7 @@ const HealthcareAppDevelopment = () => {
             {HealthcareAppDevelopmentCards.map((card, cardIndex) => (
               <div key={cardIndex} className='card'>
                 <img src={card.imgSrc} alt={card.title} />
-                <h3>{card.title}</h3>
+                <p className='heading-h3'>{card.title}</p>
                 <ul>
                   {card.listItems.map((item, liIndex) => (
                     <li key={liIndex}>

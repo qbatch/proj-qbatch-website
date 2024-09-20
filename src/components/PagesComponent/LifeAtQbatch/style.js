@@ -24,7 +24,8 @@ ${media.lg`
         line-height: 32px;
       `}
       ${media.mobile`
-            text-align:left;
+            text-align:center;
+            margin-bottom:8px;
             `}
 }
 p{
@@ -44,7 +45,7 @@ ${media.lg`
         line-height: 20px;
       `}
       ${media.mobile`
-            text-align:left;
+            text-align:center;
             `}
 }
 .slider-wrapper{

@@ -9,7 +9,10 @@ background-size: cover;
 background-position: bottom;
 ${media.sm`
   padding:40px 0;
-
+`}
+${media.mobile`
+  background-image: none;
+  background: #0A2545;
 `}
 h2{
 font-size: 40px;
@@ -44,6 +47,10 @@ text-align: left;
 color:#FFFFFF;
 margin:0;
 margin-top:24px;
+${media.mobile`
+  font-size: 16px;
+  line-height: 24px;
+    `}
 }
 .expert-advice{
   color: #fff;

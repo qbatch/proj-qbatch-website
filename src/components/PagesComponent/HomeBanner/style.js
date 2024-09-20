@@ -6,10 +6,12 @@ const HomeBannerWrapper = styled.div`
   background-image: url('/home-banner-bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 180px 0 120px;
   position: relative;
   min-height: 796px;
   z-index: 1;
+  position: relative;
   ${media.lg`
     padding: 120px 0;
     min-height: auto;

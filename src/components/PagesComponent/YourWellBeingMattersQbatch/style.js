@@ -43,10 +43,13 @@ ${media.lg`
       grid-template-columns: 1fr;
       `}
 .card-item{
-  background-color:#E8F4FF;
+  background-image: url('/career-card-bg.svg'), radial-gradient(#E8F4FF, #E8F4FF);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: top right;
   border:.5px solid #D2D9DC;
   padding:24px;
-  border-radius:0px 28px 28px 28px;
+  border-radius:28px 28px 0px 28px;
   display:flex;
   flex-direction:column;
   grid-row-gap:8px;

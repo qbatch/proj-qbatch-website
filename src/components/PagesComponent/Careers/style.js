@@ -26,6 +26,9 @@ const CareerWrapper = styled.div`
       padding-bottom:48px;
       margin-bottom:0px;
       `}
+    ${media.mobile`
+      padding-bottom:0;
+      `}
   }
   .cards-wrapper{
     padding-top: 20px;
@@ -104,12 +107,12 @@ const CareerWrapper = styled.div`
     .content{
       width:100%;
       .job-role-list>ul{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display:flex;
+        justify-content:center;
         align-items: baseline;
         grid-gap: 24px;
         ${media.md`
-          grid-template-columns: 1fr;
+          flex-wrap: wrap;
           `}
       }
     }
