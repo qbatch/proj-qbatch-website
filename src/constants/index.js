@@ -6135,6 +6135,29 @@ const careerCardData = [
     caption: 'Your ideas drive innovation. We invest in your professional development and foster a collaborative environment',
   },
 ];
+const recapEventsData = [
+  {
+    img: '/alibaba-cocreate.png',
+    title: 'Alibaba Co-Create 2023  ',
+    caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
+    date: '02/28/2023',
+    location: 'Royal Victoria Dock, London'
+  },
+  {
+    img: '/amazon-accelerate.png',
+    title: 'Amazon Accelerate 2023',
+    caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
+    date: '02/28/2023',
+    location: 'Royal Victoria Dock, London'
+  },
+  {
+    img: '/japan-week.png',
+    title: 'Japan IT Week 2023',
+    caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
+    date: '02/28/2023',
+    location: 'Royal Victoria Dock, London'
+  },
+];
 const MattersQbatchCardsData = [
   {
     heading: 'Transport Allowance',
@@ -6291,6 +6314,12 @@ const coreRetailData = [
     ]
   }
 ]; 
+
+const pressReleaseData = [
+  { text: 'Qbatch Expands Global Presence with New Offices in Europe' },
+  { text: 'Qbatch Partners with Leading AI Firm for Next-Gen Tech Development' },
+  { text: 'Qbatch Wins ‘Innovator of the Year’ at Tech Awards 2024'},
+];
 
 const ImagineRetailExperienceData = [
   {
@@ -6506,6 +6535,8 @@ export {
   MattersQbatchCardsData,
   WhyTrustQbatchData1,
   WhyTrustQbatchData2,
+  recapEventsData,
+  pressReleaseData,
   retailData,
   coreRetailData,
   RetailSliderData,

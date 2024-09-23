@@ -180,6 +180,7 @@ const GlobalStyles = createGlobalStyle`
       }
       h5, .text-h5{
         font-size:${({ theme }) => theme.fonts.baseFontSize}; 
+        line-height: 28px;
       }
     }
     .fs-24{
@@ -533,7 +534,36 @@ const GlobalStyles = createGlobalStyle`
   `}
 }
 .avatar-sm-img{
-      border-radius: 6px 6px 0 6px;
+    border-radius: 6px 6px 0 6px;
+  }
+.slick-dots {
+  bottom: -48px;
+    li {
+      margin: 0px;
+      &.slick-active {
+        margin-right: 24px;
+        button {
+          &::before {
+            background-color: ${({ theme }) => theme.colors.primaryColor};
+            width: 32px;
+            height: 8px;
+            border-radius: 50px;
+            opacity: 1;
+            color:transparent;
+          }
+        }
+      }
+      button {
+        &::before {
+          background-color: ${({ theme }) => theme.colors.dividerColor};
+          height: 8px;
+          width: 8px;
+          border-radius: 50px;
+          opacity: 1;
+          color: transparent;
+        }
+      }
     }
+  }
 `
 export default GlobalStyles
