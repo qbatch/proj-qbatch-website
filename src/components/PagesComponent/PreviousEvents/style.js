@@ -2,20 +2,28 @@ import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
 const PreviousEventsWrapper = styled.div`
-  padding: 96px 0;
+  padding: 96px 0 120px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 40px 0;
+    padding: 40px 0 80px;
   `}
   h2 {
     margin-bottom: 48px;
-  }
-  .img-height {
-    height: 545px;
-    object-fit: cover;
+    ${media.sm`
+      margin-bottom: 32px;
+    `}
+    ${media.mobile`
+      margin-bottom: 24px;
+    `}
   }
   .gallary-img {
     position: relative;
+    flex: 1;
+    .card-img {
+      object-fit: cover;
+      height: 100%;
+      max-height: 570px;
+    }
     .gallary-heading {
       opacity: 0;
       position: absolute;
@@ -59,6 +67,9 @@ const PreviousEventsWrapper = styled.div`
     &:hover {
       .gallary-heading {
         opacity: 1;
+        ${media.md`
+          opacity: 0;
+        `}
       }
     }
   }

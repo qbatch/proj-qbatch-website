@@ -10,9 +10,9 @@ const Index = () => {
     <EventHighlightBanner>
       <Container>
         <h2 className="event-heading">Event Highlight</h2>
-        <Row>
-          <Col xl={7}>
-            <img className="event-image" src='/event-highlight-img.svg' title="event" loading="lazy" alt='event' />
+        <Row className='events-row'>
+          <Col xl={7} className='p-lg-12 p-0'>
+            <img className="event-image" src='/event-highlight-img.png' title="event" loading="lazy" alt='event' />
           </Col>
           <Col xl={5}>
             <div className='event-wrapper'>
@@ -26,11 +26,11 @@ const Index = () => {
                 </div>
               </div>
               <div className='d-flex align-items-center justify-content-between flex-wrap event-date'>
-                <div className='d-flex align-items-center gap-3'>
+                <div className='d-flex align-items-center gap-sm-3 gap-2'>
                   <img src='/calendar_month.svg' alt='calender' title='calendar' loading='lazy' />
                   <span>February 27 to 28 2024</span>
                 </div>
-                <div className='d-flex align-items-center gap-3'>
+                <div className='d-flex align-items-center gap-sm-3 gap-2'>
                   <img src='/icon-location.svg' alt='location' title='location' loading='lazy' />
                   <span>Royal Victoria Dock, London</span>
                 </div>

@@ -180,6 +180,7 @@ const GlobalStyles = createGlobalStyle`
       }
       h5, .text-h5{
         font-size:${({ theme }) => theme.fonts.baseFontSize}; 
+        line-height: 28px;
       }
     }
     .fs-24{

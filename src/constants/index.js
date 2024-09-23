@@ -5859,21 +5859,21 @@ const careerCardData = [
 ];
 const recapEventsData = [
   {
-    img: '/transparency-and-trust.svg',
+    img: '/alibaba-cocreate.png',
     title: 'Alibaba Co-Create 2023  ',
     caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
     date: '02/28/2023',
     location: 'Royal Victoria Dock, London'
   },
   {
-    img: '/work-life-balance.svg',
+    img: '/amazon-accelerate.png',
     title: 'Amazon Accelerate 2023',
     caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
     date: '02/28/2023',
     location: 'Royal Victoria Dock, London'
   },
   {
-    img: '/empowerment-and-growth.svg',
+    img: '/japan-week.png',
     title: 'Japan IT Week 2023',
     caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
     date: '02/28/2023',

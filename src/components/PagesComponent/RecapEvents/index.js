@@ -13,7 +13,7 @@ const HelpingCard = ({ img, title, caption, date, location }) => {
       <div className="title-box">
         <h3 className="text-h5">{title}</h3>
         <p>{caption}</p>
-        <div className='d-flex align-items-center justify-content-between event-date'>
+        <div className='d-flex align-items-center justify-content-between gap-2 flex-wrap event-date'>
           <div className='d-flex align-items-center gap-2'>
             <img src='/calendar_month.svg' alt='calender' title='calendar' loading='lazy' />
             <span>{date}</span>
@@ -34,7 +34,7 @@ const Index = () => {
         <h2 className="text-h2 color-primary">Recap of Events</h2>
         <Row>
           {recapEventsData.map((card, index) => (
-            <Col lg={4} md={6} sm={12} key={index}>
+            <Col xl={4} md={6} key={index} className='event-col'>
               <HelpingCard img={card.img} title={card.title} caption={card.caption} date={card.date} location={card.location} />
             </Col>
           ))}

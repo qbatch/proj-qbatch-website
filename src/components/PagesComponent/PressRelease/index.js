@@ -17,7 +17,7 @@ const Index = () => {
         </div>
         <Row>
           {pressReleaseData.map((item, ind) => (
-            <Col lg={4} key={ind}>
+            <Col lg={4} key={ind} className='press-col'>
               <div className='press-box'>
                 <h3 className='text-h5'>{item.text}</h3>
                 <Button text='Read More' />

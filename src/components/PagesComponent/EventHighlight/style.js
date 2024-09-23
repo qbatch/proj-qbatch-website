@@ -7,27 +7,63 @@ const EventHighlightBanner = styled.div`
   ${media.sm`
     padding: 40px 0;
   `}
+  .events-row {
+    ${media.lg`
+      border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+      border-radius: 34px 34px 0 14px;
+    `}
+    ${media.mobile`
+      border-radius: 15px 15px 0 14px;
+    `}
+  }
   .event-heading {
     color: ${({ theme }) => theme.colors.primaryColor};
     margin-bottom: 32px;
   }
   .event-image {
+    max-width: 761px;
     width: 100%;
+    border-radius: 24px 24px 0 24px;
+    ${media.lg`
+      max-width: max-content;
+      border-radius: 24px 24px 0 0;
+    `}
+    ${media.mobile`
+      min-height: 217px;
+      object-fit: cover;
+      object-position: left;
+      border-radius: 14px 14px 0 0;
+    `}
   }
   .event-wrapper{
-    padding: 28px 0px 28px 22px;
+    padding: 28px 0px 28px 10px;
     ${media.customBrakePoint`
       padding: 0 24px 24px;
+    `}
+    ${media.lg`
+      padding: 12px;
+    `}
+    ${media.mobile`
+      padding: 16px 0 8px;
     `}
     .blog-badge {
       font-weight: ${({ theme }) => theme.fontWeight.medium};
     }
     .event-title {
       margin: 16px 0 48px;
+      ${media.lg`
+        margin: 16px 0 32px;
+      `}
+      ${media.mobile`
+        margin: 16px 0 24px;
+      `}
       h2 {
         color: ${({ theme }) => theme.colors.bodyTextVariant};
         margin-bottom: 24px;
         cursor: pointer;
+        ${media.mobile`
+          margin-bottom: 8px;
+        `}
       }
       .event-desc {
         display: -webkit-box;
@@ -46,12 +82,15 @@ const EventHighlightBanner = styled.div`
     .event-date {
       div {
         margin-bottom: 16px;
-        &:last-child {
-          margin-bottom: 0;
-        }
+        ${media.mobile`
+          margin-bottom: 8px;
+        `}
       }
       span{
         color: ${({ theme }) => theme.colors.bodyLight};
+        ${media.mobile`
+          font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+        `}
       }
     } 
   }
