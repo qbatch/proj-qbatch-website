@@ -4,6 +4,9 @@ import { media } from "../../../theme/media-mixins";
 const ProjectChallengesWrapper = styled.div`
 padding: 96px 0;
 background-color: ${({ theme }) => theme.colors.secondaryColor};
+${media.sm`
+  padding: 56px 0;
+`}
 .inner-wrapper{
   display: flex;
   flex-direction: column;
@@ -27,6 +30,12 @@ background-color: ${({ theme }) => theme.colors.secondaryColor};
   color: ${({ theme }) => theme.colors.whiteColor};
   margin-bottom: 16px;
   max-width: 210px;
+  &.text-width {
+    max-width: 250px;
+  }
+  ${media.sm`
+    max-width: 100%;
+  `}
 }
 .inner-paragraph{
   color: ${({ theme }) => theme.colors.whiteColor};

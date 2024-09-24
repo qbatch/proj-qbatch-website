@@ -649,6 +649,13 @@ export const Queries = () => {
           }
         }
       }
+      allStrapiEvent {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiCategory {
         nodes {
           categoryName
