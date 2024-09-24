@@ -2,16 +2,23 @@ import styled from 'styled-components'
 import { media } from '../../../theme/media-mixins'
 
 const QuotationSection = styled.div`
-  background: url('/quotation-bg.svg');
+  background: url('/portfolio-quote-bg.svg');
   background-size: cover;
-  background-position: right;
+  background-repeat: no-repeat;
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
   color: ${({ theme }) => theme.colors.whiteColor};
   padding: 127px 171px 116px 202px;
+  position: relative;
   ${media.md`
     padding: 96px 120px 120px;
   `}
   ${media.sm`
     padding: 56px 24px;
+  `}
+  ${media.mobile`
+    background: url('/quote-mobile-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
   `}
 
   .heading {
@@ -25,6 +32,41 @@ const QuotationSection = styled.div`
     ${media.sm`
     line-height: 32px;
   `}
+  }
+  .quote-circle {
+    width: 100px;
+    height: 100px;
+    background-color: ${({ theme }) => theme.colors.whiteColor};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -50px;
+    left: 230px;
+    ${media.xl`
+      left: 195px;
+    `}
+    ${media.md`
+      left: 140px;
+    `}
+    ${media.sm`
+      width: 60px;
+      height:  60px;
+      top: -30px;
+      img {
+        width: 30px;
+      }
+    `}
+    ${media.mobile`
+      left: 80px;
+      width: 40px;
+      height:  40px;
+      top: -20px;
+      img {
+        width: 20px;
+      }
+    `}
   }
 `
 

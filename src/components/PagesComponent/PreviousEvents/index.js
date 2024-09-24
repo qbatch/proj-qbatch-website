@@ -26,6 +26,12 @@ const Index = () => {
     ],
   ];
 
+  const mobileScreen = [
+    { id: 1, imageUrl: "/mobile-event-1.png" },
+    { id: 2, imageUrl: "/mobile-event-2.png" },
+    { id: 3, imageUrl: "/mobile-event-3.png" },
+  ];
+
   const settings = {
     dots: true,
     infinite: true,
@@ -40,35 +46,46 @@ const Index = () => {
     <PreviousEventsWrapper>
       <Container>
         <h2 className='color-primary text-center'>Flashbacks From Previous Events</h2>
-        <Slider {...settings}>
-          {imageGroups.map((group, ind) => (
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 320: 3 }}
-              key={ind}
-            >
-              <Masonry gutter='8px'>
-                {group.map((image) => (
-                  <div key={image.id} className={`gallary-img ${image.id === 5 ? 'd-none' : ''}`}>
-                    <img src={image.src} alt={image.alt} loading='lazy' className='w-100 card-img' />
-                    <div className='gallary-heading'>
-                      <h3>Japan IT Week 2023</h3>
-                      <div className='d-flex align-items-center gap-4 event-details'>
-                        <div className='d-flex align-items-center gap-2'>
-                          <img src='/japan-flag.svg' alt='japan' title='japan' loading='lazy' />
-                          <span>Tokyo</span>
-                        </div>
-                        <div className='d-flex align-items-center gap-2'>
-                          <img src='/calendar-white.svg' alt='japan' title='japan' loading='lazy' />
-                          <span>Feb 2023</span>
+        <div className='d-md-block d-none'>
+          <Slider {...settings}>
+            {imageGroups.map((group, ind) => (
+              <ResponsiveMasonry
+                columnsCountBreakPoints={{ 320: 3 }}
+                key={ind}
+              >
+                <Masonry gutter='8px'>
+                  {group.map((image) => (
+                    <div key={image.id} className={`gallary-img ${image.id === 5 ? 'd-none' : ''}`}>
+                      <img src={image.src} alt={image.alt} loading='lazy' className='w-100 card-img' />
+                      <div className='gallary-heading'>
+                        <h3>Japan IT Week 2023</h3>
+                        <div className='d-flex align-items-center gap-4 event-details'>
+                          <div className='d-flex align-items-center gap-2'>
+                            <img src='/japan-flag.svg' alt='japan' title='japan' loading='lazy' />
+                            <span>Tokyo</span>
+                          </div>
+                          <div className='d-flex align-items-center gap-2'>
+                            <img src='/calendar-white.svg' alt='japan' title='japan' loading='lazy' />
+                            <span>Feb 2023</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </Masonry>
-            </ResponsiveMasonry>
-          ))}
-        </Slider>
+                  ))}
+                </Masonry>
+              </ResponsiveMasonry>
+            ))}
+          </Slider>
+        </div>
+        <div className='d-md-none d-block'>
+          <Slider {...settings}>
+            {mobileScreen.map((slide) => (
+              <div key={slide.id}>
+                <img src={slide.imageUrl} alt={`Slide ${slide.id}`} style={{ width: "100%", height: "auto" }} />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </Container>
     </PreviousEventsWrapper>
   )

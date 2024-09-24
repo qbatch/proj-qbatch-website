@@ -6,9 +6,14 @@ padding: 96px 0;
 .heading{
   margin: auto;
   margin-bottom: 72px;
-  text-align: center;
+  ${media.sm`
+    margin-bottom: 32px; 
+  `}
+  ${media.xs`
+    margin-bottom: 24px;
+  `}
 }
-.impact-image{
+.impact-image {
   border-radius: 16px;
 }
 ${media.lg`

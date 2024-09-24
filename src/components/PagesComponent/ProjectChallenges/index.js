@@ -19,7 +19,7 @@ const ProjectChallenges = ({ projectDetails }) => {
                   {detail.detailBox.map((box, boxIndex) => (
                     <Col lg={3} key={boxIndex}>
                       <div className='inner-box'>
-                        <h3 className='text-h4 inner-heading'>{box.heading}</h3>
+                        <h3 className={`text-h4 inner-heading ${box.heading.length >= 30 && 'text-width'}`}>{box.heading}</h3>
                         <p className='inner-paragraph'>{box.paragraph}</p>
                       </div>
                     </Col>
