@@ -10,7 +10,7 @@ ${media.sm`
 .inner-wrapper{
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 96px;
 }
 .heading{
   margin-bottom: 32px;

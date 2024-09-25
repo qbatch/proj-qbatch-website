@@ -104,13 +104,13 @@ const Index = ({ heading, paragraph, componentName, exploreBtn, btnClass, header
   return (
     <ProvenExperienceWrapper>
       <Container>
-        <div className="section-heading d-flex flex-wrap justify-content-between align-items-start">
+        <div className="section-heading d-flex flex-sm-row flex-column gap-1 flex-wrap justify-content-between align-items-start">
           <div className={headerClass}>
             <h2 className={`heading ${componentName === 'index' && 'text-h1'}`}>{heading}</h2>
             <p style={{maxWidth: paragraphWidth}} className="paragraph">{paragraph}</p>
           </div>
           {!exploreBtn ?
-            <div className="mt-md-4 mt-3">
+            <div>
               <Button className={btnClass} onClick={() => navigate('/portfolio')} text="Explore More" />
             </div>
             :

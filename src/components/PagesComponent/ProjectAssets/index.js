@@ -7,7 +7,7 @@ import ProjectAssetsWrapper from './style';
 
 const ProjectAssets = ({ projectData }) => {
   const { fontFamily, projectColors, projectIcons, projectInnerComponents } = projectData;
-  console.log('colors', projectData)
+
   const colorsData = [
     { type: 'Natural', colors: projectColors?.natural.colors },
     { type: 'Primary', colors: projectColors?.primary.colors },
@@ -17,14 +17,14 @@ const ProjectAssets = ({ projectData }) => {
   return (
     <ProjectAssetsWrapper>
       <Container>
-        <Row className='g-4'>
+        <Row className='g-4 assets-row'>
           <Col lg={12}>
             <div className='box'>
-              <h2 className='text-h1 main-heading'>
+              <h2 className='text-h2 main-heading'>
                 <span>Typography & Colours</span>
               </h2>
               <div className='font-info'>
-                <h3 className='text-h1 heading'>{fontFamily}</h3>
+                <h3 className='text-h2 heading'>{fontFamily}</h3>
                 <div className='font-weights'>
                   <span>Regular</span>
                   <span>Medium</span>
