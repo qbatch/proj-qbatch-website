@@ -12,8 +12,8 @@ const ProjectChallenges = ({ projectDetails }) => {
         <div className='inner-wrapper'>
           {projectDetails && projectDetails.map((detail, index) => (
             <div className='detail-wrapper' key={index}>
-              <h2 className='heading text-h1'>{detail.heading}</h2>
-              <p className='paragraph text-h4'>{detail.paragraph}</p>
+              <h2 className='heading text-h2'>{detail.heading}</h2>
+              {detail.paragraph && <p className='paragraph text-h4'>{detail.paragraph}</p>}
               {detail.detailBox && detail.detailBox.length > 0 && (
                 <Row className='gy-4'>
                   {detail.detailBox.map((box, boxIndex) => (

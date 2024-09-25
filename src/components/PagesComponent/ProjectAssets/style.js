@@ -121,6 +121,15 @@ ${media.lg`
     }
   }
 `}
+.assets-row {
+  .col-lg-7 {
+    ${media.md`
+      .box-sm {
+        padding-bottom: 0;
+      }
+    `}
+  }
+}
 `
 
 export default ProjectAssetsWrapper;

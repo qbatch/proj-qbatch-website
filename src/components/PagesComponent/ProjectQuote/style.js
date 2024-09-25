@@ -74,6 +74,10 @@ const ProjectCoverWrapper = styled.div`
  margin-bottom: 96px;
  border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
  padding: 96px 0;
+ ${media.sm`
+  padding: 56px 24px;
+  margin-bottom: 56px;
+`}
  .project-cover{
   width: 100%;
   height: 980px;
