@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react'
-import Banner from '../components/PagesComponent/PageBanner'
-import { Queries } from '../constants/queries'
-import Layout from "../components/Layout/layout";
-import SEO from "../components/Seo";
-import Divider from "../components/UiComponent/Divider";
-import EcommerceBanner from '../../static/portfolio-banner-qbatch.svg'
-import Collaboration from "../components/PagesComponent/Collaboration";
-import StartProject from "../components/PagesComponent/StartProject";
-import SuccessStories from "../components/PagesComponent/SuccessStories";
+import Banner from '../../components/PagesComponent/PageBanner'
+import { Queries } from '../../constants/queries'
+import Layout from "../../components/Layout/layout";
+import SEO from "../../components/Seo";
+import Divider from "../../components/UiComponent/Divider";
+import EcommerceBanner from '../../../static/portfolio-banner-qbatch.svg'
+import Collaboration from "../../components/PagesComponent/Collaboration";
+import StartProject from "../../components/PagesComponent/StartProject";
+import SuccessStories from "../../components/PagesComponent/SuccessStories";
 
-const Portfolio = () => {
+const Index = () => {
   useEffect(()=>{
- setTimeout(() => {
-   window.scrollTo({ top: 0, behavior: 'smooth' })
+    setTimeout(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
  }, 500)
   },[])
  
@@ -56,4 +56,4 @@ export const Head = () => {
   )
 }
 
-export default Portfolio;
+export default Index;
