@@ -6599,6 +6599,84 @@ const eventsMobileImgs = [
   { id: 3, imageUrl: "/mobile-event-3.png" },
 ];
 
+const realEstateSliderData = [
+  {
+    image: '/re-management.svg',
+    title: 'Real Estate Management Software Development',
+    content: 'Looking to develop a high-end real estate management management app for commercial and residential properties? Creates intuitive proptech apps to centralize tenant information, track leads and sales, and store documents securely.',
+  },
+  {
+    image: '/re-location-based.svg',
+    title: 'Location-based Real Estate Service',
+    content: 'Enable users to track device locations, view property listings and nearby amenities, and watch video tours of apartments directly on the map, enhancing their search experience and satisfaction while helping them make informed decisions.',
+  },
+  {
+    image: '/re-mobile-app.svg',
+    title: 'Real Estate Mobile App Development',
+    content: 'Streamline property management, cross-communication, visit scheduling, and deal closures with our mobile app development for real estate agents, buyers, brokers, and investors.',
+  },
+  {
+    image: '/re-marketplace.svg',
+    title: 'Real Estate Marketplace Development',
+    content: 'Build a real estate hub for realtors, brokers, and property managers with our on-demand real estate app development featuring lease management, property sales, and rentals into one seamless platform, ultimately optimizing deal success.',
+  },
+  {
+    image: '/re-virtual-tour.svg',
+    title: 'Real Estate Virtual Tour Software Development',
+    content: "Claim the future of real estate with our powerful virtual tour app solutions. As a leading virtual tour software developer, we specialize in creating custom VR solutions. Let's turn your imagination into reality.",
+  },
+  {
+    image: '/re-investment.svg',
+    title: 'Real Estate Investment Software Development',
+    content: 'Right investment decisions start with the right real estate development tools. From scouting opportunities to portfolio management, we ensure a lucrative, secure, and efficient investment process tailor-made for your rental properties.',
+  },
+  {
+    image: '/property-auction.svg',
+    title: 'Property Auction App Development',
+    content: "Our real estate auction app connects sellers with motivated buyers. List properties bid competitively, and experience the thrill of online auctions. Sell fast or find your dream home – it's all just a click away!",
+  },
+  {
+    image: '/home-rentals.svg',
+    title: 'Home Rentals App Development',
+    content: 'Let’s empower landlords and tenants with our home rental app solution! Manage properties with neat listings, and find dream homes, all with secure payments and hassle-free booking — ensuring a stress-free rental experience for all.',
+  },
+  {
+    image: '/property-booking.svg',
+    title: 'Property Booking App Development',
+    content: 'Renting just got easier! Our real estate app development company lets tenants find perfect homes & book with ease. Realtors can manage listings, view reservations and get secure payments.',
+  },
+  {
+    image: '/lead-management.svg',
+    title: 'Real Estate Lead Management Software Development',
+    content: 'No more lead juggling! Our real estate lead CRM solution captures leads on-the-go, distributes them automatically, and lets you customize workflows. Close more deals, ditch the paperwork!',
+  },
+  {
+    image: '/lease-management.svg',
+    title: 'Lease Management Software Development',
+    content: 'Lease nightmares? Embrace smarter leasing with our cloud-based real estate software solutions and easily handle automated credit scoring, document and applicant management, lease origination, communication, and asset tracking.',
+  },
+  {
+    image: '/rental-property.svg',
+    title: 'Rental Property Management App Development',
+    content: "Our real estate app streamlines everything: manage properties, showcase listings to attract tenants, collect rent, screen tenants - all in one user-friendly platform. Free up your time, and build a thriving rental business. Let's simplify!",
+  },
+  {
+    image: '/brokerage-app.svg',
+    title: 'Real Estate Brokerage App Development',
+    content: "Supercharge your brokerage! Our custom software development for real estate industry empowers agents to manage teams, track deals, delight clients view listings, make reviews, and secure payments. Win-win for everyone!",
+  },
+  {
+    image: '/crm-software.svg',
+    title: 'Custom Real Estate CRM/ERP Software',
+    content: "Cutthroat market competition? Streamline your real estate business with custom CRM/ERP to boost efficiency and profits. Focus on growth, we'll handle the tech — from concept to industry leader. Leverage CRM & ERP to win!",
+  },
+  {
+    image: '/security-management.svg',
+    title: 'Real Estate Security Management Systems',
+    content: "Full security, zero hassle. Our real estate systems combine 24/7 surveillance, access controls & key management for a digital moat. We prioritize constant improvement, so your property stays protected with the latest tech.",
+  },
+];
+
 export {
   dedicationWork,
   homeTiles,
@@ -6736,5 +6814,6 @@ export {
   properyBusinessData2,
   RealEstateITSolutionsData,
   eventsImageGroups,
-  eventsMobileImgs
+  eventsMobileImgs,
+  realEstateSliderData
 }

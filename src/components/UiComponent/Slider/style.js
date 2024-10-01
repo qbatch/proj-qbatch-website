@@ -492,6 +492,23 @@ p.content {
       }
     }
   }
+  &.realestate-slider-wrapper {
+   .upper-heading {
+    text-align: center;
+    p {
+      margin-bottom: 72px;
+      max-width: 880px;
+    }
+   }
+   .slider-data{
+    .title{
+      max-width: 445px;
+    }
+    .content {
+      max-width: 450px;
+    }
+  }
+  }
 `
 
 export default SliderWrapper;

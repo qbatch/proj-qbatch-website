@@ -1,13 +1,15 @@
 import React, { lazy } from 'react';
 
 import Layout from '../../components/Layout/layout';
-import { realEstateIndustryData, properyBusinessData1, properyBusinessData2 } from '../../constants';
+import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData } from '../../constants';
 
 const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
 const RealEstateIndustry = lazy(() => import('../../components/PagesComponent/EdTechPotential'));
 const RealEstateBusiness = lazy(() => import('../../components/PagesComponent/RealEstateBusiness'));
 const PropertyBusiness = lazy(() => import('../../components/PagesComponent/InstitutionsBenefiting'));
 const RealEstateITSolutions = lazy(() => import('../../components/PagesComponent/RealEstateITSolutions'));
+const Slider = lazy(() => import('../../components/UiComponent/Slider'));
+const ScaredToInvest = lazy(() => import('../../components/PagesComponent/FeelingLikeYouAreInItAlone'));
 
 const RealEstate = () => {
   return (
@@ -33,7 +35,7 @@ const RealEstate = () => {
         data={realEstateIndustryData}
       />
       <RealEstateBusiness />
-      <PropertyBusiness 
+      <PropertyBusiness
         heading='Who We Help in the Property Business'
         desc="The real estate industry thrives on innovation, and custom software solutions can be a game-changer for various players. Here's a breakdown of who do we assist:"
         data1={properyBusinessData1}
@@ -42,6 +44,21 @@ const RealEstate = () => {
         className='property-business'
       />
       <RealEstateITSolutions />
+      <Slider
+        data={realEstateSliderData}
+        heading="Real Estate Software Development Services We Provide"
+        paragraph="We specialize in developing bespoke software solutions for real estate businesses, enhancing customer retention, streamlining property management, improving service quality, and boosting employee productivity."
+        width="300px"
+        height="200px"
+        className="realestate-slider-wrapper"
+        dividerClass="real-estate-divider"
+        maxWidth="100%"
+      />
+      <ScaredToInvest
+        heading="Scared to invest? Start small, Give us a pilot project"
+        desc="Let's start with a small-scale project, risk-free, and see if we suit your custom real estate software vision."
+        btnText='Book Discovery Call'
+      />
     </Layout>
   )
 }
