@@ -37,8 +37,9 @@ const PreviousEventsWrapper = styled.div`
       flex-direction: column;
       justify-content: flex-end;
       padding: 24px;
-      h3 {
+      .text-h3 {
         color: ${({ theme }) => theme.colors.whiteColor};
+        font-weight: ${({ theme }) => theme.fontWeight.semiBold};
         margin-bottom: 24px;
       }
       .event-details {
