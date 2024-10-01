@@ -6574,6 +6574,30 @@ const RealEstateITSolutionsData = [
     list: ["Tenant management", "Maintenance scheduling", "Rent collection", "Financial tracking"]
   },
 ]
+const eventsImageGroups = [
+  [
+    { id: 1, src: '/event-img-1.png', alt: 'Image1', title: 'White Label Expo 2024', country: 'London, UK', date: '2024', flag: '/Uk.svg' },
+    { id: 2, src: '/event-img-3.png', alt: 'Image2', title: 'Japan IT Week 2023', country: 'Tokyo, Japan', date: 'Feb 2023', flag: '/japan-flag.svg' },
+    { id: 3, src: '/event-img-4.png', alt: 'Image3', title: 'Prosper Show 2024', country: 'Las Vegas, USA', date: '2024', flag: '/Usa.svg' },
+    { id: 4, src: '/event-img-2.png', alt: 'Image4', title: 'Prosper Show 2024', country: 'Las Vegas, USA', date: '2024', flag: '/Usa.svg' },
+    { id: 5, src: '/event-img-1.png', alt: 'Image5', title: 'Prosper Show 2024', country: 'Las Vegas, USA', date: '2024', flag: '/Usa.svg' },
+    { id: 6, src: '/event-img-5.png', alt: 'Image6', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg' },
+  ],
+  [
+    { id: 1, src: '/event-img-6.png', alt: 'Image1', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
+    { id: 2, src: '/event-img-8.png', alt: 'Image2', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
+    { id: 3, src: '/event-img-7.png', alt: 'Image3', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg'},
+    { id: 4, src: '/event-img-9.png', alt: 'Image4', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg' },
+    { id: 5, src: '/event-img-1.png', alt: 'Image5', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
+    { id: 6, src: '/event-img-10.png', alt: 'Image6', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg'  },
+  ],
+];
+
+const eventsMobileImgs = [
+  { id: 1, imageUrl: "/mobile-event-1.png" },
+  { id: 2, imageUrl: "/mobile-event-2.png" },
+  { id: 3, imageUrl: "/mobile-event-3.png" },
+];
 
 export {
   dedicationWork,
@@ -6710,5 +6734,7 @@ export {
   realEstateIndustryData,
   properyBusinessData1,
   properyBusinessData2,
-  RealEstateITSolutionsData
+  RealEstateITSolutionsData,
+  eventsImageGroups,
+  eventsMobileImgs
 }
