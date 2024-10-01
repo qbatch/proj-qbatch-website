@@ -6140,22 +6140,22 @@ const recapEventsData = [
     img: '/alibaba-cocreate.png',
     title: 'Alibaba Co-Create 2023  ',
     caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
-    date: '02/28/2023',
-    location: 'Royal Victoria Dock, London'
+    date: '09/07/2023',
+    location: 'Las Vegas, USA'
   },
   {
     img: '/amazon-accelerate.png',
     title: 'Amazon Accelerate 2023',
     caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
-    date: '02/28/2023',
-    location: 'Royal Victoria Dock, London'
+    date: '09/13/2023',
+    location: 'Seattle, USA'
   },
   {
     img: '/japan-week.png',
     title: 'Japan IT Week 2023',
     caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
-    date: '02/28/2023',
-    location: 'Royal Victoria Dock, London'
+    date: '04/05/2023',
+    location: 'Tokyo, Japan'
   },
 ];
 const MattersQbatchCardsData = [
