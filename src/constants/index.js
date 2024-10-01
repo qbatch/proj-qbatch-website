@@ -6319,6 +6319,33 @@ const ImagineRetailExperienceData = [
     text: "Voice shopping is here to stay. We'll ensure your customers can seamlessly purchase and get unique recommendations with just their voice."
   },
 ]
+const ImagineTravelAppData = [
+  {
+    img: '/language-1.svg',
+    heading: 'Language barriers got them tongue-tied? ',
+    text: "Our apps translate the world, so your guests can focus on exploring it."
+  },
+  {
+    img: '/community-1.svg',
+    heading: 'Overwhelmed by endless travel options?',
+    text: "We create personalized recommendations and itineraries for your guests."
+  },
+  {
+    img: '/swap-1.svg',
+    heading: 'FOMO (Fear Of Missing Out) got you down?',
+    text: "Let’s offer exclusive deals to keep your travel enthusiasts engaged."
+  },
+  {
+    img: '/mobile-block.svg',
+    heading: 'Guests won’t engage with your app anymore?',
+    text: "We build unique app experiences that spark joy, not overwhelm."
+  },
+  {
+    img: '/trap-1.svg',
+    heading: 'Tired of the same tourist traps? ',
+    text: "Let’s add engines that unlock local secrets and exclusive deals for unforgettable adventures."
+  },
+]
 const InnovativeRetailSolutionsData = [
   {
     img: '/headless-commerce.svg',
@@ -6513,5 +6540,6 @@ export {
   InnovativeRetailSolutionsData,
   ExploreOurIndustrySpecificRetailPotentialData,
   SimplifyYourRetailData,
-  RetailSoftwareDevelopmentFaq
+  RetailSoftwareDevelopmentFaq,
+  ImagineTravelAppData
 }

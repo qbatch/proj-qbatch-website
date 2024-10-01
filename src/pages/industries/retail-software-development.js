@@ -1,5 +1,7 @@
 import React, { lazy } from 'react'
 import Layout from '../../components/Layout/layout'
+import { retailData, RetailSliderData, RetailSoftwareDevelopmentFaq, SimplifyYourRetailData, weWorkStoriesData, ImagineRetailExperienceData } from '../../constants';
+
 const CtoBanner = lazy(() => import('../../components/PagesComponent/PageBanner'));
 const RetailersFaceTheChallenge = lazy(() => import('../../components/PagesComponent/RetailersFaceTheChallenge'));
 const WhatDifferenceQbatchMaking = lazy(() => import('../../components/PagesComponent/WhatDifferenceQbatchMaking'));
@@ -20,7 +22,6 @@ const StartProject = lazy(() => import('../../components/PagesComponent/StartPro
 
 const StartYourHealthTech = lazy(() => import('../../components/PagesComponent/StartYourHealthTech'));
 const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
-import { retailData, RetailSliderData, RetailSoftwareDevelopmentFaq, SimplifyYourRetailData, weWorkStoriesData } from '../../constants'
 
 
 
@@ -60,7 +61,7 @@ const RetailSoftwareDevelopment = () => {
         dividerClass="custom-divider"
         maxWidth="100%"
       />
-      <ImagineRetailExperience />
+      <ImagineRetailExperience text ImagineRetailExperienceData={ImagineRetailExperienceData} />
       <InnovativeRetailSolutions />
       <LetsReimagineRetailTogether />
       <ExploreOurIndustrySpecificRetailPotential />
