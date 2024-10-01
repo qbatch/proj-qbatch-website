@@ -5693,6 +5693,69 @@ const EdTechPotentialData = [
   },
 ];
 
+const realEstateIndustryData = [
+  {
+    image: '/virtual-property.svg',
+    title: 'Virtual property tours and inspections',
+    disc: 'Planning to buy a property in a different province or state? Our VR proptech offers thorough property visits remotely, reducing the need for in-person interactions.'
+  },
+  {
+    image: '/automate-paperwork.svg',
+    title: 'Automate paperwork and business processes',
+    disc: 'Free your agents to focus on what matters. Automate tedious tasks like paperwork and listings, boosting efficiency and reducing errors.  (61% of agencies already automate!)'
+  },
+  {
+    image: '/easy-communication.svg',
+    title: 'Easy communication between tenants and landlords',
+    disc: 'Ensure clear tenant communication and timely responses to maintenance requests, and rent inquiries with our rental property management solutions.'
+  },
+  {
+    image: '/cost-reduction.svg',
+    title: 'Cost reduction on office maintenance',
+    disc: 'Simplify tracking repairs, leases, and tenant information, streamlining contractor work orders, reducing high operational costs, and boosting profitability.'
+  },
+  {
+    image: '/vacation-rental.svg',
+    title: '24/7 remote control of property for vacation rentals',
+    disc: 'Manage vacation rentals remotely anytime with our 24/7 property monitoring and control technology. Ensure security and guest convenience for peace of mind.'
+  },
+  {
+    image: '/digital-contracting.svg',
+    title: 'Digital contracting and secure payment transactions',
+    disc: 'Streamline contracts & payments with our digital real estate IT solutions. Eliminate paperwork delays and errors, ensuring efficient and secure transactions.'
+  },
+  {
+    image: '/boosted-digital.svg',
+    title: 'Boosted digital engagement with customers',
+    disc: 'Maintain winning customer engagement in a competitive market with our real estate CRM software solutions to win more leads and clients.'
+  },
+  {
+    image: '/help-homebuyer.svg',
+    title: 'Help homebuyers beat the competition',
+    disc: "Modern buyers are price-conscious. Our real estate data analytics solutions inform you on pricing to meet buyers' expectations."
+  },
+  {
+    image: '/well-targeted.svg',
+    title: 'Well-targeted AI-driven marketing solutions',
+    disc: "Target smarter, market better. Our AI solutions for real estate agents identify the perfect buyers and optimize campaigns for maximum impact."
+  },
+  {
+    image: '/declutter-data.svg',
+    title: 'Declutter data collection and storage',
+    disc: "We leverage Big Data to simplify data. Our real estate software developers streamline collection and storage procedures ensuring quick access to crucial data."
+  },
+  {
+    image: '/favorable-mortgage.svg',
+    title: 'Favorable mortgage conditions',
+    disc: "Mortgage calculators and advanced analysis tools help buyers find the best loan option confidently."
+  },
+  {
+    image: '/crowded-market.svg',
+    title: 'Stand out in a crowded market',
+    disc: "Let’s harness data and predictive analytics, giving your real estate enterprises a competitive edge with our commercial real estate software development services."
+  },
+];
+
 const HealthcareAppDevelopmentCards = [
   {
     imgSrc: '/patient.svg',
@@ -5785,6 +5848,57 @@ const listItem2 = [
   {
     text: 'Wellness and Fitness Industries'
   }
+];
+
+const properyBusinessData1 = [
+  {
+    text: 'Real Estate Startups'
+  },
+  {
+    text: 'Construction Companies'
+  },
+  {
+    text: 'Technology Disruptors'
+  },
+  {
+    text: 'Commercial and Residential Real Estate'
+  },
+  {
+    text: 'Realtors, Property Managers, Investors'
+  },
+  {
+    text: 'Real Estate Brokerage Firms'
+  },
+  {
+    text: 'Property Management Companies'
+  },
+  {
+    text: 'PropTech Product Companies and Real Estate Finance Companies'
+  },
+];
+
+const properyBusinessData2 = [
+  {
+    text: 'Real Estate Developers'
+  },
+  {
+    text: 'Homeowners Associations (HOAs)'
+  },
+  {
+    text: 'Appraisal and Valuation Companies'
+  },
+  {
+    text: 'Investment Firms and REITs (Real Estate Investment Trusts)'
+  },
+  {
+    text: 'Construction Companies'
+  },
+  {
+    text: 'Real Estate Marketing Agencies'
+  },
+  {
+    text: 'Government Housing and Urban Planning Departments'
+  },
 ];
 
 const HumanizingHealthcareSliderData = [
@@ -6411,6 +6525,54 @@ const ExploreOurIndustrySpecificRetailPotentialData = [
     heading: 'Commercial Centers',
     text: "Manage tenant operations and enhance customer experiences"
   },
+];
+
+const RealEstateITSolutionsData = [
+  {
+    img: '/residential-property.svg',
+    heading: 'Residential Property Management',
+    list: ["Simplified leasing and maintenance", "Secure role-based access", "Reservation management", "Payment and accounting integration"]
+  },
+  {
+    img: '/commercial-property.svg',
+    heading: 'Commercial Property Management',
+    list: ["Lead generation", "Facility and maintenance managemen", "Lease management", "Utility billing", "Real-time communication"]
+  },
+  {
+    img: '/tenant-onboarding.svg',
+    heading: 'Tenant Onboarding and Management',
+    list: ["Owner and resident hubs", "Communication tools", "Resident databases", "Payment integration", "Applicant screening"]
+  },
+  {
+    img: '/listing-services.svg',
+    heading: 'Multiple Listing Services (MLS)',
+    list: ["Centralized listing databases", "Property listing platforms", "Data syndication", "Advanced search and filtering"]
+  },
+  {
+    img: '/data-exchange.svg',
+    heading: 'Internet Data Exchange (IDX)',
+    list: ["Website integration", "Custom property display", "Lead capture features"]
+  },
+  {
+    img: '/property-management.svg',
+    heading: 'Property Management Software (PMS)',
+    list: ["Tenant management", "Maintenance scheduling", "Rent collection", "Financial tracking"]
+  },
+  {
+    img: '/valuation-software.svg',
+    heading: 'Real Estate Valuation Software',
+    list: ["Automated valuation models (AVM)", "Market analysis tools", "Public records integration"]
+  },
+  {
+    img: '/accounting-software.svg',
+    heading: 'Real Estate Accounting Software',
+    list: ["Financial management", "Budgeting and forecasting", "Tax management"]
+  },
+  {
+    img: '/investment-software.svg',
+    heading: 'Investment Software',
+    list: ["Tenant management", "Maintenance scheduling", "Rent collection", "Financial tracking"]
+  },
 ]
 
 export {
@@ -6544,5 +6706,9 @@ export {
   InnovativeRetailSolutionsData,
   ExploreOurIndustrySpecificRetailPotentialData,
   SimplifyYourRetailData,
-  RetailSoftwareDevelopmentFaq
+  RetailSoftwareDevelopmentFaq,
+  realEstateIndustryData,
+  properyBusinessData1,
+  properyBusinessData2,
+  RealEstateITSolutionsData
 }
