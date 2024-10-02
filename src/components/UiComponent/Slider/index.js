@@ -1,20 +1,23 @@
-import React from 'react'
-import Slider from 'react-slick'
-import Container from '../Container'
-import Divider from '../Divider'
-import SliderWrapper from './style'
-import Button from "../../UiComponent/Button"
-import { navigate } from 'gatsby'
+import React from 'react';
+import Slider from 'react-slick';
+import { navigate } from 'gatsby';
+
+import Container from '../Container';
+import Divider from '../Divider';
+import Button from "../../UiComponent/Button";
+
+import SliderWrapper from './style';
+
 const Index = (props) => {
   const { data, align, heading, paragraph, subParagraph, width, height, seconedHeading, maxWidth, className, btnClass, btnText,dividerClass } = props
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 9000,
+    autoplaySpeed: 8000,
   }
   
   return (

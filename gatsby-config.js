@@ -382,6 +382,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'real-estate',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'extension-development',
       queryParams: {
         populate: {

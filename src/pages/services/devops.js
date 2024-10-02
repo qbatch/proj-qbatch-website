@@ -14,7 +14,7 @@ import FaqSection from "../../components/PagesComponent/Faq";
 import StartProject from "../../components/PagesComponent/StartProject";
 import AwsPartner from '../../components/PagesComponent/AwsPartner'
 
-import { devOpsFaq, devOpsSliderData, whyDevOpsData } from "../../constants";
+import { devOpsFaq, devOpsSliderData, whyDevOpsData, servicesData } from "../../constants";
 import DevOpsSupremacy from '../../components/PagesComponent/DevOpsSupremacy';
 import EmbraceEnterprise from '../../components/PagesComponent/EmbraceEnterprise';
 import WhyDevOps from '../../components/PagesComponent/ChoiceYourEnterprise'
@@ -56,7 +56,12 @@ const DevOps = () => {
         heading="With DevOps Engineers, You Can"
         listData={whyDevOpsData}
       />
-      <DevOpsService/>
+      <DevOpsService 
+        heading='Explore Qbatch’s DevOps Services' 
+        subHeading='Accelerate Business Agility and Automation Through Continuous Improvements'
+        paragraph='Qbatch’s DevOps experts offer a hard-earned domain experience to help your idea move freely and continuously from development to deployment stages featuring task automation, environment standardization, and performance tracking.'
+        data={servicesData}
+      />
       <InnerBanner
        heading="Do you know 83% of developers release code faster with DevOps?"
        headingMaxWidth="930px"

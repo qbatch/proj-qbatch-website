@@ -1,32 +1,34 @@
-import React from 'react'
-import { InstitutionsBenefitingWrapper } from './style'
-import Container from '../../UiComponent/Container'
-import { listItem1, listItem2 } from '../../../constants'
+import React from 'react';
 
-const InstitutionsBenefiting = () => {
+import Container from '../../UiComponent/Container';
+
+import { InstitutionsBenefitingWrapper } from './style';
+
+
+const InstitutionsBenefiting = ({ heading, desc, data1, data2, imgSrc, className }) => {
 
   return (
-    <InstitutionsBenefitingWrapper>
+    <InstitutionsBenefitingWrapper className={className}>
       <Container>
-    <h2>Institutions Benefiting from Custom Healthcare Software Development</h2>
-    <p>Custom healthcare software development services benefit a wide range of institutions within the healthcare industry by addressing their unique challenges and optimizing workflows. These institutions include:</p>
-    <div className='section'>
-      <div className='item'>
-        <ul className='child'>
-        {listItem1.map((item, index) => (
-          <li key={index}>{item.text}</li>
-        ))}
-        </ul>
-        <ul className='child'>
-        {listItem2.map((item, index) => (
-          <li key={index}>{item.text}</li>
-        ))}
-        </ul>
-      </div>
-      <div className='item item-2'>
-        <img src="/institutions-benefiting.svg" alt="institutions-benefiting" />
-      </div>
-    </div>
+        <h2>{heading}</h2>
+        <p>{desc}</p>
+        <div className='section'>
+          <div className='item'>
+            <ul className='child'>
+              {data1.map((item, index) => (
+                <li key={index}>{item.text}</li>
+              ))}
+            </ul>
+            <ul className='child'>
+              {data2.map((item, index) => (
+                <li key={index}>{item.text}</li>
+              ))}
+            </ul>
+          </div>
+          <div className='item item-2'>
+            <img src={imgSrc} alt="institutions-benefiting" />
+          </div>
+        </div>
       </Container>
     </InstitutionsBenefitingWrapper>
   )

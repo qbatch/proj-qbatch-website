@@ -4,16 +4,16 @@ import { FeelingLikeYouAreInItAloneWrapper } from './style'
 import Container from '../../UiComponent/Container'
 import Button from '../../UiComponent/Button'
 
-const FeelingLikeYouAreInItAlone = () => {
+const FeelingLikeYouAreInItAlone = ({heading, desc, btnText}) => {
   return (
     <FeelingLikeYouAreInItAloneWrapper>
       <Container>
       <div className='feeling-section-wrapper'>
         <img src="/feeling-like.svg" title='feeling-like' alt="feeling-like" />
         <div className='content'>
-          <h2>Feeling like you're in it alone?</h2>
-          <p>We're your retail software partner, here to simplify your workflow >>> </p>
-          <Button onClick={() => navigate('/contact')} text="Let’s Get Started" />
+          <h2>{heading}</h2>
+          <p>{desc}</p>
+          <Button onClick={() => navigate('/contact')} text={btnText} />
       </div>
       </div>
       </Container>

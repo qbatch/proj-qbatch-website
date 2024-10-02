@@ -5693,6 +5693,69 @@ const EdTechPotentialData = [
   },
 ];
 
+const realEstateIndustryData = [
+  {
+    image: '/virtual-property.svg',
+    title: 'Virtual property tours and inspections',
+    disc: 'Planning to buy a property in a different province or state? Our VR proptech offers thorough property visits remotely, reducing the need for in-person interactions.'
+  },
+  {
+    image: '/automate-paperwork.svg',
+    title: 'Automate paperwork and business processes',
+    disc: 'Free your agents to focus on what matters. Automate tedious tasks like paperwork and listings, boosting efficiency and reducing errors.  (61% of agencies already automate!)'
+  },
+  {
+    image: '/easy-communication.svg',
+    title: 'Easy communication between tenants and landlords',
+    disc: 'Ensure clear tenant communication and timely responses to maintenance requests, and rent inquiries with our rental property management solutions.'
+  },
+  {
+    image: '/cost-reduction.svg',
+    title: 'Cost reduction on office maintenance',
+    disc: 'Simplify tracking repairs, leases, and tenant information, streamlining contractor work orders, reducing high operational costs, and boosting profitability.'
+  },
+  {
+    image: '/vacation-rental.svg',
+    title: '24/7 remote control of property for vacation rentals',
+    disc: 'Manage vacation rentals remotely anytime with our 24/7 property monitoring and control technology. Ensure security and guest convenience for peace of mind.'
+  },
+  {
+    image: '/digital-contracting.svg',
+    title: 'Digital contracting and secure payment transactions',
+    disc: 'Streamline contracts & payments with our digital real estate IT solutions. Eliminate paperwork delays and errors, ensuring efficient and secure transactions.'
+  },
+  {
+    image: '/boosted-digital.svg',
+    title: 'Boosted digital engagement with customers',
+    disc: 'Maintain winning customer engagement in a competitive market with our real estate CRM software solutions to win more leads and clients.'
+  },
+  {
+    image: '/help-homebuyer.svg',
+    title: 'Help homebuyers beat the competition',
+    disc: "Modern buyers are price-conscious. Our real estate data analytics solutions inform you on pricing to meet buyers' expectations."
+  },
+  {
+    image: '/well-targeted.svg',
+    title: 'Well-targeted AI-driven marketing solutions',
+    disc: "Target smarter, market better. Our AI solutions for real estate agents identify the perfect buyers and optimize campaigns for maximum impact."
+  },
+  {
+    image: '/declutter-data.svg',
+    title: 'Declutter data collection and storage',
+    disc: "We leverage Big Data to simplify data. Our real estate software developers streamline collection and storage procedures ensuring quick access to crucial data."
+  },
+  {
+    image: '/favorable-mortgage.svg',
+    title: 'Favorable mortgage conditions',
+    disc: "Mortgage calculators and advanced analysis tools help buyers find the best loan option confidently."
+  },
+  {
+    image: '/crowded-market.svg',
+    title: 'Stand out in a crowded market',
+    disc: "Let’s harness data and predictive analytics, giving your real estate enterprises a competitive edge with our commercial real estate software development services."
+  },
+];
+
 const HealthcareAppDevelopmentCards = [
   {
     imgSrc: '/patient.svg',
@@ -5785,6 +5848,57 @@ const listItem2 = [
   {
     text: 'Wellness and Fitness Industries'
   }
+];
+
+const properyBusinessData1 = [
+  {
+    text: 'Real Estate Startups'
+  },
+  {
+    text: 'Construction Companies'
+  },
+  {
+    text: 'Technology Disruptors'
+  },
+  {
+    text: 'Commercial and Residential Real Estate'
+  },
+  {
+    text: 'Realtors, Property Managers, Investors'
+  },
+  {
+    text: 'Real Estate Brokerage Firms'
+  },
+  {
+    text: 'Property Management Companies'
+  },
+  {
+    text: 'PropTech Product Companies and Real Estate Finance Companies'
+  },
+];
+
+const properyBusinessData2 = [
+  {
+    text: 'Real Estate Developers'
+  },
+  {
+    text: 'Homeowners Associations (HOAs)'
+  },
+  {
+    text: 'Appraisal and Valuation Companies'
+  },
+  {
+    text: 'Investment Firms and REITs (Real Estate Investment Trusts)'
+  },
+  {
+    text: 'Construction Companies'
+  },
+  {
+    text: 'Real Estate Marketing Agencies'
+  },
+  {
+    text: 'Government Housing and Urban Planning Departments'
+  },
 ];
 
 const HumanizingHealthcareSliderData = [
@@ -6413,6 +6527,53 @@ const ExploreOurIndustrySpecificRetailPotentialData = [
   },
 ];
 
+const RealEstateITSolutionsData = [
+  {
+    img: '/residential-property.svg',
+    heading: 'Residential Property Management',
+    list: ["Simplified leasing and maintenance", "Secure role-based access", "Reservation management", "Payment and accounting integration"]
+  },
+  {
+    img: '/commercial-property.svg',
+    heading: 'Commercial Property Management',
+    list: ["Lead generation", "Facility and maintenance managemen", "Lease management", "Utility billing", "Real-time communication"]
+  },
+  {
+    img: '/tenant-onboarding.svg',
+    heading: 'Tenant Onboarding and Management',
+    list: ["Owner and resident hubs", "Communication tools", "Resident databases", "Payment integration", "Applicant screening"]
+  },
+  {
+    img: '/listing-services.svg',
+    heading: 'Multiple Listing Services (MLS)',
+    list: ["Centralized listing databases", "Property listing platforms", "Data syndication", "Advanced search and filtering"]
+  },
+  {
+    img: '/data-exchange.svg',
+    heading: 'Internet Data Exchange (IDX)',
+    list: ["Website integration", "Custom property display", "Lead capture features"]
+  },
+  {
+    img: '/property-management.svg',
+    heading: 'Property Management Software (PMS)',
+    list: ["Tenant management", "Maintenance scheduling", "Rent collection", "Financial tracking"]
+  },
+  {
+    img: '/valuation-software.svg',
+    heading: 'Real Estate Valuation Software',
+    list: ["Automated valuation models (AVM)", "Market analysis tools", "Public records integration"]
+  },
+  {
+    img: '/accounting-software.svg',
+    heading: 'Real Estate Accounting Software',
+    list: ["Financial management", "Budgeting and forecasting", "Tax management"]
+  },
+  {
+    img: '/investment-software.svg',
+    heading: 'Investment Software',
+    list: ["Tenant management", "Maintenance scheduling", "Rent collection", "Financial tracking"]
+  },
+]
 const eventsImageGroups = [
   [
     { id: 1, src: '/event-img-1.png', alt: 'Image1', title: 'White Label Expo 2024', country: 'London, UK', date: '2024', flag: '/Uk.svg' },
@@ -6437,6 +6598,346 @@ const eventsMobileImgs = [
   { id: 2, imageUrl: "/mobile-event-2.png" },
   { id: 3, imageUrl: "/mobile-event-3.png" },
 ];
+
+const realEstateSliderData = [
+  {
+    image: '/re-management.svg',
+    title: 'Real Estate Management Software Development',
+    content: 'Looking to develop a high-end real estate management management app for commercial and residential properties? Creates intuitive proptech apps to centralize tenant information, track leads and sales, and store documents securely.',
+  },
+  {
+    image: '/re-location-based.svg',
+    title: 'Location-based Real Estate Service',
+    content: 'Enable users to track device locations, view property listings and nearby amenities, and watch video tours of apartments directly on the map, enhancing their search experience and satisfaction while helping them make informed decisions.',
+  },
+  {
+    image: '/re-mobile-app.svg',
+    title: 'Real Estate Mobile App Development',
+    content: 'Streamline property management, cross-communication, visit scheduling, and deal closures with our mobile app development for real estate agents, buyers, brokers, and investors.',
+  },
+  {
+    image: '/re-marketplace.svg',
+    title: 'Real Estate Marketplace Development',
+    content: 'Build a real estate hub for realtors, brokers, and property managers with our on-demand real estate app development featuring lease management, property sales, and rentals into one seamless platform, ultimately optimizing deal success.',
+  },
+  {
+    image: '/re-virtual-tour.svg',
+    title: 'Real Estate Virtual Tour Software Development',
+    content: "Claim the future of real estate with our powerful virtual tour app solutions. As a leading virtual tour software developer, we specialize in creating custom VR solutions. Let's turn your imagination into reality.",
+  },
+  {
+    image: '/re-investment.svg',
+    title: 'Real Estate Investment Software Development',
+    content: 'Right investment decisions start with the right real estate development tools. From scouting opportunities to portfolio management, we ensure a lucrative, secure, and efficient investment process tailor-made for your rental properties.',
+  },
+  {
+    image: '/property-auction.svg',
+    title: 'Property Auction App Development',
+    content: "Our real estate auction app connects sellers with motivated buyers. List properties bid competitively, and experience the thrill of online auctions. Sell fast or find your dream home – it's all just a click away!",
+  },
+  {
+    image: '/home-rentals.svg',
+    title: 'Home Rentals App Development',
+    content: 'Let’s empower landlords and tenants with our home rental app solution! Manage properties with neat listings, and find dream homes, all with secure payments and hassle-free booking — ensuring a stress-free rental experience for all.',
+  },
+  {
+    image: '/property-booking.svg',
+    title: 'Property Booking App Development',
+    content: 'Renting just got easier! Our real estate app development company lets tenants find perfect homes & book with ease. Realtors can manage listings, view reservations and get secure payments.',
+  },
+  {
+    image: '/lead-management.svg',
+    title: 'Real Estate Lead Management Software Development',
+    content: 'No more lead juggling! Our real estate lead CRM solution captures leads on-the-go, distributes them automatically, and lets you customize workflows. Close more deals, ditch the paperwork!',
+  },
+  {
+    image: '/lease-management.svg',
+    title: 'Lease Management Software Development',
+    content: 'Lease nightmares? Embrace smarter leasing with our cloud-based real estate software solutions and easily handle automated credit scoring, document and applicant management, lease origination, communication, and asset tracking.',
+  },
+  {
+    image: '/rental-property.svg',
+    title: 'Rental Property Management App Development',
+    content: "Our real estate app streamlines everything: manage properties, showcase listings to attract tenants, collect rent, screen tenants - all in one user-friendly platform. Free up your time, and build a thriving rental business. Let's simplify!",
+  },
+  {
+    image: '/brokerage-app.svg',
+    title: 'Real Estate Brokerage App Development',
+    content: "Supercharge your brokerage! Our custom software development for real estate industry empowers agents to manage teams, track deals, delight clients view listings, make reviews, and secure payments. Win-win for everyone!",
+  },
+  {
+    image: '/crm-software.svg',
+    title: 'Custom Real Estate CRM/ERP Software',
+    content: "Cutthroat market competition? Streamline your real estate business with custom CRM/ERP to boost efficiency and profits. Focus on growth, we'll handle the tech — from concept to industry leader. Leverage CRM & ERP to win!",
+  },
+  {
+    image: '/security-management.svg',
+    title: 'Real Estate Security Management Systems',
+    content: "Full security, zero hassle. Our real estate systems combine 24/7 surveillance, access controls & key management for a digital moat. We prioritize constant improvement, so your property stays protected with the latest tech.",
+  },
+];
+
+const onDemandFeaturesData = [
+  {
+    img: '/custom-listings.svg',
+    data: 'Custom Listings and MLS'
+  },
+  {
+    img: '/property-search.svg',
+    data: 'Interactive Property Search'
+  },
+  {
+    img: '/map-integration.svg',
+    data: 'Property Map Integration'
+  },
+  {
+    img: '/valuation-engines.svg',
+    data: 'Valuation Engines'
+  },
+  {
+    img: '/tax-calculator.svg',
+    data: 'Mortgage and Tax Calculators'
+  },
+  {
+    img: '/virtual-tour.svg',
+    data: 'Virtual 3D Tours'
+  },
+  {
+    img: '/task-management.svg',
+    data: 'Task & Project Management'
+  },
+  {
+    img: '/tenant-screening.svg',
+    data: 'Tenant Screening and Onboarding'
+  },
+  {
+    img: '/online-booking.svg',
+    data: 'Online Booking'
+  },
+  {
+    img: '/comparison-tool.svg',
+    data: 'Comparison Tool'
+  },
+  {
+    img: '/documents-management.svg',
+    data: 'Documents Management'
+  },
+  {
+    img: '/analytics-reporting.svg',
+    data: 'Analytics and Reporting'
+  },
+];
+
+const servicesData = [
+  {
+    img: "/ci-cd-services.svg",
+    title: 'CI/CD Services',
+    description: 'Keep track of test cases, code changes, instant feedback loops, and release cycles bridging the Dev and Ops gap via CI/CD services. This ensures constant software quality, end-to-end security, reduced costs, and of course continuous integration and delivery of new changes as needed.',
+  },
+  {
+    img: "/devops-and-cloud-computing.svg",
+    title: 'DevOps and Cloud Computing',
+    description: 'Hyper-scale public clouds like AWS Cloud, Azure, and Google Cloud Platform have enabled enterprises to enjoy more reliability and stability in their DevOps adoption journeys. Our AWS DevOps consulting services offer compliance, planning, and tools for building a stable DevOps-Cloud infrastructure.',
+  },
+  {
+    img: "/devsecops-services.svg",
+    title: 'DevSecOps Services',
+    description: 'Assure grass-root level security through the ‘Security as Code’ mechanism with our senior DevOps engineers. We perform DevSecOps to determine risk tolerance throughout the continuous integration and delivery pipeline assuring clean code, better visibility, and quick insights into possible risks.',
+  },
+  {
+    img: "/devops-consulting-services.svg",
+    title: 'DevOps Consulting Services',
+    description: 'We offer discovery workshops on DevOps use case-driven services, tools, and advisory that highlight improvement areas for pipeline optimization. Our DevOps consultants perform audits and maturity assessments and offer a holistic roadmap for change enablement and coaching. ',
+  },
+  {
+    img: "/devops-automation-services.svg",
+    title: 'DevOps Automation Services',
+    description: 'Limit time outages and possible technical debts by automating the software pipeline from coding to development and production stages across APIs and environments with our DevOps services. We help you accelerate operational efficiency and business agility assuring fluent workflows and end results.  ',
+  },
+  {
+    img: "/infrastructure-as-code-services.svg",
+    title: 'Infrastructure as Code Services',
+    description: 'Automate infrastructure at scale instead of manually setting up and configuring resources by availing our IaC DevOps services. IaC increases agility and reduces human error in the software delivery pipeline, ensuring provisioning, configuration, and system management.',
+  },
+  {
+    img: "/virtualization.svg",
+    title: 'Virtualization',
+    description: 'Deal with money constraints and standardize software deployments by working in the same network environments with the self-contained virtualization approach. We as DevOps engineering services providers employ self-contained virtual containers to assure responsiveness toward business demands.',
+  },
+];
+
+const reInnovationsData = [
+  {
+    img: "/predictive-power.svg",
+    title: 'Predictive power',
+    description: 'See into the future (well, sort of) with data-driven forecasting tools. Anticipate market trends, property values, and buyer behavior to stay ahead of the curve.',
+  },
+  {
+    img: "/cloud-nine.svg",
+    title: 'Cloud nine at your fingertips',
+    description: "Access and manage your data seamlessly with secure cloud solutions. It's like having your real estate empire at your fingertips, anytime, anywhere.",
+  },
+  {
+    img: "/smart-buildings.svg",
+    title: 'Smart buildings, smarter business',
+    description: 'Use IoT to adjust lighting, thermostats, and more for peak efficiency and lower costs. Imagine, lights that read your mood & thermostats that mind-read comfort.',
+  },
+  {
+    img: "/virtually-present.svg",
+    title: 'Be virtually present',
+    description: 'Explore properties from anywhere with our immersive virtual tours, 3D models, and AR apps. Imagine browsing dream homes from a beach vacation!',
+  },
+  {
+    img: "/tireless-assistance.svg",
+    title: '24/7, tireless assistance',
+    description: 'Imagine a friendly support who answers customer inquiries and schedules viewings around the clock. Yes, it’s the AI-powered chatbots.',
+  },
+  {
+    img: "/automate-mundane.svg",
+    title: 'Automate the mundane',
+    description: 'Free up your team for more strategic tasks by automating repetitive tasks like paperwork, data entry, and scheduling. Let the robots handle the mundane!',
+  },
+  {
+    img: "/secure-embrace.svg",
+    title: "Blockchain's secure embrace",
+    description: 'Achieve secure transactions with tamper-proof digital records of ownership. Let’s say goodbye to fraud risks and hello to streamlined processes.',
+  },
+];
+
+const realEstateIntegrationData = [
+  {
+    content: [
+      {
+        img: "/rets-logo.svg",
+      },
+      {
+        img: "/idx-logo.svg",
+      },
+      {
+        img: "/ftp-logo.svg",
+      },
+    ],
+    title: 'IDX',
+  },
+  {
+    content: [
+      {
+        img: "/salesforce-logo.svg",
+      },
+      {
+        img: "/zoho-crm-logo.svg",
+      },
+      {
+        img: "/dynamics-365.svg",
+      },
+    ],
+    title: 'CRM',
+  },
+  {
+    content: [
+      {
+        img: "/google-maps.svg",
+      },
+      {
+        img: "/mapbox-logo.svg",
+      },
+    ],
+    title: 'Property Map Integration',
+  },
+  {
+    content: [
+      {
+        img: "/stripe-logo.svg",
+      },
+      {
+        img: "/paypal-logo.svg",
+      },
+      {
+        img: "/square-logo.svg",
+      },
+      {
+        img: "/braintree-logo.svg",
+      },
+    ],
+    title: 'Payment Gateways',
+  },
+  {
+    content: [
+      {
+        img: "/re-facebook-logo.svg",
+      },
+      {
+        img: "/re-twitter-logo.svg",
+      },
+      {
+        img: "/re-linkedin-logo.svg",
+      },
+    ],
+    title: 'Social Media',
+  },
+  {
+    content: [
+      {
+        img: "/google-analytics-logo.svg",
+      },
+      {
+        img: "/ableau-logo.svg",
+      },
+      {
+        img: "/power-bi-logo.svg",
+      },
+    ],
+    title: 'Analytics and Reporting',
+  },
+  {
+    content: [
+      {
+        img: "/docusign.svg",
+      },
+      {
+        img: "/adobe-sign-logo.svg",
+      },
+      {
+        img: "/google-drive-logo.svg",
+      },
+      {
+        img: "/dropbox-logo.svg",
+      },
+    ],
+    title: 'Document Management Systems',
+  },
+  {
+    content: [
+      {
+        img: "/unity-logo.svg",
+      },
+      {
+        img: "/arkit-logo.svg",
+      },
+      {
+        img: "/arcore-logo.svg",
+      },
+      {
+        img: "/webvr-logo.svg",
+      },
+    ],
+    title: 'Virtual & Augmented Reality',
+  },
+  {
+    content: [
+      {
+        img: "/aws-iot-logo.svg",
+      },
+      {
+        img: "/google-cloud-logo.svg",
+      },
+      {
+        img: "/azure-iot-hub-logo.svg",
+      },
+    ],
+    title: 'IoT Integration',
+  },
+]
 
 export {
   dedicationWork,
@@ -6570,6 +7071,15 @@ export {
   ExploreOurIndustrySpecificRetailPotentialData,
   SimplifyYourRetailData,
   RetailSoftwareDevelopmentFaq,
+  realEstateIndustryData,
+  properyBusinessData1,
+  properyBusinessData2,
+  RealEstateITSolutionsData,
   eventsImageGroups,
-  eventsMobileImgs
+  eventsMobileImgs,
+  realEstateSliderData,
+  onDemandFeaturesData,
+  servicesData,
+  reInnovationsData,
+  realEstateIntegrationData
 }

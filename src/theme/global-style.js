@@ -565,5 +565,8 @@ const GlobalStyles = createGlobalStyle`
       }
     }
   }
+  .real-estate-divider {
+    display: none;
+  }
 `
 export default GlobalStyles
