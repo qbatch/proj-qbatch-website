@@ -6677,6 +6677,268 @@ const realEstateSliderData = [
   },
 ];
 
+const onDemandFeaturesData = [
+  {
+    img: '/custom-listings.svg',
+    data: 'Custom Listings and MLS'
+  },
+  {
+    img: '/property-search.svg',
+    data: 'Interactive Property Search'
+  },
+  {
+    img: '/map-integration.svg',
+    data: 'Property Map Integration'
+  },
+  {
+    img: '/valuation-engines.svg',
+    data: 'Valuation Engines'
+  },
+  {
+    img: '/tax-calculator.svg',
+    data: 'Mortgage and Tax Calculators'
+  },
+  {
+    img: '/virtual-tour.svg',
+    data: 'Virtual 3D Tours'
+  },
+  {
+    img: '/task-management.svg',
+    data: 'Task & Project Management'
+  },
+  {
+    img: '/tenant-screening.svg',
+    data: 'Tenant Screening and Onboarding'
+  },
+  {
+    img: '/online-booking.svg',
+    data: 'Online Booking'
+  },
+  {
+    img: '/comparison-tool.svg',
+    data: 'Comparison Tool'
+  },
+  {
+    img: '/documents-management.svg',
+    data: 'Documents Management'
+  },
+  {
+    img: '/analytics-reporting.svg',
+    data: 'Analytics and Reporting'
+  },
+];
+
+const servicesData = [
+  {
+    img: "/ci-cd-services.svg",
+    title: 'CI/CD Services',
+    description: 'Keep track of test cases, code changes, instant feedback loops, and release cycles bridging the Dev and Ops gap via CI/CD services. This ensures constant software quality, end-to-end security, reduced costs, and of course continuous integration and delivery of new changes as needed.',
+  },
+  {
+    img: "/devops-and-cloud-computing.svg",
+    title: 'DevOps and Cloud Computing',
+    description: 'Hyper-scale public clouds like AWS Cloud, Azure, and Google Cloud Platform have enabled enterprises to enjoy more reliability and stability in their DevOps adoption journeys. Our AWS DevOps consulting services offer compliance, planning, and tools for building a stable DevOps-Cloud infrastructure.',
+  },
+  {
+    img: "/devsecops-services.svg",
+    title: 'DevSecOps Services',
+    description: 'Assure grass-root level security through the ‘Security as Code’ mechanism with our senior DevOps engineers. We perform DevSecOps to determine risk tolerance throughout the continuous integration and delivery pipeline assuring clean code, better visibility, and quick insights into possible risks.',
+  },
+  {
+    img: "/devops-consulting-services.svg",
+    title: 'DevOps Consulting Services',
+    description: 'We offer discovery workshops on DevOps use case-driven services, tools, and advisory that highlight improvement areas for pipeline optimization. Our DevOps consultants perform audits and maturity assessments and offer a holistic roadmap for change enablement and coaching. ',
+  },
+  {
+    img: "/devops-automation-services.svg",
+    title: 'DevOps Automation Services',
+    description: 'Limit time outages and possible technical debts by automating the software pipeline from coding to development and production stages across APIs and environments with our DevOps services. We help you accelerate operational efficiency and business agility assuring fluent workflows and end results.  ',
+  },
+  {
+    img: "/infrastructure-as-code-services.svg",
+    title: 'Infrastructure as Code Services',
+    description: 'Automate infrastructure at scale instead of manually setting up and configuring resources by availing our IaC DevOps services. IaC increases agility and reduces human error in the software delivery pipeline, ensuring provisioning, configuration, and system management.',
+  },
+  {
+    img: "/virtualization.svg",
+    title: 'Virtualization',
+    description: 'Deal with money constraints and standardize software deployments by working in the same network environments with the self-contained virtualization approach. We as DevOps engineering services providers employ self-contained virtual containers to assure responsiveness toward business demands.',
+  },
+];
+
+const reInnovationsData = [
+  {
+    img: "/predictive-power.svg",
+    title: 'Predictive power',
+    description: 'See into the future (well, sort of) with data-driven forecasting tools. Anticipate market trends, property values, and buyer behavior to stay ahead of the curve.',
+  },
+  {
+    img: "/cloud-nine.svg",
+    title: 'Cloud nine at your fingertips',
+    description: "Access and manage your data seamlessly with secure cloud solutions. It's like having your real estate empire at your fingertips, anytime, anywhere.",
+  },
+  {
+    img: "/smart-buildings.svg",
+    title: 'Smart buildings, smarter business',
+    description: 'Use IoT to adjust lighting, thermostats, and more for peak efficiency and lower costs. Imagine, lights that read your mood & thermostats that mind-read comfort.',
+  },
+  {
+    img: "/virtually-present.svg",
+    title: 'Be virtually present',
+    description: 'Explore properties from anywhere with our immersive virtual tours, 3D models, and AR apps. Imagine browsing dream homes from a beach vacation!',
+  },
+  {
+    img: "/tireless-assistance.svg",
+    title: '24/7, tireless assistance',
+    description: 'Imagine a friendly support who answers customer inquiries and schedules viewings around the clock. Yes, it’s the AI-powered chatbots.',
+  },
+  {
+    img: "/automate-mundane.svg",
+    title: 'Automate the mundane',
+    description: 'Free up your team for more strategic tasks by automating repetitive tasks like paperwork, data entry, and scheduling. Let the robots handle the mundane!',
+  },
+  {
+    img: "/secure-embrace.svg",
+    title: "Blockchain's secure embrace",
+    description: 'Achieve secure transactions with tamper-proof digital records of ownership. Let’s say goodbye to fraud risks and hello to streamlined processes.',
+  },
+];
+
+const realEstateIntegrationData = [
+  {
+    content: [
+      {
+        img: "/rets-logo.svg",
+      },
+      {
+        img: "/idx-logo.svg",
+      },
+      {
+        img: "/ftp-logo.svg",
+      },
+    ],
+    title: 'IDX',
+  },
+  {
+    content: [
+      {
+        img: "/salesforce-logo.svg",
+      },
+      {
+        img: "/zoho-crm-logo.svg",
+      },
+      {
+        img: "/dynamics-365.svg",
+      },
+    ],
+    title: 'CRM',
+  },
+  {
+    content: [
+      {
+        img: "/google-maps.svg",
+      },
+      {
+        img: "/mapbox-logo.svg",
+      },
+    ],
+    title: 'Property Map Integration',
+  },
+  {
+    content: [
+      {
+        img: "/stripe-logo.svg",
+      },
+      {
+        img: "/paypal-logo.svg",
+      },
+      {
+        img: "/square-logo.svg",
+      },
+      {
+        img: "/braintree-logo.svg",
+      },
+    ],
+    title: 'Payment Gateways',
+  },
+  {
+    content: [
+      {
+        img: "/re-facebook-logo.svg",
+      },
+      {
+        img: "/re-twitter-logo.svg",
+      },
+      {
+        img: "/re-linkedin-logo.svg",
+      },
+    ],
+    title: 'Social Media',
+  },
+  {
+    content: [
+      {
+        img: "/google-analytics-logo.svg",
+      },
+      {
+        img: "/ableau-logo.svg",
+      },
+      {
+        img: "/power-bi-logo.svg",
+      },
+    ],
+    title: 'Analytics and Reporting',
+  },
+  {
+    content: [
+      {
+        img: "/docusign.svg",
+      },
+      {
+        img: "/adobe-sign-logo.svg",
+      },
+      {
+        img: "/google-drive-logo.svg",
+      },
+      {
+        img: "/dropbox-logo.svg",
+      },
+    ],
+    title: 'Document Management Systems',
+  },
+  {
+    content: [
+      {
+        img: "/unity-logo.svg",
+      },
+      {
+        img: "/arkit-logo.svg",
+      },
+      {
+        img: "/arcore-logo.svg",
+      },
+      {
+        img: "/webvr-logo.svg",
+      },
+    ],
+    title: 'Virtual & Augmented Reality',
+  },
+  {
+    content: [
+      {
+        img: "/aws-iot-logo.svg",
+      },
+      {
+        img: "/google-cloud-logo.svg",
+      },
+      {
+        img: "/azure-iot-hub-logo.svg",
+      },
+    ],
+    title: 'IoT Integration',
+  },
+]
+
 export {
   dedicationWork,
   homeTiles,
@@ -6815,5 +7077,9 @@ export {
   RealEstateITSolutionsData,
   eventsImageGroups,
   eventsMobileImgs,
-  realEstateSliderData
+  realEstateSliderData,
+  onDemandFeaturesData,
+  servicesData,
+  reInnovationsData,
+  realEstateIntegrationData
 }

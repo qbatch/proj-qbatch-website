@@ -656,6 +656,13 @@ export const Queries = () => {
           }
         }
       }
+      allStrapiRealEstate {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiCategory {
         nodes {
           categoryName

@@ -1,7 +1,9 @@
 import React, { lazy } from 'react';
 
 import Layout from '../../components/Layout/layout';
-import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData } from '../../constants';
+import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData, reInnovationsData, FrequentlyAskedQuestionsHealthCareFaq } from '../../constants';
+import { Queries } from '../../constants/queries';
+import SEO from '../../components/Seo';
 
 const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
 const RealEstateIndustry = lazy(() => import('../../components/PagesComponent/EdTechPotential'));
@@ -10,6 +12,14 @@ const PropertyBusiness = lazy(() => import('../../components/PagesComponent/Inst
 const RealEstateITSolutions = lazy(() => import('../../components/PagesComponent/RealEstateITSolutions'));
 const Slider = lazy(() => import('../../components/UiComponent/Slider'));
 const ScaredToInvest = lazy(() => import('../../components/PagesComponent/FeelingLikeYouAreInItAlone'));
+const OnDemandFeatures = lazy(() => import('../../components/PagesComponent/OnDemandFeatures'));
+const NextLevelInnovations = lazy(() => import('../../components/PagesComponent/DevOpsService'));
+const RealEstateIntegration = lazy(() => import('../../components/PagesComponent/RealEstateIntegration'));
+const WhyTrustQbatch = lazy(() => import('../../components/PagesComponent/WhyTrustQbatch'));
+const DominateYourMarket = lazy(() => import('../../components/PagesComponent/DominateYourMarket'));
+const CollaborationNew = lazy(() => import('../../components/PagesComponent/CollaborationNew'));
+const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
+const StartProject = lazy(() => import("../../components/PagesComponent/StartProject"));
 
 const RealEstate = () => {
   return (
@@ -59,7 +69,52 @@ const RealEstate = () => {
         desc="Let's start with a small-scale project, risk-free, and see if we suit your custom real estate software vision."
         btnText='Book Discovery Call'
       />
+      <OnDemandFeatures />
+      <NextLevelInnovations 
+        heading="We're talking next-level innovations that will transform the way you do business:" 
+        paragraph="The real estate landscape is buzzing with innovation, and we're here to be your wingman on this exciting flight. Forget clunky processes and outdated tools. We're talking cutting-edge tech that lets you soar above the competition."
+        data={reInnovationsData}
+        className='innovations-wrapper'
+      />
+       <ScaredToInvest
+        heading="Technology should be an enabling force, not a burden."
+        desc="We're dedicated PropTech developers who are focused on building software that feels as intuitive as talking to a trusted colleague. Simple and neat."
+        btnText='Build your real estate app'
+      />
+      <RealEstateIntegration />
+      <WhyTrustQbatch />
+      <DominateYourMarket />
+      <CollaborationNew borderBottom={true} />
+      <FaqSection className="health-care-faq" faqQuestion={FrequentlyAskedQuestionsHealthCareFaq} />
+      <StartProject />
     </Layout>
+  )
+};
+
+export const Head = () => {
+  const realEstateData = Queries()
+  const seoData = realEstateData?.allStrapiRealEstate?.nodes[0]?.seo
+  // const schemaData = saasDevData?.allStrapiHealthcare?.nodes[0]?.schema;
+  // const transformedObject = replaceUnderscoreWithAt(schemaData);
+
+  return (
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      image={seoData.metaimage[0]?.localFile?.url}
+      pathname={`${seoData.slug}`}
+    >
+      {/* {transformedObject
+        .filter((x) => x.visibilityIn)
+        .map((data, i) => (
+          <script key={i} type="application/ld+json">
+            {JSON.stringify(data.childStrapiComponentSchemaSchemaStructureddataJsonnode)}
+          </script>
+        ))} */}
+    </SEO>
   )
 }
 

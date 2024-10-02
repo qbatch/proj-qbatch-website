@@ -3,7 +3,7 @@ import { media } from '../../../theme/media-mixins'
 const SliderWrapper = styled.div`
   padding: 96px 0 110px;
   ${media.sm`
-    padding: 56px 0;
+    padding: 56px 0 96px;
   `}
   &.web-app-development-wrapper {
     padding: 96px 0 72px;
@@ -498,6 +498,9 @@ p.content {
     p {
       margin-bottom: 72px;
       max-width: 880px;
+      ${media.mobile`
+        margin-bottom: 32px;
+      `}
     }
    }
    .slider-data{
@@ -506,6 +509,9 @@ p.content {
     }
     .content {
       max-width: 450px;
+      ${media.mobile`
+        margin-bottom: 0;
+      `}
     }
   }
   }
