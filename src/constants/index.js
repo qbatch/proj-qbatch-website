@@ -3749,6 +3749,207 @@ const RetailSoftwareDevelopmentFaq = [
     ),
   },
 ];
+const TravelSoftwareDevelopmentFaq = [
+  {
+    id: 1,
+    title: 'How long does it take to create a travel mobile app?',
+    content: (
+      <div className="faq-content">
+        <span>The time required to develop a travel mobile app depends on various factors such
+          as features, complexity, design, and development approach. Typically, it can range
+          from a few months to a year or more.</span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'Why should I choose the Qbatch team for my travel app development project?',
+    content: (
+      <div className="faq-content hire-developer-faq">
+        <span>Qbatch team offers expertise in travel app development, a proven track record of
+          successful projects, dedication to client satisfaction, and a commitment to
+          delivering high-quality solutions tailored to your needs.</span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'Can I hire software engineers from Qbatch to work on hourly or project-based tasks?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch offers flexible hiring models including hourly or project-based tasks to
+        suit your requirements.</span>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'Can you provide a timeline and estimated budget for developing our travel app based on our requirements?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, after understanding your project requirements, Qbatch can provide a detailed
+        timeline and estimated budget for developing your travel app.</span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What technologies and platforms do you use?',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch uses a range of technologies and platforms including but not limited to
+          iOS, Android, React Native, Flutter for mobile development, and various backend
+          technologies such as Node.js, Django, and Laravel.</span>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'Do you oer customization options to tailor the travel app to our specific needs and branding requirements?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch oers customization options to tailor the travel app to your specic
+        needs and branding requirements.</span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How do you ensure that the application will be user-friendly and intuitive for both travelers and administrators',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch follows user-centric design principles and conducts thorough usability
+          testing to ensure that the application is user-friendly and intuitive for both
+          travelers and administrators</span>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: "How do you handle integration with third-party services such as booking engines, payment gateways, and mapping APIs?",
+    content: (
+      <div className="faq-content">
+        <span>
+           Qbatch is experienced in integrating your app with various third-party services
+          such as booking engines, payment gateways, and mapping APIs using
+          industry-standard protocols and technologies.</span>
+      </div>
+    ),
+  },
+  {
+    id: 9,
+    title: 'What measures do you take to ensure data security and privacy for travelers using the app?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Qbatch implements robust security measures such as data encryption, secure
+        authentication, and compliance with data protection regulations to ensure data
+        security and privacy for travelers using the app.</span>
+      </div>
+    ),
+  },
+  {
+    id: 10,
+    title: 'What is your approach to project management and communication throughout the development process?',
+    content: (
+      <div className="faq-content">
+        <span>
+            Qbatch follows agile project management methodologies and maintains
+            transparent communication channels to keep clients informed about project
+            progress and address any concerns promptly</span>
+      </div>
+    ),
+  },
+  {
+    id: 11,
+    title: 'What sets your company apart from competitors in terms of expertise, experience, and client satisfaction?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Qbatch distinguishes itself through its deep expertise in travel app development,
+        extensive experience delivering successful projects, and a strong focus on client
+        satisfaction evidenced by positive testimonials and long-term partnerships..</span>
+      </div>
+    ),
+  },
+  {
+    id: 12,
+    title: 'Do you oer customization options for building custom flight booking apps or hotel booking apps?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch oers customization options for building custom ight booking apps,
+        hotel booking apps, and other travel-related applications to meet your specic
+        requirements.</span>
+      </div>
+    ),
+  },
+  {
+    id: 13,
+    title: 'What IT solutions do you provide specically tailored to the travel industry?',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch provides a range of IT solutions tailored to the travel industry including
+        mobile apps, websites, booking systems, CRM software, and more.</span>
+      </div>
+    ),
+  },
+  {
+    id: 14,
+    title: 'Do you oer dedicated teams for travel app development projects?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch oers dedicated teams comprising experienced professionals for travel
+        app development projects to ensure focused attention and timely delivery.</span>
+      </div>
+    ),
+  },
+  {
+    id: 15,
+    title: 'What is your approach to design and development for travel apps and websites?',
+    content: (
+      <div className="faq-content">
+        <span>We go beyond the typical approach. Our industry-grade design puts travelers
+          first, ensuring intuitive interfaces and a seamless journey. We combine industry
+          best practices with cutting-edge technology to create travel apps and websites that
+          are both engaging and functional</span>
+      </div>
+    ),
+  },
+  {
+    id: 16,
+    title: 'Do you provide travel portal software development services for businesses?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch provides travel portal software development services for businesses
+          looking to create comprehensive online platforms for booking ights, hotels,
+          tours, and more.</span>
+      </div>
+    ),
+  },
+  {
+    id: 17,
+    title: 'Do you oer CRM software tailored to the needs of the travel industry?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch oers CRM software tailored to the specic needs of the travel
+          industry, enabling businesses to manage customer relationships, bookings, and
+          inquiries eectively</span>
+      </div>
+    ),
+  },
+  {
+    id: 18,
+    title: 'How do your software solutions address the specic challenges faced by travel agencies and tour operators',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch's software solutions are designed to address the specic challenges faced by
+          travel agencies and tour operators by streamlining operations, enhancing
+          customer experiences, and facilitating seamless booking and communication
+          processes.</span>
+      </div>
+    ),
+  },
+];
 
 const enterPrisFaq = [
   {
@@ -4628,6 +4829,95 @@ const SimplifyYourRetailData = [
     text: "Our software engineers will start development. We'll track your progress and keep you informed throughout the process.",
   },
 ]
+const SimplifyYourTravelData = [
+  {
+    img: '/arrow-line.svg',
+    number: 1,
+    heading: "Simply share your project idea with us.",
+    text: "",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 2,
+    heading: "We'll meticulously analyze the details.",
+    text: "",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 3,
+    heading: "Outline the primary workflows and essential features",
+    text: "",
+  },
+  {
+    img: '',
+    number: 4,
+    heading: "Provide you with a comprehensive project estimate.",
+    text: "",
+  },
+]
+const dataTravelApplications = [
+  {
+    img: '/Secure-Payment-Gateways.svg',
+    heading: 'Secure Payment Gateways',
+    text: 'Enable secure online payments for travelers'
+  },
+  {
+    img: '/Social-Media-Integration.svg',
+    heading: 'Social Media Integration',
+    text: 'Allow users to share their experiences on social media platforms.'
+  },
+  {
+    img: '/Map-and-Navigations.svg',
+    heading: 'Map and Navigations',
+    text: 'Provide efficient navigation and directions for travelers.'
+  },
+  {
+    img: '/Flight-Tracking.svg',
+    heading: 'Flight Tracking',
+    text: 'Keep users informed about their flight status and potential delays.'
+  },
+  {
+    img: '/Itinerary-Planner.svg',
+    heading: 'Itinerary Planner',
+    text: 'Enable users to plan and manage their travel itineraries efficiently.'
+  },
+  {
+    img: '/World-Clock.svg',
+    heading: 'World Clock',
+    text: 'Provide a world clock feature for easy time conversion.'
+  },
+  {
+    img: '/Currency-Conversion.svg',
+    heading: 'Currency Conversion',
+    text: 'Offer currency conversion functionality for accurate financial planning.'
+  },
+  {
+    img: '/Review-and-Ratings.svg',
+    heading: 'Review and Ratings',
+    text: 'Allow users to leave reviews and ratings to help others make informed decisions.'
+  },
+  {
+    img: '/Map-Based-Sightseeing.svg',
+    heading: 'Map-Based Sightseeing',
+    text: 'Explore interesting places and sightseeing spots on a map.'
+  },
+  {
+    img: '/FAQ-and-Support.svg',
+    heading: 'FAQ and Support',
+    text: 'Provide helpful information and assistance to your users.'
+  },
+  {
+    img: '/Route-Planning-and-Sharing.svg',
+    heading: 'Route Planning and Sharing',
+    text: 'Plan routes and share them with fellow travelers.'
+  },
+  {
+    img: '/Smart-Search.svg',
+    heading: 'Smart Search',
+    text: 'Find tickets, excursions, and hotels with ease.'
+  },
+]
+
 const hassleData = [
   {
     img: '/stopwatch.svg',
@@ -6090,6 +6380,68 @@ const RetailSliderData = [
     content: 'Ensure seamless connectivity by integrating ERPs, CRMs, finance, logistics, and analytics systems, ensuring they work coherently to streamline operations and enhance operational efficiency.',
   },
 ];
+const TravelSliderData = [
+  {
+    image: '/Travel-App-Development-2.svg',
+    title: 'Travel App Development',
+    content: 'Go beyond automation and empower travelers to design their dream adventures. Our all-in-one travel app solutions include everything from seamless flight and hotel booking to personalized itinerary builders and local expert connections.',
+  },
+  {
+    image: '/sAAs-optimization-services-2.svg',
+    title: 'SaaS Optimization Services',
+    content: 'Simplify travel planning with our comprehensive e-ticketing solutions. Seamlessly search, compare, and book flights and hotels using our custom flight booking app development services.',
+  },
+  {
+    image: '/Holiday-booking-engine-2.svg',
+    title: 'Holiday Booking Engines',
+    content: 'Build and integrate custom holiday booking engines into your hotel and flight web and mobile apps for both inbound and outbound vacation packages. Creating dream adventures is just a few clicks away!',
+  },
+  {
+    image: '/tutoring-and-training-platform-development-2.svg',
+    title: 'Travel Marketplace Development',
+    content: 'Connect travelers with vacation packages, tours, hotel bookings, payment, airfares, cruises, and rental cars generating assured revenues. Build your own travel agency (OTA) in a box with our tourism app development services.',
+  },
+  {
+    image: '/custom-lms-lcms-lxp-and-elearning-portals-2.svg',
+    title: 'Guide and Tourism App Development',
+    content: 'Build tourist-friendly mobile apps and platforms for planning trips, booking accommodations, linking journeys, adding cabs, generating amusement park passes, and more. Offer a multi-use, digital travel companion to your guests!',
+  },
+  {
+    image: '/Transport-app-development-2.svg',
+    title: 'Transport App Development',
+    content: 'Make transportation effortless, saving your guest’s time and money with our transport mobile apps. Besides, we build dedicated car booking platforms for on-demand rides, including inter-city and inter-country options.',
+  },
+  {
+    image: '/school-management-and0-student-information-software-2.svg',
+    title: 'Travel Management Software Development',
+    content: 'Build tours and travel management software panel to easily handle bookings, reports, and itineraries for leisure and corporate trips. Now manage expenses, enforce policies, and optimize costs on a single platform efficiently.',
+  },
+  {
+    image: '/quiz-exam-and-assessment-platform-development-2.svg',
+    title: 'Travel Portal Development',
+    content: 'As a leading travel portal software development company, we provide white-label portals and robust GDS/Sabre API integrations ensuring global access to extensive hospitality inventories.',
+  },
+  {
+    image: '/virtual-classroom-app-development-2.svg',
+    title: 'Social Travel App Development',
+    content: 'Spice up your travels with our social travel platform and connect your traveling guests with fellow adventurers. Create a vibrant online community where people swap travel stories and make new friends worldwide..',
+  },
+  {
+    image: '/content-authoring-software-development-2.svg',
+    title: 'Travel Emergency App Development',
+    content: 'Safe travels, guaranteed! Our emergency apps instantly connect your guests to medical help, translators, and local resources. Help them travel with peace of mind, knowing help is a tap away.',
+  },
+  {
+    image: '/self-education-software-2.svg',
+    title: 'Custom Travel App Development',
+    content: "Build your dream travel app! We combine booking, CRM, itinerary planning & feedback for happy customers & efficient operations. Plus, financial tools & custom CRM for hotels & agencies. It's your all-in-one travel solution.",
+  },
+  {
+    image: '/proctoring-software-development-2.svg',
+    title: 'Travel Review/Feedback Platform Development',
+    content: 'Manage your online reputation and gather valuable customer feedback in one place with our reputation management solutions. Showcase positive reviews, address concerns promptly, and turn happy travelers into loyal brand advocates.',
+  },
+];
 const collaborationData = [
   {
     img: '/time-and-material.svg',
@@ -6462,6 +6814,60 @@ const ImagineRetailExperienceData = [
     text: "Voice shopping is here to stay. We'll ensure your customers can seamlessly purchase and get unique recommendations with just their voice."
   },
 ]
+const ImagineTravelAppData = [
+  {
+    img: '/language-1.svg',
+    heading: 'Language barriers got them tongue-tied? ',
+    text: "Our apps translate the world, so your guests can focus on exploring it."
+  },
+  {
+    img: '/community-1.svg',
+    heading: 'Overwhelmed by endless travel options?',
+    text: "We create personalized recommendations and itineraries for your guests."
+  },
+  {
+    img: '/swap-1.svg',
+    heading: 'FOMO (Fear Of Missing Out) got you down?',
+    text: "Let’s offer exclusive deals to keep your travel enthusiasts engaged."
+  },
+  {
+    img: '/mobile-block.svg',
+    heading: 'Guests won’t engage with your app anymore?',
+    text: "We build unique app experiences that spark joy, not overwhelm."
+  },
+  {
+    img: '/trap-1.svg',
+    heading: 'Tired of the same tourist traps? ',
+    text: "Let’s add engines that unlock local secrets and exclusive deals for unforgettable adventures."
+  },
+]
+const ImagineTravelAppData2 = [
+  {
+    img: '/ai-2.svg',
+    heading: 'AI',
+    text: "Remembers travel styles – no more one-size-fits-all itineraries"
+  },
+  {
+    img: '/ai-ml-2.svg',
+    heading: 'AR',
+    text: "Shows hidden gems around – point your phone and explore instantly"
+  },
+  {
+    img: '/vr-2.svg',
+    heading: 'VR',
+    text: "Lets you virtually explore destinations before you book."
+  },
+  {
+    img: '/location-2.svg',
+    heading: 'GPS',
+    text: "Keeps you on track with real-time recommendations & guidance"
+  },
+  {
+    img: '/chatbot-2.svg',
+    heading: 'Chatbots',
+    text: "Are your 24/7 travel assistants – always ready to help!"
+  },
+]
 const InnovativeRetailSolutionsData = [
   {
     img: '/headless-commerce.svg',
@@ -6477,6 +6883,23 @@ const InnovativeRetailSolutionsData = [
     img: '/microservices.svg',
     heading: 'Microservices',
     text: "Modular and efficient – that's the microservices approach. We'll build a retail software system that runs like a dream."
+  }
+]
+const TravelSolutionsData = [
+  {
+    img: '/mobile-1.svg',
+    heading: 'Mobile Hotel Apps',
+    text: "Go beyond basic booking with features like loyalty programs, personalized recommendations, amenity services, and smart room controls."
+  },
+  {
+    img: '/bulb-2.svg',
+    heading: 'Contactless Solutions',
+    text: "Empower guests with touchless technology and 24/7 access to services through mobile apps and kiosks."
+  },
+  {
+    img: '/house-2.svg',
+    heading: 'Smart Rooms',
+    text: "Impress them with in-room tablets for digital control of the environment, preventive maintenance, and seamless offline and online functionality."
   }
 ]
 const ExploreOurIndustrySpecificRetailPotentialData = [
@@ -6526,6 +6949,147 @@ const ExploreOurIndustrySpecificRetailPotentialData = [
     text: "Manage tenant operations and enhance customer experiences"
   },
 ];
+const TravelLanguagesData = [
+  {
+    title: "Maps and Location Services",
+    content: [
+      { img: "/g-maps.svg",  },
+      { img: "/here.svg", },
+      { img: "/oracle.svg", },
+      { img: "/nec.svg", },
+      { img: "/gps.svg", },
+    ]
+  },
+  {
+    title: "Payment Gateways",
+    content: [
+      { img: "/master-c.svg", },
+      { img: "/visa-c.svg", },
+      { img: "/paypal.svg", },
+      { img: "/g-pay.svg", },
+      { img: "/strip-1.svg", },
+      { img: "/brain-tree.svg", },
+      { img: "/noon.svg", },
+    ]
+  },
+  {
+    title: "Checkout Solutions",
+    content: [
+      { img: "/2cc.svg",},
+      { img: "/clover.svg",},
+      { img: "/cash.svg",},
+      { img: "/b.svg",},
+      { img: "/animal.svg",},
+    ]
+  },
+  {
+    title: "Global Distribution Systems (GDS)",
+    content: [
+      { img: "/amadeus.svg",},
+      { img: "/sabre.svg",},
+      { img: "/galileo.svg",},
+      { img: "/world-span.svg",},
+    ]
+  },
+  {
+    title: "Booking Engines, OTAs, and PMS",
+    content: [
+      { img: "/agilysys.svg",},
+      { img: "/auto-clerk.svg",},
+      { img: "/molo.svg",},
+      { img: "/innfinity.svg",},
+      { img: "/gust.svg",},
+      { img: "/infor.svg",},
+      { img: "/hotels.svg",},
+      { img: "/maxi-mojo.svg",},
+      { img: "/logical.svg",},
+    ]
+  },
+  {
+    title: "Central Reservation Systems (CRS)",
+    content: [
+      { img: "/cendyn.svg",},
+      { img: "/nb.svg",},
+      { img: "/e-rev.svg",},
+      { img: "/blosy.svg",},
+      { img: "/hotel-sp.svg",},
+      { img: "/djub.svg",},
+      { img: "/inntopia.svg",},
+      { img: "/sabre.svg",}
+    ]
+  },
+];
+const PowerfulRetailSolutionsCardData = [
+  {
+    imgSrc: '/chart.svg',
+    title: 'Data-Driven Forecasting',
+    content: [
+      {
+        subtitle: 'Advanced Analytics',
+        description: 'Leverage big data to analyze historical sales data, customer behavior, and market trends to predict product demand accurately.'
+      },
+      {
+        subtitle: 'AI and ML Retail Solutions',
+        description: 'We integrate these technologies to continuously learn from new data, improving the accuracy of demand forecasts over time.'
+      }
+    ]
+  },
+  {
+    imgSrc: '/inventry-icon.svg',
+    title: 'Agile Inventory Management',
+    content: [
+      {
+        subtitle: 'Just-in-Time Inventory Management Solutions',
+        description: 'Adopt JIT practices to reduce holding costs and minimize excess inventory. Develop efficient inventory software that helps you receive required goods.'
+      },
+      {
+        subtitle: 'Adaptive Supply Chain Solutions',
+        description: 'Build supply chain and vendor management software to respond to demand changes and maintain relationships with multiple suppliers for faster product deliveries.'
+      }
+    ]
+  },
+  {
+    imgSrc: '/customer-icon.svg', 
+    title: 'Customer-Centric Strategies',
+    content: [
+      {
+        subtitle: 'Pre-Orders and Waitlists',
+        description: 'Gauge demand by offering pre-orders or creating wait lists before committing to large inventory purchases using our retail data management software development services. '
+      },
+      {
+        subtitle: 'Personalized Marketing',
+        description: 'Use customer data and campaign management tools to create targeted marketing campaigns that drive demand for specific products.'
+      }
+    ]
+  },
+  {
+    imgSrc: '/ecomerce-icon.svg', 
+    title: 'All-in-One Commerce Platform Development',
+    content: [
+      {
+        subtitle: 'Advanced Analytics',
+        description: 'Integrate all sales channels (online, offline, mobile) on one portal to have a real-time view of inventory and demand and easily reallocate stock to where it’s needed most.'
+      }
+    ]
+  }
+];
+const dataGenericTravelApps = [
+  {
+    img: '/Native-Apps-Android-and-iOS.svg',
+    heading: 'Native Apps (Android and iOS)',
+    text: 'Reach every traveler with stunning, user-friendly apps designed specifically for each platform.'
+  },
+  {
+    img: '/Web-Apps.svg',
+    heading: 'Web Apps',
+    text: 'Empower travel businesses. Create custom web applications to streamline operations for travel agencies and tour operators.'
+  },
+  {
+    img: '/Cross-Platform-Apps.svg',
+    heading: 'Cross-Platform Apps',
+    text: 'Develop once, deploy everywhere. Build travel apps that work flawlessly on both Android and iOS.'
+  }
+]
 
 const RealEstateITSolutionsData = [
   {
@@ -6938,7 +7502,6 @@ const realEstateIntegrationData = [
     title: 'IoT Integration',
   },
 ]
-
 export {
   dedicationWork,
   homeTiles,
@@ -7071,6 +7634,16 @@ export {
   ExploreOurIndustrySpecificRetailPotentialData,
   SimplifyYourRetailData,
   RetailSoftwareDevelopmentFaq,
+  ImagineTravelAppData,
+  TravelSliderData,
+  TravelSolutionsData,
+  dataTravelApplications,
+  SimplifyYourTravelData,
+  ImagineTravelAppData2,
+  TravelSoftwareDevelopmentFaq,
+  TravelLanguagesData,
+  PowerfulRetailSolutionsCardData,
+  dataGenericTravelApps,
   realEstateIndustryData,
   properyBusinessData1,
   properyBusinessData2,

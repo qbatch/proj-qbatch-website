@@ -342,6 +342,26 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'retail-software-development',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'travel-app-development',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'healthcare',
       queryParams: {
         populate: {

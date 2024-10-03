@@ -6,6 +6,11 @@ background-color: #002548;
 ${media.sm`
 padding: 40px 0px;
 `}
+&.dont-just-rebuild{
+  .feeling-section-wrapper {
+    padding-block: 14px;
+  }
+}
 .feeling-section-wrapper {
     display: flex;
     align-items: center;
@@ -45,7 +50,7 @@ padding: 40px 0px;
     }
   }
   button{
-    color: #fff;
+    color: #fff !important;
     ${media.sm`
         margin:auto;
         `}

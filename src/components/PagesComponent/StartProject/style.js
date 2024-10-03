@@ -6,6 +6,13 @@ const StartProjectWrapper = styled.div`
   .heading{
     font-weight:700;
   }
+  .footer-wrapper{
+    button{
+      ${media.sm`
+      margin:auto;
+        `}
+    }
+  }
   h1{
     margin-bottom: 16px;
     ${media.sm`

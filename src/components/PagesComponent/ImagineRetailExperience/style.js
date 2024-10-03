@@ -4,6 +4,19 @@ import { media } from "../../../theme/media-mixins";
 const ImagineRetailExperienceWrapper = styled.div`
 padding: 96px 0;
 border-bottom:1px solid ${({ theme }) => theme.colors.dividerColor};
+&.travel-app-wrapper{
+  p.p-text{
+    display: none;
+  }
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    ${media.sm`
+      grid-template-columns: 1fr;
+      margin-top: 32px;
+              `}
+  }
+}
 ${media.sm`
   padding: 40px 0;
       `}
@@ -40,12 +53,11 @@ ${media.sm`
       `}
     ${media.sm`
       grid-template-columns: 1fr;
+      margin-top: 32px;
+
       `}
     grid-gap: 48px 24px;
     margin-top: 72px;
-    ${media.sm`
-      margin-top: 32px;
-              `}
     .card-item{
       display: flex;
       grid-gap: 24px;
@@ -87,6 +99,13 @@ ${media.sm`
         }
       }
     }
+}
+button{
+  margin:auto;
+  margin-top: 72px;
+  ${media.sm`
+  margin-top:32px;
+    `}
 }
 `;
 

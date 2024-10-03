@@ -1,15 +1,18 @@
 import React from 'react'
-import { ImagineRetailExperienceWrapper } from './style'
-import Container from '../../UiComponent/Container'
-import { ImagineRetailExperienceData } from '../../../constants'
+import { navigate } from 'gatsby'
 
-const ImagineRetailExperience = () => {
+import Container from '../../UiComponent/Container'
+import Button from '../../UiComponent/Button'
+
+import { ImagineRetailExperienceWrapper } from './style'
+
+const ImagineRetailExperience = ({ImagineRetailExperienceData, travelApp, heading, text, button}) => {
 
   return (
-    <ImagineRetailExperienceWrapper>
+    <ImagineRetailExperienceWrapper className={travelApp ? 'travel-app-wrapper' : ''}>
       <Container>
-        <h2>Imagine a retail experience that's as exciting for you as it is for your customers.</h2>
-        <p>It's time to rebuild your retail business with Qbatch. Forget the cookie-cutter stores of yesterday.  Qbatch is your partner in creating the future of retail, where cutting-edge technology meets real-world expertise to transform your business.</p>
+        <h2>{heading || "Imagine a retail experience that's as exciting for you as it is for your customers."}</h2>
+        <p className='p-text'>{text || "It's time to rebuild your retail business with Qbatch. Forget the cookie-cutter stores of yesterday.  Qbatch is your partner in creating the future of retail, where cutting-edge technology meets real-world expertise to transform your business."}</p>
         <div className='cards-wrapper'>
          {ImagineRetailExperienceData.map((item, index) => (
           <div key={index} className='card-item'>
@@ -21,6 +24,7 @@ const ImagineRetailExperience = () => {
           </div>
          ))}
         </div>
+        {button ? <Button text="Build Your SaaS Solution" onClick={() => navigate("/contact")} /> : null}
       </Container>
     </ImagineRetailExperienceWrapper>
   )

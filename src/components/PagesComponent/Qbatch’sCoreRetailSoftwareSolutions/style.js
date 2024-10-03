@@ -60,6 +60,19 @@ ${media.sm`
         line-height: 24px;
           `}
     }
+    .custom-h3{
+      color: #0054A6;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: left;
+      margin: 0px;
+      margin-bottom:12px;
+      ${media.mobile`
+          font-size: 16px;
+        line-height: 24px;
+          `}
+    }
     ul{
       display: flex;
       flex-direction: column;
@@ -108,10 +121,8 @@ ${media.sm`
       padding: 16px;
       `}
     h3{
-      color: #0054A6;
-      font-size: 24px;
+      color: ${({ theme }) => theme.colors.primaryColor};
       font-weight: 700;
-      line-height: 32px;
       text-align: left;
       margin: 0px;
     }
