@@ -1,14 +1,15 @@
 import React from 'react'
-import { InnovativeRetailSolutionsWrapper } from './style'
-import { InnovativeRetailSolutionsData } from '../../../constants'
+
 import Container from '../../UiComponent/Container'
 
-const InnovativeRetailSolutions = () => {
+import { InnovativeRetailSolutionsWrapper } from './style'
+
+const InnovativeRetailSolutions = ({InnovativeRetailSolutionsData, heading}) => {
   return (
     <InnovativeRetailSolutionsWrapper>
       <Container>
         <div className='innovative-retail'>
-          <h2>That's just the tip of the iceberg. We offer a toolbox brimming with innovative Retail solutions</h2>
+          <h2>{heading || "That's just the tip of the iceberg. We offer a toolbox brimming with innovative Retail solutions"}</h2>
           <div className='cards-wrapper'>
             {InnovativeRetailSolutionsData.map((item, index) => (
               <div key={index} className='card-item'>

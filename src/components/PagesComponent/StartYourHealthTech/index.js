@@ -4,12 +4,13 @@ import Button from '../../UiComponent/Button'
 import Container from '../../UiComponent/Container'
 import { StartYourHealthTechWrapper } from './style'
 
-const StartYourHealthTech = ({heading, className, StartYourHealthTechData }) => {
+const StartYourHealthTech = ({heading, className, text, StartYourHealthTechData }) => {
 
   return (
     <StartYourHealthTechWrapper className={className}>
         <Container>
           <h2>{heading || 'Start Your HealthTech Journey Today!'}</h2>
+         {text && <p>{text}</p>}
           <div className="process-card-overlay">
             {StartYourHealthTechData.map((item, index) => (
               <div key={index} className="process-card-wrapper">

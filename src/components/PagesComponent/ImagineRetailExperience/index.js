@@ -1,8 +1,10 @@
 import React from 'react'
-import { ImagineRetailExperienceWrapper } from './style'
+import { navigate } from 'gatsby'
+
 import Container from '../../UiComponent/Container'
 import Button from '../../UiComponent/Button'
-import { navigate } from 'gatsby'
+
+import { ImagineRetailExperienceWrapper } from './style'
 
 const ImagineRetailExperience = ({ImagineRetailExperienceData, travelApp, heading, text, button}) => {
 
@@ -10,7 +12,7 @@ const ImagineRetailExperience = ({ImagineRetailExperienceData, travelApp, headin
     <ImagineRetailExperienceWrapper className={travelApp ? 'travel-app-wrapper' : ''}>
       <Container>
         <h2>{heading || "Imagine a retail experience that's as exciting for you as it is for your customers."}</h2>
-       {text && <p>It's time to rebuild your retail business with Qbatch. Forget the cookie-cutter stores of yesterday.  Qbatch is your partner in creating the future of retail, where cutting-edge technology meets real-world expertise to transform your business.</p>}
+        <p className='p-text'>{text || "It's time to rebuild your retail business with Qbatch. Forget the cookie-cutter stores of yesterday.  Qbatch is your partner in creating the future of retail, where cutting-edge technology meets real-world expertise to transform your business."}</p>
         <div className='cards-wrapper'>
          {ImagineRetailExperienceData.map((item, index) => (
           <div key={index} className='card-item'>

@@ -5,6 +5,9 @@ const ImagineRetailExperienceWrapper = styled.div`
 padding: 96px 0;
 border-bottom:1px solid ${({ theme }) => theme.colors.dividerColor};
 &.travel-app-wrapper{
+  p.p-text{
+    display: none;
+  }
   .cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

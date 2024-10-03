@@ -19,7 +19,7 @@ section{
     `}
   .item{
     &.item-2{
-      background: linear-gradient(182.08deg, #D9ECFF -5.97%, rgba(217, 236, 255, 0) 149.03%);
+      background: linear-gradient(to top, #D9ECFF -5.97%, rgba(217, 236, 255, 0) 149.03%);
       max-width: 470px;
       padding: 146px 30px;
       margin-left: auto;

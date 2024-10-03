@@ -1,10 +1,13 @@
 import React from 'react';
 import { navigate } from 'gatsby';
 import Slider from 'react-slick';
+
 import Container from '../../UiComponent/Container';
 import Button from '../../UiComponent/Button';
-import { QbatchCoreRetailSoftwareSolutionsWrapper } from './style';
+
 import { coreRetailData } from '../../../constants';
+
+import { QbatchCoreRetailSoftwareSolutionsWrapper } from './style';
 
 const QbatchCoreRetailSoftwareSolutions = () => {
 
@@ -41,7 +44,7 @@ const QbatchCoreRetailSoftwareSolutions = () => {
           <Slider {...sliderSettings}>
             {coreRetailData.map((item, index) => (
               <div key={index} className='card-item'>
-                <h3>{item.heading}</h3>
+                <p className='custom-h3'>{item.heading}</p>
                 <ul>
                   {item.content.map((contentItem, contentIndex) => (
                     <li key={contentIndex}>{contentItem.text}</li>

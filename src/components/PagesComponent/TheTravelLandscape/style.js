@@ -38,7 +38,10 @@ const TheTravelLandscapeWrapper = styled.div`
     }
 
     button{
-      color: #FFFFFF;
+      color: #FFFFFF !important;
+     &:hover{
+      color: #FFFFFF !important;
+     }
       ${media.sm`
       margin:auto;
       `}

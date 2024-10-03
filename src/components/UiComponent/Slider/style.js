@@ -94,8 +94,13 @@ h2{
       ${media.sm`
         font-size: 24px;
         line-height: 32px;
+        margin-bottom:32px !important;
       `}
   }
+  .slick-slide img {
+    height: auto;
+    width: 420px;
+}
   p.paragraph{
     text-align:center;
     ${media.lg`

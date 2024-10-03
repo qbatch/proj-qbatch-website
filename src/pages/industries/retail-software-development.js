@@ -1,6 +1,9 @@
 import React, { lazy } from 'react'
+
 import Layout from '../../components/Layout/layout'
-import { retailData, RetailSliderData, RetailSoftwareDevelopmentFaq, SimplifyYourRetailData, weWorkStoriesData, ImagineRetailExperienceData } from '../../constants';
+import { retailData, RetailSliderData, RetailSoftwareDevelopmentFaq, SimplifyYourRetailData, weWorkStoriesData, ImagineRetailExperienceData, InnovativeRetailSolutionsData } from '../../constants';
+import SEO from '../../components/Seo';
+import { Queries } from '../../constants/queries';
 
 const CtoBanner = lazy(() => import('../../components/PagesComponent/PageBanner'));
 const RetailersFaceTheChallenge = lazy(() => import('../../components/PagesComponent/RetailersFaceTheChallenge'));
@@ -47,7 +50,7 @@ const RetailSoftwareDevelopment = () => {
       <WhatDifferenceQbatchMaking retailData={retailData} retail heading="No more Retail struggles, we got you covered."/>
       <PowerfulRetailSolutions />
       <BuildRetailOpportunities />
-      <SuccessStories heading="Success Stories from Our Travel and Tour Industry Portfolio" data={weWorkStoriesData} />
+      <SuccessStories heading="Success Stories from our Retail and E-commerce Portfolio" data={weWorkStoriesData} />
       <QbatchCoreRetailSoftwareSolutions />
       <Slider
         data={RetailSliderData}
@@ -61,8 +64,8 @@ const RetailSoftwareDevelopment = () => {
         dividerClass="custom-divider"
         maxWidth="100%"
       />
-      <ImagineRetailExperience text ImagineRetailExperienceData={ImagineRetailExperienceData} />
-      <InnovativeRetailSolutions />
+      <ImagineRetailExperience ImagineRetailExperienceData={ImagineRetailExperienceData} />
+      <InnovativeRetailSolutions InnovativeRetailSolutionsData={InnovativeRetailSolutionsData} />
       <LetsReimagineRetailTogether />
       <ExploreOurIndustrySpecificRetailPotential />
       <FeelingLikeYouAreInItAlone />
@@ -73,6 +76,22 @@ const RetailSoftwareDevelopment = () => {
       <FaqSection className="health-care-faq" faqQuestion={RetailSoftwareDevelopmentFaq} />
       <StartProject />
     </Layout>
+  )
+}
+
+export const Head = () => {
+  const RetailSoftwareDevelopment = Queries()
+  const seoData = RetailSoftwareDevelopment.allStrapiRetailSoftwareDevelopment.nodes[0]?.seo
+  return (
+    <SEO
+      title={seoData?.metaTitle}
+      description={seoData?.metaDescription}
+      keywords={seoData.keywords}
+      language={seoData.language}
+      robots={seoData.metaRobots}
+      image={seoData.metaimage[0].localFile?.url}
+      pathname={seoData.slug}
+    />
   )
 }
 
