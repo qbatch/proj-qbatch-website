@@ -20,7 +20,7 @@ const TheTravelLandscapeWrapper = styled.div`
       `}
     }
     p{
-      font-size: 20px;
+      font-size: ${({theme}) => theme.fonts.baseFontSizeLg};
       font-weight: 400;
       line-height: 32px;
       text-align: left;

@@ -67,8 +67,8 @@ h2 {
       `}
     }
     p{
-    font-size: 16px;
-    font-weight: 400;
+    font-size: ${({theme}) => theme.fonts.baseFontSize};
+    font-weight: ${({theme}) => theme.fontWeight.normal};
     line-height: 24px;
     text-align: left;
     color:#5F737C;

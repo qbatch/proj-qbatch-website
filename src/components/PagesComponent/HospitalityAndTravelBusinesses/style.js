@@ -34,8 +34,8 @@ section{
       margin: 0;
     }
 p{
-  font-size: 20px;
-  font-weight: 400;
+  font-size:${({ theme }) => theme.fonts.baseFontSizeSm};
+  font-weight: ${({ theme }) => theme.fontWeight.normal};
   line-height: 32px;
   text-align: left;
   margin: 0;

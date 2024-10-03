@@ -121,10 +121,8 @@ ${media.sm`
       padding: 16px;
       `}
     h3{
-      color: #0054A6;
-      font-size: 24px;
+      color: ${({ theme }) => theme.colors.primaryColor};
       font-weight: 700;
-      line-height: 32px;
       text-align: left;
       margin: 0px;
     }
