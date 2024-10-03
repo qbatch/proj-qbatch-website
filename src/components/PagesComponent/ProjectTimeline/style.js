@@ -5,6 +5,9 @@ const ProjectTimelineWrapper = styled.div`
 padding: 96px 0;
 .heading{
   margin-bottom: 72px;
+  ${media.sm`
+    margin-bottom: 32px;
+  `}
 }
 .timeline-wrapper{
   position: relative;
@@ -43,18 +46,20 @@ padding: 96px 0;
         left: 72%;
       }
       .sub-heading{
-      color:${({ theme }) => theme.colors.whiteColor};
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
-      line-height: 16px;
-      margin-bottom: 0;
+        color:${({ theme }) => theme.colors.whiteColor};
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+        font-weight:  ${({ theme }) => theme.fontWeight.normal};
+        line-height: 16px;
+        margin-bottom: 0;
       }
       p{
-      color:${({ theme }) => theme.colors.whiteColor};
-      font-size: 8px;
-      line-height: 10px;
-      margin: auto;
-      margin-bottom: 0;
-      text-align: center;
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+        color:${({ theme }) => theme.colors.whiteColor};
+        font-weight:  ${({ theme }) => theme.fontWeight.light};
+        line-height: 14px;
+        margin: auto;
+        margin-bottom: 0;
+        text-align: center;
       }
     }
   }
@@ -69,8 +74,8 @@ padding: 96px 0;
   width: 100%;
   .phase{
     border-left: 1px dashed ${({ theme }) => theme.colors.bodyLight};
-    font-size: ${({ theme }) => theme.fonts.BaseCustomFontSize} ;
-    font-weight:  ${({ theme }) => theme.fontWeight.semiBold};
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
+    font-weight:  ${({ theme }) => theme.fontWeight.normal};
     width: 100%;
     height: 100%;
     display: flex;

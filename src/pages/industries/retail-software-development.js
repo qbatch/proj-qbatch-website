@@ -31,7 +31,7 @@ const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
 const RetailSoftwareDevelopment = () => {
   return (
     <Layout>
-       <CtoBanner
+      <CtoBanner
         subheading="Retail Software Development"
         heading="Guiding Your Way to Successful Retail with Insight and Expertise"
         paragraph="Now is the time to responsibly reset retail — and serve your customers, workforce, and community better. Let’s leverage digital and physical retail IT solutions using the latest tech, delivering smooth mobile experiences and facilitating more humans every day."
@@ -42,12 +42,12 @@ const RetailSoftwareDevelopment = () => {
         imgSrc="/retail-banner-image.svg"
         gridClass="justify-content-between w-100 align-items-center"
         customCrumbs={[
-          { crumbSeparator: '>', pathname: '/industries/', crumbLabel: 'Industries',  },
-          {pathname: '/industries/retail-software-development', crumbLabel: 'Retail Software Development', crumbSeparator: '>' },
+          { crumbSeparator: '>', pathname: '/industries/', crumbLabel: 'Industries', },
+          { pathname: '/industries/retail-software-development', crumbLabel: 'Retail Software Development', crumbSeparator: '>' },
         ]}
       />
       <RetailersFaceTheChallenge />
-      <WhatDifferenceQbatchMaking retailData={retailData} retail heading="No more Retail struggles, we got you covered."/>
+      <WhatDifferenceQbatchMaking retailData={retailData} retail heading="No more Retail struggles, we got you covered." />
       <PowerfulRetailSolutions />
       <BuildRetailOpportunities />
       <SuccessStories heading="Success Stories from our Retail and E-commerce Portfolio" data={weWorkStoriesData} />
@@ -68,7 +68,11 @@ const RetailSoftwareDevelopment = () => {
       <InnovativeRetailSolutions InnovativeRetailSolutionsData={InnovativeRetailSolutionsData} />
       <LetsReimagineRetailTogether />
       <ExploreOurIndustrySpecificRetailPotential />
-      <FeelingLikeYouAreInItAlone />
+      <FeelingLikeYouAreInItAlone
+        heading="Feeling like you're in it alone?"
+        desc="We're your retail software partner, here to simplify your workflow >>>"
+        btnText='Let’s Get Started'
+      />
       <StartYourHealthTech className="simplify-your-retail" heading="Simplify your Retail Journey in 3 simple steps" StartYourHealthTechData={SimplifyYourRetailData} />
       <QbatchIsEmpoweringRetailers />
       <WhyTrustQbatch />

@@ -12,14 +12,14 @@ const ProjectChallenges = ({ projectDetails }) => {
         <div className='inner-wrapper'>
           {projectDetails && projectDetails.map((detail, index) => (
             <div className='detail-wrapper' key={index}>
-              <h2 className='heading text-h1'>{detail.heading}</h2>
-              <p className='paragraph text-h4'>{detail.paragraph}</p>
+              <h2 className='heading text-h2'>{detail.heading}</h2>
+              {detail.paragraph && <p className='paragraph text-h4'>{detail.paragraph}</p>}
               {detail.detailBox && detail.detailBox.length > 0 && (
                 <Row className='gy-4'>
                   {detail.detailBox.map((box, boxIndex) => (
                     <Col lg={3} key={boxIndex}>
                       <div className='inner-box'>
-                        <h3 className='text-h4 inner-heading'>{box.heading}</h3>
+                        <h3 className={`text-h4 inner-heading ${box.heading.length >= 30 && 'text-width'}`}>{box.heading}</h3>
                         <p className='inner-paragraph'>{box.paragraph}</p>
                       </div>
                     </Col>

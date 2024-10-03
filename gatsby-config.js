@@ -392,6 +392,26 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'event',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'real-estate',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'extension-development',
       queryParams: {
         populate: {

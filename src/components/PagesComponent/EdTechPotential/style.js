@@ -8,28 +8,30 @@ ${media.sm`
   padding: 40px 0px;
 `}
 h2{
-font-size: 40px;
 font-weight: 700;
-line-height: 52px;
 text-align: center;
 color: ${({ theme }) => theme.colors.primaryColor};
-${media.lg`
-    font-size: 32px;
-    font-weight: 700;
-      `}
-      ${media.sm`
-        font-size: 24px;
-        line-height: 32px;
-      `}
-      ${media.mobile`
-            text-align:left;
-            `}
+margin-bottom: 24px;
+${media.mobile`
+  text-align:left;
+  margin-bottom: 12px;
+`}
+}
+.sub-heading {
+  text-align: center;
+  margin-bottom: 24px;
+  ${media.mobile`
+    text-align:left;
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+    line-height: 18px;
+    margin-bottom: 0;
+  `}
 }
 .items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px 24px;
-    padding-top: 72px;
+    padding-top: 48px;
     ${media.sm`
         grid-gap:  32px 16px;
         padding-top: 32px;

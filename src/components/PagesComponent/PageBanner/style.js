@@ -328,6 +328,13 @@ const CtoBannerWrapper = styled.div`
       }
     }
   }
+  &.real-estate-banner {
+    .banner-main {
+      .text-h1 {
+        max-width: 840px;
+      }
+    }
+  }
 `
 
 export default CtoBannerWrapper;

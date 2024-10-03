@@ -14,7 +14,7 @@ const ProjectTimeline = ({steps, phases}) => {
             {steps.map((step, index) => (
               <div key={index} className={`step step-${index + 1}`}>
                 <h3 className='sub-heading'>{step.heading}</h3>
-                <p>{step.description}</p>
+                <p>{step.subtitle}</p>
               </div>
             ))}
           </div>
