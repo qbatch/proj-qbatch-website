@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 import Container from '../../UiComponent/Container';
-import Button from '../../UiComponent/Button';
+// import Button from '../../UiComponent/Button';
 import { pressReleaseData } from '../../../constants';
 
 import PressReleaseWrapper from './style';
@@ -20,7 +20,7 @@ const Index = () => {
             <Col lg={4} key={ind} className='press-col'>
               <div className='press-box'>
                 <h3 className='text-h5'>{item.text}</h3>
-                <Button text='Read More' />
+                {/* <Button text='Read More' /> */}
               </div>
             </Col>
           ))}
