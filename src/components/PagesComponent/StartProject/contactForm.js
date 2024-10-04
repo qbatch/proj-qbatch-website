@@ -361,7 +361,7 @@ const ContactForm = () => {
           checked={formData.promotion}
           onChange={() => toggleCheckbox('promotion')}
         />
-        <div className="d-flex justify-content-between align-items-center flex-wrap gap-1 mt-3">
+        <div className="d-flex justify-content-between align-items-center footer-wrapper flex-wrap gap-1 mt-3">
             <Suspense fallback={<div>Loading reCAPTCHA...</div>}>
               <ReCAPTCHA
                 action="homepage"

@@ -25,7 +25,10 @@ padding: 96px 0;
   color: ${({ theme }) => theme.colors.textMedium};
   font-size: ${({ theme }) => theme.fonts.baseFontSize};
   ${media.sm`
-    margin-bottom:48px
+    margin-bottom: 32px;
+  `}
+  ${media.mobile`
+    margin-bottom: 20px;
   `}
 }
 .row{
@@ -73,6 +76,28 @@ padding: 96px 0;
        .text-h4,.paragraph{
          color: ${({ theme }) => theme.colors.whiteColor};
        }
+    }
+  }
+  &.innovations-wrapper {
+    .dev-service-box{
+      .box-header {
+        display: block;
+        margin-bottom: 16px;
+        ${media.sm`
+          display: flex;
+        `}
+        img {
+          margin-bottom: 32px;
+          ${media.sm`
+            margin-bottom: 0;
+          `}
+        }
+        h3 {
+          ${media.sm`
+            margin-bottom: 0;
+          `}
+        }
+      }
     }
   }
 `

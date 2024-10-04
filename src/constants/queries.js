@@ -635,6 +635,20 @@ export const Queries = () => {
           }
         }
       }
+        allStrapiRetailSoftwareDevelopment {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
+        allStrapiTravelAppDevelopment {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiCareer {
         nodes {
           seo {
@@ -643,6 +657,20 @@ export const Queries = () => {
         }
       }
       allStrapiHowWeWork {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
+      allStrapiEvent {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
+      allStrapiRealEstate {
         nodes {
           seo {
             ...SeoFields

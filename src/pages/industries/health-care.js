@@ -1,8 +1,9 @@
 import React, { lazy } from 'react'
 import Layout from '../../components/Layout/layout'
-import { FrequentlyAskedQuestionsHealthCareFaq, weWorkStoriesData } from '../../constants';
+import { FrequentlyAskedQuestionsHealthCareFaq, StartYourHealthTechData, weWorkStoriesData } from '../../constants';
 import { Queries } from '../../constants/queries';
 import { replaceUnderscoreWithAt } from '../../constants/Utils';
+import { EdTechPotentialData, listItem1, listItem2 } from '../../constants';
 import SEO from '../../components/Seo';
 
 const CtoBanner = lazy(() => import('../../components/PagesComponent/PageBanner'))
@@ -38,12 +39,21 @@ const HealthCareAppDevelopment = () => {
         ]}
       />
       <HealthCare />
-      <EdTechPotential />
+      <EdTechPotential
+        heading='Let’s build an accessible, efficient, and secure healthcare future with Qbatch’s technology solution.' 
+        data={EdTechPotentialData}
+      />
       <HealthcareAppDevelopment />
       <HumanizingHealthcare />
       <HealthcareIndustryLeaders />
-      <InstitutionsBenefiting />
-      <StartYourHealthTech />
+      <InstitutionsBenefiting 
+        heading='Institutions Benefiting from Custom Healthcare Software Development'
+        desc='Custom healthcare software development services benefit a wide range of institutions within the healthcare industry by addressing their unique challenges and optimizing workflows. These institutions include:'
+        data1={listItem1}
+        data2={listItem2}
+        imgSrc='/institutions-benefiting.svg'
+      />
+      <StartYourHealthTech StartYourHealthTechData={StartYourHealthTechData} />
       <WhyTrustQbatch />
       <SuccessStories heading="Success Stories From Qbatch’s Healthcare Portfolio" data={weWorkStoriesData} />
       <CollaborationNew borderBottom />
@@ -68,7 +78,7 @@ export const Head = () => {
       language={seoData.language}
       robots={seoData.metaRobots}
       image={seoData.metaimage[0]?.localFile?.url}
-      pathname={`${seoData.slug}`}
+      pathname={`/industries${seoData.slug}`}
     >
       {/* {transformedObject
         .filter((x) => x.visibilityIn)

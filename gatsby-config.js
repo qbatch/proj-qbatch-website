@@ -342,6 +342,26 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'retail-software-development',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'travel-app-development',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'healthcare',
       queryParams: {
         populate: {
@@ -363,6 +383,26 @@ const strapiConfig = {
     },
     {
       singularName: 'how-we-work',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'event',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'real-estate',
       queryParams: {
         populate: {
           seo: {

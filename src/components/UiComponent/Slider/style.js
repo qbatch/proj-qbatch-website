@@ -3,7 +3,7 @@ import { media } from '../../../theme/media-mixins'
 const SliderWrapper = styled.div`
   padding: 96px 0 110px;
   ${media.sm`
-    padding: 56px 0;
+    padding: 56px 0 96px;
   `}
   &.web-app-development-wrapper {
     padding: 96px 0 72px;
@@ -81,6 +81,46 @@ p.content {
   ${media.mobile`
   text-align:center;
     `}
+}
+}
+&.retail-slider-wrapper{
+h2{
+  text-align:center;
+  margin-bottom:72px !important;
+    ${media.lg`
+    font-size: 32px;
+    font-weight: 700;
+      `}
+      ${media.sm`
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom:32px !important;
+      `}
+  }
+  .slick-slide img {
+    height: auto;
+    width: 420px;
+}
+  p.paragraph{
+    text-align:center;
+    ${media.lg`
+    font-size: 16px;
+    line-height: 24px;
+
+      `}
+      ${media.sm`
+        font-size: 14px;
+        line-height: 20px;
+      `}
+  }
+  .upper-heading.text-left {
+    margin-bottom: 72px;
+    ${media.sm`
+    margin-bottom:32px;
+      `}
+}
+p.content {
+    max-width: 553px;
 }
 }
   &.five-step-slider{
@@ -456,6 +496,29 @@ p.content {
         `}
       }
     }
+  }
+  &.realestate-slider-wrapper {
+   .upper-heading {
+    text-align: center;
+    p {
+      margin-bottom: 72px;
+      max-width: 880px;
+      ${media.mobile`
+        margin-bottom: 32px;
+      `}
+    }
+   }
+   .slider-data{
+    .title{
+      max-width: 445px;
+    }
+    .content {
+      max-width: 450px;
+      ${media.mobile`
+        margin-bottom: 0;
+      `}
+    }
+  }
   }
 `
 

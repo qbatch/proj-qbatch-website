@@ -4,6 +4,48 @@ import { media } from "../../../theme/media-mixins";
 const StartYourHealthTechWrapper = styled.div`
 padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
+  &.travel-your-travel-data{
+   h2{
+    margin-bottom: 0;
+   } 
+   p{
+    margin-top: 12px;
+    margin-bottom: 72px;
+    text-align: center;
+    ${media.sm`
+      margin-bottom: 32px;
+      text-align: left;
+    `}
+   }
+   .process-card-overlay {
+h3{
+  ${media.sm`
+  line-height: 28px !important;
+    `}
+}
+   }
+  }
+  &.simplify-your-retail{
+    .process-card-overlay {
+    display: grid;
+    grid-gap: 16px;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr 1fr;
+    ${media.md`
+    grid-template-columns: 1fr 1fr;
+    `}
+    ${media.sm`
+    grid-template-columns: 1fr;
+    `}
+    }
+  }
+  &.simplify-your-travel-data{
+    .process-card-wrapper{
+      h3{
+        margin-bottom: 0 !important;
+      }
+    }
+  }
   ${media.sm`
     padding: 40px 0;
     `}

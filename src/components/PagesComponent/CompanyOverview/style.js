@@ -19,9 +19,13 @@ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor} ;
     }
   }
 }
+h3 {
+  font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+}
 .sub-heading{
+  display: block;
   margin-bottom: 6px;
-  color:  ${({ theme }) => theme.colors.primaryColor} ;
+  color:  ${({ theme }) => theme.colors.primaryColor};
 }
 ${media.lg`
   padding: 56px 0;

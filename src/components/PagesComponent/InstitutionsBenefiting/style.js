@@ -108,5 +108,22 @@ ${media.lg`
     }
 }
 }
+&.property-business {
+  p {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+  .item {
+    &.item-2{
+      padding: 0;
+      background: none;
+    }
+  }
+  ul {
+    li {
+      font-weight: ${({ theme }) => theme.fontWeight.normal};
+    }
+  }
+}
 `;
 export { InstitutionsBenefitingWrapper }

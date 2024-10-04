@@ -192,6 +192,57 @@ const data = [
     icon2: "/future-plan-icon2.svg",
   },
 ];
+const retailData = [
+  {
+    id: 1,
+    challenges: "Feeling overwhelmed?",
+    solve: "Our services streamline operations for retail peace of mind.",
+    icon1: "/1st-icon.svg",
+    icon2: "/2nd-icon.svg",
+  },
+  {
+    id: 2,
+    challenges: "Stuck in spreadsheets?",
+    solve: "Boost efficiency with powerful retail software.",
+    icon1: "/3rd-icon.svg",
+    icon2: "/4th-icon.svg",
+  },
+  {
+    id: 3,
+    challenges: "Losing money on wasted time?",
+    solve: "Streamline tasks and boost profits.",
+    icon1: "/5th-icon.svg",
+    icon2: "/6th-icon.svg",
+  },
+  {
+    id: 4,
+    challenges: "Customers a mystery?",
+    solve: "Gain insights for smarter decisions and business growth.",
+    icon1: "/7th-icon.svg",
+    icon2: "/8th-icon.svg",
+  },
+  {
+    id: 5,
+    challenges: "Inventory a nightmare?",
+    solve: "Take control with smart stock management.",
+    icon1: "/9th-icon.svg",
+    icon2: "/10th-icon.svg",
+  },
+  {
+    id: 6,
+    challenges: "Longing for effortless sales?",
+    solve: "Deliver seamless experiences and watch profits soar.",
+    icon1: "/11th-icon.svg",
+    icon2: "/12th-icon.svg",
+  },
+  {
+    id: 7,
+    challenges: "Drowning in manual tasks?",
+    solve: "Automate your operations and focus on what matters.",
+    icon1: "/13th-icon.svg",
+    icon2: "/14th-icon.svg",
+  },
+];
 
 const sliderItems = [
   {
@@ -3553,6 +3604,352 @@ const FrequentlyAskedQuestionsHealthCareFaq = [
     ),
   },
 ];
+const RetailSoftwareDevelopmentFaq = [
+  {
+    id: 1,
+    title: 'What custom software solutions do you offer for retail and consumer goods businesses?',
+    content: (
+      <div className="faq-content">
+        <span>We offer a range of custom software solutions tailored to the needs of retail and 
+            consumer goods businesses, including point-of-sale systems, inventory management 
+            software, e-commerce platforms, customer relationship management (CRM) systems, 
+            and mobile applications.</span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: ' How do your IT solutions cater to the specific needs of the retail industry?',
+    content: (
+      <div className="faq-content hire-developer-faq">
+        <span>Our IT solutions are designed with a deep understanding of the unique challenges and 
+          requirements of the retail industry. We prioritize features such as real-time inventory 
+          tracking, seamless integration with existing systems, scalability to accommodate growth,
+          and user-friendly interfaces for both staff and customers.</span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'Can you describe your process for developing custom retail software?',
+    content: (
+      <div className="faq-content">
+        <span>Our process typically involves initial consultation to understand the client's needs, 
+              followed by requirements gathering, design, development, testing, deployment, and 
+              ongoing support. We emphasize collaboration and feedback at every stage to ensure the 
+              final product meets expectations.</span>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'Do you provide software solutions for managing merchandising, inventory, and logistics?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, we offer comprehensive software solutions for managing merchandising, inventory,
+            and logistics, including features for tracking stock levels, managing supplier 
+            relationships, optimizing order fulfillment processes, and analyzing sales data.</span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What types of retail mobile applications do you develop?',
+    content: (
+      <div className="faq-content">
+        <span>We develop a variety of retail mobile applications, including e-commerce apps, loyalty 
+              program apps, in-store shopping assistants, mobile POS systems, and apps for managing 
+              inventory or sales on the go.</span>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'How do your CRM solutions enhance customer relationship management for retail businesses?',
+    content: (
+      <div className="faq-content">
+        <span>Our CRM solutions are designed to help retail businesses better understand and engage 
+              with their customers. This includes features for tracking customer interactions, 
+              segmenting customers based on behavior or demographics, personalizing marketing 
+              efforts, and fostering customer loyalty through rewards programs.</span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'Do you offer custom billing software for retail shops and boutiques?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, we offer custom billing software tailored to the specific needs of retail shops and 
+              boutiques. Our billing software typically includes features for processing transactions, 
+              generating invoices, managing discounts and promotions, and integrating with 
+              accounting systems.</span>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: "What technology platforms and methodologies do you specialize in for retail software development?",
+    content: (
+      <div className="faq-content">
+        <span>
+            We specialize in a variety of technology platforms and methodologies for retail software 
+            development, including cloud-based solutions, mobile development frameworks, e-
+            commerce platforms, and agile development methodologies.</span>
+      </div>
+    ),
+  },
+  {
+    id: 9,
+    title: 'How do you ensure the quality and reliability of your retail software through testing?',
+    content: (
+      <div className="faq-content">
+        <span>
+            We employ rigorous testing procedures throughout the development lifecycle to ensure 
+            the quality and reliability of our retail software. This includes performance testing, unit 
+            testing, regression testing, integration testing,  and user acceptance testing.</span>
+      </div>
+    ),
+  },
+  {
+    id: 10,
+    title: 'What customizable IT services do you provide specifically tailored to the retail industry?',
+    content: (
+      <div className="faq-content">
+        <span>
+            In addition to custom software development, we provide a range of IT services tailored 
+            to the retail industry, including IT consulting, infrastructure management, data 
+            analytics, cybersecurity solutions, and cloud migration services.</span>
+      </div>
+    ),
+  },
+  {
+    id: 11,
+    title: 'Can you discuss any successful projects or case studies in retail software development?',
+    content: (
+      <div className="faq-content">
+        <span>
+            We have successfully completed projects for retail clients ranging from small boutiques 
+            to large chains. These projects have included the development of custom e-commerce 
+            platforms, point-of-sale systems, inventory management software, and mobile 
+            applications.</span>
+      </div>
+    ),
+  },
+  {
+    id: 12,
+    title: 'Do you offer ongoing support and maintenance services for retail software products?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, we offer ongoing support and maintenance services to ensure the continued 
+              reliability and performance of our retail software products. This includes bug fixes, 
+              software updates, technical support, and proactive monitoring to address any issues that
+              may arise.</span>
+      </div>
+    ),
+  },
+];
+const TravelSoftwareDevelopmentFaq = [
+  {
+    id: 1,
+    title: 'How long does it take to create a travel mobile app?',
+    content: (
+      <div className="faq-content">
+        <span>The time required to develop a travel mobile app depends on various factors such
+          as features, complexity, design, and development approach. Typically, it can range
+          from a few months to a year or more.</span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'Why should I choose the Qbatch team for my travel app development project?',
+    content: (
+      <div className="faq-content hire-developer-faq">
+        <span>Qbatch team offers expertise in travel app development, a proven track record of
+          successful projects, dedication to client satisfaction, and a commitment to
+          delivering high-quality solutions tailored to your needs.</span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'Can I hire software engineers from Qbatch to work on hourly or project-based tasks?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch offers flexible hiring models including hourly or project-based tasks to
+        suit your requirements.</span>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'Can you provide a timeline and estimated budget for developing our travel app based on our requirements?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, after understanding your project requirements, Qbatch can provide a detailed
+        timeline and estimated budget for developing your travel app.</span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'What technologies and platforms do you use?',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch uses a range of technologies and platforms including but not limited to
+          iOS, Android, React Native, Flutter for mobile development, and various backend
+          technologies such as Node.js, Django, and Laravel.</span>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'Do you oer customization options to tailor the travel app to our specific needs and branding requirements?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch oers customization options to tailor the travel app to your specic
+        needs and branding requirements.</span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How do you ensure that the application will be user-friendly and intuitive for both travelers and administrators',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch follows user-centric design principles and conducts thorough usability
+          testing to ensure that the application is user-friendly and intuitive for both
+          travelers and administrators</span>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: "How do you handle integration with third-party services such as booking engines, payment gateways, and mapping APIs?",
+    content: (
+      <div className="faq-content">
+        <span>
+           Qbatch is experienced in integrating your app with various third-party services
+          such as booking engines, payment gateways, and mapping APIs using
+          industry-standard protocols and technologies.</span>
+      </div>
+    ),
+  },
+  {
+    id: 9,
+    title: 'What measures do you take to ensure data security and privacy for travelers using the app?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Qbatch implements robust security measures such as data encryption, secure
+        authentication, and compliance with data protection regulations to ensure data
+        security and privacy for travelers using the app.</span>
+      </div>
+    ),
+  },
+  {
+    id: 10,
+    title: 'What is your approach to project management and communication throughout the development process?',
+    content: (
+      <div className="faq-content">
+        <span>
+            Qbatch follows agile project management methodologies and maintains
+            transparent communication channels to keep clients informed about project
+            progress and address any concerns promptly</span>
+      </div>
+    ),
+  },
+  {
+    id: 11,
+    title: 'What sets your company apart from competitors in terms of expertise, experience, and client satisfaction?',
+    content: (
+      <div className="faq-content">
+        <span>
+        Qbatch distinguishes itself through its deep expertise in travel app development,
+        extensive experience delivering successful projects, and a strong focus on client
+        satisfaction evidenced by positive testimonials and long-term partnerships..</span>
+      </div>
+    ),
+  },
+  {
+    id: 12,
+    title: 'Do you oer customization options for building custom flight booking apps or hotel booking apps?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch oers customization options for building custom ight booking apps,
+        hotel booking apps, and other travel-related applications to meet your specic
+        requirements.</span>
+      </div>
+    ),
+  },
+  {
+    id: 13,
+    title: 'What IT solutions do you provide specically tailored to the travel industry?',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch provides a range of IT solutions tailored to the travel industry including
+        mobile apps, websites, booking systems, CRM software, and more.</span>
+      </div>
+    ),
+  },
+  {
+    id: 14,
+    title: 'Do you oer dedicated teams for travel app development projects?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch oers dedicated teams comprising experienced professionals for travel
+        app development projects to ensure focused attention and timely delivery.</span>
+      </div>
+    ),
+  },
+  {
+    id: 15,
+    title: 'What is your approach to design and development for travel apps and websites?',
+    content: (
+      <div className="faq-content">
+        <span>We go beyond the typical approach. Our industry-grade design puts travelers
+          first, ensuring intuitive interfaces and a seamless journey. We combine industry
+          best practices with cutting-edge technology to create travel apps and websites that
+          are both engaging and functional</span>
+      </div>
+    ),
+  },
+  {
+    id: 16,
+    title: 'Do you provide travel portal software development services for businesses?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch provides travel portal software development services for businesses
+          looking to create comprehensive online platforms for booking ights, hotels,
+          tours, and more.</span>
+      </div>
+    ),
+  },
+  {
+    id: 17,
+    title: 'Do you oer CRM software tailored to the needs of the travel industry?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, Qbatch oers CRM software tailored to the specic needs of the travel
+          industry, enabling businesses to manage customer relationships, bookings, and
+          inquiries eectively</span>
+      </div>
+    ),
+  },
+  {
+    id: 18,
+    title: 'How do your software solutions address the specic challenges faced by travel agencies and tour operators',
+    content: (
+      <div className="faq-content">
+        <span>Qbatch's software solutions are designed to address the specic challenges faced by
+          travel agencies and tour operators by streamlining operations, enhancing
+          customer experiences, and facilitating seamless booking and communication
+          processes.</span>
+      </div>
+    ),
+  },
+];
 
 const enterPrisFaq = [
   {
@@ -4412,6 +4809,115 @@ const StartYourHealthTechData = [
     text: "Once approved, we assemble your dedicated development team and kick off the project.",
   },
 ]
+const SimplifyYourRetailData = [
+  {
+    img: '/arrow-line.svg',
+    number: 1,
+    heading: "Discuss Your Needs",
+    text: "We'll discuss your business goals, budget, and timeline to find the perfect engagement model for your needs.",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 2,
+    heading: "Plan & Team Up",
+    text: "Based on your requirements and chosen engagement model, we'll craft a clear plan and assemble a dedicated team.",
+  },
+  {
+    img: '',
+    number: 3,
+    heading: "Get Going!",
+    text: "Our software engineers will start development. We'll track your progress and keep you informed throughout the process.",
+  },
+]
+const SimplifyYourTravelData = [
+  {
+    img: '/arrow-line.svg',
+    number: 1,
+    heading: "Simply share your project idea with us.",
+    text: "",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 2,
+    heading: "We'll meticulously analyze the details.",
+    text: "",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 3,
+    heading: "Outline the primary workflows and essential features",
+    text: "",
+  },
+  {
+    img: '',
+    number: 4,
+    heading: "Provide you with a comprehensive project estimate.",
+    text: "",
+  },
+]
+const dataTravelApplications = [
+  {
+    img: '/Secure-Payment-Gateways.svg',
+    heading: 'Secure Payment Gateways',
+    text: 'Enable secure online payments for travelers'
+  },
+  {
+    img: '/Social-Media-Integration.svg',
+    heading: 'Social Media Integration',
+    text: 'Allow users to share their experiences on social media platforms.'
+  },
+  {
+    img: '/Map-and-Navigations.svg',
+    heading: 'Map and Navigations',
+    text: 'Provide efficient navigation and directions for travelers.'
+  },
+  {
+    img: '/Flight-Tracking.svg',
+    heading: 'Flight Tracking',
+    text: 'Keep users informed about their flight status and potential delays.'
+  },
+  {
+    img: '/Itinerary-Planner.svg',
+    heading: 'Itinerary Planner',
+    text: 'Enable users to plan and manage their travel itineraries efficiently.'
+  },
+  {
+    img: '/World-Clock.svg',
+    heading: 'World Clock',
+    text: 'Provide a world clock feature for easy time conversion.'
+  },
+  {
+    img: '/Currency-Conversion.svg',
+    heading: 'Currency Conversion',
+    text: 'Offer currency conversion functionality for accurate financial planning.'
+  },
+  {
+    img: '/Review-and-Ratings.svg',
+    heading: 'Review and Ratings',
+    text: 'Allow users to leave reviews and ratings to help others make informed decisions.'
+  },
+  {
+    img: '/Map-Based-Sightseeing.svg',
+    heading: 'Map-Based Sightseeing',
+    text: 'Explore interesting places and sightseeing spots on a map.'
+  },
+  {
+    img: '/FAQ-and-Support.svg',
+    heading: 'FAQ and Support',
+    text: 'Provide helpful information and assistance to your users.'
+  },
+  {
+    img: '/Route-Planning-and-Sharing.svg',
+    heading: 'Route Planning and Sharing',
+    text: 'Plan routes and share them with fellow travelers.'
+  },
+  {
+    img: '/Smart-Search.svg',
+    heading: 'Smart Search',
+    text: 'Find tickets, excursions, and hotels with ease.'
+  },
+]
+
 const hassleData = [
   {
     img: '/stopwatch.svg',
@@ -5477,6 +5983,69 @@ const EdTechPotentialData = [
   },
 ];
 
+const realEstateIndustryData = [
+  {
+    image: '/virtual-property.svg',
+    title: 'Virtual property tours and inspections',
+    disc: 'Planning to buy a property in a different province or state? Our VR proptech offers thorough property visits remotely, reducing the need for in-person interactions.'
+  },
+  {
+    image: '/automate-paperwork.svg',
+    title: 'Automate paperwork and business processes',
+    disc: 'Free your agents to focus on what matters. Automate tedious tasks like paperwork and listings, boosting efficiency and reducing errors.  (61% of agencies already automate!)'
+  },
+  {
+    image: '/easy-communication.svg',
+    title: 'Easy communication between tenants and landlords',
+    disc: 'Ensure clear tenant communication and timely responses to maintenance requests, and rent inquiries with our rental property management solutions.'
+  },
+  {
+    image: '/cost-reduction.svg',
+    title: 'Cost reduction on office maintenance',
+    disc: 'Simplify tracking repairs, leases, and tenant information, streamlining contractor work orders, reducing high operational costs, and boosting profitability.'
+  },
+  {
+    image: '/vacation-rental.svg',
+    title: '24/7 remote control of property for vacation rentals',
+    disc: 'Manage vacation rentals remotely anytime with our 24/7 property monitoring and control technology. Ensure security and guest convenience for peace of mind.'
+  },
+  {
+    image: '/digital-contracting.svg',
+    title: 'Digital contracting and secure payment transactions',
+    disc: 'Streamline contracts & payments with our digital real estate IT solutions. Eliminate paperwork delays and errors, ensuring efficient and secure transactions.'
+  },
+  {
+    image: '/boosted-digital.svg',
+    title: 'Boosted digital engagement with customers',
+    disc: 'Maintain winning customer engagement in a competitive market with our real estate CRM software solutions to win more leads and clients.'
+  },
+  {
+    image: '/help-homebuyer.svg',
+    title: 'Help homebuyers beat the competition',
+    disc: "Modern buyers are price-conscious. Our real estate data analytics solutions inform you on pricing to meet buyers' expectations."
+  },
+  {
+    image: '/well-targeted.svg',
+    title: 'Well-targeted AI-driven marketing solutions',
+    disc: "Target smarter, market better. Our AI solutions for real estate agents identify the perfect buyers and optimize campaigns for maximum impact."
+  },
+  {
+    image: '/declutter-data.svg',
+    title: 'Declutter data collection and storage',
+    disc: "We leverage Big Data to simplify data. Our real estate software developers streamline collection and storage procedures ensuring quick access to crucial data."
+  },
+  {
+    image: '/favorable-mortgage.svg',
+    title: 'Favorable mortgage conditions',
+    disc: "Mortgage calculators and advanced analysis tools help buyers find the best loan option confidently."
+  },
+  {
+    image: '/crowded-market.svg',
+    title: 'Stand out in a crowded market',
+    disc: "Let’s harness data and predictive analytics, giving your real estate enterprises a competitive edge with our commercial real estate software development services."
+  },
+];
+
 const HealthcareAppDevelopmentCards = [
   {
     imgSrc: '/patient.svg',
@@ -5569,6 +6138,57 @@ const listItem2 = [
   {
     text: 'Wellness and Fitness Industries'
   }
+];
+
+const properyBusinessData1 = [
+  {
+    text: 'Real Estate Startups'
+  },
+  {
+    text: 'Construction Companies'
+  },
+  {
+    text: 'Technology Disruptors'
+  },
+  {
+    text: 'Commercial and Residential Real Estate'
+  },
+  {
+    text: 'Realtors, Property Managers, Investors'
+  },
+  {
+    text: 'Real Estate Brokerage Firms'
+  },
+  {
+    text: 'Property Management Companies'
+  },
+  {
+    text: 'PropTech Product Companies and Real Estate Finance Companies'
+  },
+];
+
+const properyBusinessData2 = [
+  {
+    text: 'Real Estate Developers'
+  },
+  {
+    text: 'Homeowners Associations (HOAs)'
+  },
+  {
+    text: 'Appraisal and Valuation Companies'
+  },
+  {
+    text: 'Investment Firms and REITs (Real Estate Investment Trusts)'
+  },
+  {
+    text: 'Construction Companies'
+  },
+  {
+    text: 'Real Estate Marketing Agencies'
+  },
+  {
+    text: 'Government Housing and Urban Planning Departments'
+  },
 ];
 
 const HumanizingHealthcareSliderData = [
@@ -5696,6 +6316,130 @@ const HumanizingHealthcareSliderData = [
     image: '/clinical-data.svg',
     title: 'Clinical Data Management Software Development',
     content: 'Refine data entry and classification, ensuring complete and error-free research data collection with our healthcare software development services, complying with federal, state, and local regulations, our services facilitate informed clinical decisions and advance medical research.',
+  },
+];
+const RetailSliderData = [
+  {
+    image: '/retail-analytics.svg',
+    title: 'Retail Analytics and Forecasting Software',
+    content: 'Avoid making wrong product and inventory stocking choices leveraging predictive analytics and accurately predicting sales and demand using intelligent machine learning algorithms.',
+  },
+  {
+    image: '/retail-business.svg',
+    title: 'Retail Business Intelligence (BI) and Reporting Tools',
+    content: 'Uncover hidden insights in sales, inventory, and customers and make data-driven decisions to fast-track stock, personalize marketing, and boost efficiency. Gain a competitive edge by building business-specific Retail BI and analytics software.',
+  },
+  {
+    image: '/robot-assisted.svg',
+    title: 'Robot-Assisted Warehouse Management',
+    content: 'We help you integrate warehouse robotics or collaborative robots (cobots) to streamline warehouse tasks like order picking, packing, and quality control. Let’s facilitate storage, automate operations, and improve supply chain processes.',
+  },
+  {
+    image: '/retail-merchandising.svg',
+    title: 'Retail Merchandising and Planning Software Development',
+    content: 'Manage assortment, planogram generation, product placement, inventory control, floor planning, and display analysis with our retail merchandising software. Increase floor space with data-driven layouts and assess displays for smarter decisions.',
+  },
+  {
+    image: '/product-catalog.svg',
+    title: 'Product Catalog Management Software Development',
+    content: 'Stop juggling spreadsheets! Our cloud-based retail and wholesale software collects product information ensuring a single source of truth that simplifies creation, pricing, categorization, and inventory management across all sales channels.',
+  },
+  {
+    image: '/aI-recommendation.svg',
+    title: 'AI Recommendation Engines Development',
+    content: 'Make unique and relevant product recommendations by developing a custom AI-powered recommendation engine, plugin, or extension to analyze user behavior, including view history, purchase history, and frequently bought items.',
+  },
+  {
+    image: '/custom-shopping.svg',
+    title: 'Custom Shopping Cart Development',
+    content: 'Develop custom shopping carts with tailored features like abandonment recovery, self-checkout, and open-source integration, providing your customers with complete control and superior buying experiences.',
+  },
+  {
+    image: '/mobile-wallets.svg',
+    title: 'Mobile Wallets and Contactless Payment Solutions',
+    content: 'Offer streamlined electronic transactions with mobile wallets and integrated contactless payment methods with our retail payment and billing solutions, facilitating secure and convenient contactless transactions, and catering to frictionless checkout experiences.',
+  },
+  {
+    image: '/omnichannel-retail.svg',
+    title: 'Omnichannel Retail Software Development',
+    content: 'Engage customers through multiple digital and physical touchpoints with a unified brand experience, synchronizing offline and online stores, and upgrading inventory management and customer interactions, leveraging our IT services for your retail biz.',
+  },
+  {
+    image: '/facial-recognition.svg',
+    title: 'Facial Recognition for Smart Retail Marketing and Security',
+    content: 'Our custom-built software for retail shops leverages facial recognition to deliver individual-level shopping experiences, identify loyal customers for targeted promotions, and improve security through suspect identification and crowd monitoring.',
+  },
+  {
+    image: '/retail-price.svg',
+    title: 'Retail Price Optimization Software Development',
+    content: 'Take the guesswork out of pricing with our retail price management software solution and study real-time data like competition, consumer behavior, and market conditions. The result? Maximum margins, optimal competitiveness, sales, and profitability.',
+  },
+  {
+    image: '/third-part-system.svg',
+    title: 'Third-party System Integrations',
+    content: 'Ensure seamless connectivity by integrating ERPs, CRMs, finance, logistics, and analytics systems, ensuring they work coherently to streamline operations and enhance operational efficiency.',
+  },
+];
+const TravelSliderData = [
+  {
+    image: '/Travel-App-Development-2.svg',
+    title: 'Travel App Development',
+    content: 'Go beyond automation and empower travelers to design their dream adventures. Our all-in-one travel app solutions include everything from seamless flight and hotel booking to personalized itinerary builders and local expert connections.',
+  },
+  {
+    image: '/sAAs-optimization-services-2.svg',
+    title: 'SaaS Optimization Services',
+    content: 'Simplify travel planning with our comprehensive e-ticketing solutions. Seamlessly search, compare, and book flights and hotels using our custom flight booking app development services.',
+  },
+  {
+    image: '/Holiday-booking-engine-2.svg',
+    title: 'Holiday Booking Engines',
+    content: 'Build and integrate custom holiday booking engines into your hotel and flight web and mobile apps for both inbound and outbound vacation packages. Creating dream adventures is just a few clicks away!',
+  },
+  {
+    image: '/tutoring-and-training-platform-development-2.svg',
+    title: 'Travel Marketplace Development',
+    content: 'Connect travelers with vacation packages, tours, hotel bookings, payment, airfares, cruises, and rental cars generating assured revenues. Build your own travel agency (OTA) in a box with our tourism app development services.',
+  },
+  {
+    image: '/custom-lms-lcms-lxp-and-elearning-portals-2.svg',
+    title: 'Guide and Tourism App Development',
+    content: 'Build tourist-friendly mobile apps and platforms for planning trips, booking accommodations, linking journeys, adding cabs, generating amusement park passes, and more. Offer a multi-use, digital travel companion to your guests!',
+  },
+  {
+    image: '/Transport-app-development-2.svg',
+    title: 'Transport App Development',
+    content: 'Make transportation effortless, saving your guest’s time and money with our transport mobile apps. Besides, we build dedicated car booking platforms for on-demand rides, including inter-city and inter-country options.',
+  },
+  {
+    image: '/school-management-and0-student-information-software-2.svg',
+    title: 'Travel Management Software Development',
+    content: 'Build tours and travel management software panel to easily handle bookings, reports, and itineraries for leisure and corporate trips. Now manage expenses, enforce policies, and optimize costs on a single platform efficiently.',
+  },
+  {
+    image: '/quiz-exam-and-assessment-platform-development-2.svg',
+    title: 'Travel Portal Development',
+    content: 'As a leading travel portal software development company, we provide white-label portals and robust GDS/Sabre API integrations ensuring global access to extensive hospitality inventories.',
+  },
+  {
+    image: '/virtual-classroom-app-development-2.svg',
+    title: 'Social Travel App Development',
+    content: 'Spice up your travels with our social travel platform and connect your traveling guests with fellow adventurers. Create a vibrant online community where people swap travel stories and make new friends worldwide..',
+  },
+  {
+    image: '/content-authoring-software-development-2.svg',
+    title: 'Travel Emergency App Development',
+    content: 'Safe travels, guaranteed! Our emergency apps instantly connect your guests to medical help, translators, and local resources. Help them travel with peace of mind, knowing help is a tap away.',
+  },
+  {
+    image: '/self-education-software-2.svg',
+    title: 'Custom Travel App Development',
+    content: "Build your dream travel app! We combine booking, CRM, itinerary planning & feedback for happy customers & efficient operations. Plus, financial tools & custom CRM for hotels & agencies. It's your all-in-one travel solution.",
+  },
+  {
+    image: '/proctoring-software-development-2.svg',
+    title: 'Travel Review/Feedback Platform Development',
+    content: 'Manage your online reputation and gather valuable customer feedback in one place with our reputation management solutions. Showcase positive reviews, address concerns promptly, and turn happy travelers into loyal brand advocates.',
   },
 ];
 const collaborationData = [
@@ -5857,6 +6601,29 @@ const careerCardData = [
     caption: 'Your ideas drive innovation. We invest in your professional development and foster a collaborative environment',
   },
 ];
+const recapEventsData = [
+  {
+    img: '/alibaba-cocreate.png',
+    title: 'Alibaba Co-Create 2023  ',
+    caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
+    date: '09/07/2023',
+    location: 'Las Vegas, USA'
+  },
+  {
+    img: '/amazon-accelerate.png',
+    title: 'Amazon Accelerate 2023',
+    caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
+    date: '09/13/2023',
+    location: 'Seattle, USA'
+  },
+  {
+    img: '/japan-week.png',
+    title: 'Japan IT Week 2023',
+    caption: 'Join us for a day of thought-provoking discussions, cutting-edge tech demos, and networking opportunities with top industry experts.',
+    date: '04/05/2023',
+    location: 'Tokyo, Japan'
+  },
+];
 const MattersQbatchCardsData = [
   {
     heading: 'Transport Allowance',
@@ -5949,8 +6716,792 @@ const WhyTrustQbatchData2 = [
   { text: "- No Biases, Only Neutral Feedback" },
   { text: '- Highly Solution-Oriented Mindset' }
 ]
+const coreRetailData = [
+  {
+    heading: 'Inventory Management Systems',
+    content: [
+      { text: 'Real-time inventory tracking across all locations' },
+      { text: 'Automated reordering to maintain optimal stock levels' },
+      { text: 'Batch & serial number tracking for precise control' },
+      { text: 'Multi-warehouse management for seamless coordination' },
+      { text: 'Detailed reporting on stock levels, turnover, and suppliers' },
+    ]
+  },
+  {
+    heading: 'E-commerce Platforms',
+    content: [
+      { text: 'Customizable storefronts to reflect your unique brand' },
+      { text: 'Secure multi-payment gateways for secure transactions' },
+      { text: 'Mobile-optimized design for a smooth shopping experience' },
+      { text: 'Built-in SEO tools for improved search engine ranking' },
+      { text: 'Centralized order processing and fulfillment' },
+      { text: 'Customer accounts and loyalty programs to boost retention' },
+    ]
+  },
+  {
+    heading: 'Retail Point of Sale (POS) Systems',
+    content: [
+      { text: 'Fast and reliable checkout processing' },
+      { text: 'Integrated inventory management for accurate stock data' },
+      { text: 'Customer management tools for personalized service' },
+      { text: 'Comprehensive sales reporting for data-driven decisions' },
+      { text: 'Employee management to streamline staff operations' },
+      { text: 'Multi-store capability for centralized control' },
+    ]
+  },
+  {
+    heading: 'Retail Customer Relationship Management (CRM)',
+    content: [
+      { text: 'Detailed customer profiles for personalized interactions' },
+      { text: 'Marketing automation tools for targeted campaigns' },
+      { text: 'Integrated customer support features for efficient service' },
+      { text: 'Customer reward and loyalty software to drive repeat business' },
+      { text: 'Analytics and reporting to understand customer behavior' },
+    ]
+  },
+  {
+    heading: 'Retail ERP Systems',
+    content: [
+      { text: 'Retail ERP systems to integrate core business processes' },
+      { text: 'Customer management to manage customer interactions and sales' },
+      { text: 'Employee management to streamline HR processes and evaluation' },
+      { text: 'Financial resource management to handle budgeting and accounting' },
+      { text: 'Supply chain module for procurement and logistics management' },
+    ]
+  },
+  {
+    heading: 'Mobile Retail Solutions',
+    content: [
+      { text: 'Mobile commerce apps for convenient shopping on the go' },
+      { text: 'In-store navigation for a frictionless shopping experience' },
+      { text: 'Push notifications to engage customers with targeted promotions' },
+      { text: 'Mobile POS systems for flexible checkout options' },
+      { text: 'Customer loyalty apps to boost brand engagement' },
+    ]
+  }
+]; 
 
+const pressReleaseData = [
+  { text: 'Qbatch Expands Global Presence with New Offices in Europe' },
+  { text: 'Qbatch Partners with Leading AI Firm for Next-Gen Tech Development' },
+  { text: 'Qbatch Wins ‘Innovator of the Year’ at Tech Awards 2024'},
+];
 
+const ImagineRetailExperienceData = [
+  {
+    img: '/thrill-your-customers.svg',
+    heading: 'Thrill your customers',
+    text: "Experiential retail? We're all about it! Let's create in-store experiences that have your customers raving and coming back for more."
+  },
+  {
+    img: '/embrace-social-power.svg',
+    heading: 'Embrace social power',
+    text: "Social commerce is booming. We'll help you leverage the power of social media platforms to turn likes into sales."
+  },
+  {
+    img: '/go-green.svg',
+    heading: 'Go green',
+    text: "Sustainability is more than a trend, it's the future. We'll equip you to meet the growing demand for eco-conscious brands."
+  },
+  {
+    img: '/cut-out-the-middleman!.svg',
+    heading: 'Cut out the middleman!',
+    text: "We'll help you establish a thriving direct-to-consumer sales channel, connecting directly with your audience."
+  },
+  {
+    img: '/the-voice-of-commerce.svg',
+    heading: 'The voice of commerce',
+    text: "Voice shopping is here to stay. We'll ensure your customers can seamlessly purchase and get unique recommendations with just their voice."
+  },
+]
+const ImagineTravelAppData = [
+  {
+    img: '/language-1.svg',
+    heading: 'Language barriers got them tongue-tied? ',
+    text: "Our apps translate the world, so your guests can focus on exploring it."
+  },
+  {
+    img: '/community-1.svg',
+    heading: 'Overwhelmed by endless travel options?',
+    text: "We create personalized recommendations and itineraries for your guests."
+  },
+  {
+    img: '/swap-1.svg',
+    heading: 'FOMO (Fear Of Missing Out) got you down?',
+    text: "Let’s offer exclusive deals to keep your travel enthusiasts engaged."
+  },
+  {
+    img: '/mobile-block.svg',
+    heading: 'Guests won’t engage with your app anymore?',
+    text: "We build unique app experiences that spark joy, not overwhelm."
+  },
+  {
+    img: '/trap-1.svg',
+    heading: 'Tired of the same tourist traps? ',
+    text: "Let’s add engines that unlock local secrets and exclusive deals for unforgettable adventures."
+  },
+]
+const ImagineTravelAppData2 = [
+  {
+    img: '/ai-2.svg',
+    heading: 'AI',
+    text: "Remembers travel styles – no more one-size-fits-all itineraries"
+  },
+  {
+    img: '/ai-ml-2.svg',
+    heading: 'AR',
+    text: "Shows hidden gems around – point your phone and explore instantly"
+  },
+  {
+    img: '/vr-2.svg',
+    heading: 'VR',
+    text: "Lets you virtually explore destinations before you book."
+  },
+  {
+    img: '/location-2.svg',
+    heading: 'GPS',
+    text: "Keeps you on track with real-time recommendations & guidance"
+  },
+  {
+    img: '/chatbot-2.svg',
+    heading: 'Chatbots',
+    text: "Are your 24/7 travel assistants – always ready to help!"
+  },
+]
+const InnovativeRetailSolutionsData = [
+  {
+    img: '/headless-commerce.svg',
+    heading: 'Headless Commerce',
+    text: "Embrace headless e-commerce approaches for flexible and humanized retail solutions that cater to your unique business needs."
+  },
+  {
+    img: '/cloud-first.svg',
+    heading: 'Cloud-first',
+    text: "Scalability, accessibility, and ironclad security – that's the cloud advantage. We'll leverage it to build your future-proof retail platform."
+  },
+  {
+    img: '/microservices.svg',
+    heading: 'Microservices',
+    text: "Modular and efficient – that's the microservices approach. We'll build a retail software system that runs like a dream."
+  }
+]
+const TravelSolutionsData = [
+  {
+    img: '/mobile-1.svg',
+    heading: 'Mobile Hotel Apps',
+    text: "Go beyond basic booking with features like loyalty programs, personalized recommendations, amenity services, and smart room controls."
+  },
+  {
+    img: '/bulb-2.svg',
+    heading: 'Contactless Solutions',
+    text: "Empower guests with touchless technology and 24/7 access to services through mobile apps and kiosks."
+  },
+  {
+    img: '/house-2.svg',
+    heading: 'Smart Rooms',
+    text: "Impress them with in-room tablets for digital control of the environment, preventive maintenance, and seamless offline and online functionality."
+  }
+]
+const ExploreOurIndustrySpecificRetailPotentialData = [
+  {
+    img: '/large-retail-chains.svg',
+    heading: 'Large Retail Chains',
+    text: "Manage inventory, track sales, and assess customer data across locations."
+  },
+  {
+    img: '/e-commerce-businesses.svg',
+    heading: 'E-Commerce Businesses',
+    text: "Enhance online shopping experiences and streamline operations."
+  },
+  {
+    img: '/small-and-medium-retailers.svg',
+    heading: 'Small and Medium Retailers',
+    text: "Improve efficiency and customer engagement with tailored solutions."
+  },
+  {
+    img: '/omnichannel-retailers.svg',
+    heading: 'Omnichannel Retailers',
+    text: "Integrate online and offline channels for a consistent customer experience."
+  },
+  {
+    img: '/grocery-stores-&-supermarkets.svg',
+    heading: 'Grocery Stores & Supermarkets',
+    text: "Rectify inventory and supply chain management."
+  },
+  {
+    img: '/pharmacies-and-healthcare.svg',
+    heading: 'Pharmacies and Healthcare ',
+    text: "Manage prescriptions, inventory, and customer data effectively."
+  },
+  {
+    img: '/department-stores.svg',
+    heading: 'Department Stores',
+    text: "Enhance shopping experiences and operational efficiency."
+  },
+  {
+    img: '/franchis-retail-businesses.svg',
+    heading: 'Franchise Retail Businesses',
+    text: "Ensure consistency and efficiency across multiple locations."
+  },
+  {
+    img: '/commercial-centers.svg',
+    heading: 'Commercial Centers',
+    text: "Manage tenant operations and enhance customer experiences"
+  },
+];
+const TravelLanguagesData = [
+  {
+    title: "Maps and Location Services",
+    content: [
+      { img: "/g-maps.svg",  },
+      { img: "/here.svg", },
+      { img: "/oracle.svg", },
+      { img: "/nec.svg", },
+      { img: "/gps.svg", },
+    ]
+  },
+  {
+    title: "Payment Gateways",
+    content: [
+      { img: "/master-c.svg", },
+      { img: "/visa-c.svg", },
+      { img: "/paypal.svg", },
+      { img: "/g-pay.svg", },
+      { img: "/strip-1.svg", },
+      { img: "/brain-tree.svg", },
+      { img: "/noon.svg", },
+    ]
+  },
+  {
+    title: "Checkout Solutions",
+    content: [
+      { img: "/2cc.svg",},
+      { img: "/clover.svg",},
+      { img: "/cash.svg",},
+      { img: "/b.svg",},
+      { img: "/animal.svg",},
+    ]
+  },
+  {
+    title: "Global Distribution Systems (GDS)",
+    content: [
+      { img: "/amadeus.svg",},
+      { img: "/sabre.svg",},
+      { img: "/galileo.svg",},
+      { img: "/world-span.svg",},
+    ]
+  },
+  {
+    title: "Booking Engines, OTAs, and PMS",
+    content: [
+      { img: "/agilysys.svg",},
+      { img: "/auto-clerk.svg",},
+      { img: "/molo.svg",},
+      { img: "/innfinity.svg",},
+      { img: "/gust.svg",},
+      { img: "/infor.svg",},
+      { img: "/hotels.svg",},
+      { img: "/maxi-mojo.svg",},
+      { img: "/logical.svg",},
+    ]
+  },
+  {
+    title: "Central Reservation Systems (CRS)",
+    content: [
+      { img: "/cendyn.svg",},
+      { img: "/nb.svg",},
+      { img: "/e-rev.svg",},
+      { img: "/blosy.svg",},
+      { img: "/hotel-sp.svg",},
+      { img: "/djub.svg",},
+      { img: "/inntopia.svg",},
+      { img: "/sabre.svg",}
+    ]
+  },
+];
+const PowerfulRetailSolutionsCardData = [
+  {
+    imgSrc: '/chart.svg',
+    title: 'Data-Driven Forecasting',
+    content: [
+      {
+        subtitle: 'Advanced Analytics',
+        description: 'Leverage big data to analyze historical sales data, customer behavior, and market trends to predict product demand accurately.'
+      },
+      {
+        subtitle: 'AI and ML Retail Solutions',
+        description: 'We integrate these technologies to continuously learn from new data, improving the accuracy of demand forecasts over time.'
+      }
+    ]
+  },
+  {
+    imgSrc: '/inventry-icon.svg',
+    title: 'Agile Inventory Management',
+    content: [
+      {
+        subtitle: 'Just-in-Time Inventory Management Solutions',
+        description: 'Adopt JIT practices to reduce holding costs and minimize excess inventory. Develop efficient inventory software that helps you receive required goods.'
+      },
+      {
+        subtitle: 'Adaptive Supply Chain Solutions',
+        description: 'Build supply chain and vendor management software to respond to demand changes and maintain relationships with multiple suppliers for faster product deliveries.'
+      }
+    ]
+  },
+  {
+    imgSrc: '/customer-icon.svg', 
+    title: 'Customer-Centric Strategies',
+    content: [
+      {
+        subtitle: 'Pre-Orders and Waitlists',
+        description: 'Gauge demand by offering pre-orders or creating wait lists before committing to large inventory purchases using our retail data management software development services. '
+      },
+      {
+        subtitle: 'Personalized Marketing',
+        description: 'Use customer data and campaign management tools to create targeted marketing campaigns that drive demand for specific products.'
+      }
+    ]
+  },
+  {
+    imgSrc: '/ecomerce-icon.svg', 
+    title: 'All-in-One Commerce Platform Development',
+    content: [
+      {
+        subtitle: 'Advanced Analytics',
+        description: 'Integrate all sales channels (online, offline, mobile) on one portal to have a real-time view of inventory and demand and easily reallocate stock to where it’s needed most.'
+      }
+    ]
+  }
+];
+const dataGenericTravelApps = [
+  {
+    img: '/Native-Apps-Android-and-iOS.svg',
+    heading: 'Native Apps (Android and iOS)',
+    text: 'Reach every traveler with stunning, user-friendly apps designed specifically for each platform.'
+  },
+  {
+    img: '/Web-Apps.svg',
+    heading: 'Web Apps',
+    text: 'Empower travel businesses. Create custom web applications to streamline operations for travel agencies and tour operators.'
+  },
+  {
+    img: '/Cross-Platform-Apps.svg',
+    heading: 'Cross-Platform Apps',
+    text: 'Develop once, deploy everywhere. Build travel apps that work flawlessly on both Android and iOS.'
+  }
+]
+
+const RealEstateITSolutionsData = [
+  {
+    img: '/residential-property.svg',
+    heading: 'Residential Property Management',
+    list: ["Simplified leasing and maintenance", "Secure role-based access", "Reservation management", "Payment and accounting integration"]
+  },
+  {
+    img: '/commercial-property.svg',
+    heading: 'Commercial Property Management',
+    list: ["Lead generation", "Facility and maintenance managemen", "Lease management", "Utility billing", "Real-time communication"]
+  },
+  {
+    img: '/tenant-onboarding.svg',
+    heading: 'Tenant Onboarding and Management',
+    list: ["Owner and resident hubs", "Communication tools", "Resident databases", "Payment integration", "Applicant screening"]
+  },
+  {
+    img: '/listing-services.svg',
+    heading: 'Multiple Listing Services (MLS)',
+    list: ["Centralized listing databases", "Property listing platforms", "Data syndication", "Advanced search and filtering"]
+  },
+  {
+    img: '/data-exchange.svg',
+    heading: 'Internet Data Exchange (IDX)',
+    list: ["Website integration", "Custom property display", "Lead capture features"]
+  },
+  {
+    img: '/property-management.svg',
+    heading: 'Property Management Software (PMS)',
+    list: ["Tenant management", "Maintenance scheduling", "Rent collection", "Financial tracking"]
+  },
+  {
+    img: '/valuation-software.svg',
+    heading: 'Real Estate Valuation Software',
+    list: ["Automated valuation models (AVM)", "Market analysis tools", "Public records integration"]
+  },
+  {
+    img: '/accounting-software.svg',
+    heading: 'Real Estate Accounting Software',
+    list: ["Financial management", "Budgeting and forecasting", "Tax management"]
+  },
+  {
+    img: '/investment-software.svg',
+    heading: 'Investment Software',
+    list: ["Tenant management", "Maintenance scheduling", "Rent collection", "Financial tracking"]
+  },
+]
+const eventsImageGroups = [
+  [
+    { id: 1, src: '/event-img-1.png', alt: 'Image1', title: 'White Label Expo 2024', country: 'London, UK', date: '2024', flag: '/Uk.svg' },
+    { id: 2, src: '/event-img-3.png', alt: 'Image2', title: 'Japan IT Week 2023', country: 'Tokyo, Japan', date: 'Feb 2023', flag: '/japan-flag.svg' },
+    { id: 3, src: '/event-img-4.png', alt: 'Image3', title: 'Prosper Show 2024', country: 'Las Vegas, USA', date: '2024', flag: '/Usa.svg' },
+    { id: 4, src: '/event-img-2.png', alt: 'Image4', title: 'Prosper Show 2024', country: 'Las Vegas, USA', date: '2024', flag: '/Usa.svg' },
+    { id: 5, src: '/event-img-1.png', alt: 'Image5', title: 'Prosper Show 2024', country: 'Las Vegas, USA', date: '2024', flag: '/Usa.svg' },
+    { id: 6, src: '/event-img-5.png', alt: 'Image6', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg' },
+  ],
+  [
+    { id: 1, src: '/event-img-6.png', alt: 'Image1', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
+    { id: 2, src: '/event-img-8.png', alt: 'Image2', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
+    { id: 3, src: '/event-img-7.png', alt: 'Image3', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg'},
+    { id: 4, src: '/event-img-9.png', alt: 'Image4', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg' },
+    { id: 5, src: '/event-img-1.png', alt: 'Image5', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
+    { id: 6, src: '/event-img-10.png', alt: 'Image6', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg'  },
+  ],
+];
+
+const eventsMobileImgs = [
+  { id: 1, imageUrl: "/mobile-event-1.png" },
+  { id: 2, imageUrl: "/mobile-event-2.png" },
+  { id: 3, imageUrl: "/mobile-event-3.png" },
+];
+
+const realEstateSliderData = [
+  {
+    image: '/re-management.svg',
+    title: 'Real Estate Management Software Development',
+    content: 'Looking to develop a high-end real estate management management app for commercial and residential properties? Creates intuitive proptech apps to centralize tenant information, track leads and sales, and store documents securely.',
+  },
+  {
+    image: '/re-location-based.svg',
+    title: 'Location-based Real Estate Service',
+    content: 'Enable users to track device locations, view property listings and nearby amenities, and watch video tours of apartments directly on the map, enhancing their search experience and satisfaction while helping them make informed decisions.',
+  },
+  {
+    image: '/re-mobile-app.svg',
+    title: 'Real Estate Mobile App Development',
+    content: 'Streamline property management, cross-communication, visit scheduling, and deal closures with our mobile app development for real estate agents, buyers, brokers, and investors.',
+  },
+  {
+    image: '/re-marketplace.svg',
+    title: 'Real Estate Marketplace Development',
+    content: 'Build a real estate hub for realtors, brokers, and property managers with our on-demand real estate app development featuring lease management, property sales, and rentals into one seamless platform, ultimately optimizing deal success.',
+  },
+  {
+    image: '/re-virtual-tour.svg',
+    title: 'Real Estate Virtual Tour Software Development',
+    content: "Claim the future of real estate with our powerful virtual tour app solutions. As a leading virtual tour software developer, we specialize in creating custom VR solutions. Let's turn your imagination into reality.",
+  },
+  {
+    image: '/re-investment.svg',
+    title: 'Real Estate Investment Software Development',
+    content: 'Right investment decisions start with the right real estate development tools. From scouting opportunities to portfolio management, we ensure a lucrative, secure, and efficient investment process tailor-made for your rental properties.',
+  },
+  {
+    image: '/property-auction.svg',
+    title: 'Property Auction App Development',
+    content: "Our real estate auction app connects sellers with motivated buyers. List properties bid competitively, and experience the thrill of online auctions. Sell fast or find your dream home – it's all just a click away!",
+  },
+  {
+    image: '/home-rentals.svg',
+    title: 'Home Rentals App Development',
+    content: 'Let’s empower landlords and tenants with our home rental app solution! Manage properties with neat listings, and find dream homes, all with secure payments and hassle-free booking — ensuring a stress-free rental experience for all.',
+  },
+  {
+    image: '/property-booking.svg',
+    title: 'Property Booking App Development',
+    content: 'Renting just got easier! Our real estate app development company lets tenants find perfect homes & book with ease. Realtors can manage listings, view reservations and get secure payments.',
+  },
+  {
+    image: '/lead-management.svg',
+    title: 'Real Estate Lead Management Software Development',
+    content: 'No more lead juggling! Our real estate lead CRM solution captures leads on-the-go, distributes them automatically, and lets you customize workflows. Close more deals, ditch the paperwork!',
+  },
+  {
+    image: '/lease-management.svg',
+    title: 'Lease Management Software Development',
+    content: 'Lease nightmares? Embrace smarter leasing with our cloud-based real estate software solutions and easily handle automated credit scoring, document and applicant management, lease origination, communication, and asset tracking.',
+  },
+  {
+    image: '/rental-property.svg',
+    title: 'Rental Property Management App Development',
+    content: "Our real estate app streamlines everything: manage properties, showcase listings to attract tenants, collect rent, screen tenants - all in one user-friendly platform. Free up your time, and build a thriving rental business. Let's simplify!",
+  },
+  {
+    image: '/brokerage-app.svg',
+    title: 'Real Estate Brokerage App Development',
+    content: "Supercharge your brokerage! Our custom software development for real estate industry empowers agents to manage teams, track deals, delight clients view listings, make reviews, and secure payments. Win-win for everyone!",
+  },
+  {
+    image: '/crm-software.svg',
+    title: 'Custom Real Estate CRM/ERP Software',
+    content: "Cutthroat market competition? Streamline your real estate business with custom CRM/ERP to boost efficiency and profits. Focus on growth, we'll handle the tech — from concept to industry leader. Leverage CRM & ERP to win!",
+  },
+  {
+    image: '/security-management.svg',
+    title: 'Real Estate Security Management Systems',
+    content: "Full security, zero hassle. Our real estate systems combine 24/7 surveillance, access controls & key management for a digital moat. We prioritize constant improvement, so your property stays protected with the latest tech.",
+  },
+];
+
+const onDemandFeaturesData = [
+  {
+    img: '/custom-listings.svg',
+    data: 'Custom Listings and MLS'
+  },
+  {
+    img: '/property-search.svg',
+    data: 'Interactive Property Search'
+  },
+  {
+    img: '/map-integration.svg',
+    data: 'Property Map Integration'
+  },
+  {
+    img: '/valuation-engines.svg',
+    data: 'Valuation Engines'
+  },
+  {
+    img: '/tax-calculator.svg',
+    data: 'Mortgage and Tax Calculators'
+  },
+  {
+    img: '/virtual-tour.svg',
+    data: 'Virtual 3D Tours'
+  },
+  {
+    img: '/task-management.svg',
+    data: 'Task & Project Management'
+  },
+  {
+    img: '/tenant-screening.svg',
+    data: 'Tenant Screening and Onboarding'
+  },
+  {
+    img: '/online-booking.svg',
+    data: 'Online Booking'
+  },
+  {
+    img: '/comparison-tool.svg',
+    data: 'Comparison Tool'
+  },
+  {
+    img: '/documents-management.svg',
+    data: 'Documents Management'
+  },
+  {
+    img: '/analytics-reporting.svg',
+    data: 'Analytics and Reporting'
+  },
+];
+
+const servicesData = [
+  {
+    img: "/ci-cd-services.svg",
+    title: 'CI/CD Services',
+    description: 'Keep track of test cases, code changes, instant feedback loops, and release cycles bridging the Dev and Ops gap via CI/CD services. This ensures constant software quality, end-to-end security, reduced costs, and of course continuous integration and delivery of new changes as needed.',
+  },
+  {
+    img: "/devops-and-cloud-computing.svg",
+    title: 'DevOps and Cloud Computing',
+    description: 'Hyper-scale public clouds like AWS Cloud, Azure, and Google Cloud Platform have enabled enterprises to enjoy more reliability and stability in their DevOps adoption journeys. Our AWS DevOps consulting services offer compliance, planning, and tools for building a stable DevOps-Cloud infrastructure.',
+  },
+  {
+    img: "/devsecops-services.svg",
+    title: 'DevSecOps Services',
+    description: 'Assure grass-root level security through the ‘Security as Code’ mechanism with our senior DevOps engineers. We perform DevSecOps to determine risk tolerance throughout the continuous integration and delivery pipeline assuring clean code, better visibility, and quick insights into possible risks.',
+  },
+  {
+    img: "/devops-consulting-services.svg",
+    title: 'DevOps Consulting Services',
+    description: 'We offer discovery workshops on DevOps use case-driven services, tools, and advisory that highlight improvement areas for pipeline optimization. Our DevOps consultants perform audits and maturity assessments and offer a holistic roadmap for change enablement and coaching. ',
+  },
+  {
+    img: "/devops-automation-services.svg",
+    title: 'DevOps Automation Services',
+    description: 'Limit time outages and possible technical debts by automating the software pipeline from coding to development and production stages across APIs and environments with our DevOps services. We help you accelerate operational efficiency and business agility assuring fluent workflows and end results.  ',
+  },
+  {
+    img: "/infrastructure-as-code-services.svg",
+    title: 'Infrastructure as Code Services',
+    description: 'Automate infrastructure at scale instead of manually setting up and configuring resources by availing our IaC DevOps services. IaC increases agility and reduces human error in the software delivery pipeline, ensuring provisioning, configuration, and system management.',
+  },
+  {
+    img: "/virtualization.svg",
+    title: 'Virtualization',
+    description: 'Deal with money constraints and standardize software deployments by working in the same network environments with the self-contained virtualization approach. We as DevOps engineering services providers employ self-contained virtual containers to assure responsiveness toward business demands.',
+  },
+];
+
+const reInnovationsData = [
+  {
+    img: "/predictive-power.svg",
+    title: 'Predictive power',
+    description: 'See into the future (well, sort of) with data-driven forecasting tools. Anticipate market trends, property values, and buyer behavior to stay ahead of the curve.',
+  },
+  {
+    img: "/cloud-nine.svg",
+    title: 'Cloud nine at your fingertips',
+    description: "Access and manage your data seamlessly with secure cloud solutions. It's like having your real estate empire at your fingertips, anytime, anywhere.",
+  },
+  {
+    img: "/smart-buildings.svg",
+    title: 'Smart buildings, smarter business',
+    description: 'Use IoT to adjust lighting, thermostats, and more for peak efficiency and lower costs. Imagine, lights that read your mood & thermostats that mind-read comfort.',
+  },
+  {
+    img: "/virtually-present.svg",
+    title: 'Be virtually present',
+    description: 'Explore properties from anywhere with our immersive virtual tours, 3D models, and AR apps. Imagine browsing dream homes from a beach vacation!',
+  },
+  {
+    img: "/tireless-assistance.svg",
+    title: '24/7, tireless assistance',
+    description: 'Imagine a friendly support who answers customer inquiries and schedules viewings around the clock. Yes, it’s the AI-powered chatbots.',
+  },
+  {
+    img: "/automate-mundane.svg",
+    title: 'Automate the mundane',
+    description: 'Free up your team for more strategic tasks by automating repetitive tasks like paperwork, data entry, and scheduling. Let the robots handle the mundane!',
+  },
+  {
+    img: "/secure-embrace.svg",
+    title: "Blockchain's secure embrace",
+    description: 'Achieve secure transactions with tamper-proof digital records of ownership. Let’s say goodbye to fraud risks and hello to streamlined processes.',
+  },
+];
+
+const realEstateIntegrationData = [
+  {
+    content: [
+      {
+        img: "/rets-logo.svg",
+      },
+      {
+        img: "/idx-logo.svg",
+      },
+      {
+        img: "/ftp-logo.svg",
+      },
+    ],
+    title: 'IDX',
+  },
+  {
+    content: [
+      {
+        img: "/salesforce-logo.svg",
+      },
+      {
+        img: "/zoho-crm-logo.svg",
+      },
+      {
+        img: "/dynamics-365.svg",
+      },
+    ],
+    title: 'CRM',
+  },
+  {
+    content: [
+      {
+        img: "/google-maps.svg",
+      },
+      {
+        img: "/mapbox-logo.svg",
+      },
+    ],
+    title: 'Property Map Integration',
+  },
+  {
+    content: [
+      {
+        img: "/stripe-logo.svg",
+      },
+      {
+        img: "/paypal-logo.svg",
+      },
+      {
+        img: "/square-logo.svg",
+      },
+      {
+        img: "/braintree-logo.svg",
+      },
+    ],
+    title: 'Payment Gateways',
+  },
+  {
+    content: [
+      {
+        img: "/re-facebook-logo.svg",
+      },
+      {
+        img: "/re-twitter-logo.svg",
+      },
+      {
+        img: "/re-linkedin-logo.svg",
+      },
+    ],
+    title: 'Social Media',
+  },
+  {
+    content: [
+      {
+        img: "/google-analytics-logo.svg",
+      },
+      {
+        img: "/ableau-logo.svg",
+      },
+      {
+        img: "/power-bi-logo.svg",
+      },
+    ],
+    title: 'Analytics and Reporting',
+  },
+  {
+    content: [
+      {
+        img: "/docusign.svg",
+      },
+      {
+        img: "/adobe-sign-logo.svg",
+      },
+      {
+        img: "/google-drive-logo.svg",
+      },
+      {
+        img: "/dropbox-logo.svg",
+      },
+    ],
+    title: 'Document Management Systems',
+  },
+  {
+    content: [
+      {
+        img: "/unity-logo.svg",
+      },
+      {
+        img: "/arkit-logo.svg",
+      },
+      {
+        img: "/arcore-logo.svg",
+      },
+      {
+        img: "/webvr-logo.svg",
+      },
+    ],
+    title: 'Virtual & Augmented Reality',
+  },
+  {
+    content: [
+      {
+        img: "/aws-iot-logo.svg",
+      },
+      {
+        img: "/google-cloud-logo.svg",
+      },
+      {
+        img: "/azure-iot-hub-logo.svg",
+      },
+    ],
+    title: 'IoT Integration',
+  },
+]
 export {
   dedicationWork,
   homeTiles,
@@ -6072,5 +7623,36 @@ export {
   careerCardData,
   MattersQbatchCardsData,
   WhyTrustQbatchData1,
-  WhyTrustQbatchData2
+  WhyTrustQbatchData2,
+  recapEventsData,
+  pressReleaseData,
+  retailData,
+  coreRetailData,
+  RetailSliderData,
+  ImagineRetailExperienceData,
+  InnovativeRetailSolutionsData,
+  ExploreOurIndustrySpecificRetailPotentialData,
+  SimplifyYourRetailData,
+  RetailSoftwareDevelopmentFaq,
+  ImagineTravelAppData,
+  TravelSliderData,
+  TravelSolutionsData,
+  dataTravelApplications,
+  SimplifyYourTravelData,
+  ImagineTravelAppData2,
+  TravelSoftwareDevelopmentFaq,
+  TravelLanguagesData,
+  PowerfulRetailSolutionsCardData,
+  dataGenericTravelApps,
+  realEstateIndustryData,
+  properyBusinessData1,
+  properyBusinessData2,
+  RealEstateITSolutionsData,
+  eventsImageGroups,
+  eventsMobileImgs,
+  realEstateSliderData,
+  onDemandFeaturesData,
+  servicesData,
+  reInnovationsData,
+  realEstateIntegrationData
 }
