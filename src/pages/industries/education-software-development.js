@@ -4,12 +4,12 @@ import SEO from '../../components/Seo';
 import { Queries } from '../../constants/queries'
 import { replaceUnderscoreWithAt } from '../../constants/Utils';
 
-import { EduCommitment, EdTechData, educationFaq, EducationSlider, SaasDevelop, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations } from "../../constants";
+import { EduCommitment, EdTechData, educationFaq, EducationSlider, SaasDevelop, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations, weWorkStoriesData } from "../../constants";
 import BannerImg from "../../../static/education-app-development-banner.svg"
 
 const Layout = lazy(() => import('../../components/Layout/layout'));
 const Banner = lazy(() => import("../../components/PagesComponent/PageBanner"));
-const ProvenWorkExperience = lazy(() => import("../../components/PagesComponent/ProvenWorkExperience"));
+const SuccessStories = lazy(() => import("../../components/PagesComponent/SuccessStoriesNew"));
 const EdTechPotential = lazy(() => import('../../components/PagesComponent/ChoiceYourEnterprise'));
 const FaqSection = lazy(() => import("../../components/PagesComponent/Faq"));
 const SaasInnerBanner = lazy(() => import('../../components/PagesComponent/ExtensionInnerBanner'));
@@ -133,11 +133,7 @@ const EduDevelopment = () => {
         heading="Why trust Qbatch for your business-critical EdTech project?"
       />
       <Collaboration />
-      <ProvenWorkExperience
-        headerClass="saas-dev-experience"
-        heading="Our EdTech Success Stories"
-        paragraphWidth="1280px"
-      />
+      <SuccessStories data={weWorkStoriesData} />
       <FaqSection faqQuestion={educationFaq} />
       <StartProject
         heading="Start a Project"

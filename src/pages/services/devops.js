@@ -7,14 +7,14 @@ import Banner from "../../components/PagesComponent/PageBanner";
 import InnerBanner from '../../components/PagesComponent/InnerBanner';
 import DevOpsService from'../../components/PagesComponent/DevOpsService';
 import Slider from '../../components/UiComponent/Slider';
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import SuccessStories from "../../components/PagesComponent/SuccessStoriesNew";
 import Achievements from '../../components/PagesComponent/Achievements';
 import Collaboration from '../../components/PagesComponent/Collaboration';
 import FaqSection from "../../components/PagesComponent/Faq";
 import StartProject from "../../components/PagesComponent/StartProject";
 import AwsPartner from '../../components/PagesComponent/AwsPartner'
 
-import { devOpsFaq, devOpsSliderData, whyDevOpsData, servicesData } from "../../constants";
+import { devOpsFaq, devOpsSliderData, whyDevOpsData, servicesData, weWorkStoriesData } from "../../constants";
 import DevOpsSupremacy from '../../components/PagesComponent/DevOpsSupremacy';
 import EmbraceEnterprise from '../../components/PagesComponent/EmbraceEnterprise';
 import WhyDevOps from '../../components/PagesComponent/ChoiceYourEnterprise'
@@ -93,7 +93,7 @@ const DevOps = () => {
        btnSpacingTop={72}
        btnAlign="center"
       />
-      <ProvenWorkExperience exploreBtn heading="Products that Empowered Millions"/>
+      <SuccessStories data={weWorkStoriesData} />
       <Collaboration />
        <InnerBanner
        heading="Minimize development costs and timelines with DevOps Engineering Services."
