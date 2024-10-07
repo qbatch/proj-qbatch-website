@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { navigate } from 'gatsby';
 import Card from 'react-bootstrap/Card';
-import { Col } from 'react-bootstrap';
 import Slider from 'react-slick';
 
 import Container from '../../UiComponent/Container';
@@ -32,7 +31,7 @@ const Index = ({ data, disc, heading, className }) => {
     infinite: true,
     dots: false,
     speed: 500,
-    slidesToShow: 2, // Adjust based on how many cards you want to display at once
+    slidesToShow: 2,
     slidesToScroll: 1,
     afterChange: (current) => setCurrentInd(current + 1),
     responsive: [
