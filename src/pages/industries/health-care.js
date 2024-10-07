@@ -54,7 +54,7 @@ const HealthCareAppDevelopment = () => {
         imgSrc='/institutions-benefiting.svg'
       />
       <StartYourHealthTech StartYourHealthTechData={StartYourHealthTechData} />
-      <WhyTrustQbatch />
+      <WhyTrustQbatch heading='Why trust Qbatch for your business-critical Healthcare project?' />
       <SuccessStories heading="Success Stories From Qbatch’s Healthcare Portfolio" data={weWorkStoriesData} />
       <CollaborationNew borderBottom />
       <FaqSection className="health-care-faq" faqQuestion={FrequentlyAskedQuestionsHealthCareFaq} />

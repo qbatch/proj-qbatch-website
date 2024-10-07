@@ -5,14 +5,14 @@ import Button from '../../UiComponent/Button'
 import { WhyTrustQbatchWrapper } from './style'
 import { WhyTrustQbatchData1, WhyTrustQbatchData2 } from '../../../constants'
 
-const WhyTrustQbatch = () => {
+const WhyTrustQbatch = ({ heading }) => {
   return (
     <WhyTrustQbatchWrapper>
       <Container>
         <div className='card-wrapper'>
           <img src="/why-trust-qbatch.svg" alt="Why Trust Qbatch" />
           <div className='card-items-wrapper'>
-            <h2>Why trust Qbatch for your business-critical TravelTech project?</h2>
+            <h2>{heading || 'Why trust Qbatch for your business-critical TravelTech project?'}</h2>
             <div className='card-item'>
               <ul>
                 {WhyTrustQbatchData1.map((item, index) => (

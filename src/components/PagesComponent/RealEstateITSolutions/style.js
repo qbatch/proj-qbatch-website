@@ -41,6 +41,7 @@ const ITSolutionsWrapper = styled.div`
   }
   .solutions-box {
     border: 1px solid ${({ theme }) => theme.colors.dividerColor};
+    background-color: ${({ theme }) => theme.colors.whiteColor};
     border-radius: 24px 24px 0 24px;
     padding: 24px;
     display: flex; 
@@ -58,7 +59,7 @@ const ITSolutionsWrapper = styled.div`
       height: 64px;
       max-width: max-content;
     }
-    h3 {
+    .text-h4 {
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 24px;
       ${media.xs`
