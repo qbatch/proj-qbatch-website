@@ -11,7 +11,7 @@ const SolutionBox = ({ item }) => (
   <div className='solutions-box'>
     <img src={item.img} alt={item.heading} title={item.heading} loading='lazy' />
     <div>
-      <h3 className='text-h4'>{item.heading}</h3>
+      <p className='text-h4'>{item.heading}</p>
       <ul>
         {item.list.map((list, ind) => (
           <li key={ind}>{list}</li>

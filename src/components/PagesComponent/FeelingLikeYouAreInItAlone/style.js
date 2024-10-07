@@ -55,5 +55,14 @@ padding: 40px 0px;
         margin:auto;
         `}
   }
+  &.enabling-force {
+    padding: 52px 0;
+    ${media.sm`
+      padding: 40px 0px;
+    `}
+    ${media.mobile`
+      padding: 24px 0px;
+    `}
+  }
 `;
 export { FeelingLikeYouAreInItAloneWrapper }

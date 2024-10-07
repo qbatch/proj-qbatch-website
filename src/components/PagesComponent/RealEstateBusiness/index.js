@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Button from '../../UiComponent/Button';
 import Container from '../../UiComponent/Container';
+import { navigate } from 'gatsby';
 
 import RealEstateBusinessWrapper from './style';
 
@@ -24,7 +25,7 @@ const Index = () => {
                 <li>Lack of required tech talents;</li>
                 <li>If-it-isn’t-broken-don’t-fix-it culture towards legacy systems.</li>
               </ul>
-              <Button text='Let’s begin with expert consultation' />
+              <Button text='Let’s begin with expert consultation' onClick={()=> navigate('/contact')} />
             </div>
           </Col>
         </Row>
