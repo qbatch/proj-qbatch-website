@@ -145,8 +145,16 @@ section{
   ${media.sm`
   display:block;
     `}
+    .min-heading{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #2D2F31;
+    }
 }
 .slick-dots {
+  bottom:-24px;
     li {
       margin: 0px;
       &.slick-active {
