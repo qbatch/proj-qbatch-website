@@ -8,14 +8,15 @@ import {
   lostToLaunchedItems,
   mobileAppFaq,
   revenueData,
-  multiPlatformData
+  multiPlatformData,
+  weWorkStoriesData
 } from "../../constants";
 import { peopleFirstData } from "../../constants";
 
 const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
 const WhatDifferenceQbatchMaking = lazy(() => import("../../components/PagesComponent/WhatDifferenceQbatchMaking"));
 const Achievements = lazy(() => import("../../components/PagesComponent/Achievements"));
-const ProvenWorkExperience = lazy(() => import("../../components/PagesComponent/ProvenWorkExperience"));
+const SuccessStories = lazy(() => import("../../components/PagesComponent/SuccessStoriesNew"));
 const Collaboration = lazy(() => import("../../components/PagesComponent/Collaboration"));
 const PeopleFirst = lazy(() => import("../../components/PagesComponent/PeopleFirst"));
 const DesiredResult = lazy(() => import("../../components/PagesComponent/IdeasAndInvestments"));
@@ -109,7 +110,7 @@ const MobileApp = () => {
       />
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
       <Achievements mainHeading="And it just seems to work" labelText="Here's what stats and our clients have to say:" innerPage={true} />
-      <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
+      <SuccessStories data={weWorkStoriesData} />
       <Collaboration heading="Collaboration Models For Everlasting Partnerships" />
       <PeopleFirst
         peopleFirstData={peopleFirstData}

@@ -9,14 +9,14 @@ const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
 const Slider = lazy(() => import('../../components/UiComponent/Slider'));
 const DevelopmentServices = lazy(() => import('../../components/PagesComponent/DevelopmentServices'));
 const Languages = lazy(() => import('../../components/PagesComponent/LanguagesAndFrameworks'));
-const ProvenWorkExperience = lazy(() => import('../../components/PagesComponent/ProvenWorkExperience'));
+const SuccessStories = lazy(() => import('../../components/PagesComponent/SuccessStoriesNew'));
 const InnerBanner = lazy(() => import('../../components/PagesComponent/InnerBanner'));
 const CreativeIntelligence = lazy(() => import('../../components/PagesComponent/CreativeIntelligence'));
 const Collaboration = lazy(() => import('../../components/PagesComponent/Collaboration'));
 const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
 const Achievements = lazy(() => import('../../components/PagesComponent/Achievements2'));
 
-import { servicesSliderData, lostToLaunchedItems } from "../../constants";
+import { servicesSliderData, lostToLaunchedItems, weWorkStoriesData } from "../../constants";
 
 const adaptiveSoftwareData = [
   {
@@ -95,7 +95,7 @@ const Index = () => {
         align="center"
         className="lost-to-launched"
       />
-      <ProvenWorkExperience heading="Products that Empowered Millions" exploreBtn={true} />
+      <SuccessStories data={weWorkStoriesData} />
       <InnerBanner
         heading="Is your current project not bringing results? 
        Then bring THAT change!"
