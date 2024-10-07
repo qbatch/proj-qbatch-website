@@ -119,7 +119,8 @@ const Header2Wrapper = styled.div`
             }
           }
           ul {
-            column-count: 4;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             padding: 0;
             & > li{
               position: relative;
