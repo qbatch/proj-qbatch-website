@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { graphql, Link, useStaticQuery } from 'gatsby';
