@@ -7,6 +7,11 @@ const SuccessStoriesNewWrapper = styled.div`
   ${media.sm`
     padding: 40px 0;
   `}
+  &.travel-app-development-wrapper .slick-current div {
+   ${media.mobile`
+    padding-left: 0px !important;
+    `}
+}
   .section-heading {
     margin-bottom: 56px;
     ${media.sm`

@@ -12,7 +12,7 @@ import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
 import SuccessStoriesNewWrapper from './style';
 
-const Index = ({ data, disc, heading }) => {
+const Index = ({ data, disc, heading, className }) => {
 
   const [currentInd, setCurrentInd] = useState(1);
   const sliderRef = useRef(null);
@@ -47,7 +47,7 @@ const Index = ({ data, disc, heading }) => {
   };
 
   return (
-    <SuccessStoriesNewWrapper>
+    <SuccessStoriesNewWrapper  className={className}>
       <Container>
         <div className="section-heading d-flex justify-content-between align-items-center">
           <div>

@@ -4,27 +4,7 @@ import { media } from "../../../theme/media-mixins";
 const StartYourHealthTechWrapper = styled.div`
 padding: 96px 0px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
-  &.travel-your-travel-data{
-   h2{
-    margin-bottom: 0;
-   } 
-   p{
-    margin-top: 12px;
-    margin-bottom: 72px;
-    text-align: center;
-    ${media.sm`
-      margin-bottom: 32px;
-      text-align: left;
-    `}
-   }
-   .process-card-overlay {
-h3{
-  ${media.sm`
-  line-height: 28px !important;
-    `}
-}
-   }
-  }
+
   &.simplify-your-retail{
     .process-card-overlay {
     display: grid;
@@ -158,6 +138,32 @@ button{
   margin-top: 24px;
     `}
 }
+&.travel-your-travel-data{
+   h2{
+    margin-bottom: 0;
+   } 
+   p{
+    margin-top: 12px;
+    margin-bottom: 72px;
+    text-align: center;
+    ${media.sm`
+      margin-bottom: 32px;
+      text-align: left;
+    `}
+   }
+   .process-card-overlay {
+h3{
+  font-size:${({ theme }) => theme.fonts.baseFontSizeSm} !important;
+  font-weight:${({ theme }) => theme.fontWeight.semiBold} !important;
+  ${media.sm`
+  line-height: 28px !important;
+    `}
+}
+   }
+   button{
+    margin-top: 0px;
+   }
+  }
 `;
 
 export { StartYourHealthTechWrapper }

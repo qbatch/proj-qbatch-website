@@ -178,8 +178,8 @@ const TravelAppSolutionsForYourPurposes = () => {
         <div className='mobile-base'>
         <Slider {...sliderSettings}>
           {TravelAppSolutionsData.map((item, index) => (
-            <div key={index} className='card-item'>
-              <h3>{item.heading}</h3>
+            <div key={index} className={`card-item ${index === 2 ? 'mb-2' : index === 3 ? 'mb-2': null}`} >
+              <p className='min-heading'>{item.heading}</p>
               <div className='card-child'>
                 <ul>
                   {item.content.map((itemCard, indexCard) => (
