@@ -101,18 +101,19 @@ const createBlogPages = async (graphql, actions) => {
             subHeading
             team
             useCase
+            headQuarter
             cover {
               localFile {
                 url
               }
             }
-            projectDetails {
+          }
+          projectDetails {
+            heading
+            paragraph
+            detailBox {
               heading
               paragraph
-              detailBox {
-                heading
-                paragraph
-              }
             }
           }
           phaseTimeline {
@@ -200,6 +201,7 @@ const createBlogPages = async (graphql, actions) => {
       context: {
         slug: node.seo?.slug,
         portfolio: node.portfolio,
+        projectDetails: node.projectDetails,
         projectQuote: node.projectQuote,
         projectCover: node?.projectCover?.localFile?.url,
         projectImpact: node.projectImpact?.map(impact => impact.localFile.url),
