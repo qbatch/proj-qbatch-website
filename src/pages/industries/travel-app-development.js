@@ -86,7 +86,7 @@ const TravelAppDevelopment = () => {
 }
 export const Head = () => {
   const RetailSoftwareDevelopment = Queries()
-  const seoData = RetailSoftwareDevelopment.allStrapiRetailSoftwareDevelopment.nodes[0]?.seo
+  const seoData = RetailSoftwareDevelopment.allStrapiTravelAppDevelopment.nodes[0]?.seo
   return (
     <SEO
       title={seoData?.metaTitle}

@@ -54,7 +54,7 @@ const RetailSoftwareDevelopment = () => {
       <QbatchCoreRetailSoftwareSolutions />
       <Slider
         data={RetailSliderData}
-        heading="Humanizing Healthcare: Qbatch Software Solutions"
+        heading="Types of custom retail software we build for you"
         paragraph=""
         seconedHeading=""
         width="300px"
@@ -75,7 +75,7 @@ const RetailSoftwareDevelopment = () => {
       />
       <StartYourHealthTech className="simplify-your-retail" heading="Simplify your Retail Journey in 3 simple steps" StartYourHealthTechData={SimplifyYourRetailData} />
       <QbatchIsEmpoweringRetailers />
-      <WhyTrustQbatch />
+      <WhyTrustQbatch heading="Why trust Qbatch for your business-critical E-com project?" />
       <CollaborationNew />
       <FaqSection className="health-care-faq" faqQuestion={RetailSoftwareDevelopmentFaq} />
       <StartProject />
