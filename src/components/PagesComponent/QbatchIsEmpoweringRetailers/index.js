@@ -1,7 +1,8 @@
 import React from 'react'
-import { QbatchIsEmpoweringRetailersWrapper } from './style'
+import { navigate } from 'gatsby'
 import Button from '../../UiComponent/Button'
 import Container from '../../UiComponent/Container'
+import { QbatchIsEmpoweringRetailersWrapper } from './style'
 
 const QbatchIsEmpoweringRetailers = () => {
 
@@ -36,7 +37,7 @@ const QbatchIsEmpoweringRetailers = () => {
         </div>
       ))}
       </div>
-      <Button text="Request Free Proposal" />
+      <Button text="Request Free Proposal"  onClick={() => navigate('/contact')} />
       </Container>
     </QbatchIsEmpoweringRetailersWrapper>
   )
