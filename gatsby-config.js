@@ -64,16 +64,16 @@ const strapiConfig = {
           portfolio: {
             populate: {
               cover: true,
-              projectDetails: {
-                populate: {
-                  detailBox: '*',
-                },
-              },
               projectImpact: {
                 populate: {
                   imageBoxes: true
                 }
               }
+            },
+          },
+          projectDetails: {
+            populate: {
+              detailBox: '*',
             },
           },
           projectComponents: {

@@ -10,16 +10,15 @@ import Button from "../../UiComponent/Button";
 
 import LanguagesWrapper from "./style";
 
-// Default slider settings
 const defaultSliderSettings = {
   dots: false,
   infinite: false,
-  speed: 500, // Adjusted default speed to be quicker
+  speed: 500, 
   slidesToShow: 1,
   slidesToScroll: 1,
   vertical: true,
   verticalSwiping: true,
-  adaptiveHeight: true,
+  adaptiveHeight: false,
   responsive: [
     {
       breakpoint: 991,
@@ -53,7 +52,9 @@ const LanguagesAndFrameworks = ({
 
   const handlePaginationItemClick = (index) => {
     setActiveIndex(index);
-    sliderRef2.current.slickGoTo(index); 
+    if (sliderRef2.current) {
+      sliderRef2.current.slickGoTo(index); 
+    }
   };
 
   return (
@@ -83,7 +84,7 @@ const LanguagesAndFrameworks = ({
             </Col>
             <Col lg={8} md={12}>
               {isMounted && (
-                <Slider {...sliderSettings} ref={sliderRef2}>
+                <Slider {...sliderSettings} ref={sliderRef2} afterChange={(index) => setActiveIndex(index)}>
                   {languagesData?.map((item, index) => (
                     <div key={index} className="framework-item">
                       <div className="items-wrapper">
@@ -106,6 +107,7 @@ const LanguagesAndFrameworks = ({
               )}
             </Col>
           </Row>
+          
           <div className="small-screen-data">
             <Accordion defaultActiveKey="0" className="languages-collapse d-flex flex-column gap-2">
               {languagesData.map((item, ind) => (
@@ -133,6 +135,7 @@ const LanguagesAndFrameworks = ({
               ))}
             </Accordion>
           </div>
+          
           {!showBtn && (
             <div className="languages-btn">
               <Button onClick={onButtonClick} text={buttonText} />

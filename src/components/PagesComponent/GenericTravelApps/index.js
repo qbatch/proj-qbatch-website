@@ -39,7 +39,7 @@ const GenericTravelApps = () => {
               <div key={index} className='cards'>
                 <img src={item.img} alt={item.img} />
                 <div className='content'>
-                  <p className='h3-text'>{item.heading}</p>
+                  <p className='h3-text-wrapper'>{item.heading}</p>
                   <p>{item.text}</p>
                 </div>
               </div>

@@ -93,20 +93,26 @@ padding: 56px 0;
   padding-bottom: 0;
   .timeline-steps{
     gap: 36px;
+    align-items: end;
     .step{
-      width: calc(100% - 130px);
+      width: calc(100% - 124px);
       left: 0 !important;
+      max-width: 100%;
     }
   }
 }
   .timeline-phases{
     display: flex;
     flex-direction: column;
-    right: 0;
+    left: 0;
     left: auto;
     width: auto;
     .phase{
       align-items: center;
+      border-left: 0;
+      border-right: 1px dashed ${({ theme }) => theme.colors.bodyLight};
+      padding-left: 0;
+      padding-right: 16px;
     }
   }
 `}

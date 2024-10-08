@@ -6989,6 +6989,7 @@ const TravelLanguagesData = [
       { img: "/sabre.svg",},
       { img: "/galileo.svg",},
       { img: "/world-span.svg",},
+      { img: "", text: ''},
     ]
   },
   {

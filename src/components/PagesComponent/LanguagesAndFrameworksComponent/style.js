@@ -4,6 +4,15 @@ import { media } from "../../../theme/media-mixins";
 const LanguagesWrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   padding: 96px 0;
+  &.travel-app-stack{
+    .framework-item {
+    height: 307px;
+}
+      .index-base-classes {
+    margin-top: 160px;
+
+}
+  }
   ${media.sm`
     padding: 56px 0;
     text-align: center;

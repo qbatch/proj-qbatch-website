@@ -697,18 +697,19 @@ export const Queries = () => {
             subHeading
             team
             useCase
+            headQuarter
             cover {
               localFile {
                 url
               }
             }
-            projectDetails {
+          }
+          projectDetails {
+            heading
+            paragraph
+            detailBox {
               heading
               paragraph
-              detailBox {
-                heading
-                paragraph
-              }
             }
           }
         }

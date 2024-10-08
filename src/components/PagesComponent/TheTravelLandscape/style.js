@@ -7,7 +7,7 @@ const TheTravelLandscapeWrapper = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     ${media.sm`
-      padding: 40px;
+      padding: 40px 0px;
       background: #0A2545;
       background-image:none ;
       `}

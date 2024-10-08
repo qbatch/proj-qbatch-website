@@ -14,9 +14,9 @@ import StartProject from '../../components/PagesComponent/StartProject'
 import FaqSection from '../../components/PagesComponent/Faq'
 import Collaboration from '../../components/PagesComponent/Collaboration'
 import MarketplaceSellers from '../../components/PagesComponent/MarketplaceSellers'
-import ProvenWorkExperience from '../../components/PagesComponent/ProvenWorkExperience'
-import ChooseYourEnterprise from '../../components/PagesComponent/ChoiceYourEnterprise'
-import BannerImage from '../../../static/product-design-dev.svg'
+import SuccessStories from '../../components/PagesComponent/SuccessStoriesNew';
+import ChooseYourEnterprise from '../../components/PagesComponent/ChoiceYourEnterprise';
+import BannerImage from '../../../static/product-design-dev.svg';
 
 import {
   productDesignlist,
@@ -26,6 +26,7 @@ import {
   productDesignData,
   cycleProductData,
   productDevlopmentServices,
+  weWorkStoriesData,
 } from '../../constants'
 import WhyChooseQbatch from '../../components/PagesComponent/WhyChooseQbatch'
 import SeemToWork from '../../components/PagesComponent/SeemToWork'
@@ -96,10 +97,7 @@ const ProductDesign = () => {
 
       <WhyChooseQbatch />
       <SeemToWork />
-      <ProvenWorkExperience
-        heading="Featured Projects"
-        paragraph="Innovators from across the industry have trusted Qbatch to build high-impact products. "
-      />
+      <SuccessStories data={weWorkStoriesData} />
       <Collaboration />
       <MarketplaceSellers
         heading="Need someone to lead your product development journey?"

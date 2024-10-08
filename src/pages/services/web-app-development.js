@@ -4,7 +4,7 @@ import { Queries } from '../../constants/queries';
 import SeoComponent from "../../utils/seo";
 import Layout from "../../components/Layout/layout";
 import WebappImage from '../../../static/web-app-dev.svg'
-import { webAppFaq, fullCycle, peopleFirstData, lostToLaunchedItems } from "../../constants";
+import { webAppFaq, fullCycle, peopleFirstData, lostToLaunchedItems, weWorkStoriesData } from "../../constants";
 
 const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
 const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
@@ -18,7 +18,7 @@ const DesiredResult = lazy(() => import('../../components/PagesComponent/IdeasAn
 const Slider = lazy(() => import('../../components/UiComponent/Slider'));
 const LanguagesAndFrameworks = lazy(() => import('../../components/PagesComponent/LanguagesAndFrameworks'));
 const Collaboration = lazy(() => import('../../components/PagesComponent/Collaboration'));
-const ProvenWorkExperience = lazy(() => import('../../components/PagesComponent/ProvenWorkExperience'));
+const SuccessStories = lazy(() => import('../../components/PagesComponent/SuccessStoriesNew'));
 const PeopleFirst = lazy(() => import('../../components/PagesComponent/PeopleFirst'));
 const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
 const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
@@ -71,7 +71,7 @@ const webapp = () => {
         />
         <LanguagesAndFrameworks />
         <Collaboration />
-        <ProvenWorkExperience heading="Success Stories" paragraph="They imagined it, we brought it to the world!" />
+        <SuccessStories data={weWorkStoriesData} />
         <PeopleFirst
           peopleFirstData={peopleFirstData}
           paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies."

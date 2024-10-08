@@ -35,11 +35,11 @@ const PressReleaseWrapper = styled.div`
       padding: 16px;
     `}
     h3 {
-      margin-bottom: 32px;
+      /* margin-bottom: 32px; */
       font-weight: ${({ theme }) => theme.fontWeight.bold};
-      ${media.xs`
+      /* ${media.xs`
         margin-bottom: 16px;
-      `}
+      `} */
     }
   }
 `

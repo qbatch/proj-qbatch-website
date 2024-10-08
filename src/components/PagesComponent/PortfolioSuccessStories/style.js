@@ -1,69 +1,38 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const SuccessStoriesNewWrapper = styled.div`
-  padding: 96px 0;
+const PortfolioSuccessWrapper = styled.div`
+  padding: 96px 0 28px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 40px 0;
+    padding: 56px 0;
   `}
-  &.travel-app-development-wrapper .slick-current div {
-   ${media.mobile`
-    padding-left: 0px !important;
-    `}
-}
-  .section-heading {
-    margin-bottom: 56px;
+  .heading {
+    margin-bottom: 16px;
     ${media.sm`
-      margin-bottom: 32px;
-      flex-direction: column;
-    `}
-    p {
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      margin-bottom: 12px;
       line-height: 32px;
-      ${media.sm`
-        font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        line-height: 24px;
-      `}
-    }
+  `}
   }
-  .carousel-button-group {
-    gap: 12px;
-    svg {
-      cursor: pointer;
-    }
-    .arrow-icon {
-      width: 10px;
-      height: 14px;
-      line-height: 0.8;
-    }
-    span {
-      color: ${({ theme }) => theme.colors.textMedium};
-      font-size: ${({ theme }) => theme.fonts.baseFontSize};
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      &:first-child {
-        color: ${({ theme }) => theme.colors.primaryColor};
-      }
-      &:nth-child(2) {
-        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-      }
-    }
+  .desc {
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    margin-bottom: 96px;
+    ${media.md`
+      margin-bottom: 56px;
+    `}
+    ${media.mobile`
+      margin-bottom: 32px;
+    `}
   }
-  .for-web-view{
-    display: block;
+  .stories-col {
+    margin-bottom: 68px;
     ${media.sm`
-    display: none;
-      `}
-  }
-  .for-mobile-view{
-    display: none;
-    ${media.sm`
-    display: block;
-    display:flex;
-    justify-content:center;
-      `}
+      margin-bottom: 48px;
+    `}
+    ${media.mobile`
+      margin-bottom: 24px;
+    `}
   }
   .card {
     border: none;
@@ -72,7 +41,7 @@ const SuccessStoriesNewWrapper = styled.div`
       overflow: hidden;
       border-radius: 20px 20px 0 20px;
     }
-    .card-img-top {
+    .project-img {
       border-radius: 20px 20px 0 20px;
       transform: scale(1);
       transition: transform 0.5s ease-in-out;
@@ -96,7 +65,7 @@ const SuccessStoriesNewWrapper = styled.div`
       `}
     } 
     .card-logo {
-      div {
+      .project-category {
         padding: 4px 8px;
         border-radius: 2px;
         color: ${({ theme }) => theme.colors.primaryColor};
@@ -118,6 +87,11 @@ const SuccessStoriesNewWrapper = styled.div`
           z-index: -1;
           opacity: 0;
           border-radius: 2px;
+        }
+      }
+      .gatsby-image-wrapper {
+        div {
+          height: 30px;
         }
       }
     }
@@ -148,11 +122,11 @@ const SuccessStoriesNewWrapper = styled.div`
           }
         }
       }
-      .card-img-top {
+      .project-img {
         transform: scale(1.1);
       }
     }
   }
 `
 
-export default SuccessStoriesNewWrapper;
+export default PortfolioSuccessWrapper;

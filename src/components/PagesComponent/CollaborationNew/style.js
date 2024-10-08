@@ -3,6 +3,7 @@ import { media } from "../../../theme/media-mixins";
 
 const CollaborationNewWrapper = styled.div`
  padding: 96px 0;
+ border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
  ${media.sm`
   padding: 40px 0;
 `}

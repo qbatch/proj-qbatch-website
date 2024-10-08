@@ -3,7 +3,7 @@ import SeoComponent from "../../utils/seo"
 import { Queries } from '../../constants/queries'
 import Layout from '../../components/Layout/layout';
 import Banner from "../../components/PagesComponent/PageBanner";
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import SuccessStories from "../../components/PagesComponent/SuccessStoriesNew";
 import SaasInnerBanner from '../../components/PagesComponent/ExtensionInnerBanner';
 import OurSaasDev from '../../components/PagesComponent/ChoiceYourEnterprise'
 import FaqSection from "../../components/PagesComponent/Faq";
@@ -16,7 +16,7 @@ import Languages from '../../components/PagesComponent/SaasLanguages';
 import FullCycle from "../../components/PagesComponent/FullCicle";
 import Collaboration from '../../components/PagesComponent/Collaboration'
 
-import { OurSaasData, AdvanceSaasData, saasFaq, SaasSliderData, SaasProduct, SaasDevelop, SaaslanguagesData } from "../../constants";
+import { OurSaasData, AdvanceSaasData, saasFaq, SaasSliderData, SaasProduct, SaasDevelop, SaaslanguagesData, weWorkStoriesData } from "../../constants";
 import BannerImg from "../../../static/saas-banner.svg"
 import QuickResponse from '../../components/PagesComponent/QuickResponse';
 import SaasArchitecture from '../../components/PagesComponent/SaasArchitecture';
@@ -59,13 +59,7 @@ const SaasDevelopment = () => {
         heading="Are you familiar with these SaaS App Development challenges?"
       />
       <TackleSaas />
-      <ProvenWorkExperience
-        headerClass="saas-dev-experience"
-        exploreBtn
-        heading="Explore our SaaS Portfolio"
-        paragraph="Our firsthand experience in launching superior SaaS products has moved us beyond blind coding and toward holistic product ownership, ensuring excellence at every turn."
-        paragraphWidth="1280px"
-      />
+      <SuccessStories data={weWorkStoriesData} />
       <OurSaasDev
         isBtn={true}
         btnText="Build Your SaaS Solution"

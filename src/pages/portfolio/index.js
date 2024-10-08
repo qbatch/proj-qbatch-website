@@ -7,7 +7,7 @@ import Divider from "../../components/UiComponent/Divider";
 import EcommerceBanner from '../../../static/portfolio-banner-qbatch.svg'
 import Collaboration from "../../components/PagesComponent/Collaboration";
 import StartProject from "../../components/PagesComponent/StartProject";
-import SuccessStories from "../../components/PagesComponent/SuccessStories";
+import SuccessStories from "../../components/PagesComponent/PortfolioSuccessStories";
 
 const Index = () => {
   useEffect(()=>{
@@ -33,7 +33,6 @@ const Index = () => {
         ]}
       />
       <SuccessStories />
-      <Divider margin="0px" />
       <Collaboration headingClass='inner-heading' />
       <StartProject />
     </Layout>

@@ -11,7 +11,7 @@ import {
   developmentExpertiseData,
   technologicalCapacityData,
   peopleFirstData,
-  productDevlopmentServices,
+  weWorkStoriesData,
 } from '../../constants';
 
 const Layout = lazy(() => import("../../components/Layout/layout"));
@@ -19,7 +19,6 @@ const Banner = lazy(() => import("../../components/PagesComponent/PageBanner"));
 const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
 const WhatDifferenceQbatchMaking = lazy(() => import("../../components/PagesComponent/WhatDifferenceQbatchMaking"));
 const LanguagesAndFrameworks = lazy(() => import("../../components/PagesComponent/LanguagesAndFrameworks"));
-const ProvenWorkExperience = lazy(() => import("../../components/PagesComponent/ProvenWorkExperience"));
 const Collaboration = lazy(() => import("../../components/PagesComponent/Collaboration"));
 const PeopleFirst = lazy(() => import("../../components/PagesComponent/PeopleFirst"));
 const DesiredResult = lazy(() => import("../../components/PagesComponent/IdeasAndInvestments"));
@@ -29,6 +28,7 @@ const StartProject = lazy(() => import("../../components/PagesComponent/StartPro
 const ChoiseYourEnterprise = lazy(() => import("../../components/PagesComponent/ChoiceYourEnterprise"));
 const DoYouKnow  = lazy(() => import("../../components/PagesComponent/DedicatedMobileDevelopers"));
 const Slider = lazy(() => import('../../components/UiComponent/Slider'));
+const SuccessStories = lazy(() => import('../../components/PagesComponent/SuccessStoriesNew'));
 
 const Enterprise = () => {
   return (
@@ -103,7 +103,7 @@ const Enterprise = () => {
           className="lost-to-launched"
         />
         <LanguagesAndFrameworks />
-        <ProvenWorkExperience heading="Mobile apps that have inspired Millions of users" />
+        <SuccessStories data={weWorkStoriesData} />
         <Collaboration />
         <PeopleFirst
           peopleFirstData={peopleFirstData}

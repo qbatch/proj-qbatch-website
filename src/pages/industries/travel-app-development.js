@@ -69,13 +69,14 @@ const TravelAppDevelopment = () => {
         paragraph=""
         languagesData={TravelLanguagesData}
         paragraphMaxWidth="500px"
+        className="travel-app-stack"
         showBtn={true}
         buttonText="Start Your Project"
         onButtonClick={() => console.log("Button Clicked!")}
       />
       <LookingToProvide />
       <WhyTrustQbatch />
-      <SuccessStories heading="Success Stories from Our Travel and Tour Industry Portfolio" data={weWorkStoriesData} />
+      <SuccessStories className="travel-app-development-wrapper" heading="Success Stories from Our Travel and Tour Industry Portfolio" data={weWorkStoriesData} />
       <CollaborationNew />
       <FaqSection className="health-care-faq" faqQuestion={TravelSoftwareDevelopmentFaq} />
       <FeelingLikeYouAreInItAlone className="dont-just-rebuild" img="/tired-of.svg" heading="Tired of one-size-fits-all travel experiences?" text="We build custom travel & hospitality apps that ignite wanderlust and drive bookings." buttonText="Talk to our experts today!" />

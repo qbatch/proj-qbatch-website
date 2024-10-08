@@ -3,7 +3,7 @@ import React, { lazy } from "react";
 import { Queries } from '../../constants/queries';
 import SeoComponent from "../../utils/seo";
 import Layout from "../../components/Layout/layout";
-import { ecomSliderItems, ecomFaqQuestion, automationData, helpingCardData } from "../../constants";
+import { ecomSliderItems, ecomFaqQuestion, automationData, helpingCardData, weWorkStoriesData } from "../../constants";
 import EcommerceBanner from '../../../static/e-commerce-banner.svg';
 
 const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
@@ -14,7 +14,7 @@ const BusinessMangement = lazy(() => import('../../components/PagesComponent/Bus
 const TrippleYourRevenue = lazy(() => import('../../components/PagesComponent/TrippleYourRevenue'));
 const GridData = lazy(() => import('../../components/PagesComponent/GridData'));
 const IdeasAndInvestments = lazy(() => import('../../components/PagesComponent/IdeasAndInvestments'));
-const ProvenWorkExperience = lazy(() => import('../../components/PagesComponent/ProvenWorkExperience'));
+const SuccessStories = lazy(() => import('../../components/PagesComponent/SuccessStoriesNew'));
 const IntegrationMarketPlace = lazy(() => import('../../components/PagesComponent/IntegrationMarketPlace'));
 const MarketplaceSellers = lazy(() => import('../../components/PagesComponent/MarketplaceSellers'));
 const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
@@ -60,7 +60,7 @@ const Ecommerce = () => {
       <GridData maxWidth='600px' height={'114px'} data={automationData} paragraph='This is your hint to bury your conventional e-commerce ways and' heading={<>Automation is 99% software but,
               1% mindset<span> (and oh, that 1%)</span></>} />
       <IdeasAndInvestments heading="100+ businesses trusted us with their ideas and investments," span="will you?" />
-      <ProvenWorkExperience heading="Our Projects" paragraph="They imagined it, we brought it to the world!" />
+      <SuccessStories data={weWorkStoriesData} />
       {/* <MarketplaceIntegrations /> */}
       <IntegrationMarketPlace heading="Integrations for Your Marketplace" paragraph="We are made of 50% people skills and 50% tools to ensure constant performance and security featuring uncompromising quality and speed. " paragraphMaxWidth={'754px'} showBtn={true}  />
       <MarketplaceSellers
