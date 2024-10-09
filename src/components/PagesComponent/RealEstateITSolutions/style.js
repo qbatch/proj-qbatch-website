@@ -61,6 +61,7 @@ const ITSolutionsWrapper = styled.div`
     }
     .text-h4 {
       color: ${({ theme }) => theme.colors.primaryColor};
+      font-weight: ${({ theme }) => theme.fontWeight.bold};
       margin-bottom: 24px;
       ${media.xs`
         margin-bottom: 16px;

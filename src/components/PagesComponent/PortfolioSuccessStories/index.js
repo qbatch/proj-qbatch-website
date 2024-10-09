@@ -19,7 +19,7 @@ const Index = () => {
             localFile {
               childImageSharp {
                 gatsbyImageData(
-                  placeholder: DOMINANT_COLOR
+                  placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }
@@ -29,7 +29,7 @@ const Index = () => {
             localFile {
               childImageSharp {
                 gatsbyImageData(
-                  placeholder: DOMINANT_COLOR
+                  placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }

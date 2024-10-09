@@ -99,11 +99,22 @@ const RealEstateIntegrationWrapper = styled.div`
       }
     }
   }
+  .framework-wrapper {
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    ${media.mobile`
+      grid-gap:16px;
+    `}
+  }
   .framework-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 46px;
+    ${media.md`
+      margin-bottom: 0;
+    `}
     .logo-wrapper{
       min-height: 85px;
       display: flex;
@@ -149,7 +160,7 @@ const RealEstateIntegrationWrapper = styled.div`
         }
       }
       .accordion-body {
-        padding: 32px 16px 0;
+        padding: 16px 16px 0;
       }
     }
   }

@@ -80,6 +80,7 @@ padding: 96px 0;
   }
   &.innovations-wrapper {
     .dev-service-box{
+      cursor: auto;
       .box-header {
         display: block;
         margin-bottom: 16px;
@@ -97,6 +98,15 @@ padding: 96px 0;
             margin-bottom: 0;
           `}
         }
+      }
+      &:hover{
+       background-color: ${({ theme }) => theme.colors.whiteColor};
+       .text-h4{
+         color: ${({ theme }) => theme.colors.bodyTextVariant};
+       }
+       .paragraph {
+          color: ${({ theme }) => theme.colors.textMedium};
+       }
       }
     }
   }
