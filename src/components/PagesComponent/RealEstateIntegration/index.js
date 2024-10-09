@@ -94,20 +94,17 @@ const Index = () => {
                   <Accordion.Item eventKey={ind}>
                     <Accordion.Header as="h3">{item.title}</Accordion.Header>
                     <Accordion.Body>
-                      <Row>
+                      <div className="framework-wrapper">
                         {item.content.map((data) => (
-                          <Col md={4} sm={6} xs={6}>
-                            <div className="framework-logo">
+                          <div className="framework-logo">
                             {data.img !== "" &&
                               <div className="logo-wrapper">
                                 <img src={data.img} alt="project" title="project" loading="lazy" width='80%' height='80%' />
                               </div>
                             }
-                              <p>{data.desc}</p>
-                            </div>
-                          </Col>
+                          </div>
                         ))}
-                      </Row>
+                      </div>
                     </Accordion.Body>
                   </Accordion.Item>
                 </div>
