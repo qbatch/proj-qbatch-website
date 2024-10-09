@@ -39,6 +39,7 @@ const LanguagesWrapper = styled.div`
       color: ${({ theme }) => theme.colors.primaryColor};
       margin-bottom: 30px;
       letter-spacing: 0;
+      text-align:center;
       ${media.sm`
       text-align:left;
   `}

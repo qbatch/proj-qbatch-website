@@ -5624,11 +5624,11 @@ const industrieshMenu = [
   },
   {
     name: 'Retail and Consumer Goods',
-    to: '#',
+    to: '/industries/retail-software-development/',
   },
   {
     name: 'Travel & Transportation',
-    to: '#',
+    to: '/industries/travel-app-development/',
   },
 ];
 
