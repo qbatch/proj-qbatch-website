@@ -47,8 +47,10 @@ const HomeBannerWrapper = styled.div`
       ${media.md`
         max-width: 660px;
       `}
-      ${media.xs`
+      ${media.mobile`
         margin-bottom: 24px;
+        font-size: ${({ theme }) => theme.fonts.baseFontSize};
+        line-height: 24px;
       `}
     }
   }

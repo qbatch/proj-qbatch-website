@@ -104,6 +104,49 @@ const SearchWrapper = styled.div`
   .expandright:focus {
     padding: 0 0 0 16px;
   }
+  &.portfolio-search {
+    .search-container {
+      display: flex;
+      width: 100%;
+      height: 36px;
+    }
+    .searchbutton {
+      position: static;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      width: 32px;
+      height: 36px;
+      font-size: 24px;
+      ${media.mobile`
+        height: 30px;
+        font-size: 20px;
+      `}
+    }
+    .search {
+      position: static;
+      border: none;
+      background-color: transparent;
+      height: 34px;
+      font-weight: ${({ theme }) => theme.fontWeight.light};
+      ${media.md`
+        padding-left: 0;
+      `}
+      ${media.mobile`
+        height: 28px;
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+      `}
+    }
+    .search:focus {
+      width: 230px;
+      ${media.md`
+        width: 100%;
+      `}
+    }
+    .search:focus + .searchbutton {
+      background-color: transparent;
+    }
+  }
 `;
 
 export default SearchWrapper;
