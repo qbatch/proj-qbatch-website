@@ -63,6 +63,9 @@ const ButtonWrapper = styled(Button)`
     border-radius: 40px;
     height: 52px;
     gap: 48px;
+    ${media.mobile`
+      gap: 16px;
+    `}
     .button-icon {
       width: 44px;
       height: 44px;

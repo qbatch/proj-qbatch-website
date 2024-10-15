@@ -17,12 +17,18 @@ const PortfolioSuccessWrapper = styled.div`
   .desc {
     letter-spacing: 0.2px;
     line-height: 24px;
-    margin-bottom: 96px;
+    margin-bottom: 0;
+    ${media.standard`
+      margin-bottom: 24px;
+    `}
+  }
+  .portfolio-row {
+    margin-top: 96px;
     ${media.md`
-      margin-bottom: 56px;
+      margin-top: 56px;
     `}
     ${media.mobile`
-      margin-bottom: 32px;
+      margin-top: 32px;
     `}
   }
   .stories-col {
@@ -40,6 +46,7 @@ const PortfolioSuccessWrapper = styled.div`
     .card-img {
       overflow: hidden;
       border-radius: 20px 20px 0 20px;
+      max-height: 285px;
     }
     .project-img {
       border-radius: 20px 20px 0 20px;
@@ -125,6 +132,60 @@ const PortfolioSuccessWrapper = styled.div`
       .project-img {
         transform: scale(1.1);
       }
+    }
+  }
+  .portfolio-filters {
+    position: relative;
+    ${media.standard`
+      flex-direction: column;
+    `}
+  }
+  .filters {
+    position: absolute;
+    right: 0;
+    top: 0;
+    ${media.standard`
+      position: static;
+    `}
+  }
+  .portfolio-select {
+    padding-right: 14px;
+    position: relative;
+    ${media.mobile`
+      padding-right: 8px;
+    `}
+    .form-select {
+      border: none;
+      color: ${({ theme }) => theme.colors.textMedium};
+      font-weight: ${({ theme }) => theme.fontWeight.light};
+      background-color: transparent;
+      background-image: url('/arrow-down-primary.svg');
+      background-size: 10px 10px;
+      padding-right: 2rem;
+      padding-left: 0;
+      max-width: 150px;
+      min-width: 150px;
+      cursor: pointer;
+      ${media.mobile`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+        max-width: 100px;
+        min-width: 100px;
+      `}
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 1px;
+      height: 16px;
+      background-color: ${({ theme }) => theme.colors.dividerColor};
+      ${media.mobile`
+        top: 7px;
+      `}
     }
   }
 `

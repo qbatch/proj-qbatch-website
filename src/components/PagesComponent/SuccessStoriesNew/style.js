@@ -25,6 +25,10 @@ const SuccessStoriesNewWrapper = styled.div`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
         line-height: 24px;
       `}
+      ${media.mobile`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
+        line-height: 18px;
+      `}
     }
   }
   .carousel-button-group {
@@ -71,15 +75,24 @@ const SuccessStoriesNewWrapper = styled.div`
     .card-img {
       overflow: hidden;
       border-radius: 20px 20px 0 20px;
+      ${media.mobile`
+        border-radius: 10px 10px 0 10px;
+      `}
     }
     .card-img-top {
       border-radius: 20px 20px 0 20px;
       transform: scale(1);
       transition: transform 0.5s ease-in-out;
       transform-origin: top left;
+      ${media.mobile`
+        border-radius: 10px 10px 0 10px;
+      `}
     }
     .card-body {
       padding: 16px 0 0;
+      ${media.mobile`
+        padding: 8px 0 0;
+      `}
     }
     .card-desc {
       color: ${({ theme }) => theme.colors.textMedium};
@@ -96,6 +109,10 @@ const SuccessStoriesNewWrapper = styled.div`
       `}
     } 
     .card-logo {
+      margin-bottom: 16px;
+      ${media.mobile`
+        margin-bottom: 8px;
+      `}
       div {
         padding: 4px 8px;
         border-radius: 2px;
@@ -119,6 +136,11 @@ const SuccessStoriesNewWrapper = styled.div`
           opacity: 0;
           border-radius: 2px;
         }
+      }
+      img {
+        ${media.mobile`
+          height: 15px;
+        `}
       }
     }
     .arrow-div {
@@ -152,6 +174,13 @@ const SuccessStoriesNewWrapper = styled.div`
         transform: scale(1.1);
       }
     }
+  }
+  .slick-slide {
+      padding: 0 12px;
+  }
+
+  .slick-list {
+      margin: 0 -12px;
   }
 `
 

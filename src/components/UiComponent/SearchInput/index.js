@@ -3,9 +3,9 @@ import React from "react";
 import SearchWrapper from "./style";
 
 const index = (props) => {
-  const { onChange, value } = props;
+  const { onChange, value, className } = props;
   return (
-    <SearchWrapper>
+    <SearchWrapper className={className}>
       <div class="search-container">
         <input
           className="search expandright"
