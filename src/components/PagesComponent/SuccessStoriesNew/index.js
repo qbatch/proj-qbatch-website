@@ -46,47 +46,45 @@ const Index = ({ data, disc, heading, className }) => {
   };
 
   return (
-    <SuccessStoriesNewWrapper  className={className}>
+    <SuccessStoriesNewWrapper className={className}>
       <Container>
         <div className="section-heading d-flex justify-content-between align-items-center">
           <div>
-            <h2 className="heading">{heading || 'Success Stories'}</h2>
-            {disc && (
-              <p className="mb-0">
-                Innovators from across the industry have trusted Qbatch to build high-impact products.
-              </p>
-            )}
+            <h2 className="heading mb-sm-3 mb-2">{heading || 'Our Success Stories'}</h2>
+            <p className="mb-0 desc">
+              Innovators from across the industry have trusted Qbatch to build high-impact products.
+            </p>
           </div>
           <div className='d-md-block d-none'>
-          {data.length === currentInd ? (
-            <div className="mt-lg-0 d-md-block d-none">
-              <Button onClick={() => navigate('/portfolio')} text="Explore More" />
-            </div>
-          ) : (
-            <div className="bottom-slider">
-              <div className="carousel-button-group d-flex align-items-center">
-                <ArrowLeftIcon onClick={handleButtonClickPrev} className="slider-arrow" />
-                <span>
-                  <span className="fw-bold">
-                    {currentInd < 10 && 0}
-                    {currentInd}
-                  </span>
-                  <span>/</span>
-                  <span>
-                    {data.length < 10 && 0}
-                    {data.length}
-                  </span>
-                </span>
-                <ArrowRightIcon onClick={handleButtonClickNext} className="slider-arrow" />
+            {data.length === currentInd ? (
+              <div className="mt-lg-0 d-md-block d-none">
+                <Button onClick={() => navigate('/portfolio')} text="Explore More" />
               </div>
-            </div>
-          )}
+            ) : (
+              <div className="bottom-slider">
+                <div className="carousel-button-group d-flex align-items-center">
+                  <ArrowLeftIcon onClick={handleButtonClickPrev} className="slider-arrow" />
+                  <span>
+                    <span className="fw-bold">
+                      {currentInd < 10 && 0}
+                      {currentInd}
+                    </span>
+                    <span>/</span>
+                    <span>
+                      {data.length < 10 && 0}
+                      {data.length}
+                    </span>
+                  </span>
+                  <ArrowRightIcon onClick={handleButtonClickNext} className="slider-arrow" />
+                </div>
+              </div>
+            )}
           </div>
         </div>
-        
+
         <Slider {...sliderSettings} ref={sliderRef}>
           {data.map((item, ind) => (
-            <div md={6} className='mb-md-0 mb-5 ps-4' key={ind}>
+            <div md={6} className='mb-md-0 mb-sm-5 mb-4' key={ind}>
               <Card>
                 <div className="position-relative card-img">
                   <Card.Img
@@ -101,7 +99,7 @@ const Index = ({ data, disc, heading, className }) => {
                   </div>
                 </div>
                 <Card.Body>
-                  <div className="d-flex align-items-center justify-content-between card-logo mb-3">
+                  <div className="d-flex align-items-center justify-content-between card-logo">
                     <img src={item.logo} alt="logo" title="logo" loading="lazy" />
                     <div>{item.category}</div>
                   </div>
@@ -113,7 +111,7 @@ const Index = ({ data, disc, heading, className }) => {
         </Slider>
 
         <div className="d-md-none d-flex justify-content-end">
-        {data.length === currentInd ? (
+          {data.length === currentInd ? (
             <div className="mt-lg-0">
               <Button onClick={() => navigate('/portfolio')} text="Explore More" />
             </div>
