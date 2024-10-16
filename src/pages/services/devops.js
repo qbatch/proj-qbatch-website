@@ -14,7 +14,7 @@ import FaqSection from "../../components/PagesComponent/Faq";
 import StartProject from "../../components/PagesComponent/StartProject";
 import AwsPartner from '../../components/PagesComponent/AwsPartner'
 
-import { devOpsFaq, devOpsSliderData, whyDevOpsData, servicesData, weWorkStoriesData } from "../../constants";
+import { devOpsFaq, devOpsSliderData, whyDevOpsData, servicesData } from "../../constants";
 import DevOpsSupremacy from '../../components/PagesComponent/DevOpsSupremacy';
 import EmbraceEnterprise from '../../components/PagesComponent/EmbraceEnterprise';
 import WhyDevOps from '../../components/PagesComponent/ChoiceYourEnterprise'
@@ -93,7 +93,7 @@ const DevOps = () => {
        btnSpacingTop={72}
        btnAlign="center"
       />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <Collaboration />
        <InnerBanner
        heading="Minimize development costs and timelines with DevOps Engineering Services."

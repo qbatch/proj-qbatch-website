@@ -4,7 +4,7 @@ import SEO from '../../components/Seo';
 import { Queries } from '../../constants/queries'
 import { replaceUnderscoreWithAt } from '../../constants/Utils';
 
-import { EduCommitment, EdTechData, educationFaq, EducationSlider, SaasDevelop, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations, weWorkStoriesData } from "../../constants";
+import { EduCommitment, EdTechData, educationFaq, EducationSlider, EduForAll, GridData, EduTech, EduFeatures, EduIntigrations } from "../../constants";
 import BannerImg from "../../../static/education-app-development-banner.svg"
 
 const Layout = lazy(() => import('../../components/Layout/layout'));
@@ -133,7 +133,7 @@ const EduDevelopment = () => {
         heading="Why trust Qbatch for your business-critical EdTech project?"
       />
       <Collaboration />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <FaqSection faqQuestion={educationFaq} />
       <StartProject
         heading="Start a Project"

@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 
 import Layout from "../components/Layout/layout";
-import { technologythrivesData, projectDiscoveryData, weWorkStoriesData } from '../constants';
+import { technologythrivesData, projectDiscoveryData } from '../constants';
 import BannerImage from "../../static/team-work.svg";
 import { Queries } from '../constants/queries';
 import { replaceUnderscoreWithAt } from '../constants/Utils';
@@ -57,7 +57,7 @@ const Index = () => {
       />
       <ProvenProcess />
       <QuotationSection onRedirect={scrollToStartProject} />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <StartProject id="start-project" />
     </Layout>
   )

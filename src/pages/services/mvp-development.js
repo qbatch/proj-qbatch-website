@@ -7,8 +7,7 @@ import {
   mvpSliderItems,
   mvpBoxes1,
   mvpBoxes2,
-  mvpDevService,
-  weWorkStoriesData
+  mvpDevService
 } from "../../constants";
 
 const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
@@ -91,7 +90,7 @@ const MvpDev = () => {
       />
       <BewareFriend />
       <GuaranteeBanner />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <Collaboration button/>
       <InnerBanner
         className="mvp-wrapper"

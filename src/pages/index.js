@@ -4,7 +4,6 @@ import { Queries } from '../constants/queries';
 import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';
 import { replaceUnderscoreWithAt } from '../constants/Utils';
-import { weWorkStoriesData } from '../constants';
 
 const HomeBanner = lazy(() => import('../comp\onents/PagesComponent/HomeBanner'));
 const AchievementsNew = lazy(() => import('../components/PagesComponent/AchievementsNew'));
@@ -35,7 +34,7 @@ const IndexPage = () => {
             </p>
           }
         />
-        <SuccessStories data={weWorkStoriesData} />
+        <SuccessStories />
         <CollaborationNew />
         <CreativeIntelligence />
         <StartProject />

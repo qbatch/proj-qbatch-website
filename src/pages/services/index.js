@@ -16,7 +16,7 @@ const Collaboration = lazy(() => import('../../components/PagesComponent/Collabo
 const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
 const Achievements = lazy(() => import('../../components/PagesComponent/Achievements2'));
 
-import { servicesSliderData, lostToLaunchedItems, weWorkStoriesData } from "../../constants";
+import { servicesSliderData, lostToLaunchedItems } from "../../constants";
 
 const adaptiveSoftwareData = [
   {
@@ -95,7 +95,7 @@ const Index = () => {
         align="center"
         className="lost-to-launched"
       />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <InnerBanner
         heading="Is your current project not bringing results? 
        Then bring THAT change!"
