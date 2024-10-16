@@ -11,7 +11,6 @@ import {
   developmentExpertiseData,
   technologicalCapacityData,
   peopleFirstData,
-  weWorkStoriesData,
 } from '../../constants';
 
 const Layout = lazy(() => import("../../components/Layout/layout"));
@@ -103,7 +102,7 @@ const Enterprise = () => {
           className="lost-to-launched"
         />
         <LanguagesAndFrameworks />
-        <SuccessStories data={weWorkStoriesData} />
+        <SuccessStories />
         <Collaboration />
         <PeopleFirst
           peopleFirstData={peopleFirstData}

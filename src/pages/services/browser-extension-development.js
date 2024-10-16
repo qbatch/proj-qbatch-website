@@ -16,7 +16,7 @@ import FaqSection from "../../components/PagesComponent/Faq";
 import Slider from '../../components/UiComponent/Slider'
 import Languages from "../../components/PagesComponent/ExtensionTechnologies";
 import ExtensionTypes from '../../components/PagesComponent/ExtensionTypes'
-import { extensionSliderItems, extensionFaq, extensionTypes, weWorkStoriesData } from "../../constants";
+import { extensionSliderItems, extensionFaq, extensionTypes } from "../../constants";
 import BannerImage from "../../../static/extension-banner.svg";
 
 const BrowserExtension = () => {
@@ -82,7 +82,7 @@ const BrowserExtension = () => {
           btnSpacingTop={72}
           btnAlign="left"
         />
-        <SuccessStories data={weWorkStoriesData} />
+        <SuccessStories />
         <InnerBanner
           heading="Customize your user-browsing experiences with our powerful browser extensions"
           headingMaxWidth="900px"

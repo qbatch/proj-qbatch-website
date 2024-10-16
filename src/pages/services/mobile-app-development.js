@@ -8,8 +8,7 @@ import {
   lostToLaunchedItems,
   mobileAppFaq,
   revenueData,
-  multiPlatformData,
-  weWorkStoriesData
+  multiPlatformData
 } from "../../constants";
 import { peopleFirstData } from "../../constants";
 
@@ -110,7 +109,7 @@ const MobileApp = () => {
       />
       <WhatDifferenceQbatchMaking heading="How We Make Custom Web Apps Differently" innerPage={true} />
       <Achievements mainHeading="And it just seems to work" labelText="Here's what stats and our clients have to say:" innerPage={true} />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <Collaboration heading="Collaboration Models For Everlasting Partnerships" />
       <PeopleFirst
         peopleFirstData={peopleFirstData}

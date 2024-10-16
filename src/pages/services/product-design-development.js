@@ -24,9 +24,7 @@ import {
   developmentProcessData,
   productDesignFaq,
   productDesignData,
-  cycleProductData,
   productDevlopmentServices,
-  weWorkStoriesData,
 } from '../../constants'
 import WhyChooseQbatch from '../../components/PagesComponent/WhyChooseQbatch'
 import SeemToWork from '../../components/PagesComponent/SeemToWork'
@@ -97,7 +95,7 @@ const ProductDesign = () => {
 
       <WhyChooseQbatch />
       <SeemToWork />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <Collaboration />
       <MarketplaceSellers
         heading="Need someone to lead your product development journey?"

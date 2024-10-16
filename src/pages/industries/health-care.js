@@ -1,6 +1,6 @@
 import React, { lazy } from 'react'
 import Layout from '../../components/Layout/layout'
-import { FrequentlyAskedQuestionsHealthCareFaq, StartYourHealthTechData, weWorkStoriesData } from '../../constants';
+import { FrequentlyAskedQuestionsHealthCareFaq, StartYourHealthTechData } from '../../constants';
 import { Queries } from '../../constants/queries';
 import { replaceUnderscoreWithAt } from '../../constants/Utils';
 import { EdTechPotentialData, listItem1, listItem2 } from '../../constants';
@@ -55,7 +55,7 @@ const HealthCareAppDevelopment = () => {
       />
       <StartYourHealthTech StartYourHealthTechData={StartYourHealthTechData} />
       <WhyTrustQbatch heading='Why trust Qbatch for your business-critical Healthcare project?' />
-      <SuccessStories heading="Success Stories From Qbatch’s Healthcare Portfolio" data={weWorkStoriesData} />
+      <SuccessStories heading="Success Stories From Qbatch’s Healthcare Portfolio" />
       <CollaborationNew borderBottom />
       <FaqSection className="health-care-faq" faqQuestion={FrequentlyAskedQuestionsHealthCareFaq} />
       <StartProject />

@@ -12,7 +12,6 @@ import { ProjectQuote, ProjectCover } from '../../components/PagesComponent/Proj
 import ProjectAssets from '../../components/PagesComponent/ProjectAssets';
 import ProjectTimeline from '../../components/PagesComponent/ProjectTimeline';
 import SuccessStories from '../../components/PagesComponent/SuccessStoriesNew';
-import { weWorkStoriesData } from '../../constants';
 
 const Portfolio = ({ pageContext }) => {
   const { portfolio } = pageContext;
@@ -46,7 +45,7 @@ const Portfolio = ({ pageContext }) => {
       <ProjectAssets projectData={projectComponents} />
       <ProjectCover cover={pageContext.projectCover} />
       <ProjectQuote quote={pageContext.projectQuote} />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <StartProject />
     </Layout>
   );

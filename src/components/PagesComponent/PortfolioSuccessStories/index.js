@@ -121,7 +121,7 @@ const Index = () => {
                         </div>
                       </div>
                       <Card.Body>
-                        <div className="d-flex align-items-center justify-content-between card-logo mb-3">
+                        <div className="d-flex align-items-center justify-content-between card-logo">
                           {logoImage && (
                             <GatsbyImage
                               image={logoImage}

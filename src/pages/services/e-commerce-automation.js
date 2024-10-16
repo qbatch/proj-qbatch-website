@@ -3,7 +3,7 @@ import React, { lazy } from "react";
 import { Queries } from '../../constants/queries';
 import SeoComponent from "../../utils/seo";
 import Layout from "../../components/Layout/layout";
-import { ecomSliderItems, ecomFaqQuestion, automationData, helpingCardData, weWorkStoriesData } from "../../constants";
+import { ecomSliderItems, ecomFaqQuestion, automationData, helpingCardData } from "../../constants";
 import EcommerceBanner from '../../../static/e-commerce-banner.svg';
 
 const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
@@ -60,7 +60,7 @@ const Ecommerce = () => {
       <GridData maxWidth='600px' height={'114px'} data={automationData} paragraph='This is your hint to bury your conventional e-commerce ways and' heading={<>Automation is 99% software but,
               1% mindset<span> (and oh, that 1%)</span></>} />
       <IdeasAndInvestments heading="100+ businesses trusted us with their ideas and investments," span="will you?" />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       {/* <MarketplaceIntegrations /> */}
       <IntegrationMarketPlace heading="Integrations for Your Marketplace" paragraph="We are made of 50% people skills and 50% tools to ensure constant performance and security featuring uncompromising quality and speed. " paragraphMaxWidth={'754px'} showBtn={true}  />
       <MarketplaceSellers

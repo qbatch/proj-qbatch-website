@@ -1,6 +1,6 @@
 import React, { lazy } from 'react'
 import Layout from '../../components/Layout/layout'
-import { ImagineTravelAppData, ImagineTravelAppData2, SimplifyYourTravelData, TravelLanguagesData, TravelSliderData, TravelSoftwareDevelopmentFaq, TravelSolutionsData, weWorkStoriesData } from '../../constants'
+import { ImagineTravelAppData, ImagineTravelAppData2, SimplifyYourTravelData, TravelLanguagesData, TravelSliderData, TravelSoftwareDevelopmentFaq, TravelSolutionsData } from '../../constants'
 import SEO from '../../components/Seo'
 import { Queries } from '../../constants/queries'
 
@@ -76,7 +76,7 @@ const TravelAppDevelopment = () => {
       />
       <LookingToProvide />
       <WhyTrustQbatch />
-      <SuccessStories className="travel-app-development-wrapper" heading="Success Stories from Our Travel and Tour Industry Portfolio" data={weWorkStoriesData} />
+      <SuccessStories className="travel-app-development-wrapper" heading="Success Stories from Our Travel and Tour Industry Portfolio" />
       <CollaborationNew />
       <FaqSection className="health-care-faq" faqQuestion={TravelSoftwareDevelopmentFaq} />
       <FeelingLikeYouAreInItAlone className="dont-just-rebuild" img="/tired-of.svg" heading="Tired of one-size-fits-all travel experiences?" text="We build custom travel & hospitality apps that ignite wanderlust and drive bookings." buttonText="Talk to our experts today!" />

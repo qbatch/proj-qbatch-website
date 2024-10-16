@@ -47,15 +47,24 @@ const PortfolioSuccessWrapper = styled.div`
       overflow: hidden;
       border-radius: 20px 20px 0 20px;
       max-height: 285px;
+      ${media.mobile`
+        border-radius: 10px 10px 0 10px;
+      `}
     }
     .project-img {
       border-radius: 20px 20px 0 20px;
       transform: scale(1);
       transition: transform 0.5s ease-in-out;
       transform-origin: top left;
+      ${media.mobile`
+        border-radius: 10px 10px 0 10px;
+      `}
     }
     .card-body {
       padding: 16px 0 0;
+      ${media.mobile`
+        padding: 8px 0 0;
+      `}
     }
     .card-desc {
       color: ${({ theme }) => theme.colors.textMedium};
@@ -72,6 +81,10 @@ const PortfolioSuccessWrapper = styled.div`
       `}
     } 
     .card-logo {
+      margin-bottom: 16px;
+      ${media.mobile`
+        margin-bottom: 8px;
+      `}
       .project-category {
         padding: 4px 8px;
         border-radius: 2px;
@@ -99,6 +112,9 @@ const PortfolioSuccessWrapper = styled.div`
       .gatsby-image-wrapper {
         div {
           height: 30px;
+          ${media.mobile`
+            height: 15px;
+          `}
         }
       }
     }

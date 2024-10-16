@@ -75,11 +75,12 @@ const SuccessStoriesNewWrapper = styled.div`
     .card-img {
       overflow: hidden;
       border-radius: 20px 20px 0 20px;
+      max-height: 285px;
       ${media.mobile`
         border-radius: 10px 10px 0 10px;
       `}
     }
-    .card-img-top {
+    .project-img {
       border-radius: 20px 20px 0 20px;
       transform: scale(1);
       transition: transform 0.5s ease-in-out;
@@ -113,7 +114,7 @@ const SuccessStoriesNewWrapper = styled.div`
       ${media.mobile`
         margin-bottom: 8px;
       `}
-      div {
+      .project-category {
         padding: 4px 8px;
         border-radius: 2px;
         color: ${({ theme }) => theme.colors.primaryColor};
@@ -137,10 +138,13 @@ const SuccessStoriesNewWrapper = styled.div`
           border-radius: 2px;
         }
       }
-      img {
-        ${media.mobile`
-          height: 15px;
-        `}
+      .gatsby-image-wrapper {
+        div {
+          height: 30px;
+          ${media.mobile`
+            height: 15px;
+          `}
+        }
       }
     }
     .arrow-div {
@@ -170,7 +174,7 @@ const SuccessStoriesNewWrapper = styled.div`
           }
         }
       }
-      .card-img-top {
+      .project-img {
         transform: scale(1.1);
       }
     }

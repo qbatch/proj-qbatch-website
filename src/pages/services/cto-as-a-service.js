@@ -15,7 +15,7 @@ import Insights from "../../components/PagesComponent/Insights";
 import ScrollToTop from '../../components/PagesComponent/ScrollTop';
 import FaqSection from "../../components/PagesComponent/Faq";
 import Slider from '../../components/UiComponent/Slider'
-import { sliderItems, faqQuestion, weWorkStoriesData } from "../../constants";
+import { sliderItems, faqQuestion } from "../../constants";
 import { guidanceData, ctoList } from "../../constants";
 import CtoBannerImage from "../../../static/cto-banner.png";
 import ExploreOurEnterpriseLevel from "../../components/PagesComponent/ExploreOurEnterpriseLevel";
@@ -75,7 +75,7 @@ const CtoService = () => {
       <GrowingTechSide />
       <ChooseCto />
       <CtoServiceModel />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <FaqSection faqQuestion={faqQuestion} />
       <Insights />
       <StartProject />

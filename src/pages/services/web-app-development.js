@@ -4,7 +4,7 @@ import { Queries } from '../../constants/queries';
 import SeoComponent from "../../utils/seo";
 import Layout from "../../components/Layout/layout";
 import WebappImage from '../../../static/web-app-dev.svg'
-import { webAppFaq, fullCycle, peopleFirstData, lostToLaunchedItems, weWorkStoriesData } from "../../constants";
+import { webAppFaq, fullCycle, peopleFirstData, lostToLaunchedItems } from "../../constants";
 
 const ScrollToTop = lazy(() => import('../../components/PagesComponent/ScrollTop'));
 const Banner = lazy(() => import('../../components/PagesComponent/PageBanner'));
@@ -71,7 +71,7 @@ const webapp = () => {
         />
         <LanguagesAndFrameworks />
         <Collaboration />
-        <SuccessStories data={weWorkStoriesData} />
+        <SuccessStories />
         <PeopleFirst
           peopleFirstData={peopleFirstData}
           paragraph="You are the industry leader of today and tomorrow. Let us help you become unstoppable with versatile expertise and wide-spectrum technologies."

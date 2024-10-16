@@ -8,7 +8,6 @@ import Achievements from "../components/PagesComponent/Achievements";
 import SuccessStories from "../components/PagesComponent/SuccessStoriesNew";
 import ProblemSolving from "../components/PagesComponent/ProblumSolving";
 import Breadcrumb from '../components/PagesComponent/Breadcrumb';
-import { weWorkStoriesData } from '../constants';
 
 const ContactUs = () => {
   const crumbs = [
@@ -26,7 +25,7 @@ const ContactUs = () => {
      <Breadcrumb crumbs={crumbs} wrapperClass="inner-page"/>
       <StartProject page="contact" />
       <Achievements page="contact" />
-      <SuccessStories data={weWorkStoriesData} />
+      <SuccessStories />
       <ProblemSolving
         className="contact-project-cost"
         text={<h2 className="text-h1 heading-break">Wondering how much your project would cost?</h2>}
