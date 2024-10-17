@@ -1,73 +1,44 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
 
-const SuccessStoriesNewWrapper = styled.div`
-  padding: 96px 0;
+const PortfolioSuccessWrapper = styled.div`
+  padding: 96px 0 28px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
   ${media.sm`
-    padding: 40px 0;
+    padding: 56px 0;
   `}
-  &.travel-app-development-wrapper .slick-current div {
-   ${media.mobile`
-    padding-left: 0px !important;
-    `}
-}
-  .section-heading {
-    margin-bottom: 56px;
+  .heading {
+    margin-bottom: 16px;
     ${media.sm`
-      margin-bottom: 32px;
-      flex-direction: column;
-    `}
-    p {
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      margin-bottom: 12px;
       line-height: 32px;
-      ${media.sm`
-        font-size: ${({ theme }) => theme.fonts.baseFontSize};
-        line-height: 24px;
-      `}
-      ${media.mobile`
-        font-size: ${({ theme }) => theme.fonts.baseFontSizeMediumSmal};
-        line-height: 18px;
-      `}
-    }
+  `}
   }
-  .carousel-button-group {
-    gap: 12px;
-    svg {
-      cursor: pointer;
-    }
-    .arrow-icon {
-      width: 10px;
-      height: 14px;
-      line-height: 0.8;
-    }
-    span {
-      color: ${({ theme }) => theme.colors.textMedium};
-      font-size: ${({ theme }) => theme.fonts.baseFontSize};
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      &:first-child {
-        color: ${({ theme }) => theme.colors.primaryColor};
-      }
-      &:nth-child(2) {
-        font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
-      }
-    }
+  .desc {
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    margin-bottom: 0;
+    ${media.standard`
+      margin-bottom: 24px;
+    `}
   }
-  .for-web-view{
-    display: block;
+  .portfolio-row {
+    margin-top: 96px;
+    ${media.md`
+      margin-top: 56px;
+    `}
+    ${media.mobile`
+      margin-top: 32px;
+    `}
+  }
+  .stories-col {
+    margin-bottom: 68px;
     ${media.sm`
-    display: none;
-      `}
-  }
-  .for-mobile-view{
-    display: none;
-    ${media.sm`
-    display: block;
-    display:flex;
-    justify-content:center;
-      `}
+      margin-bottom: 48px;
+    `}
+    ${media.mobile`
+      margin-bottom: 24px;
+    `}
   }
   .card {
     border: none;
@@ -179,13 +150,60 @@ const SuccessStoriesNewWrapper = styled.div`
       }
     }
   }
-  .slick-slide {
-      padding: 0 12px;
+  .portfolio-filters {
+    position: relative;
+    ${media.standard`
+      flex-direction: column;
+    `}
   }
-
-  .slick-list {
-      margin: 0 -12px;
+  .filters {
+    position: absolute;
+    right: 0;
+    top: 0;
+    ${media.standard`
+      position: static;
+    `}
+  }
+  .portfolio-select {
+    padding-right: 14px;
+    position: relative;
+    ${media.mobile`
+      padding-right: 8px;
+    `}
+    .form-select {
+      border: none;
+      color: ${({ theme }) => theme.colors.textMedium};
+      font-weight: ${({ theme }) => theme.fontWeight.light};
+      background-color: transparent;
+      background-image: url('/arrow-down-primary.svg');
+      background-size: 10px 10px;
+      padding-right: 2rem;
+      padding-left: 0;
+      max-width: 150px;
+      min-width: 150px;
+      cursor: pointer;
+      ${media.mobile`
+        font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
+        max-width: 100px;
+        min-width: 100px;
+      `}
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 1px;
+      height: 16px;
+      background-color: ${({ theme }) => theme.colors.dividerColor};
+      ${media.mobile`
+        top: 7px;
+      `}
+    }
   }
 `
 
-export default SuccessStoriesNewWrapper;
+export default PortfolioSuccessWrapper;

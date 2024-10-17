@@ -66,8 +66,8 @@ const RealEstate = () => {
       />
       <ScaredToInvest
         heading="Scared to invest? Start small, Give us a pilot project"
-        desc="Let's start with a small-scale project, risk-free, and see if we suit your custom real estate software vision."
-        btnText='Book Discovery Call'
+        text="Let's start with a small-scale project, risk-free, and see if we suit your custom real estate software vision."
+        buttonText='Book Discovery Call'
       />
       <OnDemandFeatures />
       <NextLevelInnovations 
@@ -78,11 +78,13 @@ const RealEstate = () => {
       />
        <ScaredToInvest
         heading="Technology should be an enabling force, not a burden."
-        desc="We're dedicated PropTech developers who are focused on building software that feels as intuitive as talking to a trusted colleague. Simple and neat."
-        btnText='Build your real estate app'
+        text="We're dedicated PropTech developers who are focused on building software that feels as intuitive as talking to a trusted colleague. Simple and neat."
+        buttonText='Build your real estate app'
+        img='/enabling-force.svg'
+        className='enabling-force'
       />
       <RealEstateIntegration />
-      <WhyTrustQbatch />
+      <WhyTrustQbatch heading='Why trust Qbatch for your business-critical PropTech project?' />
       <DominateYourMarket />
       <CollaborationNew borderBottom={true} />
       <FaqSection className="health-care-faq" faqQuestion={FrequentlyAskedQuestionsHealthCareFaq} />

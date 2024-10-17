@@ -11,6 +11,7 @@ import ProjectImpact from '../../components/PagesComponent/ProjectImpact';
 import { ProjectQuote, ProjectCover } from '../../components/PagesComponent/ProjectQuote';
 import ProjectAssets from '../../components/PagesComponent/ProjectAssets';
 import ProjectTimeline from '../../components/PagesComponent/ProjectTimeline';
+import SuccessStories from '../../components/PagesComponent/SuccessStoriesNew';
 
 const Portfolio = ({ pageContext }) => {
   const { portfolio } = pageContext;
@@ -19,7 +20,7 @@ const Portfolio = ({ pageContext }) => {
     return <PageNotFound />;
   }
 
-  const { mainHeading, subHeading, detail, companySize, team, industry, duration, useCase, cover, projectDetails } = portfolio;
+  const { mainHeading, subHeading, detail, companySize, team, industry, duration, useCase, cover, headQuarter } = portfolio;
   const coverImageUrl = cover?.localFile?.url;
 
   return (
@@ -36,14 +37,15 @@ const Portfolio = ({ pageContext }) => {
         industry={industry}
         duration={duration}
         useCase={useCase}
+        headQuarter={headQuarter}
       />
       <ProjectImpact projectImpact={pageContext.projectImpact} />
-      <ProjectChallenges projectDetails={projectDetails} />
+      <ProjectChallenges projectDetails={pageContext.projectDetails} />
       <ProjectTimeline phases={pageContext.phaseTimeline.timeline} steps={pageContext.phaseTimeline.phase} />
       <ProjectAssets projectData={projectComponents} />
       <ProjectCover cover={pageContext.projectCover} />
       <ProjectQuote quote={pageContext.projectQuote} />
-      <ProvenWorkExperience heading="Related Case Studies" />
+      <SuccessStories />
       <StartProject />
     </Layout>
   );

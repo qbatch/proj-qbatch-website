@@ -11,7 +11,7 @@ import ExtensionInnerBanner from '../../components/PagesComponent/ExtensionInner
 import ExperienceDriven from "../../components/PagesComponent/ExperienceDriven";
 import InnerBanner from '../../components/PagesComponent/InnerBanner';
 import ProcessBehind from "../../components/PagesComponent/ProcessBehind";
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import SuccessStories from "../../components/PagesComponent/SuccessStoriesNew";
 import FaqSection from "../../components/PagesComponent/Faq";
 import Slider from '../../components/UiComponent/Slider'
 import Languages from "../../components/PagesComponent/ExtensionTechnologies";
@@ -82,8 +82,7 @@ const BrowserExtension = () => {
           btnSpacingTop={72}
           btnAlign="left"
         />
-
-        <ProvenWorkExperience heading="Our Featured Projects in Chrome Browser Extensions Development" headerClass="text-center w-100 extension-slider" btnClass="d-none" />
+        <SuccessStories />
         <InnerBanner
           heading="Customize your user-browsing experiences with our powerful browser extensions"
           headingMaxWidth="900px"

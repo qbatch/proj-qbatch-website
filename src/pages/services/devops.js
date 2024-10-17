@@ -7,7 +7,7 @@ import Banner from "../../components/PagesComponent/PageBanner";
 import InnerBanner from '../../components/PagesComponent/InnerBanner';
 import DevOpsService from'../../components/PagesComponent/DevOpsService';
 import Slider from '../../components/UiComponent/Slider';
-import ProvenWorkExperience from "../../components/PagesComponent/ProvenWorkExperience";
+import SuccessStories from "../../components/PagesComponent/SuccessStoriesNew";
 import Achievements from '../../components/PagesComponent/Achievements';
 import Collaboration from '../../components/PagesComponent/Collaboration';
 import FaqSection from "../../components/PagesComponent/Faq";
@@ -93,7 +93,7 @@ const DevOps = () => {
        btnSpacingTop={72}
        btnAlign="center"
       />
-      <ProvenWorkExperience exploreBtn heading="Products that Empowered Millions"/>
+      <SuccessStories />
       <Collaboration />
        <InnerBanner
        heading="Minimize development costs and timelines with DevOps Engineering Services."

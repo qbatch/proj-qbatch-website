@@ -5,7 +5,7 @@ import Layout from "../components/Layout/layout";
 import SEO from "../components/Seo";
 import StartProject from "../components/PagesComponent/StartProject";
 import Achievements from "../components/PagesComponent/Achievements";
-import ProvenWorkExperience from "../components/PagesComponent/ProvenWorkExperience";
+import SuccessStories from "../components/PagesComponent/SuccessStoriesNew";
 import ProblemSolving from "../components/PagesComponent/ProblumSolving";
 import Breadcrumb from '../components/PagesComponent/Breadcrumb';
 
@@ -25,7 +25,7 @@ const ContactUs = () => {
      <Breadcrumb crumbs={crumbs} wrapperClass="inner-page"/>
       <StartProject page="contact" />
       <Achievements page="contact" />
-      <ProvenWorkExperience heading="Proven Work Experience" paragraph="They imagined it, we brought it to the world!" />
+      <SuccessStories />
       <ProblemSolving
         className="contact-project-cost"
         text={<h2 className="text-h1 heading-break">Wondering how much your project would cost?</h2>}

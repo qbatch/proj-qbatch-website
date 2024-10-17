@@ -20,7 +20,7 @@ const MvpBoxes = lazy(() => import('../../components/PagesComponent/MvpBoxes'));
 const Slider = lazy(() => import('../../components/UiComponent/Slider'));
 const BewareFriend = lazy(() => import('../../components/PagesComponent/BewareFriend'));
 const GuaranteeBanner = lazy(() => import('../../components/PagesComponent/GuaranteeBanner'));
-const ProvenWorkExperience = lazy(() => import('../../components/PagesComponent/ProvenWorkExperience'));
+const SuccessStories = lazy(() => import('../../components/PagesComponent/SuccessStoriesNew'));
 const Collaboration = lazy(() => import("../../components/PagesComponent/Collaboration"));
 const InnerBanner = lazy(() => import('../../components/PagesComponent/InnerBanner'));
 const FaqSection = lazy(() => import("../../components/PagesComponent/Faq"));
@@ -90,10 +90,7 @@ const MvpDev = () => {
       />
       <BewareFriend />
       <GuaranteeBanner />
-      <ProvenWorkExperience
-        heading="Featured Projects"
-        exploreBtn
-      />
+      <SuccessStories />
       <Collaboration button/>
       <InnerBanner
         className="mvp-wrapper"

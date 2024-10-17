@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
 
 import Layout from '../../components/Layout/layout'
-import { retailData, RetailSliderData, RetailSoftwareDevelopmentFaq, SimplifyYourRetailData, weWorkStoriesData, ImagineRetailExperienceData, InnovativeRetailSolutionsData } from '../../constants';
+import { retailData, RetailSliderData, RetailSoftwareDevelopmentFaq, SimplifyYourRetailData, ImagineRetailExperienceData, InnovativeRetailSolutionsData } from '../../constants';
 import SEO from '../../components/Seo';
 import { Queries } from '../../constants/queries';
 
@@ -50,11 +50,11 @@ const RetailSoftwareDevelopment = () => {
       <WhatDifferenceQbatchMaking retailData={retailData} retail heading="No more Retail struggles, we got you covered." />
       <PowerfulRetailSolutions />
       <BuildRetailOpportunities />
-      <SuccessStories heading="Success Stories from our Retail and E-commerce Portfolio" data={weWorkStoriesData} />
+      <SuccessStories heading="Success Stories from our Retail and E-commerce Portfolio" />
       <QbatchCoreRetailSoftwareSolutions />
       <Slider
         data={RetailSliderData}
-        heading="Humanizing Healthcare: Qbatch Software Solutions"
+        heading="Types of custom retail software we build for you"
         paragraph=""
         seconedHeading=""
         width="300px"
@@ -75,7 +75,7 @@ const RetailSoftwareDevelopment = () => {
       />
       <StartYourHealthTech className="simplify-your-retail" heading="Simplify your Retail Journey in 3 simple steps" StartYourHealthTechData={SimplifyYourRetailData} />
       <QbatchIsEmpoweringRetailers />
-      <WhyTrustQbatch />
+      <WhyTrustQbatch heading="Why trust Qbatch for your business-critical E-com project?" />
       <CollaborationNew />
       <FaqSection className="health-care-faq" faqQuestion={RetailSoftwareDevelopmentFaq} />
       <StartProject />

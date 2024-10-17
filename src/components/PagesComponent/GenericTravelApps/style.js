@@ -59,10 +59,14 @@ const GenericTravelAppsWrapper = styled.div`
     flex-direction: column;
     grid-row-gap: 16px;
     padding-inline: 24px;
-    p.h3-text {
-    font-size: 16px;
-    font-weight: 700;
+    h3{
+      font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
+    }
+    p.h3-text-wrapper {
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
     line-height: 24px;
+    line-height: 32px;
     text-align: left;
     color: #2D2F31;
     margin: 0px;
@@ -70,9 +74,9 @@ const GenericTravelAppsWrapper = styled.div`
 
 }
 p {
-    font-size: 12px;
+    font-size: ${({ theme }) => theme.fonts.baseFontSize};
     font-weight: 400;
-    line-height: 16px;
+    line-height: 24px;
     text-align: left;
     margin: 0;
     color: #5F737C;
@@ -104,8 +108,8 @@ p {
     grid-row-gap: 16px;
     padding-inline: 24px;
     h3 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
     line-height: 32px;
     color: #2D2F31;
     margin: 0px;
