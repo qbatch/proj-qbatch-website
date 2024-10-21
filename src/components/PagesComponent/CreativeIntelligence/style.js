@@ -51,16 +51,18 @@ const CreativeIntelligenceWrapper = styled.div`
     h2 {
       color: ${({ theme }) => theme.colors.whiteColor};
       margin-bottom: 2px;
-      ${media.lg`
-             font-size:68px;
-    `}
+      line-height: 72px;
+      font-size: 68px;
       ${media.md`
+              line-height: 54px;
              font-size:50px;
     `}
-    ${media.sm`
+      ${media.sm`
+      line-height: 32px;
              font-size:30px;
     `}
     ${media.xs`
+      line-height: 28px;
              font-size:24px;
     `}
     }
