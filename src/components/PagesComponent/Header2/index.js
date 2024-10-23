@@ -253,7 +253,6 @@ const Header2 = () => {
                     <ul>
                       {companyMenu.map((item, index) => {
                         const isActive = currentPath === item.link;
-                        console.log(currentPath)
                         return (
                           <li key={index} className={isActive ? 'active' : ''}>
                             <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>
