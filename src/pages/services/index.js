@@ -55,7 +55,7 @@ const Index = () => {
         col2lg={4}
         headingMaxWidth={'720px'}
         paragraphMaxWidth={'580px'}
-        blogInner='/services-banner-img.svg'
+        imgSrc='/services-banner-img.svg'
         mobileViewBanner='/services-banner-img.svg'
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },

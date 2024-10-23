@@ -10,7 +10,7 @@ import OurClients from "../components/PagesComponent/Clients";
 import Leadership from "../components/PagesComponent/Leadership";
 import ValueSystem from "../components/PagesComponent/ValueSystem";
 import Awards from "../components/PagesComponent/Awards";
-import Clients from "../components/PagesComponent/Careers";
+// import Clients from "../components/PagesComponent/Careers";
 
 const About = () => (
 
@@ -26,7 +26,7 @@ const About = () => (
     <Leadership />
     <ValueSystem />
     <Awards maxCols={8} />
-    <Clients />
+    {/* <Clients /> */}
   </Layout>
 );
 export const Head = () => {

@@ -16,9 +16,9 @@ const LifeAtQbatch = () => {
   };
 
   const slides = [
-    { id: 1, imageUrl: "/slider-banner.svg" },
-    { id: 2, imageUrl: "/slider-banner.svg" },
-    { id: 3, imageUrl: "/slider-banner.svg" },
+    { id: 1, imageUrl: "/slider-banner.webp" },
+    { id: 2, imageUrl: "/slider-banner.webp" },
+    { id: 3, imageUrl: "/slider-banner.webp" },
   ];
   const mobileScreen = [
     { id: 1, imageUrl: "/mobile-first.svg" },
