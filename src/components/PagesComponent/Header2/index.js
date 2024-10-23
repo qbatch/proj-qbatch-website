@@ -79,10 +79,10 @@ const Header2 = () => {
     // { label: "Logistics and Supply Chain", link: "" },
     // { label: "E-commerce", link: "" },
     // { label: "FinTech", link: "" },
-    { label: "Retail Software Development", link: "/industries/retail-software-development" },
-    { label: "Real Estate Software Development", link: "/industries/real-estate" },
+    { label: "Retail Software Development", link: "/industries/retail-software-development/" },
+    { label: "Real Estate Software Development", link: "/industries/real-estate/" },
     { label: "Travel and Transportation", link: "/industries/travel-app-development/" },
-    { label: "Healthcare", link: "/industries/health-care" },
+    { label: "Healthcare", link: "/industries/health-care/" },
     { label: "EdTech", link: "/industries/education-software-development/" },
     // { label: "Retail and Consumer Goods", link: "" }
   ];
@@ -94,9 +94,9 @@ const Header2 = () => {
 
   const companyMenu = [
     { label: "About Us", link: "/about/" },
-    { label: "Qbatch Careers", link: "/careers" },
-    { label: "Events and PR", link: "/events" },
-    { label: "How we work", link: "/how-we-work" }
+    { label: "Careers", link: "/careers/" },
+    { label: "Events and PR", link: "/events/" },
+    { label: "How we work", link: "/how-we-work/" }
   ];
 
   const [isServicesMenuOpen, setServicesMenuOpen] = useState(false);
@@ -190,7 +190,7 @@ const Header2 = () => {
               </li>
               <li>
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
-                  <Link to="/#industries" className={currentPath === '/#industries' ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Industries</Link>
+                  <Link to="/#industries" className={currentPath.startsWith('/industries') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>
@@ -234,8 +234,12 @@ const Header2 = () => {
               <li>
                 <div className={`link-wrapper ${isCompanyMenuOpen ? 'open' : 'close'}`}>
                   <Link
-                    to="/"
-                    className={companyMenuPaths.includes(currentPath) || currentPath.startsWith('/company') ? 'active' : ''}
+                    to={currentPath}
+                    className={
+                      ['/about/', '/events/', '/careers/','/how-we-work/' ].includes(currentPath) 
+                        ? 'active' 
+                        : ''
+                    }
                     onClick={() => setMainMenuOpen(false)}
                   >
                     Company
@@ -248,7 +252,7 @@ const Header2 = () => {
                   <Container>
                     <ul>
                       {companyMenu.map((item, index) => {
-                        const isActive = currentPath === item.link || (item.link === "/about/#career" && currentPath === "/about/#career");
+                        const isActive = currentPath === item.link;
                         return (
                           <li key={index} className={isActive ? 'active' : ''}>
                             <Link to={item.link} onClick={item.link === "" ? (e) => e.preventDefault() : () => setMainMenuOpen(false)}>
