@@ -141,7 +141,7 @@ const Index = () => {
                       </a>
                     ) : (
                       <span className={!data.icon && 'address'}>
-                        {data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" loading="lazy" />}
+                        {data.title} {data.flag && <img src={data.flag} alt="flag" className="address-flag" loading="lazy" height="14" width="20" />}
                       </span>
                     )}
                   </div>

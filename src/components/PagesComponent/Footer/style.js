@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { media } from "../../../theme/media-mixins";
-import footerImg from "../../../../static/footer-bg.png";
+import footerImg from "../../../../static/footer-bg.avif";
 
 const FooterWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.footerBgColor};

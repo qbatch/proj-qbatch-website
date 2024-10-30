@@ -117,7 +117,7 @@ const Index = () => {
                           />
                         )}
                         <div className="arrow-div">
-                          <img src="/arrow-black.svg" alt="arrow" title="arrow" />
+                          <img src="/arrow-black.svg" alt="arrow" title="arrow" height="22" width="23"/>
                         </div>
                       </div>
                       <Card.Body>
