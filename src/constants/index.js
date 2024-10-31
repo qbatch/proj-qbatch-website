@@ -5507,7 +5507,7 @@ const discoverQbatchMenu = [
   },
   {
     name: 'Career',
-    to: '/about/#freshteam-widgets',
+    to: '/careers/',
   },
   {
     name: 'Blogs',

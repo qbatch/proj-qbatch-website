@@ -18,7 +18,7 @@ const Index = () => {
             </div>
             <div className="creative-descriptiont">
               
-              <h2 className="text-h2"><span className="text-h4">Our Mantra </span>Creativity is Intelligence Having Fun. </h2>
+              <h2><span className="text-h4">Our Mantra </span>Creativity is Intelligence Having Fun. </h2>
             </div>
           </div>
           <div className="signatures">

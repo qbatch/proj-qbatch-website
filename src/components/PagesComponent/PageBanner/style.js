@@ -7,11 +7,9 @@ const CtoBannerWrapper = styled.div`
   background-image: ${(props) => `url(${props.blogInner ? props.blogInner : ''})`};
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  padding: 96px 0 96px 0;
+  padding: 138px 0 96px 0;
   display: flex;
   align-items: center;
-
-  min-height:calc(100vh - 70px);
   margin: auto;
   ${media.lg`
      min-height:calc(100vh - 700px);
@@ -107,12 +105,10 @@ const CtoBannerWrapper = styled.div`
     }
   }
   &.services-banner{
-    min-height: 100vh;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 0;
     background-position: 90% 50%;
     & > div{
       width: 100%;
@@ -136,7 +132,6 @@ const CtoBannerWrapper = styled.div`
     `}
   }
   &.cto-banner {
-    padding: 96px 0 96px;
     background-position:right;
     justify-content:start;
     display: flex;

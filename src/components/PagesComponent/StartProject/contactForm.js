@@ -27,9 +27,10 @@ const ContactForm = () => {
   const [serviceOpen, setServiceOpen] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const [recaptchaCompleted, setRecaptchaCompleted] = useState(false);
+  const [showRecaptcha, setShowRecaptcha] = useState(false); // State to control reCAPTCHA visibility
 
   const [serviceSelect, setServiceSelect] = useState([]);
-
+  
   const [formData, setFormData] = useState({
     name: "",
     number: "",
@@ -120,6 +121,7 @@ const ContactForm = () => {
     }
 
     if (!recaptchaCompleted) {
+      setShowRecaptcha(true);
       toast.error("Please complete the reCAPTCHA.", {
         position: "top-right",
         autoClose: 5000,
@@ -154,20 +156,20 @@ const ContactForm = () => {
             autoClose: 5000,
           });
           emailjs
-          .send(
-            process.env.GATSBY_EMAIL_SERVICE_ID,
-            process.env.GATSBY_EMAIL_TEMPLATE_ID,
-            templateParams,
-            process.env.GATSBY_EMAIL_PUBLIC_KEY
-          )
-          .then(
-            (result) => {
-              console.log('Message sent!', result);
-            },
-            (error) => {
-              console.log('Something went wrong, please try again later', error);
-            }
-          );
+            .send(
+              process.env.GATSBY_EMAIL_SERVICE_ID,
+              process.env.GATSBY_EMAIL_TEMPLATE_ID,
+              templateParams,
+              process.env.GATSBY_EMAIL_PUBLIC_KEY
+            )
+            .then(
+              (result) => {
+                console.log('Message sent!', result);
+              },
+              (error) => {
+                console.log('Something went wrong, please try again later', error);
+              }
+            );
           setValidated(false);
           setFormData({
             name: "",
@@ -184,6 +186,7 @@ const ContactForm = () => {
             recaptchaRef.current.reset();
           }
           setRecaptchaCompleted(false);
+          setShowRecaptcha(false); 
         } else {
           toast.error("Something went wrong", {
             position: "top-right",
@@ -194,7 +197,7 @@ const ContactForm = () => {
         console.error("Error", error);
       }
     }
-  }, [formData, phoneValid, recaptchaCompleted]);  
+  }, [formData, phoneValid, recaptchaCompleted]);
 
   return (
     <Form className="project-form" noValidate validated={validated} onSubmit={handleSubmit}>
@@ -243,46 +246,40 @@ const ContactForm = () => {
       >
         <div className="seperation d-flex justify-content-between"></div>
         {['Time and Material', 'Fixed Scope Product Development', 'Hire Dedicated Development Team'].map(
-          (value) => {
-            return (
-              <div className="collapse-radio">
-                <RadioButton
-                  key={value}
-                  type="radio"
-                  label={value}
-                  value={value}
-                  checked={formData.collaboration === value}
-                  name="collaboration"
-                  onChange={handleInputChange}
-                />
-              </div>
-            )
-          }
+          (value) => (
+            <div className="collapse-radio" key={value}>
+              <RadioButton
+                type="radio"
+                label={value}
+                value={value}
+                checked={formData.collaboration === value}
+                name="collaboration"
+                onChange={handleInputChange}
+              />
+            </div>
+          )
         )}
       </Collapse>
 
       <Collapse
         content={
-          <div
-            className={!serviceOpen && serviceSelect.length > 0 && serviceSelect ? 'add-height' : 'zero-height'}
+          <div 
+            className={!serviceOpen && serviceSelect.length > 0 ? 'add-height' : 'zero-height'}
           >
             <Row>
-              {serviceSelect.slice(0.6).map((value, key) => {
-                return (
-                  <Col md={6}>
-                    <CheckBox
-                      key={key}
-                      label={value}
-                      checked={serviceSelect.includes(value)}
-                      value={value}
-                      name="collaboration"
-                      onChange={(e) =>
-                        setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
-                      }
-                    />
-                  </Col>
-                )
-              })}
+              {serviceSelect.slice(0, 6).map((value, key) => (
+                <Col md={6} key={key}>
+                  <CheckBox
+                    label={value}
+                    checked={serviceSelect.includes(value)}
+                    value={value}
+                    name="collaboration"
+                    onChange={(e) =>
+                      setServiceSelect(serviceSelect.filter((item) => item !== e.target.value))
+                    }
+                  />
+                </Col>
+              ))}
             </Row>
           </div>
         }
@@ -303,22 +300,17 @@ const ContactForm = () => {
             'Web App Development',
             'E-Commerce Automation Services',
             'Other',
-          ]
-            .slice(0.6)
-            .map((value) => {
-              return (
-                <Col md={6}>
-                  <CheckBox
-                    key={value}
-                    label={value}
-                    checked={formData.services?.includes(value)}
-                    value={value}
-                    name="services"
-                    onChange={handleInputChange}
-                  />
-                </Col>
-              )
-            })}
+          ].slice(0, 6).map((value) => (
+            <Col md={6} key={value}>
+              <CheckBox
+                label={value}
+                checked={formData.services?.includes(value)}
+                value={value}
+                name="services"
+                onChange={handleInputChange}
+              />
+            </Col>
+          ))}
         </Row>
       </Collapse>
       <Input
@@ -362,19 +354,24 @@ const ContactForm = () => {
           onChange={() => toggleCheckbox('promotion')}
         />
         <div className="d-flex justify-content-between align-items-center footer-wrapper flex-wrap gap-1 mt-3">
+          {showRecaptcha && (
             <Suspense fallback={<div>Loading reCAPTCHA...</div>}>
               <ReCAPTCHA
                 action="homepage"
                 sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY}
-                onChange={() => setRecaptchaCompleted(true)}
+                onChange={() => {
+                  setRecaptchaCompleted(true);
+                  setShowRecaptcha(false);
+                }}
                 ref={recaptchaRef}
               />
             </Suspense>
+          )}
           <Button text="Submit" btnType="submit" className="pt-md-0 pt-3" />
         </div>
       </div>
     </Form>
-  )
+  );
 }
 
 export default ContactForm;

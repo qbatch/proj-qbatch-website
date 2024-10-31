@@ -35,6 +35,9 @@ const SuccessStoriesNewWrapper = styled.div`
     gap: 12px;
     svg {
       cursor: pointer;
+      height: 12px;
+      width: 18px;
+      filter: brightness(0) saturate(100%) invert(18%) sepia(47%) saturate(6068%) hue-rotate(199deg) brightness(88%) contrast(101%);
     }
     .arrow-icon {
       width: 10px;

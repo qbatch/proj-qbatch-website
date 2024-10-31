@@ -28,10 +28,11 @@ const Index = () => {
           <Col lg={5}>
             <div className="banner-img">
               <img
-                src='/ships-img.svg'
+                src='/ships-img.avif'
                 alt='ships'
                 title='ships'
-                loading="lazy"
+                height="597"
+                width="787"
               />
             </div>
           </Col>

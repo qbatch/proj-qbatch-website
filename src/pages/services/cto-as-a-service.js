@@ -29,10 +29,10 @@ const CtoService = () => {
         heading="Rethink and Rebuild Your Technical Prowess"
         paragraph="Neglecting a tiny detail can lead to huge technical debts. Get high-impact technical guidance and confidently deal with time and money-critical situations toward greater business growth."
         buttonText="Get Free CTO Consultation"
-        blogInner={CtoBannerImage}
         col1lg={7}
         className="d-flex align-items-center"
         wrapperClass="cto-banner cto-wrapper"
+        imgSrc={CtoBannerImage}
         customCrumbs={[
           { pathname: '/services/', crumbLabel: 'Services', crumbSeparator: '>' },
           { pathname: '/services/cto-as-a-service/', crumbLabel: 'CTO As A Service' },

@@ -28,7 +28,7 @@ const Index = () => {
             <Col xl={3} sm={6} key={ind} className='box-col'>
               <div className='box-wrapper'>
                 <div className='back-img'>
-                  <img src={item.icon} alt={item.title} title={item.title} loading='lazy' />
+                  <img src={item.icon} alt={item.title} title={item.title} rel='preload' />
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
