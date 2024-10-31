@@ -109,17 +109,6 @@ const Index = ({ heading, className }) => {
                     onClick={handleButtonClickPrev}
                     className="slider-arrow"
                   />
-                  <span>
-                    <span className="fw-bold">
-                      {currentInd < 10 && 0}
-                      {currentInd}
-                    </span>
-                    <span>/</span>
-                    <span>
-                      {portfolioData.length < 10 && 0}
-                      {portfolioData.length}
-                    </span>
-                  </span>
                   <ArrowRightIcon
                     onClick={handleButtonClickNext}
                     className="slider-arrow"
@@ -131,87 +120,66 @@ const Index = ({ heading, className }) => {
         </div>
 
         <Slider {...sliderSettings} ref={sliderRef}>
-          {portfolioData.map((item, ind) => {
+          {portfolioData.slice(-6).map((item, ind) => {
             const logoImage = getImage(
               item?.projectLogo?.localFile?.childImageSharp?.gatsbyImageData
             );
             const projectImage = getImage(
               item?.projectImg?.localFile?.childImageSharp?.gatsbyImageData
             );
+
             return (
-              <div md={6} className="mb-md-0 mb-sm-5 mb-4" key={ind}>
-                <Link to={item.slug ? `/portfolio/${item.slug}/` : "#"}>
-                  <Card>
-                    <div className="position-relative card-img">
-                      {projectImage && (
+              <Link to={item.slug ? `/portfolio/${item.slug}/` : "#"} key={ind}>
+                <Card className="mb-md-0 mb-sm-5 mb-4">
+                  <div className="position-relative card-img">
+                    {projectImage && (
+                      <GatsbyImage
+                        image={projectImage}
+                        alt={item?.projectName}
+                        title={item?.projectName}
+                        className="w-100 project-img"
+                        loading="lazy" 
+                      />
+                    )}
+                    <div className="arrow-div">
+                      <img
+                        src="/arrow-black.svg"
+                        alt="arrow"
+                        title="arrow"
+                        height="22"
+                        width="23"
+                      />
+                    </div>
+                  </div>
+                  <Card.Body>
+                    <div className="d-flex align-items-center justify-content-between card-logo">
+                      {logoImage && (
                         <GatsbyImage
-                          image={projectImage}
-                          alt={item?.projectName}
-                          title={item?.projectName}
-                          className="w-100 project-img"
-                          loading="lazy"
+                          image={logoImage}
+                          alt="logo"
+                          title="logo"
+                          loading="lazy" 
                         />
                       )}
-                      <div className="arrow-div">
-                        <img src="/arrow-black.svg" alt="arrow" title="arrow" />
+                      <div className="project-category">
+                        {item?.projectCategory}
                       </div>
                     </div>
-                    <Card.Body>
-                      <div className="d-flex align-items-center justify-content-between card-logo">
-                        {logoImage && (
-                          <GatsbyImage
-                            image={logoImage}
-                            alt="logo"
-                            title="logo"
-                            loading="lazy"
-                          />
-                        )}
-                        <div className="project-category">
-                          {item?.projectCategory}
-                        </div>
-                      </div>
-                      <p className="card-desc mb-0">{item?.projectDesc}</p>
-                    </Card.Body>
-                  </Card>
-                </Link>
-              </div>
+                    <p className="card-desc mb-0">{item?.projectDesc}</p>
+                  </Card.Body>
+                </Card>
+              </Link>
             );
           })}
         </Slider>
 
-        <div className="d-md-none d-flex justify-content-end">
-          {portfolioData.length === currentInd ? (
-            <div className="mt-lg-0">
-              <Button
-                onClick={() => navigate("/portfolio")}
-                text="Explore More"
-              />
-            </div>
-          ) : (
-            <div className="bottom-slider">
-              <div className="carousel-button-group d-flex align-items-center">
-                <ArrowLeftIcon
-                  onClick={handleButtonClickPrev}
-                  className="slider-arrow"
-                />
-                <span>
-                  <span className="fw-bold">
-                    {currentInd < 10 && 0}
-                    {currentInd}
-                  </span>
-                  <span>/</span>
-                  <span>
-                    {portfolioData.length < 10 && 0}
-                    {portfolioData.length}
-                  </span>
-                </span>
-                <ArrowRightIcon
-                  onClick={handleButtonClickNext}
-                  className="slider-arrow"
-                />
-              </div>
-            </div>
-          )}
+        <div className=" d-flex justify-content-center">
+          <div className="mt-5">
+            <Button
+              onClick={() => navigate("/portfolio")}
+              text="Explore More"
+            />
+          </div>
         </div>
       </Container>
     </SuccessStoriesNewWrapper>

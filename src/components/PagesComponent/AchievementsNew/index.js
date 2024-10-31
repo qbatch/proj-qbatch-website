@@ -95,7 +95,7 @@ const Index = () => {
             <Row>
               <Col lg={6}>
                 <div className='d-flex flex-sm-row flex-column align-items-center gap-4 mb-lg-0 mb-5'>
-                  <img src='/awards-icon.svg' alt='awards' title='awards' loading='lazy' />
+                  <img height="108" width="108" src='/awards-icon.svg' alt='awards' title='awards' loading='lazy' />
                   <div className='awards-heading'>
                     <p>Awards & Recognition</p>
                     <span>We’re pleased to share some of the honors and awards the Qbatch family has received.</span>

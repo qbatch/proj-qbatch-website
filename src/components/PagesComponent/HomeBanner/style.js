@@ -15,6 +15,8 @@ const HomeBannerWrapper = styled.div`
   ${media.lg`
     padding: 120px 0;
     min-height: auto;
+    background-image: none;
+    background: linear-gradient(0deg, #D9ECFF -5.97%, rgba(255, 255, 255, 0) 149.03%);
   `}
   ${media.xs`
     padding: 56px 0;
@@ -65,13 +67,14 @@ const HomeBannerWrapper = styled.div`
     `}
     img {
       @media(max-width:1500px) {
-        width: 680px;
+        width: 680px !important;
+        height: 100% !important;
       }
       @media(max-width:1400px) {
-        width: 660px;
+        width: 660px !important;
       }
       ${media.lg`
-        width: 500px;
+        width: 500px !important;
       `}
     }
   }
