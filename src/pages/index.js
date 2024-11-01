@@ -5,7 +5,7 @@ import Layout from '../components/Layout/layout';
 import SEO from '../components/Seo';
 import { replaceUnderscoreWithAt } from '../constants/Utils';
 
-const HomeBanner = lazy(() => import('../comp\onents/PagesComponent/HomeBanner'));
+const HomeBanner = lazy(() => import('../components/PagesComponent/HomeBanner'));
 const AchievementsNew = lazy(() => import('../components/PagesComponent/AchievementsNew'));
 const WhatCanWeDoNew = lazy(() => import('../components/PagesComponent/WhatCanWeDoNew'));
 const ProblumSolving = lazy(() => import('../components/PagesComponent/ProblumSolving'));

@@ -2,10 +2,10 @@ import React, { lazy } from "react";
 import { navigate } from "gatsby";
 import { Row, Col } from "react-bootstrap";
 
+import HomeBannerWrapper from "./style";
+
 const Container = lazy(() => import("../../UiComponent/Container"));
 const Button = lazy(() => import("../../UiComponent/Button"));
-
-import HomeBannerWrapper from "./style";
 
 const Index = () => {
   return (
@@ -28,7 +28,7 @@ const Index = () => {
           <Col lg={5}>
             <div className="banner-img">
               <img
-                src='/ships-img.avif'
+                src='/ships-img.svg'
                 alt='ships'
                 title='ships'
                 height="597"
