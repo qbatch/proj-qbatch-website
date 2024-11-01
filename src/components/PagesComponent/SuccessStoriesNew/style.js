@@ -148,6 +148,9 @@ const SuccessStoriesNewWrapper = styled.div`
             height: 15px;
           `}
         }
+        img {
+          width: auto !important;
+        }
       }
     }
     .arrow-div {
