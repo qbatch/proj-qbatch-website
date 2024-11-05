@@ -72,7 +72,7 @@ const Index = () => {
     <ProvenExperienceWrapper>
       <div className="section-slider">
         <Carousel responsive={responsive} arrows={false} ref={carousel1Ref} swipeable={false} draggable={false}>
-          {testimonialsData.reverse().map((item, ind) => {
+          {testimonialsData.map((item, ind) => {
             const testimonialImage = getImage(item.clientImg?.localFile?.childImageSharp?.gatsbyImageData);
             return (
               loadedIndexes.includes(ind) && (
