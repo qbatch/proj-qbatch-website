@@ -237,3 +237,28 @@ exports.createPages = async ({ graphql, actions }) => {
   await createBlogPages(graphql, actions);
   createSitemapPages(actions);
 };
+
+exports.onCreateWebpackConfig = ({ actions, stage, getConfig }) => {
+  const config = getConfig()
+  
+  if (stage === 'build-javascript') {
+    actions.setWebpackConfig({
+      optimization: {
+        splitChunks: {
+          chunks: 'all',
+          cacheGroups: {
+            vendors: {
+              test: /[\\/]node_modules[\\/]/,
+              priority: -10
+            },
+            default: {
+              minChunks: 2,
+              priority: -20,
+              reuseExistingChunk: true
+            }
+          }
+        }
+      }
+    })
+  }
+}
