@@ -1,13 +1,25 @@
-import React, { lazy } from "react";
+import React, { lazy, useEffect, useState } from "react";
 import { navigate } from "gatsby";
 import { Row, Col } from "react-bootstrap";
 
 import HomeBannerWrapper from "./style";
+import { debounce } from "lodash";
 
 const Container = lazy(() => import("../../UiComponent/Container"));
 const Button = lazy(() => import("../../UiComponent/Button"));
 
 const Index = () => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWidth(window.innerWidth);
+      const handleResize = debounce(() => setWidth(window.innerWidth), 250);
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
   return (
     <HomeBannerWrapper>
       <Container>
@@ -25,17 +37,19 @@ const Index = () => {
               />
             </div>
           </Col>
-          <Col lg={5}>
-            <div className="banner-img">
-              <img
-                src='/ships-img.svg'
-                alt='ships'
-                title='ships'
-                height="597"
-                width="787"
-              />
-            </div>
-          </Col>
+          {width > 991 && (
+            <Col lg={5}>
+              <div className="banner-img">
+                <img
+                  src='/ships-img.svg'
+                  alt='ships'
+                  title='ships'
+                  height="597"
+                  width="787"
+                />
+              </div>
+            </Col>
+          )}
         </Row>
       </Container>
     </HomeBannerWrapper>
