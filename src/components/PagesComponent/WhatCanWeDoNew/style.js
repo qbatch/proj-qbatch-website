@@ -72,7 +72,6 @@ const WhatCanYouDoWrapper = styled.div`
       ${media.mobile`
         width: 100%;
         left: 0;
-        transition: none;
       `}
       img {
         width: 84px;
@@ -81,9 +80,8 @@ const WhatCanYouDoWrapper = styled.div`
         transition: width 0.5s ease-in-out, height 0.5s ease-in-out, opacity 0.5s ease-in-out;
         ${media.mobile`
           opacity: 30%;
-          width: 160px;
-          height: 160px;
-          transition: none;
+          width: 200px;
+          height: 200px;
         `}
       }
     }
@@ -96,10 +94,6 @@ const WhatCanYouDoWrapper = styled.div`
           width: 200px;
           height: 200px;
           opacity: 30%;
-          ${media.mobile`
-            width: 160px;
-            height: 160px;
-        `}
         }    
       }
     }

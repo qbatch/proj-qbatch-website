@@ -1,19 +1,18 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Slider from 'react-slick';
 import { navigate } from 'gatsby';
 
+import Container from '../../UiComponent/Container';
+import Button from '../../UiComponent/Button';
 import { weDoDataNew } from '../../../constants';
-import WhatCanYouDoWrapper from './style';
 
-const Container = lazy(() => import('../../UiComponent/Container'));
-const Button = lazy(() => import('../../UiComponent/Button'));
+import WhatCanYouDoWrapper from './style';
 
 const Index = () => {
   const settings = {
     dots: true,
     infinite: true,
-    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -29,7 +28,7 @@ const Index = () => {
             <Col xl={3} sm={6} key={ind} className='box-col'>
               <div className='box-wrapper'>
                 <div className='back-img'>
-                  <img src={item.icon} alt={item.title} title={item.title} rel='preload' loading='lazy' aria-hidden="true" />
+                  <img src={item.icon} alt={item.title} title={item.title} rel='preload' />
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
@@ -43,18 +42,7 @@ const Index = () => {
               <Col xl={3} sm={6} key={ind} className='box-col'>
                 <div className='box-wrapper'>
                   <div className='back-img'>
-                    <img
-                      src={item.icon}
-                      alt={item.title}
-                      title={item.title}
-                      rel="preload"
-                      loading="lazy"
-                      decoding="async"
-                      fetchpriority="high"
-                      width={160}
-                      height={160}
-                      aria-hidden="true"
-                    />
+                    <img src={item.icon} alt={item.title} title={item.title} loading='lazy' />
                   </div>
                   <h3>{item.title}</h3>
                   <p>{item.desc}</p>
@@ -64,7 +52,7 @@ const Index = () => {
           </Slider>
         </Row>
         <div className='mt-5 d-flex justify-content-sm-end justify-content-center'>
-          <Button text='View All Services' onClick={() => navigate('/services')} />
+          <Button text='View All Services' onClick={()=> navigate('/services')} />
         </div>
       </Container>
     </WhatCanYouDoWrapper>
