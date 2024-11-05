@@ -502,7 +502,25 @@ module.exports = {
     'gatsby-transformer-sharp',
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        precachePages: ['/about/*', '/blog/*', '/*'],
+        workboxConfig: {
+          globPatterns: ['**/*'],
+          runtimeCaching: [
+            {
+              urlPattern: /(\.js$|\.css$|static\/)/,
+              handler: `CacheFirst`,
+            },
+            {
+              urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
+              handler: `StaleWhileRevalidate`,
+            }
+          ],
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-brotli',
       options: {
@@ -709,6 +727,28 @@ module.exports = {
             type: 'image/png',
           },
         ]
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          "/*": [
+            "Cache-Control: public, max-age=31536000, immutable"
+          ],
+          "/static/*": [
+            "Cache-Control: public, max-age=31536000, immutable"
+          ],
+          "/*.js": [
+            "Cache-Control: public, max-age=31536000, immutable"
+          ],
+          "/*.css": [
+            "Cache-Control: public, max-age=31536000, immutable"
+          ],
+          "/sw.js": [
+            "Cache-Control: no-cache"
+          ]
+        },
       },
     },
   ],
