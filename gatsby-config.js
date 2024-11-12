@@ -372,6 +372,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'fin-tech-app-development',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'career',
       queryParams: {
         populate: {
