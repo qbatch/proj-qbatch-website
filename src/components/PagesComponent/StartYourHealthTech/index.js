@@ -4,7 +4,7 @@ import Button from '../../UiComponent/Button'
 import Container from '../../UiComponent/Container'
 import { StartYourHealthTechWrapper } from './style'
 
-const StartYourHealthTech = ({heading, className, text, StartYourHealthTechData }) => {
+const StartYourHealthTech = ({heading, className, text, StartYourHealthTechData, btnText }) => {
 
   return (
     <StartYourHealthTechWrapper className={className}>
@@ -22,7 +22,7 @@ const StartYourHealthTech = ({heading, className, text, StartYourHealthTechData 
             ))}
           </div>
         </Container>
-          <Button onClick={() => navigate('/contact')}  text="Request Free Proposal" />
+          <Button onClick={() => navigate('/contact')}  text={btnText || "Request Free Proposal"} />
     </StartYourHealthTechWrapper>
   )
 }
