@@ -1,8 +1,10 @@
-import React from 'react'
-import { navigate } from 'gatsby'
-import Button from '../../UiComponent/Button'
-import Container from '../../UiComponent/Container'
-import { StartYourHealthTechWrapper } from './style'
+import React from 'react';
+import { navigate } from 'gatsby';
+
+import Button from '../../UiComponent/Button';
+import Container from '../../UiComponent/Container';
+
+import { StartYourHealthTechWrapper } from './style';
 
 const StartYourHealthTech = ({heading, className, text, StartYourHealthTechData, btnText }) => {
 

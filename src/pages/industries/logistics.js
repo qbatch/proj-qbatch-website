@@ -1,10 +1,11 @@
 import React, { lazy } from 'react';
 
 import Layout from '../../components/Layout/layout';
-import Divider from '../../components/UiComponent/Divider'
+import Divider from '../../components/UiComponent/Divider';
+import SEO from '../../components/Seo';
+
 import { logisticsSofwareData, customLogisticsData, LogisticsSupplyChainData, PeopleWeHaveData, keyTechnologiesData, StartYourLogisticsData, supplyChainData, LogisticsFaqs } from '../../constants';
 import { Queries } from '../../constants/queries';
-import SEO from '../../components/Seo';
 
 const CtoBanner = lazy(() => import('../../components/PagesComponent/PageBanner'));
 const SolveLogistics = lazy(() => import('../../components/PagesComponent/SolveLogistics'));
