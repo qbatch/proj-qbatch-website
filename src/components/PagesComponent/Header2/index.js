@@ -77,7 +77,7 @@ const Header2 = () => {
 
   const industriesMenu = [
     // { label: "E-commerce", link: "" },
-    // { label: "FinTech", link: "" },
+    { label: "FinTech", link: "/industries/finteck-app-development/" },
     { label: "Retail Software Development", link: "/industries/retail-software-development/" },
     { label: "Real Estate Software Development", link: "/industries/real-estate/" },
     { label: "Travel and Transportation", link: "/industries/travel-app-development/" },
