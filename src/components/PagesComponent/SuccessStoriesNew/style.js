@@ -192,6 +192,11 @@ const SuccessStoriesNewWrapper = styled.div`
   .slick-list {
       margin: 0 -12px;
   }
+  &.logistics-stories {
+    .section-heading p{
+      display: none;
+    }
+  }
 `
 
 export default SuccessStoriesNewWrapper;

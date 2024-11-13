@@ -76,7 +76,6 @@ const Header2 = () => {
   ];
 
   const industriesMenu = [
-    // { label: "Logistics and Supply Chain", link: "" },
     // { label: "E-commerce", link: "" },
     { label: "FinTech", link: "/industries/finteck-app-development/" },
     { label: "Retail Software Development", link: "/industries/retail-software-development/" },
@@ -84,6 +83,7 @@ const Header2 = () => {
     { label: "Travel and Transportation", link: "/industries/travel-app-development/" },
     { label: "Healthcare", link: "/industries/health-care/" },
     { label: "EdTech", link: "/industries/education-software-development/" },
+    { label: "Logistics & Supply Chain", link: "/industries/logistics/" },
     // { label: "Retail and Consumer Goods", link: "" }
   ];
 
