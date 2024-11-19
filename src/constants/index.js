@@ -3414,6 +3414,141 @@ const hireDeveloper = [
     ),
   },
 ];
+const FinTechAppDevelopmentFAQ = [
+  {
+    id: 1,
+    title: 'I have an idea for a nance software. What should I start with?',
+    content: (
+      <div className="faq-content">
+        <span>You can:</span>
+        <ul>
+          <li>Conduct thorough market research to understand the needs and preferences of
+          your target audience.</li>
+          <li>Dene your unique value proposition for the nance software.</li>
+          <li>Create a detailed plan outlining the features and functionalities of your software.</li>
+          <li>Consider regulatory requirements and compliance standards in the nance
+          industry.</li>
+          <li>Start building a prototype or minimum viable product (MVP) to validate your
+          idea with potential users.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'Do you oer consulting on the development of ntech solutions?',
+    content: (
+      <div className="faq-content hire-developer-faq">
+        <span>Yes, we oer consulting services to assist you at every stage of ntech solution
+          development. Our team of experts can guide market research, product strategy,
+          technology selection, regulatory compliance, and more.</span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'Do you specialize in any particular areas within the FinTech industry?',
+    content: (
+      <div className="faq-content">
+        <span>We have experience developing a wide range of ntech solutions, including</span>
+        <ul>
+          <li>Payment processing systems</li>
+          <li>Personal finance management apps</li>
+          <li>Neobanking and online banking apps</li>
+          <li>Hedge funding and portfolio asset management</li>
+          <li>Investment platforms</li>
+          <li>Blockchain-based solutions</li>
+          <li>Accounting software development</li>
+          <li>Lending Solutions</li>
+          <li>Tax preparing software development</li>
+          <li>API integrations</li>
+          <li>On-demand services</li>
+        </ul>
+        <span>Our fintech app development team can adapt to various domains within the industry to meet your specific requirements.</span>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'What technologies and platforms do you use for FinTech app development?',
+    content: (
+      <div className="faq-content">
+        <span>We use a variety of technologies and platforms, including but not limited to Python, Java, JavaScript, React, Angular, Node.js, SQL, NoSQL, cloud computing services (such as AWS, Azure, and Google Cloud), blockchain, RPA, biometric, and more.</span>
+        <span>Our technology stack is tailored to the specific needs of each project.</span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'Can you create custom FinTech solutions tailored to our specific requirements?',
+    content: (
+      <div className="faq-content">
+        <span>Absolutely, we specialize in developing custom fintech solutions tailored to meet our clients' unique needs and objectives. We work closely with you to understand your requirements and deliver a solution that aligns with your business goals. <b>Get in touch for more details.</b></span>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'What is your approach to UX/UI design for FinTech applications?',
+    content: (
+      <div className="faq-content">
+        <span>Our UX/UI design approach for fintech applications is user-centric and data-driven. We conduct user research to understand the behaviors and preferences of your target audience, and we use this insight to design intuitive and visually appealing interfaces that enhance the overall user experience.</span>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How do you handle post-launch maintenance and support for FinTech apps?',
+    content: (
+      <div className="faq-content">
+        <span>We offer comprehensive post-launch maintenance and support services to ensure your fintech app's ongoing performance and security. Our team;</span>
+        <ul>
+          <li>monitors the app for any issues or vulnerabilities;</li>
+          <li>provides regular updates and enhancements;</li>
+          <li>and offers responsive customer support to address any user inquiries or concerns.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: 'Can you provide insights or consulting on FinTech product development strategies?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, we can provide insights and consulting on fintech product development strategies based on our extensive experience in the industry. Whether you're looking to enter a new market, differentiate your product from competitors, or navigate regulatory challenges, our team can offer strategic guidance to help you achieve your goals.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 9,
+    title: 'What is the cost structure for your fintech app development services?',
+    content: (
+      <div className="faq-content">
+        <span>Our cost structure for fintech app development varies depending on the scope and complexity of the project. We offer flexible pricing options, including fixed-price and hourly rates, and we work closely with our clients to develop a transparent and cost-effective pricing plan that fits their budget and timeline. Get a free estimate.</span>
+      </div>
+    ),
+  },
+  {
+    id: 10,
+    title: 'What are the benefits of FinTech software development?',
+    content: (
+      <div className="faq-content">
+        <span>FinTech software development offers numerous benefits, including:</span>
+        <ul>
+          <li>Increased efficiency and automation of financial processes</li>
+          <li>Improved access to financial services for underserved populations</li>
+          <li>Enhanced security and fraud prevention measures</li>
+          <li>Greater transparency and accountability in financial transactions</li>
+          <li>Opportunities for innovation and disruption in traditional financial markets</li>
+          <li>Potential to revolutionize how we manage, access, and interact with financial
+          services through cutting-edge technologies and innovative solutions.</li>
+        </ul>
+      </div>
+    ),
+  },
+];
 
 const FrequentlyAskedQuestionsHealthCareFaq = [
   {
@@ -3610,10 +3745,10 @@ const RetailSoftwareDevelopmentFaq = [
     title: 'What custom software solutions do you offer for retail and consumer goods businesses?',
     content: (
       <div className="faq-content">
-        <span>We offer a range of custom software solutions tailored to the needs of retail and 
-            consumer goods businesses, including point-of-sale systems, inventory management 
-            software, e-commerce platforms, customer relationship management (CRM) systems, 
-            and mobile applications.</span>
+        <span>We offer a range of custom software solutions tailored to the needs of retail and
+          consumer goods businesses, including point-of-sale systems, inventory management
+          software, e-commerce platforms, customer relationship management (CRM) systems,
+          and mobile applications.</span>
       </div>
     ),
   },
@@ -3622,8 +3757,8 @@ const RetailSoftwareDevelopmentFaq = [
     title: ' How do your IT solutions cater to the specific needs of the retail industry?',
     content: (
       <div className="faq-content hire-developer-faq">
-        <span>Our IT solutions are designed with a deep understanding of the unique challenges and 
-          requirements of the retail industry. We prioritize features such as real-time inventory 
+        <span>Our IT solutions are designed with a deep understanding of the unique challenges and
+          requirements of the retail industry. We prioritize features such as real-time inventory
           tracking, seamless integration with existing systems, scalability to accommodate growth,
           and user-friendly interfaces for both staff and customers.</span>
       </div>
@@ -3634,10 +3769,10 @@ const RetailSoftwareDevelopmentFaq = [
     title: 'Can you describe your process for developing custom retail software?',
     content: (
       <div className="faq-content">
-        <span>Our process typically involves initial consultation to understand the client's needs, 
-              followed by requirements gathering, design, development, testing, deployment, and 
-              ongoing support. We emphasize collaboration and feedback at every stage to ensure the 
-              final product meets expectations.</span>
+        <span>Our process typically involves initial consultation to understand the client's needs,
+          followed by requirements gathering, design, development, testing, deployment, and
+          ongoing support. We emphasize collaboration and feedback at every stage to ensure the
+          final product meets expectations.</span>
       </div>
     ),
   },
@@ -3647,8 +3782,8 @@ const RetailSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>Yes, we offer comprehensive software solutions for managing merchandising, inventory,
-            and logistics, including features for tracking stock levels, managing supplier 
-            relationships, optimizing order fulfillment processes, and analyzing sales data.</span>
+          and logistics, including features for tracking stock levels, managing supplier
+          relationships, optimizing order fulfillment processes, and analyzing sales data.</span>
       </div>
     ),
   },
@@ -3657,9 +3792,9 @@ const RetailSoftwareDevelopmentFaq = [
     title: 'What types of retail mobile applications do you develop?',
     content: (
       <div className="faq-content">
-        <span>We develop a variety of retail mobile applications, including e-commerce apps, loyalty 
-              program apps, in-store shopping assistants, mobile POS systems, and apps for managing 
-              inventory or sales on the go.</span>
+        <span>We develop a variety of retail mobile applications, including e-commerce apps, loyalty
+          program apps, in-store shopping assistants, mobile POS systems, and apps for managing
+          inventory or sales on the go.</span>
       </div>
     ),
   },
@@ -3668,10 +3803,10 @@ const RetailSoftwareDevelopmentFaq = [
     title: 'How do your CRM solutions enhance customer relationship management for retail businesses?',
     content: (
       <div className="faq-content">
-        <span>Our CRM solutions are designed to help retail businesses better understand and engage 
-              with their customers. This includes features for tracking customer interactions, 
-              segmenting customers based on behavior or demographics, personalizing marketing 
-              efforts, and fostering customer loyalty through rewards programs.</span>
+        <span>Our CRM solutions are designed to help retail businesses better understand and engage
+          with their customers. This includes features for tracking customer interactions,
+          segmenting customers based on behavior or demographics, personalizing marketing
+          efforts, and fostering customer loyalty through rewards programs.</span>
       </div>
     ),
   },
@@ -3680,10 +3815,10 @@ const RetailSoftwareDevelopmentFaq = [
     title: 'Do you offer custom billing software for retail shops and boutiques?',
     content: (
       <div className="faq-content">
-        <span>Yes, we offer custom billing software tailored to the specific needs of retail shops and 
-              boutiques. Our billing software typically includes features for processing transactions, 
-              generating invoices, managing discounts and promotions, and integrating with 
-              accounting systems.</span>
+        <span>Yes, we offer custom billing software tailored to the specific needs of retail shops and
+          boutiques. Our billing software typically includes features for processing transactions,
+          generating invoices, managing discounts and promotions, and integrating with
+          accounting systems.</span>
       </div>
     ),
   },
@@ -3693,9 +3828,9 @@ const RetailSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>
-            We specialize in a variety of technology platforms and methodologies for retail software 
-            development, including cloud-based solutions, mobile development frameworks, e-
-            commerce platforms, and agile development methodologies.</span>
+          We specialize in a variety of technology platforms and methodologies for retail software
+          development, including cloud-based solutions, mobile development frameworks, e-
+          commerce platforms, and agile development methodologies.</span>
       </div>
     ),
   },
@@ -3705,9 +3840,9 @@ const RetailSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>
-            We employ rigorous testing procedures throughout the development lifecycle to ensure 
-            the quality and reliability of our retail software. This includes performance testing, unit 
-            testing, regression testing, integration testing,  and user acceptance testing.</span>
+          We employ rigorous testing procedures throughout the development lifecycle to ensure
+          the quality and reliability of our retail software. This includes performance testing, unit
+          testing, regression testing, integration testing,  and user acceptance testing.</span>
       </div>
     ),
   },
@@ -3717,9 +3852,9 @@ const RetailSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>
-            In addition to custom software development, we provide a range of IT services tailored 
-            to the retail industry, including IT consulting, infrastructure management, data 
-            analytics, cybersecurity solutions, and cloud migration services.</span>
+          In addition to custom software development, we provide a range of IT services tailored
+          to the retail industry, including IT consulting, infrastructure management, data
+          analytics, cybersecurity solutions, and cloud migration services.</span>
       </div>
     ),
   },
@@ -3729,10 +3864,10 @@ const RetailSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>
-            We have successfully completed projects for retail clients ranging from small boutiques 
-            to large chains. These projects have included the development of custom e-commerce 
-            platforms, point-of-sale systems, inventory management software, and mobile 
-            applications.</span>
+          We have successfully completed projects for retail clients ranging from small boutiques
+          to large chains. These projects have included the development of custom e-commerce
+          platforms, point-of-sale systems, inventory management software, and mobile
+          applications.</span>
       </div>
     ),
   },
@@ -3741,10 +3876,10 @@ const RetailSoftwareDevelopmentFaq = [
     title: 'Do you offer ongoing support and maintenance services for retail software products?',
     content: (
       <div className="faq-content">
-        <span>Yes, we offer ongoing support and maintenance services to ensure the continued 
-              reliability and performance of our retail software products. This includes bug fixes, 
-              software updates, technical support, and proactive monitoring to address any issues that
-              may arise.</span>
+        <span>Yes, we offer ongoing support and maintenance services to ensure the continued
+          reliability and performance of our retail software products. This includes bug fixes,
+          software updates, technical support, and proactive monitoring to address any issues that
+          may arise.</span>
       </div>
     ),
   },
@@ -3778,7 +3913,7 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>Yes, Qbatch offers flexible hiring models including hourly or project-based tasks to
-        suit your requirements.</span>
+          suit your requirements.</span>
       </div>
     ),
   },
@@ -3788,7 +3923,7 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>Yes, after understanding your project requirements, Qbatch can provide a detailed
-        timeline and estimated budget for developing your travel app.</span>
+          timeline and estimated budget for developing your travel app.</span>
       </div>
     ),
   },
@@ -3809,7 +3944,7 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>Yes, Qbatch oers customization options to tailor the travel app to your specic
-        needs and branding requirements.</span>
+          needs and branding requirements.</span>
       </div>
     ),
   },
@@ -3830,7 +3965,7 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>
-           Qbatch is experienced in integrating your app with various third-party services
+          Qbatch is experienced in integrating your app with various third-party services
           such as booking engines, payment gateways, and mapping APIs using
           industry-standard protocols and technologies.</span>
       </div>
@@ -3842,9 +3977,9 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Qbatch implements robust security measures such as data encryption, secure
-        authentication, and compliance with data protection regulations to ensure data
-        security and privacy for travelers using the app.</span>
+          Qbatch implements robust security measures such as data encryption, secure
+          authentication, and compliance with data protection regulations to ensure data
+          security and privacy for travelers using the app.</span>
       </div>
     ),
   },
@@ -3854,9 +3989,9 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>
-            Qbatch follows agile project management methodologies and maintains
-            transparent communication channels to keep clients informed about project
-            progress and address any concerns promptly</span>
+          Qbatch follows agile project management methodologies and maintains
+          transparent communication channels to keep clients informed about project
+          progress and address any concerns promptly</span>
       </div>
     ),
   },
@@ -3866,9 +4001,9 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>
-        Qbatch distinguishes itself through its deep expertise in travel app development,
-        extensive experience delivering successful projects, and a strong focus on client
-        satisfaction evidenced by positive testimonials and long-term partnerships..</span>
+          Qbatch distinguishes itself through its deep expertise in travel app development,
+          extensive experience delivering successful projects, and a strong focus on client
+          satisfaction evidenced by positive testimonials and long-term partnerships..</span>
       </div>
     ),
   },
@@ -3878,8 +4013,8 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>Yes, Qbatch oers customization options for building custom ight booking apps,
-        hotel booking apps, and other travel-related applications to meet your specic
-        requirements.</span>
+          hotel booking apps, and other travel-related applications to meet your specic
+          requirements.</span>
       </div>
     ),
   },
@@ -3889,7 +4024,7 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>Qbatch provides a range of IT solutions tailored to the travel industry including
-        mobile apps, websites, booking systems, CRM software, and more.</span>
+          mobile apps, websites, booking systems, CRM software, and more.</span>
       </div>
     ),
   },
@@ -3899,7 +4034,7 @@ const TravelSoftwareDevelopmentFaq = [
     content: (
       <div className="faq-content">
         <span>Yes, Qbatch oers dedicated teams comprising experienced professionals for travel
-        app development projects to ensure focused attention and timely delivery.</span>
+          app development projects to ensure focused attention and timely delivery.</span>
       </div>
     ),
   },
@@ -4829,6 +4964,32 @@ const SimplifyYourRetailData = [
     text: "Our software engineers will start development. We'll track your progress and keep you informed throughout the process.",
   },
 ]
+const SimplifyYourRetaiFintechAppDevelopmentProcessData = [
+  {
+    img: '/arrow-line.svg',
+    number: 1,
+    heading: "Share your vision",
+    text: "Tell us about your fintech product idea and its goals.",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 2,
+    heading: "Collaborative planning",
+    text: "Define requirements and identify any gaps needing custom development. ",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 3,
+    heading: "Choose your platform",
+    text: "Select between a hybrid cloud or on-premise version catering to your specific needs.",
+  },
+  {
+    img: '',
+    number: 4,
+    heading: "Launch ready development",
+    text: "Our team builds your fintech product, keeping you updated throughout the process.",
+  },
+]
 const SimplifyYourTravelData = [
   {
     img: '/arrow-line.svg',
@@ -4853,6 +5014,33 @@ const SimplifyYourTravelData = [
     number: 4,
     heading: "Provide you with a comprehensive project estimate.",
     text: "",
+  },
+]
+
+const StartYourLogisticsData = [
+  {
+    img: '/arrow-line.svg',
+    number: 1,
+    heading: "Consultation",
+    text: "Schedule a free call with our experts to discuss your logistics software needs.",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 2,
+    heading: "Custom Quote",
+    text: "Our team will analyze your project and provide a tailored quote.",
+  },
+  {
+    img: '/arrow-line.svg',
+    number: 3,
+    heading: "Confidentiality Guaranteed",
+    text: "Sign an NDA for complete peace of mind.",
+  },
+  {
+    img: '',
+    number: 4,
+    heading: "Project Launch",
+    text: "Once approved, we assemble your dedicated development team and kick off the project.",
   },
 ]
 const dataTravelApplications = [
@@ -5608,7 +5796,7 @@ const industrieshMenu = [
   },
   {
     name: 'Logistics & Supply Chain',
-    to: '#',
+    to: '/industries/logistics/',
   },
   {
     name: 'FinTech',
@@ -5909,32 +6097,32 @@ const EduTech = [
 
 const cardData = [
   {
-    alt:'better-care',
+    alt: 'better-care',
     image: '/better-care.svg',
     disc: 'Data-driven decisions, better care'
   },
   {
-    alt:'un-matched',
+    alt: 'un-matched',
     image: '/un-matched.svg',
     disc: 'Unmatched patient privacy and peace of mind'
   },
   {
-    alt:'engage',
+    alt: 'engage',
     image: '/engage.svg',
     disc: 'Engage more patients and increase accessibility'
   },
   {
-    alt:'reduce',
+    alt: 'reduce',
     image: '/reduce.svg',
     disc: 'Reduce non-emergency clinic visits'
   },
   {
-    alt:'reduce-patient',
+    alt: 'reduce-patient',
     image: '/reduce-patient.svg',
     disc: 'Reduce patient no-shows and cancellations.'
   },
   {
-    alt:'enhance',
+    alt: 'enhance',
     image: '/enhance.svg',
     disc: 'Enhance clinical workflows and streamline processes.'
   },
@@ -6109,10 +6297,73 @@ const realEstateIndustryData = [
   },
 ];
 
+const logisticsSofwareData = [
+  {
+    image: '/faster-delivery.svg',
+    title: 'Faster deliveries and reduced costs',
+    disc: 'Optimize routes, decrease delivery times, and streamline operations to save up to 35%.'
+  },
+  {
+    image: '/real-time-visibility.svg',
+    title: 'Real-time visibility',
+    disc: 'Gain instant insights into your fleet, inventory, and shipments for informed decisions.'
+  },
+  {
+    image: '/enhanced-tracking.svg',
+    title: 'Enhanced tracking and transparency',
+    disc: 'Track products seamlessly and share data with suppliers and carriers to build trust.'
+  },
+  {
+    image: '/secure-transactions.svg',
+    title: 'Secure transactions and accurate orders',
+    disc: 'Attackproof your finances with hi-tech barcode scanning, achieving 25% higher order accuracy.'
+  },
+  {
+    image: '/improved-communication.svg',
+    title: 'Improved communication and collaboration',
+    disc: 'Break down silos with streamlined communication and reporting for a unified team.'
+  },
+  {
+    image: '/supplier-carrier.svg',
+    title: 'Supplier-carrier relations',
+    disc: 'Strengthen supplier-carrier relationships through transparent and collaborative systems.'
+  },
+  {
+    image: '/intelligent-automation.svg',
+    title: 'Intelligent automation',
+    disc: 'Automate repetitive tasks and use telematics for data-driven fleet management.'
+  },
+  {
+    image: '/mobile-asset.svg',
+    title: 'Mobile asset management',
+    disc: "Track and manage assets across the supply chain with GPS, RFID, UWB, and barcode scanning."
+  },
+  {
+    image: '/extensive-device.svg',
+    title: 'Extensive device compatibility',
+    disc: "Ensure your software works smoothly with any device for optimal data collection."
+  },
+  {
+    image: '/workforce-optimization.svg',
+    title: 'Workforce optimization',
+    disc: "Enhance employee performance, improve resource allocation, and minimize downtime."
+  },
+  {
+    image: '/empower-workforce.svg',
+    title: 'Empower your workforce, anywhere',
+    disc: "Foster collaboration with location-based tech and accessible logistics software solutions."
+  },
+  {
+    image: '/ete-engagement.svg',
+    title: 'End-to-end engagement',
+    disc: "Empower your team and satisfy customers with real-time tracking and updates."
+  },
+];
+
 const HealthcareAppDevelopmentCards = [
   {
     imgSrc: '/patient.svg',
-    title: 'Patient-Centric Apps', 
+    title: 'Patient-Centric Apps',
     listItems: [
       { text: 'Appointment scheduling apps' },
       { text: 'Fitness and wellness apps' },
@@ -6845,12 +7096,12 @@ const coreRetailData = [
       { text: 'Customer loyalty apps to boost brand engagement' },
     ]
   }
-]; 
+];
 
 const pressReleaseData = [
   { text: 'Qbatch Expands Global Presence with New Offices in Europe' },
   { text: 'Qbatch Partners with Leading AI Firm for Next-Gen Tech Development' },
-  { text: 'Qbatch Wins ‘Innovator of the Year’ at Tech Awards 2024'},
+  { text: 'Qbatch Wins ‘Innovator of the Year’ at Tech Awards 2024' },
 ];
 
 const ImagineRetailExperienceData = [
@@ -6934,6 +7185,35 @@ const ImagineTravelAppData2 = [
     text: "Are your 24/7 travel assistants – always ready to help!"
   },
 ]
+
+const PeopleWeHaveData = [
+  {
+    img: '/ai-2.svg',
+    heading: 'Retailers/ Wholesalers',
+    text: "Avoid poor labor management, pricing wars, and storage costs, achieving sales growth."
+  },
+  {
+    img: '/ai-ml-2.svg',
+    heading: 'Freight Forwarders',
+    text: "Ensure effective cargo movement, customs compliance, and updated shipment status."
+  },
+  {
+    img: '/vr-2.svg',
+    heading: 'Warehouse Providers',
+    text: "Improve warehouse layout, prevent product damage, and increase storage efficiency."
+  },
+  {
+    img: '/location-2.svg',
+    heading: 'Logistics & Transportation Companies',
+    text: "Gain holistic supply chain management, real-time tracking, and operational accuracy."
+  },
+  {
+    img: '/chatbot-2.svg',
+    heading: '3PL Providers & Trucking Services',
+    text: "Ensure flow-through logistics operations, team coordination, and supply chain visibility."
+  },
+]
+
 const InnovativeRetailSolutionsData = [
   {
     img: '/headless-commerce.svg',
@@ -7019,7 +7299,7 @@ const TravelLanguagesData = [
   {
     title: "Maps and Location Services",
     content: [
-      { img: "/g-maps.svg",  },
+      { img: "/g-maps.svg", },
       { img: "/here.svg", },
       { img: "/oracle.svg", },
       { img: "/nec.svg", },
@@ -7041,48 +7321,48 @@ const TravelLanguagesData = [
   {
     title: "Checkout Solutions",
     content: [
-      { img: "/2cc.svg",},
-      { img: "/clover.svg",},
-      { img: "/cash.svg",},
-      { img: "/b.svg",},
-      { img: "/animal.svg",},
+      { img: "/2cc.svg", },
+      { img: "/clover.svg", },
+      { img: "/cash.svg", },
+      { img: "/b.svg", },
+      { img: "/animal.svg", },
     ]
   },
   {
     title: "Global Distribution Systems (GDS)",
     content: [
-      { img: "/amadeus.svg",},
-      { img: "/sabre.svg",},
-      { img: "/galileo.svg",},
-      { img: "/world-span.svg",},
-      { img: "", text: ''},
+      { img: "/amadeus.svg", },
+      { img: "/sabre.svg", },
+      { img: "/galileo.svg", },
+      { img: "/world-span.svg", },
+      { img: "", text: '' },
     ]
   },
   {
     title: "Booking Engines, OTAs, and PMS",
     content: [
-      { img: "/agilysys.svg",},
-      { img: "/auto-clerk.svg",},
-      { img: "/molo.svg",},
-      { img: "/innfinity.svg",},
-      { img: "/gust.svg",},
-      { img: "/infor.svg",},
-      { img: "/hotels.svg",},
-      { img: "/maxi-mojo.svg",},
-      { img: "/logical.svg",},
+      { img: "/agilysys.svg", },
+      { img: "/auto-clerk.svg", },
+      { img: "/molo.svg", },
+      { img: "/innfinity.svg", },
+      { img: "/gust.svg", },
+      { img: "/infor.svg", },
+      { img: "/hotels.svg", },
+      { img: "/maxi-mojo.svg", },
+      { img: "/logical.svg", },
     ]
   },
   {
     title: "Central Reservation Systems (CRS)",
     content: [
-      { img: "/cendyn.svg",},
-      { img: "/nb.svg",},
-      { img: "/e-rev.svg",},
-      { img: "/blosy.svg",},
-      { img: "/hotel-sp.svg",},
-      { img: "/djub.svg",},
-      { img: "/inntopia.svg",},
-      { img: "/sabre.svg",}
+      { img: "/cendyn.svg", },
+      { img: "/nb.svg", },
+      { img: "/e-rev.svg", },
+      { img: "/blosy.svg", },
+      { img: "/hotel-sp.svg", },
+      { img: "/djub.svg", },
+      { img: "/inntopia.svg", },
+      { img: "/sabre.svg", }
     ]
   },
 ];
@@ -7116,7 +7396,7 @@ const PowerfulRetailSolutionsCardData = [
     ]
   },
   {
-    imgSrc: '/customer-icon.svg', 
+    imgSrc: '/customer-icon.svg',
     title: 'Customer-Centric Strategies',
     content: [
       {
@@ -7130,7 +7410,7 @@ const PowerfulRetailSolutionsCardData = [
     ]
   },
   {
-    imgSrc: '/ecomerce-icon.svg', 
+    imgSrc: '/ecomerce-icon.svg',
     title: 'All-in-One Commerce Platform Development',
     content: [
       {
@@ -7205,6 +7485,30 @@ const RealEstateITSolutionsData = [
     list: ["Tenant management", "Maintenance scheduling", "Rent collection", "Financial tracking"]
   },
 ]
+
+const LogisticsSupplyChainData = [
+  {
+    img: '/resource-planning.svg',
+    heading: 'Manufacturing and Resource Planning',
+    list: ["Manufacturing Execution Systems (MES)", "Enterprise Resource Planning (ERP) Software", "Advanced Planning and Scheduling (APS) Software", "Material Requirements Planning (MRP)", "MRP Supply Chain", "Digital Documentation"]
+  },
+  {
+    img: '/logistics-supply-chain.svg',
+    heading: 'Order and Supply Chain Management',
+    list: ["EDI Order Management", "Order Processing and Returns"]
+  },
+  {
+    img: '/logistics-management.svg',
+    heading: 'Transportation and Logistics Management',
+    list: ["Yard Management", "Integration with 3P Transportation Companies", "Calculation of Shipments/Transportation Costs", "GPS Asset Tracking Software", "Electronic Driver Logbook", "Maps (Google Maps, etc.)"]
+  },
+  {
+    img: '/logistics-warehouse.svg',
+    heading: 'Warehouse and Inventory Management',
+    list: ["Warehousing and Inventory Mobile Apps", "Barcode Asset Tracking", "RFID Software Solutions", "3PL Prep Solutions "]
+  },
+]
+
 const eventsImageGroups = [
   [
     { id: 1, src: '/event-img-1.png', alt: 'Image1', title: 'White Label Expo 2024', country: 'London, UK', date: '2024', flag: '/Uk.svg' },
@@ -7217,10 +7521,10 @@ const eventsImageGroups = [
   [
     { id: 1, src: '/event-img-6.png', alt: 'Image1', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
     { id: 2, src: '/event-img-8.png', alt: 'Image2', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
-    { id: 3, src: '/event-img-7.png', alt: 'Image3', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg'},
+    { id: 3, src: '/event-img-7.png', alt: 'Image3', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg' },
     { id: 4, src: '/event-img-9.png', alt: 'Image4', title: 'Amazon Accelerate 2023', country: 'Seattle, USA', date: '2023', flag: '/Usa.svg' },
     { id: 5, src: '/event-img-1.png', alt: 'Image5', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
-    { id: 6, src: '/event-img-10.png', alt: 'Image6', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg'  },
+    { id: 6, src: '/event-img-10.png', alt: 'Image6', title: 'Alibaba CoCreate 2023', country: 'Las Vegas, USA', date: '2023', flag: '/Usa.svg' },
   ],
 ];
 
@@ -7408,7 +7712,66 @@ const ecommerceFeaatures = [
     img: '/multilevel-security.svg',
     data: 'Multilevel security'
   },
-]
+];
+
+const customLogisticsData = [
+  {
+    image: '/wms.svg',
+    title: 'Warehouse Management Systems (WMS)',
+    content: 'Ensure continuous warehouse operations, accurate inventory tracking, product allocation, space utilization, and streamlined picking and packing processes with our custom logistics software development.',
+  },
+  {
+    image: '/transportation-management.svg',
+    title: 'Transportation Management Systems (TMS)',
+    content: 'Easily manage transportation logistics, improve route planning, reduce carrier costs, and enhance delivery accuracy with our fully functional logistics and transportation software development services.',
+  },
+  {
+    image: '/inventory-management.svg',
+    title: 'Inventory Management Solutions',
+    content: 'Leverage our comprehensive inventory management software solutions and industry expertise to maintain optimal inventory levels, reduce holding costs, and avoid stockouts.',
+  },
+  {
+    image: '/fleet-management.svg',
+    title: 'Fleet Management Software',
+    content: 'Monitor and manage your fleet and freight, ensure regulatory compliance, and streamline physical transportation in real time with insights into vehicle performance, fuel usage, and driver behavior to track progress and safety.',
+  },
+  {
+    image: '/route-optimization.svg',
+    title: 'Route optimization and delivery management',
+    content: 'From international shipments to same-day delivery solutions, we design smart delivery routes that reduce travel time and fuel consumption with our turnkey shipping logistic software solution.',
+  },
+  {
+    image: '/supply-chain-planning.svg',
+    title: 'Supply Chain Planning and Forecasting',
+    content: "Respond to demand and disruptions with relevant technology and custom transport and logistics software solutions, ensuring transparency, safety, and connectivity all the way from “dispatched to delivered.",
+  },
+  {
+    image: '/procurement.svg',
+    title: 'Procurement and Supplier Management',
+    content: 'Develop an end-to-end logistics tracking system software to improve supplier relationships, consolidate operations, enhance transparency, and automate procurement processes.',
+  },
+  {
+    image: '/data-analytics.svg',
+    title: 'Data Analytics and BI Platforms',
+    content: 'Generate AI and Big Data-powered KPIs and identify improvement areas such as delivery times, inventory levels, and operational costs to upgrade your overall supply chain processes.',
+  },
+  {
+    image: '/navigation-tracking.svg',
+    title: 'Navigation Tracking Software',
+    content: 'Develop navigation software for precise fleet tracking and sorted inventory management operations across all transit modes, leveraging GPS technology and seamless API integrations.',
+  },
+  {
+    image: '/document-generation.svg',
+    title: 'Document Generation Software',
+    content: 'Supply chain and shipping companies create numerous documents every day. Automate document-related work for packing lists, declarations, and cargo manifests, reducing human error and boosting overall operations.',
+  },
+  {
+    image: '/asset-tracking.svg',
+    title: 'Asset Tracking Software',
+    content: "Our team designs and develops high-performing logistics asset-tracking software leveraging AI and GPS to provide real-time visibility and control over assets, enhancing tracking accuracy, reducing losses, and boosting overall supply chain efficiency.",
+  },
+];
+
 const onDemandFeaturesData = [
   {
     img: '/custom-listings.svg',
@@ -7571,6 +7934,96 @@ const reInnovationsData = [
     description: 'Achieve secure transactions with tamper-proof digital records of ownership. Let’s say goodbye to fraud risks and hello to streamlined processes.',
   },
 ];
+const AccelerateYourFinanceFunctionsCardData = [
+  {
+    img: '/star-rank-1.svg',
+    title: 'Exceptional service delivery',
+    description: 'We provide leading financial software solutions for enhanced efficiency, lower fees, and blockchain-enabled transformations.'
+  },
+  {
+    img: '/Fraud-protection.svg',
+    title: 'Fraud protection',
+    description: 'Combat fraud with secure blockchain solutions, ensuring compliance without third-party involvement.'
+  },
+  {
+    img: '/Insight-and-wisdom.svg',
+    title: 'Insight and wisdom',
+    description: 'Leverage our industry expertise for user-friendly data analysis driven by distributed ledger technology.'
+  },
+  {
+    img: '/Faster-payments.svg',
+    title: 'Faster payments, lower costs',
+    description: 'Facilitate fast global payments 24/7, reducing costs on transfers and remittances.'
+  },
+  {
+    img: '/Risk-management-simplified.svg',
+    title: 'Risk management simplified',
+    description: 'Develop real-time risk prediction tools for effective management of major risks.'
+  },
+  {
+    img: '/Automated-testing.svg',
+    title: 'Automated testing',
+    description: 'Perform quick smoke tests, minimize test failures, gain confidence in code changes, avoid manual work, and achieve faster delivery.'
+  },
+  {
+    img: '/Frequent-delivery.svg',
+    title: 'Frequent delivery',
+    description: 'Optimize delivery cycles to identify and address bottlenecks, ensuring progress and informed resource allocation.'
+  },
+  {
+    img: '/Product-Focus.svg',
+    title: 'Product Focus',
+    description: 'We review goals and roadmaps, align real business and user value, and minimize dependencies to deliver market-ready fintech product solutions.'
+  },
+  {
+    img: '/Tailored-collaboration.svg',
+    title: 'Tailored collaboration and guidance',
+    description: 'Our fintech app developers ensure your financial software stays adaptable to market changes.'
+  },
+  {
+    img: '/Platform-agnostic-development.svg',
+    title: 'Platform-agnostic development',
+    description: 'We build cross-platform fintech applications across diverse operating systems and devices to ensure a holistic and immersive user experience.'
+  },
+]
+
+const keyTechnologiesData = [
+  {
+    img: "/cloud-advantage.svg",
+    title: 'Cloud Advantage',
+    description: 'Secure access, scalability, and lower costs by leveraging our cloud-first solutions and integrated DevOps practices.',
+  },
+  {
+    img: "/blockchain-security.svg",
+    title: 'Blockchain Security',
+    description: "Trace freight origins, secure transactions, and automate customs clearance with smart contracts.",
+  },
+  {
+    img: "/connected-vehicles.svg",
+    title: 'Telematics and Connected Vehicles',
+    description: 'Implement telematics solutions for data-driven fleet management, route optimization, and operational safety through automated trip logging',
+  },
+  {
+    img: "/connectivity-iot.svg",
+    title: 'Connectivity and IoT',
+    description: 'Harness IoT sensors, digital twins, and 5G technology for fleet control, ensuring strong link between business infrastructure and transport management systems.',
+  },
+  {
+    img: "/intelligent-chatbots.svg",
+    title: 'Intelligent Chatbots',
+    description: 'Handle basic inquiries, collect valuable data, and automate tasks, freeing your staff to focus on more complex issues around the clock with our chatbots.',
+  },
+  {
+    img: "/big-data.svg",
+    title: 'Big Data & Data Science',
+    description: 'Make data-driven decisions by managing customer demand, warehouse operations, and logistics performance in a data-rich environment.',
+  },
+  {
+    img: "/ml-ai.svg",
+    title: "Machine Learning & AI",
+    description: 'Automate processes, enhance decision-making and reduce costs through quick data analysis and predictive insights.',
+  },
+];
 
 const realEstateIntegrationData = [
   {
@@ -7705,7 +8158,434 @@ const realEstateIntegrationData = [
     ],
     title: 'IoT Integration',
   },
+];
+
+const supplyChainData = [
+  {
+    content: [
+      {
+        img: "/quick-book.svg",
+      },
+      {
+        img: "/xero.svg",
+      }
+    ],
+    title: 'Accounting Software',
+  },
+  {
+    content: [
+      {
+        img: "/sap-logo.svg",
+      },
+      {
+        img: "/sales-force.svg",
+      },
+      {
+        img: "/oracle-netsuite.svg",
+      },
+    ],
+    title: 'ERP',
+  },
+  {
+    content: [
+      {
+        img: "/google-map-logo.svg",
+      },
+      {
+        img: "/here-logo.svg",
+      },
+      {
+        img: "/oracle-logo.svg",
+      },
+    ],
+    title: 'Maps and Navigation',
+  },
+  {
+    content: [
+      {
+        img: "/hubspot.svg",
+      },
+      {
+        img: "/oracle-netsuite2.svg",
+      },
+      {
+        img: "/sales-force.svg",
+      }
+    ],
+    title: 'CRM',
+  },
+  {
+    content: [
+      {
+        img: "/shiptify.svg",
+      },
+      {
+        img: "/shippo.svg",
+      },
+      {
+        img: "/logistas.svg",
+      },
+    ],
+    title: 'TMS',
+  },
+  {
+    content: [
+      {
+        img: "/asset-pandas.svg",
+      },
+      {
+        img: "/upkeep.svg",
+      },
+      {
+        img: "/maintainx.svg",
+      },
+    ],
+    title: 'Asset Tracking',
+  },
+  {
+    content: [
+      {
+        img: "/skuvault.svg",
+      },
+      {
+        img: "/oracle-netsuite.svg",
+      },
+      {
+        img: "/zoho-inventory.svg",
+      }
+    ],
+    title: 'WMS',
+  },
+];
+
+const LogisticsFaqs = [
+  {
+    id: 1,
+    title: 'How can logistics and supply chain software solutions improve the efficiency of my operations?',
+    content: (
+      <div className="faq-content">
+        <span>Below are ways logistics and supply chain software solutions can improve the efficiency of your operations:</span>
+        <div className="mb-4">
+          <h5>Process Automation</h5>
+          <span>Automate routine tasks like order processing and inventory management, reducing manual errors and speeding up operations.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Smarter Route Planning</h5>
+          <span>Integrate advanced algorithms to determine the most efficient delivery routes, saving time and fuel costs.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Inventory Management</h5>
+          <span>Track inventory in real-time to ensure optimal stock levels, reducing excess inventory and stockouts.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Data Integration</h5>
+          <span>Integrate data from various sources to provide a unified view of operations, facilitating better decision-making.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Real-Time Tracking</h5>
+          <span>Achieve up-to-the-minute updates on shipment locations and statuses.</span>
+        </div>
+        <div>
+          <h5>Predictive Analytics</h5>
+          <span>Receive historical data to forecast demand and streamline resources, helping to anticipate and mitigate potential disruptions.</span>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'What are the key challenges that logistics and supply chain software development aims to address?',
+    content: (
+      <div className="faq-content">
+        <span>Below are key challenges that logistics and supply chain software development aims to address:</span>
+        <div className="mb-4">
+          <h5>Faster deliveries and reduced costs</h5>
+          <span>Optimize routes, decrease delivery times, and streamline operations to save up to 35%.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Real-time visibility</h5>
+          <span>Gain instant insights into your fleet, inventory, and shipments for informed decisions.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Enhanced tracking and transparency</h5>
+          <span>Track products seamlessly and share data with suppliers and carriers to build trust.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Secure transactions and accurate orders</h5>
+          <span>Attackproof your finances with hi-tech barcode scanning for 25% higher order accuracy.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Improved communication and collaboration</h5>
+          <span>Break down silos with streamlined communication and reporting for a unified team.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Supplier-carrier relations</h5>
+          <span>Strengthen supplier-carrier relationships through transparent and collaborative systems.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Intelligent automation</h5>
+          <span>Automate repetitive tasks and use telematics for data-driven fleet management.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Mobile asset management</h5>
+          <span>Track and manage assets across the supply chain with GPS, RFID, UWB, and barcode scanning.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Extensive device compatibility</h5>
+          <span>Ensure your software works smoothly with any device for optimal data collection.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Workforce optimization</h5>
+          <span>Enhance employee performance, increase resource allocation, and reduce downtime.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Empower your workforce, anywhere</h5>
+          <span>Foster collaboration with location-based tech and accessible logistics software solutions.</span>
+        </div>
+        <div>
+          <h5>End-to-end engagement</h5>
+          <span>Empower your team and satisfy customers with real-time tracking and updates.</span>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'How can your software solutions help with real-time tracking and visibility of shipments in transit?',
+    content: (
+      <div className="faq-content">
+        <span>We integrate these modern logistics software solutions to help with real-time tracking and visibility of shipments in transit.</span>
+        <ul>
+          <li>GPS Tracking</li>
+          <li>IoT Sensors</li>
+          <li>Intuitive Dashboard</li>
+          <li>Automated Alerts</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'What analytics and reporting capabilities can be integrated into the logistics and supply chain software?',
+    content: (
+      <div className="faq-content">
+        <span>The following are types of analytics and reporting that can be integrated into logistics and supply chain software.</span>
+        <div className="mb-4">
+          <h5>Customizable Reports</h5>
+          <span>Generates detailed reports on various aspects of the supply chain, such as inventory levels, shipment status, and delivery performance.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Dashboard Visualizations</h5>
+          <span>Provides intuitive visual representations of data for quick insights.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Predictive Analytics</h5>
+          <span>Uses machine learning algorithms to forecast demand, identify trends, and enhance operations.</span>
+        </div>
+        <div className="mb-4">
+          <h5>KPIs Monitoring</h5>
+          <span>Tracks key performance indicators (KPIs) to assess and improve operational efficiency.</span>
+        </div>
+        <div>
+          <h5>Real-Time Data Analysis</h5>
+          <span>Offers real-time data analysis to support immediate decision-making.</span>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'Can the software be tailored to integrate with our existing logistics and supply chain systems and software?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, the software can be tailored to integrate with your existing logistics and supply chain systems and software with</span>
+        <ul>
+          <li>APIs integrations</li>
+          <li>Custom connectors</li>
+          <li>Middleware solutions</li>
+          <li>Data mapping and transformation</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: "What is your development team's logistics and supply chain expertise?",
+    content: (
+      <div className="faq-content">
+        <div className="mb-4">
+          <h5>Industry Knowledge</h5>
+          <span>Possesses a deep understanding of logistics and supply chain processes and challenges.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Technical Skills</h5>
+          <span>Is proficient in the latest technologies, including IoT, AI, machine learning, and blockchain.</span>
+        </div>
+        <div className="mb-4">
+          <h5>Project Experience</h5>
+          <span>Has a proven track record of successfully delivering logistics and supply chain software projects.</span>
+        </div>
+        <div>
+          <h5>Continuous Learning</h5>
+          <span>Is committed to staying updated with industry trends and technological advancements.</span>
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: 'How do you handle ongoing software maintenance, updates, and technical support?',
+    content: (
+      <div className="faq-content">
+        <span>We take a comprehensive approach to handling ongoing software maintenance, updates, and technical support.</span>
+        <span>Our technical support offers various assistance levels, from basic troubleshooting to comprehensive service level agreements (SLAs). We also conduct training sessions to help your team use the software effectively. A feedback loop is established to improve the software based on user input continuously.</span>
+      </div>
+    ),
+  },
 ]
+
+const FinTechChallengesCardsData = [
+  {
+    img: '/Security-threats-1.svg',
+    heading: 'Security threats vs. security control',
+    text: "Protect your users' trust. Our hyper-vigilant finance developers execute encrypted communication, automated threat detection, and continuous monitoring to safeguard sensitive financial data from hackers."
+  },
+  {
+    img: '/Catch-22-vs.svg',
+    heading: 'Catch-22 vs. regulatory compliance',
+    text: "Navigate regulations with ease and innovation. Leverage our automated compliance services for online identity verification (KYC), anti-money laundering (AML) checks, and regulatory reporting to ensure your app is legal and avoids future roadblocks."
+  },
+  {
+    img: '/Old-systems.svg',
+    heading: 'Old systems + new app = interoperability',
+    text: "Don't get lost in the legacies! Our fintech developers create custom solutions to bridge the gaps between new fintech apps and old systems using modern APIs or middleware to ensure smooth data flow."
+  },
+  {
+    img: '/Tripping-performance.svg',
+    heading: 'Tripping performance vs. resilient performance',
+    text: "Let’s build for boom times. Embrace scalable software infrastructure, such as cloud computing, microservices architecture, and containerization, to achieve system stability even during peak times."
+  },
+  {
+    img: '/Dropping-experiences.svg',
+    heading: 'Dropping experiences vs. driving customer happiness',
+    text: "Deliver intuitive user experiences through responsive UX/UI designs, user testing platforms, and low-code development to satiate your customers and achieve higher retention rates."
+  },
+  {
+    img: '/Unskilled-developers .svg',
+    heading: 'Unskilled developers vs. industry-grade developers',
+    text: "Finding tech-savvy and financially fluent developers can be challenging. Qbatch’s well-trained developers offer commitment, research, and knowledge to help achieve fintech goals."
+  },
+]
+
+const FinTechAppDevelopmentServicesCardData = [
+  {
+    img: '/Mobile-Banking-Apps.svg',
+    heading: 'Mobile Banking Apps',
+    text: 'Reach the mobile-first generation with secure and user-friendly apps for account management, payments, transfers, budgeting, and more.'
+  },
+  {
+    img: '/Digital-Wallets.svg',
+    heading: 'Digital Wallets',
+    text: 'Deliver seamless and secure money management for your users, enabling easy fund transfers, payments, and financial transactions.'
+  },
+  {
+    img: '/Neobanking-&-Online.svg',
+    heading: 'Neobanking & Online Banking Services',
+    text: 'Build a fully digital and customer-centric neobank platform, offering modern banking services like account management payments, transfers, budgeting tools, and more.'
+  },
+  {
+    img: '/Payment-Processing-Systems.svg',
+    heading: 'Payment Processing Systems',
+    text: 'Develop custom digital wallets and P2P platforms POS, QR payments, and recurring billing, ensuring secure and efficient transaction solutions.'
+  },
+  {
+    img: '/Money-Transfer-Services.svg',
+    heading: 'Money Transfer Services',
+    text: 'Develop a hassle-free remittance solution for domestic and international transfers, prioritizing speed, security, and convenience.'
+  },
+  {
+    img: '/Currency-Exchange.svg',
+    heading: 'Currency Exchange',
+    text: 'Facilitate transparent and competitive currency conversions with real-time exchange rates and secure transactions.'
+  },
+]
+
+const FinTechBeyondTheBasicsCardData = [
+  {
+    img: '/Crypto-Blockchain.svg',
+    heading: 'Crypto, Blockchain, and Web3 Solutions',
+    text: 'Leverage blockchain and cryptocurrencies for P2P lending, crypto wallets, smart contracts, and decentralized exchanges, offering faster, safer financial operations.'
+  },
+  {
+    img: '/Digital-Insurance.svg',
+    heading: 'Digital Insurance Platforms',
+    text: 'Provide on-the-go insurance services with automated underwriting, policy management, and claims processing powered by data analytics and algorithms.'
+  },
+  {
+    img: '/Lending-&-Mortgage.svg',
+    heading: 'Lending & Mortgage Platforms',
+    text: 'Ease loan and mortgage processes connect borrowers with lenders, providing credit score gathering, income verification, and automated decision-making tools.'
+  },
+  {
+    img: '/Personal-Wealth.svg',
+    heading: 'Personal Wealth Management',
+    text: 'Offer sophisticated financial management solutions for your clients, enabling them to track, manage, and grow their wealth.'
+  },
+  {
+    img: '/Trading-&-Securities.svg',
+    heading: 'Trading & Securities Platforms',
+    text: 'Empower users to buy and sell stocks, bonds, and derivatives with advanced order types, market data analysis tools, and informed decision-making support.'
+  },
+  {
+    img: '/Robo-advisors.svg',
+    heading: 'Robo-advisors',
+    text: 'Integrate automated investment advice functionality to simplify investing for your clients without spending hours understanding how stocks and auctions operate.'
+  },
+]
+
+const TechnologyToFastTrackSliderData = [
+  {
+    image: '/Cloud-Power.svg',
+    title: 'Cloud Power',
+    content: 'Your fintech application scales effortlessly, handling any user rush and workload fluctuations. Users enjoy high availability, reliability, and performance – anytime, anywhere, on any device.',
+  },
+  {
+    image: '/AI-and-ML.svg',
+    title: 'AI and ML for smarter decisions',
+    content: 'Analyze data, predict trends, and make winning choices. Our financial app developers help you with personalized financial recommendations, robust fraud detection, and algorithmic trading.',
+  },
+  {
+    image: '/Blockchain-for-secure.svg',
+    title: 'Blockchain for secure transactions',
+    content: 'Benefit from secure and transparent transactions with blockchain technology. Eliminate the need for intermediaries with immutable records to guarantee data integrity and reduce fraud risk with cryptographic techniques.',
+  },
+  {
+    image: '/IoT-for-real-time.svg',
+    title: 'IoT for real-time insights',
+    content: 'Track everything with connected devices and make data-driven decisions. Users can track financial activity, monitor spending patterns, and receive personalized insights, leading to better financial product management and planning.',
+  },
+  {
+    image: '/Effortless-API.svg',
+    title: 'Effortless API integration',
+    content: 'Connect your app to anything with third-party services, data sources, and financial institutions using robust APIs. Optimize workflows and enhance payment processing, account aggregation, and lending interoperability.',
+  },
+  {
+    image: '/Boost-efficiency.svg',
+    title: 'Boost efficiency with RPA',
+    content: 'Robots handle repetitive tasks, freeing your team for more important things. Our fintech software solutions eliminate manual errors, reduce processing times, and free up valuable human resources for more strategic activities.',
+  },
+  {
+    image: '/Biometric-authentication.svg',
+    title: 'Biometric authentication for secure logins',
+    content: "Fingerprint or facial recognition keeps your users' money safe, mitigates fraud risks, and complies with stringent security standards. With biometric tech, let’s provide a secure and convenient user experience.",
+  },
+  {
+    image: '/Mobile-first-focus.svg',
+    title: 'Mobile-first focus',
+    content: 'Develop and integrate mobile wallets and payment gateways for secure, cross-border transactions. Integrate multi-payment methods and currencies for user comfort and facility.',
+  }
+];
+
 export {
   dedicationWork,
   homeTiles,
@@ -7864,4 +8744,20 @@ export {
   realEstateIntegrationData,
   ecommerceBusinessData,
   ecommerceFeaatures
+  realEstateIntegrationData,
+  logisticsSofwareData,
+  customLogisticsData,
+  LogisticsSupplyChainData,
+  PeopleWeHaveData,
+  keyTechnologiesData,
+  StartYourLogisticsData,
+  LogisticsFaqs,
+  supplyChainData,
+  FinTechChallengesCardsData,
+  FinTechAppDevelopmentServicesCardData,
+  FinTechBeyondTheBasicsCardData,
+  TechnologyToFastTrackSliderData,
+  SimplifyYourRetaiFintechAppDevelopmentProcessData,
+  FinTechAppDevelopmentFAQ,
+  AccelerateYourFinanceFunctionsCardData
 }
