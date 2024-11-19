@@ -8743,7 +8743,7 @@ export {
   commerceService,
   realEstateIntegrationData,
   ecommerceBusinessData,
-  ecommerceFeaatures
+  ecommerceFeaatures,
   realEstateIntegrationData,
   logisticsSofwareData,
   customLogisticsData,
