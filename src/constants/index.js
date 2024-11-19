@@ -5983,6 +5983,69 @@ const EdTechPotentialData = [
   },
 ];
 
+const ecommerceBusinessData = [
+  {
+    image: '/hyper-personalization.svg',
+    title: 'Hyper-personalization against cutthroat competition',
+    disc: 'Build features like product recommendations based on browsing history and loyalty programs with tiered rewards to keep customers engaged.'
+  },
+  {
+    image: '/ai-powered.svg',
+    title: 'AI-powered chatbots to offer 24/7 support',
+    disc: 'Customers expect instant answers. Integrate AI chatbots to resolve issues and offer personalized suggestions, boosting overall conversions.'
+  },
+  {
+    image: '/embrace-mobile-first.svg',
+    title: 'Embracing the Mobile-first mindset',
+    disc: 'Did you know? Mobile devices drive 64% more online conversions than desktop computers.  Let’s optimize mobile responsiveness for seamless shopping experiences.'
+  },
+  {
+    image: '/voice-ecommerce.svg',
+    title: 'Voice commerce is on the rise',
+    disc: 'Around 40% of U.S. internet users use a voice assistant at least monthly. We can help you integrate voice search functionality and introduce modern voice-activated shopping to your customers.'
+  },
+  {
+    image: '/progressive-apps.svg',
+    title: 'Progressive Web Apps for app-like experiences',
+    disc: 'Develop PWAs to offer a smooth experience on mobile devices without downloading apps, leading to increased customer engagement.'
+  },
+  {
+    image: '/address-trust.svg',
+    title: 'Address trust deficit in a data-driven world',
+    disc: 'Focus on compliance with regulations like GDPR and CCPA, integrate multi-factor authentication for logins and transactions, and add layers of protection against fraud.'
+  },
+  {
+    image: '/arvr.svg',
+    title: 'Go immersive with AR/ VR',
+    disc: 'Let your customers virtually try on products via product visualization, especially for clothing, furniture, or cosmetics, leading to higher conversion rates.'
+  },
+  {
+    image: '/headless-commerce-icon.svg',
+    title: 'Headless commerce for greater customization',
+    disc: 'Integrate your e-commerce platform with various marketing and sales tools for a seamless customer journey.'
+  },
+  {
+    image: '/ethical-ai.svg',
+    title: 'Ethical AI as an enterprise differentiator',
+    disc: 'Implement ethical AI to analyze user behavior and preferences, enabling tailored recommendations and personalized shopping experiences.'
+  },
+  {
+    image: '/advanced-analytics.svg',
+    title: 'Advanced analytics and reporting',
+    disc: 'Implement robust analytics tools to accurately measure marketing ROI, track customer acquisition costs, and optimize advertising campaigns for maximum efficiency.'
+  },
+  {
+    image: '/detailed-product-info.svg',
+    title: 'Detailed product information',
+    disc: 'Develop engaging product pages with comprehensive information, high-quality images, and user-generated content for informed buying decisions.'
+  },
+  {
+    image: '/faster-load-time.svg',
+    title: 'Ensure faster load times',
+    disc: 'Outdated platforms lead to slower loading times, affecting SEO and conversions. We migrate you to modern platforms ensuring faster speed and optimal SEO performance. '
+  },
+]
+
 const realEstateIndustryData = [
   {
     image: '/virtual-property.svg',
@@ -6188,6 +6251,47 @@ const properyBusinessData2 = [
   },
   {
     text: 'Government Housing and Urban Planning Departments'
+  },
+];
+
+const ecomBenifits1 = [
+  {
+    text: 'Brick-and-mortar retailers'
+  },
+  {
+    text: 'Suppliers'
+  },
+  {
+    text: 'Manufacturers'
+  },
+  {
+    text: 'Start-ups'
+  },
+  {
+    text: 'Distributors'
+  },
+  {
+    text: 'IT enterprises'
+  },
+];
+const ecomBenifits2 = [
+  {
+    text: 'Warehousers'
+  },
+  {
+    text: 'Wholesalers'
+  },
+  {
+    text: 'Retail Arbitrage'
+  },
+  {
+    text: 'Brand Owners'
+  },
+  {
+    text: 'Governmental institutions'
+  },
+  {
+    text: 'Logistic centers'
   },
 ];
 
@@ -7125,7 +7229,58 @@ const eventsMobileImgs = [
   { id: 2, imageUrl: "/mobile-event-2.png" },
   { id: 3, imageUrl: "/mobile-event-3.png" },
 ];
-
+const ecommerceSolutions = [
+  {
+    image: '/ecom-custom-dev.svg',
+    title: 'E-commerce Custom Development',
+    content: 'As a dedicated e-commerce software development company, we go beyond blind coding. We explore your business, goals, and requirements and develop tailored e-commerce business solutions from scratch, entailing extensive research into user needs.',
+  },
+  {
+    image: '/ecom-app-dev.svg',
+    title: 'E-commerce Mobile App Development',
+    content: 'From “Is a mobile eCommerce app worth my money?” to “I need a mobile app,” priorities changed. We build intuitive carts, gateways, filters, multi-payment options, and other functional APIs for responsive, high-converting experiences.',
+  },
+  {
+    image: '/ecom-back-end.svg',
+    title: 'E-commerce Back-end and Front-end Development',
+    content: 'Build robust back-end architectures and engaging front-ends for your global audience with our sales-generating e-commerce store and app development services. We guarantee resilient inside-out web apps for a stronger business footprint and happy customers. ',
+  },
+  {
+    image: '/ecom-progressive.svg',
+    title: 'Progressive Web App Development',
+    content: 'Progressive for a reason, as these apps allow users to enjoy the native app’s experience directly from their browser without downloading it. Our E-commerce developers help you develop PWAs for next-gen shopping experiences.',
+  },
+  {
+    image: '/ecom-marketplace.svg',
+    title: 'E-commerce Marketplace Development',
+    content: 'Let’s build highly functional and interactive marketplaces for a wide audience of buyers and sellers. Our dedicated e-commerce app development company designs versatile platforms fostering a free-market environment for businesses of all sizes. ',
+  },
+  {
+    image: '/ecom-platform.svg',
+    title: 'E-commerce Platform Development ',
+    content: 'Operating several storefronts takes a lot of work. Let’s build a centralized e-commerce platform and efficiently manage product listings, inventory, orders, and customer data through our sophisticated e-commerce solutions and expertise.',
+  },
+  {
+    image: '/ecom-store-dev.svg',
+    title: 'Online Store Development ',
+    content: 'Forget about millennials and Gen Z because now, even the boomers (53%) regularly use social media to seek the best trends and products for a healthy and tech-driven lifestyle. It’s your opportunity to create a welcoming cross-platform e-store.',
+  },
+  {
+    image: '/aggregators-portal.svg',
+    title: 'Aggregator Portals and Advanced Analytics ',
+    content: 'Our custom eCommerce application development includes building aggregator apps and portals to connect consumers and service providers when generating fees. These aggregators help you track your vendors, products, and histories.',
+  },
+  {
+    image: '/payment-gateway.svg',
+    title: 'Payment Gateways Solutions ',
+    content: 'Develop secure and user-friendly payment gateway software solutions for a smooth checkout process. Easily integrate Amazon Payment, PayPal, SecurePay, ApplePay, or other payment options into your marketplace app or website.',
+  },
+  {
+    image: '/loyalty-program.svg',
+    title: 'Loyalty Program Software Development ',
+    content: 'Retaining old customers is 7 times more cost-effective than acquiring new ones. Hire our e-commerce developers and engineer smart loyalty programs to ensure customer retention and prevent churn.',
+  },
+]
 const realEstateSliderData = [
   {
     image: '/re-management.svg',
@@ -7204,6 +7359,56 @@ const realEstateSliderData = [
   },
 ];
 
+const ecommerceFeaatures = [
+  {
+    img: '/easy-login.svg',
+    data: 'Easy login'
+  },
+  {
+    img: '/advanced-nav.svg',
+    data: 'Advanced navigation'
+  },
+  {
+    img: '/mobile-optimization.svg',
+    data: 'Mobile Optimization'
+  },
+  {
+    img: '/live-msg.svg',
+    data: 'Live messaging'
+  },
+  {
+    img: '/personalization.svg',
+    data: 'Personalization'
+  },
+  {
+    img: '/reporting-system.svg',
+    data: 'Reporting system'
+  },
+  {
+    img: '/content-manage.svg',
+    data: 'Content management'
+  },
+  {
+    img: '/seo-optimization.svg',
+    data: 'SEO optimization'
+  },
+  {
+    img: '/social-media-integrate.svg',
+    data: 'Social media integration'
+  },
+  {
+    img: '/omni-channel.svg',
+    data: 'Omnichannel payments'
+  },
+  {
+    img: '/secure-gateway.svg',
+    data: 'Secure gateways'
+  },
+  {
+    img: '/multilevel-security.svg',
+    data: 'Multilevel security'
+  },
+]
 const onDemandFeaturesData = [
   {
     img: '/custom-listings.svg',
@@ -7292,7 +7497,43 @@ const servicesData = [
     description: 'Deal with money constraints and standardize software deployments by working in the same network environments with the self-contained virtualization approach. We as DevOps engineering services providers employ self-contained virtual containers to assure responsiveness toward business demands.',
   },
 ];
-
+const commerceService = [
+  {
+    img: "/logistic.svg",
+    title: 'Logistics Management',
+    description: 'Streamline routing, tracking, cargo operations, container and management, vehicle inspection, and more. '
+  },
+  {
+    img: "/shopping-feature.svg",
+    title: 'Live-streaming -shopping features',
+    description: 'Boost sales with live-stream shopping! Viewers can buy items instantly while watching, with no interruptions.'
+  },
+  {
+    img: "/warehouse.svg",
+    title: 'Warehouse Management',
+    description: 'Optimize warehouse operations, yard and dock management, SKUs, vendor relations,  labor, and stock.'
+  },
+  {
+    img: "/shipment-management.svg",
+    title: 'Inventory & Shipment Management',
+    description: 'Improve barcoding, ordering, picking, and shipping processes, including inventory forecasting, restocking, and lot control'
+  },
+  {
+    img: "/erp.svg",
+    title: 'E-commerce ERP',
+    description: 'Manage and expedite complex workflow operations, supply chains, pricing, vendors, projects, and human resources.'
+  },
+  {
+    img: "/info-management.svg",
+    title: 'Product Information Management',
+    description: 'Efficiently categorize products, create catalogs, compare, and manage product data, lifecycle, and traceability.'
+  },
+  {
+    img: "/payment-sol.svg",
+    title: 'Payment Solutions and Tools',
+    description: 'Securely manage payment gateways, portals, POS systems, and e-wallets, ensuring data protection and compliance.'
+  },
+]
 const reInnovationsData = [
   {
     img: "/predictive-power.svg",
@@ -7609,12 +7850,18 @@ export {
   realEstateIndustryData,
   properyBusinessData1,
   properyBusinessData2,
+  ecomBenifits1,
+  ecomBenifits2,
   RealEstateITSolutionsData,
   eventsImageGroups,
   eventsMobileImgs,
   realEstateSliderData,
+  ecommerceSolutions,
   onDemandFeaturesData,
   servicesData,
   reInnovationsData,
-  realEstateIntegrationData
+  commerceService,
+  realEstateIntegrationData,
+  ecommerceBusinessData,
+  ecommerceFeaatures
 }

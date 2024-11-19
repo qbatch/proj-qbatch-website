@@ -412,6 +412,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'ecommerce-industry',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'extension-development',
       queryParams: {
         populate: {

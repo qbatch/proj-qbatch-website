@@ -23,7 +23,6 @@ padding: 96px 0;
 }
 .section-main-paragraph{
   color: ${({ theme }) => theme.colors.textMedium};
-  font-size: ${({ theme }) => theme.fonts.baseFontSize};
   ${media.sm`
     margin-bottom: 32px;
   `}

@@ -677,6 +677,13 @@ export const Queries = () => {
           }
         }
       }
+      allStrapiEcommerceIndustry {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiCategory {
         nodes {
           categoryName

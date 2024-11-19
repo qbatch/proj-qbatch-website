@@ -14,7 +14,7 @@ const Index = ({heading, subHeading, paragraph, data, className}) => {
             <div className='section-main'>
               <h2 className='text-h2 section-main-heading'>{heading}</h2>
               {subHeading && <p className='section-main-subtitle'>{subHeading}</p>}
-              <p className='section-main-paragraph'>{paragraph}</p>
+              <p className='section-main-paragraph text-h5'>{paragraph}</p>
             </div>
           </Col>
           {data.map((service, index) => (
