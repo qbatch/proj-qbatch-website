@@ -12,6 +12,20 @@ const SuccessStoriesNewWrapper = styled.div`
     padding-left: 0px !important;
     `}
 }
+.mobile-view{
+  margin-top: 32px;
+  display:none !important;
+  ${media.sm`
+    display:flex !important;
+    `}
+}
+.button-wrapper{
+  div{
+    ${media.sm`
+    margin-top:0px !important;
+      `}
+  }
+}
   .section-heading {
     margin-bottom: 56px;
     ${media.sm`
