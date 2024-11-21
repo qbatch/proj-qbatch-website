@@ -18,7 +18,7 @@ const ImagineRetailExperience = ({ ImagineRetailExperienceData, travelApp, headi
             <div key={index} className='card-item'>
               <img src={item.img} alt={item.img} title={item.img} />
               <div className='card-item-text'>
-                <h3>{item.heading}</h3>
+                <h3 className='text-h4'>{item.heading}</h3>
                 <p>{item.text}</p>
               </div>
             </div>

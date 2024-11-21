@@ -12,7 +12,7 @@ const tackleSaas = () => {
     <SolveLogisticsWrapper>
       <Container>
         <Row className='g-5 align-items-center'>
-          <Col lg={6}>
+          <Col lg={6} className='order-lg-1 order-2'>
             <h2 className='heading text-h2'>
               We solve your logistics and transportation challenges — with human touch and tech power.
             </h2>
@@ -20,7 +20,7 @@ const tackleSaas = () => {
             <p className='paragraph'>At Qbatch, we're your trusted partner. We combine human expertise with contemporary technology to tackle your logistics challenges. We build highly tailored software solutions that boost efficiency, increase visibility, and unlock growth.</p>
             <Button text="Ready to conquer logistics? Let’s talk." onClick={() => navigate('/contact')} />
           </Col>
-          <Col lg={6}>
+          <Col lg={6} className='order-lg-2 order-1'>
             <div className='d-flex justify-content-center'>
               <img src='/solve-logistics-img.svg' alt='solve-logistics' />
             </div>

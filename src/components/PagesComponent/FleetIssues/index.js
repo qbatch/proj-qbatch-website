@@ -21,7 +21,7 @@ const FleetIssues = () => {
               <div className='right-section-item'><img src='/rgba-arrow.svg' alt="rgba-arrow" title='rgba-arrow' /><h3>Damaged goods during transit?</h3></div>
               <div className='right-section-item'><img src='/rgba-arrow.svg' alt="rgba-arrow" title='rgba-arrow' /><h3>Poor coordination for multiple deliveries?</h3></div>
             </div>
-            <div className='mt-4'>
+            <div className='mt-4 d-flex justify-content-sm-start justify-content-end'>
               <Button text="Tranform Your Logistics" className="secondary-btn" onClick={() => navigate('/contact')} />
             </div>
           </Col>
