@@ -458,19 +458,6 @@ const strapiConfig = {
       },
     },
     {
-      singularName: 'extension-development',
-      queryParams: {
-        populate: {
-          seo: {
-            populate: '*',
-          },
-          schema: {
-            populate: '*',
-          },
-        },
-      },
-    },
-    {
       singularName: 'mvp-dev',
       queryParams: {
         populate: {
