@@ -10,8 +10,10 @@ const InstitutionsBenefiting = ({ heading, desc, data1, data2, imgSrc, className
   return (
     <InstitutionsBenefitingWrapper className={className}>
       <Container>
-        <h2>{heading}</h2>
-        <p>{desc}</p>
+        <div className='header'>
+          <h2>{heading}</h2>
+          <p>{desc}</p>
+        </div>
         <div className='section'>
           <div className='item'>
             <ul className='child'>

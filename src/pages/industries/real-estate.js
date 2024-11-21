@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 
 import Layout from '../../components/Layout/layout';
-import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData, reInnovationsData, FrequentlyAskedQuestionsHealthCareFaq, RealEstateITSolutionsData, realEstateIntegrationData } from '../../constants';
+import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData, reInnovationsData, realEstateIntegrationData, FrequentlyAskedQuestionsHealthCareFaq, RealEstateITSolutionsData, onDemandFeaturesData } from '../../constants';
 import { Queries } from '../../constants/queries';
 import SEO from '../../components/Seo';
 
@@ -73,7 +73,10 @@ const RealEstate = () => {
         text="Let's start with a small-scale project, risk-free, and see if we suit your custom real estate software vision."
         buttonText='Book Discovery Call'
       />
-      <OnDemandFeatures />
+      <OnDemandFeatures
+        heading="On-demand features for your real estate app for human-centric experience and higher productivity"
+        featuresData={onDemandFeaturesData}
+      />
       <NextLevelInnovations
         heading="We're talking next-level innovations that will transform the way you do business:"
         paragraph="The real estate landscape is buzzing with innovation, and we're here to be your wingman on this exciting flight. Forget clunky processes and outdated tools. We're talking cutting-edge tech that lets you soar above the competition."

@@ -197,6 +197,19 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'ecommerce-industry',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+          schema: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'enterprise',
       queryParams: {
         populate: {
@@ -492,6 +505,7 @@ const strapiConfig = {
     'web-app',
     'product-design',
     'ecommerce',
+    'ecommerce-industry',
     'enterprise',
     'contact-us',
     'portfolio',
