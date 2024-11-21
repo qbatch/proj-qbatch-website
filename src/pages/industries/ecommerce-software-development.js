@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 
 import Layout from '../../components/Layout/layout';
-import { ecommerceBusinessData, commerceService, ecommerceFeaatures, mobileAppFaq, ecommerceSolutions, ecomBenifits1, ecomBenifits2 } from '../../constants';
+import { ecommerceBusinessData, commerceService, ecommerceFeaatures, ecomIndustry, ecommerceSolutions, ecomBenifits1, ecomBenifits2 } from '../../constants';
 import OnDemandFeatures from '../../components/PagesComponent/OnDemandFeatures';
 import EcommerceFuture from '../../components/PagesComponent/EcommerceFuture';
 import EcommerceDevelopment from '../../components/PagesComponent/EcommerceDevelopment';
@@ -88,7 +88,7 @@ export default function EcommerceDev() {
       <SuccessStories heading="Success Stories from our E-commerce Portfolio" />
       <WhyTrustQbatch heading='Why trust Qbatch for your business-critical E-com project?' />
       <CollaborationNew />
-      <FaqSection faqQuestion={mobileAppFaq} />
+      <FaqSection faqQuestion={ecomIndustry} />
       <StartProject />
     </Layout>
   )

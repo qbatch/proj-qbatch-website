@@ -3113,6 +3113,120 @@ const webAppFaq = [
     ),
   }
 ]
+const ecomIndustry = [
+  {
+    id: 1,
+    title: 'Do you offer outsourcing services for eCommerce development projects?',
+    content: (<div className="faq-content"><span>Yes, we offer outsourcing services for eCommerce development projects.</span></div>)
+  },
+  {
+    id: 2,
+    title: 'How can I hire eCommerce developers from your company?',
+    content: (
+      <div className="faq-content">
+        <span>You can hire our e-commerce developers in these simple steps:</span>
+        <ol>
+          <li>
+            <b>Contact Us</b>
+            <p>Reach out via email, phone, or website.</p>
+          </li>
+          <li>
+            <b>Consultation</b>
+            <p>Discuss project needs and goals.</p>
+          </li>
+          <li>
+            <b>Proposal</b>
+            <p>Receive a tailored proposal.</p>
+          </li>
+          <li>
+            <b>Team Selection</b>
+            <p>Choose skilled developers.</p>
+          </li>
+          <li>
+            <b>Onboarding</b>
+            <p>Complete paperwork and setup.</p>
+          </li>
+          <li>
+            <b>Development</b>
+            <p>Collaborate on project execution.</p>
+          </li>
+          <li>
+            <b>Review</b>
+            <p>Regularly review progress.</p>
+          </li>
+          <li>
+            <b>Completion</b>
+            <p>Receive ongoing support.</p>
+          </li>
+        </ol>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'Do you provide both website design and development services for eCommerce platforms?',
+    content: (<div className="faq-content"><span>Yes, we provide both website design and development services for eCommerce platforms.</span></div>),
+  },
+  {
+    id: 4,
+    title: 'What expertise do you have in platform development for eCommerce websites?',
+    content: (
+      <div className="faq-content">
+        <span>We possess these skills and tools for e-commerce websites in platform development:</span>
+        <ul>
+          <li>Cloud infrastructure development for scalability and security.</li>
+          <li>Modern development tools to simplify building eCommerce features.</li>
+          <li>AI and Machine Learning for personalization, recommendations, and more.</li>
+          <li>Analytics to understand customer behavior and optimize sales.</li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    id: 5,
+    title: 'Can you integrate payment gateway software into my eCommerce platform?',
+    content: (<div className="faq-content"><span>Yes, we can integrate multiple payment gateways into your e-commerce platform.</span></div>)
+  },
+  {
+    id: 6,
+    title: "Can you develop custom applications to enhance my eCommerce website's functionality?",
+    content: (<div className="faq-content"><span>Yes, we can develop custom applications to enhance my eCommerce website's functionality.</span></div>)
+  },
+  {
+    id: 7,
+    title: 'Do you specialize in B2B eCommerce development?',
+    content: (<div className="faq-content"><span>Yes, we specialize in B2B e-commerce development. We create B2B commerce hubs to streamline interactions between your business, partners, vendors, and clients, driving high-volume sales. With our solutions, you can manage orders and inventory efficiently, offer personalized pricing and catalogs, and facilitate split shipments for seamless order delivery.</span></div>)
+  },
+  {
+    id: 8,
+    title: (<div className="faq-content"><span>Yes, we can build a portal for your e-commerce business. Our trade portal development services connect you with various e-commerce stakeholders across web, tablet, and mobile platforms. We help unlock revenue streams through subscriptions, sales, listings, and more with our e-commerce portal development services.</span></div>)
+  },
+  {
+    id: 9,
+    title: 'Do you offer consulting services to help optimize eCommerce websites?',
+    content: (
+      <div className="faq-content">
+        <span>Absolutely! We offer e-commerce consulting services, sharing our industry knowledge and expertise and guiding you to create platforms with optimal product-market fit, giving you a competitive edge.</span>
+        <span>We provide expert guidance on integrating new features and exploring monetization models. Drawing from our extensive portfolio, we offer insights and alternative approaches to optimize your eCommerce website, saving you time and money while maximizing effectiveness.</span>
+      </div>
+    )
+  },
+  {
+    id: 10,
+    title: 'Can you assist with data migration for my eCommerce platform?',
+    content: ( <div className="faq-content"><span>Yes, we can assist with data migration for your e-commerce platform. Whether upgrading to a new platform, consolidating data from multiple sources, or simply restructuring your existing database, we can assist you every step of the way. Our team ensures a seamless transition, preserving data integrity and minimizing downtime so you can focus on growing your business without disruptions.</span></div>)
+  },
+  {
+    id: 11,
+    title: 'Do you serve clients in the USA, particularly New York and Liverpool?',
+    content: ( <div className="faq-content"><span>Yes, Qbach, an e-commerce software development company, serves clients in the USA, particularly in cities like New York and Liverpool.</span></div>)
+  },
+  {
+    id: 12,
+    title: 'How much does e-commerce development cost?',
+    content: (<div className="faq-content"><span>E-commerce development costs vary greatly depending on several factors, ranging from $30 for a basic setup to $10,000+ for complex stores.</span></div>)
+  },
+]
 const mobileAppFaq = [
   {
     id: 1,
@@ -8626,6 +8740,7 @@ export {
   multiPlatformData,
   developmentServicesData,
   mobileAppFaq,
+  ecomIndustry,
   enterPrisFaq,
   hireDeveloper,
   choiceEnterpriseData,
@@ -8744,7 +8859,6 @@ export {
   realEstateIntegrationData,
   ecommerceBusinessData,
   ecommerceFeaatures,
-  realEstateIntegrationData,
   logisticsSofwareData,
   customLogisticsData,
   LogisticsSupplyChainData,

@@ -40,8 +40,8 @@ const EcommerceTopTier = () => {
             <div className='box-wrapper gap-4'>
               <div className='box'>
                 <div className='box-header'>
-                  <img src='/ecom-tech.svg' loading='lazy' height={40} width={40} />
-                  <h3 className='text-h4 box-heading'>Technology</h3>
+                  <img src='/ecommerce-platform.svg' loading='lazy' height={40} width={40} />
+                  <h3 className='text-h4 box-heading'> Platforms</h3>
                 </div>
                 <div className='box-body'>
                   <h4 className='text-h5'>Shopify</h4>
@@ -51,7 +51,7 @@ const EcommerceTopTier = () => {
               </div>
               <div className='box'>
                 <div className='box-header'>
-                  <img src='/ecom-tech.svg' loading='lazy' height={40} width={40} />
+                  <img src='/3rd-party-integration.svg' loading='lazy' height={40} width={40} />
                   <h3 className='text-h4 box-heading'>3rd party integration</h3>
                 </div>
                 <div className='box-body'>

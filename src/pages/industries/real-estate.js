@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 
 import Layout from '../../components/Layout/layout';
-import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData, reInnovationsData, FrequentlyAskedQuestionsHealthCareFaq, RealEstateITSolutionsData, realEstateIntegrationData, onDemandFeaturesData } from '../../constants';
+import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData, reInnovationsData, realEstateIntegrationData, FrequentlyAskedQuestionsHealthCareFaq, RealEstateITSolutionsData, onDemandFeaturesData } from '../../constants';
 import { Queries } from '../../constants/queries';
 import SEO from '../../components/Seo';
 
