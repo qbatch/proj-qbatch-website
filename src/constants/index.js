@@ -8380,27 +8380,27 @@ const LogisticsFaqs = [
       <div className="faq-content">
         <span>Below are ways logistics and supply chain software solutions can improve the efficiency of your operations:</span>
         <div className="mb-4">
-          <h5>Process Automation</h5>
+          <h4 className="text-h5">Process Automation</h4>
           <span>Automate routine tasks like order processing and inventory management, reducing manual errors and speeding up operations.</span>
         </div>
         <div className="mb-4">
-          <h5>Smarter Route Planning</h5>
+          <h4 className="text-h5">Smarter Route Planning</h4>
           <span>Integrate advanced algorithms to determine the most efficient delivery routes, saving time and fuel costs.</span>
         </div>
         <div className="mb-4">
-          <h5>Inventory Management</h5>
+          <h4 className="text-h5">Inventory Management</h4>
           <span>Track inventory in real-time to ensure optimal stock levels, reducing excess inventory and stockouts.</span>
         </div>
         <div className="mb-4">
-          <h5>Data Integration</h5>
+          <h4 className="text-h5">Data Integration</h4>
           <span>Integrate data from various sources to provide a unified view of operations, facilitating better decision-making.</span>
         </div>
         <div className="mb-4">
-          <h5>Real-Time Tracking</h5>
+          <h4 className="text-h5">Real-Time Tracking</h4>
           <span>Achieve up-to-the-minute updates on shipment locations and statuses.</span>
         </div>
         <div>
-          <h5>Predictive Analytics</h5>
+          <h4 className="text-h5">Predictive Analytics</h4>
           <span>Receive historical data to forecast demand and streamline resources, helping to anticipate and mitigate potential disruptions.</span>
         </div>
       </div>
@@ -8413,51 +8413,51 @@ const LogisticsFaqs = [
       <div className="faq-content">
         <span>Below are key challenges that logistics and supply chain software development aims to address:</span>
         <div className="mb-4">
-          <h5>Faster deliveries and reduced costs</h5>
+          <h4 className="text-h5">Faster deliveries and reduced costs</h4>
           <span>Optimize routes, decrease delivery times, and streamline operations to save up to 35%.</span>
         </div>
         <div className="mb-4">
-          <h5>Real-time visibility</h5>
+          <h4 className="text-h5">Real-time visibility</h4>
           <span>Gain instant insights into your fleet, inventory, and shipments for informed decisions.</span>
         </div>
         <div className="mb-4">
-          <h5>Enhanced tracking and transparency</h5>
+          <h4 className="text-h5">Enhanced tracking and transparency</h4>
           <span>Track products seamlessly and share data with suppliers and carriers to build trust.</span>
         </div>
         <div className="mb-4">
-          <h5>Secure transactions and accurate orders</h5>
+          <h4 className="text-h5">Secure transactions and accurate orders</h4>
           <span>Attackproof your finances with hi-tech barcode scanning for 25% higher order accuracy.</span>
         </div>
         <div className="mb-4">
-          <h5>Improved communication and collaboration</h5>
+          <h4 className="text-h5">Improved communication and collaboration</h4>
           <span>Break down silos with streamlined communication and reporting for a unified team.</span>
         </div>
         <div className="mb-4">
-          <h5>Supplier-carrier relations</h5>
+          <h4 className="text-h5">Supplier-carrier relations</h4>
           <span>Strengthen supplier-carrier relationships through transparent and collaborative systems.</span>
         </div>
         <div className="mb-4">
-          <h5>Intelligent automation</h5>
+          <h4 className="text-h5">Intelligent automation</h4>
           <span>Automate repetitive tasks and use telematics for data-driven fleet management.</span>
         </div>
         <div className="mb-4">
-          <h5>Mobile asset management</h5>
+          <h4 className="text-h5">Mobile asset management</h4>
           <span>Track and manage assets across the supply chain with GPS, RFID, UWB, and barcode scanning.</span>
         </div>
         <div className="mb-4">
-          <h5>Extensive device compatibility</h5>
+          <h4 className="text-h5">Extensive device compatibility</h4>
           <span>Ensure your software works smoothly with any device for optimal data collection.</span>
         </div>
         <div className="mb-4">
-          <h5>Workforce optimization</h5>
+          <h4 className="text-h5">Workforce optimization</h4>
           <span>Enhance employee performance, increase resource allocation, and reduce downtime.</span>
         </div>
         <div className="mb-4">
-          <h5>Empower your workforce, anywhere</h5>
+          <h4 className="text-h5">Empower your workforce, anywhere</h4>
           <span>Foster collaboration with location-based tech and accessible logistics software solutions.</span>
         </div>
         <div>
-          <h5>End-to-end engagement</h5>
+          <h4 className="text-h5">End-to-end engagement</h4>
           <span>Empower your team and satisfy customers with real-time tracking and updates.</span>
         </div>
       </div>
@@ -8485,23 +8485,23 @@ const LogisticsFaqs = [
       <div className="faq-content">
         <span>The following are types of analytics and reporting that can be integrated into logistics and supply chain software.</span>
         <div className="mb-4">
-          <h5>Customizable Reports</h5>
+          <h4 className="text-h5">Customizable Reports</h4>
           <span>Generates detailed reports on various aspects of the supply chain, such as inventory levels, shipment status, and delivery performance.</span>
         </div>
         <div className="mb-4">
-          <h5>Dashboard Visualizations</h5>
+          <h4 className="text-h5">Dashboard Visualizations</h4>
           <span>Provides intuitive visual representations of data for quick insights.</span>
         </div>
         <div className="mb-4">
-          <h5>Predictive Analytics</h5>
+          <h4 className="text-h5">Predictive Analytics</h4>
           <span>Uses machine learning algorithms to forecast demand, identify trends, and enhance operations.</span>
         </div>
         <div className="mb-4">
-          <h5>KPIs Monitoring</h5>
+          <h4 className="text-h5">KPIs Monitoring</h4>
           <span>Tracks key performance indicators (KPIs) to assess and improve operational efficiency.</span>
         </div>
         <div>
-          <h5>Real-Time Data Analysis</h5>
+          <h4 className="text-h5">Real-Time Data Analysis</h4>
           <span>Offers real-time data analysis to support immediate decision-making.</span>
         </div>
       </div>
@@ -8528,19 +8528,19 @@ const LogisticsFaqs = [
     content: (
       <div className="faq-content">
         <div className="mb-4">
-          <h5>Industry Knowledge</h5>
+          <h4 className="text-h5">Industry Knowledge</h4>
           <span>Possesses a deep understanding of logistics and supply chain processes and challenges.</span>
         </div>
         <div className="mb-4">
-          <h5>Technical Skills</h5>
+          <h4 className="text-h5">Technical Skills</h4>
           <span>Is proficient in the latest technologies, including IoT, AI, machine learning, and blockchain.</span>
         </div>
         <div className="mb-4">
-          <h5>Project Experience</h5>
+          <h4 className="text-h5">Project Experience</h4>
           <span>Has a proven track record of successfully delivering logistics and supply chain software projects.</span>
         </div>
         <div>
-          <h5>Continuous Learning</h5>
+          <h4 className="text-h5">Continuous Learning</h4>
           <span>Is committed to staying updated with industry trends and technological advancements.</span>
         </div>
       </div>

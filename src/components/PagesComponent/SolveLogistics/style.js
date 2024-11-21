@@ -16,6 +16,9 @@ const SolveLogisticsWrapper = styled.div`
     margin-bottom: 32px;
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
     line-height: 32px;
+    &:nth-child(3) {
+      font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+    }
   }
   ${media.md`
     padding: 56px 0;

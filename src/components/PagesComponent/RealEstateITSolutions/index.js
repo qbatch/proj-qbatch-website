@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Slider from 'react-slick';
 import { navigate } from 'gatsby';
@@ -12,7 +12,7 @@ const SolutionBox = ({ item }) => (
   <div className='solutions-box'>
     <img src={item.img} alt={item.heading} title={item.heading} loading='lazy' />
     <div>
-      <p className='text-h4'>{item.heading}</p>
+      <h3 className='text-h4'>{item.heading}</h3>
       <ul>
         {item.list.map((list, ind) => (
           <li key={ind}>{list}</li>
@@ -23,6 +23,25 @@ const SolutionBox = ({ item }) => (
 );
 
 const Index = ({ heading, desc, data, col, isBtn, btnText, className }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 992);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const uniqueData = data.filter((item, index, self) =>
+    index === self.findIndex((t) => t.heading === item.heading)
+  );
+
   const settings = {
     dots: true,
     infinite: true,
@@ -40,22 +59,25 @@ const Index = ({ heading, desc, data, col, isBtn, btnText, className }) => {
           <h2>{heading}</h2>
           <p>{desc}</p>
         </div>
-        <Row className='d-lg-flex d-none'>
-          {data.map((item, ind) => (
-            <Col xl={col || 4} lg={6} className='solutions-col' key={ind}>
-              <SolutionBox item={item} />
-            </Col>
-          ))}
-        </Row>
-        <Row className='d-lg-none d-block'>
-          <Slider {...settings}>
-            {data.map((item, ind) => (
-              <Col sm={12} className='solutions-col equal-height-card' key={ind}>
+        {!isMobile ? (
+          <Row className='d-lg-flex d-none'>
+            {uniqueData.map((item, ind) => (
+              <Col xl={col || 4} lg={6} className='solutions-col' key={ind}>
                 <SolutionBox item={item} />
               </Col>
             ))}
-          </Slider>
-        </Row>
+          </Row>
+        ) : (
+          <Row className='d-lg-none d-block'>
+            <Slider {...settings}>
+              {uniqueData.map((item, ind) => (
+                <Col sm={12} className='solutions-col equal-height-card' key={ind}>
+                  <SolutionBox item={item} />
+                </Col>
+              ))}
+            </Slider>
+          </Row>
+        )}
         {isBtn &&
           <div className='btn-margin d-flex justify-content-center'>
             <Button text={btnText} onClick={() => navigate('/contact')} />
