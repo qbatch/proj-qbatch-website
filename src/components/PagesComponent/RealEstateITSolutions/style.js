@@ -91,6 +91,9 @@ const ITSolutionsWrapper = styled.div`
     `}
   }
   &.logistics-supply {
+    ${media.sm`
+      padding: 40px 0;
+    `}
     .solutions-box {
       ${media.md`
         min-height: 310px;

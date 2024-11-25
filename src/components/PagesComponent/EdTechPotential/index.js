@@ -15,7 +15,7 @@ const EdTechPotential = ({ heading, subHeading, data, isBtn, btnText }) => {
         <div className='items-wrapper'>
           {data.map((item, index) => (
             <div key={index} className='item'>
-              <img src={item.image} alt={item.image} />
+              <img src={item.image} alt={item.image} width={50} height={50} />
               <div className='item-disc'>
                 <h3>{item.title}</h3>
                 <p>{item.disc}</p>

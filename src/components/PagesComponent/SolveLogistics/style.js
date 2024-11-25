@@ -7,11 +7,6 @@ const SolveLogisticsWrapper = styled.div`
   .heading{
     margin-bottom: 24px;
   }
-  img{
-    background-color: ${({ theme }) => theme.colors.whiteColor} ;
-    border-radius: 20px 20px 0 20px;
-    margin: auto;
-  }
   .paragraph{
     margin-bottom: 32px;
     font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
@@ -27,6 +22,11 @@ const SolveLogisticsWrapper = styled.div`
       line-height: 24px;
     }
   `}
+  img {
+    ${media.sm`
+      height: auto;
+    `}
+  }
 `
 
 export default SolveLogisticsWrapper;

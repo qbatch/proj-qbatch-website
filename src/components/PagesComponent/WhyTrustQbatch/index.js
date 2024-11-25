@@ -10,7 +10,7 @@ const WhyTrustQbatch = ({ heading }) => {
     <WhyTrustQbatchWrapper>
       <Container>
         <div className='card-wrapper'>
-          <img src="/why-trust-qbatch.svg" alt="Why Trust Qbatch" />
+          <img src="/why-trust-qbatch.svg" alt="Why Trust Qbatch" width="auto" height="auto" />
           <div className='card-items-wrapper'>
             <h2>{heading || 'Why trust Qbatch for your business-critical TravelTech project?'}</h2>
             <div className='card-item'>
