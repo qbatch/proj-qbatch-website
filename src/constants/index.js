@@ -1,3 +1,4 @@
+import { navigate } from "gatsby";
 import React from "react";
 const weDoData = [
   { icon: "/lounch-icon.svg", title: "Develop an MVP", desc: "Launch foolproof MVPs that stand \n the test of time." },
@@ -3531,7 +3532,7 @@ const hireDeveloper = [
 const FinTechAppDevelopmentFAQ = [
   {
     id: 1,
-    title: 'I have an idea for a nance software. What should I start with?',
+    title: 'I have an idea for a finance software. What should I start with?',
     content: (
       <div className="faq-content">
         <span>You can:</span>
@@ -3550,7 +3551,7 @@ const FinTechAppDevelopmentFAQ = [
   },
   {
     id: 2,
-    title: 'Do you oer consulting on the development of ntech solutions?',
+    title: 'Do you offer consulting on the development of fintech solutions?',
     content: (
       <div className="faq-content hire-developer-faq">
         <span>Yes, we oer consulting services to assist you at every stage of ntech solution
@@ -3597,7 +3598,7 @@ const FinTechAppDevelopmentFAQ = [
     title: 'Can you create custom FinTech solutions tailored to our specific requirements?',
     content: (
       <div className="faq-content">
-        <span>Absolutely, we specialize in developing custom fintech solutions tailored to meet our clients' unique needs and objectives. We work closely with you to understand your requirements and deliver a solution that aligns with your business goals. <b>Get in touch for more details.</b></span>
+        <span>Absolutely, we specialize in developing custom fintech solutions tailored to meet our clients' unique needs and objectives. We work closely with you to understand your requirements and deliver a solution that aligns with your business goals. <b style={{cursor: 'pointer'}} onClick={() => navigate('/contact')}>Get in touch for more details.</b></span>
       </div>
     ),
   },
@@ -5914,7 +5915,7 @@ const industrieshMenu = [
   },
   {
     name: 'FinTech',
-    to: '#',
+    to: '/industries/fin-tech-app-development/',
   },
   {
     name: 'Healthcare',
