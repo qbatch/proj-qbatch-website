@@ -22,7 +22,7 @@ const tackleSaas = () => {
           </Col>
           <Col lg={6} className='order-lg-2 order-1'>
             <div className='d-flex justify-content-center'>
-              <img src='/solve-logistics-img.svg' alt='solve-logistics' />
+              <img src='/solve-logistics-img.svg' alt='solve-logistics' loading='eager' width={574} height={396} />
             </div>
           </Col>
         </Row>

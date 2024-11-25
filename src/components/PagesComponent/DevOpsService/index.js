@@ -21,7 +21,7 @@ const Index = ({heading, subHeading, paragraph, data, className}) => {
             <Col xl={4} md={6} key={index}>
               <div className='dev-service-box'>
                 <div className='box-header'>
-                  <img src={service.img} alt='icon' />
+                  <img src={service.img} alt='icon' width={64} height={64} />
                   <h3 className='text-h4 box-heading'>{service.title}</h3>
                 </div>
                 <div className="box-body">

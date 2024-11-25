@@ -372,8 +372,8 @@ p.content {
     ${media.xs`
     .make-responsive {
       img{
-        width:fit-content;
-        height: fit-content;
+        width: 248px;
+        height: 152px;
       }
     }
     `}
