@@ -13,12 +13,6 @@ const BreadcrumbWrapper = styled.div`
     &.inner-page{
       position: relative;
     }
-    .current-breadcrumb {
-      background: #FFFFFF33;
-      padding: 4px;
-      border-radius: 4px;
-    }
-
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.whiteColor};
@@ -26,9 +20,6 @@ const BreadcrumbWrapper = styled.div`
     padding: 16px 96px;
     max-width: 1600px;
     margin: auto;
-    ul{
-      align-items: center !important;
-    }
     a {
       color: ${({ theme }) => theme.colors.whiteColor};
       white-space: nowrap;
