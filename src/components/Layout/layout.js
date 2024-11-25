@@ -16,10 +16,10 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={Theme}>
        <Helmet>
-        <link rel="icon" type="image/png" sizes="32x32" href="/fav-icon.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/fav-icon16.png" />
-        <link rel="icon" type="image/x-icon" href="/fav-icon.ico" />
-        <link rel="shortcut icon" href="/fav-icon.ico" />
+        <link rel="preload" rel="icon" type="image/png" sizes="32x32" href="/fav-icon.png" />
+        <link rel="preload" rel="icon" type="image/png" sizes="16x16" href="/fav-icon16.png" />
+        <link rel="preload" rel="icon" type="image/x-icon" href="/fav-icon.ico" />
+        <link rel="preload" rel="shortcut icon" href="/fav-icon.ico" />
         <html lang='en-US' />
       </Helmet>
       <GlobalStyle />

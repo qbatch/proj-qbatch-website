@@ -17,16 +17,16 @@ const UsersNowManageTheirFinances = lazy(() => import('../../components/PagesCom
 const TechnologyToFastTrack = lazy(() => import('../../components/PagesComponent/TechnologyToFastTrack'))
 const IroncladSecurityMeasures = lazy(() => import('../../components/PagesComponent/ IroncladSecurityMeasures'))
 const BoostEfficiencyEnhanceSecurity = lazy(() => import('../../components/PagesComponent/BoostEfficiencyEnhanceSecurity'))
-const WhyTrustQbatch  = lazy(() => import('../../components/PagesComponent/WhyTrustQbatch'))
-const CollaborationNew  = lazy(() => import('../../components/PagesComponent/CollaborationNew'))
-const SuccessStoriesNew  = lazy(() => import('../../components/PagesComponent/SuccessStoriesNew'))
+const WhyTrustQbatch = lazy(() => import('../../components/PagesComponent/WhyTrustQbatch'))
+const CollaborationNew = lazy(() => import('../../components/PagesComponent/CollaborationNew'))
+const SuccessStoriesNew = lazy(() => import('../../components/PagesComponent/SuccessStoriesNew'))
 const NextLevelInnovations = lazy(() => import('../../components/PagesComponent/DevOpsService'));
 
 const FinTechAppDevelopment = () => {
   return (
     <Layout>
-        <CtoBanner
-        subheading="Fintech App Development"
+      <CtoBanner
+        subheading="FinTech App Development"
         heading="Build a Killer Fintech App. Disrupt Finance. Own the Future. "
         paragraph="Customers prefer mobile-first experiences over brick-and-mortar. Legacy systems lag behind modern fintech solutions. Let's seize these revolutionary challenges and engineer fintech apps that create waves, not ripples."
         buttonText="Discuss Your Project"
@@ -36,8 +36,8 @@ const FinTechAppDevelopment = () => {
         imgSrc="/fin-teck.svg"
         gridClass="justify-content-between w-100 align-items-center"
         customCrumbs={[
-          { crumbSeparator: '>', pathname: '/industries/', crumbLabel: 'Industries',  },
-          {pathname: '/industries/health-care/', crumbLabel: 'FinTeck App Development', crumbSeparator: '>' },
+          { crumbSeparator: '>', pathname: '/industries/', crumbLabel: 'Industries', },
+          { pathname: '/industries/fin-tech-app-development/', crumbLabel: 'FinTech App Development', crumbSeparator: '>' },
         ]}
       />
       <FinTechChallenges />
@@ -47,7 +47,7 @@ const FinTechAppDevelopment = () => {
       <TechnologyToFastTrack />
       <IroncladSecurityMeasures />
       <NextLevelInnovations
-        heading="How do we help you accelerate your finance functions?" 
+        heading="How do we help you accelerate your finance functions?"
         paragraph="We go beyond simply building software. You deserve Fintech Value — at its best. We understand the intricacies of financial technology and the challenges modern financial institutions face."
         data={AccelerateYourFinanceFunctionsCardData}
         className='innovations-wrapper'
@@ -67,7 +67,7 @@ const FinTechAppDevelopment = () => {
 export default FinTechAppDevelopment;
 export const Head = () => {
   const saasDevData = Queries()
-  const seoData = saasDevData?.allStrapiTravelAppDevelopment?.nodes[0]?.seo
+  const seoData = saasDevData?.allStrapiFinTechAppDevelopment?.nodes[0]?.seo
   // const schemaData = saasDevData?.allStrapiHealthcare?.nodes[0]?.schema;
   // const transformedObject = replaceUnderscoreWithAt(schemaData);
 
