@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
 import Layout from '../../components/Layout/layout'
 
-import { FinTechAppDevelopmentFAQ, AccelerateYourFinanceFunctionsCardData, SimplifyYourRetaiFintechAppDevelopmentProcessData } from '../../constants';
+import { FinTechAppDevelopmentFAQ, AccelerateYourFinanceFunctionsCardData, SimplifyYourRetaiFintechAppDevelopmentProcessData, collaborationDataNew } from '../../constants';
 
 import SEO from '../../components/Seo'
 import { Queries } from '../../constants/queries'
@@ -54,8 +54,8 @@ const FinTechAppDevelopment = () => {
       />
       <BoostEfficiencyEnhanceSecurity />
       <StartYourHealthTech className="" heading="4-Step Easy Fintech App Development Process" StartYourHealthTechData={SimplifyYourRetaiFintechAppDevelopmentProcessData} />
-      <WhyTrustQbatch heading='Why trust Qbatch for your business-critical FinTech project?' />
-      <CollaborationNew borderBottom={true} />
+      <WhyTrustQbatch finTech="- Spectacular Price-Quality Ratio" heading='Why trust Qbatch for your business-critical FinTech project?' />
+      <CollaborationNew collaborationDataNew={collaborationDataNew} borderBottom={true} />
       <SuccessStoriesNew heading="Our Fintech Success Stories" />
       <FaqSection className="health-care-faq" faqQuestion={FinTechAppDevelopmentFAQ} />
       <StartProject />

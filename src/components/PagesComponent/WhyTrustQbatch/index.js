@@ -5,7 +5,7 @@ import Button from '../../UiComponent/Button'
 import { WhyTrustQbatchWrapper } from './style'
 import { WhyTrustQbatchData1, WhyTrustQbatchData2 } from '../../../constants'
 
-const WhyTrustQbatch = ({ heading }) => {
+const WhyTrustQbatch = ({ heading, finTech }) => {
   return (
     <WhyTrustQbatchWrapper>
       <Container>
@@ -23,6 +23,7 @@ const WhyTrustQbatch = ({ heading }) => {
                 {WhyTrustQbatchData2.map((item, index) => (
                   <li key={index}>{item.text}</li>
                 ))}
+                 {finTech &&  <li>- Spectacular Price-Quality Ratio</li>}
               </ul>
             </div>
             <Button onClick={() => navigate('/contact')}  text="Let’s Get Started" />

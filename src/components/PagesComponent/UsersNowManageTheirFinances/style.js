@@ -4,6 +4,7 @@ import { media } from "../../../theme/media-mixins";
 export const UsersNowManageTheirFinancesWrapper = styled.div`
 padding: 96px;
 background: ${({ theme }) => `url('/bg-fin-teck.svg') no-repeat center / cover, ${theme.colors.secondaryColor}`};
+background-position: bottom;
 ${media.sm`
   padding: 56px 24px;
   display:flex;

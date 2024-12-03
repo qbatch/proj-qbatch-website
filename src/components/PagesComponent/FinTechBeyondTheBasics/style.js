@@ -97,7 +97,8 @@ ${media.lg`
     text-align: left;
     color: ${({ theme }) => theme.colors.bodyTextVariant};
     margin: 0;
-    margin-top: 16px;
+    margin-top: 24px;
+    margin-bottom: 12px;
     }
     p{
     font-size: 16px;
