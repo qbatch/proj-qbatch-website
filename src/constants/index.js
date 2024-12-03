@@ -6932,6 +6932,26 @@ const collaborationData = [
       "Leverage your global footprint in the rising techno-verse with Qbatch’s self-driven, smart, and skilled team of software developers.",
   },
 ];
+const collaborationDataNew = [
+  {
+    img: '/time-and-material.svg',
+    title: "Time and Material",
+    description:
+      "Only pay for the time and quality resources spent on the project.",
+  },
+  {
+    img: '/fixed-scope-new.svg',
+    title: "Fixed Scope Product Development",
+    description:
+      "Get rid of uncompromised quality and slow project delivery under a fixed budget.",
+  },
+  {
+    img: '/dedicated-development.svg',
+    title: "Hire Dedicated Development Team",
+    description:
+      "Leverage your global footprint with Qbatch’s self-driven team of software developers.",
+  },
+];
 
 const provenProcessData = [
   {
@@ -7303,27 +7323,27 @@ const ImagineTravelAppData2 = [
 
 const PeopleWeHaveData = [
   {
-    img: '/ai-2.svg',
+    img: '/Retailers-1.svg',
     heading: 'Retailers/ Wholesalers',
     text: "Avoid poor labor management, pricing wars, and storage costs, achieving sales growth."
   },
   {
-    img: '/ai-ml-2.svg',
+    img: '/Freight-1.svg',
     heading: 'Freight Forwarders',
     text: "Ensure effective cargo movement, customs compliance, and updated shipment status."
   },
   {
-    img: '/vr-2.svg',
+    img: '/Warehouse-1.svg',
     heading: 'Warehouse Providers',
     text: "Improve warehouse layout, prevent product damage, and increase storage efficiency."
   },
   {
-    img: '/location-2.svg',
+    img: '/Logistics-1.svg',
     heading: 'Logistics & Transportation Companies',
     text: "Gain holistic supply chain management, real-time tracking, and operational accuracy."
   },
   {
-    img: '/chatbot-2.svg',
+    img: '/3PL-Providers.svg',
     heading: '3PL Providers & Trucking Services',
     text: "Ensure flow-through logistics operations, team coordination, and supply chain visibility."
   },
@@ -8874,5 +8894,6 @@ export {
   TechnologyToFastTrackSliderData,
   SimplifyYourRetaiFintechAppDevelopmentProcessData,
   FinTechAppDevelopmentFAQ,
-  AccelerateYourFinanceFunctionsCardData
+  AccelerateYourFinanceFunctionsCardData,
+  collaborationDataNew
 }

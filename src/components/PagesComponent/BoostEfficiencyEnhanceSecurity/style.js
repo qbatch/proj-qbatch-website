@@ -19,7 +19,7 @@ font-weight: 700;
 line-height: 52px;
 text-align: left;
 margin: 0;
-max-width: 921px;
+max-width: 981px;
 ${media.sm`
   font-size: ${({theme}) => theme.fonts.baseFontSizeLg};
   line-height: 32px;
