@@ -12,7 +12,7 @@ import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
 import SuccessStoriesNewWrapper from "./style";
 
-const Index = ({ heading, className }) => {
+const Index = ({ heading, className, text }) => {
   const [currentInd, setCurrentInd] = useState(1);
   const sliderRef = useRef(null);
 
@@ -82,16 +82,15 @@ const Index = ({ heading, className }) => {
   };
 
   return (
-    <SuccessStoriesNewWrapper className={className}>
+    <SuccessStoriesNewWrapper text={text} className={className}>
       <Container>
-        <div className="section-heading d-flex justify-content-between align-items-center">
+        <div className={`section-heading d-flex justify-content-between align-items-${text ? 'baseline' : 'center'}`}>
           <div>
             <h2 className="heading mb-sm-3 mb-2">
               {heading || "Our Success Stories"}
             </h2>
             <p className="mb-0 desc">
-              Innovators from across the industry have trusted Qbatch to build
-              high-impact products.
+              {text ? text : " Innovators from across the industry have trusted Qbatch to build high-impact products."}
             </p>
           </div>
           <div className="d-flex justify-content-end w-100 mobile-view">

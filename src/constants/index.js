@@ -3854,6 +3854,63 @@ const FrequentlyAskedQuestionsHealthCareFaq = [
     ),
   },
 ];
+const FrequentlyAskedQuestionsIndustryFaq = [
+  {
+    id: 1,
+    title: 'What industries does Qbatch specialize in?',
+    content: (
+      <div className="faq-content">
+        <span>We cater to a range of industries including EdTech, FinTech, PropTech, HealthTech, RetailTech, Real Estate, Logistics & Supply Chain, Travel & Hospitality, and Ecommerce.
+        </span>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    title: 'How can Qbatch’s solutions benefit my industry?',
+    content: (
+      <div className="faq-content hire-developer-faq">
+        <span>Our tailored digital solutions are designed to address specific industry challenges, improve operational efficiency, and create seamless user experiences, helping your business stay competitive and future-ready.</span>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    title: 'Does Qbatch provide end-to-end solutions?',
+    content: (
+      <div className="faq-content">
+        <span>Yes, we offer comprehensive services from ideation and design to development and deployment, ensuring that your solution is scalable, secure, and aligned with your industry needs.</span>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    title: 'Can I see examples of Qbatch’s work in my industry?',
+    content: (
+      <div className="faq-content">
+        <span>Absolutely! Check out our Case Studies to explore how we’ve delivered impactful solutions across various industries.</span>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: 'Do you support startups or only established businesses?',
+    content: (
+      <div className="faq-content">
+        <span>We partner with businesses of all sizes, from startups to enterprises, tailoring our solutions to meet their unique goals and challenges.</span>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: 'How do I get started with Qbatch?',
+    content: (
+      <div className="faq-content">
+        <span>Click on <b><a href="/contact">Get Started Today</a></b> or contact us directly to discuss your industry-specific needs. Our team is ready to help turn your vision into reality.</span>
+      </div>
+    ),
+  }
+];
 const RetailSoftwareDevelopmentFaq = [
   {
     id: 1,
@@ -8721,6 +8778,144 @@ const TechnologyToFastTrackSliderData = [
   }
 ];
 
+const servicesPageData = [
+  {
+    img: '/dev-service-box-img-1.svg',
+    title: 'Full Stack Software Development',
+    description: 'Deliver user-friendly interfaces, seamless functionality, and an invincible market position with our full-stack software development team. We build bespoke solutions across B2B, B2C, or SaaS needs leveraging technologies like Javascript, Python, RoR, React, Angular, Vue, & more.',
+    buttonText: 'Explore More',
+    buttonLink: '/contact', 
+  },
+  {
+    img: '/dev-service-box-img-2.svg',
+    title: 'Enterprise Software Development Solutions',
+    description: 'With deeper expertise in modern technologies and a team dedicated to delivering foolproof results, we offer viable and cross-platform software solutions for your business that minimize market risks and maximize monetary results.',
+    buttonText: 'Explore More',
+    buttonLink: '/services/enterprise-software-development', 
+  },
+  {
+    img: '/dev-service-box-img-3.svg',
+    title: 'Mobile App Development',
+    description: 'As custom web developers, we focus on both back-end and front-end systems to deliver amusing user experiences. Our Agile approach ensures on-time, on-budget product delivery with 100% stable, crash-free code.',
+    buttonText: 'Explore More',
+    buttonLink: '/services/mobile-app-development', 
+  },
+  {
+    img: '/dev-service-box-img-4.svg',
+    title: 'Business Process Automation',
+    description: 'Tired of monitoring internal and external E-commerce operations manually? Let’s automate routine operations and slow business workflows including chatbots, sales forecasting, order entry, and fulfillment. No more manual work — less effort and great results only!',
+    buttonText: 'Explore More',
+    buttonLink: '/services/e-commerce-automation/', 
+  },
+  {
+    img: '/dev-service-box-img-5.svg',
+    title: 'CTO as a Service',
+    description: 'Your digital journey can be challenging and unique but well-informed leadership and technical guidance can lead you to successful technology adoption. We are your trusted tech allies dedicated to providing and executing a sustainable roadmap per your business needs.',
+    buttonText: 'Explore More',
+    buttonLink: '/services/cto-as-a-service', 
+  },
+  {
+    img: '/dev-service-box-img-6.svg',
+    title: 'Software Product Design',
+    description: 'Jaw-dropping, navigable, and accessible interfaces await you! We highly believe design and code are only devices of expression. What sets our work apart is people who deliver an intuitive visual appeal giving your people what they need to see and experience.',
+    buttonText: 'Explore More',
+    buttonLink: '/services/product-design-development', 
+  },
+  {
+    img: '/dev-service-box-img-7.svg',
+    title: 'MVP Development',
+    description: 'Tired of monitoring internal and external E-commerce operations manually? Let’s automate routine operations and slow business workflows including chatbots, sales forecasting, order entry, and fulfillment. No more manual work — less effort and great results only!',
+    buttonText: 'Explore More',
+    buttonLink: '/services/mvp-development/', 
+  },
+  {
+    img: '/dev-service-box-img-8.svg',
+    title: 'DevOps and Cloud Computing',
+    description: 'You no longer have to spend time sharing files back and forth with your team members. DevOps and cloud computing allow us to accelerate automation and workflows to help you achieve easier collaboration & simpler data management.',
+    buttonText: 'Explore More',
+    buttonLink: '/services/devops', 
+  },
+  {
+    img: '/dev-service-box-img-9.svg',
+    title: 'Application Modernization',
+    description: 'Don’t block your success due to cost and time constraints. Bid farewell to your legacy system and leverage our Application Modernization Services featuring helpful cloud-native microservices. Rapidly innovate and refactor without any technical debt risks.',
+    buttonText: 'Explore More',
+    buttonLink: '/services/mobile-app-development', 
+  },
+  {
+    img: '/dev-service-box-img-10.svg',
+    title: 'Browser Extension Development',
+    description: 'Your “I wish this site had that feature” wish comes true with our highly customizable and fast-performing browser extensions, plug-ins, toolbars, and add-ons. We leverage modern technologies for robust browser extensions for Chrome, Safari, Edge, Firefox, and Brave.',
+    buttonText: 'Explore More',
+    buttonLink: '/services/browser-extension-development/', 
+  },
+  {
+    img: '/dev-service-box-img-11.svg',
+    title: 'Web Data Scraping and Extraction',
+    description: 'We specialize in unclogging data streams, eliminating the mess using top-tier proxy networks, powerful web scrapers, and a trusted data team scraping at Qbatch. Extract important data and march toward actionable business intelligence with our expert assistance.',
+    buttonText: 'Explore More',
+    buttonLink: '/services/web-and-data-scraping', 
+  },
+];
+const industriesPageData = [
+  {
+    img: '/EdTech-1.svg',
+    title: 'EdTech: Revolutionizing Learning Experiences',
+    description: 'We blend technology and pedagogy to create tools that engage, educate, and evolve the way learners learn and educators teach. From LMS to gamified apps, the classroom will never look the same again.',
+    buttonText: 'Explore More',
+    buttonLink: '/industries/education-software-development/', 
+  },
+  {
+    img: '/FinTech-1.svg',
+    title: 'FinTech: Future-Proofing Financial Ecosystems',
+    description: 'We design secure, innovative financial platforms that redefine how money moves, is managed, and multiplies in the digital age. Trust us to power your next big breakthrough.',
+    buttonText: 'Explore More',
+    buttonLink: '/industries/fin-tech-app-development/', 
+  },
+  {
+    img: '/PropTech-1.svg',
+    title: 'PropTech: Simplifying Real Estate for the Digital Era',
+    description: 'From virtual tours to digital lease management, our solutions make real estate seamless, secure, and scalable for brokers, landlords, and renters alike.',
+    buttonText: 'Explore More',
+    buttonLink: '/industries/real-estate/', 
+  },
+  {
+    img: '/HealthTech-1.svg',
+    title: 'HealthTech: Empowering Lives with Precision',
+    description: 'We develop platforms that bring telemedicine, AI diagnostics, and health monitoring to your fingertips. The future of healthcare is proactive, not reactive.',
+    buttonText: 'Explore More',
+    buttonLink: '/industries/health-care/', 
+  },
+  {
+    img: '/RetailTech-1.svg',
+    title: 'RetailTech: Seamlessly Blending Offline and Online',
+    description: 'From inventory management to omnichannel experiences, we empower retailers to meet customers wherever they are—with precision and personalization.',
+    buttonText: 'Explore More',
+    buttonLink: '/industries/retail-software-development/', 
+  },
+  {
+    img: '/Logistics-2.svg',
+    title: 'Logistics and Supply Chain: From Chaos to Clarity',
+    description: 'We design platforms that bring transparency and efficiency to supply chains, from route optimization to real-time tracking.',
+    buttonText: 'Explore More',
+    buttonLink: '/industries/logistics/', 
+  },
+  {
+    img: '/Travel-1.svg',
+    title: 'Travel & Hospitality: Tech-Driven Guest Experiences',
+    description: 'We design digital solutions that elevate experiences, from booking systems to real-time travel assistance and hospitality management tools.',
+    buttonText: 'Explore More',
+    buttonLink: '/industries/travel-app-development/', 
+  },
+  // {
+  //   img: '/Ecommerce-1.svg',
+  //   title: 'Ecommerce: Seamless, Scalable Online Shopping',
+  //   description: 'From seamless shopping experiences to robust inventory and payment systems, we provide the tools you need to thrive in a competitive landscape. Let’s make your ecommerce vision a reality.',
+  //   buttonText: 'Explore More',
+  //   buttonLink: '/industries/e-commerce/', 
+  // },
+];
+
 export {
   dedicationWork,
   homeTiles,
@@ -8895,5 +9090,8 @@ export {
   SimplifyYourRetaiFintechAppDevelopmentProcessData,
   FinTechAppDevelopmentFAQ,
   AccelerateYourFinanceFunctionsCardData,
-  collaborationDataNew
+  collaborationDataNew,
+  servicesPageData,
+  industriesPageData,
+  FrequentlyAskedQuestionsIndustryFaq
 }

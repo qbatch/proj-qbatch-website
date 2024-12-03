@@ -16,7 +16,7 @@ const Collaboration = lazy(() => import('../../components/PagesComponent/Collabo
 const StartProject = lazy(() => import('../../components/PagesComponent/StartProject'));
 const Achievements = lazy(() => import('../../components/PagesComponent/Achievements2'));
 
-import { servicesSliderData, lostToLaunchedItems } from "../../constants";
+import { servicesSliderData, lostToLaunchedItems, servicesPageData } from "../../constants";
 
 const adaptiveSoftwareData = [
   {
@@ -62,7 +62,7 @@ const Index = () => {
         ]}
       />
       <Achievements />
-      <DevelopmentServices />
+      <DevelopmentServices servicesData={servicesPageData} />
       <InnerBanner
         heading="Sharp Minds. Stable Code. Crash-Free Launch"
         headingMaxWidth="500px"
