@@ -642,6 +642,13 @@ export const Queries = () => {
           }
         }
       }
+       allStrapiIndustry {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiFinTechAppDevelopment {
         nodes {
           seo {

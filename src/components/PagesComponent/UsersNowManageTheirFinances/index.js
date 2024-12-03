@@ -5,12 +5,12 @@ import Button from '../../UiComponent/Button';
 
 import { UsersNowManageTheirFinancesWrapper } from './style'
 
-const UsersNowManageTheirFinances = () => {
+const UsersNowManageTheirFinances = ({heading, buttonText}) => {
   return (
-    <UsersNowManageTheirFinancesWrapper>
-     <h2>Is your app keeping pace with user demands?
-     80% of mobile phone users now manage their finances through apps.</h2>
-     <Button text="Launch your error-free mobile app" onClick={() => navigate('/contact')} />
+    <UsersNowManageTheirFinancesWrapper heading={heading}>
+     <h2>{heading ? heading : `Is your app keeping pace with user demands?
+     80% of mobile phone users now manage their finances through apps.` }</h2>
+     <Button text={buttonText ? buttonText : "Launch your error-free mobile app"} onClick={() => navigate('/contact')} />
     </UsersNowManageTheirFinancesWrapper>
   )
 }

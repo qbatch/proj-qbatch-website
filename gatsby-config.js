@@ -395,6 +395,16 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'industry',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'career',
       queryParams: {
         populate: {

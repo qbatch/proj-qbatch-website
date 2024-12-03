@@ -33,7 +33,7 @@ const SuccessStoriesNewWrapper = styled.div`
       flex-direction: column;
     `}
     p {
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-size: ${({ theme,text }) => text ? theme.fonts.baseFontSize : theme.fonts.baseFontSizeSm};
       line-height: 32px;
       ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
