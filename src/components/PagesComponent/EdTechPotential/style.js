@@ -83,6 +83,12 @@ ${media.mobile`
       }
     }
 }
+.tech-btn {
+  margin-top: 72px;
+  ${media.md`
+    margin-top: 32px;
+  `}
+}
 `
 
 export default EdTechPotentialWrapper;

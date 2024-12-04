@@ -76,14 +76,15 @@ const Header2 = () => {
   ];
 
   const industriesMenu = [
-    // { label: "Logistics and Supply Chain", link: "" },
     // { label: "E-commerce", link: "" },
-    // { label: "FinTech", link: "" },
+    { label: "FinTech", link: "/industries/fin-tech-app-development/" },
     { label: "Retail Software Development", link: "/industries/retail-software-development/" },
     { label: "Real Estate Software Development", link: "/industries/real-estate/" },
     { label: "Travel and Transportation", link: "/industries/travel-app-development/" },
     { label: "Healthcare", link: "/industries/health-care/" },
     { label: "EdTech", link: "/industries/education-software-development/" },
+    { label: "Logistics & Supply Chain", link: "/industries/logistics/" },
+    { label: "Ecommerce Software Development", link: "/industries/ecommerce-software-development/" },
     // { label: "Retail and Consumer Goods", link: "" }
   ];
 
@@ -190,7 +191,7 @@ const Header2 = () => {
               </li>
               <li>
                 <div className={`link-wrapper ${isIndustriesMenuOpen ? 'open' : 'close'}`}>
-                  <Link to="/#industries" className={currentPath.startsWith('/industries') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Industries</Link>
+                  <Link to="/industries" className={currentPath.startsWith('/industries') ? 'active' : ''} onClick={() => setMainMenuOpen(false)}>Industries</Link>
                   <button onClick={toggleIndustriesMenu} className={isIndustriesMenuOpen ? 'open' : 'close'}>
                     <img src='/mega-menu-arrow.svg' alt='menu' loading='lazy' width={13} height={8} />
                   </button>

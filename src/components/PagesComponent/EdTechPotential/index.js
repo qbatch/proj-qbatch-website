@@ -1,8 +1,12 @@
 import React from 'react';
+import { navigate } from 'gatsby';
+
 import Container from '../../UiComponent/Container';
+import Button from "../../UiComponent/Button";
+
 import EdTechPotentialWrapper from './style';
 
-const EdTechPotential = ({ heading, subHeading, data }) => {
+const EdTechPotential = ({ heading, subHeading, data, isBtn, btnText }) => {
   return (
     <EdTechPotentialWrapper>
       <Container>
@@ -11,7 +15,7 @@ const EdTechPotential = ({ heading, subHeading, data }) => {
         <div className='items-wrapper'>
           {data.map((item, index) => (
             <div key={index} className='item'>
-              <img src={item.image} alt={item.image} />
+              <img src={item.image} alt={item.image} width={50} height={50} />
               <div className='item-disc'>
                 <h3>{item.title}</h3>
                 <p>{item.disc}</p>
@@ -19,6 +23,11 @@ const EdTechPotential = ({ heading, subHeading, data }) => {
             </div>
           ))}
         </div>
+        {isBtn &&
+          <div className='tech-btn d-flex justify-content-center'>
+            <Button text={btnText} onClick={() => navigate('/contact')} />
+          </div>
+        }
       </Container>
     </EdTechPotentialWrapper>
   );

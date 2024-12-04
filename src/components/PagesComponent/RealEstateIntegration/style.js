@@ -27,6 +27,11 @@ const RealEstateIntegrationWrapper = styled.div`
         margin-bottom: 48px;
       `}
     }
+    p {
+      text-align: center;
+      max-width: 830px;
+      margin: 0 auto;
+    }
   }
   .fixed-slider-pagination {
     display: flex;
@@ -174,6 +179,15 @@ const RealEstateIntegrationWrapper = styled.div`
   }
   .framework-item {
     min-height: 600px;
+  }
+  &.logistics-solutions {
+    padding-bottom: 96px;
+    ${media.sm`
+      padding-bottom: 56px;
+    `}
+    .framework-item {
+      min-height: 500px;
+    }
   }
 `;
 

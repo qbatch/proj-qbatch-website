@@ -13,6 +13,15 @@ const BreadcrumbWrapper = styled.div`
     &.inner-page{
       position: relative;
     }
+    .current-breadcrumb {
+      background: #FFFFFF33;
+      padding: 4px;
+      border-radius: 4px;
+      span{
+        color:  ${({ theme }) => theme.colors.whiteColor};
+      }
+    }
+
   .breadcrumb {
     font-size: ${({ theme }) => theme.fonts.baseFontSizeXs};
     color: ${({ theme }) => theme.colors.whiteColor};
@@ -20,9 +29,21 @@ const BreadcrumbWrapper = styled.div`
     padding: 16px 96px;
     max-width: 1600px;
     margin: auto;
+    ul{
+      align-items: center !important;
+      grid-gap: 12px;
+      li{
+        svg{
+          font-size: 14px;
+        }
+      }
+    }
     a {
-      color: ${({ theme }) => theme.colors.whiteColor};
+      color: ${({ theme }) => theme.colors.bodyLight};
       white-space: nowrap;
+      display: flex;
+      align-items: center;
+      grid-gap: 12px;
     }
     ${media.lg`
       padding: 16px 80px;

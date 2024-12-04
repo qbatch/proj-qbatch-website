@@ -330,6 +330,16 @@ const CtoBannerWrapper = styled.div`
       }
     }
   }
+  &.logistics-banner {
+    .banner-main {
+      .text-h1 {
+        max-width: 760px;
+      }
+      p {
+        max-width: 770px;
+      }
+    }
+  }
 `
 
 export default CtoBannerWrapper;

@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 
 import Layout from '../../components/Layout/layout';
-import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData, reInnovationsData, FrequentlyAskedQuestionsHealthCareFaq } from '../../constants';
+import { realEstateIndustryData, properyBusinessData1, properyBusinessData2, realEstateSliderData, reInnovationsData, realEstateIntegrationData, FrequentlyAskedQuestionsHealthCareFaq, RealEstateITSolutionsData, onDemandFeaturesData } from '../../constants';
 import { Queries } from '../../constants/queries';
 import SEO from '../../components/Seo';
 
@@ -53,7 +53,11 @@ const RealEstate = () => {
         imgSrc='/property-business.svg'
         className='property-business'
       />
-      <RealEstateITSolutions />
+      <RealEstateITSolutions
+        heading="Full Suite of Rest Estate IT Solutions"
+        desc="Let’s help you develop your perfect BEMS, IWMS, ConTech, or other PropTech solutions with our real estate software development company. We bring your ideas to life with personalized service and tailored, cutting-edge solutions."
+        data={RealEstateITSolutionsData}
+      />
       <Slider
         data={realEstateSliderData}
         heading="Real Estate Software Development Services We Provide"
@@ -69,21 +73,27 @@ const RealEstate = () => {
         text="Let's start with a small-scale project, risk-free, and see if we suit your custom real estate software vision."
         buttonText='Book Discovery Call'
       />
-      <OnDemandFeatures />
-      <NextLevelInnovations 
-        heading="We're talking next-level innovations that will transform the way you do business:" 
+      <OnDemandFeatures
+        heading="On-demand features for your real estate app for human-centric experience and higher productivity"
+        featuresData={onDemandFeaturesData}
+      />
+      <NextLevelInnovations
+        heading="We're talking next-level innovations that will transform the way you do business:"
         paragraph="The real estate landscape is buzzing with innovation, and we're here to be your wingman on this exciting flight. Forget clunky processes and outdated tools. We're talking cutting-edge tech that lets you soar above the competition."
         data={reInnovationsData}
         className='innovations-wrapper'
       />
-       <ScaredToInvest
+      <ScaredToInvest
         heading="Technology should be an enabling force, not a burden."
         text="We're dedicated PropTech developers who are focused on building software that feels as intuitive as talking to a trusted colleague. Simple and neat."
         buttonText='Build your real estate app'
         img='/enabling-force.svg'
         className='enabling-force'
       />
-      <RealEstateIntegration />
+      <RealEstateIntegration 
+        heading="Real Estate Integrations we support"
+        data={realEstateIntegrationData}
+      />
       <WhyTrustQbatch heading='Why trust Qbatch for your business-critical PropTech project?' />
       <DominateYourMarket />
       <CollaborationNew borderBottom={true} />

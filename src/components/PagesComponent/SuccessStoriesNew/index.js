@@ -12,7 +12,7 @@ import ArrowRightIcon from "../../../assets/images/icons/arrow-right-small.svg";
 
 import SuccessStoriesNewWrapper from "./style";
 
-const Index = ({ heading, className }) => {
+const Index = ({ heading, className, text }) => {
   const [currentInd, setCurrentInd] = useState(1);
   const sliderRef = useRef(null);
 
@@ -82,19 +82,43 @@ const Index = ({ heading, className }) => {
   };
 
   return (
-    <SuccessStoriesNewWrapper className={className}>
+    <SuccessStoriesNewWrapper text={text} className={className}>
       <Container>
-        <div className="section-heading d-flex justify-content-between align-items-center">
+        <div className={`section-heading d-flex justify-content-between align-items-${text ? 'baseline' : 'center'}`}>
           <div>
             <h2 className="heading mb-sm-3 mb-2">
               {heading || "Our Success Stories"}
             </h2>
             <p className="mb-0 desc">
-              Innovators from across the industry have trusted Qbatch to build
-              high-impact products.
+              {text ? text : " Innovators from across the industry have trusted Qbatch to build high-impact products."}
             </p>
           </div>
-          <div className="d-md-block d-none">
+          <div className="d-flex justify-content-end w-100 mobile-view">
+            <div className="carousel-button-group d-flex align-items-center">
+              <div className='arrow-icon'>
+                <ArrowLeftIcon
+                  onClick={handleButtonClickPrev}
+                />
+              </div>
+              <span>
+                <span className="fw-bold">
+                  {currentInd < portfolioData.slice(-6) && 0}
+                  {currentInd}
+                </span>
+                <span>/</span>
+                <span>
+                  {portfolioData.slice(-6).length < portfolioData && 0}
+                  {portfolioData.slice(-6).length}
+                </span>
+              </span>
+              <div className='arrow-icon'>
+                <ArrowRightIcon
+                  onClick={handleButtonClickNext}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="d-md-block d-none desktop-view">
             {portfolioData.length === currentInd ? (
               <div className="mt-lg-0 d-md-block d-none">
                 <Button
@@ -138,7 +162,7 @@ const Index = ({ heading, className }) => {
                         alt={item?.projectName}
                         title={item?.projectName}
                         className="w-100 project-img"
-                        loading="lazy" 
+                        loading="lazy"
                       />
                     )}
                     <div className="arrow-div">
@@ -158,7 +182,7 @@ const Index = ({ heading, className }) => {
                           image={logoImage}
                           alt="logo"
                           title="logo"
-                          loading="lazy" 
+                          loading="lazy"
                         />
                       )}
                       <div className="project-category">
@@ -173,7 +197,7 @@ const Index = ({ heading, className }) => {
           })}
         </Slider>
 
-        <div className=" d-flex justify-content-center">
+        <div className=" d-flex justify-content-center button-wrapper">
           <div className="mt-5">
             <Button
               onClick={() => navigate("/portfolio")}

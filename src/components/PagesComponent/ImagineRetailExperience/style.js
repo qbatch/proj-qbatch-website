@@ -76,14 +76,10 @@ ${media.sm`
               `}
         h3{
           margin:0;
-          font-size: 24px;
-          font-weight: 600;
+          font-weight: ${({ theme }) => theme.fontWeight.semiBold};
           line-height: 32px;
           text-align: left;
-          ${media.sm`
-          font-size: 16px;
-          line-height: 24px;
-              `}
+          max-width: 360px;
         }
         p{
         font-size: 16px;

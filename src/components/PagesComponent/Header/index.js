@@ -19,7 +19,7 @@ const headerMenu = [
   },
   {
     name: "Industries",
-    to: "/#industries",
+    to: "/industries",
   },
   {
     name: "Portfolio",

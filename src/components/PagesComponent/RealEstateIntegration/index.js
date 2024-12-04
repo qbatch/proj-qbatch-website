@@ -3,13 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Row, Accordion } from "react-bootstrap";
+import { navigate } from "gatsby";
 
-import { realEstateIntegrationData } from "../../../constants";
 import Container from "../../UiComponent/Container";
+import Button from "../../UiComponent/Button";
 
 import RealEstateIntegrationWrapper from "./style";
 
-const Index = () => {
+const Index = ({ heading, desc, data, isBtn, className }) => {
   const sliderRef2 = useRef(null);
   const scrollRef2 = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -42,18 +43,19 @@ const Index = () => {
   };
 
   return (
-    <RealEstateIntegrationWrapper id="scene-trigger2" ref={scrollRef2} className="stage-slider-main2">
+    <RealEstateIntegrationWrapper id="scene-trigger2" ref={scrollRef2} className={`stage-slider-main2 ${className}`}>
       <div>
         <Container>
           <div className="languages-header">
-            <h2>Real Estate Integrations we support </h2>
+            <h2>{heading}</h2>
+            {desc && <p>{desc}</p>}
           </div>
 
           <Row className="desktop-data">
             <Col lg={4}>
               <div className="pagination fixed-slider-pagination">
                 <ul>
-                  {realEstateIntegrationData?.map((item, index) => (
+                  {data?.map((item, index) => (
                     <li
                       key={index}
                       className={`pagination-item ${activeIndex === index ? 'active' : ''}`}
@@ -67,7 +69,7 @@ const Index = () => {
             </Col>
             <Col lg={8} md={12}>
               <Slider {...sliderSettings} ref={sliderRef2}>
-                {realEstateIntegrationData?.map((item, index) => (
+                {data?.map((item, index) => (
                   <div key={index} className="framework-item">
                     <Row>
                       {item.content.map((data) => (
@@ -89,7 +91,7 @@ const Index = () => {
           </Row>
           <div className="small-screen-data">
             <Accordion defaultActiveKey="0" className="languages-collapse d-flex flex-column gap-2">
-              {realEstateIntegrationData.map((item, ind) => (
+              {data.map((item, ind) => (
                 <div key={ind}>
                   <Accordion.Item eventKey={ind}>
                     <Accordion.Header as="h3">{item.title}</Accordion.Header>
@@ -111,6 +113,11 @@ const Index = () => {
               ))}
             </Accordion>
           </div>
+          {isBtn &&
+            <div className="d-flex justify-content-center">
+              <Button text="Let’s Get Started." onClick={() => navigate('/contact')} />
+            </div>
+          }
         </Container>
       </div>
     </RealEstateIntegrationWrapper>

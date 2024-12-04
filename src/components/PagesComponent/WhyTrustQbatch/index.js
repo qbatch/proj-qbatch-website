@@ -5,12 +5,12 @@ import Button from '../../UiComponent/Button'
 import { WhyTrustQbatchWrapper } from './style'
 import { WhyTrustQbatchData1, WhyTrustQbatchData2 } from '../../../constants'
 
-const WhyTrustQbatch = ({ heading }) => {
+const WhyTrustQbatch = ({ heading, finTech }) => {
   return (
     <WhyTrustQbatchWrapper>
       <Container>
         <div className='card-wrapper'>
-          <img src="/why-trust-qbatch.svg" alt="Why Trust Qbatch" />
+          <img src="/why-trust-qbatch.svg" alt="Why Trust Qbatch" width="auto" height="auto" />
           <div className='card-items-wrapper'>
             <h2>{heading || 'Why trust Qbatch for your business-critical TravelTech project?'}</h2>
             <div className='card-item'>
@@ -23,6 +23,7 @@ const WhyTrustQbatch = ({ heading }) => {
                 {WhyTrustQbatchData2.map((item, index) => (
                   <li key={index}>{item.text}</li>
                 ))}
+                 {finTech &&  <li>- Spectacular Price-Quality Ratio</li>}
               </ul>
             </div>
             <Button onClick={() => navigate('/contact')}  text="Let’s Get Started" />

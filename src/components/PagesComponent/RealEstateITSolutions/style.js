@@ -34,6 +34,7 @@ const ITSolutionsWrapper = styled.div`
   .solutions-col {
     display: flex !important;
     flex-direction: column;
+    justify-content: stretch;
     margin-bottom: 40px;
     ${media.md`
       margin-bottom: 0;
@@ -79,6 +80,27 @@ const ITSolutionsWrapper = styled.div`
           line-height: 24px;
         `}
       }
+    }
+  }
+  .btn-margin {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    ${media.md`
+      margin-top: 72px;
+      margin-bottom: 0;
+    `}
+  }
+  &.logistics-supply {
+    ${media.sm`
+      padding: 40px 0;
+    `}
+    .solutions-box {
+      ${media.md`
+        min-height: 310px;
+      `}
+      ${media.mobile`
+        min-height: 352px;
+      `}
     }
   }
 `

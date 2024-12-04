@@ -628,7 +628,35 @@ export const Queries = () => {
           }
         }
       }
+       allStrapiTravelAppDevelopment {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
        allStrapiHealthcare {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
+       allStrapiIndustry {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
+       allStrapiFinTechAppDevelopment {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
+      allStrapiLogistic {
         nodes {
           seo {
             ...SeoFields
@@ -671,6 +699,13 @@ export const Queries = () => {
         }
       }
       allStrapiRealEstate {
+        nodes {
+          seo {
+            ...SeoFields
+          }
+        }
+      }
+      allStrapiEcommerceIndustry {
         nodes {
           seo {
             ...SeoFields

@@ -119,7 +119,7 @@ const Index = () => {
                 <ul>
                   {industrieshMenu.map((menu, ind) => (
                     <li key={ind}>
-                      {menu.name === 'EdTech' || menu.name ===  'Healthcare' || menu.name ===  'Retail and Consumer Goods' || menu.name ===  'Travel & Transportation' ?
+                      {menu.name === 'EdTech' || menu.name ===  'Healthcare' || menu.name ===  'Retail and Consumer Goods' || menu.name ===  'Travel & Transportation' || menu.name === 'Logistics & Supply Chain' || menu.name === 'FinTech' ?
                        <Link to={menu.to}>{menu.name}</Link>
                        :
                        menu.name

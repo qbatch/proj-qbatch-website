@@ -15,6 +15,9 @@ padding: 96px 0;
   i{
     color: ${({ theme }) => theme.colors.primaryColor};
   }
+  span{
+    color: ${({theme}) =>  theme.colors.primaryColor}
+  }
 }
 .row{
   --bs-gutter-y: 1.5rem;
