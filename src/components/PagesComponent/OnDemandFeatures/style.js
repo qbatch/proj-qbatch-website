@@ -43,6 +43,7 @@ const OnDemandWrapper = styled.div`
     p {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
       line-height: 32px;
+      color: ${({ theme }) => theme.colors.bodyTextVariant};
       margin-bottom: 0;
       ${media.mobile`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
