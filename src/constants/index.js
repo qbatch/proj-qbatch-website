@@ -8907,13 +8907,13 @@ const industriesPageData = [
     buttonText: 'Explore More',
     buttonLink: '/industries/travel-app-development/', 
   },
-  // {
-  //   img: '/Ecommerce-1.svg',
-  //   title: 'Ecommerce: Seamless, Scalable Online Shopping',
-  //   description: 'From seamless shopping experiences to robust inventory and payment systems, we provide the tools you need to thrive in a competitive landscape. Let’s make your ecommerce vision a reality.',
-  //   buttonText: 'Explore More',
-  //   buttonLink: '/industries/e-commerce/', 
-  // },
+  {
+    img: '/Ecommerce-1.svg',
+    title: 'Ecommerce: Seamless, Scalable Online Shopping',
+    description: 'From seamless shopping experiences to robust inventory and payment systems, we provide the tools you need to thrive in a competitive landscape. Let’s make your ecommerce vision a reality.',
+    buttonText: 'Explore More',
+    buttonLink: '/industries/ecommerce-software-development/', 
+  },
 ];
 
 export {
