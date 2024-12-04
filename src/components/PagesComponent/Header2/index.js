@@ -84,6 +84,7 @@ const Header2 = () => {
     { label: "Healthcare", link: "/industries/health-care/" },
     { label: "EdTech", link: "/industries/education-software-development/" },
     { label: "Logistics & Supply Chain", link: "/industries/logistics/" },
+    { label: "Ecommerce Software Development", link: "/industries/ecommerce-software-development/" },
     // { label: "Retail and Consumer Goods", link: "" }
   ];
 

@@ -7,6 +7,14 @@ const EcommerceFutureWrapper = styled.div`
   ${media.sm`
     padding: 40px 0px;
   `}
+  ${media.md`
+    .estate-business{
+      text-align: center;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    `}
   .img-desc{
     display: flex;
     justify-content: center;
