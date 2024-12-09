@@ -3,19 +3,42 @@ import { media } from "../../../theme/media-mixins";
 
 const AchievementsWrapper = styled.div`
   position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(246, 247, 250, 0.7) 0%, rgba(246, 247, 250, 0.6) 100%);
+  }
   .achievements-main {
     padding: 96px 0;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
     border-bottom: 1px solid ${({ theme }) => theme.colors.dividerColor};
     background-size: cover;
     text-align: center;
+    background-position: center;
     position: relative;
+    background-image: url('/achievements-bg.svg');
     ${media.sm`
       padding: 56px 0px;
     `}
     .achievements-inner-wrapper {
       position: relative;
       z-index: 2;
+      h2 {
+        margin-bottom: 72px;
+        color: ${({ theme }) => theme.colors.primaryColor};
+      }
+      p{
+        margin-bottom: 96px;
+        ${media.sm`
+          margin-bottom: 48px;
+        `}
+      }
     }
     .counter-wrapper{
       display: flex;
@@ -42,6 +65,9 @@ const AchievementsWrapper = styled.div`
     .achievements-col {
       position: relative;
       width: 20%;
+      &:not(:last-child){
+        /* border-right: 1px solid ${({ theme }) => theme.colors.dividerColor}; */
+      }
       ${media.lg`
         width: 30%;
       `}
@@ -53,6 +79,18 @@ const AchievementsWrapper = styled.div`
         margin-bottom: 32px;
         width: 100%;
       `}
+      &::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: ${({ theme }) => theme.colors.dividerColor};
+        right: 0;
+        top: 0;
+        ${media.xs`
+          width: 0px;
+        `}
+      }
       &:last-child::after {
         width: 0px;
       }

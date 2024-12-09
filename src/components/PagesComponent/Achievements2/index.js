@@ -22,6 +22,7 @@ const Index = () => {
     <AchievementsWrapper>
       <div className="achievements-main">
         <Container className="achievements-inner-wrapper">
+            <h2>Achievements Through The Years...</h2>
           <div className="counter-wrapper">
             {counterData2.map((data, ind) => (
               <div key={ind} className="achievements-col">
