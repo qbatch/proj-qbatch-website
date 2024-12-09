@@ -7,6 +7,10 @@ border-bottom:1px solid ${({ theme }) => theme.colors.dividerColor};
 ${media.sm`
 padding: 40px 0;
 `}
+.header{
+  max-width: 1081px;
+  margin: auto;
+}
 h2{
 font-size: 40px;
 font-weight: 700;

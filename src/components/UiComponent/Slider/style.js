@@ -372,8 +372,8 @@ p.content {
     ${media.xs`
     .make-responsive {
       img{
-        width:fit-content;
-        height: fit-content;
+        width: 248px;
+        height: 152px;
       }
     }
     `}
@@ -520,6 +520,22 @@ p.content {
     }
   }
   }
+&.logistics-slider-wrapper {
+  .upper-heading {
+    text-align: center;
+    h2 {
+      max-width: 1090px;
+      margin: 0 auto 24px;
+    }
+    p {
+      margin-bottom: 72px;
+      max-width: 790px;
+      ${media.mobile`
+        margin-bottom: 32px;
+      `}
+    }
+  }
+}
 `
 
 export default SliderWrapper;

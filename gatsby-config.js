@@ -197,6 +197,19 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'ecommerce-industry',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+          schema: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'enterprise',
       queryParams: {
         populate: {
@@ -372,6 +385,26 @@ const strapiConfig = {
       },
     },
     {
+      singularName: 'fin-tech-app-development',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'industry',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
       singularName: 'career',
       queryParams: {
         populate: {
@@ -403,6 +436,16 @@ const strapiConfig = {
     },
     {
       singularName: 'real-estate',
+      queryParams: {
+        populate: {
+          seo: {
+            populate: '*',
+          },
+        },
+      },
+    },
+    {
+      singularName: 'logistic',
       queryParams: {
         populate: {
           seo: {
@@ -472,6 +515,7 @@ const strapiConfig = {
     'web-app',
     'product-design',
     'ecommerce',
+    'ecommerce-industry',
     'enterprise',
     'contact-us',
     'portfolio',

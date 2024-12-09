@@ -12,6 +12,20 @@ const SuccessStoriesNewWrapper = styled.div`
     padding-left: 0px !important;
     `}
 }
+.mobile-view{
+  margin-top: 32px;
+  display:none !important;
+  ${media.sm`
+    display:flex !important;
+    `}
+}
+.button-wrapper{
+  div{
+    ${media.sm`
+    margin-top:0px !important;
+      `}
+  }
+}
   .section-heading {
     margin-bottom: 56px;
     ${media.sm`
@@ -19,7 +33,7 @@ const SuccessStoriesNewWrapper = styled.div`
       flex-direction: column;
     `}
     p {
-      font-size: ${({ theme }) => theme.fonts.baseFontSizeSm};
+      font-size: ${({ theme,text }) => text ? theme.fonts.baseFontSize : theme.fonts.baseFontSizeSm};
       line-height: 32px;
       ${media.sm`
         font-size: ${({ theme }) => theme.fonts.baseFontSize};
@@ -191,6 +205,11 @@ const SuccessStoriesNewWrapper = styled.div`
 
   .slick-list {
       margin: 0 -12px;
+  }
+  &.logistics-stories {
+    .section-heading p{
+      display: none;
+    }
   }
 `
 

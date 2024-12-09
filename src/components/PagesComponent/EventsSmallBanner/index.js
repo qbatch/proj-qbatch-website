@@ -11,7 +11,6 @@ const Index = () => {
       <Container>
         <Breadcrumb crumbs={[
           { pathname: '/', crumbLabel: 'Home', crumbSeparator: '>' },
-          { pathname: '/events/', crumbLabel: 'Company', crumbSeparator: '>' },
           { pathname: '/events/', crumbLabel: 'Events and PR' },
         ]} />
         <div className="events-banner">
