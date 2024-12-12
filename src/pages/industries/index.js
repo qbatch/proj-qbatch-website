@@ -55,7 +55,7 @@ export const Head = () => {
       language={seoData.language}
       robots={seoData.metaRobots}
       image={seoData.metaimage[0]?.localFile?.url}
-      pathname={`/industries${seoData.slug}`}
+      pathname={`${seoData.slug}`}
     >
       {/* {transformedObject
         .filter((x) => x.visibilityIn)
