@@ -29,7 +29,7 @@ const Industry = () => {
           {pathname: '/industries', crumbLabel: 'Industries', crumbSeparator: '>' },
         ]}
       />
-        <Achievements mainHeading="Achievements Through The Years" innerPage page="contact" />
+        <Achievements className="industries-achievement" mainHeading="Achievements Through The Years" innerPage page="contact" />
       <DevelopmentServices className="industry-page-cards" industryHeading servicesData={industriesPageData} />
       <UsersNowManageTheirFinances buttonText="Contact Us Today!" heading="Ready to Disrupt Your Industry? Let’s take your vision and turn it into a reality." />
       <SuccessStories heading="Proven Results That Redefine Success" text="Dive into the stories behind our success. Our case studies highlight how Qbatch transforms challenges into opportunities, delivering tailored solutions that drive measurable impact across industries." />
