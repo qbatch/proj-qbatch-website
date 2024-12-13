@@ -38,6 +38,7 @@ const CollaborationNewWrapper = styled.div`
   flex: 1;
   ${media.md`
     margin-top: 24px;
+    padding-top: 24px !important;
   `}
   h3 {
     color: ${({ theme }) => theme.colors.midGray};

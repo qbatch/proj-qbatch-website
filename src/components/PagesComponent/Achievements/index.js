@@ -7,7 +7,7 @@ import { counterData } from "../../../constants";
 
 import AchievementsWrapper from './style'
 
-const Index = ({ innerPage, page, mainHeading, labelText }) => {
+const Index = ({ innerPage, page, mainHeading, labelText, className }) => {
   const numCols = page === "contact" ? 3 : 4;
   const displayedCounterData = page === "contact" ? counterData : counterData.slice(0, 3);
   const heading = mainHeading || "Achievements Through The Years...";
@@ -24,7 +24,7 @@ const Index = ({ innerPage, page, mainHeading, labelText }) => {
   }, []);
 
   return (
-    <AchievementsWrapper>
+    <AchievementsWrapper className={className}>
       <div className="achievements-main">
         <Container className="achievements-inner-wrapper">
           <h2 className={innerPage ? "" : "text-h1 color-primary"}>

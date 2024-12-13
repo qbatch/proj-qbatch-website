@@ -6,6 +6,15 @@ padding: 96px 0;
   ${media.sm`
     padding: 56px 0px;
   `}
+  &.industry-page-cards{
+    ${media.sm`
+      .section-main-heading {
+    display: flex;
+    grid-gap: 6px;
+    margin-bottom:0px;
+}
+      `}
+  }
 .section-main-heading{
   max-width: 340px;
   font-weight: ${({ theme }) => theme.fontWeight.bold};

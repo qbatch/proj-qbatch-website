@@ -7,9 +7,9 @@ import PrimaryButton from '../../UiComponent/PrimaryButton';
 
 import DevelopmentServicesWrapper from './style';
 
-const Index = ({ servicesData, industryHeading }) => {
+const Index = ({ servicesData, industryHeading, className }) => {
   return (
-    <DevelopmentServicesWrapper>
+    <DevelopmentServicesWrapper className={className}>
       <Container>
         <Row>
           <Col lg={4}>

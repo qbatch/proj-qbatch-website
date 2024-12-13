@@ -14,6 +14,19 @@ const AchievementsWrapper = styled.div`
     width: 100%;
     background: linear-gradient(180deg, rgba(246, 247, 250, 0.7) 0%, rgba(246, 247, 250, 0.6) 100%);
   }
+  &.industries-achievement{
+    .achievements-main {
+    ${media.mobile`
+      background-image: none !important;
+      background: none !important;
+    `}
+    }
+    .achievements-col {
+      &::after {
+        display: none !important;
+      }
+    }
+  }
   .achievements-main {
     padding: 96px 0 96px;
     border-top: 1px solid ${({ theme }) => theme.colors.dividerColor};
