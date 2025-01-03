@@ -70,7 +70,6 @@ export const Head = () => {
   const seoData = saasDevData?.allStrapiFinTechAppDevelopment?.nodes[0]?.seo
   // const schemaData = saasDevData?.allStrapiHealthcare?.nodes[0]?.schema;
   // const transformedObject = replaceUnderscoreWithAt(schemaData);
-
   return (
     <SEO
       title={seoData?.metaTitle}
@@ -79,7 +78,7 @@ export const Head = () => {
       language={seoData.language}
       robots={seoData.metaRobots}
       image={seoData.metaimage[0]?.localFile?.url}
-      pathname={`/industries${seoData.slug}`}
+      pathname={`${seoData.slug}`}
     >
       {/* {transformedObject
         .filter((x) => x.visibilityIn)

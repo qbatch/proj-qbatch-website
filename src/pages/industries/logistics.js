@@ -24,6 +24,7 @@ const StartProject = lazy(() => import("../../components/PagesComponent/StartPro
 const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
 
 const Logistics = () => {
+  console.log(location.pathname,'jaskhdkajhsdkjh')
   return (
     <Layout>
       <CtoBanner
@@ -115,7 +116,7 @@ export const Head = () => {
       language={seoData.language}
       robots={seoData.metaRobots}
       image={seoData.metaimage[0]?.localFile?.url}
-      pathname={`${seoData.slug}`}
+      pathname={`industries/${seoData.slug}`}
     >
       {/* {transformedObject
         .filter((x) => x.visibilityIn)
