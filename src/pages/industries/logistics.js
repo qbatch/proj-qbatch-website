@@ -24,7 +24,7 @@ const StartProject = lazy(() => import("../../components/PagesComponent/StartPro
 const FaqSection = lazy(() => import('../../components/PagesComponent/Faq'));
 
 const Logistics = () => {
-  console.log(location.pathname,'jaskhdkajhsdkjh')
+
   return (
     <Layout>
       <CtoBanner
