@@ -22,7 +22,7 @@ ${media.sm`
 }
 .inner-box {
   border-bottom: 4px solid; 
-  border-image-source: linear-gradient(90deg, #ED1C24 0%, #0054A6 100%);
+  border-image-source: linear-gradient(90deg, #2ff682 0%, #0054A6 100%);
   border-image-slice: 1;
   height: 100%;
 }

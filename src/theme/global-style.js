@@ -102,7 +102,7 @@ const GlobalStyles = createGlobalStyle`
       height: 1px;
       width: 24px;
       bottom: 0px;
-      background-color: #ED1C24;
+      background-color: #2ff682;
     }
   }
     img,svg{

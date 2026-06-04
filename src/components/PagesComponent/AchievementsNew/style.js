@@ -68,7 +68,7 @@ const AchievementsNewWrapper = styled.div`
         }
         p {
           font-weight: ${({ theme }) => theme.fontWeight.bold};
-          background: linear-gradient(90deg, #ED1C24 0%, #0054A6 100%);
+          background: linear-gradient(90deg, #2ff682 0%, #0054A6 100%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;

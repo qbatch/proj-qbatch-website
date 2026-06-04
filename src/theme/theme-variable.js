@@ -21,7 +21,7 @@ const theme = {
     bodyTextVariant: '#2D2F31',
     labelColor: '#979797',
     borderColor: '#2E3846',
-    dangerColor: '#ED1C24',
+    dangerColor: '#2ff682',
     gardientColor: '#2D2F31',
     onGradient: '#F6F7FA',
     dividerColor: '#D2D9DC',
